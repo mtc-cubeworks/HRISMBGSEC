@@ -1,0 +1,5 @@
+
+Runner.pages.PageSettings.addPageEvent('loansreport',Runner.pages.constants.PAGE_LIST,"afterPageReady",function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='Loan_Summary4';if(!pageObj.buttonEventBefore['Loan_Summary4']){pageObj.buttonEventBefore['Loan_Summary4']=function(params,ctrl,pageObj,proxy,pageid,rowData,row){params["txt"]="Preview...";ctrl.setMessage("Preview...");}}
+if(!pageObj.buttonEventAfter['Loan_Summary4']){pageObj.buttonEventAfter['Loan_Summary4']=function(result,ctrl,pageObj,proxy,pageid,rowData,row){var e1=result["Employer"];var dt=result["FromDate"];var dt1=result["ToDate"];var lt1=result["LoanType"];var pr1=result["PreparedBy"];window.open('pdfprint2/loansummary.php?ps1='+dt1+'&em1='+e1+'&prp1='+pr1+'&lnt1='+lt1+'&dt2='+dt,'_blank');}}
+$('a[id="Loan_Summary4"]').each(function(){if($(this).closest('.gridRowAdd').length){return;}
+this.id="Loan_Summary4"+"_"+Runner.genId();var button_Loan_Summary4=new Runner.form.Button({id:this.id,btnName:"Loan_Summary4"});button_Loan_Summary4.init({args:[pageObj,proxy,pageid]});});});

@@ -1,0 +1,398 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_viewpage}
+<div {$viewpage_chiddenattr} data-pageid="{$pageid}" data-container="viewpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-12 "> 
+
+{BEGIN viewheader}
+	<h2 {$viewheader_hiddenattr} data-pageid="{$pageid}" data-brick="viewheader" >{$pagetitlelabel monthlyremittax view}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END viewheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_viewpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class=" form-horizontal  col-md-12 "> 
+
+
+<div {$viewfields_hiddenattr} data-pageid="{$pageid}" data-brick="viewfields" >
+
+	<div class="container">
+					{BEGIN TxID_fieldblock}
+	<div class="{$fielddispclass_TxID} col-md-6 bs-viewcontrolgroup" data-fieldname="TxID">
+		<label class="control-label" for="{$labelfor_TxID}">
+			{$label monthlyremittax TxID}
+		</label>
+		<div class="" >
+			{$TxID_value}&nbsp;
+		</div>
+	</div>
+{END TxID_fieldblock}
+					{BEGIN Month_fieldblock}
+	<div class="{$fielddispclass_Month} col-md-6 bs-viewcontrolgroup" data-fieldname="Month">
+		<label class="control-label" for="{$labelfor_Month}">
+			{$label monthlyremittax Month}
+		</label>
+		<div class="" >
+			{$Month_value}&nbsp;
+		</div>
+	</div>
+{END Month_fieldblock}
+					{BEGIN Year_fieldblock}
+	<div class="{$fielddispclass_Year} col-md-6 bs-viewcontrolgroup" data-fieldname="Year">
+		<label class="control-label" for="{$labelfor_Year}">
+			{$label monthlyremittax Year}
+		</label>
+		<div class="" >
+			{$Year_value}&nbsp;
+		</div>
+	</div>
+{END Year_fieldblock}
+					{BEGIN AmendedReturn_fieldblock}
+	<div class="{$fielddispclass_AmendedReturn} col-md-6 bs-viewcontrolgroup" data-fieldname="AmendedReturn">
+		<label class="control-label" for="{$labelfor_AmendedReturn}">
+			{$label monthlyremittax AmendedReturn}
+		</label>
+		<div class="" >
+			{$AmendedReturn_value}&nbsp;
+		</div>
+	</div>
+{END AmendedReturn_fieldblock}
+					{BEGIN AnyTaxWithheld_fieldblock}
+	<div class="{$fielddispclass_AnyTaxWithheld} col-md-6 bs-viewcontrolgroup" data-fieldname="AnyTaxWithheld">
+		<label class="control-label" for="{$labelfor_AnyTaxWithheld}">
+			{$label monthlyremittax AnyTaxWithheld}
+		</label>
+		<div class="" >
+			{$AnyTaxWithheld_value}&nbsp;
+		</div>
+	</div>
+{END AnyTaxWithheld_fieldblock}
+					{BEGIN EmployerID_fieldblock}
+	<div class="{$fielddispclass_EmployerID} col-md-6 bs-viewcontrolgroup" data-fieldname="EmployerID">
+		<label class="control-label" for="{$labelfor_EmployerID}">
+			{$label monthlyremittax EmployerID}
+		</label>
+		<div class="" >
+			{$EmployerID_value}&nbsp;
+		</div>
+	</div>
+{END EmployerID_fieldblock}
+					{BEGIN TIN_fieldblock}
+	<div class="{$fielddispclass_TIN} col-md-6 bs-viewcontrolgroup" data-fieldname="TIN">
+		<label class="control-label" for="{$labelfor_TIN}">
+			{$label monthlyremittax TIN}
+		</label>
+		<div class="" >
+			{$TIN_value}&nbsp;
+		</div>
+	</div>
+{END TIN_fieldblock}
+					{BEGIN TelNo_fieldblock}
+	<div class="{$fielddispclass_TelNo} col-md-6 bs-viewcontrolgroup" data-fieldname="TelNo">
+		<label class="control-label" for="{$labelfor_TelNo}">
+			{$label monthlyremittax TelNo}
+		</label>
+		<div class="" >
+			{$TelNo_value}&nbsp;
+		</div>
+	</div>
+{END TelNo_fieldblock}
+					{BEGIN Address_fieldblock}
+	<div class="{$fielddispclass_Address} col-md-6 bs-viewcontrolgroup" data-fieldname="Address">
+		<label class="control-label" for="{$labelfor_Address}">
+			{$label monthlyremittax Address}
+		</label>
+		<div class="" >
+			{$Address_value}&nbsp;
+		</div>
+	</div>
+{END Address_fieldblock}
+					{BEGIN ZipCode_fieldblock}
+	<div class="{$fielddispclass_ZipCode} col-md-6 bs-viewcontrolgroup" data-fieldname="ZipCode">
+		<label class="control-label" for="{$labelfor_ZipCode}">
+			{$label monthlyremittax ZipCode}
+		</label>
+		<div class="" >
+			{$ZipCode_value}&nbsp;
+		</div>
+	</div>
+{END ZipCode_fieldblock}
+					{BEGIN RDOCode_fieldblock}
+	<div class="{$fielddispclass_RDOCode} col-md-6 bs-viewcontrolgroup" data-fieldname="RDOCode">
+		<label class="control-label" for="{$labelfor_RDOCode}">
+			{$label monthlyremittax RDOCode}
+		</label>
+		<div class="" >
+			{$RDOCode_value}&nbsp;
+		</div>
+	</div>
+{END RDOCode_fieldblock}
+					{BEGIN CategoryWithholdingAgent_fieldblock}
+	<div class="{$fielddispclass_CategoryWithholdingAgent} col-md-6 bs-viewcontrolgroup" data-fieldname="CategoryWithholdingAgent">
+		<label class="control-label" for="{$labelfor_CategoryWithholdingAgent}">
+			{$label monthlyremittax CategoryWithholdingAgent}
+		</label>
+		<div class="" >
+			{$CategoryWithholdingAgent_value}&nbsp;
+		</div>
+	</div>
+{END CategoryWithholdingAgent_fieldblock}
+					{BEGIN AwaitingTaxRelief_fieldblock}
+	<div class="{$fielddispclass_AwaitingTaxRelief} col-md-6 bs-viewcontrolgroup" data-fieldname="AwaitingTaxRelief">
+		<label class="control-label" for="{$labelfor_AwaitingTaxRelief}">
+			{$label monthlyremittax AwaitingTaxRelief}
+		</label>
+		<div class="" >
+			{$AwaitingTaxRelief_value}&nbsp;
+		</div>
+	</div>
+{END AwaitingTaxRelief_fieldblock}
+					{BEGIN TotalAmountOfCompensation_fieldblock}
+	<div class="{$fielddispclass_TotalAmountOfCompensation} col-md-6 bs-viewcontrolgroup" data-fieldname="TotalAmountOfCompensation">
+		<label class="control-label" for="{$labelfor_TotalAmountOfCompensation}">
+			{$label monthlyremittax TotalAmountOfCompensation}
+		</label>
+		<div class="" >
+			{$TotalAmountOfCompensation_value}&nbsp;
+		</div>
+	</div>
+{END TotalAmountOfCompensation_fieldblock}
+					{BEGIN StatutoryMinimumWage_fieldblock}
+	<div class="{$fielddispclass_StatutoryMinimumWage} col-md-6 bs-viewcontrolgroup" data-fieldname="StatutoryMinimumWage">
+		<label class="control-label" for="{$labelfor_StatutoryMinimumWage}">
+			{$label monthlyremittax StatutoryMinimumWage}
+		</label>
+		<div class="" >
+			{$StatutoryMinimumWage_value}&nbsp;
+		</div>
+	</div>
+{END StatutoryMinimumWage_fieldblock}
+					{BEGIN OtherNonTaxableCompensation_fieldblock}
+	<div class="{$fielddispclass_OtherNonTaxableCompensation} col-md-6 bs-viewcontrolgroup" data-fieldname="OtherNonTaxableCompensation">
+		<label class="control-label" for="{$labelfor_OtherNonTaxableCompensation}">
+			{$label monthlyremittax OtherNonTaxableCompensation}
+		</label>
+		<div class="" >
+			{$OtherNonTaxableCompensation_value}&nbsp;
+		</div>
+	</div>
+{END OtherNonTaxableCompensation_fieldblock}
+					{BEGIN TaxableCompensation_fieldblock}
+	<div class="{$fielddispclass_TaxableCompensation} col-md-6 bs-viewcontrolgroup" data-fieldname="TaxableCompensation">
+		<label class="control-label" for="{$labelfor_TaxableCompensation}">
+			{$label monthlyremittax TaxableCompensation}
+		</label>
+		<div class="" >
+			{$TaxableCompensation_value}&nbsp;
+		</div>
+	</div>
+{END TaxableCompensation_fieldblock}
+					{BEGIN TaxRequiredToBeWithheld_fieldblock}
+	<div class="{$fielddispclass_TaxRequiredToBeWithheld} col-md-6 bs-viewcontrolgroup" data-fieldname="TaxRequiredToBeWithheld">
+		<label class="control-label" for="{$labelfor_TaxRequiredToBeWithheld}">
+			{$label monthlyremittax TaxRequiredToBeWithheld}
+		</label>
+		<div class="" >
+			{$TaxRequiredToBeWithheld_value}&nbsp;
+		</div>
+	</div>
+{END TaxRequiredToBeWithheld_fieldblock}
+					{BEGIN TaxRefund_fieldblock}
+	<div class="{$fielddispclass_TaxRefund} col-md-6 bs-viewcontrolgroup" data-fieldname="TaxRefund">
+		<label class="control-label" for="{$labelfor_TaxRefund}">
+			{$label monthlyremittax TaxRefund}
+		</label>
+		<div class="" >
+			{$TaxRefund_value}&nbsp;
+		</div>
+	</div>
+{END TaxRefund_fieldblock}
+					{BEGIN TaxRequiredForRemittance_fieldblock}
+	<div class="{$fielddispclass_TaxRequiredForRemittance} col-md-6 bs-viewcontrolgroup" data-fieldname="TaxRequiredForRemittance">
+		<label class="control-label" for="{$labelfor_TaxRequiredForRemittance}">
+			{$label monthlyremittax TaxRequiredForRemittance}
+		</label>
+		<div class="" >
+			{$TaxRequiredForRemittance_value}&nbsp;
+		</div>
+	</div>
+{END TaxRequiredForRemittance_fieldblock}
+					{BEGIN TotalAmountStillDue_fieldblock}
+	<div class="{$fielddispclass_TotalAmountStillDue} col-md-6 bs-viewcontrolgroup" data-fieldname="TotalAmountStillDue">
+		<label class="control-label" for="{$labelfor_TotalAmountStillDue}">
+			{$label monthlyremittax TotalAmountStillDue}
+		</label>
+		<div class="" >
+			{$TotalAmountStillDue_value}&nbsp;
+		</div>
+	</div>
+{END TotalAmountStillDue_fieldblock}
+					{BEGIN AuthorizedRepresentative_fieldblock}
+	<div class="{$fielddispclass_AuthorizedRepresentative} col-md-6 bs-viewcontrolgroup" data-fieldname="AuthorizedRepresentative">
+		<label class="control-label" for="{$labelfor_AuthorizedRepresentative}">
+			{$label monthlyremittax AuthorizedRepresentative}
+		</label>
+		<div class="" >
+			{$AuthorizedRepresentative_value}&nbsp;
+		</div>
+	</div>
+{END AuthorizedRepresentative_fieldblock}
+	</div>
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_buttons}
+<div {$buttons_chiddenattr} data-pageid="{$pageid}" data-container="buttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-6 "> 
+
+{BEGIN viewbuttons}
+{BEGIN back_button}
+<button class="btn btn-primary" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{BEGIN close_button}
+<button href="#" class="btn btn-primary" {$closebutton_attrs}>Close window</button>
+{END close_button}
+{END viewbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+
+
+{BEGIN container_leftbuttons_1}
+<div {$leftbuttons_1_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons_1" class="   col-md-4 "> 
+
+{BEGIN rightviewbuttons}
+<div class="btn-group" role="group">
+		{BEGIN prev_button}
+	<button class="btn btn-default {$prevbutton_class}" {$prevbutton_attrs}><span class="glyphicon glyphicon-chevron-left"></span></button>
+	{END prev_button}
+	{BEGIN next_button}
+	<button class="btn btn-default {$nextbutton_class}" {$nextbutton_attrs}><span class="glyphicon glyphicon-chevron-right"></span></button>
+	{END next_button}
+		{BEGIN view_menu_button}
+	<div class="btn-group dropup" role="group">
+		<button class="btn btn-default dropdown-toggle {$groupbutton_class}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+		<ul class="dropdown-menu dropdown-left">
+									{BEGIN edit_page_button}
+				<li><a href=# {$edit_page_button_attrs}>Edit</a></li>
+			{END edit_page_button}
+		</ul>
+	</div>
+	{END view_menu_button}
+</div>
+{END rightviewbuttons}
+
+
+
+</div>
+{END container_leftbuttons_1}
+
+
+
+
+
+
+</div>
+{END container_buttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

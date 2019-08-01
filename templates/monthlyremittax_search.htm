@@ -1,0 +1,545 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_searchpage}
+<div {$searchpage_chiddenattr} data-pageid="{$pageid}" data-container="searchpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN searchheader}
+	<h2 {$bssearchheader_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchheader" >{$pagetitlelabel monthlyremittax search}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END searchheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_searchpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$bssearchfields_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchfields" class="form-horizontal" role="form">
+<div class="container">
+	<div class="form-group">
+		<div class="col-md-12" >
+			&nbsp;
+		</div>
+	</div>
+</div>
+	{BEGIN TxID_fieldblock}		
+	<div class="container {$fielddispclass_TxID}" data-fieldname="TxID">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_TxID}">
+				{$label monthlyremittax TxID}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_TxID}
+			</div>
+			<div class="col-md-4" >
+				{$TxID_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$TxID_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END TxID_fieldblock}
+	{BEGIN Month_fieldblock}		
+	<div class="container {$fielddispclass_Month}" data-fieldname="Month">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Month}">
+				{$label monthlyremittax Month}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Month}
+			</div>
+			<div class="col-md-4" >
+				{$Month_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Month_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Month_fieldblock}
+	{BEGIN Year_fieldblock}		
+	<div class="container {$fielddispclass_Year}" data-fieldname="Year">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Year}">
+				{$label monthlyremittax Year}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Year}
+			</div>
+			<div class="col-md-4" >
+				{$Year_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Year_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Year_fieldblock}
+	{BEGIN AmendedReturn_fieldblock}		
+	<div class="container {$fielddispclass_AmendedReturn}" data-fieldname="AmendedReturn">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_AmendedReturn}">
+				{$label monthlyremittax AmendedReturn}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_AmendedReturn}
+			</div>
+			<div class="col-md-4" >
+				{$AmendedReturn_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$AmendedReturn_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END AmendedReturn_fieldblock}
+	{BEGIN AnyTaxWithheld_fieldblock}		
+	<div class="container {$fielddispclass_AnyTaxWithheld}" data-fieldname="AnyTaxWithheld">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_AnyTaxWithheld}">
+				{$label monthlyremittax AnyTaxWithheld}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_AnyTaxWithheld}
+			</div>
+			<div class="col-md-4" >
+				{$AnyTaxWithheld_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$AnyTaxWithheld_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END AnyTaxWithheld_fieldblock}
+	{BEGIN EmployerID_fieldblock}		
+	<div class="container {$fielddispclass_EmployerID}" data-fieldname="EmployerID">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_EmployerID}">
+				{$label monthlyremittax EmployerID}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_EmployerID}
+			</div>
+			<div class="col-md-4" >
+				{$EmployerID_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$EmployerID_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END EmployerID_fieldblock}
+	{BEGIN TIN_fieldblock}		
+	<div class="container {$fielddispclass_TIN}" data-fieldname="TIN">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_TIN}">
+				{$label monthlyremittax TIN}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_TIN}
+			</div>
+			<div class="col-md-4" >
+				{$TIN_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$TIN_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END TIN_fieldblock}
+	{BEGIN TelNo_fieldblock}		
+	<div class="container {$fielddispclass_TelNo}" data-fieldname="TelNo">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_TelNo}">
+				{$label monthlyremittax TelNo}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_TelNo}
+			</div>
+			<div class="col-md-4" >
+				{$TelNo_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$TelNo_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END TelNo_fieldblock}
+	{BEGIN Address_fieldblock}		
+	<div class="container {$fielddispclass_Address}" data-fieldname="Address">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Address}">
+				{$label monthlyremittax Address}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Address}
+			</div>
+			<div class="col-md-4" >
+				{$Address_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Address_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Address_fieldblock}
+	{BEGIN ZipCode_fieldblock}		
+	<div class="container {$fielddispclass_ZipCode}" data-fieldname="ZipCode">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_ZipCode}">
+				{$label monthlyremittax ZipCode}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_ZipCode}
+			</div>
+			<div class="col-md-4" >
+				{$ZipCode_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$ZipCode_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END ZipCode_fieldblock}
+	{BEGIN RDOCode_fieldblock}		
+	<div class="container {$fielddispclass_RDOCode}" data-fieldname="RDOCode">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RDOCode}">
+				{$label monthlyremittax RDOCode}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RDOCode}
+			</div>
+			<div class="col-md-4" >
+				{$RDOCode_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RDOCode_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RDOCode_fieldblock}
+	{BEGIN CategoryWithholdingAgent_fieldblock}		
+	<div class="container {$fielddispclass_CategoryWithholdingAgent}" data-fieldname="CategoryWithholdingAgent">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_CategoryWithholdingAgent}">
+				{$label monthlyremittax CategoryWithholdingAgent}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_CategoryWithholdingAgent}
+			</div>
+			<div class="col-md-4" >
+				{$CategoryWithholdingAgent_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$CategoryWithholdingAgent_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END CategoryWithholdingAgent_fieldblock}
+	{BEGIN AwaitingTaxRelief_fieldblock}		
+	<div class="container {$fielddispclass_AwaitingTaxRelief}" data-fieldname="AwaitingTaxRelief">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_AwaitingTaxRelief}">
+				{$label monthlyremittax AwaitingTaxRelief}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_AwaitingTaxRelief}
+			</div>
+			<div class="col-md-4" >
+				{$AwaitingTaxRelief_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$AwaitingTaxRelief_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END AwaitingTaxRelief_fieldblock}
+	{BEGIN TotalAmountOfCompensation_fieldblock}		
+	<div class="container {$fielddispclass_TotalAmountOfCompensation}" data-fieldname="TotalAmountOfCompensation">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_TotalAmountOfCompensation}">
+				{$label monthlyremittax TotalAmountOfCompensation}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_TotalAmountOfCompensation}
+			</div>
+			<div class="col-md-4" >
+				{$TotalAmountOfCompensation_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$TotalAmountOfCompensation_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END TotalAmountOfCompensation_fieldblock}
+	{BEGIN StatutoryMinimumWage_fieldblock}		
+	<div class="container {$fielddispclass_StatutoryMinimumWage}" data-fieldname="StatutoryMinimumWage">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_StatutoryMinimumWage}">
+				{$label monthlyremittax StatutoryMinimumWage}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_StatutoryMinimumWage}
+			</div>
+			<div class="col-md-4" >
+				{$StatutoryMinimumWage_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$StatutoryMinimumWage_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END StatutoryMinimumWage_fieldblock}
+	{BEGIN OtherNonTaxableCompensation_fieldblock}		
+	<div class="container {$fielddispclass_OtherNonTaxableCompensation}" data-fieldname="OtherNonTaxableCompensation">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_OtherNonTaxableCompensation}">
+				{$label monthlyremittax OtherNonTaxableCompensation}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_OtherNonTaxableCompensation}
+			</div>
+			<div class="col-md-4" >
+				{$OtherNonTaxableCompensation_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$OtherNonTaxableCompensation_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END OtherNonTaxableCompensation_fieldblock}
+	{BEGIN TaxableCompensation_fieldblock}		
+	<div class="container {$fielddispclass_TaxableCompensation}" data-fieldname="TaxableCompensation">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_TaxableCompensation}">
+				{$label monthlyremittax TaxableCompensation}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_TaxableCompensation}
+			</div>
+			<div class="col-md-4" >
+				{$TaxableCompensation_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$TaxableCompensation_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END TaxableCompensation_fieldblock}
+	{BEGIN TaxRequiredToBeWithheld_fieldblock}		
+	<div class="container {$fielddispclass_TaxRequiredToBeWithheld}" data-fieldname="TaxRequiredToBeWithheld">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_TaxRequiredToBeWithheld}">
+				{$label monthlyremittax TaxRequiredToBeWithheld}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_TaxRequiredToBeWithheld}
+			</div>
+			<div class="col-md-4" >
+				{$TaxRequiredToBeWithheld_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$TaxRequiredToBeWithheld_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END TaxRequiredToBeWithheld_fieldblock}
+	{BEGIN TaxRefund_fieldblock}		
+	<div class="container {$fielddispclass_TaxRefund}" data-fieldname="TaxRefund">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_TaxRefund}">
+				{$label monthlyremittax TaxRefund}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_TaxRefund}
+			</div>
+			<div class="col-md-4" >
+				{$TaxRefund_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$TaxRefund_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END TaxRefund_fieldblock}
+	{BEGIN TaxRequiredForRemittance_fieldblock}		
+	<div class="container {$fielddispclass_TaxRequiredForRemittance}" data-fieldname="TaxRequiredForRemittance">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_TaxRequiredForRemittance}">
+				{$label monthlyremittax TaxRequiredForRemittance}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_TaxRequiredForRemittance}
+			</div>
+			<div class="col-md-4" >
+				{$TaxRequiredForRemittance_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$TaxRequiredForRemittance_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END TaxRequiredForRemittance_fieldblock}
+	{BEGIN TotalAmountStillDue_fieldblock}		
+	<div class="container {$fielddispclass_TotalAmountStillDue}" data-fieldname="TotalAmountStillDue">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_TotalAmountStillDue}">
+				{$label monthlyremittax TotalAmountStillDue}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_TotalAmountStillDue}
+			</div>
+			<div class="col-md-4" >
+				{$TotalAmountStillDue_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$TotalAmountStillDue_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END TotalAmountStillDue_fieldblock}
+	{BEGIN AuthorizedRepresentative_fieldblock}		
+	<div class="container {$fielddispclass_AuthorizedRepresentative}" data-fieldname="AuthorizedRepresentative">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_AuthorizedRepresentative}">
+				{$label monthlyremittax AuthorizedRepresentative}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_AuthorizedRepresentative}
+			</div>
+			<div class="col-md-4" >
+				{$AuthorizedRepresentative_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$AuthorizedRepresentative_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END AuthorizedRepresentative_fieldblock}
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container form-horizontal   "> 
+
+
+
+
+{BEGIN container_bbuttons}
+<div {$bbuttons_chiddenattr} data-pageid="{$pageid}" data-container="bbuttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-10 col-md-offset-2"> 
+
+{BEGIN searchbuttons}
+{BEGIN search_button}
+<button class="btn btn-primary" {$searchbutton_attrs}>Search</button>
+{END search_button} 
+{BEGIN reset_button}
+<button class="btn btn-default" {$resetbutton_attrs}>Reset</button>
+{END reset_button}
+{BEGIN back_button}
+<button class="btn btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{END searchbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+</div>
+{END container_bbuttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

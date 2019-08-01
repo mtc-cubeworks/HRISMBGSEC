@@ -1,0 +1,1380 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}
+<style>
+{$containerCss}
+</style>
+<div class="sidebar bs-fixed clearfix mCustomScrollbar" data-mcs-theme="minimal-dark" {$blockattr_left}>
+	<div class="sidebar-contents mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside">
+		
+
+{BEGIN container_logo}
+<div {$logo_chiddenattr} data-pageid="{$pageid}" data-container="logo" class=" bs-sidebarlogo   "> 
+
+{BEGIN logo_block}
+<a href="{$home_link}" {$logo_hiddenattr} data-pageid="{$pageid}" data-brick="logo" class="navbar-brand" >{$logo}</a>
+{END logo_block}
+
+
+
+</div>
+{END container_logo}
+
+
+
+{BEGIN container_hdr}
+<div {$hdr_chiddenattr} data-pageid="{$pageid}" data-container="hdr" class=" navbar-default clearfix   "> 
+
+{BEGIN collapse_block}
+<button {$bsnavbarcollapse_hiddenattr} data-pageid="{$pageid}" data-brick="bsnavbarcollapse" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target=".bs-navcontrolled">	
+	<span class="sr-only">Toggle navigation</span>	
+	<span class="icon-bar"></span>					
+</button>												
+
+{END collapse_block}
+
+
+
+</div>
+{END container_hdr}
+
+{BEGIN container_sidemenu}<div {$sidemenu_chiddenattr} data-pageid="{$pageid}" data-container="sidemenu" class="bs-navform navbar-collapse sidebar-menu bs-hidden-xs bs-navcontrolled" aria-expanded="false" >												   
+{BEGIN menu_block}
+{$menu main}
+
+{END menu_block}
+
+												</div>						{END container_sidemenu}
+
+{BEGIN container_left}
+<div {$left_chiddenattr} data-pageid="{$pageid}" data-container="left" class=" sidebar-container   "> 
+
+{BEGIN searchPanel}
+<div {$searchpanel_hiddenattr} data-pageid="{$pageid}" data-brick="searchpanel" class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} >
+	<!-- Search panel content -->
+	
+	<div class="panel-heading">
+		<div class="btn-group" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Search in
+			<span class="caret"></span>
+			</button>
+		</div>
+
+		
+		<div class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Show options</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>all conditions</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>any condition</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>hide</a></li>
+			</ul>
+		</div>
+	
+		
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		{END searchCtrlBlock}
+
+
+	</div>
+	
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary" id="searchButton{$id}" {$searchbutton_attrs}>Search</button>
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}>
+		Show all
+		</button>
+	</div>
+</div>
+
+
+{END searchPanel}
+
+
+
+
+</div>
+{END container_left}
+
+
+	</div>
+</div>	
+<div class="bs-wrapper">
+	<div class="bs-fixedheader" id="fixedheader{$id}">
+		{BEGIN container_menu}<nav {$menu_chiddenattr} data-pageid="{$pageid}" data-container="menu" class="navbar navbar-default bs-fullwidth-navbar">					
+
+
+
+{BEGIN container_bc}
+<div {$bc_chiddenattr} data-pageid="{$pageid}" data-container="bc" class=" navbar-form navbar-left   "> 
+
+{BEGIN breadcrumbs}
+<ol class="breadcrumb">
+<li ><a href="{$home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumbs}
+
+
+
+</div>
+{END container_bc}
+
+
+
+
+
+
+{BEGIN container_menu_1}<div {$menu_1_chiddenattr} data-pageid="{$pageid}" data-container="menu_1" class="bs-navform navbar-collapse bs-hidden-xs bs-navcontrolled" aria-expanded="false" >												   
+
+
+
+{BEGIN container_more}
+<div {$more_chiddenattr} data-pageid="{$pageid}" data-container="more" class=" navbar-right navbar-form   "> 
+
+{BEGIN more_list}
+<div {$morebutton_hiddenattr} data-pageid="{$pageid}" data-brick="morebutton" class="btn-group bs-navsection">
+	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		<span class="glyphicon glyphicon-cog"></span>
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu">
+				{BEGIN editselected_link}
+		<li class="massButton{$id} disabled"><a href="#" {$editselectedlink_attrs} {$editselectedlink_span} >Edit selected</a></li>
+		{END editselected_link}
+
+				{BEGIN exportselected_link}
+		<li class="massButton{$id} disabled"><a href="#" {$exportselectedlink_attrs} {$exportselectedlink_span} >Export selected</a></li>
+		{END exportselected_link}
+		
+				{BEGIN deleteselected_link}
+		<li class="massButton{$id} disabled"><a href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>Delete selected</a></li>
+		{END deleteselected_link}
+		
+				<li role="separator" class="divider"></li>	
+
+				{BEGIN asearch_link}
+		<li><a href="standardsetup_search.php" {$advsearchlink_attrs}>Advanced search</a></li>
+		{END asearch_link}
+
+				{BEGIN searchPanelTopButtons}
+		<li><a href=# id="showOptPanel{$id}">Show search panel</a></li>
+		{END searchPanelTopButtons}	
+		
+				
+				<li role="separator" class="divider"></li>	
+		
+				
+				{BEGIN export_link}
+		<li><a target="_blank" href="standardsetup_export.php"  {$exportlink_attrs}>Export results</a></li>
+		{END export_link}
+
+				{BEGIN import_link}
+		<li><a href="standardsetup_import.php?{$crosstable_attrs}"  {$importlink_attrs}>Import</a></li>
+		{END import_link}
+
+				
+	</ul>  
+</div>
+
+{END more_list}
+
+
+{BEGIN security_block}
+<span {$loggedas_hiddenattr} data-pageid="{$pageid}" data-brick="loggedas" id="login_block{$id}" class="bs-navsection">
+	{BEGIN guestloginbutton}
+		<button class="btn btn-info" type="button" {$guestloginlink_attrs}>Login</button>
+	{END guestloginbutton}
+	{BEGIN loggedas_message} 
+		<span class="dropdown">
+			<button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon-user"></span>	{$username}</button>
+			<ul class="dropdown-menu">
+		{BEGIN logoutbutton}
+				<li><a href="#" {$logoutlink_attrs}>Log out</a></li>
+		{END logoutbutton}
+		
+		{BEGIN adminarea_link}
+				<li><a href="admin_rights_list.php" {$adminarealink_attrs}>Admin Area</a></li>
+		{END adminarea_link}
+
+
+			</ul>
+		</span>
+	{END loggedas_message}
+</span>
+{END security_block}
+
+
+
+</div>
+{END container_more}
+
+
+
+
+
+
+
+
+{BEGIN container_more_1}
+<div {$more_1_chiddenattr} data-pageid="{$pageid}" data-container="more_1" class=" navbar-right navbar-form   "> 
+
+{BEGIN searchform_block}
+<span {$search_hiddenattr} data-pageid="{$pageid}" data-brick="search" class="form-group">
+
+ <div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Show all">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>
+{END searchform_block}
+
+
+
+</div>
+{END container_more_1}
+
+
+
+
+												</div>						{END container_menu_1}
+
+
+									</nav>{END container_menu}
+	</div>	
+	<div class="container-fluid bs-underheader bs-fixedsidebarmain" id="underheader{$id}">
+		{$header}
+		<div class="bs-sidebar-screenbound">
+			
+
+
+
+{BEGIN container_gridcontrols}
+<div {$gridcontrols_chiddenattr} data-pageid="{$pageid}" data-container="gridcontrols" class=" bs-navcontrolled bs-hidden-xs   "> 
+
+
+
+
+{BEGIN container_add_delete}
+<div {$add_delete_chiddenattr} data-pageid="{$pageid}" data-container="add_delete" class=" bottom-margin  col-md-6 "> 
+
+{BEGIN newrecord_controls_block}
+		{BEGIN add_link}
+		<a {$add_hiddenattr} data-pageid="{$pageid}" data-brick="add" type="button" class="btn btn-primary" {$addlink_attrs}>Add new</a>
+	{END add_link}
+
+		{BEGIN inlineadd_link}
+		<button {$add_hiddenattr} data-pageid="{$pageid}" data-brick="add" type="button" class="btn btn-primary" {$inlineaddlink_attrs}>Inline Add</button>
+	{END inlineadd_link}
+
+{END newrecord_controls_block}
+
+
+{BEGIN record_controls_block}
+<span {$recordcontrol_hiddenattr} data-pageid="{$pageid}" data-brick="recordcontrol">
+		{BEGIN deleteselected_link}
+	<button type="button" class="btn btn-default" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled>Delete</button>
+	{END deleteselected_link}
+		{BEGIN updateselected_link}
+		<button type="button" class="btn btn-default" {$updateselectedlink_attrs} disabled>Update selected</button>
+	{END updateselected_link}
+		{BEGIN saveall_link}
+		<button type="button" class="btn btn-primary" {$savealllink_attrs} {$savealllink_span}>Save all</button>
+	{END saveall_link}
+	{BEGIN cancelall_link}
+		<button type="button" class="btn btn-default" {$cancelalllink_attrs} {$cancelalllink_span}>Cancel</button>
+	{END cancelall_link}
+</span>
+
+{END record_controls_block}
+
+
+
+</div>
+{END container_add_delete}
+
+
+
+
+
+
+
+
+{BEGIN container_gridinfo}
+<div {$gridinfo_chiddenattr} data-pageid="{$pageid}" data-container="gridinfo" class=" bottom-margin text-right col-md-6 "> 
+
+{BEGIN details_found}
+<span {$details_found_hiddenattr} data-pageid="{$pageid}" data-brick="details_found" class="form-inline form-inline-always">
+	{$records_indicator}
+	<span>
+	{BEGIN recordspp_block}
+			{$recsPerPage}
+	{END recordspp_block}
+	</span>
+</span>
+{END details_found}
+
+
+{BEGIN print_friendly}
+<span {$printpanel_hiddenattr} data-pageid="{$pageid}" data-brick="printpanel" class="bs-printpanel" id="printpanelblock{$id}">
+	<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" title="Print-friendly page">
+		<span class="glyphicon glyphicon-print" ></span>
+		<span class="caret"></span>
+    </button>
+	<ul class="dropdown-menu pull-right" >
+		<li>
+			<div class="container-fluid" id="print_friendly_scope{$id}">
+				<div class="row">
+					<div class="col-md-4">Scope:</div>
+										{BEGIN print_friendly_all}
+					<div class="col-md-8">
+						<label for="printAll{$id}">
+							<input type="radio" id="printAll{$id}" data-href="standardsetup_print.php?all=1&amp;{$crosstable_attrs}" name="printScope">
+							Print all pages
+						</label>
+					</div>
+					{END print_friendly_all}
+				</div>
+				<div class="row">
+					<div class="col-md-4">&nbsp;</div>
+					<div class="col-md-8">
+						<label for="printPage{$id}">
+							<input type="radio" id="printPage{$id}" data-href="standardsetup_print.php?{$crosstable_attrs}" name="printScope" checked>
+							Print this page
+						</label>
+					</div>
+				</div>
+								<div class="row">
+					<div class="col-md-4">&nbsp;</div>
+					<div class="col-md-8">
+						<label for="printSelection{$id}" style="color: gray;">
+							<input type="radio" id="printSelection{$id}" name="printScope" disabled="disabled">
+							Print selected
+						</label>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li class="divider" role="separator"></li>
+
+		
+				<li>	
+			<div class="rnr-printdetails">
+				<label for="printPerPage{$id}">
+											Records Per Page:
+				</label>
+				<input type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">		
+			</div>
+		</li>
+		<li class="divider" role="separator"></li>
+		<li class="rnr-printbutton">				
+			<button type="button" class="btn btn-primary" id="print_friendly_button{$id}" >Print</button>			
+		</li>
+	</ul>	
+</span>
+
+{END print_friendly}
+
+
+
+
+</div>
+{END container_gridinfo}
+
+
+
+
+
+
+
+</div>
+{END container_gridcontrols}
+
+
+		</div>
+		<div></div>
+		<div class="bs-sidebar-screenbound bs-minwidth">
+			
+
+{BEGIN container_tabs}
+<div {$tabs_chiddenattr} data-pageid="{$pageid}" data-container="tabs" class="    "> 
+
+{BEGIN grid_tabs}
+<div {$bsgrid_tabs_hiddenattr} data-pageid="{$pageid}" data-brick="bsgrid_tabs">
+<ul class="nav nav-tabs">
+{$grid_tabs_content}
+</ul>
+</div>
+{END grid_tabs}
+
+
+
+</div>
+{END container_tabs}
+
+
+
+{BEGIN container_message}
+<div {$message_chiddenattr} data-pageid="{$pageid}" data-container="message" class="    "> 
+
+{BEGIN message_block}
+<div {$message_hiddenattr} data-pageid="{$pageid}" data-brick="message" class="alert {$message_class}" role="alert">{$message}</div>
+{END message_block}
+
+
+
+</div>
+{END container_message}
+
+
+
+{BEGIN container_center}
+<div {$center_chiddenattr} data-pageid="{$pageid}" data-container="center" class="    "> 
+
+
+
+
+{BEGIN container_grid}
+<div {$grid_chiddenattr} data-pageid="{$pageid}" data-container="grid" class="bs-grid    "> 
+
+{BEGIN grid_block}
+	<style>
+	.bs-gridcell[data-field=SID]:before {
+		content: "{$label standardsetup SID}";
+	}
+	.bs-gridcell[data-field=RegOTFactor]:before {
+		content: "{$label standardsetup RegOTFactor}";
+	}
+	.bs-gridcell[data-field=RegNDiffFactor]:before {
+		content: "{$label standardsetup RegNDiffFactor}";
+	}
+	.bs-gridcell[data-field=NightDiffStartTime]:before {
+		content: "{$label standardsetup NightDiffStartTime}";
+	}
+	.bs-gridcell[data-field=NightDiffEndTime]:before {
+		content: "{$label standardsetup NightDiffEndTime}";
+	}
+	.bs-gridcell[data-field=WorkingDaysInYear]:before {
+		content: "{$label standardsetup WorkingDaysInYear}";
+	}
+	.bs-gridcell[data-field=AllowableLeaveFrom]:before {
+		content: "{$label standardsetup AllowableLeaveFrom}";
+	}
+	.bs-gridcell[data-field=AllowableLeaveTo]:before {
+		content: "{$label standardsetup AllowableLeaveTo}";
+	}
+	.bs-gridcell[data-field=RHOTFactor]:before {
+		content: "{$label standardsetup RHOTFactor}";
+	}
+	.bs-gridcell[data-field=SHOTFactor]:before {
+		content: "{$label standardsetup SHOTFactor}";
+	}
+	.bs-gridcell[data-field=CHOTFactor]:before {
+		content: "{$label standardsetup CHOTFactor}";
+	}
+	.bs-gridcell[data-field=RHNDiffFactor]:before {
+		content: "{$label standardsetup RHNDiffFactor}";
+	}
+	.bs-gridcell[data-field=SHNDiffFactor]:before {
+		content: "{$label standardsetup SHNDiffFactor}";
+	}
+	.bs-gridcell[data-field=CHNDiffFactor]:before {
+		content: "{$label standardsetup CHNDiffFactor}";
+	}
+	.bs-gridcell[data-field=RHFactor]:before {
+		content: "{$label standardsetup RHFactor}";
+	}
+	.bs-gridcell[data-field=SHFactor]:before {
+		content: "{$label standardsetup SHFactor}";
+	}
+	.bs-gridcell[data-field=CHFactor]:before {
+		content: "{$label standardsetup CHFactor}";
+	}
+	.bs-gridcell[data-field=RDFactor]:before {
+		content: "{$label standardsetup RDFactor}";
+	}
+	.bs-gridcell[data-field=RDOTFactor]:before {
+		content: "{$label standardsetup RDOTFactor}";
+	}
+	.bs-gridcell[data-field=RDNDiffFactor]:before {
+		content: "{$label standardsetup RDNDiffFactor}";
+	}
+	.bs-gridcell[data-field=RHRDFactor]:before {
+		content: "{$label standardsetup RHRDFactor}";
+	}
+	.bs-gridcell[data-field=RHRDOTFactor]:before {
+		content: "{$label standardsetup RHRDOTFactor}";
+	}
+	.bs-gridcell[data-field=SHRDFactor]:before {
+		content: "{$label standardsetup SHRDFactor}";
+	}
+	.bs-gridcell[data-field=SHRDOTFactor]:before {
+		content: "{$label standardsetup SHRDOTFactor}";
+	}
+	.bs-gridcell[data-field=WorkingDaysInYearDailies]:before {
+		content: "{$label standardsetup WorkingDaysInYearDailies}";
+	}
+	.bs-gridcell[data-field=ReqBeforeHoliday]:before {
+		content: "{$label standardsetup ReqBeforeHoliday}";
+	}
+	.bs-gridcell[data-field=SHFactorDaily]:before {
+		content: "{$label standardsetup SHFactorDaily}";
+	}
+	.bs-gridcell[data-field=SHOTFactorDaily]:before {
+		content: "{$label standardsetup SHOTFactorDaily}";
+	}
+	.bs-gridcell[data-field=CHFactorDaily]:before {
+		content: "{$label standardsetup CHFactorDaily}";
+	}
+	.bs-gridcell[data-field=SHRDFactorDaily]:before {
+		content: "{$label standardsetup SHRDFactorDaily}";
+	}
+	.bs-gridcell[data-field=SHRDOTFactorDaily]:before {
+		content: "{$label standardsetup SHRDOTFactorDaily}";
+	}
+	.bs-gridcell[data-field=CHOTFactorDaily]:before {
+		content: "{$label standardsetup CHOTFactorDaily}";
+	}
+	.bs-gridcell[data-field=PreTimeInMins]:before {
+		content: "{$label standardsetup PreTimeInMins}";
+	}
+</style>
+<table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
+	<thead>
+										{BEGIN grid_header}
+								<tr class="rnr-toprow {$gridHeader_class}" >
+									{BEGIN record_header}
+									{BEGIN listIcons_column}
+									<th iEditCont="all">&nbsp;</th>
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}
+									<th class="">
+										<input type="checkbox" {$checkboxheader_attrs}>
+									</th>
+									{END checkbox_column}
+
+																		
+									{BEGIN SID_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SID_class}" data-field=SID>
+									{BEGIN SID_fieldheader}
+																				<span {$SID_orderlinkattrs}>
+											{$label standardsetup SID}
+										</span>
+									{END SID_fieldheader}
+									</th>
+									{END SID_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN PreTimeInMins_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$PreTimeInMins_class}" data-field=PreTimeInMins>
+									{BEGIN PreTimeInMins_fieldheader}
+																				<span {$PreTimeInMins_orderlinkattrs}>
+											{$label standardsetup PreTimeInMins}
+										</span>
+									{END PreTimeInMins_fieldheader}
+									</th>
+									{END PreTimeInMins_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN WorkingDaysInYear_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$WorkingDaysInYear_class}" data-field=WorkingDaysInYear>
+									{BEGIN WorkingDaysInYear_fieldheader}
+																				<span {$WorkingDaysInYear_orderlinkattrs}>
+											{$label standardsetup WorkingDaysInYear}
+										</span>
+									{END WorkingDaysInYear_fieldheader}
+									</th>
+									{END WorkingDaysInYear_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN WorkingDaysInYearDailies_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$WorkingDaysInYearDailies_class}" data-field=WorkingDaysInYearDailies>
+									{BEGIN WorkingDaysInYearDailies_fieldheader}
+																				<span {$WorkingDaysInYearDailies_orderlinkattrs}>
+											{$label standardsetup WorkingDaysInYearDailies}
+										</span>
+									{END WorkingDaysInYearDailies_fieldheader}
+									</th>
+									{END WorkingDaysInYearDailies_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RegOTFactor_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RegOTFactor_class}" data-field=RegOTFactor>
+									{BEGIN RegOTFactor_fieldheader}
+																				<span {$RegOTFactor_orderlinkattrs}>
+											{$label standardsetup RegOTFactor}
+										</span>
+									{END RegOTFactor_fieldheader}
+									</th>
+									{END RegOTFactor_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RHOTFactor_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RHOTFactor_class}" data-field=RHOTFactor>
+									{BEGIN RHOTFactor_fieldheader}
+																				<span {$RHOTFactor_orderlinkattrs}>
+											{$label standardsetup RHOTFactor}
+										</span>
+									{END RHOTFactor_fieldheader}
+									</th>
+									{END RHOTFactor_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SHOTFactor_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SHOTFactor_class}" data-field=SHOTFactor>
+									{BEGIN SHOTFactor_fieldheader}
+																				<span {$SHOTFactor_orderlinkattrs}>
+											{$label standardsetup SHOTFactor}
+										</span>
+									{END SHOTFactor_fieldheader}
+									</th>
+									{END SHOTFactor_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SHOTFactorDaily_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SHOTFactorDaily_class}" data-field=SHOTFactorDaily>
+									{BEGIN SHOTFactorDaily_fieldheader}
+																				<span {$SHOTFactorDaily_orderlinkattrs}>
+											{$label standardsetup SHOTFactorDaily}
+										</span>
+									{END SHOTFactorDaily_fieldheader}
+									</th>
+									{END SHOTFactorDaily_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN CHOTFactor_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$CHOTFactor_class}" data-field=CHOTFactor>
+									{BEGIN CHOTFactor_fieldheader}
+																				<span {$CHOTFactor_orderlinkattrs}>
+											{$label standardsetup CHOTFactor}
+										</span>
+									{END CHOTFactor_fieldheader}
+									</th>
+									{END CHOTFactor_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN CHOTFactorDaily_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$CHOTFactorDaily_class}" data-field=CHOTFactorDaily>
+									{BEGIN CHOTFactorDaily_fieldheader}
+																				<span {$CHOTFactorDaily_orderlinkattrs}>
+											{$label standardsetup CHOTFactorDaily}
+										</span>
+									{END CHOTFactorDaily_fieldheader}
+									</th>
+									{END CHOTFactorDaily_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RDOTFactor_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RDOTFactor_class}" data-field=RDOTFactor>
+									{BEGIN RDOTFactor_fieldheader}
+																				<span {$RDOTFactor_orderlinkattrs}>
+											{$label standardsetup RDOTFactor}
+										</span>
+									{END RDOTFactor_fieldheader}
+									</th>
+									{END RDOTFactor_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RHRDOTFactor_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RHRDOTFactor_class}" data-field=RHRDOTFactor>
+									{BEGIN RHRDOTFactor_fieldheader}
+																				<span {$RHRDOTFactor_orderlinkattrs}>
+											{$label standardsetup RHRDOTFactor}
+										</span>
+									{END RHRDOTFactor_fieldheader}
+									</th>
+									{END RHRDOTFactor_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SHRDOTFactor_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SHRDOTFactor_class}" data-field=SHRDOTFactor>
+									{BEGIN SHRDOTFactor_fieldheader}
+																				<span {$SHRDOTFactor_orderlinkattrs}>
+											{$label standardsetup SHRDOTFactor}
+										</span>
+									{END SHRDOTFactor_fieldheader}
+									</th>
+									{END SHRDOTFactor_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SHRDOTFactorDaily_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SHRDOTFactorDaily_class}" data-field=SHRDOTFactorDaily>
+									{BEGIN SHRDOTFactorDaily_fieldheader}
+																				<span {$SHRDOTFactorDaily_orderlinkattrs}>
+											{$label standardsetup SHRDOTFactorDaily}
+										</span>
+									{END SHRDOTFactorDaily_fieldheader}
+									</th>
+									{END SHRDOTFactorDaily_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN AllowableLeaveFrom_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$AllowableLeaveFrom_class}" data-field=AllowableLeaveFrom>
+									{BEGIN AllowableLeaveFrom_fieldheader}
+																				<span {$AllowableLeaveFrom_orderlinkattrs}>
+											{$label standardsetup AllowableLeaveFrom}
+										</span>
+									{END AllowableLeaveFrom_fieldheader}
+									</th>
+									{END AllowableLeaveFrom_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN AllowableLeaveTo_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$AllowableLeaveTo_class}" data-field=AllowableLeaveTo>
+									{BEGIN AllowableLeaveTo_fieldheader}
+																				<span {$AllowableLeaveTo_orderlinkattrs}>
+											{$label standardsetup AllowableLeaveTo}
+										</span>
+									{END AllowableLeaveTo_fieldheader}
+									</th>
+									{END AllowableLeaveTo_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RHFactor_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RHFactor_class}" data-field=RHFactor>
+									{BEGIN RHFactor_fieldheader}
+																				<span {$RHFactor_orderlinkattrs}>
+											{$label standardsetup RHFactor}
+										</span>
+									{END RHFactor_fieldheader}
+									</th>
+									{END RHFactor_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SHFactor_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SHFactor_class}" data-field=SHFactor>
+									{BEGIN SHFactor_fieldheader}
+																				<span {$SHFactor_orderlinkattrs}>
+											{$label standardsetup SHFactor}
+										</span>
+									{END SHFactor_fieldheader}
+									</th>
+									{END SHFactor_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SHFactorDaily_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SHFactorDaily_class}" data-field=SHFactorDaily>
+									{BEGIN SHFactorDaily_fieldheader}
+																				<span {$SHFactorDaily_orderlinkattrs}>
+											{$label standardsetup SHFactorDaily}
+										</span>
+									{END SHFactorDaily_fieldheader}
+									</th>
+									{END SHFactorDaily_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN CHFactor_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$CHFactor_class}" data-field=CHFactor>
+									{BEGIN CHFactor_fieldheader}
+																				<span {$CHFactor_orderlinkattrs}>
+											{$label standardsetup CHFactor}
+										</span>
+									{END CHFactor_fieldheader}
+									</th>
+									{END CHFactor_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN CHFactorDaily_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$CHFactorDaily_class}" data-field=CHFactorDaily>
+									{BEGIN CHFactorDaily_fieldheader}
+																				<span {$CHFactorDaily_orderlinkattrs}>
+											{$label standardsetup CHFactorDaily}
+										</span>
+									{END CHFactorDaily_fieldheader}
+									</th>
+									{END CHFactorDaily_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN ReqBeforeHoliday_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$ReqBeforeHoliday_class}" data-field=ReqBeforeHoliday>
+									{BEGIN ReqBeforeHoliday_fieldheader}
+																				<span {$ReqBeforeHoliday_orderlinkattrs}>
+											{$label standardsetup ReqBeforeHoliday}
+										</span>
+									{END ReqBeforeHoliday_fieldheader}
+									</th>
+									{END ReqBeforeHoliday_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN NightDiffStartTime_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$NightDiffStartTime_class}" data-field=NightDiffStartTime>
+									{BEGIN NightDiffStartTime_fieldheader}
+																				<span {$NightDiffStartTime_orderlinkattrs}>
+											{$label standardsetup NightDiffStartTime}
+										</span>
+									{END NightDiffStartTime_fieldheader}
+									</th>
+									{END NightDiffStartTime_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN NightDiffEndTime_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$NightDiffEndTime_class}" data-field=NightDiffEndTime>
+									{BEGIN NightDiffEndTime_fieldheader}
+																				<span {$NightDiffEndTime_orderlinkattrs}>
+											{$label standardsetup NightDiffEndTime}
+										</span>
+									{END NightDiffEndTime_fieldheader}
+									</th>
+									{END NightDiffEndTime_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RegNDiffFactor_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RegNDiffFactor_class}" data-field=RegNDiffFactor>
+									{BEGIN RegNDiffFactor_fieldheader}
+																				<span {$RegNDiffFactor_orderlinkattrs}>
+											{$label standardsetup RegNDiffFactor}
+										</span>
+									{END RegNDiffFactor_fieldheader}
+									</th>
+									{END RegNDiffFactor_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RHNDiffFactor_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RHNDiffFactor_class}" data-field=RHNDiffFactor>
+									{BEGIN RHNDiffFactor_fieldheader}
+																				<span {$RHNDiffFactor_orderlinkattrs}>
+											{$label standardsetup RHNDiffFactor}
+										</span>
+									{END RHNDiffFactor_fieldheader}
+									</th>
+									{END RHNDiffFactor_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SHNDiffFactor_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SHNDiffFactor_class}" data-field=SHNDiffFactor>
+									{BEGIN SHNDiffFactor_fieldheader}
+																				<span {$SHNDiffFactor_orderlinkattrs}>
+											{$label standardsetup SHNDiffFactor}
+										</span>
+									{END SHNDiffFactor_fieldheader}
+									</th>
+									{END SHNDiffFactor_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN CHNDiffFactor_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$CHNDiffFactor_class}" data-field=CHNDiffFactor>
+									{BEGIN CHNDiffFactor_fieldheader}
+																				<span {$CHNDiffFactor_orderlinkattrs}>
+											{$label standardsetup CHNDiffFactor}
+										</span>
+									{END CHNDiffFactor_fieldheader}
+									</th>
+									{END CHNDiffFactor_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RDNDiffFactor_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RDNDiffFactor_class}" data-field=RDNDiffFactor>
+									{BEGIN RDNDiffFactor_fieldheader}
+																				<span {$RDNDiffFactor_orderlinkattrs}>
+											{$label standardsetup RDNDiffFactor}
+										</span>
+									{END RDNDiffFactor_fieldheader}
+									</th>
+									{END RDNDiffFactor_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RDFactor_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RDFactor_class}" data-field=RDFactor>
+									{BEGIN RDFactor_fieldheader}
+																				<span {$RDFactor_orderlinkattrs}>
+											{$label standardsetup RDFactor}
+										</span>
+									{END RDFactor_fieldheader}
+									</th>
+									{END RDFactor_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RHRDFactor_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RHRDFactor_class}" data-field=RHRDFactor>
+									{BEGIN RHRDFactor_fieldheader}
+																				<span {$RHRDFactor_orderlinkattrs}>
+											{$label standardsetup RHRDFactor}
+										</span>
+									{END RHRDFactor_fieldheader}
+									</th>
+									{END RHRDFactor_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SHRDFactor_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SHRDFactor_class}" data-field=SHRDFactor>
+									{BEGIN SHRDFactor_fieldheader}
+																				<span {$SHRDFactor_orderlinkattrs}>
+											{$label standardsetup SHRDFactor}
+										</span>
+									{END SHRDFactor_fieldheader}
+									</th>
+									{END SHRDFactor_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SHRDFactorDaily_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SHRDFactorDaily_class}" data-field=SHRDFactorDaily>
+									{BEGIN SHRDFactorDaily_fieldheader}
+																				<span {$SHRDFactorDaily_orderlinkattrs}>
+											{$label standardsetup SHRDFactorDaily}
+										</span>
+									{END SHRDFactorDaily_fieldheader}
+									</th>
+									{END SHRDFactorDaily_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN endrecordheader_block}
+									<th class="rnr-cs">&nbsp;</th>
+									
+									{END endrecordheader_block}
+									
+									{END record_header}
+									
+								</tr>
+								{END grid_header}
+
+	</thead>
+	<tbody>	
+		{BEGIN grid_row}
+<tr class="{$rowclass} bs-gridrow" {$rowattrs} {$rowstyle}>
+	{BEGIN grid_record}
+	{BEGIN listIcons_column}
+	<td class="bs-gridicons" iEditCont="all" {$rowstyle} {$recordattrs}>
+		{BEGIN edit_column}
+	{BEGIN edit_link}
+			<a class="glyphicon glyphicon-pencil" {$editlink_attrs} title="Edit"></a>
+	{END edit_link}
+	{END edit_column}
+
+		{BEGIN inlineedit_column}
+	{BEGIN inlineedit_link}
+			<a class="glyphicon glyphicon-edit" {$inlineeditlink_attrs} title="Inline Edit"></a>
+	{END inlineedit_link}
+	{END inlineedit_column}
+	
+	<span data-hidden {$ieditbuttonsholder_attrs}></span>
+
+	
+		{BEGIN view_column}
+	{BEGIN view_link}
+			<a class="glyphicon glyphicon-search" {$viewlink_attrs} title="View"></a>
+	{END view_link}
+	{END view_column}
+	</td>	
+	{END listIcons_column}	
+
+		{BEGIN checkbox_column}
+	<td  iEditCont="checkBox" class="bs-gridcheckbox" {$rowstyle} {$recordattrs}>
+	{BEGIN checkbox}
+	<input type="checkbox" {$checkbox_attrs}>
+	{END checkbox}
+	</td>
+	{END checkbox_column}
+
+	
+
+	{BEGIN SID_fieldcolumn}
+	<td class="bs-gridcell {$SID_class}"  data-field=SID {$rowstyle} {$recordattrs}>
+		{$SID_value}
+	</td>
+{END SID_fieldcolumn}
+
+
+	{BEGIN PreTimeInMins_fieldcolumn}
+	<td class="bs-gridcell {$PreTimeInMins_class}"  data-field=PreTimeInMins {$rowstyle} {$recordattrs}>
+		{$PreTimeInMins_value}
+	</td>
+{END PreTimeInMins_fieldcolumn}
+
+
+	{BEGIN WorkingDaysInYear_fieldcolumn}
+	<td class="bs-gridcell {$WorkingDaysInYear_class}"  data-field=WorkingDaysInYear {$rowstyle} {$recordattrs}>
+		{$WorkingDaysInYear_value}
+	</td>
+{END WorkingDaysInYear_fieldcolumn}
+
+
+	{BEGIN WorkingDaysInYearDailies_fieldcolumn}
+	<td class="bs-gridcell {$WorkingDaysInYearDailies_class}"  data-field=WorkingDaysInYearDailies {$rowstyle} {$recordattrs}>
+		{$WorkingDaysInYearDailies_value}
+	</td>
+{END WorkingDaysInYearDailies_fieldcolumn}
+
+
+	{BEGIN RegOTFactor_fieldcolumn}
+	<td class="bs-gridcell {$RegOTFactor_class}"  data-field=RegOTFactor {$rowstyle} {$recordattrs}>
+		{$RegOTFactor_value}
+	</td>
+{END RegOTFactor_fieldcolumn}
+
+
+	{BEGIN RHOTFactor_fieldcolumn}
+	<td class="bs-gridcell {$RHOTFactor_class}"  data-field=RHOTFactor {$rowstyle} {$recordattrs}>
+		{$RHOTFactor_value}
+	</td>
+{END RHOTFactor_fieldcolumn}
+
+
+	{BEGIN SHOTFactor_fieldcolumn}
+	<td class="bs-gridcell {$SHOTFactor_class}"  data-field=SHOTFactor {$rowstyle} {$recordattrs}>
+		{$SHOTFactor_value}
+	</td>
+{END SHOTFactor_fieldcolumn}
+
+
+	{BEGIN SHOTFactorDaily_fieldcolumn}
+	<td class="bs-gridcell {$SHOTFactorDaily_class}"  data-field=SHOTFactorDaily {$rowstyle} {$recordattrs}>
+		{$SHOTFactorDaily_value}
+	</td>
+{END SHOTFactorDaily_fieldcolumn}
+
+
+	{BEGIN CHOTFactor_fieldcolumn}
+	<td class="bs-gridcell {$CHOTFactor_class}"  data-field=CHOTFactor {$rowstyle} {$recordattrs}>
+		{$CHOTFactor_value}
+	</td>
+{END CHOTFactor_fieldcolumn}
+
+
+	{BEGIN CHOTFactorDaily_fieldcolumn}
+	<td class="bs-gridcell {$CHOTFactorDaily_class}"  data-field=CHOTFactorDaily {$rowstyle} {$recordattrs}>
+		{$CHOTFactorDaily_value}
+	</td>
+{END CHOTFactorDaily_fieldcolumn}
+
+
+	{BEGIN RDOTFactor_fieldcolumn}
+	<td class="bs-gridcell {$RDOTFactor_class}"  data-field=RDOTFactor {$rowstyle} {$recordattrs}>
+		{$RDOTFactor_value}
+	</td>
+{END RDOTFactor_fieldcolumn}
+
+
+	{BEGIN RHRDOTFactor_fieldcolumn}
+	<td class="bs-gridcell {$RHRDOTFactor_class}"  data-field=RHRDOTFactor {$rowstyle} {$recordattrs}>
+		{$RHRDOTFactor_value}
+	</td>
+{END RHRDOTFactor_fieldcolumn}
+
+
+	{BEGIN SHRDOTFactor_fieldcolumn}
+	<td class="bs-gridcell {$SHRDOTFactor_class}"  data-field=SHRDOTFactor {$rowstyle} {$recordattrs}>
+		{$SHRDOTFactor_value}
+	</td>
+{END SHRDOTFactor_fieldcolumn}
+
+
+	{BEGIN SHRDOTFactorDaily_fieldcolumn}
+	<td class="bs-gridcell {$SHRDOTFactorDaily_class}"  data-field=SHRDOTFactorDaily {$rowstyle} {$recordattrs}>
+		{$SHRDOTFactorDaily_value}
+	</td>
+{END SHRDOTFactorDaily_fieldcolumn}
+
+
+	{BEGIN AllowableLeaveFrom_fieldcolumn}
+	<td class="bs-gridcell {$AllowableLeaveFrom_class}"  data-field=AllowableLeaveFrom {$rowstyle} {$recordattrs}>
+		{$AllowableLeaveFrom_value}
+	</td>
+{END AllowableLeaveFrom_fieldcolumn}
+
+
+	{BEGIN AllowableLeaveTo_fieldcolumn}
+	<td class="bs-gridcell {$AllowableLeaveTo_class}"  data-field=AllowableLeaveTo {$rowstyle} {$recordattrs}>
+		{$AllowableLeaveTo_value}
+	</td>
+{END AllowableLeaveTo_fieldcolumn}
+
+
+	{BEGIN RHFactor_fieldcolumn}
+	<td class="bs-gridcell {$RHFactor_class}"  data-field=RHFactor {$rowstyle} {$recordattrs}>
+		{$RHFactor_value}
+	</td>
+{END RHFactor_fieldcolumn}
+
+
+	{BEGIN SHFactor_fieldcolumn}
+	<td class="bs-gridcell {$SHFactor_class}"  data-field=SHFactor {$rowstyle} {$recordattrs}>
+		{$SHFactor_value}
+	</td>
+{END SHFactor_fieldcolumn}
+
+
+	{BEGIN SHFactorDaily_fieldcolumn}
+	<td class="bs-gridcell {$SHFactorDaily_class}"  data-field=SHFactorDaily {$rowstyle} {$recordattrs}>
+		{$SHFactorDaily_value}
+	</td>
+{END SHFactorDaily_fieldcolumn}
+
+
+	{BEGIN CHFactor_fieldcolumn}
+	<td class="bs-gridcell {$CHFactor_class}"  data-field=CHFactor {$rowstyle} {$recordattrs}>
+		{$CHFactor_value}
+	</td>
+{END CHFactor_fieldcolumn}
+
+
+	{BEGIN CHFactorDaily_fieldcolumn}
+	<td class="bs-gridcell {$CHFactorDaily_class}"  data-field=CHFactorDaily {$rowstyle} {$recordattrs}>
+		{$CHFactorDaily_value}
+	</td>
+{END CHFactorDaily_fieldcolumn}
+
+
+	{BEGIN ReqBeforeHoliday_fieldcolumn}
+	<td class="bs-gridcell {$ReqBeforeHoliday_class}"  data-field=ReqBeforeHoliday {$rowstyle} {$recordattrs}>
+		{$ReqBeforeHoliday_value}
+	</td>
+{END ReqBeforeHoliday_fieldcolumn}
+
+
+	{BEGIN NightDiffStartTime_fieldcolumn}
+	<td class="bs-gridcell {$NightDiffStartTime_class}"  data-field=NightDiffStartTime {$rowstyle} {$recordattrs}>
+		{$NightDiffStartTime_value}
+	</td>
+{END NightDiffStartTime_fieldcolumn}
+
+
+	{BEGIN NightDiffEndTime_fieldcolumn}
+	<td class="bs-gridcell {$NightDiffEndTime_class}"  data-field=NightDiffEndTime {$rowstyle} {$recordattrs}>
+		{$NightDiffEndTime_value}
+	</td>
+{END NightDiffEndTime_fieldcolumn}
+
+
+	{BEGIN RegNDiffFactor_fieldcolumn}
+	<td class="bs-gridcell {$RegNDiffFactor_class}"  data-field=RegNDiffFactor {$rowstyle} {$recordattrs}>
+		{$RegNDiffFactor_value}
+	</td>
+{END RegNDiffFactor_fieldcolumn}
+
+
+	{BEGIN RHNDiffFactor_fieldcolumn}
+	<td class="bs-gridcell {$RHNDiffFactor_class}"  data-field=RHNDiffFactor {$rowstyle} {$recordattrs}>
+		{$RHNDiffFactor_value}
+	</td>
+{END RHNDiffFactor_fieldcolumn}
+
+
+	{BEGIN SHNDiffFactor_fieldcolumn}
+	<td class="bs-gridcell {$SHNDiffFactor_class}"  data-field=SHNDiffFactor {$rowstyle} {$recordattrs}>
+		{$SHNDiffFactor_value}
+	</td>
+{END SHNDiffFactor_fieldcolumn}
+
+
+	{BEGIN CHNDiffFactor_fieldcolumn}
+	<td class="bs-gridcell {$CHNDiffFactor_class}"  data-field=CHNDiffFactor {$rowstyle} {$recordattrs}>
+		{$CHNDiffFactor_value}
+	</td>
+{END CHNDiffFactor_fieldcolumn}
+
+
+	{BEGIN RDNDiffFactor_fieldcolumn}
+	<td class="bs-gridcell {$RDNDiffFactor_class}"  data-field=RDNDiffFactor {$rowstyle} {$recordattrs}>
+		{$RDNDiffFactor_value}
+	</td>
+{END RDNDiffFactor_fieldcolumn}
+
+
+	{BEGIN RDFactor_fieldcolumn}
+	<td class="bs-gridcell {$RDFactor_class}"  data-field=RDFactor {$rowstyle} {$recordattrs}>
+		{$RDFactor_value}
+	</td>
+{END RDFactor_fieldcolumn}
+
+
+	{BEGIN RHRDFactor_fieldcolumn}
+	<td class="bs-gridcell {$RHRDFactor_class}"  data-field=RHRDFactor {$rowstyle} {$recordattrs}>
+		{$RHRDFactor_value}
+	</td>
+{END RHRDFactor_fieldcolumn}
+
+
+	{BEGIN SHRDFactor_fieldcolumn}
+	<td class="bs-gridcell {$SHRDFactor_class}"  data-field=SHRDFactor {$rowstyle} {$recordattrs}>
+		{$SHRDFactor_value}
+	</td>
+{END SHRDFactor_fieldcolumn}
+
+
+	{BEGIN SHRDFactorDaily_fieldcolumn}
+	<td class="bs-gridcell {$SHRDFactorDaily_class}"  data-field=SHRDFactorDaily {$rowstyle} {$recordattrs}>
+		{$SHRDFactorDaily_value}
+	</td>
+{END SHRDFactorDaily_fieldcolumn}
+
+	{BEGIN endrecord_block}
+	<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+	{END endrecord_block}
+									
+	{END grid_record}
+
+</tr>
+{END grid_row}
+	</tbody>
+	<tfoot>
+										
+	</tfoot>
+</table>
+
+
+
+{END grid_block}
+
+
+
+</div>
+{END container_grid}
+
+
+
+
+
+
+</div>
+{END container_center}
+
+
+
+{BEGIN container_pagination}
+<div {$pagination_chiddenattr} data-pageid="{$pageid}" data-container="pagination" class="  text-center col-md-12 "> 
+
+{BEGIN pagination_block}
+<div {$pagination_hiddenattr} data-pageid="{$pageid}" data-brick="pagination">
+{$pagination}
+</div>
+{END pagination_block}
+
+
+
+</div>
+{END container_pagination}
+
+
+		</div>
+	</div>
+</div>
+	
+
+		{$footer}
+	{END body}
+	</body>
+</html>

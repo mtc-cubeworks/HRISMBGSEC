@@ -1,0 +1,375 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_editpage}
+<div {$editpage_chiddenattr} data-pageid="{$pageid}" data-container="editpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-9 col-md-offset-3"> 
+
+{BEGIN editheader}
+	<h2 {$editheader_hiddenattr} data-pageid="{$pageid}" data-brick="editheader" >{$pagetitlelabel loans edit}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END editheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+
+
+{BEGIN container_message}
+<div {$message_chiddenattr} data-pageid="{$pageid}" data-container="message" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN message_block}
+<div {$message_hiddenattr} data-pageid="{$pageid}" data-brick="message" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		<button class="btn btn-sm btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>View</button>
+{END view_page_button}
+</div>
+</div>
+
+{END message_block}
+
+
+
+</div>
+{END container_message}
+
+
+
+
+
+
+
+</div>
+{END container_editpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$editfields_hiddenattr} data-pageid="{$pageid}" data-brick="editfields" class="form-horizontal" role="form">
+
+
+
+		<div class="bs-details">
+		{BEGIN mastertable_block}
+<div class="panel panel-info table-panel">
+	<div class="panel-heading">
+	{$master_heading}
+	</div>
+	<div class="panel-body">
+{$showmasterfile}
+	</div>
+</div>
+{END mastertable_block}
+	</div>
+			{BEGIN EmployeeID_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_EmployeeID}" data-fieldname="EmployeeID" data-signal-error-for="EmployeeID{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_EmployeeID}">
+		{BEGIN EmployeeID_label}{$label loans EmployeeID}{END EmployeeID_label}
+	</label>
+	<div class="col-md-6" >
+		{$EmployeeID_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="EmployeeID">
+		<div class="text-muted" >
+		{$tooltip loans EmployeeID}
+		</div>
+	</div>
+</div>
+</div>
+{END EmployeeID_fieldblock}
+
+			{BEGIN Principal_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Principal}" data-fieldname="Principal" data-signal-error-for="Principal{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Principal}">
+		{BEGIN Principal_label}{$label loans Principal}{END Principal_label}
+	</label>
+	<div class="col-md-6" >
+		{$Principal_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Principal">
+		<div class="text-muted" >
+		{$tooltip loans Principal}
+		</div>
+	</div>
+</div>
+</div>
+{END Principal_fieldblock}
+
+			{BEGIN MonthlyAmortization_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_MonthlyAmortization}" data-fieldname="MonthlyAmortization" data-signal-error-for="MonthlyAmortization{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_MonthlyAmortization}">
+		{BEGIN MonthlyAmortization_label}{$label loans MonthlyAmortization}{END MonthlyAmortization_label}
+	</label>
+	<div class="col-md-6" >
+		{$MonthlyAmortization_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="MonthlyAmortization">
+		<div class="text-muted" >
+		{$tooltip loans MonthlyAmortization}
+		</div>
+	</div>
+</div>
+</div>
+{END MonthlyAmortization_fieldblock}
+
+			{BEGIN StartDate_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_StartDate}" data-fieldname="StartDate" data-signal-error-for="StartDate{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_StartDate}">
+		{BEGIN StartDate_label}{$label loans StartDate}{END StartDate_label}
+	</label>
+	<div class="col-md-6" >
+		{$StartDate_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="StartDate">
+		<div class="text-muted" >
+		{$tooltip loans StartDate}
+		</div>
+	</div>
+</div>
+</div>
+{END StartDate_fieldblock}
+
+			{BEGIN LoanDescription_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_LoanDescription}" data-fieldname="LoanDescription" data-signal-error-for="LoanDescription{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_LoanDescription}">
+		{BEGIN LoanDescription_label}{$label loans LoanDescription}{END LoanDescription_label}
+	</label>
+	<div class="col-md-6" >
+		{$LoanDescription_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="LoanDescription">
+		<div class="text-muted" >
+		{$tooltip loans LoanDescription}
+		</div>
+	</div>
+</div>
+</div>
+{END LoanDescription_fieldblock}
+
+			{BEGIN PerPayrollAmount_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_PerPayrollAmount}" data-fieldname="PerPayrollAmount" data-signal-error-for="PerPayrollAmount{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_PerPayrollAmount}">
+		{BEGIN PerPayrollAmount_label}{$label loans PerPayrollAmount}{END PerPayrollAmount_label}
+	</label>
+	<div class="col-md-6" >
+		{$PerPayrollAmount_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="PerPayrollAmount">
+		<div class="text-muted" >
+		{$tooltip loans PerPayrollAmount}
+		</div>
+	</div>
+</div>
+</div>
+{END PerPayrollAmount_fieldblock}
+
+			{BEGIN PaymentPeriod_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_PaymentPeriod}" data-fieldname="PaymentPeriod" data-signal-error-for="PaymentPeriod{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_PaymentPeriod}">
+		{BEGIN PaymentPeriod_label}{$label loans PaymentPeriod}{END PaymentPeriod_label}
+	</label>
+	<div class="col-md-6" >
+		{$PaymentPeriod_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="PaymentPeriod">
+		<div class="text-muted" >
+		{$tooltip loans PaymentPeriod}
+		</div>
+	</div>
+</div>
+</div>
+{END PaymentPeriod_fieldblock}
+
+			{BEGIN Inactive_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Inactive}" data-fieldname="Inactive" data-signal-error-for="Inactive{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Inactive}">
+		{BEGIN Inactive_label}{$label loans Inactive}{END Inactive_label}
+	</label>
+	<div class="col-md-6" >
+		{$Inactive_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Inactive">
+		<div class="text-muted" >
+		{$tooltip loans Inactive}
+		</div>
+	</div>
+</div>
+</div>
+{END Inactive_fieldblock}
+
+
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_buttons}
+<div {$buttons_chiddenattr} data-pageid="{$pageid}" data-container="buttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-3 col-md-offset-3"> 
+
+{BEGIN editbuttons}
+	{BEGIN save_button}
+	<button class="btn btn-primary" {$savebutton_attrs}>Save</button>
+	{END save_button}
+	{BEGIN updsel_button}
+	<button class="btn btn-primary" {$updselbutton_attrs}>{$update_selected}</button>
+	{END updsel_button}
+	{BEGIN back_button}
+		<button class="btn btn-default" {$backbutton_attrs}>Back to list</button>
+	{END back_button}
+	{BEGIN close_button}
+	<a href="#" class="btn btn-default" {$closebutton_attrs}>Cancel</a>
+	{END close_button}
+
+{END editbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+
+
+{BEGIN container_leftbuttons_1}
+<div {$leftbuttons_1_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons_1" class="  text-right col-md-3 "> 
+
+{BEGIN righteditbuttons}
+<div class="btn-group" role="group">
+
+	{BEGIN prev_button}
+	<button class="btn btn-default {$prevbutton_class}" {$prevbutton_attrs}><span class="glyphicon glyphicon-chevron-left"></span></button>
+	{END prev_button}
+	{BEGIN next_button}
+	<button class="btn btn-default  {$nextbutton_class}" {$nextbutton_attrs}><span class="glyphicon glyphicon-chevron-right"></span></button>
+	{END next_button}
+	<div class="btn-group dropup" role="group">
+		<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+		<ul class="dropdown-menu dropdown-left">
+			{BEGIN reset_button}
+				<li><a href="#" {$resetbutton_attrs}>Reset</a></li>
+			{END reset_button}
+			{BEGIN view_page_button}
+				<li><a href="#" {$view_page_button_attrs}>View</a></li>
+			{END view_page_button}
+		</ul>
+	</div>
+</div>
+{END righteditbuttons}
+
+
+
+</div>
+{END container_leftbuttons_1}
+
+
+
+
+
+
+</div>
+{END container_buttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

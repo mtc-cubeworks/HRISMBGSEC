@@ -1,0 +1,559 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_editpage}
+<div {$editpage_chiddenattr} data-pageid="{$pageid}" data-container="editpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-9 col-md-offset-3"> 
+
+{BEGIN addheader}
+	<h2 {$addheader_hiddenattr} data-pageid="{$pageid}" data-brick="addheader" >{$pagetitlelabel monthlyremittax add}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END addheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+
+
+{BEGIN container_message}
+<div {$message_chiddenattr} data-pageid="{$pageid}" data-container="message" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN message_block}
+<div {$message_hiddenattr} data-pageid="{$pageid}" data-brick="message" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		<button class="btn btn-sm btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>View</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>Edit</button>
+{END edit_page_button}
+</div>
+</div>
+
+{END message_block}
+
+
+
+</div>
+{END container_message}
+
+
+
+
+
+
+
+</div>
+{END container_editpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$addfields_hiddenattr} data-pageid="{$pageid}" data-brick="addfields" class="form-horizontal" role="form">
+			{BEGIN Month_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Month}" data-fieldname="Month" data-signal-error-for="Month{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Month}">
+		{BEGIN Month_label}{$label monthlyremittax Month}{END Month_label}
+	</label>
+	<div class="col-md-6" >
+		{$Month_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Month">
+		<div class="text-muted" >
+		{$tooltip monthlyremittax Month}
+		</div>
+	</div>
+</div>
+</div>
+{END Month_fieldblock}
+
+			{BEGIN Year_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Year}" data-fieldname="Year" data-signal-error-for="Year{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Year}">
+		{BEGIN Year_label}{$label monthlyremittax Year}{END Year_label}
+	</label>
+	<div class="col-md-6" >
+		{$Year_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Year">
+		<div class="text-muted" >
+		{$tooltip monthlyremittax Year}
+		</div>
+	</div>
+</div>
+</div>
+{END Year_fieldblock}
+
+			{BEGIN AmendedReturn_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_AmendedReturn}" data-fieldname="AmendedReturn" data-signal-error-for="AmendedReturn{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_AmendedReturn}">
+		{BEGIN AmendedReturn_label}{$label monthlyremittax AmendedReturn}{END AmendedReturn_label}
+	</label>
+	<div class="col-md-6" >
+		{$AmendedReturn_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="AmendedReturn">
+		<div class="text-muted" >
+		{$tooltip monthlyremittax AmendedReturn}
+		</div>
+	</div>
+</div>
+</div>
+{END AmendedReturn_fieldblock}
+
+			{BEGIN AnyTaxWithheld_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_AnyTaxWithheld}" data-fieldname="AnyTaxWithheld" data-signal-error-for="AnyTaxWithheld{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_AnyTaxWithheld}">
+		{BEGIN AnyTaxWithheld_label}{$label monthlyremittax AnyTaxWithheld}{END AnyTaxWithheld_label}
+	</label>
+	<div class="col-md-6" >
+		{$AnyTaxWithheld_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="AnyTaxWithheld">
+		<div class="text-muted" >
+		{$tooltip monthlyremittax AnyTaxWithheld}
+		</div>
+	</div>
+</div>
+</div>
+{END AnyTaxWithheld_fieldblock}
+
+			{BEGIN EmployerID_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_EmployerID}" data-fieldname="EmployerID" data-signal-error-for="EmployerID{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_EmployerID}">
+		{BEGIN EmployerID_label}{$label monthlyremittax EmployerID}{END EmployerID_label}
+	</label>
+	<div class="col-md-6" >
+		{$EmployerID_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="EmployerID">
+		<div class="text-muted" >
+		{$tooltip monthlyremittax EmployerID}
+		</div>
+	</div>
+</div>
+</div>
+{END EmployerID_fieldblock}
+
+			{BEGIN TIN_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_TIN}" data-fieldname="TIN" data-signal-error-for="TIN{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_TIN}">
+		{BEGIN TIN_label}{$label monthlyremittax TIN}{END TIN_label}
+	</label>
+	<div class="col-md-6" >
+		{$TIN_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="TIN">
+		<div class="text-muted" >
+		{$tooltip monthlyremittax TIN}
+		</div>
+	</div>
+</div>
+</div>
+{END TIN_fieldblock}
+
+			{BEGIN TelNo_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_TelNo}" data-fieldname="TelNo" data-signal-error-for="TelNo{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_TelNo}">
+		{BEGIN TelNo_label}{$label monthlyremittax TelNo}{END TelNo_label}
+	</label>
+	<div class="col-md-6" >
+		{$TelNo_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="TelNo">
+		<div class="text-muted" >
+		{$tooltip monthlyremittax TelNo}
+		</div>
+	</div>
+</div>
+</div>
+{END TelNo_fieldblock}
+
+			{BEGIN Address_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Address}" data-fieldname="Address" data-signal-error-for="Address{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Address}">
+		{BEGIN Address_label}{$label monthlyremittax Address}{END Address_label}
+	</label>
+	<div class="col-md-6" >
+		{$Address_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Address">
+		<div class="text-muted" >
+		{$tooltip monthlyremittax Address}
+		</div>
+	</div>
+</div>
+</div>
+{END Address_fieldblock}
+
+			{BEGIN ZipCode_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_ZipCode}" data-fieldname="ZipCode" data-signal-error-for="ZipCode{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_ZipCode}">
+		{BEGIN ZipCode_label}{$label monthlyremittax ZipCode}{END ZipCode_label}
+	</label>
+	<div class="col-md-6" >
+		{$ZipCode_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="ZipCode">
+		<div class="text-muted" >
+		{$tooltip monthlyremittax ZipCode}
+		</div>
+	</div>
+</div>
+</div>
+{END ZipCode_fieldblock}
+
+			{BEGIN RDOCode_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_RDOCode}" data-fieldname="RDOCode" data-signal-error-for="RDOCode{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_RDOCode}">
+		{BEGIN RDOCode_label}{$label monthlyremittax RDOCode}{END RDOCode_label}
+	</label>
+	<div class="col-md-6" >
+		{$RDOCode_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="RDOCode">
+		<div class="text-muted" >
+		{$tooltip monthlyremittax RDOCode}
+		</div>
+	</div>
+</div>
+</div>
+{END RDOCode_fieldblock}
+
+			{BEGIN CategoryWithholdingAgent_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_CategoryWithholdingAgent}" data-fieldname="CategoryWithholdingAgent" data-signal-error-for="CategoryWithholdingAgent{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_CategoryWithholdingAgent}">
+		{BEGIN CategoryWithholdingAgent_label}{$label monthlyremittax CategoryWithholdingAgent}{END CategoryWithholdingAgent_label}
+	</label>
+	<div class="col-md-6" >
+		{$CategoryWithholdingAgent_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="CategoryWithholdingAgent">
+		<div class="text-muted" >
+		{$tooltip monthlyremittax CategoryWithholdingAgent}
+		</div>
+	</div>
+</div>
+</div>
+{END CategoryWithholdingAgent_fieldblock}
+
+			{BEGIN AwaitingTaxRelief_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_AwaitingTaxRelief}" data-fieldname="AwaitingTaxRelief" data-signal-error-for="AwaitingTaxRelief{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_AwaitingTaxRelief}">
+		{BEGIN AwaitingTaxRelief_label}{$label monthlyremittax AwaitingTaxRelief}{END AwaitingTaxRelief_label}
+	</label>
+	<div class="col-md-6" >
+		{$AwaitingTaxRelief_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="AwaitingTaxRelief">
+		<div class="text-muted" >
+		{$tooltip monthlyremittax AwaitingTaxRelief}
+		</div>
+	</div>
+</div>
+</div>
+{END AwaitingTaxRelief_fieldblock}
+
+			{BEGIN TotalAmountOfCompensation_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_TotalAmountOfCompensation}" data-fieldname="TotalAmountOfCompensation" data-signal-error-for="TotalAmountOfCompensation{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_TotalAmountOfCompensation}">
+		{BEGIN TotalAmountOfCompensation_label}{$label monthlyremittax TotalAmountOfCompensation}{END TotalAmountOfCompensation_label}
+	</label>
+	<div class="col-md-6" >
+		{$TotalAmountOfCompensation_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="TotalAmountOfCompensation">
+		<div class="text-muted" >
+		{$tooltip monthlyremittax TotalAmountOfCompensation}
+		</div>
+	</div>
+</div>
+</div>
+{END TotalAmountOfCompensation_fieldblock}
+
+			{BEGIN StatutoryMinimumWage_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_StatutoryMinimumWage}" data-fieldname="StatutoryMinimumWage" data-signal-error-for="StatutoryMinimumWage{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_StatutoryMinimumWage}">
+		{BEGIN StatutoryMinimumWage_label}{$label monthlyremittax StatutoryMinimumWage}{END StatutoryMinimumWage_label}
+	</label>
+	<div class="col-md-6" >
+		{$StatutoryMinimumWage_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="StatutoryMinimumWage">
+		<div class="text-muted" >
+		{$tooltip monthlyremittax StatutoryMinimumWage}
+		</div>
+	</div>
+</div>
+</div>
+{END StatutoryMinimumWage_fieldblock}
+
+			{BEGIN OtherNonTaxableCompensation_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_OtherNonTaxableCompensation}" data-fieldname="OtherNonTaxableCompensation" data-signal-error-for="OtherNonTaxableCompensation{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_OtherNonTaxableCompensation}">
+		{BEGIN OtherNonTaxableCompensation_label}{$label monthlyremittax OtherNonTaxableCompensation}{END OtherNonTaxableCompensation_label}
+	</label>
+	<div class="col-md-6" >
+		{$OtherNonTaxableCompensation_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="OtherNonTaxableCompensation">
+		<div class="text-muted" >
+		{$tooltip monthlyremittax OtherNonTaxableCompensation}
+		</div>
+	</div>
+</div>
+</div>
+{END OtherNonTaxableCompensation_fieldblock}
+
+			{BEGIN TaxableCompensation_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_TaxableCompensation}" data-fieldname="TaxableCompensation" data-signal-error-for="TaxableCompensation{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_TaxableCompensation}">
+		{BEGIN TaxableCompensation_label}{$label monthlyremittax TaxableCompensation}{END TaxableCompensation_label}
+	</label>
+	<div class="col-md-6" >
+		{$TaxableCompensation_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="TaxableCompensation">
+		<div class="text-muted" >
+		{$tooltip monthlyremittax TaxableCompensation}
+		</div>
+	</div>
+</div>
+</div>
+{END TaxableCompensation_fieldblock}
+
+			{BEGIN TaxRequiredToBeWithheld_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_TaxRequiredToBeWithheld}" data-fieldname="TaxRequiredToBeWithheld" data-signal-error-for="TaxRequiredToBeWithheld{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_TaxRequiredToBeWithheld}">
+		{BEGIN TaxRequiredToBeWithheld_label}{$label monthlyremittax TaxRequiredToBeWithheld}{END TaxRequiredToBeWithheld_label}
+	</label>
+	<div class="col-md-6" >
+		{$TaxRequiredToBeWithheld_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="TaxRequiredToBeWithheld">
+		<div class="text-muted" >
+		{$tooltip monthlyremittax TaxRequiredToBeWithheld}
+		</div>
+	</div>
+</div>
+</div>
+{END TaxRequiredToBeWithheld_fieldblock}
+
+			{BEGIN TaxRefund_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_TaxRefund}" data-fieldname="TaxRefund" data-signal-error-for="TaxRefund{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_TaxRefund}">
+		{BEGIN TaxRefund_label}{$label monthlyremittax TaxRefund}{END TaxRefund_label}
+	</label>
+	<div class="col-md-6" >
+		{$TaxRefund_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="TaxRefund">
+		<div class="text-muted" >
+		{$tooltip monthlyremittax TaxRefund}
+		</div>
+	</div>
+</div>
+</div>
+{END TaxRefund_fieldblock}
+
+			{BEGIN TaxRequiredForRemittance_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_TaxRequiredForRemittance}" data-fieldname="TaxRequiredForRemittance" data-signal-error-for="TaxRequiredForRemittance{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_TaxRequiredForRemittance}">
+		{BEGIN TaxRequiredForRemittance_label}{$label monthlyremittax TaxRequiredForRemittance}{END TaxRequiredForRemittance_label}
+	</label>
+	<div class="col-md-6" >
+		{$TaxRequiredForRemittance_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="TaxRequiredForRemittance">
+		<div class="text-muted" >
+		{$tooltip monthlyremittax TaxRequiredForRemittance}
+		</div>
+	</div>
+</div>
+</div>
+{END TaxRequiredForRemittance_fieldblock}
+
+			{BEGIN TotalAmountStillDue_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_TotalAmountStillDue}" data-fieldname="TotalAmountStillDue" data-signal-error-for="TotalAmountStillDue{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_TotalAmountStillDue}">
+		{BEGIN TotalAmountStillDue_label}{$label monthlyremittax TotalAmountStillDue}{END TotalAmountStillDue_label}
+	</label>
+	<div class="col-md-6" >
+		{$TotalAmountStillDue_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="TotalAmountStillDue">
+		<div class="text-muted" >
+		{$tooltip monthlyremittax TotalAmountStillDue}
+		</div>
+	</div>
+</div>
+</div>
+{END TotalAmountStillDue_fieldblock}
+
+			{BEGIN AuthorizedRepresentative_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_AuthorizedRepresentative}" data-fieldname="AuthorizedRepresentative" data-signal-error-for="AuthorizedRepresentative{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_AuthorizedRepresentative}">
+		{BEGIN AuthorizedRepresentative_label}{$label monthlyremittax AuthorizedRepresentative}{END AuthorizedRepresentative_label}
+	</label>
+	<div class="col-md-6" >
+		{$AuthorizedRepresentative_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="AuthorizedRepresentative">
+		<div class="text-muted" >
+		{$tooltip monthlyremittax AuthorizedRepresentative}
+		</div>
+	</div>
+</div>
+</div>
+{END AuthorizedRepresentative_fieldblock}
+
+
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_buttons}
+<div {$buttons_chiddenattr} data-pageid="{$pageid}" data-container="buttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-3 col-md-offset-3"> 
+
+{BEGIN addbuttons}
+	{BEGIN save_button}
+	<button class="btn btn-primary" {$savebutton_attrs}>Save</button>
+	{END save_button}
+	{BEGIN reset_button}
+	<button class="btn btn-default" id="resetButton{$id}">Reset</button>
+	{END reset_button}
+	{BEGIN back_button}
+		<button class="btn btn-default" id="backButton{$id}">Back to list</button>
+	{END back_button}
+	{BEGIN cancel_button}
+	<a href="#" class="btn btn-default" id="cancelButton{$id}">Cancel</a>
+	{END cancel_button}
+
+{END addbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+</div>
+{END container_buttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

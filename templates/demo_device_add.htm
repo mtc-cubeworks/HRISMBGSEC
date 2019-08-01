@@ -1,0 +1,271 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_editpage}
+<div {$editpage_chiddenattr} data-pageid="{$pageid}" data-container="editpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-9 col-md-offset-3"> 
+
+{BEGIN addheader}
+	<h2 {$addheader_hiddenattr} data-pageid="{$pageid}" data-brick="addheader" >{$pagetitlelabel demo_device add}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END addheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+
+
+{BEGIN container_message}
+<div {$message_chiddenattr} data-pageid="{$pageid}" data-container="message" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN message_block}
+<div {$message_hiddenattr} data-pageid="{$pageid}" data-brick="message" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		<button class="btn btn-sm btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>View</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>Edit</button>
+{END edit_page_button}
+</div>
+</div>
+
+{END message_block}
+
+
+
+</div>
+{END container_message}
+
+
+
+
+
+
+
+</div>
+{END container_editpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$addfields_hiddenattr} data-pageid="{$pageid}" data-brick="addfields" class="form-horizontal" role="form">
+			{BEGIN device_name_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_device_name}" data-fieldname="device_name" data-signal-error-for="device_name{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_device_name}">
+		{BEGIN device_name_label}{$label demo_device device_name}{END device_name_label}
+	</label>
+	<div class="col-md-6" >
+		{$device_name_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="device_name">
+		<div class="text-muted" >
+		{$tooltip demo_device device_name}
+		</div>
+	</div>
+</div>
+</div>
+{END device_name_fieldblock}
+
+			{BEGIN sn_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_sn}" data-fieldname="sn" data-signal-error-for="sn{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_sn}">
+		{BEGIN sn_label}{$label demo_device sn}{END sn_label}
+	</label>
+	<div class="col-md-6" >
+		{$sn_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="sn">
+		<div class="text-muted" >
+		{$tooltip demo_device sn}
+		</div>
+	</div>
+</div>
+</div>
+{END sn_fieldblock}
+
+			{BEGIN vc_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_vc}" data-fieldname="vc" data-signal-error-for="vc{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_vc}">
+		{BEGIN vc_label}{$label demo_device vc}{END vc_label}
+	</label>
+	<div class="col-md-6" >
+		{$vc_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="vc">
+		<div class="text-muted" >
+		{$tooltip demo_device vc}
+		</div>
+	</div>
+</div>
+</div>
+{END vc_fieldblock}
+
+			{BEGIN ac_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_ac}" data-fieldname="ac" data-signal-error-for="ac{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_ac}">
+		{BEGIN ac_label}{$label demo_device ac}{END ac_label}
+	</label>
+	<div class="col-md-6" >
+		{$ac_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="ac">
+		<div class="text-muted" >
+		{$tooltip demo_device ac}
+		</div>
+	</div>
+</div>
+</div>
+{END ac_fieldblock}
+
+			{BEGIN vkey_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_vkey}" data-fieldname="vkey" data-signal-error-for="vkey{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_vkey}">
+		{BEGIN vkey_label}{$label demo_device vkey}{END vkey_label}
+	</label>
+	<div class="col-md-6" >
+		{$vkey_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="vkey">
+		<div class="text-muted" >
+		{$tooltip demo_device vkey}
+		</div>
+	</div>
+</div>
+</div>
+{END vkey_fieldblock}
+
+
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_buttons}
+<div {$buttons_chiddenattr} data-pageid="{$pageid}" data-container="buttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-3 col-md-offset-3"> 
+
+{BEGIN addbuttons}
+	{BEGIN save_button}
+	<button class="btn btn-primary" {$savebutton_attrs}>Save</button>
+	{END save_button}
+	{BEGIN reset_button}
+	<button class="btn btn-default" id="resetButton{$id}">Reset</button>
+	{END reset_button}
+	{BEGIN back_button}
+		<button class="btn btn-default" id="backButton{$id}">Back to list</button>
+	{END back_button}
+	{BEGIN cancel_button}
+	<a href="#" class="btn btn-default" id="cancelButton{$id}">Cancel</a>
+	{END cancel_button}
+
+{END addbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+</div>
+{END container_buttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

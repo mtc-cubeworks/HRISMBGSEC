@@ -1,0 +1,63 @@
+<div {$pageattrs}>
+
+{BEGIN container_column}
+<div class="rnr-c rnr-ch rnr-c-column">
+
+{BEGIN masterlist_title}
+<div  class="style1 rnr-bl rnr-b-masterprintheader {$brickclass_masterprintheader}"><span>{$pagetitlelabel shifts masterprint}</span></div>
+{END masterlist_title}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_column}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+<table {$bsmasterprintgrid_hiddenattr} data-pageid="{$pageid}" data-brick="bsmasterprintgrid" class="table rnr-b-mastergridfields rnr-gridtable" >
+		<thead>
+		<tr>
+			<th class="{$shID_class}">{$label shifts shID}</th>
+			<th class="{$Shift_class}">{$label shifts Shift}</th>
+			<th class="{$SchedType_class}">{$label shifts SchedType}</th>
+			<th class="{$TimeIn_class}">{$label shifts TimeIn}</th>
+			<th class="{$TimeOut_class}">{$label shifts TimeOut}</th>
+			<th class="{$LunchBreakTimeFrom_class}">{$label shifts LunchBreakTimeFrom}</th>
+			<th class="{$LunchBreakTimeTo_class}">{$label shifts LunchBreakTimeTo}</th>
+			<th class="{$ReqLogOutInOnBreak_class}">{$label shifts ReqLogOutInOnBreak}</th>
+			<th class="{$FirstHalfMins_class}">{$label shifts FirstHalfMins}</th>
+			<th class="{$BreakMins_class}">{$label shifts BreakMins}</th>
+			<th class="{$SecondHalfMins_class}">{$label shifts SecondHalfMins}</th>
+			<th class="{$MinsPerDay_class}">{$label shifts MinsPerDay}</th>
+			<th class="{$AutoApproveNDiff_class}">{$label shifts AutoApproveNDiff}</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="{$shID_class}">{$shID_mastervalue}</td>
+			<td class="{$Shift_class}">{$Shift_mastervalue}</td>
+			<td class="{$SchedType_class}">{$SchedType_mastervalue}</td>
+			<td class="{$TimeIn_class}">{$TimeIn_mastervalue}</td>
+			<td class="{$TimeOut_class}">{$TimeOut_mastervalue}</td>
+			<td class="{$LunchBreakTimeFrom_class}">{$LunchBreakTimeFrom_mastervalue}</td>
+			<td class="{$LunchBreakTimeTo_class}">{$LunchBreakTimeTo_mastervalue}</td>
+			<td class="{$ReqLogOutInOnBreak_class}">{$ReqLogOutInOnBreak_mastervalue}</td>
+			<td class="{$FirstHalfMins_class}">{$FirstHalfMins_mastervalue}</td>
+			<td class="{$BreakMins_class}">{$BreakMins_mastervalue}</td>
+			<td class="{$SecondHalfMins_class}">{$SecondHalfMins_mastervalue}</td>
+			<td class="{$MinsPerDay_class}">{$MinsPerDay_mastervalue}</td>
+			<td class="{$AutoApproveNDiff_class}">{$AutoApproveNDiff_mastervalue}</td>
+		</tr>
+	</tbody>
+
+</table> 
+
+
+
+
+{END container_mastergrid}
+
+</div>

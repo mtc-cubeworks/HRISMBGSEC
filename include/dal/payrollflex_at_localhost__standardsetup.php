@@ -1,0 +1,41 @@
+<?php
+$dalTablestandardsetup = array();
+$dalTablestandardsetup["SID"] = array("type"=>3,"varname"=>"SID", "name" => "SID");
+$dalTablestandardsetup["LateGracePeriodMins"] = array("type"=>5,"varname"=>"LateGracePeriodMins", "name" => "LateGracePeriodMins");
+$dalTablestandardsetup["PreTimeInMins"] = array("type"=>5,"varname"=>"PreTimeInMins", "name" => "PreTimeInMins");
+$dalTablestandardsetup["RegOTFactor"] = array("type"=>5,"varname"=>"RegOTFactor", "name" => "RegOTFactor");
+$dalTablestandardsetup["RegNDiffFactor"] = array("type"=>5,"varname"=>"RegNDiffFactor", "name" => "RegNDiffFactor");
+$dalTablestandardsetup["NightDiffStartTime"] = array("type"=>134,"varname"=>"NightDiffStartTime", "name" => "NightDiffStartTime");
+$dalTablestandardsetup["NightDiffEndTime"] = array("type"=>134,"varname"=>"NightDiffEndTime", "name" => "NightDiffEndTime");
+$dalTablestandardsetup["WorkingDaysInYear"] = array("type"=>5,"varname"=>"WorkingDaysInYear", "name" => "WorkingDaysInYear");
+$dalTablestandardsetup["AllowableLeaveFrom"] = array("type"=>7,"varname"=>"AllowableLeaveFrom", "name" => "AllowableLeaveFrom");
+$dalTablestandardsetup["AllowableLeaveTo"] = array("type"=>7,"varname"=>"AllowableLeaveTo", "name" => "AllowableLeaveTo");
+$dalTablestandardsetup["PostTimeOutMins"] = array("type"=>5,"varname"=>"PostTimeOutMins", "name" => "PostTimeOutMins");
+$dalTablestandardsetup["RHOTFactor"] = array("type"=>5,"varname"=>"RHOTFactor", "name" => "RHOTFactor");
+$dalTablestandardsetup["SHOTFactor"] = array("type"=>5,"varname"=>"SHOTFactor", "name" => "SHOTFactor");
+$dalTablestandardsetup["CHOTFactor"] = array("type"=>5,"varname"=>"CHOTFactor", "name" => "CHOTFactor");
+$dalTablestandardsetup["RHNDiffFactor"] = array("type"=>5,"varname"=>"RHNDiffFactor", "name" => "RHNDiffFactor");
+$dalTablestandardsetup["SHNDiffFactor"] = array("type"=>5,"varname"=>"SHNDiffFactor", "name" => "SHNDiffFactor");
+$dalTablestandardsetup["CHNDiffFactor"] = array("type"=>5,"varname"=>"CHNDiffFactor", "name" => "CHNDiffFactor");
+$dalTablestandardsetup["RHFactor"] = array("type"=>5,"varname"=>"RHFactor", "name" => "RHFactor");
+$dalTablestandardsetup["SHFactor"] = array("type"=>5,"varname"=>"SHFactor", "name" => "SHFactor");
+$dalTablestandardsetup["CHFactor"] = array("type"=>5,"varname"=>"CHFactor", "name" => "CHFactor");
+$dalTablestandardsetup["RDFactor"] = array("type"=>5,"varname"=>"RDFactor", "name" => "RDFactor");
+$dalTablestandardsetup["RDOTFactor"] = array("type"=>5,"varname"=>"RDOTFactor", "name" => "RDOTFactor");
+$dalTablestandardsetup["RDNDiffFactor"] = array("type"=>5,"varname"=>"RDNDiffFactor", "name" => "RDNDiffFactor");
+$dalTablestandardsetup["RHRDFactor"] = array("type"=>5,"varname"=>"RHRDFactor", "name" => "RHRDFactor");
+$dalTablestandardsetup["RHRDOTFactor"] = array("type"=>5,"varname"=>"RHRDOTFactor", "name" => "RHRDOTFactor");
+$dalTablestandardsetup["SHRDFactor"] = array("type"=>5,"varname"=>"SHRDFactor", "name" => "SHRDFactor");
+$dalTablestandardsetup["SHRDOTFactor"] = array("type"=>5,"varname"=>"SHRDOTFactor", "name" => "SHRDOTFactor");
+$dalTablestandardsetup["WorkingDaysInYearDailies"] = array("type"=>5,"varname"=>"WorkingDaysInYearDailies", "name" => "WorkingDaysInYearDailies");
+$dalTablestandardsetup["ReqBeforeHoliday"] = array("type"=>16,"varname"=>"ReqBeforeHoliday", "name" => "ReqBeforeHoliday");
+$dalTablestandardsetup["SHFactorDaily"] = array("type"=>5,"varname"=>"SHFactorDaily", "name" => "SHFactorDaily");
+$dalTablestandardsetup["SHOTFactorDaily"] = array("type"=>5,"varname"=>"SHOTFactorDaily", "name" => "SHOTFactorDaily");
+$dalTablestandardsetup["CHFactorDaily"] = array("type"=>5,"varname"=>"CHFactorDaily", "name" => "CHFactorDaily");
+$dalTablestandardsetup["SHRDFactorDaily"] = array("type"=>5,"varname"=>"SHRDFactorDaily", "name" => "SHRDFactorDaily");
+$dalTablestandardsetup["SHRDOTFactorDaily"] = array("type"=>5,"varname"=>"SHRDOTFactorDaily", "name" => "SHRDOTFactorDaily");
+$dalTablestandardsetup["CHOTFactorDaily"] = array("type"=>5,"varname"=>"CHOTFactorDaily", "name" => "CHOTFactorDaily");
+	$dalTablestandardsetup["SID"]["key"]=true;
+
+$dal_info["payrollflex_at_localhost__standardsetup"] = &$dalTablestandardsetup;
+?>

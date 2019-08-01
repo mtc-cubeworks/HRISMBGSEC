@@ -1,0 +1,1686 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}<style>
+{$containerCss}
+</style>
+<div class="sidebar bs-fixed clearfix mCustomScrollbar" data-mcs-theme="minimal-dark" {$blockattr_left}>
+	<div class="sidebar-contents mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside">
+		
+
+{BEGIN container_logo}<div {$logo_chiddenattr} data-pageid="{$pageid}" data-container="logo" class=" bs-sidebarlogo   "> 
+
+{BEGIN logo_block}<a href="{$home_link}" {$logo_hiddenattr} data-pageid="{$pageid}" data-brick="logo" class="navbar-brand" >{$logo}</a>
+{END logo_block}
+
+
+
+</div>
+{END container_logo}
+
+
+
+{BEGIN container_hdr}<div {$hdr_chiddenattr} data-pageid="{$pageid}" data-container="hdr" class=" navbar-default clearfix   "> 
+
+{BEGIN collapse_block}<button {$bsnavbarcollapse_hiddenattr} data-pageid="{$pageid}" data-brick="bsnavbarcollapse" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target=".bs-navcontrolled">	
+	<span class="sr-only">Toggle navigation</span>	
+	<span class="icon-bar"></span>					
+</button>												
+
+{END collapse_block}
+
+
+
+</div>
+{END container_hdr}
+
+{BEGIN container_sidemenu}<div {$sidemenu_chiddenattr} data-pageid="{$pageid}" data-container="sidemenu" class="bs-navform navbar-collapse sidebar-menu bs-hidden-xs bs-navcontrolled" aria-expanded="false" >												   
+{BEGIN menu_block}{$menu main}
+
+{END menu_block}
+
+												</div>						{END container_sidemenu}
+
+{BEGIN container_left}<div {$left_chiddenattr} data-pageid="{$pageid}" data-container="left" class=" sidebar-container   "> 
+
+{BEGIN searchPanel}<div {$searchpanel_hiddenattr} data-pageid="{$pageid}" data-brick="searchpanel" class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} >
+	<!-- Search panel content -->
+	
+	<div class="panel-heading">
+		<div class="btn-group" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Search in
+			<span class="caret"></span>
+			</button>
+		</div>
+
+		
+		<div class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Show options</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>all conditions</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>any condition</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>hide</a></li>
+			</ul>
+		</div>
+	
+		
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}<TBODY>
+                              <div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		</TBODY>
+                          {END searchCtrlBlock}
+
+
+	</div>
+	
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary" id="searchButton{$id}" {$searchbutton_attrs}>Search</button>
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}>
+		Show all
+		</button>
+	</div>
+</div>
+
+
+{END searchPanel}
+
+
+
+
+</div>
+{END container_left}
+
+
+	</div>
+</div>	
+<div class="bs-wrapper">
+	<div class="bs-fixedheader" id="fixedheader{$id}">
+		{BEGIN container_menu}<nav {$menu_chiddenattr} data-pageid="{$pageid}" data-container="menu" class="navbar navbar-default bs-fullwidth-navbar">					
+
+
+
+{BEGIN container_bc}<div {$bc_chiddenattr} data-pageid="{$pageid}" data-container="bc" class=" navbar-form navbar-left   "> 
+
+{BEGIN breadcrumbs}<ol class="breadcrumb">
+<li ><a href="{$home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}<li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumbs}
+
+
+
+</div>
+{END container_bc}
+
+
+
+
+
+
+{BEGIN container_menu_1}<div {$menu_1_chiddenattr} data-pageid="{$pageid}" data-container="menu_1" class="bs-navform navbar-collapse bs-hidden-xs bs-navcontrolled" aria-expanded="false" >												   
+
+
+
+{BEGIN container_more}<div {$more_chiddenattr} data-pageid="{$pageid}" data-container="more" class=" navbar-right navbar-form   "> 
+
+{BEGIN more_list}<div {$morebutton_hiddenattr} data-pageid="{$pageid}" data-brick="morebutton" class="btn-group bs-navsection">
+	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		<span class="glyphicon glyphicon-cog"></span>
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu">
+				{BEGIN editselected_link}<li class="massButton{$id} disabled"><a href="#" {$editselectedlink_attrs} {$editselectedlink_span} >Edit selected</a></li>
+		{END editselected_link}
+
+				{BEGIN exportselected_link}<li class="massButton{$id} disabled"><a href="#" {$exportselectedlink_attrs} {$exportselectedlink_span} >Export selected</a></li>
+		{END exportselected_link}
+		
+				{BEGIN deleteselected_link}<li class="massButton{$id} disabled"><a href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>Delete selected</a></li>
+		{END deleteselected_link}
+		
+				<li role="separator" class="divider"></li>	
+
+				{BEGIN asearch_link}<li><a href="demo_user_search.php" {$advsearchlink_attrs}>Advanced search</a></li>
+		{END asearch_link}
+
+				{BEGIN searchPanelTopButtons}<li><a href=# id="showOptPanel{$id}">Show search panel</a></li>
+		{END searchPanelTopButtons}	
+		
+				
+				<li role="separator" class="divider"></li>	
+		
+				
+				{BEGIN export_link}<li><a target="_blank" href="demo_user_export.php"  {$exportlink_attrs}>Export results</a></li>
+		{END export_link}
+
+				{BEGIN import_link}<li><a href="demo_user_import.php?{$crosstable_attrs}"  {$importlink_attrs}>Import</a></li>
+		{END import_link}
+
+				
+	</ul>  
+</div>
+
+{END more_list}
+
+
+{BEGIN security_block}<span {$loggedas_hiddenattr} data-pageid="{$pageid}" data-brick="loggedas" id="login_block{$id}" class="bs-navsection">
+	{BEGIN guestloginbutton}<button class="btn btn-info" type="button" {$guestloginlink_attrs}>Login</button>
+	{END guestloginbutton}
+	{BEGIN loggedas_message}<span class="dropdown">
+			<button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon-user"></span>	{$username}</button>
+			<ul class="dropdown-menu">
+		{BEGIN logoutbutton}<li><a href="#" {$logoutlink_attrs}>Log out</a></li>
+		{END logoutbutton}
+		
+		{BEGIN adminarea_link}<li><a href="admin_rights_list.php" {$adminarealink_attrs}>Admin Area</a></li>
+		{END adminarea_link}
+
+
+			</ul>
+		</span>
+	{END loggedas_message}
+</span>
+{END security_block}
+
+
+
+</div>
+{END container_more}
+
+
+
+
+
+
+
+
+{BEGIN container_more_1}<div {$more_1_chiddenattr} data-pageid="{$pageid}" data-container="more_1" class=" navbar-right navbar-form   "> 
+
+{BEGIN searchform_block}<span {$search_hiddenattr} data-pageid="{$pageid}" data-brick="search" class="form-group">
+
+ <div  class="input-group">
+{BEGIN searchform_text}<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Show all">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+	{BEGIN searchform_search}<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>
+{END searchform_block}
+
+
+
+</div>
+{END container_more_1}
+
+
+
+
+												</div>						{END container_menu_1}
+
+
+									</nav>{END container_menu}
+	</div>	
+	<div class="container-fluid bs-underheader bs-fixedsidebarmain" id="underheader{$id}">
+		{$header}
+		<div class="bs-sidebar-screenbound">
+			
+
+
+
+{BEGIN container_gridcontrols}<div {$gridcontrols_chiddenattr} data-pageid="{$pageid}" data-container="gridcontrols" class=" bs-navcontrolled bs-hidden-xs   "> 
+
+
+
+
+{BEGIN container_add_delete}<div {$add_delete_chiddenattr} data-pageid="{$pageid}" data-container="add_delete" class=" bottom-margin  col-md-6 "> 
+
+{BEGIN newrecord_controls_block}{BEGIN add_link}<a {$add_hiddenattr} data-pageid="{$pageid}" data-brick="add" type="button" class="btn btn-primary" {$addlink_attrs}>Add new</a>
+	{END add_link}
+
+		{BEGIN inlineadd_link}<button {$add_hiddenattr} data-pageid="{$pageid}" data-brick="add" type="button" class="btn btn-primary" {$inlineaddlink_attrs}>Inline Add</button>
+	{END inlineadd_link}
+
+{END newrecord_controls_block}
+
+
+{BEGIN record_controls_block}<span {$recordcontrol_hiddenattr} data-pageid="{$pageid}" data-brick="recordcontrol">
+		{BEGIN deleteselected_link}<button type="button" class="btn btn-default" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled>Delete</button>
+	{END deleteselected_link}
+		{BEGIN updateselected_link}<button type="button" class="btn btn-default" {$updateselectedlink_attrs} disabled>Update selected</button>
+	{END updateselected_link}
+		{BEGIN saveall_link}<button type="button" class="btn btn-primary" {$savealllink_attrs} {$savealllink_span}>Save all</button>
+	{END saveall_link}
+	{BEGIN cancelall_link}<button type="button" class="btn btn-default" {$cancelalllink_attrs} {$cancelalllink_span}>Cancel</button>
+	{END cancelall_link}
+</span>
+
+{END record_controls_block}
+
+
+
+</div>
+{END container_add_delete}
+
+
+
+
+
+
+
+
+{BEGIN container_gridinfo}<div {$gridinfo_chiddenattr} data-pageid="{$pageid}" data-container="gridinfo" class=" bottom-margin text-right col-md-6 "> 
+
+{BEGIN details_found}<span {$details_found_hiddenattr} data-pageid="{$pageid}" data-brick="details_found" class="form-inline form-inline-always">
+	{$records_indicator}
+	<span>
+	{BEGIN recordspp_block}{$recsPerPage}
+	{END recordspp_block}
+	</span>
+</span>
+{END details_found}
+
+
+{BEGIN print_friendly}<span {$printpanel_hiddenattr} data-pageid="{$pageid}" data-brick="printpanel" class="bs-printpanel" id="printpanelblock{$id}">
+	<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" title="Print-friendly page">
+		<span class="glyphicon glyphicon-print" ></span>
+		<span class="caret"></span>
+    </button>
+	<ul class="dropdown-menu pull-right" >
+		<TBODY>
+                          <li>
+			<div class="container-fluid" id="print_friendly_scope{$id}">
+				<div class="row">
+					<div class="col-md-4">Scope:</div>
+										{BEGIN print_friendly_all}<div class="col-md-8">
+						<label for="printAll{$id}">
+							<input type="radio" id="printAll{$id}" data-href="demo_user_print.php?all=1&amp;{$crosstable_attrs}" name="printScope">
+							Print all pages
+						</label>
+					</div>
+					{END print_friendly_all}
+				</div>
+				<div class="row">
+					<div class="col-md-4">&nbsp;</div>
+					<div class="col-md-8">
+						<label for="printPage{$id}">
+							<input type="radio" id="printPage{$id}" data-href="demo_user_print.php?{$crosstable_attrs}" name="printScope" checked>
+							Print this page
+						</label>
+					</div>
+				</div>
+								<div class="row">
+					<div class="col-md-4">&nbsp;</div>
+					<div class="col-md-8">
+						<label for="printSelection{$id}" style="color: gray;">
+							<input type="radio" id="printSelection{$id}" name="printScope" disabled="disabled">
+							Print selected
+						</label>
+					</div>
+				</div>
+			</TBODY>
+                      </div>
+		</li>
+		<li class="divider" role="separator"></li>
+
+				<li>			
+		{BEGIN print_details}<div class="rnr-printdetails">
+				<label for="printDetailsToggler{$id}">
+					<input type="checkbox" id="printDetailsToggler{$id}">
+					Print details
+				</label>
+				<DIV class="rnr-printdetailstables" id="printdetailstables{$id}" style="display: none;">
+                            {BEGIN print_details_indschedrange}<div class="rnr-printdetialstable">
+								<label for="printDetailsindschedrange{$id}">
+									<input type="checkbox" value="indschedrange" id="printDetailsindschedrange{$id}" checked>
+									Create Schedule
+								</label>
+							</div>
+					{END print_details_indschedrange}
+					{BEGIN print_details_empindschedule}<div class="rnr-printdetialstable">
+								<label for="printDetailsempindschedule{$id}">
+									<input type="checkbox" value="empindschedule" id="printDetailsempindschedule{$id}" checked>
+									Uploaded Schedule
+								</label>
+							</div>
+					{END print_details_empindschedule}
+					{BEGIN print_details_loans}<div class="rnr-printdetialstable">
+								<label for="printDetailsloans{$id}">
+									<input type="checkbox" value="loans" id="printDetailsloans{$id}" checked>
+									Loans and Deductions Setup
+								</label>
+							</div>
+					{END print_details_loans}
+					{BEGIN print_details_earningadjustment}<div class="rnr-printdetialstable">
+								<label for="printDetailsearningadjustment{$id}">
+									<input type="checkbox" value="earningadjustment" id="printDetailsearningadjustment{$id}" checked>
+									Recurring Adjustment Setup
+								</label>
+							</div>
+					{END print_details_earningadjustment}
+					{BEGIN print_details_emphistory}<div class="rnr-printdetialstable">
+								<label for="printDetailsemphistory{$id}">
+									<input type="checkbox" value="emphistory" id="printDetailsemphistory{$id}" checked>
+									History
+								</label>
+							</div>
+					{END print_details_emphistory}
+				</div>
+			</div>
+		{END print_details}
+		</li>
+		<li class="divider" role="separator"></li>
+
+				<li>	
+			<div class="rnr-printdetails">
+				<label for="printPerPage{$id}">
+											Records Per Page:
+				</label>
+				<input type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">		
+			</div>
+		</li>
+		<li class="divider" role="separator"></li>
+		<li class="rnr-printbutton">				
+			<button type="button" class="btn btn-primary" id="print_friendly_button{$id}" >Print</button>			
+		</li>
+	</ul>	
+</span>
+
+{END print_friendly}
+
+
+
+
+</div>
+{END container_gridinfo}
+
+
+
+
+
+
+
+</div>
+{END container_gridcontrols}
+
+
+		</div>
+		<div></div>
+		<div class="bs-sidebar-screenbound bs-minwidth">
+			
+
+{BEGIN container_tabs}<div {$tabs_chiddenattr} data-pageid="{$pageid}" data-container="tabs" class="    "> 
+
+{BEGIN grid_tabs}<div {$bsgrid_tabs_hiddenattr} data-pageid="{$pageid}" data-brick="bsgrid_tabs">
+<ul class="nav nav-tabs">
+{$grid_tabs_content}
+</ul>
+</div>
+{END grid_tabs}
+
+
+
+</div>
+{END container_tabs}
+
+
+
+{BEGIN container_message}<div {$message_chiddenattr} data-pageid="{$pageid}" data-container="message" class="    "> 
+
+{BEGIN message_block}<div {$message_hiddenattr} data-pageid="{$pageid}" data-brick="message" class="alert {$message_class}" role="alert">{$message}</div>
+{END message_block}
+
+
+
+</div>
+{END container_message}
+
+
+
+{BEGIN container_center}<div {$center_chiddenattr} data-pageid="{$pageid}" data-container="center" class="    "> 
+
+
+
+
+{BEGIN container_grid}<div {$grid_chiddenattr} data-pageid="{$pageid}" data-container="grid" class="bs-grid    "> 
+
+{BEGIN grid_block}<style>
+	.bs-gridcell[data-field=user_id]:before {
+		content: "{$label demo_user user_id}";
+	}
+	.bs-gridcell[data-field=user_name]:before {
+		content: "{$label demo_user user_name}";
+	}
+	.bs-gridcell[data-field=Photo]:before {
+		content: "{$label demo_user Photo}";
+	}
+	.bs-gridcell[data-field=SSSNo]:before {
+		content: "{$label demo_user SSSNo}";
+	}
+	.bs-gridcell[data-field=TIN]:before {
+		content: "{$label demo_user TIN}";
+	}
+	.bs-gridcell[data-field=Mobile]:before {
+		content: "{$label demo_user Mobile}";
+	}
+	.bs-gridcell[data-field=Address]:before {
+		content: "{$label demo_user Address}";
+	}
+	.bs-gridcell[data-field=Email]:before {
+		content: "{$label demo_user Email}";
+	}
+	.bs-gridcell[data-field=EmployeeType]:before {
+		content: "{$label demo_user EmployeeType}";
+	}
+	.bs-gridcell[data-field=EmployeeID]:before {
+		content: "{$label demo_user EmployeeID}";
+	}
+	.bs-gridcell[data-field=Division]:before {
+		content: "{$label demo_user Division}";
+	}
+	.bs-gridcell[data-field=Status]:before {
+		content: "{$label demo_user Status}";
+	}
+	.bs-gridcell[data-field=Department]:before {
+		content: "{$label demo_user Department}";
+	}
+	.bs-gridcell[data-field=AllowableSickLeave]:before {
+		content: "{$label demo_user AllowableSickLeave}";
+	}
+	.bs-gridcell[data-field=AllowableVacationLeave]:before {
+		content: "{$label demo_user AllowableVacationLeave}";
+	}
+	.bs-gridcell[data-field=AllowableEmergencyLeave]:before {
+		content: "{$label demo_user AllowableEmergencyLeave}";
+	}
+	.bs-gridcell[data-field=SSSEE]:before {
+		content: "{$label demo_user SSSEE}";
+	}
+	.bs-gridcell[data-field=SSSER]:before {
+		content: "{$label demo_user SSSER}";
+	}
+	.bs-gridcell[data-field=PhilHealthEE]:before {
+		content: "{$label demo_user PhilHealthEE}";
+	}
+	.bs-gridcell[data-field=PhilHealthER]:before {
+		content: "{$label demo_user PhilHealthER}";
+	}
+	.bs-gridcell[data-field=PagIbigEE]:before {
+		content: "{$label demo_user PagIbigEE}";
+	}
+	.bs-gridcell[data-field=AllowablePaternityLeave]:before {
+		content: "{$label demo_user AllowablePaternityLeave}";
+	}
+	.bs-gridcell[data-field=HiredDate]:before {
+		content: "{$label demo_user HiredDate}";
+	}
+	.bs-gridcell[data-field=Inactive]:before {
+		content: "{$label demo_user Inactive}";
+	}
+	.bs-gridcell[data-field=ExitDate]:before {
+		content: "{$label demo_user ExitDate}";
+	}
+	.bs-gridcell[data-field=PagIbigER]:before {
+		content: "{$label demo_user PagIbigER}";
+	}
+	.bs-gridcell[data-field=PagIbigNo]:before {
+		content: "{$label demo_user PagIbigNo}";
+	}
+	.bs-gridcell[data-field=PhilHealthNo]:before {
+		content: "{$label demo_user PhilHealthNo}";
+	}
+	.bs-gridcell[data-field=SSSEC]:before {
+		content: "{$label demo_user SSSEC}";
+	}
+	.bs-gridcell[data-field=PresetTax]:before {
+		content: "{$label demo_user PresetTax}";
+	}
+	.bs-gridcell[data-field=Level]:before {
+		content: "{$label demo_user Level}";
+	}
+	.bs-gridcell[data-field=DateCreated]:before {
+		content: "{$label demo_user DateCreated}";
+	}
+	.bs-gridcell[data-field=ApprovedDate]:before {
+		content: "{$label demo_user ApprovedDate}";
+	}
+	.bs-gridcell[data-field=Approved]:before {
+		content: "{$label demo_user Approved}";
+	}
+	.bs-gridcell[data-field=Approvedby]:before {
+		content: "{$label demo_user Approvedby}";
+	}
+	.bs-gridcell[data-field=Preparedby]:before {
+		content: "{$label demo_user Preparedby}";
+	}
+	.bs-gridcell[data-field=Checkedby]:before {
+		content: "{$label demo_user Checkedby}";
+	}
+	.bs-gridcell[data-field=CheckedDate]:before {
+		content: "{$label demo_user CheckedDate}";
+	}
+	.bs-gridcell[data-field=Checked]:before {
+		content: "{$label demo_user Checked}";
+	}
+	.bs-gridcell[data-field=Superior]:before {
+		content: "{$label demo_user Superior}";
+	}
+	.bs-gridcell[data-field=Position]:before {
+		content: "{$label demo_user Position}";
+	}
+	.bs-gridcell[data-field=Employer]:before {
+		content: "{$label demo_user Employer}";
+	}
+	.bs-gridcell[data-field=IDNo]:before {
+		content: "{$label demo_user IDNo}";
+	}
+	.bs-gridcell[data-field=AccountNo]:before {
+		content: "{$label demo_user AccountNo}";
+	}
+	.bs-gridcell[data-field=LateFixPenalty]:before {
+		content: "{$label demo_user LateFixPenalty}";
+	}
+	.bs-gridcell[data-field=DoNotUpdateContributions]:before {
+		content: "{$label demo_user DoNotUpdateContributions}";
+	}
+	.bs-gridcell[data-field=ExcludeContributionOnPayroll]:before {
+		content: "{$label demo_user ExcludeContributionOnPayroll}";
+	}
+	.bs-gridcell[data-field=Birthday]:before {
+		content: "{$label demo_user Birthday}";
+	}
+	.bs-gridcell[data-field=Bank]:before {
+		content: "{$label demo_user Bank}";
+	}
+	.bs-gridcell[data-field=NoLateDeduction]:before {
+		content: "{$label demo_user NoLateDeduction}";
+	}
+	.bs-gridcell[data-field=IncludeBreakLate]:before {
+		content: "{$label demo_user IncludeBreakLate}";
+	}
+	.bs-gridcell[data-field=GracePeriodMins]:before {
+		content: "{$label demo_user GracePeriodMins}";
+	}
+	.bs-gridcell[data-field=WithAdditionalBreaks]:before {
+		content: "{$label demo_user WithAdditionalBreaks}";
+	}
+</style>
+<table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
+	<thead>
+										{BEGIN grid_header}<tr class="rnr-toprow {$gridHeader_class}" >
+									{BEGIN record_header}{BEGIN listIcons_column}<th iEditCont="all">&nbsp;</th>
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}<th class="">
+										<input type="checkbox" {$checkboxheader_attrs}>
+									</th>
+									{END checkbox_column}
+
+																		{BEGIN demo_user_dtable_column}<th >&nbsp;</th>
+									{END demo_user_dtable_column}
+									
+									{BEGIN EmployeeID_fieldheadercolumn}<th class="rnr-gridfieldlabel {$EmployeeID_class}" data-field=EmployeeID>
+									{BEGIN EmployeeID_fieldheader}<span {$EmployeeID_orderlinkattrs}>
+											{$label demo_user EmployeeID}
+										</span>
+									{END EmployeeID_fieldheader}
+									</th>
+									{END EmployeeID_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN IDNo_fieldheadercolumn}<th class="rnr-gridfieldlabel {$IDNo_class}" data-field=IDNo>
+									{BEGIN IDNo_fieldheader}<span {$IDNo_orderlinkattrs}>
+											{$label demo_user IDNo}
+										</span>
+									{END IDNo_fieldheader}
+									</th>
+									{END IDNo_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Photo_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Photo_class}" data-field=Photo>
+									{BEGIN Photo_fieldheader}<span {$Photo_orderlinkattrs}>
+											{$label demo_user Photo}
+										</span>
+									{END Photo_fieldheader}
+									</th>
+									{END Photo_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN user_name_fieldheadercolumn}<th class="rnr-gridfieldlabel {$user_name_class}" data-field=user_name>
+									{BEGIN user_name_fieldheader}<span {$user_name_orderlinkattrs}>
+											{$label demo_user user_name}
+										</span>
+									{END user_name_fieldheader}
+									</th>
+									{END user_name_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Employer_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Employer_class}" data-field=Employer>
+									{BEGIN Employer_fieldheader}<span {$Employer_orderlinkattrs}>
+											{$label demo_user Employer}
+										</span>
+									{END Employer_fieldheader}
+									</th>
+									{END Employer_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Division_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Division_class}" data-field=Division>
+									{BEGIN Division_fieldheader}<span {$Division_orderlinkattrs}>
+											{$label demo_user Division}
+										</span>
+									{END Division_fieldheader}
+									</th>
+									{END Division_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Department_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Department_class}" data-field=Department>
+									{BEGIN Department_fieldheader}<span {$Department_orderlinkattrs}>
+											{$label demo_user Department}
+										</span>
+									{END Department_fieldheader}
+									</th>
+									{END Department_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN HiredDate_fieldheadercolumn}<th class="rnr-gridfieldlabel {$HiredDate_class}" data-field=HiredDate>
+									{BEGIN HiredDate_fieldheader}<span {$HiredDate_orderlinkattrs}>
+											{$label demo_user HiredDate}
+										</span>
+									{END HiredDate_fieldheader}
+									</th>
+									{END HiredDate_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Inactive_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Inactive_class}" data-field=Inactive>
+									{BEGIN Inactive_fieldheader}<span {$Inactive_orderlinkattrs}>
+											{$label demo_user Inactive}
+										</span>
+									{END Inactive_fieldheader}
+									</th>
+									{END Inactive_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN ExitDate_fieldheadercolumn}<th class="rnr-gridfieldlabel {$ExitDate_class}" data-field=ExitDate>
+									{BEGIN ExitDate_fieldheader}<span {$ExitDate_orderlinkattrs}>
+											{$label demo_user ExitDate}
+										</span>
+									{END ExitDate_fieldheader}
+									</th>
+									{END ExitDate_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Status_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Status_class}" data-field=Status>
+									{BEGIN Status_fieldheader}<span {$Status_orderlinkattrs}>
+											{$label demo_user Status}
+										</span>
+									{END Status_fieldheader}
+									</th>
+									{END Status_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Position_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Position_class}" data-field=Position>
+									{BEGIN Position_fieldheader}<span {$Position_orderlinkattrs}>
+											{$label demo_user Position}
+										</span>
+									{END Position_fieldheader}
+									</th>
+									{END Position_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Superior_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Superior_class}" data-field=Superior>
+									{BEGIN Superior_fieldheader}<span {$Superior_orderlinkattrs}>
+											{$label demo_user Superior}
+										</span>
+									{END Superior_fieldheader}
+									</th>
+									{END Superior_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Mobile_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Mobile_class}" data-field=Mobile>
+									{BEGIN Mobile_fieldheader}<span {$Mobile_orderlinkattrs}>
+											{$label demo_user Mobile}
+										</span>
+									{END Mobile_fieldheader}
+									</th>
+									{END Mobile_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Address_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Address_class}" data-field=Address>
+									{BEGIN Address_fieldheader}<span {$Address_orderlinkattrs}>
+											{$label demo_user Address}
+										</span>
+									{END Address_fieldheader}
+									</th>
+									{END Address_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Birthday_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Birthday_class}" data-field=Birthday>
+									{BEGIN Birthday_fieldheader}<span {$Birthday_orderlinkattrs}>
+											{$label demo_user Birthday}
+										</span>
+									{END Birthday_fieldheader}
+									</th>
+									{END Birthday_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Email_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Email_class}" data-field=Email>
+									{BEGIN Email_fieldheader}<span {$Email_orderlinkattrs}>
+											{$label demo_user Email}
+										</span>
+									{END Email_fieldheader}
+									</th>
+									{END Email_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SSSNo_fieldheadercolumn}<th class="rnr-gridfieldlabel {$SSSNo_class}" data-field=SSSNo>
+									{BEGIN SSSNo_fieldheader}<span {$SSSNo_orderlinkattrs}>
+											{$label demo_user SSSNo}
+										</span>
+									{END SSSNo_fieldheader}
+									</th>
+									{END SSSNo_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN PagIbigNo_fieldheadercolumn}<th class="rnr-gridfieldlabel {$PagIbigNo_class}" data-field=PagIbigNo>
+									{BEGIN PagIbigNo_fieldheader}<span {$PagIbigNo_orderlinkattrs}>
+											{$label demo_user PagIbigNo}
+										</span>
+									{END PagIbigNo_fieldheader}
+									</th>
+									{END PagIbigNo_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN PhilHealthNo_fieldheadercolumn}<th class="rnr-gridfieldlabel {$PhilHealthNo_class}" data-field=PhilHealthNo>
+									{BEGIN PhilHealthNo_fieldheader}<span {$PhilHealthNo_orderlinkattrs}>
+											{$label demo_user PhilHealthNo}
+										</span>
+									{END PhilHealthNo_fieldheader}
+									</th>
+									{END PhilHealthNo_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN TIN_fieldheadercolumn}<th class="rnr-gridfieldlabel {$TIN_class}" data-field=TIN>
+									{BEGIN TIN_fieldheader}<span {$TIN_orderlinkattrs}>
+											{$label demo_user TIN}
+										</span>
+									{END TIN_fieldheader}
+									</th>
+									{END TIN_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Bank_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Bank_class}" data-field=Bank>
+									{BEGIN Bank_fieldheader}<span {$Bank_orderlinkattrs}>
+											{$label demo_user Bank}
+										</span>
+									{END Bank_fieldheader}
+									</th>
+									{END Bank_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN AccountNo_fieldheadercolumn}<th class="rnr-gridfieldlabel {$AccountNo_class}" data-field=AccountNo>
+									{BEGIN AccountNo_fieldheader}<span {$AccountNo_orderlinkattrs}>
+											{$label demo_user AccountNo}
+										</span>
+									{END AccountNo_fieldheader}
+									</th>
+									{END AccountNo_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN AllowableSickLeave_fieldheadercolumn}<th class="rnr-gridfieldlabel {$AllowableSickLeave_class}" data-field=AllowableSickLeave>
+									{BEGIN AllowableSickLeave_fieldheader}<span {$AllowableSickLeave_orderlinkattrs}>
+											{$label demo_user AllowableSickLeave}
+										</span>
+									{END AllowableSickLeave_fieldheader}
+									</th>
+									{END AllowableSickLeave_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN AllowableVacationLeave_fieldheadercolumn}<th class="rnr-gridfieldlabel {$AllowableVacationLeave_class}" data-field=AllowableVacationLeave>
+									{BEGIN AllowableVacationLeave_fieldheader}<span {$AllowableVacationLeave_orderlinkattrs}>
+											{$label demo_user AllowableVacationLeave}
+										</span>
+									{END AllowableVacationLeave_fieldheader}
+									</th>
+									{END AllowableVacationLeave_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN AllowableEmergencyLeave_fieldheadercolumn}<th class="rnr-gridfieldlabel {$AllowableEmergencyLeave_class}" data-field=AllowableEmergencyLeave>
+									{BEGIN AllowableEmergencyLeave_fieldheader}<span {$AllowableEmergencyLeave_orderlinkattrs}>
+											{$label demo_user AllowableEmergencyLeave}
+										</span>
+									{END AllowableEmergencyLeave_fieldheader}
+									</th>
+									{END AllowableEmergencyLeave_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN AllowablePaternityLeave_fieldheadercolumn}<th class="rnr-gridfieldlabel {$AllowablePaternityLeave_class}" data-field=AllowablePaternityLeave>
+									{BEGIN AllowablePaternityLeave_fieldheader}<span {$AllowablePaternityLeave_orderlinkattrs}>
+											{$label demo_user AllowablePaternityLeave}
+										</span>
+									{END AllowablePaternityLeave_fieldheader}
+									</th>
+									{END AllowablePaternityLeave_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN EmployeeType_fieldheadercolumn}<th class="rnr-gridfieldlabel {$EmployeeType_class}" data-field=EmployeeType>
+									{BEGIN EmployeeType_fieldheader}<span {$EmployeeType_orderlinkattrs}>
+											{$label demo_user EmployeeType}
+										</span>
+									{END EmployeeType_fieldheader}
+									</th>
+									{END EmployeeType_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Level_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Level_class}" data-field=Level>
+									{BEGIN Level_fieldheader}<span {$Level_orderlinkattrs}>
+											{$label demo_user Level}
+										</span>
+									{END Level_fieldheader}
+									</th>
+									{END Level_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN DoNotUpdateContributions_fieldheadercolumn}<th class="rnr-gridfieldlabel {$DoNotUpdateContributions_class}" data-field=DoNotUpdateContributions>
+									{BEGIN DoNotUpdateContributions_fieldheader}<span {$DoNotUpdateContributions_orderlinkattrs}>
+											{$label demo_user DoNotUpdateContributions}
+										</span>
+									{END DoNotUpdateContributions_fieldheader}
+									</th>
+									{END DoNotUpdateContributions_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN ExcludeContributionOnPayroll_fieldheadercolumn}<th class="rnr-gridfieldlabel {$ExcludeContributionOnPayroll_class}" data-field=ExcludeContributionOnPayroll>
+									{BEGIN ExcludeContributionOnPayroll_fieldheader}<span {$ExcludeContributionOnPayroll_orderlinkattrs}>
+											{$label demo_user ExcludeContributionOnPayroll}
+										</span>
+									{END ExcludeContributionOnPayroll_fieldheader}
+									</th>
+									{END ExcludeContributionOnPayroll_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SSSEE_fieldheadercolumn}<th class="rnr-gridfieldlabel {$SSSEE_class}" data-field=SSSEE>
+									{BEGIN SSSEE_fieldheader}<span {$SSSEE_orderlinkattrs}>
+											{$label demo_user SSSEE}
+										</span>
+									{END SSSEE_fieldheader}
+									</th>
+									{END SSSEE_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SSSER_fieldheadercolumn}<th class="rnr-gridfieldlabel {$SSSER_class}" data-field=SSSER>
+									{BEGIN SSSER_fieldheader}<span {$SSSER_orderlinkattrs}>
+											{$label demo_user SSSER}
+										</span>
+									{END SSSER_fieldheader}
+									</th>
+									{END SSSER_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SSSEC_fieldheadercolumn}<th class="rnr-gridfieldlabel {$SSSEC_class}" data-field=SSSEC>
+									{BEGIN SSSEC_fieldheader}<span {$SSSEC_orderlinkattrs}>
+											{$label demo_user SSSEC}
+										</span>
+									{END SSSEC_fieldheader}
+									</th>
+									{END SSSEC_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN PhilHealthEE_fieldheadercolumn}<th class="rnr-gridfieldlabel {$PhilHealthEE_class}" data-field=PhilHealthEE>
+									{BEGIN PhilHealthEE_fieldheader}<span {$PhilHealthEE_orderlinkattrs}>
+											{$label demo_user PhilHealthEE}
+										</span>
+									{END PhilHealthEE_fieldheader}
+									</th>
+									{END PhilHealthEE_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN PhilHealthER_fieldheadercolumn}<th class="rnr-gridfieldlabel {$PhilHealthER_class}" data-field=PhilHealthER>
+									{BEGIN PhilHealthER_fieldheader}<span {$PhilHealthER_orderlinkattrs}>
+											{$label demo_user PhilHealthER}
+										</span>
+									{END PhilHealthER_fieldheader}
+									</th>
+									{END PhilHealthER_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN PagIbigEE_fieldheadercolumn}<th class="rnr-gridfieldlabel {$PagIbigEE_class}" data-field=PagIbigEE>
+									{BEGIN PagIbigEE_fieldheader}<span {$PagIbigEE_orderlinkattrs}>
+											{$label demo_user PagIbigEE}
+										</span>
+									{END PagIbigEE_fieldheader}
+									</th>
+									{END PagIbigEE_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN PagIbigER_fieldheadercolumn}<th class="rnr-gridfieldlabel {$PagIbigER_class}" data-field=PagIbigER>
+									{BEGIN PagIbigER_fieldheader}<span {$PagIbigER_orderlinkattrs}>
+											{$label demo_user PagIbigER}
+										</span>
+									{END PagIbigER_fieldheader}
+									</th>
+									{END PagIbigER_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN PresetTax_fieldheadercolumn}<th class="rnr-gridfieldlabel {$PresetTax_class}" data-field=PresetTax>
+									{BEGIN PresetTax_fieldheader}<span {$PresetTax_orderlinkattrs}>
+											{$label demo_user PresetTax}
+										</span>
+									{END PresetTax_fieldheader}
+									</th>
+									{END PresetTax_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN NoLateDeduction_fieldheadercolumn}<th class="rnr-gridfieldlabel {$NoLateDeduction_class}" data-field=NoLateDeduction>
+									{BEGIN NoLateDeduction_fieldheader}<span {$NoLateDeduction_orderlinkattrs}>
+											{$label demo_user NoLateDeduction}
+										</span>
+									{END NoLateDeduction_fieldheader}
+									</th>
+									{END NoLateDeduction_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN GracePeriodMins_fieldheadercolumn}<th class="rnr-gridfieldlabel {$GracePeriodMins_class}" data-field=GracePeriodMins>
+									{BEGIN GracePeriodMins_fieldheader}<span {$GracePeriodMins_orderlinkattrs}>
+											{$label demo_user GracePeriodMins}
+										</span>
+									{END GracePeriodMins_fieldheader}
+									</th>
+									{END GracePeriodMins_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN WithAdditionalBreaks_fieldheadercolumn}<th class="rnr-gridfieldlabel {$WithAdditionalBreaks_class}" data-field=WithAdditionalBreaks>
+									{BEGIN WithAdditionalBreaks_fieldheader}<span {$WithAdditionalBreaks_orderlinkattrs}>
+											{$label demo_user WithAdditionalBreaks}
+										</span>
+									{END WithAdditionalBreaks_fieldheader}
+									</th>
+									{END WithAdditionalBreaks_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN IncludeBreakLate_fieldheadercolumn}<th class="rnr-gridfieldlabel {$IncludeBreakLate_class}" data-field=IncludeBreakLate>
+									{BEGIN IncludeBreakLate_fieldheader}<span {$IncludeBreakLate_orderlinkattrs}>
+											{$label demo_user IncludeBreakLate}
+										</span>
+									{END IncludeBreakLate_fieldheader}
+									</th>
+									{END IncludeBreakLate_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN LateFixPenalty_fieldheadercolumn}<th class="rnr-gridfieldlabel {$LateFixPenalty_class}" data-field=LateFixPenalty>
+									{BEGIN LateFixPenalty_fieldheader}<span {$LateFixPenalty_orderlinkattrs}>
+											{$label demo_user LateFixPenalty}
+										</span>
+									{END LateFixPenalty_fieldheader}
+									</th>
+									{END LateFixPenalty_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN user_id_fieldheadercolumn}<th class="rnr-gridfieldlabel {$user_id_class}" data-field=user_id>
+									{BEGIN user_id_fieldheader}<span {$user_id_orderlinkattrs}>
+											{$label demo_user user_id}
+										</span>
+									{END user_id_fieldheader}
+									</th>
+									{END user_id_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN DateCreated_fieldheadercolumn}<th class="rnr-gridfieldlabel {$DateCreated_class}" data-field=DateCreated>
+									{BEGIN DateCreated_fieldheader}<span {$DateCreated_orderlinkattrs}>
+											{$label demo_user DateCreated}
+										</span>
+									{END DateCreated_fieldheader}
+									</th>
+									{END DateCreated_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Preparedby_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Preparedby_class}" data-field=Preparedby>
+									{BEGIN Preparedby_fieldheader}<span {$Preparedby_orderlinkattrs}>
+											{$label demo_user Preparedby}
+										</span>
+									{END Preparedby_fieldheader}
+									</th>
+									{END Preparedby_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Checked_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Checked_class}" data-field=Checked>
+									{BEGIN Checked_fieldheader}<span {$Checked_orderlinkattrs}>
+											{$label demo_user Checked}
+										</span>
+									{END Checked_fieldheader}
+									</th>
+									{END Checked_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Checkedby_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Checkedby_class}" data-field=Checkedby>
+									{BEGIN Checkedby_fieldheader}<span {$Checkedby_orderlinkattrs}>
+											{$label demo_user Checkedby}
+										</span>
+									{END Checkedby_fieldheader}
+									</th>
+									{END Checkedby_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN CheckedDate_fieldheadercolumn}<th class="rnr-gridfieldlabel {$CheckedDate_class}" data-field=CheckedDate>
+									{BEGIN CheckedDate_fieldheader}<span {$CheckedDate_orderlinkattrs}>
+											{$label demo_user CheckedDate}
+										</span>
+									{END CheckedDate_fieldheader}
+									</th>
+									{END CheckedDate_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Approved_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Approved_class}" data-field=Approved>
+									{BEGIN Approved_fieldheader}<span {$Approved_orderlinkattrs}>
+											{$label demo_user Approved}
+										</span>
+									{END Approved_fieldheader}
+									</th>
+									{END Approved_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Approvedby_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Approvedby_class}" data-field=Approvedby>
+									{BEGIN Approvedby_fieldheader}<span {$Approvedby_orderlinkattrs}>
+											{$label demo_user Approvedby}
+										</span>
+									{END Approvedby_fieldheader}
+									</th>
+									{END Approvedby_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN ApprovedDate_fieldheadercolumn}<th class="rnr-gridfieldlabel {$ApprovedDate_class}" data-field=ApprovedDate>
+									{BEGIN ApprovedDate_fieldheader}<span {$ApprovedDate_orderlinkattrs}>
+											{$label demo_user ApprovedDate}
+										</span>
+									{END ApprovedDate_fieldheader}
+									</th>
+									{END ApprovedDate_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN endrecordheader_block}<th class="rnr-cs">&nbsp;</th>
+									
+									{END endrecordheader_block}
+									
+									{END record_header}
+									
+								</tr>
+								{END grid_header}
+
+	</thead>
+	<tbody>	
+		{BEGIN grid_row}<tr class="{$rowclass} bs-gridrow" {$rowattrs} {$rowstyle}>
+	{BEGIN grid_record}{BEGIN listIcons_column}<td class="bs-gridicons" iEditCont="all" {$rowstyle} {$recordattrs}>
+		{BEGIN edit_column}{BEGIN edit_link}<a class="glyphicon glyphicon-pencil" {$editlink_attrs} title="Edit"></a>
+	{END edit_link}
+	{END edit_column}
+
+		{BEGIN inlineedit_column}{BEGIN inlineedit_link}<a class="glyphicon glyphicon-edit" {$inlineeditlink_attrs} title="Inline Edit"></a>
+	{END inlineedit_link}
+	{END inlineedit_column}
+	
+	<span data-hidden {$ieditbuttonsholder_attrs}></span>
+
+	
+		{BEGIN view_column}{BEGIN view_link}<a class="glyphicon glyphicon-search" {$viewlink_attrs} title="View"></a>
+	{END view_link}
+	{END view_column}
+	</td>	
+	{END listIcons_column}	
+
+		{BEGIN checkbox_column}<td  iEditCont="checkBox" class="bs-gridcheckbox" {$rowstyle} {$recordattrs}>
+	{BEGIN checkbox}<input type="checkbox" {$checkbox_attrs}>
+	{END checkbox}
+	</td>
+	{END checkbox_column}
+
+		{BEGIN demo_user_dtable_column}<td class="rnr-nowrap bs-griddetails" {$rowstyle} {$recordattrs}>
+	
+			{BEGIN dtables_link}<a {$dtables_link_attrs} class="glyphicon glyphicon-th-list {$dtables_link_class}" title="Show details"></a>
+												{BEGIN empindschedule_childcount}<a {$empindschedule_link_attrs} class="{$empindschedule_dlink_class}" title="Uploaded Schedule">
+					<span class="details-badge badge empindschedule_badge" {$empindschedule_childnumber_attr}>
+						{$empindschedule_childnumber}
+					</span></a>
+				{END empindschedule_childcount}
+								{BEGIN loans_childcount}<a {$loans_link_attrs} class="{$loans_dlink_class}" title="Loans and Deductions Setup">
+					<span class="details-badge badge loans_badge" {$loans_childnumber_attr}>
+						{$loans_childnumber}
+					</span></a>
+				{END loans_childcount}
+								{BEGIN earningadjustment_childcount}<a {$earningadjustment_link_attrs} class="{$earningadjustment_dlink_class}" title="Recurring Adjustment Setup">
+					<span class="details-badge badge earningadjustment_badge" {$earningadjustment_childnumber_attr}>
+						{$earningadjustment_childnumber}
+					</span></a>
+				{END earningadjustment_childcount}
+								{BEGIN emphistory_childcount}<a {$emphistory_link_attrs} class="{$emphistory_dlink_class}" title="History">
+					<span class="details-badge badge emphistory_badge" {$emphistory_childnumber_attr}>
+						{$emphistory_childnumber}
+					</span></a>
+				{END emphistory_childcount}
+		{END dtables_link}
+	
+	
+	</td>
+	{END demo_user_dtable_column}
+
+
+	{BEGIN EmployeeID_fieldcolumn}<td class="bs-gridcell {$EmployeeID_class}"  data-field=EmployeeID {$rowstyle} {$recordattrs}>
+		{$EmployeeID_value}
+	</td>
+{END EmployeeID_fieldcolumn}
+
+
+	{BEGIN IDNo_fieldcolumn}<td class="bs-gridcell {$IDNo_class}"  data-field=IDNo {$rowstyle} {$recordattrs}>
+		{$IDNo_value}
+	</td>
+{END IDNo_fieldcolumn}
+
+
+	{BEGIN Photo_fieldcolumn}<td class="bs-gridcell {$Photo_class}"  data-field=Photo {$rowstyle} {$recordattrs}>
+		{$Photo_value}
+	</td>
+{END Photo_fieldcolumn}
+
+
+	{BEGIN user_name_fieldcolumn}<td class="bs-gridcell {$user_name_class}"  data-field=user_name {$rowstyle} {$recordattrs}>
+		{$user_name_value}
+	</td>
+{END user_name_fieldcolumn}
+
+
+	{BEGIN Employer_fieldcolumn}<td class="bs-gridcell {$Employer_class}"  data-field=Employer {$rowstyle} {$recordattrs}>
+		{$Employer_value}
+	</td>
+{END Employer_fieldcolumn}
+
+
+	{BEGIN Division_fieldcolumn}<td class="bs-gridcell {$Division_class}"  data-field=Division {$rowstyle} {$recordattrs}>
+		{$Division_value}
+	</td>
+{END Division_fieldcolumn}
+
+
+	{BEGIN Department_fieldcolumn}<td class="bs-gridcell {$Department_class}"  data-field=Department {$rowstyle} {$recordattrs}>
+		{$Department_value}
+	</td>
+{END Department_fieldcolumn}
+
+
+	{BEGIN HiredDate_fieldcolumn}<td class="bs-gridcell {$HiredDate_class}"  data-field=HiredDate {$rowstyle} {$recordattrs}>
+		{$HiredDate_value}
+	</td>
+{END HiredDate_fieldcolumn}
+
+
+	{BEGIN Inactive_fieldcolumn}<td class="bs-gridcell {$Inactive_class}"  data-field=Inactive {$rowstyle} {$recordattrs}>
+		{$Inactive_value}
+	</td>
+{END Inactive_fieldcolumn}
+
+
+	{BEGIN ExitDate_fieldcolumn}<td class="bs-gridcell {$ExitDate_class}"  data-field=ExitDate {$rowstyle} {$recordattrs}>
+		{$ExitDate_value}
+	</td>
+{END ExitDate_fieldcolumn}
+
+
+	{BEGIN Status_fieldcolumn}<td class="bs-gridcell {$Status_class}"  data-field=Status {$rowstyle} {$recordattrs}>
+		{$Status_value}
+	</td>
+{END Status_fieldcolumn}
+
+
+	{BEGIN Position_fieldcolumn}<td class="bs-gridcell {$Position_class}"  data-field=Position {$rowstyle} {$recordattrs}>
+		{$Position_value}
+	</td>
+{END Position_fieldcolumn}
+
+
+	{BEGIN Superior_fieldcolumn}<td class="bs-gridcell {$Superior_class}"  data-field=Superior {$rowstyle} {$recordattrs}>
+		{$Superior_value}
+	</td>
+{END Superior_fieldcolumn}
+
+
+	{BEGIN Mobile_fieldcolumn}<td class="bs-gridcell {$Mobile_class}"  data-field=Mobile {$rowstyle} {$recordattrs}>
+		{$Mobile_value}
+	</td>
+{END Mobile_fieldcolumn}
+
+
+	{BEGIN Address_fieldcolumn}<td class="bs-gridcell {$Address_class}"  data-field=Address {$rowstyle} {$recordattrs}>
+		{$Address_value}
+	</td>
+{END Address_fieldcolumn}
+
+
+	{BEGIN Birthday_fieldcolumn}<td class="bs-gridcell {$Birthday_class}"  data-field=Birthday {$rowstyle} {$recordattrs}>
+		{$Birthday_value}
+	</td>
+{END Birthday_fieldcolumn}
+
+
+	{BEGIN Email_fieldcolumn}<td class="bs-gridcell {$Email_class}"  data-field=Email {$rowstyle} {$recordattrs}>
+		{$Email_value}
+	</td>
+{END Email_fieldcolumn}
+
+
+	{BEGIN SSSNo_fieldcolumn}<td class="bs-gridcell {$SSSNo_class}"  data-field=SSSNo {$rowstyle} {$recordattrs}>
+		{$SSSNo_value}
+	</td>
+{END SSSNo_fieldcolumn}
+
+
+	{BEGIN PagIbigNo_fieldcolumn}<td class="bs-gridcell {$PagIbigNo_class}"  data-field=PagIbigNo {$rowstyle} {$recordattrs}>
+		{$PagIbigNo_value}
+	</td>
+{END PagIbigNo_fieldcolumn}
+
+
+	{BEGIN PhilHealthNo_fieldcolumn}<td class="bs-gridcell {$PhilHealthNo_class}"  data-field=PhilHealthNo {$rowstyle} {$recordattrs}>
+		{$PhilHealthNo_value}
+	</td>
+{END PhilHealthNo_fieldcolumn}
+
+
+	{BEGIN TIN_fieldcolumn}<td class="bs-gridcell {$TIN_class}"  data-field=TIN {$rowstyle} {$recordattrs}>
+		{$TIN_value}
+	</td>
+{END TIN_fieldcolumn}
+
+
+	{BEGIN Bank_fieldcolumn}<td class="bs-gridcell {$Bank_class}"  data-field=Bank {$rowstyle} {$recordattrs}>
+		{$Bank_value}
+	</td>
+{END Bank_fieldcolumn}
+
+
+	{BEGIN AccountNo_fieldcolumn}<td class="bs-gridcell {$AccountNo_class}"  data-field=AccountNo {$rowstyle} {$recordattrs}>
+		{$AccountNo_value}
+	</td>
+{END AccountNo_fieldcolumn}
+
+
+	{BEGIN AllowableSickLeave_fieldcolumn}<td class="bs-gridcell {$AllowableSickLeave_class}"  data-field=AllowableSickLeave {$rowstyle} {$recordattrs}>
+		{$AllowableSickLeave_value}
+	</td>
+{END AllowableSickLeave_fieldcolumn}
+
+
+	{BEGIN AllowableVacationLeave_fieldcolumn}<td class="bs-gridcell {$AllowableVacationLeave_class}"  data-field=AllowableVacationLeave {$rowstyle} {$recordattrs}>
+		{$AllowableVacationLeave_value}
+	</td>
+{END AllowableVacationLeave_fieldcolumn}
+
+
+	{BEGIN AllowableEmergencyLeave_fieldcolumn}<td class="bs-gridcell {$AllowableEmergencyLeave_class}"  data-field=AllowableEmergencyLeave {$rowstyle} {$recordattrs}>
+		{$AllowableEmergencyLeave_value}
+	</td>
+{END AllowableEmergencyLeave_fieldcolumn}
+
+
+	{BEGIN AllowablePaternityLeave_fieldcolumn}<td class="bs-gridcell {$AllowablePaternityLeave_class}"  data-field=AllowablePaternityLeave {$rowstyle} {$recordattrs}>
+		{$AllowablePaternityLeave_value}
+	</td>
+{END AllowablePaternityLeave_fieldcolumn}
+
+
+	{BEGIN EmployeeType_fieldcolumn}<td class="bs-gridcell {$EmployeeType_class}"  data-field=EmployeeType {$rowstyle} {$recordattrs}>
+		{$EmployeeType_value}
+	</td>
+{END EmployeeType_fieldcolumn}
+
+
+	{BEGIN Level_fieldcolumn}<td class="bs-gridcell {$Level_class}"  data-field=Level {$rowstyle} {$recordattrs}>
+		{$Level_value}
+	</td>
+{END Level_fieldcolumn}
+
+
+	{BEGIN DoNotUpdateContributions_fieldcolumn}<td class="bs-gridcell {$DoNotUpdateContributions_class}"  data-field=DoNotUpdateContributions {$rowstyle} {$recordattrs}>
+		{$DoNotUpdateContributions_value}
+	</td>
+{END DoNotUpdateContributions_fieldcolumn}
+
+
+	{BEGIN ExcludeContributionOnPayroll_fieldcolumn}<td class="bs-gridcell {$ExcludeContributionOnPayroll_class}"  data-field=ExcludeContributionOnPayroll {$rowstyle} {$recordattrs}>
+		{$ExcludeContributionOnPayroll_value}
+	</td>
+{END ExcludeContributionOnPayroll_fieldcolumn}
+
+
+	{BEGIN SSSEE_fieldcolumn}<td class="bs-gridcell {$SSSEE_class}"  data-field=SSSEE {$rowstyle} {$recordattrs}>
+		{$SSSEE_value}
+	</td>
+{END SSSEE_fieldcolumn}
+
+
+	{BEGIN SSSER_fieldcolumn}<td class="bs-gridcell {$SSSER_class}"  data-field=SSSER {$rowstyle} {$recordattrs}>
+		{$SSSER_value}
+	</td>
+{END SSSER_fieldcolumn}
+
+
+	{BEGIN SSSEC_fieldcolumn}<td class="bs-gridcell {$SSSEC_class}"  data-field=SSSEC {$rowstyle} {$recordattrs}>
+		{$SSSEC_value}
+	</td>
+{END SSSEC_fieldcolumn}
+
+
+	{BEGIN PhilHealthEE_fieldcolumn}<td class="bs-gridcell {$PhilHealthEE_class}"  data-field=PhilHealthEE {$rowstyle} {$recordattrs}>
+		{$PhilHealthEE_value}
+	</td>
+{END PhilHealthEE_fieldcolumn}
+
+
+	{BEGIN PhilHealthER_fieldcolumn}<td class="bs-gridcell {$PhilHealthER_class}"  data-field=PhilHealthER {$rowstyle} {$recordattrs}>
+		{$PhilHealthER_value}
+	</td>
+{END PhilHealthER_fieldcolumn}
+
+
+	{BEGIN PagIbigEE_fieldcolumn}<td class="bs-gridcell {$PagIbigEE_class}"  data-field=PagIbigEE {$rowstyle} {$recordattrs}>
+		{$PagIbigEE_value}
+	</td>
+{END PagIbigEE_fieldcolumn}
+
+
+	{BEGIN PagIbigER_fieldcolumn}<td class="bs-gridcell {$PagIbigER_class}"  data-field=PagIbigER {$rowstyle} {$recordattrs}>
+		{$PagIbigER_value}
+	</td>
+{END PagIbigER_fieldcolumn}
+
+
+	{BEGIN PresetTax_fieldcolumn}<td class="bs-gridcell {$PresetTax_class}"  data-field=PresetTax {$rowstyle} {$recordattrs}>
+		{$PresetTax_value}
+	</td>
+{END PresetTax_fieldcolumn}
+
+
+	{BEGIN NoLateDeduction_fieldcolumn}<td class="bs-gridcell {$NoLateDeduction_class}"  data-field=NoLateDeduction {$rowstyle} {$recordattrs}>
+		{$NoLateDeduction_value}
+	</td>
+{END NoLateDeduction_fieldcolumn}
+
+
+	{BEGIN GracePeriodMins_fieldcolumn}<td class="bs-gridcell {$GracePeriodMins_class}"  data-field=GracePeriodMins {$rowstyle} {$recordattrs}>
+		{$GracePeriodMins_value}
+	</td>
+{END GracePeriodMins_fieldcolumn}
+
+
+	{BEGIN WithAdditionalBreaks_fieldcolumn}<td class="bs-gridcell {$WithAdditionalBreaks_class}"  data-field=WithAdditionalBreaks {$rowstyle} {$recordattrs}>
+		{$WithAdditionalBreaks_value}
+	</td>
+{END WithAdditionalBreaks_fieldcolumn}
+
+
+	{BEGIN IncludeBreakLate_fieldcolumn}<td class="bs-gridcell {$IncludeBreakLate_class}"  data-field=IncludeBreakLate {$rowstyle} {$recordattrs}>
+		{$IncludeBreakLate_value}
+	</td>
+{END IncludeBreakLate_fieldcolumn}
+
+
+	{BEGIN LateFixPenalty_fieldcolumn}<td class="bs-gridcell {$LateFixPenalty_class}"  data-field=LateFixPenalty {$rowstyle} {$recordattrs}>
+		{$LateFixPenalty_value}
+	</td>
+{END LateFixPenalty_fieldcolumn}
+
+
+	{BEGIN user_id_fieldcolumn}<td class="bs-gridcell {$user_id_class}"  data-field=user_id {$rowstyle} {$recordattrs}>
+		{$user_id_value}
+	</td>
+{END user_id_fieldcolumn}
+
+
+	{BEGIN DateCreated_fieldcolumn}<td class="bs-gridcell {$DateCreated_class}"  data-field=DateCreated {$rowstyle} {$recordattrs}>
+		{$DateCreated_value}
+	</td>
+{END DateCreated_fieldcolumn}
+
+
+	{BEGIN Preparedby_fieldcolumn}<td class="bs-gridcell {$Preparedby_class}"  data-field=Preparedby {$rowstyle} {$recordattrs}>
+		{$Preparedby_value}
+	</td>
+{END Preparedby_fieldcolumn}
+
+
+	{BEGIN Checked_fieldcolumn}<td class="bs-gridcell {$Checked_class}"  data-field=Checked {$rowstyle} {$recordattrs}>
+		{$Checked_value}
+	</td>
+{END Checked_fieldcolumn}
+
+
+	{BEGIN Checkedby_fieldcolumn}<td class="bs-gridcell {$Checkedby_class}"  data-field=Checkedby {$rowstyle} {$recordattrs}>
+		{$Checkedby_value}
+	</td>
+{END Checkedby_fieldcolumn}
+
+
+	{BEGIN CheckedDate_fieldcolumn}<td class="bs-gridcell {$CheckedDate_class}"  data-field=CheckedDate {$rowstyle} {$recordattrs}>
+		{$CheckedDate_value}
+	</td>
+{END CheckedDate_fieldcolumn}
+
+
+	{BEGIN Approved_fieldcolumn}<td class="bs-gridcell {$Approved_class}"  data-field=Approved {$rowstyle} {$recordattrs}>
+		{$Approved_value}
+	</td>
+{END Approved_fieldcolumn}
+
+
+	{BEGIN Approvedby_fieldcolumn}<td class="bs-gridcell {$Approvedby_class}"  data-field=Approvedby {$rowstyle} {$recordattrs}>
+		{$Approvedby_value}
+	</td>
+{END Approvedby_fieldcolumn}
+
+
+	{BEGIN ApprovedDate_fieldcolumn}<td class="bs-gridcell {$ApprovedDate_class}"  data-field=ApprovedDate {$rowstyle} {$recordattrs}>
+		{$ApprovedDate_value}
+	</td>
+{END ApprovedDate_fieldcolumn}
+
+	{BEGIN endrecord_block}<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+	{END endrecord_block}
+									
+	{END grid_record}
+
+</tr>
+{END grid_row}
+	</tbody>
+	<tfoot>
+										
+	</tfoot>
+</table>
+
+
+
+{END grid_block}
+
+
+
+</div>
+{END container_grid}
+
+
+
+
+
+
+</div>
+{END container_center}
+
+
+
+{BEGIN container_pagination}<div {$pagination_chiddenattr} data-pageid="{$pageid}" data-container="pagination" class="  text-center col-md-12 "> 
+
+{BEGIN pagination_block}<div {$pagination_hiddenattr} data-pageid="{$pageid}" data-brick="pagination">
+{$pagination}
+</div>
+{END pagination_block}
+
+
+
+</div>
+{END container_pagination}
+
+
+		</div>
+	</div>
+</div>
+	
+
+		{$footer}
+	{END body}
+	</body>
+</html>

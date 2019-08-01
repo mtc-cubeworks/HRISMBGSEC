@@ -1,0 +1,67 @@
+<div {$pageattrs}>
+
+{BEGIN container_dcount}
+<div {$dcount_chiddenattr} data-pageid="{$pageid}" data-container="dcount" class="    "> 
+
+
+<span {$bsdetailspreviewcount_hiddenattr} data-pageid="{$pageid}" data-brick="bsdetailspreviewcount">Details found: <strong>{$row_count}</strong></span>
+
+
+
+
+
+</div>
+{END container_dcount}
+
+
+
+{BEGIN container_detailspreviewgrid}
+
+
+{BEGIN details_data}
+<table class="table striped">
+{BEGIN details_row_header}
+	<thead>
+		<tr class="{$gridHeader_class}" >
+			<th class="{$PdeID_class}">{$label payrolldeductions PdeID}</th>
+			<th class="{$Employer_class}">{$label payrolldeductions Employer}</th>
+			<th class="{$Division_class}">{$label payrolldeductions Division}</th>
+			<th class="{$WageType_class}">{$label payrolldeductions WageType}</th>
+			<th class="{$EmployeeID_class}">{$label payrolldeductions EmployeeID}</th>
+			<th class="{$FromDate_class}">{$label payrolldeductions FromDate}</th>
+			<th class="{$ToDate_class}">{$label payrolldeductions ToDate}</th>
+			<th class="{$Deduction_class}">{$label payrolldeductions Deduction}</th>
+			<th class="{$Balance_class}">{$label payrolldeductions Balance}</th>
+			<th class="{$Amount_class}">{$label payrolldeductions Amount}</th>
+			<th class="{$LoanID_class}">{$label payrolldeductions LoanID}</th>
+			<th class="{$PSID_class}">{$label payrolldeductions PSID}</th>
+		</tr>
+	</thead>
+{END details_row_header}
+	<tbody>
+{BEGIN details_row}
+		<tr>
+			<td class="{$PdeID_class}">{$PdeID_value}</td>
+			<td class="{$Employer_class}">{$Employer_value}</td>
+			<td class="{$Division_class}">{$Division_value}</td>
+			<td class="{$WageType_class}">{$WageType_value}</td>
+			<td class="{$EmployeeID_class}">{$EmployeeID_value}</td>
+			<td class="{$FromDate_class}">{$FromDate_value}</td>
+			<td class="{$ToDate_class}">{$ToDate_value}</td>
+			<td class="{$Deduction_class}">{$Deduction_value}</td>
+			<td class="{$Balance_class}">{$Balance_value}</td>
+			<td class="{$Amount_class}">{$Amount_value}</td>
+			<td class="{$LoanID_class}">{$LoanID_value}</td>
+			<td class="{$PSID_class}">{$PSID_value}</td>
+		</tr>
+{END details_row}	
+	</tbody>
+</table>
+
+{END details_data}
+
+
+
+{END container_detailspreviewgrid}
+
+</div>

@@ -1,0 +1,383 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_searchpage}
+<div {$searchpage_chiddenattr} data-pageid="{$pageid}" data-container="searchpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN searchheader}
+	<h2 {$bssearchheader_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchheader" >{$pagetitlelabel leavebalance1 search}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END searchheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_searchpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$bssearchfields_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchfields" class="form-horizontal" role="form">
+<div class="container">
+	<div class="form-group">
+		<div class="col-md-12" >
+			&nbsp;
+		</div>
+	</div>
+</div>
+	{BEGIN EmployeeID_fieldblock}		
+	<div class="container {$fielddispclass_EmployeeID}" data-fieldname="EmployeeID">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_EmployeeID}">
+				{$label leavebalance1 EmployeeID}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_EmployeeID}
+			</div>
+			<div class="col-md-4" >
+				{$EmployeeID_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$EmployeeID_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END EmployeeID_fieldblock}
+	{BEGIN AllowableSickLeave_fieldblock}		
+	<div class="container {$fielddispclass_AllowableSickLeave}" data-fieldname="AllowableSickLeave">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_AllowableSickLeave}">
+				{$label leavebalance1 AllowableSickLeave}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_AllowableSickLeave}
+			</div>
+			<div class="col-md-4" >
+				{$AllowableSickLeave_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$AllowableSickLeave_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END AllowableSickLeave_fieldblock}
+	{BEGIN TotalSL_fieldblock}		
+	<div class="container {$fielddispclass_TotalSL}" data-fieldname="TotalSL">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_TotalSL}">
+				{$label leavebalance1 TotalSL}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_TotalSL}
+			</div>
+			<div class="col-md-4" >
+				{$TotalSL_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$TotalSL_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END TotalSL_fieldblock}
+	{BEGIN AllowableVacationLeave_fieldblock}		
+	<div class="container {$fielddispclass_AllowableVacationLeave}" data-fieldname="AllowableVacationLeave">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_AllowableVacationLeave}">
+				{$label leavebalance1 AllowableVacationLeave}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_AllowableVacationLeave}
+			</div>
+			<div class="col-md-4" >
+				{$AllowableVacationLeave_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$AllowableVacationLeave_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END AllowableVacationLeave_fieldblock}
+	{BEGIN TotalVL_fieldblock}		
+	<div class="container {$fielddispclass_TotalVL}" data-fieldname="TotalVL">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_TotalVL}">
+				{$label leavebalance1 TotalVL}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_TotalVL}
+			</div>
+			<div class="col-md-4" >
+				{$TotalVL_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$TotalVL_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END TotalVL_fieldblock}
+	{BEGIN AllowableEmergencyLeave_fieldblock}		
+	<div class="container {$fielddispclass_AllowableEmergencyLeave}" data-fieldname="AllowableEmergencyLeave">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_AllowableEmergencyLeave}">
+				{$label leavebalance1 AllowableEmergencyLeave}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_AllowableEmergencyLeave}
+			</div>
+			<div class="col-md-4" >
+				{$AllowableEmergencyLeave_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$AllowableEmergencyLeave_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END AllowableEmergencyLeave_fieldblock}
+	{BEGIN TotalEL_fieldblock}		
+	<div class="container {$fielddispclass_TotalEL}" data-fieldname="TotalEL">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_TotalEL}">
+				{$label leavebalance1 TotalEL}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_TotalEL}
+			</div>
+			<div class="col-md-4" >
+				{$TotalEL_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$TotalEL_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END TotalEL_fieldblock}
+	{BEGIN AllowablePaternityLeave_fieldblock}		
+	<div class="container {$fielddispclass_AllowablePaternityLeave}" data-fieldname="AllowablePaternityLeave">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_AllowablePaternityLeave}">
+				{$label leavebalance1 AllowablePaternityLeave}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_AllowablePaternityLeave}
+			</div>
+			<div class="col-md-4" >
+				{$AllowablePaternityLeave_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$AllowablePaternityLeave_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END AllowablePaternityLeave_fieldblock}
+	{BEGIN TotalPL_fieldblock}		
+	<div class="container {$fielddispclass_TotalPL}" data-fieldname="TotalPL">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_TotalPL}">
+				{$label leavebalance1 TotalPL}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_TotalPL}
+			</div>
+			<div class="col-md-4" >
+				{$TotalPL_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$TotalPL_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END TotalPL_fieldblock}
+	{BEGIN SLBalance_fieldblock}		
+	<div class="container {$fielddispclass_SLBalance}" data-fieldname="SLBalance">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SLBalance}">
+				{$label leavebalance1 SLBalance}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SLBalance}
+			</div>
+			<div class="col-md-4" >
+				{$SLBalance_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SLBalance_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SLBalance_fieldblock}
+	{BEGIN VLBalance_fieldblock}		
+	<div class="container {$fielddispclass_VLBalance}" data-fieldname="VLBalance">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_VLBalance}">
+				{$label leavebalance1 VLBalance}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_VLBalance}
+			</div>
+			<div class="col-md-4" >
+				{$VLBalance_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$VLBalance_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END VLBalance_fieldblock}
+	{BEGIN ELBalance_fieldblock}		
+	<div class="container {$fielddispclass_ELBalance}" data-fieldname="ELBalance">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_ELBalance}">
+				{$label leavebalance1 ELBalance}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_ELBalance}
+			</div>
+			<div class="col-md-4" >
+				{$ELBalance_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$ELBalance_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END ELBalance_fieldblock}
+	{BEGIN PLBalance_fieldblock}		
+	<div class="container {$fielddispclass_PLBalance}" data-fieldname="PLBalance">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_PLBalance}">
+				{$label leavebalance1 PLBalance}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_PLBalance}
+			</div>
+			<div class="col-md-4" >
+				{$PLBalance_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$PLBalance_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END PLBalance_fieldblock}
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container form-horizontal   "> 
+
+
+
+
+{BEGIN container_bbuttons}
+<div {$bbuttons_chiddenattr} data-pageid="{$pageid}" data-container="bbuttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-10 col-md-offset-2"> 
+
+{BEGIN searchbuttons}
+{BEGIN search_button}
+<button class="btn btn-primary" {$searchbutton_attrs}>Search</button>
+{END search_button} 
+{BEGIN reset_button}
+<button class="btn btn-default" {$resetbutton_attrs}>Reset</button>
+{END reset_button}
+{BEGIN back_button}
+<button class="btn btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{END searchbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+</div>
+{END container_bbuttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,265 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_pdf}
+<div {$pdf_chiddenattr} data-pageid="{$pageid}" data-container="pdf" class="   col-md-12 "> 
+
+{BEGIN printbuttons}
+
+{END printbuttons}
+
+
+
+</div>
+{END container_pdf}
+
+
+
+{BEGIN container_master}
+<div {$master_chiddenattr} data-pageid="{$pageid}" data-container="master" class="    "> 
+
+{BEGIN mastertable_block}
+<div class="panel panel-info table-panel">
+	<div class="panel-heading">
+		{$master_heading}
+	</div>
+	<div class="panel-body">
+		{$showmasterfile}
+		
+	</div>
+</div>
+
+{END mastertable_block}
+
+
+
+</div>
+{END container_master}
+
+
+
+{BEGIN container_pageheader}
+<div {$pageheader_chiddenattr} data-pageid="{$pageid}" data-container="pageheader" class="    "> 
+
+{BEGIN printheader}
+	<h2 {$printheader_hiddenattr} data-pageid="{$pageid}" data-brick="printheader" >{$pagetitlelabel indbreaks print}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END printheader}
+
+
+{BEGIN page_number}
+<span>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></span>
+{END page_number}
+
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="table table-bordered rp-maintable" {$printgrid_hiddenattr} data-pageid="{$pageid}" data-brick="printgrid" >
+	<thead>
+	{BEGIN grid_header}
+		<tr class="{$gridHeader_class}" >
+		{BEGIN record_header}
+			{BEGIN IBID_fieldheadercolumn}
+			<th class="{$IBID_class}" {$IBID_style}  data-field="IBID">
+				{$label indbreaks IBID}
+			</th>
+			{END IBID_fieldheadercolumn}
+			{BEGIN BreakOut_fieldheadercolumn}
+			<th class="{$BreakOut_class}" {$BreakOut_style}  data-field="BreakOut">
+				{$label indbreaks BreakOut}
+			</th>
+			{END BreakOut_fieldheadercolumn}
+			{BEGIN BreakIn_fieldheadercolumn}
+			<th class="{$BreakIn_class}" {$BreakIn_style}  data-field="BreakIn">
+				{$label indbreaks BreakIn}
+			</th>
+			{END BreakIn_fieldheadercolumn}
+			{BEGIN BreakM_fieldheadercolumn}
+			<th class="{$BreakM_class}" {$BreakM_style}  data-field="BreakM">
+				{$label indbreaks BreakM}
+			</th>
+			{END BreakM_fieldheadercolumn}
+			{BEGIN AllowedBreakM_fieldheadercolumn}
+			<th class="{$AllowedBreakM_class}" {$AllowedBreakM_style}  data-field="AllowedBreakM">
+				{$label indbreaks AllowedBreakM}
+			</th>
+			{END AllowedBreakM_fieldheadercolumn}
+			{BEGIN Excess_fieldheadercolumn}
+			<th class="{$Excess_class}" {$Excess_style}  data-field="Excess">
+				{$label indbreaks Excess}
+			</th>
+			{END Excess_fieldheadercolumn}
+			{BEGIN ScID_fieldheadercolumn}
+			<th class="{$ScID_class}" {$ScID_style}  data-field="ScID">
+				{$label indbreaks ScID}
+			</th>
+			{END ScID_fieldheadercolumn}
+			{BEGIN endrecordheader_block}
+			<th class="rnr-cs">&nbsp;</th>
+			{END endrecordheader_block}
+		{END record_header}
+		</tr>
+	{END grid_header}
+	</thead>
+	
+	<tbody>	
+	{BEGIN grid_row}
+		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+			{BEGIN IBID_fieldcolumn}
+			<td  class="{$IBID_class}" {$IBID_style} {$recordattrs}>
+				{$IBID_value}
+			</td>
+			{END IBID_fieldcolumn}
+			{BEGIN BreakOut_fieldcolumn}
+			<td  class="{$BreakOut_class}" {$BreakOut_style} {$recordattrs}>
+				{$BreakOut_value}
+			</td>
+			{END BreakOut_fieldcolumn}
+			{BEGIN BreakIn_fieldcolumn}
+			<td  class="{$BreakIn_class}" {$BreakIn_style} {$recordattrs}>
+				{$BreakIn_value}
+			</td>
+			{END BreakIn_fieldcolumn}
+			{BEGIN BreakM_fieldcolumn}
+			<td  class="{$BreakM_class}" {$BreakM_style} {$recordattrs}>
+				{$BreakM_value}
+			</td>
+			{END BreakM_fieldcolumn}
+			{BEGIN AllowedBreakM_fieldcolumn}
+			<td  class="{$AllowedBreakM_class}" {$AllowedBreakM_style} {$recordattrs}>
+				{$AllowedBreakM_value}
+			</td>
+			{END AllowedBreakM_fieldcolumn}
+			{BEGIN Excess_fieldcolumn}
+			<td  class="{$Excess_class}" {$Excess_style} {$recordattrs}>
+				{$Excess_value}
+			</td>
+			{END Excess_fieldcolumn}
+			{BEGIN ScID_fieldcolumn}
+			<td  class="{$ScID_class}" {$ScID_style} {$recordattrs}>
+				{$ScID_value}
+			</td>
+			{END ScID_fieldcolumn}
+			{BEGIN endrecord_block}
+			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+			{END endrecord_block}
+		{END grid_record}
+		</tr>
+{END grid_row}
+	</tbody>
+
+{BEGIN totals_row}
+	<tfoot>
+		<tr class=" style1">
+		{BEGIN totals_record}
+			{BEGIN IBID_fieldfootercolumn}
+			<td>
+						</td>
+			{END IBID_fieldfootercolumn}
+			{BEGIN BreakOut_fieldfootercolumn}
+			<td>
+						</td>
+			{END BreakOut_fieldfootercolumn}
+			{BEGIN BreakIn_fieldfootercolumn}
+			<td>
+						</td>
+			{END BreakIn_fieldfootercolumn}
+			{BEGIN BreakM_fieldfootercolumn}
+			<td>
+							{BEGIN BreakM_showtotal}
+									Total:
+				{$BreakM_total}
+				{END BreakM_showtotal}
+			</td>
+			{END BreakM_fieldfootercolumn}
+			{BEGIN AllowedBreakM_fieldfootercolumn}
+			<td>
+							{BEGIN AllowedBreakM_showtotal}
+									Total:
+				{$AllowedBreakM_total}
+				{END AllowedBreakM_showtotal}
+			</td>
+			{END AllowedBreakM_fieldfootercolumn}
+			{BEGIN Excess_fieldfootercolumn}
+			<td>
+							{BEGIN Excess_showtotal}
+									Total:
+				{$Excess_total}
+				{END Excess_showtotal}
+			</td>
+			{END Excess_fieldfootercolumn}
+			{BEGIN ScID_fieldfootercolumn}
+			<td>
+						</td>
+			{END ScID_fieldfootercolumn}
+			{BEGIN endrecordtotals_block}
+			<td class="rnr-cs"></td>
+			{END endrecordtotals_block}
+		{END totals_record}
+		</tr>
+	</tfoot>
+{END totals_row}
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

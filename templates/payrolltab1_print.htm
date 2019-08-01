@@ -1,0 +1,593 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_pdf}
+<div {$pdf_chiddenattr} data-pageid="{$pageid}" data-container="pdf" class="   col-md-12 "> 
+
+{BEGIN printbuttons}
+
+{END printbuttons}
+
+
+
+</div>
+{END container_pdf}
+
+
+
+
+
+{BEGIN container_pageheader}
+<div {$pageheader_chiddenattr} data-pageid="{$pageid}" data-container="pageheader" class="    "> 
+
+{BEGIN printheader}
+	<h2 {$printheader_hiddenattr} data-pageid="{$pageid}" data-brick="printheader" >{$pagetitlelabel payrolltab1 print}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END printheader}
+
+
+{BEGIN page_number}
+<span>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></span>
+{END page_number}
+
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="table table-bordered rp-maintable" {$printgrid_hiddenattr} data-pageid="{$pageid}" data-brick="printgrid" >
+	<thead>
+	{BEGIN grid_header}
+		<tr class="{$gridHeader_class}" >
+		{BEGIN record_header}
+			{BEGIN PtabID_fieldheadercolumn}
+			<th class="{$PtabID_class}" {$PtabID_style}  data-field="PtabID">
+				{$label payrolltab1 PtabID}
+			</th>
+			{END PtabID_fieldheadercolumn}
+			{BEGIN Locked_fieldheadercolumn}
+			<th class="{$Locked_class}" {$Locked_style}  data-field="Locked">
+				{$label payrolltab1 Locked}
+			</th>
+			{END Locked_fieldheadercolumn}
+			{BEGIN Email_fieldheadercolumn}
+			<th class="{$Email_class}" {$Email_style}  data-field="Email">
+				{$label payrolltab1 Email}
+			</th>
+			{END Email_fieldheadercolumn}
+			{BEGIN PayrollID_fieldheadercolumn}
+			<th class="{$PayrollID_class}" {$PayrollID_style}  data-field="PayrollID">
+				{$label payrolltab1 PayrollID}
+			</th>
+			{END PayrollID_fieldheadercolumn}
+			{BEGIN EmployeeID_fieldheadercolumn}
+			<th class="{$EmployeeID_class}" {$EmployeeID_style}  data-field="EmployeeID">
+				{$label payrolltab1 EmployeeID}
+			</th>
+			{END EmployeeID_fieldheadercolumn}
+			{BEGIN UserName_fieldheadercolumn}
+			<th class="{$UserName_class}" {$UserName_style}  data-field="UserName">
+				{$label payrolltab1 UserName}
+			</th>
+			{END UserName_fieldheadercolumn}
+			{BEGIN Position_fieldheadercolumn}
+			<th class="{$Position_class}" {$Position_style}  data-field="Position">
+				{$label payrolltab1 Position}
+			</th>
+			{END Position_fieldheadercolumn}
+			{BEGIN Division_fieldheadercolumn}
+			<th class="{$Division_class}" {$Division_style}  data-field="Division">
+				{$label payrolltab1 Division}
+			</th>
+			{END Division_fieldheadercolumn}
+			{BEGIN Employer_fieldheadercolumn}
+			<th class="{$Employer_class}" {$Employer_style}  data-field="Employer">
+				{$label payrolltab1 Employer}
+			</th>
+			{END Employer_fieldheadercolumn}
+			{BEGIN WageType_fieldheadercolumn}
+			<th class="{$WageType_class}" {$WageType_style}  data-field="WageType">
+				{$label payrolltab1 WageType}
+			</th>
+			{END WageType_fieldheadercolumn}
+			{BEGIN Status_fieldheadercolumn}
+			<th class="{$Status_class}" {$Status_style}  data-field="Status">
+				{$label payrolltab1 Status}
+			</th>
+			{END Status_fieldheadercolumn}
+			{BEGIN FromDate_fieldheadercolumn}
+			<th class="{$FromDate_class}" {$FromDate_style}  data-field="FromDate">
+				{$label payrolltab1 FromDate}
+			</th>
+			{END FromDate_fieldheadercolumn}
+			{BEGIN ToDate_fieldheadercolumn}
+			<th class="{$ToDate_class}" {$ToDate_style}  data-field="ToDate">
+				{$label payrolltab1 ToDate}
+			</th>
+			{END ToDate_fieldheadercolumn}
+			{BEGIN BasicMonthly_fieldheadercolumn}
+			<th class="{$BasicMonthly_class}" {$BasicMonthly_style}  data-field="BasicMonthly">
+				{$label payrolltab1 BasicMonthly}
+			</th>
+			{END BasicMonthly_fieldheadercolumn}
+			{BEGIN BasicDaily_fieldheadercolumn}
+			<th class="{$BasicDaily_class}" {$BasicDaily_style}  data-field="BasicDaily">
+				{$label payrolltab1 BasicDaily}
+			</th>
+			{END BasicDaily_fieldheadercolumn}
+			{BEGIN DWork_fieldheadercolumn}
+			<th class="{$DWork_class}" {$DWork_style}  data-field="DWork">
+				{$label payrolltab1 DWork}
+			</th>
+			{END DWork_fieldheadercolumn}
+			{BEGIN Absent_fieldheadercolumn}
+			<th class="{$Absent_class}" {$Absent_style}  data-field="Absent">
+				{$label payrolltab1 Absent}
+			</th>
+			{END Absent_fieldheadercolumn}
+			{BEGIN LateMins_fieldheadercolumn}
+			<th class="{$LateMins_class}" {$LateMins_style}  data-field="LateMins">
+				{$label payrolltab1 LateMins}
+			</th>
+			{END LateMins_fieldheadercolumn}
+			{BEGIN UndertimeMins_fieldheadercolumn}
+			<th class="{$UndertimeMins_class}" {$UndertimeMins_style}  data-field="UndertimeMins">
+				{$label payrolltab1 UndertimeMins}
+			</th>
+			{END UndertimeMins_fieldheadercolumn}
+			{BEGIN RHolidayHrs_fieldheadercolumn}
+			<th class="{$RHolidayHrs_class}" {$RHolidayHrs_style}  data-field="RHolidayHrs">
+				{$label payrolltab1 RHolidayHrs}
+			</th>
+			{END RHolidayHrs_fieldheadercolumn}
+			{BEGIN SHolidayHrs_fieldheadercolumn}
+			<th class="{$SHolidayHrs_class}" {$SHolidayHrs_style}  data-field="SHolidayHrs">
+				{$label payrolltab1 SHolidayHrs}
+			</th>
+			{END SHolidayHrs_fieldheadercolumn}
+			{BEGIN CHolidayHrs_fieldheadercolumn}
+			<th class="{$CHolidayHrs_class}" {$CHolidayHrs_style}  data-field="CHolidayHrs">
+				{$label payrolltab1 CHolidayHrs}
+			</th>
+			{END CHolidayHrs_fieldheadercolumn}
+			{BEGIN ExcessHrs_fieldheadercolumn}
+			<th class="{$ExcessHrs_class}" {$ExcessHrs_style}  data-field="ExcessHrs">
+				{$label payrolltab1 ExcessHrs}
+			</th>
+			{END ExcessHrs_fieldheadercolumn}
+			{BEGIN RegOTHrs_fieldheadercolumn}
+			<th class="{$RegOTHrs_class}" {$RegOTHrs_style}  data-field="RegOTHrs">
+				{$label payrolltab1 RegOTHrs}
+			</th>
+			{END RegOTHrs_fieldheadercolumn}
+			{BEGIN RHOTHrs_fieldheadercolumn}
+			<th class="{$RHOTHrs_class}" {$RHOTHrs_style}  data-field="RHOTHrs">
+				{$label payrolltab1 RHOTHrs}
+			</th>
+			{END RHOTHrs_fieldheadercolumn}
+			{BEGIN SHOTHRs_fieldheadercolumn}
+			<th class="{$SHOTHRs_class}" {$SHOTHRs_style}  data-field="SHOTHRs">
+				{$label payrolltab1 SHOTHRs}
+			</th>
+			{END SHOTHRs_fieldheadercolumn}
+			{BEGIN CHOTHrs_fieldheadercolumn}
+			<th class="{$CHOTHrs_class}" {$CHOTHrs_style}  data-field="CHOTHrs">
+				{$label payrolltab1 CHOTHrs}
+			</th>
+			{END CHOTHrs_fieldheadercolumn}
+			{BEGIN TrODays_fieldheadercolumn}
+			<th class="{$TrODays_class}" {$TrODays_style}  data-field="TrODays">
+				{$label payrolltab1 TrODays}
+			</th>
+			{END TrODays_fieldheadercolumn}
+			{BEGIN RDOTHrs_fieldheadercolumn}
+			<th class="{$RDOTHrs_class}" {$RDOTHrs_style}  data-field="RDOTHrs">
+				{$label payrolltab1 RDOTHrs}
+			</th>
+			{END RDOTHrs_fieldheadercolumn}
+			{BEGIN NDHrs_fieldheadercolumn}
+			<th class="{$NDHrs_class}" {$NDHrs_style}  data-field="NDHrs">
+				{$label payrolltab1 NDHrs}
+			</th>
+			{END NDHrs_fieldheadercolumn}
+			{BEGIN RDHrs_fieldheadercolumn}
+			<th class="{$RDHrs_class}" {$RDHrs_style}  data-field="RDHrs">
+				{$label payrolltab1 RDHrs}
+			</th>
+			{END RDHrs_fieldheadercolumn}
+			{BEGIN RegNDHrs_fieldheadercolumn}
+			<th class="{$RegNDHrs_class}" {$RegNDHrs_style}  data-field="RegNDHrs">
+				{$label payrolltab1 RegNDHrs}
+			</th>
+			{END RegNDHrs_fieldheadercolumn}
+			{BEGIN RHNDHrs_fieldheadercolumn}
+			<th class="{$RHNDHrs_class}" {$RHNDHrs_style}  data-field="RHNDHrs">
+				{$label payrolltab1 RHNDHrs}
+			</th>
+			{END RHNDHrs_fieldheadercolumn}
+			{BEGIN SHNDHrs_fieldheadercolumn}
+			<th class="{$SHNDHrs_class}" {$SHNDHrs_style}  data-field="SHNDHrs">
+				{$label payrolltab1 SHNDHrs}
+			</th>
+			{END SHNDHrs_fieldheadercolumn}
+			{BEGIN CHNDHrs_fieldheadercolumn}
+			<th class="{$CHNDHrs_class}" {$CHNDHrs_style}  data-field="CHNDHrs">
+				{$label payrolltab1 CHNDHrs}
+			</th>
+			{END CHNDHrs_fieldheadercolumn}
+			{BEGIN RDNDHrs_fieldheadercolumn}
+			<th class="{$RDNDHrs_class}" {$RDNDHrs_style}  data-field="RDNDHrs">
+				{$label payrolltab1 RDNDHrs}
+			</th>
+			{END RDNDHrs_fieldheadercolumn}
+			{BEGIN VLDays_fieldheadercolumn}
+			<th class="{$VLDays_class}" {$VLDays_style}  data-field="VLDays">
+				{$label payrolltab1 VLDays}
+			</th>
+			{END VLDays_fieldheadercolumn}
+			{BEGIN SLDays_fieldheadercolumn}
+			<th class="{$SLDays_class}" {$SLDays_style}  data-field="SLDays">
+				{$label payrolltab1 SLDays}
+			</th>
+			{END SLDays_fieldheadercolumn}
+			{BEGIN ELDays_fieldheadercolumn}
+			<th class="{$ELDays_class}" {$ELDays_style}  data-field="ELDays">
+				{$label payrolltab1 ELDays}
+			</th>
+			{END ELDays_fieldheadercolumn}
+			{BEGIN PLDays_fieldheadercolumn}
+			<th class="{$PLDays_class}" {$PLDays_style}  data-field="PLDays">
+				{$label payrolltab1 PLDays}
+			</th>
+			{END PLDays_fieldheadercolumn}
+			{BEGIN PLBalance_fieldheadercolumn}
+			<th class="{$PLBalance_class}" {$PLBalance_style}  data-field="PLBalance">
+				{$label payrolltab1 PLBalance}
+			</th>
+			{END PLBalance_fieldheadercolumn}
+			{BEGIN ELBalance_fieldheadercolumn}
+			<th class="{$ELBalance_class}" {$ELBalance_style}  data-field="ELBalance">
+				{$label payrolltab1 ELBalance}
+			</th>
+			{END ELBalance_fieldheadercolumn}
+			{BEGIN SLBalance_fieldheadercolumn}
+			<th class="{$SLBalance_class}" {$SLBalance_style}  data-field="SLBalance">
+				{$label payrolltab1 SLBalance}
+			</th>
+			{END SLBalance_fieldheadercolumn}
+			{BEGIN VLBalance_fieldheadercolumn}
+			<th class="{$VLBalance_class}" {$VLBalance_style}  data-field="VLBalance">
+				{$label payrolltab1 VLBalance}
+			</th>
+			{END VLBalance_fieldheadercolumn}
+			{BEGIN AllowancePerDay_fieldheadercolumn}
+			<th class="{$AllowancePerDay_class}" {$AllowancePerDay_style}  data-field="AllowancePerDay">
+				{$label payrolltab1 AllowancePerDay}
+			</th>
+			{END AllowancePerDay_fieldheadercolumn}
+			{BEGIN AgencyShare_fieldheadercolumn}
+			<th class="{$AgencyShare_class}" {$AgencyShare_style}  data-field="AgencyShare">
+				{$label payrolltab1 AgencyShare}
+			</th>
+			{END AgencyShare_fieldheadercolumn}
+			{BEGIN NDMealAllowance_fieldheadercolumn}
+			<th class="{$NDMealAllowance_class}" {$NDMealAllowance_style}  data-field="NDMealAllowance">
+				{$label payrolltab1 NDMealAllowance}
+			</th>
+			{END NDMealAllowance_fieldheadercolumn}
+			{BEGIN endrecordheader_block}
+			<th class="rnr-cs">&nbsp;</th>
+			{END endrecordheader_block}
+		{END record_header}
+		</tr>
+	{END grid_header}
+	</thead>
+	
+	<tbody>	
+	{BEGIN grid_row}
+		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+			{BEGIN PtabID_fieldcolumn}
+			<td  class="{$PtabID_class}" {$PtabID_style} {$recordattrs}>
+				{$PtabID_value}
+			</td>
+			{END PtabID_fieldcolumn}
+			{BEGIN Locked_fieldcolumn}
+			<td  class="{$Locked_class}" {$Locked_style} {$recordattrs}>
+				{$Locked_value}
+			</td>
+			{END Locked_fieldcolumn}
+			{BEGIN Email_fieldcolumn}
+			<td  class="{$Email_class}" {$Email_style} {$recordattrs}>
+				{$Email_value}
+			</td>
+			{END Email_fieldcolumn}
+			{BEGIN PayrollID_fieldcolumn}
+			<td  class="{$PayrollID_class}" {$PayrollID_style} {$recordattrs}>
+				{$PayrollID_value}
+			</td>
+			{END PayrollID_fieldcolumn}
+			{BEGIN EmployeeID_fieldcolumn}
+			<td  class="{$EmployeeID_class}" {$EmployeeID_style} {$recordattrs}>
+				{$EmployeeID_value}
+			</td>
+			{END EmployeeID_fieldcolumn}
+			{BEGIN UserName_fieldcolumn}
+			<td  class="{$UserName_class}" {$UserName_style} {$recordattrs}>
+				{$UserName_value}
+			</td>
+			{END UserName_fieldcolumn}
+			{BEGIN Position_fieldcolumn}
+			<td  class="{$Position_class}" {$Position_style} {$recordattrs}>
+				{$Position_value}
+			</td>
+			{END Position_fieldcolumn}
+			{BEGIN Division_fieldcolumn}
+			<td  class="{$Division_class}" {$Division_style} {$recordattrs}>
+				{$Division_value}
+			</td>
+			{END Division_fieldcolumn}
+			{BEGIN Employer_fieldcolumn}
+			<td  class="{$Employer_class}" {$Employer_style} {$recordattrs}>
+				{$Employer_value}
+			</td>
+			{END Employer_fieldcolumn}
+			{BEGIN WageType_fieldcolumn}
+			<td  class="{$WageType_class}" {$WageType_style} {$recordattrs}>
+				{$WageType_value}
+			</td>
+			{END WageType_fieldcolumn}
+			{BEGIN Status_fieldcolumn}
+			<td  class="{$Status_class}" {$Status_style} {$recordattrs}>
+				{$Status_value}
+			</td>
+			{END Status_fieldcolumn}
+			{BEGIN FromDate_fieldcolumn}
+			<td  class="{$FromDate_class}" {$FromDate_style} {$recordattrs}>
+				{$FromDate_value}
+			</td>
+			{END FromDate_fieldcolumn}
+			{BEGIN ToDate_fieldcolumn}
+			<td  class="{$ToDate_class}" {$ToDate_style} {$recordattrs}>
+				{$ToDate_value}
+			</td>
+			{END ToDate_fieldcolumn}
+			{BEGIN BasicMonthly_fieldcolumn}
+			<td  class="{$BasicMonthly_class}" {$BasicMonthly_style} {$recordattrs}>
+				{$BasicMonthly_value}
+			</td>
+			{END BasicMonthly_fieldcolumn}
+			{BEGIN BasicDaily_fieldcolumn}
+			<td  class="{$BasicDaily_class}" {$BasicDaily_style} {$recordattrs}>
+				{$BasicDaily_value}
+			</td>
+			{END BasicDaily_fieldcolumn}
+			{BEGIN DWork_fieldcolumn}
+			<td  class="{$DWork_class}" {$DWork_style} {$recordattrs}>
+				{$DWork_value}
+			</td>
+			{END DWork_fieldcolumn}
+			{BEGIN Absent_fieldcolumn}
+			<td  class="{$Absent_class}" {$Absent_style} {$recordattrs}>
+				{$Absent_value}
+			</td>
+			{END Absent_fieldcolumn}
+			{BEGIN LateMins_fieldcolumn}
+			<td  class="{$LateMins_class}" {$LateMins_style} {$recordattrs}>
+				{$LateMins_value}
+			</td>
+			{END LateMins_fieldcolumn}
+			{BEGIN UndertimeMins_fieldcolumn}
+			<td  class="{$UndertimeMins_class}" {$UndertimeMins_style} {$recordattrs}>
+				{$UndertimeMins_value}
+			</td>
+			{END UndertimeMins_fieldcolumn}
+			{BEGIN RHolidayHrs_fieldcolumn}
+			<td  class="{$RHolidayHrs_class}" {$RHolidayHrs_style} {$recordattrs}>
+				{$RHolidayHrs_value}
+			</td>
+			{END RHolidayHrs_fieldcolumn}
+			{BEGIN SHolidayHrs_fieldcolumn}
+			<td  class="{$SHolidayHrs_class}" {$SHolidayHrs_style} {$recordattrs}>
+				{$SHolidayHrs_value}
+			</td>
+			{END SHolidayHrs_fieldcolumn}
+			{BEGIN CHolidayHrs_fieldcolumn}
+			<td  class="{$CHolidayHrs_class}" {$CHolidayHrs_style} {$recordattrs}>
+				{$CHolidayHrs_value}
+			</td>
+			{END CHolidayHrs_fieldcolumn}
+			{BEGIN ExcessHrs_fieldcolumn}
+			<td  class="{$ExcessHrs_class}" {$ExcessHrs_style} {$recordattrs}>
+				{$ExcessHrs_value}
+			</td>
+			{END ExcessHrs_fieldcolumn}
+			{BEGIN RegOTHrs_fieldcolumn}
+			<td  class="{$RegOTHrs_class}" {$RegOTHrs_style} {$recordattrs}>
+				{$RegOTHrs_value}
+			</td>
+			{END RegOTHrs_fieldcolumn}
+			{BEGIN RHOTHrs_fieldcolumn}
+			<td  class="{$RHOTHrs_class}" {$RHOTHrs_style} {$recordattrs}>
+				{$RHOTHrs_value}
+			</td>
+			{END RHOTHrs_fieldcolumn}
+			{BEGIN SHOTHRs_fieldcolumn}
+			<td  class="{$SHOTHRs_class}" {$SHOTHRs_style} {$recordattrs}>
+				{$SHOTHRs_value}
+			</td>
+			{END SHOTHRs_fieldcolumn}
+			{BEGIN CHOTHrs_fieldcolumn}
+			<td  class="{$CHOTHrs_class}" {$CHOTHrs_style} {$recordattrs}>
+				{$CHOTHrs_value}
+			</td>
+			{END CHOTHrs_fieldcolumn}
+			{BEGIN TrODays_fieldcolumn}
+			<td  class="{$TrODays_class}" {$TrODays_style} {$recordattrs}>
+				{$TrODays_value}
+			</td>
+			{END TrODays_fieldcolumn}
+			{BEGIN RDOTHrs_fieldcolumn}
+			<td  class="{$RDOTHrs_class}" {$RDOTHrs_style} {$recordattrs}>
+				{$RDOTHrs_value}
+			</td>
+			{END RDOTHrs_fieldcolumn}
+			{BEGIN NDHrs_fieldcolumn}
+			<td  class="{$NDHrs_class}" {$NDHrs_style} {$recordattrs}>
+				{$NDHrs_value}
+			</td>
+			{END NDHrs_fieldcolumn}
+			{BEGIN RDHrs_fieldcolumn}
+			<td  class="{$RDHrs_class}" {$RDHrs_style} {$recordattrs}>
+				{$RDHrs_value}
+			</td>
+			{END RDHrs_fieldcolumn}
+			{BEGIN RegNDHrs_fieldcolumn}
+			<td  class="{$RegNDHrs_class}" {$RegNDHrs_style} {$recordattrs}>
+				{$RegNDHrs_value}
+			</td>
+			{END RegNDHrs_fieldcolumn}
+			{BEGIN RHNDHrs_fieldcolumn}
+			<td  class="{$RHNDHrs_class}" {$RHNDHrs_style} {$recordattrs}>
+				{$RHNDHrs_value}
+			</td>
+			{END RHNDHrs_fieldcolumn}
+			{BEGIN SHNDHrs_fieldcolumn}
+			<td  class="{$SHNDHrs_class}" {$SHNDHrs_style} {$recordattrs}>
+				{$SHNDHrs_value}
+			</td>
+			{END SHNDHrs_fieldcolumn}
+			{BEGIN CHNDHrs_fieldcolumn}
+			<td  class="{$CHNDHrs_class}" {$CHNDHrs_style} {$recordattrs}>
+				{$CHNDHrs_value}
+			</td>
+			{END CHNDHrs_fieldcolumn}
+			{BEGIN RDNDHrs_fieldcolumn}
+			<td  class="{$RDNDHrs_class}" {$RDNDHrs_style} {$recordattrs}>
+				{$RDNDHrs_value}
+			</td>
+			{END RDNDHrs_fieldcolumn}
+			{BEGIN VLDays_fieldcolumn}
+			<td  class="{$VLDays_class}" {$VLDays_style} {$recordattrs}>
+				{$VLDays_value}
+			</td>
+			{END VLDays_fieldcolumn}
+			{BEGIN SLDays_fieldcolumn}
+			<td  class="{$SLDays_class}" {$SLDays_style} {$recordattrs}>
+				{$SLDays_value}
+			</td>
+			{END SLDays_fieldcolumn}
+			{BEGIN ELDays_fieldcolumn}
+			<td  class="{$ELDays_class}" {$ELDays_style} {$recordattrs}>
+				{$ELDays_value}
+			</td>
+			{END ELDays_fieldcolumn}
+			{BEGIN PLDays_fieldcolumn}
+			<td  class="{$PLDays_class}" {$PLDays_style} {$recordattrs}>
+				{$PLDays_value}
+			</td>
+			{END PLDays_fieldcolumn}
+			{BEGIN PLBalance_fieldcolumn}
+			<td  class="{$PLBalance_class}" {$PLBalance_style} {$recordattrs}>
+				{$PLBalance_value}
+			</td>
+			{END PLBalance_fieldcolumn}
+			{BEGIN ELBalance_fieldcolumn}
+			<td  class="{$ELBalance_class}" {$ELBalance_style} {$recordattrs}>
+				{$ELBalance_value}
+			</td>
+			{END ELBalance_fieldcolumn}
+			{BEGIN SLBalance_fieldcolumn}
+			<td  class="{$SLBalance_class}" {$SLBalance_style} {$recordattrs}>
+				{$SLBalance_value}
+			</td>
+			{END SLBalance_fieldcolumn}
+			{BEGIN VLBalance_fieldcolumn}
+			<td  class="{$VLBalance_class}" {$VLBalance_style} {$recordattrs}>
+				{$VLBalance_value}
+			</td>
+			{END VLBalance_fieldcolumn}
+			{BEGIN AllowancePerDay_fieldcolumn}
+			<td  class="{$AllowancePerDay_class}" {$AllowancePerDay_style} {$recordattrs}>
+				{$AllowancePerDay_value}
+			</td>
+			{END AllowancePerDay_fieldcolumn}
+			{BEGIN AgencyShare_fieldcolumn}
+			<td  class="{$AgencyShare_class}" {$AgencyShare_style} {$recordattrs}>
+				{$AgencyShare_value}
+			</td>
+			{END AgencyShare_fieldcolumn}
+			{BEGIN NDMealAllowance_fieldcolumn}
+			<td  class="{$NDMealAllowance_class}" {$NDMealAllowance_style} {$recordattrs}>
+				{$NDMealAllowance_value}
+			</td>
+			{END NDMealAllowance_fieldcolumn}
+			{BEGIN endrecord_block}
+			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+			{END endrecord_block}
+		{END grid_record}
+		</tr>
+{END grid_row}
+	</tbody>
+
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

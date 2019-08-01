@@ -1,0 +1,343 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_pdf}
+<div {$pdf_chiddenattr} data-pageid="{$pageid}" data-container="pdf" class="   col-md-12 "> 
+
+{BEGIN printbuttons}
+
+{END printbuttons}
+
+
+
+</div>
+{END container_pdf}
+
+
+
+
+
+{BEGIN container_pageheader}
+<div {$pageheader_chiddenattr} data-pageid="{$pageid}" data-container="pageheader" class="    "> 
+
+{BEGIN printheader}
+	<h2 {$printheader_hiddenattr} data-pageid="{$pageid}" data-brick="printheader" >{$pagetitlelabel monthlyremittax print}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END printheader}
+
+
+{BEGIN page_number}
+<span>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></span>
+{END page_number}
+
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="table table-bordered rp-maintable" {$printgrid_hiddenattr} data-pageid="{$pageid}" data-brick="printgrid" >
+	<thead>
+	{BEGIN grid_header}
+		<tr class="{$gridHeader_class}" >
+		{BEGIN record_header}
+			{BEGIN TxID_fieldheadercolumn}
+			<th class="{$TxID_class}" {$TxID_style}  data-field="TxID">
+				{$label monthlyremittax TxID}
+			</th>
+			{END TxID_fieldheadercolumn}
+			{BEGIN Month_fieldheadercolumn}
+			<th class="{$Month_class}" {$Month_style}  data-field="Month">
+				{$label monthlyremittax Month}
+			</th>
+			{END Month_fieldheadercolumn}
+			{BEGIN Year_fieldheadercolumn}
+			<th class="{$Year_class}" {$Year_style}  data-field="Year">
+				{$label monthlyremittax Year}
+			</th>
+			{END Year_fieldheadercolumn}
+			{BEGIN AmendedReturn_fieldheadercolumn}
+			<th class="{$AmendedReturn_class}" {$AmendedReturn_style}  data-field="AmendedReturn">
+				{$label monthlyremittax AmendedReturn}
+			</th>
+			{END AmendedReturn_fieldheadercolumn}
+			{BEGIN AnyTaxWithheld_fieldheadercolumn}
+			<th class="{$AnyTaxWithheld_class}" {$AnyTaxWithheld_style}  data-field="AnyTaxWithheld">
+				{$label monthlyremittax AnyTaxWithheld}
+			</th>
+			{END AnyTaxWithheld_fieldheadercolumn}
+			{BEGIN EmployerID_fieldheadercolumn}
+			<th class="{$EmployerID_class}" {$EmployerID_style}  data-field="EmployerID">
+				{$label monthlyremittax EmployerID}
+			</th>
+			{END EmployerID_fieldheadercolumn}
+			{BEGIN TIN_fieldheadercolumn}
+			<th class="{$TIN_class}" {$TIN_style}  data-field="TIN">
+				{$label monthlyremittax TIN}
+			</th>
+			{END TIN_fieldheadercolumn}
+			{BEGIN TelNo_fieldheadercolumn}
+			<th class="{$TelNo_class}" {$TelNo_style}  data-field="TelNo">
+				{$label monthlyremittax TelNo}
+			</th>
+			{END TelNo_fieldheadercolumn}
+			{BEGIN Address_fieldheadercolumn}
+			<th class="{$Address_class}" {$Address_style}  data-field="Address">
+				{$label monthlyremittax Address}
+			</th>
+			{END Address_fieldheadercolumn}
+			{BEGIN ZipCode_fieldheadercolumn}
+			<th class="{$ZipCode_class}" {$ZipCode_style}  data-field="ZipCode">
+				{$label monthlyremittax ZipCode}
+			</th>
+			{END ZipCode_fieldheadercolumn}
+			{BEGIN RDOCode_fieldheadercolumn}
+			<th class="{$RDOCode_class}" {$RDOCode_style}  data-field="RDOCode">
+				{$label monthlyremittax RDOCode}
+			</th>
+			{END RDOCode_fieldheadercolumn}
+			{BEGIN CategoryWithholdingAgent_fieldheadercolumn}
+			<th class="{$CategoryWithholdingAgent_class}" {$CategoryWithholdingAgent_style}  data-field="CategoryWithholdingAgent">
+				{$label monthlyremittax CategoryWithholdingAgent}
+			</th>
+			{END CategoryWithholdingAgent_fieldheadercolumn}
+			{BEGIN AwaitingTaxRelief_fieldheadercolumn}
+			<th class="{$AwaitingTaxRelief_class}" {$AwaitingTaxRelief_style}  data-field="AwaitingTaxRelief">
+				{$label monthlyremittax AwaitingTaxRelief}
+			</th>
+			{END AwaitingTaxRelief_fieldheadercolumn}
+			{BEGIN TotalAmountOfCompensation_fieldheadercolumn}
+			<th class="{$TotalAmountOfCompensation_class}" {$TotalAmountOfCompensation_style}  data-field="TotalAmountOfCompensation">
+				{$label monthlyremittax TotalAmountOfCompensation}
+			</th>
+			{END TotalAmountOfCompensation_fieldheadercolumn}
+			{BEGIN StatutoryMinimumWage_fieldheadercolumn}
+			<th class="{$StatutoryMinimumWage_class}" {$StatutoryMinimumWage_style}  data-field="StatutoryMinimumWage">
+				{$label monthlyremittax StatutoryMinimumWage}
+			</th>
+			{END StatutoryMinimumWage_fieldheadercolumn}
+			{BEGIN OtherNonTaxableCompensation_fieldheadercolumn}
+			<th class="{$OtherNonTaxableCompensation_class}" {$OtherNonTaxableCompensation_style}  data-field="OtherNonTaxableCompensation">
+				{$label monthlyremittax OtherNonTaxableCompensation}
+			</th>
+			{END OtherNonTaxableCompensation_fieldheadercolumn}
+			{BEGIN TaxableCompensation_fieldheadercolumn}
+			<th class="{$TaxableCompensation_class}" {$TaxableCompensation_style}  data-field="TaxableCompensation">
+				{$label monthlyremittax TaxableCompensation}
+			</th>
+			{END TaxableCompensation_fieldheadercolumn}
+			{BEGIN TaxRequiredToBeWithheld_fieldheadercolumn}
+			<th class="{$TaxRequiredToBeWithheld_class}" {$TaxRequiredToBeWithheld_style}  data-field="TaxRequiredToBeWithheld">
+				{$label monthlyremittax TaxRequiredToBeWithheld}
+			</th>
+			{END TaxRequiredToBeWithheld_fieldheadercolumn}
+			{BEGIN TaxRefund_fieldheadercolumn}
+			<th class="{$TaxRefund_class}" {$TaxRefund_style}  data-field="TaxRefund">
+				{$label monthlyremittax TaxRefund}
+			</th>
+			{END TaxRefund_fieldheadercolumn}
+			{BEGIN TaxRequiredForRemittance_fieldheadercolumn}
+			<th class="{$TaxRequiredForRemittance_class}" {$TaxRequiredForRemittance_style}  data-field="TaxRequiredForRemittance">
+				{$label monthlyremittax TaxRequiredForRemittance}
+			</th>
+			{END TaxRequiredForRemittance_fieldheadercolumn}
+			{BEGIN TotalAmountStillDue_fieldheadercolumn}
+			<th class="{$TotalAmountStillDue_class}" {$TotalAmountStillDue_style}  data-field="TotalAmountStillDue">
+				{$label monthlyremittax TotalAmountStillDue}
+			</th>
+			{END TotalAmountStillDue_fieldheadercolumn}
+			{BEGIN AuthorizedRepresentative_fieldheadercolumn}
+			<th class="{$AuthorizedRepresentative_class}" {$AuthorizedRepresentative_style}  data-field="AuthorizedRepresentative">
+				{$label monthlyremittax AuthorizedRepresentative}
+			</th>
+			{END AuthorizedRepresentative_fieldheadercolumn}
+			{BEGIN endrecordheader_block}
+			<th class="rnr-cs">&nbsp;</th>
+			{END endrecordheader_block}
+		{END record_header}
+		</tr>
+	{END grid_header}
+	</thead>
+	
+	<tbody>	
+	{BEGIN grid_row}
+		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+			{BEGIN TxID_fieldcolumn}
+			<td  class="{$TxID_class}" {$TxID_style} {$recordattrs}>
+				{$TxID_value}
+			</td>
+			{END TxID_fieldcolumn}
+			{BEGIN Month_fieldcolumn}
+			<td  class="{$Month_class}" {$Month_style} {$recordattrs}>
+				{$Month_value}
+			</td>
+			{END Month_fieldcolumn}
+			{BEGIN Year_fieldcolumn}
+			<td  class="{$Year_class}" {$Year_style} {$recordattrs}>
+				{$Year_value}
+			</td>
+			{END Year_fieldcolumn}
+			{BEGIN AmendedReturn_fieldcolumn}
+			<td  class="{$AmendedReturn_class}" {$AmendedReturn_style} {$recordattrs}>
+				{$AmendedReturn_value}
+			</td>
+			{END AmendedReturn_fieldcolumn}
+			{BEGIN AnyTaxWithheld_fieldcolumn}
+			<td  class="{$AnyTaxWithheld_class}" {$AnyTaxWithheld_style} {$recordattrs}>
+				{$AnyTaxWithheld_value}
+			</td>
+			{END AnyTaxWithheld_fieldcolumn}
+			{BEGIN EmployerID_fieldcolumn}
+			<td  class="{$EmployerID_class}" {$EmployerID_style} {$recordattrs}>
+				{$EmployerID_value}
+			</td>
+			{END EmployerID_fieldcolumn}
+			{BEGIN TIN_fieldcolumn}
+			<td  class="{$TIN_class}" {$TIN_style} {$recordattrs}>
+				{$TIN_value}
+			</td>
+			{END TIN_fieldcolumn}
+			{BEGIN TelNo_fieldcolumn}
+			<td  class="{$TelNo_class}" {$TelNo_style} {$recordattrs}>
+				{$TelNo_value}
+			</td>
+			{END TelNo_fieldcolumn}
+			{BEGIN Address_fieldcolumn}
+			<td  class="{$Address_class}" {$Address_style} {$recordattrs}>
+				{$Address_value}
+			</td>
+			{END Address_fieldcolumn}
+			{BEGIN ZipCode_fieldcolumn}
+			<td  class="{$ZipCode_class}" {$ZipCode_style} {$recordattrs}>
+				{$ZipCode_value}
+			</td>
+			{END ZipCode_fieldcolumn}
+			{BEGIN RDOCode_fieldcolumn}
+			<td  class="{$RDOCode_class}" {$RDOCode_style} {$recordattrs}>
+				{$RDOCode_value}
+			</td>
+			{END RDOCode_fieldcolumn}
+			{BEGIN CategoryWithholdingAgent_fieldcolumn}
+			<td  class="{$CategoryWithholdingAgent_class}" {$CategoryWithholdingAgent_style} {$recordattrs}>
+				{$CategoryWithholdingAgent_value}
+			</td>
+			{END CategoryWithholdingAgent_fieldcolumn}
+			{BEGIN AwaitingTaxRelief_fieldcolumn}
+			<td  class="{$AwaitingTaxRelief_class}" {$AwaitingTaxRelief_style} {$recordattrs}>
+				{$AwaitingTaxRelief_value}
+			</td>
+			{END AwaitingTaxRelief_fieldcolumn}
+			{BEGIN TotalAmountOfCompensation_fieldcolumn}
+			<td  class="{$TotalAmountOfCompensation_class}" {$TotalAmountOfCompensation_style} {$recordattrs}>
+				{$TotalAmountOfCompensation_value}
+			</td>
+			{END TotalAmountOfCompensation_fieldcolumn}
+			{BEGIN StatutoryMinimumWage_fieldcolumn}
+			<td  class="{$StatutoryMinimumWage_class}" {$StatutoryMinimumWage_style} {$recordattrs}>
+				{$StatutoryMinimumWage_value}
+			</td>
+			{END StatutoryMinimumWage_fieldcolumn}
+			{BEGIN OtherNonTaxableCompensation_fieldcolumn}
+			<td  class="{$OtherNonTaxableCompensation_class}" {$OtherNonTaxableCompensation_style} {$recordattrs}>
+				{$OtherNonTaxableCompensation_value}
+			</td>
+			{END OtherNonTaxableCompensation_fieldcolumn}
+			{BEGIN TaxableCompensation_fieldcolumn}
+			<td  class="{$TaxableCompensation_class}" {$TaxableCompensation_style} {$recordattrs}>
+				{$TaxableCompensation_value}
+			</td>
+			{END TaxableCompensation_fieldcolumn}
+			{BEGIN TaxRequiredToBeWithheld_fieldcolumn}
+			<td  class="{$TaxRequiredToBeWithheld_class}" {$TaxRequiredToBeWithheld_style} {$recordattrs}>
+				{$TaxRequiredToBeWithheld_value}
+			</td>
+			{END TaxRequiredToBeWithheld_fieldcolumn}
+			{BEGIN TaxRefund_fieldcolumn}
+			<td  class="{$TaxRefund_class}" {$TaxRefund_style} {$recordattrs}>
+				{$TaxRefund_value}
+			</td>
+			{END TaxRefund_fieldcolumn}
+			{BEGIN TaxRequiredForRemittance_fieldcolumn}
+			<td  class="{$TaxRequiredForRemittance_class}" {$TaxRequiredForRemittance_style} {$recordattrs}>
+				{$TaxRequiredForRemittance_value}
+			</td>
+			{END TaxRequiredForRemittance_fieldcolumn}
+			{BEGIN TotalAmountStillDue_fieldcolumn}
+			<td  class="{$TotalAmountStillDue_class}" {$TotalAmountStillDue_style} {$recordattrs}>
+				{$TotalAmountStillDue_value}
+			</td>
+			{END TotalAmountStillDue_fieldcolumn}
+			{BEGIN AuthorizedRepresentative_fieldcolumn}
+			<td  class="{$AuthorizedRepresentative_class}" {$AuthorizedRepresentative_style} {$recordattrs}>
+				{$AuthorizedRepresentative_value}
+			</td>
+			{END AuthorizedRepresentative_fieldcolumn}
+			{BEGIN endrecord_block}
+			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+			{END endrecord_block}
+		{END grid_record}
+		</tr>
+{END grid_row}
+	</tbody>
+
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

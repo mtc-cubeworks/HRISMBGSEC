@@ -1,0 +1,294 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_pdf}
+<div {$pdf_chiddenattr} data-pageid="{$pageid}" data-container="pdf" class="   col-md-12 "> 
+
+{BEGIN printbuttons}
+
+{END printbuttons}
+
+
+
+</div>
+{END container_pdf}
+
+
+
+
+
+{BEGIN container_pageheader}
+<div {$pageheader_chiddenattr} data-pageid="{$pageid}" data-container="pageheader" class="    "> 
+
+{BEGIN printheader}
+	<h2 {$printheader_hiddenattr} data-pageid="{$pageid}" data-brick="printheader" >{$pagetitlelabel loanbalance3 print}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END printheader}
+
+
+{BEGIN page_number}
+<span>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></span>
+{END page_number}
+
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="table table-bordered rp-maintable" {$printgrid_hiddenattr} data-pageid="{$pageid}" data-brick="printgrid" >
+	<thead>
+	{BEGIN grid_header}
+		<tr class="{$gridHeader_class}" >
+		{BEGIN record_header}
+			{BEGIN LoanType_fieldheadercolumn}
+			<th class="{$LoanType_class}" {$LoanType_style}  data-field="LoanType">
+				{$label loanbalance3 LoanType}
+			</th>
+			{END LoanType_fieldheadercolumn}
+			{BEGIN LoanID_fieldheadercolumn}
+			<th class="{$LoanID_class}" {$LoanID_style}  data-field="LoanID">
+				{$label loanbalance3 LoanID}
+			</th>
+			{END LoanID_fieldheadercolumn}
+			{BEGIN EmployeeID_fieldheadercolumn}
+			<th class="{$EmployeeID_class}" {$EmployeeID_style}  data-field="EmployeeID">
+				{$label loanbalance3 EmployeeID}
+			</th>
+			{END EmployeeID_fieldheadercolumn}
+			{BEGIN LoanDescription_fieldheadercolumn}
+			<th class="{$LoanDescription_class}" {$LoanDescription_style}  data-field="LoanDescription">
+				{$label loanbalance3 LoanDescription}
+			</th>
+			{END LoanDescription_fieldheadercolumn}
+			{BEGIN StartDate_fieldheadercolumn}
+			<th class="{$StartDate_class}" {$StartDate_style}  data-field="StartDate">
+				{$label loanbalance3 StartDate}
+			</th>
+			{END StartDate_fieldheadercolumn}
+			{BEGIN Principal_fieldheadercolumn}
+			<th class="{$Principal_class}" {$Principal_style}  data-field="Principal">
+				{$label loanbalance3 Principal}
+			</th>
+			{END Principal_fieldheadercolumn}
+			{BEGIN PerPayrollAmount_fieldheadercolumn}
+			<th class="{$PerPayrollAmount_class}" {$PerPayrollAmount_style}  data-field="PerPayrollAmount">
+				{$label loanbalance3 PerPayrollAmount}
+			</th>
+			{END PerPayrollAmount_fieldheadercolumn}
+			{BEGIN Payment_fieldheadercolumn}
+			<th class="{$Payment_class}" {$Payment_style}  data-field="Payment">
+				{$label loanbalance3 Payment}
+			</th>
+			{END Payment_fieldheadercolumn}
+			{BEGIN Balance_fieldheadercolumn}
+			<th class="{$Balance_class}" {$Balance_style}  data-field="Balance">
+				{$label loanbalance3 Balance}
+			</th>
+			{END Balance_fieldheadercolumn}
+			{BEGIN ForPayment_fieldheadercolumn}
+			<th class="{$ForPayment_class}" {$ForPayment_style}  data-field="ForPayment">
+				{$label loanbalance3 ForPayment}
+			</th>
+			{END ForPayment_fieldheadercolumn}
+			{BEGIN endrecordheader_block}
+			<th class="rnr-cs">&nbsp;</th>
+			{END endrecordheader_block}
+		{END record_header}
+		</tr>
+	{END grid_header}
+	</thead>
+	
+	<tbody>	
+	{BEGIN grid_row}
+		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+			{BEGIN LoanType_fieldcolumn}
+			<td  class="{$LoanType_class}" {$LoanType_style} {$recordattrs}>
+				{$LoanType_value}
+			</td>
+			{END LoanType_fieldcolumn}
+			{BEGIN LoanID_fieldcolumn}
+			<td  class="{$LoanID_class}" {$LoanID_style} {$recordattrs}>
+				{$LoanID_value}
+			</td>
+			{END LoanID_fieldcolumn}
+			{BEGIN EmployeeID_fieldcolumn}
+			<td  class="{$EmployeeID_class}" {$EmployeeID_style} {$recordattrs}>
+				{$EmployeeID_value}
+			</td>
+			{END EmployeeID_fieldcolumn}
+			{BEGIN LoanDescription_fieldcolumn}
+			<td  class="{$LoanDescription_class}" {$LoanDescription_style} {$recordattrs}>
+				{$LoanDescription_value}
+			</td>
+			{END LoanDescription_fieldcolumn}
+			{BEGIN StartDate_fieldcolumn}
+			<td  class="{$StartDate_class}" {$StartDate_style} {$recordattrs}>
+				{$StartDate_value}
+			</td>
+			{END StartDate_fieldcolumn}
+			{BEGIN Principal_fieldcolumn}
+			<td  class="{$Principal_class}" {$Principal_style} {$recordattrs}>
+				{$Principal_value}
+			</td>
+			{END Principal_fieldcolumn}
+			{BEGIN PerPayrollAmount_fieldcolumn}
+			<td  class="{$PerPayrollAmount_class}" {$PerPayrollAmount_style} {$recordattrs}>
+				{$PerPayrollAmount_value}
+			</td>
+			{END PerPayrollAmount_fieldcolumn}
+			{BEGIN Payment_fieldcolumn}
+			<td  class="{$Payment_class}" {$Payment_style} {$recordattrs}>
+				{$Payment_value}
+			</td>
+			{END Payment_fieldcolumn}
+			{BEGIN Balance_fieldcolumn}
+			<td  class="{$Balance_class}" {$Balance_style} {$recordattrs}>
+				{$Balance_value}
+			</td>
+			{END Balance_fieldcolumn}
+			{BEGIN ForPayment_fieldcolumn}
+			<td  class="{$ForPayment_class}" {$ForPayment_style} {$recordattrs}>
+				{$ForPayment_value}
+			</td>
+			{END ForPayment_fieldcolumn}
+			{BEGIN endrecord_block}
+			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+			{END endrecord_block}
+		{END grid_record}
+		</tr>
+{END grid_row}
+	</tbody>
+
+{BEGIN totals_row}
+	<tfoot>
+		<tr class=" style1">
+		{BEGIN totals_record}
+			{BEGIN LoanType_fieldfootercolumn}
+			<td>
+						</td>
+			{END LoanType_fieldfootercolumn}
+			{BEGIN LoanID_fieldfootercolumn}
+			<td>
+						</td>
+			{END LoanID_fieldfootercolumn}
+			{BEGIN EmployeeID_fieldfootercolumn}
+			<td>
+						</td>
+			{END EmployeeID_fieldfootercolumn}
+			{BEGIN LoanDescription_fieldfootercolumn}
+			<td>
+						</td>
+			{END LoanDescription_fieldfootercolumn}
+			{BEGIN StartDate_fieldfootercolumn}
+			<td>
+						</td>
+			{END StartDate_fieldfootercolumn}
+			{BEGIN Principal_fieldfootercolumn}
+			<td>
+							{BEGIN Principal_showtotal}
+									Total:
+				{$Principal_total}
+				{END Principal_showtotal}
+			</td>
+			{END Principal_fieldfootercolumn}
+			{BEGIN PerPayrollAmount_fieldfootercolumn}
+			<td>
+							{BEGIN PerPayrollAmount_showtotal}
+									Total:
+				{$PerPayrollAmount_total}
+				{END PerPayrollAmount_showtotal}
+			</td>
+			{END PerPayrollAmount_fieldfootercolumn}
+			{BEGIN Payment_fieldfootercolumn}
+			<td>
+							{BEGIN Payment_showtotal}
+									Total:
+				{$Payment_total}
+				{END Payment_showtotal}
+			</td>
+			{END Payment_fieldfootercolumn}
+			{BEGIN Balance_fieldfootercolumn}
+			<td>
+							{BEGIN Balance_showtotal}
+									Total:
+				{$Balance_total}
+				{END Balance_showtotal}
+			</td>
+			{END Balance_fieldfootercolumn}
+			{BEGIN ForPayment_fieldfootercolumn}
+			<td>
+							{BEGIN ForPayment_showtotal}
+									Total:
+				{$ForPayment_total}
+				{END ForPayment_showtotal}
+			</td>
+			{END ForPayment_fieldfootercolumn}
+			{BEGIN endrecordtotals_block}
+			<td class="rnr-cs"></td>
+			{END endrecordtotals_block}
+		{END totals_record}
+		</tr>
+	</tfoot>
+{END totals_row}
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

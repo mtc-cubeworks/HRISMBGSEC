@@ -1,0 +1,1830 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}<style>
+{$containerCss}
+</style>
+<div class="sidebar bs-fixed clearfix mCustomScrollbar" data-mcs-theme="minimal-dark" {$blockattr_left}>
+	<div class="sidebar-contents mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside">
+		
+
+{BEGIN container_logo}<div {$logo_chiddenattr} data-pageid="{$pageid}" data-container="logo" class=" bs-sidebarlogo   "> 
+
+{BEGIN logo_block}<a href="{$home_link}" {$logo_hiddenattr} data-pageid="{$pageid}" data-brick="logo" class="navbar-brand" >{$logo}</a>
+{END logo_block}
+
+
+
+</div>
+{END container_logo}
+
+
+
+{BEGIN container_hdr}<div {$hdr_chiddenattr} data-pageid="{$pageid}" data-container="hdr" class=" navbar-default clearfix   "> 
+
+{BEGIN collapse_block}<button {$bsnavbarcollapse_hiddenattr} data-pageid="{$pageid}" data-brick="bsnavbarcollapse" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target=".bs-navcontrolled">	
+	<span class="sr-only">Toggle navigation</span>	
+	<span class="icon-bar"></span>					
+</button>												
+
+{END collapse_block}
+
+
+
+</div>
+{END container_hdr}
+
+{BEGIN container_sidemenu}<div {$sidemenu_chiddenattr} data-pageid="{$pageid}" data-container="sidemenu" class="bs-navform navbar-collapse sidebar-menu bs-hidden-xs bs-navcontrolled" aria-expanded="false" >												   
+{BEGIN menu_block}{$menu main}
+
+{END menu_block}
+
+												</div>						{END container_sidemenu}
+
+{BEGIN container_left}<div {$left_chiddenattr} data-pageid="{$pageid}" data-container="left" class=" sidebar-container   "> 
+
+{BEGIN searchPanel}<div {$searchpanel_hiddenattr} data-pageid="{$pageid}" data-brick="searchpanel" class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} >
+	<!-- Search panel content -->
+	
+	<div class="panel-heading">
+		<div class="btn-group" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Search in
+			<span class="caret"></span>
+			</button>
+		</div>
+
+		
+		<div class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Show options</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>all conditions</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>any condition</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>hide</a></li>
+			</ul>
+		</div>
+	
+		
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}<TBODY>
+  <div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		</TBODY>{END searchCtrlBlock}
+
+
+	</div>
+	
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary" id="searchButton{$id}" {$searchbutton_attrs}>Search</button>
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}>
+		Show all
+		</button>
+	</div>
+</div>
+
+
+{END searchPanel}
+
+
+
+
+</div>
+{END container_left}
+
+
+	</div>
+</div>	
+<div class="bs-wrapper">
+	<div class="bs-fixedheader" id="fixedheader{$id}">
+		{BEGIN container_menu}<nav {$menu_chiddenattr} data-pageid="{$pageid}" data-container="menu" class="navbar navbar-default bs-fullwidth-navbar">					
+
+
+
+{BEGIN container_bc}<div {$bc_chiddenattr} data-pageid="{$pageid}" data-container="bc" class=" navbar-form navbar-left   "> 
+
+{BEGIN breadcrumbs}<ol class="breadcrumb">
+<li ><a href="{$home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}<li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumbs}
+
+
+
+</div>
+{END container_bc}
+
+
+
+
+
+
+{BEGIN container_menu_1}<div {$menu_1_chiddenattr} data-pageid="{$pageid}" data-container="menu_1" class="bs-navform navbar-collapse bs-hidden-xs bs-navcontrolled" aria-expanded="false" >												   
+
+
+
+{BEGIN container_more}<div {$more_chiddenattr} data-pageid="{$pageid}" data-container="more" class=" navbar-right navbar-form   "> 
+
+{BEGIN more_list}<div {$morebutton_hiddenattr} data-pageid="{$pageid}" data-brick="morebutton" class="btn-group bs-navsection">
+	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		<span class="glyphicon glyphicon-cog"></span>
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu">
+				{BEGIN editselected_link}<li class="massButton{$id} disabled"><a href="#" {$editselectedlink_attrs} {$editselectedlink_span} >Edit selected</a></li>
+		{END editselected_link}
+
+				{BEGIN exportselected_link}<li class="massButton{$id} disabled"><a href="#" {$exportselectedlink_attrs} {$exportselectedlink_span} >Export selected</a></li>
+		{END exportselected_link}
+		
+				{BEGIN deleteselected_link}<li class="massButton{$id} disabled"><a href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>Delete selected</a></li>
+		{END deleteselected_link}
+		
+				<li role="separator" class="divider"></li>	
+
+				{BEGIN asearch_link}<li><a href="empindschedule_search.php" {$advsearchlink_attrs}>Advanced search</a></li>
+		{END asearch_link}
+
+				{BEGIN searchPanelTopButtons}<li><a href=# id="showOptPanel{$id}">Show search panel</a></li>
+		{END searchPanelTopButtons}	
+		
+				
+				<li role="separator" class="divider"></li>	
+		
+				
+				{BEGIN export_link}<li><a target="_blank" href="empindschedule_export.php"  {$exportlink_attrs}>Export results</a></li>
+		{END export_link}
+
+				{BEGIN import_link}<li><a href="empindschedule_import.php?{$crosstable_attrs}"  {$importlink_attrs}>Import</a></li>
+		{END import_link}
+
+				
+	</ul>  
+</div>
+
+{END more_list}
+
+
+{BEGIN security_block}<span {$loggedas_hiddenattr} data-pageid="{$pageid}" data-brick="loggedas" id="login_block{$id}" class="bs-navsection">
+	{BEGIN guestloginbutton}<button class="btn btn-info" type="button" {$guestloginlink_attrs}>Login</button>
+	{END guestloginbutton}
+	{BEGIN loggedas_message}<span class="dropdown">
+			<button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon-user"></span>	{$username}</button>
+			<ul class="dropdown-menu">
+		{BEGIN logoutbutton}<li><a href="#" {$logoutlink_attrs}>Log out</a></li>
+		{END logoutbutton}
+		
+		{BEGIN adminarea_link}<li><a href="admin_rights_list.php" {$adminarealink_attrs}>Admin Area</a></li>
+		{END adminarea_link}
+
+
+			</ul>
+		</span>
+	{END loggedas_message}
+</span>
+{END security_block}
+
+
+
+</div>
+{END container_more}
+
+
+
+
+
+
+
+
+{BEGIN container_more_1}<div {$more_1_chiddenattr} data-pageid="{$pageid}" data-container="more_1" class=" navbar-right navbar-form   "> 
+
+{BEGIN searchform_block}<span {$search_hiddenattr} data-pageid="{$pageid}" data-brick="search" class="form-group">
+
+ <div  class="input-group">
+{BEGIN searchform_text}<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Show all">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+	{BEGIN searchform_search}<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>
+{END searchform_block}
+
+
+
+</div>
+{END container_more_1}
+
+
+
+
+												</div>						{END container_menu_1}
+
+
+									</nav>{END container_menu}
+	</div>	
+	<div class="container-fluid bs-underheader bs-fixedsidebarmain" id="underheader{$id}">
+		{$header}
+		<div class="bs-sidebar-screenbound">
+			
+
+{BEGIN container_masterinfo}<div {$masterinfo_chiddenattr} data-pageid="{$pageid}" data-container="masterinfo" class="    "> 
+
+{BEGIN mastertable_block}<div class="panel panel-info table-panel">
+	<div class="panel-heading">
+		{$master_heading}
+	</div>
+	<div class="panel-body">
+		{$showmasterfile}
+		
+	</div>
+</div>
+
+{END mastertable_block}
+
+
+
+</div>
+{END container_masterinfo}
+
+
+
+{BEGIN container_gridcontrols}<div {$gridcontrols_chiddenattr} data-pageid="{$pageid}" data-container="gridcontrols" class=" bs-navcontrolled bs-hidden-xs   "> 
+
+
+
+
+{BEGIN container_add_delete}<div {$add_delete_chiddenattr} data-pageid="{$pageid}" data-container="add_delete" class=" bottom-margin  col-md-6 "> 
+
+{BEGIN newrecord_controls_block}{BEGIN add_link}<a {$add_hiddenattr} data-pageid="{$pageid}" data-brick="add" type="button" class="btn btn-primary" {$addlink_attrs}>Add new</a>
+	{END add_link}
+
+		{BEGIN inlineadd_link}<button {$add_hiddenattr} data-pageid="{$pageid}" data-brick="add" type="button" class="btn btn-primary" {$inlineaddlink_attrs}>Inline Add</button>
+	{END inlineadd_link}
+
+{END newrecord_controls_block}
+
+
+{BEGIN record_controls_block}<span {$recordcontrol_hiddenattr} data-pageid="{$pageid}" data-brick="recordcontrol">
+		{BEGIN deleteselected_link}<button type="button" class="btn btn-default" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled>Delete</button>
+	{END deleteselected_link}
+		{BEGIN updateselected_link}<button type="button" class="btn btn-default" {$updateselectedlink_attrs} disabled>Update selected</button>
+	{END updateselected_link}
+		{BEGIN saveall_link}<button type="button" class="btn btn-primary" {$savealllink_attrs} {$savealllink_span}>Save all</button>
+	{END saveall_link}
+	{BEGIN cancelall_link}<button type="button" class="btn btn-default" {$cancelalllink_attrs} {$cancelalllink_span}>Cancel</button>
+	{END cancelall_link}
+</span>
+
+{END record_controls_block}
+
+
+
+</div>
+{END container_add_delete}
+
+
+
+
+
+
+
+
+{BEGIN container_gridinfo}<div {$gridinfo_chiddenattr} data-pageid="{$pageid}" data-container="gridinfo" class=" bottom-margin text-right col-md-6 "> 
+
+{BEGIN details_found}<span {$details_found_hiddenattr} data-pageid="{$pageid}" data-brick="details_found" class="form-inline form-inline-always">
+	{$records_indicator}
+	<span>
+	{BEGIN recordspp_block}{$recsPerPage}
+	{END recordspp_block}
+	</span>
+</span>
+{END details_found}
+
+
+{BEGIN print_friendly}<span {$printpanel_hiddenattr} data-pageid="{$pageid}" data-brick="printpanel" class="bs-printpanel" id="printpanelblock{$id}">
+	<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" title="Print-friendly page">
+		<span class="glyphicon glyphicon-print" ></span>
+		<span class="caret"></span>
+    </button>
+	<ul class="dropdown-menu pull-right" >
+		<TBODY>
+  <li>
+			<div class="container-fluid" id="print_friendly_scope{$id}">
+				<div class="row">
+					<div class="col-md-4">Scope:</div>
+										{BEGIN print_friendly_all}<div class="col-md-8">
+						<label for="printAll{$id}">
+							<input type="radio" id="printAll{$id}" data-href="empindschedule_print.php?all=1&amp;{$crosstable_attrs}" name="printScope">
+							Print all pages
+						</label>
+					</div>
+					{END print_friendly_all}
+				</div>
+				<div class="row">
+					<div class="col-md-4">&nbsp;</div>
+					<div class="col-md-8">
+						<label for="printPage{$id}">
+							<input type="radio" id="printPage{$id}" data-href="empindschedule_print.php?{$crosstable_attrs}" name="printScope" checked>
+							Print this page
+						</label>
+					</div>
+				</div>
+								<div class="row">
+					<div class="col-md-4">&nbsp;</div>
+					<div class="col-md-8">
+						<label for="printSelection{$id}" style="color: gray;">
+							<input type="radio" id="printSelection{$id}" name="printScope" disabled="disabled">
+							Print selected
+						</label>
+					</div>
+				</div>
+			</TBODY></div>
+		</li>
+		<LI class="divider" role="separator"></li>
+
+				<li>			
+		{BEGIN print_details}<DIV class="rnr-printdetails">
+				<label for="printDetailsToggler{$id}">
+					<input type="checkbox" id="printDetailsToggler{$id}">
+					Print details
+				</label>
+				<DIV class="rnr-printdetailstables" id="printdetailstables{$id}" style="display: none;">
+{BEGIN print_details_ileave}<DIV class="rnr-printdetialstable">
+								<label for="printDetailsileave{$id}">
+									<input type="checkbox" value="ileave" id="printDetailsileave{$id}" checked>
+									Leave Summary
+								</label>
+							</div>
+					{END print_details_ileave}
+					{BEGIN print_details_indschedule1}<DIV class="rnr-printdetialstable">
+								<label for="printDetailsindschedule1{$id}">
+									<input type="checkbox" value="indschedule1" id="printDetailsindschedule1{$id}" checked>
+									OT/ND/RD Approval
+								</label>
+							</div>
+					{END print_details_indschedule1}
+				</div>
+			</div>
+		{END print_details}
+		</li>
+		<li class="divider" role="separator"></li>
+
+		
+				<li>	
+			<div class="rnr-printdetails">
+				<label for="printPerPage{$id}">
+											Records Per Page:
+				</label>
+				<input type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">		
+			</div>
+		</li>
+		<li class="divider" role="separator"></li>
+		<li class="rnr-printbutton">				
+			<button type="button" class="btn btn-primary" id="print_friendly_button{$id}" >Print</button>			
+		</li>
+	</ul>	
+</span>
+
+{END print_friendly}
+
+
+
+
+</div>
+{END container_gridinfo}
+
+
+
+
+
+
+
+</div>
+{END container_gridcontrols}
+
+
+		</div>
+		<div></div>
+		<div class="bs-sidebar-screenbound bs-minwidth">
+			
+
+{BEGIN container_tabs}<div {$tabs_chiddenattr} data-pageid="{$pageid}" data-container="tabs" class="    "> 
+
+{BEGIN grid_tabs}<div {$bsgrid_tabs_hiddenattr} data-pageid="{$pageid}" data-brick="bsgrid_tabs">
+<ul class="nav nav-tabs">
+{$grid_tabs_content}
+</ul>
+</div>
+{END grid_tabs}
+
+
+
+</div>
+{END container_tabs}
+
+
+
+{BEGIN container_message}<div {$message_chiddenattr} data-pageid="{$pageid}" data-container="message" class="    "> 
+
+{BEGIN message_block}<div {$message_hiddenattr} data-pageid="{$pageid}" data-brick="message" class="alert {$message_class}" role="alert">{$message}</div>
+{END message_block}
+
+
+
+</div>
+{END container_message}
+
+
+
+{BEGIN container_center}<div {$center_chiddenattr} data-pageid="{$pageid}" data-container="center" class="    "> 
+
+
+
+
+{BEGIN container_grid}<div {$grid_chiddenattr} data-pageid="{$pageid}" data-container="grid" class="bs-grid    "> 
+
+{BEGIN grid_block}<style>
+	.bs-gridcell[data-field=ScID]:before {
+		content: "{$label empindschedule ScID}";
+	}
+	.bs-gridcell[data-field=UserName]:before {
+		content: "{$label empindschedule UserName}";
+	}
+	.bs-gridcell[data-field=SDate]:before {
+		content: "{$label empindschedule SDate}";
+	}
+	.bs-gridcell[data-field=STimeIn]:before {
+		content: "{$label empindschedule STimeIn}";
+	}
+	.bs-gridcell[data-field=STimeOut]:before {
+		content: "{$label empindschedule STimeOut}";
+	}
+	.bs-gridcell[data-field=SchedType]:before {
+		content: "{$label empindschedule SchedType}";
+	}
+	.bs-gridcell[data-field=Shift]:before {
+		content: "{$label empindschedule Shift}";
+	}
+	.bs-gridcell[data-field=LunchBreakTo]:before {
+		content: "{$label empindschedule LunchBreakTo}";
+	}
+	.bs-gridcell[data-field=Division]:before {
+		content: "{$label empindschedule Division}";
+	}
+	.bs-gridcell[data-field=TimeIn]:before {
+		content: "{$label empindschedule TimeIn}";
+	}
+	.bs-gridcell[data-field=TimeOut]:before {
+		content: "{$label empindschedule TimeOut}";
+	}
+	.bs-gridcell[data-field=DayIs]:before {
+		content: "{$label empindschedule DayIs}";
+	}
+	.bs-gridcell[data-field=RestDay]:before {
+		content: "{$label empindschedule RestDay}";
+	}
+	.bs-gridcell[data-field=Department]:before {
+		content: "{$label empindschedule Department}";
+	}
+	.bs-gridcell[data-field=RegWD]:before {
+		content: "{$label empindschedule RegWD}";
+	}
+	.bs-gridcell[data-field=DWork]:before {
+		content: "{$label empindschedule DWork}";
+	}
+	.bs-gridcell[data-field=Absent]:before {
+		content: "{$label empindschedule Absent}";
+	}
+	.bs-gridcell[data-field=LateMins]:before {
+		content: "{$label empindschedule LateMins}";
+	}
+	.bs-gridcell[data-field=UndertimeMins]:before {
+		content: "{$label empindschedule UndertimeMins}";
+	}
+	.bs-gridcell[data-field=RHolidayHrs]:before {
+		content: "{$label empindschedule RHolidayHrs}";
+	}
+	.bs-gridcell[data-field=SHolidayHrs]:before {
+		content: "{$label empindschedule SHolidayHrs}";
+	}
+	.bs-gridcell[data-field=CHolidayHrs]:before {
+		content: "{$label empindschedule CHolidayHrs}";
+	}
+	.bs-gridcell[data-field=ExcessHrs]:before {
+		content: "{$label empindschedule ExcessHrs}";
+	}
+	.bs-gridcell[data-field=RegOTHrs]:before {
+		content: "{$label empindschedule RegOTHrs}";
+	}
+	.bs-gridcell[data-field=RHOTHrs]:before {
+		content: "{$label empindschedule RHOTHrs}";
+	}
+	.bs-gridcell[data-field=SHOTHrs]:before {
+		content: "{$label empindschedule SHOTHrs}";
+	}
+	.bs-gridcell[data-field=CHOTHrs]:before {
+		content: "{$label empindschedule CHOTHrs}";
+	}
+	.bs-gridcell[data-field=RDOTHrs]:before {
+		content: "{$label empindschedule RDOTHrs}";
+	}
+	.bs-gridcell[data-field=NDHrs]:before {
+		content: "{$label empindschedule NDHrs}";
+	}
+	.bs-gridcell[data-field=RDHrs]:before {
+		content: "{$label empindschedule RDHrs}";
+	}
+	.bs-gridcell[data-field=RegNDHrs]:before {
+		content: "{$label empindschedule RegNDHrs}";
+	}
+	.bs-gridcell[data-field=RHNDHrs]:before {
+		content: "{$label empindschedule RHNDHrs}";
+	}
+	.bs-gridcell[data-field=SHNDHrs]:before {
+		content: "{$label empindschedule SHNDHrs}";
+	}
+	.bs-gridcell[data-field=CHNDHrs]:before {
+		content: "{$label empindschedule CHNDHrs}";
+	}
+	.bs-gridcell[data-field=RDNDHrs]:before {
+		content: "{$label empindschedule RDNDHrs}";
+	}
+	.bs-gridcell[data-field=VLDay]:before {
+		content: "{$label empindschedule VLDay}";
+	}
+	.bs-gridcell[data-field=SLDay]:before {
+		content: "{$label empindschedule SLDay}";
+	}
+	.bs-gridcell[data-field=ELDay]:before {
+		content: "{$label empindschedule ELDay}";
+	}
+	.bs-gridcell[data-field=PLDay]:before {
+		content: "{$label empindschedule PLDay}";
+	}
+	.bs-gridcell[data-field=TrODay]:before {
+		content: "{$label empindschedule TrODay}";
+	}
+	.bs-gridcell[data-field=HolidayType]:before {
+		content: "{$label empindschedule HolidayType}";
+	}
+	.bs-gridcell[data-field=Mispunched]:before {
+		content: "{$label empindschedule Mispunched}";
+	}
+	.bs-gridcell[data-field=WageType]:before {
+		content: "{$label empindschedule WageType}";
+	}
+	.bs-gridcell[data-field=LunchBreakFrom]:before {
+		content: "{$label empindschedule LunchBreakFrom}";
+	}
+	.bs-gridcell[data-field=AfterBreakLogOut]:before {
+		content: "{$label empindschedule AfterBreakLogOut}";
+	}
+	.bs-gridcell[data-field=AfterBreakLog]:before {
+		content: "{$label empindschedule AfterBreakLog}";
+	}
+	.bs-gridcell[data-field=IncludeBreakLate]:before {
+		content: "{$label empindschedule IncludeBreakLate}";
+	}
+</style>
+<table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
+	<thead>
+										{BEGIN grid_header}<tr class="rnr-toprow {$gridHeader_class}" >
+									{BEGIN record_header}{BEGIN listIcons_column}<th iEditCont="all">&nbsp;</th>
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}<th class="">
+										<input type="checkbox" {$checkboxheader_attrs}>
+									</th>
+									{END checkbox_column}
+
+																		
+									{BEGIN indschedule_dtable_column}<th >&nbsp;</th>
+									{END indschedule_dtable_column}
+									
+									{BEGIN ScID_fieldheadercolumn}<th class="rnr-gridfieldlabel {$ScID_class}" data-field=ScID>
+									{BEGIN ScID_fieldheader}<span {$ScID_orderlinkattrs}>
+											{$label empindschedule ScID}
+										</span>
+									{END ScID_fieldheader}
+									</th>
+									{END ScID_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN UserName_fieldheadercolumn}<th class="rnr-gridfieldlabel {$UserName_class}" data-field=UserName>
+									{BEGIN UserName_fieldheader}<span {$UserName_orderlinkattrs}>
+											{$label empindschedule UserName}
+										</span>
+									{END UserName_fieldheader}
+									</th>
+									{END UserName_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Division_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Division_class}" data-field=Division>
+									{BEGIN Division_fieldheader}<span {$Division_orderlinkattrs}>
+											{$label empindschedule Division}
+										</span>
+									{END Division_fieldheader}
+									</th>
+									{END Division_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Department_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Department_class}" data-field=Department>
+									{BEGIN Department_fieldheader}<span {$Department_orderlinkattrs}>
+											{$label empindschedule Department}
+										</span>
+									{END Department_fieldheader}
+									</th>
+									{END Department_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN WageType_fieldheadercolumn}<th class="rnr-gridfieldlabel {$WageType_class}" data-field=WageType>
+									{BEGIN WageType_fieldheader}<span {$WageType_orderlinkattrs}>
+											{$label empindschedule WageType}
+										</span>
+									{END WageType_fieldheader}
+									</th>
+									{END WageType_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SDate_fieldheadercolumn}<th class="rnr-gridfieldlabel {$SDate_class}" data-field=SDate>
+									{BEGIN SDate_fieldheader}<span {$SDate_orderlinkattrs}>
+											{$label empindschedule SDate}
+										</span>
+									{END SDate_fieldheader}
+									</th>
+									{END SDate_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN DayIs_fieldheadercolumn}<th class="rnr-gridfieldlabel {$DayIs_class}" data-field=DayIs>
+									{BEGIN DayIs_fieldheader}<span {$DayIs_orderlinkattrs}>
+											{$label empindschedule DayIs}
+										</span>
+									{END DayIs_fieldheader}
+									</th>
+									{END DayIs_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RestDay_fieldheadercolumn}<th class="rnr-gridfieldlabel {$RestDay_class}" data-field=RestDay>
+									{BEGIN RestDay_fieldheader}<span {$RestDay_orderlinkattrs}>
+											{$label empindschedule RestDay}
+										</span>
+									{END RestDay_fieldheader}
+									</th>
+									{END RestDay_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN STimeIn_fieldheadercolumn}<th class="rnr-gridfieldlabel {$STimeIn_class}" data-field=STimeIn>
+									{BEGIN STimeIn_fieldheader}<span {$STimeIn_orderlinkattrs}>
+											{$label empindschedule STimeIn}
+										</span>
+									{END STimeIn_fieldheader}
+									</th>
+									{END STimeIn_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN STimeOut_fieldheadercolumn}<th class="rnr-gridfieldlabel {$STimeOut_class}" data-field=STimeOut>
+									{BEGIN STimeOut_fieldheader}<span {$STimeOut_orderlinkattrs}>
+											{$label empindschedule STimeOut}
+										</span>
+									{END STimeOut_fieldheader}
+									</th>
+									{END STimeOut_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN TimeIn_fieldheadercolumn}<th class="rnr-gridfieldlabel {$TimeIn_class}" data-field=TimeIn>
+									{BEGIN TimeIn_fieldheader}<span {$TimeIn_orderlinkattrs}>
+											{$label empindschedule TimeIn}
+										</span>
+									{END TimeIn_fieldheader}
+									</th>
+									{END TimeIn_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN TimeOut_fieldheadercolumn}<th class="rnr-gridfieldlabel {$TimeOut_class}" data-field=TimeOut>
+									{BEGIN TimeOut_fieldheader}<span {$TimeOut_orderlinkattrs}>
+											{$label empindschedule TimeOut}
+										</span>
+									{END TimeOut_fieldheader}
+									</th>
+									{END TimeOut_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN LunchBreakFrom_fieldheadercolumn}<th class="rnr-gridfieldlabel {$LunchBreakFrom_class}" data-field=LunchBreakFrom>
+									{BEGIN LunchBreakFrom_fieldheader}<span {$LunchBreakFrom_orderlinkattrs}>
+											{$label empindschedule LunchBreakFrom}
+										</span>
+									{END LunchBreakFrom_fieldheader}
+									</th>
+									{END LunchBreakFrom_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN LunchBreakTo_fieldheadercolumn}<th class="rnr-gridfieldlabel {$LunchBreakTo_class}" data-field=LunchBreakTo>
+									{BEGIN LunchBreakTo_fieldheader}<span {$LunchBreakTo_orderlinkattrs}>
+											{$label empindschedule LunchBreakTo}
+										</span>
+									{END LunchBreakTo_fieldheader}
+									</th>
+									{END LunchBreakTo_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN AfterBreakLogOut_fieldheadercolumn}<th class="rnr-gridfieldlabel {$AfterBreakLogOut_class}" data-field=AfterBreakLogOut>
+									{BEGIN AfterBreakLogOut_fieldheader}<span {$AfterBreakLogOut_orderlinkattrs}>
+											{$label empindschedule AfterBreakLogOut}
+										</span>
+									{END AfterBreakLogOut_fieldheader}
+									</th>
+									{END AfterBreakLogOut_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN AfterBreakLog_fieldheadercolumn}<th class="rnr-gridfieldlabel {$AfterBreakLog_class}" data-field=AfterBreakLog>
+									{BEGIN AfterBreakLog_fieldheader}<span {$AfterBreakLog_orderlinkattrs}>
+											{$label empindschedule AfterBreakLog}
+										</span>
+									{END AfterBreakLog_fieldheader}
+									</th>
+									{END AfterBreakLog_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Mispunched_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Mispunched_class}" data-field=Mispunched>
+									{BEGIN Mispunched_fieldheader}<span {$Mispunched_orderlinkattrs}>
+											{$label empindschedule Mispunched}
+										</span>
+									{END Mispunched_fieldheader}
+									</th>
+									{END Mispunched_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RegWD_fieldheadercolumn}<th class="rnr-gridfieldlabel {$RegWD_class}" data-field=RegWD>
+									{BEGIN RegWD_fieldheader}<span {$RegWD_orderlinkattrs}>
+											{$label empindschedule RegWD}
+										</span>
+									{END RegWD_fieldheader}
+									</th>
+									{END RegWD_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN DWork_fieldheadercolumn}<th class="rnr-gridfieldlabel {$DWork_class}" data-field=DWork>
+									{BEGIN DWork_fieldheader}<span {$DWork_orderlinkattrs}>
+											{$label empindschedule DWork}
+										</span>
+									{END DWork_fieldheader}
+									</th>
+									{END DWork_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Absent_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Absent_class}" data-field=Absent>
+									{BEGIN Absent_fieldheader}<span {$Absent_orderlinkattrs}>
+											{$label empindschedule Absent}
+										</span>
+									{END Absent_fieldheader}
+									</th>
+									{END Absent_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN IncludeBreakLate_fieldheadercolumn}<th class="rnr-gridfieldlabel {$IncludeBreakLate_class}" data-field=IncludeBreakLate>
+									{BEGIN IncludeBreakLate_fieldheader}<span {$IncludeBreakLate_orderlinkattrs}>
+											{$label empindschedule IncludeBreakLate}
+										</span>
+									{END IncludeBreakLate_fieldheader}
+									</th>
+									{END IncludeBreakLate_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN LateMins_fieldheadercolumn}<th class="rnr-gridfieldlabel {$LateMins_class}" data-field=LateMins>
+									{BEGIN LateMins_fieldheader}<span {$LateMins_orderlinkattrs}>
+											{$label empindschedule LateMins}
+										</span>
+									{END LateMins_fieldheader}
+									</th>
+									{END LateMins_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN UndertimeMins_fieldheadercolumn}<th class="rnr-gridfieldlabel {$UndertimeMins_class}" data-field=UndertimeMins>
+									{BEGIN UndertimeMins_fieldheader}<span {$UndertimeMins_orderlinkattrs}>
+											{$label empindschedule UndertimeMins}
+										</span>
+									{END UndertimeMins_fieldheader}
+									</th>
+									{END UndertimeMins_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN HolidayType_fieldheadercolumn}<th class="rnr-gridfieldlabel {$HolidayType_class}" data-field=HolidayType>
+									{BEGIN HolidayType_fieldheader}<span {$HolidayType_orderlinkattrs}>
+											{$label empindschedule HolidayType}
+										</span>
+									{END HolidayType_fieldheader}
+									</th>
+									{END HolidayType_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RHolidayHrs_fieldheadercolumn}<th class="rnr-gridfieldlabel {$RHolidayHrs_class}" data-field=RHolidayHrs>
+									{BEGIN RHolidayHrs_fieldheader}<span {$RHolidayHrs_orderlinkattrs}>
+											{$label empindschedule RHolidayHrs}
+										</span>
+									{END RHolidayHrs_fieldheader}
+									</th>
+									{END RHolidayHrs_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SHolidayHrs_fieldheadercolumn}<th class="rnr-gridfieldlabel {$SHolidayHrs_class}" data-field=SHolidayHrs>
+									{BEGIN SHolidayHrs_fieldheader}<span {$SHolidayHrs_orderlinkattrs}>
+											{$label empindschedule SHolidayHrs}
+										</span>
+									{END SHolidayHrs_fieldheader}
+									</th>
+									{END SHolidayHrs_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN CHolidayHrs_fieldheadercolumn}<th class="rnr-gridfieldlabel {$CHolidayHrs_class}" data-field=CHolidayHrs>
+									{BEGIN CHolidayHrs_fieldheader}<span {$CHolidayHrs_orderlinkattrs}>
+											{$label empindschedule CHolidayHrs}
+										</span>
+									{END CHolidayHrs_fieldheader}
+									</th>
+									{END CHolidayHrs_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN NDHrs_fieldheadercolumn}<th class="rnr-gridfieldlabel {$NDHrs_class}" data-field=NDHrs>
+									{BEGIN NDHrs_fieldheader}<span {$NDHrs_orderlinkattrs}>
+											{$label empindschedule NDHrs}
+										</span>
+									{END NDHrs_fieldheader}
+									</th>
+									{END NDHrs_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RegNDHrs_fieldheadercolumn}<th class="rnr-gridfieldlabel {$RegNDHrs_class}" data-field=RegNDHrs>
+									{BEGIN RegNDHrs_fieldheader}<span {$RegNDHrs_orderlinkattrs}>
+											{$label empindschedule RegNDHrs}
+										</span>
+									{END RegNDHrs_fieldheader}
+									</th>
+									{END RegNDHrs_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RDHrs_fieldheadercolumn}<th class="rnr-gridfieldlabel {$RDHrs_class}" data-field=RDHrs>
+									{BEGIN RDHrs_fieldheader}<span {$RDHrs_orderlinkattrs}>
+											{$label empindschedule RDHrs}
+										</span>
+									{END RDHrs_fieldheader}
+									</th>
+									{END RDHrs_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RHNDHrs_fieldheadercolumn}<th class="rnr-gridfieldlabel {$RHNDHrs_class}" data-field=RHNDHrs>
+									{BEGIN RHNDHrs_fieldheader}<span {$RHNDHrs_orderlinkattrs}>
+											{$label empindschedule RHNDHrs}
+										</span>
+									{END RHNDHrs_fieldheader}
+									</th>
+									{END RHNDHrs_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RDNDHrs_fieldheadercolumn}<th class="rnr-gridfieldlabel {$RDNDHrs_class}" data-field=RDNDHrs>
+									{BEGIN RDNDHrs_fieldheader}<span {$RDNDHrs_orderlinkattrs}>
+											{$label empindschedule RDNDHrs}
+										</span>
+									{END RDNDHrs_fieldheader}
+									</th>
+									{END RDNDHrs_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SHNDHrs_fieldheadercolumn}<th class="rnr-gridfieldlabel {$SHNDHrs_class}" data-field=SHNDHrs>
+									{BEGIN SHNDHrs_fieldheader}<span {$SHNDHrs_orderlinkattrs}>
+											{$label empindschedule SHNDHrs}
+										</span>
+									{END SHNDHrs_fieldheader}
+									</th>
+									{END SHNDHrs_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN CHNDHrs_fieldheadercolumn}<th class="rnr-gridfieldlabel {$CHNDHrs_class}" data-field=CHNDHrs>
+									{BEGIN CHNDHrs_fieldheader}<span {$CHNDHrs_orderlinkattrs}>
+											{$label empindschedule CHNDHrs}
+										</span>
+									{END CHNDHrs_fieldheader}
+									</th>
+									{END CHNDHrs_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN ExcessHrs_fieldheadercolumn}<th class="rnr-gridfieldlabel {$ExcessHrs_class}" data-field=ExcessHrs>
+									{BEGIN ExcessHrs_fieldheader}<span {$ExcessHrs_orderlinkattrs}>
+											{$label empindschedule ExcessHrs}
+										</span>
+									{END ExcessHrs_fieldheader}
+									</th>
+									{END ExcessHrs_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RegOTHrs_fieldheadercolumn}<th class="rnr-gridfieldlabel {$RegOTHrs_class}" data-field=RegOTHrs>
+									{BEGIN RegOTHrs_fieldheader}<span {$RegOTHrs_orderlinkattrs}>
+											{$label empindschedule RegOTHrs}
+										</span>
+									{END RegOTHrs_fieldheader}
+									</th>
+									{END RegOTHrs_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RDOTHrs_fieldheadercolumn}<th class="rnr-gridfieldlabel {$RDOTHrs_class}" data-field=RDOTHrs>
+									{BEGIN RDOTHrs_fieldheader}<span {$RDOTHrs_orderlinkattrs}>
+											{$label empindschedule RDOTHrs}
+										</span>
+									{END RDOTHrs_fieldheader}
+									</th>
+									{END RDOTHrs_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SHOTHrs_fieldheadercolumn}<th class="rnr-gridfieldlabel {$SHOTHrs_class}" data-field=SHOTHrs>
+									{BEGIN SHOTHrs_fieldheader}<span {$SHOTHrs_orderlinkattrs}>
+											{$label empindschedule SHOTHrs}
+										</span>
+									{END SHOTHrs_fieldheader}
+									</th>
+									{END SHOTHrs_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN CHOTHrs_fieldheadercolumn}<th class="rnr-gridfieldlabel {$CHOTHrs_class}" data-field=CHOTHrs>
+									{BEGIN CHOTHrs_fieldheader}<span {$CHOTHrs_orderlinkattrs}>
+											{$label empindschedule CHOTHrs}
+										</span>
+									{END CHOTHrs_fieldheader}
+									</th>
+									{END CHOTHrs_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RHOTHrs_fieldheadercolumn}<th class="rnr-gridfieldlabel {$RHOTHrs_class}" data-field=RHOTHrs>
+									{BEGIN RHOTHrs_fieldheader}<span {$RHOTHrs_orderlinkattrs}>
+											{$label empindschedule RHOTHrs}
+										</span>
+									{END RHOTHrs_fieldheader}
+									</th>
+									{END RHOTHrs_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN TrODay_fieldheadercolumn}<th class="rnr-gridfieldlabel {$TrODay_class}" data-field=TrODay>
+									{BEGIN TrODay_fieldheader}<span {$TrODay_orderlinkattrs}>
+											{$label empindschedule TrODay}
+										</span>
+									{END TrODay_fieldheader}
+									</th>
+									{END TrODay_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN VLDay_fieldheadercolumn}<th class="rnr-gridfieldlabel {$VLDay_class}" data-field=VLDay>
+									{BEGIN VLDay_fieldheader}<span {$VLDay_orderlinkattrs}>
+											{$label empindschedule VLDay}
+										</span>
+									{END VLDay_fieldheader}
+									</th>
+									{END VLDay_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SLDay_fieldheadercolumn}<th class="rnr-gridfieldlabel {$SLDay_class}" data-field=SLDay>
+									{BEGIN SLDay_fieldheader}<span {$SLDay_orderlinkattrs}>
+											{$label empindschedule SLDay}
+										</span>
+									{END SLDay_fieldheader}
+									</th>
+									{END SLDay_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN ELDay_fieldheadercolumn}<th class="rnr-gridfieldlabel {$ELDay_class}" data-field=ELDay>
+									{BEGIN ELDay_fieldheader}<span {$ELDay_orderlinkattrs}>
+											{$label empindschedule ELDay}
+										</span>
+									{END ELDay_fieldheader}
+									</th>
+									{END ELDay_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN PLDay_fieldheadercolumn}<th class="rnr-gridfieldlabel {$PLDay_class}" data-field=PLDay>
+									{BEGIN PLDay_fieldheader}<span {$PLDay_orderlinkattrs}>
+											{$label empindschedule PLDay}
+										</span>
+									{END PLDay_fieldheader}
+									</th>
+									{END PLDay_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SchedType_fieldheadercolumn}<th class="rnr-gridfieldlabel {$SchedType_class}" data-field=SchedType>
+									{BEGIN SchedType_fieldheader}<span {$SchedType_orderlinkattrs}>
+											{$label empindschedule SchedType}
+										</span>
+									{END SchedType_fieldheader}
+									</th>
+									{END SchedType_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Shift_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Shift_class}" data-field=Shift>
+									{BEGIN Shift_fieldheader}<span {$Shift_orderlinkattrs}>
+											{$label empindschedule Shift}
+										</span>
+									{END Shift_fieldheader}
+									</th>
+									{END Shift_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN endrecordheader_block}<th class="rnr-cs">&nbsp;</th>
+									
+									{END endrecordheader_block}
+									
+									{END record_header}
+									
+								</tr>
+								{END grid_header}
+
+	</thead>
+	<tbody>	
+		{BEGIN grid_row}<tr class="{$rowclass} bs-gridrow" {$rowattrs} {$rowstyle}>
+	{BEGIN grid_record}{BEGIN listIcons_column}<td class="bs-gridicons" iEditCont="all" {$rowstyle} {$recordattrs}>
+		{BEGIN edit_column}{BEGIN edit_link}<a class="glyphicon glyphicon-pencil" {$editlink_attrs} title="Edit"></a>
+	{END edit_link}
+	{END edit_column}
+
+		{BEGIN inlineedit_column}{BEGIN inlineedit_link}<a class="glyphicon glyphicon-edit" {$inlineeditlink_attrs} title="Inline Edit"></a>
+	{END inlineedit_link}
+	{END inlineedit_column}
+	
+	<span data-hidden {$ieditbuttonsholder_attrs}></span>
+
+		{BEGIN copy_column}{BEGIN copy_link}<a class="glyphicon glyphicon-duplicate" {$copylink_attrs} title="Copy"></a>
+	{END copy_link}
+	{END copy_column}
+
+		{BEGIN view_column}{BEGIN view_link}<a class="glyphicon glyphicon-search" {$viewlink_attrs} title="View"></a>
+	{END view_link}
+	{END view_column}
+	</td>	
+	{END listIcons_column}	
+
+		{BEGIN checkbox_column}<td  iEditCont="checkBox" class="bs-gridcheckbox" {$rowstyle} {$recordattrs}>
+	{BEGIN checkbox}<input type="checkbox" {$checkbox_attrs}>
+	{END checkbox}
+	</td>
+	{END checkbox_column}
+
+	
+
+	{BEGIN indschedule_dtable_column}<TD class="rnr-nowrap bs-griddetails" {$rowstyle} {$recordattrs}>
+	
+			{BEGIN ileave_dtable_link}<span>
+			<a {$ileave_dtablelink_attrs}>
+			Leave Summary
+							<span {$ileave_childnumber_attr} dir="ltr">
+				{BEGIN ileave_childcount}
+					({$ileave_childnumber})
+				{END ileave_childcount}</span>
+			</a>
+						&nbsp;
+		</span>
+		{END ileave_dtable_link}
+		{BEGIN indschedule1_dtable_link}<span>
+			<a {$indschedule1_dtablelink_attrs}>
+			OT/ND/RD Approval
+							<span {$indschedule1_childnumber_attr} dir="ltr">
+				{BEGIN indschedule1_childcount}
+					({$indschedule1_childnumber})
+				{END indschedule1_childcount}</span>
+			</a>
+						&nbsp;
+		</span>
+		{END indschedule1_dtable_link}
+
+	
+	</td>
+	{END indschedule_dtable_column}
+
+
+	{BEGIN ScID_fieldcolumn}<td class="bs-gridcell {$ScID_class}"  data-field=ScID {$rowstyle} {$recordattrs}>
+		{$ScID_value}
+	</td>
+{END ScID_fieldcolumn}
+
+
+	{BEGIN UserName_fieldcolumn}<td class="bs-gridcell {$UserName_class}"  data-field=UserName {$rowstyle} {$recordattrs}>
+		{$UserName_value}
+	</td>
+{END UserName_fieldcolumn}
+
+
+	{BEGIN Division_fieldcolumn}<td class="bs-gridcell {$Division_class}"  data-field=Division {$rowstyle} {$recordattrs}>
+		{$Division_value}
+	</td>
+{END Division_fieldcolumn}
+
+
+	{BEGIN Department_fieldcolumn}<td class="bs-gridcell {$Department_class}"  data-field=Department {$rowstyle} {$recordattrs}>
+		{$Department_value}
+	</td>
+{END Department_fieldcolumn}
+
+
+	{BEGIN WageType_fieldcolumn}<td class="bs-gridcell {$WageType_class}"  data-field=WageType {$rowstyle} {$recordattrs}>
+		{$WageType_value}
+	</td>
+{END WageType_fieldcolumn}
+
+
+	{BEGIN SDate_fieldcolumn}<td class="bs-gridcell {$SDate_class}"  data-field=SDate {$rowstyle} {$recordattrs}>
+		{$SDate_value}
+	</td>
+{END SDate_fieldcolumn}
+
+
+	{BEGIN DayIs_fieldcolumn}<td class="bs-gridcell {$DayIs_class}"  data-field=DayIs {$rowstyle} {$recordattrs}>
+		{$DayIs_value}
+	</td>
+{END DayIs_fieldcolumn}
+
+
+	{BEGIN RestDay_fieldcolumn}<td class="bs-gridcell {$RestDay_class}"  data-field=RestDay {$rowstyle} {$recordattrs}>
+		{$RestDay_value}
+	</td>
+{END RestDay_fieldcolumn}
+
+
+	{BEGIN STimeIn_fieldcolumn}<td class="bs-gridcell {$STimeIn_class}"  data-field=STimeIn {$rowstyle} {$recordattrs}>
+		{$STimeIn_value}
+	</td>
+{END STimeIn_fieldcolumn}
+
+
+	{BEGIN STimeOut_fieldcolumn}<td class="bs-gridcell {$STimeOut_class}"  data-field=STimeOut {$rowstyle} {$recordattrs}>
+		{$STimeOut_value}
+	</td>
+{END STimeOut_fieldcolumn}
+
+
+	{BEGIN TimeIn_fieldcolumn}<td class="bs-gridcell {$TimeIn_class}"  data-field=TimeIn {$rowstyle} {$recordattrs}>
+		{$TimeIn_value}
+	</td>
+{END TimeIn_fieldcolumn}
+
+
+	{BEGIN TimeOut_fieldcolumn}<td class="bs-gridcell {$TimeOut_class}"  data-field=TimeOut {$rowstyle} {$recordattrs}>
+		{$TimeOut_value}
+	</td>
+{END TimeOut_fieldcolumn}
+
+
+	{BEGIN LunchBreakFrom_fieldcolumn}<td class="bs-gridcell {$LunchBreakFrom_class}"  data-field=LunchBreakFrom {$rowstyle} {$recordattrs}>
+		{$LunchBreakFrom_value}
+	</td>
+{END LunchBreakFrom_fieldcolumn}
+
+
+	{BEGIN LunchBreakTo_fieldcolumn}<td class="bs-gridcell {$LunchBreakTo_class}"  data-field=LunchBreakTo {$rowstyle} {$recordattrs}>
+		{$LunchBreakTo_value}
+	</td>
+{END LunchBreakTo_fieldcolumn}
+
+
+	{BEGIN AfterBreakLogOut_fieldcolumn}<td class="bs-gridcell {$AfterBreakLogOut_class}"  data-field=AfterBreakLogOut {$rowstyle} {$recordattrs}>
+		{$AfterBreakLogOut_value}
+	</td>
+{END AfterBreakLogOut_fieldcolumn}
+
+
+	{BEGIN AfterBreakLog_fieldcolumn}<td class="bs-gridcell {$AfterBreakLog_class}"  data-field=AfterBreakLog {$rowstyle} {$recordattrs}>
+		{$AfterBreakLog_value}
+	</td>
+{END AfterBreakLog_fieldcolumn}
+
+
+	{BEGIN Mispunched_fieldcolumn}<td class="bs-gridcell {$Mispunched_class}"  data-field=Mispunched {$rowstyle} {$recordattrs}>
+		{$Mispunched_value}
+	</td>
+{END Mispunched_fieldcolumn}
+
+
+	{BEGIN RegWD_fieldcolumn}<td class="bs-gridcell {$RegWD_class}"  data-field=RegWD {$rowstyle} {$recordattrs}>
+		{$RegWD_value}
+	</td>
+{END RegWD_fieldcolumn}
+
+
+	{BEGIN DWork_fieldcolumn}<td class="bs-gridcell {$DWork_class}"  data-field=DWork {$rowstyle} {$recordattrs}>
+		{$DWork_value}
+	</td>
+{END DWork_fieldcolumn}
+
+
+	{BEGIN Absent_fieldcolumn}<td class="bs-gridcell {$Absent_class}"  data-field=Absent {$rowstyle} {$recordattrs}>
+		{$Absent_value}
+	</td>
+{END Absent_fieldcolumn}
+
+
+	{BEGIN IncludeBreakLate_fieldcolumn}<td class="bs-gridcell {$IncludeBreakLate_class}"  data-field=IncludeBreakLate {$rowstyle} {$recordattrs}>
+		{$IncludeBreakLate_value}
+	</td>
+{END IncludeBreakLate_fieldcolumn}
+
+
+	{BEGIN LateMins_fieldcolumn}<td class="bs-gridcell {$LateMins_class}"  data-field=LateMins {$rowstyle} {$recordattrs}>
+		{$LateMins_value}
+	</td>
+{END LateMins_fieldcolumn}
+
+
+	{BEGIN UndertimeMins_fieldcolumn}<td class="bs-gridcell {$UndertimeMins_class}"  data-field=UndertimeMins {$rowstyle} {$recordattrs}>
+		{$UndertimeMins_value}
+	</td>
+{END UndertimeMins_fieldcolumn}
+
+
+	{BEGIN HolidayType_fieldcolumn}<td class="bs-gridcell {$HolidayType_class}"  data-field=HolidayType {$rowstyle} {$recordattrs}>
+		{$HolidayType_value}
+	</td>
+{END HolidayType_fieldcolumn}
+
+
+	{BEGIN RHolidayHrs_fieldcolumn}<td class="bs-gridcell {$RHolidayHrs_class}"  data-field=RHolidayHrs {$rowstyle} {$recordattrs}>
+		{$RHolidayHrs_value}
+	</td>
+{END RHolidayHrs_fieldcolumn}
+
+
+	{BEGIN SHolidayHrs_fieldcolumn}<td class="bs-gridcell {$SHolidayHrs_class}"  data-field=SHolidayHrs {$rowstyle} {$recordattrs}>
+		{$SHolidayHrs_value}
+	</td>
+{END SHolidayHrs_fieldcolumn}
+
+
+	{BEGIN CHolidayHrs_fieldcolumn}<td class="bs-gridcell {$CHolidayHrs_class}"  data-field=CHolidayHrs {$rowstyle} {$recordattrs}>
+		{$CHolidayHrs_value}
+	</td>
+{END CHolidayHrs_fieldcolumn}
+
+
+	{BEGIN NDHrs_fieldcolumn}<td class="bs-gridcell {$NDHrs_class}"  data-field=NDHrs {$rowstyle} {$recordattrs}>
+		{$NDHrs_value}
+	</td>
+{END NDHrs_fieldcolumn}
+
+
+	{BEGIN RegNDHrs_fieldcolumn}<td class="bs-gridcell {$RegNDHrs_class}"  data-field=RegNDHrs {$rowstyle} {$recordattrs}>
+		{$RegNDHrs_value}
+	</td>
+{END RegNDHrs_fieldcolumn}
+
+
+	{BEGIN RDHrs_fieldcolumn}<td class="bs-gridcell {$RDHrs_class}"  data-field=RDHrs {$rowstyle} {$recordattrs}>
+		{$RDHrs_value}
+	</td>
+{END RDHrs_fieldcolumn}
+
+
+	{BEGIN RHNDHrs_fieldcolumn}<td class="bs-gridcell {$RHNDHrs_class}"  data-field=RHNDHrs {$rowstyle} {$recordattrs}>
+		{$RHNDHrs_value}
+	</td>
+{END RHNDHrs_fieldcolumn}
+
+
+	{BEGIN RDNDHrs_fieldcolumn}<td class="bs-gridcell {$RDNDHrs_class}"  data-field=RDNDHrs {$rowstyle} {$recordattrs}>
+		{$RDNDHrs_value}
+	</td>
+{END RDNDHrs_fieldcolumn}
+
+
+	{BEGIN SHNDHrs_fieldcolumn}<td class="bs-gridcell {$SHNDHrs_class}"  data-field=SHNDHrs {$rowstyle} {$recordattrs}>
+		{$SHNDHrs_value}
+	</td>
+{END SHNDHrs_fieldcolumn}
+
+
+	{BEGIN CHNDHrs_fieldcolumn}<td class="bs-gridcell {$CHNDHrs_class}"  data-field=CHNDHrs {$rowstyle} {$recordattrs}>
+		{$CHNDHrs_value}
+	</td>
+{END CHNDHrs_fieldcolumn}
+
+
+	{BEGIN ExcessHrs_fieldcolumn}<td class="bs-gridcell {$ExcessHrs_class}"  data-field=ExcessHrs {$rowstyle} {$recordattrs}>
+		{$ExcessHrs_value}
+	</td>
+{END ExcessHrs_fieldcolumn}
+
+
+	{BEGIN RegOTHrs_fieldcolumn}<td class="bs-gridcell {$RegOTHrs_class}"  data-field=RegOTHrs {$rowstyle} {$recordattrs}>
+		{$RegOTHrs_value}
+	</td>
+{END RegOTHrs_fieldcolumn}
+
+
+	{BEGIN RDOTHrs_fieldcolumn}<td class="bs-gridcell {$RDOTHrs_class}"  data-field=RDOTHrs {$rowstyle} {$recordattrs}>
+		{$RDOTHrs_value}
+	</td>
+{END RDOTHrs_fieldcolumn}
+
+
+	{BEGIN SHOTHrs_fieldcolumn}<td class="bs-gridcell {$SHOTHrs_class}"  data-field=SHOTHrs {$rowstyle} {$recordattrs}>
+		{$SHOTHrs_value}
+	</td>
+{END SHOTHrs_fieldcolumn}
+
+
+	{BEGIN CHOTHrs_fieldcolumn}<td class="bs-gridcell {$CHOTHrs_class}"  data-field=CHOTHrs {$rowstyle} {$recordattrs}>
+		{$CHOTHrs_value}
+	</td>
+{END CHOTHrs_fieldcolumn}
+
+
+	{BEGIN RHOTHrs_fieldcolumn}<td class="bs-gridcell {$RHOTHrs_class}"  data-field=RHOTHrs {$rowstyle} {$recordattrs}>
+		{$RHOTHrs_value}
+	</td>
+{END RHOTHrs_fieldcolumn}
+
+
+	{BEGIN TrODay_fieldcolumn}<td class="bs-gridcell {$TrODay_class}"  data-field=TrODay {$rowstyle} {$recordattrs}>
+		{$TrODay_value}
+	</td>
+{END TrODay_fieldcolumn}
+
+
+	{BEGIN VLDay_fieldcolumn}<td class="bs-gridcell {$VLDay_class}"  data-field=VLDay {$rowstyle} {$recordattrs}>
+		{$VLDay_value}
+	</td>
+{END VLDay_fieldcolumn}
+
+
+	{BEGIN SLDay_fieldcolumn}<td class="bs-gridcell {$SLDay_class}"  data-field=SLDay {$rowstyle} {$recordattrs}>
+		{$SLDay_value}
+	</td>
+{END SLDay_fieldcolumn}
+
+
+	{BEGIN ELDay_fieldcolumn}<td class="bs-gridcell {$ELDay_class}"  data-field=ELDay {$rowstyle} {$recordattrs}>
+		{$ELDay_value}
+	</td>
+{END ELDay_fieldcolumn}
+
+
+	{BEGIN PLDay_fieldcolumn}<td class="bs-gridcell {$PLDay_class}"  data-field=PLDay {$rowstyle} {$recordattrs}>
+		{$PLDay_value}
+	</td>
+{END PLDay_fieldcolumn}
+
+
+	{BEGIN SchedType_fieldcolumn}<td class="bs-gridcell {$SchedType_class}"  data-field=SchedType {$rowstyle} {$recordattrs}>
+		{$SchedType_value}
+	</td>
+{END SchedType_fieldcolumn}
+
+
+	{BEGIN Shift_fieldcolumn}<td class="bs-gridcell {$Shift_class}"  data-field=Shift {$rowstyle} {$recordattrs}>
+		{$Shift_value}
+	</td>
+{END Shift_fieldcolumn}
+
+	{BEGIN endrecord_block}<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+	{END endrecord_block}
+									
+	{END grid_record}
+
+</tr>
+{END grid_row}
+	</tbody>
+	<tfoot>
+																		{BEGIN totals_row}<tr class="rnr-bottomrow style1 {$gridFooter_class}">
+									{BEGIN totals_record}{BEGIN listIcons_column}<td class="bs-gridcell"></td>
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}<td class="bs-gridcell"></td>
+									{END checkbox_column}
+
+									
+										{BEGIN indschedule_dtable_column}<TD class="bs-gridcell"></td>
+									{END indschedule_dtable_column}
+
+										{BEGIN ScID_fieldfootercolumn}<td class="bs-gridcell {$ScID_class}" data-field="ScID">
+																				</td>
+										{END ScID_fieldfootercolumn}
+										{BEGIN UserName_fieldfootercolumn}<td class="bs-gridcell {$UserName_class}" data-field="UserName">
+																				</td>
+										{END UserName_fieldfootercolumn}
+										{BEGIN Division_fieldfootercolumn}<td class="bs-gridcell {$Division_class}" data-field="Division">
+																				</td>
+										{END Division_fieldfootercolumn}
+										{BEGIN Department_fieldfootercolumn}<td class="bs-gridcell {$Department_class}" data-field="Department">
+																				</td>
+										{END Department_fieldfootercolumn}
+										{BEGIN WageType_fieldfootercolumn}<td class="bs-gridcell {$WageType_class}" data-field="WageType">
+																				</td>
+										{END WageType_fieldfootercolumn}
+										{BEGIN SDate_fieldfootercolumn}<td class="bs-gridcell {$SDate_class}" data-field="SDate">
+																				</td>
+										{END SDate_fieldfootercolumn}
+										{BEGIN DayIs_fieldfootercolumn}<td class="bs-gridcell {$DayIs_class}" data-field="DayIs">
+																				</td>
+										{END DayIs_fieldfootercolumn}
+										{BEGIN RestDay_fieldfootercolumn}<td class="bs-gridcell {$RestDay_class}" data-field="RestDay">
+																				</td>
+										{END RestDay_fieldfootercolumn}
+										{BEGIN STimeIn_fieldfootercolumn}<td class="bs-gridcell {$STimeIn_class}" data-field="STimeIn">
+																				</td>
+										{END STimeIn_fieldfootercolumn}
+										{BEGIN STimeOut_fieldfootercolumn}<td class="bs-gridcell {$STimeOut_class}" data-field="STimeOut">
+																				</td>
+										{END STimeOut_fieldfootercolumn}
+										{BEGIN TimeIn_fieldfootercolumn}<td class="bs-gridcell {$TimeIn_class}" data-field="TimeIn">
+																				</td>
+										{END TimeIn_fieldfootercolumn}
+										{BEGIN TimeOut_fieldfootercolumn}<td class="bs-gridcell {$TimeOut_class}" data-field="TimeOut">
+																				</td>
+										{END TimeOut_fieldfootercolumn}
+										{BEGIN LunchBreakFrom_fieldfootercolumn}<td class="bs-gridcell {$LunchBreakFrom_class}" data-field="LunchBreakFrom">
+																				</td>
+										{END LunchBreakFrom_fieldfootercolumn}
+										{BEGIN LunchBreakTo_fieldfootercolumn}<td class="bs-gridcell {$LunchBreakTo_class}" data-field="LunchBreakTo">
+																				</td>
+										{END LunchBreakTo_fieldfootercolumn}
+										{BEGIN AfterBreakLogOut_fieldfootercolumn}<td class="bs-gridcell {$AfterBreakLogOut_class}" data-field="AfterBreakLogOut">
+																				</td>
+										{END AfterBreakLogOut_fieldfootercolumn}
+										{BEGIN AfterBreakLog_fieldfootercolumn}<td class="bs-gridcell {$AfterBreakLog_class}" data-field="AfterBreakLog">
+																				</td>
+										{END AfterBreakLog_fieldfootercolumn}
+										{BEGIN Mispunched_fieldfootercolumn}<td class="bs-gridcell {$Mispunched_class}" data-field="Mispunched">
+																				</td>
+										{END Mispunched_fieldfootercolumn}
+										{BEGIN RegWD_fieldfootercolumn}<td class="bs-gridcell {$RegWD_class}" data-field="RegWD">
+																					{BEGIN RegWD_showtotal}
+																							Total:
+											{$RegWD_total}
+											{END RegWD_showtotal}
+										</td>
+										{END RegWD_fieldfootercolumn}
+										{BEGIN DWork_fieldfootercolumn}<td class="bs-gridcell {$DWork_class}" data-field="DWork">
+																					{BEGIN DWork_showtotal}
+																							Total:
+											{$DWork_total}
+											{END DWork_showtotal}
+										</td>
+										{END DWork_fieldfootercolumn}
+										{BEGIN Absent_fieldfootercolumn}<td class="bs-gridcell {$Absent_class}" data-field="Absent">
+																					{BEGIN Absent_showtotal}
+																							Total:
+											{$Absent_total}
+											{END Absent_showtotal}
+										</td>
+										{END Absent_fieldfootercolumn}
+										{BEGIN IncludeBreakLate_fieldfootercolumn}<td class="bs-gridcell {$IncludeBreakLate_class}" data-field="IncludeBreakLate">
+																				</td>
+										{END IncludeBreakLate_fieldfootercolumn}
+										{BEGIN LateMins_fieldfootercolumn}<td class="bs-gridcell {$LateMins_class}" data-field="LateMins">
+																					{BEGIN LateMins_showtotal}
+																							Total:
+											{$LateMins_total}
+											{END LateMins_showtotal}
+										</td>
+										{END LateMins_fieldfootercolumn}
+										{BEGIN UndertimeMins_fieldfootercolumn}<td class="bs-gridcell {$UndertimeMins_class}" data-field="UndertimeMins">
+																					{BEGIN UndertimeMins_showtotal}
+																							Total:
+											{$UndertimeMins_total}
+											{END UndertimeMins_showtotal}
+										</td>
+										{END UndertimeMins_fieldfootercolumn}
+										{BEGIN HolidayType_fieldfootercolumn}<td class="bs-gridcell {$HolidayType_class}" data-field="HolidayType">
+																				</td>
+										{END HolidayType_fieldfootercolumn}
+										{BEGIN RHolidayHrs_fieldfootercolumn}<td class="bs-gridcell {$RHolidayHrs_class}" data-field="RHolidayHrs">
+																					{BEGIN RHolidayHrs_showtotal}
+																							Total:
+											{$RHolidayHrs_total}
+											{END RHolidayHrs_showtotal}
+										</td>
+										{END RHolidayHrs_fieldfootercolumn}
+										{BEGIN SHolidayHrs_fieldfootercolumn}<td class="bs-gridcell {$SHolidayHrs_class}" data-field="SHolidayHrs">
+																					{BEGIN SHolidayHrs_showtotal}
+																							Total:
+											{$SHolidayHrs_total}
+											{END SHolidayHrs_showtotal}
+										</td>
+										{END SHolidayHrs_fieldfootercolumn}
+										{BEGIN CHolidayHrs_fieldfootercolumn}<td class="bs-gridcell {$CHolidayHrs_class}" data-field="CHolidayHrs">
+																					{BEGIN CHolidayHrs_showtotal}
+																							Total:
+											{$CHolidayHrs_total}
+											{END CHolidayHrs_showtotal}
+										</td>
+										{END CHolidayHrs_fieldfootercolumn}
+										{BEGIN NDHrs_fieldfootercolumn}<td class="bs-gridcell {$NDHrs_class}" data-field="NDHrs">
+																					{BEGIN NDHrs_showtotal}
+																							Total:
+											{$NDHrs_total}
+											{END NDHrs_showtotal}
+										</td>
+										{END NDHrs_fieldfootercolumn}
+										{BEGIN RegNDHrs_fieldfootercolumn}<td class="bs-gridcell {$RegNDHrs_class}" data-field="RegNDHrs">
+																					{BEGIN RegNDHrs_showtotal}
+																							Total:
+											{$RegNDHrs_total}
+											{END RegNDHrs_showtotal}
+										</td>
+										{END RegNDHrs_fieldfootercolumn}
+										{BEGIN RDHrs_fieldfootercolumn}<td class="bs-gridcell {$RDHrs_class}" data-field="RDHrs">
+																					{BEGIN RDHrs_showtotal}
+																							Total:
+											{$RDHrs_total}
+											{END RDHrs_showtotal}
+										</td>
+										{END RDHrs_fieldfootercolumn}
+										{BEGIN RHNDHrs_fieldfootercolumn}<td class="bs-gridcell {$RHNDHrs_class}" data-field="RHNDHrs">
+																					{BEGIN RHNDHrs_showtotal}
+																							Total:
+											{$RHNDHrs_total}
+											{END RHNDHrs_showtotal}
+										</td>
+										{END RHNDHrs_fieldfootercolumn}
+										{BEGIN RDNDHrs_fieldfootercolumn}<td class="bs-gridcell {$RDNDHrs_class}" data-field="RDNDHrs">
+																					{BEGIN RDNDHrs_showtotal}
+																							Total:
+											{$RDNDHrs_total}
+											{END RDNDHrs_showtotal}
+										</td>
+										{END RDNDHrs_fieldfootercolumn}
+										{BEGIN SHNDHrs_fieldfootercolumn}<td class="bs-gridcell {$SHNDHrs_class}" data-field="SHNDHrs">
+																					{BEGIN SHNDHrs_showtotal}
+																							Total:
+											{$SHNDHrs_total}
+											{END SHNDHrs_showtotal}
+										</td>
+										{END SHNDHrs_fieldfootercolumn}
+										{BEGIN CHNDHrs_fieldfootercolumn}<td class="bs-gridcell {$CHNDHrs_class}" data-field="CHNDHrs">
+																					{BEGIN CHNDHrs_showtotal}
+																							Total:
+											{$CHNDHrs_total}
+											{END CHNDHrs_showtotal}
+										</td>
+										{END CHNDHrs_fieldfootercolumn}
+										{BEGIN ExcessHrs_fieldfootercolumn}<td class="bs-gridcell {$ExcessHrs_class}" data-field="ExcessHrs">
+																					{BEGIN ExcessHrs_showtotal}
+																							Total:
+											{$ExcessHrs_total}
+											{END ExcessHrs_showtotal}
+										</td>
+										{END ExcessHrs_fieldfootercolumn}
+										{BEGIN RegOTHrs_fieldfootercolumn}<td class="bs-gridcell {$RegOTHrs_class}" data-field="RegOTHrs">
+																					{BEGIN RegOTHrs_showtotal}
+																							Total:
+											{$RegOTHrs_total}
+											{END RegOTHrs_showtotal}
+										</td>
+										{END RegOTHrs_fieldfootercolumn}
+										{BEGIN RDOTHrs_fieldfootercolumn}<td class="bs-gridcell {$RDOTHrs_class}" data-field="RDOTHrs">
+																					{BEGIN RDOTHrs_showtotal}
+																							Total:
+											{$RDOTHrs_total}
+											{END RDOTHrs_showtotal}
+										</td>
+										{END RDOTHrs_fieldfootercolumn}
+										{BEGIN SHOTHrs_fieldfootercolumn}<td class="bs-gridcell {$SHOTHrs_class}" data-field="SHOTHrs">
+																					{BEGIN SHOTHrs_showtotal}
+																							Total:
+											{$SHOTHrs_total}
+											{END SHOTHrs_showtotal}
+										</td>
+										{END SHOTHrs_fieldfootercolumn}
+										{BEGIN CHOTHrs_fieldfootercolumn}<td class="bs-gridcell {$CHOTHrs_class}" data-field="CHOTHrs">
+																					{BEGIN CHOTHrs_showtotal}
+																							Total:
+											{$CHOTHrs_total}
+											{END CHOTHrs_showtotal}
+										</td>
+										{END CHOTHrs_fieldfootercolumn}
+										{BEGIN RHOTHrs_fieldfootercolumn}<td class="bs-gridcell {$RHOTHrs_class}" data-field="RHOTHrs">
+																					{BEGIN RHOTHrs_showtotal}
+																							Total:
+											{$RHOTHrs_total}
+											{END RHOTHrs_showtotal}
+										</td>
+										{END RHOTHrs_fieldfootercolumn}
+										{BEGIN TrODay_fieldfootercolumn}<td class="bs-gridcell {$TrODay_class}" data-field="TrODay">
+																					{BEGIN TrODay_showtotal}
+																							Total:
+											{$TrODay_total}
+											{END TrODay_showtotal}
+										</td>
+										{END TrODay_fieldfootercolumn}
+										{BEGIN VLDay_fieldfootercolumn}<td class="bs-gridcell {$VLDay_class}" data-field="VLDay">
+																					{BEGIN VLDay_showtotal}
+																							Total:
+											{$VLDay_total}
+											{END VLDay_showtotal}
+										</td>
+										{END VLDay_fieldfootercolumn}
+										{BEGIN SLDay_fieldfootercolumn}<td class="bs-gridcell {$SLDay_class}" data-field="SLDay">
+																					{BEGIN SLDay_showtotal}
+																							Total:
+											{$SLDay_total}
+											{END SLDay_showtotal}
+										</td>
+										{END SLDay_fieldfootercolumn}
+										{BEGIN ELDay_fieldfootercolumn}<td class="bs-gridcell {$ELDay_class}" data-field="ELDay">
+																					{BEGIN ELDay_showtotal}
+																							Total:
+											{$ELDay_total}
+											{END ELDay_showtotal}
+										</td>
+										{END ELDay_fieldfootercolumn}
+										{BEGIN PLDay_fieldfootercolumn}<td class="bs-gridcell {$PLDay_class}" data-field="PLDay">
+																					{BEGIN PLDay_showtotal}
+																							Total:
+											{$PLDay_total}
+											{END PLDay_showtotal}
+										</td>
+										{END PLDay_fieldfootercolumn}
+										{BEGIN SchedType_fieldfootercolumn}<td class="bs-gridcell {$SchedType_class}" data-field="SchedType">
+																				</td>
+										{END SchedType_fieldfootercolumn}
+										{BEGIN Shift_fieldfootercolumn}<td class="bs-gridcell {$Shift_class}" data-field="Shift">
+																				</td>
+										{END Shift_fieldfootercolumn}
+									{BEGIN endrecordtotals_block}<td class="rnr-cs bs-gridcell"></td>
+									{END endrecordtotals_block}
+									{END totals_record}
+								</tr>
+								{END totals_row}
+								
+	</tfoot>
+</table>
+
+
+
+{END grid_block}
+
+
+
+</div>
+{END container_grid}
+
+
+
+
+
+
+</div>
+{END container_center}
+
+
+
+{BEGIN container_pagination}<div {$pagination_chiddenattr} data-pageid="{$pageid}" data-container="pagination" class="  text-center col-md-12 "> 
+
+{BEGIN pagination_block}<div {$pagination_hiddenattr} data-pageid="{$pageid}" data-brick="pagination">
+{$pagination}
+</div>
+{END pagination_block}
+
+
+
+</div>
+{END container_pagination}
+
+
+		</div>
+	</div>
+</div>
+	
+
+		{$footer}
+	{END body}
+	</body>
+</html>

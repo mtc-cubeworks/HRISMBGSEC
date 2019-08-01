@@ -1,0 +1,53 @@
+<div {$pageattrs}>
+
+{BEGIN container_dcount}
+<div {$dcount_chiddenattr} data-pageid="{$pageid}" data-container="dcount" class="    "> 
+
+
+<span {$bsdetailspreviewcount_hiddenattr} data-pageid="{$pageid}" data-brick="bsdetailspreviewcount">Details found: <strong>{$row_count}</strong></span>
+
+
+
+
+
+</div>
+{END container_dcount}
+
+
+
+{BEGIN container_detailspreviewgrid}
+
+
+{BEGIN details_data}
+<table class="table striped">
+{BEGIN details_row_header}
+	<thead>
+		<tr class="{$gridHeader_class}" >
+			<th class="{$ScRtabID_class}">{$label schedtab ScRtabID}</th>
+			<th class="{$UserName_class}">{$label schedtab UserName}</th>
+			<th class="{$EmployeeID_class}">{$label schedtab EmployeeID}</th>
+			<th class="{$UserID_class}">{$label schedtab UserID}</th>
+			<th class="{$ScRID_class}">{$label schedtab ScRID}</th>
+		</tr>
+	</thead>
+{END details_row_header}
+	<tbody>
+{BEGIN details_row}
+		<tr>
+			<td class="{$ScRtabID_class}">{$ScRtabID_value}</td>
+			<td class="{$UserName_class}">{$UserName_value}</td>
+			<td class="{$EmployeeID_class}">{$EmployeeID_value}</td>
+			<td class="{$UserID_class}">{$UserID_value}</td>
+			<td class="{$ScRID_class}">{$ScRID_value}</td>
+		</tr>
+{END details_row}	
+	</tbody>
+</table>
+
+{END details_data}
+
+
+
+{END container_detailspreviewgrid}
+
+</div>

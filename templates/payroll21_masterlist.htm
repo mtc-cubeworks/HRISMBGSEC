@@ -1,0 +1,70 @@
+<div {$pageattrs}>
+
+{BEGIN container_column}
+<div class="rnr-c rnr-ch rnr-c-column">
+
+{BEGIN masterlist_title}
+<div  class="style1 rnr-bl rnr-b-masterlistheader {$brickclass_masterlistheader}"><a {$backtomasterlink_attrs} class="btn btn-link btn-xs">Back to {$backtomasterlink_caption}</a><span>{$pagetitlelabel payroll21 masterlist}</span></div>
+{END masterlist_title}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_column}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+	<style>
+	.bs-gridcell[data-field=PSID]:before {
+		content: "{$label payroll21 PSID}";
+	}
+	.bs-gridcell[data-field=PayDate]:before {
+		content: "{$label payroll21 PayDate}";
+	}
+	.bs-gridcell[data-field=PayFromDate]:before {
+		content: "{$label payroll21 PayFromDate}";
+	}
+	.bs-gridcell[data-field=PayToDate]:before {
+		content: "{$label payroll21 PayToDate}";
+	}
+	.bs-gridcell[data-field=PayPeriod]:before {
+		content: "{$label payroll21 PayPeriod}";
+	}
+	.bs-gridcell[data-field=Locked]:before {
+		content: "{$label payroll21 Locked}";
+	}
+</style>
+<table {$masterlistgrid_hiddenattr} data-pageid="{$pageid}" data-brick="masterlistgrid" class="table rnr-b-mastergridfields rnr-gridtable bs-flexgrid" >
+		<thead>
+		<tr>
+			<th class="{$PSID_class}">{$label payroll21 PSID}</th>
+			<th class="{$PayFromDate_class}">{$label payroll21 PayFromDate}</th>
+			<th class="{$PayToDate_class}">{$label payroll21 PayToDate}</th>
+			<th class="{$PayPeriod_class}">{$label payroll21 PayPeriod}</th>
+			<th class="{$PayDate_class}">{$label payroll21 PayDate}</th>
+			<th class="{$Locked_class}">{$label payroll21 Locked}</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td class="{$PSID_class} bs-gridcell" data-field=PSID>{$PSID_mastervalue}</td>
+			<td class="{$PayFromDate_class} bs-gridcell" data-field=PayFromDate>{$PayFromDate_mastervalue}</td>
+			<td class="{$PayToDate_class} bs-gridcell" data-field=PayToDate>{$PayToDate_mastervalue}</td>
+			<td class="{$PayPeriod_class} bs-gridcell" data-field=PayPeriod>{$PayPeriod_mastervalue}</td>
+			<td class="{$PayDate_class} bs-gridcell" data-field=PayDate>{$PayDate_mastervalue}</td>
+			<td class="{$Locked_class} bs-gridcell" data-field=Locked>{$Locked_mastervalue}</td>
+		</tr>
+	</tbody>
+
+</table> 
+
+
+
+
+{END container_mastergrid}
+
+</div>

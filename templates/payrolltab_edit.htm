@@ -1,0 +1,1245 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_editpage}
+<div {$editpage_chiddenattr} data-pageid="{$pageid}" data-container="editpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-9 col-md-offset-3"> 
+
+{BEGIN editheader}
+	<h2 {$editheader_hiddenattr} data-pageid="{$pageid}" data-brick="editheader" >{$pagetitlelabel payrolltab edit}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END editheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+
+
+{BEGIN container_message}
+<div {$message_chiddenattr} data-pageid="{$pageid}" data-container="message" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN message_block}
+<div {$message_hiddenattr} data-pageid="{$pageid}" data-brick="message" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		<button class="btn btn-sm btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>View</button>
+{END view_page_button}
+</div>
+</div>
+
+{END message_block}
+
+
+
+</div>
+{END container_message}
+
+
+
+
+
+
+
+</div>
+{END container_editpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$editfields_hiddenattr} data-pageid="{$pageid}" data-brick="editfields" class="form-horizontal" role="form">
+
+
+
+			{BEGIN Locked_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Locked}" data-fieldname="Locked" data-signal-error-for="Locked{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Locked}">
+		{BEGIN Locked_label}{$label payrolltab Locked}{END Locked_label}
+	</label>
+	<div class="col-md-6" >
+		{$Locked_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Locked">
+		<div class="text-muted" >
+		{$tooltip payrolltab Locked}
+		</div>
+	</div>
+</div>
+</div>
+{END Locked_fieldblock}
+
+			{BEGIN Email_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Email}" data-fieldname="Email" data-signal-error-for="Email{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Email}">
+		{BEGIN Email_label}{$label payrolltab Email}{END Email_label}
+	</label>
+	<div class="col-md-6" >
+		{$Email_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Email">
+		<div class="text-muted" >
+		{$tooltip payrolltab Email}
+		</div>
+	</div>
+</div>
+</div>
+{END Email_fieldblock}
+
+			{BEGIN PayrollID_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_PayrollID}" data-fieldname="PayrollID" data-signal-error-for="PayrollID{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_PayrollID}">
+		{BEGIN PayrollID_label}{$label payrolltab PayrollID}{END PayrollID_label}
+	</label>
+	<div class="col-md-6" >
+		{$PayrollID_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="PayrollID">
+		<div class="text-muted" >
+		{$tooltip payrolltab PayrollID}
+		</div>
+	</div>
+</div>
+</div>
+{END PayrollID_fieldblock}
+
+			{BEGIN EmployeeID_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_EmployeeID}" data-fieldname="EmployeeID" data-signal-error-for="EmployeeID{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_EmployeeID}">
+		{BEGIN EmployeeID_label}{$label payrolltab EmployeeID}{END EmployeeID_label}
+	</label>
+	<div class="col-md-6" >
+		{$EmployeeID_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="EmployeeID">
+		<div class="text-muted" >
+		{$tooltip payrolltab EmployeeID}
+		</div>
+	</div>
+</div>
+</div>
+{END EmployeeID_fieldblock}
+
+			{BEGIN UserName_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_UserName}" data-fieldname="UserName" data-signal-error-for="UserName{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_UserName}">
+		{BEGIN UserName_label}{$label payrolltab UserName}{END UserName_label}
+	</label>
+	<div class="col-md-6" >
+		{$UserName_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="UserName">
+		<div class="text-muted" >
+		{$tooltip payrolltab UserName}
+		</div>
+	</div>
+</div>
+</div>
+{END UserName_fieldblock}
+
+			{BEGIN Position_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Position}" data-fieldname="Position" data-signal-error-for="Position{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Position}">
+		{BEGIN Position_label}{$label payrolltab Position}{END Position_label}
+	</label>
+	<div class="col-md-6" >
+		{$Position_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Position">
+		<div class="text-muted" >
+		{$tooltip payrolltab Position}
+		</div>
+	</div>
+</div>
+</div>
+{END Position_fieldblock}
+
+			{BEGIN Division_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Division}" data-fieldname="Division" data-signal-error-for="Division{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Division}">
+		{BEGIN Division_label}{$label payrolltab Division}{END Division_label}
+	</label>
+	<div class="col-md-6" >
+		{$Division_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Division">
+		<div class="text-muted" >
+		{$tooltip payrolltab Division}
+		</div>
+	</div>
+</div>
+</div>
+{END Division_fieldblock}
+
+			{BEGIN Employer_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Employer}" data-fieldname="Employer" data-signal-error-for="Employer{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Employer}">
+		{BEGIN Employer_label}{$label payrolltab Employer}{END Employer_label}
+	</label>
+	<div class="col-md-6" >
+		{$Employer_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Employer">
+		<div class="text-muted" >
+		{$tooltip payrolltab Employer}
+		</div>
+	</div>
+</div>
+</div>
+{END Employer_fieldblock}
+
+			{BEGIN WageType_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_WageType}" data-fieldname="WageType" data-signal-error-for="WageType{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_WageType}">
+		{BEGIN WageType_label}{$label payrolltab WageType}{END WageType_label}
+	</label>
+	<div class="col-md-6" >
+		{$WageType_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="WageType">
+		<div class="text-muted" >
+		{$tooltip payrolltab WageType}
+		</div>
+	</div>
+</div>
+</div>
+{END WageType_fieldblock}
+
+			{BEGIN Status_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Status}" data-fieldname="Status" data-signal-error-for="Status{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Status}">
+		{BEGIN Status_label}{$label payrolltab Status}{END Status_label}
+	</label>
+	<div class="col-md-6" >
+		{$Status_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Status">
+		<div class="text-muted" >
+		{$tooltip payrolltab Status}
+		</div>
+	</div>
+</div>
+</div>
+{END Status_fieldblock}
+
+			{BEGIN FromDate_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_FromDate}" data-fieldname="FromDate" data-signal-error-for="FromDate{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_FromDate}">
+		{BEGIN FromDate_label}{$label payrolltab FromDate}{END FromDate_label}
+	</label>
+	<div class="col-md-6" >
+		{$FromDate_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="FromDate">
+		<div class="text-muted" >
+		{$tooltip payrolltab FromDate}
+		</div>
+	</div>
+</div>
+</div>
+{END FromDate_fieldblock}
+
+			{BEGIN ToDate_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_ToDate}" data-fieldname="ToDate" data-signal-error-for="ToDate{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_ToDate}">
+		{BEGIN ToDate_label}{$label payrolltab ToDate}{END ToDate_label}
+	</label>
+	<div class="col-md-6" >
+		{$ToDate_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="ToDate">
+		<div class="text-muted" >
+		{$tooltip payrolltab ToDate}
+		</div>
+	</div>
+</div>
+</div>
+{END ToDate_fieldblock}
+
+			{BEGIN BasicMonthly_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_BasicMonthly}" data-fieldname="BasicMonthly" data-signal-error-for="BasicMonthly{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_BasicMonthly}">
+		{BEGIN BasicMonthly_label}{$label payrolltab BasicMonthly}{END BasicMonthly_label}
+	</label>
+	<div class="col-md-6" >
+		{$BasicMonthly_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="BasicMonthly">
+		<div class="text-muted" >
+		{$tooltip payrolltab BasicMonthly}
+		</div>
+	</div>
+</div>
+</div>
+{END BasicMonthly_fieldblock}
+
+			{BEGIN BasicDaily_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_BasicDaily}" data-fieldname="BasicDaily" data-signal-error-for="BasicDaily{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_BasicDaily}">
+		{BEGIN BasicDaily_label}{$label payrolltab BasicDaily}{END BasicDaily_label}
+	</label>
+	<div class="col-md-6" >
+		{$BasicDaily_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="BasicDaily">
+		<div class="text-muted" >
+		{$tooltip payrolltab BasicDaily}
+		</div>
+	</div>
+</div>
+</div>
+{END BasicDaily_fieldblock}
+
+			{BEGIN DWork_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_DWork}" data-fieldname="DWork" data-signal-error-for="DWork{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_DWork}">
+		{BEGIN DWork_label}{$label payrolltab DWork}{END DWork_label}
+	</label>
+	<div class="col-md-6" >
+		{$DWork_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="DWork">
+		<div class="text-muted" >
+		{$tooltip payrolltab DWork}
+		</div>
+	</div>
+</div>
+</div>
+{END DWork_fieldblock}
+
+			{BEGIN Absent_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Absent}" data-fieldname="Absent" data-signal-error-for="Absent{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Absent}">
+		{BEGIN Absent_label}{$label payrolltab Absent}{END Absent_label}
+	</label>
+	<div class="col-md-6" >
+		{$Absent_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Absent">
+		<div class="text-muted" >
+		{$tooltip payrolltab Absent}
+		</div>
+	</div>
+</div>
+</div>
+{END Absent_fieldblock}
+
+			{BEGIN LateMins_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_LateMins}" data-fieldname="LateMins" data-signal-error-for="LateMins{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_LateMins}">
+		{BEGIN LateMins_label}{$label payrolltab LateMins}{END LateMins_label}
+	</label>
+	<div class="col-md-6" >
+		{$LateMins_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="LateMins">
+		<div class="text-muted" >
+		{$tooltip payrolltab LateMins}
+		</div>
+	</div>
+</div>
+</div>
+{END LateMins_fieldblock}
+
+			{BEGIN UndertimeMins_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_UndertimeMins}" data-fieldname="UndertimeMins" data-signal-error-for="UndertimeMins{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_UndertimeMins}">
+		{BEGIN UndertimeMins_label}{$label payrolltab UndertimeMins}{END UndertimeMins_label}
+	</label>
+	<div class="col-md-6" >
+		{$UndertimeMins_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="UndertimeMins">
+		<div class="text-muted" >
+		{$tooltip payrolltab UndertimeMins}
+		</div>
+	</div>
+</div>
+</div>
+{END UndertimeMins_fieldblock}
+
+			{BEGIN RHolidayHrs_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_RHolidayHrs}" data-fieldname="RHolidayHrs" data-signal-error-for="RHolidayHrs{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_RHolidayHrs}">
+		{BEGIN RHolidayHrs_label}{$label payrolltab RHolidayHrs}{END RHolidayHrs_label}
+	</label>
+	<div class="col-md-6" >
+		{$RHolidayHrs_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="RHolidayHrs">
+		<div class="text-muted" >
+		{$tooltip payrolltab RHolidayHrs}
+		</div>
+	</div>
+</div>
+</div>
+{END RHolidayHrs_fieldblock}
+
+			{BEGIN SHolidayHrs_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_SHolidayHrs}" data-fieldname="SHolidayHrs" data-signal-error-for="SHolidayHrs{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_SHolidayHrs}">
+		{BEGIN SHolidayHrs_label}{$label payrolltab SHolidayHrs}{END SHolidayHrs_label}
+	</label>
+	<div class="col-md-6" >
+		{$SHolidayHrs_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="SHolidayHrs">
+		<div class="text-muted" >
+		{$tooltip payrolltab SHolidayHrs}
+		</div>
+	</div>
+</div>
+</div>
+{END SHolidayHrs_fieldblock}
+
+			{BEGIN CHolidayHrs_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_CHolidayHrs}" data-fieldname="CHolidayHrs" data-signal-error-for="CHolidayHrs{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_CHolidayHrs}">
+		{BEGIN CHolidayHrs_label}{$label payrolltab CHolidayHrs}{END CHolidayHrs_label}
+	</label>
+	<div class="col-md-6" >
+		{$CHolidayHrs_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="CHolidayHrs">
+		<div class="text-muted" >
+		{$tooltip payrolltab CHolidayHrs}
+		</div>
+	</div>
+</div>
+</div>
+{END CHolidayHrs_fieldblock}
+
+			{BEGIN ExcessHrs_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_ExcessHrs}" data-fieldname="ExcessHrs" data-signal-error-for="ExcessHrs{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_ExcessHrs}">
+		{BEGIN ExcessHrs_label}{$label payrolltab ExcessHrs}{END ExcessHrs_label}
+	</label>
+	<div class="col-md-6" >
+		{$ExcessHrs_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="ExcessHrs">
+		<div class="text-muted" >
+		{$tooltip payrolltab ExcessHrs}
+		</div>
+	</div>
+</div>
+</div>
+{END ExcessHrs_fieldblock}
+
+			{BEGIN RegOTHrs_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_RegOTHrs}" data-fieldname="RegOTHrs" data-signal-error-for="RegOTHrs{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_RegOTHrs}">
+		{BEGIN RegOTHrs_label}{$label payrolltab RegOTHrs}{END RegOTHrs_label}
+	</label>
+	<div class="col-md-6" >
+		{$RegOTHrs_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="RegOTHrs">
+		<div class="text-muted" >
+		{$tooltip payrolltab RegOTHrs}
+		</div>
+	</div>
+</div>
+</div>
+{END RegOTHrs_fieldblock}
+
+			{BEGIN RHOTHrs_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_RHOTHrs}" data-fieldname="RHOTHrs" data-signal-error-for="RHOTHrs{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_RHOTHrs}">
+		{BEGIN RHOTHrs_label}{$label payrolltab RHOTHrs}{END RHOTHrs_label}
+	</label>
+	<div class="col-md-6" >
+		{$RHOTHrs_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="RHOTHrs">
+		<div class="text-muted" >
+		{$tooltip payrolltab RHOTHrs}
+		</div>
+	</div>
+</div>
+</div>
+{END RHOTHrs_fieldblock}
+
+			{BEGIN SHOTHRs_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_SHOTHRs}" data-fieldname="SHOTHRs" data-signal-error-for="SHOTHRs{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_SHOTHRs}">
+		{BEGIN SHOTHRs_label}{$label payrolltab SHOTHRs}{END SHOTHRs_label}
+	</label>
+	<div class="col-md-6" >
+		{$SHOTHRs_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="SHOTHRs">
+		<div class="text-muted" >
+		{$tooltip payrolltab SHOTHRs}
+		</div>
+	</div>
+</div>
+</div>
+{END SHOTHRs_fieldblock}
+
+			{BEGIN CHOTHrs_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_CHOTHrs}" data-fieldname="CHOTHrs" data-signal-error-for="CHOTHrs{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_CHOTHrs}">
+		{BEGIN CHOTHrs_label}{$label payrolltab CHOTHrs}{END CHOTHrs_label}
+	</label>
+	<div class="col-md-6" >
+		{$CHOTHrs_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="CHOTHrs">
+		<div class="text-muted" >
+		{$tooltip payrolltab CHOTHrs}
+		</div>
+	</div>
+</div>
+</div>
+{END CHOTHrs_fieldblock}
+
+			{BEGIN TrODays_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_TrODays}" data-fieldname="TrODays" data-signal-error-for="TrODays{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_TrODays}">
+		{BEGIN TrODays_label}{$label payrolltab TrODays}{END TrODays_label}
+	</label>
+	<div class="col-md-6" >
+		{$TrODays_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="TrODays">
+		<div class="text-muted" >
+		{$tooltip payrolltab TrODays}
+		</div>
+	</div>
+</div>
+</div>
+{END TrODays_fieldblock}
+
+			{BEGIN RDOTHrs_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_RDOTHrs}" data-fieldname="RDOTHrs" data-signal-error-for="RDOTHrs{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_RDOTHrs}">
+		{BEGIN RDOTHrs_label}{$label payrolltab RDOTHrs}{END RDOTHrs_label}
+	</label>
+	<div class="col-md-6" >
+		{$RDOTHrs_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="RDOTHrs">
+		<div class="text-muted" >
+		{$tooltip payrolltab RDOTHrs}
+		</div>
+	</div>
+</div>
+</div>
+{END RDOTHrs_fieldblock}
+
+			{BEGIN NDHrs_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_NDHrs}" data-fieldname="NDHrs" data-signal-error-for="NDHrs{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_NDHrs}">
+		{BEGIN NDHrs_label}{$label payrolltab NDHrs}{END NDHrs_label}
+	</label>
+	<div class="col-md-6" >
+		{$NDHrs_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="NDHrs">
+		<div class="text-muted" >
+		{$tooltip payrolltab NDHrs}
+		</div>
+	</div>
+</div>
+</div>
+{END NDHrs_fieldblock}
+
+			{BEGIN RDHrs_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_RDHrs}" data-fieldname="RDHrs" data-signal-error-for="RDHrs{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_RDHrs}">
+		{BEGIN RDHrs_label}{$label payrolltab RDHrs}{END RDHrs_label}
+	</label>
+	<div class="col-md-6" >
+		{$RDHrs_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="RDHrs">
+		<div class="text-muted" >
+		{$tooltip payrolltab RDHrs}
+		</div>
+	</div>
+</div>
+</div>
+{END RDHrs_fieldblock}
+
+			{BEGIN RegNDHrs_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_RegNDHrs}" data-fieldname="RegNDHrs" data-signal-error-for="RegNDHrs{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_RegNDHrs}">
+		{BEGIN RegNDHrs_label}{$label payrolltab RegNDHrs}{END RegNDHrs_label}
+	</label>
+	<div class="col-md-6" >
+		{$RegNDHrs_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="RegNDHrs">
+		<div class="text-muted" >
+		{$tooltip payrolltab RegNDHrs}
+		</div>
+	</div>
+</div>
+</div>
+{END RegNDHrs_fieldblock}
+
+			{BEGIN RHNDHrs_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_RHNDHrs}" data-fieldname="RHNDHrs" data-signal-error-for="RHNDHrs{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_RHNDHrs}">
+		{BEGIN RHNDHrs_label}{$label payrolltab RHNDHrs}{END RHNDHrs_label}
+	</label>
+	<div class="col-md-6" >
+		{$RHNDHrs_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="RHNDHrs">
+		<div class="text-muted" >
+		{$tooltip payrolltab RHNDHrs}
+		</div>
+	</div>
+</div>
+</div>
+{END RHNDHrs_fieldblock}
+
+			{BEGIN SHNDHrs_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_SHNDHrs}" data-fieldname="SHNDHrs" data-signal-error-for="SHNDHrs{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_SHNDHrs}">
+		{BEGIN SHNDHrs_label}{$label payrolltab SHNDHrs}{END SHNDHrs_label}
+	</label>
+	<div class="col-md-6" >
+		{$SHNDHrs_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="SHNDHrs">
+		<div class="text-muted" >
+		{$tooltip payrolltab SHNDHrs}
+		</div>
+	</div>
+</div>
+</div>
+{END SHNDHrs_fieldblock}
+
+			{BEGIN CHNDHrs_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_CHNDHrs}" data-fieldname="CHNDHrs" data-signal-error-for="CHNDHrs{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_CHNDHrs}">
+		{BEGIN CHNDHrs_label}{$label payrolltab CHNDHrs}{END CHNDHrs_label}
+	</label>
+	<div class="col-md-6" >
+		{$CHNDHrs_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="CHNDHrs">
+		<div class="text-muted" >
+		{$tooltip payrolltab CHNDHrs}
+		</div>
+	</div>
+</div>
+</div>
+{END CHNDHrs_fieldblock}
+
+			{BEGIN RDNDHrs_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_RDNDHrs}" data-fieldname="RDNDHrs" data-signal-error-for="RDNDHrs{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_RDNDHrs}">
+		{BEGIN RDNDHrs_label}{$label payrolltab RDNDHrs}{END RDNDHrs_label}
+	</label>
+	<div class="col-md-6" >
+		{$RDNDHrs_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="RDNDHrs">
+		<div class="text-muted" >
+		{$tooltip payrolltab RDNDHrs}
+		</div>
+	</div>
+</div>
+</div>
+{END RDNDHrs_fieldblock}
+
+			{BEGIN VLDays_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_VLDays}" data-fieldname="VLDays" data-signal-error-for="VLDays{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_VLDays}">
+		{BEGIN VLDays_label}{$label payrolltab VLDays}{END VLDays_label}
+	</label>
+	<div class="col-md-6" >
+		{$VLDays_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="VLDays">
+		<div class="text-muted" >
+		{$tooltip payrolltab VLDays}
+		</div>
+	</div>
+</div>
+</div>
+{END VLDays_fieldblock}
+
+			{BEGIN SLDays_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_SLDays}" data-fieldname="SLDays" data-signal-error-for="SLDays{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_SLDays}">
+		{BEGIN SLDays_label}{$label payrolltab SLDays}{END SLDays_label}
+	</label>
+	<div class="col-md-6" >
+		{$SLDays_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="SLDays">
+		<div class="text-muted" >
+		{$tooltip payrolltab SLDays}
+		</div>
+	</div>
+</div>
+</div>
+{END SLDays_fieldblock}
+
+			{BEGIN ELDays_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_ELDays}" data-fieldname="ELDays" data-signal-error-for="ELDays{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_ELDays}">
+		{BEGIN ELDays_label}{$label payrolltab ELDays}{END ELDays_label}
+	</label>
+	<div class="col-md-6" >
+		{$ELDays_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="ELDays">
+		<div class="text-muted" >
+		{$tooltip payrolltab ELDays}
+		</div>
+	</div>
+</div>
+</div>
+{END ELDays_fieldblock}
+
+			{BEGIN PLDays_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_PLDays}" data-fieldname="PLDays" data-signal-error-for="PLDays{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_PLDays}">
+		{BEGIN PLDays_label}{$label payrolltab PLDays}{END PLDays_label}
+	</label>
+	<div class="col-md-6" >
+		{$PLDays_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="PLDays">
+		<div class="text-muted" >
+		{$tooltip payrolltab PLDays}
+		</div>
+	</div>
+</div>
+</div>
+{END PLDays_fieldblock}
+
+			{BEGIN PLBalance_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_PLBalance}" data-fieldname="PLBalance" data-signal-error-for="PLBalance{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_PLBalance}">
+		{BEGIN PLBalance_label}{$label payrolltab PLBalance}{END PLBalance_label}
+	</label>
+	<div class="col-md-6" >
+		{$PLBalance_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="PLBalance">
+		<div class="text-muted" >
+		{$tooltip payrolltab PLBalance}
+		</div>
+	</div>
+</div>
+</div>
+{END PLBalance_fieldblock}
+
+			{BEGIN ELBalance_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_ELBalance}" data-fieldname="ELBalance" data-signal-error-for="ELBalance{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_ELBalance}">
+		{BEGIN ELBalance_label}{$label payrolltab ELBalance}{END ELBalance_label}
+	</label>
+	<div class="col-md-6" >
+		{$ELBalance_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="ELBalance">
+		<div class="text-muted" >
+		{$tooltip payrolltab ELBalance}
+		</div>
+	</div>
+</div>
+</div>
+{END ELBalance_fieldblock}
+
+			{BEGIN SLBalance_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_SLBalance}" data-fieldname="SLBalance" data-signal-error-for="SLBalance{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_SLBalance}">
+		{BEGIN SLBalance_label}{$label payrolltab SLBalance}{END SLBalance_label}
+	</label>
+	<div class="col-md-6" >
+		{$SLBalance_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="SLBalance">
+		<div class="text-muted" >
+		{$tooltip payrolltab SLBalance}
+		</div>
+	</div>
+</div>
+</div>
+{END SLBalance_fieldblock}
+
+			{BEGIN VLBalance_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_VLBalance}" data-fieldname="VLBalance" data-signal-error-for="VLBalance{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_VLBalance}">
+		{BEGIN VLBalance_label}{$label payrolltab VLBalance}{END VLBalance_label}
+	</label>
+	<div class="col-md-6" >
+		{$VLBalance_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="VLBalance">
+		<div class="text-muted" >
+		{$tooltip payrolltab VLBalance}
+		</div>
+	</div>
+</div>
+</div>
+{END VLBalance_fieldblock}
+
+			{BEGIN AllowancePerDay_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_AllowancePerDay}" data-fieldname="AllowancePerDay" data-signal-error-for="AllowancePerDay{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_AllowancePerDay}">
+		{BEGIN AllowancePerDay_label}{$label payrolltab AllowancePerDay}{END AllowancePerDay_label}
+	</label>
+	<div class="col-md-6" >
+		{$AllowancePerDay_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="AllowancePerDay">
+		<div class="text-muted" >
+		{$tooltip payrolltab AllowancePerDay}
+		</div>
+	</div>
+</div>
+</div>
+{END AllowancePerDay_fieldblock}
+
+			{BEGIN AgencyShare_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_AgencyShare}" data-fieldname="AgencyShare" data-signal-error-for="AgencyShare{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_AgencyShare}">
+		{BEGIN AgencyShare_label}{$label payrolltab AgencyShare}{END AgencyShare_label}
+	</label>
+	<div class="col-md-6" >
+		{$AgencyShare_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="AgencyShare">
+		<div class="text-muted" >
+		{$tooltip payrolltab AgencyShare}
+		</div>
+	</div>
+</div>
+</div>
+{END AgencyShare_fieldblock}
+
+			{BEGIN NDMealAllowance_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_NDMealAllowance}" data-fieldname="NDMealAllowance" data-signal-error-for="NDMealAllowance{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_NDMealAllowance}">
+		{BEGIN NDMealAllowance_label}{$label payrolltab NDMealAllowance}{END NDMealAllowance_label}
+	</label>
+	<div class="col-md-6" >
+		{$NDMealAllowance_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="NDMealAllowance">
+		<div class="text-muted" >
+		{$tooltip payrolltab NDMealAllowance}
+		</div>
+	</div>
+</div>
+</div>
+{END NDMealAllowance_fieldblock}
+
+			
+		
+
+
+
+
+
+{BEGIN details_payrollamt3}
+<div data-pageid="1" class="bs-details"> 
+<div class="panel panel-info details-grid">
+
+<div class="panel-heading">
+	<h4 class="panel-title">DTR
+		<span>
+{BEGIN details_inlineadd_payrollamt3_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_inlineadd_payrollamt3_attrs}>Inline Add</button>
+{END details_inlineadd_payrollamt3_link}		
+{BEGIN details_add_payrollamt3_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_add_payrollamt3_attrs}>Add new</button>
+{END details_add_payrollamt3_link}
+{BEGIN details_edit_payrollamt3_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_edit_payrollamt3_attrs}>Edit</button>
+{END details_edit_payrollamt3_link}
+{BEGIN details_updateselected_payrollamt3_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_updateselected_payrollamt3_attrs}>Update selected</button>
+{END details_updateselected_payrollamt3_link}
+
+
+{BEGIN details_delete_payrollamt3_link}
+			<button type="button" class="btn btn-xs btn-info " disabled {$details_delete_payrollamt3_attrs}>Delete</button>
+{END details_delete_payrollamt3_link}
+
+		</span>
+	</h4>
+</div>
+<div class="panel-body">
+	{$displayDetailTable_payrollamt3}
+</div>
+</div>
+</div>
+{END details_payrollamt3}
+	
+	
+	
+
+			
+		
+
+
+
+
+
+{BEGIN details_payrolldeductions}
+<div data-pageid="1" class="bs-details"> 
+<div class="panel panel-info details-grid">
+
+<div class="panel-heading">
+	<h4 class="panel-title">Deductions
+		<span>
+{BEGIN details_inlineadd_payrolldeductions_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_inlineadd_payrolldeductions_attrs}>Inline Add</button>
+{END details_inlineadd_payrolldeductions_link}		
+{BEGIN details_add_payrolldeductions_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_add_payrolldeductions_attrs}>Add new</button>
+{END details_add_payrolldeductions_link}
+{BEGIN details_edit_payrolldeductions_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_edit_payrolldeductions_attrs}>Edit</button>
+{END details_edit_payrolldeductions_link}
+{BEGIN details_updateselected_payrolldeductions_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_updateselected_payrolldeductions_attrs}>Update selected</button>
+{END details_updateselected_payrolldeductions_link}
+
+
+{BEGIN details_delete_payrolldeductions_link}
+			<button type="button" class="btn btn-xs btn-info " disabled {$details_delete_payrolldeductions_attrs}>Delete</button>
+{END details_delete_payrolldeductions_link}
+
+{BEGIN saveall_payrolldeductions_link}
+			<button type="button" class="btn btn-xs btn-info" {$savealllink_payrolldeductions_attrs} {$savealllink_payrolldeductions_span}>Save all</button>
+{END saveall_payrolldeductions_link}
+{BEGIN cancelall_payrolldeductions_link}
+			<button type="button" class="btn btn-xs btn-info" {$cancelalllink_payrolldeductions_attrs} {$cancelalllink_payrolldeductions_span}>Cancel</button>
+{END cancelall_payrolldeductions_link}
+		</span>
+	</h4>
+</div>
+<div class="panel-body">
+	{$displayDetailTable_payrolldeductions}
+</div>
+</div>
+</div>
+{END details_payrolldeductions}
+	
+	
+	
+
+			
+		
+
+
+
+
+
+{BEGIN details_payrollearnadj}
+<div data-pageid="1" class="bs-details"> 
+<div class="panel panel-info details-grid">
+
+<div class="panel-heading">
+	<h4 class="panel-title">Earning Adjustments
+		<span>
+{BEGIN details_inlineadd_payrollearnadj_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_inlineadd_payrollearnadj_attrs}>Inline Add</button>
+{END details_inlineadd_payrollearnadj_link}		
+{BEGIN details_add_payrollearnadj_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_add_payrollearnadj_attrs}>Add new</button>
+{END details_add_payrollearnadj_link}
+{BEGIN details_edit_payrollearnadj_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_edit_payrollearnadj_attrs}>Edit</button>
+{END details_edit_payrollearnadj_link}
+{BEGIN details_updateselected_payrollearnadj_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_updateselected_payrollearnadj_attrs}>Update selected</button>
+{END details_updateselected_payrollearnadj_link}
+
+
+{BEGIN details_delete_payrollearnadj_link}
+			<button type="button" class="btn btn-xs btn-info " disabled {$details_delete_payrollearnadj_attrs}>Delete</button>
+{END details_delete_payrollearnadj_link}
+
+{BEGIN saveall_payrollearnadj_link}
+			<button type="button" class="btn btn-xs btn-info" {$savealllink_payrollearnadj_attrs} {$savealllink_payrollearnadj_span}>Save all</button>
+{END saveall_payrollearnadj_link}
+{BEGIN cancelall_payrollearnadj_link}
+			<button type="button" class="btn btn-xs btn-info" {$cancelalllink_payrollearnadj_attrs} {$cancelalllink_payrollearnadj_span}>Cancel</button>
+{END cancelall_payrollearnadj_link}
+		</span>
+	</h4>
+</div>
+<div class="panel-body">
+	{$displayDetailTable_payrollearnadj}
+</div>
+</div>
+</div>
+{END details_payrollearnadj}
+	
+	
+	
+
+			
+		
+
+
+
+
+
+{BEGIN details_payrolltax}
+<div data-pageid="1" class="bs-details"> 
+<div class="panel panel-info details-grid">
+
+<div class="panel-heading">
+	<h4 class="panel-title">Tax
+		<span>
+{BEGIN details_inlineadd_payrolltax_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_inlineadd_payrolltax_attrs}>Inline Add</button>
+{END details_inlineadd_payrolltax_link}		
+{BEGIN details_add_payrolltax_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_add_payrolltax_attrs}>Add new</button>
+{END details_add_payrolltax_link}
+{BEGIN details_edit_payrolltax_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_edit_payrolltax_attrs}>Edit</button>
+{END details_edit_payrolltax_link}
+{BEGIN details_updateselected_payrolltax_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_updateselected_payrolltax_attrs}>Update selected</button>
+{END details_updateselected_payrolltax_link}
+
+
+{BEGIN details_delete_payrolltax_link}
+			<button type="button" class="btn btn-xs btn-info " disabled {$details_delete_payrolltax_attrs}>Delete</button>
+{END details_delete_payrolltax_link}
+
+{BEGIN saveall_payrolltax_link}
+			<button type="button" class="btn btn-xs btn-info" {$savealllink_payrolltax_attrs} {$savealllink_payrolltax_span}>Save all</button>
+{END saveall_payrolltax_link}
+{BEGIN cancelall_payrolltax_link}
+			<button type="button" class="btn btn-xs btn-info" {$cancelalllink_payrolltax_attrs} {$cancelalllink_payrolltax_span}>Cancel</button>
+{END cancelall_payrolltax_link}
+		</span>
+	</h4>
+</div>
+<div class="panel-body">
+	{$displayDetailTable_payrolltax}
+</div>
+</div>
+</div>
+{END details_payrolltax}
+	
+	
+	
+
+
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_buttons}
+<div {$buttons_chiddenattr} data-pageid="{$pageid}" data-container="buttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-3 col-md-offset-3"> 
+
+{BEGIN editbuttons}
+	{BEGIN save_button}
+	<button class="btn btn-primary" {$savebutton_attrs}>Save</button>
+	{END save_button}
+	{BEGIN updsel_button}
+	<button class="btn btn-primary" {$updselbutton_attrs}>{$update_selected}</button>
+	{END updsel_button}
+	{BEGIN back_button}
+		<button class="btn btn-default" {$backbutton_attrs}>Back to list</button>
+	{END back_button}
+	{BEGIN close_button}
+	<a href="#" class="btn btn-default" {$closebutton_attrs}>Cancel</a>
+	{END close_button}
+
+{END editbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+
+
+{BEGIN container_leftbuttons_1}
+<div {$leftbuttons_1_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons_1" class="  text-right col-md-3 "> 
+
+{BEGIN righteditbuttons}
+<div class="btn-group" role="group">
+
+	{BEGIN prev_button}
+	<button class="btn btn-default {$prevbutton_class}" {$prevbutton_attrs}><span class="glyphicon glyphicon-chevron-left"></span></button>
+	{END prev_button}
+	{BEGIN next_button}
+	<button class="btn btn-default  {$nextbutton_class}" {$nextbutton_attrs}><span class="glyphicon glyphicon-chevron-right"></span></button>
+	{END next_button}
+	<div class="btn-group dropup" role="group">
+		<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+		<ul class="dropdown-menu dropdown-left">
+			{BEGIN reset_button}
+				<li><a href="#" {$resetbutton_attrs}>Reset</a></li>
+			{END reset_button}
+			{BEGIN view_page_button}
+				<li><a href="#" {$view_page_button_attrs}>View</a></li>
+			{END view_page_button}
+		</ul>
+	</div>
+</div>
+{END righteditbuttons}
+
+
+
+</div>
+{END container_leftbuttons_1}
+
+
+
+
+
+
+</div>
+{END container_buttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

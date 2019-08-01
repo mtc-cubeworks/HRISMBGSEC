@@ -1,0 +1,293 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_pdf}
+<div {$pdf_chiddenattr} data-pageid="{$pageid}" data-container="pdf" class="   col-md-12 "> 
+
+{BEGIN printbuttons}
+
+{END printbuttons}
+
+
+
+</div>
+{END container_pdf}
+
+
+
+
+
+{BEGIN container_pageheader}
+<div {$pageheader_chiddenattr} data-pageid="{$pageid}" data-container="pageheader" class="    "> 
+
+{BEGIN printheader}
+	<h2 {$printheader_hiddenattr} data-pageid="{$pageid}" data-brick="printheader" >{$pagetitlelabel leaves1 print}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END printheader}
+
+
+{BEGIN page_number}
+<span>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></span>
+{END page_number}
+
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="table table-bordered rp-maintable" {$printgrid_hiddenattr} data-pageid="{$pageid}" data-brick="printgrid" >
+	<thead>
+	{BEGIN grid_header}
+		<tr class="{$gridHeader_class}" >
+		{BEGIN record_header}
+			{BEGIN LvID_fieldheadercolumn}
+			<th class="{$LvID_class}" {$LvID_style}  data-field="LvID">
+				{$label leaves1 LvID}
+			</th>
+			{END LvID_fieldheadercolumn}
+			{BEGIN DateCreated_fieldheadercolumn}
+			<th class="{$DateCreated_class}" {$DateCreated_style}  data-field="DateCreated">
+				{$label leaves1 DateCreated}
+			</th>
+			{END DateCreated_fieldheadercolumn}
+			{BEGIN LeaveType_fieldheadercolumn}
+			<th class="{$LeaveType_class}" {$LeaveType_style}  data-field="LeaveType">
+				{$label leaves1 LeaveType}
+			</th>
+			{END LeaveType_fieldheadercolumn}
+			{BEGIN EmployeeID_fieldheadercolumn}
+			<th class="{$EmployeeID_class}" {$EmployeeID_style}  data-field="EmployeeID">
+				{$label leaves1 EmployeeID}
+			</th>
+			{END EmployeeID_fieldheadercolumn}
+			{BEGIN FromDate_fieldheadercolumn}
+			<th class="{$FromDate_class}" {$FromDate_style}  data-field="FromDate">
+				{$label leaves1 FromDate}
+			</th>
+			{END FromDate_fieldheadercolumn}
+			{BEGIN ToDate_fieldheadercolumn}
+			<th class="{$ToDate_class}" {$ToDate_style}  data-field="ToDate">
+				{$label leaves1 ToDate}
+			</th>
+			{END ToDate_fieldheadercolumn}
+			{BEGIN Reason_fieldheadercolumn}
+			<th class="{$Reason_class}" {$Reason_style}  data-field="Reason">
+				{$label leaves1 Reason}
+			</th>
+			{END Reason_fieldheadercolumn}
+			{BEGIN FirstHalf_fieldheadercolumn}
+			<th class="{$FirstHalf_class}" {$FirstHalf_style}  data-field="FirstHalf">
+				{$label leaves1 FirstHalf}
+			</th>
+			{END FirstHalf_fieldheadercolumn}
+			{BEGIN SecondHalf_fieldheadercolumn}
+			<th class="{$SecondHalf_class}" {$SecondHalf_style}  data-field="SecondHalf">
+				{$label leaves1 SecondHalf}
+			</th>
+			{END SecondHalf_fieldheadercolumn}
+			{BEGIN Days_fieldheadercolumn}
+			<th class="{$Days_class}" {$Days_style}  data-field="Days">
+				{$label leaves1 Days}
+			</th>
+			{END Days_fieldheadercolumn}
+			{BEGIN Approved_fieldheadercolumn}
+			<th class="{$Approved_class}" {$Approved_style}  data-field="Approved">
+				{$label leaves1 Approved}
+			</th>
+			{END Approved_fieldheadercolumn}
+			{BEGIN ApprovedDate_fieldheadercolumn}
+			<th class="{$ApprovedDate_class}" {$ApprovedDate_style}  data-field="ApprovedDate">
+				{$label leaves1 ApprovedDate}
+			</th>
+			{END ApprovedDate_fieldheadercolumn}
+			{BEGIN ApprovedTime_fieldheadercolumn}
+			<th class="{$ApprovedTime_class}" {$ApprovedTime_style}  data-field="ApprovedTime">
+				{$label leaves1 ApprovedTime}
+			</th>
+			{END ApprovedTime_fieldheadercolumn}
+			{BEGIN Approvedby_fieldheadercolumn}
+			<th class="{$Approvedby_class}" {$Approvedby_style}  data-field="Approvedby">
+				{$label leaves1 Approvedby}
+			</th>
+			{END Approvedby_fieldheadercolumn}
+			{BEGIN Posted_fieldheadercolumn}
+			<th class="{$Posted_class}" {$Posted_style}  data-field="Posted">
+				{$label leaves1 Posted}
+			</th>
+			{END Posted_fieldheadercolumn}
+			{BEGIN Locked_fieldheadercolumn}
+			<th class="{$Locked_class}" {$Locked_style}  data-field="Locked">
+				{$label leaves1 Locked}
+			</th>
+			{END Locked_fieldheadercolumn}
+			{BEGIN Superior_fieldheadercolumn}
+			<th class="{$Superior_class}" {$Superior_style}  data-field="Superior">
+				{$label leaves1 Superior}
+			</th>
+			{END Superior_fieldheadercolumn}
+			{BEGIN endrecordheader_block}
+			<th class="rnr-cs">&nbsp;</th>
+			{END endrecordheader_block}
+		{END record_header}
+		</tr>
+	{END grid_header}
+	</thead>
+	
+	<tbody>	
+	{BEGIN grid_row}
+		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+			{BEGIN LvID_fieldcolumn}
+			<td  class="{$LvID_class}" {$LvID_style} {$recordattrs}>
+				{$LvID_value}
+			</td>
+			{END LvID_fieldcolumn}
+			{BEGIN DateCreated_fieldcolumn}
+			<td  class="{$DateCreated_class}" {$DateCreated_style} {$recordattrs}>
+				{$DateCreated_value}
+			</td>
+			{END DateCreated_fieldcolumn}
+			{BEGIN LeaveType_fieldcolumn}
+			<td  class="{$LeaveType_class}" {$LeaveType_style} {$recordattrs}>
+				{$LeaveType_value}
+			</td>
+			{END LeaveType_fieldcolumn}
+			{BEGIN EmployeeID_fieldcolumn}
+			<td  class="{$EmployeeID_class}" {$EmployeeID_style} {$recordattrs}>
+				{$EmployeeID_value}
+			</td>
+			{END EmployeeID_fieldcolumn}
+			{BEGIN FromDate_fieldcolumn}
+			<td  class="{$FromDate_class}" {$FromDate_style} {$recordattrs}>
+				{$FromDate_value}
+			</td>
+			{END FromDate_fieldcolumn}
+			{BEGIN ToDate_fieldcolumn}
+			<td  class="{$ToDate_class}" {$ToDate_style} {$recordattrs}>
+				{$ToDate_value}
+			</td>
+			{END ToDate_fieldcolumn}
+			{BEGIN Reason_fieldcolumn}
+			<td  class="{$Reason_class}" {$Reason_style} {$recordattrs}>
+				{$Reason_value}
+			</td>
+			{END Reason_fieldcolumn}
+			{BEGIN FirstHalf_fieldcolumn}
+			<td  class="{$FirstHalf_class}" {$FirstHalf_style} {$recordattrs}>
+				{$FirstHalf_value}
+			</td>
+			{END FirstHalf_fieldcolumn}
+			{BEGIN SecondHalf_fieldcolumn}
+			<td  class="{$SecondHalf_class}" {$SecondHalf_style} {$recordattrs}>
+				{$SecondHalf_value}
+			</td>
+			{END SecondHalf_fieldcolumn}
+			{BEGIN Days_fieldcolumn}
+			<td  class="{$Days_class}" {$Days_style} {$recordattrs}>
+				{$Days_value}
+			</td>
+			{END Days_fieldcolumn}
+			{BEGIN Approved_fieldcolumn}
+			<td  class="{$Approved_class}" {$Approved_style} {$recordattrs}>
+				{$Approved_value}
+			</td>
+			{END Approved_fieldcolumn}
+			{BEGIN ApprovedDate_fieldcolumn}
+			<td  class="{$ApprovedDate_class}" {$ApprovedDate_style} {$recordattrs}>
+				{$ApprovedDate_value}
+			</td>
+			{END ApprovedDate_fieldcolumn}
+			{BEGIN ApprovedTime_fieldcolumn}
+			<td  class="{$ApprovedTime_class}" {$ApprovedTime_style} {$recordattrs}>
+				{$ApprovedTime_value}
+			</td>
+			{END ApprovedTime_fieldcolumn}
+			{BEGIN Approvedby_fieldcolumn}
+			<td  class="{$Approvedby_class}" {$Approvedby_style} {$recordattrs}>
+				{$Approvedby_value}
+			</td>
+			{END Approvedby_fieldcolumn}
+			{BEGIN Posted_fieldcolumn}
+			<td  class="{$Posted_class}" {$Posted_style} {$recordattrs}>
+				{$Posted_value}
+			</td>
+			{END Posted_fieldcolumn}
+			{BEGIN Locked_fieldcolumn}
+			<td  class="{$Locked_class}" {$Locked_style} {$recordattrs}>
+				{$Locked_value}
+			</td>
+			{END Locked_fieldcolumn}
+			{BEGIN Superior_fieldcolumn}
+			<td  class="{$Superior_class}" {$Superior_style} {$recordattrs}>
+				{$Superior_value}
+			</td>
+			{END Superior_fieldcolumn}
+			{BEGIN endrecord_block}
+			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+			{END endrecord_block}
+		{END grid_record}
+		</tr>
+{END grid_row}
+	</tbody>
+
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

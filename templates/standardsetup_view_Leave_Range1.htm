@@ -1,0 +1,38 @@
+<div {$pageattrs}>
+
+{BEGIN container_tabfields}
+<div {$tabfields_chiddenattr} data-pageid="{$pageid}" data-container="tabfields" class="    "> 
+
+
+<div class="container">
+{BEGIN AllowableLeaveFrom_tabfieldblock}
+	<div class="bs-viewcontrolgroup col-md-6 {$fielddispclass_AllowableLeaveFrom}" data-fieldname="AllowableLeaveFrom" >
+		<label class=" control-label" for="{$labelfor_AllowableLeaveFrom}">
+			{$label standardsetup AllowableLeaveFrom}
+		</label>
+		<div class="" >
+			{$AllowableLeaveFrom_value}
+		</div>
+	</div>
+{END AllowableLeaveFrom_tabfieldblock}
+{BEGIN AllowableLeaveTo_tabfieldblock}
+	<div class="bs-viewcontrolgroup col-md-6 {$fielddispclass_AllowableLeaveTo}" data-fieldname="AllowableLeaveTo" >
+		<label class=" control-label" for="{$labelfor_AllowableLeaveTo}">
+			{$label standardsetup AllowableLeaveTo}
+		</label>
+		<div class="" >
+			{$AllowableLeaveTo_value}
+		</div>
+	</div>
+{END AllowableLeaveTo_tabfieldblock}
+</div>
+
+
+
+
+
+
+</div>
+{END container_tabfields}
+
+</div>

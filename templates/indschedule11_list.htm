@@ -1,0 +1,943 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}
+<style>
+{$containerCss}
+</style>
+<div class="sidebar bs-fixed clearfix mCustomScrollbar" data-mcs-theme="minimal-dark" {$blockattr_left}>
+	<div class="sidebar-contents mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside">
+		
+
+{BEGIN container_logo}
+<div {$logo_chiddenattr} data-pageid="{$pageid}" data-container="logo" class=" bs-sidebarlogo   "> 
+
+{BEGIN logo_block}
+<a href="{$home_link}" {$logo_hiddenattr} data-pageid="{$pageid}" data-brick="logo" class="navbar-brand" >{$logo}</a>
+{END logo_block}
+
+
+
+</div>
+{END container_logo}
+
+
+
+{BEGIN container_hdr}
+<div {$hdr_chiddenattr} data-pageid="{$pageid}" data-container="hdr" class=" navbar-default clearfix   "> 
+
+{BEGIN collapse_block}
+<button {$bsnavbarcollapse_hiddenattr} data-pageid="{$pageid}" data-brick="bsnavbarcollapse" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target=".bs-navcontrolled">	
+	<span class="sr-only">Toggle navigation</span>	
+	<span class="icon-bar"></span>					
+</button>												
+
+{END collapse_block}
+
+
+
+</div>
+{END container_hdr}
+
+{BEGIN container_sidemenu}<div {$sidemenu_chiddenattr} data-pageid="{$pageid}" data-container="sidemenu" class="bs-navform navbar-collapse sidebar-menu bs-hidden-xs bs-navcontrolled" aria-expanded="false" >												   
+{BEGIN menu_block}
+{$menu main}
+
+{END menu_block}
+
+												</div>						{END container_sidemenu}
+
+{BEGIN container_left}
+<div {$left_chiddenattr} data-pageid="{$pageid}" data-container="left" class=" sidebar-container   "> 
+
+{BEGIN searchPanel}
+<div {$searchpanel_hiddenattr} data-pageid="{$pageid}" data-brick="searchpanel" class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} >
+	<!-- Search panel content -->
+	
+	<div class="panel-heading">
+		<div class="btn-group" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Search in
+			<span class="caret"></span>
+			</button>
+		</div>
+
+		
+		<div class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Show options</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>all conditions</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>any condition</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>hide</a></li>
+			</ul>
+		</div>
+	
+		
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		{END searchCtrlBlock}
+
+
+	</div>
+	
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary" id="searchButton{$id}" {$searchbutton_attrs}>Search</button>
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}>
+		Show all
+		</button>
+	</div>
+</div>
+
+
+{END searchPanel}
+
+
+
+
+</div>
+{END container_left}
+
+
+	</div>
+</div>	
+<div class="bs-wrapper">
+	<div class="bs-fixedheader" id="fixedheader{$id}">
+		{BEGIN container_menu}<nav {$menu_chiddenattr} data-pageid="{$pageid}" data-container="menu" class="navbar navbar-default bs-fullwidth-navbar">					
+
+
+
+{BEGIN container_bc}
+<div {$bc_chiddenattr} data-pageid="{$pageid}" data-container="bc" class=" navbar-form navbar-left   "> 
+
+{BEGIN breadcrumbs}
+<ol class="breadcrumb">
+<li ><a href="{$home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumbs}
+
+
+
+</div>
+{END container_bc}
+
+
+
+
+
+
+{BEGIN container_menu_1}<div {$menu_1_chiddenattr} data-pageid="{$pageid}" data-container="menu_1" class="bs-navform navbar-collapse bs-hidden-xs bs-navcontrolled" aria-expanded="false" >												   
+
+
+
+{BEGIN container_more}
+<div {$more_chiddenattr} data-pageid="{$pageid}" data-container="more" class=" navbar-right navbar-form   "> 
+
+{BEGIN more_list}
+<div {$morebutton_hiddenattr} data-pageid="{$pageid}" data-brick="morebutton" class="btn-group bs-navsection">
+	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		<span class="glyphicon glyphicon-cog"></span>
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu">
+				{BEGIN editselected_link}
+		<li class="massButton{$id} disabled"><a href="#" {$editselectedlink_attrs} {$editselectedlink_span} >Edit selected</a></li>
+		{END editselected_link}
+
+				{BEGIN exportselected_link}
+		<li class="massButton{$id} disabled"><a href="#" {$exportselectedlink_attrs} {$exportselectedlink_span} >Export selected</a></li>
+		{END exportselected_link}
+		
+				
+				<li role="separator" class="divider"></li>	
+
+				{BEGIN asearch_link}
+		<li><a href="indschedule11_search.php" {$advsearchlink_attrs}>Advanced search</a></li>
+		{END asearch_link}
+
+				{BEGIN searchPanelTopButtons}
+		<li><a href=# id="showOptPanel{$id}">Show search panel</a></li>
+		{END searchPanelTopButtons}	
+		
+				
+				<li role="separator" class="divider"></li>	
+		
+				
+				{BEGIN export_link}
+		<li><a target="_blank" href="indschedule11_export.php"  {$exportlink_attrs}>Export results</a></li>
+		{END export_link}
+
+		
+				
+	</ul>  
+</div>
+
+{END more_list}
+
+
+{BEGIN security_block}
+<span {$loggedas_hiddenattr} data-pageid="{$pageid}" data-brick="loggedas" id="login_block{$id}" class="bs-navsection">
+	{BEGIN guestloginbutton}
+		<button class="btn btn-info" type="button" {$guestloginlink_attrs}>Login</button>
+	{END guestloginbutton}
+	{BEGIN loggedas_message} 
+		<span class="dropdown">
+			<button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon-user"></span>	{$username}</button>
+			<ul class="dropdown-menu">
+		{BEGIN logoutbutton}
+				<li><a href="#" {$logoutlink_attrs}>Log out</a></li>
+		{END logoutbutton}
+		
+		{BEGIN adminarea_link}
+				<li><a href="admin_rights_list.php" {$adminarealink_attrs}>Admin Area</a></li>
+		{END adminarea_link}
+
+
+			</ul>
+		</span>
+	{END loggedas_message}
+</span>
+{END security_block}
+
+
+
+</div>
+{END container_more}
+
+
+
+
+
+
+
+
+{BEGIN container_more_1}
+<div {$more_1_chiddenattr} data-pageid="{$pageid}" data-container="more_1" class=" navbar-right navbar-form   "> 
+
+{BEGIN searchform_block}
+<span {$search_hiddenattr} data-pageid="{$pageid}" data-brick="search" class="form-group">
+
+ <div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Show all">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>
+{END searchform_block}
+
+
+
+</div>
+{END container_more_1}
+
+
+
+
+												</div>						{END container_menu_1}
+
+
+									</nav>{END container_menu}
+	</div>	
+	<div class="container-fluid bs-underheader bs-fixedsidebarmain" id="underheader{$id}">
+		{$header}
+		<div class="bs-sidebar-screenbound">
+			
+
+
+
+{BEGIN container_gridcontrols}
+<div {$gridcontrols_chiddenattr} data-pageid="{$pageid}" data-container="gridcontrols" class=" bs-navcontrolled bs-hidden-xs   "> 
+
+
+
+
+{BEGIN container_add_delete}
+<div {$add_delete_chiddenattr} data-pageid="{$pageid}" data-container="add_delete" class=" bottom-margin  col-md-6 "> 
+
+{BEGIN newrecord_controls_block}
+	
+	
+{END newrecord_controls_block}
+
+
+{BEGIN record_controls_block}
+<span {$recordcontrol_hiddenattr} data-pageid="{$pageid}" data-brick="recordcontrol">
+				{BEGIN saveall_link}
+		<button type="button" class="btn btn-primary" {$savealllink_attrs} {$savealllink_span}>Save all</button>
+	{END saveall_link}
+	{BEGIN cancelall_link}
+		<button type="button" class="btn btn-default" {$cancelalllink_attrs} {$cancelalllink_span}>Cancel</button>
+	{END cancelall_link}
+</span>
+
+{END record_controls_block}
+
+
+
+</div>
+{END container_add_delete}
+
+
+
+
+
+
+
+
+{BEGIN container_gridinfo}
+<div {$gridinfo_chiddenattr} data-pageid="{$pageid}" data-container="gridinfo" class=" bottom-margin text-right col-md-6 "> 
+
+{BEGIN details_found}
+<span {$details_found_hiddenattr} data-pageid="{$pageid}" data-brick="details_found" class="form-inline form-inline-always">
+	{$records_indicator}
+	<span>
+	{BEGIN recordspp_block}
+			{$recsPerPage}
+	{END recordspp_block}
+	</span>
+</span>
+{END details_found}
+
+
+{BEGIN print_friendly}
+<span {$printpanel_hiddenattr} data-pageid="{$pageid}" data-brick="printpanel" class="bs-printpanel" id="printpanelblock{$id}">
+	<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" title="Print-friendly page">
+		<span class="glyphicon glyphicon-print" ></span>
+		<span class="caret"></span>
+    </button>
+	<ul class="dropdown-menu pull-right" >
+		<li>
+			<div class="container-fluid" id="print_friendly_scope{$id}">
+				<div class="row">
+					<div class="col-md-4">Scope:</div>
+										{BEGIN print_friendly_all}
+					<div class="col-md-8">
+						<label for="printAll{$id}">
+							<input type="radio" id="printAll{$id}" data-href="indschedule11_print.php?all=1&amp;{$crosstable_attrs}" name="printScope">
+							Print all pages
+						</label>
+					</div>
+					{END print_friendly_all}
+				</div>
+				<div class="row">
+					<div class="col-md-4">&nbsp;</div>
+					<div class="col-md-8">
+						<label for="printPage{$id}">
+							<input type="radio" id="printPage{$id}" data-href="indschedule11_print.php?{$crosstable_attrs}" name="printScope" checked>
+							Print this page
+						</label>
+					</div>
+				</div>
+								<div class="row">
+					<div class="col-md-4">&nbsp;</div>
+					<div class="col-md-8">
+						<label for="printSelection{$id}" style="color: gray;">
+							<input type="radio" id="printSelection{$id}" name="printScope" disabled="disabled">
+							Print selected
+						</label>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li class="divider" role="separator"></li>
+
+		
+				<li>	
+			<div class="rnr-printdetails">
+				<label for="printPerPage{$id}">
+											Records Per Page:
+				</label>
+				<input type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">		
+			</div>
+		</li>
+		<li class="divider" role="separator"></li>
+		<li class="rnr-printbutton">				
+			<button type="button" class="btn btn-primary" id="print_friendly_button{$id}" >Print</button>			
+		</li>
+	</ul>	
+</span>
+
+{END print_friendly}
+
+
+
+
+</div>
+{END container_gridinfo}
+
+
+
+
+
+
+
+</div>
+{END container_gridcontrols}
+
+
+		</div>
+		<div></div>
+		<div class="bs-sidebar-screenbound bs-minwidth">
+			
+
+{BEGIN container_tabs}
+<div {$tabs_chiddenattr} data-pageid="{$pageid}" data-container="tabs" class="    "> 
+
+{BEGIN grid_tabs}
+<div {$bsgrid_tabs_hiddenattr} data-pageid="{$pageid}" data-brick="bsgrid_tabs">
+<ul class="nav nav-tabs">
+{$grid_tabs_content}
+</ul>
+</div>
+{END grid_tabs}
+
+
+
+</div>
+{END container_tabs}
+
+
+
+{BEGIN container_message}
+<div {$message_chiddenattr} data-pageid="{$pageid}" data-container="message" class="    "> 
+
+{BEGIN message_block}
+<div {$message_hiddenattr} data-pageid="{$pageid}" data-brick="message" class="alert {$message_class}" role="alert">{$message}</div>
+{END message_block}
+
+
+
+</div>
+{END container_message}
+
+
+
+{BEGIN container_center}
+<div {$center_chiddenattr} data-pageid="{$pageid}" data-container="center" class="    "> 
+
+
+
+
+{BEGIN container_grid}
+<div {$grid_chiddenattr} data-pageid="{$pageid}" data-container="grid" class="bs-grid    "> 
+
+{BEGIN grid_block}
+	<style>
+	.bs-gridcell[data-field=ScID]:before {
+		content: "{$label indschedule11 ScID}";
+	}
+	.bs-gridcell[data-field=ApprovedOT]:before {
+		content: "{$label indschedule11 ApprovedOT}";
+	}
+	.bs-gridcell[data-field=AOTMins]:before {
+		content: "{$label indschedule11 AOTMins}";
+	}
+	.bs-gridcell[data-field=ApprovedNightDiff]:before {
+		content: "{$label indschedule11 ApprovedNightDiff}";
+	}
+	.bs-gridcell[data-field=ANDiff]:before {
+		content: "{$label indschedule11 ANDiff}";
+	}
+	.bs-gridcell[data-field=ApprovedRD]:before {
+		content: "{$label indschedule11 ApprovedRD}";
+	}
+	.bs-gridcell[data-field=RDMins]:before {
+		content: "{$label indschedule11 RDMins}";
+	}
+	.bs-gridcell[data-field=TempOT]:before {
+		content: "{$label indschedule11 TempOT}";
+	}
+	.bs-gridcell[data-field=NDMins]:before {
+		content: "{$label indschedule11 NDMins}";
+	}
+	.bs-gridcell[data-field=WorkMinsNet]:before {
+		content: "{$label indschedule11 WorkMinsNet}";
+	}
+	.bs-gridcell[data-field=FiledOT]:before {
+		content: "{$label indschedule11 FiledOT}";
+	}
+	.bs-gridcell[data-field=NDMealAllowancePerShift]:before {
+		content: "{$label indschedule11 NDMealAllowancePerShift}";
+	}
+	.bs-gridcell[data-field=NDMinimumHrs]:before {
+		content: "{$label indschedule11 NDMinimumHrs}";
+	}
+	.bs-gridcell[data-field=NDMealAllowance]:before {
+		content: "{$label indschedule11 NDMealAllowance}";
+	}
+	.bs-gridcell[data-field=SDate]:before {
+		content: "{$label indschedule11 SDate}";
+	}
+</style>
+<table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
+	<thead>
+										{BEGIN grid_header}
+								<tr class="rnr-toprow {$gridHeader_class}" >
+									{BEGIN record_header}
+									{BEGIN listIcons_column}
+									<th iEditCont="all">&nbsp;</th>
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}
+									<th class="">
+										<input type="checkbox" {$checkboxheader_attrs}>
+									</th>
+									{END checkbox_column}
+
+																		
+									{BEGIN SDate_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SDate_class}" data-field=SDate>
+									{BEGIN SDate_fieldheader}
+																				<span {$SDate_orderlinkattrs}>
+											{$label indschedule11 SDate}
+										</span>
+									{END SDate_fieldheader}
+									</th>
+									{END SDate_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN ScID_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$ScID_class}" data-field=ScID>
+									{BEGIN ScID_fieldheader}
+																				<span {$ScID_orderlinkattrs}>
+											{$label indschedule11 ScID}
+										</span>
+									{END ScID_fieldheader}
+									</th>
+									{END ScID_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN TempOT_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$TempOT_class}" data-field=TempOT>
+									{BEGIN TempOT_fieldheader}
+																				<span {$TempOT_orderlinkattrs}>
+											{$label indschedule11 TempOT}
+										</span>
+									{END TempOT_fieldheader}
+									</th>
+									{END TempOT_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN FiledOT_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$FiledOT_class}" data-field=FiledOT>
+									{BEGIN FiledOT_fieldheader}
+																				<span {$FiledOT_orderlinkattrs}>
+											{$label indschedule11 FiledOT}
+										</span>
+									{END FiledOT_fieldheader}
+									</th>
+									{END FiledOT_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN ApprovedOT_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$ApprovedOT_class}" data-field=ApprovedOT>
+									{BEGIN ApprovedOT_fieldheader}
+																				<span {$ApprovedOT_orderlinkattrs}>
+											{$label indschedule11 ApprovedOT}
+										</span>
+									{END ApprovedOT_fieldheader}
+									</th>
+									{END ApprovedOT_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN AOTMins_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$AOTMins_class}" data-field=AOTMins>
+									{BEGIN AOTMins_fieldheader}
+																				<span {$AOTMins_orderlinkattrs}>
+											{$label indschedule11 AOTMins}
+										</span>
+									{END AOTMins_fieldheader}
+									</th>
+									{END AOTMins_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN NDMins_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$NDMins_class}" data-field=NDMins>
+									{BEGIN NDMins_fieldheader}
+																				<span {$NDMins_orderlinkattrs}>
+											{$label indschedule11 NDMins}
+										</span>
+									{END NDMins_fieldheader}
+									</th>
+									{END NDMins_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN ApprovedNightDiff_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$ApprovedNightDiff_class}" data-field=ApprovedNightDiff>
+									{BEGIN ApprovedNightDiff_fieldheader}
+																				<span {$ApprovedNightDiff_orderlinkattrs}>
+											{$label indschedule11 ApprovedNightDiff}
+										</span>
+									{END ApprovedNightDiff_fieldheader}
+									</th>
+									{END ApprovedNightDiff_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN ANDiff_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$ANDiff_class}" data-field=ANDiff>
+									{BEGIN ANDiff_fieldheader}
+																				<span {$ANDiff_orderlinkattrs}>
+											{$label indschedule11 ANDiff}
+										</span>
+									{END ANDiff_fieldheader}
+									</th>
+									{END ANDiff_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN NDMealAllowancePerShift_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$NDMealAllowancePerShift_class}" data-field=NDMealAllowancePerShift>
+									{BEGIN NDMealAllowancePerShift_fieldheader}
+																				<span {$NDMealAllowancePerShift_orderlinkattrs}>
+											{$label indschedule11 NDMealAllowancePerShift}
+										</span>
+									{END NDMealAllowancePerShift_fieldheader}
+									</th>
+									{END NDMealAllowancePerShift_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN NDMinimumHrs_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$NDMinimumHrs_class}" data-field=NDMinimumHrs>
+									{BEGIN NDMinimumHrs_fieldheader}
+																				<span {$NDMinimumHrs_orderlinkattrs}>
+											{$label indschedule11 NDMinimumHrs}
+										</span>
+									{END NDMinimumHrs_fieldheader}
+									</th>
+									{END NDMinimumHrs_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN NDMealAllowance_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$NDMealAllowance_class}" data-field=NDMealAllowance>
+									{BEGIN NDMealAllowance_fieldheader}
+																				<span {$NDMealAllowance_orderlinkattrs}>
+											{$label indschedule11 NDMealAllowance}
+										</span>
+									{END NDMealAllowance_fieldheader}
+									</th>
+									{END NDMealAllowance_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN WorkMinsNet_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$WorkMinsNet_class}" data-field=WorkMinsNet>
+									{BEGIN WorkMinsNet_fieldheader}
+																				<span {$WorkMinsNet_orderlinkattrs}>
+											{$label indschedule11 WorkMinsNet}
+										</span>
+									{END WorkMinsNet_fieldheader}
+									</th>
+									{END WorkMinsNet_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN ApprovedRD_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$ApprovedRD_class}" data-field=ApprovedRD>
+									{BEGIN ApprovedRD_fieldheader}
+																				<span {$ApprovedRD_orderlinkattrs}>
+											{$label indschedule11 ApprovedRD}
+										</span>
+									{END ApprovedRD_fieldheader}
+									</th>
+									{END ApprovedRD_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RDMins_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RDMins_class}" data-field=RDMins>
+									{BEGIN RDMins_fieldheader}
+																				<span {$RDMins_orderlinkattrs}>
+											{$label indschedule11 RDMins}
+										</span>
+									{END RDMins_fieldheader}
+									</th>
+									{END RDMins_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN endrecordheader_block}
+									<th class="rnr-cs">&nbsp;</th>
+									
+									{END endrecordheader_block}
+									
+									{END record_header}
+									
+								</tr>
+								{END grid_header}
+
+	</thead>
+	<tbody>	
+		{BEGIN grid_row}
+<tr class="{$rowclass} bs-gridrow" {$rowattrs} {$rowstyle}>
+	{BEGIN grid_record}
+	{BEGIN listIcons_column}
+	<td class="bs-gridicons" iEditCont="all" {$rowstyle} {$recordattrs}>
+		{BEGIN edit_column}
+	{BEGIN edit_link}
+			<a class="glyphicon glyphicon-pencil" {$editlink_attrs} title="Edit"></a>
+	{END edit_link}
+	{END edit_column}
+
+		{BEGIN inlineedit_column}
+	{BEGIN inlineedit_link}
+			<a class="glyphicon glyphicon-edit" {$inlineeditlink_attrs} title="Inline Edit"></a>
+	{END inlineedit_link}
+	{END inlineedit_column}
+	
+	<span data-hidden {$ieditbuttonsholder_attrs}></span>
+
+	
+		</td>	
+	{END listIcons_column}	
+
+		{BEGIN checkbox_column}
+	<td  iEditCont="checkBox" class="bs-gridcheckbox" {$rowstyle} {$recordattrs}>
+	{BEGIN checkbox}
+	<input type="checkbox" {$checkbox_attrs}>
+	{END checkbox}
+	</td>
+	{END checkbox_column}
+
+	
+
+	{BEGIN SDate_fieldcolumn}
+	<td class="bs-gridcell {$SDate_class}"  data-field=SDate {$rowstyle} {$recordattrs}>
+		{$SDate_value}
+	</td>
+{END SDate_fieldcolumn}
+
+
+	{BEGIN ScID_fieldcolumn}
+	<td class="bs-gridcell {$ScID_class}"  data-field=ScID {$rowstyle} {$recordattrs}>
+		{$ScID_value}
+	</td>
+{END ScID_fieldcolumn}
+
+
+	{BEGIN TempOT_fieldcolumn}
+	<td class="bs-gridcell {$TempOT_class}"  data-field=TempOT {$rowstyle} {$recordattrs}>
+		{$TempOT_value}
+	</td>
+{END TempOT_fieldcolumn}
+
+
+	{BEGIN FiledOT_fieldcolumn}
+	<td class="bs-gridcell {$FiledOT_class}"  data-field=FiledOT {$rowstyle} {$recordattrs}>
+		{$FiledOT_value}
+	</td>
+{END FiledOT_fieldcolumn}
+
+
+	{BEGIN ApprovedOT_fieldcolumn}
+	<td class="bs-gridcell {$ApprovedOT_class}"  data-field=ApprovedOT {$rowstyle} {$recordattrs}>
+		{$ApprovedOT_value}
+	</td>
+{END ApprovedOT_fieldcolumn}
+
+
+	{BEGIN AOTMins_fieldcolumn}
+	<td class="bs-gridcell {$AOTMins_class}"  data-field=AOTMins {$rowstyle} {$recordattrs}>
+		{$AOTMins_value}
+	</td>
+{END AOTMins_fieldcolumn}
+
+
+	{BEGIN NDMins_fieldcolumn}
+	<td class="bs-gridcell {$NDMins_class}"  data-field=NDMins {$rowstyle} {$recordattrs}>
+		{$NDMins_value}
+	</td>
+{END NDMins_fieldcolumn}
+
+
+	{BEGIN ApprovedNightDiff_fieldcolumn}
+	<td class="bs-gridcell {$ApprovedNightDiff_class}"  data-field=ApprovedNightDiff {$rowstyle} {$recordattrs}>
+		{$ApprovedNightDiff_value}
+	</td>
+{END ApprovedNightDiff_fieldcolumn}
+
+
+	{BEGIN ANDiff_fieldcolumn}
+	<td class="bs-gridcell {$ANDiff_class}"  data-field=ANDiff {$rowstyle} {$recordattrs}>
+		{$ANDiff_value}
+	</td>
+{END ANDiff_fieldcolumn}
+
+
+	{BEGIN NDMealAllowancePerShift_fieldcolumn}
+	<td class="bs-gridcell {$NDMealAllowancePerShift_class}"  data-field=NDMealAllowancePerShift {$rowstyle} {$recordattrs}>
+		{$NDMealAllowancePerShift_value}
+	</td>
+{END NDMealAllowancePerShift_fieldcolumn}
+
+
+	{BEGIN NDMinimumHrs_fieldcolumn}
+	<td class="bs-gridcell {$NDMinimumHrs_class}"  data-field=NDMinimumHrs {$rowstyle} {$recordattrs}>
+		{$NDMinimumHrs_value}
+	</td>
+{END NDMinimumHrs_fieldcolumn}
+
+
+	{BEGIN NDMealAllowance_fieldcolumn}
+	<td class="bs-gridcell {$NDMealAllowance_class}"  data-field=NDMealAllowance {$rowstyle} {$recordattrs}>
+		{$NDMealAllowance_value}
+	</td>
+{END NDMealAllowance_fieldcolumn}
+
+
+	{BEGIN WorkMinsNet_fieldcolumn}
+	<td class="bs-gridcell {$WorkMinsNet_class}"  data-field=WorkMinsNet {$rowstyle} {$recordattrs}>
+		{$WorkMinsNet_value}
+	</td>
+{END WorkMinsNet_fieldcolumn}
+
+
+	{BEGIN ApprovedRD_fieldcolumn}
+	<td class="bs-gridcell {$ApprovedRD_class}"  data-field=ApprovedRD {$rowstyle} {$recordattrs}>
+		{$ApprovedRD_value}
+	</td>
+{END ApprovedRD_fieldcolumn}
+
+
+	{BEGIN RDMins_fieldcolumn}
+	<td class="bs-gridcell {$RDMins_class}"  data-field=RDMins {$rowstyle} {$recordattrs}>
+		{$RDMins_value}
+	</td>
+{END RDMins_fieldcolumn}
+
+	{BEGIN endrecord_block}
+	<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+	{END endrecord_block}
+									
+	{END grid_record}
+
+</tr>
+{END grid_row}
+	</tbody>
+	<tfoot>
+										
+	</tfoot>
+</table>
+
+
+
+{END grid_block}
+
+
+
+</div>
+{END container_grid}
+
+
+
+
+
+
+</div>
+{END container_center}
+
+
+
+{BEGIN container_pagination}
+<div {$pagination_chiddenattr} data-pageid="{$pageid}" data-container="pagination" class="  text-center col-md-12 "> 
+
+{BEGIN pagination_block}
+<div {$pagination_hiddenattr} data-pageid="{$pageid}" data-brick="pagination">
+{$pagination}
+</div>
+{END pagination_block}
+
+
+
+</div>
+{END container_pagination}
+
+
+		</div>
+	</div>
+</div>
+	
+
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,193 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_pdf}
+<div {$pdf_chiddenattr} data-pageid="{$pageid}" data-container="pdf" class="   col-md-12 "> 
+
+{BEGIN printbuttons}
+
+{END printbuttons}
+
+
+
+</div>
+{END container_pdf}
+
+
+
+
+
+{BEGIN container_pageheader}
+<div {$pageheader_chiddenattr} data-pageid="{$pageid}" data-container="pageheader" class="    "> 
+
+{BEGIN printheader}
+	<h2 {$printheader_hiddenattr} data-pageid="{$pageid}" data-brick="printheader" >{$pagetitlelabel holidays print}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END printheader}
+
+
+{BEGIN page_number}
+<span>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></span>
+{END page_number}
+
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="table table-bordered rp-maintable" {$printgrid_hiddenattr} data-pageid="{$pageid}" data-brick="printgrid" >
+	<thead>
+	{BEGIN grid_header}
+		<tr class="{$gridHeader_class}" >
+		{BEGIN record_header}
+			{BEGIN HID_fieldheadercolumn}
+			<th class="{$HID_class}" {$HID_style}  data-field="HID">
+				{$label holidays HID}
+			</th>
+			{END HID_fieldheadercolumn}
+			{BEGIN HolidayDate_fieldheadercolumn}
+			<th class="{$HolidayDate_class}" {$HolidayDate_style}  data-field="HolidayDate">
+				{$label holidays HolidayDate}
+			</th>
+			{END HolidayDate_fieldheadercolumn}
+			{BEGIN HolidayDescription_fieldheadercolumn}
+			<th class="{$HolidayDescription_class}" {$HolidayDescription_style}  data-field="HolidayDescription">
+				{$label holidays HolidayDescription}
+			</th>
+			{END HolidayDescription_fieldheadercolumn}
+			{BEGIN HolidayType_fieldheadercolumn}
+			<th class="{$HolidayType_class}" {$HolidayType_style}  data-field="HolidayType">
+				{$label holidays HolidayType}
+			</th>
+			{END HolidayType_fieldheadercolumn}
+			{BEGIN FirstHalf_fieldheadercolumn}
+			<th class="{$FirstHalf_class}" {$FirstHalf_style}  data-field="FirstHalf">
+				{$label holidays FirstHalf}
+			</th>
+			{END FirstHalf_fieldheadercolumn}
+			{BEGIN SecondHalf_fieldheadercolumn}
+			<th class="{$SecondHalf_class}" {$SecondHalf_style}  data-field="SecondHalf">
+				{$label holidays SecondHalf}
+			</th>
+			{END SecondHalf_fieldheadercolumn}
+			{BEGIN HolidayDay_fieldheadercolumn}
+			<th class="{$HolidayDay_class}" {$HolidayDay_style}  data-field="HolidayDay">
+				{$label holidays HolidayDay}
+			</th>
+			{END HolidayDay_fieldheadercolumn}
+			{BEGIN endrecordheader_block}
+			<th class="rnr-cs">&nbsp;</th>
+			{END endrecordheader_block}
+		{END record_header}
+		</tr>
+	{END grid_header}
+	</thead>
+	
+	<tbody>	
+	{BEGIN grid_row}
+		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+			{BEGIN HID_fieldcolumn}
+			<td  class="{$HID_class}" {$HID_style} {$recordattrs}>
+				{$HID_value}
+			</td>
+			{END HID_fieldcolumn}
+			{BEGIN HolidayDate_fieldcolumn}
+			<td  class="{$HolidayDate_class}" {$HolidayDate_style} {$recordattrs}>
+				{$HolidayDate_value}
+			</td>
+			{END HolidayDate_fieldcolumn}
+			{BEGIN HolidayDescription_fieldcolumn}
+			<td  class="{$HolidayDescription_class}" {$HolidayDescription_style} {$recordattrs}>
+				{$HolidayDescription_value}
+			</td>
+			{END HolidayDescription_fieldcolumn}
+			{BEGIN HolidayType_fieldcolumn}
+			<td  class="{$HolidayType_class}" {$HolidayType_style} {$recordattrs}>
+				{$HolidayType_value}
+			</td>
+			{END HolidayType_fieldcolumn}
+			{BEGIN FirstHalf_fieldcolumn}
+			<td  class="{$FirstHalf_class}" {$FirstHalf_style} {$recordattrs}>
+				{$FirstHalf_value}
+			</td>
+			{END FirstHalf_fieldcolumn}
+			{BEGIN SecondHalf_fieldcolumn}
+			<td  class="{$SecondHalf_class}" {$SecondHalf_style} {$recordattrs}>
+				{$SecondHalf_value}
+			</td>
+			{END SecondHalf_fieldcolumn}
+			{BEGIN HolidayDay_fieldcolumn}
+			<td  class="{$HolidayDay_class}" {$HolidayDay_style} {$recordattrs}>
+				{$HolidayDay_value}
+			</td>
+			{END HolidayDay_fieldcolumn}
+			{BEGIN endrecord_block}
+			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+			{END endrecord_block}
+		{END grid_record}
+		</tr>
+{END grid_row}
+	</tbody>
+
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

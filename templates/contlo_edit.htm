@@ -1,0 +1,357 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_editpage}
+<div {$editpage_chiddenattr} data-pageid="{$pageid}" data-container="editpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-9 col-md-offset-3"> 
+
+{BEGIN editheader}
+	<h2 {$editheader_hiddenattr} data-pageid="{$pageid}" data-brick="editheader" >{$pagetitlelabel contlo edit}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END editheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+
+
+{BEGIN container_message}
+<div {$message_chiddenattr} data-pageid="{$pageid}" data-container="message" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN message_block}
+<div {$message_hiddenattr} data-pageid="{$pageid}" data-brick="message" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		<button class="btn btn-sm btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>View</button>
+{END view_page_button}
+</div>
+</div>
+
+{END message_block}
+
+
+
+</div>
+{END container_message}
+
+
+
+
+
+
+
+</div>
+{END container_editpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$editfields_hiddenattr} data-pageid="{$pageid}" data-brick="editfields" class="form-horizontal" role="form">
+
+
+
+			{BEGIN FromDate_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_FromDate}" data-fieldname="FromDate" data-signal-error-for="FromDate{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_FromDate}">
+		{BEGIN FromDate_label}{$label contlo FromDate}{END FromDate_label}
+	</label>
+	<div class="col-md-6" >
+		{$FromDate_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="FromDate">
+		<div class="text-muted" >
+		{$tooltip contlo FromDate}
+		</div>
+	</div>
+</div>
+</div>
+{END FromDate_fieldblock}
+
+			{BEGIN ToDate_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_ToDate}" data-fieldname="ToDate" data-signal-error-for="ToDate{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_ToDate}">
+		{BEGIN ToDate_label}{$label contlo ToDate}{END ToDate_label}
+	</label>
+	<div class="col-md-6" >
+		{$ToDate_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="ToDate">
+		<div class="text-muted" >
+		{$tooltip contlo ToDate}
+		</div>
+	</div>
+</div>
+</div>
+{END ToDate_fieldblock}
+
+			
+		
+
+
+
+
+
+{BEGIN details_loansreport}
+<div data-pageid="1" class="bs-details"> 
+<div class="panel panel-info details-grid">
+
+<div class="panel-heading">
+	<h4 class="panel-title">Loan Summary
+		<span>
+{BEGIN details_inlineadd_loansreport_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_inlineadd_loansreport_attrs}>Inline Add</button>
+{END details_inlineadd_loansreport_link}		
+{BEGIN details_add_loansreport_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_add_loansreport_attrs}>Add new</button>
+{END details_add_loansreport_link}
+{BEGIN details_edit_loansreport_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_edit_loansreport_attrs}>Edit</button>
+{END details_edit_loansreport_link}
+{BEGIN details_updateselected_loansreport_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_updateselected_loansreport_attrs}>Update selected</button>
+{END details_updateselected_loansreport_link}
+
+
+{BEGIN details_delete_loansreport_link}
+			<button type="button" class="btn btn-xs btn-info " disabled {$details_delete_loansreport_attrs}>Delete</button>
+{END details_delete_loansreport_link}
+
+{BEGIN saveall_loansreport_link}
+			<button type="button" class="btn btn-xs btn-info" {$savealllink_loansreport_attrs} {$savealllink_loansreport_span}>Save all</button>
+{END saveall_loansreport_link}
+{BEGIN cancelall_loansreport_link}
+			<button type="button" class="btn btn-xs btn-info" {$cancelalllink_loansreport_attrs} {$cancelalllink_loansreport_span}>Cancel</button>
+{END cancelall_loansreport_link}
+		</span>
+	</h4>
+</div>
+<div class="panel-body">
+	{$displayDetailTable_loansreport}
+</div>
+</div>
+</div>
+{END details_loansreport}
+	
+	
+	
+
+			
+		
+
+
+
+
+
+{BEGIN details_ssscontsummary}
+<div data-pageid="1" class="bs-details"> 
+<div class="panel panel-info details-grid">
+
+<div class="panel-heading">
+	<h4 class="panel-title">Contribution Summary
+		<span>
+{BEGIN details_inlineadd_ssscontsummary_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_inlineadd_ssscontsummary_attrs}>Inline Add</button>
+{END details_inlineadd_ssscontsummary_link}		
+{BEGIN details_add_ssscontsummary_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_add_ssscontsummary_attrs}>Add new</button>
+{END details_add_ssscontsummary_link}
+{BEGIN details_edit_ssscontsummary_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_edit_ssscontsummary_attrs}>Edit</button>
+{END details_edit_ssscontsummary_link}
+{BEGIN details_updateselected_ssscontsummary_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_updateselected_ssscontsummary_attrs}>Update selected</button>
+{END details_updateselected_ssscontsummary_link}
+
+
+{BEGIN details_delete_ssscontsummary_link}
+			<button type="button" class="btn btn-xs btn-info " disabled {$details_delete_ssscontsummary_attrs}>Delete</button>
+{END details_delete_ssscontsummary_link}
+
+{BEGIN saveall_ssscontsummary_link}
+			<button type="button" class="btn btn-xs btn-info" {$savealllink_ssscontsummary_attrs} {$savealllink_ssscontsummary_span}>Save all</button>
+{END saveall_ssscontsummary_link}
+{BEGIN cancelall_ssscontsummary_link}
+			<button type="button" class="btn btn-xs btn-info" {$cancelalllink_ssscontsummary_attrs} {$cancelalllink_ssscontsummary_span}>Cancel</button>
+{END cancelall_ssscontsummary_link}
+		</span>
+	</h4>
+</div>
+<div class="panel-body">
+	{$displayDetailTable_ssscontsummary}
+</div>
+</div>
+</div>
+{END details_ssscontsummary}
+	
+	
+	
+
+
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_buttons}
+<div {$buttons_chiddenattr} data-pageid="{$pageid}" data-container="buttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-3 col-md-offset-3"> 
+
+{BEGIN editbuttons}
+	{BEGIN save_button}
+	<button class="btn btn-primary" {$savebutton_attrs}>Save</button>
+	{END save_button}
+	{BEGIN updsel_button}
+	<button class="btn btn-primary" {$updselbutton_attrs}>{$update_selected}</button>
+	{END updsel_button}
+	{BEGIN back_button}
+		<button class="btn btn-default" {$backbutton_attrs}>Back to list</button>
+	{END back_button}
+	{BEGIN close_button}
+	<a href="#" class="btn btn-default" {$closebutton_attrs}>Cancel</a>
+	{END close_button}
+
+{END editbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+
+
+{BEGIN container_leftbuttons_1}
+<div {$leftbuttons_1_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons_1" class="  text-right col-md-3 "> 
+
+{BEGIN righteditbuttons}
+<div class="btn-group" role="group">
+
+	{BEGIN prev_button}
+	<button class="btn btn-default {$prevbutton_class}" {$prevbutton_attrs}><span class="glyphicon glyphicon-chevron-left"></span></button>
+	{END prev_button}
+	{BEGIN next_button}
+	<button class="btn btn-default  {$nextbutton_class}" {$nextbutton_attrs}><span class="glyphicon glyphicon-chevron-right"></span></button>
+	{END next_button}
+	<div class="btn-group dropup" role="group">
+		<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+		<ul class="dropdown-menu dropdown-left">
+			{BEGIN reset_button}
+				<li><a href="#" {$resetbutton_attrs}>Reset</a></li>
+			{END reset_button}
+			{BEGIN view_page_button}
+				<li><a href="#" {$view_page_button_attrs}>View</a></li>
+			{END view_page_button}
+		</ul>
+	</div>
+</div>
+{END righteditbuttons}
+
+
+
+</div>
+{END container_leftbuttons_1}
+
+
+
+
+
+
+</div>
+{END container_buttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

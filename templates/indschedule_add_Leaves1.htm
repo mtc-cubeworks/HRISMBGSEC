@@ -1,0 +1,83 @@
+<div {$pageattrs}>
+
+{BEGIN container_tabfields}
+<div {$tabfields_chiddenattr} data-pageid="{$pageid}" data-container="tabfields" class=" form-horizontal   "> 
+
+
+{BEGIN VLDay_tabfieldblock}
+<div class="container">
+	<div class="form-group in-tab {$fielddispclass_VLDay}" data-fieldname="VLDay" data-signal-error-for="VLDay{$id}" >
+		<label class="col-md-3 control-label" for="{$labelfor_VLDay}">
+			{BEGIN VLDay_label}{$label indschedule VLDay}{END VLDay_label}
+		</label>
+		<div class="col-md-6 " >
+			{$VLDay_editcontrol}
+		</div>
+		<div class="col-md-3 help-block " data-helpfor="VLDay">
+			<div class="text-muted" >
+			{$tooltip indschedule VLDay}
+			</div>
+		</div>
+	</div>
+</div>
+{END VLDay_tabfieldblock}
+{BEGIN SLDay_tabfieldblock}
+<div class="container">
+	<div class="form-group in-tab {$fielddispclass_SLDay}" data-fieldname="SLDay" data-signal-error-for="SLDay{$id}" >
+		<label class="col-md-3 control-label" for="{$labelfor_SLDay}">
+			{BEGIN SLDay_label}{$label indschedule SLDay}{END SLDay_label}
+		</label>
+		<div class="col-md-6 " >
+			{$SLDay_editcontrol}
+		</div>
+		<div class="col-md-3 help-block " data-helpfor="SLDay">
+			<div class="text-muted" >
+			{$tooltip indschedule SLDay}
+			</div>
+		</div>
+	</div>
+</div>
+{END SLDay_tabfieldblock}
+{BEGIN ELDay_tabfieldblock}
+<div class="container">
+	<div class="form-group in-tab {$fielddispclass_ELDay}" data-fieldname="ELDay" data-signal-error-for="ELDay{$id}" >
+		<label class="col-md-3 control-label" for="{$labelfor_ELDay}">
+			{BEGIN ELDay_label}{$label indschedule ELDay}{END ELDay_label}
+		</label>
+		<div class="col-md-6 " >
+			{$ELDay_editcontrol}
+		</div>
+		<div class="col-md-3 help-block " data-helpfor="ELDay">
+			<div class="text-muted" >
+			{$tooltip indschedule ELDay}
+			</div>
+		</div>
+	</div>
+</div>
+{END ELDay_tabfieldblock}
+{BEGIN PLDay_tabfieldblock}
+<div class="container">
+	<div class="form-group in-tab {$fielddispclass_PLDay}" data-fieldname="PLDay" data-signal-error-for="PLDay{$id}" >
+		<label class="col-md-3 control-label" for="{$labelfor_PLDay}">
+			{BEGIN PLDay_label}{$label indschedule PLDay}{END PLDay_label}
+		</label>
+		<div class="col-md-6 " >
+			{$PLDay_editcontrol}
+		</div>
+		<div class="col-md-3 help-block " data-helpfor="PLDay">
+			<div class="text-muted" >
+			{$tooltip indschedule PLDay}
+			</div>
+		</div>
+	</div>
+</div>
+{END PLDay_tabfieldblock}
+
+
+
+
+
+</div>
+{END container_tabfields}
+
+</div>

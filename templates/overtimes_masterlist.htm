@@ -1,0 +1,105 @@
+<div {$pageattrs}>
+
+{BEGIN container_column}
+<div class="rnr-c rnr-ch rnr-c-column">
+
+{BEGIN masterlist_title}
+<div  class="style1 rnr-bl rnr-b-masterlistheader {$brickclass_masterlistheader}"><a {$backtomasterlink_attrs} class="btn btn-link btn-xs">Back to {$backtomasterlink_caption}</a><span>{$pagetitlelabel overtimes masterlist}</span></div>
+{END masterlist_title}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_column}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+	<style>
+	.bs-gridcell[data-field=OtiD]:before {
+		content: "{$label overtimes OtiD}";
+	}
+	.bs-gridcell[data-field=DateCreated]:before {
+		content: "{$label overtimes DateCreated}";
+	}
+	.bs-gridcell[data-field=FromDateTime]:before {
+		content: "{$label overtimes FromDateTime}";
+	}
+	.bs-gridcell[data-field=ToDateTime]:before {
+		content: "{$label overtimes ToDateTime}";
+	}
+	.bs-gridcell[data-field=Approved]:before {
+		content: "{$label overtimes Approved}";
+	}
+	.bs-gridcell[data-field=Approvedby]:before {
+		content: "{$label overtimes Approvedby}";
+	}
+	.bs-gridcell[data-field=ApprovedTime]:before {
+		content: "{$label overtimes ApprovedTime}";
+	}
+	.bs-gridcell[data-field=Posted]:before {
+		content: "{$label overtimes Posted}";
+	}
+	.bs-gridcell[data-field=NoMins]:before {
+		content: "{$label overtimes NoMins}";
+	}
+	.bs-gridcell[data-field=ApprovedDate]:before {
+		content: "{$label overtimes ApprovedDate}";
+	}
+	.bs-gridcell[data-field=Reason]:before {
+		content: "{$label overtimes Reason}";
+	}
+	.bs-gridcell[data-field=Employer]:before {
+		content: "{$label overtimes Employer}";
+	}
+	.bs-gridcell[data-field=Division]:before {
+		content: "{$label overtimes Division}";
+	}
+</style>
+<table {$masterlistgrid_hiddenattr} data-pageid="{$pageid}" data-brick="masterlistgrid" class="table rnr-b-mastergridfields rnr-gridtable bs-flexgrid" >
+		<thead>
+		<tr>
+			<th class="{$OtiD_class}">{$label overtimes OtiD}</th>
+			<th class="{$Employer_class}">{$label overtimes Employer}</th>
+			<th class="{$Division_class}">{$label overtimes Division}</th>
+			<th class="{$DateCreated_class}">{$label overtimes DateCreated}</th>
+			<th class="{$Reason_class}">{$label overtimes Reason}</th>
+			<th class="{$FromDateTime_class}">{$label overtimes FromDateTime}</th>
+			<th class="{$ToDateTime_class}">{$label overtimes ToDateTime}</th>
+			<th class="{$NoMins_class}">{$label overtimes NoMins}</th>
+			<th class="{$Approved_class}">{$label overtimes Approved}</th>
+			<th class="{$Approvedby_class}">{$label overtimes Approvedby}</th>
+			<th class="{$ApprovedDate_class}">{$label overtimes ApprovedDate}</th>
+			<th class="{$ApprovedTime_class}">{$label overtimes ApprovedTime}</th>
+			<th class="{$Posted_class}">{$label overtimes Posted}</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td class="{$OtiD_class} bs-gridcell" data-field=OtiD>{$OtiD_mastervalue}</td>
+			<td class="{$Employer_class} bs-gridcell" data-field=Employer>{$Employer_mastervalue}</td>
+			<td class="{$Division_class} bs-gridcell" data-field=Division>{$Division_mastervalue}</td>
+			<td class="{$DateCreated_class} bs-gridcell" data-field=DateCreated>{$DateCreated_mastervalue}</td>
+			<td class="{$Reason_class} bs-gridcell" data-field=Reason>{$Reason_mastervalue}</td>
+			<td class="{$FromDateTime_class} bs-gridcell" data-field=FromDateTime>{$FromDateTime_mastervalue}</td>
+			<td class="{$ToDateTime_class} bs-gridcell" data-field=ToDateTime>{$ToDateTime_mastervalue}</td>
+			<td class="{$NoMins_class} bs-gridcell" data-field=NoMins>{$NoMins_mastervalue}</td>
+			<td class="{$Approved_class} bs-gridcell" data-field=Approved>{$Approved_mastervalue}</td>
+			<td class="{$Approvedby_class} bs-gridcell" data-field=Approvedby>{$Approvedby_mastervalue}</td>
+			<td class="{$ApprovedDate_class} bs-gridcell" data-field=ApprovedDate>{$ApprovedDate_mastervalue}</td>
+			<td class="{$ApprovedTime_class} bs-gridcell" data-field=ApprovedTime>{$ApprovedTime_mastervalue}</td>
+			<td class="{$Posted_class} bs-gridcell" data-field=Posted>{$Posted_mastervalue}</td>
+		</tr>
+	</tbody>
+
+</table> 
+
+
+
+
+{END container_mastergrid}
+
+</div>

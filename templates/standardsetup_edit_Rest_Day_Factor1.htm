@@ -1,0 +1,32 @@
+<div {$pageattrs}>
+
+{BEGIN container_tabfields}
+<div {$tabfields_chiddenattr} data-pageid="{$pageid}" data-container="tabfields" class=" form-horizontal   "> 
+
+
+{BEGIN RDFactor_tabfieldblock}
+<div class="container">
+	<div class="form-group in-tab {$fielddispclass_RDFactor}" data-fieldname="RDFactor" data-signal-error-for="RDFactor{$id}" >
+		<label class="col-md-3 control-label" for="{$labelfor_RDFactor}">
+			{BEGIN RDFactor_label}{$label standardsetup RDFactor}{END RDFactor_label}
+		</label>
+		<div class="col-md-6 " >
+			{$RDFactor_editcontrol}
+		</div>
+		<div class="col-md-3 help-block " data-helpfor="RDFactor">
+			<div class="text-muted" >
+			{$tooltip standardsetup RDFactor}
+			</div>
+		</div>
+	</div>
+</div>
+{END RDFactor_tabfieldblock}
+
+
+
+
+
+</div>
+{END container_tabfields}
+
+</div>

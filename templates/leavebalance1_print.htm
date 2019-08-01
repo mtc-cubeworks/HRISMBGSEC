@@ -1,0 +1,253 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_pdf}
+<div {$pdf_chiddenattr} data-pageid="{$pageid}" data-container="pdf" class="   col-md-12 "> 
+
+{BEGIN printbuttons}
+
+{END printbuttons}
+
+
+
+</div>
+{END container_pdf}
+
+
+
+
+
+{BEGIN container_pageheader}
+<div {$pageheader_chiddenattr} data-pageid="{$pageid}" data-container="pageheader" class="    "> 
+
+{BEGIN printheader}
+	<h2 {$printheader_hiddenattr} data-pageid="{$pageid}" data-brick="printheader" >{$pagetitlelabel leavebalance1 print}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END printheader}
+
+
+{BEGIN page_number}
+<span>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></span>
+{END page_number}
+
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="table table-bordered rp-maintable" {$printgrid_hiddenattr} data-pageid="{$pageid}" data-brick="printgrid" >
+	<thead>
+	{BEGIN grid_header}
+		<tr class="{$gridHeader_class}" >
+		{BEGIN record_header}
+			{BEGIN EmployeeID_fieldheadercolumn}
+			<th class="{$EmployeeID_class}" {$EmployeeID_style}  data-field="EmployeeID">
+				{$label leavebalance1 EmployeeID}
+			</th>
+			{END EmployeeID_fieldheadercolumn}
+			{BEGIN AllowableSickLeave_fieldheadercolumn}
+			<th class="{$AllowableSickLeave_class}" {$AllowableSickLeave_style}  data-field="AllowableSickLeave">
+				{$label leavebalance1 AllowableSickLeave}
+			</th>
+			{END AllowableSickLeave_fieldheadercolumn}
+			{BEGIN TotalSL_fieldheadercolumn}
+			<th class="{$TotalSL_class}" {$TotalSL_style}  data-field="TotalSL">
+				{$label leavebalance1 TotalSL}
+			</th>
+			{END TotalSL_fieldheadercolumn}
+			{BEGIN AllowableVacationLeave_fieldheadercolumn}
+			<th class="{$AllowableVacationLeave_class}" {$AllowableVacationLeave_style}  data-field="AllowableVacationLeave">
+				{$label leavebalance1 AllowableVacationLeave}
+			</th>
+			{END AllowableVacationLeave_fieldheadercolumn}
+			{BEGIN TotalVL_fieldheadercolumn}
+			<th class="{$TotalVL_class}" {$TotalVL_style}  data-field="TotalVL">
+				{$label leavebalance1 TotalVL}
+			</th>
+			{END TotalVL_fieldheadercolumn}
+			{BEGIN AllowableEmergencyLeave_fieldheadercolumn}
+			<th class="{$AllowableEmergencyLeave_class}" {$AllowableEmergencyLeave_style}  data-field="AllowableEmergencyLeave">
+				{$label leavebalance1 AllowableEmergencyLeave}
+			</th>
+			{END AllowableEmergencyLeave_fieldheadercolumn}
+			{BEGIN TotalEL_fieldheadercolumn}
+			<th class="{$TotalEL_class}" {$TotalEL_style}  data-field="TotalEL">
+				{$label leavebalance1 TotalEL}
+			</th>
+			{END TotalEL_fieldheadercolumn}
+			{BEGIN AllowablePaternityLeave_fieldheadercolumn}
+			<th class="{$AllowablePaternityLeave_class}" {$AllowablePaternityLeave_style}  data-field="AllowablePaternityLeave">
+				{$label leavebalance1 AllowablePaternityLeave}
+			</th>
+			{END AllowablePaternityLeave_fieldheadercolumn}
+			{BEGIN TotalPL_fieldheadercolumn}
+			<th class="{$TotalPL_class}" {$TotalPL_style}  data-field="TotalPL">
+				{$label leavebalance1 TotalPL}
+			</th>
+			{END TotalPL_fieldheadercolumn}
+			{BEGIN SLBalance_fieldheadercolumn}
+			<th class="{$SLBalance_class}" {$SLBalance_style}  data-field="SLBalance">
+				{$label leavebalance1 SLBalance}
+			</th>
+			{END SLBalance_fieldheadercolumn}
+			{BEGIN VLBalance_fieldheadercolumn}
+			<th class="{$VLBalance_class}" {$VLBalance_style}  data-field="VLBalance">
+				{$label leavebalance1 VLBalance}
+			</th>
+			{END VLBalance_fieldheadercolumn}
+			{BEGIN ELBalance_fieldheadercolumn}
+			<th class="{$ELBalance_class}" {$ELBalance_style}  data-field="ELBalance">
+				{$label leavebalance1 ELBalance}
+			</th>
+			{END ELBalance_fieldheadercolumn}
+			{BEGIN PLBalance_fieldheadercolumn}
+			<th class="{$PLBalance_class}" {$PLBalance_style}  data-field="PLBalance">
+				{$label leavebalance1 PLBalance}
+			</th>
+			{END PLBalance_fieldheadercolumn}
+			{BEGIN endrecordheader_block}
+			<th class="rnr-cs">&nbsp;</th>
+			{END endrecordheader_block}
+		{END record_header}
+		</tr>
+	{END grid_header}
+	</thead>
+	
+	<tbody>	
+	{BEGIN grid_row}
+		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+			{BEGIN EmployeeID_fieldcolumn}
+			<td  class="{$EmployeeID_class}" {$EmployeeID_style} {$recordattrs}>
+				{$EmployeeID_value}
+			</td>
+			{END EmployeeID_fieldcolumn}
+			{BEGIN AllowableSickLeave_fieldcolumn}
+			<td  class="{$AllowableSickLeave_class}" {$AllowableSickLeave_style} {$recordattrs}>
+				{$AllowableSickLeave_value}
+			</td>
+			{END AllowableSickLeave_fieldcolumn}
+			{BEGIN TotalSL_fieldcolumn}
+			<td  class="{$TotalSL_class}" {$TotalSL_style} {$recordattrs}>
+				{$TotalSL_value}
+			</td>
+			{END TotalSL_fieldcolumn}
+			{BEGIN AllowableVacationLeave_fieldcolumn}
+			<td  class="{$AllowableVacationLeave_class}" {$AllowableVacationLeave_style} {$recordattrs}>
+				{$AllowableVacationLeave_value}
+			</td>
+			{END AllowableVacationLeave_fieldcolumn}
+			{BEGIN TotalVL_fieldcolumn}
+			<td  class="{$TotalVL_class}" {$TotalVL_style} {$recordattrs}>
+				{$TotalVL_value}
+			</td>
+			{END TotalVL_fieldcolumn}
+			{BEGIN AllowableEmergencyLeave_fieldcolumn}
+			<td  class="{$AllowableEmergencyLeave_class}" {$AllowableEmergencyLeave_style} {$recordattrs}>
+				{$AllowableEmergencyLeave_value}
+			</td>
+			{END AllowableEmergencyLeave_fieldcolumn}
+			{BEGIN TotalEL_fieldcolumn}
+			<td  class="{$TotalEL_class}" {$TotalEL_style} {$recordattrs}>
+				{$TotalEL_value}
+			</td>
+			{END TotalEL_fieldcolumn}
+			{BEGIN AllowablePaternityLeave_fieldcolumn}
+			<td  class="{$AllowablePaternityLeave_class}" {$AllowablePaternityLeave_style} {$recordattrs}>
+				{$AllowablePaternityLeave_value}
+			</td>
+			{END AllowablePaternityLeave_fieldcolumn}
+			{BEGIN TotalPL_fieldcolumn}
+			<td  class="{$TotalPL_class}" {$TotalPL_style} {$recordattrs}>
+				{$TotalPL_value}
+			</td>
+			{END TotalPL_fieldcolumn}
+			{BEGIN SLBalance_fieldcolumn}
+			<td  class="{$SLBalance_class}" {$SLBalance_style} {$recordattrs}>
+				{$SLBalance_value}
+			</td>
+			{END SLBalance_fieldcolumn}
+			{BEGIN VLBalance_fieldcolumn}
+			<td  class="{$VLBalance_class}" {$VLBalance_style} {$recordattrs}>
+				{$VLBalance_value}
+			</td>
+			{END VLBalance_fieldcolumn}
+			{BEGIN ELBalance_fieldcolumn}
+			<td  class="{$ELBalance_class}" {$ELBalance_style} {$recordattrs}>
+				{$ELBalance_value}
+			</td>
+			{END ELBalance_fieldcolumn}
+			{BEGIN PLBalance_fieldcolumn}
+			<td  class="{$PLBalance_class}" {$PLBalance_style} {$recordattrs}>
+				{$PLBalance_value}
+			</td>
+			{END PLBalance_fieldcolumn}
+			{BEGIN endrecord_block}
+			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+			{END endrecord_block}
+		{END grid_record}
+		</tr>
+{END grid_row}
+	</tbody>
+
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

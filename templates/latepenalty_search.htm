@@ -1,0 +1,329 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_searchpage}
+<div {$searchpage_chiddenattr} data-pageid="{$pageid}" data-container="searchpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN searchheader}
+	<h2 {$bssearchheader_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchheader" >{$pagetitlelabel latepenalty search}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END searchheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_searchpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$bssearchfields_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchfields" class="form-horizontal" role="form">
+<div class="container">
+	<div class="form-group">
+		<div class="col-md-12" >
+			&nbsp;
+		</div>
+	</div>
+</div>
+	{BEGIN LtID_fieldblock}		
+	<div class="container {$fielddispclass_LtID}" data-fieldname="LtID">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_LtID}">
+				{$label latepenalty LtID}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_LtID}
+			</div>
+			<div class="col-md-4" >
+				{$LtID_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$LtID_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END LtID_fieldblock}
+	{BEGIN LateFrom1_fieldblock}		
+	<div class="container {$fielddispclass_LateFrom1}" data-fieldname="LateFrom1">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_LateFrom1}">
+				{$label latepenalty LateFrom1}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_LateFrom1}
+			</div>
+			<div class="col-md-4" >
+				{$LateFrom1_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$LateFrom1_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END LateFrom1_fieldblock}
+	{BEGIN LateTo1_fieldblock}		
+	<div class="container {$fielddispclass_LateTo1}" data-fieldname="LateTo1">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_LateTo1}">
+				{$label latepenalty LateTo1}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_LateTo1}
+			</div>
+			<div class="col-md-4" >
+				{$LateTo1_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$LateTo1_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END LateTo1_fieldblock}
+	{BEGIN Penalty1_fieldblock}		
+	<div class="container {$fielddispclass_Penalty1}" data-fieldname="Penalty1">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Penalty1}">
+				{$label latepenalty Penalty1}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Penalty1}
+			</div>
+			<div class="col-md-4" >
+				{$Penalty1_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Penalty1_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Penalty1_fieldblock}
+	{BEGIN LateFrom2_fieldblock}		
+	<div class="container {$fielddispclass_LateFrom2}" data-fieldname="LateFrom2">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_LateFrom2}">
+				{$label latepenalty LateFrom2}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_LateFrom2}
+			</div>
+			<div class="col-md-4" >
+				{$LateFrom2_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$LateFrom2_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END LateFrom2_fieldblock}
+	{BEGIN LateTo2_fieldblock}		
+	<div class="container {$fielddispclass_LateTo2}" data-fieldname="LateTo2">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_LateTo2}">
+				{$label latepenalty LateTo2}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_LateTo2}
+			</div>
+			<div class="col-md-4" >
+				{$LateTo2_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$LateTo2_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END LateTo2_fieldblock}
+	{BEGIN Penalty2_fieldblock}		
+	<div class="container {$fielddispclass_Penalty2}" data-fieldname="Penalty2">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Penalty2}">
+				{$label latepenalty Penalty2}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Penalty2}
+			</div>
+			<div class="col-md-4" >
+				{$Penalty2_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Penalty2_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Penalty2_fieldblock}
+	{BEGIN LateFrom3_fieldblock}		
+	<div class="container {$fielddispclass_LateFrom3}" data-fieldname="LateFrom3">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_LateFrom3}">
+				{$label latepenalty LateFrom3}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_LateFrom3}
+			</div>
+			<div class="col-md-4" >
+				{$LateFrom3_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$LateFrom3_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END LateFrom3_fieldblock}
+	{BEGIN LateTo3_fieldblock}		
+	<div class="container {$fielddispclass_LateTo3}" data-fieldname="LateTo3">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_LateTo3}">
+				{$label latepenalty LateTo3}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_LateTo3}
+			</div>
+			<div class="col-md-4" >
+				{$LateTo3_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$LateTo3_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END LateTo3_fieldblock}
+	{BEGIN Penalty3_fieldblock}		
+	<div class="container {$fielddispclass_Penalty3}" data-fieldname="Penalty3">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Penalty3}">
+				{$label latepenalty Penalty3}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Penalty3}
+			</div>
+			<div class="col-md-4" >
+				{$Penalty3_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Penalty3_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Penalty3_fieldblock}
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container form-horizontal   "> 
+
+
+
+
+{BEGIN container_bbuttons}
+<div {$bbuttons_chiddenattr} data-pageid="{$pageid}" data-container="bbuttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-10 col-md-offset-2"> 
+
+{BEGIN searchbuttons}
+{BEGIN search_button}
+<button class="btn btn-primary" {$searchbutton_attrs}>Search</button>
+{END search_button} 
+{BEGIN reset_button}
+<button class="btn btn-default" {$resetbutton_attrs}>Reset</button>
+{END reset_button}
+{BEGIN back_button}
+<button class="btn btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{END searchbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+</div>
+{END container_bbuttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

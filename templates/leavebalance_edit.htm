@@ -1,0 +1,471 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_editpage}
+<div {$editpage_chiddenattr} data-pageid="{$pageid}" data-container="editpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-9 col-md-offset-3"> 
+
+{BEGIN editheader}
+	<h2 {$editheader_hiddenattr} data-pageid="{$pageid}" data-brick="editheader" >{$pagetitlelabel leavebalance edit}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END editheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+
+
+{BEGIN container_message}
+<div {$message_chiddenattr} data-pageid="{$pageid}" data-container="message" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN message_block}
+<div {$message_hiddenattr} data-pageid="{$pageid}" data-brick="message" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		<button class="btn btn-sm btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>View</button>
+{END view_page_button}
+</div>
+</div>
+
+{END message_block}
+
+
+
+</div>
+{END container_message}
+
+
+
+
+
+
+
+</div>
+{END container_editpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$editfields_hiddenattr} data-pageid="{$pageid}" data-brick="editfields" class="form-horizontal" role="form">
+
+
+
+			{BEGIN EmployeeID_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_EmployeeID}" data-fieldname="EmployeeID" data-signal-error-for="EmployeeID{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_EmployeeID}">
+		{BEGIN EmployeeID_label}{$label leavebalance EmployeeID}{END EmployeeID_label}
+	</label>
+	<div class="col-md-6" >
+		{$EmployeeID_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="EmployeeID">
+		<div class="text-muted" >
+		{$tooltip leavebalance EmployeeID}
+		</div>
+	</div>
+</div>
+</div>
+{END EmployeeID_fieldblock}
+
+			{BEGIN AllowableSickLeave_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_AllowableSickLeave}" data-fieldname="AllowableSickLeave" data-signal-error-for="AllowableSickLeave{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_AllowableSickLeave}">
+		{BEGIN AllowableSickLeave_label}{$label leavebalance AllowableSickLeave}{END AllowableSickLeave_label}
+	</label>
+	<div class="col-md-6" >
+		{$AllowableSickLeave_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="AllowableSickLeave">
+		<div class="text-muted" >
+		{$tooltip leavebalance AllowableSickLeave}
+		</div>
+	</div>
+</div>
+</div>
+{END AllowableSickLeave_fieldblock}
+
+			{BEGIN TotalSL_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_TotalSL}" data-fieldname="TotalSL" data-signal-error-for="TotalSL{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_TotalSL}">
+		{BEGIN TotalSL_label}{$label leavebalance TotalSL}{END TotalSL_label}
+	</label>
+	<div class="col-md-6" >
+		{$TotalSL_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="TotalSL">
+		<div class="text-muted" >
+		{$tooltip leavebalance TotalSL}
+		</div>
+	</div>
+</div>
+</div>
+{END TotalSL_fieldblock}
+
+			{BEGIN AllowableVacationLeave_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_AllowableVacationLeave}" data-fieldname="AllowableVacationLeave" data-signal-error-for="AllowableVacationLeave{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_AllowableVacationLeave}">
+		{BEGIN AllowableVacationLeave_label}{$label leavebalance AllowableVacationLeave}{END AllowableVacationLeave_label}
+	</label>
+	<div class="col-md-6" >
+		{$AllowableVacationLeave_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="AllowableVacationLeave">
+		<div class="text-muted" >
+		{$tooltip leavebalance AllowableVacationLeave}
+		</div>
+	</div>
+</div>
+</div>
+{END AllowableVacationLeave_fieldblock}
+
+			{BEGIN TotalVL_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_TotalVL}" data-fieldname="TotalVL" data-signal-error-for="TotalVL{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_TotalVL}">
+		{BEGIN TotalVL_label}{$label leavebalance TotalVL}{END TotalVL_label}
+	</label>
+	<div class="col-md-6" >
+		{$TotalVL_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="TotalVL">
+		<div class="text-muted" >
+		{$tooltip leavebalance TotalVL}
+		</div>
+	</div>
+</div>
+</div>
+{END TotalVL_fieldblock}
+
+			{BEGIN AllowableEmergencyLeave_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_AllowableEmergencyLeave}" data-fieldname="AllowableEmergencyLeave" data-signal-error-for="AllowableEmergencyLeave{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_AllowableEmergencyLeave}">
+		{BEGIN AllowableEmergencyLeave_label}{$label leavebalance AllowableEmergencyLeave}{END AllowableEmergencyLeave_label}
+	</label>
+	<div class="col-md-6" >
+		{$AllowableEmergencyLeave_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="AllowableEmergencyLeave">
+		<div class="text-muted" >
+		{$tooltip leavebalance AllowableEmergencyLeave}
+		</div>
+	</div>
+</div>
+</div>
+{END AllowableEmergencyLeave_fieldblock}
+
+			{BEGIN TotalEL_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_TotalEL}" data-fieldname="TotalEL" data-signal-error-for="TotalEL{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_TotalEL}">
+		{BEGIN TotalEL_label}{$label leavebalance TotalEL}{END TotalEL_label}
+	</label>
+	<div class="col-md-6" >
+		{$TotalEL_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="TotalEL">
+		<div class="text-muted" >
+		{$tooltip leavebalance TotalEL}
+		</div>
+	</div>
+</div>
+</div>
+{END TotalEL_fieldblock}
+
+			{BEGIN AllowablePaternityLeave_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_AllowablePaternityLeave}" data-fieldname="AllowablePaternityLeave" data-signal-error-for="AllowablePaternityLeave{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_AllowablePaternityLeave}">
+		{BEGIN AllowablePaternityLeave_label}{$label leavebalance AllowablePaternityLeave}{END AllowablePaternityLeave_label}
+	</label>
+	<div class="col-md-6" >
+		{$AllowablePaternityLeave_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="AllowablePaternityLeave">
+		<div class="text-muted" >
+		{$tooltip leavebalance AllowablePaternityLeave}
+		</div>
+	</div>
+</div>
+</div>
+{END AllowablePaternityLeave_fieldblock}
+
+			{BEGIN TotalPL_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_TotalPL}" data-fieldname="TotalPL" data-signal-error-for="TotalPL{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_TotalPL}">
+		{BEGIN TotalPL_label}{$label leavebalance TotalPL}{END TotalPL_label}
+	</label>
+	<div class="col-md-6" >
+		{$TotalPL_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="TotalPL">
+		<div class="text-muted" >
+		{$tooltip leavebalance TotalPL}
+		</div>
+	</div>
+</div>
+</div>
+{END TotalPL_fieldblock}
+
+			{BEGIN SLBalance_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_SLBalance}" data-fieldname="SLBalance" data-signal-error-for="SLBalance{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_SLBalance}">
+		{BEGIN SLBalance_label}{$label leavebalance SLBalance}{END SLBalance_label}
+	</label>
+	<div class="col-md-6" >
+		{$SLBalance_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="SLBalance">
+		<div class="text-muted" >
+		{$tooltip leavebalance SLBalance}
+		</div>
+	</div>
+</div>
+</div>
+{END SLBalance_fieldblock}
+
+			{BEGIN VLBalance_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_VLBalance}" data-fieldname="VLBalance" data-signal-error-for="VLBalance{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_VLBalance}">
+		{BEGIN VLBalance_label}{$label leavebalance VLBalance}{END VLBalance_label}
+	</label>
+	<div class="col-md-6" >
+		{$VLBalance_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="VLBalance">
+		<div class="text-muted" >
+		{$tooltip leavebalance VLBalance}
+		</div>
+	</div>
+</div>
+</div>
+{END VLBalance_fieldblock}
+
+			{BEGIN ELBalance_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_ELBalance}" data-fieldname="ELBalance" data-signal-error-for="ELBalance{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_ELBalance}">
+		{BEGIN ELBalance_label}{$label leavebalance ELBalance}{END ELBalance_label}
+	</label>
+	<div class="col-md-6" >
+		{$ELBalance_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="ELBalance">
+		<div class="text-muted" >
+		{$tooltip leavebalance ELBalance}
+		</div>
+	</div>
+</div>
+</div>
+{END ELBalance_fieldblock}
+
+			{BEGIN PLBalance_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_PLBalance}" data-fieldname="PLBalance" data-signal-error-for="PLBalance{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_PLBalance}">
+		{BEGIN PLBalance_label}{$label leavebalance PLBalance}{END PLBalance_label}
+	</label>
+	<div class="col-md-6" >
+		{$PLBalance_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="PLBalance">
+		<div class="text-muted" >
+		{$tooltip leavebalance PLBalance}
+		</div>
+	</div>
+</div>
+</div>
+{END PLBalance_fieldblock}
+
+			{BEGIN user_name_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_user_name}" data-fieldname="user_name" data-signal-error-for="user_name{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_user_name}">
+		{BEGIN user_name_label}{$label leavebalance user_name}{END user_name_label}
+	</label>
+	<div class="col-md-6" >
+		{$user_name_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="user_name">
+		<div class="text-muted" >
+		{$tooltip leavebalance user_name}
+		</div>
+	</div>
+</div>
+</div>
+{END user_name_fieldblock}
+
+
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_buttons}
+<div {$buttons_chiddenattr} data-pageid="{$pageid}" data-container="buttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-3 col-md-offset-3"> 
+
+{BEGIN editbuttons}
+	{BEGIN save_button}
+	<button class="btn btn-primary" {$savebutton_attrs}>Save</button>
+	{END save_button}
+	{BEGIN updsel_button}
+	<button class="btn btn-primary" {$updselbutton_attrs}>{$update_selected}</button>
+	{END updsel_button}
+	{BEGIN back_button}
+		<button class="btn btn-default" {$backbutton_attrs}>Back to list</button>
+	{END back_button}
+	{BEGIN close_button}
+	<a href="#" class="btn btn-default" {$closebutton_attrs}>Cancel</a>
+	{END close_button}
+
+{END editbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+
+
+{BEGIN container_leftbuttons_1}
+<div {$leftbuttons_1_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons_1" class="  text-right col-md-3 "> 
+
+{BEGIN righteditbuttons}
+<div class="btn-group" role="group">
+
+	{BEGIN prev_button}
+	<button class="btn btn-default {$prevbutton_class}" {$prevbutton_attrs}><span class="glyphicon glyphicon-chevron-left"></span></button>
+	{END prev_button}
+	{BEGIN next_button}
+	<button class="btn btn-default  {$nextbutton_class}" {$nextbutton_attrs}><span class="glyphicon glyphicon-chevron-right"></span></button>
+	{END next_button}
+	<div class="btn-group dropup" role="group">
+		<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+		<ul class="dropdown-menu dropdown-left">
+			{BEGIN reset_button}
+				<li><a href="#" {$resetbutton_attrs}>Reset</a></li>
+			{END reset_button}
+			{BEGIN view_page_button}
+				<li><a href="#" {$view_page_button_attrs}>View</a></li>
+			{END view_page_button}
+		</ul>
+	</div>
+</div>
+{END righteditbuttons}
+
+
+
+</div>
+{END container_leftbuttons_1}
+
+
+
+
+
+
+</div>
+{END container_buttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

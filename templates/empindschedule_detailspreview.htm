@@ -1,0 +1,137 @@
+<div {$pageattrs}>
+
+{BEGIN container_dcount}
+<div {$dcount_chiddenattr} data-pageid="{$pageid}" data-container="dcount" class="    "> 
+
+
+<span {$bsdetailspreviewcount_hiddenattr} data-pageid="{$pageid}" data-brick="bsdetailspreviewcount">Details found: <strong>{$row_count}</strong></span>
+
+
+
+
+
+</div>
+{END container_dcount}
+
+
+
+{BEGIN container_detailspreviewgrid}
+
+
+{BEGIN details_data}
+<table class="table striped">
+{BEGIN details_row_header}
+	<thead>
+		<tr class="{$gridHeader_class}" >
+			<th class="{$ScID_class}">{$label empindschedule ScID}</th>
+			<th class="{$UserName_class}">{$label empindschedule UserName}</th>
+			<th class="{$Division_class}">{$label empindschedule Division}</th>
+			<th class="{$Department_class}">{$label empindschedule Department}</th>
+			<th class="{$WageType_class}">{$label empindschedule WageType}</th>
+			<th class="{$SDate_class}">{$label empindschedule SDate}</th>
+			<th class="{$DayIs_class}">{$label empindschedule DayIs}</th>
+			<th class="{$RestDay_class}">{$label empindschedule RestDay}</th>
+			<th class="{$STimeIn_class}">{$label empindschedule STimeIn}</th>
+			<th class="{$STimeOut_class}">{$label empindschedule STimeOut}</th>
+			<th class="{$TimeIn_class}">{$label empindschedule TimeIn}</th>
+			<th class="{$TimeOut_class}">{$label empindschedule TimeOut}</th>
+			<th class="{$LunchBreakFrom_class}">{$label empindschedule LunchBreakFrom}</th>
+			<th class="{$LunchBreakTo_class}">{$label empindschedule LunchBreakTo}</th>
+			<th class="{$AfterBreakLogOut_class}">{$label empindschedule AfterBreakLogOut}</th>
+			<th class="{$AfterBreakLog_class}">{$label empindschedule AfterBreakLog}</th>
+			<th class="{$Mispunched_class}">{$label empindschedule Mispunched}</th>
+			<th class="{$RegWD_class}">{$label empindschedule RegWD}</th>
+			<th class="{$DWork_class}">{$label empindschedule DWork}</th>
+			<th class="{$Absent_class}">{$label empindschedule Absent}</th>
+			<th class="{$IncludeBreakLate_class}">{$label empindschedule IncludeBreakLate}</th>
+			<th class="{$LateMins_class}">{$label empindschedule LateMins}</th>
+			<th class="{$UndertimeMins_class}">{$label empindschedule UndertimeMins}</th>
+			<th class="{$HolidayType_class}">{$label empindschedule HolidayType}</th>
+			<th class="{$RHolidayHrs_class}">{$label empindschedule RHolidayHrs}</th>
+			<th class="{$SHolidayHrs_class}">{$label empindschedule SHolidayHrs}</th>
+			<th class="{$CHolidayHrs_class}">{$label empindschedule CHolidayHrs}</th>
+			<th class="{$NDHrs_class}">{$label empindschedule NDHrs}</th>
+			<th class="{$RegNDHrs_class}">{$label empindschedule RegNDHrs}</th>
+			<th class="{$RDHrs_class}">{$label empindschedule RDHrs}</th>
+			<th class="{$RHNDHrs_class}">{$label empindschedule RHNDHrs}</th>
+			<th class="{$RDNDHrs_class}">{$label empindschedule RDNDHrs}</th>
+			<th class="{$SHNDHrs_class}">{$label empindschedule SHNDHrs}</th>
+			<th class="{$CHNDHrs_class}">{$label empindschedule CHNDHrs}</th>
+			<th class="{$ExcessHrs_class}">{$label empindschedule ExcessHrs}</th>
+			<th class="{$RegOTHrs_class}">{$label empindschedule RegOTHrs}</th>
+			<th class="{$RDOTHrs_class}">{$label empindschedule RDOTHrs}</th>
+			<th class="{$SHOTHrs_class}">{$label empindschedule SHOTHrs}</th>
+			<th class="{$CHOTHrs_class}">{$label empindschedule CHOTHrs}</th>
+			<th class="{$RHOTHrs_class}">{$label empindschedule RHOTHrs}</th>
+			<th class="{$TrODay_class}">{$label empindschedule TrODay}</th>
+			<th class="{$VLDay_class}">{$label empindschedule VLDay}</th>
+			<th class="{$SLDay_class}">{$label empindschedule SLDay}</th>
+			<th class="{$ELDay_class}">{$label empindschedule ELDay}</th>
+			<th class="{$PLDay_class}">{$label empindschedule PLDay}</th>
+			<th class="{$SchedType_class}">{$label empindschedule SchedType}</th>
+			<th class="{$Shift_class}">{$label empindschedule Shift}</th>
+		</tr>
+	</thead>
+{END details_row_header}
+	<tbody>
+{BEGIN details_row}
+		<tr>
+			<td class="{$ScID_class}">{$ScID_value}</td>
+			<td class="{$UserName_class}">{$UserName_value}</td>
+			<td class="{$Division_class}">{$Division_value}</td>
+			<td class="{$Department_class}">{$Department_value}</td>
+			<td class="{$WageType_class}">{$WageType_value}</td>
+			<td class="{$SDate_class}">{$SDate_value}</td>
+			<td class="{$DayIs_class}">{$DayIs_value}</td>
+			<td class="{$RestDay_class}">{$RestDay_value}</td>
+			<td class="{$STimeIn_class}">{$STimeIn_value}</td>
+			<td class="{$STimeOut_class}">{$STimeOut_value}</td>
+			<td class="{$TimeIn_class}">{$TimeIn_value}</td>
+			<td class="{$TimeOut_class}">{$TimeOut_value}</td>
+			<td class="{$LunchBreakFrom_class}">{$LunchBreakFrom_value}</td>
+			<td class="{$LunchBreakTo_class}">{$LunchBreakTo_value}</td>
+			<td class="{$AfterBreakLogOut_class}">{$AfterBreakLogOut_value}</td>
+			<td class="{$AfterBreakLog_class}">{$AfterBreakLog_value}</td>
+			<td class="{$Mispunched_class}">{$Mispunched_value}</td>
+			<td class="{$RegWD_class}">{$RegWD_value}</td>
+			<td class="{$DWork_class}">{$DWork_value}</td>
+			<td class="{$Absent_class}">{$Absent_value}</td>
+			<td class="{$IncludeBreakLate_class}">{$IncludeBreakLate_value}</td>
+			<td class="{$LateMins_class}">{$LateMins_value}</td>
+			<td class="{$UndertimeMins_class}">{$UndertimeMins_value}</td>
+			<td class="{$HolidayType_class}">{$HolidayType_value}</td>
+			<td class="{$RHolidayHrs_class}">{$RHolidayHrs_value}</td>
+			<td class="{$SHolidayHrs_class}">{$SHolidayHrs_value}</td>
+			<td class="{$CHolidayHrs_class}">{$CHolidayHrs_value}</td>
+			<td class="{$NDHrs_class}">{$NDHrs_value}</td>
+			<td class="{$RegNDHrs_class}">{$RegNDHrs_value}</td>
+			<td class="{$RDHrs_class}">{$RDHrs_value}</td>
+			<td class="{$RHNDHrs_class}">{$RHNDHrs_value}</td>
+			<td class="{$RDNDHrs_class}">{$RDNDHrs_value}</td>
+			<td class="{$SHNDHrs_class}">{$SHNDHrs_value}</td>
+			<td class="{$CHNDHrs_class}">{$CHNDHrs_value}</td>
+			<td class="{$ExcessHrs_class}">{$ExcessHrs_value}</td>
+			<td class="{$RegOTHrs_class}">{$RegOTHrs_value}</td>
+			<td class="{$RDOTHrs_class}">{$RDOTHrs_value}</td>
+			<td class="{$SHOTHrs_class}">{$SHOTHrs_value}</td>
+			<td class="{$CHOTHrs_class}">{$CHOTHrs_value}</td>
+			<td class="{$RHOTHrs_class}">{$RHOTHrs_value}</td>
+			<td class="{$TrODay_class}">{$TrODay_value}</td>
+			<td class="{$VLDay_class}">{$VLDay_value}</td>
+			<td class="{$SLDay_class}">{$SLDay_value}</td>
+			<td class="{$ELDay_class}">{$ELDay_value}</td>
+			<td class="{$PLDay_class}">{$PLDay_value}</td>
+			<td class="{$SchedType_class}">{$SchedType_value}</td>
+			<td class="{$Shift_class}">{$Shift_value}</td>
+		</tr>
+{END details_row}	
+	</tbody>
+</table>
+
+{END details_data}
+
+
+
+{END container_detailspreviewgrid}
+
+</div>

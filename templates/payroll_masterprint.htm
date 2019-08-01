@@ -1,0 +1,69 @@
+<div {$pageattrs}>
+
+{BEGIN container_column}
+<div class="rnr-c rnr-ch rnr-c-column">
+
+{BEGIN masterlist_title}
+<div  class="style1 rnr-bl rnr-b-masterprintheader {$brickclass_masterprintheader}"><span>{$pagetitlelabel payroll masterprint}</span></div>
+{END masterlist_title}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_column}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+<table {$bsmasterprintgrid_hiddenattr} data-pageid="{$pageid}" data-brick="bsmasterprintgrid" class="table rnr-b-mastergridfields rnr-gridtable" >
+		<thead>
+		<tr>
+			<th class="{$PSID_class}">{$label payroll PSID}</th>
+			<th class="{$Locked_class}">{$label payroll Locked}</th>
+			<th class="{$Employer_class}">{$label payroll Employer}</th>
+			<th class="{$Division_class}">{$label payroll Division}</th>
+			<th class="{$WageType_class}">{$label payroll WageType}</th>
+			<th class="{$PayFromDate_class}">{$label payroll PayFromDate}</th>
+			<th class="{$PayToDate_class}">{$label payroll PayToDate}</th>
+			<th class="{$PayPeriod_class}">{$label payroll PayPeriod}</th>
+			<th class="{$PayDate_class}">{$label payroll PayDate}</th>
+			<th class="{$Statutories_class}">{$label payroll Statutories}</th>
+			<th class="{$Stat_Loans_class}">{$label payroll Stat_Loans}</th>
+			<th class="{$Deductions_class}">{$label payroll Deductions}</th>
+			<th class="{$Adjustments_class}">{$label payroll Adjustments}</th>
+			<th class="{$MoAdjustment_class}">{$label payroll MoAdjustment}</th>
+			<th class="{$PresetTax_class}">{$label payroll PresetTax}</th>
+			<th class="{$13thMonth_class}">{$label payroll 13thMonth}</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="{$PSID_class}">{$PSID_mastervalue}</td>
+			<td class="{$Locked_class}">{$Locked_mastervalue}</td>
+			<td class="{$Employer_class}">{$Employer_mastervalue}</td>
+			<td class="{$Division_class}">{$Division_mastervalue}</td>
+			<td class="{$WageType_class}">{$WageType_mastervalue}</td>
+			<td class="{$PayFromDate_class}">{$PayFromDate_mastervalue}</td>
+			<td class="{$PayToDate_class}">{$PayToDate_mastervalue}</td>
+			<td class="{$PayPeriod_class}">{$PayPeriod_mastervalue}</td>
+			<td class="{$PayDate_class}">{$PayDate_mastervalue}</td>
+			<td class="{$Statutories_class}">{$Statutories_mastervalue}</td>
+			<td class="{$Stat_Loans_class}">{$Stat_Loans_mastervalue}</td>
+			<td class="{$Deductions_class}">{$Deductions_mastervalue}</td>
+			<td class="{$Adjustments_class}">{$Adjustments_mastervalue}</td>
+			<td class="{$MoAdjustment_class}">{$MoAdjustment_mastervalue}</td>
+			<td class="{$PresetTax_class}">{$PresetTax_mastervalue}</td>
+			<td class="{$13thMonth_class}">{$13thMonth_mastervalue}</td>
+		</tr>
+	</tbody>
+
+</table> 
+
+
+
+
+{END container_mastergrid}
+
+</div>

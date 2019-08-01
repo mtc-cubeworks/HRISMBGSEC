@@ -1,0 +1,537 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_editpage}
+<div {$editpage_chiddenattr} data-pageid="{$pageid}" data-container="editpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-9 col-md-offset-3"> 
+
+{BEGIN editheader}
+	<h2 {$editheader_hiddenattr} data-pageid="{$pageid}" data-brick="editheader" >{$pagetitlelabel indschedrange edit}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END editheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+
+
+{BEGIN container_message}
+<div {$message_chiddenattr} data-pageid="{$pageid}" data-container="message" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN message_block}
+<div {$message_hiddenattr} data-pageid="{$pageid}" data-brick="message" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		<button class="btn btn-sm btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>View</button>
+{END view_page_button}
+</div>
+</div>
+
+{END message_block}
+
+
+
+</div>
+{END container_message}
+
+
+
+
+
+
+
+</div>
+{END container_editpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$editfields_hiddenattr} data-pageid="{$pageid}" data-brick="editfields" class="form-horizontal" role="form">
+
+
+
+		<div class="bs-details">
+		{BEGIN mastertable_block}
+<div class="panel panel-info table-panel">
+	<div class="panel-heading">
+	{$master_heading}
+	</div>
+	<div class="panel-body">
+{$showmasterfile}
+	</div>
+</div>
+{END mastertable_block}
+	</div>
+			{BEGIN IScRID_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_IScRID}" data-fieldname="IScRID" data-signal-error-for="IScRID{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_IScRID}">
+		{BEGIN IScRID_label}{$label indschedrange IScRID}{END IScRID_label}
+	</label>
+	<div class="col-md-6" >
+		{$IScRID_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="IScRID">
+		<div class="text-muted" >
+		{$tooltip indschedrange IScRID}
+		</div>
+	</div>
+</div>
+</div>
+{END IScRID_fieldblock}
+
+			{BEGIN Shift_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Shift}" data-fieldname="Shift" data-signal-error-for="Shift{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Shift}">
+		{BEGIN Shift_label}{$label indschedrange Shift}{END Shift_label}
+	</label>
+	<div class="col-md-6" >
+		{$Shift_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Shift">
+		<div class="text-muted" >
+		{$tooltip indschedrange Shift}
+		</div>
+	</div>
+</div>
+</div>
+{END Shift_fieldblock}
+
+			{BEGIN FromDate_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_FromDate}" data-fieldname="FromDate" data-signal-error-for="FromDate{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_FromDate}">
+		{BEGIN FromDate_label}{$label indschedrange FromDate}{END FromDate_label}
+	</label>
+	<div class="col-md-6" >
+		{$FromDate_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="FromDate">
+		<div class="text-muted" >
+		{$tooltip indschedrange FromDate}
+		</div>
+	</div>
+</div>
+</div>
+{END FromDate_fieldblock}
+
+			{BEGIN ToDate_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_ToDate}" data-fieldname="ToDate" data-signal-error-for="ToDate{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_ToDate}">
+		{BEGIN ToDate_label}{$label indschedrange ToDate}{END ToDate_label}
+	</label>
+	<div class="col-md-6" >
+		{$ToDate_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="ToDate">
+		<div class="text-muted" >
+		{$tooltip indschedrange ToDate}
+		</div>
+	</div>
+</div>
+</div>
+{END ToDate_fieldblock}
+
+			{BEGIN SchedType_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_SchedType}" data-fieldname="SchedType" data-signal-error-for="SchedType{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_SchedType}">
+		{BEGIN SchedType_label}{$label indschedrange SchedType}{END SchedType_label}
+	</label>
+	<div class="col-md-6" >
+		{$SchedType_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="SchedType">
+		<div class="text-muted" >
+		{$tooltip indschedrange SchedType}
+		</div>
+	</div>
+</div>
+</div>
+{END SchedType_fieldblock}
+
+			{BEGIN SchedBy_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_SchedBy}" data-fieldname="SchedBy" data-signal-error-for="SchedBy{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_SchedBy}">
+		{BEGIN SchedBy_label}{$label indschedrange SchedBy}{END SchedBy_label}
+	</label>
+	<div class="col-md-6" >
+		{$SchedBy_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="SchedBy">
+		<div class="text-muted" >
+		{$tooltip indschedrange SchedBy}
+		</div>
+	</div>
+</div>
+</div>
+{END SchedBy_fieldblock}
+
+			{BEGIN RestDays_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_RestDays}" data-fieldname="RestDays" data-signal-error-for="RestDays{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_RestDays}">
+		{BEGIN RestDays_label}{$label indschedrange RestDays}{END RestDays_label}
+	</label>
+	<div class="col-md-6" >
+		{$RestDays_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="RestDays">
+		<div class="text-muted" >
+		{$tooltip indschedrange RestDays}
+		</div>
+	</div>
+</div>
+</div>
+{END RestDays_fieldblock}
+
+			{BEGIN TimeIn_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_TimeIn}" data-fieldname="TimeIn" data-signal-error-for="TimeIn{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_TimeIn}">
+		{BEGIN TimeIn_label}{$label indschedrange TimeIn}{END TimeIn_label}
+	</label>
+	<div class="col-md-6" >
+		{$TimeIn_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="TimeIn">
+		<div class="text-muted" >
+		{$tooltip indschedrange TimeIn}
+		</div>
+	</div>
+</div>
+</div>
+{END TimeIn_fieldblock}
+
+			{BEGIN TimeOut_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_TimeOut}" data-fieldname="TimeOut" data-signal-error-for="TimeOut{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_TimeOut}">
+		{BEGIN TimeOut_label}{$label indschedrange TimeOut}{END TimeOut_label}
+	</label>
+	<div class="col-md-6" >
+		{$TimeOut_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="TimeOut">
+		<div class="text-muted" >
+		{$tooltip indschedrange TimeOut}
+		</div>
+	</div>
+</div>
+</div>
+{END TimeOut_fieldblock}
+
+			{BEGIN LunchBreakTimeFrom_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_LunchBreakTimeFrom}" data-fieldname="LunchBreakTimeFrom" data-signal-error-for="LunchBreakTimeFrom{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_LunchBreakTimeFrom}">
+		{BEGIN LunchBreakTimeFrom_label}{$label indschedrange LunchBreakTimeFrom}{END LunchBreakTimeFrom_label}
+	</label>
+	<div class="col-md-6" >
+		{$LunchBreakTimeFrom_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="LunchBreakTimeFrom">
+		<div class="text-muted" >
+		{$tooltip indschedrange LunchBreakTimeFrom}
+		</div>
+	</div>
+</div>
+</div>
+{END LunchBreakTimeFrom_fieldblock}
+
+			{BEGIN LunchBreakTimeTo_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_LunchBreakTimeTo}" data-fieldname="LunchBreakTimeTo" data-signal-error-for="LunchBreakTimeTo{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_LunchBreakTimeTo}">
+		{BEGIN LunchBreakTimeTo_label}{$label indschedrange LunchBreakTimeTo}{END LunchBreakTimeTo_label}
+	</label>
+	<div class="col-md-6" >
+		{$LunchBreakTimeTo_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="LunchBreakTimeTo">
+		<div class="text-muted" >
+		{$tooltip indschedrange LunchBreakTimeTo}
+		</div>
+	</div>
+</div>
+</div>
+{END LunchBreakTimeTo_fieldblock}
+
+			{BEGIN MinsPerDay_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_MinsPerDay}" data-fieldname="MinsPerDay" data-signal-error-for="MinsPerDay{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_MinsPerDay}">
+		{BEGIN MinsPerDay_label}{$label indschedrange MinsPerDay}{END MinsPerDay_label}
+	</label>
+	<div class="col-md-6" >
+		{$MinsPerDay_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="MinsPerDay">
+		<div class="text-muted" >
+		{$tooltip indschedrange MinsPerDay}
+		</div>
+	</div>
+</div>
+</div>
+{END MinsPerDay_fieldblock}
+
+			{BEGIN FirstHalfMins_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_FirstHalfMins}" data-fieldname="FirstHalfMins" data-signal-error-for="FirstHalfMins{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_FirstHalfMins}">
+		{BEGIN FirstHalfMins_label}{$label indschedrange FirstHalfMins}{END FirstHalfMins_label}
+	</label>
+	<div class="col-md-6" >
+		{$FirstHalfMins_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="FirstHalfMins">
+		<div class="text-muted" >
+		{$tooltip indschedrange FirstHalfMins}
+		</div>
+	</div>
+</div>
+</div>
+{END FirstHalfMins_fieldblock}
+
+			{BEGIN BreakMins_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_BreakMins}" data-fieldname="BreakMins" data-signal-error-for="BreakMins{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_BreakMins}">
+		{BEGIN BreakMins_label}{$label indschedrange BreakMins}{END BreakMins_label}
+	</label>
+	<div class="col-md-6" >
+		{$BreakMins_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="BreakMins">
+		<div class="text-muted" >
+		{$tooltip indschedrange BreakMins}
+		</div>
+	</div>
+</div>
+</div>
+{END BreakMins_fieldblock}
+
+			{BEGIN SecondHalfMins_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_SecondHalfMins}" data-fieldname="SecondHalfMins" data-signal-error-for="SecondHalfMins{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_SecondHalfMins}">
+		{BEGIN SecondHalfMins_label}{$label indschedrange SecondHalfMins}{END SecondHalfMins_label}
+	</label>
+	<div class="col-md-6" >
+		{$SecondHalfMins_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="SecondHalfMins">
+		<div class="text-muted" >
+		{$tooltip indschedrange SecondHalfMins}
+		</div>
+	</div>
+</div>
+</div>
+{END SecondHalfMins_fieldblock}
+
+			{BEGIN Posted_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Posted}" data-fieldname="Posted" data-signal-error-for="Posted{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Posted}">
+		{BEGIN Posted_label}{$label indschedrange Posted}{END Posted_label}
+	</label>
+	<div class="col-md-6" >
+		{$Posted_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Posted">
+		<div class="text-muted" >
+		{$tooltip indschedrange Posted}
+		</div>
+	</div>
+</div>
+</div>
+{END Posted_fieldblock}
+
+			{BEGIN EmployeeID_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_EmployeeID}" data-fieldname="EmployeeID" data-signal-error-for="EmployeeID{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_EmployeeID}">
+		{BEGIN EmployeeID_label}{$label indschedrange EmployeeID}{END EmployeeID_label}
+	</label>
+	<div class="col-md-6" >
+		{$EmployeeID_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="EmployeeID">
+		<div class="text-muted" >
+		{$tooltip indschedrange EmployeeID}
+		</div>
+	</div>
+</div>
+</div>
+{END EmployeeID_fieldblock}
+
+
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_buttons}
+<div {$buttons_chiddenattr} data-pageid="{$pageid}" data-container="buttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-3 col-md-offset-3"> 
+
+{BEGIN editbuttons}
+	{BEGIN save_button}
+	<button class="btn btn-primary" {$savebutton_attrs}>Save</button>
+	{END save_button}
+	{BEGIN updsel_button}
+	<button class="btn btn-primary" {$updselbutton_attrs}>{$update_selected}</button>
+	{END updsel_button}
+	{BEGIN back_button}
+		<button class="btn btn-default" {$backbutton_attrs}>Back to list</button>
+	{END back_button}
+	{BEGIN close_button}
+	<a href="#" class="btn btn-default" {$closebutton_attrs}>Cancel</a>
+	{END close_button}
+
+{END editbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+
+
+{BEGIN container_leftbuttons_1}
+<div {$leftbuttons_1_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons_1" class="  text-right col-md-3 "> 
+
+{BEGIN righteditbuttons}
+<div class="btn-group" role="group">
+
+	{BEGIN prev_button}
+	<button class="btn btn-default {$prevbutton_class}" {$prevbutton_attrs}><span class="glyphicon glyphicon-chevron-left"></span></button>
+	{END prev_button}
+	{BEGIN next_button}
+	<button class="btn btn-default  {$nextbutton_class}" {$nextbutton_attrs}><span class="glyphicon glyphicon-chevron-right"></span></button>
+	{END next_button}
+	<div class="btn-group dropup" role="group">
+		<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+		<ul class="dropdown-menu dropdown-left">
+			{BEGIN reset_button}
+				<li><a href="#" {$resetbutton_attrs}>Reset</a></li>
+			{END reset_button}
+			{BEGIN view_page_button}
+				<li><a href="#" {$view_page_button_attrs}>View</a></li>
+			{END view_page_button}
+		</ul>
+	</div>
+</div>
+{END righteditbuttons}
+
+
+
+</div>
+{END container_leftbuttons_1}
+
+
+
+
+
+
+</div>
+{END container_buttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

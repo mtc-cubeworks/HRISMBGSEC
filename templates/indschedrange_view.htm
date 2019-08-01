@@ -1,0 +1,364 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_viewpage}
+<div {$viewpage_chiddenattr} data-pageid="{$pageid}" data-container="viewpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-12 "> 
+
+{BEGIN viewheader}
+	<h2 {$viewheader_hiddenattr} data-pageid="{$pageid}" data-brick="viewheader" >{$pagetitlelabel indschedrange view}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END viewheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_viewpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class=" form-horizontal  col-md-12 "> 
+
+
+<div {$viewfields_hiddenattr} data-pageid="{$pageid}" data-brick="viewfields" >
+
+	<div class="container">
+			</div>
+	<div class="bs-2column">
+		<div class="bs-details">
+			{BEGIN mastertable_block}
+<div class="panel panel-info table-panel">
+	<div class="panel-heading">
+	{$master_heading}
+	</div>
+	<div class="panel-body">
+{$showmasterfile}
+	</div>
+</div>
+{END mastertable_block}
+		</div>
+	</div>
+	<div class="container">
+					{BEGIN IScRID_fieldblock}
+	<div class="{$fielddispclass_IScRID} col-md-6 bs-viewcontrolgroup" data-fieldname="IScRID">
+		<label class="control-label" for="{$labelfor_IScRID}">
+			{$label indschedrange IScRID}
+		</label>
+		<div class="" >
+			{$IScRID_value}&nbsp;
+		</div>
+	</div>
+{END IScRID_fieldblock}
+					{BEGIN Shift_fieldblock}
+	<div class="{$fielddispclass_Shift} col-md-6 bs-viewcontrolgroup" data-fieldname="Shift">
+		<label class="control-label" for="{$labelfor_Shift}">
+			{$label indschedrange Shift}
+		</label>
+		<div class="" >
+			{$Shift_value}&nbsp;
+		</div>
+	</div>
+{END Shift_fieldblock}
+					{BEGIN FromDate_fieldblock}
+	<div class="{$fielddispclass_FromDate} col-md-6 bs-viewcontrolgroup" data-fieldname="FromDate">
+		<label class="control-label" for="{$labelfor_FromDate}">
+			{$label indschedrange FromDate}
+		</label>
+		<div class="" >
+			{$FromDate_value}&nbsp;
+		</div>
+	</div>
+{END FromDate_fieldblock}
+					{BEGIN ToDate_fieldblock}
+	<div class="{$fielddispclass_ToDate} col-md-6 bs-viewcontrolgroup" data-fieldname="ToDate">
+		<label class="control-label" for="{$labelfor_ToDate}">
+			{$label indschedrange ToDate}
+		</label>
+		<div class="" >
+			{$ToDate_value}&nbsp;
+		</div>
+	</div>
+{END ToDate_fieldblock}
+					{BEGIN SchedType_fieldblock}
+	<div class="{$fielddispclass_SchedType} col-md-6 bs-viewcontrolgroup" data-fieldname="SchedType">
+		<label class="control-label" for="{$labelfor_SchedType}">
+			{$label indschedrange SchedType}
+		</label>
+		<div class="" >
+			{$SchedType_value}&nbsp;
+		</div>
+	</div>
+{END SchedType_fieldblock}
+					{BEGIN SchedBy_fieldblock}
+	<div class="{$fielddispclass_SchedBy} col-md-6 bs-viewcontrolgroup" data-fieldname="SchedBy">
+		<label class="control-label" for="{$labelfor_SchedBy}">
+			{$label indschedrange SchedBy}
+		</label>
+		<div class="" >
+			{$SchedBy_value}&nbsp;
+		</div>
+	</div>
+{END SchedBy_fieldblock}
+					{BEGIN RestDays_fieldblock}
+	<div class="{$fielddispclass_RestDays} col-md-6 bs-viewcontrolgroup" data-fieldname="RestDays">
+		<label class="control-label" for="{$labelfor_RestDays}">
+			{$label indschedrange RestDays}
+		</label>
+		<div class="" >
+			{$RestDays_value}&nbsp;
+		</div>
+	</div>
+{END RestDays_fieldblock}
+					{BEGIN TimeIn_fieldblock}
+	<div class="{$fielddispclass_TimeIn} col-md-6 bs-viewcontrolgroup" data-fieldname="TimeIn">
+		<label class="control-label" for="{$labelfor_TimeIn}">
+			{$label indschedrange TimeIn}
+		</label>
+		<div class="" >
+			{$TimeIn_value}&nbsp;
+		</div>
+	</div>
+{END TimeIn_fieldblock}
+					{BEGIN TimeOut_fieldblock}
+	<div class="{$fielddispclass_TimeOut} col-md-6 bs-viewcontrolgroup" data-fieldname="TimeOut">
+		<label class="control-label" for="{$labelfor_TimeOut}">
+			{$label indschedrange TimeOut}
+		</label>
+		<div class="" >
+			{$TimeOut_value}&nbsp;
+		</div>
+	</div>
+{END TimeOut_fieldblock}
+					{BEGIN LunchBreakTimeFrom_fieldblock}
+	<div class="{$fielddispclass_LunchBreakTimeFrom} col-md-6 bs-viewcontrolgroup" data-fieldname="LunchBreakTimeFrom">
+		<label class="control-label" for="{$labelfor_LunchBreakTimeFrom}">
+			{$label indschedrange LunchBreakTimeFrom}
+		</label>
+		<div class="" >
+			{$LunchBreakTimeFrom_value}&nbsp;
+		</div>
+	</div>
+{END LunchBreakTimeFrom_fieldblock}
+					{BEGIN LunchBreakTimeTo_fieldblock}
+	<div class="{$fielddispclass_LunchBreakTimeTo} col-md-6 bs-viewcontrolgroup" data-fieldname="LunchBreakTimeTo">
+		<label class="control-label" for="{$labelfor_LunchBreakTimeTo}">
+			{$label indschedrange LunchBreakTimeTo}
+		</label>
+		<div class="" >
+			{$LunchBreakTimeTo_value}&nbsp;
+		</div>
+	</div>
+{END LunchBreakTimeTo_fieldblock}
+					{BEGIN MinsPerDay_fieldblock}
+	<div class="{$fielddispclass_MinsPerDay} col-md-6 bs-viewcontrolgroup" data-fieldname="MinsPerDay">
+		<label class="control-label" for="{$labelfor_MinsPerDay}">
+			{$label indschedrange MinsPerDay}
+		</label>
+		<div class="" >
+			{$MinsPerDay_value}&nbsp;
+		</div>
+	</div>
+{END MinsPerDay_fieldblock}
+					{BEGIN FirstHalfMins_fieldblock}
+	<div class="{$fielddispclass_FirstHalfMins} col-md-6 bs-viewcontrolgroup" data-fieldname="FirstHalfMins">
+		<label class="control-label" for="{$labelfor_FirstHalfMins}">
+			{$label indschedrange FirstHalfMins}
+		</label>
+		<div class="" >
+			{$FirstHalfMins_value}&nbsp;
+		</div>
+	</div>
+{END FirstHalfMins_fieldblock}
+					{BEGIN BreakMins_fieldblock}
+	<div class="{$fielddispclass_BreakMins} col-md-6 bs-viewcontrolgroup" data-fieldname="BreakMins">
+		<label class="control-label" for="{$labelfor_BreakMins}">
+			{$label indschedrange BreakMins}
+		</label>
+		<div class="" >
+			{$BreakMins_value}&nbsp;
+		</div>
+	</div>
+{END BreakMins_fieldblock}
+					{BEGIN SecondHalfMins_fieldblock}
+	<div class="{$fielddispclass_SecondHalfMins} col-md-6 bs-viewcontrolgroup" data-fieldname="SecondHalfMins">
+		<label class="control-label" for="{$labelfor_SecondHalfMins}">
+			{$label indschedrange SecondHalfMins}
+		</label>
+		<div class="" >
+			{$SecondHalfMins_value}&nbsp;
+		</div>
+	</div>
+{END SecondHalfMins_fieldblock}
+					{BEGIN Posted_fieldblock}
+	<div class="{$fielddispclass_Posted} col-md-6 bs-viewcontrolgroup" data-fieldname="Posted">
+		<label class="control-label" for="{$labelfor_Posted}">
+			{$label indschedrange Posted}
+		</label>
+		<div class="" >
+			{$Posted_value}&nbsp;
+		</div>
+	</div>
+{END Posted_fieldblock}
+					{BEGIN EmployeeID_fieldblock}
+	<div class="{$fielddispclass_EmployeeID} col-md-6 bs-viewcontrolgroup" data-fieldname="EmployeeID">
+		<label class="control-label" for="{$labelfor_EmployeeID}">
+			{$label indschedrange EmployeeID}
+		</label>
+		<div class="" >
+			{$EmployeeID_value}&nbsp;
+		</div>
+	</div>
+{END EmployeeID_fieldblock}
+	</div>
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_buttons}
+<div {$buttons_chiddenattr} data-pageid="{$pageid}" data-container="buttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-6 "> 
+
+{BEGIN viewbuttons}
+{BEGIN back_button}
+<button class="btn btn-primary" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{BEGIN close_button}
+<button href="#" class="btn btn-primary" {$closebutton_attrs}>Close window</button>
+{END close_button}
+{END viewbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+
+
+{BEGIN container_leftbuttons_1}
+<div {$leftbuttons_1_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons_1" class="   col-md-4 "> 
+
+{BEGIN rightviewbuttons}
+<div class="btn-group" role="group">
+		{BEGIN prev_button}
+	<button class="btn btn-default {$prevbutton_class}" {$prevbutton_attrs}><span class="glyphicon glyphicon-chevron-left"></span></button>
+	{END prev_button}
+	{BEGIN next_button}
+	<button class="btn btn-default {$nextbutton_class}" {$nextbutton_attrs}><span class="glyphicon glyphicon-chevron-right"></span></button>
+	{END next_button}
+		{BEGIN view_menu_button}
+	<div class="btn-group dropup" role="group">
+		<button class="btn btn-default dropdown-toggle {$groupbutton_class}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+		<ul class="dropdown-menu dropdown-left">
+									{BEGIN edit_page_button}
+				<li><a href=# {$edit_page_button_attrs}>Edit</a></li>
+			{END edit_page_button}
+		</ul>
+	</div>
+	{END view_menu_button}
+</div>
+{END rightviewbuttons}
+
+
+
+</div>
+{END container_leftbuttons_1}
+
+
+
+
+
+
+</div>
+{END container_buttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,5 @@
+
+Runner.pages.PageSettings.addPageEvent('payrolltab1',Runner.pages.constants.PAGE_LIST,"afterPageReady",function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='Payslip1';if(!pageObj.buttonEventBefore['Payslip1']){pageObj.buttonEventBefore['Payslip1']=function(params,ctrl,pageObj,proxy,pageid,rowData,row){params["txt"]="Previewing...";ctrl.setMessage("Sending request to server...");}}
+if(!pageObj.buttonEventAfter['Payslip1']){pageObj.buttonEventAfter['Payslip1']=function(result,ctrl,pageObj,proxy,pageid,rowData,row){var p=result["PtabID"];window.open('pdfprint2/payslip.php?ps1='+p,'_blank');}}
+$('a[id="Payslip1"]').each(function(){if($(this).closest('.gridRowAdd').length){return;}
+this.id="Payslip1"+"_"+Runner.genId();var button_Payslip1=new Runner.form.Button({id:this.id,btnName:"Payslip1"});button_Payslip1.init({args:[pageObj,proxy,pageid]});});});

@@ -1,0 +1,305 @@
+<div {$pageattrs}>
+
+{BEGIN container_column}
+<div class="rnr-c rnr-ch rnr-c-column">
+
+{BEGIN masterlist_title}
+<div  class="style1 rnr-bl rnr-b-masterlistheader {$brickclass_masterlistheader}"><a {$backtomasterlink_attrs} class="btn btn-link btn-xs">Back to {$backtomasterlink_caption}</a><span>{$pagetitlelabel demo_user masterlist}</span></div>
+{END masterlist_title}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_column}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+	<style>
+	.bs-gridcell[data-field=user_id]:before {
+		content: "{$label demo_user user_id}";
+	}
+	.bs-gridcell[data-field=user_name]:before {
+		content: "{$label demo_user user_name}";
+	}
+	.bs-gridcell[data-field=Photo]:before {
+		content: "{$label demo_user Photo}";
+	}
+	.bs-gridcell[data-field=SSSNo]:before {
+		content: "{$label demo_user SSSNo}";
+	}
+	.bs-gridcell[data-field=TIN]:before {
+		content: "{$label demo_user TIN}";
+	}
+	.bs-gridcell[data-field=Mobile]:before {
+		content: "{$label demo_user Mobile}";
+	}
+	.bs-gridcell[data-field=Address]:before {
+		content: "{$label demo_user Address}";
+	}
+	.bs-gridcell[data-field=Email]:before {
+		content: "{$label demo_user Email}";
+	}
+	.bs-gridcell[data-field=EmployeeType]:before {
+		content: "{$label demo_user EmployeeType}";
+	}
+	.bs-gridcell[data-field=EmployeeID]:before {
+		content: "{$label demo_user EmployeeID}";
+	}
+	.bs-gridcell[data-field=Division]:before {
+		content: "{$label demo_user Division}";
+	}
+	.bs-gridcell[data-field=Status]:before {
+		content: "{$label demo_user Status}";
+	}
+	.bs-gridcell[data-field=Department]:before {
+		content: "{$label demo_user Department}";
+	}
+	.bs-gridcell[data-field=AllowableSickLeave]:before {
+		content: "{$label demo_user AllowableSickLeave}";
+	}
+	.bs-gridcell[data-field=AllowableVacationLeave]:before {
+		content: "{$label demo_user AllowableVacationLeave}";
+	}
+	.bs-gridcell[data-field=AllowableEmergencyLeave]:before {
+		content: "{$label demo_user AllowableEmergencyLeave}";
+	}
+	.bs-gridcell[data-field=SSSEE]:before {
+		content: "{$label demo_user SSSEE}";
+	}
+	.bs-gridcell[data-field=SSSER]:before {
+		content: "{$label demo_user SSSER}";
+	}
+	.bs-gridcell[data-field=PhilHealthEE]:before {
+		content: "{$label demo_user PhilHealthEE}";
+	}
+	.bs-gridcell[data-field=PhilHealthER]:before {
+		content: "{$label demo_user PhilHealthER}";
+	}
+	.bs-gridcell[data-field=PagIbigEE]:before {
+		content: "{$label demo_user PagIbigEE}";
+	}
+	.bs-gridcell[data-field=AllowablePaternityLeave]:before {
+		content: "{$label demo_user AllowablePaternityLeave}";
+	}
+	.bs-gridcell[data-field=HiredDate]:before {
+		content: "{$label demo_user HiredDate}";
+	}
+	.bs-gridcell[data-field=Inactive]:before {
+		content: "{$label demo_user Inactive}";
+	}
+	.bs-gridcell[data-field=ExitDate]:before {
+		content: "{$label demo_user ExitDate}";
+	}
+	.bs-gridcell[data-field=PagIbigER]:before {
+		content: "{$label demo_user PagIbigER}";
+	}
+	.bs-gridcell[data-field=PagIbigNo]:before {
+		content: "{$label demo_user PagIbigNo}";
+	}
+	.bs-gridcell[data-field=PhilHealthNo]:before {
+		content: "{$label demo_user PhilHealthNo}";
+	}
+	.bs-gridcell[data-field=SSSEC]:before {
+		content: "{$label demo_user SSSEC}";
+	}
+	.bs-gridcell[data-field=PresetTax]:before {
+		content: "{$label demo_user PresetTax}";
+	}
+	.bs-gridcell[data-field=Level]:before {
+		content: "{$label demo_user Level}";
+	}
+	.bs-gridcell[data-field=DateCreated]:before {
+		content: "{$label demo_user DateCreated}";
+	}
+	.bs-gridcell[data-field=ApprovedDate]:before {
+		content: "{$label demo_user ApprovedDate}";
+	}
+	.bs-gridcell[data-field=Approved]:before {
+		content: "{$label demo_user Approved}";
+	}
+	.bs-gridcell[data-field=Approvedby]:before {
+		content: "{$label demo_user Approvedby}";
+	}
+	.bs-gridcell[data-field=Preparedby]:before {
+		content: "{$label demo_user Preparedby}";
+	}
+	.bs-gridcell[data-field=Checkedby]:before {
+		content: "{$label demo_user Checkedby}";
+	}
+	.bs-gridcell[data-field=CheckedDate]:before {
+		content: "{$label demo_user CheckedDate}";
+	}
+	.bs-gridcell[data-field=Checked]:before {
+		content: "{$label demo_user Checked}";
+	}
+	.bs-gridcell[data-field=Superior]:before {
+		content: "{$label demo_user Superior}";
+	}
+	.bs-gridcell[data-field=Position]:before {
+		content: "{$label demo_user Position}";
+	}
+	.bs-gridcell[data-field=Employer]:before {
+		content: "{$label demo_user Employer}";
+	}
+	.bs-gridcell[data-field=IDNo]:before {
+		content: "{$label demo_user IDNo}";
+	}
+	.bs-gridcell[data-field=AccountNo]:before {
+		content: "{$label demo_user AccountNo}";
+	}
+	.bs-gridcell[data-field=LateFixPenalty]:before {
+		content: "{$label demo_user LateFixPenalty}";
+	}
+	.bs-gridcell[data-field=DoNotUpdateContributions]:before {
+		content: "{$label demo_user DoNotUpdateContributions}";
+	}
+	.bs-gridcell[data-field=ExcludeContributionOnPayroll]:before {
+		content: "{$label demo_user ExcludeContributionOnPayroll}";
+	}
+	.bs-gridcell[data-field=Birthday]:before {
+		content: "{$label demo_user Birthday}";
+	}
+	.bs-gridcell[data-field=Bank]:before {
+		content: "{$label demo_user Bank}";
+	}
+	.bs-gridcell[data-field=NoLateDeduction]:before {
+		content: "{$label demo_user NoLateDeduction}";
+	}
+	.bs-gridcell[data-field=IncludeBreakLate]:before {
+		content: "{$label demo_user IncludeBreakLate}";
+	}
+	.bs-gridcell[data-field=GracePeriodMins]:before {
+		content: "{$label demo_user GracePeriodMins}";
+	}
+	.bs-gridcell[data-field=WithAdditionalBreaks]:before {
+		content: "{$label demo_user WithAdditionalBreaks}";
+	}
+</style>
+<table {$masterlistgrid_hiddenattr} data-pageid="{$pageid}" data-brick="masterlistgrid" class="table rnr-b-mastergridfields rnr-gridtable bs-flexgrid" >
+		<thead>
+		<tr>
+			<th class="{$EmployeeID_class}">{$label demo_user EmployeeID}</th>
+			<th class="{$IDNo_class}">{$label demo_user IDNo}</th>
+			<th class="{$Photo_class}">{$label demo_user Photo}</th>
+			<th class="{$user_name_class}">{$label demo_user user_name}</th>
+			<th class="{$Employer_class}">{$label demo_user Employer}</th>
+			<th class="{$Division_class}">{$label demo_user Division}</th>
+			<th class="{$Department_class}">{$label demo_user Department}</th>
+			<th class="{$HiredDate_class}">{$label demo_user HiredDate}</th>
+			<th class="{$Inactive_class}">{$label demo_user Inactive}</th>
+			<th class="{$ExitDate_class}">{$label demo_user ExitDate}</th>
+			<th class="{$Status_class}">{$label demo_user Status}</th>
+			<th class="{$Position_class}">{$label demo_user Position}</th>
+			<th class="{$Superior_class}">{$label demo_user Superior}</th>
+			<th class="{$Mobile_class}">{$label demo_user Mobile}</th>
+			<th class="{$Address_class}">{$label demo_user Address}</th>
+			<th class="{$Birthday_class}">{$label demo_user Birthday}</th>
+			<th class="{$Email_class}">{$label demo_user Email}</th>
+			<th class="{$SSSNo_class}">{$label demo_user SSSNo}</th>
+			<th class="{$PagIbigNo_class}">{$label demo_user PagIbigNo}</th>
+			<th class="{$PhilHealthNo_class}">{$label demo_user PhilHealthNo}</th>
+			<th class="{$TIN_class}">{$label demo_user TIN}</th>
+			<th class="{$Bank_class}">{$label demo_user Bank}</th>
+			<th class="{$AccountNo_class}">{$label demo_user AccountNo}</th>
+			<th class="{$AllowableSickLeave_class}">{$label demo_user AllowableSickLeave}</th>
+			<th class="{$AllowableVacationLeave_class}">{$label demo_user AllowableVacationLeave}</th>
+			<th class="{$AllowableEmergencyLeave_class}">{$label demo_user AllowableEmergencyLeave}</th>
+			<th class="{$AllowablePaternityLeave_class}">{$label demo_user AllowablePaternityLeave}</th>
+			<th class="{$EmployeeType_class}">{$label demo_user EmployeeType}</th>
+			<th class="{$Level_class}">{$label demo_user Level}</th>
+			<th class="{$DoNotUpdateContributions_class}">{$label demo_user DoNotUpdateContributions}</th>
+			<th class="{$ExcludeContributionOnPayroll_class}">{$label demo_user ExcludeContributionOnPayroll}</th>
+			<th class="{$SSSEE_class}">{$label demo_user SSSEE}</th>
+			<th class="{$SSSER_class}">{$label demo_user SSSER}</th>
+			<th class="{$SSSEC_class}">{$label demo_user SSSEC}</th>
+			<th class="{$PhilHealthEE_class}">{$label demo_user PhilHealthEE}</th>
+			<th class="{$PhilHealthER_class}">{$label demo_user PhilHealthER}</th>
+			<th class="{$PagIbigEE_class}">{$label demo_user PagIbigEE}</th>
+			<th class="{$PagIbigER_class}">{$label demo_user PagIbigER}</th>
+			<th class="{$PresetTax_class}">{$label demo_user PresetTax}</th>
+			<th class="{$NoLateDeduction_class}">{$label demo_user NoLateDeduction}</th>
+			<th class="{$GracePeriodMins_class}">{$label demo_user GracePeriodMins}</th>
+			<th class="{$WithAdditionalBreaks_class}">{$label demo_user WithAdditionalBreaks}</th>
+			<th class="{$IncludeBreakLate_class}">{$label demo_user IncludeBreakLate}</th>
+			<th class="{$LateFixPenalty_class}">{$label demo_user LateFixPenalty}</th>
+			<th class="{$user_id_class}">{$label demo_user user_id}</th>
+			<th class="{$DateCreated_class}">{$label demo_user DateCreated}</th>
+			<th class="{$Preparedby_class}">{$label demo_user Preparedby}</th>
+			<th class="{$Checked_class}">{$label demo_user Checked}</th>
+			<th class="{$Checkedby_class}">{$label demo_user Checkedby}</th>
+			<th class="{$CheckedDate_class}">{$label demo_user CheckedDate}</th>
+			<th class="{$Approved_class}">{$label demo_user Approved}</th>
+			<th class="{$Approvedby_class}">{$label demo_user Approvedby}</th>
+			<th class="{$ApprovedDate_class}">{$label demo_user ApprovedDate}</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td class="{$EmployeeID_class} bs-gridcell" data-field=EmployeeID>{$EmployeeID_mastervalue}</td>
+			<td class="{$IDNo_class} bs-gridcell" data-field=IDNo>{$IDNo_mastervalue}</td>
+			<td class="{$Photo_class} bs-gridcell" data-field=Photo>{$Photo_mastervalue}</td>
+			<td class="{$user_name_class} bs-gridcell" data-field=user_name>{$user_name_mastervalue}</td>
+			<td class="{$Employer_class} bs-gridcell" data-field=Employer>{$Employer_mastervalue}</td>
+			<td class="{$Division_class} bs-gridcell" data-field=Division>{$Division_mastervalue}</td>
+			<td class="{$Department_class} bs-gridcell" data-field=Department>{$Department_mastervalue}</td>
+			<td class="{$HiredDate_class} bs-gridcell" data-field=HiredDate>{$HiredDate_mastervalue}</td>
+			<td class="{$Inactive_class} bs-gridcell" data-field=Inactive>{$Inactive_mastervalue}</td>
+			<td class="{$ExitDate_class} bs-gridcell" data-field=ExitDate>{$ExitDate_mastervalue}</td>
+			<td class="{$Status_class} bs-gridcell" data-field=Status>{$Status_mastervalue}</td>
+			<td class="{$Position_class} bs-gridcell" data-field=Position>{$Position_mastervalue}</td>
+			<td class="{$Superior_class} bs-gridcell" data-field=Superior>{$Superior_mastervalue}</td>
+			<td class="{$Mobile_class} bs-gridcell" data-field=Mobile>{$Mobile_mastervalue}</td>
+			<td class="{$Address_class} bs-gridcell" data-field=Address>{$Address_mastervalue}</td>
+			<td class="{$Birthday_class} bs-gridcell" data-field=Birthday>{$Birthday_mastervalue}</td>
+			<td class="{$Email_class} bs-gridcell" data-field=Email>{$Email_mastervalue}</td>
+			<td class="{$SSSNo_class} bs-gridcell" data-field=SSSNo>{$SSSNo_mastervalue}</td>
+			<td class="{$PagIbigNo_class} bs-gridcell" data-field=PagIbigNo>{$PagIbigNo_mastervalue}</td>
+			<td class="{$PhilHealthNo_class} bs-gridcell" data-field=PhilHealthNo>{$PhilHealthNo_mastervalue}</td>
+			<td class="{$TIN_class} bs-gridcell" data-field=TIN>{$TIN_mastervalue}</td>
+			<td class="{$Bank_class} bs-gridcell" data-field=Bank>{$Bank_mastervalue}</td>
+			<td class="{$AccountNo_class} bs-gridcell" data-field=AccountNo>{$AccountNo_mastervalue}</td>
+			<td class="{$AllowableSickLeave_class} bs-gridcell" data-field=AllowableSickLeave>{$AllowableSickLeave_mastervalue}</td>
+			<td class="{$AllowableVacationLeave_class} bs-gridcell" data-field=AllowableVacationLeave>{$AllowableVacationLeave_mastervalue}</td>
+			<td class="{$AllowableEmergencyLeave_class} bs-gridcell" data-field=AllowableEmergencyLeave>{$AllowableEmergencyLeave_mastervalue}</td>
+			<td class="{$AllowablePaternityLeave_class} bs-gridcell" data-field=AllowablePaternityLeave>{$AllowablePaternityLeave_mastervalue}</td>
+			<td class="{$EmployeeType_class} bs-gridcell" data-field=EmployeeType>{$EmployeeType_mastervalue}</td>
+			<td class="{$Level_class} bs-gridcell" data-field=Level>{$Level_mastervalue}</td>
+			<td class="{$DoNotUpdateContributions_class} bs-gridcell" data-field=DoNotUpdateContributions>{$DoNotUpdateContributions_mastervalue}</td>
+			<td class="{$ExcludeContributionOnPayroll_class} bs-gridcell" data-field=ExcludeContributionOnPayroll>{$ExcludeContributionOnPayroll_mastervalue}</td>
+			<td class="{$SSSEE_class} bs-gridcell" data-field=SSSEE>{$SSSEE_mastervalue}</td>
+			<td class="{$SSSER_class} bs-gridcell" data-field=SSSER>{$SSSER_mastervalue}</td>
+			<td class="{$SSSEC_class} bs-gridcell" data-field=SSSEC>{$SSSEC_mastervalue}</td>
+			<td class="{$PhilHealthEE_class} bs-gridcell" data-field=PhilHealthEE>{$PhilHealthEE_mastervalue}</td>
+			<td class="{$PhilHealthER_class} bs-gridcell" data-field=PhilHealthER>{$PhilHealthER_mastervalue}</td>
+			<td class="{$PagIbigEE_class} bs-gridcell" data-field=PagIbigEE>{$PagIbigEE_mastervalue}</td>
+			<td class="{$PagIbigER_class} bs-gridcell" data-field=PagIbigER>{$PagIbigER_mastervalue}</td>
+			<td class="{$PresetTax_class} bs-gridcell" data-field=PresetTax>{$PresetTax_mastervalue}</td>
+			<td class="{$NoLateDeduction_class} bs-gridcell" data-field=NoLateDeduction>{$NoLateDeduction_mastervalue}</td>
+			<td class="{$GracePeriodMins_class} bs-gridcell" data-field=GracePeriodMins>{$GracePeriodMins_mastervalue}</td>
+			<td class="{$WithAdditionalBreaks_class} bs-gridcell" data-field=WithAdditionalBreaks>{$WithAdditionalBreaks_mastervalue}</td>
+			<td class="{$IncludeBreakLate_class} bs-gridcell" data-field=IncludeBreakLate>{$IncludeBreakLate_mastervalue}</td>
+			<td class="{$LateFixPenalty_class} bs-gridcell" data-field=LateFixPenalty>{$LateFixPenalty_mastervalue}</td>
+			<td class="{$user_id_class} bs-gridcell" data-field=user_id>{$user_id_mastervalue}</td>
+			<td class="{$DateCreated_class} bs-gridcell" data-field=DateCreated>{$DateCreated_mastervalue}</td>
+			<td class="{$Preparedby_class} bs-gridcell" data-field=Preparedby>{$Preparedby_mastervalue}</td>
+			<td class="{$Checked_class} bs-gridcell" data-field=Checked>{$Checked_mastervalue}</td>
+			<td class="{$Checkedby_class} bs-gridcell" data-field=Checkedby>{$Checkedby_mastervalue}</td>
+			<td class="{$CheckedDate_class} bs-gridcell" data-field=CheckedDate>{$CheckedDate_mastervalue}</td>
+			<td class="{$Approved_class} bs-gridcell" data-field=Approved>{$Approved_mastervalue}</td>
+			<td class="{$Approvedby_class} bs-gridcell" data-field=Approvedby>{$Approvedby_mastervalue}</td>
+			<td class="{$ApprovedDate_class} bs-gridcell" data-field=ApprovedDate>{$ApprovedDate_mastervalue}</td>
+		</tr>
+	</tbody>
+
+</table> 
+
+
+
+
+{END container_mastergrid}
+
+</div>

@@ -1,0 +1,743 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_searchpage}
+<div {$searchpage_chiddenattr} data-pageid="{$pageid}" data-container="searchpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN searchheader}
+	<h2 {$bssearchheader_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchheader" >{$pagetitlelabel standardsetup search}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END searchheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_searchpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$bssearchfields_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchfields" class="form-horizontal" role="form">
+<div class="container">
+	<div class="form-group">
+		<div class="col-md-12" >
+			&nbsp;
+		</div>
+	</div>
+</div>
+	{BEGIN SID_fieldblock}		
+	<div class="container {$fielddispclass_SID}" data-fieldname="SID">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SID}">
+				{$label standardsetup SID}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SID}
+			</div>
+			<div class="col-md-4" >
+				{$SID_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SID_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SID_fieldblock}
+	{BEGIN PreTimeInMins_fieldblock}		
+	<div class="container {$fielddispclass_PreTimeInMins}" data-fieldname="PreTimeInMins">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_PreTimeInMins}">
+				{$label standardsetup PreTimeInMins}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_PreTimeInMins}
+			</div>
+			<div class="col-md-4" >
+				{$PreTimeInMins_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$PreTimeInMins_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END PreTimeInMins_fieldblock}
+	{BEGIN WorkingDaysInYear_fieldblock}		
+	<div class="container {$fielddispclass_WorkingDaysInYear}" data-fieldname="WorkingDaysInYear">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_WorkingDaysInYear}">
+				{$label standardsetup WorkingDaysInYear}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_WorkingDaysInYear}
+			</div>
+			<div class="col-md-4" >
+				{$WorkingDaysInYear_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$WorkingDaysInYear_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END WorkingDaysInYear_fieldblock}
+	{BEGIN WorkingDaysInYearDailies_fieldblock}		
+	<div class="container {$fielddispclass_WorkingDaysInYearDailies}" data-fieldname="WorkingDaysInYearDailies">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_WorkingDaysInYearDailies}">
+				{$label standardsetup WorkingDaysInYearDailies}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_WorkingDaysInYearDailies}
+			</div>
+			<div class="col-md-4" >
+				{$WorkingDaysInYearDailies_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$WorkingDaysInYearDailies_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END WorkingDaysInYearDailies_fieldblock}
+	{BEGIN RegOTFactor_fieldblock}		
+	<div class="container {$fielddispclass_RegOTFactor}" data-fieldname="RegOTFactor">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RegOTFactor}">
+				{$label standardsetup RegOTFactor}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RegOTFactor}
+			</div>
+			<div class="col-md-4" >
+				{$RegOTFactor_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RegOTFactor_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RegOTFactor_fieldblock}
+	{BEGIN RHOTFactor_fieldblock}		
+	<div class="container {$fielddispclass_RHOTFactor}" data-fieldname="RHOTFactor">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RHOTFactor}">
+				{$label standardsetup RHOTFactor}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RHOTFactor}
+			</div>
+			<div class="col-md-4" >
+				{$RHOTFactor_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RHOTFactor_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RHOTFactor_fieldblock}
+	{BEGIN SHOTFactor_fieldblock}		
+	<div class="container {$fielddispclass_SHOTFactor}" data-fieldname="SHOTFactor">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SHOTFactor}">
+				{$label standardsetup SHOTFactor}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SHOTFactor}
+			</div>
+			<div class="col-md-4" >
+				{$SHOTFactor_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SHOTFactor_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SHOTFactor_fieldblock}
+	{BEGIN SHOTFactorDaily_fieldblock}		
+	<div class="container {$fielddispclass_SHOTFactorDaily}" data-fieldname="SHOTFactorDaily">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SHOTFactorDaily}">
+				{$label standardsetup SHOTFactorDaily}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SHOTFactorDaily}
+			</div>
+			<div class="col-md-4" >
+				{$SHOTFactorDaily_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SHOTFactorDaily_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SHOTFactorDaily_fieldblock}
+	{BEGIN CHOTFactor_fieldblock}		
+	<div class="container {$fielddispclass_CHOTFactor}" data-fieldname="CHOTFactor">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_CHOTFactor}">
+				{$label standardsetup CHOTFactor}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_CHOTFactor}
+			</div>
+			<div class="col-md-4" >
+				{$CHOTFactor_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$CHOTFactor_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END CHOTFactor_fieldblock}
+	{BEGIN CHOTFactorDaily_fieldblock}		
+	<div class="container {$fielddispclass_CHOTFactorDaily}" data-fieldname="CHOTFactorDaily">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_CHOTFactorDaily}">
+				{$label standardsetup CHOTFactorDaily}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_CHOTFactorDaily}
+			</div>
+			<div class="col-md-4" >
+				{$CHOTFactorDaily_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$CHOTFactorDaily_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END CHOTFactorDaily_fieldblock}
+	{BEGIN RDOTFactor_fieldblock}		
+	<div class="container {$fielddispclass_RDOTFactor}" data-fieldname="RDOTFactor">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RDOTFactor}">
+				{$label standardsetup RDOTFactor}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RDOTFactor}
+			</div>
+			<div class="col-md-4" >
+				{$RDOTFactor_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RDOTFactor_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RDOTFactor_fieldblock}
+	{BEGIN RHRDOTFactor_fieldblock}		
+	<div class="container {$fielddispclass_RHRDOTFactor}" data-fieldname="RHRDOTFactor">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RHRDOTFactor}">
+				{$label standardsetup RHRDOTFactor}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RHRDOTFactor}
+			</div>
+			<div class="col-md-4" >
+				{$RHRDOTFactor_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RHRDOTFactor_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RHRDOTFactor_fieldblock}
+	{BEGIN SHRDOTFactor_fieldblock}		
+	<div class="container {$fielddispclass_SHRDOTFactor}" data-fieldname="SHRDOTFactor">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SHRDOTFactor}">
+				{$label standardsetup SHRDOTFactor}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SHRDOTFactor}
+			</div>
+			<div class="col-md-4" >
+				{$SHRDOTFactor_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SHRDOTFactor_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SHRDOTFactor_fieldblock}
+	{BEGIN SHRDOTFactorDaily_fieldblock}		
+	<div class="container {$fielddispclass_SHRDOTFactorDaily}" data-fieldname="SHRDOTFactorDaily">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SHRDOTFactorDaily}">
+				{$label standardsetup SHRDOTFactorDaily}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SHRDOTFactorDaily}
+			</div>
+			<div class="col-md-4" >
+				{$SHRDOTFactorDaily_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SHRDOTFactorDaily_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SHRDOTFactorDaily_fieldblock}
+	{BEGIN AllowableLeaveFrom_fieldblock}		
+	<div class="container {$fielddispclass_AllowableLeaveFrom}" data-fieldname="AllowableLeaveFrom">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_AllowableLeaveFrom}">
+				{$label standardsetup AllowableLeaveFrom}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_AllowableLeaveFrom}
+			</div>
+			<div class="col-md-4" >
+				{$AllowableLeaveFrom_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$AllowableLeaveFrom_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END AllowableLeaveFrom_fieldblock}
+	{BEGIN AllowableLeaveTo_fieldblock}		
+	<div class="container {$fielddispclass_AllowableLeaveTo}" data-fieldname="AllowableLeaveTo">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_AllowableLeaveTo}">
+				{$label standardsetup AllowableLeaveTo}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_AllowableLeaveTo}
+			</div>
+			<div class="col-md-4" >
+				{$AllowableLeaveTo_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$AllowableLeaveTo_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END AllowableLeaveTo_fieldblock}
+	{BEGIN RHFactor_fieldblock}		
+	<div class="container {$fielddispclass_RHFactor}" data-fieldname="RHFactor">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RHFactor}">
+				{$label standardsetup RHFactor}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RHFactor}
+			</div>
+			<div class="col-md-4" >
+				{$RHFactor_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RHFactor_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RHFactor_fieldblock}
+	{BEGIN SHFactor_fieldblock}		
+	<div class="container {$fielddispclass_SHFactor}" data-fieldname="SHFactor">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SHFactor}">
+				{$label standardsetup SHFactor}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SHFactor}
+			</div>
+			<div class="col-md-4" >
+				{$SHFactor_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SHFactor_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SHFactor_fieldblock}
+	{BEGIN SHFactorDaily_fieldblock}		
+	<div class="container {$fielddispclass_SHFactorDaily}" data-fieldname="SHFactorDaily">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SHFactorDaily}">
+				{$label standardsetup SHFactorDaily}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SHFactorDaily}
+			</div>
+			<div class="col-md-4" >
+				{$SHFactorDaily_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SHFactorDaily_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SHFactorDaily_fieldblock}
+	{BEGIN CHFactor_fieldblock}		
+	<div class="container {$fielddispclass_CHFactor}" data-fieldname="CHFactor">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_CHFactor}">
+				{$label standardsetup CHFactor}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_CHFactor}
+			</div>
+			<div class="col-md-4" >
+				{$CHFactor_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$CHFactor_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END CHFactor_fieldblock}
+	{BEGIN CHFactorDaily_fieldblock}		
+	<div class="container {$fielddispclass_CHFactorDaily}" data-fieldname="CHFactorDaily">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_CHFactorDaily}">
+				{$label standardsetup CHFactorDaily}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_CHFactorDaily}
+			</div>
+			<div class="col-md-4" >
+				{$CHFactorDaily_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$CHFactorDaily_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END CHFactorDaily_fieldblock}
+	{BEGIN ReqBeforeHoliday_fieldblock}		
+	<div class="container {$fielddispclass_ReqBeforeHoliday}" data-fieldname="ReqBeforeHoliday">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_ReqBeforeHoliday}">
+				{$label standardsetup ReqBeforeHoliday}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_ReqBeforeHoliday}
+			</div>
+			<div class="col-md-4" >
+				{$ReqBeforeHoliday_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$ReqBeforeHoliday_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END ReqBeforeHoliday_fieldblock}
+	{BEGIN NightDiffStartTime_fieldblock}		
+	<div class="container {$fielddispclass_NightDiffStartTime}" data-fieldname="NightDiffStartTime">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_NightDiffStartTime}">
+				{$label standardsetup NightDiffStartTime}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_NightDiffStartTime}
+			</div>
+			<div class="col-md-4" >
+				{$NightDiffStartTime_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$NightDiffStartTime_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END NightDiffStartTime_fieldblock}
+	{BEGIN NightDiffEndTime_fieldblock}		
+	<div class="container {$fielddispclass_NightDiffEndTime}" data-fieldname="NightDiffEndTime">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_NightDiffEndTime}">
+				{$label standardsetup NightDiffEndTime}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_NightDiffEndTime}
+			</div>
+			<div class="col-md-4" >
+				{$NightDiffEndTime_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$NightDiffEndTime_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END NightDiffEndTime_fieldblock}
+	{BEGIN RegNDiffFactor_fieldblock}		
+	<div class="container {$fielddispclass_RegNDiffFactor}" data-fieldname="RegNDiffFactor">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RegNDiffFactor}">
+				{$label standardsetup RegNDiffFactor}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RegNDiffFactor}
+			</div>
+			<div class="col-md-4" >
+				{$RegNDiffFactor_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RegNDiffFactor_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RegNDiffFactor_fieldblock}
+	{BEGIN RHNDiffFactor_fieldblock}		
+	<div class="container {$fielddispclass_RHNDiffFactor}" data-fieldname="RHNDiffFactor">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RHNDiffFactor}">
+				{$label standardsetup RHNDiffFactor}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RHNDiffFactor}
+			</div>
+			<div class="col-md-4" >
+				{$RHNDiffFactor_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RHNDiffFactor_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RHNDiffFactor_fieldblock}
+	{BEGIN SHNDiffFactor_fieldblock}		
+	<div class="container {$fielddispclass_SHNDiffFactor}" data-fieldname="SHNDiffFactor">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SHNDiffFactor}">
+				{$label standardsetup SHNDiffFactor}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SHNDiffFactor}
+			</div>
+			<div class="col-md-4" >
+				{$SHNDiffFactor_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SHNDiffFactor_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SHNDiffFactor_fieldblock}
+	{BEGIN CHNDiffFactor_fieldblock}		
+	<div class="container {$fielddispclass_CHNDiffFactor}" data-fieldname="CHNDiffFactor">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_CHNDiffFactor}">
+				{$label standardsetup CHNDiffFactor}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_CHNDiffFactor}
+			</div>
+			<div class="col-md-4" >
+				{$CHNDiffFactor_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$CHNDiffFactor_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END CHNDiffFactor_fieldblock}
+	{BEGIN RDNDiffFactor_fieldblock}		
+	<div class="container {$fielddispclass_RDNDiffFactor}" data-fieldname="RDNDiffFactor">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RDNDiffFactor}">
+				{$label standardsetup RDNDiffFactor}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RDNDiffFactor}
+			</div>
+			<div class="col-md-4" >
+				{$RDNDiffFactor_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RDNDiffFactor_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RDNDiffFactor_fieldblock}
+	{BEGIN RDFactor_fieldblock}		
+	<div class="container {$fielddispclass_RDFactor}" data-fieldname="RDFactor">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RDFactor}">
+				{$label standardsetup RDFactor}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RDFactor}
+			</div>
+			<div class="col-md-4" >
+				{$RDFactor_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RDFactor_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RDFactor_fieldblock}
+	{BEGIN RHRDFactor_fieldblock}		
+	<div class="container {$fielddispclass_RHRDFactor}" data-fieldname="RHRDFactor">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RHRDFactor}">
+				{$label standardsetup RHRDFactor}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RHRDFactor}
+			</div>
+			<div class="col-md-4" >
+				{$RHRDFactor_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RHRDFactor_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RHRDFactor_fieldblock}
+	{BEGIN SHRDFactor_fieldblock}		
+	<div class="container {$fielddispclass_SHRDFactor}" data-fieldname="SHRDFactor">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SHRDFactor}">
+				{$label standardsetup SHRDFactor}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SHRDFactor}
+			</div>
+			<div class="col-md-4" >
+				{$SHRDFactor_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SHRDFactor_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SHRDFactor_fieldblock}
+	{BEGIN SHRDFactorDaily_fieldblock}		
+	<div class="container {$fielddispclass_SHRDFactorDaily}" data-fieldname="SHRDFactorDaily">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SHRDFactorDaily}">
+				{$label standardsetup SHRDFactorDaily}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SHRDFactorDaily}
+			</div>
+			<div class="col-md-4" >
+				{$SHRDFactorDaily_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SHRDFactorDaily_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SHRDFactorDaily_fieldblock}
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container form-horizontal   "> 
+
+
+
+
+{BEGIN container_bbuttons}
+<div {$bbuttons_chiddenattr} data-pageid="{$pageid}" data-container="bbuttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-10 col-md-offset-2"> 
+
+{BEGIN searchbuttons}
+{BEGIN search_button}
+<button class="btn btn-primary" {$searchbutton_attrs}>Search</button>
+{END search_button} 
+{BEGIN reset_button}
+<button class="btn btn-default" {$resetbutton_attrs}>Reset</button>
+{END reset_button}
+{BEGIN back_button}
+<button class="btn btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{END searchbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+</div>
+{END container_bbuttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

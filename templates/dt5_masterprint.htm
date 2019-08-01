@@ -1,0 +1,141 @@
+<div {$pageattrs}>
+
+{BEGIN container_column}
+<div class="rnr-c rnr-ch rnr-c-column">
+
+{BEGIN masterlist_title}
+<div  class="style1 rnr-bl rnr-b-masterprintheader {$brickclass_masterprintheader}"><span>{$pagetitlelabel dt5 masterprint}</span></div>
+{END masterlist_title}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_column}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+<table {$bsmasterprintgrid_hiddenattr} data-pageid="{$pageid}" data-brick="bsmasterprintgrid" class="table rnr-b-mastergridfields rnr-gridtable" >
+		<thead>
+		<tr>
+			<th class="{$ScID_class}">{$label dt5 ScID}</th>
+			<th class="{$EmployeeID_class}">{$label dt5 EmployeeID}</th>
+			<th class="{$UserName_class}">{$label dt5 UserName}</th>
+			<th class="{$Employer_class}">{$label dt5 Employer}</th>
+			<th class="{$Division_class}">{$label dt5 Division}</th>
+			<th class="{$Department_class}">{$label dt5 Department}</th>
+			<th class="{$WageType_class}">{$label dt5 WageType}</th>
+			<th class="{$SDate_class}">{$label dt5 SDate}</th>
+			<th class="{$DayIs_class}">{$label dt5 DayIs}</th>
+			<th class="{$RestDay_class}">{$label dt5 RestDay}</th>
+			<th class="{$STimeIn_class}">{$label dt5 STimeIn}</th>
+			<th class="{$STimeOut_class}">{$label dt5 STimeOut}</th>
+			<th class="{$TimeIn_class}">{$label dt5 TimeIn}</th>
+			<th class="{$TimeOut_class}">{$label dt5 TimeOut}</th>
+			<th class="{$AfterBreakLogOut_class}">{$label dt5 AfterBreakLogOut}</th>
+			<th class="{$AfterBreakLog_class}">{$label dt5 AfterBreakLog}</th>
+			<th class="{$MisPunched_class}">{$label dt5 MisPunched}</th>
+			<th class="{$RegWD_class}">{$label dt5 RegWD}</th>
+			<th class="{$DWork_class}">{$label dt5 DWork}</th>
+			<th class="{$Absent_class}">{$label dt5 Absent}</th>
+			<th class="{$EarlyMins_class}">{$label dt5 EarlyMins}</th>
+			<th class="{$LateMins_class}">{$label dt5 LateMins}</th>
+			<th class="{$UnderstimeMins_class}">{$label dt5 UnderstimeMins}</th>
+			<th class="{$BreakLateMins_class}">{$label dt5 BreakLateMins}</th>
+			<th class="{$HolidayType_class}">{$label dt5 HolidayType}</th>
+			<th class="{$TempOT_class}">{$label dt5 TempOT}</th>
+			<th class="{$ApprovedOT_class}">{$label dt5 ApprovedOT}</th>
+			<th class="{$AOTMins_class}">{$label dt5 AOTMins}</th>
+			<th class="{$NDMins_class}">{$label dt5 NDMins}</th>
+			<th class="{$ApprovedNightDiff_class}">{$label dt5 ApprovedNightDiff}</th>
+			<th class="{$ANDiff_class}">{$label dt5 ANDiff}</th>
+			<th class="{$ApprovedRD_class}">{$label dt5 ApprovedRD}</th>
+			<th class="{$RDMins_class}">{$label dt5 RDMins}</th>
+			<th class="{$RHolidayHrs_class}">{$label dt5 RHolidayHrs}</th>
+			<th class="{$SHolidayHrs_class}">{$label dt5 SHolidayHrs}</th>
+			<th class="{$CHolidayHrs_class}">{$label dt5 CHolidayHrs}</th>
+			<th class="{$VL_class}">{$label dt5 VL}</th>
+			<th class="{$SL_class}">{$label dt5 SL}</th>
+			<th class="{$EL_class}">{$label dt5 EL}</th>
+			<th class="{$PL_class}">{$label dt5 PL}</th>
+			<th class="{$TrO_class}">{$label dt5 TrO}</th>
+			<th class="{$RegOT_class}">{$label dt5 RegOT}</th>
+			<th class="{$RHOT_class}">{$label dt5 RHOT}</th>
+			<th class="{$SHOT_class}">{$label dt5 SHOT}</th>
+			<th class="{$CHOT_class}">{$label dt5 CHOT}</th>
+			<th class="{$RDOT_class}">{$label dt5 RDOT}</th>
+			<th class="{$RegND_class}">{$label dt5 RegND}</th>
+			<th class="{$RHND_class}">{$label dt5 RHND}</th>
+			<th class="{$SHND_class}">{$label dt5 SHND}</th>
+			<th class="{$CHND_class}">{$label dt5 CHND}</th>
+			<th class="{$RDND_class}">{$label dt5 RDND}</th>
+			<th class="{$Rlink_class}">{$label dt5 Rlink}</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="{$ScID_class}">{$ScID_mastervalue}</td>
+			<td class="{$EmployeeID_class}">{$EmployeeID_mastervalue}</td>
+			<td class="{$UserName_class}">{$UserName_mastervalue}</td>
+			<td class="{$Employer_class}">{$Employer_mastervalue}</td>
+			<td class="{$Division_class}">{$Division_mastervalue}</td>
+			<td class="{$Department_class}">{$Department_mastervalue}</td>
+			<td class="{$WageType_class}">{$WageType_mastervalue}</td>
+			<td class="{$SDate_class}">{$SDate_mastervalue}</td>
+			<td class="{$DayIs_class}">{$DayIs_mastervalue}</td>
+			<td class="{$RestDay_class}">{$RestDay_mastervalue}</td>
+			<td class="{$STimeIn_class}">{$STimeIn_mastervalue}</td>
+			<td class="{$STimeOut_class}">{$STimeOut_mastervalue}</td>
+			<td class="{$TimeIn_class}">{$TimeIn_mastervalue}</td>
+			<td class="{$TimeOut_class}">{$TimeOut_mastervalue}</td>
+			<td class="{$AfterBreakLogOut_class}">{$AfterBreakLogOut_mastervalue}</td>
+			<td class="{$AfterBreakLog_class}">{$AfterBreakLog_mastervalue}</td>
+			<td class="{$MisPunched_class}">{$MisPunched_mastervalue}</td>
+			<td class="{$RegWD_class}">{$RegWD_mastervalue}</td>
+			<td class="{$DWork_class}">{$DWork_mastervalue}</td>
+			<td class="{$Absent_class}">{$Absent_mastervalue}</td>
+			<td class="{$EarlyMins_class}">{$EarlyMins_mastervalue}</td>
+			<td class="{$LateMins_class}">{$LateMins_mastervalue}</td>
+			<td class="{$UnderstimeMins_class}">{$UnderstimeMins_mastervalue}</td>
+			<td class="{$BreakLateMins_class}">{$BreakLateMins_mastervalue}</td>
+			<td class="{$HolidayType_class}">{$HolidayType_mastervalue}</td>
+			<td class="{$TempOT_class}">{$TempOT_mastervalue}</td>
+			<td class="{$ApprovedOT_class}">{$ApprovedOT_mastervalue}</td>
+			<td class="{$AOTMins_class}">{$AOTMins_mastervalue}</td>
+			<td class="{$NDMins_class}">{$NDMins_mastervalue}</td>
+			<td class="{$ApprovedNightDiff_class}">{$ApprovedNightDiff_mastervalue}</td>
+			<td class="{$ANDiff_class}">{$ANDiff_mastervalue}</td>
+			<td class="{$ApprovedRD_class}">{$ApprovedRD_mastervalue}</td>
+			<td class="{$RDMins_class}">{$RDMins_mastervalue}</td>
+			<td class="{$RHolidayHrs_class}">{$RHolidayHrs_mastervalue}</td>
+			<td class="{$SHolidayHrs_class}">{$SHolidayHrs_mastervalue}</td>
+			<td class="{$CHolidayHrs_class}">{$CHolidayHrs_mastervalue}</td>
+			<td class="{$VL_class}">{$VL_mastervalue}</td>
+			<td class="{$SL_class}">{$SL_mastervalue}</td>
+			<td class="{$EL_class}">{$EL_mastervalue}</td>
+			<td class="{$PL_class}">{$PL_mastervalue}</td>
+			<td class="{$TrO_class}">{$TrO_mastervalue}</td>
+			<td class="{$RegOT_class}">{$RegOT_mastervalue}</td>
+			<td class="{$RHOT_class}">{$RHOT_mastervalue}</td>
+			<td class="{$SHOT_class}">{$SHOT_mastervalue}</td>
+			<td class="{$CHOT_class}">{$CHOT_mastervalue}</td>
+			<td class="{$RDOT_class}">{$RDOT_mastervalue}</td>
+			<td class="{$RegND_class}">{$RegND_mastervalue}</td>
+			<td class="{$RHND_class}">{$RHND_mastervalue}</td>
+			<td class="{$SHND_class}">{$SHND_mastervalue}</td>
+			<td class="{$CHND_class}">{$CHND_mastervalue}</td>
+			<td class="{$RDND_class}">{$RDND_mastervalue}</td>
+			<td class="{$Rlink_class}">{$Rlink_mastervalue}</td>
+		</tr>
+	</tbody>
+
+</table> 
+
+
+
+
+{END container_mastergrid}
+
+</div>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD> 
+<META http-equiv="X-UA-Compatible" content="IE=Edge"> 
+<META name="viewport" content="width=device-width, initial-scale=1.0"> 
+<TITLE>{$pagetitle}</TITLE> 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<LINK href="styles/default.css" rel="stylesheet" type="text/css"> {BEGIN rtlCSS}<LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">{END rtlCSS} {BEGIN styleCSSFiles}<LINK href="{$stylepath}" rel="stylesheet" type="text/css">{END styleCSSFiles}      
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001"></HEAD> 
+<BODY class="{$stylename} function-login" {$bodyattrs}>{BEGIN body}
+
+<STYLE>
+			{$containerCss}
+		</STYLE>
+ 
+<DIV class="bs-top">
+{BEGIN container_page}<DIV class="container" data-container="page" data-pageid="{$pageid}" {$page_chiddenattr}>
+{BEGIN container_page_1}<DIV class="bs-standalone-page col-md-6 col-md-offset-3" data-container="page_1" data-pageid="{$pageid}" {$page_1_chiddenattr}>
+{BEGIN container_panel}<DIV class="bs-pagepanel panel panel-primary" data-container="panel" data-pageid="{$pageid}" {$panel_chiddenattr}>
+{BEGIN container_header}<DIV class="panel-heading" data-container="header" data-pageid="{$pageid}" {$header_chiddenattr}>
+{BEGIN loginheader}<H3 class="panel-title" data-brick="loginheader" data-pageid="{$pageid}" {$loginheader_hiddenattr}>
+{$pagetitlelabel login} </H3>{END loginheader}</DIV>
+{END container_header}{BEGIN container_body}<DIV class="panel-body" data-container="body" data-pageid="{$pageid}" {$body_chiddenattr}>
+{BEGIN container_header_1}<DIV class="col-md-12" data-container="header_1" data-pageid="{$pageid}" {$header_1_chiddenattr}>
+{BEGIN message_block}<DIV class="alert {$message_class}" role="alert" data-brick="message" data-pageid="{$pageid}" {$message_hiddenattr}>
+{$message}</DIV>{END message_block}</DIV>
+{END container_header_1}{BEGIN container_fields}<DIV class="col-md-12" data-container="fields" data-pageid="{$pageid}" {$fields_chiddenattr}>
+<DIV class="form-horizontal" role="form" data-brick="loginfields" data-pageid="{$pageid}" {$loginfields_hiddenattr}>{BEGIN main_loginfields}
+<DIV class="form-group"><LABEL class="col-md-4 control-label" for="username">{BEGIN username_label}Username: {END username_label}</LABEL> 
+<DIV class="col-md-6"><INPUT name="username" class="form-control" id="username" type="text" {$username_attrs}></DIV></DIV>
+<DIV class="form-group"><LABEL class="col-md-4 control-label" for="password">{BEGIN password_label}Password: {END password_label}</LABEL> 
+<DIV class="col-md-6"><INPUT name="password" class="form-control" id="password" type="password" {$password_attrs}></DIV></DIV>
+<DIV class="form-group">
+<DIV class="col-md-6 col-md-offset-4">
+<DIV class="checkbox"><LABEL><INPUT type="checkbox" {$rememberbox_attrs}> 
+{BEGIN remember_password_label}<SPAN>Remember me</SPAN> {END remember_password_label}</LABEL> </DIV></DIV></DIV>{END main_loginfields}</DIV></DIV>
+{END container_fields}{BEGIN container_header_2}<DIV class="col-md-8 col-md-offset-4" data-container="header_2" data-pageid="{$pageid}" {$header_2_chiddenattr}>{BEGIN loginbuttons}<SPAN data-brick="loginbuttons" data-pageid="{$pageid}" {$loginbuttons_hiddenattr}>{BEGIN signin_button}<BUTTON class="btn btn-primary" {$loginlink_attrs}>Sign 
+in</BUTTON> {END signin_button}{BEGIN continue_button}<BUTTON class="btn btn-primary" {$continuebutton_attrs}>Continue</BUTTON> 
+{END continue_button}{BEGIN guestlink_block}<DIV class="btn btn-link"><A {$guestlink_attrs}>Login as Guest</A></DIV> {END guestlink_block}</SPAN> {END loginbuttons}</DIV>{END container_header_2}</DIV>{END container_body}</DIV>
+{END container_panel}{BEGIN container_register}<DIV class="text-center col-md-12" data-container="register" data-pageid="{$pageid}" {$register_chiddenattr}><SPAN data-brick="bsloginregister" data-pageid="{$pageid}" {$bsloginregister_hiddenattr}></SPAN> 
+</DIV>{END container_register}</DIV>{END container_page_1}</DIV>{END container_page}</DIV>
+<DIV class="bs-middle"> 
+<DIV class="bs-topmiddle"></DIV>
+<DIV class="bs-left" {$blockattr_left}></DIV> 
+<DIV class="bs-center"></DIV> 
+<DIV class="bs-right"></DIV></DIV> 
+<DIV class="bs-bottom"></DIV>
+{$footer}{END body} </BODY></HTML>

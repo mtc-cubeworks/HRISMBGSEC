@@ -1,0 +1,214 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_pdf}
+<div {$pdf_chiddenattr} data-pageid="{$pageid}" data-container="pdf" class="   col-md-12 "> 
+
+{BEGIN printbuttons}
+
+{END printbuttons}
+
+
+
+</div>
+{END container_pdf}
+
+
+
+{BEGIN container_master}
+<div {$master_chiddenattr} data-pageid="{$pageid}" data-container="master" class="    "> 
+
+{BEGIN mastertable_block}
+<div class="panel panel-info table-panel">
+	<div class="panel-heading">
+		{$master_heading}
+	</div>
+	<div class="panel-body">
+		{$showmasterfile}
+		
+	</div>
+</div>
+
+{END mastertable_block}
+
+
+
+</div>
+{END container_master}
+
+
+
+{BEGIN container_pageheader}
+<div {$pageheader_chiddenattr} data-pageid="{$pageid}" data-container="pageheader" class="    "> 
+
+{BEGIN printheader}
+	<h2 {$printheader_hiddenattr} data-pageid="{$pageid}" data-brick="printheader" >{$pagetitlelabel emphistory print}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END printheader}
+
+
+{BEGIN page_number}
+<span>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></span>
+{END page_number}
+
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="table table-bordered rp-maintable" {$printgrid_hiddenattr} data-pageid="{$pageid}" data-brick="printgrid" >
+	<thead>
+	{BEGIN grid_header}
+		<tr class="{$gridHeader_class}" >
+		{BEGIN record_header}
+			{BEGIN EHID_fieldheadercolumn}
+			<th class="{$EHID_class}" {$EHID_style}  data-field="EHID">
+				{$label emphistory EHID}
+			</th>
+			{END EHID_fieldheadercolumn}
+			{BEGIN DateIn_fieldheadercolumn}
+			<th class="{$DateIn_class}" {$DateIn_style}  data-field="DateIn">
+				{$label emphistory DateIn}
+			</th>
+			{END DateIn_fieldheadercolumn}
+			{BEGIN DateOut_fieldheadercolumn}
+			<th class="{$DateOut_class}" {$DateOut_style}  data-field="DateOut">
+				{$label emphistory DateOut}
+			</th>
+			{END DateOut_fieldheadercolumn}
+			{BEGIN Division_fieldheadercolumn}
+			<th class="{$Division_class}" {$Division_style}  data-field="Division">
+				{$label emphistory Division}
+			</th>
+			{END Division_fieldheadercolumn}
+			{BEGIN Department_fieldheadercolumn}
+			<th class="{$Department_class}" {$Department_style}  data-field="Department">
+				{$label emphistory Department}
+			</th>
+			{END Department_fieldheadercolumn}
+			{BEGIN Remarks_fieldheadercolumn}
+			<th class="{$Remarks_class}" {$Remarks_style}  data-field="Remarks">
+				{$label emphistory Remarks}
+			</th>
+			{END Remarks_fieldheadercolumn}
+			{BEGIN EmployeeiD_fieldheadercolumn}
+			<th class="{$EmployeeiD_class}" {$EmployeeiD_style}  data-field="EmployeeiD">
+				{$label emphistory EmployeeiD}
+			</th>
+			{END EmployeeiD_fieldheadercolumn}
+			{BEGIN endrecordheader_block}
+			<th class="rnr-cs">&nbsp;</th>
+			{END endrecordheader_block}
+		{END record_header}
+		</tr>
+	{END grid_header}
+	</thead>
+	
+	<tbody>	
+	{BEGIN grid_row}
+		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+			{BEGIN EHID_fieldcolumn}
+			<td  class="{$EHID_class}" {$EHID_style} {$recordattrs}>
+				{$EHID_value}
+			</td>
+			{END EHID_fieldcolumn}
+			{BEGIN DateIn_fieldcolumn}
+			<td  class="{$DateIn_class}" {$DateIn_style} {$recordattrs}>
+				{$DateIn_value}
+			</td>
+			{END DateIn_fieldcolumn}
+			{BEGIN DateOut_fieldcolumn}
+			<td  class="{$DateOut_class}" {$DateOut_style} {$recordattrs}>
+				{$DateOut_value}
+			</td>
+			{END DateOut_fieldcolumn}
+			{BEGIN Division_fieldcolumn}
+			<td  class="{$Division_class}" {$Division_style} {$recordattrs}>
+				{$Division_value}
+			</td>
+			{END Division_fieldcolumn}
+			{BEGIN Department_fieldcolumn}
+			<td  class="{$Department_class}" {$Department_style} {$recordattrs}>
+				{$Department_value}
+			</td>
+			{END Department_fieldcolumn}
+			{BEGIN Remarks_fieldcolumn}
+			<td  class="{$Remarks_class}" {$Remarks_style} {$recordattrs}>
+				{$Remarks_value}
+			</td>
+			{END Remarks_fieldcolumn}
+			{BEGIN EmployeeiD_fieldcolumn}
+			<td  class="{$EmployeeiD_class}" {$EmployeeiD_style} {$recordattrs}>
+				{$EmployeeiD_value}
+			</td>
+			{END EmployeeiD_fieldcolumn}
+			{BEGIN endrecord_block}
+			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+			{END endrecord_block}
+		{END grid_record}
+		</tr>
+{END grid_row}
+	</tbody>
+
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

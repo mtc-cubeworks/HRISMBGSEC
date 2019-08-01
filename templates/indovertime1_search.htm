@@ -1,0 +1,275 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_searchpage}
+<div {$searchpage_chiddenattr} data-pageid="{$pageid}" data-container="searchpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN searchheader}
+	<h2 {$bssearchheader_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchheader" >{$pagetitlelabel indovertime1 search}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END searchheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_searchpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$bssearchfields_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchfields" class="form-horizontal" role="form">
+<div class="container">
+	<div class="form-group">
+		<div class="col-md-12" >
+			&nbsp;
+		</div>
+	</div>
+</div>
+	{BEGIN iOTID_fieldblock}		
+	<div class="container {$fielddispclass_iOTID}" data-fieldname="iOTID">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_iOTID}">
+				{$label indovertime1 iOTID}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_iOTID}
+			</div>
+			<div class="col-md-4" >
+				{$iOTID_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$iOTID_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END iOTID_fieldblock}
+	{BEGIN DateCreated_fieldblock}		
+	<div class="container {$fielddispclass_DateCreated}" data-fieldname="DateCreated">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_DateCreated}">
+				{$label indovertime1 DateCreated}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_DateCreated}
+			</div>
+			<div class="col-md-4" >
+				{$DateCreated_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$DateCreated_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END DateCreated_fieldblock}
+	{BEGIN EmployeeID_fieldblock}		
+	<div class="container {$fielddispclass_EmployeeID}" data-fieldname="EmployeeID">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_EmployeeID}">
+				{$label indovertime1 EmployeeID}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_EmployeeID}
+			</div>
+			<div class="col-md-4" >
+				{$EmployeeID_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$EmployeeID_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END EmployeeID_fieldblock}
+	{BEGIN OTDate_fieldblock}		
+	<div class="container {$fielddispclass_OTDate}" data-fieldname="OTDate">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_OTDate}">
+				{$label indovertime1 OTDate}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_OTDate}
+			</div>
+			<div class="col-md-4" >
+				{$OTDate_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$OTDate_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END OTDate_fieldblock}
+	{BEGIN FromTime_fieldblock}		
+	<div class="container {$fielddispclass_FromTime}" data-fieldname="FromTime">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_FromTime}">
+				{$label indovertime1 FromTime}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_FromTime}
+			</div>
+			<div class="col-md-4" >
+				{$FromTime_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$FromTime_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END FromTime_fieldblock}
+	{BEGIN ToTime_fieldblock}		
+	<div class="container {$fielddispclass_ToTime}" data-fieldname="ToTime">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_ToTime}">
+				{$label indovertime1 ToTime}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_ToTime}
+			</div>
+			<div class="col-md-4" >
+				{$ToTime_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$ToTime_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END ToTime_fieldblock}
+	{BEGIN NoMins_fieldblock}		
+	<div class="container {$fielddispclass_NoMins}" data-fieldname="NoMins">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_NoMins}">
+				{$label indovertime1 NoMins}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_NoMins}
+			</div>
+			<div class="col-md-4" >
+				{$NoMins_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$NoMins_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END NoMins_fieldblock}
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container form-horizontal   "> 
+
+
+
+
+{BEGIN container_bbuttons}
+<div {$bbuttons_chiddenattr} data-pageid="{$pageid}" data-container="bbuttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-10 col-md-offset-2"> 
+
+{BEGIN searchbuttons}
+{BEGIN search_button}
+<button class="btn btn-primary" {$searchbutton_attrs}>Search</button>
+{END search_button} 
+{BEGIN reset_button}
+<button class="btn btn-default" {$resetbutton_attrs}>Reset</button>
+{END reset_button}
+{BEGIN back_button}
+<button class="btn btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{END searchbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+</div>
+{END container_bbuttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

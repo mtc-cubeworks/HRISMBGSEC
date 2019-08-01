@@ -1,0 +1,257 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_searchpage}
+<div {$searchpage_chiddenattr} data-pageid="{$pageid}" data-container="searchpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN searchheader}
+	<h2 {$bssearchheader_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchheader" >{$pagetitlelabel controlin search}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END searchheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_searchpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$bssearchfields_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchfields" class="form-horizontal" role="form">
+<div class="container">
+	<div class="form-group">
+		<div class="col-md-12" >
+			&nbsp;
+		</div>
+	</div>
+</div>
+	{BEGIN Division_fieldblock}		
+	<div class="container {$fielddispclass_Division}" data-fieldname="Division">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Division}">
+				{$label controlin Division}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Division}
+			</div>
+			<div class="col-md-4" >
+				{$Division_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Division_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Division_fieldblock}
+	{BEGIN iID_fieldblock}		
+	<div class="container {$fielddispclass_iID}" data-fieldname="iID">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_iID}">
+				{$label controlin iID}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_iID}
+			</div>
+			<div class="col-md-4" >
+				{$iID_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$iID_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END iID_fieldblock}
+	{BEGIN NoTimeInFrom_fieldblock}		
+	<div class="container {$fielddispclass_NoTimeInFrom}" data-fieldname="NoTimeInFrom">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_NoTimeInFrom}">
+				{$label controlin NoTimeInFrom}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_NoTimeInFrom}
+			</div>
+			<div class="col-md-4" >
+				{$NoTimeInFrom_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$NoTimeInFrom_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END NoTimeInFrom_fieldblock}
+	{BEGIN NoTimeInTo_fieldblock}		
+	<div class="container {$fielddispclass_NoTimeInTo}" data-fieldname="NoTimeInTo">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_NoTimeInTo}">
+				{$label controlin NoTimeInTo}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_NoTimeInTo}
+			</div>
+			<div class="col-md-4" >
+				{$NoTimeInTo_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$NoTimeInTo_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END NoTimeInTo_fieldblock}
+	{BEGIN NoTimeInFrom2_fieldblock}		
+	<div class="container {$fielddispclass_NoTimeInFrom2}" data-fieldname="NoTimeInFrom2">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_NoTimeInFrom2}">
+				{$label controlin NoTimeInFrom2}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_NoTimeInFrom2}
+			</div>
+			<div class="col-md-4" >
+				{$NoTimeInFrom2_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$NoTimeInFrom2_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END NoTimeInFrom2_fieldblock}
+	{BEGIN NoTimeInTo2_fieldblock}		
+	<div class="container {$fielddispclass_NoTimeInTo2}" data-fieldname="NoTimeInTo2">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_NoTimeInTo2}">
+				{$label controlin NoTimeInTo2}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_NoTimeInTo2}
+			</div>
+			<div class="col-md-4" >
+				{$NoTimeInTo2_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$NoTimeInTo2_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END NoTimeInTo2_fieldblock}
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container form-horizontal   "> 
+
+
+
+
+{BEGIN container_bbuttons}
+<div {$bbuttons_chiddenattr} data-pageid="{$pageid}" data-container="bbuttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-10 col-md-offset-2"> 
+
+{BEGIN searchbuttons}
+{BEGIN search_button}
+<button class="btn btn-primary" {$searchbutton_attrs}>Search</button>
+{END search_button} 
+{BEGIN reset_button}
+<button class="btn btn-default" {$resetbutton_attrs}>Reset</button>
+{END reset_button}
+{BEGIN back_button}
+<button class="btn btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{END searchbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+</div>
+{END container_bbuttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

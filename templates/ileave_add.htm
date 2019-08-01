@@ -1,0 +1,307 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_editpage}
+<div {$editpage_chiddenattr} data-pageid="{$pageid}" data-container="editpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-9 col-md-offset-3"> 
+
+{BEGIN addheader}
+	<h2 {$addheader_hiddenattr} data-pageid="{$pageid}" data-brick="addheader" >{$pagetitlelabel ileave add}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END addheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+
+
+{BEGIN container_message}
+<div {$message_chiddenattr} data-pageid="{$pageid}" data-container="message" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN message_block}
+<div {$message_hiddenattr} data-pageid="{$pageid}" data-brick="message" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		<button class="btn btn-sm btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>View</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>Edit</button>
+{END edit_page_button}
+</div>
+</div>
+
+{END message_block}
+
+
+
+</div>
+{END container_message}
+
+
+
+
+
+
+
+</div>
+{END container_editpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$addfields_hiddenattr} data-pageid="{$pageid}" data-brick="addfields" class="form-horizontal" role="form">
+			{BEGIN LeaveType_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_LeaveType}" data-fieldname="LeaveType" data-signal-error-for="LeaveType{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_LeaveType}">
+		{BEGIN LeaveType_label}{$label ileave LeaveType}{END LeaveType_label}
+	</label>
+	<div class="col-md-6" >
+		{$LeaveType_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="LeaveType">
+		<div class="text-muted" >
+		{$tooltip ileave LeaveType}
+		</div>
+	</div>
+</div>
+</div>
+{END LeaveType_fieldblock}
+
+			{BEGIN EmployeeID_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_EmployeeID}" data-fieldname="EmployeeID" data-signal-error-for="EmployeeID{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_EmployeeID}">
+		{BEGIN EmployeeID_label}{$label ileave EmployeeID}{END EmployeeID_label}
+	</label>
+	<div class="col-md-6" >
+		{$EmployeeID_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="EmployeeID">
+		<div class="text-muted" >
+		{$tooltip ileave EmployeeID}
+		</div>
+	</div>
+</div>
+</div>
+{END EmployeeID_fieldblock}
+
+			{BEGIN LDate_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_LDate}" data-fieldname="LDate" data-signal-error-for="LDate{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_LDate}">
+		{BEGIN LDate_label}{$label ileave LDate}{END LDate_label}
+	</label>
+	<div class="col-md-6" >
+		{$LDate_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="LDate">
+		<div class="text-muted" >
+		{$tooltip ileave LDate}
+		</div>
+	</div>
+</div>
+</div>
+{END LDate_fieldblock}
+
+			{BEGIN FirtHalf_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_FirtHalf}" data-fieldname="FirtHalf" data-signal-error-for="FirtHalf{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_FirtHalf}">
+		{BEGIN FirtHalf_label}{$label ileave FirtHalf}{END FirtHalf_label}
+	</label>
+	<div class="col-md-6" >
+		{$FirtHalf_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="FirtHalf">
+		<div class="text-muted" >
+		{$tooltip ileave FirtHalf}
+		</div>
+	</div>
+</div>
+</div>
+{END FirtHalf_fieldblock}
+
+			{BEGIN SecondHalf_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_SecondHalf}" data-fieldname="SecondHalf" data-signal-error-for="SecondHalf{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_SecondHalf}">
+		{BEGIN SecondHalf_label}{$label ileave SecondHalf}{END SecondHalf_label}
+	</label>
+	<div class="col-md-6" >
+		{$SecondHalf_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="SecondHalf">
+		<div class="text-muted" >
+		{$tooltip ileave SecondHalf}
+		</div>
+	</div>
+</div>
+</div>
+{END SecondHalf_fieldblock}
+
+			{BEGIN Days_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Days}" data-fieldname="Days" data-signal-error-for="Days{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Days}">
+		{BEGIN Days_label}{$label ileave Days}{END Days_label}
+	</label>
+	<div class="col-md-6" >
+		{$Days_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Days">
+		<div class="text-muted" >
+		{$tooltip ileave Days}
+		</div>
+	</div>
+</div>
+</div>
+{END Days_fieldblock}
+
+			{BEGIN LWOP_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_LWOP}" data-fieldname="LWOP" data-signal-error-for="LWOP{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_LWOP}">
+		{BEGIN LWOP_label}{$label ileave LWOP}{END LWOP_label}
+	</label>
+	<div class="col-md-6" >
+		{$LWOP_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="LWOP">
+		<div class="text-muted" >
+		{$tooltip ileave LWOP}
+		</div>
+	</div>
+</div>
+</div>
+{END LWOP_fieldblock}
+
+
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_buttons}
+<div {$buttons_chiddenattr} data-pageid="{$pageid}" data-container="buttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-3 col-md-offset-3"> 
+
+{BEGIN addbuttons}
+	{BEGIN save_button}
+	<button class="btn btn-primary" {$savebutton_attrs}>Save</button>
+	{END save_button}
+	{BEGIN reset_button}
+	<button class="btn btn-default" id="resetButton{$id}">Reset</button>
+	{END reset_button}
+	{BEGIN back_button}
+		<button class="btn btn-default" id="backButton{$id}">Back to list</button>
+	{END back_button}
+	{BEGIN cancel_button}
+	<a href="#" class="btn btn-default" id="cancelButton{$id}">Cancel</a>
+	{END cancel_button}
+
+{END addbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+</div>
+{END container_buttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

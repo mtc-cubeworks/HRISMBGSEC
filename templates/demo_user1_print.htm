@@ -1,0 +1,926 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_pdf}
+<div {$pdf_chiddenattr} data-pageid="{$pageid}" data-container="pdf" class="   col-md-12 "> 
+
+{BEGIN printbuttons}
+
+{END printbuttons}
+
+
+
+</div>
+{END container_pdf}
+
+
+
+
+
+{BEGIN container_pageheader}
+<div {$pageheader_chiddenattr} data-pageid="{$pageid}" data-container="pageheader" class="    "> 
+
+{BEGIN printheader}
+	<h2 {$printheader_hiddenattr} data-pageid="{$pageid}" data-brick="printheader" >{$pagetitlelabel demo_user1 print}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END printheader}
+
+
+{BEGIN page_number}
+<span>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></span>
+{END page_number}
+
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="table table-bordered rp-maintable" {$printgrid_hiddenattr} data-pageid="{$pageid}" data-brick="printgrid" >
+	<thead>
+	{BEGIN grid_header}
+		<tr class="{$gridHeader_class}" >
+		{BEGIN record_header}
+			{BEGIN EmployeeID_fieldheadercolumn}
+			<th class="{$EmployeeID_class}" {$EmployeeID_style}  data-field="EmployeeID">
+				{$label demo_user1 EmployeeID}
+			</th>
+			{END EmployeeID_fieldheadercolumn}
+			{BEGIN IDNo_fieldheadercolumn}
+			<th class="{$IDNo_class}" {$IDNo_style}  data-field="IDNo">
+				{$label demo_user1 IDNo}
+			</th>
+			{END IDNo_fieldheadercolumn}
+			{BEGIN Photo_fieldheadercolumn}
+			<th class="{$Photo_class}" {$Photo_style}  data-field="Photo">
+				{$label demo_user1 Photo}
+			</th>
+			{END Photo_fieldheadercolumn}
+			{BEGIN user_name_fieldheadercolumn}
+			<th class="{$user_name_class}" {$user_name_style}  data-field="user_name">
+				{$label demo_user1 user_name}
+			</th>
+			{END user_name_fieldheadercolumn}
+			{BEGIN Employer_fieldheadercolumn}
+			<th class="{$Employer_class}" {$Employer_style}  data-field="Employer">
+				{$label demo_user1 Employer}
+			</th>
+			{END Employer_fieldheadercolumn}
+			{BEGIN Division_fieldheadercolumn}
+			<th class="{$Division_class}" {$Division_style}  data-field="Division">
+				{$label demo_user1 Division}
+			</th>
+			{END Division_fieldheadercolumn}
+			{BEGIN Department_fieldheadercolumn}
+			<th class="{$Department_class}" {$Department_style}  data-field="Department">
+				{$label demo_user1 Department}
+			</th>
+			{END Department_fieldheadercolumn}
+			{BEGIN HiredDate_fieldheadercolumn}
+			<th class="{$HiredDate_class}" {$HiredDate_style}  data-field="HiredDate">
+				{$label demo_user1 HiredDate}
+			</th>
+			{END HiredDate_fieldheadercolumn}
+			{BEGIN Inactive_fieldheadercolumn}
+			<th class="{$Inactive_class}" {$Inactive_style}  data-field="Inactive">
+				{$label demo_user1 Inactive}
+			</th>
+			{END Inactive_fieldheadercolumn}
+			{BEGIN ExitDate_fieldheadercolumn}
+			<th class="{$ExitDate_class}" {$ExitDate_style}  data-field="ExitDate">
+				{$label demo_user1 ExitDate}
+			</th>
+			{END ExitDate_fieldheadercolumn}
+			{BEGIN Status_fieldheadercolumn}
+			<th class="{$Status_class}" {$Status_style}  data-field="Status">
+				{$label demo_user1 Status}
+			</th>
+			{END Status_fieldheadercolumn}
+			{BEGIN Position_fieldheadercolumn}
+			<th class="{$Position_class}" {$Position_style}  data-field="Position">
+				{$label demo_user1 Position}
+			</th>
+			{END Position_fieldheadercolumn}
+			{BEGIN Superior_fieldheadercolumn}
+			<th class="{$Superior_class}" {$Superior_style}  data-field="Superior">
+				{$label demo_user1 Superior}
+			</th>
+			{END Superior_fieldheadercolumn}
+			{BEGIN Mobile_fieldheadercolumn}
+			<th class="{$Mobile_class}" {$Mobile_style}  data-field="Mobile">
+				{$label demo_user1 Mobile}
+			</th>
+			{END Mobile_fieldheadercolumn}
+			{BEGIN Address_fieldheadercolumn}
+			<th class="{$Address_class}" {$Address_style}  data-field="Address">
+				{$label demo_user1 Address}
+			</th>
+			{END Address_fieldheadercolumn}
+			{BEGIN Birthday_fieldheadercolumn}
+			<th class="{$Birthday_class}" {$Birthday_style}  data-field="Birthday">
+				{$label demo_user1 Birthday}
+			</th>
+			{END Birthday_fieldheadercolumn}
+			{BEGIN Email_fieldheadercolumn}
+			<th class="{$Email_class}" {$Email_style}  data-field="Email">
+				{$label demo_user1 Email}
+			</th>
+			{END Email_fieldheadercolumn}
+			{BEGIN SSSNo_fieldheadercolumn}
+			<th class="{$SSSNo_class}" {$SSSNo_style}  data-field="SSSNo">
+				{$label demo_user1 SSSNo}
+			</th>
+			{END SSSNo_fieldheadercolumn}
+			{BEGIN PagIbigNo_fieldheadercolumn}
+			<th class="{$PagIbigNo_class}" {$PagIbigNo_style}  data-field="PagIbigNo">
+				{$label demo_user1 PagIbigNo}
+			</th>
+			{END PagIbigNo_fieldheadercolumn}
+			{BEGIN PhilHealthNo_fieldheadercolumn}
+			<th class="{$PhilHealthNo_class}" {$PhilHealthNo_style}  data-field="PhilHealthNo">
+				{$label demo_user1 PhilHealthNo}
+			</th>
+			{END PhilHealthNo_fieldheadercolumn}
+			{BEGIN TIN_fieldheadercolumn}
+			<th class="{$TIN_class}" {$TIN_style}  data-field="TIN">
+				{$label demo_user1 TIN}
+			</th>
+			{END TIN_fieldheadercolumn}
+			{BEGIN Bank_fieldheadercolumn}
+			<th class="{$Bank_class}" {$Bank_style}  data-field="Bank">
+				{$label demo_user1 Bank}
+			</th>
+			{END Bank_fieldheadercolumn}
+			{BEGIN AccountNo_fieldheadercolumn}
+			<th class="{$AccountNo_class}" {$AccountNo_style}  data-field="AccountNo">
+				{$label demo_user1 AccountNo}
+			</th>
+			{END AccountNo_fieldheadercolumn}
+			{BEGIN AllowableSickLeave_fieldheadercolumn}
+			<th class="{$AllowableSickLeave_class}" {$AllowableSickLeave_style}  data-field="AllowableSickLeave">
+				{$label demo_user1 AllowableSickLeave}
+			</th>
+			{END AllowableSickLeave_fieldheadercolumn}
+			{BEGIN AllowableVacationLeave_fieldheadercolumn}
+			<th class="{$AllowableVacationLeave_class}" {$AllowableVacationLeave_style}  data-field="AllowableVacationLeave">
+				{$label demo_user1 AllowableVacationLeave}
+			</th>
+			{END AllowableVacationLeave_fieldheadercolumn}
+			{BEGIN AllowableEmergencyLeave_fieldheadercolumn}
+			<th class="{$AllowableEmergencyLeave_class}" {$AllowableEmergencyLeave_style}  data-field="AllowableEmergencyLeave">
+				{$label demo_user1 AllowableEmergencyLeave}
+			</th>
+			{END AllowableEmergencyLeave_fieldheadercolumn}
+			{BEGIN AllowablePaternityLeave_fieldheadercolumn}
+			<th class="{$AllowablePaternityLeave_class}" {$AllowablePaternityLeave_style}  data-field="AllowablePaternityLeave">
+				{$label demo_user1 AllowablePaternityLeave}
+			</th>
+			{END AllowablePaternityLeave_fieldheadercolumn}
+			{BEGIN EmployeeType_fieldheadercolumn}
+			<th class="{$EmployeeType_class}" {$EmployeeType_style}  data-field="EmployeeType">
+				{$label demo_user1 EmployeeType}
+			</th>
+			{END EmployeeType_fieldheadercolumn}
+			{BEGIN Level_fieldheadercolumn}
+			<th class="{$Level_class}" {$Level_style}  data-field="Level">
+				{$label demo_user1 Level}
+			</th>
+			{END Level_fieldheadercolumn}
+			{BEGIN DeMinimis_fieldheadercolumn}
+			<th class="{$DeMinimis_class}" {$DeMinimis_style}  data-field="DeMinimis">
+				{$label demo_user1 DeMinimis}
+			</th>
+			{END DeMinimis_fieldheadercolumn}
+			{BEGIN BasicMonthlyPay_fieldheadercolumn}
+			<th class="{$BasicMonthlyPay_class}" {$BasicMonthlyPay_style}  data-field="BasicMonthlyPay">
+				{$label demo_user1 BasicMonthlyPay}
+			</th>
+			{END BasicMonthlyPay_fieldheadercolumn}
+			{BEGIN BasicDailyPay_fieldheadercolumn}
+			<th class="{$BasicDailyPay_class}" {$BasicDailyPay_style}  data-field="BasicDailyPay">
+				{$label demo_user1 BasicDailyPay}
+			</th>
+			{END BasicDailyPay_fieldheadercolumn}
+			{BEGIN ExcludeContributionOnPayroll_fieldheadercolumn}
+			<th class="{$ExcludeContributionOnPayroll_class}" {$ExcludeContributionOnPayroll_style}  data-field="ExcludeContributionOnPayroll">
+				{$label demo_user1 ExcludeContributionOnPayroll}
+			</th>
+			{END ExcludeContributionOnPayroll_fieldheadercolumn}
+			{BEGIN DoNotUpdateContributions_fieldheadercolumn}
+			<th class="{$DoNotUpdateContributions_class}" {$DoNotUpdateContributions_style}  data-field="DoNotUpdateContributions">
+				{$label demo_user1 DoNotUpdateContributions}
+			</th>
+			{END DoNotUpdateContributions_fieldheadercolumn}
+			{BEGIN SSSEE_fieldheadercolumn}
+			<th class="{$SSSEE_class}" {$SSSEE_style}  data-field="SSSEE">
+				{$label demo_user1 SSSEE}
+			</th>
+			{END SSSEE_fieldheadercolumn}
+			{BEGIN SSSER_fieldheadercolumn}
+			<th class="{$SSSER_class}" {$SSSER_style}  data-field="SSSER">
+				{$label demo_user1 SSSER}
+			</th>
+			{END SSSER_fieldheadercolumn}
+			{BEGIN SSSEC_fieldheadercolumn}
+			<th class="{$SSSEC_class}" {$SSSEC_style}  data-field="SSSEC">
+				{$label demo_user1 SSSEC}
+			</th>
+			{END SSSEC_fieldheadercolumn}
+			{BEGIN PhilHealthEE_fieldheadercolumn}
+			<th class="{$PhilHealthEE_class}" {$PhilHealthEE_style}  data-field="PhilHealthEE">
+				{$label demo_user1 PhilHealthEE}
+			</th>
+			{END PhilHealthEE_fieldheadercolumn}
+			{BEGIN PhilHealthER_fieldheadercolumn}
+			<th class="{$PhilHealthER_class}" {$PhilHealthER_style}  data-field="PhilHealthER">
+				{$label demo_user1 PhilHealthER}
+			</th>
+			{END PhilHealthER_fieldheadercolumn}
+			{BEGIN PagIbigEE_fieldheadercolumn}
+			<th class="{$PagIbigEE_class}" {$PagIbigEE_style}  data-field="PagIbigEE">
+				{$label demo_user1 PagIbigEE}
+			</th>
+			{END PagIbigEE_fieldheadercolumn}
+			{BEGIN PagIbigER_fieldheadercolumn}
+			<th class="{$PagIbigER_class}" {$PagIbigER_style}  data-field="PagIbigER">
+				{$label demo_user1 PagIbigER}
+			</th>
+			{END PagIbigER_fieldheadercolumn}
+			{BEGIN PresetTax_fieldheadercolumn}
+			<th class="{$PresetTax_class}" {$PresetTax_style}  data-field="PresetTax">
+				{$label demo_user1 PresetTax}
+			</th>
+			{END PresetTax_fieldheadercolumn}
+			{BEGIN NoLateDeduction_fieldheadercolumn}
+			<th class="{$NoLateDeduction_class}" {$NoLateDeduction_style}  data-field="NoLateDeduction">
+				{$label demo_user1 NoLateDeduction}
+			</th>
+			{END NoLateDeduction_fieldheadercolumn}
+			{BEGIN GracePeriodMins_fieldheadercolumn}
+			<th class="{$GracePeriodMins_class}" {$GracePeriodMins_style}  data-field="GracePeriodMins">
+				{$label demo_user1 GracePeriodMins}
+			</th>
+			{END GracePeriodMins_fieldheadercolumn}
+			{BEGIN WithAdditionalBreaks_fieldheadercolumn}
+			<th class="{$WithAdditionalBreaks_class}" {$WithAdditionalBreaks_style}  data-field="WithAdditionalBreaks">
+				{$label demo_user1 WithAdditionalBreaks}
+			</th>
+			{END WithAdditionalBreaks_fieldheadercolumn}
+			{BEGIN IncludeBreakLate_fieldheadercolumn}
+			<th class="{$IncludeBreakLate_class}" {$IncludeBreakLate_style}  data-field="IncludeBreakLate">
+				{$label demo_user1 IncludeBreakLate}
+			</th>
+			{END IncludeBreakLate_fieldheadercolumn}
+			{BEGIN LateFixPenalty_fieldheadercolumn}
+			<th class="{$LateFixPenalty_class}" {$LateFixPenalty_style}  data-field="LateFixPenalty">
+				{$label demo_user1 LateFixPenalty}
+			</th>
+			{END LateFixPenalty_fieldheadercolumn}
+			{BEGIN Preparedby_fieldheadercolumn}
+			<th class="{$Preparedby_class}" {$Preparedby_style}  data-field="Preparedby">
+				{$label demo_user1 Preparedby}
+			</th>
+			{END Preparedby_fieldheadercolumn}
+			{BEGIN Checked_fieldheadercolumn}
+			<th class="{$Checked_class}" {$Checked_style}  data-field="Checked">
+				{$label demo_user1 Checked}
+			</th>
+			{END Checked_fieldheadercolumn}
+			{BEGIN Checkedby_fieldheadercolumn}
+			<th class="{$Checkedby_class}" {$Checkedby_style}  data-field="Checkedby">
+				{$label demo_user1 Checkedby}
+			</th>
+			{END Checkedby_fieldheadercolumn}
+			{BEGIN CheckedDate_fieldheadercolumn}
+			<th class="{$CheckedDate_class}" {$CheckedDate_style}  data-field="CheckedDate">
+				{$label demo_user1 CheckedDate}
+			</th>
+			{END CheckedDate_fieldheadercolumn}
+			{BEGIN Approved_fieldheadercolumn}
+			<th class="{$Approved_class}" {$Approved_style}  data-field="Approved">
+				{$label demo_user1 Approved}
+			</th>
+			{END Approved_fieldheadercolumn}
+			{BEGIN Approvedby_fieldheadercolumn}
+			<th class="{$Approvedby_class}" {$Approvedby_style}  data-field="Approvedby">
+				{$label demo_user1 Approvedby}
+			</th>
+			{END Approvedby_fieldheadercolumn}
+			{BEGIN ApprovedDate_fieldheadercolumn}
+			<th class="{$ApprovedDate_class}" {$ApprovedDate_style}  data-field="ApprovedDate">
+				{$label demo_user1 ApprovedDate}
+			</th>
+			{END ApprovedDate_fieldheadercolumn}
+			{BEGIN user_id_fieldheadercolumn}
+			<th class="{$user_id_class}" {$user_id_style}  data-field="user_id">
+				{$label demo_user1 user_id}
+			</th>
+			{END user_id_fieldheadercolumn}
+			{BEGIN DateCreated_fieldheadercolumn}
+			<th class="{$DateCreated_class}" {$DateCreated_style}  data-field="DateCreated">
+				{$label demo_user1 DateCreated}
+			</th>
+			{END DateCreated_fieldheadercolumn}
+			{BEGIN endrecordheader_block}
+			<th class="rnr-cs">&nbsp;</th>
+			{END endrecordheader_block}
+		{END record_header}
+		</tr>
+	{END grid_header}
+	</thead>
+	
+	<tbody>	
+	{BEGIN grid_row}
+		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+			{BEGIN EmployeeID_fieldcolumn}
+			<td  class="{$EmployeeID_class}" {$EmployeeID_style} {$recordattrs}>
+				{$EmployeeID_value}
+			</td>
+			{END EmployeeID_fieldcolumn}
+			{BEGIN IDNo_fieldcolumn}
+			<td  class="{$IDNo_class}" {$IDNo_style} {$recordattrs}>
+				{$IDNo_value}
+			</td>
+			{END IDNo_fieldcolumn}
+			{BEGIN Photo_fieldcolumn}
+			<td  class="{$Photo_class}" {$Photo_style} {$recordattrs}>
+				{$Photo_value}
+			</td>
+			{END Photo_fieldcolumn}
+			{BEGIN user_name_fieldcolumn}
+			<td  class="{$user_name_class}" {$user_name_style} {$recordattrs}>
+				{$user_name_value}
+			</td>
+			{END user_name_fieldcolumn}
+			{BEGIN Employer_fieldcolumn}
+			<td  class="{$Employer_class}" {$Employer_style} {$recordattrs}>
+				{$Employer_value}
+			</td>
+			{END Employer_fieldcolumn}
+			{BEGIN Division_fieldcolumn}
+			<td  class="{$Division_class}" {$Division_style} {$recordattrs}>
+				{$Division_value}
+			</td>
+			{END Division_fieldcolumn}
+			{BEGIN Department_fieldcolumn}
+			<td  class="{$Department_class}" {$Department_style} {$recordattrs}>
+				{$Department_value}
+			</td>
+			{END Department_fieldcolumn}
+			{BEGIN HiredDate_fieldcolumn}
+			<td  class="{$HiredDate_class}" {$HiredDate_style} {$recordattrs}>
+				{$HiredDate_value}
+			</td>
+			{END HiredDate_fieldcolumn}
+			{BEGIN Inactive_fieldcolumn}
+			<td  class="{$Inactive_class}" {$Inactive_style} {$recordattrs}>
+				{$Inactive_value}
+			</td>
+			{END Inactive_fieldcolumn}
+			{BEGIN ExitDate_fieldcolumn}
+			<td  class="{$ExitDate_class}" {$ExitDate_style} {$recordattrs}>
+				{$ExitDate_value}
+			</td>
+			{END ExitDate_fieldcolumn}
+			{BEGIN Status_fieldcolumn}
+			<td  class="{$Status_class}" {$Status_style} {$recordattrs}>
+				{$Status_value}
+			</td>
+			{END Status_fieldcolumn}
+			{BEGIN Position_fieldcolumn}
+			<td  class="{$Position_class}" {$Position_style} {$recordattrs}>
+				{$Position_value}
+			</td>
+			{END Position_fieldcolumn}
+			{BEGIN Superior_fieldcolumn}
+			<td  class="{$Superior_class}" {$Superior_style} {$recordattrs}>
+				{$Superior_value}
+			</td>
+			{END Superior_fieldcolumn}
+			{BEGIN Mobile_fieldcolumn}
+			<td  class="{$Mobile_class}" {$Mobile_style} {$recordattrs}>
+				{$Mobile_value}
+			</td>
+			{END Mobile_fieldcolumn}
+			{BEGIN Address_fieldcolumn}
+			<td  class="{$Address_class}" {$Address_style} {$recordattrs}>
+				{$Address_value}
+			</td>
+			{END Address_fieldcolumn}
+			{BEGIN Birthday_fieldcolumn}
+			<td  class="{$Birthday_class}" {$Birthday_style} {$recordattrs}>
+				{$Birthday_value}
+			</td>
+			{END Birthday_fieldcolumn}
+			{BEGIN Email_fieldcolumn}
+			<td  class="{$Email_class}" {$Email_style} {$recordattrs}>
+				{$Email_value}
+			</td>
+			{END Email_fieldcolumn}
+			{BEGIN SSSNo_fieldcolumn}
+			<td  class="{$SSSNo_class}" {$SSSNo_style} {$recordattrs}>
+				{$SSSNo_value}
+			</td>
+			{END SSSNo_fieldcolumn}
+			{BEGIN PagIbigNo_fieldcolumn}
+			<td  class="{$PagIbigNo_class}" {$PagIbigNo_style} {$recordattrs}>
+				{$PagIbigNo_value}
+			</td>
+			{END PagIbigNo_fieldcolumn}
+			{BEGIN PhilHealthNo_fieldcolumn}
+			<td  class="{$PhilHealthNo_class}" {$PhilHealthNo_style} {$recordattrs}>
+				{$PhilHealthNo_value}
+			</td>
+			{END PhilHealthNo_fieldcolumn}
+			{BEGIN TIN_fieldcolumn}
+			<td  class="{$TIN_class}" {$TIN_style} {$recordattrs}>
+				{$TIN_value}
+			</td>
+			{END TIN_fieldcolumn}
+			{BEGIN Bank_fieldcolumn}
+			<td  class="{$Bank_class}" {$Bank_style} {$recordattrs}>
+				{$Bank_value}
+			</td>
+			{END Bank_fieldcolumn}
+			{BEGIN AccountNo_fieldcolumn}
+			<td  class="{$AccountNo_class}" {$AccountNo_style} {$recordattrs}>
+				{$AccountNo_value}
+			</td>
+			{END AccountNo_fieldcolumn}
+			{BEGIN AllowableSickLeave_fieldcolumn}
+			<td  class="{$AllowableSickLeave_class}" {$AllowableSickLeave_style} {$recordattrs}>
+				{$AllowableSickLeave_value}
+			</td>
+			{END AllowableSickLeave_fieldcolumn}
+			{BEGIN AllowableVacationLeave_fieldcolumn}
+			<td  class="{$AllowableVacationLeave_class}" {$AllowableVacationLeave_style} {$recordattrs}>
+				{$AllowableVacationLeave_value}
+			</td>
+			{END AllowableVacationLeave_fieldcolumn}
+			{BEGIN AllowableEmergencyLeave_fieldcolumn}
+			<td  class="{$AllowableEmergencyLeave_class}" {$AllowableEmergencyLeave_style} {$recordattrs}>
+				{$AllowableEmergencyLeave_value}
+			</td>
+			{END AllowableEmergencyLeave_fieldcolumn}
+			{BEGIN AllowablePaternityLeave_fieldcolumn}
+			<td  class="{$AllowablePaternityLeave_class}" {$AllowablePaternityLeave_style} {$recordattrs}>
+				{$AllowablePaternityLeave_value}
+			</td>
+			{END AllowablePaternityLeave_fieldcolumn}
+			{BEGIN EmployeeType_fieldcolumn}
+			<td  class="{$EmployeeType_class}" {$EmployeeType_style} {$recordattrs}>
+				{$EmployeeType_value}
+			</td>
+			{END EmployeeType_fieldcolumn}
+			{BEGIN Level_fieldcolumn}
+			<td  class="{$Level_class}" {$Level_style} {$recordattrs}>
+				{$Level_value}
+			</td>
+			{END Level_fieldcolumn}
+			{BEGIN DeMinimis_fieldcolumn}
+			<td  class="{$DeMinimis_class}" {$DeMinimis_style} {$recordattrs}>
+				{$DeMinimis_value}
+			</td>
+			{END DeMinimis_fieldcolumn}
+			{BEGIN BasicMonthlyPay_fieldcolumn}
+			<td  class="{$BasicMonthlyPay_class}" {$BasicMonthlyPay_style} {$recordattrs}>
+				{$BasicMonthlyPay_value}
+			</td>
+			{END BasicMonthlyPay_fieldcolumn}
+			{BEGIN BasicDailyPay_fieldcolumn}
+			<td  class="{$BasicDailyPay_class}" {$BasicDailyPay_style} {$recordattrs}>
+				{$BasicDailyPay_value}
+			</td>
+			{END BasicDailyPay_fieldcolumn}
+			{BEGIN ExcludeContributionOnPayroll_fieldcolumn}
+			<td  class="{$ExcludeContributionOnPayroll_class}" {$ExcludeContributionOnPayroll_style} {$recordattrs}>
+				{$ExcludeContributionOnPayroll_value}
+			</td>
+			{END ExcludeContributionOnPayroll_fieldcolumn}
+			{BEGIN DoNotUpdateContributions_fieldcolumn}
+			<td  class="{$DoNotUpdateContributions_class}" {$DoNotUpdateContributions_style} {$recordattrs}>
+				{$DoNotUpdateContributions_value}
+			</td>
+			{END DoNotUpdateContributions_fieldcolumn}
+			{BEGIN SSSEE_fieldcolumn}
+			<td  class="{$SSSEE_class}" {$SSSEE_style} {$recordattrs}>
+				{$SSSEE_value}
+			</td>
+			{END SSSEE_fieldcolumn}
+			{BEGIN SSSER_fieldcolumn}
+			<td  class="{$SSSER_class}" {$SSSER_style} {$recordattrs}>
+				{$SSSER_value}
+			</td>
+			{END SSSER_fieldcolumn}
+			{BEGIN SSSEC_fieldcolumn}
+			<td  class="{$SSSEC_class}" {$SSSEC_style} {$recordattrs}>
+				{$SSSEC_value}
+			</td>
+			{END SSSEC_fieldcolumn}
+			{BEGIN PhilHealthEE_fieldcolumn}
+			<td  class="{$PhilHealthEE_class}" {$PhilHealthEE_style} {$recordattrs}>
+				{$PhilHealthEE_value}
+			</td>
+			{END PhilHealthEE_fieldcolumn}
+			{BEGIN PhilHealthER_fieldcolumn}
+			<td  class="{$PhilHealthER_class}" {$PhilHealthER_style} {$recordattrs}>
+				{$PhilHealthER_value}
+			</td>
+			{END PhilHealthER_fieldcolumn}
+			{BEGIN PagIbigEE_fieldcolumn}
+			<td  class="{$PagIbigEE_class}" {$PagIbigEE_style} {$recordattrs}>
+				{$PagIbigEE_value}
+			</td>
+			{END PagIbigEE_fieldcolumn}
+			{BEGIN PagIbigER_fieldcolumn}
+			<td  class="{$PagIbigER_class}" {$PagIbigER_style} {$recordattrs}>
+				{$PagIbigER_value}
+			</td>
+			{END PagIbigER_fieldcolumn}
+			{BEGIN PresetTax_fieldcolumn}
+			<td  class="{$PresetTax_class}" {$PresetTax_style} {$recordattrs}>
+				{$PresetTax_value}
+			</td>
+			{END PresetTax_fieldcolumn}
+			{BEGIN NoLateDeduction_fieldcolumn}
+			<td  class="{$NoLateDeduction_class}" {$NoLateDeduction_style} {$recordattrs}>
+				{$NoLateDeduction_value}
+			</td>
+			{END NoLateDeduction_fieldcolumn}
+			{BEGIN GracePeriodMins_fieldcolumn}
+			<td  class="{$GracePeriodMins_class}" {$GracePeriodMins_style} {$recordattrs}>
+				{$GracePeriodMins_value}
+			</td>
+			{END GracePeriodMins_fieldcolumn}
+			{BEGIN WithAdditionalBreaks_fieldcolumn}
+			<td  class="{$WithAdditionalBreaks_class}" {$WithAdditionalBreaks_style} {$recordattrs}>
+				{$WithAdditionalBreaks_value}
+			</td>
+			{END WithAdditionalBreaks_fieldcolumn}
+			{BEGIN IncludeBreakLate_fieldcolumn}
+			<td  class="{$IncludeBreakLate_class}" {$IncludeBreakLate_style} {$recordattrs}>
+				{$IncludeBreakLate_value}
+			</td>
+			{END IncludeBreakLate_fieldcolumn}
+			{BEGIN LateFixPenalty_fieldcolumn}
+			<td  class="{$LateFixPenalty_class}" {$LateFixPenalty_style} {$recordattrs}>
+				{$LateFixPenalty_value}
+			</td>
+			{END LateFixPenalty_fieldcolumn}
+			{BEGIN Preparedby_fieldcolumn}
+			<td  class="{$Preparedby_class}" {$Preparedby_style} {$recordattrs}>
+				{$Preparedby_value}
+			</td>
+			{END Preparedby_fieldcolumn}
+			{BEGIN Checked_fieldcolumn}
+			<td  class="{$Checked_class}" {$Checked_style} {$recordattrs}>
+				{$Checked_value}
+			</td>
+			{END Checked_fieldcolumn}
+			{BEGIN Checkedby_fieldcolumn}
+			<td  class="{$Checkedby_class}" {$Checkedby_style} {$recordattrs}>
+				{$Checkedby_value}
+			</td>
+			{END Checkedby_fieldcolumn}
+			{BEGIN CheckedDate_fieldcolumn}
+			<td  class="{$CheckedDate_class}" {$CheckedDate_style} {$recordattrs}>
+				{$CheckedDate_value}
+			</td>
+			{END CheckedDate_fieldcolumn}
+			{BEGIN Approved_fieldcolumn}
+			<td  class="{$Approved_class}" {$Approved_style} {$recordattrs}>
+				{$Approved_value}
+			</td>
+			{END Approved_fieldcolumn}
+			{BEGIN Approvedby_fieldcolumn}
+			<td  class="{$Approvedby_class}" {$Approvedby_style} {$recordattrs}>
+				{$Approvedby_value}
+			</td>
+			{END Approvedby_fieldcolumn}
+			{BEGIN ApprovedDate_fieldcolumn}
+			<td  class="{$ApprovedDate_class}" {$ApprovedDate_style} {$recordattrs}>
+				{$ApprovedDate_value}
+			</td>
+			{END ApprovedDate_fieldcolumn}
+			{BEGIN user_id_fieldcolumn}
+			<td  class="{$user_id_class}" {$user_id_style} {$recordattrs}>
+				{$user_id_value}
+			</td>
+			{END user_id_fieldcolumn}
+			{BEGIN DateCreated_fieldcolumn}
+			<td  class="{$DateCreated_class}" {$DateCreated_style} {$recordattrs}>
+				{$DateCreated_value}
+			</td>
+			{END DateCreated_fieldcolumn}
+			{BEGIN endrecord_block}
+			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+			{END endrecord_block}
+		{END grid_record}
+		</tr>
+{END grid_row}
+	</tbody>
+
+{BEGIN totals_row}
+	<tfoot>
+		<tr class=" style1">
+		{BEGIN totals_record}
+			{BEGIN EmployeeID_fieldfootercolumn}
+			<td>
+						</td>
+			{END EmployeeID_fieldfootercolumn}
+			{BEGIN IDNo_fieldfootercolumn}
+			<td>
+						</td>
+			{END IDNo_fieldfootercolumn}
+			{BEGIN Photo_fieldfootercolumn}
+			<td>
+						</td>
+			{END Photo_fieldfootercolumn}
+			{BEGIN user_name_fieldfootercolumn}
+			<td>
+						</td>
+			{END user_name_fieldfootercolumn}
+			{BEGIN Employer_fieldfootercolumn}
+			<td>
+						</td>
+			{END Employer_fieldfootercolumn}
+			{BEGIN Division_fieldfootercolumn}
+			<td>
+						</td>
+			{END Division_fieldfootercolumn}
+			{BEGIN Department_fieldfootercolumn}
+			<td>
+						</td>
+			{END Department_fieldfootercolumn}
+			{BEGIN HiredDate_fieldfootercolumn}
+			<td>
+						</td>
+			{END HiredDate_fieldfootercolumn}
+			{BEGIN Inactive_fieldfootercolumn}
+			<td>
+						</td>
+			{END Inactive_fieldfootercolumn}
+			{BEGIN ExitDate_fieldfootercolumn}
+			<td>
+						</td>
+			{END ExitDate_fieldfootercolumn}
+			{BEGIN Status_fieldfootercolumn}
+			<td>
+						</td>
+			{END Status_fieldfootercolumn}
+			{BEGIN Position_fieldfootercolumn}
+			<td>
+						</td>
+			{END Position_fieldfootercolumn}
+			{BEGIN Superior_fieldfootercolumn}
+			<td>
+						</td>
+			{END Superior_fieldfootercolumn}
+			{BEGIN Mobile_fieldfootercolumn}
+			<td>
+						</td>
+			{END Mobile_fieldfootercolumn}
+			{BEGIN Address_fieldfootercolumn}
+			<td>
+						</td>
+			{END Address_fieldfootercolumn}
+			{BEGIN Birthday_fieldfootercolumn}
+			<td>
+						</td>
+			{END Birthday_fieldfootercolumn}
+			{BEGIN Email_fieldfootercolumn}
+			<td>
+						</td>
+			{END Email_fieldfootercolumn}
+			{BEGIN SSSNo_fieldfootercolumn}
+			<td>
+						</td>
+			{END SSSNo_fieldfootercolumn}
+			{BEGIN PagIbigNo_fieldfootercolumn}
+			<td>
+						</td>
+			{END PagIbigNo_fieldfootercolumn}
+			{BEGIN PhilHealthNo_fieldfootercolumn}
+			<td>
+						</td>
+			{END PhilHealthNo_fieldfootercolumn}
+			{BEGIN TIN_fieldfootercolumn}
+			<td>
+						</td>
+			{END TIN_fieldfootercolumn}
+			{BEGIN Bank_fieldfootercolumn}
+			<td>
+						</td>
+			{END Bank_fieldfootercolumn}
+			{BEGIN AccountNo_fieldfootercolumn}
+			<td>
+						</td>
+			{END AccountNo_fieldfootercolumn}
+			{BEGIN AllowableSickLeave_fieldfootercolumn}
+			<td>
+						</td>
+			{END AllowableSickLeave_fieldfootercolumn}
+			{BEGIN AllowableVacationLeave_fieldfootercolumn}
+			<td>
+						</td>
+			{END AllowableVacationLeave_fieldfootercolumn}
+			{BEGIN AllowableEmergencyLeave_fieldfootercolumn}
+			<td>
+						</td>
+			{END AllowableEmergencyLeave_fieldfootercolumn}
+			{BEGIN AllowablePaternityLeave_fieldfootercolumn}
+			<td>
+						</td>
+			{END AllowablePaternityLeave_fieldfootercolumn}
+			{BEGIN EmployeeType_fieldfootercolumn}
+			<td>
+						</td>
+			{END EmployeeType_fieldfootercolumn}
+			{BEGIN Level_fieldfootercolumn}
+			<td>
+						</td>
+			{END Level_fieldfootercolumn}
+			{BEGIN DeMinimis_fieldfootercolumn}
+			<td>
+						</td>
+			{END DeMinimis_fieldfootercolumn}
+			{BEGIN BasicMonthlyPay_fieldfootercolumn}
+			<td>
+							{BEGIN BasicMonthlyPay_showtotal}
+									Total:
+				{$BasicMonthlyPay_total}
+				{END BasicMonthlyPay_showtotal}
+			</td>
+			{END BasicMonthlyPay_fieldfootercolumn}
+			{BEGIN BasicDailyPay_fieldfootercolumn}
+			<td>
+							{BEGIN BasicDailyPay_showtotal}
+									Total:
+				{$BasicDailyPay_total}
+				{END BasicDailyPay_showtotal}
+			</td>
+			{END BasicDailyPay_fieldfootercolumn}
+			{BEGIN ExcludeContributionOnPayroll_fieldfootercolumn}
+			<td>
+						</td>
+			{END ExcludeContributionOnPayroll_fieldfootercolumn}
+			{BEGIN DoNotUpdateContributions_fieldfootercolumn}
+			<td>
+						</td>
+			{END DoNotUpdateContributions_fieldfootercolumn}
+			{BEGIN SSSEE_fieldfootercolumn}
+			<td>
+						</td>
+			{END SSSEE_fieldfootercolumn}
+			{BEGIN SSSER_fieldfootercolumn}
+			<td>
+						</td>
+			{END SSSER_fieldfootercolumn}
+			{BEGIN SSSEC_fieldfootercolumn}
+			<td>
+						</td>
+			{END SSSEC_fieldfootercolumn}
+			{BEGIN PhilHealthEE_fieldfootercolumn}
+			<td>
+						</td>
+			{END PhilHealthEE_fieldfootercolumn}
+			{BEGIN PhilHealthER_fieldfootercolumn}
+			<td>
+						</td>
+			{END PhilHealthER_fieldfootercolumn}
+			{BEGIN PagIbigEE_fieldfootercolumn}
+			<td>
+						</td>
+			{END PagIbigEE_fieldfootercolumn}
+			{BEGIN PagIbigER_fieldfootercolumn}
+			<td>
+						</td>
+			{END PagIbigER_fieldfootercolumn}
+			{BEGIN PresetTax_fieldfootercolumn}
+			<td>
+						</td>
+			{END PresetTax_fieldfootercolumn}
+			{BEGIN NoLateDeduction_fieldfootercolumn}
+			<td>
+						</td>
+			{END NoLateDeduction_fieldfootercolumn}
+			{BEGIN GracePeriodMins_fieldfootercolumn}
+			<td>
+						</td>
+			{END GracePeriodMins_fieldfootercolumn}
+			{BEGIN WithAdditionalBreaks_fieldfootercolumn}
+			<td>
+						</td>
+			{END WithAdditionalBreaks_fieldfootercolumn}
+			{BEGIN IncludeBreakLate_fieldfootercolumn}
+			<td>
+						</td>
+			{END IncludeBreakLate_fieldfootercolumn}
+			{BEGIN LateFixPenalty_fieldfootercolumn}
+			<td>
+						</td>
+			{END LateFixPenalty_fieldfootercolumn}
+			{BEGIN Preparedby_fieldfootercolumn}
+			<td>
+						</td>
+			{END Preparedby_fieldfootercolumn}
+			{BEGIN Checked_fieldfootercolumn}
+			<td>
+						</td>
+			{END Checked_fieldfootercolumn}
+			{BEGIN Checkedby_fieldfootercolumn}
+			<td>
+						</td>
+			{END Checkedby_fieldfootercolumn}
+			{BEGIN CheckedDate_fieldfootercolumn}
+			<td>
+						</td>
+			{END CheckedDate_fieldfootercolumn}
+			{BEGIN Approved_fieldfootercolumn}
+			<td>
+						</td>
+			{END Approved_fieldfootercolumn}
+			{BEGIN Approvedby_fieldfootercolumn}
+			<td>
+						</td>
+			{END Approvedby_fieldfootercolumn}
+			{BEGIN ApprovedDate_fieldfootercolumn}
+			<td>
+						</td>
+			{END ApprovedDate_fieldfootercolumn}
+			{BEGIN user_id_fieldfootercolumn}
+			<td>
+						</td>
+			{END user_id_fieldfootercolumn}
+			{BEGIN DateCreated_fieldfootercolumn}
+			<td>
+						</td>
+			{END DateCreated_fieldfootercolumn}
+			{BEGIN endrecordtotals_block}
+			<td class="rnr-cs"></td>
+			{END endrecordtotals_block}
+		{END totals_record}
+		</tr>
+	</tfoot>
+{END totals_row}
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

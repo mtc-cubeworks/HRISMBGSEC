@@ -1,0 +1,275 @@
+<div {$pageattrs}>
+
+{BEGIN container_column}
+<div class="rnr-c rnr-ch rnr-c-column">
+
+{BEGIN masterlist_title}
+<div  class="style1 rnr-bl rnr-b-masterlistheader {$brickclass_masterlistheader}"><a {$backtomasterlink_attrs} class="btn btn-link btn-xs">Back to {$backtomasterlink_caption}</a><span>{$pagetitlelabel payrolltab masterlist}</span></div>
+{END masterlist_title}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_column}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+	<style>
+	.bs-gridcell[data-field=PtabID]:before {
+		content: "{$label payrolltab PtabID}";
+	}
+	.bs-gridcell[data-field=EmployeeID]:before {
+		content: "{$label payrolltab EmployeeID}";
+	}
+	.bs-gridcell[data-field=WageType]:before {
+		content: "{$label payrolltab WageType}";
+	}
+	.bs-gridcell[data-field=Status]:before {
+		content: "{$label payrolltab Status}";
+	}
+	.bs-gridcell[data-field=BasicMonthly]:before {
+		content: "{$label payrolltab BasicMonthly}";
+	}
+	.bs-gridcell[data-field=BasicDaily]:before {
+		content: "{$label payrolltab BasicDaily}";
+	}
+	.bs-gridcell[data-field=DWork]:before {
+		content: "{$label payrolltab DWork}";
+	}
+	.bs-gridcell[data-field=Absent]:before {
+		content: "{$label payrolltab Absent}";
+	}
+	.bs-gridcell[data-field=LateMins]:before {
+		content: "{$label payrolltab LateMins}";
+	}
+	.bs-gridcell[data-field=UndertimeMins]:before {
+		content: "{$label payrolltab UndertimeMins}";
+	}
+	.bs-gridcell[data-field=RHolidayHrs]:before {
+		content: "{$label payrolltab RHolidayHrs}";
+	}
+	.bs-gridcell[data-field=SHolidayHrs]:before {
+		content: "{$label payrolltab SHolidayHrs}";
+	}
+	.bs-gridcell[data-field=CHolidayHrs]:before {
+		content: "{$label payrolltab CHolidayHrs}";
+	}
+	.bs-gridcell[data-field=ExcessHrs]:before {
+		content: "{$label payrolltab ExcessHrs}";
+	}
+	.bs-gridcell[data-field=RegOTHrs]:before {
+		content: "{$label payrolltab RegOTHrs}";
+	}
+	.bs-gridcell[data-field=RHOTHrs]:before {
+		content: "{$label payrolltab RHOTHrs}";
+	}
+	.bs-gridcell[data-field=SHOTHRs]:before {
+		content: "{$label payrolltab SHOTHRs}";
+	}
+	.bs-gridcell[data-field=CHOTHrs]:before {
+		content: "{$label payrolltab CHOTHrs}";
+	}
+	.bs-gridcell[data-field=RDOTHrs]:before {
+		content: "{$label payrolltab RDOTHrs}";
+	}
+	.bs-gridcell[data-field=NDHrs]:before {
+		content: "{$label payrolltab NDHrs}";
+	}
+	.bs-gridcell[data-field=RDHrs]:before {
+		content: "{$label payrolltab RDHrs}";
+	}
+	.bs-gridcell[data-field=RegNDHrs]:before {
+		content: "{$label payrolltab RegNDHrs}";
+	}
+	.bs-gridcell[data-field=RHNDHrs]:before {
+		content: "{$label payrolltab RHNDHrs}";
+	}
+	.bs-gridcell[data-field=SHNDHrs]:before {
+		content: "{$label payrolltab SHNDHrs}";
+	}
+	.bs-gridcell[data-field=CHNDHrs]:before {
+		content: "{$label payrolltab CHNDHrs}";
+	}
+	.bs-gridcell[data-field=RDNDHrs]:before {
+		content: "{$label payrolltab RDNDHrs}";
+	}
+	.bs-gridcell[data-field=VLDays]:before {
+		content: "{$label payrolltab VLDays}";
+	}
+	.bs-gridcell[data-field=SLDays]:before {
+		content: "{$label payrolltab SLDays}";
+	}
+	.bs-gridcell[data-field=ELDays]:before {
+		content: "{$label payrolltab ELDays}";
+	}
+	.bs-gridcell[data-field=PLDays]:before {
+		content: "{$label payrolltab PLDays}";
+	}
+	.bs-gridcell[data-field=TrODays]:before {
+		content: "{$label payrolltab TrODays}";
+	}
+	.bs-gridcell[data-field=FromDate]:before {
+		content: "{$label payrolltab FromDate}";
+	}
+	.bs-gridcell[data-field=ToDate]:before {
+		content: "{$label payrolltab ToDate}";
+	}
+	.bs-gridcell[data-field=UserName]:before {
+		content: "{$label payrolltab UserName}";
+	}
+	.bs-gridcell[data-field=AllowancePerDay]:before {
+		content: "{$label payrolltab AllowancePerDay}";
+	}
+	.bs-gridcell[data-field=VLBalance]:before {
+		content: "{$label payrolltab VLBalance}";
+	}
+	.bs-gridcell[data-field=SLBalance]:before {
+		content: "{$label payrolltab SLBalance}";
+	}
+	.bs-gridcell[data-field=ELBalance]:before {
+		content: "{$label payrolltab ELBalance}";
+	}
+	.bs-gridcell[data-field=PLBalance]:before {
+		content: "{$label payrolltab PLBalance}";
+	}
+	.bs-gridcell[data-field=AgencyShare]:before {
+		content: "{$label payrolltab AgencyShare}";
+	}
+	.bs-gridcell[data-field=NDMealAllowance]:before {
+		content: "{$label payrolltab NDMealAllowance}";
+	}
+	.bs-gridcell[data-field=Division]:before {
+		content: "{$label payrolltab Division}";
+	}
+	.bs-gridcell[data-field=Employer]:before {
+		content: "{$label payrolltab Employer}";
+	}
+	.bs-gridcell[data-field=PayrollID]:before {
+		content: "{$label payrolltab PayrollID}";
+	}
+	.bs-gridcell[data-field=Email]:before {
+		content: "{$label payrolltab Email}";
+	}
+	.bs-gridcell[data-field=Locked]:before {
+		content: "{$label payrolltab Locked}";
+	}
+	.bs-gridcell[data-field=Position]:before {
+		content: "{$label payrolltab Position}";
+	}
+</style>
+<table {$masterlistgrid_hiddenattr} data-pageid="{$pageid}" data-brick="masterlistgrid" class="table rnr-b-mastergridfields rnr-gridtable bs-flexgrid" >
+		<thead>
+		<tr>
+			<th class="{$PtabID_class}">{$label payrolltab PtabID}</th>
+			<th class="{$Locked_class}">{$label payrolltab Locked}</th>
+			<th class="{$Email_class}">{$label payrolltab Email}</th>
+			<th class="{$PayrollID_class}">{$label payrolltab PayrollID}</th>
+			<th class="{$EmployeeID_class}">{$label payrolltab EmployeeID}</th>
+			<th class="{$UserName_class}">{$label payrolltab UserName}</th>
+			<th class="{$Position_class}">{$label payrolltab Position}</th>
+			<th class="{$Division_class}">{$label payrolltab Division}</th>
+			<th class="{$Employer_class}">{$label payrolltab Employer}</th>
+			<th class="{$WageType_class}">{$label payrolltab WageType}</th>
+			<th class="{$Status_class}">{$label payrolltab Status}</th>
+			<th class="{$FromDate_class}">{$label payrolltab FromDate}</th>
+			<th class="{$ToDate_class}">{$label payrolltab ToDate}</th>
+			<th class="{$BasicMonthly_class}">{$label payrolltab BasicMonthly}</th>
+			<th class="{$BasicDaily_class}">{$label payrolltab BasicDaily}</th>
+			<th class="{$DWork_class}">{$label payrolltab DWork}</th>
+			<th class="{$Absent_class}">{$label payrolltab Absent}</th>
+			<th class="{$LateMins_class}">{$label payrolltab LateMins}</th>
+			<th class="{$UndertimeMins_class}">{$label payrolltab UndertimeMins}</th>
+			<th class="{$RHolidayHrs_class}">{$label payrolltab RHolidayHrs}</th>
+			<th class="{$SHolidayHrs_class}">{$label payrolltab SHolidayHrs}</th>
+			<th class="{$CHolidayHrs_class}">{$label payrolltab CHolidayHrs}</th>
+			<th class="{$ExcessHrs_class}">{$label payrolltab ExcessHrs}</th>
+			<th class="{$RegOTHrs_class}">{$label payrolltab RegOTHrs}</th>
+			<th class="{$RHOTHrs_class}">{$label payrolltab RHOTHrs}</th>
+			<th class="{$SHOTHRs_class}">{$label payrolltab SHOTHRs}</th>
+			<th class="{$CHOTHrs_class}">{$label payrolltab CHOTHrs}</th>
+			<th class="{$TrODays_class}">{$label payrolltab TrODays}</th>
+			<th class="{$RDOTHrs_class}">{$label payrolltab RDOTHrs}</th>
+			<th class="{$NDHrs_class}">{$label payrolltab NDHrs}</th>
+			<th class="{$RDHrs_class}">{$label payrolltab RDHrs}</th>
+			<th class="{$RegNDHrs_class}">{$label payrolltab RegNDHrs}</th>
+			<th class="{$RHNDHrs_class}">{$label payrolltab RHNDHrs}</th>
+			<th class="{$SHNDHrs_class}">{$label payrolltab SHNDHrs}</th>
+			<th class="{$CHNDHrs_class}">{$label payrolltab CHNDHrs}</th>
+			<th class="{$RDNDHrs_class}">{$label payrolltab RDNDHrs}</th>
+			<th class="{$VLDays_class}">{$label payrolltab VLDays}</th>
+			<th class="{$SLDays_class}">{$label payrolltab SLDays}</th>
+			<th class="{$ELDays_class}">{$label payrolltab ELDays}</th>
+			<th class="{$PLDays_class}">{$label payrolltab PLDays}</th>
+			<th class="{$PLBalance_class}">{$label payrolltab PLBalance}</th>
+			<th class="{$ELBalance_class}">{$label payrolltab ELBalance}</th>
+			<th class="{$SLBalance_class}">{$label payrolltab SLBalance}</th>
+			<th class="{$VLBalance_class}">{$label payrolltab VLBalance}</th>
+			<th class="{$AllowancePerDay_class}">{$label payrolltab AllowancePerDay}</th>
+			<th class="{$AgencyShare_class}">{$label payrolltab AgencyShare}</th>
+			<th class="{$NDMealAllowance_class}">{$label payrolltab NDMealAllowance}</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td class="{$PtabID_class} bs-gridcell" data-field=PtabID>{$PtabID_mastervalue}</td>
+			<td class="{$Locked_class} bs-gridcell" data-field=Locked>{$Locked_mastervalue}</td>
+			<td class="{$Email_class} bs-gridcell" data-field=Email>{$Email_mastervalue}</td>
+			<td class="{$PayrollID_class} bs-gridcell" data-field=PayrollID>{$PayrollID_mastervalue}</td>
+			<td class="{$EmployeeID_class} bs-gridcell" data-field=EmployeeID>{$EmployeeID_mastervalue}</td>
+			<td class="{$UserName_class} bs-gridcell" data-field=UserName>{$UserName_mastervalue}</td>
+			<td class="{$Position_class} bs-gridcell" data-field=Position>{$Position_mastervalue}</td>
+			<td class="{$Division_class} bs-gridcell" data-field=Division>{$Division_mastervalue}</td>
+			<td class="{$Employer_class} bs-gridcell" data-field=Employer>{$Employer_mastervalue}</td>
+			<td class="{$WageType_class} bs-gridcell" data-field=WageType>{$WageType_mastervalue}</td>
+			<td class="{$Status_class} bs-gridcell" data-field=Status>{$Status_mastervalue}</td>
+			<td class="{$FromDate_class} bs-gridcell" data-field=FromDate>{$FromDate_mastervalue}</td>
+			<td class="{$ToDate_class} bs-gridcell" data-field=ToDate>{$ToDate_mastervalue}</td>
+			<td class="{$BasicMonthly_class} bs-gridcell" data-field=BasicMonthly>{$BasicMonthly_mastervalue}</td>
+			<td class="{$BasicDaily_class} bs-gridcell" data-field=BasicDaily>{$BasicDaily_mastervalue}</td>
+			<td class="{$DWork_class} bs-gridcell" data-field=DWork>{$DWork_mastervalue}</td>
+			<td class="{$Absent_class} bs-gridcell" data-field=Absent>{$Absent_mastervalue}</td>
+			<td class="{$LateMins_class} bs-gridcell" data-field=LateMins>{$LateMins_mastervalue}</td>
+			<td class="{$UndertimeMins_class} bs-gridcell" data-field=UndertimeMins>{$UndertimeMins_mastervalue}</td>
+			<td class="{$RHolidayHrs_class} bs-gridcell" data-field=RHolidayHrs>{$RHolidayHrs_mastervalue}</td>
+			<td class="{$SHolidayHrs_class} bs-gridcell" data-field=SHolidayHrs>{$SHolidayHrs_mastervalue}</td>
+			<td class="{$CHolidayHrs_class} bs-gridcell" data-field=CHolidayHrs>{$CHolidayHrs_mastervalue}</td>
+			<td class="{$ExcessHrs_class} bs-gridcell" data-field=ExcessHrs>{$ExcessHrs_mastervalue}</td>
+			<td class="{$RegOTHrs_class} bs-gridcell" data-field=RegOTHrs>{$RegOTHrs_mastervalue}</td>
+			<td class="{$RHOTHrs_class} bs-gridcell" data-field=RHOTHrs>{$RHOTHrs_mastervalue}</td>
+			<td class="{$SHOTHRs_class} bs-gridcell" data-field=SHOTHRs>{$SHOTHRs_mastervalue}</td>
+			<td class="{$CHOTHrs_class} bs-gridcell" data-field=CHOTHrs>{$CHOTHrs_mastervalue}</td>
+			<td class="{$TrODays_class} bs-gridcell" data-field=TrODays>{$TrODays_mastervalue}</td>
+			<td class="{$RDOTHrs_class} bs-gridcell" data-field=RDOTHrs>{$RDOTHrs_mastervalue}</td>
+			<td class="{$NDHrs_class} bs-gridcell" data-field=NDHrs>{$NDHrs_mastervalue}</td>
+			<td class="{$RDHrs_class} bs-gridcell" data-field=RDHrs>{$RDHrs_mastervalue}</td>
+			<td class="{$RegNDHrs_class} bs-gridcell" data-field=RegNDHrs>{$RegNDHrs_mastervalue}</td>
+			<td class="{$RHNDHrs_class} bs-gridcell" data-field=RHNDHrs>{$RHNDHrs_mastervalue}</td>
+			<td class="{$SHNDHrs_class} bs-gridcell" data-field=SHNDHrs>{$SHNDHrs_mastervalue}</td>
+			<td class="{$CHNDHrs_class} bs-gridcell" data-field=CHNDHrs>{$CHNDHrs_mastervalue}</td>
+			<td class="{$RDNDHrs_class} bs-gridcell" data-field=RDNDHrs>{$RDNDHrs_mastervalue}</td>
+			<td class="{$VLDays_class} bs-gridcell" data-field=VLDays>{$VLDays_mastervalue}</td>
+			<td class="{$SLDays_class} bs-gridcell" data-field=SLDays>{$SLDays_mastervalue}</td>
+			<td class="{$ELDays_class} bs-gridcell" data-field=ELDays>{$ELDays_mastervalue}</td>
+			<td class="{$PLDays_class} bs-gridcell" data-field=PLDays>{$PLDays_mastervalue}</td>
+			<td class="{$PLBalance_class} bs-gridcell" data-field=PLBalance>{$PLBalance_mastervalue}</td>
+			<td class="{$ELBalance_class} bs-gridcell" data-field=ELBalance>{$ELBalance_mastervalue}</td>
+			<td class="{$SLBalance_class} bs-gridcell" data-field=SLBalance>{$SLBalance_mastervalue}</td>
+			<td class="{$VLBalance_class} bs-gridcell" data-field=VLBalance>{$VLBalance_mastervalue}</td>
+			<td class="{$AllowancePerDay_class} bs-gridcell" data-field=AllowancePerDay>{$AllowancePerDay_mastervalue}</td>
+			<td class="{$AgencyShare_class} bs-gridcell" data-field=AgencyShare>{$AgencyShare_mastervalue}</td>
+			<td class="{$NDMealAllowance_class} bs-gridcell" data-field=NDMealAllowance>{$NDMealAllowance_mastervalue}</td>
+		</tr>
+	</tbody>
+
+</table> 
+
+
+
+
+{END container_mastergrid}
+
+</div>

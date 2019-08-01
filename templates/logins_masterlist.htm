@@ -1,0 +1,70 @@
+<div {$pageattrs}>
+
+{BEGIN container_column}
+<div class="rnr-c rnr-ch rnr-c-column">
+
+{BEGIN masterlist_title}
+<div  class="style1 rnr-bl rnr-b-masterlistheader {$brickclass_masterlistheader}"><a {$backtomasterlink_attrs} class="btn btn-link btn-xs">Back to {$backtomasterlink_caption}</a><span>{$pagetitlelabel logins masterlist}</span></div>
+{END masterlist_title}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_column}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+	<style>
+	.bs-gridcell[data-field=LogID]:before {
+		content: "{$label logins LogID}";
+	}
+	.bs-gridcell[data-field=UserName]:before {
+		content: "{$label logins UserName}";
+	}
+	.bs-gridcell[data-field=Password]:before {
+		content: "{$label logins Password}";
+	}
+	.bs-gridcell[data-field=FullName]:before {
+		content: "{$label logins FullName}";
+	}
+	.bs-gridcell[data-field=Position]:before {
+		content: "{$label logins Position}";
+	}
+	.bs-gridcell[data-field=EmployeeID]:before {
+		content: "{$label logins EmployeeID}";
+	}
+</style>
+<table {$masterlistgrid_hiddenattr} data-pageid="{$pageid}" data-brick="masterlistgrid" class="table rnr-b-mastergridfields rnr-gridtable bs-flexgrid" >
+		<thead>
+		<tr>
+			<th class="{$LogID_class}">{$label logins LogID}</th>
+			<th class="{$UserName_class}">{$label logins UserName}</th>
+			<th class="{$Password_class}">{$label logins Password}</th>
+			<th class="{$FullName_class}">{$label logins FullName}</th>
+			<th class="{$Position_class}">{$label logins Position}</th>
+			<th class="{$EmployeeID_class}">{$label logins EmployeeID}</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td class="{$LogID_class} bs-gridcell" data-field=LogID>{$LogID_mastervalue}</td>
+			<td class="{$UserName_class} bs-gridcell" data-field=UserName>{$UserName_mastervalue}</td>
+			<td class="{$Password_class} bs-gridcell" data-field=Password>{$Password_mastervalue}</td>
+			<td class="{$FullName_class} bs-gridcell" data-field=FullName>{$FullName_mastervalue}</td>
+			<td class="{$Position_class} bs-gridcell" data-field=Position>{$Position_mastervalue}</td>
+			<td class="{$EmployeeID_class} bs-gridcell" data-field=EmployeeID>{$EmployeeID_mastervalue}</td>
+		</tr>
+	</tbody>
+
+</table> 
+
+
+
+
+{END container_mastergrid}
+
+</div>

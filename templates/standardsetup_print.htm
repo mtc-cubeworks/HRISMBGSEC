@@ -1,0 +1,453 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_pdf}
+<div {$pdf_chiddenattr} data-pageid="{$pageid}" data-container="pdf" class="   col-md-12 "> 
+
+{BEGIN printbuttons}
+
+{END printbuttons}
+
+
+
+</div>
+{END container_pdf}
+
+
+
+
+
+{BEGIN container_pageheader}
+<div {$pageheader_chiddenattr} data-pageid="{$pageid}" data-container="pageheader" class="    "> 
+
+{BEGIN printheader}
+	<h2 {$printheader_hiddenattr} data-pageid="{$pageid}" data-brick="printheader" >{$pagetitlelabel standardsetup print}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END printheader}
+
+
+{BEGIN page_number}
+<span>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></span>
+{END page_number}
+
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="table table-bordered rp-maintable" {$printgrid_hiddenattr} data-pageid="{$pageid}" data-brick="printgrid" >
+	<thead>
+	{BEGIN grid_header}
+		<tr class="{$gridHeader_class}" >
+		{BEGIN record_header}
+			{BEGIN SID_fieldheadercolumn}
+			<th class="{$SID_class}" {$SID_style}  data-field="SID">
+				{$label standardsetup SID}
+			</th>
+			{END SID_fieldheadercolumn}
+			{BEGIN PreTimeInMins_fieldheadercolumn}
+			<th class="{$PreTimeInMins_class}" {$PreTimeInMins_style}  data-field="PreTimeInMins">
+				{$label standardsetup PreTimeInMins}
+			</th>
+			{END PreTimeInMins_fieldheadercolumn}
+			{BEGIN WorkingDaysInYear_fieldheadercolumn}
+			<th class="{$WorkingDaysInYear_class}" {$WorkingDaysInYear_style}  data-field="WorkingDaysInYear">
+				{$label standardsetup WorkingDaysInYear}
+			</th>
+			{END WorkingDaysInYear_fieldheadercolumn}
+			{BEGIN WorkingDaysInYearDailies_fieldheadercolumn}
+			<th class="{$WorkingDaysInYearDailies_class}" {$WorkingDaysInYearDailies_style}  data-field="WorkingDaysInYearDailies">
+				{$label standardsetup WorkingDaysInYearDailies}
+			</th>
+			{END WorkingDaysInYearDailies_fieldheadercolumn}
+			{BEGIN RegOTFactor_fieldheadercolumn}
+			<th class="{$RegOTFactor_class}" {$RegOTFactor_style}  data-field="RegOTFactor">
+				{$label standardsetup RegOTFactor}
+			</th>
+			{END RegOTFactor_fieldheadercolumn}
+			{BEGIN RHOTFactor_fieldheadercolumn}
+			<th class="{$RHOTFactor_class}" {$RHOTFactor_style}  data-field="RHOTFactor">
+				{$label standardsetup RHOTFactor}
+			</th>
+			{END RHOTFactor_fieldheadercolumn}
+			{BEGIN SHOTFactor_fieldheadercolumn}
+			<th class="{$SHOTFactor_class}" {$SHOTFactor_style}  data-field="SHOTFactor">
+				{$label standardsetup SHOTFactor}
+			</th>
+			{END SHOTFactor_fieldheadercolumn}
+			{BEGIN SHOTFactorDaily_fieldheadercolumn}
+			<th class="{$SHOTFactorDaily_class}" {$SHOTFactorDaily_style}  data-field="SHOTFactorDaily">
+				{$label standardsetup SHOTFactorDaily}
+			</th>
+			{END SHOTFactorDaily_fieldheadercolumn}
+			{BEGIN CHOTFactor_fieldheadercolumn}
+			<th class="{$CHOTFactor_class}" {$CHOTFactor_style}  data-field="CHOTFactor">
+				{$label standardsetup CHOTFactor}
+			</th>
+			{END CHOTFactor_fieldheadercolumn}
+			{BEGIN CHOTFactorDaily_fieldheadercolumn}
+			<th class="{$CHOTFactorDaily_class}" {$CHOTFactorDaily_style}  data-field="CHOTFactorDaily">
+				{$label standardsetup CHOTFactorDaily}
+			</th>
+			{END CHOTFactorDaily_fieldheadercolumn}
+			{BEGIN RDOTFactor_fieldheadercolumn}
+			<th class="{$RDOTFactor_class}" {$RDOTFactor_style}  data-field="RDOTFactor">
+				{$label standardsetup RDOTFactor}
+			</th>
+			{END RDOTFactor_fieldheadercolumn}
+			{BEGIN RHRDOTFactor_fieldheadercolumn}
+			<th class="{$RHRDOTFactor_class}" {$RHRDOTFactor_style}  data-field="RHRDOTFactor">
+				{$label standardsetup RHRDOTFactor}
+			</th>
+			{END RHRDOTFactor_fieldheadercolumn}
+			{BEGIN SHRDOTFactor_fieldheadercolumn}
+			<th class="{$SHRDOTFactor_class}" {$SHRDOTFactor_style}  data-field="SHRDOTFactor">
+				{$label standardsetup SHRDOTFactor}
+			</th>
+			{END SHRDOTFactor_fieldheadercolumn}
+			{BEGIN SHRDOTFactorDaily_fieldheadercolumn}
+			<th class="{$SHRDOTFactorDaily_class}" {$SHRDOTFactorDaily_style}  data-field="SHRDOTFactorDaily">
+				{$label standardsetup SHRDOTFactorDaily}
+			</th>
+			{END SHRDOTFactorDaily_fieldheadercolumn}
+			{BEGIN AllowableLeaveFrom_fieldheadercolumn}
+			<th class="{$AllowableLeaveFrom_class}" {$AllowableLeaveFrom_style}  data-field="AllowableLeaveFrom">
+				{$label standardsetup AllowableLeaveFrom}
+			</th>
+			{END AllowableLeaveFrom_fieldheadercolumn}
+			{BEGIN AllowableLeaveTo_fieldheadercolumn}
+			<th class="{$AllowableLeaveTo_class}" {$AllowableLeaveTo_style}  data-field="AllowableLeaveTo">
+				{$label standardsetup AllowableLeaveTo}
+			</th>
+			{END AllowableLeaveTo_fieldheadercolumn}
+			{BEGIN RHFactor_fieldheadercolumn}
+			<th class="{$RHFactor_class}" {$RHFactor_style}  data-field="RHFactor">
+				{$label standardsetup RHFactor}
+			</th>
+			{END RHFactor_fieldheadercolumn}
+			{BEGIN SHFactor_fieldheadercolumn}
+			<th class="{$SHFactor_class}" {$SHFactor_style}  data-field="SHFactor">
+				{$label standardsetup SHFactor}
+			</th>
+			{END SHFactor_fieldheadercolumn}
+			{BEGIN SHFactorDaily_fieldheadercolumn}
+			<th class="{$SHFactorDaily_class}" {$SHFactorDaily_style}  data-field="SHFactorDaily">
+				{$label standardsetup SHFactorDaily}
+			</th>
+			{END SHFactorDaily_fieldheadercolumn}
+			{BEGIN CHFactor_fieldheadercolumn}
+			<th class="{$CHFactor_class}" {$CHFactor_style}  data-field="CHFactor">
+				{$label standardsetup CHFactor}
+			</th>
+			{END CHFactor_fieldheadercolumn}
+			{BEGIN CHFactorDaily_fieldheadercolumn}
+			<th class="{$CHFactorDaily_class}" {$CHFactorDaily_style}  data-field="CHFactorDaily">
+				{$label standardsetup CHFactorDaily}
+			</th>
+			{END CHFactorDaily_fieldheadercolumn}
+			{BEGIN ReqBeforeHoliday_fieldheadercolumn}
+			<th class="{$ReqBeforeHoliday_class}" {$ReqBeforeHoliday_style}  data-field="ReqBeforeHoliday">
+				{$label standardsetup ReqBeforeHoliday}
+			</th>
+			{END ReqBeforeHoliday_fieldheadercolumn}
+			{BEGIN NightDiffStartTime_fieldheadercolumn}
+			<th class="{$NightDiffStartTime_class}" {$NightDiffStartTime_style}  data-field="NightDiffStartTime">
+				{$label standardsetup NightDiffStartTime}
+			</th>
+			{END NightDiffStartTime_fieldheadercolumn}
+			{BEGIN NightDiffEndTime_fieldheadercolumn}
+			<th class="{$NightDiffEndTime_class}" {$NightDiffEndTime_style}  data-field="NightDiffEndTime">
+				{$label standardsetup NightDiffEndTime}
+			</th>
+			{END NightDiffEndTime_fieldheadercolumn}
+			{BEGIN RegNDiffFactor_fieldheadercolumn}
+			<th class="{$RegNDiffFactor_class}" {$RegNDiffFactor_style}  data-field="RegNDiffFactor">
+				{$label standardsetup RegNDiffFactor}
+			</th>
+			{END RegNDiffFactor_fieldheadercolumn}
+			{BEGIN RHNDiffFactor_fieldheadercolumn}
+			<th class="{$RHNDiffFactor_class}" {$RHNDiffFactor_style}  data-field="RHNDiffFactor">
+				{$label standardsetup RHNDiffFactor}
+			</th>
+			{END RHNDiffFactor_fieldheadercolumn}
+			{BEGIN SHNDiffFactor_fieldheadercolumn}
+			<th class="{$SHNDiffFactor_class}" {$SHNDiffFactor_style}  data-field="SHNDiffFactor">
+				{$label standardsetup SHNDiffFactor}
+			</th>
+			{END SHNDiffFactor_fieldheadercolumn}
+			{BEGIN CHNDiffFactor_fieldheadercolumn}
+			<th class="{$CHNDiffFactor_class}" {$CHNDiffFactor_style}  data-field="CHNDiffFactor">
+				{$label standardsetup CHNDiffFactor}
+			</th>
+			{END CHNDiffFactor_fieldheadercolumn}
+			{BEGIN RDNDiffFactor_fieldheadercolumn}
+			<th class="{$RDNDiffFactor_class}" {$RDNDiffFactor_style}  data-field="RDNDiffFactor">
+				{$label standardsetup RDNDiffFactor}
+			</th>
+			{END RDNDiffFactor_fieldheadercolumn}
+			{BEGIN RDFactor_fieldheadercolumn}
+			<th class="{$RDFactor_class}" {$RDFactor_style}  data-field="RDFactor">
+				{$label standardsetup RDFactor}
+			</th>
+			{END RDFactor_fieldheadercolumn}
+			{BEGIN RHRDFactor_fieldheadercolumn}
+			<th class="{$RHRDFactor_class}" {$RHRDFactor_style}  data-field="RHRDFactor">
+				{$label standardsetup RHRDFactor}
+			</th>
+			{END RHRDFactor_fieldheadercolumn}
+			{BEGIN SHRDFactor_fieldheadercolumn}
+			<th class="{$SHRDFactor_class}" {$SHRDFactor_style}  data-field="SHRDFactor">
+				{$label standardsetup SHRDFactor}
+			</th>
+			{END SHRDFactor_fieldheadercolumn}
+			{BEGIN SHRDFactorDaily_fieldheadercolumn}
+			<th class="{$SHRDFactorDaily_class}" {$SHRDFactorDaily_style}  data-field="SHRDFactorDaily">
+				{$label standardsetup SHRDFactorDaily}
+			</th>
+			{END SHRDFactorDaily_fieldheadercolumn}
+			{BEGIN endrecordheader_block}
+			<th class="rnr-cs">&nbsp;</th>
+			{END endrecordheader_block}
+		{END record_header}
+		</tr>
+	{END grid_header}
+	</thead>
+	
+	<tbody>	
+	{BEGIN grid_row}
+		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+			{BEGIN SID_fieldcolumn}
+			<td  class="{$SID_class}" {$SID_style} {$recordattrs}>
+				{$SID_value}
+			</td>
+			{END SID_fieldcolumn}
+			{BEGIN PreTimeInMins_fieldcolumn}
+			<td  class="{$PreTimeInMins_class}" {$PreTimeInMins_style} {$recordattrs}>
+				{$PreTimeInMins_value}
+			</td>
+			{END PreTimeInMins_fieldcolumn}
+			{BEGIN WorkingDaysInYear_fieldcolumn}
+			<td  class="{$WorkingDaysInYear_class}" {$WorkingDaysInYear_style} {$recordattrs}>
+				{$WorkingDaysInYear_value}
+			</td>
+			{END WorkingDaysInYear_fieldcolumn}
+			{BEGIN WorkingDaysInYearDailies_fieldcolumn}
+			<td  class="{$WorkingDaysInYearDailies_class}" {$WorkingDaysInYearDailies_style} {$recordattrs}>
+				{$WorkingDaysInYearDailies_value}
+			</td>
+			{END WorkingDaysInYearDailies_fieldcolumn}
+			{BEGIN RegOTFactor_fieldcolumn}
+			<td  class="{$RegOTFactor_class}" {$RegOTFactor_style} {$recordattrs}>
+				{$RegOTFactor_value}
+			</td>
+			{END RegOTFactor_fieldcolumn}
+			{BEGIN RHOTFactor_fieldcolumn}
+			<td  class="{$RHOTFactor_class}" {$RHOTFactor_style} {$recordattrs}>
+				{$RHOTFactor_value}
+			</td>
+			{END RHOTFactor_fieldcolumn}
+			{BEGIN SHOTFactor_fieldcolumn}
+			<td  class="{$SHOTFactor_class}" {$SHOTFactor_style} {$recordattrs}>
+				{$SHOTFactor_value}
+			</td>
+			{END SHOTFactor_fieldcolumn}
+			{BEGIN SHOTFactorDaily_fieldcolumn}
+			<td  class="{$SHOTFactorDaily_class}" {$SHOTFactorDaily_style} {$recordattrs}>
+				{$SHOTFactorDaily_value}
+			</td>
+			{END SHOTFactorDaily_fieldcolumn}
+			{BEGIN CHOTFactor_fieldcolumn}
+			<td  class="{$CHOTFactor_class}" {$CHOTFactor_style} {$recordattrs}>
+				{$CHOTFactor_value}
+			</td>
+			{END CHOTFactor_fieldcolumn}
+			{BEGIN CHOTFactorDaily_fieldcolumn}
+			<td  class="{$CHOTFactorDaily_class}" {$CHOTFactorDaily_style} {$recordattrs}>
+				{$CHOTFactorDaily_value}
+			</td>
+			{END CHOTFactorDaily_fieldcolumn}
+			{BEGIN RDOTFactor_fieldcolumn}
+			<td  class="{$RDOTFactor_class}" {$RDOTFactor_style} {$recordattrs}>
+				{$RDOTFactor_value}
+			</td>
+			{END RDOTFactor_fieldcolumn}
+			{BEGIN RHRDOTFactor_fieldcolumn}
+			<td  class="{$RHRDOTFactor_class}" {$RHRDOTFactor_style} {$recordattrs}>
+				{$RHRDOTFactor_value}
+			</td>
+			{END RHRDOTFactor_fieldcolumn}
+			{BEGIN SHRDOTFactor_fieldcolumn}
+			<td  class="{$SHRDOTFactor_class}" {$SHRDOTFactor_style} {$recordattrs}>
+				{$SHRDOTFactor_value}
+			</td>
+			{END SHRDOTFactor_fieldcolumn}
+			{BEGIN SHRDOTFactorDaily_fieldcolumn}
+			<td  class="{$SHRDOTFactorDaily_class}" {$SHRDOTFactorDaily_style} {$recordattrs}>
+				{$SHRDOTFactorDaily_value}
+			</td>
+			{END SHRDOTFactorDaily_fieldcolumn}
+			{BEGIN AllowableLeaveFrom_fieldcolumn}
+			<td  class="{$AllowableLeaveFrom_class}" {$AllowableLeaveFrom_style} {$recordattrs}>
+				{$AllowableLeaveFrom_value}
+			</td>
+			{END AllowableLeaveFrom_fieldcolumn}
+			{BEGIN AllowableLeaveTo_fieldcolumn}
+			<td  class="{$AllowableLeaveTo_class}" {$AllowableLeaveTo_style} {$recordattrs}>
+				{$AllowableLeaveTo_value}
+			</td>
+			{END AllowableLeaveTo_fieldcolumn}
+			{BEGIN RHFactor_fieldcolumn}
+			<td  class="{$RHFactor_class}" {$RHFactor_style} {$recordattrs}>
+				{$RHFactor_value}
+			</td>
+			{END RHFactor_fieldcolumn}
+			{BEGIN SHFactor_fieldcolumn}
+			<td  class="{$SHFactor_class}" {$SHFactor_style} {$recordattrs}>
+				{$SHFactor_value}
+			</td>
+			{END SHFactor_fieldcolumn}
+			{BEGIN SHFactorDaily_fieldcolumn}
+			<td  class="{$SHFactorDaily_class}" {$SHFactorDaily_style} {$recordattrs}>
+				{$SHFactorDaily_value}
+			</td>
+			{END SHFactorDaily_fieldcolumn}
+			{BEGIN CHFactor_fieldcolumn}
+			<td  class="{$CHFactor_class}" {$CHFactor_style} {$recordattrs}>
+				{$CHFactor_value}
+			</td>
+			{END CHFactor_fieldcolumn}
+			{BEGIN CHFactorDaily_fieldcolumn}
+			<td  class="{$CHFactorDaily_class}" {$CHFactorDaily_style} {$recordattrs}>
+				{$CHFactorDaily_value}
+			</td>
+			{END CHFactorDaily_fieldcolumn}
+			{BEGIN ReqBeforeHoliday_fieldcolumn}
+			<td  class="{$ReqBeforeHoliday_class}" {$ReqBeforeHoliday_style} {$recordattrs}>
+				{$ReqBeforeHoliday_value}
+			</td>
+			{END ReqBeforeHoliday_fieldcolumn}
+			{BEGIN NightDiffStartTime_fieldcolumn}
+			<td  class="{$NightDiffStartTime_class}" {$NightDiffStartTime_style} {$recordattrs}>
+				{$NightDiffStartTime_value}
+			</td>
+			{END NightDiffStartTime_fieldcolumn}
+			{BEGIN NightDiffEndTime_fieldcolumn}
+			<td  class="{$NightDiffEndTime_class}" {$NightDiffEndTime_style} {$recordattrs}>
+				{$NightDiffEndTime_value}
+			</td>
+			{END NightDiffEndTime_fieldcolumn}
+			{BEGIN RegNDiffFactor_fieldcolumn}
+			<td  class="{$RegNDiffFactor_class}" {$RegNDiffFactor_style} {$recordattrs}>
+				{$RegNDiffFactor_value}
+			</td>
+			{END RegNDiffFactor_fieldcolumn}
+			{BEGIN RHNDiffFactor_fieldcolumn}
+			<td  class="{$RHNDiffFactor_class}" {$RHNDiffFactor_style} {$recordattrs}>
+				{$RHNDiffFactor_value}
+			</td>
+			{END RHNDiffFactor_fieldcolumn}
+			{BEGIN SHNDiffFactor_fieldcolumn}
+			<td  class="{$SHNDiffFactor_class}" {$SHNDiffFactor_style} {$recordattrs}>
+				{$SHNDiffFactor_value}
+			</td>
+			{END SHNDiffFactor_fieldcolumn}
+			{BEGIN CHNDiffFactor_fieldcolumn}
+			<td  class="{$CHNDiffFactor_class}" {$CHNDiffFactor_style} {$recordattrs}>
+				{$CHNDiffFactor_value}
+			</td>
+			{END CHNDiffFactor_fieldcolumn}
+			{BEGIN RDNDiffFactor_fieldcolumn}
+			<td  class="{$RDNDiffFactor_class}" {$RDNDiffFactor_style} {$recordattrs}>
+				{$RDNDiffFactor_value}
+			</td>
+			{END RDNDiffFactor_fieldcolumn}
+			{BEGIN RDFactor_fieldcolumn}
+			<td  class="{$RDFactor_class}" {$RDFactor_style} {$recordattrs}>
+				{$RDFactor_value}
+			</td>
+			{END RDFactor_fieldcolumn}
+			{BEGIN RHRDFactor_fieldcolumn}
+			<td  class="{$RHRDFactor_class}" {$RHRDFactor_style} {$recordattrs}>
+				{$RHRDFactor_value}
+			</td>
+			{END RHRDFactor_fieldcolumn}
+			{BEGIN SHRDFactor_fieldcolumn}
+			<td  class="{$SHRDFactor_class}" {$SHRDFactor_style} {$recordattrs}>
+				{$SHRDFactor_value}
+			</td>
+			{END SHRDFactor_fieldcolumn}
+			{BEGIN SHRDFactorDaily_fieldcolumn}
+			<td  class="{$SHRDFactorDaily_class}" {$SHRDFactorDaily_style} {$recordattrs}>
+				{$SHRDFactorDaily_value}
+			</td>
+			{END SHRDFactorDaily_fieldcolumn}
+			{BEGIN endrecord_block}
+			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+			{END endrecord_block}
+		{END grid_record}
+		</tr>
+{END grid_row}
+	</tbody>
+
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

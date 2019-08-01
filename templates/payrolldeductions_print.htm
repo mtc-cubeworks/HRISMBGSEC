@@ -1,0 +1,331 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_pdf}
+<div {$pdf_chiddenattr} data-pageid="{$pageid}" data-container="pdf" class="   col-md-12 "> 
+
+{BEGIN printbuttons}
+
+{END printbuttons}
+
+
+
+</div>
+{END container_pdf}
+
+
+
+{BEGIN container_master}
+<div {$master_chiddenattr} data-pageid="{$pageid}" data-container="master" class="    "> 
+
+{BEGIN mastertable_block}
+<div class="panel panel-info table-panel">
+	<div class="panel-heading">
+		{$master_heading}
+	</div>
+	<div class="panel-body">
+		{$showmasterfile}
+		
+	</div>
+</div>
+
+{END mastertable_block}
+
+
+
+</div>
+{END container_master}
+
+
+
+{BEGIN container_pageheader}
+<div {$pageheader_chiddenattr} data-pageid="{$pageid}" data-container="pageheader" class="    "> 
+
+{BEGIN printheader}
+	<h2 {$printheader_hiddenattr} data-pageid="{$pageid}" data-brick="printheader" >{$pagetitlelabel payrolldeductions print}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END printheader}
+
+
+{BEGIN page_number}
+<span>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></span>
+{END page_number}
+
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="table table-bordered rp-maintable" {$printgrid_hiddenattr} data-pageid="{$pageid}" data-brick="printgrid" >
+	<thead>
+	{BEGIN grid_header}
+		<tr class="{$gridHeader_class}" >
+		{BEGIN record_header}
+			{BEGIN PdeID_fieldheadercolumn}
+			<th class="{$PdeID_class}" {$PdeID_style}  data-field="PdeID">
+				{$label payrolldeductions PdeID}
+			</th>
+			{END PdeID_fieldheadercolumn}
+			{BEGIN Employer_fieldheadercolumn}
+			<th class="{$Employer_class}" {$Employer_style}  data-field="Employer">
+				{$label payrolldeductions Employer}
+			</th>
+			{END Employer_fieldheadercolumn}
+			{BEGIN Division_fieldheadercolumn}
+			<th class="{$Division_class}" {$Division_style}  data-field="Division">
+				{$label payrolldeductions Division}
+			</th>
+			{END Division_fieldheadercolumn}
+			{BEGIN WageType_fieldheadercolumn}
+			<th class="{$WageType_class}" {$WageType_style}  data-field="WageType">
+				{$label payrolldeductions WageType}
+			</th>
+			{END WageType_fieldheadercolumn}
+			{BEGIN EmployeeID_fieldheadercolumn}
+			<th class="{$EmployeeID_class}" {$EmployeeID_style}  data-field="EmployeeID">
+				{$label payrolldeductions EmployeeID}
+			</th>
+			{END EmployeeID_fieldheadercolumn}
+			{BEGIN FromDate_fieldheadercolumn}
+			<th class="{$FromDate_class}" {$FromDate_style}  data-field="FromDate">
+				{$label payrolldeductions FromDate}
+			</th>
+			{END FromDate_fieldheadercolumn}
+			{BEGIN ToDate_fieldheadercolumn}
+			<th class="{$ToDate_class}" {$ToDate_style}  data-field="ToDate">
+				{$label payrolldeductions ToDate}
+			</th>
+			{END ToDate_fieldheadercolumn}
+			{BEGIN Deduction_fieldheadercolumn}
+			<th class="{$Deduction_class}" {$Deduction_style}  data-field="Deduction">
+				{$label payrolldeductions Deduction}
+			</th>
+			{END Deduction_fieldheadercolumn}
+			{BEGIN Balance_fieldheadercolumn}
+			<th class="{$Balance_class}" {$Balance_style}  data-field="Balance">
+				{$label payrolldeductions Balance}
+			</th>
+			{END Balance_fieldheadercolumn}
+			{BEGIN Amount_fieldheadercolumn}
+			<th class="{$Amount_class}" {$Amount_style}  data-field="Amount">
+				{$label payrolldeductions Amount}
+			</th>
+			{END Amount_fieldheadercolumn}
+			{BEGIN LoanID_fieldheadercolumn}
+			<th class="{$LoanID_class}" {$LoanID_style}  data-field="LoanID">
+				{$label payrolldeductions LoanID}
+			</th>
+			{END LoanID_fieldheadercolumn}
+			{BEGIN PSID_fieldheadercolumn}
+			<th class="{$PSID_class}" {$PSID_style}  data-field="PSID">
+				{$label payrolldeductions PSID}
+			</th>
+			{END PSID_fieldheadercolumn}
+			{BEGIN endrecordheader_block}
+			<th class="rnr-cs">&nbsp;</th>
+			{END endrecordheader_block}
+		{END record_header}
+		</tr>
+	{END grid_header}
+	</thead>
+	
+	<tbody>	
+	{BEGIN grid_row}
+		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+			{BEGIN PdeID_fieldcolumn}
+			<td  class="{$PdeID_class}" {$PdeID_style} {$recordattrs}>
+				{$PdeID_value}
+			</td>
+			{END PdeID_fieldcolumn}
+			{BEGIN Employer_fieldcolumn}
+			<td  class="{$Employer_class}" {$Employer_style} {$recordattrs}>
+				{$Employer_value}
+			</td>
+			{END Employer_fieldcolumn}
+			{BEGIN Division_fieldcolumn}
+			<td  class="{$Division_class}" {$Division_style} {$recordattrs}>
+				{$Division_value}
+			</td>
+			{END Division_fieldcolumn}
+			{BEGIN WageType_fieldcolumn}
+			<td  class="{$WageType_class}" {$WageType_style} {$recordattrs}>
+				{$WageType_value}
+			</td>
+			{END WageType_fieldcolumn}
+			{BEGIN EmployeeID_fieldcolumn}
+			<td  class="{$EmployeeID_class}" {$EmployeeID_style} {$recordattrs}>
+				{$EmployeeID_value}
+			</td>
+			{END EmployeeID_fieldcolumn}
+			{BEGIN FromDate_fieldcolumn}
+			<td  class="{$FromDate_class}" {$FromDate_style} {$recordattrs}>
+				{$FromDate_value}
+			</td>
+			{END FromDate_fieldcolumn}
+			{BEGIN ToDate_fieldcolumn}
+			<td  class="{$ToDate_class}" {$ToDate_style} {$recordattrs}>
+				{$ToDate_value}
+			</td>
+			{END ToDate_fieldcolumn}
+			{BEGIN Deduction_fieldcolumn}
+			<td  class="{$Deduction_class}" {$Deduction_style} {$recordattrs}>
+				{$Deduction_value}
+			</td>
+			{END Deduction_fieldcolumn}
+			{BEGIN Balance_fieldcolumn}
+			<td  class="{$Balance_class}" {$Balance_style} {$recordattrs}>
+				{$Balance_value}
+			</td>
+			{END Balance_fieldcolumn}
+			{BEGIN Amount_fieldcolumn}
+			<td  class="{$Amount_class}" {$Amount_style} {$recordattrs}>
+				{$Amount_value}
+			</td>
+			{END Amount_fieldcolumn}
+			{BEGIN LoanID_fieldcolumn}
+			<td  class="{$LoanID_class}" {$LoanID_style} {$recordattrs}>
+				{$LoanID_value}
+			</td>
+			{END LoanID_fieldcolumn}
+			{BEGIN PSID_fieldcolumn}
+			<td  class="{$PSID_class}" {$PSID_style} {$recordattrs}>
+				{$PSID_value}
+			</td>
+			{END PSID_fieldcolumn}
+			{BEGIN endrecord_block}
+			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+			{END endrecord_block}
+		{END grid_record}
+		</tr>
+{END grid_row}
+	</tbody>
+
+{BEGIN totals_row}
+	<tfoot>
+		<tr class=" style1">
+		{BEGIN totals_record}
+			{BEGIN PdeID_fieldfootercolumn}
+			<td>
+						</td>
+			{END PdeID_fieldfootercolumn}
+			{BEGIN Employer_fieldfootercolumn}
+			<td>
+						</td>
+			{END Employer_fieldfootercolumn}
+			{BEGIN Division_fieldfootercolumn}
+			<td>
+						</td>
+			{END Division_fieldfootercolumn}
+			{BEGIN WageType_fieldfootercolumn}
+			<td>
+						</td>
+			{END WageType_fieldfootercolumn}
+			{BEGIN EmployeeID_fieldfootercolumn}
+			<td>
+						</td>
+			{END EmployeeID_fieldfootercolumn}
+			{BEGIN FromDate_fieldfootercolumn}
+			<td>
+						</td>
+			{END FromDate_fieldfootercolumn}
+			{BEGIN ToDate_fieldfootercolumn}
+			<td>
+						</td>
+			{END ToDate_fieldfootercolumn}
+			{BEGIN Deduction_fieldfootercolumn}
+			<td>
+						</td>
+			{END Deduction_fieldfootercolumn}
+			{BEGIN Balance_fieldfootercolumn}
+			<td>
+							{BEGIN Balance_showtotal}
+									Total:
+				{$Balance_total}
+				{END Balance_showtotal}
+			</td>
+			{END Balance_fieldfootercolumn}
+			{BEGIN Amount_fieldfootercolumn}
+			<td>
+							{BEGIN Amount_showtotal}
+									Total:
+				{$Amount_total}
+				{END Amount_showtotal}
+			</td>
+			{END Amount_fieldfootercolumn}
+			{BEGIN LoanID_fieldfootercolumn}
+			<td>
+						</td>
+			{END LoanID_fieldfootercolumn}
+			{BEGIN PSID_fieldfootercolumn}
+			<td>
+						</td>
+			{END PSID_fieldfootercolumn}
+			{BEGIN endrecordtotals_block}
+			<td class="rnr-cs"></td>
+			{END endrecordtotals_block}
+		{END totals_record}
+		</tr>
+	</tfoot>
+{END totals_row}
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

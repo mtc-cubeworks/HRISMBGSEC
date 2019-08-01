@@ -1,0 +1,49 @@
+<div {$pageattrs}>
+
+{BEGIN container_tabfields}
+<div {$tabfields_chiddenattr} data-pageid="{$pageid}" data-container="tabfields" class=" form-horizontal   "> 
+
+
+{BEGIN SchedType_tabfieldblock}
+<div class="container">
+	<div class="form-group in-tab {$fielddispclass_SchedType}" data-fieldname="SchedType" data-signal-error-for="SchedType{$id}" >
+		<label class="col-md-3 control-label" for="{$labelfor_SchedType}">
+			{BEGIN SchedType_label}{$label empindschedule SchedType}{END SchedType_label}
+		</label>
+		<div class="col-md-6 " >
+			{$SchedType_editcontrol}
+		</div>
+		<div class="col-md-3 help-block " data-helpfor="SchedType">
+			<div class="text-muted" >
+			{$tooltip empindschedule SchedType}
+			</div>
+		</div>
+	</div>
+</div>
+{END SchedType_tabfieldblock}
+{BEGIN Shift_tabfieldblock}
+<div class="container">
+	<div class="form-group in-tab {$fielddispclass_Shift}" data-fieldname="Shift" data-signal-error-for="Shift{$id}" >
+		<label class="col-md-3 control-label" for="{$labelfor_Shift}">
+			{BEGIN Shift_label}{$label empindschedule Shift}{END Shift_label}
+		</label>
+		<div class="col-md-6 " >
+			{$Shift_editcontrol}
+		</div>
+		<div class="col-md-3 help-block " data-helpfor="Shift">
+			<div class="text-muted" >
+			{$tooltip empindschedule Shift}
+			</div>
+		</div>
+	</div>
+</div>
+{END Shift_tabfieldblock}
+
+
+
+
+
+</div>
+{END container_tabfields}
+
+</div>

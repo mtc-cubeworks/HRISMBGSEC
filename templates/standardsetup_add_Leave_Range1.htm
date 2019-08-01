@@ -1,0 +1,49 @@
+<div {$pageattrs}>
+
+{BEGIN container_tabfields}
+<div {$tabfields_chiddenattr} data-pageid="{$pageid}" data-container="tabfields" class=" form-horizontal   "> 
+
+
+{BEGIN AllowableLeaveFrom_tabfieldblock}
+<div class="container">
+	<div class="form-group in-tab {$fielddispclass_AllowableLeaveFrom}" data-fieldname="AllowableLeaveFrom" data-signal-error-for="AllowableLeaveFrom{$id}" >
+		<label class="col-md-3 control-label" for="{$labelfor_AllowableLeaveFrom}">
+			{BEGIN AllowableLeaveFrom_label}{$label standardsetup AllowableLeaveFrom}{END AllowableLeaveFrom_label}
+		</label>
+		<div class="col-md-6 " >
+			{$AllowableLeaveFrom_editcontrol}
+		</div>
+		<div class="col-md-3 help-block " data-helpfor="AllowableLeaveFrom">
+			<div class="text-muted" >
+			{$tooltip standardsetup AllowableLeaveFrom}
+			</div>
+		</div>
+	</div>
+</div>
+{END AllowableLeaveFrom_tabfieldblock}
+{BEGIN AllowableLeaveTo_tabfieldblock}
+<div class="container">
+	<div class="form-group in-tab {$fielddispclass_AllowableLeaveTo}" data-fieldname="AllowableLeaveTo" data-signal-error-for="AllowableLeaveTo{$id}" >
+		<label class="col-md-3 control-label" for="{$labelfor_AllowableLeaveTo}">
+			{BEGIN AllowableLeaveTo_label}{$label standardsetup AllowableLeaveTo}{END AllowableLeaveTo_label}
+		</label>
+		<div class="col-md-6 " >
+			{$AllowableLeaveTo_editcontrol}
+		</div>
+		<div class="col-md-3 help-block " data-helpfor="AllowableLeaveTo">
+			<div class="text-muted" >
+			{$tooltip standardsetup AllowableLeaveTo}
+			</div>
+		</div>
+	</div>
+</div>
+{END AllowableLeaveTo_tabfieldblock}
+
+
+
+
+
+</div>
+{END container_tabfields}
+
+</div>

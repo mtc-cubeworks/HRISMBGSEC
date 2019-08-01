@@ -1,0 +1,486 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_editpage}
+<div {$editpage_chiddenattr} data-pageid="{$pageid}" data-container="editpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-9 col-md-offset-3"> 
+
+{BEGIN editheader}
+	<h2 {$editheader_hiddenattr} data-pageid="{$pageid}" data-brick="editheader" >{$pagetitlelabel shifts edit}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END editheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+
+
+{BEGIN container_message}
+<div {$message_chiddenattr} data-pageid="{$pageid}" data-container="message" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN message_block}
+<div {$message_hiddenattr} data-pageid="{$pageid}" data-brick="message" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		<button class="btn btn-sm btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>View</button>
+{END view_page_button}
+</div>
+</div>
+
+{END message_block}
+
+
+
+</div>
+{END container_message}
+
+
+
+
+
+
+
+</div>
+{END container_editpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$editfields_hiddenattr} data-pageid="{$pageid}" data-brick="editfields" class="form-horizontal" role="form">
+
+
+
+			{BEGIN Shift_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Shift}" data-fieldname="Shift" data-signal-error-for="Shift{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Shift}">
+		{BEGIN Shift_label}{$label shifts Shift}{END Shift_label}
+	</label>
+	<div class="col-md-6" >
+		{$Shift_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Shift">
+		<div class="text-muted" >
+		{$tooltip shifts Shift}
+		</div>
+	</div>
+</div>
+</div>
+{END Shift_fieldblock}
+
+			{BEGIN SchedType_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_SchedType}" data-fieldname="SchedType" data-signal-error-for="SchedType{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_SchedType}">
+		{BEGIN SchedType_label}{$label shifts SchedType}{END SchedType_label}
+	</label>
+	<div class="col-md-6" >
+		{$SchedType_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="SchedType">
+		<div class="text-muted" >
+		{$tooltip shifts SchedType}
+		</div>
+	</div>
+</div>
+</div>
+{END SchedType_fieldblock}
+
+			{BEGIN TimeIn_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_TimeIn}" data-fieldname="TimeIn" data-signal-error-for="TimeIn{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_TimeIn}">
+		{BEGIN TimeIn_label}{$label shifts TimeIn}{END TimeIn_label}
+	</label>
+	<div class="col-md-6" >
+		{$TimeIn_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="TimeIn">
+		<div class="text-muted" >
+		{$tooltip shifts TimeIn}
+		</div>
+	</div>
+</div>
+</div>
+{END TimeIn_fieldblock}
+
+			{BEGIN TimeOut_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_TimeOut}" data-fieldname="TimeOut" data-signal-error-for="TimeOut{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_TimeOut}">
+		{BEGIN TimeOut_label}{$label shifts TimeOut}{END TimeOut_label}
+	</label>
+	<div class="col-md-6" >
+		{$TimeOut_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="TimeOut">
+		<div class="text-muted" >
+		{$tooltip shifts TimeOut}
+		</div>
+	</div>
+</div>
+</div>
+{END TimeOut_fieldblock}
+
+			{BEGIN LunchBreakTimeFrom_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_LunchBreakTimeFrom}" data-fieldname="LunchBreakTimeFrom" data-signal-error-for="LunchBreakTimeFrom{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_LunchBreakTimeFrom}">
+		{BEGIN LunchBreakTimeFrom_label}{$label shifts LunchBreakTimeFrom}{END LunchBreakTimeFrom_label}
+	</label>
+	<div class="col-md-6" >
+		{$LunchBreakTimeFrom_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="LunchBreakTimeFrom">
+		<div class="text-muted" >
+		{$tooltip shifts LunchBreakTimeFrom}
+		</div>
+	</div>
+</div>
+</div>
+{END LunchBreakTimeFrom_fieldblock}
+
+			{BEGIN LunchBreakTimeTo_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_LunchBreakTimeTo}" data-fieldname="LunchBreakTimeTo" data-signal-error-for="LunchBreakTimeTo{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_LunchBreakTimeTo}">
+		{BEGIN LunchBreakTimeTo_label}{$label shifts LunchBreakTimeTo}{END LunchBreakTimeTo_label}
+	</label>
+	<div class="col-md-6" >
+		{$LunchBreakTimeTo_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="LunchBreakTimeTo">
+		<div class="text-muted" >
+		{$tooltip shifts LunchBreakTimeTo}
+		</div>
+	</div>
+</div>
+</div>
+{END LunchBreakTimeTo_fieldblock}
+
+			{BEGIN ReqLogOutInOnBreak_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_ReqLogOutInOnBreak}" data-fieldname="ReqLogOutInOnBreak" data-signal-error-for="ReqLogOutInOnBreak{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_ReqLogOutInOnBreak}">
+		{BEGIN ReqLogOutInOnBreak_label}{$label shifts ReqLogOutInOnBreak}{END ReqLogOutInOnBreak_label}
+	</label>
+	<div class="col-md-6" >
+		{$ReqLogOutInOnBreak_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="ReqLogOutInOnBreak">
+		<div class="text-muted" >
+		{$tooltip shifts ReqLogOutInOnBreak}
+		</div>
+	</div>
+</div>
+</div>
+{END ReqLogOutInOnBreak_fieldblock}
+
+			{BEGIN FirstHalfMins_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_FirstHalfMins}" data-fieldname="FirstHalfMins" data-signal-error-for="FirstHalfMins{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_FirstHalfMins}">
+		{BEGIN FirstHalfMins_label}{$label shifts FirstHalfMins}{END FirstHalfMins_label}
+	</label>
+	<div class="col-md-6" >
+		{$FirstHalfMins_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="FirstHalfMins">
+		<div class="text-muted" >
+		{$tooltip shifts FirstHalfMins}
+		</div>
+	</div>
+</div>
+</div>
+{END FirstHalfMins_fieldblock}
+
+			{BEGIN BreakMins_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_BreakMins}" data-fieldname="BreakMins" data-signal-error-for="BreakMins{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_BreakMins}">
+		{BEGIN BreakMins_label}{$label shifts BreakMins}{END BreakMins_label}
+	</label>
+	<div class="col-md-6" >
+		{$BreakMins_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="BreakMins">
+		<div class="text-muted" >
+		{$tooltip shifts BreakMins}
+		</div>
+	</div>
+</div>
+</div>
+{END BreakMins_fieldblock}
+
+			{BEGIN SecondHalfMins_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_SecondHalfMins}" data-fieldname="SecondHalfMins" data-signal-error-for="SecondHalfMins{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_SecondHalfMins}">
+		{BEGIN SecondHalfMins_label}{$label shifts SecondHalfMins}{END SecondHalfMins_label}
+	</label>
+	<div class="col-md-6" >
+		{$SecondHalfMins_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="SecondHalfMins">
+		<div class="text-muted" >
+		{$tooltip shifts SecondHalfMins}
+		</div>
+	</div>
+</div>
+</div>
+{END SecondHalfMins_fieldblock}
+
+			{BEGIN MinsPerDay_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_MinsPerDay}" data-fieldname="MinsPerDay" data-signal-error-for="MinsPerDay{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_MinsPerDay}">
+		{BEGIN MinsPerDay_label}{$label shifts MinsPerDay}{END MinsPerDay_label}
+	</label>
+	<div class="col-md-6" >
+		{$MinsPerDay_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="MinsPerDay">
+		<div class="text-muted" >
+		{$tooltip shifts MinsPerDay}
+		</div>
+	</div>
+</div>
+</div>
+{END MinsPerDay_fieldblock}
+
+			{BEGIN AutoApproveNDiff_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_AutoApproveNDiff}" data-fieldname="AutoApproveNDiff" data-signal-error-for="AutoApproveNDiff{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_AutoApproveNDiff}">
+		{BEGIN AutoApproveNDiff_label}{$label shifts AutoApproveNDiff}{END AutoApproveNDiff_label}
+	</label>
+	<div class="col-md-6" >
+		{$AutoApproveNDiff_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="AutoApproveNDiff">
+		<div class="text-muted" >
+		{$tooltip shifts AutoApproveNDiff}
+		</div>
+	</div>
+</div>
+</div>
+{END AutoApproveNDiff_fieldblock}
+
+			
+		
+
+
+
+
+
+{BEGIN details_addbreaks}
+<div data-pageid="1" class="bs-details"> 
+<div class="panel panel-info details-grid">
+
+<div class="panel-heading">
+	<h4 class="panel-title">Addbreaks
+		<span>
+{BEGIN details_inlineadd_addbreaks_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_inlineadd_addbreaks_attrs}>Inline Add</button>
+{END details_inlineadd_addbreaks_link}		
+{BEGIN details_add_addbreaks_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_add_addbreaks_attrs}>Add new</button>
+{END details_add_addbreaks_link}
+{BEGIN details_edit_addbreaks_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_edit_addbreaks_attrs}>Edit</button>
+{END details_edit_addbreaks_link}
+{BEGIN details_updateselected_addbreaks_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_updateselected_addbreaks_attrs}>Update selected</button>
+{END details_updateselected_addbreaks_link}
+
+
+{BEGIN details_delete_addbreaks_link}
+			<button type="button" class="btn btn-xs btn-info " disabled {$details_delete_addbreaks_attrs}>Delete</button>
+{END details_delete_addbreaks_link}
+
+{BEGIN saveall_addbreaks_link}
+			<button type="button" class="btn btn-xs btn-info" {$savealllink_addbreaks_attrs} {$savealllink_addbreaks_span}>Save all</button>
+{END saveall_addbreaks_link}
+{BEGIN cancelall_addbreaks_link}
+			<button type="button" class="btn btn-xs btn-info" {$cancelalllink_addbreaks_attrs} {$cancelalllink_addbreaks_span}>Cancel</button>
+{END cancelall_addbreaks_link}
+		</span>
+	</h4>
+</div>
+<div class="panel-body">
+	{$displayDetailTable_addbreaks}
+</div>
+</div>
+</div>
+{END details_addbreaks}
+	
+	
+	
+
+
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_buttons}
+<div {$buttons_chiddenattr} data-pageid="{$pageid}" data-container="buttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-3 col-md-offset-3"> 
+
+{BEGIN editbuttons}
+	{BEGIN save_button}
+	<button class="btn btn-primary" {$savebutton_attrs}>Save</button>
+	{END save_button}
+	{BEGIN updsel_button}
+	<button class="btn btn-primary" {$updselbutton_attrs}>{$update_selected}</button>
+	{END updsel_button}
+	{BEGIN back_button}
+		<button class="btn btn-default" {$backbutton_attrs}>Back to list</button>
+	{END back_button}
+	{BEGIN close_button}
+	<a href="#" class="btn btn-default" {$closebutton_attrs}>Cancel</a>
+	{END close_button}
+
+{END editbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+
+
+{BEGIN container_leftbuttons_1}
+<div {$leftbuttons_1_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons_1" class="  text-right col-md-3 "> 
+
+{BEGIN righteditbuttons}
+<div class="btn-group" role="group">
+
+	{BEGIN prev_button}
+	<button class="btn btn-default {$prevbutton_class}" {$prevbutton_attrs}><span class="glyphicon glyphicon-chevron-left"></span></button>
+	{END prev_button}
+	{BEGIN next_button}
+	<button class="btn btn-default  {$nextbutton_class}" {$nextbutton_attrs}><span class="glyphicon glyphicon-chevron-right"></span></button>
+	{END next_button}
+	<div class="btn-group dropup" role="group">
+		<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+		<ul class="dropdown-menu dropdown-left">
+			{BEGIN reset_button}
+				<li><a href="#" {$resetbutton_attrs}>Reset</a></li>
+			{END reset_button}
+			{BEGIN view_page_button}
+				<li><a href="#" {$view_page_button_attrs}>View</a></li>
+			{END view_page_button}
+		</ul>
+	</div>
+</div>
+{END righteditbuttons}
+
+
+
+</div>
+{END container_leftbuttons_1}
+
+
+
+
+
+
+</div>
+{END container_buttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

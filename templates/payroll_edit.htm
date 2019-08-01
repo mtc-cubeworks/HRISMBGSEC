@@ -1,0 +1,585 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_editpage}
+<div {$editpage_chiddenattr} data-pageid="{$pageid}" data-container="editpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-9 col-md-offset-3"> 
+
+{BEGIN editheader}
+	<h2 {$editheader_hiddenattr} data-pageid="{$pageid}" data-brick="editheader" >{$pagetitlelabel payroll edit}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END editheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+
+
+{BEGIN container_message}
+<div {$message_chiddenattr} data-pageid="{$pageid}" data-container="message" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN message_block}
+<div {$message_hiddenattr} data-pageid="{$pageid}" data-brick="message" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		<button class="btn btn-sm btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>View</button>
+{END view_page_button}
+</div>
+</div>
+
+{END message_block}
+
+
+
+</div>
+{END container_message}
+
+
+
+
+
+
+
+</div>
+{END container_editpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$editfields_hiddenattr} data-pageid="{$pageid}" data-brick="editfields" class="form-horizontal" role="form">
+
+
+
+			{BEGIN Locked_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Locked}" data-fieldname="Locked" data-signal-error-for="Locked{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Locked}">
+		{BEGIN Locked_label}{$label payroll Locked}{END Locked_label}
+	</label>
+	<div class="col-md-6" >
+		{$Locked_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Locked">
+		<div class="text-muted" >
+		{$tooltip payroll Locked}
+		</div>
+	</div>
+</div>
+</div>
+{END Locked_fieldblock}
+
+			{BEGIN Employer_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Employer}" data-fieldname="Employer" data-signal-error-for="Employer{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Employer}">
+		{BEGIN Employer_label}{$label payroll Employer}{END Employer_label}
+	</label>
+	<div class="col-md-6" >
+		{$Employer_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Employer">
+		<div class="text-muted" >
+		{$tooltip payroll Employer}
+		</div>
+	</div>
+</div>
+</div>
+{END Employer_fieldblock}
+
+			{BEGIN Division_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Division}" data-fieldname="Division" data-signal-error-for="Division{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Division}">
+		{BEGIN Division_label}{$label payroll Division}{END Division_label}
+	</label>
+	<div class="col-md-6" >
+		{$Division_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Division">
+		<div class="text-muted" >
+		{$tooltip payroll Division}
+		</div>
+	</div>
+</div>
+</div>
+{END Division_fieldblock}
+
+			{BEGIN WageType_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_WageType}" data-fieldname="WageType" data-signal-error-for="WageType{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_WageType}">
+		{BEGIN WageType_label}{$label payroll WageType}{END WageType_label}
+	</label>
+	<div class="col-md-6" >
+		{$WageType_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="WageType">
+		<div class="text-muted" >
+		{$tooltip payroll WageType}
+		</div>
+	</div>
+</div>
+</div>
+{END WageType_fieldblock}
+
+			{BEGIN PayFromDate_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_PayFromDate}" data-fieldname="PayFromDate" data-signal-error-for="PayFromDate{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_PayFromDate}">
+		{BEGIN PayFromDate_label}{$label payroll PayFromDate}{END PayFromDate_label}
+	</label>
+	<div class="col-md-6" >
+		{$PayFromDate_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="PayFromDate">
+		<div class="text-muted" >
+		{$tooltip payroll PayFromDate}
+		</div>
+	</div>
+</div>
+</div>
+{END PayFromDate_fieldblock}
+
+			{BEGIN PayToDate_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_PayToDate}" data-fieldname="PayToDate" data-signal-error-for="PayToDate{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_PayToDate}">
+		{BEGIN PayToDate_label}{$label payroll PayToDate}{END PayToDate_label}
+	</label>
+	<div class="col-md-6" >
+		{$PayToDate_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="PayToDate">
+		<div class="text-muted" >
+		{$tooltip payroll PayToDate}
+		</div>
+	</div>
+</div>
+</div>
+{END PayToDate_fieldblock}
+
+			{BEGIN PayPeriod_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_PayPeriod}" data-fieldname="PayPeriod" data-signal-error-for="PayPeriod{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_PayPeriod}">
+		{BEGIN PayPeriod_label}{$label payroll PayPeriod}{END PayPeriod_label}
+	</label>
+	<div class="col-md-6" >
+		{$PayPeriod_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="PayPeriod">
+		<div class="text-muted" >
+		{$tooltip payroll PayPeriod}
+		</div>
+	</div>
+</div>
+</div>
+{END PayPeriod_fieldblock}
+
+			{BEGIN PayDate_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_PayDate}" data-fieldname="PayDate" data-signal-error-for="PayDate{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_PayDate}">
+		{BEGIN PayDate_label}{$label payroll PayDate}{END PayDate_label}
+	</label>
+	<div class="col-md-6" >
+		{$PayDate_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="PayDate">
+		<div class="text-muted" >
+		{$tooltip payroll PayDate}
+		</div>
+	</div>
+</div>
+</div>
+{END PayDate_fieldblock}
+
+			{BEGIN Statutories_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Statutories}" data-fieldname="Statutories" data-signal-error-for="Statutories{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Statutories}">
+		{BEGIN Statutories_label}{$label payroll Statutories}{END Statutories_label}
+	</label>
+	<div class="col-md-6" >
+		{$Statutories_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Statutories">
+		<div class="text-muted" >
+		{$tooltip payroll Statutories}
+		</div>
+	</div>
+</div>
+</div>
+{END Statutories_fieldblock}
+
+			{BEGIN Stat_Loans_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Stat_Loans}" data-fieldname="Stat_Loans" data-signal-error-for="Stat_Loans{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Stat_Loans}">
+		{BEGIN Stat_Loans_label}{$label payroll Stat_Loans}{END Stat_Loans_label}
+	</label>
+	<div class="col-md-6" >
+		{$Stat_Loans_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Stat_Loans">
+		<div class="text-muted" >
+		{$tooltip payroll Stat_Loans}
+		</div>
+	</div>
+</div>
+</div>
+{END Stat_Loans_fieldblock}
+
+			{BEGIN Deductions_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Deductions}" data-fieldname="Deductions" data-signal-error-for="Deductions{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Deductions}">
+		{BEGIN Deductions_label}{$label payroll Deductions}{END Deductions_label}
+	</label>
+	<div class="col-md-6" >
+		{$Deductions_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Deductions">
+		<div class="text-muted" >
+		{$tooltip payroll Deductions}
+		</div>
+	</div>
+</div>
+</div>
+{END Deductions_fieldblock}
+
+			{BEGIN Adjustments_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Adjustments}" data-fieldname="Adjustments" data-signal-error-for="Adjustments{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Adjustments}">
+		{BEGIN Adjustments_label}{$label payroll Adjustments}{END Adjustments_label}
+	</label>
+	<div class="col-md-6" >
+		{$Adjustments_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Adjustments">
+		<div class="text-muted" >
+		{$tooltip payroll Adjustments}
+		</div>
+	</div>
+</div>
+</div>
+{END Adjustments_fieldblock}
+
+			{BEGIN MoAdjustment_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_MoAdjustment}" data-fieldname="MoAdjustment" data-signal-error-for="MoAdjustment{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_MoAdjustment}">
+		{BEGIN MoAdjustment_label}{$label payroll MoAdjustment}{END MoAdjustment_label}
+	</label>
+	<div class="col-md-6" >
+		{$MoAdjustment_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="MoAdjustment">
+		<div class="text-muted" >
+		{$tooltip payroll MoAdjustment}
+		</div>
+	</div>
+</div>
+</div>
+{END MoAdjustment_fieldblock}
+
+			{BEGIN PresetTax_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_PresetTax}" data-fieldname="PresetTax" data-signal-error-for="PresetTax{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_PresetTax}">
+		{BEGIN PresetTax_label}{$label payroll PresetTax}{END PresetTax_label}
+	</label>
+	<div class="col-md-6" >
+		{$PresetTax_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="PresetTax">
+		<div class="text-muted" >
+		{$tooltip payroll PresetTax}
+		</div>
+	</div>
+</div>
+</div>
+{END PresetTax_fieldblock}
+
+			{BEGIN 13thMonth_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_13thMonth}" data-fieldname="13thMonth" data-signal-error-for="13thMonth{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_13thMonth}">
+		{BEGIN 13thMonth_label}{$label payroll 13thMonth}{END 13thMonth_label}
+	</label>
+	<div class="col-md-6" >
+		{$13thMonth_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="13thMonth">
+		<div class="text-muted" >
+		{$tooltip payroll 13thMonth}
+		</div>
+	</div>
+</div>
+</div>
+{END 13thMonth_fieldblock}
+
+			
+		
+
+
+
+
+
+{BEGIN details_payrolltab}
+<div data-pageid="1" class="bs-details"> 
+<div class="panel panel-info details-grid">
+
+<div class="panel-heading">
+	<h4 class="panel-title">Payroll Table
+		<span>
+{BEGIN details_inlineadd_payrolltab_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_inlineadd_payrolltab_attrs}>Inline Add</button>
+{END details_inlineadd_payrolltab_link}		
+{BEGIN details_add_payrolltab_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_add_payrolltab_attrs}>Add new</button>
+{END details_add_payrolltab_link}
+{BEGIN details_edit_payrolltab_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_edit_payrolltab_attrs}>Edit</button>
+{END details_edit_payrolltab_link}
+{BEGIN details_updateselected_payrolltab_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_updateselected_payrolltab_attrs}>Update selected</button>
+{END details_updateselected_payrolltab_link}
+
+
+{BEGIN details_delete_payrolltab_link}
+			<button type="button" class="btn btn-xs btn-info " disabled {$details_delete_payrolltab_attrs}>Delete</button>
+{END details_delete_payrolltab_link}
+
+{BEGIN saveall_payrolltab_link}
+			<button type="button" class="btn btn-xs btn-info" {$savealllink_payrolltab_attrs} {$savealllink_payrolltab_span}>Save all</button>
+{END saveall_payrolltab_link}
+{BEGIN cancelall_payrolltab_link}
+			<button type="button" class="btn btn-xs btn-info" {$cancelalllink_payrolltab_attrs} {$cancelalllink_payrolltab_span}>Cancel</button>
+{END cancelall_payrolltab_link}
+		</span>
+	</h4>
+</div>
+<div class="panel-body">
+	{$displayDetailTable_payrolltab}
+</div>
+</div>
+</div>
+{END details_payrolltab}
+	
+	
+	
+
+			
+		
+
+
+
+
+
+{BEGIN details_payrolldiv}
+<div data-pageid="1" class="bs-details"> 
+<div class="panel panel-info details-grid">
+
+<div class="panel-heading">
+	<h4 class="panel-title">Payroll Prints
+		<span>
+{BEGIN details_inlineadd_payrolldiv_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_inlineadd_payrolldiv_attrs}>Inline Add</button>
+{END details_inlineadd_payrolldiv_link}		
+{BEGIN details_add_payrolldiv_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_add_payrolldiv_attrs}>Add new</button>
+{END details_add_payrolldiv_link}
+{BEGIN details_edit_payrolldiv_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_edit_payrolldiv_attrs}>Edit</button>
+{END details_edit_payrolldiv_link}
+{BEGIN details_updateselected_payrolldiv_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_updateselected_payrolldiv_attrs}>Update selected</button>
+{END details_updateselected_payrolldiv_link}
+
+
+{BEGIN details_delete_payrolldiv_link}
+			<button type="button" class="btn btn-xs btn-info " disabled {$details_delete_payrolldiv_attrs}>Delete</button>
+{END details_delete_payrolldiv_link}
+
+		</span>
+	</h4>
+</div>
+<div class="panel-body">
+	{$displayDetailTable_payrolldiv}
+</div>
+</div>
+</div>
+{END details_payrolldiv}
+	
+	
+	
+
+
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_buttons}
+<div {$buttons_chiddenattr} data-pageid="{$pageid}" data-container="buttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-3 col-md-offset-3"> 
+
+{BEGIN editbuttons}
+	{BEGIN save_button}
+	<button class="btn btn-primary" {$savebutton_attrs}>Save</button>
+	{END save_button}
+	{BEGIN updsel_button}
+	<button class="btn btn-primary" {$updselbutton_attrs}>{$update_selected}</button>
+	{END updsel_button}
+	{BEGIN back_button}
+		<button class="btn btn-default" {$backbutton_attrs}>Back to list</button>
+	{END back_button}
+	{BEGIN close_button}
+	<a href="#" class="btn btn-default" {$closebutton_attrs}>Cancel</a>
+	{END close_button}
+
+{END editbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+
+
+{BEGIN container_leftbuttons_1}
+<div {$leftbuttons_1_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons_1" class="  text-right col-md-3 "> 
+
+{BEGIN righteditbuttons}
+<div class="btn-group" role="group">
+
+	{BEGIN prev_button}
+	<button class="btn btn-default {$prevbutton_class}" {$prevbutton_attrs}><span class="glyphicon glyphicon-chevron-left"></span></button>
+	{END prev_button}
+	{BEGIN next_button}
+	<button class="btn btn-default  {$nextbutton_class}" {$nextbutton_attrs}><span class="glyphicon glyphicon-chevron-right"></span></button>
+	{END next_button}
+	<div class="btn-group dropup" role="group">
+		<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+		<ul class="dropdown-menu dropdown-left">
+			{BEGIN reset_button}
+				<li><a href="#" {$resetbutton_attrs}>Reset</a></li>
+			{END reset_button}
+			{BEGIN view_page_button}
+				<li><a href="#" {$view_page_button_attrs}>View</a></li>
+			{END view_page_button}
+		</ul>
+	</div>
+</div>
+{END righteditbuttons}
+
+
+
+</div>
+{END container_leftbuttons_1}
+
+
+
+
+
+
+</div>
+{END container_buttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

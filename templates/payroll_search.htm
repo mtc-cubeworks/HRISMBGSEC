@@ -1,0 +1,437 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_searchpage}
+<div {$searchpage_chiddenattr} data-pageid="{$pageid}" data-container="searchpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN searchheader}
+	<h2 {$bssearchheader_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchheader" >{$pagetitlelabel payroll search}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END searchheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_searchpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$bssearchfields_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchfields" class="form-horizontal" role="form">
+<div class="container">
+	<div class="form-group">
+		<div class="col-md-12" >
+			&nbsp;
+		</div>
+	</div>
+</div>
+	{BEGIN PSID_fieldblock}		
+	<div class="container {$fielddispclass_PSID}" data-fieldname="PSID">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_PSID}">
+				{$label payroll PSID}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_PSID}
+			</div>
+			<div class="col-md-4" >
+				{$PSID_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$PSID_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END PSID_fieldblock}
+	{BEGIN Locked_fieldblock}		
+	<div class="container {$fielddispclass_Locked}" data-fieldname="Locked">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Locked}">
+				{$label payroll Locked}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Locked}
+			</div>
+			<div class="col-md-4" >
+				{$Locked_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Locked_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Locked_fieldblock}
+	{BEGIN Employer_fieldblock}		
+	<div class="container {$fielddispclass_Employer}" data-fieldname="Employer">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Employer}">
+				{$label payroll Employer}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Employer}
+			</div>
+			<div class="col-md-4" >
+				{$Employer_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Employer_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Employer_fieldblock}
+	{BEGIN Division_fieldblock}		
+	<div class="container {$fielddispclass_Division}" data-fieldname="Division">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Division}">
+				{$label payroll Division}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Division}
+			</div>
+			<div class="col-md-4" >
+				{$Division_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Division_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Division_fieldblock}
+	{BEGIN WageType_fieldblock}		
+	<div class="container {$fielddispclass_WageType}" data-fieldname="WageType">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_WageType}">
+				{$label payroll WageType}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_WageType}
+			</div>
+			<div class="col-md-4" >
+				{$WageType_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$WageType_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END WageType_fieldblock}
+	{BEGIN PayFromDate_fieldblock}		
+	<div class="container {$fielddispclass_PayFromDate}" data-fieldname="PayFromDate">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_PayFromDate}">
+				{$label payroll PayFromDate}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_PayFromDate}
+			</div>
+			<div class="col-md-4" >
+				{$PayFromDate_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$PayFromDate_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END PayFromDate_fieldblock}
+	{BEGIN PayToDate_fieldblock}		
+	<div class="container {$fielddispclass_PayToDate}" data-fieldname="PayToDate">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_PayToDate}">
+				{$label payroll PayToDate}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_PayToDate}
+			</div>
+			<div class="col-md-4" >
+				{$PayToDate_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$PayToDate_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END PayToDate_fieldblock}
+	{BEGIN PayPeriod_fieldblock}		
+	<div class="container {$fielddispclass_PayPeriod}" data-fieldname="PayPeriod">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_PayPeriod}">
+				{$label payroll PayPeriod}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_PayPeriod}
+			</div>
+			<div class="col-md-4" >
+				{$PayPeriod_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$PayPeriod_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END PayPeriod_fieldblock}
+	{BEGIN PayDate_fieldblock}		
+	<div class="container {$fielddispclass_PayDate}" data-fieldname="PayDate">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_PayDate}">
+				{$label payroll PayDate}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_PayDate}
+			</div>
+			<div class="col-md-4" >
+				{$PayDate_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$PayDate_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END PayDate_fieldblock}
+	{BEGIN Statutories_fieldblock}		
+	<div class="container {$fielddispclass_Statutories}" data-fieldname="Statutories">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Statutories}">
+				{$label payroll Statutories}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Statutories}
+			</div>
+			<div class="col-md-4" >
+				{$Statutories_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Statutories_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Statutories_fieldblock}
+	{BEGIN Stat_Loans_fieldblock}		
+	<div class="container {$fielddispclass_Stat_Loans}" data-fieldname="Stat_Loans">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Stat_Loans}">
+				{$label payroll Stat_Loans}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Stat_Loans}
+			</div>
+			<div class="col-md-4" >
+				{$Stat_Loans_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Stat_Loans_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Stat_Loans_fieldblock}
+	{BEGIN Deductions_fieldblock}		
+	<div class="container {$fielddispclass_Deductions}" data-fieldname="Deductions">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Deductions}">
+				{$label payroll Deductions}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Deductions}
+			</div>
+			<div class="col-md-4" >
+				{$Deductions_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Deductions_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Deductions_fieldblock}
+	{BEGIN Adjustments_fieldblock}		
+	<div class="container {$fielddispclass_Adjustments}" data-fieldname="Adjustments">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Adjustments}">
+				{$label payroll Adjustments}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Adjustments}
+			</div>
+			<div class="col-md-4" >
+				{$Adjustments_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Adjustments_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Adjustments_fieldblock}
+	{BEGIN MoAdjustment_fieldblock}		
+	<div class="container {$fielddispclass_MoAdjustment}" data-fieldname="MoAdjustment">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_MoAdjustment}">
+				{$label payroll MoAdjustment}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_MoAdjustment}
+			</div>
+			<div class="col-md-4" >
+				{$MoAdjustment_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$MoAdjustment_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END MoAdjustment_fieldblock}
+	{BEGIN PresetTax_fieldblock}		
+	<div class="container {$fielddispclass_PresetTax}" data-fieldname="PresetTax">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_PresetTax}">
+				{$label payroll PresetTax}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_PresetTax}
+			</div>
+			<div class="col-md-4" >
+				{$PresetTax_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$PresetTax_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END PresetTax_fieldblock}
+	{BEGIN 13thMonth_fieldblock}		
+	<div class="container {$fielddispclass_13thMonth}" data-fieldname="13thMonth">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_13thMonth}">
+				{$label payroll 13thMonth}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_13thMonth}
+			</div>
+			<div class="col-md-4" >
+				{$13thMonth_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$13thMonth_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END 13thMonth_fieldblock}
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container form-horizontal   "> 
+
+
+
+
+{BEGIN container_bbuttons}
+<div {$bbuttons_chiddenattr} data-pageid="{$pageid}" data-container="bbuttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-10 col-md-offset-2"> 
+
+{BEGIN searchbuttons}
+{BEGIN search_button}
+<button class="btn btn-primary" {$searchbutton_attrs}>Search</button>
+{END search_button} 
+{BEGIN reset_button}
+<button class="btn btn-default" {$resetbutton_attrs}>Reset</button>
+{END reset_button}
+{BEGIN back_button}
+<button class="btn btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{END searchbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+</div>
+{END container_bbuttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

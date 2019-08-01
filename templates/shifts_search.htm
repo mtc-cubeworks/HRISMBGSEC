@@ -1,0 +1,383 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_searchpage}
+<div {$searchpage_chiddenattr} data-pageid="{$pageid}" data-container="searchpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN searchheader}
+	<h2 {$bssearchheader_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchheader" >{$pagetitlelabel shifts search}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END searchheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_searchpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$bssearchfields_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchfields" class="form-horizontal" role="form">
+<div class="container">
+	<div class="form-group">
+		<div class="col-md-12" >
+			&nbsp;
+		</div>
+	</div>
+</div>
+	{BEGIN shID_fieldblock}		
+	<div class="container {$fielddispclass_shID}" data-fieldname="shID">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_shID}">
+				{$label shifts shID}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_shID}
+			</div>
+			<div class="col-md-4" >
+				{$shID_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$shID_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END shID_fieldblock}
+	{BEGIN Shift_fieldblock}		
+	<div class="container {$fielddispclass_Shift}" data-fieldname="Shift">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Shift}">
+				{$label shifts Shift}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Shift}
+			</div>
+			<div class="col-md-4" >
+				{$Shift_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Shift_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Shift_fieldblock}
+	{BEGIN SchedType_fieldblock}		
+	<div class="container {$fielddispclass_SchedType}" data-fieldname="SchedType">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SchedType}">
+				{$label shifts SchedType}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SchedType}
+			</div>
+			<div class="col-md-4" >
+				{$SchedType_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SchedType_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SchedType_fieldblock}
+	{BEGIN TimeIn_fieldblock}		
+	<div class="container {$fielddispclass_TimeIn}" data-fieldname="TimeIn">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_TimeIn}">
+				{$label shifts TimeIn}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_TimeIn}
+			</div>
+			<div class="col-md-4" >
+				{$TimeIn_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$TimeIn_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END TimeIn_fieldblock}
+	{BEGIN TimeOut_fieldblock}		
+	<div class="container {$fielddispclass_TimeOut}" data-fieldname="TimeOut">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_TimeOut}">
+				{$label shifts TimeOut}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_TimeOut}
+			</div>
+			<div class="col-md-4" >
+				{$TimeOut_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$TimeOut_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END TimeOut_fieldblock}
+	{BEGIN LunchBreakTimeFrom_fieldblock}		
+	<div class="container {$fielddispclass_LunchBreakTimeFrom}" data-fieldname="LunchBreakTimeFrom">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_LunchBreakTimeFrom}">
+				{$label shifts LunchBreakTimeFrom}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_LunchBreakTimeFrom}
+			</div>
+			<div class="col-md-4" >
+				{$LunchBreakTimeFrom_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$LunchBreakTimeFrom_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END LunchBreakTimeFrom_fieldblock}
+	{BEGIN LunchBreakTimeTo_fieldblock}		
+	<div class="container {$fielddispclass_LunchBreakTimeTo}" data-fieldname="LunchBreakTimeTo">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_LunchBreakTimeTo}">
+				{$label shifts LunchBreakTimeTo}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_LunchBreakTimeTo}
+			</div>
+			<div class="col-md-4" >
+				{$LunchBreakTimeTo_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$LunchBreakTimeTo_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END LunchBreakTimeTo_fieldblock}
+	{BEGIN ReqLogOutInOnBreak_fieldblock}		
+	<div class="container {$fielddispclass_ReqLogOutInOnBreak}" data-fieldname="ReqLogOutInOnBreak">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_ReqLogOutInOnBreak}">
+				{$label shifts ReqLogOutInOnBreak}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_ReqLogOutInOnBreak}
+			</div>
+			<div class="col-md-4" >
+				{$ReqLogOutInOnBreak_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$ReqLogOutInOnBreak_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END ReqLogOutInOnBreak_fieldblock}
+	{BEGIN FirstHalfMins_fieldblock}		
+	<div class="container {$fielddispclass_FirstHalfMins}" data-fieldname="FirstHalfMins">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_FirstHalfMins}">
+				{$label shifts FirstHalfMins}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_FirstHalfMins}
+			</div>
+			<div class="col-md-4" >
+				{$FirstHalfMins_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$FirstHalfMins_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END FirstHalfMins_fieldblock}
+	{BEGIN BreakMins_fieldblock}		
+	<div class="container {$fielddispclass_BreakMins}" data-fieldname="BreakMins">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_BreakMins}">
+				{$label shifts BreakMins}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_BreakMins}
+			</div>
+			<div class="col-md-4" >
+				{$BreakMins_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$BreakMins_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END BreakMins_fieldblock}
+	{BEGIN SecondHalfMins_fieldblock}		
+	<div class="container {$fielddispclass_SecondHalfMins}" data-fieldname="SecondHalfMins">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SecondHalfMins}">
+				{$label shifts SecondHalfMins}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SecondHalfMins}
+			</div>
+			<div class="col-md-4" >
+				{$SecondHalfMins_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SecondHalfMins_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SecondHalfMins_fieldblock}
+	{BEGIN MinsPerDay_fieldblock}		
+	<div class="container {$fielddispclass_MinsPerDay}" data-fieldname="MinsPerDay">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_MinsPerDay}">
+				{$label shifts MinsPerDay}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_MinsPerDay}
+			</div>
+			<div class="col-md-4" >
+				{$MinsPerDay_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$MinsPerDay_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END MinsPerDay_fieldblock}
+	{BEGIN AutoApproveNDiff_fieldblock}		
+	<div class="container {$fielddispclass_AutoApproveNDiff}" data-fieldname="AutoApproveNDiff">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_AutoApproveNDiff}">
+				{$label shifts AutoApproveNDiff}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_AutoApproveNDiff}
+			</div>
+			<div class="col-md-4" >
+				{$AutoApproveNDiff_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$AutoApproveNDiff_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END AutoApproveNDiff_fieldblock}
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container form-horizontal   "> 
+
+
+
+
+{BEGIN container_bbuttons}
+<div {$bbuttons_chiddenattr} data-pageid="{$pageid}" data-container="bbuttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-10 col-md-offset-2"> 
+
+{BEGIN searchbuttons}
+{BEGIN search_button}
+<button class="btn btn-primary" {$searchbutton_attrs}>Search</button>
+{END search_button} 
+{BEGIN reset_button}
+<button class="btn btn-default" {$resetbutton_attrs}>Reset</button>
+{END reset_button}
+{BEGIN back_button}
+<button class="btn btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{END searchbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+</div>
+{END container_bbuttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

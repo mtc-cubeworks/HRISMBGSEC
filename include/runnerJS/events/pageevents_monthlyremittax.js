@@ -1,0 +1,5 @@
+
+Runner.pages.PageSettings.addPageEvent('monthlyremittax',Runner.pages.constants.PAGE_LIST,"afterPageReady",function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='Print';if(!pageObj.buttonEventBefore['Print']){pageObj.buttonEventBefore['Print']=function(params,ctrl,pageObj,proxy,pageid,rowData,row){params["txt"]="Hello";ctrl.setMessage("Sending request to server...");}}
+if(!pageObj.buttonEventAfter['Print']){pageObj.buttonEventAfter['Print']=function(result,ctrl,pageObj,proxy,pageid,rowData,row){var mt=1;window.open('pdfprint2/taxprint.php?mt1='+mt,'_blank');}}
+$('a[id="Print"]').each(function(){if($(this).closest('.gridRowAdd').length){return;}
+this.id="Print"+"_"+Runner.genId();var button_Print=new Runner.form.Button({id:this.id,btnName:"Print"});button_Print.init({args:[pageObj,proxy,pageid]});});});

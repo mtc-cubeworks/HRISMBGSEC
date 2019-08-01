@@ -1,0 +1,79 @@
+<div {$pageattrs}>
+
+{BEGIN container_dcount}
+<div {$dcount_chiddenattr} data-pageid="{$pageid}" data-container="dcount" class="    "> 
+
+
+<span {$bsdetailspreviewcount_hiddenattr} data-pageid="{$pageid}" data-brick="bsdetailspreviewcount">Details found: <strong>{$row_count}</strong></span>
+
+
+
+
+
+</div>
+{END container_dcount}
+
+
+
+{BEGIN container_detailspreviewgrid}
+
+
+{BEGIN details_data}
+<table class="table striped">
+{BEGIN details_row_header}
+	<thead>
+		<tr class="{$gridHeader_class}" >
+			<th class="{$PstID_class}">{$label payrollstatutories PstID}</th>
+			<th class="{$Employer_class}">{$label payrollstatutories Employer}</th>
+			<th class="{$Division_class}">{$label payrollstatutories Division}</th>
+			<th class="{$WageType_class}">{$label payrollstatutories WageType}</th>
+			<th class="{$EmployeeID_class}">{$label payrollstatutories EmployeeID}</th>
+			<th class="{$FromDate_class}">{$label payrollstatutories FromDate}</th>
+			<th class="{$ToDate_class}">{$label payrollstatutories ToDate}</th>
+			<th class="{$SSS_class}">{$label payrollstatutories SSS}</th>
+			<th class="{$SSSER_class}">{$label payrollstatutories SSSER}</th>
+			<th class="{$SSSEC_class}">{$label payrollstatutories SSSEC}</th>
+			<th class="{$SSSTotal_class}">{$label payrollstatutories SSSTotal}</th>
+			<th class="{$PagIbig_class}">{$label payrollstatutories PagIbig}</th>
+			<th class="{$PagIbigER_class}">{$label payrollstatutories PagIbigER}</th>
+			<th class="{$PagIbigTotal_class}">{$label payrollstatutories PagIbigTotal}</th>
+			<th class="{$PHIC_class}">{$label payrollstatutories PHIC}</th>
+			<th class="{$PHICER_class}">{$label payrollstatutories PHICER}</th>
+			<th class="{$PHICTotal_class}">{$label payrollstatutories PHICTotal}</th>
+			<th class="{$PSID_class}">{$label payrollstatutories PSID}</th>
+		</tr>
+	</thead>
+{END details_row_header}
+	<tbody>
+{BEGIN details_row}
+		<tr>
+			<td class="{$PstID_class}">{$PstID_value}</td>
+			<td class="{$Employer_class}">{$Employer_value}</td>
+			<td class="{$Division_class}">{$Division_value}</td>
+			<td class="{$WageType_class}">{$WageType_value}</td>
+			<td class="{$EmployeeID_class}">{$EmployeeID_value}</td>
+			<td class="{$FromDate_class}">{$FromDate_value}</td>
+			<td class="{$ToDate_class}">{$ToDate_value}</td>
+			<td class="{$SSS_class}">{$SSS_value}</td>
+			<td class="{$SSSER_class}">{$SSSER_value}</td>
+			<td class="{$SSSEC_class}">{$SSSEC_value}</td>
+			<td class="{$SSSTotal_class}">{$SSSTotal_value}</td>
+			<td class="{$PagIbig_class}">{$PagIbig_value}</td>
+			<td class="{$PagIbigER_class}">{$PagIbigER_value}</td>
+			<td class="{$PagIbigTotal_class}">{$PagIbigTotal_value}</td>
+			<td class="{$PHIC_class}">{$PHIC_value}</td>
+			<td class="{$PHICER_class}">{$PHICER_value}</td>
+			<td class="{$PHICTotal_class}">{$PHICTotal_value}</td>
+			<td class="{$PSID_class}">{$PSID_value}</td>
+		</tr>
+{END details_row}	
+	</tbody>
+</table>
+
+{END details_data}
+
+
+
+{END container_detailspreviewgrid}
+
+</div>

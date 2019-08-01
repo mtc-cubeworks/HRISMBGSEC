@@ -1,0 +1,136 @@
+<div {$pageattrs}>
+
+{BEGIN container_column}
+<div class="rnr-c rnr-ch rnr-c-column">
+
+{BEGIN masterlist_title}
+<div  class="style1 rnr-bl rnr-b-masterlistheader {$brickclass_masterlistheader}"><a {$backtomasterlink_attrs} class="btn btn-link btn-xs">Back to {$backtomasterlink_caption}</a><span>{$pagetitlelabel schedrange masterlist}</span></div>
+{END masterlist_title}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_column}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+	<style>
+	.bs-gridcell[data-field=ScRID]:before {
+		content: "{$label schedrange ScRID}";
+	}
+	.bs-gridcell[data-field=FromDate]:before {
+		content: "{$label schedrange FromDate}";
+	}
+	.bs-gridcell[data-field=ToDate]:before {
+		content: "{$label schedrange ToDate}";
+	}
+	.bs-gridcell[data-field=TimeIn]:before {
+		content: "{$label schedrange TimeIn}";
+	}
+	.bs-gridcell[data-field=TimeOut]:before {
+		content: "{$label schedrange TimeOut}";
+	}
+	.bs-gridcell[data-field=StrictTimeOut]:before {
+		content: "{$label schedrange StrictTimeOut}";
+	}
+	.bs-gridcell[data-field=StrictTimeIn]:before {
+		content: "{$label schedrange StrictTimeIn}";
+	}
+	.bs-gridcell[data-field=SchedType]:before {
+		content: "{$label schedrange SchedType}";
+	}
+	.bs-gridcell[data-field=MinsPerDay]:before {
+		content: "{$label schedrange MinsPerDay}";
+	}
+	.bs-gridcell[data-field=BreakMins]:before {
+		content: "{$label schedrange BreakMins}";
+	}
+	.bs-gridcell[data-field=Shift]:before {
+		content: "{$label schedrange Shift}";
+	}
+	.bs-gridcell[data-field=Posted]:before {
+		content: "{$label schedrange Posted}";
+	}
+	.bs-gridcell[data-field=LunchBreakTimeFrom]:before {
+		content: "{$label schedrange LunchBreakTimeFrom}";
+	}
+	.bs-gridcell[data-field=LunchBreakTimeTo]:before {
+		content: "{$label schedrange LunchBreakTimeTo}";
+	}
+	.bs-gridcell[data-field=FirstHalfMins]:before {
+		content: "{$label schedrange FirstHalfMins}";
+	}
+	.bs-gridcell[data-field=SecondHalfMins]:before {
+		content: "{$label schedrange SecondHalfMins}";
+	}
+	.bs-gridcell[data-field=RestDays]:before {
+		content: "{$label schedrange RestDays}";
+	}
+	.bs-gridcell[data-field=SchedBy]:before {
+		content: "{$label schedrange SchedBy}";
+	}
+	.bs-gridcell[data-field=Employer]:before {
+		content: "{$label schedrange Employer}";
+	}
+	.bs-gridcell[data-field=Division]:before {
+		content: "{$label schedrange Division}";
+	}
+</style>
+<table {$masterlistgrid_hiddenattr} data-pageid="{$pageid}" data-brick="masterlistgrid" class="table rnr-b-mastergridfields rnr-gridtable bs-flexgrid" >
+		<thead>
+		<tr>
+			<th class="{$ScRID_class}">{$label schedrange ScRID}</th>
+			<th class="{$Employer_class}">{$label schedrange Employer}</th>
+			<th class="{$Division_class}">{$label schedrange Division}</th>
+			<th class="{$Shift_class}">{$label schedrange Shift}</th>
+			<th class="{$FromDate_class}">{$label schedrange FromDate}</th>
+			<th class="{$ToDate_class}">{$label schedrange ToDate}</th>
+			<th class="{$SchedType_class}">{$label schedrange SchedType}</th>
+			<th class="{$SchedBy_class}">{$label schedrange SchedBy}</th>
+			<th class="{$RestDays_class}">{$label schedrange RestDays}</th>
+			<th class="{$TimeIn_class}">{$label schedrange TimeIn}</th>
+			<th class="{$TimeOut_class}">{$label schedrange TimeOut}</th>
+			<th class="{$LunchBreakTimeFrom_class}">{$label schedrange LunchBreakTimeFrom}</th>
+			<th class="{$LunchBreakTimeTo_class}">{$label schedrange LunchBreakTimeTo}</th>
+			<th class="{$MinsPerDay_class}">{$label schedrange MinsPerDay}</th>
+			<th class="{$FirstHalfMins_class}">{$label schedrange FirstHalfMins}</th>
+			<th class="{$BreakMins_class}">{$label schedrange BreakMins}</th>
+			<th class="{$SecondHalfMins_class}">{$label schedrange SecondHalfMins}</th>
+			<th class="{$Posted_class}">{$label schedrange Posted}</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td class="{$ScRID_class} bs-gridcell" data-field=ScRID>{$ScRID_mastervalue}</td>
+			<td class="{$Employer_class} bs-gridcell" data-field=Employer>{$Employer_mastervalue}</td>
+			<td class="{$Division_class} bs-gridcell" data-field=Division>{$Division_mastervalue}</td>
+			<td class="{$Shift_class} bs-gridcell" data-field=Shift>{$Shift_mastervalue}</td>
+			<td class="{$FromDate_class} bs-gridcell" data-field=FromDate>{$FromDate_mastervalue}</td>
+			<td class="{$ToDate_class} bs-gridcell" data-field=ToDate>{$ToDate_mastervalue}</td>
+			<td class="{$SchedType_class} bs-gridcell" data-field=SchedType>{$SchedType_mastervalue}</td>
+			<td class="{$SchedBy_class} bs-gridcell" data-field=SchedBy>{$SchedBy_mastervalue}</td>
+			<td class="{$RestDays_class} bs-gridcell" data-field=RestDays>{$RestDays_mastervalue}</td>
+			<td class="{$TimeIn_class} bs-gridcell" data-field=TimeIn>{$TimeIn_mastervalue}</td>
+			<td class="{$TimeOut_class} bs-gridcell" data-field=TimeOut>{$TimeOut_mastervalue}</td>
+			<td class="{$LunchBreakTimeFrom_class} bs-gridcell" data-field=LunchBreakTimeFrom>{$LunchBreakTimeFrom_mastervalue}</td>
+			<td class="{$LunchBreakTimeTo_class} bs-gridcell" data-field=LunchBreakTimeTo>{$LunchBreakTimeTo_mastervalue}</td>
+			<td class="{$MinsPerDay_class} bs-gridcell" data-field=MinsPerDay>{$MinsPerDay_mastervalue}</td>
+			<td class="{$FirstHalfMins_class} bs-gridcell" data-field=FirstHalfMins>{$FirstHalfMins_mastervalue}</td>
+			<td class="{$BreakMins_class} bs-gridcell" data-field=BreakMins>{$BreakMins_mastervalue}</td>
+			<td class="{$SecondHalfMins_class} bs-gridcell" data-field=SecondHalfMins>{$SecondHalfMins_mastervalue}</td>
+			<td class="{$Posted_class} bs-gridcell" data-field=Posted>{$Posted_mastervalue}</td>
+		</tr>
+	</tbody>
+
+</table> 
+
+
+
+
+{END container_mastergrid}
+
+</div>

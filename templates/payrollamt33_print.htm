@@ -1,0 +1,1266 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_pdf}
+<div {$pdf_chiddenattr} data-pageid="{$pageid}" data-container="pdf" class="   col-md-12 "> 
+
+{BEGIN printbuttons}
+
+{END printbuttons}
+
+
+
+</div>
+{END container_pdf}
+
+
+
+
+
+{BEGIN container_pageheader}
+<div {$pageheader_chiddenattr} data-pageid="{$pageid}" data-container="pageheader" class="    "> 
+
+{BEGIN printheader}
+	<h2 {$printheader_hiddenattr} data-pageid="{$pageid}" data-brick="printheader" >{$pagetitlelabel payrollamt33 print}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END printheader}
+
+
+{BEGIN page_number}
+<span>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></span>
+{END page_number}
+
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="table table-bordered rp-maintable" {$printgrid_hiddenattr} data-pageid="{$pageid}" data-brick="printgrid" >
+	<thead>
+	{BEGIN grid_header}
+		<tr class="{$gridHeader_class}" >
+		{BEGIN record_header}
+			{BEGIN OT_fieldheadercolumn}
+			<th class="{$OT_class}" {$OT_style}  data-field="OT">
+				{$label payrollamt33 OT}
+			</th>
+			{END OT_fieldheadercolumn}
+			{BEGIN TDeductions_fieldheadercolumn}
+			<th class="{$TDeductions_class}" {$TDeductions_style}  data-field="TDeductions">
+				{$label payrollamt33 TDeductions}
+			</th>
+			{END TDeductions_fieldheadercolumn}
+			{BEGIN PtabID_fieldheadercolumn}
+			<th class="{$PtabID_class}" {$PtabID_style}  data-field="PtabID">
+				{$label payrollamt33 PtabID}
+			</th>
+			{END PtabID_fieldheadercolumn}
+			{BEGIN FromDate_fieldheadercolumn}
+			<th class="{$FromDate_class}" {$FromDate_style}  data-field="FromDate">
+				{$label payrollamt33 FromDate}
+			</th>
+			{END FromDate_fieldheadercolumn}
+			{BEGIN ToDate_fieldheadercolumn}
+			<th class="{$ToDate_class}" {$ToDate_style}  data-field="ToDate">
+				{$label payrollamt33 ToDate}
+			</th>
+			{END ToDate_fieldheadercolumn}
+			{BEGIN EmployeeID_fieldheadercolumn}
+			<th class="{$EmployeeID_class}" {$EmployeeID_style}  data-field="EmployeeID">
+				{$label payrollamt33 EmployeeID}
+			</th>
+			{END EmployeeID_fieldheadercolumn}
+			{BEGIN UserName_fieldheadercolumn}
+			<th class="{$UserName_class}" {$UserName_style}  data-field="UserName">
+				{$label payrollamt33 UserName}
+			</th>
+			{END UserName_fieldheadercolumn}
+			{BEGIN Status_fieldheadercolumn}
+			<th class="{$Status_class}" {$Status_style}  data-field="Status">
+				{$label payrollamt33 Status}
+			</th>
+			{END Status_fieldheadercolumn}
+			{BEGIN Employer_fieldheadercolumn}
+			<th class="{$Employer_class}" {$Employer_style}  data-field="Employer">
+				{$label payrollamt33 Employer}
+			</th>
+			{END Employer_fieldheadercolumn}
+			{BEGIN Division_fieldheadercolumn}
+			<th class="{$Division_class}" {$Division_style}  data-field="Division">
+				{$label payrollamt33 Division}
+			</th>
+			{END Division_fieldheadercolumn}
+			{BEGIN WageType_fieldheadercolumn}
+			<th class="{$WageType_class}" {$WageType_style}  data-field="WageType">
+				{$label payrollamt33 WageType}
+			</th>
+			{END WageType_fieldheadercolumn}
+			{BEGIN BasicMonthly_fieldheadercolumn}
+			<th class="{$BasicMonthly_class}" {$BasicMonthly_style}  data-field="BasicMonthly">
+				{$label payrollamt33 BasicMonthly}
+			</th>
+			{END BasicMonthly_fieldheadercolumn}
+			{BEGIN BasicDaily_fieldheadercolumn}
+			<th class="{$BasicDaily_class}" {$BasicDaily_style}  data-field="BasicDaily">
+				{$label payrollamt33 BasicDaily}
+			</th>
+			{END BasicDaily_fieldheadercolumn}
+			{BEGIN DWork_fieldheadercolumn}
+			<th class="{$DWork_class}" {$DWork_style}  data-field="DWork">
+				{$label payrollamt33 DWork}
+			</th>
+			{END DWork_fieldheadercolumn}
+			{BEGIN Absent_fieldheadercolumn}
+			<th class="{$Absent_class}" {$Absent_style}  data-field="Absent">
+				{$label payrollamt33 Absent}
+			</th>
+			{END Absent_fieldheadercolumn}
+			{BEGIN RegPay_fieldheadercolumn}
+			<th class="{$RegPay_class}" {$RegPay_style}  data-field="RegPay">
+				{$label payrollamt33 RegPay}
+			</th>
+			{END RegPay_fieldheadercolumn}
+			{BEGIN LateMins_fieldheadercolumn}
+			<th class="{$LateMins_class}" {$LateMins_style}  data-field="LateMins">
+				{$label payrollamt33 LateMins}
+			</th>
+			{END LateMins_fieldheadercolumn}
+			{BEGIN Late_fieldheadercolumn}
+			<th class="{$Late_class}" {$Late_style}  data-field="Late">
+				{$label payrollamt33 Late}
+			</th>
+			{END Late_fieldheadercolumn}
+			{BEGIN UndertimeMins_fieldheadercolumn}
+			<th class="{$UndertimeMins_class}" {$UndertimeMins_style}  data-field="UndertimeMins">
+				{$label payrollamt33 UndertimeMins}
+			</th>
+			{END UndertimeMins_fieldheadercolumn}
+			{BEGIN UnderTime_fieldheadercolumn}
+			<th class="{$UnderTime_class}" {$UnderTime_style}  data-field="UnderTime">
+				{$label payrollamt33 UnderTime}
+			</th>
+			{END UnderTime_fieldheadercolumn}
+			{BEGIN RHoliday_fieldheadercolumn}
+			<th class="{$RHoliday_class}" {$RHoliday_style}  data-field="RHoliday">
+				{$label payrollamt33 RHoliday}
+			</th>
+			{END RHoliday_fieldheadercolumn}
+			{BEGIN SHoliday_fieldheadercolumn}
+			<th class="{$SHoliday_class}" {$SHoliday_style}  data-field="SHoliday">
+				{$label payrollamt33 SHoliday}
+			</th>
+			{END SHoliday_fieldheadercolumn}
+			{BEGIN CHoliday_fieldheadercolumn}
+			<th class="{$CHoliday_class}" {$CHoliday_style}  data-field="CHoliday">
+				{$label payrollamt33 CHoliday}
+			</th>
+			{END CHoliday_fieldheadercolumn}
+			{BEGIN RegOT_fieldheadercolumn}
+			<th class="{$RegOT_class}" {$RegOT_style}  data-field="RegOT">
+				{$label payrollamt33 RegOT}
+			</th>
+			{END RegOT_fieldheadercolumn}
+			{BEGIN RHOT_fieldheadercolumn}
+			<th class="{$RHOT_class}" {$RHOT_style}  data-field="RHOT">
+				{$label payrollamt33 RHOT}
+			</th>
+			{END RHOT_fieldheadercolumn}
+			{BEGIN SHOT_fieldheadercolumn}
+			<th class="{$SHOT_class}" {$SHOT_style}  data-field="SHOT">
+				{$label payrollamt33 SHOT}
+			</th>
+			{END SHOT_fieldheadercolumn}
+			{BEGIN CHOT_fieldheadercolumn}
+			<th class="{$CHOT_class}" {$CHOT_style}  data-field="CHOT">
+				{$label payrollamt33 CHOT}
+			</th>
+			{END CHOT_fieldheadercolumn}
+			{BEGIN RDOT_fieldheadercolumn}
+			<th class="{$RDOT_class}" {$RDOT_style}  data-field="RDOT">
+				{$label payrollamt33 RDOT}
+			</th>
+			{END RDOT_fieldheadercolumn}
+			{BEGIN RD_fieldheadercolumn}
+			<th class="{$RD_class}" {$RD_style}  data-field="RD">
+				{$label payrollamt33 RD}
+			</th>
+			{END RD_fieldheadercolumn}
+			{BEGIN ND_fieldheadercolumn}
+			<th class="{$ND_class}" {$ND_style}  data-field="ND">
+				{$label payrollamt33 ND}
+			</th>
+			{END ND_fieldheadercolumn}
+			{BEGIN RHND_fieldheadercolumn}
+			<th class="{$RHND_class}" {$RHND_style}  data-field="RHND">
+				{$label payrollamt33 RHND}
+			</th>
+			{END RHND_fieldheadercolumn}
+			{BEGIN SHND_fieldheadercolumn}
+			<th class="{$SHND_class}" {$SHND_style}  data-field="SHND">
+				{$label payrollamt33 SHND}
+			</th>
+			{END SHND_fieldheadercolumn}
+			{BEGIN CHND_fieldheadercolumn}
+			<th class="{$CHND_class}" {$CHND_style}  data-field="CHND">
+				{$label payrollamt33 CHND}
+			</th>
+			{END CHND_fieldheadercolumn}
+			{BEGIN RDND_fieldheadercolumn}
+			<th class="{$RDND_class}" {$RDND_style}  data-field="RDND">
+				{$label payrollamt33 RDND}
+			</th>
+			{END RDND_fieldheadercolumn}
+			{BEGIN TND_fieldheadercolumn}
+			<th class="{$TND_class}" {$TND_style}  data-field="TND">
+				{$label payrollamt33 TND}
+			</th>
+			{END TND_fieldheadercolumn}
+			{BEGIN VL_fieldheadercolumn}
+			<th class="{$VL_class}" {$VL_style}  data-field="VL">
+				{$label payrollamt33 VL}
+			</th>
+			{END VL_fieldheadercolumn}
+			{BEGIN SL_fieldheadercolumn}
+			<th class="{$SL_class}" {$SL_style}  data-field="SL">
+				{$label payrollamt33 SL}
+			</th>
+			{END SL_fieldheadercolumn}
+			{BEGIN EL_fieldheadercolumn}
+			<th class="{$EL_class}" {$EL_style}  data-field="EL">
+				{$label payrollamt33 EL}
+			</th>
+			{END EL_fieldheadercolumn}
+			{BEGIN PL_fieldheadercolumn}
+			<th class="{$PL_class}" {$PL_style}  data-field="PL">
+				{$label payrollamt33 PL}
+			</th>
+			{END PL_fieldheadercolumn}
+			{BEGIN TrO_fieldheadercolumn}
+			<th class="{$TrO_class}" {$TrO_style}  data-field="TrO">
+				{$label payrollamt33 TrO}
+			</th>
+			{END TrO_fieldheadercolumn}
+			{BEGIN RHolidayHrs_fieldheadercolumn}
+			<th class="{$RHolidayHrs_class}" {$RHolidayHrs_style}  data-field="RHolidayHrs">
+				{$label payrollamt33 RHolidayHrs}
+			</th>
+			{END RHolidayHrs_fieldheadercolumn}
+			{BEGIN SHolidayHrs_fieldheadercolumn}
+			<th class="{$SHolidayHrs_class}" {$SHolidayHrs_style}  data-field="SHolidayHrs">
+				{$label payrollamt33 SHolidayHrs}
+			</th>
+			{END SHolidayHrs_fieldheadercolumn}
+			{BEGIN CHolidayHrs_fieldheadercolumn}
+			<th class="{$CHolidayHrs_class}" {$CHolidayHrs_style}  data-field="CHolidayHrs">
+				{$label payrollamt33 CHolidayHrs}
+			</th>
+			{END CHolidayHrs_fieldheadercolumn}
+			{BEGIN RegOTHrs_fieldheadercolumn}
+			<th class="{$RegOTHrs_class}" {$RegOTHrs_style}  data-field="RegOTHrs">
+				{$label payrollamt33 RegOTHrs}
+			</th>
+			{END RegOTHrs_fieldheadercolumn}
+			{BEGIN RHOTHrs_fieldheadercolumn}
+			<th class="{$RHOTHrs_class}" {$RHOTHrs_style}  data-field="RHOTHrs">
+				{$label payrollamt33 RHOTHrs}
+			</th>
+			{END RHOTHrs_fieldheadercolumn}
+			{BEGIN SHOTHRs_fieldheadercolumn}
+			<th class="{$SHOTHRs_class}" {$SHOTHRs_style}  data-field="SHOTHRs">
+				{$label payrollamt33 SHOTHRs}
+			</th>
+			{END SHOTHRs_fieldheadercolumn}
+			{BEGIN CHOTHrs_fieldheadercolumn}
+			<th class="{$CHOTHrs_class}" {$CHOTHrs_style}  data-field="CHOTHrs">
+				{$label payrollamt33 CHOTHrs}
+			</th>
+			{END CHOTHrs_fieldheadercolumn}
+			{BEGIN RDOTHrs_fieldheadercolumn}
+			<th class="{$RDOTHrs_class}" {$RDOTHrs_style}  data-field="RDOTHrs">
+				{$label payrollamt33 RDOTHrs}
+			</th>
+			{END RDOTHrs_fieldheadercolumn}
+			{BEGIN RDHrs_fieldheadercolumn}
+			<th class="{$RDHrs_class}" {$RDHrs_style}  data-field="RDHrs">
+				{$label payrollamt33 RDHrs}
+			</th>
+			{END RDHrs_fieldheadercolumn}
+			{BEGIN RegNDHrs_fieldheadercolumn}
+			<th class="{$RegNDHrs_class}" {$RegNDHrs_style}  data-field="RegNDHrs">
+				{$label payrollamt33 RegNDHrs}
+			</th>
+			{END RegNDHrs_fieldheadercolumn}
+			{BEGIN RHNDHrs_fieldheadercolumn}
+			<th class="{$RHNDHrs_class}" {$RHNDHrs_style}  data-field="RHNDHrs">
+				{$label payrollamt33 RHNDHrs}
+			</th>
+			{END RHNDHrs_fieldheadercolumn}
+			{BEGIN SHNDHrs_fieldheadercolumn}
+			<th class="{$SHNDHrs_class}" {$SHNDHrs_style}  data-field="SHNDHrs">
+				{$label payrollamt33 SHNDHrs}
+			</th>
+			{END SHNDHrs_fieldheadercolumn}
+			{BEGIN CHNDHrs_fieldheadercolumn}
+			<th class="{$CHNDHrs_class}" {$CHNDHrs_style}  data-field="CHNDHrs">
+				{$label payrollamt33 CHNDHrs}
+			</th>
+			{END CHNDHrs_fieldheadercolumn}
+			{BEGIN RDNDHrs_fieldheadercolumn}
+			<th class="{$RDNDHrs_class}" {$RDNDHrs_style}  data-field="RDNDHrs">
+				{$label payrollamt33 RDNDHrs}
+			</th>
+			{END RDNDHrs_fieldheadercolumn}
+			{BEGIN VLBalance_fieldheadercolumn}
+			<th class="{$VLBalance_class}" {$VLBalance_style}  data-field="VLBalance">
+				{$label payrollamt33 VLBalance}
+			</th>
+			{END VLBalance_fieldheadercolumn}
+			{BEGIN SLBalance_fieldheadercolumn}
+			<th class="{$SLBalance_class}" {$SLBalance_style}  data-field="SLBalance">
+				{$label payrollamt33 SLBalance}
+			</th>
+			{END SLBalance_fieldheadercolumn}
+			{BEGIN ELBalance_fieldheadercolumn}
+			<th class="{$ELBalance_class}" {$ELBalance_style}  data-field="ELBalance">
+				{$label payrollamt33 ELBalance}
+			</th>
+			{END ELBalance_fieldheadercolumn}
+			{BEGIN PLBalance_fieldheadercolumn}
+			<th class="{$PLBalance_class}" {$PLBalance_style}  data-field="PLBalance">
+				{$label payrollamt33 PLBalance}
+			</th>
+			{END PLBalance_fieldheadercolumn}
+			{BEGIN PayDate_fieldheadercolumn}
+			<th class="{$PayDate_class}" {$PayDate_style}  data-field="PayDate">
+				{$label payrollamt33 PayDate}
+			</th>
+			{END PayDate_fieldheadercolumn}
+			{BEGIN LWOP_fieldheadercolumn}
+			<th class="{$LWOP_class}" {$LWOP_style}  data-field="LWOP">
+				{$label payrollamt33 LWOP}
+			</th>
+			{END LWOP_fieldheadercolumn}
+			{BEGIN LWOPdays_fieldheadercolumn}
+			<th class="{$LWOPdays_class}" {$LWOPdays_style}  data-field="LWOPdays">
+				{$label payrollamt33 LWOPdays}
+			</th>
+			{END LWOPdays_fieldheadercolumn}
+			{BEGIN TAdj_fieldheadercolumn}
+			<th class="{$TAdj_class}" {$TAdj_style}  data-field="TAdj">
+				{$label payrollamt33 TAdj}
+			</th>
+			{END TAdj_fieldheadercolumn}
+			{BEGIN TAdjt_fieldheadercolumn}
+			<th class="{$TAdjt_class}" {$TAdjt_style}  data-field="TAdjt">
+				{$label payrollamt33 TAdjt}
+			</th>
+			{END TAdjt_fieldheadercolumn}
+			{BEGIN Ttax_fieldheadercolumn}
+			<th class="{$Ttax_class}" {$Ttax_style}  data-field="Ttax">
+				{$label payrollamt33 Ttax}
+			</th>
+			{END Ttax_fieldheadercolumn}
+			{BEGIN SSS_fieldheadercolumn}
+			<th class="{$SSS_class}" {$SSS_style}  data-field="SSS">
+				{$label payrollamt33 SSS}
+			</th>
+			{END SSS_fieldheadercolumn}
+			{BEGIN PagIbig_fieldheadercolumn}
+			<th class="{$PagIbig_class}" {$PagIbig_style}  data-field="PagIbig">
+				{$label payrollamt33 PagIbig}
+			</th>
+			{END PagIbig_fieldheadercolumn}
+			{BEGIN PHIC_fieldheadercolumn}
+			<th class="{$PHIC_class}" {$PHIC_style}  data-field="PHIC">
+				{$label payrollamt33 PHIC}
+			</th>
+			{END PHIC_fieldheadercolumn}
+			{BEGIN Taxable_fieldheadercolumn}
+			<th class="{$Taxable_class}" {$Taxable_style}  data-field="Taxable">
+				{$label payrollamt33 Taxable}
+			</th>
+			{END Taxable_fieldheadercolumn}
+			{BEGIN GrossPay_fieldheadercolumn}
+			<th class="{$GrossPay_class}" {$GrossPay_style}  data-field="GrossPay">
+				{$label payrollamt33 GrossPay}
+			</th>
+			{END GrossPay_fieldheadercolumn}
+			{BEGIN NetPay_fieldheadercolumn}
+			<th class="{$NetPay_class}" {$NetPay_style}  data-field="NetPay">
+				{$label payrollamt33 NetPay}
+			</th>
+			{END NetPay_fieldheadercolumn}
+			{BEGIN VLDays_fieldheadercolumn}
+			<th class="{$VLDays_class}" {$VLDays_style}  data-field="VLDays">
+				{$label payrollamt33 VLDays}
+			</th>
+			{END VLDays_fieldheadercolumn}
+			{BEGIN ELDays_fieldheadercolumn}
+			<th class="{$ELDays_class}" {$ELDays_style}  data-field="ELDays">
+				{$label payrollamt33 ELDays}
+			</th>
+			{END ELDays_fieldheadercolumn}
+			{BEGIN SLDays_fieldheadercolumn}
+			<th class="{$SLDays_class}" {$SLDays_style}  data-field="SLDays">
+				{$label payrollamt33 SLDays}
+			</th>
+			{END SLDays_fieldheadercolumn}
+			{BEGIN PLDays_fieldheadercolumn}
+			<th class="{$PLDays_class}" {$PLDays_style}  data-field="PLDays">
+				{$label payrollamt33 PLDays}
+			</th>
+			{END PLDays_fieldheadercolumn}
+			{BEGIN endrecordheader_block}
+			<th class="rnr-cs">&nbsp;</th>
+			{END endrecordheader_block}
+		{END record_header}
+		</tr>
+	{END grid_header}
+	</thead>
+	
+	<tbody>	
+	{BEGIN grid_row}
+		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+			{BEGIN OT_fieldcolumn}
+			<td  class="{$OT_class}" {$OT_style} {$recordattrs}>
+				{$OT_value}
+			</td>
+			{END OT_fieldcolumn}
+			{BEGIN TDeductions_fieldcolumn}
+			<td  class="{$TDeductions_class}" {$TDeductions_style} {$recordattrs}>
+				{$TDeductions_value}
+			</td>
+			{END TDeductions_fieldcolumn}
+			{BEGIN PtabID_fieldcolumn}
+			<td  class="{$PtabID_class}" {$PtabID_style} {$recordattrs}>
+				{$PtabID_value}
+			</td>
+			{END PtabID_fieldcolumn}
+			{BEGIN FromDate_fieldcolumn}
+			<td  class="{$FromDate_class}" {$FromDate_style} {$recordattrs}>
+				{$FromDate_value}
+			</td>
+			{END FromDate_fieldcolumn}
+			{BEGIN ToDate_fieldcolumn}
+			<td  class="{$ToDate_class}" {$ToDate_style} {$recordattrs}>
+				{$ToDate_value}
+			</td>
+			{END ToDate_fieldcolumn}
+			{BEGIN EmployeeID_fieldcolumn}
+			<td  class="{$EmployeeID_class}" {$EmployeeID_style} {$recordattrs}>
+				{$EmployeeID_value}
+			</td>
+			{END EmployeeID_fieldcolumn}
+			{BEGIN UserName_fieldcolumn}
+			<td  class="{$UserName_class}" {$UserName_style} {$recordattrs}>
+				{$UserName_value}
+			</td>
+			{END UserName_fieldcolumn}
+			{BEGIN Status_fieldcolumn}
+			<td  class="{$Status_class}" {$Status_style} {$recordattrs}>
+				{$Status_value}
+			</td>
+			{END Status_fieldcolumn}
+			{BEGIN Employer_fieldcolumn}
+			<td  class="{$Employer_class}" {$Employer_style} {$recordattrs}>
+				{$Employer_value}
+			</td>
+			{END Employer_fieldcolumn}
+			{BEGIN Division_fieldcolumn}
+			<td  class="{$Division_class}" {$Division_style} {$recordattrs}>
+				{$Division_value}
+			</td>
+			{END Division_fieldcolumn}
+			{BEGIN WageType_fieldcolumn}
+			<td  class="{$WageType_class}" {$WageType_style} {$recordattrs}>
+				{$WageType_value}
+			</td>
+			{END WageType_fieldcolumn}
+			{BEGIN BasicMonthly_fieldcolumn}
+			<td  class="{$BasicMonthly_class}" {$BasicMonthly_style} {$recordattrs}>
+				{$BasicMonthly_value}
+			</td>
+			{END BasicMonthly_fieldcolumn}
+			{BEGIN BasicDaily_fieldcolumn}
+			<td  class="{$BasicDaily_class}" {$BasicDaily_style} {$recordattrs}>
+				{$BasicDaily_value}
+			</td>
+			{END BasicDaily_fieldcolumn}
+			{BEGIN DWork_fieldcolumn}
+			<td  class="{$DWork_class}" {$DWork_style} {$recordattrs}>
+				{$DWork_value}
+			</td>
+			{END DWork_fieldcolumn}
+			{BEGIN Absent_fieldcolumn}
+			<td  class="{$Absent_class}" {$Absent_style} {$recordattrs}>
+				{$Absent_value}
+			</td>
+			{END Absent_fieldcolumn}
+			{BEGIN RegPay_fieldcolumn}
+			<td  class="{$RegPay_class}" {$RegPay_style} {$recordattrs}>
+				{$RegPay_value}
+			</td>
+			{END RegPay_fieldcolumn}
+			{BEGIN LateMins_fieldcolumn}
+			<td  class="{$LateMins_class}" {$LateMins_style} {$recordattrs}>
+				{$LateMins_value}
+			</td>
+			{END LateMins_fieldcolumn}
+			{BEGIN Late_fieldcolumn}
+			<td  class="{$Late_class}" {$Late_style} {$recordattrs}>
+				{$Late_value}
+			</td>
+			{END Late_fieldcolumn}
+			{BEGIN UndertimeMins_fieldcolumn}
+			<td  class="{$UndertimeMins_class}" {$UndertimeMins_style} {$recordattrs}>
+				{$UndertimeMins_value}
+			</td>
+			{END UndertimeMins_fieldcolumn}
+			{BEGIN UnderTime_fieldcolumn}
+			<td  class="{$UnderTime_class}" {$UnderTime_style} {$recordattrs}>
+				{$UnderTime_value}
+			</td>
+			{END UnderTime_fieldcolumn}
+			{BEGIN RHoliday_fieldcolumn}
+			<td  class="{$RHoliday_class}" {$RHoliday_style} {$recordattrs}>
+				{$RHoliday_value}
+			</td>
+			{END RHoliday_fieldcolumn}
+			{BEGIN SHoliday_fieldcolumn}
+			<td  class="{$SHoliday_class}" {$SHoliday_style} {$recordattrs}>
+				{$SHoliday_value}
+			</td>
+			{END SHoliday_fieldcolumn}
+			{BEGIN CHoliday_fieldcolumn}
+			<td  class="{$CHoliday_class}" {$CHoliday_style} {$recordattrs}>
+				{$CHoliday_value}
+			</td>
+			{END CHoliday_fieldcolumn}
+			{BEGIN RegOT_fieldcolumn}
+			<td  class="{$RegOT_class}" {$RegOT_style} {$recordattrs}>
+				{$RegOT_value}
+			</td>
+			{END RegOT_fieldcolumn}
+			{BEGIN RHOT_fieldcolumn}
+			<td  class="{$RHOT_class}" {$RHOT_style} {$recordattrs}>
+				{$RHOT_value}
+			</td>
+			{END RHOT_fieldcolumn}
+			{BEGIN SHOT_fieldcolumn}
+			<td  class="{$SHOT_class}" {$SHOT_style} {$recordattrs}>
+				{$SHOT_value}
+			</td>
+			{END SHOT_fieldcolumn}
+			{BEGIN CHOT_fieldcolumn}
+			<td  class="{$CHOT_class}" {$CHOT_style} {$recordattrs}>
+				{$CHOT_value}
+			</td>
+			{END CHOT_fieldcolumn}
+			{BEGIN RDOT_fieldcolumn}
+			<td  class="{$RDOT_class}" {$RDOT_style} {$recordattrs}>
+				{$RDOT_value}
+			</td>
+			{END RDOT_fieldcolumn}
+			{BEGIN RD_fieldcolumn}
+			<td  class="{$RD_class}" {$RD_style} {$recordattrs}>
+				{$RD_value}
+			</td>
+			{END RD_fieldcolumn}
+			{BEGIN ND_fieldcolumn}
+			<td  class="{$ND_class}" {$ND_style} {$recordattrs}>
+				{$ND_value}
+			</td>
+			{END ND_fieldcolumn}
+			{BEGIN RHND_fieldcolumn}
+			<td  class="{$RHND_class}" {$RHND_style} {$recordattrs}>
+				{$RHND_value}
+			</td>
+			{END RHND_fieldcolumn}
+			{BEGIN SHND_fieldcolumn}
+			<td  class="{$SHND_class}" {$SHND_style} {$recordattrs}>
+				{$SHND_value}
+			</td>
+			{END SHND_fieldcolumn}
+			{BEGIN CHND_fieldcolumn}
+			<td  class="{$CHND_class}" {$CHND_style} {$recordattrs}>
+				{$CHND_value}
+			</td>
+			{END CHND_fieldcolumn}
+			{BEGIN RDND_fieldcolumn}
+			<td  class="{$RDND_class}" {$RDND_style} {$recordattrs}>
+				{$RDND_value}
+			</td>
+			{END RDND_fieldcolumn}
+			{BEGIN TND_fieldcolumn}
+			<td  class="{$TND_class}" {$TND_style} {$recordattrs}>
+				{$TND_value}
+			</td>
+			{END TND_fieldcolumn}
+			{BEGIN VL_fieldcolumn}
+			<td  class="{$VL_class}" {$VL_style} {$recordattrs}>
+				{$VL_value}
+			</td>
+			{END VL_fieldcolumn}
+			{BEGIN SL_fieldcolumn}
+			<td  class="{$SL_class}" {$SL_style} {$recordattrs}>
+				{$SL_value}
+			</td>
+			{END SL_fieldcolumn}
+			{BEGIN EL_fieldcolumn}
+			<td  class="{$EL_class}" {$EL_style} {$recordattrs}>
+				{$EL_value}
+			</td>
+			{END EL_fieldcolumn}
+			{BEGIN PL_fieldcolumn}
+			<td  class="{$PL_class}" {$PL_style} {$recordattrs}>
+				{$PL_value}
+			</td>
+			{END PL_fieldcolumn}
+			{BEGIN TrO_fieldcolumn}
+			<td  class="{$TrO_class}" {$TrO_style} {$recordattrs}>
+				{$TrO_value}
+			</td>
+			{END TrO_fieldcolumn}
+			{BEGIN RHolidayHrs_fieldcolumn}
+			<td  class="{$RHolidayHrs_class}" {$RHolidayHrs_style} {$recordattrs}>
+				{$RHolidayHrs_value}
+			</td>
+			{END RHolidayHrs_fieldcolumn}
+			{BEGIN SHolidayHrs_fieldcolumn}
+			<td  class="{$SHolidayHrs_class}" {$SHolidayHrs_style} {$recordattrs}>
+				{$SHolidayHrs_value}
+			</td>
+			{END SHolidayHrs_fieldcolumn}
+			{BEGIN CHolidayHrs_fieldcolumn}
+			<td  class="{$CHolidayHrs_class}" {$CHolidayHrs_style} {$recordattrs}>
+				{$CHolidayHrs_value}
+			</td>
+			{END CHolidayHrs_fieldcolumn}
+			{BEGIN RegOTHrs_fieldcolumn}
+			<td  class="{$RegOTHrs_class}" {$RegOTHrs_style} {$recordattrs}>
+				{$RegOTHrs_value}
+			</td>
+			{END RegOTHrs_fieldcolumn}
+			{BEGIN RHOTHrs_fieldcolumn}
+			<td  class="{$RHOTHrs_class}" {$RHOTHrs_style} {$recordattrs}>
+				{$RHOTHrs_value}
+			</td>
+			{END RHOTHrs_fieldcolumn}
+			{BEGIN SHOTHRs_fieldcolumn}
+			<td  class="{$SHOTHRs_class}" {$SHOTHRs_style} {$recordattrs}>
+				{$SHOTHRs_value}
+			</td>
+			{END SHOTHRs_fieldcolumn}
+			{BEGIN CHOTHrs_fieldcolumn}
+			<td  class="{$CHOTHrs_class}" {$CHOTHrs_style} {$recordattrs}>
+				{$CHOTHrs_value}
+			</td>
+			{END CHOTHrs_fieldcolumn}
+			{BEGIN RDOTHrs_fieldcolumn}
+			<td  class="{$RDOTHrs_class}" {$RDOTHrs_style} {$recordattrs}>
+				{$RDOTHrs_value}
+			</td>
+			{END RDOTHrs_fieldcolumn}
+			{BEGIN RDHrs_fieldcolumn}
+			<td  class="{$RDHrs_class}" {$RDHrs_style} {$recordattrs}>
+				{$RDHrs_value}
+			</td>
+			{END RDHrs_fieldcolumn}
+			{BEGIN RegNDHrs_fieldcolumn}
+			<td  class="{$RegNDHrs_class}" {$RegNDHrs_style} {$recordattrs}>
+				{$RegNDHrs_value}
+			</td>
+			{END RegNDHrs_fieldcolumn}
+			{BEGIN RHNDHrs_fieldcolumn}
+			<td  class="{$RHNDHrs_class}" {$RHNDHrs_style} {$recordattrs}>
+				{$RHNDHrs_value}
+			</td>
+			{END RHNDHrs_fieldcolumn}
+			{BEGIN SHNDHrs_fieldcolumn}
+			<td  class="{$SHNDHrs_class}" {$SHNDHrs_style} {$recordattrs}>
+				{$SHNDHrs_value}
+			</td>
+			{END SHNDHrs_fieldcolumn}
+			{BEGIN CHNDHrs_fieldcolumn}
+			<td  class="{$CHNDHrs_class}" {$CHNDHrs_style} {$recordattrs}>
+				{$CHNDHrs_value}
+			</td>
+			{END CHNDHrs_fieldcolumn}
+			{BEGIN RDNDHrs_fieldcolumn}
+			<td  class="{$RDNDHrs_class}" {$RDNDHrs_style} {$recordattrs}>
+				{$RDNDHrs_value}
+			</td>
+			{END RDNDHrs_fieldcolumn}
+			{BEGIN VLBalance_fieldcolumn}
+			<td  class="{$VLBalance_class}" {$VLBalance_style} {$recordattrs}>
+				{$VLBalance_value}
+			</td>
+			{END VLBalance_fieldcolumn}
+			{BEGIN SLBalance_fieldcolumn}
+			<td  class="{$SLBalance_class}" {$SLBalance_style} {$recordattrs}>
+				{$SLBalance_value}
+			</td>
+			{END SLBalance_fieldcolumn}
+			{BEGIN ELBalance_fieldcolumn}
+			<td  class="{$ELBalance_class}" {$ELBalance_style} {$recordattrs}>
+				{$ELBalance_value}
+			</td>
+			{END ELBalance_fieldcolumn}
+			{BEGIN PLBalance_fieldcolumn}
+			<td  class="{$PLBalance_class}" {$PLBalance_style} {$recordattrs}>
+				{$PLBalance_value}
+			</td>
+			{END PLBalance_fieldcolumn}
+			{BEGIN PayDate_fieldcolumn}
+			<td  class="{$PayDate_class}" {$PayDate_style} {$recordattrs}>
+				{$PayDate_value}
+			</td>
+			{END PayDate_fieldcolumn}
+			{BEGIN LWOP_fieldcolumn}
+			<td  class="{$LWOP_class}" {$LWOP_style} {$recordattrs}>
+				{$LWOP_value}
+			</td>
+			{END LWOP_fieldcolumn}
+			{BEGIN LWOPdays_fieldcolumn}
+			<td  class="{$LWOPdays_class}" {$LWOPdays_style} {$recordattrs}>
+				{$LWOPdays_value}
+			</td>
+			{END LWOPdays_fieldcolumn}
+			{BEGIN TAdj_fieldcolumn}
+			<td  class="{$TAdj_class}" {$TAdj_style} {$recordattrs}>
+				{$TAdj_value}
+			</td>
+			{END TAdj_fieldcolumn}
+			{BEGIN TAdjt_fieldcolumn}
+			<td  class="{$TAdjt_class}" {$TAdjt_style} {$recordattrs}>
+				{$TAdjt_value}
+			</td>
+			{END TAdjt_fieldcolumn}
+			{BEGIN Ttax_fieldcolumn}
+			<td  class="{$Ttax_class}" {$Ttax_style} {$recordattrs}>
+				{$Ttax_value}
+			</td>
+			{END Ttax_fieldcolumn}
+			{BEGIN SSS_fieldcolumn}
+			<td  class="{$SSS_class}" {$SSS_style} {$recordattrs}>
+				{$SSS_value}
+			</td>
+			{END SSS_fieldcolumn}
+			{BEGIN PagIbig_fieldcolumn}
+			<td  class="{$PagIbig_class}" {$PagIbig_style} {$recordattrs}>
+				{$PagIbig_value}
+			</td>
+			{END PagIbig_fieldcolumn}
+			{BEGIN PHIC_fieldcolumn}
+			<td  class="{$PHIC_class}" {$PHIC_style} {$recordattrs}>
+				{$PHIC_value}
+			</td>
+			{END PHIC_fieldcolumn}
+			{BEGIN Taxable_fieldcolumn}
+			<td  class="{$Taxable_class}" {$Taxable_style} {$recordattrs}>
+				{$Taxable_value}
+			</td>
+			{END Taxable_fieldcolumn}
+			{BEGIN GrossPay_fieldcolumn}
+			<td  class="{$GrossPay_class}" {$GrossPay_style} {$recordattrs}>
+				{$GrossPay_value}
+			</td>
+			{END GrossPay_fieldcolumn}
+			{BEGIN NetPay_fieldcolumn}
+			<td  class="{$NetPay_class}" {$NetPay_style} {$recordattrs}>
+				{$NetPay_value}
+			</td>
+			{END NetPay_fieldcolumn}
+			{BEGIN VLDays_fieldcolumn}
+			<td  class="{$VLDays_class}" {$VLDays_style} {$recordattrs}>
+				{$VLDays_value}
+			</td>
+			{END VLDays_fieldcolumn}
+			{BEGIN ELDays_fieldcolumn}
+			<td  class="{$ELDays_class}" {$ELDays_style} {$recordattrs}>
+				{$ELDays_value}
+			</td>
+			{END ELDays_fieldcolumn}
+			{BEGIN SLDays_fieldcolumn}
+			<td  class="{$SLDays_class}" {$SLDays_style} {$recordattrs}>
+				{$SLDays_value}
+			</td>
+			{END SLDays_fieldcolumn}
+			{BEGIN PLDays_fieldcolumn}
+			<td  class="{$PLDays_class}" {$PLDays_style} {$recordattrs}>
+				{$PLDays_value}
+			</td>
+			{END PLDays_fieldcolumn}
+			{BEGIN endrecord_block}
+			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+			{END endrecord_block}
+		{END grid_record}
+		</tr>
+{END grid_row}
+	</tbody>
+
+{BEGIN totals_row}
+	<tfoot>
+		<tr class=" style1">
+		{BEGIN totals_record}
+			{BEGIN OT_fieldfootercolumn}
+			<td>
+							{BEGIN OT_showtotal}
+									Total:
+				{$OT_total}
+				{END OT_showtotal}
+			</td>
+			{END OT_fieldfootercolumn}
+			{BEGIN TDeductions_fieldfootercolumn}
+			<td>
+							{BEGIN TDeductions_showtotal}
+									Total:
+				{$TDeductions_total}
+				{END TDeductions_showtotal}
+			</td>
+			{END TDeductions_fieldfootercolumn}
+			{BEGIN PtabID_fieldfootercolumn}
+			<td>
+						</td>
+			{END PtabID_fieldfootercolumn}
+			{BEGIN FromDate_fieldfootercolumn}
+			<td>
+						</td>
+			{END FromDate_fieldfootercolumn}
+			{BEGIN ToDate_fieldfootercolumn}
+			<td>
+						</td>
+			{END ToDate_fieldfootercolumn}
+			{BEGIN EmployeeID_fieldfootercolumn}
+			<td>
+						</td>
+			{END EmployeeID_fieldfootercolumn}
+			{BEGIN UserName_fieldfootercolumn}
+			<td>
+						</td>
+			{END UserName_fieldfootercolumn}
+			{BEGIN Status_fieldfootercolumn}
+			<td>
+						</td>
+			{END Status_fieldfootercolumn}
+			{BEGIN Employer_fieldfootercolumn}
+			<td>
+						</td>
+			{END Employer_fieldfootercolumn}
+			{BEGIN Division_fieldfootercolumn}
+			<td>
+						</td>
+			{END Division_fieldfootercolumn}
+			{BEGIN WageType_fieldfootercolumn}
+			<td>
+						</td>
+			{END WageType_fieldfootercolumn}
+			{BEGIN BasicMonthly_fieldfootercolumn}
+			<td>
+						</td>
+			{END BasicMonthly_fieldfootercolumn}
+			{BEGIN BasicDaily_fieldfootercolumn}
+			<td>
+						</td>
+			{END BasicDaily_fieldfootercolumn}
+			{BEGIN DWork_fieldfootercolumn}
+			<td>
+						</td>
+			{END DWork_fieldfootercolumn}
+			{BEGIN Absent_fieldfootercolumn}
+			<td>
+						</td>
+			{END Absent_fieldfootercolumn}
+			{BEGIN RegPay_fieldfootercolumn}
+			<td>
+							{BEGIN RegPay_showtotal}
+									Total:
+				{$RegPay_total}
+				{END RegPay_showtotal}
+			</td>
+			{END RegPay_fieldfootercolumn}
+			{BEGIN LateMins_fieldfootercolumn}
+			<td>
+						</td>
+			{END LateMins_fieldfootercolumn}
+			{BEGIN Late_fieldfootercolumn}
+			<td>
+							{BEGIN Late_showtotal}
+									Total:
+				{$Late_total}
+				{END Late_showtotal}
+			</td>
+			{END Late_fieldfootercolumn}
+			{BEGIN UndertimeMins_fieldfootercolumn}
+			<td>
+						</td>
+			{END UndertimeMins_fieldfootercolumn}
+			{BEGIN UnderTime_fieldfootercolumn}
+			<td>
+							{BEGIN UnderTime_showtotal}
+									Total:
+				{$UnderTime_total}
+				{END UnderTime_showtotal}
+			</td>
+			{END UnderTime_fieldfootercolumn}
+			{BEGIN RHoliday_fieldfootercolumn}
+			<td>
+							{BEGIN RHoliday_showtotal}
+									Total:
+				{$RHoliday_total}
+				{END RHoliday_showtotal}
+			</td>
+			{END RHoliday_fieldfootercolumn}
+			{BEGIN SHoliday_fieldfootercolumn}
+			<td>
+							{BEGIN SHoliday_showtotal}
+									Total:
+				{$SHoliday_total}
+				{END SHoliday_showtotal}
+			</td>
+			{END SHoliday_fieldfootercolumn}
+			{BEGIN CHoliday_fieldfootercolumn}
+			<td>
+							{BEGIN CHoliday_showtotal}
+									Total:
+				{$CHoliday_total}
+				{END CHoliday_showtotal}
+			</td>
+			{END CHoliday_fieldfootercolumn}
+			{BEGIN RegOT_fieldfootercolumn}
+			<td>
+							{BEGIN RegOT_showtotal}
+									Total:
+				{$RegOT_total}
+				{END RegOT_showtotal}
+			</td>
+			{END RegOT_fieldfootercolumn}
+			{BEGIN RHOT_fieldfootercolumn}
+			<td>
+							{BEGIN RHOT_showtotal}
+									Total:
+				{$RHOT_total}
+				{END RHOT_showtotal}
+			</td>
+			{END RHOT_fieldfootercolumn}
+			{BEGIN SHOT_fieldfootercolumn}
+			<td>
+							{BEGIN SHOT_showtotal}
+									Total:
+				{$SHOT_total}
+				{END SHOT_showtotal}
+			</td>
+			{END SHOT_fieldfootercolumn}
+			{BEGIN CHOT_fieldfootercolumn}
+			<td>
+							{BEGIN CHOT_showtotal}
+									Total:
+				{$CHOT_total}
+				{END CHOT_showtotal}
+			</td>
+			{END CHOT_fieldfootercolumn}
+			{BEGIN RDOT_fieldfootercolumn}
+			<td>
+							{BEGIN RDOT_showtotal}
+									Total:
+				{$RDOT_total}
+				{END RDOT_showtotal}
+			</td>
+			{END RDOT_fieldfootercolumn}
+			{BEGIN RD_fieldfootercolumn}
+			<td>
+							{BEGIN RD_showtotal}
+									Total:
+				{$RD_total}
+				{END RD_showtotal}
+			</td>
+			{END RD_fieldfootercolumn}
+			{BEGIN ND_fieldfootercolumn}
+			<td>
+						</td>
+			{END ND_fieldfootercolumn}
+			{BEGIN RHND_fieldfootercolumn}
+			<td>
+						</td>
+			{END RHND_fieldfootercolumn}
+			{BEGIN SHND_fieldfootercolumn}
+			<td>
+						</td>
+			{END SHND_fieldfootercolumn}
+			{BEGIN CHND_fieldfootercolumn}
+			<td>
+						</td>
+			{END CHND_fieldfootercolumn}
+			{BEGIN RDND_fieldfootercolumn}
+			<td>
+						</td>
+			{END RDND_fieldfootercolumn}
+			{BEGIN TND_fieldfootercolumn}
+			<td>
+							{BEGIN TND_showtotal}
+									Total:
+				{$TND_total}
+				{END TND_showtotal}
+			</td>
+			{END TND_fieldfootercolumn}
+			{BEGIN VL_fieldfootercolumn}
+			<td>
+						</td>
+			{END VL_fieldfootercolumn}
+			{BEGIN SL_fieldfootercolumn}
+			<td>
+						</td>
+			{END SL_fieldfootercolumn}
+			{BEGIN EL_fieldfootercolumn}
+			<td>
+						</td>
+			{END EL_fieldfootercolumn}
+			{BEGIN PL_fieldfootercolumn}
+			<td>
+						</td>
+			{END PL_fieldfootercolumn}
+			{BEGIN TrO_fieldfootercolumn}
+			<td>
+						</td>
+			{END TrO_fieldfootercolumn}
+			{BEGIN RHolidayHrs_fieldfootercolumn}
+			<td>
+						</td>
+			{END RHolidayHrs_fieldfootercolumn}
+			{BEGIN SHolidayHrs_fieldfootercolumn}
+			<td>
+						</td>
+			{END SHolidayHrs_fieldfootercolumn}
+			{BEGIN CHolidayHrs_fieldfootercolumn}
+			<td>
+						</td>
+			{END CHolidayHrs_fieldfootercolumn}
+			{BEGIN RegOTHrs_fieldfootercolumn}
+			<td>
+						</td>
+			{END RegOTHrs_fieldfootercolumn}
+			{BEGIN RHOTHrs_fieldfootercolumn}
+			<td>
+						</td>
+			{END RHOTHrs_fieldfootercolumn}
+			{BEGIN SHOTHRs_fieldfootercolumn}
+			<td>
+						</td>
+			{END SHOTHRs_fieldfootercolumn}
+			{BEGIN CHOTHrs_fieldfootercolumn}
+			<td>
+						</td>
+			{END CHOTHrs_fieldfootercolumn}
+			{BEGIN RDOTHrs_fieldfootercolumn}
+			<td>
+						</td>
+			{END RDOTHrs_fieldfootercolumn}
+			{BEGIN RDHrs_fieldfootercolumn}
+			<td>
+						</td>
+			{END RDHrs_fieldfootercolumn}
+			{BEGIN RegNDHrs_fieldfootercolumn}
+			<td>
+						</td>
+			{END RegNDHrs_fieldfootercolumn}
+			{BEGIN RHNDHrs_fieldfootercolumn}
+			<td>
+						</td>
+			{END RHNDHrs_fieldfootercolumn}
+			{BEGIN SHNDHrs_fieldfootercolumn}
+			<td>
+						</td>
+			{END SHNDHrs_fieldfootercolumn}
+			{BEGIN CHNDHrs_fieldfootercolumn}
+			<td>
+						</td>
+			{END CHNDHrs_fieldfootercolumn}
+			{BEGIN RDNDHrs_fieldfootercolumn}
+			<td>
+						</td>
+			{END RDNDHrs_fieldfootercolumn}
+			{BEGIN VLBalance_fieldfootercolumn}
+			<td>
+						</td>
+			{END VLBalance_fieldfootercolumn}
+			{BEGIN SLBalance_fieldfootercolumn}
+			<td>
+						</td>
+			{END SLBalance_fieldfootercolumn}
+			{BEGIN ELBalance_fieldfootercolumn}
+			<td>
+						</td>
+			{END ELBalance_fieldfootercolumn}
+			{BEGIN PLBalance_fieldfootercolumn}
+			<td>
+						</td>
+			{END PLBalance_fieldfootercolumn}
+			{BEGIN PayDate_fieldfootercolumn}
+			<td>
+						</td>
+			{END PayDate_fieldfootercolumn}
+			{BEGIN LWOP_fieldfootercolumn}
+			<td>
+						</td>
+			{END LWOP_fieldfootercolumn}
+			{BEGIN LWOPdays_fieldfootercolumn}
+			<td>
+						</td>
+			{END LWOPdays_fieldfootercolumn}
+			{BEGIN TAdj_fieldfootercolumn}
+			<td>
+							{BEGIN TAdj_showtotal}
+									Total:
+				{$TAdj_total}
+				{END TAdj_showtotal}
+			</td>
+			{END TAdj_fieldfootercolumn}
+			{BEGIN TAdjt_fieldfootercolumn}
+			<td>
+							{BEGIN TAdjt_showtotal}
+									Total:
+				{$TAdjt_total}
+				{END TAdjt_showtotal}
+			</td>
+			{END TAdjt_fieldfootercolumn}
+			{BEGIN Ttax_fieldfootercolumn}
+			<td>
+							{BEGIN Ttax_showtotal}
+									Total:
+				{$Ttax_total}
+				{END Ttax_showtotal}
+			</td>
+			{END Ttax_fieldfootercolumn}
+			{BEGIN SSS_fieldfootercolumn}
+			<td>
+							{BEGIN SSS_showtotal}
+									Total:
+				{$SSS_total}
+				{END SSS_showtotal}
+			</td>
+			{END SSS_fieldfootercolumn}
+			{BEGIN PagIbig_fieldfootercolumn}
+			<td>
+							{BEGIN PagIbig_showtotal}
+									Total:
+				{$PagIbig_total}
+				{END PagIbig_showtotal}
+			</td>
+			{END PagIbig_fieldfootercolumn}
+			{BEGIN PHIC_fieldfootercolumn}
+			<td>
+							{BEGIN PHIC_showtotal}
+									Total:
+				{$PHIC_total}
+				{END PHIC_showtotal}
+			</td>
+			{END PHIC_fieldfootercolumn}
+			{BEGIN Taxable_fieldfootercolumn}
+			<td>
+							{BEGIN Taxable_showtotal}
+									Total:
+				{$Taxable_total}
+				{END Taxable_showtotal}
+			</td>
+			{END Taxable_fieldfootercolumn}
+			{BEGIN GrossPay_fieldfootercolumn}
+			<td>
+							{BEGIN GrossPay_showtotal}
+									Total:
+				{$GrossPay_total}
+				{END GrossPay_showtotal}
+			</td>
+			{END GrossPay_fieldfootercolumn}
+			{BEGIN NetPay_fieldfootercolumn}
+			<td>
+							{BEGIN NetPay_showtotal}
+									Total:
+				{$NetPay_total}
+				{END NetPay_showtotal}
+			</td>
+			{END NetPay_fieldfootercolumn}
+			{BEGIN VLDays_fieldfootercolumn}
+			<td>
+						</td>
+			{END VLDays_fieldfootercolumn}
+			{BEGIN ELDays_fieldfootercolumn}
+			<td>
+						</td>
+			{END ELDays_fieldfootercolumn}
+			{BEGIN SLDays_fieldfootercolumn}
+			<td>
+						</td>
+			{END SLDays_fieldfootercolumn}
+			{BEGIN PLDays_fieldfootercolumn}
+			<td>
+						</td>
+			{END PLDays_fieldfootercolumn}
+			{BEGIN endrecordtotals_block}
+			<td class="rnr-cs"></td>
+			{END endrecordtotals_block}
+		{END totals_record}
+		</tr>
+	</tfoot>
+{END totals_row}
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

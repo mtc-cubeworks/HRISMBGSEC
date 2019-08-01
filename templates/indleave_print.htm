@@ -1,0 +1,213 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_pdf}
+<div {$pdf_chiddenattr} data-pageid="{$pageid}" data-container="pdf" class="   col-md-12 "> 
+
+{BEGIN printbuttons}
+
+{END printbuttons}
+
+
+
+</div>
+{END container_pdf}
+
+
+
+
+
+{BEGIN container_pageheader}
+<div {$pageheader_chiddenattr} data-pageid="{$pageid}" data-container="pageheader" class="    "> 
+
+{BEGIN printheader}
+	<h2 {$printheader_hiddenattr} data-pageid="{$pageid}" data-brick="printheader" >{$pagetitlelabel indleave print}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END printheader}
+
+
+{BEGIN page_number}
+<span>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></span>
+{END page_number}
+
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="table table-bordered rp-maintable" {$printgrid_hiddenattr} data-pageid="{$pageid}" data-brick="printgrid" >
+	<thead>
+	{BEGIN grid_header}
+		<tr class="{$gridHeader_class}" >
+		{BEGIN record_header}
+			{BEGIN LtID_fieldheadercolumn}
+			<th class="{$LtID_class}" {$LtID_style}  data-field="LtID">
+				{$label indleave LtID}
+			</th>
+			{END LtID_fieldheadercolumn}
+			{BEGIN LeaveType_fieldheadercolumn}
+			<th class="{$LeaveType_class}" {$LeaveType_style}  data-field="LeaveType">
+				{$label indleave LeaveType}
+			</th>
+			{END LeaveType_fieldheadercolumn}
+			{BEGIN EmployeeID_fieldheadercolumn}
+			<th class="{$EmployeeID_class}" {$EmployeeID_style}  data-field="EmployeeID">
+				{$label indleave EmployeeID}
+			</th>
+			{END EmployeeID_fieldheadercolumn}
+			{BEGIN LDate_fieldheadercolumn}
+			<th class="{$LDate_class}" {$LDate_style}  data-field="LDate">
+				{$label indleave LDate}
+			</th>
+			{END LDate_fieldheadercolumn}
+			{BEGIN FirtHalf_fieldheadercolumn}
+			<th class="{$FirtHalf_class}" {$FirtHalf_style}  data-field="FirtHalf">
+				{$label indleave FirtHalf}
+			</th>
+			{END FirtHalf_fieldheadercolumn}
+			{BEGIN SecondHalf_fieldheadercolumn}
+			<th class="{$SecondHalf_class}" {$SecondHalf_style}  data-field="SecondHalf">
+				{$label indleave SecondHalf}
+			</th>
+			{END SecondHalf_fieldheadercolumn}
+			{BEGIN NoDays_fieldheadercolumn}
+			<th class="{$NoDays_class}" {$NoDays_style}  data-field="NoDays">
+				{$label indleave NoDays}
+			</th>
+			{END NoDays_fieldheadercolumn}
+			{BEGIN LWOP_fieldheadercolumn}
+			<th class="{$LWOP_class}" {$LWOP_style}  data-field="LWOP">
+				{$label indleave LWOP}
+			</th>
+			{END LWOP_fieldheadercolumn}
+			{BEGIN LvID_fieldheadercolumn}
+			<th class="{$LvID_class}" {$LvID_style}  data-field="LvID">
+				{$label indleave LvID}
+			</th>
+			{END LvID_fieldheadercolumn}
+			{BEGIN endrecordheader_block}
+			<th class="rnr-cs">&nbsp;</th>
+			{END endrecordheader_block}
+		{END record_header}
+		</tr>
+	{END grid_header}
+	</thead>
+	
+	<tbody>	
+	{BEGIN grid_row}
+		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+			{BEGIN LtID_fieldcolumn}
+			<td  class="{$LtID_class}" {$LtID_style} {$recordattrs}>
+				{$LtID_value}
+			</td>
+			{END LtID_fieldcolumn}
+			{BEGIN LeaveType_fieldcolumn}
+			<td  class="{$LeaveType_class}" {$LeaveType_style} {$recordattrs}>
+				{$LeaveType_value}
+			</td>
+			{END LeaveType_fieldcolumn}
+			{BEGIN EmployeeID_fieldcolumn}
+			<td  class="{$EmployeeID_class}" {$EmployeeID_style} {$recordattrs}>
+				{$EmployeeID_value}
+			</td>
+			{END EmployeeID_fieldcolumn}
+			{BEGIN LDate_fieldcolumn}
+			<td  class="{$LDate_class}" {$LDate_style} {$recordattrs}>
+				{$LDate_value}
+			</td>
+			{END LDate_fieldcolumn}
+			{BEGIN FirtHalf_fieldcolumn}
+			<td  class="{$FirtHalf_class}" {$FirtHalf_style} {$recordattrs}>
+				{$FirtHalf_value}
+			</td>
+			{END FirtHalf_fieldcolumn}
+			{BEGIN SecondHalf_fieldcolumn}
+			<td  class="{$SecondHalf_class}" {$SecondHalf_style} {$recordattrs}>
+				{$SecondHalf_value}
+			</td>
+			{END SecondHalf_fieldcolumn}
+			{BEGIN NoDays_fieldcolumn}
+			<td  class="{$NoDays_class}" {$NoDays_style} {$recordattrs}>
+				{$NoDays_value}
+			</td>
+			{END NoDays_fieldcolumn}
+			{BEGIN LWOP_fieldcolumn}
+			<td  class="{$LWOP_class}" {$LWOP_style} {$recordattrs}>
+				{$LWOP_value}
+			</td>
+			{END LWOP_fieldcolumn}
+			{BEGIN LvID_fieldcolumn}
+			<td  class="{$LvID_class}" {$LvID_style} {$recordattrs}>
+				{$LvID_value}
+			</td>
+			{END LvID_fieldcolumn}
+			{BEGIN endrecord_block}
+			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+			{END endrecord_block}
+		{END grid_record}
+		</tr>
+{END grid_row}
+	</tbody>
+
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

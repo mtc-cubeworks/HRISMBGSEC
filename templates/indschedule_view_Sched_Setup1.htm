@@ -1,0 +1,58 @@
+<div {$pageattrs}>
+
+{BEGIN container_tabfields}
+<div {$tabfields_chiddenattr} data-pageid="{$pageid}" data-container="tabfields" class="    "> 
+
+
+<div class="container">
+{BEGIN SchedType_tabfieldblock}
+	<div class="bs-viewcontrolgroup col-md-6 {$fielddispclass_SchedType}" data-fieldname="SchedType" >
+		<label class=" control-label" for="{$labelfor_SchedType}">
+			{$label indschedule SchedType}
+		</label>
+		<div class="" >
+			{$SchedType_value}
+		</div>
+	</div>
+{END SchedType_tabfieldblock}
+{BEGIN Shift_tabfieldblock}
+	<div class="bs-viewcontrolgroup col-md-6 {$fielddispclass_Shift}" data-fieldname="Shift" >
+		<label class=" control-label" for="{$labelfor_Shift}">
+			{$label indschedule Shift}
+		</label>
+		<div class="" >
+			{$Shift_value}
+		</div>
+	</div>
+{END Shift_tabfieldblock}
+{BEGIN MinsPerDay_tabfieldblock}
+	<div class="bs-viewcontrolgroup col-md-6 {$fielddispclass_MinsPerDay}" data-fieldname="MinsPerDay" >
+		<label class=" control-label" for="{$labelfor_MinsPerDay}">
+			{$label indschedule MinsPerDay}
+		</label>
+		<div class="" >
+			{$MinsPerDay_value}
+		</div>
+	</div>
+{END MinsPerDay_tabfieldblock}
+{BEGIN BreakMins_tabfieldblock}
+	<div class="bs-viewcontrolgroup col-md-6 {$fielddispclass_BreakMins}" data-fieldname="BreakMins" >
+		<label class=" control-label" for="{$labelfor_BreakMins}">
+			{$label indschedule BreakMins}
+		</label>
+		<div class="" >
+			{$BreakMins_value}
+		</div>
+	</div>
+{END BreakMins_tabfieldblock}
+</div>
+
+
+
+
+
+
+</div>
+{END container_tabfields}
+
+</div>

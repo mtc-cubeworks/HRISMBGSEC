@@ -1,0 +1,49 @@
+<div {$pageattrs}>
+
+{BEGIN container_column}
+<div class="rnr-c rnr-ch rnr-c-column">
+
+{BEGIN masterlist_title}
+<div  class="style1 rnr-bl rnr-b-masterprintheader {$brickclass_masterprintheader}"><span>{$pagetitlelabel payroll2 masterprint}</span></div>
+{END masterlist_title}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_column}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+<table {$bsmasterprintgrid_hiddenattr} data-pageid="{$pageid}" data-brick="bsmasterprintgrid" class="table rnr-b-mastergridfields rnr-gridtable" >
+		<thead>
+		<tr>
+			<th class="{$PSID_class}">{$label payroll2 PSID}</th>
+			<th class="{$PayFromDate_class}">{$label payroll2 PayFromDate}</th>
+			<th class="{$PayToDate_class}">{$label payroll2 PayToDate}</th>
+			<th class="{$PayPeriod_class}">{$label payroll2 PayPeriod}</th>
+			<th class="{$PayDate_class}">{$label payroll2 PayDate}</th>
+			<th class="{$Locked_class}">{$label payroll2 Locked}</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="{$PSID_class}">{$PSID_mastervalue}</td>
+			<td class="{$PayFromDate_class}">{$PayFromDate_mastervalue}</td>
+			<td class="{$PayToDate_class}">{$PayToDate_mastervalue}</td>
+			<td class="{$PayPeriod_class}">{$PayPeriod_mastervalue}</td>
+			<td class="{$PayDate_class}">{$PayDate_mastervalue}</td>
+			<td class="{$Locked_class}">{$Locked_mastervalue}</td>
+		</tr>
+	</tbody>
+
+</table> 
+
+
+
+
+{END container_mastergrid}
+
+</div>

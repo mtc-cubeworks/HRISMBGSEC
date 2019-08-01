@@ -1,0 +1,512 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_editpage}
+<div {$editpage_chiddenattr} data-pageid="{$pageid}" data-container="editpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-9 col-md-offset-3"> 
+
+{BEGIN editheader}
+	<h2 {$editheader_hiddenattr} data-pageid="{$pageid}" data-brick="editheader" >{$pagetitlelabel demo_user edit}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END editheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+
+
+{BEGIN container_message}
+<div {$message_chiddenattr} data-pageid="{$pageid}" data-container="message" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN message_block}
+<div {$message_hiddenattr} data-pageid="{$pageid}" data-brick="message" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		<button class="btn btn-sm btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>View</button>
+{END view_page_button}
+</div>
+</div>
+
+{END message_block}
+
+
+
+</div>
+{END container_message}
+
+
+
+
+
+
+
+</div>
+{END container_editpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$editfields_hiddenattr} data-pageid="{$pageid}" data-brick="editfields" class="form-horizontal" role="form">
+
+
+
+		<div class="container">
+		
+
+
+	<div class="panel with-tabs panel-default form-tabs">
+	<div class="panel-heading">
+	{$tabgroup_Primary1_header}
+	</div>
+	<div class="panel-body">
+	{$TabGroup Primary1}&nbsp;		
+	</div>
+</div>
+					
+	</div>
+		<div class="container">
+		
+
+
+						
+	</div>
+		<div class="container">
+		
+
+
+						
+	</div>
+		<div class="container">
+		
+
+
+						
+	</div>
+		<div class="container">
+		
+
+
+						
+	</div>
+		<div class="container">
+		
+
+
+						
+	</div>
+			
+		
+
+
+
+
+
+{BEGIN details_loans}
+<div data-pageid="1" class="bs-details"> 
+<div class="panel panel-info details-grid">
+
+<div class="panel-heading">
+	<h4 class="panel-title">Loans and Deductions Setup
+		<span>
+{BEGIN details_inlineadd_loans_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_inlineadd_loans_attrs}>Inline Add</button>
+{END details_inlineadd_loans_link}		
+{BEGIN details_add_loans_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_add_loans_attrs}>Add new</button>
+{END details_add_loans_link}
+{BEGIN details_edit_loans_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_edit_loans_attrs}>Edit</button>
+{END details_edit_loans_link}
+{BEGIN details_updateselected_loans_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_updateselected_loans_attrs}>Update selected</button>
+{END details_updateselected_loans_link}
+
+
+{BEGIN details_delete_loans_link}
+			<button type="button" class="btn btn-xs btn-info " disabled {$details_delete_loans_attrs}>Delete</button>
+{END details_delete_loans_link}
+
+{BEGIN saveall_loans_link}
+			<button type="button" class="btn btn-xs btn-info" {$savealllink_loans_attrs} {$savealllink_loans_span}>Save all</button>
+{END saveall_loans_link}
+{BEGIN cancelall_loans_link}
+			<button type="button" class="btn btn-xs btn-info" {$cancelalllink_loans_attrs} {$cancelalllink_loans_span}>Cancel</button>
+{END cancelall_loans_link}
+		</span>
+	</h4>
+</div>
+<div class="panel-body">
+	{$displayDetailTable_loans}
+</div>
+</div>
+</div>
+{END details_loans}
+	
+	
+	
+
+			
+		
+
+
+
+
+
+{BEGIN details_earningadjustment}
+<div data-pageid="1" class="bs-details"> 
+<div class="panel panel-info details-grid">
+
+<div class="panel-heading">
+	<h4 class="panel-title">Recurring Adjustment Setup
+		<span>
+{BEGIN details_inlineadd_earningadjustment_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_inlineadd_earningadjustment_attrs}>Inline Add</button>
+{END details_inlineadd_earningadjustment_link}		
+{BEGIN details_add_earningadjustment_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_add_earningadjustment_attrs}>Add new</button>
+{END details_add_earningadjustment_link}
+{BEGIN details_edit_earningadjustment_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_edit_earningadjustment_attrs}>Edit</button>
+{END details_edit_earningadjustment_link}
+{BEGIN details_updateselected_earningadjustment_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_updateselected_earningadjustment_attrs}>Update selected</button>
+{END details_updateselected_earningadjustment_link}
+
+
+{BEGIN details_delete_earningadjustment_link}
+			<button type="button" class="btn btn-xs btn-info " disabled {$details_delete_earningadjustment_attrs}>Delete</button>
+{END details_delete_earningadjustment_link}
+
+{BEGIN saveall_earningadjustment_link}
+			<button type="button" class="btn btn-xs btn-info" {$savealllink_earningadjustment_attrs} {$savealllink_earningadjustment_span}>Save all</button>
+{END saveall_earningadjustment_link}
+{BEGIN cancelall_earningadjustment_link}
+			<button type="button" class="btn btn-xs btn-info" {$cancelalllink_earningadjustment_attrs} {$cancelalllink_earningadjustment_span}>Cancel</button>
+{END cancelall_earningadjustment_link}
+		</span>
+	</h4>
+</div>
+<div class="panel-body">
+	{$displayDetailTable_earningadjustment}
+</div>
+</div>
+</div>
+{END details_earningadjustment}
+	
+	
+	
+
+			
+		
+
+
+
+
+
+{BEGIN details_emphistory}
+<div data-pageid="1" class="bs-details"> 
+<div class="panel panel-info details-grid">
+
+<div class="panel-heading">
+	<h4 class="panel-title">History
+		<span>
+{BEGIN details_inlineadd_emphistory_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_inlineadd_emphistory_attrs}>Inline Add</button>
+{END details_inlineadd_emphistory_link}		
+{BEGIN details_add_emphistory_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_add_emphistory_attrs}>Add new</button>
+{END details_add_emphistory_link}
+{BEGIN details_edit_emphistory_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_edit_emphistory_attrs}>Edit</button>
+{END details_edit_emphistory_link}
+{BEGIN details_updateselected_emphistory_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_updateselected_emphistory_attrs}>Update selected</button>
+{END details_updateselected_emphistory_link}
+
+
+{BEGIN details_delete_emphistory_link}
+			<button type="button" class="btn btn-xs btn-info " disabled {$details_delete_emphistory_attrs}>Delete</button>
+{END details_delete_emphistory_link}
+
+		</span>
+	</h4>
+</div>
+<div class="panel-body">
+	{$displayDetailTable_emphistory}
+</div>
+</div>
+</div>
+{END details_emphistory}
+	
+	
+	
+
+			
+		
+
+
+
+
+
+{BEGIN details_empindschedule}
+<div data-pageid="1" class="bs-details"> 
+<div class="panel panel-info details-grid">
+
+<div class="panel-heading">
+	<h4 class="panel-title">Uploaded Schedule
+		<span>
+{BEGIN details_inlineadd_empindschedule_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_inlineadd_empindschedule_attrs}>Inline Add</button>
+{END details_inlineadd_empindschedule_link}		
+{BEGIN details_add_empindschedule_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_add_empindschedule_attrs}>Add new</button>
+{END details_add_empindschedule_link}
+{BEGIN details_edit_empindschedule_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_edit_empindschedule_attrs}>Edit</button>
+{END details_edit_empindschedule_link}
+{BEGIN details_updateselected_empindschedule_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_updateselected_empindschedule_attrs}>Update selected</button>
+{END details_updateselected_empindschedule_link}
+
+
+{BEGIN details_delete_empindschedule_link}
+			<button type="button" class="btn btn-xs btn-info " disabled {$details_delete_empindschedule_attrs}>Delete</button>
+{END details_delete_empindschedule_link}
+
+{BEGIN saveall_empindschedule_link}
+			<button type="button" class="btn btn-xs btn-info" {$savealllink_empindschedule_attrs} {$savealllink_empindschedule_span}>Save all</button>
+{END saveall_empindschedule_link}
+{BEGIN cancelall_empindschedule_link}
+			<button type="button" class="btn btn-xs btn-info" {$cancelalllink_empindschedule_attrs} {$cancelalllink_empindschedule_span}>Cancel</button>
+{END cancelall_empindschedule_link}
+		</span>
+	</h4>
+</div>
+<div class="panel-body">
+	{$displayDetailTable_empindschedule}
+</div>
+</div>
+</div>
+{END details_empindschedule}
+	
+	
+	
+
+			
+		
+
+
+
+
+
+{BEGIN details_indschedrange}
+<div data-pageid="1" class="bs-details"> 
+<div class="panel panel-info details-grid">
+
+<div class="panel-heading">
+	<h4 class="panel-title">Create Schedule
+		<span>
+{BEGIN details_inlineadd_indschedrange_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_inlineadd_indschedrange_attrs}>Inline Add</button>
+{END details_inlineadd_indschedrange_link}		
+{BEGIN details_add_indschedrange_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_add_indschedrange_attrs}>Add new</button>
+{END details_add_indschedrange_link}
+{BEGIN details_edit_indschedrange_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_edit_indschedrange_attrs}>Edit</button>
+{END details_edit_indschedrange_link}
+{BEGIN details_updateselected_indschedrange_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_updateselected_indschedrange_attrs}>Update selected</button>
+{END details_updateselected_indschedrange_link}
+
+
+{BEGIN details_delete_indschedrange_link}
+			<button type="button" class="btn btn-xs btn-info " disabled {$details_delete_indschedrange_attrs}>Delete</button>
+{END details_delete_indschedrange_link}
+
+{BEGIN saveall_indschedrange_link}
+			<button type="button" class="btn btn-xs btn-info" {$savealllink_indschedrange_attrs} {$savealllink_indschedrange_span}>Save all</button>
+{END saveall_indschedrange_link}
+{BEGIN cancelall_indschedrange_link}
+			<button type="button" class="btn btn-xs btn-info" {$cancelalllink_indschedrange_attrs} {$cancelalllink_indschedrange_span}>Cancel</button>
+{END cancelall_indschedrange_link}
+		</span>
+	</h4>
+</div>
+<div class="panel-body">
+	{$displayDetailTable_indschedrange}
+</div>
+</div>
+</div>
+{END details_indschedrange}
+	
+	
+	
+
+
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_buttons}
+<div {$buttons_chiddenattr} data-pageid="{$pageid}" data-container="buttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-3 col-md-offset-3"> 
+
+{BEGIN editbuttons}
+	{BEGIN save_button}
+	<button class="btn btn-primary" {$savebutton_attrs}>Save</button>
+	{END save_button}
+	{BEGIN updsel_button}
+	<button class="btn btn-primary" {$updselbutton_attrs}>{$update_selected}</button>
+	{END updsel_button}
+	{BEGIN back_button}
+		<button class="btn btn-default" {$backbutton_attrs}>Back to list</button>
+	{END back_button}
+	{BEGIN close_button}
+	<a href="#" class="btn btn-default" {$closebutton_attrs}>Cancel</a>
+	{END close_button}
+
+{END editbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+
+
+{BEGIN container_leftbuttons_1}
+<div {$leftbuttons_1_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons_1" class="  text-right col-md-3 "> 
+
+{BEGIN righteditbuttons}
+<div class="btn-group" role="group">
+
+	{BEGIN prev_button}
+	<button class="btn btn-default {$prevbutton_class}" {$prevbutton_attrs}><span class="glyphicon glyphicon-chevron-left"></span></button>
+	{END prev_button}
+	{BEGIN next_button}
+	<button class="btn btn-default  {$nextbutton_class}" {$nextbutton_attrs}><span class="glyphicon glyphicon-chevron-right"></span></button>
+	{END next_button}
+	<div class="btn-group dropup" role="group">
+		<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+		<ul class="dropdown-menu dropdown-left">
+			{BEGIN reset_button}
+				<li><a href="#" {$resetbutton_attrs}>Reset</a></li>
+			{END reset_button}
+			{BEGIN view_page_button}
+				<li><a href="#" {$view_page_button_attrs}>View</a></li>
+			{END view_page_button}
+		</ul>
+	</div>
+</div>
+{END righteditbuttons}
+
+
+
+</div>
+{END container_leftbuttons_1}
+
+
+
+
+
+
+</div>
+{END container_buttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

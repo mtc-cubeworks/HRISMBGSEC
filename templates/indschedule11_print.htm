@@ -1,0 +1,273 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_pdf}
+<div {$pdf_chiddenattr} data-pageid="{$pageid}" data-container="pdf" class="   col-md-12 "> 
+
+{BEGIN printbuttons}
+
+{END printbuttons}
+
+
+
+</div>
+{END container_pdf}
+
+
+
+
+
+{BEGIN container_pageheader}
+<div {$pageheader_chiddenattr} data-pageid="{$pageid}" data-container="pageheader" class="    "> 
+
+{BEGIN printheader}
+	<h2 {$printheader_hiddenattr} data-pageid="{$pageid}" data-brick="printheader" >{$pagetitlelabel indschedule11 print}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END printheader}
+
+
+{BEGIN page_number}
+<span>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></span>
+{END page_number}
+
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="table table-bordered rp-maintable" {$printgrid_hiddenattr} data-pageid="{$pageid}" data-brick="printgrid" >
+	<thead>
+	{BEGIN grid_header}
+		<tr class="{$gridHeader_class}" >
+		{BEGIN record_header}
+			{BEGIN SDate_fieldheadercolumn}
+			<th class="{$SDate_class}" {$SDate_style}  data-field="SDate">
+				{$label indschedule11 SDate}
+			</th>
+			{END SDate_fieldheadercolumn}
+			{BEGIN ScID_fieldheadercolumn}
+			<th class="{$ScID_class}" {$ScID_style}  data-field="ScID">
+				{$label indschedule11 ScID}
+			</th>
+			{END ScID_fieldheadercolumn}
+			{BEGIN TempOT_fieldheadercolumn}
+			<th class="{$TempOT_class}" {$TempOT_style}  data-field="TempOT">
+				{$label indschedule11 TempOT}
+			</th>
+			{END TempOT_fieldheadercolumn}
+			{BEGIN FiledOT_fieldheadercolumn}
+			<th class="{$FiledOT_class}" {$FiledOT_style}  data-field="FiledOT">
+				{$label indschedule11 FiledOT}
+			</th>
+			{END FiledOT_fieldheadercolumn}
+			{BEGIN ApprovedOT_fieldheadercolumn}
+			<th class="{$ApprovedOT_class}" {$ApprovedOT_style}  data-field="ApprovedOT">
+				{$label indschedule11 ApprovedOT}
+			</th>
+			{END ApprovedOT_fieldheadercolumn}
+			{BEGIN AOTMins_fieldheadercolumn}
+			<th class="{$AOTMins_class}" {$AOTMins_style}  data-field="AOTMins">
+				{$label indschedule11 AOTMins}
+			</th>
+			{END AOTMins_fieldheadercolumn}
+			{BEGIN NDMins_fieldheadercolumn}
+			<th class="{$NDMins_class}" {$NDMins_style}  data-field="NDMins">
+				{$label indschedule11 NDMins}
+			</th>
+			{END NDMins_fieldheadercolumn}
+			{BEGIN ApprovedNightDiff_fieldheadercolumn}
+			<th class="{$ApprovedNightDiff_class}" {$ApprovedNightDiff_style}  data-field="ApprovedNightDiff">
+				{$label indschedule11 ApprovedNightDiff}
+			</th>
+			{END ApprovedNightDiff_fieldheadercolumn}
+			{BEGIN ANDiff_fieldheadercolumn}
+			<th class="{$ANDiff_class}" {$ANDiff_style}  data-field="ANDiff">
+				{$label indschedule11 ANDiff}
+			</th>
+			{END ANDiff_fieldheadercolumn}
+			{BEGIN NDMealAllowancePerShift_fieldheadercolumn}
+			<th class="{$NDMealAllowancePerShift_class}" {$NDMealAllowancePerShift_style}  data-field="NDMealAllowancePerShift">
+				{$label indschedule11 NDMealAllowancePerShift}
+			</th>
+			{END NDMealAllowancePerShift_fieldheadercolumn}
+			{BEGIN NDMinimumHrs_fieldheadercolumn}
+			<th class="{$NDMinimumHrs_class}" {$NDMinimumHrs_style}  data-field="NDMinimumHrs">
+				{$label indschedule11 NDMinimumHrs}
+			</th>
+			{END NDMinimumHrs_fieldheadercolumn}
+			{BEGIN NDMealAllowance_fieldheadercolumn}
+			<th class="{$NDMealAllowance_class}" {$NDMealAllowance_style}  data-field="NDMealAllowance">
+				{$label indschedule11 NDMealAllowance}
+			</th>
+			{END NDMealAllowance_fieldheadercolumn}
+			{BEGIN WorkMinsNet_fieldheadercolumn}
+			<th class="{$WorkMinsNet_class}" {$WorkMinsNet_style}  data-field="WorkMinsNet">
+				{$label indschedule11 WorkMinsNet}
+			</th>
+			{END WorkMinsNet_fieldheadercolumn}
+			{BEGIN ApprovedRD_fieldheadercolumn}
+			<th class="{$ApprovedRD_class}" {$ApprovedRD_style}  data-field="ApprovedRD">
+				{$label indschedule11 ApprovedRD}
+			</th>
+			{END ApprovedRD_fieldheadercolumn}
+			{BEGIN RDMins_fieldheadercolumn}
+			<th class="{$RDMins_class}" {$RDMins_style}  data-field="RDMins">
+				{$label indschedule11 RDMins}
+			</th>
+			{END RDMins_fieldheadercolumn}
+			{BEGIN endrecordheader_block}
+			<th class="rnr-cs">&nbsp;</th>
+			{END endrecordheader_block}
+		{END record_header}
+		</tr>
+	{END grid_header}
+	</thead>
+	
+	<tbody>	
+	{BEGIN grid_row}
+		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+			{BEGIN SDate_fieldcolumn}
+			<td  class="{$SDate_class}" {$SDate_style} {$recordattrs}>
+				{$SDate_value}
+			</td>
+			{END SDate_fieldcolumn}
+			{BEGIN ScID_fieldcolumn}
+			<td  class="{$ScID_class}" {$ScID_style} {$recordattrs}>
+				{$ScID_value}
+			</td>
+			{END ScID_fieldcolumn}
+			{BEGIN TempOT_fieldcolumn}
+			<td  class="{$TempOT_class}" {$TempOT_style} {$recordattrs}>
+				{$TempOT_value}
+			</td>
+			{END TempOT_fieldcolumn}
+			{BEGIN FiledOT_fieldcolumn}
+			<td  class="{$FiledOT_class}" {$FiledOT_style} {$recordattrs}>
+				{$FiledOT_value}
+			</td>
+			{END FiledOT_fieldcolumn}
+			{BEGIN ApprovedOT_fieldcolumn}
+			<td  class="{$ApprovedOT_class}" {$ApprovedOT_style} {$recordattrs}>
+				{$ApprovedOT_value}
+			</td>
+			{END ApprovedOT_fieldcolumn}
+			{BEGIN AOTMins_fieldcolumn}
+			<td  class="{$AOTMins_class}" {$AOTMins_style} {$recordattrs}>
+				{$AOTMins_value}
+			</td>
+			{END AOTMins_fieldcolumn}
+			{BEGIN NDMins_fieldcolumn}
+			<td  class="{$NDMins_class}" {$NDMins_style} {$recordattrs}>
+				{$NDMins_value}
+			</td>
+			{END NDMins_fieldcolumn}
+			{BEGIN ApprovedNightDiff_fieldcolumn}
+			<td  class="{$ApprovedNightDiff_class}" {$ApprovedNightDiff_style} {$recordattrs}>
+				{$ApprovedNightDiff_value}
+			</td>
+			{END ApprovedNightDiff_fieldcolumn}
+			{BEGIN ANDiff_fieldcolumn}
+			<td  class="{$ANDiff_class}" {$ANDiff_style} {$recordattrs}>
+				{$ANDiff_value}
+			</td>
+			{END ANDiff_fieldcolumn}
+			{BEGIN NDMealAllowancePerShift_fieldcolumn}
+			<td  class="{$NDMealAllowancePerShift_class}" {$NDMealAllowancePerShift_style} {$recordattrs}>
+				{$NDMealAllowancePerShift_value}
+			</td>
+			{END NDMealAllowancePerShift_fieldcolumn}
+			{BEGIN NDMinimumHrs_fieldcolumn}
+			<td  class="{$NDMinimumHrs_class}" {$NDMinimumHrs_style} {$recordattrs}>
+				{$NDMinimumHrs_value}
+			</td>
+			{END NDMinimumHrs_fieldcolumn}
+			{BEGIN NDMealAllowance_fieldcolumn}
+			<td  class="{$NDMealAllowance_class}" {$NDMealAllowance_style} {$recordattrs}>
+				{$NDMealAllowance_value}
+			</td>
+			{END NDMealAllowance_fieldcolumn}
+			{BEGIN WorkMinsNet_fieldcolumn}
+			<td  class="{$WorkMinsNet_class}" {$WorkMinsNet_style} {$recordattrs}>
+				{$WorkMinsNet_value}
+			</td>
+			{END WorkMinsNet_fieldcolumn}
+			{BEGIN ApprovedRD_fieldcolumn}
+			<td  class="{$ApprovedRD_class}" {$ApprovedRD_style} {$recordattrs}>
+				{$ApprovedRD_value}
+			</td>
+			{END ApprovedRD_fieldcolumn}
+			{BEGIN RDMins_fieldcolumn}
+			<td  class="{$RDMins_class}" {$RDMins_style} {$recordattrs}>
+				{$RDMins_value}
+			</td>
+			{END RDMins_fieldcolumn}
+			{BEGIN endrecord_block}
+			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+			{END endrecord_block}
+		{END grid_record}
+		</tr>
+{END grid_row}
+	</tbody>
+
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

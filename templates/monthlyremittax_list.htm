@@ -1,0 +1,966 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}<style>
+{$containerCss}
+</style>
+<div class="sidebar bs-fixed clearfix mCustomScrollbar" data-mcs-theme="minimal-dark" {$blockattr_left}>
+	<div class="sidebar-contents mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside">
+		
+
+{BEGIN container_logo}<div {$logo_chiddenattr} data-pageid="{$pageid}" data-container="logo" class=" bs-sidebarlogo   "> 
+
+{BEGIN logo_block}<a href="{$home_link}" {$logo_hiddenattr} data-pageid="{$pageid}" data-brick="logo" class="navbar-brand" >{$logo}</a>
+{END logo_block}
+
+
+
+</div>
+{END container_logo}
+
+
+
+{BEGIN container_hdr}<div {$hdr_chiddenattr} data-pageid="{$pageid}" data-container="hdr" class=" navbar-default clearfix   "> 
+
+{BEGIN collapse_block}<button {$bsnavbarcollapse_hiddenattr} data-pageid="{$pageid}" data-brick="bsnavbarcollapse" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target=".bs-navcontrolled">	
+	<span class="sr-only">Toggle navigation</span>	
+	<span class="icon-bar"></span>					
+</button>												
+
+{END collapse_block}
+
+
+
+</div>
+{END container_hdr}
+
+{BEGIN container_sidemenu}<div {$sidemenu_chiddenattr} data-pageid="{$pageid}" data-container="sidemenu" class="bs-navform navbar-collapse sidebar-menu bs-hidden-xs bs-navcontrolled" aria-expanded="false" >												   
+{BEGIN menu_block}{$menu main}
+
+{END menu_block}
+
+												</div>						{END container_sidemenu}
+
+{BEGIN container_left}<div {$left_chiddenattr} data-pageid="{$pageid}" data-container="left" class=" sidebar-container   "> 
+
+{BEGIN searchPanel}<div {$searchpanel_hiddenattr} data-pageid="{$pageid}" data-brick="searchpanel" class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} >
+	<!-- Search panel content -->
+	
+	<div class="panel-heading">
+		<div class="btn-group" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Search in
+			<span class="caret"></span>
+			</button>
+		</div>
+
+		
+		<div class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Show options</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>all conditions</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>any condition</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>hide</a></li>
+			</ul>
+		</div>
+	
+		
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}<div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		{END searchCtrlBlock}
+
+
+	</div>
+	
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary" id="searchButton{$id}" {$searchbutton_attrs}>Search</button>
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}>
+		Show all
+		</button>
+	</div>
+</div>
+
+
+{END searchPanel}
+
+
+
+
+</div>
+{END container_left}
+
+
+	</div>
+</div>	
+<div class="bs-wrapper">
+	<div class="bs-fixedheader" id="fixedheader{$id}">
+		{BEGIN container_menu}<nav {$menu_chiddenattr} data-pageid="{$pageid}" data-container="menu" class="navbar navbar-default bs-fullwidth-navbar">					
+
+
+
+{BEGIN container_bc}<div {$bc_chiddenattr} data-pageid="{$pageid}" data-container="bc" class=" navbar-form navbar-left   "> 
+
+{BEGIN breadcrumbs}<ol class="breadcrumb">
+<li ><a href="{$home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}<li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumbs}
+
+
+
+</div>
+{END container_bc}
+
+
+
+
+
+
+{BEGIN container_menu_1}<div {$menu_1_chiddenattr} data-pageid="{$pageid}" data-container="menu_1" class="bs-navform navbar-collapse bs-hidden-xs bs-navcontrolled" aria-expanded="false" >												   
+
+
+
+{BEGIN container_more}<div {$more_chiddenattr} data-pageid="{$pageid}" data-container="more" class=" navbar-right navbar-form   "> 
+
+{BEGIN more_list}<div {$morebutton_hiddenattr} data-pageid="{$pageid}" data-brick="morebutton" class="btn-group bs-navsection">
+	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		<span class="glyphicon glyphicon-cog"></span>
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu">
+				{BEGIN editselected_link}<li class="massButton{$id} disabled"><a href="#" {$editselectedlink_attrs} {$editselectedlink_span} >Edit selected</a></li>
+		{END editselected_link}
+
+				{BEGIN exportselected_link}<li class="massButton{$id} disabled"><a href="#" {$exportselectedlink_attrs} {$exportselectedlink_span} >Export selected</a></li>
+		{END exportselected_link}
+		
+				{BEGIN deleteselected_link}<li class="massButton{$id} disabled"><a href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>Delete selected</a></li>
+		{END deleteselected_link}
+		
+				<li role="separator" class="divider"></li>	
+
+				{BEGIN asearch_link}<li><a href="monthlyremittax_search.php" {$advsearchlink_attrs}>Advanced search</a></li>
+		{END asearch_link}
+
+				{BEGIN searchPanelTopButtons}<li><a href=# id="showOptPanel{$id}">Show search panel</a></li>
+		{END searchPanelTopButtons}	
+		
+				
+				<li role="separator" class="divider"></li>	
+		
+				
+				{BEGIN export_link}<li><a target="_blank" href="monthlyremittax_export.php"  {$exportlink_attrs}>Export results</a></li>
+		{END export_link}
+
+				{BEGIN import_link}<li><a href="monthlyremittax_import.php?{$crosstable_attrs}"  {$importlink_attrs}>Import</a></li>
+		{END import_link}
+
+				
+	</ul>  
+</div>
+
+{END more_list}
+
+
+{BEGIN security_block}<span {$loggedas_hiddenattr} data-pageid="{$pageid}" data-brick="loggedas" id="login_block{$id}" class="bs-navsection">
+	{BEGIN guestloginbutton}<button class="btn btn-info" type="button" {$guestloginlink_attrs}>Login</button>
+	{END guestloginbutton}
+	{BEGIN loggedas_message}<span class="dropdown">
+			<button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon-user"></span>	{$username}</button>
+			<ul class="dropdown-menu">
+		{BEGIN logoutbutton}<li><a href="#" {$logoutlink_attrs}>Log out</a></li>
+		{END logoutbutton}
+		
+		{BEGIN adminarea_link}<li><a href="admin_rights_list.php" {$adminarealink_attrs}>Admin Area</a></li>
+		{END adminarea_link}
+
+
+			</ul>
+		</span>
+	{END loggedas_message}
+</span>
+{END security_block}
+
+
+
+</div>
+{END container_more}
+
+
+
+
+
+
+
+
+{BEGIN container_more_1}<div {$more_1_chiddenattr} data-pageid="{$pageid}" data-container="more_1" class=" navbar-right navbar-form   "> 
+
+{BEGIN searchform_block}<span {$search_hiddenattr} data-pageid="{$pageid}" data-brick="search" class="form-group">
+
+ <div  class="input-group">
+{BEGIN searchform_text}<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Show all">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+	{BEGIN searchform_search}<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>
+{END searchform_block}
+
+
+
+</div>
+{END container_more_1}
+
+
+
+
+												</div>						{END container_menu_1}
+
+
+									</nav>{END container_menu}
+	</div>	
+	<div class="container-fluid bs-underheader bs-fixedsidebarmain" id="underheader{$id}">
+		{$header}
+		<div class="bs-sidebar-screenbound">
+			
+
+
+
+{BEGIN container_gridcontrols}<div {$gridcontrols_chiddenattr} data-pageid="{$pageid}" data-container="gridcontrols" class=" bs-navcontrolled bs-hidden-xs   "> 
+
+
+
+
+{BEGIN container_add_delete}<div {$add_delete_chiddenattr} data-pageid="{$pageid}" data-container="add_delete" class=" bottom-margin  col-md-6 "> 
+
+{BEGIN newrecord_controls_block}{BEGIN add_link}<a {$add_hiddenattr} data-pageid="{$pageid}" data-brick="add" type="button" class="btn btn-primary" {$addlink_attrs}>Add new</a>
+	{END add_link}
+
+		{BEGIN inlineadd_link}<button {$add_hiddenattr} data-pageid="{$pageid}" data-brick="add" type="button" class="btn btn-primary" {$inlineaddlink_attrs}>Inline Add</button>
+	{END inlineadd_link}
+
+{END newrecord_controls_block}
+
+
+{BEGIN record_controls_block}<span {$recordcontrol_hiddenattr} data-pageid="{$pageid}" data-brick="recordcontrol">
+		{BEGIN deleteselected_link}<button type="button" class="btn btn-default" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled>Delete</button>
+	{END deleteselected_link}
+		{BEGIN updateselected_link}<button type="button" class="btn btn-default" {$updateselectedlink_attrs} disabled>Update selected</button>
+	{END updateselected_link}
+		{BEGIN saveall_link}<button type="button" class="btn btn-primary" {$savealllink_attrs} {$savealllink_span}>Save all</button>
+	{END saveall_link}
+	{BEGIN cancelall_link}<button type="button" class="btn btn-default" {$cancelalllink_attrs} {$cancelalllink_span}>Cancel</button>
+	{END cancelall_link}
+</span>
+
+{END record_controls_block}
+
+
+
+</div>
+{END container_add_delete}
+
+
+
+
+
+
+
+
+{BEGIN container_gridinfo}<div {$gridinfo_chiddenattr} data-pageid="{$pageid}" data-container="gridinfo" class=" bottom-margin text-right col-md-6 "> 
+
+{BEGIN details_found}<span {$details_found_hiddenattr} data-pageid="{$pageid}" data-brick="details_found" class="form-inline form-inline-always">
+	{$records_indicator}
+	<span>
+	{BEGIN recordspp_block}{$recsPerPage}
+	{END recordspp_block}
+	</span>
+</span>
+{END details_found}
+
+
+{BEGIN print_friendly}<span {$printpanel_hiddenattr} data-pageid="{$pageid}" data-brick="printpanel" class="bs-printpanel" id="printpanelblock{$id}">
+	<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" title="Print-friendly page">
+		<span class="glyphicon glyphicon-print" ></span>
+		<span class="caret"></span>
+    </button>
+	<ul class="dropdown-menu pull-right" >
+		<li>
+			<div class="container-fluid" id="print_friendly_scope{$id}">
+				<div class="row">
+					<div class="col-md-4">Scope:</div>
+										{BEGIN print_friendly_all}<div class="col-md-8">
+						<label for="printAll{$id}">
+							<input type="radio" id="printAll{$id}" data-href="monthlyremittax_print.php?all=1&amp;{$crosstable_attrs}" name="printScope">
+							Print all pages
+						</label>
+					</div>
+					{END print_friendly_all}
+				</div>
+				<div class="row">
+					<div class="col-md-4">&nbsp;</div>
+					<div class="col-md-8">
+						<label for="printPage{$id}">
+							<input type="radio" id="printPage{$id}" data-href="monthlyremittax_print.php?{$crosstable_attrs}" name="printScope" checked>
+							Print this page
+						</label>
+					</div>
+				</div>
+								<div class="row">
+					<div class="col-md-4">&nbsp;</div>
+					<div class="col-md-8">
+						<label for="printSelection{$id}" style="color: gray;">
+							<input type="radio" id="printSelection{$id}" name="printScope" disabled="disabled">
+							Print selected
+						</label>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li class="divider" role="separator"></li>
+
+		
+				<li>	
+			<div class="rnr-printdetails">
+				<label for="printPerPage{$id}">
+											Records Per Page:
+				</label>
+				<input type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">		
+			</div>
+		</li>
+		<li class="divider" role="separator"></li>
+		<li class="rnr-printbutton">				
+			<button type="button" class="btn btn-primary" id="print_friendly_button{$id}" >Print</button>			
+		</li>
+	</ul>	
+</span>
+
+{END print_friendly}
+
+
+
+
+</div>
+{END container_gridinfo}
+
+
+
+
+
+
+
+</div>
+{END container_gridcontrols}
+
+
+		</div>
+		<div></div>
+		<div class="bs-sidebar-screenbound bs-minwidth">
+			
+
+{BEGIN container_tabs}<div {$tabs_chiddenattr} data-pageid="{$pageid}" data-container="tabs" class="    "> 
+
+{BEGIN grid_tabs}<div {$bsgrid_tabs_hiddenattr} data-pageid="{$pageid}" data-brick="bsgrid_tabs">
+<ul class="nav nav-tabs">
+{$grid_tabs_content}
+</ul>
+</div>
+{END grid_tabs}
+
+
+
+</div>
+{END container_tabs}
+
+
+
+{BEGIN container_message}<div {$message_chiddenattr} data-pageid="{$pageid}" data-container="message" class="    "> 
+
+{BEGIN message_block}<div {$message_hiddenattr} data-pageid="{$pageid}" data-brick="message" class="alert {$message_class}" role="alert">{$message}</div>
+{END message_block}
+
+
+
+</div>
+{END container_message}
+
+
+
+{BEGIN container_center}<div {$center_chiddenattr} data-pageid="{$pageid}" data-container="center" class="    "> 
+
+
+
+
+{BEGIN container_grid}<div {$grid_chiddenattr} data-pageid="{$pageid}" data-container="grid" class="bs-grid    "> 
+
+{BEGIN grid_block}<style>
+	.bs-gridcell[data-field=TxID]:before {
+		content: "{$label monthlyremittax TxID}";
+	}
+	.bs-gridcell[data-field=Month]:before {
+		content: "{$label monthlyremittax Month}";
+	}
+	.bs-gridcell[data-field=Year]:before {
+		content: "{$label monthlyremittax Year}";
+	}
+	.bs-gridcell[data-field=EmployerID]:before {
+		content: "{$label monthlyremittax EmployerID}";
+	}
+	.bs-gridcell[data-field=Address]:before {
+		content: "{$label monthlyremittax Address}";
+	}
+	.bs-gridcell[data-field=RDOCode]:before {
+		content: "{$label monthlyremittax RDOCode}";
+	}
+	.bs-gridcell[data-field=AmendedReturn]:before {
+		content: "{$label monthlyremittax AmendedReturn}";
+	}
+	.bs-gridcell[data-field=AnyTaxWithheld]:before {
+		content: "{$label monthlyremittax AnyTaxWithheld}";
+	}
+	.bs-gridcell[data-field=TIN]:before {
+		content: "{$label monthlyremittax TIN}";
+	}
+	.bs-gridcell[data-field=CategoryWithholdingAgent]:before {
+		content: "{$label monthlyremittax CategoryWithholdingAgent}";
+	}
+	.bs-gridcell[data-field=AwaitingTaxRelief]:before {
+		content: "{$label monthlyremittax AwaitingTaxRelief}";
+	}
+	.bs-gridcell[data-field=TotalAmountOfCompensation]:before {
+		content: "{$label monthlyremittax TotalAmountOfCompensation}";
+	}
+	.bs-gridcell[data-field=StatutoryMinimumWage]:before {
+		content: "{$label monthlyremittax StatutoryMinimumWage}";
+	}
+	.bs-gridcell[data-field=OtherNonTaxableCompensation]:before {
+		content: "{$label monthlyremittax OtherNonTaxableCompensation}";
+	}
+	.bs-gridcell[data-field=TaxableCompensation]:before {
+		content: "{$label monthlyremittax TaxableCompensation}";
+	}
+	.bs-gridcell[data-field=TaxRequiredToBeWithheld]:before {
+		content: "{$label monthlyremittax TaxRequiredToBeWithheld}";
+	}
+	.bs-gridcell[data-field=TaxRefund]:before {
+		content: "{$label monthlyremittax TaxRefund}";
+	}
+	.bs-gridcell[data-field=TaxRequiredForRemittance]:before {
+		content: "{$label monthlyremittax TaxRequiredForRemittance}";
+	}
+	.bs-gridcell[data-field=TotalAmountStillDue]:before {
+		content: "{$label monthlyremittax TotalAmountStillDue}";
+	}
+	.bs-gridcell[data-field=AuthorizedRepresentative]:before {
+		content: "{$label monthlyremittax AuthorizedRepresentative}";
+	}
+	.bs-gridcell[data-field=TelNo]:before {
+		content: "{$label monthlyremittax TelNo}";
+	}
+	.bs-gridcell[data-field=ZipCode]:before {
+		content: "{$label monthlyremittax ZipCode}";
+	}
+</style>
+<TABLE class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" style="width: 3468px;" cellpadding="0" data-brick="grid" data-pageid="{$pageid}" {$grid_hiddenattr}>
+  <thead>
+										{BEGIN grid_header}<tr class="rnr-toprow {$gridHeader_class}" >
+									{BEGIN record_header}{BEGIN listIcons_column}<TH style="width: 85px;" rowspan="1" colspan="1" ieditcont="all">&nbsp;</th>
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}<TH style="width: 30px;" rowspan="1" colspan="1"><input type="checkbox" {$checkboxheader_attrs}>
+									</th>
+									{END checkbox_column}
+
+																		
+									{BEGIN TxID_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$TxID_class}" style="width: 76px;" rowspan="1" colspan="1" data-field="TxID">{BEGIN TxID_fieldheader}<span {$TxID_orderlinkattrs}>
+											{$label monthlyremittax TxID}
+										</span>
+									{END TxID_fieldheader}
+									</th>
+									{END TxID_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Month_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Month_class}" style="width: 86px;" rowspan="1" colspan="1" data-field="Month">{BEGIN Month_fieldheader}<span {$Month_orderlinkattrs}>
+											{$label monthlyremittax Month}
+										</span>
+									{END Month_fieldheader}
+									</th>
+									{END Month_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Year_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Year_class}" style="width: 76px;" rowspan="1" colspan="1" data-field="Year">{BEGIN Year_fieldheader}<span {$Year_orderlinkattrs}>
+											{$label monthlyremittax Year}
+										</span>
+									{END Year_fieldheader}
+									</th>
+									{END Year_fieldheadercolumn}
+									
+									
+									
+									
+									<TH class="rnr-gridfieldlabel {$Year_class} runner-cc" style="width: 52px;"></TH>
+    {BEGIN AmendedReturn_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$AmendedReturn_class}" style="width: 149px;" rowspan="1" colspan="1" data-field="AmendedReturn">{BEGIN AmendedReturn_fieldheader}<span {$AmendedReturn_orderlinkattrs}>
+											{$label monthlyremittax AmendedReturn}
+										</span>
+									{END AmendedReturn_fieldheader}
+									</th>
+									{END AmendedReturn_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN AnyTaxWithheld_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$AnyTaxWithheld_class}" style="width: 149px;" rowspan="1" colspan="1" data-field="AnyTaxWithheld">{BEGIN AnyTaxWithheld_fieldheader}<span {$AnyTaxWithheld_orderlinkattrs}>
+											{$label monthlyremittax AnyTaxWithheld}
+										</span>
+									{END AnyTaxWithheld_fieldheader}
+									</th>
+									{END AnyTaxWithheld_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN EmployerID_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$EmployerID_class}" style="width: 120px;" rowspan="1" colspan="1" data-field="EmployerID">{BEGIN EmployerID_fieldheader}<span {$EmployerID_orderlinkattrs}>
+											{$label monthlyremittax EmployerID}
+										</span>
+									{END EmployerID_fieldheader}
+									</th>
+									{END EmployerID_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN TIN_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$TIN_class}" style="width: 69px;" rowspan="1" colspan="1" data-field="TIN">{BEGIN TIN_fieldheader}<span {$TIN_orderlinkattrs}>
+											{$label monthlyremittax TIN}
+										</span>
+									{END TIN_fieldheader}
+									</th>
+									{END TIN_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN TelNo_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$TelNo_class}" style="width: 84px;" rowspan="1" colspan="1" data-field="TelNo">{BEGIN TelNo_fieldheader}<span {$TelNo_orderlinkattrs}>
+											{$label monthlyremittax TelNo}
+										</span>
+									{END TelNo_fieldheader}
+									</th>
+									{END TelNo_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Address_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Address_class}" style="width: 98px;" rowspan="1" colspan="1" data-field="Address">{BEGIN Address_fieldheader}<span {$Address_orderlinkattrs}>
+											{$label monthlyremittax Address}
+										</span>
+									{END Address_fieldheader}
+									</th>
+									{END Address_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN ZipCode_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$ZipCode_class}" style="width: 100px;" rowspan="1" colspan="1" data-field="ZipCode">{BEGIN ZipCode_fieldheader}<span {$ZipCode_orderlinkattrs}>
+											{$label monthlyremittax ZipCode}
+										</span>
+									{END ZipCode_fieldheader}
+									</th>
+									{END ZipCode_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RDOCode_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$RDOCode_class}" style="width: 111px;" rowspan="1" colspan="1" data-field="RDOCode">{BEGIN RDOCode_fieldheader}<span {$RDOCode_orderlinkattrs}>
+											{$label monthlyremittax RDOCode}
+										</span>
+									{END RDOCode_fieldheader}
+									</th>
+									{END RDOCode_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN CategoryWithholdingAgent_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$CategoryWithholdingAgent_class}" style="width: 213px;" rowspan="1" colspan="1" data-field="CategoryWithholdingAgent">{BEGIN CategoryWithholdingAgent_fieldheader}<span {$CategoryWithholdingAgent_orderlinkattrs}>
+											{$label monthlyremittax CategoryWithholdingAgent}
+										</span>
+									{END CategoryWithholdingAgent_fieldheader}
+									</th>
+									{END CategoryWithholdingAgent_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN AwaitingTaxRelief_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$AwaitingTaxRelief_class}" style="width: 159px;" rowspan="1" colspan="1" data-field="AwaitingTaxRelief">{BEGIN AwaitingTaxRelief_fieldheader}<span {$AwaitingTaxRelief_orderlinkattrs}>
+											{$label monthlyremittax AwaitingTaxRelief}
+										</span>
+									{END AwaitingTaxRelief_fieldheader}
+									</th>
+									{END AwaitingTaxRelief_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN TotalAmountOfCompensation_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$TotalAmountOfCompensation_class}" style="width: 231px;" rowspan="1" colspan="1" data-field="TotalAmountOfCompensation">{BEGIN TotalAmountOfCompensation_fieldheader}<span {$TotalAmountOfCompensation_orderlinkattrs}>
+											{$label monthlyremittax TotalAmountOfCompensation}
+										</span>
+									{END TotalAmountOfCompensation_fieldheader}
+									</th>
+									{END TotalAmountOfCompensation_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN StatutoryMinimumWage_fieldheadercolumn}<th class="rnr-gridfieldlabel {$StatutoryMinimumWage_class}" data-field=StatutoryMinimumWage>
+									{BEGIN StatutoryMinimumWage_fieldheader}<span {$StatutoryMinimumWage_orderlinkattrs}>
+											{$label monthlyremittax StatutoryMinimumWage}
+										</span>
+									{END StatutoryMinimumWage_fieldheader}
+									</th>
+									{END StatutoryMinimumWage_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN OtherNonTaxableCompensation_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$OtherNonTaxableCompensation_class}" style="width: 248px;" rowspan="1" colspan="1" data-field="OtherNonTaxableCompensation">{BEGIN OtherNonTaxableCompensation_fieldheader}<span {$OtherNonTaxableCompensation_orderlinkattrs}>
+											{$label monthlyremittax OtherNonTaxableCompensation}
+										</span>
+									{END OtherNonTaxableCompensation_fieldheader}
+									</th>
+									{END OtherNonTaxableCompensation_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN TaxableCompensation_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$TaxableCompensation_class}" style="width: 187px;" rowspan="1" colspan="1" data-field="TaxableCompensation">{BEGIN TaxableCompensation_fieldheader}<span {$TaxableCompensation_orderlinkattrs}>
+											{$label monthlyremittax TaxableCompensation}
+										</span>
+									{END TaxableCompensation_fieldheader}
+									</th>
+									{END TaxableCompensation_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN TaxRequiredToBeWithheld_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$TaxRequiredToBeWithheld_class}" style="width: 215px;" rowspan="1" colspan="1" data-field="TaxRequiredToBeWithheld">{BEGIN TaxRequiredToBeWithheld_fieldheader}<span {$TaxRequiredToBeWithheld_orderlinkattrs}>
+											{$label monthlyremittax TaxRequiredToBeWithheld}
+										</span>
+									{END TaxRequiredToBeWithheld_fieldheader}
+									</th>
+									{END TaxRequiredToBeWithheld_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN TaxRefund_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$TaxRefund_class}" style="width: 115px;" rowspan="1" colspan="1" data-field="TaxRefund">{BEGIN TaxRefund_fieldheader}<span {$TaxRefund_orderlinkattrs}>
+											{$label monthlyremittax TaxRefund}
+										</span>
+									{END TaxRefund_fieldheader}
+									</th>
+									{END TaxRefund_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN TaxRequiredForRemittance_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$TaxRequiredForRemittance_class}" style="width: 219px;" rowspan="1" colspan="1" data-field="TaxRequiredForRemittance">{BEGIN TaxRequiredForRemittance_fieldheader}<span {$TaxRequiredForRemittance_orderlinkattrs}>
+											{$label monthlyremittax TaxRequiredForRemittance}
+										</span>
+									{END TaxRequiredForRemittance_fieldheader}
+									</th>
+									{END TaxRequiredForRemittance_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN TotalAmountStillDue_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$TotalAmountStillDue_class}" style="width: 175px;" rowspan="1" colspan="1" data-field="TotalAmountStillDue">{BEGIN TotalAmountStillDue_fieldheader}<span {$TotalAmountStillDue_orderlinkattrs}>
+											{$label monthlyremittax TotalAmountStillDue}
+										</span>
+									{END TotalAmountStillDue_fieldheader}
+									</th>
+									{END TotalAmountStillDue_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN AuthorizedRepresentative_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$AuthorizedRepresentative_class}" style="width: 208px;" rowspan="1" colspan="1" data-field="AuthorizedRepresentative">{BEGIN AuthorizedRepresentative_fieldheader}<span {$AuthorizedRepresentative_orderlinkattrs}>
+											{$label monthlyremittax AuthorizedRepresentative}
+										</span>
+									{END AuthorizedRepresentative_fieldheader}
+									</th>
+									{END AuthorizedRepresentative_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN endrecordheader_block}<TH class="rnr-cs" style="width: 21px;" rowspan="1" colspan="1">&nbsp;</th>
+									
+									{END endrecordheader_block}
+									
+									{END record_header}
+									
+								</tr>
+								{END grid_header}
+
+	</thead>
+	<tbody>	
+		{BEGIN grid_row}<tr class="{$rowclass} bs-gridrow" {$rowattrs} {$rowstyle}>
+	{BEGIN grid_record}{BEGIN listIcons_column}<TD class="bs-gridicons" style="width: 85px;" rowspan="1" colspan="1" ieditcont="all" {$rowstyle} {$recordattrs}>{BEGIN edit_column}{BEGIN edit_link}<a class="glyphicon glyphicon-pencil" {$editlink_attrs} title="Edit"></a>
+	{END edit_link}
+	{END edit_column}
+
+		{BEGIN inlineedit_column}{BEGIN inlineedit_link}<a class="glyphicon glyphicon-edit" {$inlineeditlink_attrs} title="Inline Edit"></a>
+	{END inlineedit_link}
+	{END inlineedit_column}
+	
+	<span data-hidden {$ieditbuttonsholder_attrs}></span>
+
+		{BEGIN copy_column}{BEGIN copy_link}<a class="glyphicon glyphicon-duplicate" {$copylink_attrs} title="Copy"></a>
+	{END copy_link}
+	{END copy_column}
+
+		{BEGIN view_column}{BEGIN view_link}<a class="glyphicon glyphicon-search" {$viewlink_attrs} title="View"></a>
+	{END view_link}
+	{END view_column}
+	</td>	
+	{END listIcons_column}	
+
+		{BEGIN checkbox_column}<TD class="bs-gridcheckbox" style="width: 30px;" rowspan="1" colspan="1" ieditcont="checkBox" {$rowstyle} {$recordattrs}>{BEGIN checkbox}<input type="checkbox" {$checkbox_attrs}>
+	{END checkbox}
+	</td>
+	{END checkbox_column}
+
+	
+
+	{BEGIN TxID_fieldcolumn}<TD class="bs-gridcell {$TxID_class}" style="width: 76px;" rowspan="1" colspan="1" data-field="TxID" {$rowstyle} {$recordattrs}>
+      {$TxID_value}
+	</td>
+{END TxID_fieldcolumn}
+
+
+	{BEGIN Month_fieldcolumn}<TD class="bs-gridcell {$Month_class}" style="width: 86px;" rowspan="1" colspan="1" data-field="Month" {$rowstyle} {$recordattrs}>
+      {$Month_value}
+	</td>
+{END Month_fieldcolumn}
+
+
+	{BEGIN Year_fieldcolumn}<TD class="bs-gridcell {$Year_class}" style="width: 76px;" rowspan="1" colspan="1" data-field="Year" {$rowstyle} {$recordattrs}>
+      {$Year_value}
+	</td>
+{END Year_fieldcolumn}
+
+
+	<TD class="bs-gridcell {$Year_class} runner-cc" style="width: 52px;" rowspan="1" colspan="1"><A class="rnr-button btn btn-default" id="Print" href="#" typeid="ib">Print</A></TD>
+    {BEGIN AmendedReturn_fieldcolumn}<TD class="bs-gridcell {$AmendedReturn_class}" style="width: 149px;" rowspan="1" colspan="1" data-field="AmendedReturn" {$rowstyle} {$recordattrs}>
+      {$AmendedReturn_value}
+	</td>
+{END AmendedReturn_fieldcolumn}
+
+
+	{BEGIN AnyTaxWithheld_fieldcolumn}<TD class="bs-gridcell {$AnyTaxWithheld_class}" style="width: 149px;" rowspan="1" colspan="1" data-field="AnyTaxWithheld" {$rowstyle} {$recordattrs}>
+      {$AnyTaxWithheld_value}
+	</td>
+{END AnyTaxWithheld_fieldcolumn}
+
+
+	{BEGIN EmployerID_fieldcolumn}<TD class="bs-gridcell {$EmployerID_class}" style="width: 120px;" rowspan="1" colspan="1" data-field="EmployerID" {$rowstyle} {$recordattrs}>
+      {$EmployerID_value}
+	</td>
+{END EmployerID_fieldcolumn}
+
+
+	{BEGIN TIN_fieldcolumn}<TD class="bs-gridcell {$TIN_class}" style="width: 69px;" rowspan="1" colspan="1" data-field="TIN" {$rowstyle} {$recordattrs}>
+      {$TIN_value}
+	</td>
+{END TIN_fieldcolumn}
+
+
+	{BEGIN TelNo_fieldcolumn}<TD class="bs-gridcell {$TelNo_class}" style="width: 84px;" rowspan="1" colspan="1" data-field="TelNo" {$rowstyle} {$recordattrs}>
+      {$TelNo_value}
+	</td>
+{END TelNo_fieldcolumn}
+
+
+	{BEGIN Address_fieldcolumn}<TD class="bs-gridcell {$Address_class}" style="width: 98px;" rowspan="1" colspan="1" data-field="Address" {$rowstyle} {$recordattrs}>
+      {$Address_value}
+	</td>
+{END Address_fieldcolumn}
+
+
+	{BEGIN ZipCode_fieldcolumn}<TD class="bs-gridcell {$ZipCode_class}" style="width: 100px;" rowspan="1" colspan="1" data-field="ZipCode" {$rowstyle} {$recordattrs}>
+      {$ZipCode_value}
+	</td>
+{END ZipCode_fieldcolumn}
+
+
+	{BEGIN RDOCode_fieldcolumn}<TD class="bs-gridcell {$RDOCode_class}" style="width: 111px;" rowspan="1" colspan="1" data-field="RDOCode" {$rowstyle} {$recordattrs}>
+      {$RDOCode_value}
+	</td>
+{END RDOCode_fieldcolumn}
+
+
+	{BEGIN CategoryWithholdingAgent_fieldcolumn}<TD class="bs-gridcell {$CategoryWithholdingAgent_class}" style="width: 213px;" rowspan="1" colspan="1" data-field="CategoryWithholdingAgent" {$rowstyle} {$recordattrs}>
+      {$CategoryWithholdingAgent_value}
+	</td>
+{END CategoryWithholdingAgent_fieldcolumn}
+
+
+	{BEGIN AwaitingTaxRelief_fieldcolumn}<TD class="bs-gridcell {$AwaitingTaxRelief_class}" style="width: 159px;" rowspan="1" colspan="1" data-field="AwaitingTaxRelief" {$rowstyle} {$recordattrs}>
+      {$AwaitingTaxRelief_value}
+	</td>
+{END AwaitingTaxRelief_fieldcolumn}
+
+
+	{BEGIN TotalAmountOfCompensation_fieldcolumn}<TD class="bs-gridcell {$TotalAmountOfCompensation_class}" style="width: 231px;" rowspan="1" colspan="1" data-field="TotalAmountOfCompensation" {$rowstyle} {$recordattrs}>
+      {$TotalAmountOfCompensation_value}
+	</td>
+{END TotalAmountOfCompensation_fieldcolumn}
+
+
+	{BEGIN StatutoryMinimumWage_fieldcolumn}<td class="bs-gridcell {$StatutoryMinimumWage_class}"  data-field=StatutoryMinimumWage {$rowstyle} {$recordattrs}>
+		{$StatutoryMinimumWage_value}
+	</td>
+{END StatutoryMinimumWage_fieldcolumn}
+
+
+	{BEGIN OtherNonTaxableCompensation_fieldcolumn}<TD class="bs-gridcell {$OtherNonTaxableCompensation_class}" style="width: 248px;" rowspan="1" colspan="1" data-field="OtherNonTaxableCompensation" {$rowstyle} {$recordattrs}>
+      {$OtherNonTaxableCompensation_value}
+	</td>
+{END OtherNonTaxableCompensation_fieldcolumn}
+
+
+	{BEGIN TaxableCompensation_fieldcolumn}<TD class="bs-gridcell {$TaxableCompensation_class}" style="width: 187px;" rowspan="1" colspan="1" data-field="TaxableCompensation" {$rowstyle} {$recordattrs}>
+      {$TaxableCompensation_value}
+	</td>
+{END TaxableCompensation_fieldcolumn}
+
+
+	{BEGIN TaxRequiredToBeWithheld_fieldcolumn}<TD class="bs-gridcell {$TaxRequiredToBeWithheld_class}" style="width: 215px;" rowspan="1" colspan="1" data-field="TaxRequiredToBeWithheld" {$rowstyle} {$recordattrs}>
+      {$TaxRequiredToBeWithheld_value}
+	</td>
+{END TaxRequiredToBeWithheld_fieldcolumn}
+
+
+	{BEGIN TaxRefund_fieldcolumn}<TD class="bs-gridcell {$TaxRefund_class}" style="width: 115px;" rowspan="1" colspan="1" data-field="TaxRefund" {$rowstyle} {$recordattrs}>
+      {$TaxRefund_value}
+	</td>
+{END TaxRefund_fieldcolumn}
+
+
+	{BEGIN TaxRequiredForRemittance_fieldcolumn}<TD class="bs-gridcell {$TaxRequiredForRemittance_class}" style="width: 219px;" rowspan="1" colspan="1" data-field="TaxRequiredForRemittance" {$rowstyle} {$recordattrs}>
+      {$TaxRequiredForRemittance_value}
+	</td>
+{END TaxRequiredForRemittance_fieldcolumn}
+
+
+	{BEGIN TotalAmountStillDue_fieldcolumn}<TD class="bs-gridcell {$TotalAmountStillDue_class}" style="width: 175px;" rowspan="1" colspan="1" data-field="TotalAmountStillDue" {$rowstyle} {$recordattrs}>
+      {$TotalAmountStillDue_value}
+	</td>
+{END TotalAmountStillDue_fieldcolumn}
+
+
+	{BEGIN AuthorizedRepresentative_fieldcolumn}<TD class="bs-gridcell {$AuthorizedRepresentative_class}" style="width: 208px;" rowspan="1" colspan="1" data-field="AuthorizedRepresentative" {$rowstyle} {$recordattrs}>
+      {$AuthorizedRepresentative_value}
+	</td>
+{END AuthorizedRepresentative_fieldcolumn}
+
+	{BEGIN endrecord_block}<TD class="rnr-cs" style="width: 21px;" rowspan="1" colspan="1" {$endrecordblock_attrs}>&nbsp;</td>
+	{END endrecord_block}
+									
+	{END grid_record}
+
+</tr>
+{END grid_row}
+	</tbody>
+	<tfoot>
+										
+	</tfoot>
+</table>
+
+
+
+{END grid_block}
+
+
+
+</div>
+{END container_grid}
+
+
+
+
+
+
+</div>
+{END container_center}
+
+
+
+{BEGIN container_pagination}<div {$pagination_chiddenattr} data-pageid="{$pageid}" data-container="pagination" class="  text-center col-md-12 "> 
+
+{BEGIN pagination_block}<div {$pagination_hiddenattr} data-pageid="{$pageid}" data-brick="pagination">
+{$pagination}
+</div>
+{END pagination_block}
+
+
+
+</div>
+{END container_pagination}
+
+
+		</div>
+	</div>
+</div>
+	
+
+		{$footer}
+	{END body}
+	</body>
+</html>

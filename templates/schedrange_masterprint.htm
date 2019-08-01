@@ -1,0 +1,73 @@
+<div {$pageattrs}>
+
+{BEGIN container_column}
+<div class="rnr-c rnr-ch rnr-c-column">
+
+{BEGIN masterlist_title}
+<div  class="style1 rnr-bl rnr-b-masterprintheader {$brickclass_masterprintheader}"><span>{$pagetitlelabel schedrange masterprint}</span></div>
+{END masterlist_title}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_column}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+<table {$bsmasterprintgrid_hiddenattr} data-pageid="{$pageid}" data-brick="bsmasterprintgrid" class="table rnr-b-mastergridfields rnr-gridtable" >
+		<thead>
+		<tr>
+			<th class="{$ScRID_class}">{$label schedrange ScRID}</th>
+			<th class="{$Employer_class}">{$label schedrange Employer}</th>
+			<th class="{$Division_class}">{$label schedrange Division}</th>
+			<th class="{$Shift_class}">{$label schedrange Shift}</th>
+			<th class="{$FromDate_class}">{$label schedrange FromDate}</th>
+			<th class="{$ToDate_class}">{$label schedrange ToDate}</th>
+			<th class="{$SchedType_class}">{$label schedrange SchedType}</th>
+			<th class="{$SchedBy_class}">{$label schedrange SchedBy}</th>
+			<th class="{$RestDays_class}">{$label schedrange RestDays}</th>
+			<th class="{$TimeIn_class}">{$label schedrange TimeIn}</th>
+			<th class="{$TimeOut_class}">{$label schedrange TimeOut}</th>
+			<th class="{$LunchBreakTimeFrom_class}">{$label schedrange LunchBreakTimeFrom}</th>
+			<th class="{$LunchBreakTimeTo_class}">{$label schedrange LunchBreakTimeTo}</th>
+			<th class="{$MinsPerDay_class}">{$label schedrange MinsPerDay}</th>
+			<th class="{$FirstHalfMins_class}">{$label schedrange FirstHalfMins}</th>
+			<th class="{$BreakMins_class}">{$label schedrange BreakMins}</th>
+			<th class="{$SecondHalfMins_class}">{$label schedrange SecondHalfMins}</th>
+			<th class="{$Posted_class}">{$label schedrange Posted}</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="{$ScRID_class}">{$ScRID_mastervalue}</td>
+			<td class="{$Employer_class}">{$Employer_mastervalue}</td>
+			<td class="{$Division_class}">{$Division_mastervalue}</td>
+			<td class="{$Shift_class}">{$Shift_mastervalue}</td>
+			<td class="{$FromDate_class}">{$FromDate_mastervalue}</td>
+			<td class="{$ToDate_class}">{$ToDate_mastervalue}</td>
+			<td class="{$SchedType_class}">{$SchedType_mastervalue}</td>
+			<td class="{$SchedBy_class}">{$SchedBy_mastervalue}</td>
+			<td class="{$RestDays_class}">{$RestDays_mastervalue}</td>
+			<td class="{$TimeIn_class}">{$TimeIn_mastervalue}</td>
+			<td class="{$TimeOut_class}">{$TimeOut_mastervalue}</td>
+			<td class="{$LunchBreakTimeFrom_class}">{$LunchBreakTimeFrom_mastervalue}</td>
+			<td class="{$LunchBreakTimeTo_class}">{$LunchBreakTimeTo_mastervalue}</td>
+			<td class="{$MinsPerDay_class}">{$MinsPerDay_mastervalue}</td>
+			<td class="{$FirstHalfMins_class}">{$FirstHalfMins_mastervalue}</td>
+			<td class="{$BreakMins_class}">{$BreakMins_mastervalue}</td>
+			<td class="{$SecondHalfMins_class}">{$SecondHalfMins_mastervalue}</td>
+			<td class="{$Posted_class}">{$Posted_mastervalue}</td>
+		</tr>
+	</tbody>
+
+</table> 
+
+
+
+
+{END container_mastergrid}
+
+</div>
