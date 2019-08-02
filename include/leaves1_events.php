@@ -18,6 +18,8 @@ class eventclass_leaves1  extends eventsBase
 
 		$this->events["BeforeAdd"]=true;
 
+		$this->events["AfterEdit"]=true;
+
 
 //	onscreen events
 
@@ -514,6 +516,21 @@ function AfterAdd(&$values, &$keys, $inline, &$pageObject)
 {
 
 		
+$lv=$values["LvID"];
+$df=$values["FromDate"];
+$dt=$values["ToDate"];
+$nd=$values["Days"];
+
+$ts1 = strtotime($df);
+$ts2 = strtotime($dt);
+
+$ndays = 1+(floor(($ts2 - $ts1)/(3600*24)));
+
+
+$tdays=$ndays*$nd;
+
+$squ = "Update leaves set TotalDays='$tdays' where LvID='$lv'";
+ CustomQuery($squ);
 
 header("Location: leaves1_edit.php?editid1=".$values["LvID"]);
 exit();
@@ -634,6 +651,88 @@ return True;
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+				// After record updated
+function AfterEdit(&$values, $where, &$oldvalues, &$keys, $inline, &$pageObject)
+{
+
+		$lv=$values["LvID"];
+$df=$values["FromDate"];
+$dt=$values["ToDate"];
+$nd=$values["Days"];
+
+$ts1 = strtotime($df);
+$ts2 = strtotime($dt);
+
+$ndays = 1+(floor(($ts2 - $ts1)/(3600*24)));
+
+$tdays=$ndays*$nd;
+
+$squ = "Update leaves set TotalDays='$tdays' where LvID='$lv'";
+ CustomQuery($squ);
+
+// Place event code here.
+// Use "Add Action" button to add code snippets.
+;		
+} // function AfterEdit
+
 		
 		
 		

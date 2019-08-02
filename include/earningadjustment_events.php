@@ -8,6 +8,8 @@ class eventclass_earningadjustment  extends eventsBase
 
 		$this->events["AfterEdit"]=true;
 
+		$this->events["IsRecordEditable"]=true;
+
 
 //	onscreen events
 
@@ -153,6 +155,84 @@ $sqlr = "UPDATE earningadjustment SET LessAbsences=1  WHERE eaID='$ea'";
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+				// Is Record Editable
+function IsRecordEditable($values, $isEditable)
+{
+
+		$eid=$values["EmployeeID"] ;
+
+$lk=DBLookup("SELECT Inactive FROM demo_user WHERE EmployeeID='$eid'");
+
+if ($lk==1)
+ return false;
+else
+ return true;
+
+// Place event code here.
+// Use "Add Action" button to add code snippets.
+
+//return $isEditable;
+;		
+} // function IsRecordEditable
+
 		
 		
 		

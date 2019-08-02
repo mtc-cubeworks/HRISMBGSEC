@@ -147,12 +147,12 @@ $tdatapayrolldiv[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
 							
 							
 							
 							
-																										
+																																						
 
 $tdatapayrolldiv[".ajaxCodeSnippetAdded"] = false;
 
@@ -172,28 +172,22 @@ $tdatapayrolldiv[".allSearchFields"] = array();
 $tdatapayrolldiv[".filterFields"] = array();
 $tdatapayrolldiv[".requiredSearchFields"] = array();
 
-$tdatapayrolldiv[".allSearchFields"][] = "PRollID";
-	$tdatapayrolldiv[".allSearchFields"][] = "Locked";
-	$tdatapayrolldiv[".allSearchFields"][] = "Employer";
+$tdatapayrolldiv[".allSearchFields"][] = "Employer";
 	$tdatapayrolldiv[".allSearchFields"][] = "Division";
 	$tdatapayrolldiv[".allSearchFields"][] = "WageType";
 	$tdatapayrolldiv[".allSearchFields"][] = "FromDate";
 	$tdatapayrolldiv[".allSearchFields"][] = "ToDate";
 	
 
-$tdatapayrolldiv[".googleLikeFields"] = array();
-$tdatapayrolldiv[".googleLikeFields"][] = "PRollID";
-$tdatapayrolldiv[".googleLikeFields"][] = "Employer";
-$tdatapayrolldiv[".googleLikeFields"][] = "Division";
-$tdatapayrolldiv[".googleLikeFields"][] = "FromDate";
-$tdatapayrolldiv[".googleLikeFields"][] = "ToDate";
-$tdatapayrolldiv[".googleLikeFields"][] = "WageType";
-$tdatapayrolldiv[".googleLikeFields"][] = "Locked";
 
-
+$tdatapayrolldiv[".panelSearchFields"] = array();
+$tdatapayrolldiv[".searchPanelOptions"] = array();
+$tdatapayrolldiv[".panelSearchFields"][] = "Employer";
+	$tdatapayrolldiv[".panelSearchFields"][] = "Division";
+	$tdatapayrolldiv[".panelSearchFields"][] = "FromDate";
+	$tdatapayrolldiv[".panelSearchFields"][] = "ToDate";
+	
 $tdatapayrolldiv[".advSearchFields"] = array();
-$tdatapayrolldiv[".advSearchFields"][] = "PRollID";
-$tdatapayrolldiv[".advSearchFields"][] = "Locked";
 $tdatapayrolldiv[".advSearchFields"][] = "Employer";
 $tdatapayrolldiv[".advSearchFields"][] = "Division";
 $tdatapayrolldiv[".advSearchFields"][] = "WageType";
@@ -222,6 +216,7 @@ $tdatapayrolldiv[".listGridLayout"] = 3;
 
 
 
+$tdatapayrolldiv[".noRecordsFirstPage"] = true;
 
 // view page pdf
 
@@ -397,8 +392,7 @@ $tdatapayrolldiv[".printFields"][] = "ToDate";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -491,12 +485,6 @@ $tdatapayrolldiv[".printFields"][] = "ToDate";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -901,8 +889,8 @@ $tdatapayrolldiv[".printFields"][] = "ToDate";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -1031,8 +1019,8 @@ $tdatapayrolldiv[".printFields"][] = "ToDate";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -1254,8 +1242,7 @@ $tdatapayrolldiv[".printFields"][] = "ToDate";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -1342,12 +1329,6 @@ $tdatapayrolldiv[".printFields"][] = "ToDate";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Equals";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 

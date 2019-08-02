@@ -32,7 +32,7 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsindleave["English"]["LDate"] = "LDate";
 	$fieldToolTipsindleave["English"]["LDate"] = "";
 	$placeHoldersindleave["English"]["LDate"] = "";
-	$fieldLabelsindleave["English"]["NoDays"] = "No Days";
+	$fieldLabelsindleave["English"]["NoDays"] = "Half/Whole Day";
 	$fieldToolTipsindleave["English"]["NoDays"] = "";
 	$placeHoldersindleave["English"]["NoDays"] = "";
 	$fieldLabelsindleave["English"]["LWOP"] = "LWOP";
@@ -44,12 +44,15 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsindleave["English"]["LeaveType"] = "Leave Type";
 	$fieldToolTipsindleave["English"]["LeaveType"] = "";
 	$placeHoldersindleave["English"]["LeaveType"] = "";
-	$fieldLabelsindleave["English"]["FirtHalf"] = "Firt Half";
+	$fieldLabelsindleave["English"]["FirtHalf"] = "First Half";
 	$fieldToolTipsindleave["English"]["FirtHalf"] = "";
 	$placeHoldersindleave["English"]["FirtHalf"] = "";
 	$fieldLabelsindleave["English"]["SecondHalf"] = "Second Half";
 	$fieldToolTipsindleave["English"]["SecondHalf"] = "";
 	$placeHoldersindleave["English"]["SecondHalf"] = "";
+	$fieldLabelsindleave["English"]["Reason"] = "Reason";
+	$fieldToolTipsindleave["English"]["Reason"] = "";
+	$placeHoldersindleave["English"]["Reason"] = "";
 	if (count($fieldToolTipsindleave["English"]))
 		$tdataindleave[".isUseToolTips"] = true;
 }
@@ -156,7 +159,7 @@ $tdataindleave[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																				
+																																																																																																																																																																																																																																																																														
 
 $tdataindleave[".ajaxCodeSnippetAdded"] = false;
 
@@ -176,8 +179,9 @@ $tdataindleave[".filterFields"] = array();
 $tdataindleave[".requiredSearchFields"] = array();
 
 $tdataindleave[".allSearchFields"][] = "LtID";
-	$tdataindleave[".allSearchFields"][] = "LeaveType";
 	$tdataindleave[".allSearchFields"][] = "EmployeeID";
+	$tdataindleave[".allSearchFields"][] = "LeaveType";
+	$tdataindleave[".allSearchFields"][] = "Reason";
 	$tdataindleave[".allSearchFields"][] = "LDate";
 	$tdataindleave[".allSearchFields"][] = "FirtHalf";
 	$tdataindleave[".allSearchFields"][] = "SecondHalf";
@@ -196,12 +200,14 @@ $tdataindleave[".googleLikeFields"][] = "LeaveType";
 $tdataindleave[".googleLikeFields"][] = "LvID";
 $tdataindleave[".googleLikeFields"][] = "FirtHalf";
 $tdataindleave[".googleLikeFields"][] = "SecondHalf";
+$tdataindleave[".googleLikeFields"][] = "Reason";
 
 
 $tdataindleave[".advSearchFields"] = array();
 $tdataindleave[".advSearchFields"][] = "LtID";
-$tdataindleave[".advSearchFields"][] = "LeaveType";
 $tdataindleave[".advSearchFields"][] = "EmployeeID";
+$tdataindleave[".advSearchFields"][] = "LeaveType";
+$tdataindleave[".advSearchFields"][] = "Reason";
 $tdataindleave[".advSearchFields"][] = "LDate";
 $tdataindleave[".advSearchFields"][] = "FirtHalf";
 $tdataindleave[".advSearchFields"][] = "SecondHalf";
@@ -252,7 +258,7 @@ $tdataindleave[".orderindexes"] = array();
 	$tdataindleave[".orderindexes"][] = array(1, (0 ? "ASC" : "DESC"), "LtID");
 
 
-$tdataindleave[".sqlHead"] = "SELECT LtID,  EmployeeID,  LDate,  NoDays,  LWOP,  LeaveType,  LvID,  FirtHalf,  SecondHalf";
+$tdataindleave[".sqlHead"] = "SELECT LtID,  EmployeeID,  LDate,  NoDays,  LWOP,  LeaveType,  LvID,  FirtHalf,  SecondHalf,  Reason";
 $tdataindleave[".sqlFrom"] = "FROM indleave";
 $tdataindleave[".sqlWhereExpr"] = "";
 $tdataindleave[".sqlTail"] = "";
@@ -298,8 +304,9 @@ $tdataindleave[".Keys"] = $tableKeysindleave;
 
 $tdataindleave[".listFields"] = array();
 $tdataindleave[".listFields"][] = "LtID";
-$tdataindleave[".listFields"][] = "LeaveType";
 $tdataindleave[".listFields"][] = "EmployeeID";
+$tdataindleave[".listFields"][] = "LeaveType";
+$tdataindleave[".listFields"][] = "Reason";
 $tdataindleave[".listFields"][] = "LDate";
 $tdataindleave[".listFields"][] = "FirtHalf";
 $tdataindleave[".listFields"][] = "SecondHalf";
@@ -312,8 +319,9 @@ $tdataindleave[".hideMobileList"] = array();
 
 $tdataindleave[".viewFields"] = array();
 $tdataindleave[".viewFields"][] = "LtID";
-$tdataindleave[".viewFields"][] = "LeaveType";
 $tdataindleave[".viewFields"][] = "EmployeeID";
+$tdataindleave[".viewFields"][] = "LeaveType";
+$tdataindleave[".viewFields"][] = "Reason";
 $tdataindleave[".viewFields"][] = "LDate";
 $tdataindleave[".viewFields"][] = "FirtHalf";
 $tdataindleave[".viewFields"][] = "SecondHalf";
@@ -322,8 +330,9 @@ $tdataindleave[".viewFields"][] = "LWOP";
 $tdataindleave[".viewFields"][] = "LvID";
 
 $tdataindleave[".addFields"] = array();
-$tdataindleave[".addFields"][] = "LeaveType";
 $tdataindleave[".addFields"][] = "EmployeeID";
+$tdataindleave[".addFields"][] = "LeaveType";
+$tdataindleave[".addFields"][] = "Reason";
 $tdataindleave[".addFields"][] = "LDate";
 $tdataindleave[".addFields"][] = "FirtHalf";
 $tdataindleave[".addFields"][] = "SecondHalf";
@@ -333,8 +342,9 @@ $tdataindleave[".addFields"][] = "LvID";
 
 $tdataindleave[".masterListFields"] = array();
 $tdataindleave[".masterListFields"][] = "LtID";
-$tdataindleave[".masterListFields"][] = "LeaveType";
 $tdataindleave[".masterListFields"][] = "EmployeeID";
+$tdataindleave[".masterListFields"][] = "LeaveType";
+$tdataindleave[".masterListFields"][] = "Reason";
 $tdataindleave[".masterListFields"][] = "LDate";
 $tdataindleave[".masterListFields"][] = "FirtHalf";
 $tdataindleave[".masterListFields"][] = "SecondHalf";
@@ -343,8 +353,9 @@ $tdataindleave[".masterListFields"][] = "LWOP";
 $tdataindleave[".masterListFields"][] = "LvID";
 
 $tdataindleave[".inlineAddFields"] = array();
-$tdataindleave[".inlineAddFields"][] = "LeaveType";
 $tdataindleave[".inlineAddFields"][] = "EmployeeID";
+$tdataindleave[".inlineAddFields"][] = "LeaveType";
+$tdataindleave[".inlineAddFields"][] = "Reason";
 $tdataindleave[".inlineAddFields"][] = "LDate";
 $tdataindleave[".inlineAddFields"][] = "FirtHalf";
 $tdataindleave[".inlineAddFields"][] = "SecondHalf";
@@ -353,8 +364,9 @@ $tdataindleave[".inlineAddFields"][] = "LWOP";
 $tdataindleave[".inlineAddFields"][] = "LvID";
 
 $tdataindleave[".editFields"] = array();
-$tdataindleave[".editFields"][] = "LeaveType";
 $tdataindleave[".editFields"][] = "EmployeeID";
+$tdataindleave[".editFields"][] = "LeaveType";
+$tdataindleave[".editFields"][] = "Reason";
 $tdataindleave[".editFields"][] = "LDate";
 $tdataindleave[".editFields"][] = "FirtHalf";
 $tdataindleave[".editFields"][] = "SecondHalf";
@@ -363,8 +375,9 @@ $tdataindleave[".editFields"][] = "LWOP";
 $tdataindleave[".editFields"][] = "LvID";
 
 $tdataindleave[".inlineEditFields"] = array();
-$tdataindleave[".inlineEditFields"][] = "LeaveType";
 $tdataindleave[".inlineEditFields"][] = "EmployeeID";
+$tdataindleave[".inlineEditFields"][] = "LeaveType";
+$tdataindleave[".inlineEditFields"][] = "Reason";
 $tdataindleave[".inlineEditFields"][] = "LDate";
 $tdataindleave[".inlineEditFields"][] = "FirtHalf";
 $tdataindleave[".inlineEditFields"][] = "SecondHalf";
@@ -373,8 +386,8 @@ $tdataindleave[".inlineEditFields"][] = "LWOP";
 $tdataindleave[".inlineEditFields"][] = "LvID";
 
 $tdataindleave[".updateSelectedFields"] = array();
-$tdataindleave[".updateSelectedFields"][] = "LeaveType";
 $tdataindleave[".updateSelectedFields"][] = "EmployeeID";
+$tdataindleave[".updateSelectedFields"][] = "LeaveType";
 $tdataindleave[".updateSelectedFields"][] = "LDate";
 $tdataindleave[".updateSelectedFields"][] = "FirtHalf";
 $tdataindleave[".updateSelectedFields"][] = "SecondHalf";
@@ -385,8 +398,9 @@ $tdataindleave[".updateSelectedFields"][] = "LvID";
 
 $tdataindleave[".exportFields"] = array();
 $tdataindleave[".exportFields"][] = "LtID";
-$tdataindleave[".exportFields"][] = "LeaveType";
 $tdataindleave[".exportFields"][] = "EmployeeID";
+$tdataindleave[".exportFields"][] = "LeaveType";
+$tdataindleave[".exportFields"][] = "Reason";
 $tdataindleave[".exportFields"][] = "LDate";
 $tdataindleave[".exportFields"][] = "FirtHalf";
 $tdataindleave[".exportFields"][] = "SecondHalf";
@@ -404,11 +418,13 @@ $tdataindleave[".importFields"][] = "LeaveType";
 $tdataindleave[".importFields"][] = "LvID";
 $tdataindleave[".importFields"][] = "FirtHalf";
 $tdataindleave[".importFields"][] = "SecondHalf";
+$tdataindleave[".importFields"][] = "Reason";
 
 $tdataindleave[".printFields"] = array();
 $tdataindleave[".printFields"][] = "LtID";
-$tdataindleave[".printFields"][] = "LeaveType";
 $tdataindleave[".printFields"][] = "EmployeeID";
+$tdataindleave[".printFields"][] = "LeaveType";
+$tdataindleave[".printFields"][] = "Reason";
 $tdataindleave[".printFields"][] = "LDate";
 $tdataindleave[".printFields"][] = "FirtHalf";
 $tdataindleave[".printFields"][] = "SecondHalf";
@@ -795,8 +811,8 @@ $tdataindleave[".printFields"][] = "LvID";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -1669,6 +1685,137 @@ $tdataindleave[".printFields"][] = "LvID";
 
 
 	$tdataindleave["SecondHalf"] = $fdata;
+//	Reason
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 10;
+	$fdata["strName"] = "Reason";
+	$fdata["GoodName"] = "Reason";
+	$fdata["ownerTable"] = "indleave";
+	$fdata["Label"] = GetFieldLabel("indleave","Reason");
+	$fdata["FieldType"] = 200;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "Reason";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "Reason";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=50";
+
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdataindleave["Reason"] = $fdata;
 
 
 $tables_data["indleave"]=&$tdataindleave;
@@ -1702,7 +1849,7 @@ function createSqlQuery_indleave()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "LtID,  EmployeeID,  LDate,  NoDays,  LWOP,  LeaveType,  LvID,  FirtHalf,  SecondHalf";
+$proto0["m_strFieldList"] = "LtID,  EmployeeID,  LDate,  NoDays,  LWOP,  LeaveType,  LvID,  FirtHalf,  SecondHalf,  Reason";
 $proto0["m_strFrom"] = "FROM indleave";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "ORDER BY LtID DESC";
@@ -1868,60 +2015,75 @@ $proto22["m_alias"] = "";
 $obj = new SQLFieldListItem($proto22);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto24=array();
-$proto24["m_link"] = "SQLL_MAIN";
-			$proto25=array();
-$proto25["m_strName"] = "indleave";
-$proto25["m_srcTableName"] = "indleave";
-$proto25["m_columns"] = array();
-$proto25["m_columns"][] = "LtID";
-$proto25["m_columns"][] = "EmployeeID";
-$proto25["m_columns"][] = "LDate";
-$proto25["m_columns"][] = "NoDays";
-$proto25["m_columns"][] = "LWOP";
-$proto25["m_columns"][] = "LeaveType";
-$proto25["m_columns"][] = "LvID";
-$proto25["m_columns"][] = "FirtHalf";
-$proto25["m_columns"][] = "SecondHalf";
-$obj = new SQLTable($proto25);
+						$proto24=array();
+			$obj = new SQLField(array(
+	"m_strName" => "Reason",
+	"m_strTable" => "indleave",
+	"m_srcTableName" => "indleave"
+));
 
-$proto24["m_table"] = $obj;
-$proto24["m_sql"] = "indleave";
-$proto24["m_alias"] = "";
+$proto24["m_sql"] = "Reason";
 $proto24["m_srcTableName"] = "indleave";
-$proto26=array();
-$proto26["m_sql"] = "";
-$proto26["m_uniontype"] = "SQLL_UNKNOWN";
+$proto24["m_expr"]=$obj;
+$proto24["m_alias"] = "";
+$obj = new SQLFieldListItem($proto24);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto26=array();
+$proto26["m_link"] = "SQLL_MAIN";
+			$proto27=array();
+$proto27["m_strName"] = "indleave";
+$proto27["m_srcTableName"] = "indleave";
+$proto27["m_columns"] = array();
+$proto27["m_columns"][] = "LtID";
+$proto27["m_columns"][] = "EmployeeID";
+$proto27["m_columns"][] = "LDate";
+$proto27["m_columns"][] = "NoDays";
+$proto27["m_columns"][] = "LWOP";
+$proto27["m_columns"][] = "LeaveType";
+$proto27["m_columns"][] = "LvID";
+$proto27["m_columns"][] = "FirtHalf";
+$proto27["m_columns"][] = "SecondHalf";
+$proto27["m_columns"][] = "Reason";
+$obj = new SQLTable($proto27);
+
+$proto26["m_table"] = $obj;
+$proto26["m_sql"] = "indleave";
+$proto26["m_alias"] = "";
+$proto26["m_srcTableName"] = "indleave";
+$proto28=array();
+$proto28["m_sql"] = "";
+$proto28["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto26["m_column"]=$obj;
-$proto26["m_contained"] = array();
-$proto26["m_strCase"] = "";
-$proto26["m_havingmode"] = false;
-$proto26["m_inBrackets"] = false;
-$proto26["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto26);
+$proto28["m_column"]=$obj;
+$proto28["m_contained"] = array();
+$proto28["m_strCase"] = "";
+$proto28["m_havingmode"] = false;
+$proto28["m_inBrackets"] = false;
+$proto28["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto28);
 
-$proto24["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto24);
+$proto26["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto26);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
 $proto0["m_orderby"] = array();
-												$proto28=array();
+												$proto30=array();
 						$obj = new SQLField(array(
 	"m_strName" => "LtID",
 	"m_strTable" => "indleave",
 	"m_srcTableName" => "indleave"
 ));
 
-$proto28["m_column"]=$obj;
-$proto28["m_bAsc"] = 0;
-$proto28["m_nColumn"] = 0;
-$obj = new SQLOrderByItem($proto28);
+$proto30["m_column"]=$obj;
+$proto30["m_bAsc"] = 0;
+$proto30["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto30);
 
 $proto0["m_orderby"][]=$obj;					
 $proto0["m_srcTableName"]="indleave";		
@@ -1935,7 +2097,7 @@ $queryData_indleave = createSqlQuery_indleave();
 	
 		;
 
-									
+										
 
 $tdataindleave[".sqlquery"] = $queryData_indleave;
 

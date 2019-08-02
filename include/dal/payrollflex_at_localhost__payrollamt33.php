@@ -70,7 +70,7 @@ $dalTablepayrollamt33["TAdj"] = array("type"=>5,"varname"=>"TAdj", "name" => "TA
 $dalTablepayrollamt33["TAdjt"] = array("type"=>5,"varname"=>"TAdjt", "name" => "TAdjt");
 $dalTablepayrollamt33["TotAdj"] = array("type"=>5,"varname"=>"TotAdj", "name" => "TotAdj");
 $dalTablepayrollamt33["TDeduct"] = array("type"=>5,"varname"=>"TDeduct", "name" => "TDeduct");
-$dalTablepayrollamt33["Ttax"] = array("type"=>5,"varname"=>"Ttax", "name" => "Ttax");
+$dalTablepayrollamt33["Ttax"] = array("type"=>14,"varname"=>"Ttax", "name" => "Ttax");
 $dalTablepayrollamt33["SSS"] = array("type"=>5,"varname"=>"SSS", "name" => "SSS");
 $dalTablepayrollamt33["PagIbig"] = array("type"=>5,"varname"=>"PagIbig", "name" => "PagIbig");
 $dalTablepayrollamt33["PHIC"] = array("type"=>5,"varname"=>"PHIC", "name" => "PHIC");
@@ -93,6 +93,10 @@ $dalTablepayrollamt33["TND"] = array("type"=>5,"varname"=>"TND", "name" => "TND"
 $dalTablepayrollamt33["EmployerName"] = array("type"=>200,"varname"=>"EmployerName", "name" => "EmployerName");
 $dalTablepayrollamt33["PayrollID"] = array("type"=>3,"varname"=>"PayrollID", "name" => "PayrollID");
 $dalTablepayrollamt33["Employer"] = array("type"=>3,"varname"=>"Employer", "name" => "Employer");
+$dalTablepayrollamt33["TNDHr"] = array("type"=>5,"varname"=>"TNDHr", "name" => "TNDHr");
+$dalTablepayrollamt33["ThirToDate"] = array("type"=>14,"varname"=>"ThirToDate", "name" => "ThirToDate");
+$dalTablepayrollamt33["TaxableToDate"] = array("type"=>14,"varname"=>"TaxableToDate", "name" => "TaxableToDate");
+$dalTablepayrollamt33["TaxToDate"] = array("type"=>14,"varname"=>"TaxToDate", "name" => "TaxToDate");
 
 $dal_info["payrollflex_at_localhost__payrollamt33"] = &$dalTablepayrollamt33;
 ?>

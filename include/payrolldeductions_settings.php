@@ -164,7 +164,7 @@ $tdatapayrolldeductions[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
 
 $tdatapayrolldeductions[".ajaxCodeSnippetAdded"] = false;
 
@@ -985,8 +985,8 @@ $tdatapayrolldeductions[".printFields"][] = "PSID";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -1117,8 +1117,8 @@ $tdatapayrolldeductions[".printFields"][] = "PSID";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -2520,7 +2520,8 @@ $queryData_payrolldeductions = createSqlQuery_payrolldeductions();
 
 $tdatapayrolldeductions[".sqlquery"] = $queryData_payrolldeductions;
 
-$tableEvents["payrolldeductions"] = new eventsBase;
-$tdatapayrolldeductions[".hasEvents"] = false;
+include_once(getabspath("include/payrolldeductions_events.php"));
+$tableEvents["payrolldeductions"] = new eventclass_payrolldeductions;
+$tdatapayrolldeductions[".hasEvents"] = true;
 
 ?>

@@ -71,7 +71,7 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsdt5["English"]["LateMins"] = "Late Mins";
 	$fieldToolTipsdt5["English"]["LateMins"] = "";
 	$placeHoldersdt5["English"]["LateMins"] = "";
-	$fieldLabelsdt5["English"]["UnderstimeMins"] = "Understime Mins";
+	$fieldLabelsdt5["English"]["UnderstimeMins"] = "Undertime Mins";
 	$fieldToolTipsdt5["English"]["UnderstimeMins"] = "";
 	$placeHoldersdt5["English"]["UnderstimeMins"] = "";
 	$fieldLabelsdt5["English"]["HolidayType"] = "Holiday Type";
@@ -92,7 +92,7 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsdt5["English"]["ApprovedNightDiff"] = "Approved Night Diff";
 	$fieldToolTipsdt5["English"]["ApprovedNightDiff"] = "";
 	$placeHoldersdt5["English"]["ApprovedNightDiff"] = "";
-	$fieldLabelsdt5["English"]["ANDiff"] = "ANDiff";
+	$fieldLabelsdt5["English"]["ANDiff"] = "NDiff";
 	$fieldToolTipsdt5["English"]["ANDiff"] = "";
 	$placeHoldersdt5["English"]["ANDiff"] = "";
 	$fieldLabelsdt5["English"]["ApprovedRD"] = "Approved RD";
@@ -179,6 +179,78 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsdt5["English"]["EarlyMins"] = "Early Mins";
 	$fieldToolTipsdt5["English"]["EarlyMins"] = "";
 	$placeHoldersdt5["English"]["EarlyMins"] = "";
+	$fieldLabelsdt5["English"]["ANDOTMins"] = "NDiff-OT";
+	$fieldToolTipsdt5["English"]["ANDOTMins"] = "";
+	$placeHoldersdt5["English"]["ANDOTMins"] = "";
+	$fieldLabelsdt5["English"]["RegNDOT"] = "Reg NDOT";
+	$fieldToolTipsdt5["English"]["RegNDOT"] = "";
+	$placeHoldersdt5["English"]["RegNDOT"] = "";
+	$fieldLabelsdt5["English"]["RHNDOT"] = "RHNDOT";
+	$fieldToolTipsdt5["English"]["RHNDOT"] = "";
+	$placeHoldersdt5["English"]["RHNDOT"] = "";
+	$fieldLabelsdt5["English"]["SHNDOT"] = "SHNDOT";
+	$fieldToolTipsdt5["English"]["SHNDOT"] = "";
+	$placeHoldersdt5["English"]["SHNDOT"] = "";
+	$fieldLabelsdt5["English"]["CHNDOT"] = "CHNDOT";
+	$fieldToolTipsdt5["English"]["CHNDOT"] = "";
+	$placeHoldersdt5["English"]["CHNDOT"] = "";
+	$fieldLabelsdt5["English"]["RDNDOT"] = "RDNDOT";
+	$fieldToolTipsdt5["English"]["RDNDOT"] = "";
+	$placeHoldersdt5["English"]["RDNDOT"] = "";
+	$fieldLabelsdt5["English"]["RegNDOTHrs"] = "Reg NDOTHrs";
+	$fieldToolTipsdt5["English"]["RegNDOTHrs"] = "";
+	$placeHoldersdt5["English"]["RegNDOTHrs"] = "";
+	$fieldLabelsdt5["English"]["RHNDOTHrs"] = "RHNDOTHrs";
+	$fieldToolTipsdt5["English"]["RHNDOTHrs"] = "";
+	$placeHoldersdt5["English"]["RHNDOTHrs"] = "";
+	$fieldLabelsdt5["English"]["SHNDOTHrs"] = "SHNDOTHrs";
+	$fieldToolTipsdt5["English"]["SHNDOTHrs"] = "";
+	$placeHoldersdt5["English"]["SHNDOTHrs"] = "";
+	$fieldLabelsdt5["English"]["CHNDOTHrs"] = "CHNDOTHrs";
+	$fieldToolTipsdt5["English"]["CHNDOTHrs"] = "";
+	$placeHoldersdt5["English"]["CHNDOTHrs"] = "";
+	$fieldLabelsdt5["English"]["RDNDOTHrs"] = "RDNDOTHrs";
+	$fieldToolTipsdt5["English"]["RDNDOTHrs"] = "";
+	$placeHoldersdt5["English"]["RDNDOTHrs"] = "";
+	$fieldLabelsdt5["English"]["DH"] = "DH";
+	$fieldToolTipsdt5["English"]["DH"] = "";
+	$placeHoldersdt5["English"]["DH"] = "";
+	$fieldLabelsdt5["English"]["DHRD"] = "DHRD";
+	$fieldToolTipsdt5["English"]["DHRD"] = "";
+	$placeHoldersdt5["English"]["DHRD"] = "";
+	$fieldLabelsdt5["English"]["DHOT"] = "DHOT";
+	$fieldToolTipsdt5["English"]["DHOT"] = "";
+	$placeHoldersdt5["English"]["DHOT"] = "";
+	$fieldLabelsdt5["English"]["DHRDOT"] = "DHRDOT";
+	$fieldToolTipsdt5["English"]["DHRDOT"] = "";
+	$placeHoldersdt5["English"]["DHRDOT"] = "";
+	$fieldLabelsdt5["English"]["SHRDND"] = "SHRDND";
+	$fieldToolTipsdt5["English"]["SHRDND"] = "";
+	$placeHoldersdt5["English"]["SHRDND"] = "";
+	$fieldLabelsdt5["English"]["RHRDND"] = "RHRDND";
+	$fieldToolTipsdt5["English"]["RHRDND"] = "";
+	$placeHoldersdt5["English"]["RHRDND"] = "";
+	$fieldLabelsdt5["English"]["SHRDNDOT"] = "SHRDNDOT";
+	$fieldToolTipsdt5["English"]["SHRDNDOT"] = "";
+	$placeHoldersdt5["English"]["SHRDNDOT"] = "";
+	$fieldLabelsdt5["English"]["RHRDNDOT"] = "RHRDNDOT";
+	$fieldToolTipsdt5["English"]["RHRDNDOT"] = "";
+	$placeHoldersdt5["English"]["RHRDNDOT"] = "";
+	$fieldLabelsdt5["English"]["DHND"] = "DHND";
+	$fieldToolTipsdt5["English"]["DHND"] = "";
+	$placeHoldersdt5["English"]["DHND"] = "";
+	$fieldLabelsdt5["English"]["DHRDND"] = "DHRDND";
+	$fieldToolTipsdt5["English"]["DHRDND"] = "";
+	$placeHoldersdt5["English"]["DHRDND"] = "";
+	$fieldLabelsdt5["English"]["DHNDOT"] = "DHNDOT";
+	$fieldToolTipsdt5["English"]["DHNDOT"] = "";
+	$placeHoldersdt5["English"]["DHNDOT"] = "";
+	$fieldLabelsdt5["English"]["DHRDNDOT"] = "DHRDNDOT";
+	$fieldToolTipsdt5["English"]["DHRDNDOT"] = "";
+	$placeHoldersdt5["English"]["DHRDNDOT"] = "";
+	$fieldLabelsdt5["English"]["SchedType"] = "Sched Type";
+	$fieldToolTipsdt5["English"]["SchedType"] = "";
+	$placeHoldersdt5["English"]["SchedType"] = "";
 	if (count($fieldToolTipsdt5["English"]))
 		$tdatadt5[".isUseToolTips"] = true;
 }
@@ -272,7 +344,7 @@ $tdatadt5[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																				
+																																																																																																																																																																																																																																																																														
 
 $tdatadt5[".ajaxCodeSnippetAdded"] = false;
 
@@ -292,168 +364,33 @@ $tdatadt5[".allSearchFields"] = array();
 $tdatadt5[".filterFields"] = array();
 $tdatadt5[".requiredSearchFields"] = array();
 
-$tdatadt5[".allSearchFields"][] = "ScID";
-	$tdatadt5[".allSearchFields"][] = "EmployeeID";
+$tdatadt5[".allSearchFields"][] = "EmployeeID";
 	$tdatadt5[".allSearchFields"][] = "UserName";
-	$tdatadt5[".allSearchFields"][] = "Employer";
 	$tdatadt5[".allSearchFields"][] = "Division";
-	$tdatadt5[".allSearchFields"][] = "Department";
 	$tdatadt5[".allSearchFields"][] = "WageType";
 	$tdatadt5[".allSearchFields"][] = "SDate";
-	$tdatadt5[".allSearchFields"][] = "DayIs";
-	$tdatadt5[".allSearchFields"][] = "RestDay";
-	$tdatadt5[".allSearchFields"][] = "STimeIn";
-	$tdatadt5[".allSearchFields"][] = "STimeOut";
-	$tdatadt5[".allSearchFields"][] = "TimeIn";
-	$tdatadt5[".allSearchFields"][] = "TimeOut";
-	$tdatadt5[".allSearchFields"][] = "AfterBreakLogOut";
-	$tdatadt5[".allSearchFields"][] = "AfterBreakLog";
-	$tdatadt5[".allSearchFields"][] = "MisPunched";
-	$tdatadt5[".allSearchFields"][] = "RegWD";
-	$tdatadt5[".allSearchFields"][] = "DWork";
-	$tdatadt5[".allSearchFields"][] = "Absent";
-	$tdatadt5[".allSearchFields"][] = "EarlyMins";
-	$tdatadt5[".allSearchFields"][] = "LateMins";
-	$tdatadt5[".allSearchFields"][] = "UnderstimeMins";
-	$tdatadt5[".allSearchFields"][] = "BreakLateMins";
-	$tdatadt5[".allSearchFields"][] = "HolidayType";
-	$tdatadt5[".allSearchFields"][] = "TempOT";
-	$tdatadt5[".allSearchFields"][] = "ApprovedOT";
-	$tdatadt5[".allSearchFields"][] = "AOTMins";
-	$tdatadt5[".allSearchFields"][] = "NDMins";
-	$tdatadt5[".allSearchFields"][] = "ApprovedNightDiff";
-	$tdatadt5[".allSearchFields"][] = "ANDiff";
-	$tdatadt5[".allSearchFields"][] = "ApprovedRD";
-	$tdatadt5[".allSearchFields"][] = "RDMins";
-	$tdatadt5[".allSearchFields"][] = "RHolidayHrs";
-	$tdatadt5[".allSearchFields"][] = "SHolidayHrs";
-	$tdatadt5[".allSearchFields"][] = "CHolidayHrs";
-	$tdatadt5[".allSearchFields"][] = "VL";
-	$tdatadt5[".allSearchFields"][] = "SL";
-	$tdatadt5[".allSearchFields"][] = "EL";
-	$tdatadt5[".allSearchFields"][] = "PL";
-	$tdatadt5[".allSearchFields"][] = "TrO";
-	$tdatadt5[".allSearchFields"][] = "RegOT";
-	$tdatadt5[".allSearchFields"][] = "RHOT";
-	$tdatadt5[".allSearchFields"][] = "SHOT";
-	$tdatadt5[".allSearchFields"][] = "CHOT";
-	$tdatadt5[".allSearchFields"][] = "RDOT";
-	$tdatadt5[".allSearchFields"][] = "RegND";
-	$tdatadt5[".allSearchFields"][] = "RHND";
-	$tdatadt5[".allSearchFields"][] = "SHND";
-	$tdatadt5[".allSearchFields"][] = "CHND";
-	$tdatadt5[".allSearchFields"][] = "RDND";
-	$tdatadt5[".allSearchFields"][] = "Rlink";
 	
 
 $tdatadt5[".googleLikeFields"] = array();
-$tdatadt5[".googleLikeFields"][] = "ScID";
 $tdatadt5[".googleLikeFields"][] = "EmployeeID";
 $tdatadt5[".googleLikeFields"][] = "UserName";
 $tdatadt5[".googleLikeFields"][] = "WageType";
 $tdatadt5[".googleLikeFields"][] = "SDate";
-$tdatadt5[".googleLikeFields"][] = "DayIs";
-$tdatadt5[".googleLikeFields"][] = "RestDay";
-$tdatadt5[".googleLikeFields"][] = "STimeIn";
-$tdatadt5[".googleLikeFields"][] = "STimeOut";
-$tdatadt5[".googleLikeFields"][] = "TimeIn";
-$tdatadt5[".googleLikeFields"][] = "TimeOut";
-$tdatadt5[".googleLikeFields"][] = "MisPunched";
-$tdatadt5[".googleLikeFields"][] = "RegWD";
-$tdatadt5[".googleLikeFields"][] = "DWork";
-$tdatadt5[".googleLikeFields"][] = "Absent";
-$tdatadt5[".googleLikeFields"][] = "LateMins";
-$tdatadt5[".googleLikeFields"][] = "UnderstimeMins";
-$tdatadt5[".googleLikeFields"][] = "HolidayType";
-$tdatadt5[".googleLikeFields"][] = "TempOT";
-$tdatadt5[".googleLikeFields"][] = "ApprovedOT";
-$tdatadt5[".googleLikeFields"][] = "AOTMins";
-$tdatadt5[".googleLikeFields"][] = "NDMins";
-$tdatadt5[".googleLikeFields"][] = "ApprovedNightDiff";
-$tdatadt5[".googleLikeFields"][] = "ANDiff";
-$tdatadt5[".googleLikeFields"][] = "ApprovedRD";
-$tdatadt5[".googleLikeFields"][] = "RDMins";
-$tdatadt5[".googleLikeFields"][] = "VL";
-$tdatadt5[".googleLikeFields"][] = "SL";
-$tdatadt5[".googleLikeFields"][] = "EL";
-$tdatadt5[".googleLikeFields"][] = "PL";
-$tdatadt5[".googleLikeFields"][] = "TrO";
-$tdatadt5[".googleLikeFields"][] = "RHolidayHrs";
-$tdatadt5[".googleLikeFields"][] = "SHolidayHrs";
-$tdatadt5[".googleLikeFields"][] = "CHolidayHrs";
-$tdatadt5[".googleLikeFields"][] = "RegOT";
-$tdatadt5[".googleLikeFields"][] = "RHOT";
-$tdatadt5[".googleLikeFields"][] = "SHOT";
-$tdatadt5[".googleLikeFields"][] = "CHOT";
-$tdatadt5[".googleLikeFields"][] = "RDOT";
-$tdatadt5[".googleLikeFields"][] = "RegND";
-$tdatadt5[".googleLikeFields"][] = "RHND";
-$tdatadt5[".googleLikeFields"][] = "SHND";
-$tdatadt5[".googleLikeFields"][] = "CHND";
-$tdatadt5[".googleLikeFields"][] = "RDND";
-$tdatadt5[".googleLikeFields"][] = "Rlink";
 $tdatadt5[".googleLikeFields"][] = "Division";
-$tdatadt5[".googleLikeFields"][] = "Department";
-$tdatadt5[".googleLikeFields"][] = "Employer";
-$tdatadt5[".googleLikeFields"][] = "AfterBreakLogOut";
-$tdatadt5[".googleLikeFields"][] = "AfterBreakLog";
-$tdatadt5[".googleLikeFields"][] = "BreakLateMins";
-$tdatadt5[".googleLikeFields"][] = "EarlyMins";
 
-
+$tdatadt5[".panelSearchFields"] = array();
+$tdatadt5[".searchPanelOptions"] = array();
+$tdatadt5[".panelSearchFields"][] = "UserName";
+	$tdatadt5[".panelSearchFields"][] = "Division";
+	$tdatadt5[".panelSearchFields"][] = "WageType";
+	$tdatadt5[".panelSearchFields"][] = "SDate";
+	
 $tdatadt5[".advSearchFields"] = array();
-$tdatadt5[".advSearchFields"][] = "ScID";
 $tdatadt5[".advSearchFields"][] = "EmployeeID";
 $tdatadt5[".advSearchFields"][] = "UserName";
-$tdatadt5[".advSearchFields"][] = "Employer";
 $tdatadt5[".advSearchFields"][] = "Division";
-$tdatadt5[".advSearchFields"][] = "Department";
 $tdatadt5[".advSearchFields"][] = "WageType";
 $tdatadt5[".advSearchFields"][] = "SDate";
-$tdatadt5[".advSearchFields"][] = "DayIs";
-$tdatadt5[".advSearchFields"][] = "RestDay";
-$tdatadt5[".advSearchFields"][] = "STimeIn";
-$tdatadt5[".advSearchFields"][] = "STimeOut";
-$tdatadt5[".advSearchFields"][] = "TimeIn";
-$tdatadt5[".advSearchFields"][] = "TimeOut";
-$tdatadt5[".advSearchFields"][] = "AfterBreakLogOut";
-$tdatadt5[".advSearchFields"][] = "AfterBreakLog";
-$tdatadt5[".advSearchFields"][] = "MisPunched";
-$tdatadt5[".advSearchFields"][] = "RegWD";
-$tdatadt5[".advSearchFields"][] = "DWork";
-$tdatadt5[".advSearchFields"][] = "Absent";
-$tdatadt5[".advSearchFields"][] = "EarlyMins";
-$tdatadt5[".advSearchFields"][] = "LateMins";
-$tdatadt5[".advSearchFields"][] = "UnderstimeMins";
-$tdatadt5[".advSearchFields"][] = "BreakLateMins";
-$tdatadt5[".advSearchFields"][] = "HolidayType";
-$tdatadt5[".advSearchFields"][] = "TempOT";
-$tdatadt5[".advSearchFields"][] = "ApprovedOT";
-$tdatadt5[".advSearchFields"][] = "AOTMins";
-$tdatadt5[".advSearchFields"][] = "NDMins";
-$tdatadt5[".advSearchFields"][] = "ApprovedNightDiff";
-$tdatadt5[".advSearchFields"][] = "ANDiff";
-$tdatadt5[".advSearchFields"][] = "ApprovedRD";
-$tdatadt5[".advSearchFields"][] = "RDMins";
-$tdatadt5[".advSearchFields"][] = "RHolidayHrs";
-$tdatadt5[".advSearchFields"][] = "SHolidayHrs";
-$tdatadt5[".advSearchFields"][] = "CHolidayHrs";
-$tdatadt5[".advSearchFields"][] = "VL";
-$tdatadt5[".advSearchFields"][] = "SL";
-$tdatadt5[".advSearchFields"][] = "EL";
-$tdatadt5[".advSearchFields"][] = "PL";
-$tdatadt5[".advSearchFields"][] = "TrO";
-$tdatadt5[".advSearchFields"][] = "RegOT";
-$tdatadt5[".advSearchFields"][] = "RHOT";
-$tdatadt5[".advSearchFields"][] = "SHOT";
-$tdatadt5[".advSearchFields"][] = "CHOT";
-$tdatadt5[".advSearchFields"][] = "RDOT";
-$tdatadt5[".advSearchFields"][] = "RegND";
-$tdatadt5[".advSearchFields"][] = "RHND";
-$tdatadt5[".advSearchFields"][] = "SHND";
-$tdatadt5[".advSearchFields"][] = "CHND";
-$tdatadt5[".advSearchFields"][] = "RDND";
-$tdatadt5[".advSearchFields"][] = "Rlink";
 
 $tdatadt5[".tableType"] = "list";
 
@@ -638,6 +575,91 @@ $tdatadt5[".totalsFields"][] = array(
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
 	"viewFormat" => 'Number');
+$tdatadt5[".totalsFields"][] = array(
+	"fName" => "RegNDOT",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Number');
+$tdatadt5[".totalsFields"][] = array(
+	"fName" => "RHNDOT",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Number');
+$tdatadt5[".totalsFields"][] = array(
+	"fName" => "SHNDOT",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Number');
+$tdatadt5[".totalsFields"][] = array(
+	"fName" => "CHNDOT",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Number');
+$tdatadt5[".totalsFields"][] = array(
+	"fName" => "RDNDOT",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Number');
+$tdatadt5[".totalsFields"][] = array(
+	"fName" => "DH",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Number');
+$tdatadt5[".totalsFields"][] = array(
+	"fName" => "DHRD",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Number');
+$tdatadt5[".totalsFields"][] = array(
+	"fName" => "DHOT",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Number');
+$tdatadt5[".totalsFields"][] = array(
+	"fName" => "DHRDOT",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Number');
+$tdatadt5[".totalsFields"][] = array(
+	"fName" => "SHRDND",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Number');
+$tdatadt5[".totalsFields"][] = array(
+	"fName" => "RHRDND",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Number');
+$tdatadt5[".totalsFields"][] = array(
+	"fName" => "RHRDNDOT",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Number');
+$tdatadt5[".totalsFields"][] = array(
+	"fName" => "SHRDNDOT",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Number');
+$tdatadt5[".totalsFields"][] = array(
+	"fName" => "DHND",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Number');
+$tdatadt5[".totalsFields"][] = array(
+	"fName" => "DHRDND",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Number');
+$tdatadt5[".totalsFields"][] = array(
+	"fName" => "DHNDOT",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Number');
+$tdatadt5[".totalsFields"][] = array(
+	"fName" => "DHRDNDOT",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Number');
 
 $tdatadt5[".pageSize"] = 20;
 
@@ -654,7 +676,7 @@ $tdatadt5[".orderindexes"] = array();
 	$tdatadt5[".orderindexes"][] = array(3, (1 ? "ASC" : "DESC"), "dt5.UserName");
 
 
-$tdatadt5[".sqlHead"] = "SELECT dt5.ScID,  dt5.EmployeeID,  dt5.UserName,  dt5.WageType,  dt5.SDate,  dt5.DayIs,  dt5.RestDay,  dt5.STimeIn,  dt5.STimeOut,  dt5.TimeIn,  dt5.TimeOut,  dt5.MisPunched,  dt5.RegWD,  dt5.DWork,  dt5.Absent,  dt5.LateMins,  dt5.UnderstimeMins,  dt5.HolidayType,  dt5.TempOT,  dt5.ApprovedOT,  dt5.AOTMins,  dt5.NDMins,  dt5.ApprovedNightDiff,  dt5.ANDiff,  dt5.ApprovedRD,  dt5.RDMins,  dt5.VL,  dt5.SL,  dt5.EL,  dt5.PL,  dt5.TrO,  dt5.RHolidayHrs,  dt5.SHolidayHrs,  dt5.CHolidayHrs,  dt5.RegOT,  dt5.RHOT,  dt5.SHOT,  dt5.CHOT,  dt5.RDOT,  dt5.RegND,  dt5.RHND,  dt5.SHND,  dt5.CHND,  dt5.RDND,  dt5.Rlink,  demo_user.Division,  demo_user.Department,  demo_user.Employer,  dt5.AfterBreakLogOut,  dt5.AfterBreakLog,  dt5.BreakLateMins,  dt5.EarlyMins";
+$tdatadt5[".sqlHead"] = "SELECT dt5.ScID,  dt5.EmployeeID,  dt5.UserName,  dt5.WageType,  dt5.SDate,  dt5.DayIs,  dt5.RestDay,  dt5.STimeIn,  dt5.STimeOut,  dt5.TimeIn,  dt5.TimeOut,  dt5.MisPunched,  dt5.RegWD,  dt5.DWork,  dt5.Absent,  dt5.LateMins,  dt5.UnderstimeMins,  dt5.HolidayType,  dt5.TempOT,  dt5.ApprovedOT,  dt5.AOTMins,  dt5.NDMins,  dt5.ApprovedNightDiff,  dt5.ANDiff,  dt5.ApprovedRD,  dt5.RDMins,  dt5.VL,  dt5.SL,  dt5.EL,  dt5.PL,  dt5.TrO,  dt5.RHolidayHrs,  dt5.SHolidayHrs,  dt5.CHolidayHrs,  dt5.RegOT,  dt5.RHOT,  dt5.SHOT,  dt5.CHOT,  dt5.RDOT,  dt5.RegND,  dt5.RHND,  dt5.SHND,  dt5.CHND,  dt5.RDND,  dt5.Rlink,  demo_user.Division,  demo_user.Department,  demo_user.Employer,  dt5.AfterBreakLogOut,  dt5.AfterBreakLog,  dt5.BreakLateMins,  dt5.EarlyMins,  dt5.ANDOTMins,  dt5.RegNDOT,  dt5.RHNDOT,  dt5.SHNDOT,  dt5.CHNDOT,  dt5.RDNDOT,  dt5.RegNDOTHrs,  dt5.RHNDOTHrs,  dt5.SHNDOTHrs,  dt5.CHNDOTHrs,  dt5.RDNDOTHrs,  dt5.DH,  dt5.DHRD,  dt5.DHOT,  dt5.DHRDOT,  dt5.SHRDND,  dt5.RHRDND,  dt5.SHRDNDOT,  dt5.RHRDNDOT,  dt5.DHND,  dt5.DHRDND,  dt5.DHNDOT,  dt5.DHRDNDOT,  dt5.SchedType";
 $tdatadt5[".sqlFrom"] = "FROM dt5  INNER JOIN demo_user ON dt5.EmployeeID = demo_user.EmployeeID";
 $tdatadt5[".sqlWhereExpr"] = "";
 $tdatadt5[".sqlTail"] = "";
@@ -707,6 +729,7 @@ $tdatadt5[".listFields"][] = "Division";
 $tdatadt5[".listFields"][] = "Department";
 $tdatadt5[".listFields"][] = "WageType";
 $tdatadt5[".listFields"][] = "SDate";
+$tdatadt5[".listFields"][] = "SchedType";
 $tdatadt5[".listFields"][] = "DayIs";
 $tdatadt5[".listFields"][] = "RestDay";
 $tdatadt5[".listFields"][] = "STimeIn";
@@ -730,8 +753,14 @@ $tdatadt5[".listFields"][] = "AOTMins";
 $tdatadt5[".listFields"][] = "NDMins";
 $tdatadt5[".listFields"][] = "ApprovedNightDiff";
 $tdatadt5[".listFields"][] = "ANDiff";
+$tdatadt5[".listFields"][] = "ANDOTMins";
 $tdatadt5[".listFields"][] = "ApprovedRD";
 $tdatadt5[".listFields"][] = "RDMins";
+$tdatadt5[".listFields"][] = "RDNDOTHrs";
+$tdatadt5[".listFields"][] = "CHNDOTHrs";
+$tdatadt5[".listFields"][] = "SHNDOTHrs";
+$tdatadt5[".listFields"][] = "RHNDOTHrs";
+$tdatadt5[".listFields"][] = "RegNDOTHrs";
 $tdatadt5[".listFields"][] = "RHolidayHrs";
 $tdatadt5[".listFields"][] = "SHolidayHrs";
 $tdatadt5[".listFields"][] = "CHolidayHrs";
@@ -750,6 +779,23 @@ $tdatadt5[".listFields"][] = "RHND";
 $tdatadt5[".listFields"][] = "SHND";
 $tdatadt5[".listFields"][] = "CHND";
 $tdatadt5[".listFields"][] = "RDND";
+$tdatadt5[".listFields"][] = "RegNDOT";
+$tdatadt5[".listFields"][] = "RHNDOT";
+$tdatadt5[".listFields"][] = "SHNDOT";
+$tdatadt5[".listFields"][] = "CHNDOT";
+$tdatadt5[".listFields"][] = "RDNDOT";
+$tdatadt5[".listFields"][] = "DH";
+$tdatadt5[".listFields"][] = "DHRD";
+$tdatadt5[".listFields"][] = "DHOT";
+$tdatadt5[".listFields"][] = "DHRDOT";
+$tdatadt5[".listFields"][] = "SHRDND";
+$tdatadt5[".listFields"][] = "RHRDND";
+$tdatadt5[".listFields"][] = "RHRDNDOT";
+$tdatadt5[".listFields"][] = "SHRDNDOT";
+$tdatadt5[".listFields"][] = "DHND";
+$tdatadt5[".listFields"][] = "DHRDND";
+$tdatadt5[".listFields"][] = "DHNDOT";
+$tdatadt5[".listFields"][] = "DHRDNDOT";
 $tdatadt5[".listFields"][] = "Rlink";
 
 $tdatadt5[".hideMobileList"] = array();
@@ -764,6 +810,7 @@ $tdatadt5[".viewFields"][] = "Division";
 $tdatadt5[".viewFields"][] = "Department";
 $tdatadt5[".viewFields"][] = "WageType";
 $tdatadt5[".viewFields"][] = "SDate";
+$tdatadt5[".viewFields"][] = "SchedType";
 $tdatadt5[".viewFields"][] = "DayIs";
 $tdatadt5[".viewFields"][] = "RestDay";
 $tdatadt5[".viewFields"][] = "STimeIn";
@@ -787,8 +834,14 @@ $tdatadt5[".viewFields"][] = "AOTMins";
 $tdatadt5[".viewFields"][] = "NDMins";
 $tdatadt5[".viewFields"][] = "ApprovedNightDiff";
 $tdatadt5[".viewFields"][] = "ANDiff";
+$tdatadt5[".viewFields"][] = "ANDOTMins";
 $tdatadt5[".viewFields"][] = "ApprovedRD";
 $tdatadt5[".viewFields"][] = "RDMins";
+$tdatadt5[".viewFields"][] = "RDNDOTHrs";
+$tdatadt5[".viewFields"][] = "CHNDOTHrs";
+$tdatadt5[".viewFields"][] = "SHNDOTHrs";
+$tdatadt5[".viewFields"][] = "RHNDOTHrs";
+$tdatadt5[".viewFields"][] = "RegNDOTHrs";
 $tdatadt5[".viewFields"][] = "RHolidayHrs";
 $tdatadt5[".viewFields"][] = "SHolidayHrs";
 $tdatadt5[".viewFields"][] = "CHolidayHrs";
@@ -807,6 +860,23 @@ $tdatadt5[".viewFields"][] = "RHND";
 $tdatadt5[".viewFields"][] = "SHND";
 $tdatadt5[".viewFields"][] = "CHND";
 $tdatadt5[".viewFields"][] = "RDND";
+$tdatadt5[".viewFields"][] = "RegNDOT";
+$tdatadt5[".viewFields"][] = "RHNDOT";
+$tdatadt5[".viewFields"][] = "SHNDOT";
+$tdatadt5[".viewFields"][] = "CHNDOT";
+$tdatadt5[".viewFields"][] = "RDNDOT";
+$tdatadt5[".viewFields"][] = "DH";
+$tdatadt5[".viewFields"][] = "DHRD";
+$tdatadt5[".viewFields"][] = "DHOT";
+$tdatadt5[".viewFields"][] = "DHRDOT";
+$tdatadt5[".viewFields"][] = "SHRDND";
+$tdatadt5[".viewFields"][] = "RHRDND";
+$tdatadt5[".viewFields"][] = "RHRDNDOT";
+$tdatadt5[".viewFields"][] = "SHRDNDOT";
+$tdatadt5[".viewFields"][] = "DHND";
+$tdatadt5[".viewFields"][] = "DHRDND";
+$tdatadt5[".viewFields"][] = "DHNDOT";
+$tdatadt5[".viewFields"][] = "DHRDNDOT";
 $tdatadt5[".viewFields"][] = "Rlink";
 
 $tdatadt5[".addFields"] = array();
@@ -820,6 +890,7 @@ $tdatadt5[".masterListFields"][] = "Division";
 $tdatadt5[".masterListFields"][] = "Department";
 $tdatadt5[".masterListFields"][] = "WageType";
 $tdatadt5[".masterListFields"][] = "SDate";
+$tdatadt5[".masterListFields"][] = "SchedType";
 $tdatadt5[".masterListFields"][] = "DayIs";
 $tdatadt5[".masterListFields"][] = "RestDay";
 $tdatadt5[".masterListFields"][] = "STimeIn";
@@ -843,8 +914,14 @@ $tdatadt5[".masterListFields"][] = "AOTMins";
 $tdatadt5[".masterListFields"][] = "NDMins";
 $tdatadt5[".masterListFields"][] = "ApprovedNightDiff";
 $tdatadt5[".masterListFields"][] = "ANDiff";
+$tdatadt5[".masterListFields"][] = "ANDOTMins";
 $tdatadt5[".masterListFields"][] = "ApprovedRD";
 $tdatadt5[".masterListFields"][] = "RDMins";
+$tdatadt5[".masterListFields"][] = "RDNDOTHrs";
+$tdatadt5[".masterListFields"][] = "CHNDOTHrs";
+$tdatadt5[".masterListFields"][] = "SHNDOTHrs";
+$tdatadt5[".masterListFields"][] = "RHNDOTHrs";
+$tdatadt5[".masterListFields"][] = "RegNDOTHrs";
 $tdatadt5[".masterListFields"][] = "RHolidayHrs";
 $tdatadt5[".masterListFields"][] = "SHolidayHrs";
 $tdatadt5[".masterListFields"][] = "CHolidayHrs";
@@ -863,6 +940,23 @@ $tdatadt5[".masterListFields"][] = "RHND";
 $tdatadt5[".masterListFields"][] = "SHND";
 $tdatadt5[".masterListFields"][] = "CHND";
 $tdatadt5[".masterListFields"][] = "RDND";
+$tdatadt5[".masterListFields"][] = "RegNDOT";
+$tdatadt5[".masterListFields"][] = "RHNDOT";
+$tdatadt5[".masterListFields"][] = "SHNDOT";
+$tdatadt5[".masterListFields"][] = "CHNDOT";
+$tdatadt5[".masterListFields"][] = "RDNDOT";
+$tdatadt5[".masterListFields"][] = "DH";
+$tdatadt5[".masterListFields"][] = "DHRD";
+$tdatadt5[".masterListFields"][] = "DHOT";
+$tdatadt5[".masterListFields"][] = "DHRDOT";
+$tdatadt5[".masterListFields"][] = "SHRDND";
+$tdatadt5[".masterListFields"][] = "RHRDND";
+$tdatadt5[".masterListFields"][] = "RHRDNDOT";
+$tdatadt5[".masterListFields"][] = "SHRDNDOT";
+$tdatadt5[".masterListFields"][] = "DHND";
+$tdatadt5[".masterListFields"][] = "DHRDND";
+$tdatadt5[".masterListFields"][] = "DHNDOT";
+$tdatadt5[".masterListFields"][] = "DHRDNDOT";
 $tdatadt5[".masterListFields"][] = "Rlink";
 
 $tdatadt5[".inlineAddFields"] = array();
@@ -883,6 +977,7 @@ $tdatadt5[".exportFields"][] = "Division";
 $tdatadt5[".exportFields"][] = "Department";
 $tdatadt5[".exportFields"][] = "WageType";
 $tdatadt5[".exportFields"][] = "SDate";
+$tdatadt5[".exportFields"][] = "SchedType";
 $tdatadt5[".exportFields"][] = "DayIs";
 $tdatadt5[".exportFields"][] = "RestDay";
 $tdatadt5[".exportFields"][] = "STimeIn";
@@ -906,8 +1001,14 @@ $tdatadt5[".exportFields"][] = "AOTMins";
 $tdatadt5[".exportFields"][] = "NDMins";
 $tdatadt5[".exportFields"][] = "ApprovedNightDiff";
 $tdatadt5[".exportFields"][] = "ANDiff";
+$tdatadt5[".exportFields"][] = "ANDOTMins";
 $tdatadt5[".exportFields"][] = "ApprovedRD";
 $tdatadt5[".exportFields"][] = "RDMins";
+$tdatadt5[".exportFields"][] = "RDNDOTHrs";
+$tdatadt5[".exportFields"][] = "CHNDOTHrs";
+$tdatadt5[".exportFields"][] = "SHNDOTHrs";
+$tdatadt5[".exportFields"][] = "RHNDOTHrs";
+$tdatadt5[".exportFields"][] = "RegNDOTHrs";
 $tdatadt5[".exportFields"][] = "RHolidayHrs";
 $tdatadt5[".exportFields"][] = "SHolidayHrs";
 $tdatadt5[".exportFields"][] = "CHolidayHrs";
@@ -926,6 +1027,23 @@ $tdatadt5[".exportFields"][] = "RHND";
 $tdatadt5[".exportFields"][] = "SHND";
 $tdatadt5[".exportFields"][] = "CHND";
 $tdatadt5[".exportFields"][] = "RDND";
+$tdatadt5[".exportFields"][] = "RegNDOT";
+$tdatadt5[".exportFields"][] = "RHNDOT";
+$tdatadt5[".exportFields"][] = "SHNDOT";
+$tdatadt5[".exportFields"][] = "CHNDOT";
+$tdatadt5[".exportFields"][] = "RDNDOT";
+$tdatadt5[".exportFields"][] = "DH";
+$tdatadt5[".exportFields"][] = "DHRD";
+$tdatadt5[".exportFields"][] = "DHOT";
+$tdatadt5[".exportFields"][] = "DHRDOT";
+$tdatadt5[".exportFields"][] = "SHRDND";
+$tdatadt5[".exportFields"][] = "RHRDND";
+$tdatadt5[".exportFields"][] = "RHRDNDOT";
+$tdatadt5[".exportFields"][] = "SHRDNDOT";
+$tdatadt5[".exportFields"][] = "DHND";
+$tdatadt5[".exportFields"][] = "DHRDND";
+$tdatadt5[".exportFields"][] = "DHNDOT";
+$tdatadt5[".exportFields"][] = "DHRDNDOT";
 $tdatadt5[".exportFields"][] = "Rlink";
 
 $tdatadt5[".importFields"] = array();
@@ -939,6 +1057,7 @@ $tdatadt5[".printFields"][] = "Division";
 $tdatadt5[".printFields"][] = "Department";
 $tdatadt5[".printFields"][] = "WageType";
 $tdatadt5[".printFields"][] = "SDate";
+$tdatadt5[".printFields"][] = "SchedType";
 $tdatadt5[".printFields"][] = "DayIs";
 $tdatadt5[".printFields"][] = "RestDay";
 $tdatadt5[".printFields"][] = "STimeIn";
@@ -962,8 +1081,14 @@ $tdatadt5[".printFields"][] = "AOTMins";
 $tdatadt5[".printFields"][] = "NDMins";
 $tdatadt5[".printFields"][] = "ApprovedNightDiff";
 $tdatadt5[".printFields"][] = "ANDiff";
+$tdatadt5[".printFields"][] = "ANDOTMins";
 $tdatadt5[".printFields"][] = "ApprovedRD";
 $tdatadt5[".printFields"][] = "RDMins";
+$tdatadt5[".printFields"][] = "RDNDOTHrs";
+$tdatadt5[".printFields"][] = "CHNDOTHrs";
+$tdatadt5[".printFields"][] = "SHNDOTHrs";
+$tdatadt5[".printFields"][] = "RHNDOTHrs";
+$tdatadt5[".printFields"][] = "RegNDOTHrs";
 $tdatadt5[".printFields"][] = "RHolidayHrs";
 $tdatadt5[".printFields"][] = "SHolidayHrs";
 $tdatadt5[".printFields"][] = "CHolidayHrs";
@@ -982,6 +1107,23 @@ $tdatadt5[".printFields"][] = "RHND";
 $tdatadt5[".printFields"][] = "SHND";
 $tdatadt5[".printFields"][] = "CHND";
 $tdatadt5[".printFields"][] = "RDND";
+$tdatadt5[".printFields"][] = "RegNDOT";
+$tdatadt5[".printFields"][] = "RHNDOT";
+$tdatadt5[".printFields"][] = "SHNDOT";
+$tdatadt5[".printFields"][] = "CHNDOT";
+$tdatadt5[".printFields"][] = "RDNDOT";
+$tdatadt5[".printFields"][] = "DH";
+$tdatadt5[".printFields"][] = "DHRD";
+$tdatadt5[".printFields"][] = "DHOT";
+$tdatadt5[".printFields"][] = "DHRDOT";
+$tdatadt5[".printFields"][] = "SHRDND";
+$tdatadt5[".printFields"][] = "RHRDND";
+$tdatadt5[".printFields"][] = "RHRDNDOT";
+$tdatadt5[".printFields"][] = "SHRDNDOT";
+$tdatadt5[".printFields"][] = "DHND";
+$tdatadt5[".printFields"][] = "DHRDND";
+$tdatadt5[".printFields"][] = "DHNDOT";
+$tdatadt5[".printFields"][] = "DHRDNDOT";
 $tdatadt5[".printFields"][] = "Rlink";
 
 
@@ -1009,8 +1151,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -1103,11 +1244,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -1230,7 +1366,8 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 // the field's search options settings
-	
+		$fdata["defaultSearchOption"] = "Contains";
+
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
 // the end of search options settings
@@ -1356,7 +1493,8 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 // the field's search options settings
-	
+		$fdata["defaultSearchOption"] = "Contains";
+
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
 // the end of search options settings
@@ -1507,7 +1645,8 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 // the field's search options settings
-	
+		$fdata["defaultSearchOption"] = "Equals";
+
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
 // the end of search options settings
@@ -1602,8 +1741,8 @@ $tdatadt5[".printFields"][] = "Rlink";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -1633,9 +1772,11 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 // the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
+		$fdata["defaultSearchOption"] = "Between";
+
+			// the user's search options list
+		$fdata["searchOptionsList"] = array();
+		$fdata["searchOptionsList"][] = "Between";
 // the end of search options settings
 
 
@@ -1666,8 +1807,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -1783,11 +1923,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -1817,8 +1952,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -1905,11 +2039,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -1939,8 +2068,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -2034,11 +2162,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
-// the end of search options settings
 
 
 
@@ -2068,8 +2191,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -2163,11 +2285,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
-// the end of search options settings
 
 
 
@@ -2197,8 +2314,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -2260,8 +2376,8 @@ $tdatadt5[".printFields"][] = "Rlink";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -2290,11 +2406,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
-// the end of search options settings
 
 
 
@@ -2324,8 +2435,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -2387,8 +2497,8 @@ $tdatadt5[".printFields"][] = "Rlink";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -2417,11 +2527,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
-// the end of search options settings
 
 
 
@@ -2451,8 +2556,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -2539,11 +2643,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -2573,8 +2672,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -2665,11 +2763,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -2699,8 +2792,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -2791,11 +2883,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -2825,8 +2912,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -2917,11 +3003,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -2951,8 +3032,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3043,11 +3123,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -3077,8 +3152,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3169,11 +3243,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -3203,8 +3272,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3320,11 +3388,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -3354,8 +3417,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3446,11 +3508,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -3480,8 +3537,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3568,11 +3624,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -3602,8 +3653,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3695,11 +3745,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -3729,8 +3774,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3822,11 +3866,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -3856,8 +3895,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3944,11 +3982,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -3978,8 +4011,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4071,11 +4103,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -4105,8 +4132,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4193,11 +4219,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -4227,8 +4248,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4320,11 +4340,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -4354,8 +4369,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4449,11 +4463,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -4483,8 +4492,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4578,11 +4586,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -4612,8 +4615,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4707,11 +4709,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -4741,8 +4738,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4836,11 +4832,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -4870,8 +4861,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4965,11 +4955,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -4999,8 +4984,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -5092,12 +5076,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -5127,8 +5105,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -5220,12 +5197,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -5255,8 +5226,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -5348,12 +5318,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -5383,8 +5347,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -5476,11 +5439,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -5510,8 +5468,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -5603,11 +5560,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -5637,8 +5589,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -5730,11 +5681,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -5764,8 +5710,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -5857,11 +5802,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -5891,8 +5831,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -5984,11 +5923,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -6018,8 +5952,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -6111,11 +6044,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -6145,8 +6073,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -6238,11 +6165,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -6272,8 +6194,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -6365,11 +6286,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -6399,8 +6315,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -6492,11 +6407,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -6526,8 +6436,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -6619,11 +6528,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -6653,8 +6557,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -6747,11 +6650,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -6933,8 +6831,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -7050,12 +6947,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Equals";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -7085,8 +6976,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -7202,12 +7092,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Equals";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -7237,8 +7121,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -7300,8 +7183,8 @@ $tdatadt5[".printFields"][] = "Rlink";
 	
 	
 		$edata["DateEditType"] = 11;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -7330,12 +7213,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Equals";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
-// the end of search options settings
 
 
 
@@ -7365,8 +7242,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -7428,8 +7304,8 @@ $tdatadt5[".printFields"][] = "Rlink";
 	
 	
 		$edata["DateEditType"] = 11;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -7458,12 +7334,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Equals";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
-// the end of search options settings
 
 
 
@@ -7493,8 +7363,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -7586,12 +7455,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -7621,8 +7484,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -7714,17 +7576,2914 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
 
 	$tdatadt5["EarlyMins"] = $fdata;
+//	ANDOTMins
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 53;
+	$fdata["strName"] = "ANDOTMins";
+	$fdata["GoodName"] = "ANDOTMins";
+	$fdata["ownerTable"] = "dt5";
+	$fdata["Label"] = GetFieldLabel("dt5","ANDOTMins");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+	
+	
+	
+	
+	
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "ANDOTMins";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "dt5.ANDOTMins";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatadt5["ANDOTMins"] = $fdata;
+//	RegNDOT
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 54;
+	$fdata["strName"] = "RegNDOT";
+	$fdata["GoodName"] = "RegNDOT";
+	$fdata["ownerTable"] = "dt5";
+	$fdata["Label"] = GetFieldLabel("dt5","RegNDOT");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+	
+	
+	
+	
+	
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "RegNDOT";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "dt5.RegNDOT";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatadt5["RegNDOT"] = $fdata;
+//	RHNDOT
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 55;
+	$fdata["strName"] = "RHNDOT";
+	$fdata["GoodName"] = "RHNDOT";
+	$fdata["ownerTable"] = "dt5";
+	$fdata["Label"] = GetFieldLabel("dt5","RHNDOT");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+	
+	
+	
+	
+	
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "RHNDOT";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "dt5.RHNDOT";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatadt5["RHNDOT"] = $fdata;
+//	SHNDOT
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 56;
+	$fdata["strName"] = "SHNDOT";
+	$fdata["GoodName"] = "SHNDOT";
+	$fdata["ownerTable"] = "dt5";
+	$fdata["Label"] = GetFieldLabel("dt5","SHNDOT");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+	
+	
+	
+	
+	
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "SHNDOT";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "dt5.SHNDOT";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatadt5["SHNDOT"] = $fdata;
+//	CHNDOT
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 57;
+	$fdata["strName"] = "CHNDOT";
+	$fdata["GoodName"] = "CHNDOT";
+	$fdata["ownerTable"] = "dt5";
+	$fdata["Label"] = GetFieldLabel("dt5","CHNDOT");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+	
+	
+	
+	
+	
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "CHNDOT";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "dt5.CHNDOT";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatadt5["CHNDOT"] = $fdata;
+//	RDNDOT
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 58;
+	$fdata["strName"] = "RDNDOT";
+	$fdata["GoodName"] = "RDNDOT";
+	$fdata["ownerTable"] = "dt5";
+	$fdata["Label"] = GetFieldLabel("dt5","RDNDOT");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+	
+	
+	
+	
+	
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "RDNDOT";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "dt5.RDNDOT";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatadt5["RDNDOT"] = $fdata;
+//	RegNDOTHrs
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 59;
+	$fdata["strName"] = "RegNDOTHrs";
+	$fdata["GoodName"] = "RegNDOTHrs";
+	$fdata["ownerTable"] = "dt5";
+	$fdata["Label"] = GetFieldLabel("dt5","RegNDOTHrs");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+	
+	
+	
+	
+	
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "RegNDOTHrs";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "dt5.RegNDOTHrs";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatadt5["RegNDOTHrs"] = $fdata;
+//	RHNDOTHrs
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 60;
+	$fdata["strName"] = "RHNDOTHrs";
+	$fdata["GoodName"] = "RHNDOTHrs";
+	$fdata["ownerTable"] = "dt5";
+	$fdata["Label"] = GetFieldLabel("dt5","RHNDOTHrs");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+	
+	
+	
+	
+	
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "RHNDOTHrs";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "dt5.RHNDOTHrs";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatadt5["RHNDOTHrs"] = $fdata;
+//	SHNDOTHrs
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 61;
+	$fdata["strName"] = "SHNDOTHrs";
+	$fdata["GoodName"] = "SHNDOTHrs";
+	$fdata["ownerTable"] = "dt5";
+	$fdata["Label"] = GetFieldLabel("dt5","SHNDOTHrs");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+	
+	
+	
+	
+	
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "SHNDOTHrs";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "dt5.SHNDOTHrs";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatadt5["SHNDOTHrs"] = $fdata;
+//	CHNDOTHrs
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 62;
+	$fdata["strName"] = "CHNDOTHrs";
+	$fdata["GoodName"] = "CHNDOTHrs";
+	$fdata["ownerTable"] = "dt5";
+	$fdata["Label"] = GetFieldLabel("dt5","CHNDOTHrs");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+	
+	
+	
+	
+	
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "CHNDOTHrs";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "dt5.CHNDOTHrs";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatadt5["CHNDOTHrs"] = $fdata;
+//	RDNDOTHrs
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 63;
+	$fdata["strName"] = "RDNDOTHrs";
+	$fdata["GoodName"] = "RDNDOTHrs";
+	$fdata["ownerTable"] = "dt5";
+	$fdata["Label"] = GetFieldLabel("dt5","RDNDOTHrs");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+	
+	
+	
+	
+	
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "RDNDOTHrs";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "dt5.RDNDOTHrs";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatadt5["RDNDOTHrs"] = $fdata;
+//	DH
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 64;
+	$fdata["strName"] = "DH";
+	$fdata["GoodName"] = "DH";
+	$fdata["ownerTable"] = "dt5";
+	$fdata["Label"] = GetFieldLabel("dt5","DH");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+	
+	
+	
+	
+	
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "DH";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "dt5.DH";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatadt5["DH"] = $fdata;
+//	DHRD
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 65;
+	$fdata["strName"] = "DHRD";
+	$fdata["GoodName"] = "DHRD";
+	$fdata["ownerTable"] = "dt5";
+	$fdata["Label"] = GetFieldLabel("dt5","DHRD");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+	
+	
+	
+	
+	
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "DHRD";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "dt5.DHRD";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatadt5["DHRD"] = $fdata;
+//	DHOT
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 66;
+	$fdata["strName"] = "DHOT";
+	$fdata["GoodName"] = "DHOT";
+	$fdata["ownerTable"] = "dt5";
+	$fdata["Label"] = GetFieldLabel("dt5","DHOT");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+	
+	
+	
+	
+	
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "DHOT";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "dt5.DHOT";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatadt5["DHOT"] = $fdata;
+//	DHRDOT
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 67;
+	$fdata["strName"] = "DHRDOT";
+	$fdata["GoodName"] = "DHRDOT";
+	$fdata["ownerTable"] = "dt5";
+	$fdata["Label"] = GetFieldLabel("dt5","DHRDOT");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+	
+	
+	
+	
+	
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "DHRDOT";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "dt5.DHRDOT";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatadt5["DHRDOT"] = $fdata;
+//	SHRDND
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 68;
+	$fdata["strName"] = "SHRDND";
+	$fdata["GoodName"] = "SHRDND";
+	$fdata["ownerTable"] = "dt5";
+	$fdata["Label"] = GetFieldLabel("dt5","SHRDND");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+	
+	
+	
+	
+	
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "SHRDND";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "dt5.SHRDND";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatadt5["SHRDND"] = $fdata;
+//	RHRDND
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 69;
+	$fdata["strName"] = "RHRDND";
+	$fdata["GoodName"] = "RHRDND";
+	$fdata["ownerTable"] = "dt5";
+	$fdata["Label"] = GetFieldLabel("dt5","RHRDND");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+	
+	
+	
+	
+	
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "RHRDND";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "dt5.RHRDND";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatadt5["RHRDND"] = $fdata;
+//	SHRDNDOT
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 70;
+	$fdata["strName"] = "SHRDNDOT";
+	$fdata["GoodName"] = "SHRDNDOT";
+	$fdata["ownerTable"] = "dt5";
+	$fdata["Label"] = GetFieldLabel("dt5","SHRDNDOT");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+	
+	
+	
+	
+	
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "SHRDNDOT";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "dt5.SHRDNDOT";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatadt5["SHRDNDOT"] = $fdata;
+//	RHRDNDOT
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 71;
+	$fdata["strName"] = "RHRDNDOT";
+	$fdata["GoodName"] = "RHRDNDOT";
+	$fdata["ownerTable"] = "dt5";
+	$fdata["Label"] = GetFieldLabel("dt5","RHRDNDOT");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+	
+	
+	
+	
+	
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "RHRDNDOT";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "dt5.RHRDNDOT";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatadt5["RHRDNDOT"] = $fdata;
+//	DHND
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 72;
+	$fdata["strName"] = "DHND";
+	$fdata["GoodName"] = "DHND";
+	$fdata["ownerTable"] = "dt5";
+	$fdata["Label"] = GetFieldLabel("dt5","DHND");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+	
+	
+	
+	
+	
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "DHND";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "dt5.DHND";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatadt5["DHND"] = $fdata;
+//	DHRDND
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 73;
+	$fdata["strName"] = "DHRDND";
+	$fdata["GoodName"] = "DHRDND";
+	$fdata["ownerTable"] = "dt5";
+	$fdata["Label"] = GetFieldLabel("dt5","DHRDND");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+	
+	
+	
+	
+	
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "DHRDND";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "dt5.DHRDND";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatadt5["DHRDND"] = $fdata;
+//	DHNDOT
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 74;
+	$fdata["strName"] = "DHNDOT";
+	$fdata["GoodName"] = "DHNDOT";
+	$fdata["ownerTable"] = "dt5";
+	$fdata["Label"] = GetFieldLabel("dt5","DHNDOT");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+	
+	
+	
+	
+	
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "DHNDOT";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "dt5.DHNDOT";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatadt5["DHNDOT"] = $fdata;
+//	DHRDNDOT
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 75;
+	$fdata["strName"] = "DHRDNDOT";
+	$fdata["GoodName"] = "DHRDNDOT";
+	$fdata["ownerTable"] = "dt5";
+	$fdata["Label"] = GetFieldLabel("dt5","DHRDNDOT");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+	
+	
+	
+	
+	
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "DHRDNDOT";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "dt5.DHRDNDOT";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatadt5["DHRDNDOT"] = $fdata;
+//	SchedType
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 76;
+	$fdata["strName"] = "SchedType";
+	$fdata["GoodName"] = "SchedType";
+	$fdata["ownerTable"] = "dt5";
+	$fdata["Label"] = GetFieldLabel("dt5","SchedType");
+	$fdata["FieldType"] = 3;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+	
+	
+	
+	
+	
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "SchedType";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "dt5.SchedType";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatadt5["SchedType"] = $fdata;
 
 
 $tables_data["dt5"]=&$tdatadt5;
@@ -7895,7 +10654,7 @@ function createSqlQuery_dt5()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "dt5.ScID,  dt5.EmployeeID,  dt5.UserName,  dt5.WageType,  dt5.SDate,  dt5.DayIs,  dt5.RestDay,  dt5.STimeIn,  dt5.STimeOut,  dt5.TimeIn,  dt5.TimeOut,  dt5.MisPunched,  dt5.RegWD,  dt5.DWork,  dt5.Absent,  dt5.LateMins,  dt5.UnderstimeMins,  dt5.HolidayType,  dt5.TempOT,  dt5.ApprovedOT,  dt5.AOTMins,  dt5.NDMins,  dt5.ApprovedNightDiff,  dt5.ANDiff,  dt5.ApprovedRD,  dt5.RDMins,  dt5.VL,  dt5.SL,  dt5.EL,  dt5.PL,  dt5.TrO,  dt5.RHolidayHrs,  dt5.SHolidayHrs,  dt5.CHolidayHrs,  dt5.RegOT,  dt5.RHOT,  dt5.SHOT,  dt5.CHOT,  dt5.RDOT,  dt5.RegND,  dt5.RHND,  dt5.SHND,  dt5.CHND,  dt5.RDND,  dt5.Rlink,  demo_user.Division,  demo_user.Department,  demo_user.Employer,  dt5.AfterBreakLogOut,  dt5.AfterBreakLog,  dt5.BreakLateMins,  dt5.EarlyMins";
+$proto0["m_strFieldList"] = "dt5.ScID,  dt5.EmployeeID,  dt5.UserName,  dt5.WageType,  dt5.SDate,  dt5.DayIs,  dt5.RestDay,  dt5.STimeIn,  dt5.STimeOut,  dt5.TimeIn,  dt5.TimeOut,  dt5.MisPunched,  dt5.RegWD,  dt5.DWork,  dt5.Absent,  dt5.LateMins,  dt5.UnderstimeMins,  dt5.HolidayType,  dt5.TempOT,  dt5.ApprovedOT,  dt5.AOTMins,  dt5.NDMins,  dt5.ApprovedNightDiff,  dt5.ANDiff,  dt5.ApprovedRD,  dt5.RDMins,  dt5.VL,  dt5.SL,  dt5.EL,  dt5.PL,  dt5.TrO,  dt5.RHolidayHrs,  dt5.SHolidayHrs,  dt5.CHolidayHrs,  dt5.RegOT,  dt5.RHOT,  dt5.SHOT,  dt5.CHOT,  dt5.RDOT,  dt5.RegND,  dt5.RHND,  dt5.SHND,  dt5.CHND,  dt5.RDND,  dt5.Rlink,  demo_user.Division,  demo_user.Department,  demo_user.Employer,  dt5.AfterBreakLogOut,  dt5.AfterBreakLog,  dt5.BreakLateMins,  dt5.EarlyMins,  dt5.ANDOTMins,  dt5.RegNDOT,  dt5.RHNDOT,  dt5.SHNDOT,  dt5.CHNDOT,  dt5.RDNDOT,  dt5.RegNDOTHrs,  dt5.RHNDOTHrs,  dt5.SHNDOTHrs,  dt5.CHNDOTHrs,  dt5.RDNDOTHrs,  dt5.DH,  dt5.DHRD,  dt5.DHOT,  dt5.DHRDOT,  dt5.SHRDND,  dt5.RHRDND,  dt5.SHRDNDOT,  dt5.RHRDNDOT,  dt5.DHND,  dt5.DHRDND,  dt5.DHNDOT,  dt5.DHRDNDOT,  dt5.SchedType";
 $proto0["m_strFrom"] = "FROM dt5  INNER JOIN demo_user ON dt5.EmployeeID = demo_user.EmployeeID";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "ORDER BY dt5.UserName";
@@ -8663,207 +11422,570 @@ $proto108["m_alias"] = "";
 $obj = new SQLFieldListItem($proto108);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto110=array();
-$proto110["m_link"] = "SQLL_MAIN";
-			$proto111=array();
-$proto111["m_strName"] = "dt5";
-$proto111["m_srcTableName"] = "dt5";
-$proto111["m_columns"] = array();
-$proto111["m_columns"][] = "ScID";
-$proto111["m_columns"][] = "EmployeeID";
-$proto111["m_columns"][] = "UserName";
-$proto111["m_columns"][] = "WageType";
-$proto111["m_columns"][] = "SDate";
-$proto111["m_columns"][] = "DayIs";
-$proto111["m_columns"][] = "RestDay";
-$proto111["m_columns"][] = "STimeIn";
-$proto111["m_columns"][] = "STimeOut";
-$proto111["m_columns"][] = "TimeIn";
-$proto111["m_columns"][] = "TimeOut";
-$proto111["m_columns"][] = "MisPunched";
-$proto111["m_columns"][] = "RegWD";
-$proto111["m_columns"][] = "DWork";
-$proto111["m_columns"][] = "Absent";
-$proto111["m_columns"][] = "HolidayType";
-$proto111["m_columns"][] = "TempOT";
-$proto111["m_columns"][] = "ApprovedOT";
-$proto111["m_columns"][] = "AOTMins";
-$proto111["m_columns"][] = "NDMins";
-$proto111["m_columns"][] = "ApprovedNightDiff";
-$proto111["m_columns"][] = "ANDiff";
-$proto111["m_columns"][] = "ApprovedRD";
-$proto111["m_columns"][] = "RDMins";
-$proto111["m_columns"][] = "VL";
-$proto111["m_columns"][] = "SL";
-$proto111["m_columns"][] = "EL";
-$proto111["m_columns"][] = "PL";
-$proto111["m_columns"][] = "TrO";
-$proto111["m_columns"][] = "RegOT";
-$proto111["m_columns"][] = "RHOT";
-$proto111["m_columns"][] = "SHOT";
-$proto111["m_columns"][] = "CHOT";
-$proto111["m_columns"][] = "RDOT";
-$proto111["m_columns"][] = "RegND";
-$proto111["m_columns"][] = "RHND";
-$proto111["m_columns"][] = "SHND";
-$proto111["m_columns"][] = "CHND";
-$proto111["m_columns"][] = "RDND";
-$proto111["m_columns"][] = "MinsPerDay";
-$proto111["m_columns"][] = "BreakMins";
-$proto111["m_columns"][] = "Rlink";
-$proto111["m_columns"][] = "FirstHalfMins";
-$proto111["m_columns"][] = "SecondHalfMins";
-$proto111["m_columns"][] = "AfterBreakLog";
-$proto111["m_columns"][] = "AfterBreakLogOut";
-$proto111["m_columns"][] = "NDMealAllowance";
-$proto111["m_columns"][] = "Division";
-$proto111["m_columns"][] = "Employer";
-$proto111["m_columns"][] = "LateFixPenalty";
-$proto111["m_columns"][] = "RHolidayHrs";
-$proto111["m_columns"][] = "SHolidayHrs";
-$proto111["m_columns"][] = "CHolidayHrs";
-$proto111["m_columns"][] = "LateMins";
-$proto111["m_columns"][] = "UnderstimeMins";
-$proto111["m_columns"][] = "BreakLateMins";
-$proto111["m_columns"][] = "EarlyMins";
-$obj = new SQLTable($proto111);
+						$proto110=array();
+			$obj = new SQLField(array(
+	"m_strName" => "ANDOTMins",
+	"m_strTable" => "dt5",
+	"m_srcTableName" => "dt5"
+));
 
-$proto110["m_table"] = $obj;
-$proto110["m_sql"] = "dt5";
-$proto110["m_alias"] = "";
+$proto110["m_sql"] = "dt5.ANDOTMins";
 $proto110["m_srcTableName"] = "dt5";
-$proto112=array();
-$proto112["m_sql"] = "";
-$proto112["m_uniontype"] = "SQLL_UNKNOWN";
+$proto110["m_expr"]=$obj;
+$proto110["m_alias"] = "";
+$obj = new SQLFieldListItem($proto110);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto112=array();
+			$obj = new SQLField(array(
+	"m_strName" => "RegNDOT",
+	"m_strTable" => "dt5",
+	"m_srcTableName" => "dt5"
+));
+
+$proto112["m_sql"] = "dt5.RegNDOT";
+$proto112["m_srcTableName"] = "dt5";
+$proto112["m_expr"]=$obj;
+$proto112["m_alias"] = "";
+$obj = new SQLFieldListItem($proto112);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto114=array();
+			$obj = new SQLField(array(
+	"m_strName" => "RHNDOT",
+	"m_strTable" => "dt5",
+	"m_srcTableName" => "dt5"
+));
+
+$proto114["m_sql"] = "dt5.RHNDOT";
+$proto114["m_srcTableName"] = "dt5";
+$proto114["m_expr"]=$obj;
+$proto114["m_alias"] = "";
+$obj = new SQLFieldListItem($proto114);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto116=array();
+			$obj = new SQLField(array(
+	"m_strName" => "SHNDOT",
+	"m_strTable" => "dt5",
+	"m_srcTableName" => "dt5"
+));
+
+$proto116["m_sql"] = "dt5.SHNDOT";
+$proto116["m_srcTableName"] = "dt5";
+$proto116["m_expr"]=$obj;
+$proto116["m_alias"] = "";
+$obj = new SQLFieldListItem($proto116);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto118=array();
+			$obj = new SQLField(array(
+	"m_strName" => "CHNDOT",
+	"m_strTable" => "dt5",
+	"m_srcTableName" => "dt5"
+));
+
+$proto118["m_sql"] = "dt5.CHNDOT";
+$proto118["m_srcTableName"] = "dt5";
+$proto118["m_expr"]=$obj;
+$proto118["m_alias"] = "";
+$obj = new SQLFieldListItem($proto118);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto120=array();
+			$obj = new SQLField(array(
+	"m_strName" => "RDNDOT",
+	"m_strTable" => "dt5",
+	"m_srcTableName" => "dt5"
+));
+
+$proto120["m_sql"] = "dt5.RDNDOT";
+$proto120["m_srcTableName"] = "dt5";
+$proto120["m_expr"]=$obj;
+$proto120["m_alias"] = "";
+$obj = new SQLFieldListItem($proto120);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto122=array();
+			$obj = new SQLField(array(
+	"m_strName" => "RegNDOTHrs",
+	"m_strTable" => "dt5",
+	"m_srcTableName" => "dt5"
+));
+
+$proto122["m_sql"] = "dt5.RegNDOTHrs";
+$proto122["m_srcTableName"] = "dt5";
+$proto122["m_expr"]=$obj;
+$proto122["m_alias"] = "";
+$obj = new SQLFieldListItem($proto122);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto124=array();
+			$obj = new SQLField(array(
+	"m_strName" => "RHNDOTHrs",
+	"m_strTable" => "dt5",
+	"m_srcTableName" => "dt5"
+));
+
+$proto124["m_sql"] = "dt5.RHNDOTHrs";
+$proto124["m_srcTableName"] = "dt5";
+$proto124["m_expr"]=$obj;
+$proto124["m_alias"] = "";
+$obj = new SQLFieldListItem($proto124);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto126=array();
+			$obj = new SQLField(array(
+	"m_strName" => "SHNDOTHrs",
+	"m_strTable" => "dt5",
+	"m_srcTableName" => "dt5"
+));
+
+$proto126["m_sql"] = "dt5.SHNDOTHrs";
+$proto126["m_srcTableName"] = "dt5";
+$proto126["m_expr"]=$obj;
+$proto126["m_alias"] = "";
+$obj = new SQLFieldListItem($proto126);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto128=array();
+			$obj = new SQLField(array(
+	"m_strName" => "CHNDOTHrs",
+	"m_strTable" => "dt5",
+	"m_srcTableName" => "dt5"
+));
+
+$proto128["m_sql"] = "dt5.CHNDOTHrs";
+$proto128["m_srcTableName"] = "dt5";
+$proto128["m_expr"]=$obj;
+$proto128["m_alias"] = "";
+$obj = new SQLFieldListItem($proto128);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto130=array();
+			$obj = new SQLField(array(
+	"m_strName" => "RDNDOTHrs",
+	"m_strTable" => "dt5",
+	"m_srcTableName" => "dt5"
+));
+
+$proto130["m_sql"] = "dt5.RDNDOTHrs";
+$proto130["m_srcTableName"] = "dt5";
+$proto130["m_expr"]=$obj;
+$proto130["m_alias"] = "";
+$obj = new SQLFieldListItem($proto130);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto132=array();
+			$obj = new SQLField(array(
+	"m_strName" => "DH",
+	"m_strTable" => "dt5",
+	"m_srcTableName" => "dt5"
+));
+
+$proto132["m_sql"] = "dt5.DH";
+$proto132["m_srcTableName"] = "dt5";
+$proto132["m_expr"]=$obj;
+$proto132["m_alias"] = "";
+$obj = new SQLFieldListItem($proto132);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto134=array();
+			$obj = new SQLField(array(
+	"m_strName" => "DHRD",
+	"m_strTable" => "dt5",
+	"m_srcTableName" => "dt5"
+));
+
+$proto134["m_sql"] = "dt5.DHRD";
+$proto134["m_srcTableName"] = "dt5";
+$proto134["m_expr"]=$obj;
+$proto134["m_alias"] = "";
+$obj = new SQLFieldListItem($proto134);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto136=array();
+			$obj = new SQLField(array(
+	"m_strName" => "DHOT",
+	"m_strTable" => "dt5",
+	"m_srcTableName" => "dt5"
+));
+
+$proto136["m_sql"] = "dt5.DHOT";
+$proto136["m_srcTableName"] = "dt5";
+$proto136["m_expr"]=$obj;
+$proto136["m_alias"] = "";
+$obj = new SQLFieldListItem($proto136);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto138=array();
+			$obj = new SQLField(array(
+	"m_strName" => "DHRDOT",
+	"m_strTable" => "dt5",
+	"m_srcTableName" => "dt5"
+));
+
+$proto138["m_sql"] = "dt5.DHRDOT";
+$proto138["m_srcTableName"] = "dt5";
+$proto138["m_expr"]=$obj;
+$proto138["m_alias"] = "";
+$obj = new SQLFieldListItem($proto138);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto140=array();
+			$obj = new SQLField(array(
+	"m_strName" => "SHRDND",
+	"m_strTable" => "dt5",
+	"m_srcTableName" => "dt5"
+));
+
+$proto140["m_sql"] = "dt5.SHRDND";
+$proto140["m_srcTableName"] = "dt5";
+$proto140["m_expr"]=$obj;
+$proto140["m_alias"] = "";
+$obj = new SQLFieldListItem($proto140);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto142=array();
+			$obj = new SQLField(array(
+	"m_strName" => "RHRDND",
+	"m_strTable" => "dt5",
+	"m_srcTableName" => "dt5"
+));
+
+$proto142["m_sql"] = "dt5.RHRDND";
+$proto142["m_srcTableName"] = "dt5";
+$proto142["m_expr"]=$obj;
+$proto142["m_alias"] = "";
+$obj = new SQLFieldListItem($proto142);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto144=array();
+			$obj = new SQLField(array(
+	"m_strName" => "SHRDNDOT",
+	"m_strTable" => "dt5",
+	"m_srcTableName" => "dt5"
+));
+
+$proto144["m_sql"] = "dt5.SHRDNDOT";
+$proto144["m_srcTableName"] = "dt5";
+$proto144["m_expr"]=$obj;
+$proto144["m_alias"] = "";
+$obj = new SQLFieldListItem($proto144);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto146=array();
+			$obj = new SQLField(array(
+	"m_strName" => "RHRDNDOT",
+	"m_strTable" => "dt5",
+	"m_srcTableName" => "dt5"
+));
+
+$proto146["m_sql"] = "dt5.RHRDNDOT";
+$proto146["m_srcTableName"] = "dt5";
+$proto146["m_expr"]=$obj;
+$proto146["m_alias"] = "";
+$obj = new SQLFieldListItem($proto146);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto148=array();
+			$obj = new SQLField(array(
+	"m_strName" => "DHND",
+	"m_strTable" => "dt5",
+	"m_srcTableName" => "dt5"
+));
+
+$proto148["m_sql"] = "dt5.DHND";
+$proto148["m_srcTableName"] = "dt5";
+$proto148["m_expr"]=$obj;
+$proto148["m_alias"] = "";
+$obj = new SQLFieldListItem($proto148);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto150=array();
+			$obj = new SQLField(array(
+	"m_strName" => "DHRDND",
+	"m_strTable" => "dt5",
+	"m_srcTableName" => "dt5"
+));
+
+$proto150["m_sql"] = "dt5.DHRDND";
+$proto150["m_srcTableName"] = "dt5";
+$proto150["m_expr"]=$obj;
+$proto150["m_alias"] = "";
+$obj = new SQLFieldListItem($proto150);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto152=array();
+			$obj = new SQLField(array(
+	"m_strName" => "DHNDOT",
+	"m_strTable" => "dt5",
+	"m_srcTableName" => "dt5"
+));
+
+$proto152["m_sql"] = "dt5.DHNDOT";
+$proto152["m_srcTableName"] = "dt5";
+$proto152["m_expr"]=$obj;
+$proto152["m_alias"] = "";
+$obj = new SQLFieldListItem($proto152);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto154=array();
+			$obj = new SQLField(array(
+	"m_strName" => "DHRDNDOT",
+	"m_strTable" => "dt5",
+	"m_srcTableName" => "dt5"
+));
+
+$proto154["m_sql"] = "dt5.DHRDNDOT";
+$proto154["m_srcTableName"] = "dt5";
+$proto154["m_expr"]=$obj;
+$proto154["m_alias"] = "";
+$obj = new SQLFieldListItem($proto154);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto156=array();
+			$obj = new SQLField(array(
+	"m_strName" => "SchedType",
+	"m_strTable" => "dt5",
+	"m_srcTableName" => "dt5"
+));
+
+$proto156["m_sql"] = "dt5.SchedType";
+$proto156["m_srcTableName"] = "dt5";
+$proto156["m_expr"]=$obj;
+$proto156["m_alias"] = "";
+$obj = new SQLFieldListItem($proto156);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto158=array();
+$proto158["m_link"] = "SQLL_MAIN";
+			$proto159=array();
+$proto159["m_strName"] = "dt5";
+$proto159["m_srcTableName"] = "dt5";
+$proto159["m_columns"] = array();
+$proto159["m_columns"][] = "ScID";
+$proto159["m_columns"][] = "EmployeeID";
+$proto159["m_columns"][] = "UserName";
+$proto159["m_columns"][] = "WageType";
+$proto159["m_columns"][] = "SDate";
+$proto159["m_columns"][] = "DayIs";
+$proto159["m_columns"][] = "RestDay";
+$proto159["m_columns"][] = "STimeIn";
+$proto159["m_columns"][] = "STimeOut";
+$proto159["m_columns"][] = "TimeIn";
+$proto159["m_columns"][] = "TimeOut";
+$proto159["m_columns"][] = "MisPunched";
+$proto159["m_columns"][] = "RegWD";
+$proto159["m_columns"][] = "DWork";
+$proto159["m_columns"][] = "Absent";
+$proto159["m_columns"][] = "HolidayType";
+$proto159["m_columns"][] = "TempOT";
+$proto159["m_columns"][] = "ApprovedOT";
+$proto159["m_columns"][] = "AOTMins";
+$proto159["m_columns"][] = "NDMins";
+$proto159["m_columns"][] = "ApprovedNightDiff";
+$proto159["m_columns"][] = "ANDiff";
+$proto159["m_columns"][] = "ApprovedRD";
+$proto159["m_columns"][] = "RDMins";
+$proto159["m_columns"][] = "VL";
+$proto159["m_columns"][] = "SL";
+$proto159["m_columns"][] = "EL";
+$proto159["m_columns"][] = "PL";
+$proto159["m_columns"][] = "TrO";
+$proto159["m_columns"][] = "RegOT";
+$proto159["m_columns"][] = "RHOT";
+$proto159["m_columns"][] = "SHOT";
+$proto159["m_columns"][] = "CHOT";
+$proto159["m_columns"][] = "RDOT";
+$proto159["m_columns"][] = "RegND";
+$proto159["m_columns"][] = "RHND";
+$proto159["m_columns"][] = "SHND";
+$proto159["m_columns"][] = "CHND";
+$proto159["m_columns"][] = "RDND";
+$proto159["m_columns"][] = "MinsPerDay";
+$proto159["m_columns"][] = "BreakMins";
+$proto159["m_columns"][] = "Rlink";
+$proto159["m_columns"][] = "FirstHalfMins";
+$proto159["m_columns"][] = "SecondHalfMins";
+$proto159["m_columns"][] = "AfterBreakLog";
+$proto159["m_columns"][] = "AfterBreakLogOut";
+$proto159["m_columns"][] = "NDMealAllowance";
+$proto159["m_columns"][] = "Division";
+$proto159["m_columns"][] = "Employer";
+$proto159["m_columns"][] = "LateFixPenalty";
+$proto159["m_columns"][] = "RHolidayHrs";
+$proto159["m_columns"][] = "SHolidayHrs";
+$proto159["m_columns"][] = "CHolidayHrs";
+$proto159["m_columns"][] = "LateMins";
+$proto159["m_columns"][] = "UnderstimeMins";
+$proto159["m_columns"][] = "BreakLateMins";
+$proto159["m_columns"][] = "EarlyMins";
+$proto159["m_columns"][] = "ANDOTMins";
+$proto159["m_columns"][] = "RegNDOT";
+$proto159["m_columns"][] = "RHNDOT";
+$proto159["m_columns"][] = "SHNDOT";
+$proto159["m_columns"][] = "CHNDOT";
+$proto159["m_columns"][] = "RDNDOT";
+$proto159["m_columns"][] = "SchedType";
+$proto159["m_columns"][] = "RegNDOTHrs";
+$proto159["m_columns"][] = "RHNDOTHrs";
+$proto159["m_columns"][] = "SHNDOTHrs";
+$proto159["m_columns"][] = "CHNDOTHrs";
+$proto159["m_columns"][] = "RDNDOTHrs";
+$proto159["m_columns"][] = "DH";
+$proto159["m_columns"][] = "DHRD";
+$proto159["m_columns"][] = "DHOT";
+$proto159["m_columns"][] = "DHRDOT";
+$proto159["m_columns"][] = "SHRDND";
+$proto159["m_columns"][] = "RHRDND";
+$proto159["m_columns"][] = "SHRDNDOT";
+$proto159["m_columns"][] = "RHRDNDOT";
+$proto159["m_columns"][] = "DHND";
+$proto159["m_columns"][] = "DHRDND";
+$proto159["m_columns"][] = "DHNDOT";
+$proto159["m_columns"][] = "DHRDNDOT";
+$obj = new SQLTable($proto159);
+
+$proto158["m_table"] = $obj;
+$proto158["m_sql"] = "dt5";
+$proto158["m_alias"] = "";
+$proto158["m_srcTableName"] = "dt5";
+$proto160=array();
+$proto160["m_sql"] = "";
+$proto160["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto112["m_column"]=$obj;
-$proto112["m_contained"] = array();
-$proto112["m_strCase"] = "";
-$proto112["m_havingmode"] = false;
-$proto112["m_inBrackets"] = false;
-$proto112["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto112);
+$proto160["m_column"]=$obj;
+$proto160["m_contained"] = array();
+$proto160["m_strCase"] = "";
+$proto160["m_havingmode"] = false;
+$proto160["m_inBrackets"] = false;
+$proto160["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto160);
 
-$proto110["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto110);
+$proto158["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto158);
 
 $proto0["m_fromlist"][]=$obj;
-												$proto114=array();
-$proto114["m_link"] = "SQLL_INNERJOIN";
-			$proto115=array();
-$proto115["m_strName"] = "demo_user";
-$proto115["m_srcTableName"] = "dt5";
-$proto115["m_columns"] = array();
-$proto115["m_columns"][] = "user_id";
-$proto115["m_columns"][] = "user_name";
-$proto115["m_columns"][] = "Photo";
-$proto115["m_columns"][] = "user_photo";
-$proto115["m_columns"][] = "SSSNo";
-$proto115["m_columns"][] = "TIN";
-$proto115["m_columns"][] = "Mobile";
-$proto115["m_columns"][] = "Address";
-$proto115["m_columns"][] = "Email";
-$proto115["m_columns"][] = "EmployeeType";
-$proto115["m_columns"][] = "BasicMonthlyPay";
-$proto115["m_columns"][] = "BasicDailyPay";
-$proto115["m_columns"][] = "EmployeeID";
-$proto115["m_columns"][] = "Division";
-$proto115["m_columns"][] = "Status";
-$proto115["m_columns"][] = "Department";
-$proto115["m_columns"][] = "AllowableSickLeave";
-$proto115["m_columns"][] = "AllowableVacationLeave";
-$proto115["m_columns"][] = "AllowableEmergencyLeave";
-$proto115["m_columns"][] = "SSSEE";
-$proto115["m_columns"][] = "SSSER";
-$proto115["m_columns"][] = "PhilHealthEE";
-$proto115["m_columns"][] = "PhilHealthER";
-$proto115["m_columns"][] = "PagIbigEE";
-$proto115["m_columns"][] = "AllowablePaternityLeave";
-$proto115["m_columns"][] = "HiredDate";
-$proto115["m_columns"][] = "Inactive";
-$proto115["m_columns"][] = "ExitDate";
-$proto115["m_columns"][] = "PagIbigER";
-$proto115["m_columns"][] = "PagIbigNo";
-$proto115["m_columns"][] = "PhilHealthNo";
-$proto115["m_columns"][] = "SSSEC";
-$proto115["m_columns"][] = "Filex";
-$proto115["m_columns"][] = "PresetTax";
-$proto115["m_columns"][] = "AgentSharePerDay";
-$proto115["m_columns"][] = "AllowancePerDay";
-$proto115["m_columns"][] = "DeMinimis";
-$proto115["m_columns"][] = "Level";
-$proto115["m_columns"][] = "DateCreated";
-$proto115["m_columns"][] = "ApprovedDate";
-$proto115["m_columns"][] = "Approved";
-$proto115["m_columns"][] = "Approvedby";
-$proto115["m_columns"][] = "Preparedby";
-$proto115["m_columns"][] = "Checkedby";
-$proto115["m_columns"][] = "CheckedDate";
-$proto115["m_columns"][] = "Checked";
-$proto115["m_columns"][] = "AdjustedMonthlyPay";
-$proto115["m_columns"][] = "AdjustedDailyPay";
-$proto115["m_columns"][] = "Superior";
-$proto115["m_columns"][] = "Position";
-$proto115["m_columns"][] = "Employer";
-$proto115["m_columns"][] = "IDNo";
-$proto115["m_columns"][] = "AccountNo";
-$proto115["m_columns"][] = "LogID";
-$proto115["m_columns"][] = "LateFixPenalty";
-$proto115["m_columns"][] = "DoNotUpdateContributions";
-$proto115["m_columns"][] = "ExcludeContributionOnPayroll";
-$proto115["m_columns"][] = "AnnualIncome";
-$proto115["m_columns"][] = "AnnualTax";
-$proto115["m_columns"][] = "MonthlyTax";
-$proto115["m_columns"][] = "Birthday";
-$proto115["m_columns"][] = "Bank";
-$proto115["m_columns"][] = "NoLateDeduction";
-$proto115["m_columns"][] = "IncludeBreakLate";
-$proto115["m_columns"][] = "GracePeriodMins";
-$proto115["m_columns"][] = "WithAdditionalBreaks";
-$obj = new SQLTable($proto115);
+												$proto162=array();
+$proto162["m_link"] = "SQLL_INNERJOIN";
+			$proto163=array();
+$proto163["m_strName"] = "demo_user";
+$proto163["m_srcTableName"] = "dt5";
+$proto163["m_columns"] = array();
+$proto163["m_columns"][] = "user_id";
+$proto163["m_columns"][] = "user_name";
+$proto163["m_columns"][] = "Photo";
+$proto163["m_columns"][] = "user_photo";
+$proto163["m_columns"][] = "SSSNo";
+$proto163["m_columns"][] = "TIN";
+$proto163["m_columns"][] = "Mobile";
+$proto163["m_columns"][] = "Address";
+$proto163["m_columns"][] = "Email";
+$proto163["m_columns"][] = "EmployeeType";
+$proto163["m_columns"][] = "BasicMonthlyPay";
+$proto163["m_columns"][] = "BasicDailyPay";
+$proto163["m_columns"][] = "EmployeeID";
+$proto163["m_columns"][] = "Division";
+$proto163["m_columns"][] = "Status";
+$proto163["m_columns"][] = "Department";
+$proto163["m_columns"][] = "AllowableSickLeave";
+$proto163["m_columns"][] = "AllowableVacationLeave";
+$proto163["m_columns"][] = "AllowableEmergencyLeave";
+$proto163["m_columns"][] = "SSSEE";
+$proto163["m_columns"][] = "SSSER";
+$proto163["m_columns"][] = "PhilHealthEE";
+$proto163["m_columns"][] = "PhilHealthER";
+$proto163["m_columns"][] = "PagIbigEE";
+$proto163["m_columns"][] = "AllowablePaternityLeave";
+$proto163["m_columns"][] = "HiredDate";
+$proto163["m_columns"][] = "Inactive";
+$proto163["m_columns"][] = "ExitDate";
+$proto163["m_columns"][] = "PagIbigER";
+$proto163["m_columns"][] = "PagIbigNo";
+$proto163["m_columns"][] = "PhilHealthNo";
+$proto163["m_columns"][] = "SSSEC";
+$proto163["m_columns"][] = "Filex";
+$proto163["m_columns"][] = "PresetTax";
+$proto163["m_columns"][] = "AgentSharePerDay";
+$proto163["m_columns"][] = "AllowancePerDay";
+$proto163["m_columns"][] = "DeMinimis";
+$proto163["m_columns"][] = "Level";
+$proto163["m_columns"][] = "DateCreated";
+$proto163["m_columns"][] = "ApprovedDate";
+$proto163["m_columns"][] = "Approved";
+$proto163["m_columns"][] = "Approvedby";
+$proto163["m_columns"][] = "Preparedby";
+$proto163["m_columns"][] = "Checkedby";
+$proto163["m_columns"][] = "CheckedDate";
+$proto163["m_columns"][] = "Checked";
+$proto163["m_columns"][] = "AdjustedMonthlyPay";
+$proto163["m_columns"][] = "AdjustedDailyPay";
+$proto163["m_columns"][] = "Superior";
+$proto163["m_columns"][] = "Position";
+$proto163["m_columns"][] = "Employer";
+$proto163["m_columns"][] = "IDNo";
+$proto163["m_columns"][] = "AccountNo";
+$proto163["m_columns"][] = "LogID";
+$proto163["m_columns"][] = "LateFixPenalty";
+$proto163["m_columns"][] = "DoNotUpdateContributions";
+$proto163["m_columns"][] = "ExcludeContributionOnPayroll";
+$proto163["m_columns"][] = "Birthday";
+$proto163["m_columns"][] = "Bank";
+$proto163["m_columns"][] = "NoLateDeduction";
+$proto163["m_columns"][] = "IncludeBreakLate";
+$proto163["m_columns"][] = "GracePeriodMins";
+$proto163["m_columns"][] = "WithAdditionalBreaks";
+$proto163["m_columns"][] = "TaxPeriods";
+$proto163["m_columns"][] = "PresetMoNonTax";
+$proto163["m_columns"][] = "PreCalMoTaxable";
+$proto163["m_columns"][] = "CalMonthly";
+$proto163["m_columns"][] = "TaxPerPeriod";
+$proto163["m_columns"][] = "Superior2";
+$obj = new SQLTable($proto163);
 
-$proto114["m_table"] = $obj;
-$proto114["m_sql"] = "INNER JOIN demo_user ON dt5.EmployeeID = demo_user.EmployeeID";
-$proto114["m_alias"] = "";
-$proto114["m_srcTableName"] = "dt5";
-$proto116=array();
-$proto116["m_sql"] = "dt5.EmployeeID = demo_user.EmployeeID";
-$proto116["m_uniontype"] = "SQLL_UNKNOWN";
+$proto162["m_table"] = $obj;
+$proto162["m_sql"] = "INNER JOIN demo_user ON dt5.EmployeeID = demo_user.EmployeeID";
+$proto162["m_alias"] = "";
+$proto162["m_srcTableName"] = "dt5";
+$proto164=array();
+$proto164["m_sql"] = "dt5.EmployeeID = demo_user.EmployeeID";
+$proto164["m_uniontype"] = "SQLL_UNKNOWN";
 						$obj = new SQLField(array(
 	"m_strName" => "EmployeeID",
 	"m_strTable" => "dt5",
 	"m_srcTableName" => "dt5"
 ));
 
-$proto116["m_column"]=$obj;
-$proto116["m_contained"] = array();
-$proto116["m_strCase"] = "= demo_user.EmployeeID";
-$proto116["m_havingmode"] = false;
-$proto116["m_inBrackets"] = false;
-$proto116["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto116);
+$proto164["m_column"]=$obj;
+$proto164["m_contained"] = array();
+$proto164["m_strCase"] = "= demo_user.EmployeeID";
+$proto164["m_havingmode"] = false;
+$proto164["m_inBrackets"] = false;
+$proto164["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto164);
 
-$proto114["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto114);
+$proto162["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto162);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
 $proto0["m_orderby"] = array();
-												$proto118=array();
+												$proto166=array();
 						$obj = new SQLField(array(
 	"m_strName" => "UserName",
 	"m_strTable" => "dt5",
 	"m_srcTableName" => "dt5"
 ));
 
-$proto118["m_column"]=$obj;
-$proto118["m_bAsc"] = 1;
-$proto118["m_nColumn"] = 0;
-$obj = new SQLOrderByItem($proto118);
+$proto166["m_column"]=$obj;
+$proto166["m_bAsc"] = 1;
+$proto166["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto166);
 
 $proto0["m_orderby"][]=$obj;					
 $proto0["m_srcTableName"]="dt5";		
@@ -8877,7 +11999,7 @@ $queryData_dt5 = createSqlQuery_dt5();
 	
 		;
 
-																																																				
+																																																																												
 
 $tdatadt5[".sqlquery"] = $queryData_dt5;
 

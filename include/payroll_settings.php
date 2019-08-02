@@ -56,7 +56,7 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelspayroll["English"]["MoAdjustment"] = "Mo Adjustment";
 	$fieldToolTipspayroll["English"]["MoAdjustment"] = "";
 	$placeHolderspayroll["English"]["MoAdjustment"] = "";
-	$fieldLabelspayroll["English"]["PresetTax"] = "Preset Tax";
+	$fieldLabelspayroll["English"]["PresetTax"] = "Tax";
 	$fieldToolTipspayroll["English"]["PresetTax"] = "";
 	$placeHolderspayroll["English"]["PresetTax"] = "";
 	$fieldLabelspayroll["English"]["13thMonth"] = "13th Month";
@@ -122,9 +122,9 @@ $tdatapayroll[".listAjax"] = false;
 	$tdatapayroll[".locking"] = false;
 
 $tdatapayroll[".edit"] = true;
-$tdatapayroll[".afterEditAction"] = 1;
+$tdatapayroll[".afterEditAction"] = 0;
 $tdatapayroll[".closePopupAfterEdit"] = 1;
-$tdatapayroll[".afterEditActionDetTable"] = "";
+$tdatapayroll[".afterEditActionDetTable"] = "payrolldiv";
 
 $tdatapayroll[".add"] = true;
 $tdatapayroll[".afterAddAction"] = 1;
@@ -178,8 +178,8 @@ $tdatapayroll[".rowHighlite"] = true;
 
 
 																																			
-																																																																																																																																																																																					
-																																																																				
+																																																																																																																																																																									
+																																																																										
 
 $tdatapayroll[".ajaxCodeSnippetAdded"] = false;
 
@@ -234,7 +234,14 @@ $tdatapayroll[".googleLikeFields"][] = "Employer";
 $tdatapayroll[".googleLikeFields"][] = "Division";
 $tdatapayroll[".googleLikeFields"][] = "WageType";
 
-
+$tdatapayroll[".panelSearchFields"] = array();
+$tdatapayroll[".searchPanelOptions"] = array();
+$tdatapayroll[".panelSearchFields"][] = "Employer";
+	$tdatapayroll[".panelSearchFields"][] = "Division";
+	$tdatapayroll[".panelSearchFields"][] = "WageType";
+	$tdatapayroll[".panelSearchFields"][] = "PayFromDate";
+	$tdatapayroll[".panelSearchFields"][] = "PayToDate";
+	
 $tdatapayroll[".advSearchFields"] = array();
 $tdatapayroll[".advSearchFields"][] = "PSID";
 $tdatapayroll[".advSearchFields"][] = "Locked";
@@ -659,7 +666,8 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 
 
 // the field's search options settings
-	
+		$fdata["defaultSearchOption"] = "Contains";
+
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
 // the end of search options settings
@@ -759,8 +767,8 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -790,7 +798,8 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 
 
 // the field's search options settings
-	
+		$fdata["defaultSearchOption"] = "Equals";
+
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
 // the end of search options settings
@@ -1150,8 +1159,8 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -1181,7 +1190,8 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 
 
 // the field's search options settings
-	
+		$fdata["defaultSearchOption"] = "Equals";
+
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
 // the end of search options settings
@@ -1435,7 +1445,7 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 
 
 // the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
+		$fdata["defaultSearchOption"] = "Equals";
 
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
@@ -1689,7 +1699,7 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 
 
 // the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
+		$fdata["defaultSearchOption"] = "Equals";
 
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
@@ -2070,7 +2080,7 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 
 
 // the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
+		$fdata["defaultSearchOption"] = "Equals";
 
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
@@ -2197,7 +2207,7 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 
 
 // the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
+		$fdata["defaultSearchOption"] = "Equals";
 
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);

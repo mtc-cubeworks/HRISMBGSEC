@@ -180,8 +180,7 @@ CustomQuery($sql);
 }
 
 
-header("Location: schedrange_edit.php?editid1=".$values["ScRID"]);
-exit();
+
 ;		
 } // function AfterAdd
 

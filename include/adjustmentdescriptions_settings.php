@@ -138,7 +138,7 @@ $tdataadjustmentdescriptions[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																				
+																																																																																																																																																																																																																																																																														
 
 $tdataadjustmentdescriptions[".ajaxCodeSnippetAdded"] = false;
 

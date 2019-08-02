@@ -134,7 +134,7 @@ $tdatadaysweek[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																				
+																																																																																																																																																																																																																																																																														
 
 $tdatadaysweek[".ajaxCodeSnippetAdded"] = false;
 

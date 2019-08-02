@@ -992,13 +992,145 @@ function GetDefaultValue($field, $ptype, $table="")
 	{
 		return now();
 	}
-				if($table=="overtimeapp" && $field=="DateCreated")
-	{
-		return now();
-	}
 				if($table=="indovertime1" && $field=="DateCreated")
 	{
 		return now();
+	}
+				if($table=="demo_logemp" && $field=="data")
+	{
+		return "Manual Entry";
+	}
+				if($table=="demo_logemp" && $field=="MLogID")
+	{
+		return  $_SESSION["loginID"];
+	}
+				if($table=="demo_logemp" && $field=="MLogDate")
+	{
+		return now();
+	}
+				if($table=="leavesapp2" && $field=="DateCreated")
+	{
+		return now();
+	}
+				if($table=="filelog" && $field=="data")
+	{
+		return "Manual Entry";
+	}
+				if($table=="filelog" && $field=="MLogID")
+	{
+		return  $_SESSION["loginID"];
+	}
+				if($table=="filelog" && $field=="MLogDate")
+	{
+		return now();
+	}
+				if($table=="filelog1" && $field=="data")
+	{
+		return "Manual Entry";
+	}
+				if($table=="filelog1" && $field=="MLogID")
+	{
+		return  $_SESSION["loginID"];
+	}
+				if($table=="filelog1" && $field=="MLogDate")
+	{
+		return now();
+	}
+				if($table=="filelog2" && $field=="data")
+	{
+		return "Manual Entry";
+	}
+				if($table=="filelog2" && $field=="MLogID")
+	{
+		return  $_SESSION["loginID"];
+	}
+				if($table=="filelog2" && $field=="MLogDate")
+	{
+		return now();
+	}
+				if($table=="filelog3" && $field=="data")
+	{
+		return "Manual Entry";
+	}
+				if($table=="filelog3" && $field=="MLogID")
+	{
+		return  $_SESSION["loginID"];
+	}
+				if($table=="filelog3" && $field=="MLogDate")
+	{
+		return now();
+	}
+				if($table=="leaveremarks" && $field=="LRDate")
+	{
+		return now();
+	}
+				if($table=="leaveremarks" && $field=="LogID")
+	{
+		return $_SESSION["loginID"];
+	}
+				if($table=="demo_user_open" && $field=="AllowableSickLeave")
+	{
+		return 0;
+	}
+				if($table=="demo_user_open" && $field=="AllowableVacationLeave")
+	{
+		return 0;
+	}
+				if($table=="demo_user_open" && $field=="AllowableEmergencyLeave")
+	{
+		return 0;
+	}
+				if($table=="demo_user_open" && $field=="AllowablePaternityLeave")
+	{
+		return 0;
+	}
+				if($table=="demo_user_open" && $field=="DateCreated")
+	{
+		return now();
+	}
+				if($table=="demo_user_open" && $field=="BasicMonthlyPay")
+	{
+		return 0;
+	}
+				if($table=="demo_user_open" && $field=="BasicDailyPay")
+	{
+		return 0;
+	}
+				if($table=="overtimefileapp" && $field=="DateCreated")
+	{
+		return now();
+	}
+				if($table=="overtimefileapp2" && $field=="DateCreated")
+	{
+		return now();
+	}
+				if($table=="demo_useremp" && $field=="AllowableSickLeave")
+	{
+		return 0;
+	}
+				if($table=="demo_useremp" && $field=="AllowableVacationLeave")
+	{
+		return 0;
+	}
+				if($table=="demo_useremp" && $field=="AllowableEmergencyLeave")
+	{
+		return 0;
+	}
+				if($table=="demo_useremp" && $field=="AllowablePaternityLeave")
+	{
+		return 0;
+	}
+				if($table=="demo_useremp" && $field=="DateCreated")
+	{
+		return now();
+	}
+				if($table=="demo_useremp" && $field=="BasicMonthlyPay")
+	{
+		return 0;
+	}
+				if($table=="demo_useremp" && $field=="BasicDailyPay")
+	{
+		return 0;
 	}
 	return "";
 }
@@ -1016,6 +1148,46 @@ function GetAutoUpdateValue($field, $ptype, $table="")
 		return  $_SESSION["loginID"];
 	}
 				if($table=="demo_log" && $field=="MLogDate")
+	{
+		return now();
+	}
+				if($table=="demo_logemp" && $field=="MLogID")
+	{
+		return  $_SESSION["loginID"];
+	}
+				if($table=="demo_logemp" && $field=="MLogDate")
+	{
+		return now();
+	}
+				if($table=="filelog" && $field=="MLogID")
+	{
+		return  $_SESSION["loginID"];
+	}
+				if($table=="filelog" && $field=="MLogDate")
+	{
+		return now();
+	}
+				if($table=="filelog1" && $field=="MLogID")
+	{
+		return  $_SESSION["loginID"];
+	}
+				if($table=="filelog1" && $field=="MLogDate")
+	{
+		return now();
+	}
+				if($table=="filelog2" && $field=="MLogID")
+	{
+		return  $_SESSION["loginID"];
+	}
+				if($table=="filelog2" && $field=="MLogDate")
+	{
+		return now();
+	}
+				if($table=="filelog3" && $field=="MLogID")
+	{
+		return  $_SESSION["loginID"];
+	}
+				if($table=="filelog3" && $field=="MLogDate")
 	{
 		return now();
 	}

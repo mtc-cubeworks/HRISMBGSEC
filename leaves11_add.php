@@ -255,7 +255,8 @@ $page_layouts["leaves11_list"] = $layout;
 // end add master layouts 
 
 
-
+	
+	
 $pageMode = AddPage::readAddModeFromRequest();
 
 $xt = new Xtempl();

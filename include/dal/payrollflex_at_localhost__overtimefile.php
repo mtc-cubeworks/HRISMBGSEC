@@ -14,6 +14,11 @@ $dalTableovertimefile["EmployeeID"] = array("type"=>3,"varname"=>"EmployeeID", "
 $dalTableovertimefile["Reason"] = array("type"=>200,"varname"=>"Reason", "name" => "Reason");
 $dalTableovertimefile["Superior"] = array("type"=>3,"varname"=>"Superior", "name" => "Superior");
 $dalTableovertimefile["Locked"] = array("type"=>16,"varname"=>"Locked", "name" => "Locked");
+$dalTableovertimefile["Superior2"] = array("type"=>3,"varname"=>"Superior2", "name" => "Superior2");
+$dalTableovertimefile["1stApproval"] = array("type"=>16,"varname"=>"fld1stApproval", "name" => "1stApproval");
+$dalTableovertimefile["2ndApproval"] = array("type"=>16,"varname"=>"fld2ndApproval", "name" => "2ndApproval");
+$dalTableovertimefile["1stDisapproval"] = array("type"=>16,"varname"=>"fld1stDisapproval", "name" => "1stDisapproval");
+$dalTableovertimefile["2ndDisapproval"] = array("type"=>16,"varname"=>"fld2ndDisapproval", "name" => "2ndDisapproval");
 	$dalTableovertimefile["ItiD"]["key"]=true;
 
 $dal_info["payrollflex_at_localhost__overtimefile"] = &$dalTableovertimefile;

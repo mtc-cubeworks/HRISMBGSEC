@@ -389,6 +389,21 @@ if($rowcount)
 			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("UserName")))
 				$class = ' rnr-field-number';
 			$row["UserName_class"] = $class;
+	//	ANDOTMins - Number
+			$viewContainer->recId = $recordsCounter;
+		    $value = $viewContainer->showDBValue("ANDOTMins", $data, $keylink);
+			$row["ANDOTMins_value"] = $value;
+			$format = $pSet->getViewFormat("ANDOTMins");
+			$class = "rnr-field-text";
+			if($format==FORMAT_FILE) 
+				$class = ' rnr-field-file'; 
+			if($format==FORMAT_AUDIO)
+				$class = ' rnr-field-audio';
+			if($format==FORMAT_CHECKBOX)
+				$class = ' rnr-field-checkbox';
+			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("ANDOTMins")))
+				$class = ' rnr-field-number';
+			$row["ANDOTMins_class"] = $class;
 		$rowinfo[] = $row;
 		if ($b) {
 			$rowinfo2[] = $row;

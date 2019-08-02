@@ -16,6 +16,10 @@ class eventclass_leavesapp  extends eventsBase
 
 		$this->events["AfterDelete"]=true;
 
+		$this->events["IsRecordEditable"]=true;
+
+		$this->events["BeforeMoveNextList"]=true;
+
 
 //	onscreen events
 
@@ -374,6 +378,23 @@ $at8 = $xt->fetchVar("Superior_editcontrol");
 $at8 = str_replace(">"," DISABLED=DISABLED>",$at8);
 $xt->assign("Superior_editcontrol",$at8);
 
+$at9 = $xt->fetchVar("Superior2_editcontrol");
+$at9 = str_replace(">"," DISABLED=DISABLED>",$at9);
+$xt->assign("Superior2_editcontrol",$at9);
+
+
+$at10 = $xt->fetchVar("2ndApproval_editcontrol");
+$at10 = str_replace(">"," DISABLED=DISABLED>",$at10);
+$xt->assign("2ndApproval_editcontrol",$at10);
+
+$at11 = $xt->fetchVar("Approved_editcontrol");
+$at11 = str_replace(">"," DISABLED=DISABLED>",$at11);
+$xt->assign("Approved_editcontrol",$at11);
+
+
+
+
+
 //$at9 = $xt->fetchVar("FirstHalf_editcontrol");
 //$at9 = str_replace(">"," DISABLED=DISABLED>",$at9);
 //$xt->assign("FirstHalf_editcontrol",$at9);
@@ -431,18 +452,41 @@ function AfterEdit(&$values, $where, &$oldvalues, &$keys, $inline, &$pageObject)
 
 		$lvid= $values["LvID"];
 
-$ab=$values["Approved"];
+$sup1=$values["Superior"];
+$sup2=$values["Superior2"];
+$ap1=$values["1stApproval"];
+$ap2=$values["2ndApproval"];
+
+
+
+$df=$values["FromDate"];
+$dt=$values["ToDate"];
+$nd=$values["Days"];
+
+$ts1 = strtotime($df);
+$ts2 = strtotime($dt);
+
+$ndays = 1+(floor(($ts2 - $ts1)/(3600*24)));
+
+
+$tdays=$ndays*$nd;
+
+$squ = "Update leaves set TotalDays='$tdays' where LvID='$lvid'";
+ CustomQuery($squ);
+
+
+
+//$ab=$values["Approved"];
 
 $usn=Security::getUserName();
-
-
 
 $logx=DBLookup("select LogID from logins where UserName='". $usn. "'");
 
 
-if ($ab==1) {
+if ($sup1!=NULL and $ap1==1 and $sup2==NULL) {
+//if ($ab==1) {
 
-$sqa = "UPDATE leaves SET Approvedby='$logx' WHERE LvID='$lvid'";
+$sqa = "UPDATE leaves SET Approvedby='$logx', Approved=1, ApprovedDate=now(), ApprovedTime=now() WHERE LvID='$lvid'";
 CustomQuery($sqa);
 
 
@@ -457,7 +501,7 @@ $ltype= $values["LeaveType"];
 $days= $values["Days"];
 $fh= $values["FirstHalf"];
 $sh= $values["SecondHalf"];
-
+$rea= $values["Reason"];
 
 
 if($ltype==1) { //Vacation Leave
@@ -500,7 +544,7 @@ if($pk<0.001) {$pkpx=1;};
 
 
 
-$sqlrx = "INSERT indleave VALUES (NULL, '$empid', DATE_ADD('$fd', INTERVAL '$i' DAY), '$days', '$pkpx', '$ltype', '$lvid', '$fh', '$sh')";
+$sqlrx = "INSERT indleave VALUES (NULL, '$empid', DATE_ADD('$fd', INTERVAL '$i' DAY), '$days', '$pkpx', '$ltype', '$lvid', '$fh', '$sh', '$rea')";
 CustomQuery($sqlrx);
 $i++;
 $pk=$pk-$days;
@@ -515,9 +559,39 @@ $sqlv = "Update leaves set Locked=1 where LvID='$lvid'";
  CustomQuery($sqlv);
 
 
+
+$empy=$values["EmployeeID"];
+$logt=$values["FromDate"];
+$logt2=$values["ToDate"];
+$rea=$values["Reason"];
+$ltp=$values["LeaveType"];
+
+$su1=$values["Superior"];
+
+
+$ltyp1=DBLookup("SELECT LeaveType FROM leavetypes WHERE LTID='$ltp'");
+
+$empr=DBLookup("SELECT Employer FROM demo_user WHERE EmployeeID='$empy'");
+
+$empname=DBLookup("SELECT user_name FROM demo_user WHERE EmployeeID='$empy'");
+
+$mgrname=DBLookup("SELECT user_name FROM demo_user WHERE EmployeeID='$su1'");
+
+$email=DBLookup("SELECT Email FROM demo_user WHERE EmployeeID='$empy'");
+
+$bcc=DBLookup("SELECT AdminEmail FROM employername WHERE EnID='$empr'");
+
+
+
+$message="Your ". $ltyp1. " has been approved by ".$mgrname."\nName:".$empname."\nType: ".$ltyp1."\nReason: ".$rea."\nDate: ".$logt." - ".$logt2."\nNo. Of Days: ". $tdays."\n\nBest regards, \nPayrollFlex Admin";
+$subject=$ltyp1. " Approved! - PayrollFlex";
+runner_mail(array('to'  => $email, 'cc' => $cc,
+'bcc' => $bcc, 'subject' => $subject, 'body' => $message));
+
+
 };
 
-if ($ab!=1) {
+if ($sup1!=NULL and $ap1!=1 and $sup2==NULL) {
 
 $sqldel = "DELETE FROM indleave WHERE LvID='$lvid'";
 CustomQuery($sqldel);
@@ -531,8 +605,43 @@ $sqlz = "Update leaves set Posted=NULL where LvID='$lvid'";
 $sqlx = "Update leaves set Locked=NULL where LvID='$lvid'";
  CustomQuery($sqlx);
 
+$sqy = "UPDATE leaves SET Approvedby=NULL, Approved=NULL, ApprovedDate=NULL, ApprovedTime=NULL WHERE LvID='$lvid'";
+CustomQuery($sqy);
+
 };
 
+
+if ($sup1!=NULL and $ap1==2 and $sup2==NULL) { 
+
+$empy=$values["EmployeeID"];
+$logt=$values["FromDate"];
+$logt2=$values["ToDate"];
+$rea=$values["Reason"];
+$ltp=$values["LeaveType"];
+
+$su1=$values["Superior"];
+
+
+$ltyp1=DBLookup("SELECT LeaveType FROM leavetypes WHERE LTID='$ltp'");
+
+$empr=DBLookup("SELECT Employer FROM demo_user WHERE EmployeeID='$empy'");
+
+$empname=DBLookup("SELECT user_name FROM demo_user WHERE EmployeeID='$empy'");
+
+$mgrname=DBLookup("SELECT user_name FROM demo_user WHERE EmployeeID='$su1'");
+
+$email=DBLookup("SELECT Email FROM demo_user WHERE EmployeeID='$empy'");
+
+$bcc=DBLookup("SELECT AdminEmail FROM employername WHERE EnID='$empr'");
+
+
+
+$message="Your ". $ltyp1. " has been disapproved by ".$mgrname."\nName:".$empname."\nType: ".$ltyp1."\nReason: ".$rea."\nDate: ".$logt." - ".$logt2."\nNo. Of Days: ". $tdays."\n\nBest regards, \nPayrollFlex Admin";
+$subject=$ltyp1. " Disapproved! - PayrollFlex";
+runner_mail(array('to'  => $email, 'cc' => $cc,
+'bcc' => $bcc, 'subject' => $subject, 'body' => $message));
+
+};
 
 ;		
 } // function AfterEdit
@@ -616,6 +725,164 @@ CustomQuery($sqldel);
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+				// Is Record Editable
+function IsRecordEditable($values, $isEditable)
+{
+
+		
+
+$lkd=$values["Locked"];
+
+if($lkd==1) {
+
+return $isEditable=false;
+
+}
+
+else return $isEditable=true;
+;		
+} // function IsRecordEditable
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+				// List page: After record processed
+function BeforeMoveNextList(&$data, &$row, &$record, &$pageObject)
+{
+
+		
+
+if ($data["1stApproval"]==1)  
+
+  $record["1stApproval_css"].='color:#219f17; font-weight:Bold';
+
+if ($data["1stApproval"]==2)  
+
+ { $record["1stApproval_css"].='color:#da0909; font-weight:Bold'; };
+
+if ($data["2ndApproval"]==1)  
+
+  $record["2ndApproval_css"].='color:#219f17; font-weight:Bold';
+
+if ($data["2ndApproval"]==2)  
+
+ { $record["2ndApproval_css"].='color:#da0909; font-weight:Bold'; };
+;		
+} // function BeforeMoveNextList
+
 		
 		
 		

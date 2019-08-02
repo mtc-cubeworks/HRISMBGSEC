@@ -29,7 +29,7 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsleaves1["English"]["LeaveType"] = "Leave Type";
 	$fieldToolTipsleaves1["English"]["LeaveType"] = "";
 	$placeHoldersleaves1["English"]["LeaveType"] = "";
-	$fieldLabelsleaves1["English"]["Days"] = "Days";
+	$fieldLabelsleaves1["English"]["Days"] = "Half/Whole Day";
 	$fieldToolTipsleaves1["English"]["Days"] = "";
 	$placeHoldersleaves1["English"]["Days"] = "";
 	$fieldLabelsleaves1["English"]["EmployeeID"] = "Employee";
@@ -68,12 +68,24 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsleaves1["English"]["Locked"] = "Locked";
 	$fieldToolTipsleaves1["English"]["Locked"] = "";
 	$placeHoldersleaves1["English"]["Locked"] = "";
-	$fieldLabelsleaves1["English"]["Superior"] = "Superior";
+	$fieldLabelsleaves1["English"]["Superior"] = "Supervisor";
 	$fieldToolTipsleaves1["English"]["Superior"] = "";
 	$placeHoldersleaves1["English"]["Superior"] = "";
 	$fieldLabelsleaves1["English"]["Reason"] = "Reason";
 	$fieldToolTipsleaves1["English"]["Reason"] = "";
 	$placeHoldersleaves1["English"]["Reason"] = "";
+	$fieldLabelsleaves1["English"]["Superior2"] = "Manager";
+	$fieldToolTipsleaves1["English"]["Superior2"] = "";
+	$placeHoldersleaves1["English"]["Superior2"] = "";
+	$fieldLabelsleaves1["English"]["1stApproval"] = "Supevisor Approval";
+	$fieldToolTipsleaves1["English"]["1stApproval"] = "";
+	$placeHoldersleaves1["English"]["1stApproval"] = "";
+	$fieldLabelsleaves1["English"]["2ndApproval"] = "Manager Approval";
+	$fieldToolTipsleaves1["English"]["2ndApproval"] = "";
+	$placeHoldersleaves1["English"]["2ndApproval"] = "";
+	$fieldLabelsleaves1["English"]["TotalDays"] = "Total Days";
+	$fieldToolTipsleaves1["English"]["TotalDays"] = "";
+	$placeHoldersleaves1["English"]["TotalDays"] = "";
 	if (count($fieldToolTipsleaves1["English"]))
 		$tdataleaves1[".isUseToolTips"] = true;
 }
@@ -125,9 +137,9 @@ $tdataleaves1[".listAjax"] = false;
 	$tdataleaves1[".locking"] = false;
 
 $tdataleaves1[".edit"] = true;
-$tdataleaves1[".afterEditAction"] = 1;
+$tdataleaves1[".afterEditAction"] = 0;
 $tdataleaves1[".closePopupAfterEdit"] = 1;
-$tdataleaves1[".afterEditActionDetTable"] = "";
+$tdataleaves1[".afterEditActionDetTable"] = "Detail tables not found!";
 
 $tdataleaves1[".add"] = true;
 $tdataleaves1[".afterAddAction"] = 1;
@@ -180,7 +192,7 @@ $tdataleaves1[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																				
+																																																																																																																																																																																																																																																																														
 
 $tdataleaves1[".ajaxCodeSnippetAdded"] = false;
 
@@ -209,13 +221,17 @@ $tdataleaves1[".allSearchFields"][] = "LvID";
 	$tdataleaves1[".allSearchFields"][] = "FirstHalf";
 	$tdataleaves1[".allSearchFields"][] = "SecondHalf";
 	$tdataleaves1[".allSearchFields"][] = "Days";
+	$tdataleaves1[".allSearchFields"][] = "TotalDays";
+	$tdataleaves1[".allSearchFields"][] = "Superior";
+	$tdataleaves1[".allSearchFields"][] = "1stApproval";
+	$tdataleaves1[".allSearchFields"][] = "Superior2";
+	$tdataleaves1[".allSearchFields"][] = "2ndApproval";
 	$tdataleaves1[".allSearchFields"][] = "Approved";
 	$tdataleaves1[".allSearchFields"][] = "ApprovedDate";
 	$tdataleaves1[".allSearchFields"][] = "ApprovedTime";
 	$tdataleaves1[".allSearchFields"][] = "Approvedby";
 	$tdataleaves1[".allSearchFields"][] = "Posted";
 	$tdataleaves1[".allSearchFields"][] = "Locked";
-	$tdataleaves1[".allSearchFields"][] = "Superior";
 	
 
 $tdataleaves1[".googleLikeFields"] = array();
@@ -236,6 +252,10 @@ $tdataleaves1[".googleLikeFields"][] = "SecondHalf";
 $tdataleaves1[".googleLikeFields"][] = "Locked";
 $tdataleaves1[".googleLikeFields"][] = "Superior";
 $tdataleaves1[".googleLikeFields"][] = "Reason";
+$tdataleaves1[".googleLikeFields"][] = "Superior2";
+$tdataleaves1[".googleLikeFields"][] = "1stApproval";
+$tdataleaves1[".googleLikeFields"][] = "2ndApproval";
+$tdataleaves1[".googleLikeFields"][] = "TotalDays";
 
 
 $tdataleaves1[".advSearchFields"] = array();
@@ -249,13 +269,17 @@ $tdataleaves1[".advSearchFields"][] = "Reason";
 $tdataleaves1[".advSearchFields"][] = "FirstHalf";
 $tdataleaves1[".advSearchFields"][] = "SecondHalf";
 $tdataleaves1[".advSearchFields"][] = "Days";
+$tdataleaves1[".advSearchFields"][] = "TotalDays";
+$tdataleaves1[".advSearchFields"][] = "Superior";
+$tdataleaves1[".advSearchFields"][] = "1stApproval";
+$tdataleaves1[".advSearchFields"][] = "Superior2";
+$tdataleaves1[".advSearchFields"][] = "2ndApproval";
 $tdataleaves1[".advSearchFields"][] = "Approved";
 $tdataleaves1[".advSearchFields"][] = "ApprovedDate";
 $tdataleaves1[".advSearchFields"][] = "ApprovedTime";
 $tdataleaves1[".advSearchFields"][] = "Approvedby";
 $tdataleaves1[".advSearchFields"][] = "Posted";
 $tdataleaves1[".advSearchFields"][] = "Locked";
-$tdataleaves1[".advSearchFields"][] = "Superior";
 
 $tdataleaves1[".tableType"] = "list";
 
@@ -300,7 +324,7 @@ $tdataleaves1[".orderindexes"] = array();
 	$tdataleaves1[".orderindexes"][] = array(1, (0 ? "ASC" : "DESC"), "LvID");
 
 
-$tdataleaves1[".sqlHead"] = "SELECT LvID,  FromDate,  LeaveType,  Days,  EmployeeID,  ToDate,  Approved,  ApprovedDate,  Approvedby,  Posted,  DateCreated,  ApprovedTime,  FirstHalf,  SecondHalf,  Locked,  Superior,  Reason";
+$tdataleaves1[".sqlHead"] = "SELECT LvID,  FromDate,  LeaveType,  Days,  EmployeeID,  ToDate,  Approved,  ApprovedDate,  Approvedby,  Posted,  DateCreated,  ApprovedTime,  FirstHalf,  SecondHalf,  Locked,  Superior,  Reason,  Superior2,  `1stApproval`,  `2ndApproval`,  TotalDays";
 $tdataleaves1[".sqlFrom"] = "FROM leaves";
 $tdataleaves1[".sqlWhereExpr"] = "";
 $tdataleaves1[".sqlTail"] = "";
@@ -355,13 +379,17 @@ $tdataleaves1[".listFields"][] = "Reason";
 $tdataleaves1[".listFields"][] = "FirstHalf";
 $tdataleaves1[".listFields"][] = "SecondHalf";
 $tdataleaves1[".listFields"][] = "Days";
+$tdataleaves1[".listFields"][] = "TotalDays";
+$tdataleaves1[".listFields"][] = "Superior";
+$tdataleaves1[".listFields"][] = "1stApproval";
+$tdataleaves1[".listFields"][] = "Superior2";
+$tdataleaves1[".listFields"][] = "2ndApproval";
 $tdataleaves1[".listFields"][] = "Approved";
 $tdataleaves1[".listFields"][] = "ApprovedDate";
 $tdataleaves1[".listFields"][] = "ApprovedTime";
 $tdataleaves1[".listFields"][] = "Approvedby";
 $tdataleaves1[".listFields"][] = "Posted";
 $tdataleaves1[".listFields"][] = "Locked";
-$tdataleaves1[".listFields"][] = "Superior";
 
 $tdataleaves1[".hideMobileList"] = array();
 
@@ -377,13 +405,17 @@ $tdataleaves1[".viewFields"][] = "Reason";
 $tdataleaves1[".viewFields"][] = "FirstHalf";
 $tdataleaves1[".viewFields"][] = "SecondHalf";
 $tdataleaves1[".viewFields"][] = "Days";
+$tdataleaves1[".viewFields"][] = "TotalDays";
+$tdataleaves1[".viewFields"][] = "Superior";
+$tdataleaves1[".viewFields"][] = "1stApproval";
+$tdataleaves1[".viewFields"][] = "Superior2";
+$tdataleaves1[".viewFields"][] = "2ndApproval";
 $tdataleaves1[".viewFields"][] = "Approved";
 $tdataleaves1[".viewFields"][] = "ApprovedDate";
 $tdataleaves1[".viewFields"][] = "ApprovedTime";
 $tdataleaves1[".viewFields"][] = "Approvedby";
 $tdataleaves1[".viewFields"][] = "Posted";
 $tdataleaves1[".viewFields"][] = "Locked";
-$tdataleaves1[".viewFields"][] = "Superior";
 
 $tdataleaves1[".addFields"] = array();
 $tdataleaves1[".addFields"][] = "DateCreated";
@@ -395,13 +427,16 @@ $tdataleaves1[".addFields"][] = "Reason";
 $tdataleaves1[".addFields"][] = "FirstHalf";
 $tdataleaves1[".addFields"][] = "SecondHalf";
 $tdataleaves1[".addFields"][] = "Days";
+$tdataleaves1[".addFields"][] = "Superior";
+$tdataleaves1[".addFields"][] = "1stApproval";
+$tdataleaves1[".addFields"][] = "Superior2";
+$tdataleaves1[".addFields"][] = "2ndApproval";
 $tdataleaves1[".addFields"][] = "Approved";
 $tdataleaves1[".addFields"][] = "ApprovedDate";
 $tdataleaves1[".addFields"][] = "ApprovedTime";
 $tdataleaves1[".addFields"][] = "Approvedby";
 $tdataleaves1[".addFields"][] = "Posted";
 $tdataleaves1[".addFields"][] = "Locked";
-$tdataleaves1[".addFields"][] = "Superior";
 
 $tdataleaves1[".masterListFields"] = array();
 $tdataleaves1[".masterListFields"][] = "LvID";
@@ -414,13 +449,17 @@ $tdataleaves1[".masterListFields"][] = "Reason";
 $tdataleaves1[".masterListFields"][] = "FirstHalf";
 $tdataleaves1[".masterListFields"][] = "SecondHalf";
 $tdataleaves1[".masterListFields"][] = "Days";
+$tdataleaves1[".masterListFields"][] = "TotalDays";
+$tdataleaves1[".masterListFields"][] = "Superior";
+$tdataleaves1[".masterListFields"][] = "1stApproval";
+$tdataleaves1[".masterListFields"][] = "Superior2";
+$tdataleaves1[".masterListFields"][] = "2ndApproval";
 $tdataleaves1[".masterListFields"][] = "Approved";
 $tdataleaves1[".masterListFields"][] = "ApprovedDate";
 $tdataleaves1[".masterListFields"][] = "ApprovedTime";
 $tdataleaves1[".masterListFields"][] = "Approvedby";
 $tdataleaves1[".masterListFields"][] = "Posted";
 $tdataleaves1[".masterListFields"][] = "Locked";
-$tdataleaves1[".masterListFields"][] = "Superior";
 
 $tdataleaves1[".inlineAddFields"] = array();
 $tdataleaves1[".inlineAddFields"][] = "DateCreated";
@@ -432,13 +471,16 @@ $tdataleaves1[".inlineAddFields"][] = "Reason";
 $tdataleaves1[".inlineAddFields"][] = "FirstHalf";
 $tdataleaves1[".inlineAddFields"][] = "SecondHalf";
 $tdataleaves1[".inlineAddFields"][] = "Days";
+$tdataleaves1[".inlineAddFields"][] = "Superior";
+$tdataleaves1[".inlineAddFields"][] = "1stApproval";
+$tdataleaves1[".inlineAddFields"][] = "Superior2";
+$tdataleaves1[".inlineAddFields"][] = "2ndApproval";
 $tdataleaves1[".inlineAddFields"][] = "Approved";
 $tdataleaves1[".inlineAddFields"][] = "ApprovedDate";
 $tdataleaves1[".inlineAddFields"][] = "ApprovedTime";
 $tdataleaves1[".inlineAddFields"][] = "Approvedby";
 $tdataleaves1[".inlineAddFields"][] = "Posted";
 $tdataleaves1[".inlineAddFields"][] = "Locked";
-$tdataleaves1[".inlineAddFields"][] = "Superior";
 
 $tdataleaves1[".editFields"] = array();
 $tdataleaves1[".editFields"][] = "DateCreated";
@@ -450,13 +492,16 @@ $tdataleaves1[".editFields"][] = "Reason";
 $tdataleaves1[".editFields"][] = "FirstHalf";
 $tdataleaves1[".editFields"][] = "SecondHalf";
 $tdataleaves1[".editFields"][] = "Days";
+$tdataleaves1[".editFields"][] = "Superior";
+$tdataleaves1[".editFields"][] = "1stApproval";
+$tdataleaves1[".editFields"][] = "Superior2";
+$tdataleaves1[".editFields"][] = "2ndApproval";
 $tdataleaves1[".editFields"][] = "Approved";
 $tdataleaves1[".editFields"][] = "ApprovedDate";
 $tdataleaves1[".editFields"][] = "ApprovedTime";
 $tdataleaves1[".editFields"][] = "Approvedby";
 $tdataleaves1[".editFields"][] = "Posted";
 $tdataleaves1[".editFields"][] = "Locked";
-$tdataleaves1[".editFields"][] = "Superior";
 
 $tdataleaves1[".inlineEditFields"] = array();
 $tdataleaves1[".inlineEditFields"][] = "DateCreated";
@@ -468,13 +513,16 @@ $tdataleaves1[".inlineEditFields"][] = "Reason";
 $tdataleaves1[".inlineEditFields"][] = "FirstHalf";
 $tdataleaves1[".inlineEditFields"][] = "SecondHalf";
 $tdataleaves1[".inlineEditFields"][] = "Days";
+$tdataleaves1[".inlineEditFields"][] = "Superior";
+$tdataleaves1[".inlineEditFields"][] = "1stApproval";
+$tdataleaves1[".inlineEditFields"][] = "Superior2";
+$tdataleaves1[".inlineEditFields"][] = "2ndApproval";
 $tdataleaves1[".inlineEditFields"][] = "Approved";
 $tdataleaves1[".inlineEditFields"][] = "ApprovedDate";
 $tdataleaves1[".inlineEditFields"][] = "ApprovedTime";
 $tdataleaves1[".inlineEditFields"][] = "Approvedby";
 $tdataleaves1[".inlineEditFields"][] = "Posted";
 $tdataleaves1[".inlineEditFields"][] = "Locked";
-$tdataleaves1[".inlineEditFields"][] = "Superior";
 
 $tdataleaves1[".updateSelectedFields"] = array();
 $tdataleaves1[".updateSelectedFields"][] = "DateCreated";
@@ -486,13 +534,14 @@ $tdataleaves1[".updateSelectedFields"][] = "Reason";
 $tdataleaves1[".updateSelectedFields"][] = "FirstHalf";
 $tdataleaves1[".updateSelectedFields"][] = "SecondHalf";
 $tdataleaves1[".updateSelectedFields"][] = "Days";
+$tdataleaves1[".updateSelectedFields"][] = "Superior";
+$tdataleaves1[".updateSelectedFields"][] = "Superior2";
 $tdataleaves1[".updateSelectedFields"][] = "Approved";
 $tdataleaves1[".updateSelectedFields"][] = "ApprovedDate";
 $tdataleaves1[".updateSelectedFields"][] = "ApprovedTime";
 $tdataleaves1[".updateSelectedFields"][] = "Approvedby";
 $tdataleaves1[".updateSelectedFields"][] = "Posted";
 $tdataleaves1[".updateSelectedFields"][] = "Locked";
-$tdataleaves1[".updateSelectedFields"][] = "Superior";
 
 
 $tdataleaves1[".exportFields"] = array();
@@ -506,13 +555,17 @@ $tdataleaves1[".exportFields"][] = "Reason";
 $tdataleaves1[".exportFields"][] = "FirstHalf";
 $tdataleaves1[".exportFields"][] = "SecondHalf";
 $tdataleaves1[".exportFields"][] = "Days";
+$tdataleaves1[".exportFields"][] = "TotalDays";
+$tdataleaves1[".exportFields"][] = "Superior";
+$tdataleaves1[".exportFields"][] = "1stApproval";
+$tdataleaves1[".exportFields"][] = "Superior2";
+$tdataleaves1[".exportFields"][] = "2ndApproval";
 $tdataleaves1[".exportFields"][] = "Approved";
 $tdataleaves1[".exportFields"][] = "ApprovedDate";
 $tdataleaves1[".exportFields"][] = "ApprovedTime";
 $tdataleaves1[".exportFields"][] = "Approvedby";
 $tdataleaves1[".exportFields"][] = "Posted";
 $tdataleaves1[".exportFields"][] = "Locked";
-$tdataleaves1[".exportFields"][] = "Superior";
 
 $tdataleaves1[".importFields"] = array();
 $tdataleaves1[".importFields"][] = "LvID";
@@ -532,6 +585,10 @@ $tdataleaves1[".importFields"][] = "SecondHalf";
 $tdataleaves1[".importFields"][] = "Locked";
 $tdataleaves1[".importFields"][] = "Superior";
 $tdataleaves1[".importFields"][] = "Reason";
+$tdataleaves1[".importFields"][] = "Superior2";
+$tdataleaves1[".importFields"][] = "1stApproval";
+$tdataleaves1[".importFields"][] = "2ndApproval";
+$tdataleaves1[".importFields"][] = "TotalDays";
 
 $tdataleaves1[".printFields"] = array();
 $tdataleaves1[".printFields"][] = "LvID";
@@ -544,13 +601,17 @@ $tdataleaves1[".printFields"][] = "Reason";
 $tdataleaves1[".printFields"][] = "FirstHalf";
 $tdataleaves1[".printFields"][] = "SecondHalf";
 $tdataleaves1[".printFields"][] = "Days";
+$tdataleaves1[".printFields"][] = "TotalDays";
+$tdataleaves1[".printFields"][] = "Superior";
+$tdataleaves1[".printFields"][] = "1stApproval";
+$tdataleaves1[".printFields"][] = "Superior2";
+$tdataleaves1[".printFields"][] = "2ndApproval";
 $tdataleaves1[".printFields"][] = "Approved";
 $tdataleaves1[".printFields"][] = "ApprovedDate";
 $tdataleaves1[".printFields"][] = "ApprovedTime";
 $tdataleaves1[".printFields"][] = "Approvedby";
 $tdataleaves1[".printFields"][] = "Posted";
 $tdataleaves1[".printFields"][] = "Locked";
-$tdataleaves1[".printFields"][] = "Superior";
 
 
 //	LvID
@@ -774,8 +835,8 @@ $tdataleaves1[".printFields"][] = "Superior";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -1355,8 +1416,8 @@ $tdataleaves1[".printFields"][] = "Superior";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -2659,7 +2720,7 @@ $tdataleaves1[".printFields"][] = "Superior";
 	$edata["LookupTable"] = "demo_user";
 		$edata["autoCompleteFieldsOnEdit"] = 0;
 	$edata["autoCompleteFields"] = array();
-		$edata["LCType"] = 1;
+		$edata["LCType"] = 0;
 
 	
 		
@@ -2679,7 +2740,8 @@ $tdataleaves1[".printFields"][] = "Superior";
 
 	
 	
-	
+		$edata["SelectSize"] = 1;
+
 // End Lookup Settings
 
 
@@ -2865,6 +2927,545 @@ $tdataleaves1[".printFields"][] = "Superior";
 
 
 	$tdataleaves1["Reason"] = $fdata;
+//	Superior2
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 18;
+	$fdata["strName"] = "Superior2";
+	$fdata["GoodName"] = "Superior2";
+	$fdata["ownerTable"] = "leaves";
+	$fdata["Label"] = GetFieldLabel("leaves1","Superior2");
+	$fdata["FieldType"] = 3;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+		$fdata["bUpdateSelected"] = true;
+
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "Superior2";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "Superior2";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Lookup wizard");
+
+	
+	
+		
+	
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "demo_user";
+		$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "EmployeeID";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "user_name";
+	
+	
+
+	
+	$edata["LookupOrderBy"] = "user_name";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdataleaves1["Superior2"] = $fdata;
+//	1stApproval
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 19;
+	$fdata["strName"] = "1stApproval";
+	$fdata["GoodName"] = "1stApproval";
+	$fdata["ownerTable"] = "leaves";
+	$fdata["Label"] = GetFieldLabel("leaves1","1stApproval");
+	$fdata["FieldType"] = 16;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "1stApproval";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "`1stApproval`";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Checkbox");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Checkbox");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdataleaves1["1stApproval"] = $fdata;
+//	2ndApproval
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 20;
+	$fdata["strName"] = "2ndApproval";
+	$fdata["GoodName"] = "2ndApproval";
+	$fdata["ownerTable"] = "leaves";
+	$fdata["Label"] = GetFieldLabel("leaves1","2ndApproval");
+	$fdata["FieldType"] = 16;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "2ndApproval";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "`2ndApproval`";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Checkbox");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Checkbox");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdataleaves1["2ndApproval"] = $fdata;
+//	TotalDays
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 21;
+	$fdata["strName"] = "TotalDays";
+	$fdata["GoodName"] = "TotalDays";
+	$fdata["ownerTable"] = "leaves";
+	$fdata["Label"] = GetFieldLabel("leaves1","TotalDays");
+	$fdata["FieldType"] = 14;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+	
+	
+	
+	
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "TotalDays";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "TotalDays";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdataleaves1["TotalDays"] = $fdata;
 
 
 $tables_data["leaves1"]=&$tdataleaves1;
@@ -2898,7 +3499,7 @@ function createSqlQuery_leaves1()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "LvID,  FromDate,  LeaveType,  Days,  EmployeeID,  ToDate,  Approved,  ApprovedDate,  Approvedby,  Posted,  DateCreated,  ApprovedTime,  FirstHalf,  SecondHalf,  Locked,  Superior,  Reason";
+$proto0["m_strFieldList"] = "LvID,  FromDate,  LeaveType,  Days,  EmployeeID,  ToDate,  Approved,  ApprovedDate,  Approvedby,  Posted,  DateCreated,  ApprovedTime,  FirstHalf,  SecondHalf,  Locked,  Superior,  Reason,  Superior2,  `1stApproval`,  `2ndApproval`,  TotalDays";
 $proto0["m_strFrom"] = "FROM leaves";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "ORDER BY LvID DESC";
@@ -3176,68 +3777,128 @@ $proto38["m_alias"] = "";
 $obj = new SQLFieldListItem($proto38);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto40=array();
-$proto40["m_link"] = "SQLL_MAIN";
-			$proto41=array();
-$proto41["m_strName"] = "leaves";
-$proto41["m_srcTableName"] = "leaves1";
-$proto41["m_columns"] = array();
-$proto41["m_columns"][] = "LvID";
-$proto41["m_columns"][] = "FromDate";
-$proto41["m_columns"][] = "LeaveType";
-$proto41["m_columns"][] = "Days";
-$proto41["m_columns"][] = "EmployeeID";
-$proto41["m_columns"][] = "ToDate";
-$proto41["m_columns"][] = "Approved";
-$proto41["m_columns"][] = "ApprovedDate";
-$proto41["m_columns"][] = "Approvedby";
-$proto41["m_columns"][] = "Posted";
-$proto41["m_columns"][] = "DateCreated";
-$proto41["m_columns"][] = "ApprovedTime";
-$proto41["m_columns"][] = "FirstHalf";
-$proto41["m_columns"][] = "SecondHalf";
-$proto41["m_columns"][] = "Locked";
-$proto41["m_columns"][] = "Superior";
-$proto41["m_columns"][] = "Reason";
-$obj = new SQLTable($proto41);
+						$proto40=array();
+			$obj = new SQLField(array(
+	"m_strName" => "Superior2",
+	"m_strTable" => "leaves",
+	"m_srcTableName" => "leaves1"
+));
 
-$proto40["m_table"] = $obj;
-$proto40["m_sql"] = "leaves";
-$proto40["m_alias"] = "";
+$proto40["m_sql"] = "Superior2";
 $proto40["m_srcTableName"] = "leaves1";
-$proto42=array();
-$proto42["m_sql"] = "";
-$proto42["m_uniontype"] = "SQLL_UNKNOWN";
+$proto40["m_expr"]=$obj;
+$proto40["m_alias"] = "";
+$obj = new SQLFieldListItem($proto40);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto42=array();
+			$obj = new SQLField(array(
+	"m_strName" => "1stApproval",
+	"m_strTable" => "leaves",
+	"m_srcTableName" => "leaves1"
+));
+
+$proto42["m_sql"] = "`1stApproval`";
+$proto42["m_srcTableName"] = "leaves1";
+$proto42["m_expr"]=$obj;
+$proto42["m_alias"] = "";
+$obj = new SQLFieldListItem($proto42);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto44=array();
+			$obj = new SQLField(array(
+	"m_strName" => "2ndApproval",
+	"m_strTable" => "leaves",
+	"m_srcTableName" => "leaves1"
+));
+
+$proto44["m_sql"] = "`2ndApproval`";
+$proto44["m_srcTableName"] = "leaves1";
+$proto44["m_expr"]=$obj;
+$proto44["m_alias"] = "";
+$obj = new SQLFieldListItem($proto44);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto46=array();
+			$obj = new SQLField(array(
+	"m_strName" => "TotalDays",
+	"m_strTable" => "leaves",
+	"m_srcTableName" => "leaves1"
+));
+
+$proto46["m_sql"] = "TotalDays";
+$proto46["m_srcTableName"] = "leaves1";
+$proto46["m_expr"]=$obj;
+$proto46["m_alias"] = "";
+$obj = new SQLFieldListItem($proto46);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto48=array();
+$proto48["m_link"] = "SQLL_MAIN";
+			$proto49=array();
+$proto49["m_strName"] = "leaves";
+$proto49["m_srcTableName"] = "leaves1";
+$proto49["m_columns"] = array();
+$proto49["m_columns"][] = "LvID";
+$proto49["m_columns"][] = "FromDate";
+$proto49["m_columns"][] = "LeaveType";
+$proto49["m_columns"][] = "Days";
+$proto49["m_columns"][] = "EmployeeID";
+$proto49["m_columns"][] = "ToDate";
+$proto49["m_columns"][] = "Approved";
+$proto49["m_columns"][] = "ApprovedDate";
+$proto49["m_columns"][] = "Approvedby";
+$proto49["m_columns"][] = "Posted";
+$proto49["m_columns"][] = "DateCreated";
+$proto49["m_columns"][] = "ApprovedTime";
+$proto49["m_columns"][] = "FirstHalf";
+$proto49["m_columns"][] = "SecondHalf";
+$proto49["m_columns"][] = "Locked";
+$proto49["m_columns"][] = "Superior";
+$proto49["m_columns"][] = "Reason";
+$proto49["m_columns"][] = "Superior2";
+$proto49["m_columns"][] = "1stApproval";
+$proto49["m_columns"][] = "2ndApproval";
+$proto49["m_columns"][] = "TotalDays";
+$obj = new SQLTable($proto49);
+
+$proto48["m_table"] = $obj;
+$proto48["m_sql"] = "leaves";
+$proto48["m_alias"] = "";
+$proto48["m_srcTableName"] = "leaves1";
+$proto50=array();
+$proto50["m_sql"] = "";
+$proto50["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto42["m_column"]=$obj;
-$proto42["m_contained"] = array();
-$proto42["m_strCase"] = "";
-$proto42["m_havingmode"] = false;
-$proto42["m_inBrackets"] = false;
-$proto42["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto42);
+$proto50["m_column"]=$obj;
+$proto50["m_contained"] = array();
+$proto50["m_strCase"] = "";
+$proto50["m_havingmode"] = false;
+$proto50["m_inBrackets"] = false;
+$proto50["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto50);
 
-$proto40["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto40);
+$proto48["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto48);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
 $proto0["m_orderby"] = array();
-												$proto44=array();
+												$proto52=array();
 						$obj = new SQLField(array(
 	"m_strName" => "LvID",
 	"m_strTable" => "leaves",
 	"m_srcTableName" => "leaves1"
 ));
 
-$proto44["m_column"]=$obj;
-$proto44["m_bAsc"] = 0;
-$proto44["m_nColumn"] = 0;
-$obj = new SQLOrderByItem($proto44);
+$proto52["m_column"]=$obj;
+$proto52["m_bAsc"] = 0;
+$proto52["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto52);
 
 $proto0["m_orderby"][]=$obj;					
 $proto0["m_srcTableName"]="leaves1";		
@@ -3251,7 +3912,7 @@ $queryData_leaves1 = createSqlQuery_leaves1();
 	
 		;
 
-																	
+																					
 
 $tdataleaves1[".sqlquery"] = $queryData_leaves1;
 

@@ -2880,8 +2880,6 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "statutorylock" ] = "statutorylock";
 	$projectEntities[ "payroll21" ] = array( "url" => "payroll21", "type" => 1 );
 	$projectEntitiesReverse[ "payroll21" ] = "payroll21";
-	$projectEntities[ "dtrsummary" ] = array( "url" => "dtrsummary", "type" => 0 );
-	$projectEntitiesReverse[ "dtrsummary" ] = "dtrsummary";
 	$projectEntities[ "payrollamt33" ] = array( "url" => "payrollamt33", "type" => 0 );
 	$projectEntitiesReverse[ "payrollamt33" ] = "payrollamt33";
 	$projectEntities[ "leaves1" ] = array( "url" => "leaves1", "type" => 1 );
@@ -2898,8 +2896,6 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "indleave1" ] = "indleave1";
 	$projectEntities[ "loanbalance31" ] = array( "url" => "loanbalance31", "type" => 1 );
 	$projectEntitiesReverse[ "loanbalance31" ] = "loanbalance31";
-	$projectEntities[ "payrolltab1" ] = array( "url" => "payrolltab1", "type" => 1 );
-	$projectEntitiesReverse[ "payrolltab1" ] = "payrolltab1";
 	$projectEntities[ "loansreport" ] = array( "url" => "loansreport", "type" => 0 );
 	$projectEntitiesReverse[ "loansreport" ] = "loansreport";
 	$projectEntities[ "contlo" ] = array( "url" => "contlo", "type" => 0 );
@@ -2932,8 +2928,6 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "overtimetab" ] = "overtimetab";
 	$projectEntities[ "overtimefile" ] = array( "url" => "overtimefile", "type" => 0 );
 	$projectEntitiesReverse[ "overtimefile" ] = "overtimefile";
-	$projectEntities[ "overtimeapp" ] = array( "url" => "overtimeapp", "type" => 1 );
-	$projectEntitiesReverse[ "overtimeapp" ] = "overtimeapp";
 	$projectEntities[ "divisionaccess" ] = array( "url" => "divisionaccess", "type" => 0 );
 	$projectEntitiesReverse[ "divisionaccess" ] = "divisionaccess";
 	$projectEntities[ "indovertime1" ] = array( "url" => "indovertime1", "type" => 1 );
@@ -2952,6 +2946,42 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "periods" ] = "periods";
 	$projectEntities[ "clocktypes" ] = array( "url" => "clocktypes", "type" => 0 );
 	$projectEntitiesReverse[ "clocktypes" ] = "clocktypes";
+	$projectEntities[ "demo_logemp" ] = array( "url" => "demo_logemp", "type" => 1 );
+	$projectEntitiesReverse[ "demo_logemp" ] = "demo_logemp";
+	$projectEntities[ "userinfo" ] = array( "url" => "userinfo", "type" => 0 );
+	$projectEntitiesReverse[ "userinfo" ] = "userinfo";
+	$projectEntities[ "leavesapp2" ] = array( "url" => "leavesapp2", "type" => 1 );
+	$projectEntitiesReverse[ "leavesapp2" ] = "leavesapp2";
+	$projectEntities[ "thirtax" ] = array( "url" => "thirtax", "type" => 0 );
+	$projectEntitiesReverse[ "thirtax" ] = "thirtax";
+	$projectEntities[ "thirtaxsum" ] = array( "url" => "thirtaxsum", "type" => 0 );
+	$projectEntitiesReverse[ "thirtaxsum" ] = "thirtaxsum";
+	$projectEntities[ "filelog" ] = array( "url" => "filelog", "type" => 0 );
+	$projectEntitiesReverse[ "filelog" ] = "filelog";
+	$projectEntities[ "payrolltab1" ] = array( "url" => "payrolltab1", "type" => 1 );
+	$projectEntitiesReverse[ "payrolltab1" ] = "payrolltab1";
+	$projectEntities[ "filelog1" ] = array( "url" => "filelog1", "type" => 1 );
+	$projectEntitiesReverse[ "filelog1" ] = "filelog1";
+	$projectEntities[ "filelog2" ] = array( "url" => "filelog2", "type" => 1 );
+	$projectEntitiesReverse[ "filelog2" ] = "filelog2";
+	$projectEntities[ "filelog3" ] = array( "url" => "filelog3", "type" => 1 );
+	$projectEntitiesReverse[ "filelog3" ] = "filelog3";
+	$projectEntities[ "leaveremarks" ] = array( "url" => "leaveremarks", "type" => 0 );
+	$projectEntitiesReverse[ "leaveremarks" ] = "leaveremarks";
+	$projectEntities[ "dtrsummary2" ] = array( "url" => "dtrsummary2", "type" => 0 );
+	$projectEntitiesReverse[ "dtrsummary2" ] = "dtrsummary2";
+	$projectEntities[ "demo_user_open" ] = array( "url" => "demo_user_open", "type" => 1 );
+	$projectEntitiesReverse[ "demo_user_open" ] = "demo_user_open";
+	$projectEntities[ "overtimefileapp" ] = array( "url" => "overtimefileapp", "type" => 1 );
+	$projectEntitiesReverse[ "overtimefileapp" ] = "overtimefileapp";
+	$projectEntities[ "overtimefileapp2" ] = array( "url" => "overtimefileapp2", "type" => 1 );
+	$projectEntitiesReverse[ "overtimefileapp2" ] = "overtimefileapp2";
+	$projectEntities[ "demo_useremp" ] = array( "url" => "demo_useremp", "type" => 1 );
+	$projectEntitiesReverse[ "demo_useremp" ] = "demo_useremp";
+	$projectEntities[ "leaves" ] = array( "url" => "leaves", "type" => 0 );
+	$projectEntitiesReverse[ "leaves" ] = "leaves";
+	$projectEntities[ "approvalbutton" ] = array( "url" => "approvalbutton", "type" => 0 );
+	$projectEntitiesReverse[ "approvalbutton" ] = "approvalbutton";
 }
 
 function findTable( $table ) {

@@ -225,6 +225,26 @@ $page_layouts["indschedule_view_Sched_Setup1"] = $layout;
 
 
 
+
+
+$layout = new TLayout("viewtab_bootstrap_2col", "Metro1DeliciousLavender1", "MobileDeliciousLavender1");
+$layout->version = 3;
+	$layout->bootstrapTheme = "default";
+		$layout->customCssPageName = "indschedule_view_Rest_Day1";
+$layout->blocks["bare"] = array();
+$layout->containers["tabfields"] = array();
+$layout->container_properties["tabfields"] = array(  );
+$layout->containers["tabfields"][] = array("name"=>"bsviewtabfields2",
+	"block"=>"", "substyle"=>1  );
+
+$layout->skins["tabfields"] = "";
+
+$layout->blocks["bare"][] = "tabfields";
+$page_layouts["indschedule_view_Rest_Day1"] = $layout;
+
+
+
+
 	
 						
 

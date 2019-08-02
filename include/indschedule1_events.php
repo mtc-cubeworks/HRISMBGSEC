@@ -180,10 +180,14 @@ $sc=$values["ScID"];
 $fo=$values["FiledOT"];
 $to=$values["TempOT"];
 $apt=$values["ApprovedOT"];
+$aot=$values["AOTMins"];
 
-if ($fo==Null and $apt==1 ) {
+if ($fo==Null and $apt==1 and $aot==Null) {
 $sqlu= "UPDATE indschedule SET AOTMins=NULLIF('$to','')  WHERE ScID='$sc'";
 CustomQuery($sqlu);
+
+
+
 }
 
 

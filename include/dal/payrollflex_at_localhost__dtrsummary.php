@@ -18,10 +18,15 @@ $dalTabledtrsummary["RDOTHrs"] = array("type"=>5,"varname"=>"RDOTHrs", "name" =>
 $dalTabledtrsummary["NDHrs"] = array("type"=>14,"varname"=>"NDHrs", "name" => "NDHrs");
 $dalTabledtrsummary["RDHrs"] = array("type"=>5,"varname"=>"RDHrs", "name" => "RDHrs");
 $dalTabledtrsummary["RegNDHrs"] = array("type"=>5,"varname"=>"RegNDHrs", "name" => "RegNDHrs");
+$dalTabledtrsummary["RegNDOTHrs"] = array("type"=>5,"varname"=>"RegNDOTHrs", "name" => "RegNDOTHrs");
 $dalTabledtrsummary["RHNDHrs"] = array("type"=>5,"varname"=>"RHNDHrs", "name" => "RHNDHrs");
+$dalTabledtrsummary["RHNDOTHrs"] = array("type"=>5,"varname"=>"RHNDOTHrs", "name" => "RHNDOTHrs");
 $dalTabledtrsummary["SHNDHrs"] = array("type"=>5,"varname"=>"SHNDHrs", "name" => "SHNDHrs");
+$dalTabledtrsummary["SHNDOTHrs"] = array("type"=>5,"varname"=>"SHNDOTHrs", "name" => "SHNDOTHrs");
 $dalTabledtrsummary["CHNDHrs"] = array("type"=>5,"varname"=>"CHNDHrs", "name" => "CHNDHrs");
+$dalTabledtrsummary["CHNDOTHrs"] = array("type"=>5,"varname"=>"CHNDOTHrs", "name" => "CHNDOTHrs");
 $dalTabledtrsummary["RDNDHrs"] = array("type"=>5,"varname"=>"RDNDHrs", "name" => "RDNDHrs");
+$dalTabledtrsummary["RDNDOTHrs"] = array("type"=>5,"varname"=>"RDNDOTHrs", "name" => "RDNDOTHrs");
 $dalTabledtrsummary["VLDays"] = array("type"=>5,"varname"=>"VLDays", "name" => "VLDays");
 $dalTabledtrsummary["SLDays"] = array("type"=>5,"varname"=>"SLDays", "name" => "SLDays");
 $dalTabledtrsummary["ELDays"] = array("type"=>5,"varname"=>"ELDays", "name" => "ELDays");

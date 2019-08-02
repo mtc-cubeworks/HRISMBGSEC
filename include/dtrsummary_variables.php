@@ -4,7 +4,7 @@ $_SESSION["OwnerID"] = $_SESSION["_".$strTableName."_OwnerID"];
 
 $strOriginalTableName="dtrsummary";
 
-$gstrOrderBy="";
+$gstrOrderBy="ORDER BY indschedule.ScID";
 if(strlen($gstrOrderBy) && strtolower(substr($gstrOrderBy,0,8))!="order by")
 	$gstrOrderBy="order by ".$gstrOrderBy;
 

@@ -146,7 +146,7 @@ $tdataloanbalance3[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																				
+																																																																																																																																																																																																																																																																														
 
 $tdataloanbalance3[".ajaxCodeSnippetAdded"] = false;
 
@@ -606,8 +606,8 @@ $tdataloanbalance3[".printFields"][] = "ForPayment";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -782,7 +782,7 @@ $tdataloanbalance3[".printFields"][] = "ForPayment";
 	$fdata["GoodName"] = "PerPayrollAmount";
 	$fdata["ownerTable"] = "loanbalance3";
 	$fdata["Label"] = GetFieldLabel("loanbalance3","PerPayrollAmount");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	

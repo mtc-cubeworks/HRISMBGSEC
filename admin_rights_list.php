@@ -673,13 +673,6 @@ $mask .= "I";
 
 $pageMask[$table] = $mask;
 $tables[$table] = array("payroll21", " " . "Print Summary 2");
-$table = "dtrsummary";
-$mask="";
-				$mask .= "S";
-$mask .= "P";
-
-$pageMask[$table] = $mask;
-$tables[$table] = array("dtrsummary", " " . "DTR Summary");
 $table = "payrollamt33";
 $mask="";
 				$mask .= "S";
@@ -732,7 +725,7 @@ $mask .= "I";
 $mask .= "M";
 
 $pageMask[$table] = $mask;
-$tables[$table] = array("leavesapp", " " . "Leaves Approval");
+$tables[$table] = array("leavesapp", " " . "Leaves Approval (Supervisor)");
 $table = "leavebalance1";
 $mask="";
 		$mask .= "E";
@@ -763,14 +756,6 @@ $mask .= "M";
 
 $pageMask[$table] = $mask;
 $tables[$table] = array("loanbalance31", " " . "My Loan Balances");
-$table = "payrolltab1";
-$mask="";
-				$mask .= "S";
-$mask .= "P";
-$mask .= "M";
-
-$pageMask[$table] = $mask;
-$tables[$table] = array("payrolltab1", " " . "My Payslip");
 $table = "loansreport";
 $mask="";
 	$mask .= "A";
@@ -948,17 +933,6 @@ $mask .= "M";
 
 $pageMask[$table] = $mask;
 $tables[$table] = array("overtimefile", " " . "File Overtime");
-$table = "overtimeapp";
-$mask="";
-		$mask .= "E";
-	$mask .= "D";
-	$mask .= "S";
-$mask .= "P";
-$mask .= "I";
-$mask .= "M";
-
-$pageMask[$table] = $mask;
-$tables[$table] = array("overtimeapp", " " . "Overtime Approval");
 $table = "divisionaccess";
 $mask="";
 	$mask .= "A";
@@ -1059,6 +1033,181 @@ $mask .= "I";
 
 $pageMask[$table] = $mask;
 $tables[$table] = array("clocktypes", " " . "Clock Types");
+$table = "demo_logemp";
+$mask="";
+				$mask .= "S";
+$mask .= "P";
+$mask .= "M";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("demo_logemp", " " . "My DTR Logs");
+$table = "userinfo";
+$mask="";
+		$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("userinfo", " " . "User Info");
+$table = "leavesapp2";
+$mask="";
+		$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+$mask .= "M";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("leavesapp2", " " . "Leaves Approval (Manager)");
+$table = "thirtax";
+$mask="";
+				$mask .= "S";
+$mask .= "P";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("thirtax", " " . "13th Month and Tax");
+$table = "thirtaxsum";
+$mask="";
+				$mask .= "S";
+$mask .= "P";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("thirtaxsum", " " . "13th Month and Tax To-Date");
+$table = "filelog";
+$mask="";
+	$mask .= "A";
+	$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+$mask .= "M";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("filelog", " " . "File Log");
+$table = "payrolltab1";
+$mask="";
+	$mask .= "A";
+	$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+$mask .= "M";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("payrolltab1", " " . "My Payslip");
+$table = "filelog1";
+$mask="";
+		$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+$mask .= "M";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("filelog1", " " . "Filelog Approval (Supervisor)");
+$table = "filelog2";
+$mask="";
+		$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+$mask .= "M";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("filelog2", " " . "Filelog Approval (Manager)");
+$table = "filelog3";
+$mask="";
+		$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("filelog3", " " . "Filelog HR Approval");
+$table = "leaveremarks";
+$mask="";
+	$mask .= "A";
+		$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "M";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("leaveremarks", " " . "Leave Remarks");
+$table = "dtrsummary2";
+$mask="";
+				$mask .= "S";
+$mask .= "P";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("dtrsummary2", " " . "DTR Summary");
+$table = "demo_user_open";
+$mask="";
+	$mask .= "A";
+	$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("demo_user_open", " " . "Employee Admin");
+$table = "overtimefileapp";
+$mask="";
+		$mask .= "E";
+		$mask .= "S";
+$mask .= "P";
+$mask .= "M";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("overtimefileapp", " " . "Overtime Approval (Supervisor)");
+$table = "overtimefileapp2";
+$mask="";
+		$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "M";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("overtimefileapp2", " " . "Overtime Approval (Manager)");
+$table = "demo_useremp";
+$mask="";
+				$mask .= "S";
+$mask .= "P";
+$mask .= "M";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("demo_useremp", " " . "My Personal Data");
+$table = "leaves";
+$mask="";
+	$mask .= "A";
+	$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("leaves", " " . "Leaves");
+$table = "approvalbutton";
+$mask="";
+	$mask .= "A";
+	$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("approvalbutton", " " . "Approval Selection");
 
 
 

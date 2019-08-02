@@ -9,6 +9,7 @@ $dalTableindleave["LeaveType"] = array("type"=>3,"varname"=>"LeaveType", "name" 
 $dalTableindleave["LvID"] = array("type"=>3,"varname"=>"LvID", "name" => "LvID");
 $dalTableindleave["FirtHalf"] = array("type"=>16,"varname"=>"FirtHalf", "name" => "FirtHalf");
 $dalTableindleave["SecondHalf"] = array("type"=>16,"varname"=>"SecondHalf", "name" => "SecondHalf");
+$dalTableindleave["Reason"] = array("type"=>200,"varname"=>"Reason", "name" => "Reason");
 	$dalTableindleave["LtID"]["key"]=true;
 
 $dal_info["payrollflex_at_localhost__indleave"] = &$dalTableindleave;

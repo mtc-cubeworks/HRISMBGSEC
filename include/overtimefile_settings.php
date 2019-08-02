@@ -59,12 +59,21 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsovertimefile["English"]["ItiD"] = "Iti D";
 	$fieldToolTipsovertimefile["English"]["ItiD"] = "";
 	$placeHoldersovertimefile["English"]["ItiD"] = "";
-	$fieldLabelsovertimefile["English"]["Superior"] = "Superior";
+	$fieldLabelsovertimefile["English"]["Superior"] = "Supervisor";
 	$fieldToolTipsovertimefile["English"]["Superior"] = "";
 	$placeHoldersovertimefile["English"]["Superior"] = "";
 	$fieldLabelsovertimefile["English"]["Locked"] = "Locked";
 	$fieldToolTipsovertimefile["English"]["Locked"] = "";
 	$placeHoldersovertimefile["English"]["Locked"] = "";
+	$fieldLabelsovertimefile["English"]["Superior2"] = "Manager";
+	$fieldToolTipsovertimefile["English"]["Superior2"] = "";
+	$placeHoldersovertimefile["English"]["Superior2"] = "";
+	$fieldLabelsovertimefile["English"]["1stApproval"] = "Supervisor Approval";
+	$fieldToolTipsovertimefile["English"]["1stApproval"] = "";
+	$placeHoldersovertimefile["English"]["1stApproval"] = "";
+	$fieldLabelsovertimefile["English"]["2ndApproval"] = "Manager Approval";
+	$fieldToolTipsovertimefile["English"]["2ndApproval"] = "";
+	$placeHoldersovertimefile["English"]["2ndApproval"] = "";
 	if (count($fieldToolTipsovertimefile["English"]))
 		$tdataovertimefile[".isUseToolTips"] = true;
 }
@@ -116,14 +125,14 @@ $tdataovertimefile[".listAjax"] = false;
 	$tdataovertimefile[".locking"] = false;
 
 $tdataovertimefile[".edit"] = true;
-$tdataovertimefile[".afterEditAction"] = 1;
+$tdataovertimefile[".afterEditAction"] = 0;
 $tdataovertimefile[".closePopupAfterEdit"] = 1;
-$tdataovertimefile[".afterEditActionDetTable"] = "";
+$tdataovertimefile[".afterEditActionDetTable"] = "Detail tables not found!";
 
 $tdataovertimefile[".add"] = true;
-$tdataovertimefile[".afterAddAction"] = 1;
+$tdataovertimefile[".afterAddAction"] = 0;
 $tdataovertimefile[".closePopupAfterAdd"] = 1;
-$tdataovertimefile[".afterAddActionDetTable"] = "";
+$tdataovertimefile[".afterAddActionDetTable"] = "Detail tables not found!";
 
 $tdataovertimefile[".list"] = true;
 
@@ -170,7 +179,7 @@ $tdataovertimefile[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																				
+																																																																																																																																																																																																																																																																														
 
 $tdataovertimefile[".ajaxCodeSnippetAdded"] = false;
 
@@ -203,6 +212,9 @@ $tdataovertimefile[".allSearchFields"][] = "ItiD";
 	$tdataovertimefile[".allSearchFields"][] = "Posted";
 	$tdataovertimefile[".allSearchFields"][] = "Locked";
 	$tdataovertimefile[".allSearchFields"][] = "Superior";
+	$tdataovertimefile[".allSearchFields"][] = "1stApproval";
+	$tdataovertimefile[".allSearchFields"][] = "Superior2";
+	$tdataovertimefile[".allSearchFields"][] = "2ndApproval";
 	
 
 $tdataovertimefile[".googleLikeFields"] = array();
@@ -220,6 +232,9 @@ $tdataovertimefile[".googleLikeFields"][] = "EmployeeID";
 $tdataovertimefile[".googleLikeFields"][] = "Reason";
 $tdataovertimefile[".googleLikeFields"][] = "Superior";
 $tdataovertimefile[".googleLikeFields"][] = "Locked";
+$tdataovertimefile[".googleLikeFields"][] = "Superior2";
+$tdataovertimefile[".googleLikeFields"][] = "1stApproval";
+$tdataovertimefile[".googleLikeFields"][] = "2ndApproval";
 
 
 $tdataovertimefile[".advSearchFields"] = array();
@@ -237,6 +252,9 @@ $tdataovertimefile[".advSearchFields"][] = "ApprovedTime";
 $tdataovertimefile[".advSearchFields"][] = "Posted";
 $tdataovertimefile[".advSearchFields"][] = "Locked";
 $tdataovertimefile[".advSearchFields"][] = "Superior";
+$tdataovertimefile[".advSearchFields"][] = "1stApproval";
+$tdataovertimefile[".advSearchFields"][] = "Superior2";
+$tdataovertimefile[".advSearchFields"][] = "2ndApproval";
 
 $tdataovertimefile[".tableType"] = "list";
 
@@ -272,14 +290,16 @@ $tdataovertimefile[".warnLeavingPages"] = true;
 
 
 
-$tstrOrderBy = "";
+$tstrOrderBy = "ORDER BY ItiD DESC";
 if(strlen($tstrOrderBy) && strtolower(substr($tstrOrderBy,0,8))!="order by")
 	$tstrOrderBy = "order by ".$tstrOrderBy;
 $tdataovertimefile[".strOrderBy"] = $tstrOrderBy;
 
 $tdataovertimefile[".orderindexes"] = array();
+	$tdataovertimefile[".orderindexes"][] = array(1, (0 ? "ASC" : "DESC"), "ItiD");
 
-$tdataovertimefile[".sqlHead"] = "SELECT ItiD,  	DateCreated,  	FromDateTime,  	ToDateTime,  	Approved,  	Approvedby,  	ApprovedTime,  	Posted,  	NoMins,  	ApprovedDate,  	EmployeeID,  	Reason,  	Superior,  	Locked";
+
+$tdataovertimefile[".sqlHead"] = "SELECT ItiD,  DateCreated,  FromDateTime,  ToDateTime,  Approved,  Approvedby,  ApprovedTime,  Posted,  NoMins,  ApprovedDate,  EmployeeID,  Reason,  Superior,  Locked,  Superior2,  `1stApproval`,  `2ndApproval`";
 $tdataovertimefile[".sqlFrom"] = "FROM overtimefile";
 $tdataovertimefile[".sqlWhereExpr"] = "";
 $tdataovertimefile[".sqlTail"] = "";
@@ -338,6 +358,9 @@ $tdataovertimefile[".listFields"][] = "ApprovedTime";
 $tdataovertimefile[".listFields"][] = "Posted";
 $tdataovertimefile[".listFields"][] = "Locked";
 $tdataovertimefile[".listFields"][] = "Superior";
+$tdataovertimefile[".listFields"][] = "1stApproval";
+$tdataovertimefile[".listFields"][] = "Superior2";
+$tdataovertimefile[".listFields"][] = "2ndApproval";
 
 $tdataovertimefile[".hideMobileList"] = array();
 
@@ -357,6 +380,9 @@ $tdataovertimefile[".viewFields"][] = "ApprovedTime";
 $tdataovertimefile[".viewFields"][] = "Posted";
 $tdataovertimefile[".viewFields"][] = "Locked";
 $tdataovertimefile[".viewFields"][] = "Superior";
+$tdataovertimefile[".viewFields"][] = "1stApproval";
+$tdataovertimefile[".viewFields"][] = "Superior2";
+$tdataovertimefile[".viewFields"][] = "2ndApproval";
 
 $tdataovertimefile[".addFields"] = array();
 $tdataovertimefile[".addFields"][] = "DateCreated";
@@ -372,6 +398,9 @@ $tdataovertimefile[".addFields"][] = "ApprovedTime";
 $tdataovertimefile[".addFields"][] = "Posted";
 $tdataovertimefile[".addFields"][] = "Locked";
 $tdataovertimefile[".addFields"][] = "Superior";
+$tdataovertimefile[".addFields"][] = "1stApproval";
+$tdataovertimefile[".addFields"][] = "Superior2";
+$tdataovertimefile[".addFields"][] = "2ndApproval";
 
 $tdataovertimefile[".masterListFields"] = array();
 $tdataovertimefile[".masterListFields"][] = "ItiD";
@@ -388,6 +417,9 @@ $tdataovertimefile[".masterListFields"][] = "ApprovedTime";
 $tdataovertimefile[".masterListFields"][] = "Posted";
 $tdataovertimefile[".masterListFields"][] = "Locked";
 $tdataovertimefile[".masterListFields"][] = "Superior";
+$tdataovertimefile[".masterListFields"][] = "1stApproval";
+$tdataovertimefile[".masterListFields"][] = "Superior2";
+$tdataovertimefile[".masterListFields"][] = "2ndApproval";
 
 $tdataovertimefile[".inlineAddFields"] = array();
 $tdataovertimefile[".inlineAddFields"][] = "DateCreated";
@@ -403,6 +435,9 @@ $tdataovertimefile[".inlineAddFields"][] = "ApprovedTime";
 $tdataovertimefile[".inlineAddFields"][] = "Posted";
 $tdataovertimefile[".inlineAddFields"][] = "Locked";
 $tdataovertimefile[".inlineAddFields"][] = "Superior";
+$tdataovertimefile[".inlineAddFields"][] = "1stApproval";
+$tdataovertimefile[".inlineAddFields"][] = "Superior2";
+$tdataovertimefile[".inlineAddFields"][] = "2ndApproval";
 
 $tdataovertimefile[".editFields"] = array();
 $tdataovertimefile[".editFields"][] = "DateCreated";
@@ -418,6 +453,9 @@ $tdataovertimefile[".editFields"][] = "ApprovedTime";
 $tdataovertimefile[".editFields"][] = "Posted";
 $tdataovertimefile[".editFields"][] = "Locked";
 $tdataovertimefile[".editFields"][] = "Superior";
+$tdataovertimefile[".editFields"][] = "1stApproval";
+$tdataovertimefile[".editFields"][] = "Superior2";
+$tdataovertimefile[".editFields"][] = "2ndApproval";
 
 $tdataovertimefile[".inlineEditFields"] = array();
 $tdataovertimefile[".inlineEditFields"][] = "DateCreated";
@@ -433,6 +471,9 @@ $tdataovertimefile[".inlineEditFields"][] = "ApprovedTime";
 $tdataovertimefile[".inlineEditFields"][] = "Posted";
 $tdataovertimefile[".inlineEditFields"][] = "Locked";
 $tdataovertimefile[".inlineEditFields"][] = "Superior";
+$tdataovertimefile[".inlineEditFields"][] = "1stApproval";
+$tdataovertimefile[".inlineEditFields"][] = "Superior2";
+$tdataovertimefile[".inlineEditFields"][] = "2ndApproval";
 
 $tdataovertimefile[".updateSelectedFields"] = array();
 $tdataovertimefile[".updateSelectedFields"][] = "DateCreated";
@@ -448,6 +489,9 @@ $tdataovertimefile[".updateSelectedFields"][] = "ApprovedTime";
 $tdataovertimefile[".updateSelectedFields"][] = "Posted";
 $tdataovertimefile[".updateSelectedFields"][] = "Locked";
 $tdataovertimefile[".updateSelectedFields"][] = "Superior";
+$tdataovertimefile[".updateSelectedFields"][] = "1stApproval";
+$tdataovertimefile[".updateSelectedFields"][] = "Superior2";
+$tdataovertimefile[".updateSelectedFields"][] = "2ndApproval";
 
 
 $tdataovertimefile[".exportFields"] = array();
@@ -465,6 +509,9 @@ $tdataovertimefile[".exportFields"][] = "ApprovedTime";
 $tdataovertimefile[".exportFields"][] = "Posted";
 $tdataovertimefile[".exportFields"][] = "Locked";
 $tdataovertimefile[".exportFields"][] = "Superior";
+$tdataovertimefile[".exportFields"][] = "1stApproval";
+$tdataovertimefile[".exportFields"][] = "Superior2";
+$tdataovertimefile[".exportFields"][] = "2ndApproval";
 
 $tdataovertimefile[".importFields"] = array();
 $tdataovertimefile[".importFields"][] = "ItiD";
@@ -481,6 +528,9 @@ $tdataovertimefile[".importFields"][] = "EmployeeID";
 $tdataovertimefile[".importFields"][] = "Reason";
 $tdataovertimefile[".importFields"][] = "Superior";
 $tdataovertimefile[".importFields"][] = "Locked";
+$tdataovertimefile[".importFields"][] = "Superior2";
+$tdataovertimefile[".importFields"][] = "1stApproval";
+$tdataovertimefile[".importFields"][] = "2ndApproval";
 
 $tdataovertimefile[".printFields"] = array();
 $tdataovertimefile[".printFields"][] = "ItiD";
@@ -497,6 +547,9 @@ $tdataovertimefile[".printFields"][] = "ApprovedTime";
 $tdataovertimefile[".printFields"][] = "Posted";
 $tdataovertimefile[".printFields"][] = "Locked";
 $tdataovertimefile[".printFields"][] = "Superior";
+$tdataovertimefile[".printFields"][] = "1stApproval";
+$tdataovertimefile[".printFields"][] = "Superior2";
+$tdataovertimefile[".printFields"][] = "2ndApproval";
 
 
 //	ItiD
@@ -851,8 +904,8 @@ $tdataovertimefile[".printFields"][] = "Superior";
 	
 	
 		$edata["DateEditType"] = 11;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -986,8 +1039,8 @@ $tdataovertimefile[".printFields"][] = "Superior";
 	
 	
 		$edata["DateEditType"] = 11;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -1797,8 +1850,8 @@ $tdataovertimefile[".printFields"][] = "Superior";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -1920,9 +1973,10 @@ $tdataovertimefile[".printFields"][] = "Superior";
 // Begin Lookup settings
 				$edata["LookupType"] = 2;
 	$edata["LookupTable"] = "demo_user";
-		$edata["autoCompleteFieldsOnEdit"] = 0;
+		$edata["autoCompleteFieldsOnEdit"] = 1;
 	$edata["autoCompleteFields"] = array();
 		$edata["autoCompleteFields"][] = array('masterF'=>"Superior", 'lookupF'=>"Superior");
+	$edata["autoCompleteFields"][] = array('masterF'=>"Superior2", 'lookupF'=>"Superior2");
 	$edata["LCType"] = 0;
 
 	
@@ -2417,6 +2471,475 @@ $tdataovertimefile[".printFields"][] = "Superior";
 
 
 	$tdataovertimefile["Locked"] = $fdata;
+//	Superior2
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 15;
+	$fdata["strName"] = "Superior2";
+	$fdata["GoodName"] = "Superior2";
+	$fdata["ownerTable"] = "overtimefile";
+	$fdata["Label"] = GetFieldLabel("overtimefile","Superior2");
+	$fdata["FieldType"] = 3;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+		$fdata["bUpdateSelected"] = true;
+
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "Superior2";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "Superior2";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Lookup wizard");
+
+	
+	
+		
+	
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "demo_user";
+		$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "EmployeeID";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "user_name";
+	
+	
+
+	
+	$edata["LookupOrderBy"] = "user_name";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdataovertimefile["Superior2"] = $fdata;
+//	1stApproval
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 16;
+	$fdata["strName"] = "1stApproval";
+	$fdata["GoodName"] = "1stApproval";
+	$fdata["ownerTable"] = "overtimefile";
+	$fdata["Label"] = GetFieldLabel("overtimefile","1stApproval");
+	$fdata["FieldType"] = 16;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+		$fdata["bUpdateSelected"] = true;
+
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "1stApproval";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "`1stApproval`";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Lookup wizard");
+
+	
+	
+		
+	
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "approvalbutton";
+		$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 4;
+
+	
+		
+	$edata["LinkField"] = "ApBID";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "SelectApproval";
+	
+	
+
+	
+	$edata["LookupOrderBy"] = "ApBID";
+
+	
+	
+	
+	
+
+	
+	
+	
+// End Lookup Settings
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdataovertimefile["1stApproval"] = $fdata;
+//	2ndApproval
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 17;
+	$fdata["strName"] = "2ndApproval";
+	$fdata["GoodName"] = "2ndApproval";
+	$fdata["ownerTable"] = "overtimefile";
+	$fdata["Label"] = GetFieldLabel("overtimefile","2ndApproval");
+	$fdata["FieldType"] = 16;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+		$fdata["bUpdateSelected"] = true;
+
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "2ndApproval";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "`2ndApproval`";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Lookup wizard");
+
+	
+	
+		
+	
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "approvalbutton";
+		$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 4;
+
+	
+		
+	$edata["LinkField"] = "ApBID";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "SelectApproval";
+	
+	
+
+	
+	$edata["LookupOrderBy"] = "ApBID";
+
+	
+	
+	
+	
+
+	
+	
+	
+// End Lookup Settings
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdataovertimefile["2ndApproval"] = $fdata;
 
 
 $tables_data["overtimefile"]=&$tdataovertimefile;
@@ -2450,10 +2973,10 @@ function createSqlQuery_overtimefile()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "ItiD,  	DateCreated,  	FromDateTime,  	ToDateTime,  	Approved,  	Approvedby,  	ApprovedTime,  	Posted,  	NoMins,  	ApprovedDate,  	EmployeeID,  	Reason,  	Superior,  	Locked";
+$proto0["m_strFieldList"] = "ItiD,  DateCreated,  FromDateTime,  ToDateTime,  Approved,  Approvedby,  ApprovedTime,  Posted,  NoMins,  ApprovedDate,  EmployeeID,  Reason,  Superior,  Locked,  Superior2,  `1stApproval`,  `2ndApproval`";
 $proto0["m_strFrom"] = "FROM overtimefile";
 $proto0["m_strWhere"] = "";
-$proto0["m_strOrderBy"] = "";
+$proto0["m_strOrderBy"] = "ORDER BY ItiD DESC";
 	
 		;
 			$proto0["cipherer"] = null;
@@ -2686,54 +3209,114 @@ $proto32["m_alias"] = "";
 $obj = new SQLFieldListItem($proto32);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto34=array();
-$proto34["m_link"] = "SQLL_MAIN";
-			$proto35=array();
-$proto35["m_strName"] = "overtimefile";
-$proto35["m_srcTableName"] = "overtimefile";
-$proto35["m_columns"] = array();
-$proto35["m_columns"][] = "ItiD";
-$proto35["m_columns"][] = "DateCreated";
-$proto35["m_columns"][] = "FromDateTime";
-$proto35["m_columns"][] = "ToDateTime";
-$proto35["m_columns"][] = "Approved";
-$proto35["m_columns"][] = "Approvedby";
-$proto35["m_columns"][] = "ApprovedTime";
-$proto35["m_columns"][] = "Posted";
-$proto35["m_columns"][] = "NoMins";
-$proto35["m_columns"][] = "ApprovedDate";
-$proto35["m_columns"][] = "EmployeeID";
-$proto35["m_columns"][] = "Reason";
-$proto35["m_columns"][] = "Superior";
-$proto35["m_columns"][] = "Locked";
-$obj = new SQLTable($proto35);
+						$proto34=array();
+			$obj = new SQLField(array(
+	"m_strName" => "Superior2",
+	"m_strTable" => "overtimefile",
+	"m_srcTableName" => "overtimefile"
+));
 
-$proto34["m_table"] = $obj;
-$proto34["m_sql"] = "overtimefile";
-$proto34["m_alias"] = "";
+$proto34["m_sql"] = "Superior2";
 $proto34["m_srcTableName"] = "overtimefile";
-$proto36=array();
-$proto36["m_sql"] = "";
-$proto36["m_uniontype"] = "SQLL_UNKNOWN";
+$proto34["m_expr"]=$obj;
+$proto34["m_alias"] = "";
+$obj = new SQLFieldListItem($proto34);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto36=array();
+			$obj = new SQLField(array(
+	"m_strName" => "1stApproval",
+	"m_strTable" => "overtimefile",
+	"m_srcTableName" => "overtimefile"
+));
+
+$proto36["m_sql"] = "`1stApproval`";
+$proto36["m_srcTableName"] = "overtimefile";
+$proto36["m_expr"]=$obj;
+$proto36["m_alias"] = "";
+$obj = new SQLFieldListItem($proto36);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto38=array();
+			$obj = new SQLField(array(
+	"m_strName" => "2ndApproval",
+	"m_strTable" => "overtimefile",
+	"m_srcTableName" => "overtimefile"
+));
+
+$proto38["m_sql"] = "`2ndApproval`";
+$proto38["m_srcTableName"] = "overtimefile";
+$proto38["m_expr"]=$obj;
+$proto38["m_alias"] = "";
+$obj = new SQLFieldListItem($proto38);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto40=array();
+$proto40["m_link"] = "SQLL_MAIN";
+			$proto41=array();
+$proto41["m_strName"] = "overtimefile";
+$proto41["m_srcTableName"] = "overtimefile";
+$proto41["m_columns"] = array();
+$proto41["m_columns"][] = "ItiD";
+$proto41["m_columns"][] = "DateCreated";
+$proto41["m_columns"][] = "FromDateTime";
+$proto41["m_columns"][] = "ToDateTime";
+$proto41["m_columns"][] = "Approved";
+$proto41["m_columns"][] = "Approvedby";
+$proto41["m_columns"][] = "ApprovedTime";
+$proto41["m_columns"][] = "Posted";
+$proto41["m_columns"][] = "NoMins";
+$proto41["m_columns"][] = "ApprovedDate";
+$proto41["m_columns"][] = "EmployeeID";
+$proto41["m_columns"][] = "Reason";
+$proto41["m_columns"][] = "Superior";
+$proto41["m_columns"][] = "Locked";
+$proto41["m_columns"][] = "Superior2";
+$proto41["m_columns"][] = "1stApproval";
+$proto41["m_columns"][] = "2ndApproval";
+$proto41["m_columns"][] = "1stDisapproval";
+$proto41["m_columns"][] = "2ndDisapproval";
+$obj = new SQLTable($proto41);
+
+$proto40["m_table"] = $obj;
+$proto40["m_sql"] = "overtimefile";
+$proto40["m_alias"] = "";
+$proto40["m_srcTableName"] = "overtimefile";
+$proto42=array();
+$proto42["m_sql"] = "";
+$proto42["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto36["m_column"]=$obj;
-$proto36["m_contained"] = array();
-$proto36["m_strCase"] = "";
-$proto36["m_havingmode"] = false;
-$proto36["m_inBrackets"] = false;
-$proto36["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto36);
+$proto42["m_column"]=$obj;
+$proto42["m_contained"] = array();
+$proto42["m_strCase"] = "";
+$proto42["m_havingmode"] = false;
+$proto42["m_inBrackets"] = false;
+$proto42["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto42);
 
-$proto34["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto34);
+$proto40["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto40);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
 $proto0["m_orderby"] = array();
+												$proto44=array();
+						$obj = new SQLField(array(
+	"m_strName" => "ItiD",
+	"m_strTable" => "overtimefile",
+	"m_srcTableName" => "overtimefile"
+));
+
+$proto44["m_column"]=$obj;
+$proto44["m_bAsc"] = 0;
+$proto44["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto44);
+
+$proto0["m_orderby"][]=$obj;					
 $proto0["m_srcTableName"]="overtimefile";		
 $obj = new SQLQuery($proto0);
 
@@ -2745,7 +3328,7 @@ $queryData_overtimefile = createSqlQuery_overtimefile();
 	
 		;
 
-														
+																	
 
 $tdataovertimefile[".sqlquery"] = $queryData_overtimefile;
 

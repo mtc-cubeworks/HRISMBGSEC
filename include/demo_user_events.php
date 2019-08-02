@@ -18,6 +18,9 @@ class eventclass_demo_user  extends eventsBase
 		$this->events["AfterEdit"]=true;
 
 
+		$this->events["IsRecordEditable"]=true;
+
+
 //	onscreen events
 
 	}
@@ -271,6 +274,10 @@ $attr8 = $xt->fetchVar("Level_editcontrol");
 $attr8 = str_replace(">"," DISABLED=DISABLED>",$attr8);
 $xt->assign("Level_editcontrol",$attr8);
 
+$attr9 = $xt->fetchVar("ExitDate_editcontrol");
+$attr9 = str_replace(">"," DISABLED=DISABLED>",$attr9);
+$xt->assign("ExitDate_editcontrol",$attr9);
+
 //$attx = $xt->fetchVar("Division_editcontrol");
 //$attx = str_replace(">"," DISABLED=DISABLED>",$attx);
 //$xt->assign("Division_editcontrol",$attx);
@@ -432,26 +439,6 @@ function BeforeAdd(&$values, &$message, $inline, &$pageObject)
 {
 
 		
-//**********  Send email with new data  ************
-
-$empr=$values["Employer"];
-
-$email="rj45badz77@gmail.com";
-//$cc="badz@flexeb.com";
-//$bcc="liam.anoba@gmail.com";
-$emi = DBLookup("SELECT AdminEmail FROM employername WHERE EnID='$empr'");
-$from=(string)$emi;
-
-$msg="New employee added."."\r\n";
-$subject="New Employee added in Payroll";
-
-$msg.= "Name: ".$values["user_name"]."\r\n";
-$msg.= "Employee ID: ".$values["EmployeeID"]."\r\n";
-$msg.= "Please fill-in required data to complete the process.";
-
-$ret=runner_mail(array('to' => $email, 'cc' => $cc, 'bcc' => $bcc, 'subject' => $subject, 'body' => $msg, 'from'=>$from));
-if(!$ret["mailed"])
-	echo $ret["message"];
 
 
 return true;
@@ -589,17 +576,27 @@ return true;
 function AfterEdit(&$values, $where, &$oldvalues, &$keys, $inline, &$pageObject)
 {
 
-		$emp=$values["EmployeeID"];
+		$eid=$values["EmployeeID"];
 $exd=$values["ExitDate"];
 $et=$values["EmployeeType"];
 
+if ($exd!=NULL) {
 
 
+$sqp = "DELETE FROM indschedule WHERE EmployeeID='$eid' and SDate>='$exd'";
+CustomQuery($sqp);
+
+$sqo = "Update demo_user set Inactive=1 where EmployeeID='$eid'";
+ CustomQuery($sqo);
+}
+
+else {
+
+$sqr = "Update demo_user set Inactive=0 where EmployeeID='$eid'";
+ CustomQuery($sqr);
+}
 
 
-
-//$sqe = "DELETE FROM indschedule WHERE EmployeeID='$emp' and SDate>='$exd'";
-//CustomQuery($sqe);
 
 
 ;		
@@ -632,6 +629,148 @@ $et=$values["EmployeeType"];
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+				// Is Record Editable
+function IsRecordEditable($values, $isEditable)
+{
+
+		
+
+$lk=$values["Inactive"]; 
+
+//$lk=DBLookup("SELECT Inactive FROM inventorydate WHERE IDate='$sd'");
+
+if ($lk==1)
+ return false;
+else
+ return true;
+
+
+
+
+// Place event code here.
+// Use "Add Action" button to add code snippets.
+
+//return $isEditable;
+;		
+} // function IsRecordEditable
+
 		
 		
 		

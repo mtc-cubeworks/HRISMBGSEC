@@ -150,8 +150,8 @@ $tdataloansreport[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
-																																																																																																								
+																																																																																																																																																																																																																																																																																																																																																																																																																																									
+																																																																																																																				
 
 $tdataloansreport[".ajaxCodeSnippetAdded"] = false;
 
@@ -917,8 +917,8 @@ $tdataloansreport[".printFields"][] = "PSID";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -1049,8 +1049,8 @@ $tdataloansreport[".printFields"][] = "PSID";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	

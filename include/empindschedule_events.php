@@ -424,16 +424,18 @@ function IsRecordEditable($values, $isEditable)
 {
 
 		
+$eid=$values["EmployeeID"] ;
 
+$lk=DBLookup("SELECT Inactive FROM demo_user WHERE EmployeeID='$eid'");
 
-//$lk=$values["Locked"];
-
-
-
+if ($lk==1)
+ return false;
+else
+ return true;
 //if ($lk == 1)
 // return false;
 //else
- return true;
+// return true;
 ;		
 } // function IsRecordEditable
 
