@@ -381,7 +381,7 @@ if($rowcount)
 			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("DWork")))
 				$class = ' rnr-field-number';
 			$row["DWork_class"] = $class;
-	//	Absent - Checkbox
+	//	Absent - Number
 			$viewContainer->recId = $recordsCounter;
 		    $value = $viewContainer->showDBValue("Absent", $data, $keylink);
 			$row["Absent_value"] = $value;
@@ -846,6 +846,21 @@ if($rowcount)
 			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("IncludeBreakLate")))
 				$class = ' rnr-field-number';
 			$row["IncludeBreakLate_class"] = $class;
+	//	EmployeeID - 
+			$viewContainer->recId = $recordsCounter;
+		    $value = $viewContainer->showDBValue("EmployeeID", $data, $keylink);
+			$row["EmployeeID_value"] = $value;
+			$format = $pSet->getViewFormat("EmployeeID");
+			$class = "rnr-field-text";
+			if($format==FORMAT_FILE) 
+				$class = ' rnr-field-file'; 
+			if($format==FORMAT_AUDIO)
+				$class = ' rnr-field-audio';
+			if($format==FORMAT_CHECKBOX)
+				$class = ' rnr-field-checkbox';
+			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("EmployeeID")))
+				$class = ' rnr-field-number';
+			$row["EmployeeID_class"] = $class;
 		$rowinfo[] = $row;
 		if ($b) {
 			$rowinfo2[] = $row;

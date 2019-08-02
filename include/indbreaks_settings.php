@@ -147,7 +147,7 @@ $tdataindbreaks[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
 
 $tdataindbreaks[".ajaxCodeSnippetAdded"] = false;
 
@@ -602,8 +602,8 @@ $tdataindbreaks[".printFields"][] = "ScID";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -732,8 +732,8 @@ $tdataindbreaks[".printFields"][] = "ScID";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	

@@ -179,6 +179,102 @@ function getMenuNodes_welcome_page($menuNodesObject)
 	$menuNode["name"] = "";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
+	$menuNode["table"] = "filelog";
+	$menuNode["style"] = "";
+	$menuNode["params"] = "";
+	$menuNode["parent"] = "1";
+	$menuNode["nameType"] = "Text";
+	$menuNode["linkType"] = "Internal";
+	$menuNode["pageType"] = "List";//
+	$menuNode["openType"] = "None";
+	
+	$menuNode["icon"] = "";
+	$menuNode["iconType"] = "0";
+
+			$menuNode["color"] = "";
+	
+	$menuNode["title"] = "File Log";
+
+
+
+	$menuNodesObject->menuNodes["welcome_page"][] = $menuNode;
+	$menuNode = array();
+	$menuNode["id"] = "9";
+	$menuNode["name"] = "";
+	$menuNode["href"] = "mypage.htm";
+	$menuNode["type"] = "Leaf";
+	$menuNode["table"] = "filelog1";
+	$menuNode["style"] = "";
+	$menuNode["params"] = "";
+	$menuNode["parent"] = "1";
+	$menuNode["nameType"] = "Text";
+	$menuNode["linkType"] = "Internal";
+	$menuNode["pageType"] = "List";//
+	$menuNode["openType"] = "None";
+	
+	$menuNode["icon"] = "";
+	$menuNode["iconType"] = "0";
+
+			$menuNode["color"] = "";
+	
+	$menuNode["title"] = "Filelog Approval (Supervisor)";
+
+
+
+	$menuNodesObject->menuNodes["welcome_page"][] = $menuNode;
+	$menuNode = array();
+	$menuNode["id"] = "10";
+	$menuNode["name"] = "";
+	$menuNode["href"] = "mypage.htm";
+	$menuNode["type"] = "Leaf";
+	$menuNode["table"] = "filelog2";
+	$menuNode["style"] = "";
+	$menuNode["params"] = "";
+	$menuNode["parent"] = "1";
+	$menuNode["nameType"] = "Text";
+	$menuNode["linkType"] = "Internal";
+	$menuNode["pageType"] = "List";//
+	$menuNode["openType"] = "None";
+	
+	$menuNode["icon"] = "";
+	$menuNode["iconType"] = "0";
+
+			$menuNode["color"] = "";
+	
+	$menuNode["title"] = "Filelog Approval (Manager)";
+
+
+
+	$menuNodesObject->menuNodes["welcome_page"][] = $menuNode;
+	$menuNode = array();
+	$menuNode["id"] = "11";
+	$menuNode["name"] = "";
+	$menuNode["href"] = "mypage.htm";
+	$menuNode["type"] = "Leaf";
+	$menuNode["table"] = "filelog3";
+	$menuNode["style"] = "";
+	$menuNode["params"] = "";
+	$menuNode["parent"] = "1";
+	$menuNode["nameType"] = "Text";
+	$menuNode["linkType"] = "Internal";
+	$menuNode["pageType"] = "List";//
+	$menuNode["openType"] = "None";
+	
+	$menuNode["icon"] = "";
+	$menuNode["iconType"] = "0";
+
+			$menuNode["color"] = "";
+	
+	$menuNode["title"] = "Filelog HR Approval";
+
+
+
+	$menuNodesObject->menuNodes["welcome_page"][] = $menuNode;
+	$menuNode = array();
+	$menuNode["id"] = "12";
+	$menuNode["name"] = "";
+	$menuNode["href"] = "mypage.htm";
+	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "leaves11";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
@@ -199,7 +295,7 @@ function getMenuNodes_welcome_page($menuNodesObject)
 
 	$menuNodesObject->menuNodes["welcome_page"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "9";
+	$menuNode["id"] = "13";
 	$menuNode["name"] = "";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
@@ -223,7 +319,7 @@ function getMenuNodes_welcome_page($menuNodesObject)
 
 	$menuNodesObject->menuNodes["welcome_page"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "10";
+	$menuNode["id"] = "14";
 	$menuNode["name"] = "";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
@@ -241,17 +337,17 @@ function getMenuNodes_welcome_page($menuNodesObject)
 
 			$menuNode["color"] = "";
 	
-	$menuNode["title"] = "Leaves Approval";
+	$menuNode["title"] = "Leaves Approval (Supervisor)";
 
 
 
 	$menuNodesObject->menuNodes["welcome_page"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "11";
+	$menuNode["id"] = "15";
 	$menuNode["name"] = "";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
-	$menuNode["table"] = "overtimeapp";
+	$menuNode["table"] = "overtimefileapp";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
 	$menuNode["parent"] = "1";
@@ -265,13 +361,61 @@ function getMenuNodes_welcome_page($menuNodesObject)
 
 			$menuNode["color"] = "";
 	
-	$menuNode["title"] = "Overtime Approval";
+	$menuNode["title"] = "Overtime Approval (Supervisor)";
 
 
 
 	$menuNodesObject->menuNodes["welcome_page"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "12";
+	$menuNode["id"] = "16";
+	$menuNode["name"] = "";
+	$menuNode["href"] = "mypage.htm";
+	$menuNode["type"] = "Leaf";
+	$menuNode["table"] = "overtimefileapp2";
+	$menuNode["style"] = "";
+	$menuNode["params"] = "";
+	$menuNode["parent"] = "1";
+	$menuNode["nameType"] = "Text";
+	$menuNode["linkType"] = "Internal";
+	$menuNode["pageType"] = "List";//
+	$menuNode["openType"] = "None";
+	
+	$menuNode["icon"] = "";
+	$menuNode["iconType"] = "0";
+
+			$menuNode["color"] = "";
+	
+	$menuNode["title"] = "Overtime Approval (Manager)";
+
+
+
+	$menuNodesObject->menuNodes["welcome_page"][] = $menuNode;
+	$menuNode = array();
+	$menuNode["id"] = "17";
+	$menuNode["name"] = "";
+	$menuNode["href"] = "mypage.htm";
+	$menuNode["type"] = "Leaf";
+	$menuNode["table"] = "leavesapp2";
+	$menuNode["style"] = "";
+	$menuNode["params"] = "";
+	$menuNode["parent"] = "1";
+	$menuNode["nameType"] = "Text";
+	$menuNode["linkType"] = "Internal";
+	$menuNode["pageType"] = "List";//
+	$menuNode["openType"] = "None";
+	
+	$menuNode["icon"] = "";
+	$menuNode["iconType"] = "0";
+
+			$menuNode["color"] = "";
+	
+	$menuNode["title"] = "Leaves Approval (Manager)";
+
+
+
+	$menuNodesObject->menuNodes["welcome_page"][] = $menuNode;
+	$menuNode = array();
+	$menuNode["id"] = "18";
 	$menuNode["name"] = "";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
@@ -295,7 +439,7 @@ function getMenuNodes_welcome_page($menuNodesObject)
 
 	$menuNodesObject->menuNodes["welcome_page"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "13";
+	$menuNode["id"] = "19";
 	$menuNode["name"] = "";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";

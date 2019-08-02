@@ -113,9 +113,9 @@ $tdataovertimes[".listAjax"] = false;
 	$tdataovertimes[".locking"] = false;
 
 $tdataovertimes[".edit"] = true;
-$tdataovertimes[".afterEditAction"] = 1;
+$tdataovertimes[".afterEditAction"] = 0;
 $tdataovertimes[".closePopupAfterEdit"] = 1;
-$tdataovertimes[".afterEditActionDetTable"] = "";
+$tdataovertimes[".afterEditActionDetTable"] = "overtimetab";
 
 $tdataovertimes[".add"] = true;
 $tdataovertimes[".afterAddAction"] = 1;
@@ -169,7 +169,7 @@ $tdataovertimes[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																				
+																																																																																																																																																																																																																																																																														
 
 $tdataovertimes[".ajaxCodeSnippetAdded"] = false;
 
@@ -824,8 +824,8 @@ $tdataovertimes[".printFields"][] = "Posted";
 	
 	
 		$edata["DateEditType"] = 11;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -959,8 +959,8 @@ $tdataovertimes[".printFields"][] = "Posted";
 	
 	
 		$edata["DateEditType"] = 11;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -1760,8 +1760,8 @@ $tdataovertimes[".printFields"][] = "Posted";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	

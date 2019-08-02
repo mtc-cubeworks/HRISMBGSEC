@@ -138,7 +138,7 @@ $tdataclocktypes[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																				
+																																																																																																																																																																																																																																																																														
 
 $tdataclocktypes[".ajaxCodeSnippetAdded"] = false;
 
@@ -307,7 +307,7 @@ $tdataclocktypes[".printFields"][] = "ClockType";
 	$fdata["GoodName"] = "CtID";
 	$fdata["ownerTable"] = "clocktypes";
 	$fdata["Label"] = GetFieldLabel("clocktypes","CtID");
-	$fdata["FieldType"] = 3;
+	$fdata["FieldType"] = 200;
 
 	
 	
@@ -375,8 +375,7 @@ $tdataclocktypes[".printFields"][] = "ClockType";
 	
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 			$edata["acceptFileTypes"] = ".+$";
@@ -390,16 +389,15 @@ $tdataclocktypes[".printFields"][] = "ClockType";
 			$edata["HTML5InuptType"] = "text";
 
 		$edata["EditParams"] = "";
-		
+			$edata["EditParams"].= " maxlength=1";
+
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
+	
 	
 	//	End validation
 

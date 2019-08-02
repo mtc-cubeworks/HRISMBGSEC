@@ -7,8 +7,6 @@ class eventclass_indschedule11  extends eventsBase
 
 		$this->events["BeforeEdit"]=true;
 
-		$this->events["AfterEdit"]=true;
-
 
 //	onscreen events
 
@@ -113,77 +111,6 @@ return true;
 
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-				// After record updated
-function AfterEdit(&$values, $where, &$oldvalues, &$keys, $inline, &$pageObject)
-{
-
-		
-
-
-
-// Place event code here.
-// Use "Add Action" button to add code snippets.
-;		
-} // function AfterEdit
-
 		
 		
 		

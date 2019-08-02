@@ -138,7 +138,7 @@ $tdatadloglimit2[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																				
+																																																																																																																																																																																																																																																																														
 
 $tdatadloglimit2[".ajaxCodeSnippetAdded"] = false;
 
@@ -680,8 +680,8 @@ $tdatadloglimit2[".printFields"][] = "STimeInC";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -813,8 +813,8 @@ $tdatadloglimit2[".printFields"][] = "STimeInC";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	

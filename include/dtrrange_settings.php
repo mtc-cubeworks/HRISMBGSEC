@@ -146,12 +146,12 @@ $tdatadtrrange[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																												
+																																																																																																																																																																																
 							
 							
 							
 							
-																																																																																
+																																																																																						
 
 $tdatadtrrange[".ajaxCodeSnippetAdded"] = false;
 
@@ -489,7 +489,8 @@ $tdatadtrrange[".printFields"][] = "WageType";
 
 
 // the field's search options settings
-	
+		$fdata["defaultSearchOption"] = "Contains";
+
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
 // the end of search options settings
@@ -590,8 +591,8 @@ $tdatadtrrange[".printFields"][] = "WageType";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -724,8 +725,8 @@ $tdatadtrrange[".printFields"][] = "WageType";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	

@@ -135,7 +135,7 @@ $tdataleavetypes[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																				
+																																																																																																																																																																																																																																																																														
 
 $tdataleavetypes[".ajaxCodeSnippetAdded"] = false;
 

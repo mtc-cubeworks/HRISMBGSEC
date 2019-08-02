@@ -164,6 +164,75 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelspayrolltab["English"]["Position"] = "Position";
 	$fieldToolTipspayrolltab["English"]["Position"] = "";
 	$placeHolderspayrolltab["English"]["Position"] = "";
+	$fieldLabelspayrolltab["English"]["Thirteenth"] = "13th Month";
+	$fieldToolTipspayrolltab["English"]["Thirteenth"] = "";
+	$placeHolderspayrolltab["English"]["Thirteenth"] = "";
+	$fieldLabelspayrolltab["English"]["Taxable"] = "Taxable";
+	$fieldToolTipspayrolltab["English"]["Taxable"] = "";
+	$placeHolderspayrolltab["English"]["Taxable"] = "";
+	$fieldLabelspayrolltab["English"]["NDOTHrs"] = "NDOTHrs";
+	$fieldToolTipspayrolltab["English"]["NDOTHrs"] = "";
+	$placeHolderspayrolltab["English"]["NDOTHrs"] = "";
+	$fieldLabelspayrolltab["English"]["RegNDOTHrs"] = "Reg NDOTHrs";
+	$fieldToolTipspayrolltab["English"]["RegNDOTHrs"] = "";
+	$placeHolderspayrolltab["English"]["RegNDOTHrs"] = "";
+	$fieldLabelspayrolltab["English"]["RHNDOTHrs"] = "RHNDOTHrs";
+	$fieldToolTipspayrolltab["English"]["RHNDOTHrs"] = "";
+	$placeHolderspayrolltab["English"]["RHNDOTHrs"] = "";
+	$fieldLabelspayrolltab["English"]["SHNDOTHrs"] = "SHNDOTHrs";
+	$fieldToolTipspayrolltab["English"]["SHNDOTHrs"] = "";
+	$placeHolderspayrolltab["English"]["SHNDOTHrs"] = "";
+	$fieldLabelspayrolltab["English"]["CHNDOTHrs"] = "CHNDOTHrs";
+	$fieldToolTipspayrolltab["English"]["CHNDOTHrs"] = "";
+	$placeHolderspayrolltab["English"]["CHNDOTHrs"] = "";
+	$fieldLabelspayrolltab["English"]["RDNDOTHrs"] = "RDNDOTHrs";
+	$fieldToolTipspayrolltab["English"]["RDNDOTHrs"] = "";
+	$placeHolderspayrolltab["English"]["RDNDOTHrs"] = "";
+	$fieldLabelspayrolltab["English"]["DH"] = "DH";
+	$fieldToolTipspayrolltab["English"]["DH"] = "";
+	$placeHolderspayrolltab["English"]["DH"] = "";
+	$fieldLabelspayrolltab["English"]["DHRD"] = "DHRD";
+	$fieldToolTipspayrolltab["English"]["DHRD"] = "";
+	$placeHolderspayrolltab["English"]["DHRD"] = "";
+	$fieldLabelspayrolltab["English"]["DHOT"] = "DHOT";
+	$fieldToolTipspayrolltab["English"]["DHOT"] = "";
+	$placeHolderspayrolltab["English"]["DHOT"] = "";
+	$fieldLabelspayrolltab["English"]["DHRDOT"] = "DHRDOT";
+	$fieldToolTipspayrolltab["English"]["DHRDOT"] = "";
+	$placeHolderspayrolltab["English"]["DHRDOT"] = "";
+	$fieldLabelspayrolltab["English"]["SHRDND"] = "SHRDND";
+	$fieldToolTipspayrolltab["English"]["SHRDND"] = "";
+	$placeHolderspayrolltab["English"]["SHRDND"] = "";
+	$fieldLabelspayrolltab["English"]["RHRDND"] = "RHRDND";
+	$fieldToolTipspayrolltab["English"]["RHRDND"] = "";
+	$placeHolderspayrolltab["English"]["RHRDND"] = "";
+	$fieldLabelspayrolltab["English"]["SHRDNDOT"] = "SHRDNDOT";
+	$fieldToolTipspayrolltab["English"]["SHRDNDOT"] = "";
+	$placeHolderspayrolltab["English"]["SHRDNDOT"] = "";
+	$fieldLabelspayrolltab["English"]["RHRDNDOT"] = "RHRDNDOT";
+	$fieldToolTipspayrolltab["English"]["RHRDNDOT"] = "";
+	$placeHolderspayrolltab["English"]["RHRDNDOT"] = "";
+	$fieldLabelspayrolltab["English"]["DHND"] = "DHND";
+	$fieldToolTipspayrolltab["English"]["DHND"] = "";
+	$placeHolderspayrolltab["English"]["DHND"] = "";
+	$fieldLabelspayrolltab["English"]["DHRDND"] = "DHRDND";
+	$fieldToolTipspayrolltab["English"]["DHRDND"] = "";
+	$placeHolderspayrolltab["English"]["DHRDND"] = "";
+	$fieldLabelspayrolltab["English"]["DHNDOT"] = "DHNDOT";
+	$fieldToolTipspayrolltab["English"]["DHNDOT"] = "";
+	$placeHolderspayrolltab["English"]["DHNDOT"] = "";
+	$fieldLabelspayrolltab["English"]["DHRDNDOT"] = "DHRDNDOT";
+	$fieldToolTipspayrolltab["English"]["DHRDNDOT"] = "";
+	$placeHolderspayrolltab["English"]["DHRDNDOT"] = "";
+	$fieldLabelspayrolltab["English"]["ThirToDate"] = "13th Month To-Date";
+	$fieldToolTipspayrolltab["English"]["ThirToDate"] = "";
+	$placeHolderspayrolltab["English"]["ThirToDate"] = "";
+	$fieldLabelspayrolltab["English"]["TaxableToDate"] = "Taxable To-Date";
+	$fieldToolTipspayrolltab["English"]["TaxableToDate"] = "";
+	$placeHolderspayrolltab["English"]["TaxableToDate"] = "";
+	$fieldLabelspayrolltab["English"]["TaxToDate"] = "Tax To-Date";
+	$fieldToolTipspayrolltab["English"]["TaxToDate"] = "";
+	$placeHolderspayrolltab["English"]["TaxToDate"] = "";
 	if (count($fieldToolTipspayrolltab["English"]))
 		$tdatapayrolltab[".isUseToolTips"] = true;
 }
@@ -173,6 +242,69 @@ if(mlang_getcurrentlang()=="")
 	$fieldToolTipspayrolltab[""] = array();
 	$placeHolderspayrolltab[""] = array();
 	$pageTitlespayrolltab[""] = array();
+	$fieldLabelspayrolltab[""]["NDOTHrs"] = "NDOTHrs";
+	$fieldToolTipspayrolltab[""]["NDOTHrs"] = "";
+	$placeHolderspayrolltab[""]["NDOTHrs"] = "";
+	$fieldLabelspayrolltab[""]["RegNDOTHrs"] = "Reg NDOTHrs";
+	$fieldToolTipspayrolltab[""]["RegNDOTHrs"] = "";
+	$placeHolderspayrolltab[""]["RegNDOTHrs"] = "";
+	$fieldLabelspayrolltab[""]["RHNDOTHrs"] = "RHNDOTHrs";
+	$fieldToolTipspayrolltab[""]["RHNDOTHrs"] = "";
+	$placeHolderspayrolltab[""]["RHNDOTHrs"] = "";
+	$fieldLabelspayrolltab[""]["SHNDOTHrs"] = "SHNDOTHrs";
+	$fieldToolTipspayrolltab[""]["SHNDOTHrs"] = "";
+	$placeHolderspayrolltab[""]["SHNDOTHrs"] = "";
+	$fieldLabelspayrolltab[""]["CHNDOTHrs"] = "CHNDOTHrs";
+	$fieldToolTipspayrolltab[""]["CHNDOTHrs"] = "";
+	$placeHolderspayrolltab[""]["CHNDOTHrs"] = "";
+	$fieldLabelspayrolltab[""]["RDNDOTHrs"] = "RDNDOTHrs";
+	$fieldToolTipspayrolltab[""]["RDNDOTHrs"] = "";
+	$placeHolderspayrolltab[""]["RDNDOTHrs"] = "";
+	$fieldLabelspayrolltab[""]["DH"] = "DH";
+	$fieldToolTipspayrolltab[""]["DH"] = "";
+	$placeHolderspayrolltab[""]["DH"] = "";
+	$fieldLabelspayrolltab[""]["DHRD"] = "DHRD";
+	$fieldToolTipspayrolltab[""]["DHRD"] = "";
+	$placeHolderspayrolltab[""]["DHRD"] = "";
+	$fieldLabelspayrolltab[""]["DHOT"] = "DHOT";
+	$fieldToolTipspayrolltab[""]["DHOT"] = "";
+	$placeHolderspayrolltab[""]["DHOT"] = "";
+	$fieldLabelspayrolltab[""]["DHRDOT"] = "DHRDOT";
+	$fieldToolTipspayrolltab[""]["DHRDOT"] = "";
+	$placeHolderspayrolltab[""]["DHRDOT"] = "";
+	$fieldLabelspayrolltab[""]["SHRDND"] = "SHRDND";
+	$fieldToolTipspayrolltab[""]["SHRDND"] = "";
+	$placeHolderspayrolltab[""]["SHRDND"] = "";
+	$fieldLabelspayrolltab[""]["RHRDND"] = "RHRDND";
+	$fieldToolTipspayrolltab[""]["RHRDND"] = "";
+	$placeHolderspayrolltab[""]["RHRDND"] = "";
+	$fieldLabelspayrolltab[""]["SHRDNDOT"] = "SHRDNDOT";
+	$fieldToolTipspayrolltab[""]["SHRDNDOT"] = "";
+	$placeHolderspayrolltab[""]["SHRDNDOT"] = "";
+	$fieldLabelspayrolltab[""]["RHRDNDOT"] = "RHRDNDOT";
+	$fieldToolTipspayrolltab[""]["RHRDNDOT"] = "";
+	$placeHolderspayrolltab[""]["RHRDNDOT"] = "";
+	$fieldLabelspayrolltab[""]["DHND"] = "DHND";
+	$fieldToolTipspayrolltab[""]["DHND"] = "";
+	$placeHolderspayrolltab[""]["DHND"] = "";
+	$fieldLabelspayrolltab[""]["DHRDND"] = "DHRDND";
+	$fieldToolTipspayrolltab[""]["DHRDND"] = "";
+	$placeHolderspayrolltab[""]["DHRDND"] = "";
+	$fieldLabelspayrolltab[""]["DHNDOT"] = "DHNDOT";
+	$fieldToolTipspayrolltab[""]["DHNDOT"] = "";
+	$placeHolderspayrolltab[""]["DHNDOT"] = "";
+	$fieldLabelspayrolltab[""]["DHRDNDOT"] = "DHRDNDOT";
+	$fieldToolTipspayrolltab[""]["DHRDNDOT"] = "";
+	$placeHolderspayrolltab[""]["DHRDNDOT"] = "";
+	$fieldLabelspayrolltab[""]["ThirToDate"] = "Thir To Date";
+	$fieldToolTipspayrolltab[""]["ThirToDate"] = "";
+	$placeHolderspayrolltab[""]["ThirToDate"] = "";
+	$fieldLabelspayrolltab[""]["TaxableToDate"] = "Taxable To Date";
+	$fieldToolTipspayrolltab[""]["TaxableToDate"] = "";
+	$placeHolderspayrolltab[""]["TaxableToDate"] = "";
+	$fieldLabelspayrolltab[""]["TaxToDate"] = "Tax To Date";
+	$fieldToolTipspayrolltab[""]["TaxToDate"] = "";
+	$placeHolderspayrolltab[""]["TaxToDate"] = "";
 	if (count($fieldToolTipspayrolltab[""]))
 		$tdatapayrolltab[".isUseToolTips"] = true;
 }
@@ -270,8 +402,8 @@ $tdatapayrolltab[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
-																																																																																																		
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
+								
 
 $tdatapayrolltab[".ajaxCodeSnippetAdded"] = false;
 
@@ -291,153 +423,57 @@ $tdatapayrolltab[".allSearchFields"] = array();
 $tdatapayrolltab[".filterFields"] = array();
 $tdatapayrolltab[".requiredSearchFields"] = array();
 
-$tdatapayrolltab[".allSearchFields"][] = "PtabID";
-	$tdatapayrolltab[".allSearchFields"][] = "Locked";
-	$tdatapayrolltab[".allSearchFields"][] = "Email";
-	$tdatapayrolltab[".allSearchFields"][] = "PayrollID";
-	$tdatapayrolltab[".allSearchFields"][] = "EmployeeID";
+$tdatapayrolltab[".allSearchFields"][] = "FromDate";
+	$tdatapayrolltab[".allSearchFields"][] = "ToDate";
 	$tdatapayrolltab[".allSearchFields"][] = "UserName";
-	$tdatapayrolltab[".allSearchFields"][] = "Position";
 	$tdatapayrolltab[".allSearchFields"][] = "Division";
 	$tdatapayrolltab[".allSearchFields"][] = "Employer";
 	$tdatapayrolltab[".allSearchFields"][] = "WageType";
 	$tdatapayrolltab[".allSearchFields"][] = "Status";
-	$tdatapayrolltab[".allSearchFields"][] = "FromDate";
-	$tdatapayrolltab[".allSearchFields"][] = "ToDate";
 	$tdatapayrolltab[".allSearchFields"][] = "BasicMonthly";
 	$tdatapayrolltab[".allSearchFields"][] = "BasicDaily";
-	$tdatapayrolltab[".allSearchFields"][] = "DWork";
-	$tdatapayrolltab[".allSearchFields"][] = "Absent";
-	$tdatapayrolltab[".allSearchFields"][] = "LateMins";
-	$tdatapayrolltab[".allSearchFields"][] = "UndertimeMins";
-	$tdatapayrolltab[".allSearchFields"][] = "RHolidayHrs";
-	$tdatapayrolltab[".allSearchFields"][] = "SHolidayHrs";
-	$tdatapayrolltab[".allSearchFields"][] = "CHolidayHrs";
-	$tdatapayrolltab[".allSearchFields"][] = "ExcessHrs";
-	$tdatapayrolltab[".allSearchFields"][] = "RegOTHrs";
-	$tdatapayrolltab[".allSearchFields"][] = "RHOTHrs";
-	$tdatapayrolltab[".allSearchFields"][] = "SHOTHRs";
-	$tdatapayrolltab[".allSearchFields"][] = "CHOTHrs";
-	$tdatapayrolltab[".allSearchFields"][] = "TrODays";
-	$tdatapayrolltab[".allSearchFields"][] = "RDOTHrs";
-	$tdatapayrolltab[".allSearchFields"][] = "NDHrs";
-	$tdatapayrolltab[".allSearchFields"][] = "RDHrs";
-	$tdatapayrolltab[".allSearchFields"][] = "RegNDHrs";
-	$tdatapayrolltab[".allSearchFields"][] = "RHNDHrs";
-	$tdatapayrolltab[".allSearchFields"][] = "SHNDHrs";
-	$tdatapayrolltab[".allSearchFields"][] = "CHNDHrs";
-	$tdatapayrolltab[".allSearchFields"][] = "RDNDHrs";
-	$tdatapayrolltab[".allSearchFields"][] = "VLDays";
-	$tdatapayrolltab[".allSearchFields"][] = "SLDays";
-	$tdatapayrolltab[".allSearchFields"][] = "ELDays";
-	$tdatapayrolltab[".allSearchFields"][] = "PLDays";
-	$tdatapayrolltab[".allSearchFields"][] = "PLBalance";
-	$tdatapayrolltab[".allSearchFields"][] = "ELBalance";
-	$tdatapayrolltab[".allSearchFields"][] = "SLBalance";
-	$tdatapayrolltab[".allSearchFields"][] = "VLBalance";
-	$tdatapayrolltab[".allSearchFields"][] = "AllowancePerDay";
-	$tdatapayrolltab[".allSearchFields"][] = "AgencyShare";
-	$tdatapayrolltab[".allSearchFields"][] = "NDMealAllowance";
+	$tdatapayrolltab[".allSearchFields"][] = "ThirToDate";
+	$tdatapayrolltab[".allSearchFields"][] = "TaxableToDate";
+	$tdatapayrolltab[".allSearchFields"][] = "TaxToDate";
 	
 
 $tdatapayrolltab[".googleLikeFields"] = array();
-$tdatapayrolltab[".googleLikeFields"][] = "PtabID";
-$tdatapayrolltab[".googleLikeFields"][] = "EmployeeID";
 $tdatapayrolltab[".googleLikeFields"][] = "WageType";
 $tdatapayrolltab[".googleLikeFields"][] = "Status";
 $tdatapayrolltab[".googleLikeFields"][] = "BasicMonthly";
 $tdatapayrolltab[".googleLikeFields"][] = "BasicDaily";
-$tdatapayrolltab[".googleLikeFields"][] = "DWork";
-$tdatapayrolltab[".googleLikeFields"][] = "Absent";
-$tdatapayrolltab[".googleLikeFields"][] = "LateMins";
-$tdatapayrolltab[".googleLikeFields"][] = "UndertimeMins";
-$tdatapayrolltab[".googleLikeFields"][] = "RHolidayHrs";
-$tdatapayrolltab[".googleLikeFields"][] = "SHolidayHrs";
-$tdatapayrolltab[".googleLikeFields"][] = "CHolidayHrs";
-$tdatapayrolltab[".googleLikeFields"][] = "ExcessHrs";
-$tdatapayrolltab[".googleLikeFields"][] = "RegOTHrs";
-$tdatapayrolltab[".googleLikeFields"][] = "RHOTHrs";
-$tdatapayrolltab[".googleLikeFields"][] = "SHOTHRs";
-$tdatapayrolltab[".googleLikeFields"][] = "CHOTHrs";
-$tdatapayrolltab[".googleLikeFields"][] = "RDOTHrs";
-$tdatapayrolltab[".googleLikeFields"][] = "NDHrs";
-$tdatapayrolltab[".googleLikeFields"][] = "RDHrs";
-$tdatapayrolltab[".googleLikeFields"][] = "RegNDHrs";
-$tdatapayrolltab[".googleLikeFields"][] = "RHNDHrs";
-$tdatapayrolltab[".googleLikeFields"][] = "SHNDHrs";
-$tdatapayrolltab[".googleLikeFields"][] = "CHNDHrs";
-$tdatapayrolltab[".googleLikeFields"][] = "RDNDHrs";
-$tdatapayrolltab[".googleLikeFields"][] = "VLDays";
-$tdatapayrolltab[".googleLikeFields"][] = "SLDays";
-$tdatapayrolltab[".googleLikeFields"][] = "ELDays";
-$tdatapayrolltab[".googleLikeFields"][] = "PLDays";
-$tdatapayrolltab[".googleLikeFields"][] = "TrODays";
+$tdatapayrolltab[".googleLikeFields"][] = "UserName";
 $tdatapayrolltab[".googleLikeFields"][] = "FromDate";
 $tdatapayrolltab[".googleLikeFields"][] = "ToDate";
-$tdatapayrolltab[".googleLikeFields"][] = "UserName";
-$tdatapayrolltab[".googleLikeFields"][] = "AllowancePerDay";
-$tdatapayrolltab[".googleLikeFields"][] = "VLBalance";
-$tdatapayrolltab[".googleLikeFields"][] = "SLBalance";
-$tdatapayrolltab[".googleLikeFields"][] = "ELBalance";
-$tdatapayrolltab[".googleLikeFields"][] = "PLBalance";
-$tdatapayrolltab[".googleLikeFields"][] = "AgencyShare";
-$tdatapayrolltab[".googleLikeFields"][] = "NDMealAllowance";
 $tdatapayrolltab[".googleLikeFields"][] = "Division";
 $tdatapayrolltab[".googleLikeFields"][] = "Employer";
-$tdatapayrolltab[".googleLikeFields"][] = "PayrollID";
-$tdatapayrolltab[".googleLikeFields"][] = "Email";
-$tdatapayrolltab[".googleLikeFields"][] = "Locked";
-$tdatapayrolltab[".googleLikeFields"][] = "Position";
+$tdatapayrolltab[".googleLikeFields"][] = "ThirToDate";
+$tdatapayrolltab[".googleLikeFields"][] = "TaxableToDate";
+$tdatapayrolltab[".googleLikeFields"][] = "TaxToDate";
 
-
+$tdatapayrolltab[".panelSearchFields"] = array();
+$tdatapayrolltab[".searchPanelOptions"] = array();
+$tdatapayrolltab[".panelSearchFields"][] = "FromDate";
+	$tdatapayrolltab[".panelSearchFields"][] = "ToDate";
+	$tdatapayrolltab[".panelSearchFields"][] = "UserName";
+	$tdatapayrolltab[".panelSearchFields"][] = "Division";
+	$tdatapayrolltab[".panelSearchFields"][] = "Employer";
+	$tdatapayrolltab[".panelSearchFields"][] = "WageType";
+	$tdatapayrolltab[".panelSearchFields"][] = "Status";
+	
 $tdatapayrolltab[".advSearchFields"] = array();
-$tdatapayrolltab[".advSearchFields"][] = "PtabID";
-$tdatapayrolltab[".advSearchFields"][] = "Locked";
-$tdatapayrolltab[".advSearchFields"][] = "Email";
-$tdatapayrolltab[".advSearchFields"][] = "PayrollID";
-$tdatapayrolltab[".advSearchFields"][] = "EmployeeID";
+$tdatapayrolltab[".advSearchFields"][] = "FromDate";
+$tdatapayrolltab[".advSearchFields"][] = "ToDate";
 $tdatapayrolltab[".advSearchFields"][] = "UserName";
-$tdatapayrolltab[".advSearchFields"][] = "Position";
 $tdatapayrolltab[".advSearchFields"][] = "Division";
 $tdatapayrolltab[".advSearchFields"][] = "Employer";
 $tdatapayrolltab[".advSearchFields"][] = "WageType";
 $tdatapayrolltab[".advSearchFields"][] = "Status";
-$tdatapayrolltab[".advSearchFields"][] = "FromDate";
-$tdatapayrolltab[".advSearchFields"][] = "ToDate";
 $tdatapayrolltab[".advSearchFields"][] = "BasicMonthly";
 $tdatapayrolltab[".advSearchFields"][] = "BasicDaily";
-$tdatapayrolltab[".advSearchFields"][] = "DWork";
-$tdatapayrolltab[".advSearchFields"][] = "Absent";
-$tdatapayrolltab[".advSearchFields"][] = "LateMins";
-$tdatapayrolltab[".advSearchFields"][] = "UndertimeMins";
-$tdatapayrolltab[".advSearchFields"][] = "RHolidayHrs";
-$tdatapayrolltab[".advSearchFields"][] = "SHolidayHrs";
-$tdatapayrolltab[".advSearchFields"][] = "CHolidayHrs";
-$tdatapayrolltab[".advSearchFields"][] = "ExcessHrs";
-$tdatapayrolltab[".advSearchFields"][] = "RegOTHrs";
-$tdatapayrolltab[".advSearchFields"][] = "RHOTHrs";
-$tdatapayrolltab[".advSearchFields"][] = "SHOTHRs";
-$tdatapayrolltab[".advSearchFields"][] = "CHOTHrs";
-$tdatapayrolltab[".advSearchFields"][] = "TrODays";
-$tdatapayrolltab[".advSearchFields"][] = "RDOTHrs";
-$tdatapayrolltab[".advSearchFields"][] = "NDHrs";
-$tdatapayrolltab[".advSearchFields"][] = "RDHrs";
-$tdatapayrolltab[".advSearchFields"][] = "RegNDHrs";
-$tdatapayrolltab[".advSearchFields"][] = "RHNDHrs";
-$tdatapayrolltab[".advSearchFields"][] = "SHNDHrs";
-$tdatapayrolltab[".advSearchFields"][] = "CHNDHrs";
-$tdatapayrolltab[".advSearchFields"][] = "RDNDHrs";
-$tdatapayrolltab[".advSearchFields"][] = "VLDays";
-$tdatapayrolltab[".advSearchFields"][] = "SLDays";
-$tdatapayrolltab[".advSearchFields"][] = "ELDays";
-$tdatapayrolltab[".advSearchFields"][] = "PLDays";
-$tdatapayrolltab[".advSearchFields"][] = "PLBalance";
-$tdatapayrolltab[".advSearchFields"][] = "ELBalance";
-$tdatapayrolltab[".advSearchFields"][] = "SLBalance";
-$tdatapayrolltab[".advSearchFields"][] = "VLBalance";
-$tdatapayrolltab[".advSearchFields"][] = "AllowancePerDay";
-$tdatapayrolltab[".advSearchFields"][] = "AgencyShare";
-$tdatapayrolltab[".advSearchFields"][] = "NDMealAllowance";
+$tdatapayrolltab[".advSearchFields"][] = "ThirToDate";
+$tdatapayrolltab[".advSearchFields"][] = "TaxableToDate";
+$tdatapayrolltab[".advSearchFields"][] = "TaxToDate";
 
 $tdatapayrolltab[".tableType"] = "list";
 
@@ -466,6 +502,12 @@ $tdatapayrolltab[".listGridLayout"] = 3;
 
 // print page pdf
 
+$tdatapayrolltab[".totalsFields"] = array();
+$tdatapayrolltab[".totalsFields"][] = array(
+	"fName" => "Locked",
+	"numRows" => 0,
+	"totalsType" => "COUNT",
+	"viewFormat" => 'Checkbox');
 
 $tdatapayrolltab[".pageSize"] = 20;
 
@@ -473,18 +515,31 @@ $tdatapayrolltab[".warnLeavingPages"] = true;
 
 
 
-$tstrOrderBy = "";
+$tstrOrderBy = "ORDER BY ToDate DESC";
 if(strlen($tstrOrderBy) && strtolower(substr($tstrOrderBy,0,8))!="order by")
 	$tstrOrderBy = "order by ".$tstrOrderBy;
 $tdatapayrolltab[".strOrderBy"] = $tstrOrderBy;
 
 $tdatapayrolltab[".orderindexes"] = array();
+	$tdatapayrolltab[".orderindexes"][] = array(34, (0 ? "ASC" : "DESC"), "ToDate");
 
-$tdatapayrolltab[".sqlHead"] = "SELECT PtabID,  	EmployeeID,  	WageType,  	Status,  	BasicMonthly,  	BasicDaily,  	DWork,  	Absent,  	LateMins,  	UndertimeMins,  	RHolidayHrs,  	SHolidayHrs,  	CHolidayHrs,  	ExcessHrs,  	RegOTHrs,  	RHOTHrs,  	SHOTHRs,  	CHOTHrs,  	RDOTHrs,  	NDHrs,  	RDHrs,  	RegNDHrs,  	RHNDHrs,  	SHNDHrs,  	CHNDHrs,  	RDNDHrs,  	VLDays,  	SLDays,  	ELDays,  	PLDays,  	TrODays,  	FromDate,  	ToDate,  	UserName,  	AllowancePerDay,  	VLBalance,  	SLBalance,  	ELBalance,  	PLBalance,  	AgencyShare,  	NDMealAllowance,  	Division,  	Employer,  	PayrollID,  	Email,  	Locked,  	`Position`";
+
+$tdatapayrolltab[".sqlHead"] = "SELECT PtabID,  EmployeeID,  WageType,  Status,  BasicMonthly,  BasicDaily,  DWork,  Absent,  LateMins,  UndertimeMins,  RHolidayHrs,  SHolidayHrs,  CHolidayHrs,  ExcessHrs,  RegOTHrs,  RHOTHrs,  SHOTHRs,  CHOTHrs,  RDOTHrs,  NDHrs,  RDHrs,  RegNDHrs,  RHNDHrs,  SHNDHrs,  CHNDHrs,  RDNDHrs,  VLDays,  SLDays,  ELDays,  PLDays,  TrODays,  UserName,  FromDate,  ToDate,  AllowancePerDay,  VLBalance,  SLBalance,  ELBalance,  PLBalance,  AgencyShare,  NDMealAllowance,  Division,  Employer,  PayrollID,  Email,  Locked,  `Position`,  Thirteenth,  Taxable,  NDOTHrs,  RegNDOTHrs,  RHNDOTHrs,  SHNDOTHrs,  CHNDOTHrs,  RDNDOTHrs,  DH,  DHRD,  DHOT,  DHRDOT,  SHRDND,  RHRDND,  SHRDNDOT,  RHRDNDOT,  DHND,  DHRDND,  DHNDOT,  DHRDNDOT,  ThirToDate,  TaxableToDate,  TaxToDate";
 $tdatapayrolltab[".sqlFrom"] = "FROM payrolltab";
 $tdatapayrolltab[".sqlWhereExpr"] = "";
 $tdatapayrolltab[".sqlTail"] = "";
 
+//fill array of tabs for list page
+$arrGridTabs = array();
+$arrGridTabs[] = array(
+	'tabId' => "",
+	'name' => "All data",
+	'nameType' => 'Text',
+	'where' => "",	
+	'showRowCount' => 0,
+	'hideEmpty' => 0,	
+);				  
+$tdatapayrolltab[".arrGridTabs"] = $arrGridTabs;
 
 
 
@@ -527,17 +582,16 @@ $tdatapayrolltab[".Keys"] = $tableKeyspayrolltab;
 $tdatapayrolltab[".listFields"] = array();
 $tdatapayrolltab[".listFields"][] = "PtabID";
 $tdatapayrolltab[".listFields"][] = "Locked";
-$tdatapayrolltab[".listFields"][] = "Email";
-$tdatapayrolltab[".listFields"][] = "PayrollID";
+$tdatapayrolltab[".listFields"][] = "FromDate";
+$tdatapayrolltab[".listFields"][] = "ToDate";
 $tdatapayrolltab[".listFields"][] = "EmployeeID";
 $tdatapayrolltab[".listFields"][] = "UserName";
+$tdatapayrolltab[".listFields"][] = "Email";
 $tdatapayrolltab[".listFields"][] = "Position";
 $tdatapayrolltab[".listFields"][] = "Division";
 $tdatapayrolltab[".listFields"][] = "Employer";
 $tdatapayrolltab[".listFields"][] = "WageType";
 $tdatapayrolltab[".listFields"][] = "Status";
-$tdatapayrolltab[".listFields"][] = "FromDate";
-$tdatapayrolltab[".listFields"][] = "ToDate";
 $tdatapayrolltab[".listFields"][] = "BasicMonthly";
 $tdatapayrolltab[".listFields"][] = "BasicDaily";
 $tdatapayrolltab[".listFields"][] = "DWork";
@@ -555,12 +609,30 @@ $tdatapayrolltab[".listFields"][] = "CHOTHrs";
 $tdatapayrolltab[".listFields"][] = "TrODays";
 $tdatapayrolltab[".listFields"][] = "RDOTHrs";
 $tdatapayrolltab[".listFields"][] = "NDHrs";
+$tdatapayrolltab[".listFields"][] = "NDOTHrs";
+$tdatapayrolltab[".listFields"][] = "RegNDOTHrs";
+$tdatapayrolltab[".listFields"][] = "RHNDOTHrs";
+$tdatapayrolltab[".listFields"][] = "CHNDOTHrs";
+$tdatapayrolltab[".listFields"][] = "SHNDOTHrs";
+$tdatapayrolltab[".listFields"][] = "SHRDNDOT";
+$tdatapayrolltab[".listFields"][] = "RHRDNDOT";
+$tdatapayrolltab[".listFields"][] = "RDNDOTHrs";
+$tdatapayrolltab[".listFields"][] = "DHRDOT";
+$tdatapayrolltab[".listFields"][] = "DHRDNDOT";
+$tdatapayrolltab[".listFields"][] = "DHNDOT";
 $tdatapayrolltab[".listFields"][] = "RDHrs";
 $tdatapayrolltab[".listFields"][] = "RegNDHrs";
 $tdatapayrolltab[".listFields"][] = "RHNDHrs";
 $tdatapayrolltab[".listFields"][] = "SHNDHrs";
 $tdatapayrolltab[".listFields"][] = "CHNDHrs";
 $tdatapayrolltab[".listFields"][] = "RDNDHrs";
+$tdatapayrolltab[".listFields"][] = "DHRDND";
+$tdatapayrolltab[".listFields"][] = "DHND";
+$tdatapayrolltab[".listFields"][] = "RHRDND";
+$tdatapayrolltab[".listFields"][] = "SHRDND";
+$tdatapayrolltab[".listFields"][] = "DHOT";
+$tdatapayrolltab[".listFields"][] = "DHRD";
+$tdatapayrolltab[".listFields"][] = "DH";
 $tdatapayrolltab[".listFields"][] = "VLDays";
 $tdatapayrolltab[".listFields"][] = "SLDays";
 $tdatapayrolltab[".listFields"][] = "ELDays";
@@ -572,6 +644,12 @@ $tdatapayrolltab[".listFields"][] = "VLBalance";
 $tdatapayrolltab[".listFields"][] = "AllowancePerDay";
 $tdatapayrolltab[".listFields"][] = "AgencyShare";
 $tdatapayrolltab[".listFields"][] = "NDMealAllowance";
+$tdatapayrolltab[".listFields"][] = "Thirteenth";
+$tdatapayrolltab[".listFields"][] = "Taxable";
+$tdatapayrolltab[".listFields"][] = "ThirToDate";
+$tdatapayrolltab[".listFields"][] = "TaxableToDate";
+$tdatapayrolltab[".listFields"][] = "TaxToDate";
+$tdatapayrolltab[".listFields"][] = "PayrollID";
 
 $tdatapayrolltab[".hideMobileList"] = array();
 
@@ -579,17 +657,16 @@ $tdatapayrolltab[".hideMobileList"] = array();
 $tdatapayrolltab[".viewFields"] = array();
 $tdatapayrolltab[".viewFields"][] = "PtabID";
 $tdatapayrolltab[".viewFields"][] = "Locked";
-$tdatapayrolltab[".viewFields"][] = "Email";
-$tdatapayrolltab[".viewFields"][] = "PayrollID";
+$tdatapayrolltab[".viewFields"][] = "FromDate";
+$tdatapayrolltab[".viewFields"][] = "ToDate";
 $tdatapayrolltab[".viewFields"][] = "EmployeeID";
 $tdatapayrolltab[".viewFields"][] = "UserName";
+$tdatapayrolltab[".viewFields"][] = "Email";
 $tdatapayrolltab[".viewFields"][] = "Position";
 $tdatapayrolltab[".viewFields"][] = "Division";
 $tdatapayrolltab[".viewFields"][] = "Employer";
 $tdatapayrolltab[".viewFields"][] = "WageType";
 $tdatapayrolltab[".viewFields"][] = "Status";
-$tdatapayrolltab[".viewFields"][] = "FromDate";
-$tdatapayrolltab[".viewFields"][] = "ToDate";
 $tdatapayrolltab[".viewFields"][] = "BasicMonthly";
 $tdatapayrolltab[".viewFields"][] = "BasicDaily";
 $tdatapayrolltab[".viewFields"][] = "DWork";
@@ -607,12 +684,30 @@ $tdatapayrolltab[".viewFields"][] = "CHOTHrs";
 $tdatapayrolltab[".viewFields"][] = "TrODays";
 $tdatapayrolltab[".viewFields"][] = "RDOTHrs";
 $tdatapayrolltab[".viewFields"][] = "NDHrs";
+$tdatapayrolltab[".viewFields"][] = "NDOTHrs";
+$tdatapayrolltab[".viewFields"][] = "RegNDOTHrs";
+$tdatapayrolltab[".viewFields"][] = "RHNDOTHrs";
+$tdatapayrolltab[".viewFields"][] = "CHNDOTHrs";
+$tdatapayrolltab[".viewFields"][] = "SHNDOTHrs";
+$tdatapayrolltab[".viewFields"][] = "SHRDNDOT";
+$tdatapayrolltab[".viewFields"][] = "RHRDNDOT";
+$tdatapayrolltab[".viewFields"][] = "RDNDOTHrs";
+$tdatapayrolltab[".viewFields"][] = "DHRDOT";
+$tdatapayrolltab[".viewFields"][] = "DHRDNDOT";
+$tdatapayrolltab[".viewFields"][] = "DHNDOT";
 $tdatapayrolltab[".viewFields"][] = "RDHrs";
 $tdatapayrolltab[".viewFields"][] = "RegNDHrs";
 $tdatapayrolltab[".viewFields"][] = "RHNDHrs";
 $tdatapayrolltab[".viewFields"][] = "SHNDHrs";
 $tdatapayrolltab[".viewFields"][] = "CHNDHrs";
 $tdatapayrolltab[".viewFields"][] = "RDNDHrs";
+$tdatapayrolltab[".viewFields"][] = "DHRDND";
+$tdatapayrolltab[".viewFields"][] = "DHND";
+$tdatapayrolltab[".viewFields"][] = "RHRDND";
+$tdatapayrolltab[".viewFields"][] = "SHRDND";
+$tdatapayrolltab[".viewFields"][] = "DHOT";
+$tdatapayrolltab[".viewFields"][] = "DHRD";
+$tdatapayrolltab[".viewFields"][] = "DH";
 $tdatapayrolltab[".viewFields"][] = "VLDays";
 $tdatapayrolltab[".viewFields"][] = "SLDays";
 $tdatapayrolltab[".viewFields"][] = "ELDays";
@@ -624,20 +719,25 @@ $tdatapayrolltab[".viewFields"][] = "VLBalance";
 $tdatapayrolltab[".viewFields"][] = "AllowancePerDay";
 $tdatapayrolltab[".viewFields"][] = "AgencyShare";
 $tdatapayrolltab[".viewFields"][] = "NDMealAllowance";
+$tdatapayrolltab[".viewFields"][] = "Thirteenth";
+$tdatapayrolltab[".viewFields"][] = "Taxable";
+$tdatapayrolltab[".viewFields"][] = "ThirToDate";
+$tdatapayrolltab[".viewFields"][] = "TaxableToDate";
+$tdatapayrolltab[".viewFields"][] = "TaxToDate";
+$tdatapayrolltab[".viewFields"][] = "PayrollID";
 
 $tdatapayrolltab[".addFields"] = array();
 $tdatapayrolltab[".addFields"][] = "Locked";
-$tdatapayrolltab[".addFields"][] = "Email";
-$tdatapayrolltab[".addFields"][] = "PayrollID";
+$tdatapayrolltab[".addFields"][] = "FromDate";
+$tdatapayrolltab[".addFields"][] = "ToDate";
 $tdatapayrolltab[".addFields"][] = "EmployeeID";
 $tdatapayrolltab[".addFields"][] = "UserName";
+$tdatapayrolltab[".addFields"][] = "Email";
 $tdatapayrolltab[".addFields"][] = "Position";
 $tdatapayrolltab[".addFields"][] = "Division";
 $tdatapayrolltab[".addFields"][] = "Employer";
 $tdatapayrolltab[".addFields"][] = "WageType";
 $tdatapayrolltab[".addFields"][] = "Status";
-$tdatapayrolltab[".addFields"][] = "FromDate";
-$tdatapayrolltab[".addFields"][] = "ToDate";
 $tdatapayrolltab[".addFields"][] = "BasicMonthly";
 $tdatapayrolltab[".addFields"][] = "BasicDaily";
 $tdatapayrolltab[".addFields"][] = "DWork";
@@ -655,12 +755,30 @@ $tdatapayrolltab[".addFields"][] = "CHOTHrs";
 $tdatapayrolltab[".addFields"][] = "TrODays";
 $tdatapayrolltab[".addFields"][] = "RDOTHrs";
 $tdatapayrolltab[".addFields"][] = "NDHrs";
+$tdatapayrolltab[".addFields"][] = "NDOTHrs";
+$tdatapayrolltab[".addFields"][] = "RegNDOTHrs";
+$tdatapayrolltab[".addFields"][] = "RHNDOTHrs";
+$tdatapayrolltab[".addFields"][] = "CHNDOTHrs";
+$tdatapayrolltab[".addFields"][] = "SHNDOTHrs";
+$tdatapayrolltab[".addFields"][] = "SHRDNDOT";
+$tdatapayrolltab[".addFields"][] = "RHRDNDOT";
+$tdatapayrolltab[".addFields"][] = "RDNDOTHrs";
+$tdatapayrolltab[".addFields"][] = "DHRDOT";
+$tdatapayrolltab[".addFields"][] = "DHRDNDOT";
+$tdatapayrolltab[".addFields"][] = "DHNDOT";
 $tdatapayrolltab[".addFields"][] = "RDHrs";
 $tdatapayrolltab[".addFields"][] = "RegNDHrs";
 $tdatapayrolltab[".addFields"][] = "RHNDHrs";
 $tdatapayrolltab[".addFields"][] = "SHNDHrs";
 $tdatapayrolltab[".addFields"][] = "CHNDHrs";
 $tdatapayrolltab[".addFields"][] = "RDNDHrs";
+$tdatapayrolltab[".addFields"][] = "DHRDND";
+$tdatapayrolltab[".addFields"][] = "DHND";
+$tdatapayrolltab[".addFields"][] = "RHRDND";
+$tdatapayrolltab[".addFields"][] = "SHRDND";
+$tdatapayrolltab[".addFields"][] = "DHOT";
+$tdatapayrolltab[".addFields"][] = "DHRD";
+$tdatapayrolltab[".addFields"][] = "DH";
 $tdatapayrolltab[".addFields"][] = "VLDays";
 $tdatapayrolltab[".addFields"][] = "SLDays";
 $tdatapayrolltab[".addFields"][] = "ELDays";
@@ -672,21 +790,26 @@ $tdatapayrolltab[".addFields"][] = "VLBalance";
 $tdatapayrolltab[".addFields"][] = "AllowancePerDay";
 $tdatapayrolltab[".addFields"][] = "AgencyShare";
 $tdatapayrolltab[".addFields"][] = "NDMealAllowance";
+$tdatapayrolltab[".addFields"][] = "Thirteenth";
+$tdatapayrolltab[".addFields"][] = "Taxable";
+$tdatapayrolltab[".addFields"][] = "ThirToDate";
+$tdatapayrolltab[".addFields"][] = "TaxableToDate";
+$tdatapayrolltab[".addFields"][] = "TaxToDate";
+$tdatapayrolltab[".addFields"][] = "PayrollID";
 
 $tdatapayrolltab[".masterListFields"] = array();
 $tdatapayrolltab[".masterListFields"][] = "PtabID";
 $tdatapayrolltab[".masterListFields"][] = "Locked";
-$tdatapayrolltab[".masterListFields"][] = "Email";
-$tdatapayrolltab[".masterListFields"][] = "PayrollID";
+$tdatapayrolltab[".masterListFields"][] = "FromDate";
+$tdatapayrolltab[".masterListFields"][] = "ToDate";
 $tdatapayrolltab[".masterListFields"][] = "EmployeeID";
 $tdatapayrolltab[".masterListFields"][] = "UserName";
+$tdatapayrolltab[".masterListFields"][] = "Email";
 $tdatapayrolltab[".masterListFields"][] = "Position";
 $tdatapayrolltab[".masterListFields"][] = "Division";
 $tdatapayrolltab[".masterListFields"][] = "Employer";
 $tdatapayrolltab[".masterListFields"][] = "WageType";
 $tdatapayrolltab[".masterListFields"][] = "Status";
-$tdatapayrolltab[".masterListFields"][] = "FromDate";
-$tdatapayrolltab[".masterListFields"][] = "ToDate";
 $tdatapayrolltab[".masterListFields"][] = "BasicMonthly";
 $tdatapayrolltab[".masterListFields"][] = "BasicDaily";
 $tdatapayrolltab[".masterListFields"][] = "DWork";
@@ -704,12 +827,30 @@ $tdatapayrolltab[".masterListFields"][] = "CHOTHrs";
 $tdatapayrolltab[".masterListFields"][] = "TrODays";
 $tdatapayrolltab[".masterListFields"][] = "RDOTHrs";
 $tdatapayrolltab[".masterListFields"][] = "NDHrs";
+$tdatapayrolltab[".masterListFields"][] = "NDOTHrs";
+$tdatapayrolltab[".masterListFields"][] = "RegNDOTHrs";
+$tdatapayrolltab[".masterListFields"][] = "RHNDOTHrs";
+$tdatapayrolltab[".masterListFields"][] = "CHNDOTHrs";
+$tdatapayrolltab[".masterListFields"][] = "SHNDOTHrs";
+$tdatapayrolltab[".masterListFields"][] = "SHRDNDOT";
+$tdatapayrolltab[".masterListFields"][] = "RHRDNDOT";
+$tdatapayrolltab[".masterListFields"][] = "RDNDOTHrs";
+$tdatapayrolltab[".masterListFields"][] = "DHRDOT";
+$tdatapayrolltab[".masterListFields"][] = "DHRDNDOT";
+$tdatapayrolltab[".masterListFields"][] = "DHNDOT";
 $tdatapayrolltab[".masterListFields"][] = "RDHrs";
 $tdatapayrolltab[".masterListFields"][] = "RegNDHrs";
 $tdatapayrolltab[".masterListFields"][] = "RHNDHrs";
 $tdatapayrolltab[".masterListFields"][] = "SHNDHrs";
 $tdatapayrolltab[".masterListFields"][] = "CHNDHrs";
 $tdatapayrolltab[".masterListFields"][] = "RDNDHrs";
+$tdatapayrolltab[".masterListFields"][] = "DHRDND";
+$tdatapayrolltab[".masterListFields"][] = "DHND";
+$tdatapayrolltab[".masterListFields"][] = "RHRDND";
+$tdatapayrolltab[".masterListFields"][] = "SHRDND";
+$tdatapayrolltab[".masterListFields"][] = "DHOT";
+$tdatapayrolltab[".masterListFields"][] = "DHRD";
+$tdatapayrolltab[".masterListFields"][] = "DH";
 $tdatapayrolltab[".masterListFields"][] = "VLDays";
 $tdatapayrolltab[".masterListFields"][] = "SLDays";
 $tdatapayrolltab[".masterListFields"][] = "ELDays";
@@ -721,20 +862,25 @@ $tdatapayrolltab[".masterListFields"][] = "VLBalance";
 $tdatapayrolltab[".masterListFields"][] = "AllowancePerDay";
 $tdatapayrolltab[".masterListFields"][] = "AgencyShare";
 $tdatapayrolltab[".masterListFields"][] = "NDMealAllowance";
+$tdatapayrolltab[".masterListFields"][] = "Thirteenth";
+$tdatapayrolltab[".masterListFields"][] = "Taxable";
+$tdatapayrolltab[".masterListFields"][] = "ThirToDate";
+$tdatapayrolltab[".masterListFields"][] = "TaxableToDate";
+$tdatapayrolltab[".masterListFields"][] = "TaxToDate";
+$tdatapayrolltab[".masterListFields"][] = "PayrollID";
 
 $tdatapayrolltab[".inlineAddFields"] = array();
 $tdatapayrolltab[".inlineAddFields"][] = "Locked";
-$tdatapayrolltab[".inlineAddFields"][] = "Email";
-$tdatapayrolltab[".inlineAddFields"][] = "PayrollID";
+$tdatapayrolltab[".inlineAddFields"][] = "FromDate";
+$tdatapayrolltab[".inlineAddFields"][] = "ToDate";
 $tdatapayrolltab[".inlineAddFields"][] = "EmployeeID";
 $tdatapayrolltab[".inlineAddFields"][] = "UserName";
+$tdatapayrolltab[".inlineAddFields"][] = "Email";
 $tdatapayrolltab[".inlineAddFields"][] = "Position";
 $tdatapayrolltab[".inlineAddFields"][] = "Division";
 $tdatapayrolltab[".inlineAddFields"][] = "Employer";
 $tdatapayrolltab[".inlineAddFields"][] = "WageType";
 $tdatapayrolltab[".inlineAddFields"][] = "Status";
-$tdatapayrolltab[".inlineAddFields"][] = "FromDate";
-$tdatapayrolltab[".inlineAddFields"][] = "ToDate";
 $tdatapayrolltab[".inlineAddFields"][] = "BasicMonthly";
 $tdatapayrolltab[".inlineAddFields"][] = "BasicDaily";
 $tdatapayrolltab[".inlineAddFields"][] = "DWork";
@@ -752,12 +898,30 @@ $tdatapayrolltab[".inlineAddFields"][] = "CHOTHrs";
 $tdatapayrolltab[".inlineAddFields"][] = "TrODays";
 $tdatapayrolltab[".inlineAddFields"][] = "RDOTHrs";
 $tdatapayrolltab[".inlineAddFields"][] = "NDHrs";
+$tdatapayrolltab[".inlineAddFields"][] = "NDOTHrs";
+$tdatapayrolltab[".inlineAddFields"][] = "RegNDOTHrs";
+$tdatapayrolltab[".inlineAddFields"][] = "RHNDOTHrs";
+$tdatapayrolltab[".inlineAddFields"][] = "CHNDOTHrs";
+$tdatapayrolltab[".inlineAddFields"][] = "SHNDOTHrs";
+$tdatapayrolltab[".inlineAddFields"][] = "SHRDNDOT";
+$tdatapayrolltab[".inlineAddFields"][] = "RHRDNDOT";
+$tdatapayrolltab[".inlineAddFields"][] = "RDNDOTHrs";
+$tdatapayrolltab[".inlineAddFields"][] = "DHRDOT";
+$tdatapayrolltab[".inlineAddFields"][] = "DHRDNDOT";
+$tdatapayrolltab[".inlineAddFields"][] = "DHNDOT";
 $tdatapayrolltab[".inlineAddFields"][] = "RDHrs";
 $tdatapayrolltab[".inlineAddFields"][] = "RegNDHrs";
 $tdatapayrolltab[".inlineAddFields"][] = "RHNDHrs";
 $tdatapayrolltab[".inlineAddFields"][] = "SHNDHrs";
 $tdatapayrolltab[".inlineAddFields"][] = "CHNDHrs";
 $tdatapayrolltab[".inlineAddFields"][] = "RDNDHrs";
+$tdatapayrolltab[".inlineAddFields"][] = "DHRDND";
+$tdatapayrolltab[".inlineAddFields"][] = "DHND";
+$tdatapayrolltab[".inlineAddFields"][] = "RHRDND";
+$tdatapayrolltab[".inlineAddFields"][] = "SHRDND";
+$tdatapayrolltab[".inlineAddFields"][] = "DHOT";
+$tdatapayrolltab[".inlineAddFields"][] = "DHRD";
+$tdatapayrolltab[".inlineAddFields"][] = "DH";
 $tdatapayrolltab[".inlineAddFields"][] = "VLDays";
 $tdatapayrolltab[".inlineAddFields"][] = "SLDays";
 $tdatapayrolltab[".inlineAddFields"][] = "ELDays";
@@ -769,20 +933,25 @@ $tdatapayrolltab[".inlineAddFields"][] = "VLBalance";
 $tdatapayrolltab[".inlineAddFields"][] = "AllowancePerDay";
 $tdatapayrolltab[".inlineAddFields"][] = "AgencyShare";
 $tdatapayrolltab[".inlineAddFields"][] = "NDMealAllowance";
+$tdatapayrolltab[".inlineAddFields"][] = "Thirteenth";
+$tdatapayrolltab[".inlineAddFields"][] = "Taxable";
+$tdatapayrolltab[".inlineAddFields"][] = "ThirToDate";
+$tdatapayrolltab[".inlineAddFields"][] = "TaxableToDate";
+$tdatapayrolltab[".inlineAddFields"][] = "TaxToDate";
+$tdatapayrolltab[".inlineAddFields"][] = "PayrollID";
 
 $tdatapayrolltab[".editFields"] = array();
 $tdatapayrolltab[".editFields"][] = "Locked";
-$tdatapayrolltab[".editFields"][] = "Email";
-$tdatapayrolltab[".editFields"][] = "PayrollID";
+$tdatapayrolltab[".editFields"][] = "FromDate";
+$tdatapayrolltab[".editFields"][] = "ToDate";
 $tdatapayrolltab[".editFields"][] = "EmployeeID";
 $tdatapayrolltab[".editFields"][] = "UserName";
+$tdatapayrolltab[".editFields"][] = "Email";
 $tdatapayrolltab[".editFields"][] = "Position";
 $tdatapayrolltab[".editFields"][] = "Division";
 $tdatapayrolltab[".editFields"][] = "Employer";
 $tdatapayrolltab[".editFields"][] = "WageType";
 $tdatapayrolltab[".editFields"][] = "Status";
-$tdatapayrolltab[".editFields"][] = "FromDate";
-$tdatapayrolltab[".editFields"][] = "ToDate";
 $tdatapayrolltab[".editFields"][] = "BasicMonthly";
 $tdatapayrolltab[".editFields"][] = "BasicDaily";
 $tdatapayrolltab[".editFields"][] = "DWork";
@@ -800,12 +969,30 @@ $tdatapayrolltab[".editFields"][] = "CHOTHrs";
 $tdatapayrolltab[".editFields"][] = "TrODays";
 $tdatapayrolltab[".editFields"][] = "RDOTHrs";
 $tdatapayrolltab[".editFields"][] = "NDHrs";
+$tdatapayrolltab[".editFields"][] = "NDOTHrs";
+$tdatapayrolltab[".editFields"][] = "RegNDOTHrs";
+$tdatapayrolltab[".editFields"][] = "RHNDOTHrs";
+$tdatapayrolltab[".editFields"][] = "CHNDOTHrs";
+$tdatapayrolltab[".editFields"][] = "SHNDOTHrs";
+$tdatapayrolltab[".editFields"][] = "SHRDNDOT";
+$tdatapayrolltab[".editFields"][] = "RHRDNDOT";
+$tdatapayrolltab[".editFields"][] = "RDNDOTHrs";
+$tdatapayrolltab[".editFields"][] = "DHRDOT";
+$tdatapayrolltab[".editFields"][] = "DHRDNDOT";
+$tdatapayrolltab[".editFields"][] = "DHNDOT";
 $tdatapayrolltab[".editFields"][] = "RDHrs";
 $tdatapayrolltab[".editFields"][] = "RegNDHrs";
 $tdatapayrolltab[".editFields"][] = "RHNDHrs";
 $tdatapayrolltab[".editFields"][] = "SHNDHrs";
 $tdatapayrolltab[".editFields"][] = "CHNDHrs";
 $tdatapayrolltab[".editFields"][] = "RDNDHrs";
+$tdatapayrolltab[".editFields"][] = "DHRDND";
+$tdatapayrolltab[".editFields"][] = "DHND";
+$tdatapayrolltab[".editFields"][] = "RHRDND";
+$tdatapayrolltab[".editFields"][] = "SHRDND";
+$tdatapayrolltab[".editFields"][] = "DHOT";
+$tdatapayrolltab[".editFields"][] = "DHRD";
+$tdatapayrolltab[".editFields"][] = "DH";
 $tdatapayrolltab[".editFields"][] = "VLDays";
 $tdatapayrolltab[".editFields"][] = "SLDays";
 $tdatapayrolltab[".editFields"][] = "ELDays";
@@ -817,20 +1004,25 @@ $tdatapayrolltab[".editFields"][] = "VLBalance";
 $tdatapayrolltab[".editFields"][] = "AllowancePerDay";
 $tdatapayrolltab[".editFields"][] = "AgencyShare";
 $tdatapayrolltab[".editFields"][] = "NDMealAllowance";
+$tdatapayrolltab[".editFields"][] = "Thirteenth";
+$tdatapayrolltab[".editFields"][] = "Taxable";
+$tdatapayrolltab[".editFields"][] = "ThirToDate";
+$tdatapayrolltab[".editFields"][] = "TaxableToDate";
+$tdatapayrolltab[".editFields"][] = "TaxToDate";
+$tdatapayrolltab[".editFields"][] = "PayrollID";
 
 $tdatapayrolltab[".inlineEditFields"] = array();
 $tdatapayrolltab[".inlineEditFields"][] = "Locked";
-$tdatapayrolltab[".inlineEditFields"][] = "Email";
-$tdatapayrolltab[".inlineEditFields"][] = "PayrollID";
+$tdatapayrolltab[".inlineEditFields"][] = "FromDate";
+$tdatapayrolltab[".inlineEditFields"][] = "ToDate";
 $tdatapayrolltab[".inlineEditFields"][] = "EmployeeID";
 $tdatapayrolltab[".inlineEditFields"][] = "UserName";
+$tdatapayrolltab[".inlineEditFields"][] = "Email";
 $tdatapayrolltab[".inlineEditFields"][] = "Position";
 $tdatapayrolltab[".inlineEditFields"][] = "Division";
 $tdatapayrolltab[".inlineEditFields"][] = "Employer";
 $tdatapayrolltab[".inlineEditFields"][] = "WageType";
 $tdatapayrolltab[".inlineEditFields"][] = "Status";
-$tdatapayrolltab[".inlineEditFields"][] = "FromDate";
-$tdatapayrolltab[".inlineEditFields"][] = "ToDate";
 $tdatapayrolltab[".inlineEditFields"][] = "BasicMonthly";
 $tdatapayrolltab[".inlineEditFields"][] = "BasicDaily";
 $tdatapayrolltab[".inlineEditFields"][] = "DWork";
@@ -848,12 +1040,30 @@ $tdatapayrolltab[".inlineEditFields"][] = "CHOTHrs";
 $tdatapayrolltab[".inlineEditFields"][] = "TrODays";
 $tdatapayrolltab[".inlineEditFields"][] = "RDOTHrs";
 $tdatapayrolltab[".inlineEditFields"][] = "NDHrs";
+$tdatapayrolltab[".inlineEditFields"][] = "NDOTHrs";
+$tdatapayrolltab[".inlineEditFields"][] = "RegNDOTHrs";
+$tdatapayrolltab[".inlineEditFields"][] = "RHNDOTHrs";
+$tdatapayrolltab[".inlineEditFields"][] = "CHNDOTHrs";
+$tdatapayrolltab[".inlineEditFields"][] = "SHNDOTHrs";
+$tdatapayrolltab[".inlineEditFields"][] = "SHRDNDOT";
+$tdatapayrolltab[".inlineEditFields"][] = "RHRDNDOT";
+$tdatapayrolltab[".inlineEditFields"][] = "RDNDOTHrs";
+$tdatapayrolltab[".inlineEditFields"][] = "DHRDOT";
+$tdatapayrolltab[".inlineEditFields"][] = "DHRDNDOT";
+$tdatapayrolltab[".inlineEditFields"][] = "DHNDOT";
 $tdatapayrolltab[".inlineEditFields"][] = "RDHrs";
 $tdatapayrolltab[".inlineEditFields"][] = "RegNDHrs";
 $tdatapayrolltab[".inlineEditFields"][] = "RHNDHrs";
 $tdatapayrolltab[".inlineEditFields"][] = "SHNDHrs";
 $tdatapayrolltab[".inlineEditFields"][] = "CHNDHrs";
 $tdatapayrolltab[".inlineEditFields"][] = "RDNDHrs";
+$tdatapayrolltab[".inlineEditFields"][] = "DHRDND";
+$tdatapayrolltab[".inlineEditFields"][] = "DHND";
+$tdatapayrolltab[".inlineEditFields"][] = "RHRDND";
+$tdatapayrolltab[".inlineEditFields"][] = "SHRDND";
+$tdatapayrolltab[".inlineEditFields"][] = "DHOT";
+$tdatapayrolltab[".inlineEditFields"][] = "DHRD";
+$tdatapayrolltab[".inlineEditFields"][] = "DH";
 $tdatapayrolltab[".inlineEditFields"][] = "VLDays";
 $tdatapayrolltab[".inlineEditFields"][] = "SLDays";
 $tdatapayrolltab[".inlineEditFields"][] = "ELDays";
@@ -865,21 +1075,15 @@ $tdatapayrolltab[".inlineEditFields"][] = "VLBalance";
 $tdatapayrolltab[".inlineEditFields"][] = "AllowancePerDay";
 $tdatapayrolltab[".inlineEditFields"][] = "AgencyShare";
 $tdatapayrolltab[".inlineEditFields"][] = "NDMealAllowance";
+$tdatapayrolltab[".inlineEditFields"][] = "Thirteenth";
+$tdatapayrolltab[".inlineEditFields"][] = "Taxable";
+$tdatapayrolltab[".inlineEditFields"][] = "ThirToDate";
+$tdatapayrolltab[".inlineEditFields"][] = "TaxableToDate";
+$tdatapayrolltab[".inlineEditFields"][] = "TaxToDate";
+$tdatapayrolltab[".inlineEditFields"][] = "PayrollID";
 
 $tdatapayrolltab[".updateSelectedFields"] = array();
 $tdatapayrolltab[".updateSelectedFields"][] = "Locked";
-$tdatapayrolltab[".updateSelectedFields"][] = "Email";
-$tdatapayrolltab[".updateSelectedFields"][] = "PayrollID";
-$tdatapayrolltab[".updateSelectedFields"][] = "EmployeeID";
-$tdatapayrolltab[".updateSelectedFields"][] = "UserName";
-$tdatapayrolltab[".updateSelectedFields"][] = "Division";
-$tdatapayrolltab[".updateSelectedFields"][] = "Employer";
-$tdatapayrolltab[".updateSelectedFields"][] = "WageType";
-$tdatapayrolltab[".updateSelectedFields"][] = "Status";
-$tdatapayrolltab[".updateSelectedFields"][] = "FromDate";
-$tdatapayrolltab[".updateSelectedFields"][] = "ToDate";
-$tdatapayrolltab[".updateSelectedFields"][] = "BasicMonthly";
-$tdatapayrolltab[".updateSelectedFields"][] = "BasicDaily";
 $tdatapayrolltab[".updateSelectedFields"][] = "DWork";
 $tdatapayrolltab[".updateSelectedFields"][] = "Absent";
 $tdatapayrolltab[".updateSelectedFields"][] = "LateMins";
@@ -892,42 +1096,49 @@ $tdatapayrolltab[".updateSelectedFields"][] = "RegOTHrs";
 $tdatapayrolltab[".updateSelectedFields"][] = "RHOTHrs";
 $tdatapayrolltab[".updateSelectedFields"][] = "SHOTHRs";
 $tdatapayrolltab[".updateSelectedFields"][] = "CHOTHrs";
-$tdatapayrolltab[".updateSelectedFields"][] = "TrODays";
 $tdatapayrolltab[".updateSelectedFields"][] = "RDOTHrs";
 $tdatapayrolltab[".updateSelectedFields"][] = "NDHrs";
+$tdatapayrolltab[".updateSelectedFields"][] = "NDOTHrs";
+$tdatapayrolltab[".updateSelectedFields"][] = "RegNDOTHrs";
+$tdatapayrolltab[".updateSelectedFields"][] = "RHNDOTHrs";
+$tdatapayrolltab[".updateSelectedFields"][] = "CHNDOTHrs";
+$tdatapayrolltab[".updateSelectedFields"][] = "SHNDOTHrs";
+$tdatapayrolltab[".updateSelectedFields"][] = "SHRDNDOT";
+$tdatapayrolltab[".updateSelectedFields"][] = "RHRDNDOT";
+$tdatapayrolltab[".updateSelectedFields"][] = "RDNDOTHrs";
+$tdatapayrolltab[".updateSelectedFields"][] = "DHRDOT";
+$tdatapayrolltab[".updateSelectedFields"][] = "DHRDNDOT";
+$tdatapayrolltab[".updateSelectedFields"][] = "DHNDOT";
 $tdatapayrolltab[".updateSelectedFields"][] = "RDHrs";
 $tdatapayrolltab[".updateSelectedFields"][] = "RegNDHrs";
 $tdatapayrolltab[".updateSelectedFields"][] = "RHNDHrs";
 $tdatapayrolltab[".updateSelectedFields"][] = "SHNDHrs";
 $tdatapayrolltab[".updateSelectedFields"][] = "CHNDHrs";
 $tdatapayrolltab[".updateSelectedFields"][] = "RDNDHrs";
-$tdatapayrolltab[".updateSelectedFields"][] = "VLDays";
-$tdatapayrolltab[".updateSelectedFields"][] = "SLDays";
-$tdatapayrolltab[".updateSelectedFields"][] = "ELDays";
-$tdatapayrolltab[".updateSelectedFields"][] = "PLDays";
-$tdatapayrolltab[".updateSelectedFields"][] = "PLBalance";
-$tdatapayrolltab[".updateSelectedFields"][] = "ELBalance";
-$tdatapayrolltab[".updateSelectedFields"][] = "SLBalance";
-$tdatapayrolltab[".updateSelectedFields"][] = "VLBalance";
+$tdatapayrolltab[".updateSelectedFields"][] = "DHRDND";
+$tdatapayrolltab[".updateSelectedFields"][] = "DHND";
+$tdatapayrolltab[".updateSelectedFields"][] = "RHRDND";
+$tdatapayrolltab[".updateSelectedFields"][] = "SHRDND";
+$tdatapayrolltab[".updateSelectedFields"][] = "DHOT";
+$tdatapayrolltab[".updateSelectedFields"][] = "DHRD";
+$tdatapayrolltab[".updateSelectedFields"][] = "DH";
 $tdatapayrolltab[".updateSelectedFields"][] = "AllowancePerDay";
-$tdatapayrolltab[".updateSelectedFields"][] = "AgencyShare";
 $tdatapayrolltab[".updateSelectedFields"][] = "NDMealAllowance";
 
 
 $tdatapayrolltab[".exportFields"] = array();
 $tdatapayrolltab[".exportFields"][] = "PtabID";
 $tdatapayrolltab[".exportFields"][] = "Locked";
-$tdatapayrolltab[".exportFields"][] = "Email";
-$tdatapayrolltab[".exportFields"][] = "PayrollID";
+$tdatapayrolltab[".exportFields"][] = "FromDate";
+$tdatapayrolltab[".exportFields"][] = "ToDate";
 $tdatapayrolltab[".exportFields"][] = "EmployeeID";
 $tdatapayrolltab[".exportFields"][] = "UserName";
+$tdatapayrolltab[".exportFields"][] = "Email";
 $tdatapayrolltab[".exportFields"][] = "Position";
 $tdatapayrolltab[".exportFields"][] = "Division";
 $tdatapayrolltab[".exportFields"][] = "Employer";
 $tdatapayrolltab[".exportFields"][] = "WageType";
 $tdatapayrolltab[".exportFields"][] = "Status";
-$tdatapayrolltab[".exportFields"][] = "FromDate";
-$tdatapayrolltab[".exportFields"][] = "ToDate";
 $tdatapayrolltab[".exportFields"][] = "BasicMonthly";
 $tdatapayrolltab[".exportFields"][] = "BasicDaily";
 $tdatapayrolltab[".exportFields"][] = "DWork";
@@ -945,12 +1156,30 @@ $tdatapayrolltab[".exportFields"][] = "CHOTHrs";
 $tdatapayrolltab[".exportFields"][] = "TrODays";
 $tdatapayrolltab[".exportFields"][] = "RDOTHrs";
 $tdatapayrolltab[".exportFields"][] = "NDHrs";
+$tdatapayrolltab[".exportFields"][] = "NDOTHrs";
+$tdatapayrolltab[".exportFields"][] = "RegNDOTHrs";
+$tdatapayrolltab[".exportFields"][] = "RHNDOTHrs";
+$tdatapayrolltab[".exportFields"][] = "CHNDOTHrs";
+$tdatapayrolltab[".exportFields"][] = "SHNDOTHrs";
+$tdatapayrolltab[".exportFields"][] = "SHRDNDOT";
+$tdatapayrolltab[".exportFields"][] = "RHRDNDOT";
+$tdatapayrolltab[".exportFields"][] = "RDNDOTHrs";
+$tdatapayrolltab[".exportFields"][] = "DHRDOT";
+$tdatapayrolltab[".exportFields"][] = "DHRDNDOT";
+$tdatapayrolltab[".exportFields"][] = "DHNDOT";
 $tdatapayrolltab[".exportFields"][] = "RDHrs";
 $tdatapayrolltab[".exportFields"][] = "RegNDHrs";
 $tdatapayrolltab[".exportFields"][] = "RHNDHrs";
 $tdatapayrolltab[".exportFields"][] = "SHNDHrs";
 $tdatapayrolltab[".exportFields"][] = "CHNDHrs";
 $tdatapayrolltab[".exportFields"][] = "RDNDHrs";
+$tdatapayrolltab[".exportFields"][] = "DHRDND";
+$tdatapayrolltab[".exportFields"][] = "DHND";
+$tdatapayrolltab[".exportFields"][] = "RHRDND";
+$tdatapayrolltab[".exportFields"][] = "SHRDND";
+$tdatapayrolltab[".exportFields"][] = "DHOT";
+$tdatapayrolltab[".exportFields"][] = "DHRD";
+$tdatapayrolltab[".exportFields"][] = "DH";
 $tdatapayrolltab[".exportFields"][] = "VLDays";
 $tdatapayrolltab[".exportFields"][] = "SLDays";
 $tdatapayrolltab[".exportFields"][] = "ELDays";
@@ -962,6 +1191,12 @@ $tdatapayrolltab[".exportFields"][] = "VLBalance";
 $tdatapayrolltab[".exportFields"][] = "AllowancePerDay";
 $tdatapayrolltab[".exportFields"][] = "AgencyShare";
 $tdatapayrolltab[".exportFields"][] = "NDMealAllowance";
+$tdatapayrolltab[".exportFields"][] = "Thirteenth";
+$tdatapayrolltab[".exportFields"][] = "Taxable";
+$tdatapayrolltab[".exportFields"][] = "ThirToDate";
+$tdatapayrolltab[".exportFields"][] = "TaxableToDate";
+$tdatapayrolltab[".exportFields"][] = "TaxToDate";
+$tdatapayrolltab[".exportFields"][] = "PayrollID";
 
 $tdatapayrolltab[".importFields"] = array();
 $tdatapayrolltab[".importFields"][] = "PtabID";
@@ -995,9 +1230,9 @@ $tdatapayrolltab[".importFields"][] = "SLDays";
 $tdatapayrolltab[".importFields"][] = "ELDays";
 $tdatapayrolltab[".importFields"][] = "PLDays";
 $tdatapayrolltab[".importFields"][] = "TrODays";
+$tdatapayrolltab[".importFields"][] = "UserName";
 $tdatapayrolltab[".importFields"][] = "FromDate";
 $tdatapayrolltab[".importFields"][] = "ToDate";
-$tdatapayrolltab[".importFields"][] = "UserName";
 $tdatapayrolltab[".importFields"][] = "AllowancePerDay";
 $tdatapayrolltab[".importFields"][] = "VLBalance";
 $tdatapayrolltab[".importFields"][] = "SLBalance";
@@ -1011,21 +1246,43 @@ $tdatapayrolltab[".importFields"][] = "PayrollID";
 $tdatapayrolltab[".importFields"][] = "Email";
 $tdatapayrolltab[".importFields"][] = "Locked";
 $tdatapayrolltab[".importFields"][] = "Position";
+$tdatapayrolltab[".importFields"][] = "Thirteenth";
+$tdatapayrolltab[".importFields"][] = "Taxable";
+$tdatapayrolltab[".importFields"][] = "NDOTHrs";
+$tdatapayrolltab[".importFields"][] = "RegNDOTHrs";
+$tdatapayrolltab[".importFields"][] = "RHNDOTHrs";
+$tdatapayrolltab[".importFields"][] = "SHNDOTHrs";
+$tdatapayrolltab[".importFields"][] = "CHNDOTHrs";
+$tdatapayrolltab[".importFields"][] = "RDNDOTHrs";
+$tdatapayrolltab[".importFields"][] = "DH";
+$tdatapayrolltab[".importFields"][] = "DHRD";
+$tdatapayrolltab[".importFields"][] = "DHOT";
+$tdatapayrolltab[".importFields"][] = "DHRDOT";
+$tdatapayrolltab[".importFields"][] = "SHRDND";
+$tdatapayrolltab[".importFields"][] = "RHRDND";
+$tdatapayrolltab[".importFields"][] = "SHRDNDOT";
+$tdatapayrolltab[".importFields"][] = "RHRDNDOT";
+$tdatapayrolltab[".importFields"][] = "DHND";
+$tdatapayrolltab[".importFields"][] = "DHRDND";
+$tdatapayrolltab[".importFields"][] = "DHNDOT";
+$tdatapayrolltab[".importFields"][] = "DHRDNDOT";
+$tdatapayrolltab[".importFields"][] = "ThirToDate";
+$tdatapayrolltab[".importFields"][] = "TaxableToDate";
+$tdatapayrolltab[".importFields"][] = "TaxToDate";
 
 $tdatapayrolltab[".printFields"] = array();
 $tdatapayrolltab[".printFields"][] = "PtabID";
 $tdatapayrolltab[".printFields"][] = "Locked";
-$tdatapayrolltab[".printFields"][] = "Email";
-$tdatapayrolltab[".printFields"][] = "PayrollID";
+$tdatapayrolltab[".printFields"][] = "FromDate";
+$tdatapayrolltab[".printFields"][] = "ToDate";
 $tdatapayrolltab[".printFields"][] = "EmployeeID";
 $tdatapayrolltab[".printFields"][] = "UserName";
+$tdatapayrolltab[".printFields"][] = "Email";
 $tdatapayrolltab[".printFields"][] = "Position";
 $tdatapayrolltab[".printFields"][] = "Division";
 $tdatapayrolltab[".printFields"][] = "Employer";
 $tdatapayrolltab[".printFields"][] = "WageType";
 $tdatapayrolltab[".printFields"][] = "Status";
-$tdatapayrolltab[".printFields"][] = "FromDate";
-$tdatapayrolltab[".printFields"][] = "ToDate";
 $tdatapayrolltab[".printFields"][] = "BasicMonthly";
 $tdatapayrolltab[".printFields"][] = "BasicDaily";
 $tdatapayrolltab[".printFields"][] = "DWork";
@@ -1043,12 +1300,30 @@ $tdatapayrolltab[".printFields"][] = "CHOTHrs";
 $tdatapayrolltab[".printFields"][] = "TrODays";
 $tdatapayrolltab[".printFields"][] = "RDOTHrs";
 $tdatapayrolltab[".printFields"][] = "NDHrs";
+$tdatapayrolltab[".printFields"][] = "NDOTHrs";
+$tdatapayrolltab[".printFields"][] = "RegNDOTHrs";
+$tdatapayrolltab[".printFields"][] = "RHNDOTHrs";
+$tdatapayrolltab[".printFields"][] = "CHNDOTHrs";
+$tdatapayrolltab[".printFields"][] = "SHNDOTHrs";
+$tdatapayrolltab[".printFields"][] = "SHRDNDOT";
+$tdatapayrolltab[".printFields"][] = "RHRDNDOT";
+$tdatapayrolltab[".printFields"][] = "RDNDOTHrs";
+$tdatapayrolltab[".printFields"][] = "DHRDOT";
+$tdatapayrolltab[".printFields"][] = "DHRDNDOT";
+$tdatapayrolltab[".printFields"][] = "DHNDOT";
 $tdatapayrolltab[".printFields"][] = "RDHrs";
 $tdatapayrolltab[".printFields"][] = "RegNDHrs";
 $tdatapayrolltab[".printFields"][] = "RHNDHrs";
 $tdatapayrolltab[".printFields"][] = "SHNDHrs";
 $tdatapayrolltab[".printFields"][] = "CHNDHrs";
 $tdatapayrolltab[".printFields"][] = "RDNDHrs";
+$tdatapayrolltab[".printFields"][] = "DHRDND";
+$tdatapayrolltab[".printFields"][] = "DHND";
+$tdatapayrolltab[".printFields"][] = "RHRDND";
+$tdatapayrolltab[".printFields"][] = "SHRDND";
+$tdatapayrolltab[".printFields"][] = "DHOT";
+$tdatapayrolltab[".printFields"][] = "DHRD";
+$tdatapayrolltab[".printFields"][] = "DH";
 $tdatapayrolltab[".printFields"][] = "VLDays";
 $tdatapayrolltab[".printFields"][] = "SLDays";
 $tdatapayrolltab[".printFields"][] = "ELDays";
@@ -1060,6 +1335,12 @@ $tdatapayrolltab[".printFields"][] = "VLBalance";
 $tdatapayrolltab[".printFields"][] = "AllowancePerDay";
 $tdatapayrolltab[".printFields"][] = "AgencyShare";
 $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
+$tdatapayrolltab[".printFields"][] = "Thirteenth";
+$tdatapayrolltab[".printFields"][] = "Taxable";
+$tdatapayrolltab[".printFields"][] = "ThirToDate";
+$tdatapayrolltab[".printFields"][] = "TaxableToDate";
+$tdatapayrolltab[".printFields"][] = "TaxToDate";
+$tdatapayrolltab[".printFields"][] = "PayrollID";
 
 
 //	PtabID
@@ -1087,8 +1368,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -1181,11 +1461,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-	
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -1215,13 +1490,11 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -1312,12 +1585,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Equals";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -1347,8 +1614,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -1470,7 +1736,8 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 // the field's search options settings
-	
+		$fdata["defaultSearchOption"] = "Equals";
+
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
 // the end of search options settings
@@ -1503,8 +1770,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -1626,7 +1892,8 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 // the field's search options settings
-	
+		$fdata["defaultSearchOption"] = "Equals";
+
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
 // the end of search options settings
@@ -1659,8 +1926,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -1792,8 +2058,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -1930,8 +2195,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -2023,12 +2287,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -2063,8 +2321,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -2156,12 +2413,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -2196,8 +2447,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -2289,12 +2539,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -2329,8 +2573,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -2422,12 +2665,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -2462,8 +2699,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -2555,12 +2791,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -2595,8 +2825,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -2688,12 +2917,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -2728,8 +2951,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -2821,12 +3043,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -2861,8 +3077,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -2954,12 +3169,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -2994,8 +3203,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3087,12 +3295,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -3127,8 +3329,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3220,12 +3421,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -3260,8 +3455,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3353,12 +3547,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -3393,8 +3581,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3486,12 +3673,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -3526,8 +3707,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3619,12 +3799,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -3659,8 +3833,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3752,12 +3925,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -3792,8 +3959,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3885,12 +4051,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -3925,8 +4085,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4018,12 +4177,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -4058,8 +4211,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4151,12 +4303,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -4191,8 +4337,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4284,12 +4429,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -4324,8 +4463,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4417,12 +4555,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -4457,8 +4589,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4550,12 +4681,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -4585,13 +4710,11 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4683,12 +4806,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -4718,13 +4835,11 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4816,12 +4931,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -4851,13 +4960,11 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4949,12 +5056,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -4984,13 +5085,11 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -5082,12 +5181,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -5117,13 +5210,11 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -5215,285 +5306,15 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
 
 	$tdatapayrolltab["TrODays"] = $fdata;
-//	FromDate
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 32;
-	$fdata["strName"] = "FromDate";
-	$fdata["GoodName"] = "FromDate";
-	$fdata["ownerTable"] = "payrolltab";
-	$fdata["Label"] = GetFieldLabel("payrolltab","FromDate");
-	$fdata["FieldType"] = 7;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
-
-		$fdata["bViewPage"] = true;
-
-		$fdata["bAdvancedSearch"] = true;
-
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "FromDate";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "FromDate";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Short Date");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Date");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
-
-	
-	
-	
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Equals";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
-// the end of search options settings
-
-
-
-
-	$tdatapayrolltab["FromDate"] = $fdata;
-//	ToDate
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 33;
-	$fdata["strName"] = "ToDate";
-	$fdata["GoodName"] = "ToDate";
-	$fdata["ownerTable"] = "payrolltab";
-	$fdata["Label"] = GetFieldLabel("payrolltab","ToDate");
-	$fdata["FieldType"] = 7;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
-
-		$fdata["bViewPage"] = true;
-
-		$fdata["bAdvancedSearch"] = true;
-
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "ToDate";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "ToDate";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Short Date");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Date");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
-
-	
-	
-	
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Equals";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
-// the end of search options settings
-
-
-
-
-	$tdatapayrolltab["ToDate"] = $fdata;
 //	UserName
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 34;
+	$fdata["Index"] = 32;
 	$fdata["strName"] = "UserName";
 	$fdata["GoodName"] = "UserName";
 	$fdata["ownerTable"] = "payrolltab";
@@ -5514,8 +5335,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -5614,14 +5434,278 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 // the field's search options settings
 		$fdata["defaultSearchOption"] = "Contains";
 
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+			// the user's search options list
+		$fdata["searchOptionsList"] = array();
+		$fdata["searchOptionsList"][] = "Contains";
+		$fdata["searchOptionsList"][] = "Equals";
 // the end of search options settings
 
 
 
 
 	$tdatapayrolltab["UserName"] = $fdata;
+//	FromDate
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 33;
+	$fdata["strName"] = "FromDate";
+	$fdata["GoodName"] = "FromDate";
+	$fdata["ownerTable"] = "payrolltab";
+	$fdata["Label"] = GetFieldLabel("payrolltab","FromDate");
+	$fdata["FieldType"] = 7;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "FromDate";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "FromDate";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Short Date");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Date");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+		$edata["DateEditType"] = 13;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
+
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
+// the end of search options settings
+
+
+
+
+	$tdatapayrolltab["FromDate"] = $fdata;
+//	ToDate
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 34;
+	$fdata["strName"] = "ToDate";
+	$fdata["GoodName"] = "ToDate";
+	$fdata["ownerTable"] = "payrolltab";
+	$fdata["Label"] = GetFieldLabel("payrolltab","ToDate");
+	$fdata["FieldType"] = 7;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "ToDate";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "ToDate";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Short Date");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Date");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+		$edata["DateEditType"] = 13;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
+
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
+// the end of search options settings
+
+
+
+
+	$tdatapayrolltab["ToDate"] = $fdata;
 //	AllowancePerDay
 //	Custom field settings
 	$fdata = array();
@@ -5651,8 +5735,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -5744,12 +5827,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -5779,13 +5856,11 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -5877,12 +5952,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -5912,13 +5981,11 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -6010,12 +6077,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -6045,13 +6106,11 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -6143,12 +6202,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -6178,13 +6231,11 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -6276,12 +6327,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -6311,13 +6356,11 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -6409,12 +6452,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -6449,8 +6486,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -6542,12 +6578,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -6577,8 +6607,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -6734,8 +6763,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -6891,13 +6919,11 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -6988,12 +7014,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -7023,13 +7043,11 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -7120,12 +7138,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -7160,8 +7172,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -7248,12 +7259,6 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Equals";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -7287,8 +7292,7 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -7404,8 +7408,2652 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
+
+
+
+
+	$tdatapayrolltab["Position"] = $fdata;
+//	Thirteenth
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 48;
+	$fdata["strName"] = "Thirteenth";
+	$fdata["GoodName"] = "Thirteenth";
+	$fdata["ownerTable"] = "payrolltab";
+	$fdata["Label"] = GetFieldLabel("payrolltab","Thirteenth");
+	$fdata["FieldType"] = 14;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "Thirteenth";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "Thirteenth";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatapayrolltab["Thirteenth"] = $fdata;
+//	Taxable
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 49;
+	$fdata["strName"] = "Taxable";
+	$fdata["GoodName"] = "Taxable";
+	$fdata["ownerTable"] = "payrolltab";
+	$fdata["Label"] = GetFieldLabel("payrolltab","Taxable");
+	$fdata["FieldType"] = 14;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "Taxable";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "Taxable";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatapayrolltab["Taxable"] = $fdata;
+//	NDOTHrs
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 50;
+	$fdata["strName"] = "NDOTHrs";
+	$fdata["GoodName"] = "NDOTHrs";
+	$fdata["ownerTable"] = "payrolltab";
+	$fdata["Label"] = GetFieldLabel("payrolltab","NDOTHrs");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+		$fdata["bUpdateSelected"] = true;
+
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "NDOTHrs";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "NDOTHrs";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatapayrolltab["NDOTHrs"] = $fdata;
+//	RegNDOTHrs
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 51;
+	$fdata["strName"] = "RegNDOTHrs";
+	$fdata["GoodName"] = "RegNDOTHrs";
+	$fdata["ownerTable"] = "payrolltab";
+	$fdata["Label"] = GetFieldLabel("payrolltab","RegNDOTHrs");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+		$fdata["bUpdateSelected"] = true;
+
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "RegNDOTHrs";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "RegNDOTHrs";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatapayrolltab["RegNDOTHrs"] = $fdata;
+//	RHNDOTHrs
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 52;
+	$fdata["strName"] = "RHNDOTHrs";
+	$fdata["GoodName"] = "RHNDOTHrs";
+	$fdata["ownerTable"] = "payrolltab";
+	$fdata["Label"] = GetFieldLabel("payrolltab","RHNDOTHrs");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+		$fdata["bUpdateSelected"] = true;
+
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "RHNDOTHrs";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "RHNDOTHrs";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatapayrolltab["RHNDOTHrs"] = $fdata;
+//	SHNDOTHrs
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 53;
+	$fdata["strName"] = "SHNDOTHrs";
+	$fdata["GoodName"] = "SHNDOTHrs";
+	$fdata["ownerTable"] = "payrolltab";
+	$fdata["Label"] = GetFieldLabel("payrolltab","SHNDOTHrs");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+		$fdata["bUpdateSelected"] = true;
+
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "SHNDOTHrs";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "SHNDOTHrs";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatapayrolltab["SHNDOTHrs"] = $fdata;
+//	CHNDOTHrs
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 54;
+	$fdata["strName"] = "CHNDOTHrs";
+	$fdata["GoodName"] = "CHNDOTHrs";
+	$fdata["ownerTable"] = "payrolltab";
+	$fdata["Label"] = GetFieldLabel("payrolltab","CHNDOTHrs");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+		$fdata["bUpdateSelected"] = true;
+
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "CHNDOTHrs";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "CHNDOTHrs";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatapayrolltab["CHNDOTHrs"] = $fdata;
+//	RDNDOTHrs
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 55;
+	$fdata["strName"] = "RDNDOTHrs";
+	$fdata["GoodName"] = "RDNDOTHrs";
+	$fdata["ownerTable"] = "payrolltab";
+	$fdata["Label"] = GetFieldLabel("payrolltab","RDNDOTHrs");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+		$fdata["bUpdateSelected"] = true;
+
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "RDNDOTHrs";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "RDNDOTHrs";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatapayrolltab["RDNDOTHrs"] = $fdata;
+//	DH
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 56;
+	$fdata["strName"] = "DH";
+	$fdata["GoodName"] = "DH";
+	$fdata["ownerTable"] = "payrolltab";
+	$fdata["Label"] = GetFieldLabel("payrolltab","DH");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+		$fdata["bUpdateSelected"] = true;
+
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "DH";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "DH";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatapayrolltab["DH"] = $fdata;
+//	DHRD
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 57;
+	$fdata["strName"] = "DHRD";
+	$fdata["GoodName"] = "DHRD";
+	$fdata["ownerTable"] = "payrolltab";
+	$fdata["Label"] = GetFieldLabel("payrolltab","DHRD");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+		$fdata["bUpdateSelected"] = true;
+
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "DHRD";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "DHRD";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatapayrolltab["DHRD"] = $fdata;
+//	DHOT
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 58;
+	$fdata["strName"] = "DHOT";
+	$fdata["GoodName"] = "DHOT";
+	$fdata["ownerTable"] = "payrolltab";
+	$fdata["Label"] = GetFieldLabel("payrolltab","DHOT");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+		$fdata["bUpdateSelected"] = true;
+
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "DHOT";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "DHOT";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatapayrolltab["DHOT"] = $fdata;
+//	DHRDOT
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 59;
+	$fdata["strName"] = "DHRDOT";
+	$fdata["GoodName"] = "DHRDOT";
+	$fdata["ownerTable"] = "payrolltab";
+	$fdata["Label"] = GetFieldLabel("payrolltab","DHRDOT");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+		$fdata["bUpdateSelected"] = true;
+
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "DHRDOT";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "DHRDOT";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatapayrolltab["DHRDOT"] = $fdata;
+//	SHRDND
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 60;
+	$fdata["strName"] = "SHRDND";
+	$fdata["GoodName"] = "SHRDND";
+	$fdata["ownerTable"] = "payrolltab";
+	$fdata["Label"] = GetFieldLabel("payrolltab","SHRDND");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+		$fdata["bUpdateSelected"] = true;
+
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "SHRDND";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "SHRDND";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatapayrolltab["SHRDND"] = $fdata;
+//	RHRDND
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 61;
+	$fdata["strName"] = "RHRDND";
+	$fdata["GoodName"] = "RHRDND";
+	$fdata["ownerTable"] = "payrolltab";
+	$fdata["Label"] = GetFieldLabel("payrolltab","RHRDND");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+		$fdata["bUpdateSelected"] = true;
+
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "RHRDND";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "RHRDND";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatapayrolltab["RHRDND"] = $fdata;
+//	SHRDNDOT
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 62;
+	$fdata["strName"] = "SHRDNDOT";
+	$fdata["GoodName"] = "SHRDNDOT";
+	$fdata["ownerTable"] = "payrolltab";
+	$fdata["Label"] = GetFieldLabel("payrolltab","SHRDNDOT");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+		$fdata["bUpdateSelected"] = true;
+
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "SHRDNDOT";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "SHRDNDOT";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatapayrolltab["SHRDNDOT"] = $fdata;
+//	RHRDNDOT
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 63;
+	$fdata["strName"] = "RHRDNDOT";
+	$fdata["GoodName"] = "RHRDNDOT";
+	$fdata["ownerTable"] = "payrolltab";
+	$fdata["Label"] = GetFieldLabel("payrolltab","RHRDNDOT");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+		$fdata["bUpdateSelected"] = true;
+
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "RHRDNDOT";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "RHRDNDOT";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatapayrolltab["RHRDNDOT"] = $fdata;
+//	DHND
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 64;
+	$fdata["strName"] = "DHND";
+	$fdata["GoodName"] = "DHND";
+	$fdata["ownerTable"] = "payrolltab";
+	$fdata["Label"] = GetFieldLabel("payrolltab","DHND");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+		$fdata["bUpdateSelected"] = true;
+
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "DHND";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "DHND";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatapayrolltab["DHND"] = $fdata;
+//	DHRDND
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 65;
+	$fdata["strName"] = "DHRDND";
+	$fdata["GoodName"] = "DHRDND";
+	$fdata["ownerTable"] = "payrolltab";
+	$fdata["Label"] = GetFieldLabel("payrolltab","DHRDND");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+		$fdata["bUpdateSelected"] = true;
+
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "DHRDND";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "DHRDND";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatapayrolltab["DHRDND"] = $fdata;
+//	DHNDOT
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 66;
+	$fdata["strName"] = "DHNDOT";
+	$fdata["GoodName"] = "DHNDOT";
+	$fdata["ownerTable"] = "payrolltab";
+	$fdata["Label"] = GetFieldLabel("payrolltab","DHNDOT");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+		$fdata["bUpdateSelected"] = true;
+
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "DHNDOT";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "DHNDOT";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatapayrolltab["DHNDOT"] = $fdata;
+//	DHRDNDOT
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 67;
+	$fdata["strName"] = "DHRDNDOT";
+	$fdata["GoodName"] = "DHRDNDOT";
+	$fdata["ownerTable"] = "payrolltab";
+	$fdata["Label"] = GetFieldLabel("payrolltab","DHRDNDOT");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+		$fdata["bUpdateSelected"] = true;
+
+
+		$fdata["bViewPage"] = true;
+
+	
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "DHRDNDOT";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "DHRDNDOT";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+
+
+
+
+	$tdatapayrolltab["DHRDNDOT"] = $fdata;
+//	ThirToDate
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 68;
+	$fdata["strName"] = "ThirToDate";
+	$fdata["GoodName"] = "ThirToDate";
+	$fdata["ownerTable"] = "payrolltab";
+	$fdata["Label"] = GetFieldLabel("payrolltab","ThirToDate");
+	$fdata["FieldType"] = 14;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "ThirToDate";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "ThirToDate";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
 // the field's search options settings
-		$fdata["defaultSearchOption"] = "Equals";
+		$fdata["defaultSearchOption"] = "Contains";
 
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
@@ -7414,7 +10062,271 @@ $tdatapayrolltab[".printFields"][] = "NDMealAllowance";
 
 
 
-	$tdatapayrolltab["Position"] = $fdata;
+	$tdatapayrolltab["ThirToDate"] = $fdata;
+//	TaxableToDate
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 69;
+	$fdata["strName"] = "TaxableToDate";
+	$fdata["GoodName"] = "TaxableToDate";
+	$fdata["ownerTable"] = "payrolltab";
+	$fdata["Label"] = GetFieldLabel("payrolltab","TaxableToDate");
+	$fdata["FieldType"] = 14;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "TaxableToDate";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "TaxableToDate";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdatapayrolltab["TaxableToDate"] = $fdata;
+//	TaxToDate
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 70;
+	$fdata["strName"] = "TaxToDate";
+	$fdata["GoodName"] = "TaxToDate";
+	$fdata["ownerTable"] = "payrolltab";
+	$fdata["Label"] = GetFieldLabel("payrolltab","TaxToDate");
+	$fdata["FieldType"] = 14;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "TaxToDate";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "TaxToDate";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdatapayrolltab["TaxToDate"] = $fdata;
 
 
 $tables_data["payrolltab"]=&$tdatapayrolltab;
@@ -7757,10 +10669,10 @@ function createSqlQuery_payrolltab()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "PtabID,  	EmployeeID,  	WageType,  	Status,  	BasicMonthly,  	BasicDaily,  	DWork,  	Absent,  	LateMins,  	UndertimeMins,  	RHolidayHrs,  	SHolidayHrs,  	CHolidayHrs,  	ExcessHrs,  	RegOTHrs,  	RHOTHrs,  	SHOTHRs,  	CHOTHrs,  	RDOTHrs,  	NDHrs,  	RDHrs,  	RegNDHrs,  	RHNDHrs,  	SHNDHrs,  	CHNDHrs,  	RDNDHrs,  	VLDays,  	SLDays,  	ELDays,  	PLDays,  	TrODays,  	FromDate,  	ToDate,  	UserName,  	AllowancePerDay,  	VLBalance,  	SLBalance,  	ELBalance,  	PLBalance,  	AgencyShare,  	NDMealAllowance,  	Division,  	Employer,  	PayrollID,  	Email,  	Locked,  	`Position`";
+$proto0["m_strFieldList"] = "PtabID,  EmployeeID,  WageType,  Status,  BasicMonthly,  BasicDaily,  DWork,  Absent,  LateMins,  UndertimeMins,  RHolidayHrs,  SHolidayHrs,  CHolidayHrs,  ExcessHrs,  RegOTHrs,  RHOTHrs,  SHOTHRs,  CHOTHrs,  RDOTHrs,  NDHrs,  RDHrs,  RegNDHrs,  RHNDHrs,  SHNDHrs,  CHNDHrs,  RDNDHrs,  VLDays,  SLDays,  ELDays,  PLDays,  TrODays,  UserName,  FromDate,  ToDate,  AllowancePerDay,  VLBalance,  SLBalance,  ELBalance,  PLBalance,  AgencyShare,  NDMealAllowance,  Division,  Employer,  PayrollID,  Email,  Locked,  `Position`,  Thirteenth,  Taxable,  NDOTHrs,  RegNDOTHrs,  RHNDOTHrs,  SHNDOTHrs,  CHNDOTHrs,  RDNDOTHrs,  DH,  DHRD,  DHOT,  DHRDOT,  SHRDND,  RHRDND,  SHRDNDOT,  RHRDNDOT,  DHND,  DHRDND,  DHNDOT,  DHRDNDOT,  ThirToDate,  TaxableToDate,  TaxToDate";
 $proto0["m_strFrom"] = "FROM payrolltab";
 $proto0["m_strWhere"] = "";
-$proto0["m_strOrderBy"] = "";
+$proto0["m_strOrderBy"] = "ORDER BY ToDate DESC";
 	
 		;
 			$proto0["cipherer"] = null;
@@ -8233,12 +11145,12 @@ $obj = new SQLFieldListItem($proto66);
 $proto0["m_fieldlist"][]=$obj;
 						$proto68=array();
 			$obj = new SQLField(array(
-	"m_strName" => "FromDate",
+	"m_strName" => "UserName",
 	"m_strTable" => "payrolltab",
 	"m_srcTableName" => "payrolltab"
 ));
 
-$proto68["m_sql"] = "FromDate";
+$proto68["m_sql"] = "UserName";
 $proto68["m_srcTableName"] = "payrolltab";
 $proto68["m_expr"]=$obj;
 $proto68["m_alias"] = "";
@@ -8247,12 +11159,12 @@ $obj = new SQLFieldListItem($proto68);
 $proto0["m_fieldlist"][]=$obj;
 						$proto70=array();
 			$obj = new SQLField(array(
-	"m_strName" => "ToDate",
+	"m_strName" => "FromDate",
 	"m_strTable" => "payrolltab",
 	"m_srcTableName" => "payrolltab"
 ));
 
-$proto70["m_sql"] = "ToDate";
+$proto70["m_sql"] = "FromDate";
 $proto70["m_srcTableName"] = "payrolltab";
 $proto70["m_expr"]=$obj;
 $proto70["m_alias"] = "";
@@ -8261,12 +11173,12 @@ $obj = new SQLFieldListItem($proto70);
 $proto0["m_fieldlist"][]=$obj;
 						$proto72=array();
 			$obj = new SQLField(array(
-	"m_strName" => "UserName",
+	"m_strName" => "ToDate",
 	"m_strTable" => "payrolltab",
 	"m_srcTableName" => "payrolltab"
 ));
 
-$proto72["m_sql"] = "UserName";
+$proto72["m_sql"] = "ToDate";
 $proto72["m_srcTableName"] = "payrolltab";
 $proto72["m_expr"]=$obj;
 $proto72["m_alias"] = "";
@@ -8455,87 +11367,445 @@ $proto98["m_alias"] = "";
 $obj = new SQLFieldListItem($proto98);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto100=array();
-$proto100["m_link"] = "SQLL_MAIN";
-			$proto101=array();
-$proto101["m_strName"] = "payrolltab";
-$proto101["m_srcTableName"] = "payrolltab";
-$proto101["m_columns"] = array();
-$proto101["m_columns"][] = "PtabID";
-$proto101["m_columns"][] = "EmployeeID";
-$proto101["m_columns"][] = "WageType";
-$proto101["m_columns"][] = "Status";
-$proto101["m_columns"][] = "BasicMonthly";
-$proto101["m_columns"][] = "BasicDaily";
-$proto101["m_columns"][] = "DWork";
-$proto101["m_columns"][] = "Absent";
-$proto101["m_columns"][] = "LateMins";
-$proto101["m_columns"][] = "UndertimeMins";
-$proto101["m_columns"][] = "RHolidayHrs";
-$proto101["m_columns"][] = "SHolidayHrs";
-$proto101["m_columns"][] = "CHolidayHrs";
-$proto101["m_columns"][] = "ExcessHrs";
-$proto101["m_columns"][] = "RegOTHrs";
-$proto101["m_columns"][] = "RHOTHrs";
-$proto101["m_columns"][] = "SHOTHRs";
-$proto101["m_columns"][] = "CHOTHrs";
-$proto101["m_columns"][] = "RDOTHrs";
-$proto101["m_columns"][] = "NDHrs";
-$proto101["m_columns"][] = "RDHrs";
-$proto101["m_columns"][] = "RegNDHrs";
-$proto101["m_columns"][] = "RHNDHrs";
-$proto101["m_columns"][] = "SHNDHrs";
-$proto101["m_columns"][] = "CHNDHrs";
-$proto101["m_columns"][] = "RDNDHrs";
-$proto101["m_columns"][] = "VLDays";
-$proto101["m_columns"][] = "SLDays";
-$proto101["m_columns"][] = "ELDays";
-$proto101["m_columns"][] = "PLDays";
-$proto101["m_columns"][] = "TrODays";
-$proto101["m_columns"][] = "FromDate";
-$proto101["m_columns"][] = "ToDate";
-$proto101["m_columns"][] = "UserName";
-$proto101["m_columns"][] = "AllowancePerDay";
-$proto101["m_columns"][] = "VLBalance";
-$proto101["m_columns"][] = "SLBalance";
-$proto101["m_columns"][] = "ELBalance";
-$proto101["m_columns"][] = "PLBalance";
-$proto101["m_columns"][] = "AgencyShare";
-$proto101["m_columns"][] = "NDMealAllowance";
-$proto101["m_columns"][] = "Division";
-$proto101["m_columns"][] = "Employer";
-$proto101["m_columns"][] = "PayrollID";
-$proto101["m_columns"][] = "Email";
-$proto101["m_columns"][] = "Locked";
-$proto101["m_columns"][] = "Position";
-$obj = new SQLTable($proto101);
+						$proto100=array();
+			$obj = new SQLField(array(
+	"m_strName" => "Thirteenth",
+	"m_strTable" => "payrolltab",
+	"m_srcTableName" => "payrolltab"
+));
 
-$proto100["m_table"] = $obj;
-$proto100["m_sql"] = "payrolltab";
-$proto100["m_alias"] = "";
+$proto100["m_sql"] = "Thirteenth";
 $proto100["m_srcTableName"] = "payrolltab";
-$proto102=array();
-$proto102["m_sql"] = "";
-$proto102["m_uniontype"] = "SQLL_UNKNOWN";
+$proto100["m_expr"]=$obj;
+$proto100["m_alias"] = "";
+$obj = new SQLFieldListItem($proto100);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto102=array();
+			$obj = new SQLField(array(
+	"m_strName" => "Taxable",
+	"m_strTable" => "payrolltab",
+	"m_srcTableName" => "payrolltab"
+));
+
+$proto102["m_sql"] = "Taxable";
+$proto102["m_srcTableName"] = "payrolltab";
+$proto102["m_expr"]=$obj;
+$proto102["m_alias"] = "";
+$obj = new SQLFieldListItem($proto102);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto104=array();
+			$obj = new SQLField(array(
+	"m_strName" => "NDOTHrs",
+	"m_strTable" => "payrolltab",
+	"m_srcTableName" => "payrolltab"
+));
+
+$proto104["m_sql"] = "NDOTHrs";
+$proto104["m_srcTableName"] = "payrolltab";
+$proto104["m_expr"]=$obj;
+$proto104["m_alias"] = "";
+$obj = new SQLFieldListItem($proto104);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto106=array();
+			$obj = new SQLField(array(
+	"m_strName" => "RegNDOTHrs",
+	"m_strTable" => "payrolltab",
+	"m_srcTableName" => "payrolltab"
+));
+
+$proto106["m_sql"] = "RegNDOTHrs";
+$proto106["m_srcTableName"] = "payrolltab";
+$proto106["m_expr"]=$obj;
+$proto106["m_alias"] = "";
+$obj = new SQLFieldListItem($proto106);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto108=array();
+			$obj = new SQLField(array(
+	"m_strName" => "RHNDOTHrs",
+	"m_strTable" => "payrolltab",
+	"m_srcTableName" => "payrolltab"
+));
+
+$proto108["m_sql"] = "RHNDOTHrs";
+$proto108["m_srcTableName"] = "payrolltab";
+$proto108["m_expr"]=$obj;
+$proto108["m_alias"] = "";
+$obj = new SQLFieldListItem($proto108);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto110=array();
+			$obj = new SQLField(array(
+	"m_strName" => "SHNDOTHrs",
+	"m_strTable" => "payrolltab",
+	"m_srcTableName" => "payrolltab"
+));
+
+$proto110["m_sql"] = "SHNDOTHrs";
+$proto110["m_srcTableName"] = "payrolltab";
+$proto110["m_expr"]=$obj;
+$proto110["m_alias"] = "";
+$obj = new SQLFieldListItem($proto110);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto112=array();
+			$obj = new SQLField(array(
+	"m_strName" => "CHNDOTHrs",
+	"m_strTable" => "payrolltab",
+	"m_srcTableName" => "payrolltab"
+));
+
+$proto112["m_sql"] = "CHNDOTHrs";
+$proto112["m_srcTableName"] = "payrolltab";
+$proto112["m_expr"]=$obj;
+$proto112["m_alias"] = "";
+$obj = new SQLFieldListItem($proto112);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto114=array();
+			$obj = new SQLField(array(
+	"m_strName" => "RDNDOTHrs",
+	"m_strTable" => "payrolltab",
+	"m_srcTableName" => "payrolltab"
+));
+
+$proto114["m_sql"] = "RDNDOTHrs";
+$proto114["m_srcTableName"] = "payrolltab";
+$proto114["m_expr"]=$obj;
+$proto114["m_alias"] = "";
+$obj = new SQLFieldListItem($proto114);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto116=array();
+			$obj = new SQLField(array(
+	"m_strName" => "DH",
+	"m_strTable" => "payrolltab",
+	"m_srcTableName" => "payrolltab"
+));
+
+$proto116["m_sql"] = "DH";
+$proto116["m_srcTableName"] = "payrolltab";
+$proto116["m_expr"]=$obj;
+$proto116["m_alias"] = "";
+$obj = new SQLFieldListItem($proto116);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto118=array();
+			$obj = new SQLField(array(
+	"m_strName" => "DHRD",
+	"m_strTable" => "payrolltab",
+	"m_srcTableName" => "payrolltab"
+));
+
+$proto118["m_sql"] = "DHRD";
+$proto118["m_srcTableName"] = "payrolltab";
+$proto118["m_expr"]=$obj;
+$proto118["m_alias"] = "";
+$obj = new SQLFieldListItem($proto118);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto120=array();
+			$obj = new SQLField(array(
+	"m_strName" => "DHOT",
+	"m_strTable" => "payrolltab",
+	"m_srcTableName" => "payrolltab"
+));
+
+$proto120["m_sql"] = "DHOT";
+$proto120["m_srcTableName"] = "payrolltab";
+$proto120["m_expr"]=$obj;
+$proto120["m_alias"] = "";
+$obj = new SQLFieldListItem($proto120);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto122=array();
+			$obj = new SQLField(array(
+	"m_strName" => "DHRDOT",
+	"m_strTable" => "payrolltab",
+	"m_srcTableName" => "payrolltab"
+));
+
+$proto122["m_sql"] = "DHRDOT";
+$proto122["m_srcTableName"] = "payrolltab";
+$proto122["m_expr"]=$obj;
+$proto122["m_alias"] = "";
+$obj = new SQLFieldListItem($proto122);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto124=array();
+			$obj = new SQLField(array(
+	"m_strName" => "SHRDND",
+	"m_strTable" => "payrolltab",
+	"m_srcTableName" => "payrolltab"
+));
+
+$proto124["m_sql"] = "SHRDND";
+$proto124["m_srcTableName"] = "payrolltab";
+$proto124["m_expr"]=$obj;
+$proto124["m_alias"] = "";
+$obj = new SQLFieldListItem($proto124);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto126=array();
+			$obj = new SQLField(array(
+	"m_strName" => "RHRDND",
+	"m_strTable" => "payrolltab",
+	"m_srcTableName" => "payrolltab"
+));
+
+$proto126["m_sql"] = "RHRDND";
+$proto126["m_srcTableName"] = "payrolltab";
+$proto126["m_expr"]=$obj;
+$proto126["m_alias"] = "";
+$obj = new SQLFieldListItem($proto126);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto128=array();
+			$obj = new SQLField(array(
+	"m_strName" => "SHRDNDOT",
+	"m_strTable" => "payrolltab",
+	"m_srcTableName" => "payrolltab"
+));
+
+$proto128["m_sql"] = "SHRDNDOT";
+$proto128["m_srcTableName"] = "payrolltab";
+$proto128["m_expr"]=$obj;
+$proto128["m_alias"] = "";
+$obj = new SQLFieldListItem($proto128);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto130=array();
+			$obj = new SQLField(array(
+	"m_strName" => "RHRDNDOT",
+	"m_strTable" => "payrolltab",
+	"m_srcTableName" => "payrolltab"
+));
+
+$proto130["m_sql"] = "RHRDNDOT";
+$proto130["m_srcTableName"] = "payrolltab";
+$proto130["m_expr"]=$obj;
+$proto130["m_alias"] = "";
+$obj = new SQLFieldListItem($proto130);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto132=array();
+			$obj = new SQLField(array(
+	"m_strName" => "DHND",
+	"m_strTable" => "payrolltab",
+	"m_srcTableName" => "payrolltab"
+));
+
+$proto132["m_sql"] = "DHND";
+$proto132["m_srcTableName"] = "payrolltab";
+$proto132["m_expr"]=$obj;
+$proto132["m_alias"] = "";
+$obj = new SQLFieldListItem($proto132);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto134=array();
+			$obj = new SQLField(array(
+	"m_strName" => "DHRDND",
+	"m_strTable" => "payrolltab",
+	"m_srcTableName" => "payrolltab"
+));
+
+$proto134["m_sql"] = "DHRDND";
+$proto134["m_srcTableName"] = "payrolltab";
+$proto134["m_expr"]=$obj;
+$proto134["m_alias"] = "";
+$obj = new SQLFieldListItem($proto134);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto136=array();
+			$obj = new SQLField(array(
+	"m_strName" => "DHNDOT",
+	"m_strTable" => "payrolltab",
+	"m_srcTableName" => "payrolltab"
+));
+
+$proto136["m_sql"] = "DHNDOT";
+$proto136["m_srcTableName"] = "payrolltab";
+$proto136["m_expr"]=$obj;
+$proto136["m_alias"] = "";
+$obj = new SQLFieldListItem($proto136);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto138=array();
+			$obj = new SQLField(array(
+	"m_strName" => "DHRDNDOT",
+	"m_strTable" => "payrolltab",
+	"m_srcTableName" => "payrolltab"
+));
+
+$proto138["m_sql"] = "DHRDNDOT";
+$proto138["m_srcTableName"] = "payrolltab";
+$proto138["m_expr"]=$obj;
+$proto138["m_alias"] = "";
+$obj = new SQLFieldListItem($proto138);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto140=array();
+			$obj = new SQLField(array(
+	"m_strName" => "ThirToDate",
+	"m_strTable" => "payrolltab",
+	"m_srcTableName" => "payrolltab"
+));
+
+$proto140["m_sql"] = "ThirToDate";
+$proto140["m_srcTableName"] = "payrolltab";
+$proto140["m_expr"]=$obj;
+$proto140["m_alias"] = "";
+$obj = new SQLFieldListItem($proto140);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto142=array();
+			$obj = new SQLField(array(
+	"m_strName" => "TaxableToDate",
+	"m_strTable" => "payrolltab",
+	"m_srcTableName" => "payrolltab"
+));
+
+$proto142["m_sql"] = "TaxableToDate";
+$proto142["m_srcTableName"] = "payrolltab";
+$proto142["m_expr"]=$obj;
+$proto142["m_alias"] = "";
+$obj = new SQLFieldListItem($proto142);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto144=array();
+			$obj = new SQLField(array(
+	"m_strName" => "TaxToDate",
+	"m_strTable" => "payrolltab",
+	"m_srcTableName" => "payrolltab"
+));
+
+$proto144["m_sql"] = "TaxToDate";
+$proto144["m_srcTableName"] = "payrolltab";
+$proto144["m_expr"]=$obj;
+$proto144["m_alias"] = "";
+$obj = new SQLFieldListItem($proto144);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto146=array();
+$proto146["m_link"] = "SQLL_MAIN";
+			$proto147=array();
+$proto147["m_strName"] = "payrolltab";
+$proto147["m_srcTableName"] = "payrolltab";
+$proto147["m_columns"] = array();
+$proto147["m_columns"][] = "PtabID";
+$proto147["m_columns"][] = "EmployeeID";
+$proto147["m_columns"][] = "WageType";
+$proto147["m_columns"][] = "Status";
+$proto147["m_columns"][] = "BasicMonthly";
+$proto147["m_columns"][] = "BasicDaily";
+$proto147["m_columns"][] = "DWork";
+$proto147["m_columns"][] = "Absent";
+$proto147["m_columns"][] = "LateMins";
+$proto147["m_columns"][] = "UndertimeMins";
+$proto147["m_columns"][] = "RHolidayHrs";
+$proto147["m_columns"][] = "SHolidayHrs";
+$proto147["m_columns"][] = "CHolidayHrs";
+$proto147["m_columns"][] = "ExcessHrs";
+$proto147["m_columns"][] = "RegOTHrs";
+$proto147["m_columns"][] = "RHOTHrs";
+$proto147["m_columns"][] = "SHOTHRs";
+$proto147["m_columns"][] = "CHOTHrs";
+$proto147["m_columns"][] = "RDOTHrs";
+$proto147["m_columns"][] = "NDHrs";
+$proto147["m_columns"][] = "RDHrs";
+$proto147["m_columns"][] = "RegNDHrs";
+$proto147["m_columns"][] = "RHNDHrs";
+$proto147["m_columns"][] = "SHNDHrs";
+$proto147["m_columns"][] = "CHNDHrs";
+$proto147["m_columns"][] = "RDNDHrs";
+$proto147["m_columns"][] = "VLDays";
+$proto147["m_columns"][] = "SLDays";
+$proto147["m_columns"][] = "ELDays";
+$proto147["m_columns"][] = "PLDays";
+$proto147["m_columns"][] = "TrODays";
+$proto147["m_columns"][] = "FromDate";
+$proto147["m_columns"][] = "ToDate";
+$proto147["m_columns"][] = "UserName";
+$proto147["m_columns"][] = "AllowancePerDay";
+$proto147["m_columns"][] = "VLBalance";
+$proto147["m_columns"][] = "SLBalance";
+$proto147["m_columns"][] = "ELBalance";
+$proto147["m_columns"][] = "PLBalance";
+$proto147["m_columns"][] = "AgencyShare";
+$proto147["m_columns"][] = "NDMealAllowance";
+$proto147["m_columns"][] = "Division";
+$proto147["m_columns"][] = "Employer";
+$proto147["m_columns"][] = "PayrollID";
+$proto147["m_columns"][] = "Email";
+$proto147["m_columns"][] = "Locked";
+$proto147["m_columns"][] = "Position";
+$proto147["m_columns"][] = "Thirteenth";
+$proto147["m_columns"][] = "Taxable";
+$proto147["m_columns"][] = "NDOTHrs";
+$proto147["m_columns"][] = "RegNDOTHrs";
+$proto147["m_columns"][] = "RHNDOTHrs";
+$proto147["m_columns"][] = "SHNDOTHrs";
+$proto147["m_columns"][] = "CHNDOTHrs";
+$proto147["m_columns"][] = "RDNDOTHrs";
+$proto147["m_columns"][] = "DH";
+$proto147["m_columns"][] = "DHRD";
+$proto147["m_columns"][] = "DHOT";
+$proto147["m_columns"][] = "DHRDOT";
+$proto147["m_columns"][] = "SHRDND";
+$proto147["m_columns"][] = "RHRDND";
+$proto147["m_columns"][] = "SHRDNDOT";
+$proto147["m_columns"][] = "RHRDNDOT";
+$proto147["m_columns"][] = "DHND";
+$proto147["m_columns"][] = "DHRDND";
+$proto147["m_columns"][] = "DHNDOT";
+$proto147["m_columns"][] = "DHRDNDOT";
+$proto147["m_columns"][] = "ThirToDate";
+$proto147["m_columns"][] = "TaxableToDate";
+$proto147["m_columns"][] = "TaxToDate";
+$obj = new SQLTable($proto147);
+
+$proto146["m_table"] = $obj;
+$proto146["m_sql"] = "payrolltab";
+$proto146["m_alias"] = "";
+$proto146["m_srcTableName"] = "payrolltab";
+$proto148=array();
+$proto148["m_sql"] = "";
+$proto148["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto102["m_column"]=$obj;
-$proto102["m_contained"] = array();
-$proto102["m_strCase"] = "";
-$proto102["m_havingmode"] = false;
-$proto102["m_inBrackets"] = false;
-$proto102["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto102);
+$proto148["m_column"]=$obj;
+$proto148["m_contained"] = array();
+$proto148["m_strCase"] = "";
+$proto148["m_havingmode"] = false;
+$proto148["m_inBrackets"] = false;
+$proto148["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto148);
 
-$proto100["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto100);
+$proto146["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto146);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
 $proto0["m_orderby"] = array();
+												$proto150=array();
+						$obj = new SQLField(array(
+	"m_strName" => "ToDate",
+	"m_strTable" => "payrolltab",
+	"m_srcTableName" => "payrolltab"
+));
+
+$proto150["m_column"]=$obj;
+$proto150["m_bAsc"] = 0;
+$proto150["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto150);
+
+$proto0["m_orderby"][]=$obj;					
 $proto0["m_srcTableName"]="payrolltab";		
 $obj = new SQLQuery($proto0);
 
@@ -8547,7 +11817,7 @@ $queryData_payrolltab = createSqlQuery_payrolltab();
 	
 		;
 
-																																															
+																																																																						
 
 $tdatapayrolltab[".sqlquery"] = $queryData_payrolltab;
 

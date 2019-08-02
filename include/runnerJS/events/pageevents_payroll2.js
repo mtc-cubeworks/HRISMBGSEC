@@ -1,5 +1,0 @@
-
-Runner.pages.PageSettings.addPageEvent('payroll2',Runner.pages.constants.PAGE_ADD,"afterPageReady",function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='Create_Payroll12';if(!pageObj.buttonEventBefore['Create_Payroll12']){pageObj.buttonEventBefore['Create_Payroll12']=function(params,ctrl,pageObj,proxy,pageid,rowData,row){params["txt"]="Hello";ctrl.setMessage("Sending request to server...");}}
-if(!pageObj.buttonEventAfter['Create_Payroll12']){pageObj.buttonEventAfter['Create_Payroll12']=function(result,ctrl,pageObj,proxy,pageid,rowData,row){var message=result["txt"]+" !!!";ctrl.setMessage(message);}}
-$('a[id="Create_Payroll12"]').each(function(){if($(this).closest('.gridRowAdd').length){return;}
-this.id="Create_Payroll12"+"_"+Runner.genId();var button_Create_Payroll12=new Runner.form.Button({id:this.id,btnName:"Create_Payroll12"});button_Create_Payroll12.init({args:[pageObj,proxy,pageid]});});});

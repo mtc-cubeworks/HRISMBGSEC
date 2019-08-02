@@ -101,12 +101,6 @@ if($buttId=='Loan_Summary4')
 	$cipherer = new RunnerCipherer("loansreport");
 	buttonHandler_Loan_Summary4($params);
 }
-if($buttId=='Print_Payslip')
-{
-	require_once("include/payrolltab_variables.php");
-	$cipherer = new RunnerCipherer("payrolltab");
-	buttonHandler_Print_Payslip($params);
-}
 if($buttId=='Upload_Schedule2')
 {
 	require_once("include/indschedrange_variables.php");
@@ -155,12 +149,6 @@ if($buttId=='Summary_C')
 	$cipherer = new RunnerCipherer("payrolldiv");
 	buttonHandler_Summary_C($params);
 }
-if($buttId=='Payslip1')
-{
-	require_once("include/payrolltab1_variables.php");
-	$cipherer = new RunnerCipherer("payrolltab1");
-	buttonHandler_Payslip1($params);
-}
 if($buttId=='Update_SSS')
 {
 	require_once("include/demo_user1_variables.php");
@@ -178,6 +166,18 @@ if($buttId=='Update_Pag_Ibig2')
 	require_once("include/demo_user1_variables.php");
 	$cipherer = new RunnerCipherer("demo_user1");
 	buttonHandler_Update_Pag_Ibig2($params);
+}
+if($buttId=='Payslip4')
+{
+	require_once("include/payrolltab_variables.php");
+	$cipherer = new RunnerCipherer("payrolltab");
+	buttonHandler_Payslip4($params);
+}
+if($buttId=='Payslip41')
+{
+	require_once("include/payrolltab1_variables.php");
+	$cipherer = new RunnerCipherer("payrolltab1");
+	buttonHandler_Payslip41($params);
 }
 
 
@@ -543,7 +543,8 @@ CustomQuery($sqd);
 
 $sqlr = "INSERT indschedule VALUES (NULL, '$usern', '$indate', NULLIF('$ti',''), NULLIF('$to',''), '$stype', NULL, NULL, NULL, NULL, NULL, NULL, '$wt', NULL, NULL, '$empid', '$mpd', '$bm', '$shf', NULL, NULL, '$mid', '$lbf', '$lbt', NULL, '$fhm', '$shm', '$ndmeal', '$ndhrs', NULL, '$divi',
 NULL, NULL, '$day_num', '$rdfn', NULL, '$dept', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL,
-NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '$empr', NULL, '$latfix', NULL, NULL,'$pt','$ibl','$gp', '$adb')";
+NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '$empr', NULL, '$latfix', NULL, NULL,'$pt','$ibl','$gp', '$adb', NULL,
+NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)";
 CustomQuery($sqlr);
 
 }; //end sby as All Days work Except rest days
@@ -557,7 +558,8 @@ if ($sby==2) {
 
    $sqlr = "INSERT indschedule VALUES (NULL, '$usern', '$indate', NULLIF('$ti',''), NULLIF('$to',''), '$stype', NULL, NULL, NULL, NULL, NULL, NULL, '$wt', NULL, NULL, '$empid', '$mpd', '$bm', '$shf', NULL, NULL, '$mid', '$lbf', '$lbt', NULL, '$fhm', '$shm', '$ndmeal', '$ndhrs', NULL, '$divi',
    NULL, NULL, '$day_num', 0, NULL, '$dept', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL,
-   NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '$empr', NULL, '$latfix', NULL, NULL,'$pt','$ibl','$gp', '$adb')";
+   NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '$empr', NULL, '$latfix', NULL, NULL,'$pt','$ibl','$gp', '$adb', NULL,
+   NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)";
    CustomQuery($sqlr);
    }
 
@@ -729,13 +731,16 @@ $std=$datax["StartDate"];
 $end=$datax["EndDate"];
 $stdf=$datax["StartDateF"];
 $endf=$datax["EndDateF"];
+$stdfr=$datax["StartDatefr"];
+$endfr=$datax["EndDatefr"];
 $sbo=$datax["SBreakOut"];
 $sbi=$datax["SBreakIn"];
 $mdy=$datax["MinsPerDay"];
 $fh1=$datax["FirstHalfMins"];
 $bm1=$datax["BreakMins"];
 $adb=$datax["WithAddBreaks"];
-
+$sti=$datax["STimeIn"];
+$sto=$datax["STimeOut"];
 
 $sdd="'".$sd."'";
 
@@ -787,7 +792,7 @@ CustomQuery($sab);
 
 }
 
-else {
+elseif ($sct==2) {
 $ti = DBLookup("SELECT MIN(log_time) FROM demo_log WHERE log_time between '$stdf' AND '$endf' AND EmployeeID='$ei' GROUP BY EmployeeID");
 $to = DBLookup("SELECT MAX(log_time) FROM demo_log WHERE log_time between '$stdf' AND '$endf' AND EmployeeID='$ei' GROUP BY EmployeeID");
 
@@ -801,8 +806,87 @@ $bk2 = date('Y-m-d H:i:s',strtotime( '+'.$tb1.' minutes',strtotime($ti)));
 $sqlus = "UPDATE indschedule SET STimeIn=NULLIF('$ti',''), STimeOut=IF('$ti'='',NULL,'$mdat'), LunchBreakFrom=NULLIF('$bk1',''), LunchBreakTo=NULLIF('$bk2','')  WHERE ScID='$sc'";
 CustomQuery($sqlus);
 
+if ($adb==1)
+
+{
+
+
+$sqd1 = "DELETE FROM indbreaks WHERE ScID='$sc'";
+CustomQuery($sqd1);
+
+$rsa = DB::Query("select * from indprobreak where ScID='$sc'");
+ 
+while( $dataf = $rsa->fetchAssoc() )
+ 
+  {
+   $bol=$dataf["SBreakOut"];
+   $bil=$dataf["SBreakIn"];
+   $alb=$dataf["AllowedBreakMins"];
+
+$lbo = DBLookup("SELECT MIN(log_time) FROM demo_log WHERE log_time between '$bol' AND '$bil'");
+$lbi = DBLookup("SELECT MAX(log_time) FROM demo_log WHERE log_time between '$bol' AND '$bil'");
+
+if ($lbo!= Null and $lbi!= Null) {
+$sab = "INSERT indbreaks VALUES (NULL, NULLIF('$lbo',''), NULLIF('$lbi',''), TIMESTAMPDIFF(MINUTE,'$lbo',NULLIF('$lbi','')), '$sc', '$alb', TIMESTAMPDIFF(MINUTE,'$lbo',NULLIF('$lbi',''))-'$alb')";
+CustomQuery($sab);
 };
 
+   }
+
+}; //end  add breaks
+
+}
+
+else {
+
+$ti = DBLookup("SELECT MIN(log_time) FROM demo_log WHERE log_time between '$stdfr' AND '$endfr' AND EmployeeID='$ei' GROUP BY EmployeeID");
+$to = DBLookup("SELECT MAX(log_time) FROM demo_log WHERE log_time between '$stdfr' AND '$endfr' AND EmployeeID='$ei' GROUP BY EmployeeID");
+
+$tb1=$fh1+$bm1;
+
+$mdat = date('Y-m-d H:i:s',strtotime( '+'.$mdy.' minutes',strtotime($ti)));
+$bk1 = date('Y-m-d H:i:s',strtotime( '+'.$fh1.' minutes',strtotime($ti)));
+$bk2 = date('Y-m-d H:i:s',strtotime( '+'.$tb1.' minutes',strtotime($ti)));
+
+
+ //  if ($ti!=NULL) {
+ //   $sqlx = "UPDATE indschedule SET STimeIn=NULLIF('$ti', ''), STimeOut=IF('$ti'='', NULL,'$mdat'), LunchBreakFrom=NULLIF('$bk1',''), LunchBreakTo=NULLIF('$bk2','')  WHERE ScID='$sc'";
+ //   CustomQuery($sqlx);
+ //  };
+  
+
+if ($adb==1)
+
+{
+
+
+$sqd1 = "DELETE FROM indbreaks WHERE ScID='$sc'";
+CustomQuery($sqd1);
+
+$rsa = DB::Query("select * from indprobreak where ScID='$sc'");
+ 
+while( $dataf = $rsa->fetchAssoc() )
+ 
+  {
+   $bol=$dataf["SBreakOut"];
+   $bil=$dataf["SBreakIn"];
+   $alb=$dataf["AllowedBreakMins"];
+
+$lbo = DBLookup("SELECT MIN(log_time) FROM demo_log WHERE log_time between '$bol' AND '$bil'");
+$lbi = DBLookup("SELECT MAX(log_time) FROM demo_log WHERE log_time between '$bol' AND '$bil'");
+
+if ($lbo!= Null and $lbi!= Null) {
+$sab = "INSERT indbreaks VALUES (NULL, NULLIF('$lbo',''), NULLIF('$lbi',''), TIMESTAMPDIFF(MINUTE,'$lbo',NULLIF('$lbi','')), '$sc', '$alb', TIMESTAMPDIFF(MINUTE,'$lbo',NULLIF('$lbi',''))-'$alb')";
+CustomQuery($sab);
+};
+
+   }
+
+}; //end  add breaks
+
+};
+
+// end flexi-range
 
 $bro = DBLookup("SELECT MIN(log_time) FROM demo_log WHERE log_time between '$sbo' AND '$sbi' AND EmployeeID='$ei' GROUP BY EmployeeID");
 $bri = DBLookup("SELECT MAX(log_time) FROM demo_log WHERE log_time between '$sbo' AND '$sbi' AND EmployeeID='$ei' GROUP BY EmployeeID");
@@ -902,10 +986,24 @@ while( $datand = $rs->fetchAssoc() )
 $s1=$datand["ScID"];
 $cm=$datand["AutoApproveNDiff"];
 $nd1=$datand["NDMins"];
+$l1=$datand["L1Mins"];
+$aot=$datand["AOTMins"];
+$tmot=$datand["TOT2"];
 
 if ($cm==1) {
 
-$sq = "UPDATE indschedule SET ApprovednightDiff=1, ANDiff='$nd1' WHERE ScID='$s1'";
+  if ($tmot>0 and $tmot<=$nd1) {
+  $ndo=$tmot;
+  $ndf=$nd1-$ndo;
+   } elseif ($tmot>0 and $tmot>$nd1) {
+  $ndo=$nd1;
+  $ndf=0;
+  } else {
+  $ndo=0;
+  $ndf=$nd1;
+  };
+ 
+$sq = "UPDATE indschedule SET ApprovednightDiff=1, ANDiff='$ndf', ANDOTMins='$ndo' WHERE ScID='$s1'";
 CustomQuery($sq);
 }
 };
@@ -932,12 +1030,23 @@ $sho=$datax["SHOTHRs"];
 $cho=$datax["CHOTHrs"];
 $rdo=$datax["RDOTHrs"];
 $nd=$datax["NDHrs"];
+//$ndot=$datax["NDOTHrs"];
 $rd=$datax["RDHrs"];
 $rnd=$datax["RegNDHrs"];
+$rndot=$datax["RegNDOTHrs"];
+
 $rhnd=$datax["RHNDHrs"];
+$rhndot=$datax["RHNDOTHrs"];
+
 $shnd=$datax["SHNDHrs"];
+$shndot=$datax["SHNDOTHrs"];
+
 $chnd=$datax["CHNDHrs"];
+$chndot=$datax["CHNDOTHrs"];
+
 $rdnd=$datax["RDNDHrs"];
+$rdndot=$datax["RDNDOTHrs"];
+
 $vl=$datax["VLDays"];
 $sl=$datax["SLDays"];
 $el=$datax["ELDays"];
@@ -958,7 +1067,7 @@ $blate=DBLookup("SELECT TExcess FROM indbreaksum WHERE ScID='$sc'");
 
 $sqlr = "UPDATE indschedule SET RegWD='$rw', DWork='$dw', Absent='$ab', LateMins='$l', UndertimeMins='$u', RHolidayHrs='$r',
 SHolidayHrs='$s', CHolidayHrs='$c', ExcessHrs='$ex', RegOTHrs='$ro', RHOTHrs='$rho', SHOTHRs='$sho', CHOTHrs='$cho', RDOTHrs='$rdo', NDHrs='$nd', RDHrs='$rd',
-RegNDHrs='$rnd', RHNDHrs='$rhnd', SHNDHrs='$shnd', CHNDHrs='$chnd', RDNDHrs='$rdnd', VLDay='$vl', SLDay='$sl', ELDay='$el', PLDay='$pl', TrODay='$tr', Mispunched='$mp',
+RegNDHrs='$rnd', RegNDOTHrs='$rndot', RHNDHrs='$rhnd', RHNDOTHrs='$rhndot', SHNDHrs='$shnd', SHNDOTHrs='$shndot', CHNDHrs='$chnd', CHNDOTHrs='$chndot', RDNDHrs='$rdnd', RDNDOTHrs='$rdndot', VLDay='$vl', SLDay='$sl', ELDay='$el', PLDay='$pl', TrODay='$tr', Mispunched='$mp',
 BreakLateMins=NULLIF('$blate',''), TotLateMins='$tlates'+NULLIF('$blate',''), LatePenaltyMins='$latep'
 WHERE ScID='$sc'";
 CustomQuery($sqlr);
@@ -1102,12 +1211,40 @@ $shot=$datax["SHOTHRs"];
 $chot=$datax["CHOTHrs"];
 $rdot=$datax["RDOTHrs"];
 $nd=$datax["NDHrs"];
+$ndot=$datax["NDOTHrs"];
 $rd=$datax["RDHrs"];
 $rnd=$datax["RegNDHrs"];
+$rndot=$datax["RegNDOTHrs"];   
+
 $rhnd=$datax["RHNDHrs"];
+$rhndot=$datax["RHNDOTHrs"];
+
 $shnd=$datax["SHNDHrs"];
+$shndot=$datax["SHNDOTHrs"];
+
 $chnd=$datax["CHNDHrs"];
+$chndot=$datax["CHNDOTHrs"];
+
 $rdnd=$datax["RDNDHrs"];
+$rdndot=$datax["RDNDOTHrs"];
+
+
+
+
+
+$w1=$datax["DHh"];
+$w2=$datax["DHRDh"];
+$w3=$datax["DHOTh"];
+$w4=$datax["DHRDOTh"];
+$w5=$datax["SHRDNDh"];
+$w6=$datax["RHRDNDh"];
+$w7=$datax["SHRDNDOTh"];
+$w8=$datax["RHRDNDOTh"];
+$w9=$datax["DHNDh"];
+$w10=$datax["DHRDNDh"];
+$w11=$datax["DHNDOTh"];
+$w12=$datax["DHRDNDOTh"];
+
 $vl=$datax["VLDays"];
 $sl=$datax["SLDays"];
 $el=$datax["ELDays"];
@@ -1132,10 +1269,13 @@ $slb = DBLookup("SELECT SLBalance FROM leavebalance WHERE EmployeeID='$empid'");
 $elb = DBLookup("SELECT ELBalance FROM leavebalance WHERE EmployeeID='$empid'");
 $plb = DBLookup("SELECT PLBalance FROM leavebalance WHERE EmployeeID='$empid'");
 
+//$thirt = DBLookup("SELECT thirteenth FROM thirthind WHERE EmployeeID='$empid' and ToDate='$tod'");
+
 
 $sqlr = "INSERT payrolltab VALUES (NULL, '$empid', '$wt', '$st', '$bm', '$bd', '$dw', '$ab', '$lm', '$um', '$rh', '$sh',
  '$ch', '$eh', '$rot', '$rhot', '$shot', '$chot', '$rdot', '$nd', '$rd', '$rnd', '$rhnd', '$shnd', '$chnd', '$rdnd', '$vl',
- '$sl', '$el', '$pl', '$tro', '$frd', '$tod', '$usern', NULL, '$vlb', '$slb', '$elb', '$plb', NULL, '$ndma', '$divi', '$empr', NULL, '$email', NULL, '$posi')";
+ '$sl', '$el', '$pl', '$tro', '$frd', '$tod', '$usern', NULL, '$vlb', '$slb', '$elb', '$plb', NULL, '$ndma', '$divi', '$empr', NULL, '$email', NULL, '$posi', NULL, NULL, '$ndot', '$rndot', '$rhndot', '$shndot', '$chndot', '$rdndot',
+  NULL, NULL, NULL, '$w1', '$w2', '$w3', '$w4', '$w5', '$w6', '$w7', '$w8', '$w9', '$w10', '$w11', '$w12')";
 CustomQuery($sqlr);
 
 
@@ -1252,12 +1392,40 @@ $shot=$datax["SHOTHRs"];
 $chot=$datax["CHOTHrs"];
 $rdot=$datax["RDOTHrs"];
 $nd=$datax["NDHrs"];
+$ndot=$datax["NDOTHrs"];
 $rd=$datax["RDHrs"];
 $rnd=$datax["RegNDHrs"];
+$rndot=$datax["RegNDOTHrs"];
+
 $rhnd=$datax["RHNDHrs"];
+$rhndot=$datax["RHNDOTHrs"];
+
 $shnd=$datax["SHNDHrs"];
+$shndot=$datax["SHNDOTHrs"];
+
 $chnd=$datax["CHNDHrs"];
+$chndot=$datax["CHNDOTHrs"];
+
 $rdnd=$datax["RDNDHrs"];
+$rdndot=$datax["RDNDOTHrs"];
+
+$w1=$datax["DHh"];
+$w2=$datax["DHRDh"];
+$w3=$datax["DHOTh"];
+$w4=$datax["DHRDOTh"];
+$w5=$datax["SHRDNDh"];
+$w6=$datax["RHRDNDh"];
+$w7=$datax["SHRDNDOTh"];
+$w8=$datax["RHRDNDOTh"];
+$w9=$datax["DHNDh"];
+$w10=$datax["DHRDNDh"];
+$w11=$datax["DHNDOTh"];
+$w12=$datax["DHRDNDOTh"];
+
+
+
+
+
 $vl=$datax["VLDays"];
 $sl=$datax["SLDays"];
 $el=$datax["ELDays"];
@@ -1282,10 +1450,14 @@ $elb = DBLookup("SELECT ELBalance FROM leavebalance WHERE EmployeeID='$empid'");
 $plb = DBLookup("SELECT PLBalance FROM leavebalance WHERE EmployeeID='$empid'");
 $posi = DBLookup("SELECT Position FROM demo_user WHERE EmployeeID='$empid'");
 
+$thirt = DBLookup("SELECT thirteenth FROM thirthind WHERE EmployeeID='$empid' and ToDate='$tod'");
+
 $sqlr = "UPDATE payrolltab SET WageType='$wt', Status='$st', BasicMonthly='$bm', BasicDaily='$bd', DWork='$dw', Absent='$ab', LateMins='$lm', UndertimeMins='$um', RHolidayHrs='$rh', SHolidayHrs='$sh',
- CHolidayHrs='$ch', ExcessHrs='$eh', RegOTHrs='$rot', RHOTHrs='$rhot', SHOTHRs='$shot', CHOTHrs='$chot', RDOTHrs='$rdot', NDHrs='$nd', RDHrs='$rd', RegNDHrs='$rnd', RHNDHrs='$rhnd', SHNDHrs='$shnd', CHNDHrs='$chnd', RDNDHrs='$rdnd', VLDays='$vl',
- SLDays='$sl', ELDays='$el', PLDays='$pl', TrODays='$tro', FromDate='$frd',  UserName='$usern', AllowancePerDay='$alw', VLBalance='$vlb', SLBalance='$slb', ELBalance='$elb', PLBalance='$plb', AgencyShare='$ashare', NDMealallowance='$ndma', Division='$divi', Employer='$empr', Email='$email', Position='$posi'
- WHERE ToDate='$tod' and EmployeeID='$empid' and Locked<>1";
+ CHolidayHrs='$ch', ExcessHrs='$eh', RegOTHrs='$rot', RHOTHrs='$rhot', SHOTHRs='$shot', CHOTHrs='$chot', RDOTHrs='$rdot', NDHrs='$nd', NDOTHrs='$ndot', RDHrs='$rd', RegNDHrs='$rnd', RegNDOTHrs='$rndot', RHNDHrs='$rhnd', RHNDOTHrs='$rhndot', SHNDHrs='$shnd', SHNDOTHrs='$shndot', CHNDHrs='$chnd', 
+ CHNDOTHrs='$chndot', RDNDHrs='$rdnd', RDNDOTHrs='$rdndot', VLDays='$vl',
+ SLDays='$sl', ELDays='$el', PLDays='$pl', TrODays='$tro', FromDate='$frd',  UserName='$usern', AllowancePerDay='$alw', VLBalance='$vlb', SLBalance='$slb', ELBalance='$elb', PLBalance='$plb', AgencyShare='$ashare', NDMealallowance='$ndma', Division='$divi', Employer='$empr', Email='$email', Position='$posi', Thirteenth='$thirt',
+ DH='$w1', DHRD='$w2', DHOT='$w3', DHRDOT='$w4', SHRDND='$w5', RHRDND='$w6', SHRDNDOT='$w7', RHRDNDOT='$w8', DHND='$w9', DHRDND='$w10', DHNDOT='$w11', DHRDNDOT='$w12' 
+WHERE ToDate='$tod' and EmployeeID='$empid' and Locked<>1";
 CustomQuery($sqlr);
 
 
@@ -1501,7 +1673,9 @@ $sd4 = "DELETE FROM payrolltax WHERE PSID='$psid'";
 CustomQuery($sd4);
 
 //$sd5 = "DELETE FROM payrollearnadj WHERE FromDate='$frd2' AND ToDate='$tod2' AND Adjustment=11";
+
 //CustomQuery($sd5);
+
 
 
 global $dal;
@@ -1516,6 +1690,11 @@ while ($datax1 = db_fetch_array($rs1))
 $empid=$datax1["EmployeeID"];
 $dv=$datax1["Division"];
 $wt=$datax1["WageType"];
+
+$thi=DBLookup("SELECT thirteenth FROM thirthind WHERE EmployeeID='$empid' and ToDate='$tod1'");
+
+$sqa = "UPDATE payrolltab SET Thirteenth='$thi' WHERE ToDate='$tod1' and EmployeeID='$empid'";
+CustomQuery($sqa);
 
 //Start Statutories
 if ($sta==1) {
@@ -1718,6 +1897,11 @@ CustomQuery($sqlad);
 
 }; //end Mo Adjustment
 
+
+// Start update TAXABLE
+
+
+
 //Start  Preset Tax
 
 if ($ptax==1)  {
@@ -1727,22 +1911,82 @@ $tod1= $data["PayToDate"];
 $tod2="'".$tod1."'";
 
 
-//$tblOrders = $dal->Table("payrolltab");
-//$rs1 = $tblOrders->Query("ToDate=".$tod2. " and EmployeeID=".$empid,"");
-//while ($datax1 = db_fetch_array($rs1))
-//{
+
+$rsx = DB::Query("select * from payrolltab where Employer='$emr1' and WageType='$wtp1' and Division='$dvv1' and FromDate='$frd1' and ToDate='$tod1'");
+ 
+while( $dtax = $rsx->fetchAssoc() )
+{
+$empx= $dtax["EmployeeID"];
+$ptabx= $dtax["PtabID"];
+
+$taxa=DBLookup("select taxable from payrollamt33 where EmployeeID='$empx' and FromDate='$frd1' and ToDate='$tod1'");
+
+$sqlx = "UPDATE payrolltab SET Taxable='$taxa' WHERE PtabID='$ptabx'";
+CustomQuery($sqlx);
+
+$chkstat=DBLookup("select Tstat from totalactstat where EmployeeID='$empx' and FromDate='$frd1' and ToDate='$tod1'");
+
+if ($chkstat>$taxa) {
+$sds = "DELETE FROM payrollstatutories WHERE EmployeeID='$empx' and FromDate='$frd1' and ToDate='$tod1'";
+CustomQuery($sds);
+   }
+}
 
 
-//$empc=$datax1["EmployeeID"];
+
+$fx = DBLookup("SELECT AllowableleaveFrom FROM standardsetup WHERE SID=1");
+$tx = DBLookup("SELECT AllowableleaveTo FROM standardsetup WHERE SID=1");
+
+$ctx = DBLookup("SELECT COUNT(Tax) FROM payrolltax WHERE ToDate between '$fx' AND '$tx' AND EmployeeID='$empid' GROUP BY EmployeeID");
+$stx = DBLookup("SELECT SUM(Tax) FROM payrolltax WHERE ToDate between '$fx' AND '$tx' AND EmployeeID='$empid' GROUP BY EmployeeID");
+
+$tpx = DBLookup("SELECT TaxPeriods FROM demo_user WHERE EmployeeID='$empid'");
+$txb = DBLookup("SELECT PreCalMoTaxable FROM demo_user WHERE EmployeeID='$empid'");
+$tppx = DBLookup("SELECT TaxPerPeriod FROM demo_user WHERE EmployeeID='$empid'");
+$prx = DBLookup("SELECT TPStat FROM totalprestat WHERE EmployeeID='$empid'");
+
+$dper = DBLookup("SELECT MontlyPaymentPeriods FROM employeepayperiod WHERE EmployeeID='$empid'");
+
+$mnum=date('m', strtotime($frd1));
+$mnuma=(13-$mnum)*$dper;
+$mnumb=$mnum-1;
+
+$ctxb = DBLookup("SELECT COUNT(Tax) FROM payrolltax WHERE MONTH(FromDate)<'$mnum' AND EmployeeID='$empid' GROUP BY EmployeeID");
+
+if ($mnumb==0) {
+$txpr=$mnuma;
+}
+else
+{
+$txpr=$ctxb+$mnuma;
+}
 
 
+$antx1=($txpr-$ctx-1)*($txb/$dper);
 
-$pt = DBLookup("SELECT PresetTax FROM demo_user WHERE EmployeeID='$empid'");
 
+$antx2 = DBLookup("SELECT SUM(Taxable) FROM payrolltab WHERE ToDate between '$fx' AND '$tx' AND EmployeeID='$empid' GROUP BY EmployeeID");
 
-$sqlt = "INSERT payrolltax VALUES (NULL, '$empid', '$pt', '$frd1', '$tod1', '$psid', '$emr1', '$dvv1', '$wtp1')";
+$antx3 = DBLookup("SELECT SUM(ActStats) FROM actstats WHERE ToDate between '$fx' AND '$tx' AND EmployeeID='$empid' GROUP BY EmployeeID");
+
+$tant=$antx1+$antx2-$antx3;
+
+    $txr=DBLookup("select Rate from annualtaxtab where '$tant' between IncomeFrom and IncomeTo");
+    $txb=DBLookup("select Base from annualtaxtab where '$tant' between IncomeFrom and IncomeTo");
+    $txe=DBLookup("select Excess from annualtaxtab where '$tant' between IncomeFrom and IncomeTo");
+
+    $atx=$txb+(($txr/100)*($tant-$txe)); //annual tax
+    $pptx=$atx/$txpr;
+
+$wgtx=($antx2-$antx3)/$tant;
+
+$actx=($atx*$wgtx)-$stx;
+//$actx=$tant;
+
+$sqlt = "INSERT payrolltax VALUES (NULL, '$empid', '$actx', '$frd1', '$tod1', '$psid', '$emr1', '$dvv1', '$wtp1')";
 CustomQuery($sqlt);
-
+ //  $mtx=($txb+(($txr/100)*($ai-$txe)))/12;
+ //   $txpp=($txb+(($txr/100)*($ai-$txe)))/$tpx;
 
 //};
 
@@ -1751,23 +1995,26 @@ CustomQuery($sqlt);
 
 //Start 13th Month
 
+
+
+
 if ($thr==1) {
 
 $frd3= $data["PayFromDate"];
 $tod3= $data["PayToDate"];
 
 
-$rs = DB::Query("select * from final13th and EmployeeID='$empid'");
+$rsv = DB::Query("select * from final13th");
 
-while ($data = db_fetch_array($rs))
+while ($datav = db_fetch_array($rsv))
 
 {
 
-$amt=$data["B13th"];
-$empid=$data["EmployeeID"];
+$amt=$datav["B13th"];
+$empidx=$datav["EmployeeID"];
 
-//$sql13 = "INSERT payrollearnadj VALUES (NULL, 11, '$amt','$frd3', '$tod3', '$empid', NULL, '$psid', NULL, '$emr1', '$dvv1', '$wtp1')";
-//CustomQuery($sql13);
+$sql13 = "INSERT payrollearnadj VALUES (NULL, 20, '$amt','$frd3', '$tod3', '$empidx', NULL, '$psid', NULL, '$emr1', '$dvv1', '$wtp1')";
+CustomQuery($sql13);
 
 
 };
@@ -1775,7 +2022,28 @@ $empid=$data["EmployeeID"];
 
 }; //End 13th Month
 
+//to-Date Start
 
+$ptd= $data[PayToDate];
+
+
+$rtt = DB::Query("select EmployeeID, SUM(Thirteenth) AS Tr, SUM(Taxable) AS Txb, SUM(Tax) AS Tx  from thirtaxsel where ToDate<='$ptd' GROUP BY EmployeeID");
+
+while ($datat = db_fetch_array($rtt))
+
+{
+$emm=$datat["EmployeeID"];
+$etr=$datat["Tr"];
+$etb=$datat["Txb"];
+$etx=$datat["Tx"];
+
+$sqt = "UPDATE payrolltab SET ThirToDate='$etr', TaxableToDate='$etb', TaxToDate='$etx'
+ WHERE ToDate='$ptd' and EmployeeID='$emm' and Locked<>1";
+CustomQuery($sqt);
+
+};
+
+//end to-Dates
 
 }; 
 
@@ -2041,61 +2309,6 @@ $result["txt"] = $params["txt"]." Done!";
 	RunnerContext::pop();
 	echo my_json_encode($result);
 }
-function buttonHandler_Print_Payslip($params)
-{
-	global $strTableName;
-	$result = array();
-
-	// create new button object for get record data
-	$params["keys"] = (array)my_json_decode(postvalue('keys'));
-	$params["isManyKeys"] = postvalue('isManyKeys');
-	$params["location"] = postvalue('location');
-
-	$button = new Button($params);
-	$ajax = $button; // for examle from HELP
-	$keys = $button->getKeys();
-
-	$masterData = false;
-	if ( isset($params['masterData']) && count($params['masterData']) > 0 )
-	{
-		$masterData = $params['masterData'];
-	}
-	else if ( isset($params["masterTable"]) )
-	{
-		$masterData = $button->getMasterData($params["masterTable"]);
-	}
-	
-	$contextParams = array();
-	if ( $params["location"] == PAGE_VIEW )
-	{
-		$contextParams["data"] = $button->getRecordData();
-		$contextParams["masterData"] = $masterData;
-	}
-	else if ( $params["location"] == PAGE_EDIT )
-	{
-		$contextParams["data"] = $button->getRecordData();
-		$contextParams["newData"] = $params['fieldsData'];
-		$contextParams["masterData"] = $masterData;
-	}
-	else if ( $params["location"] == "grid" )
-	{	
-		$params["location"] = "list";
-		$contextParams["data"] = $button->getRecordData();
-		$contextParams["newData"] = $params['fieldsData'];
-		$contextParams["masterData"] = $masterData;
-	}
-	else 
-	{
-		$contextParams["masterData"] = $masterData;
-	}
-
-	RunnerContext::push( new RunnerContextItem( $params["location"], $contextParams));
-	$data = $button->getCurrentRecord();
-
-$result['PtabID'] = $data["PtabID"];;
-	RunnerContext::pop();
-	echo my_json_encode($result);
-}
 function buttonHandler_Upload_Schedule2($params)
 {
 	global $strTableName;
@@ -2251,7 +2464,8 @@ CustomQuery($sqd);
 
 $sqlr = "INSERT indschedule VALUES (NULL, '$usern', '$indate', NULLIF('$ti',''), NULLIF('$to',''), '$stype', NULL, NULL, NULL, NULL, NULL, NULL, '$wt', NULL, NULL, '$empid', '$mpd', '$bm', '$shf', NULL, NULL, NULL, NULLIF('$lbf',''), NULLIF('$lbt',''), NULL, '$fhm', '$shm', '$ndmeal', '$ndhrs', NULL, '$divi',
 NULL, NULL, '$day_num', '$rdfn', NULL, '$dept', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL,
-NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '$empr', NULL, '$latfix', NULL, '$mid','$pt','$ibl','$gp','$adb')";
+NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '$empr', NULL, '$latfix', NULL, '$mid','$pt','$ibl','$gp','$adb',NULL, 
+NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)";
 CustomQuery($sqlr);
 
 }; //end sby as All Days work Except rest days
@@ -2265,7 +2479,8 @@ if ($sby==2) {
 
    $sqlr = "INSERT indschedule VALUES (NULL, '$usern', '$indate', NULLIF('$ti',''), NULLIF('$to',''), '$stype', NULL, NULL, NULL, NULL, NULL, NULL, '$wt', NULL, NULL, '$empid', '$mpd', '$bm', '$shf', NULL, NULL, '$mid', NULLIF('$lbf',''), NULLIF('$lbt',''), NULL, '$fhm', '$shm', '$ndmeal', '$ndhrs', NULL, '$divi',
    NULL, NULL, '$day_num', 0, NULL, '$dept', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL,
-   NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '$empr', NULL, '$latfix', NULL, NULL,'$pt','$ibl','$gp', '$adb')";
+   NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '$empr', NULL, '$latfix', NULL, NULL,'$pt','$ibl','$gp', '$adb', NULL,
+   NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)";
    CustomQuery($sqlr);
    }
 
@@ -2752,61 +2967,6 @@ $sqlp = "Update payrolltab set PayrollID='". $pr. "' where ToDate='$td' AND Divi
 	RunnerContext::pop();
 	echo my_json_encode($result);
 }
-function buttonHandler_Payslip1($params)
-{
-	global $strTableName;
-	$result = array();
-
-	// create new button object for get record data
-	$params["keys"] = (array)my_json_decode(postvalue('keys'));
-	$params["isManyKeys"] = postvalue('isManyKeys');
-	$params["location"] = postvalue('location');
-
-	$button = new Button($params);
-	$ajax = $button; // for examle from HELP
-	$keys = $button->getKeys();
-
-	$masterData = false;
-	if ( isset($params['masterData']) && count($params['masterData']) > 0 )
-	{
-		$masterData = $params['masterData'];
-	}
-	else if ( isset($params["masterTable"]) )
-	{
-		$masterData = $button->getMasterData($params["masterTable"]);
-	}
-	
-	$contextParams = array();
-	if ( $params["location"] == PAGE_VIEW )
-	{
-		$contextParams["data"] = $button->getRecordData();
-		$contextParams["masterData"] = $masterData;
-	}
-	else if ( $params["location"] == PAGE_EDIT )
-	{
-		$contextParams["data"] = $button->getRecordData();
-		$contextParams["newData"] = $params['fieldsData'];
-		$contextParams["masterData"] = $masterData;
-	}
-	else if ( $params["location"] == "grid" )
-	{	
-		$params["location"] = "list";
-		$contextParams["data"] = $button->getRecordData();
-		$contextParams["newData"] = $params['fieldsData'];
-		$contextParams["masterData"] = $masterData;
-	}
-	else 
-	{
-		$contextParams["masterData"] = $masterData;
-	}
-
-	RunnerContext::push( new RunnerContextItem( $params["location"], $contextParams));
-	$data = $button->getCurrentRecord();
-
-$result['PtabID'] = $data["PtabID"];;
-	RunnerContext::pop();
-	echo my_json_encode($result);
-}
 function buttonHandler_Update_SSS($params)
 {
 	global $strTableName;
@@ -3066,6 +3226,122 @@ $sql = "Update demo_user set PagIbigER='$er', PagIbigEE='$ee'  where EmployeeID=
 }
 
 $result["txt"] = $params["txt"]." Done!";
+;
+	RunnerContext::pop();
+	echo my_json_encode($result);
+}
+function buttonHandler_Payslip4($params)
+{
+	global $strTableName;
+	$result = array();
+
+	// create new button object for get record data
+	$params["keys"] = (array)my_json_decode(postvalue('keys'));
+	$params["isManyKeys"] = postvalue('isManyKeys');
+	$params["location"] = postvalue('location');
+
+	$button = new Button($params);
+	$ajax = $button; // for examle from HELP
+	$keys = $button->getKeys();
+
+	$masterData = false;
+	if ( isset($params['masterData']) && count($params['masterData']) > 0 )
+	{
+		$masterData = $params['masterData'];
+	}
+	else if ( isset($params["masterTable"]) )
+	{
+		$masterData = $button->getMasterData($params["masterTable"]);
+	}
+	
+	$contextParams = array();
+	if ( $params["location"] == PAGE_VIEW )
+	{
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["masterData"] = $masterData;
+	}
+	else if ( $params["location"] == PAGE_EDIT )
+	{
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["newData"] = $params['fieldsData'];
+		$contextParams["masterData"] = $masterData;
+	}
+	else if ( $params["location"] == "grid" )
+	{	
+		$params["location"] = "list";
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["newData"] = $params['fieldsData'];
+		$contextParams["masterData"] = $masterData;
+	}
+	else 
+	{
+		$contextParams["masterData"] = $masterData;
+	}
+
+	RunnerContext::push( new RunnerContextItem( $params["location"], $contextParams));
+	$data = $button->getCurrentRecord();
+
+$result['PtabID'] = $data["PtabID"];;
+	RunnerContext::pop();
+	echo my_json_encode($result);
+}
+function buttonHandler_Payslip41($params)
+{
+	global $strTableName;
+	$result = array();
+
+	// create new button object for get record data
+	$params["keys"] = (array)my_json_decode(postvalue('keys'));
+	$params["isManyKeys"] = postvalue('isManyKeys');
+	$params["location"] = postvalue('location');
+
+	$button = new Button($params);
+	$ajax = $button; // for examle from HELP
+	$keys = $button->getKeys();
+
+	$masterData = false;
+	if ( isset($params['masterData']) && count($params['masterData']) > 0 )
+	{
+		$masterData = $params['masterData'];
+	}
+	else if ( isset($params["masterTable"]) )
+	{
+		$masterData = $button->getMasterData($params["masterTable"]);
+	}
+	
+	$contextParams = array();
+	if ( $params["location"] == PAGE_VIEW )
+	{
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["masterData"] = $masterData;
+	}
+	else if ( $params["location"] == PAGE_EDIT )
+	{
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["newData"] = $params['fieldsData'];
+		$contextParams["masterData"] = $masterData;
+	}
+	else if ( $params["location"] == "grid" )
+	{	
+		$params["location"] = "list";
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["newData"] = $params['fieldsData'];
+		$contextParams["masterData"] = $masterData;
+	}
+	else 
+	{
+		$contextParams["masterData"] = $masterData;
+	}
+
+	RunnerContext::push( new RunnerContextItem( $params["location"], $contextParams));
+	
+$data = $button->getCurrentRecord();
+$result['PtabID'] = $data["PtabID"];
+$ei = $data["EmployeeID"];
+
+$result['Pass'] = DBLookup("select Password from logins where EmployeeID='$ei'");
+
+
 ;
 	RunnerContext::pop();
 	echo my_json_encode($result);

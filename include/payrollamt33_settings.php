@@ -337,7 +337,7 @@ $tdatapayrollamt33[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																				
+																																																																																																																																																																																																																																																																														
 
 $tdatapayrollamt33[".ajaxCodeSnippetAdded"] = false;
 
@@ -356,163 +356,23 @@ $tdatapayrollamt33[".allSearchFields"] = array();
 $tdatapayrollamt33[".filterFields"] = array();
 $tdatapayrollamt33[".requiredSearchFields"] = array();
 
-$tdatapayrollamt33[".allSearchFields"][] = "OT";
-	$tdatapayrollamt33[".allSearchFields"][] = "TDeductions";
-	$tdatapayrollamt33[".allSearchFields"][] = "PtabID";
-	$tdatapayrollamt33[".allSearchFields"][] = "FromDate";
+$tdatapayrollamt33[".allSearchFields"][] = "FromDate";
 	$tdatapayrollamt33[".allSearchFields"][] = "ToDate";
 	$tdatapayrollamt33[".allSearchFields"][] = "EmployeeID";
 	$tdatapayrollamt33[".allSearchFields"][] = "UserName";
 	$tdatapayrollamt33[".allSearchFields"][] = "Status";
 	$tdatapayrollamt33[".allSearchFields"][] = "Employer";
 	$tdatapayrollamt33[".allSearchFields"][] = "Division";
-	$tdatapayrollamt33[".allSearchFields"][] = "WageType";
-	$tdatapayrollamt33[".allSearchFields"][] = "BasicMonthly";
-	$tdatapayrollamt33[".allSearchFields"][] = "BasicDaily";
-	$tdatapayrollamt33[".allSearchFields"][] = "DWork";
-	$tdatapayrollamt33[".allSearchFields"][] = "Absent";
-	$tdatapayrollamt33[".allSearchFields"][] = "RegPay";
-	$tdatapayrollamt33[".allSearchFields"][] = "LateMins";
-	$tdatapayrollamt33[".allSearchFields"][] = "Late";
-	$tdatapayrollamt33[".allSearchFields"][] = "UndertimeMins";
-	$tdatapayrollamt33[".allSearchFields"][] = "UnderTime";
-	$tdatapayrollamt33[".allSearchFields"][] = "RHoliday";
-	$tdatapayrollamt33[".allSearchFields"][] = "SHoliday";
-	$tdatapayrollamt33[".allSearchFields"][] = "CHoliday";
-	$tdatapayrollamt33[".allSearchFields"][] = "RegOT";
-	$tdatapayrollamt33[".allSearchFields"][] = "RHOT";
-	$tdatapayrollamt33[".allSearchFields"][] = "SHOT";
-	$tdatapayrollamt33[".allSearchFields"][] = "CHOT";
-	$tdatapayrollamt33[".allSearchFields"][] = "RDOT";
-	$tdatapayrollamt33[".allSearchFields"][] = "RD";
-	$tdatapayrollamt33[".allSearchFields"][] = "ND";
-	$tdatapayrollamt33[".allSearchFields"][] = "RHND";
-	$tdatapayrollamt33[".allSearchFields"][] = "SHND";
-	$tdatapayrollamt33[".allSearchFields"][] = "CHND";
-	$tdatapayrollamt33[".allSearchFields"][] = "RDND";
-	$tdatapayrollamt33[".allSearchFields"][] = "TND";
-	$tdatapayrollamt33[".allSearchFields"][] = "VL";
-	$tdatapayrollamt33[".allSearchFields"][] = "SL";
-	$tdatapayrollamt33[".allSearchFields"][] = "EL";
-	$tdatapayrollamt33[".allSearchFields"][] = "PL";
-	$tdatapayrollamt33[".allSearchFields"][] = "TrO";
-	$tdatapayrollamt33[".allSearchFields"][] = "RHolidayHrs";
-	$tdatapayrollamt33[".allSearchFields"][] = "SHolidayHrs";
-	$tdatapayrollamt33[".allSearchFields"][] = "CHolidayHrs";
-	$tdatapayrollamt33[".allSearchFields"][] = "RegOTHrs";
-	$tdatapayrollamt33[".allSearchFields"][] = "RHOTHrs";
-	$tdatapayrollamt33[".allSearchFields"][] = "SHOTHRs";
-	$tdatapayrollamt33[".allSearchFields"][] = "CHOTHrs";
-	$tdatapayrollamt33[".allSearchFields"][] = "RDOTHrs";
-	$tdatapayrollamt33[".allSearchFields"][] = "RDHrs";
-	$tdatapayrollamt33[".allSearchFields"][] = "RegNDHrs";
-	$tdatapayrollamt33[".allSearchFields"][] = "RHNDHrs";
-	$tdatapayrollamt33[".allSearchFields"][] = "SHNDHrs";
-	$tdatapayrollamt33[".allSearchFields"][] = "CHNDHrs";
-	$tdatapayrollamt33[".allSearchFields"][] = "RDNDHrs";
-	$tdatapayrollamt33[".allSearchFields"][] = "VLBalance";
-	$tdatapayrollamt33[".allSearchFields"][] = "SLBalance";
-	$tdatapayrollamt33[".allSearchFields"][] = "ELBalance";
-	$tdatapayrollamt33[".allSearchFields"][] = "PLBalance";
-	$tdatapayrollamt33[".allSearchFields"][] = "PayDate";
-	$tdatapayrollamt33[".allSearchFields"][] = "LWOP";
-	$tdatapayrollamt33[".allSearchFields"][] = "LWOPdays";
-	$tdatapayrollamt33[".allSearchFields"][] = "TAdj";
-	$tdatapayrollamt33[".allSearchFields"][] = "TAdjt";
-	$tdatapayrollamt33[".allSearchFields"][] = "Ttax";
-	$tdatapayrollamt33[".allSearchFields"][] = "SSS";
-	$tdatapayrollamt33[".allSearchFields"][] = "PagIbig";
-	$tdatapayrollamt33[".allSearchFields"][] = "PHIC";
-	$tdatapayrollamt33[".allSearchFields"][] = "Taxable";
-	$tdatapayrollamt33[".allSearchFields"][] = "GrossPay";
-	$tdatapayrollamt33[".allSearchFields"][] = "NetPay";
-	$tdatapayrollamt33[".allSearchFields"][] = "VLDays";
-	$tdatapayrollamt33[".allSearchFields"][] = "ELDays";
-	$tdatapayrollamt33[".allSearchFields"][] = "SLDays";
-	$tdatapayrollamt33[".allSearchFields"][] = "PLDays";
 	
 
-$tdatapayrollamt33[".googleLikeFields"] = array();
-$tdatapayrollamt33[".googleLikeFields"][] = "PtabID";
-$tdatapayrollamt33[".googleLikeFields"][] = "EmployeeID";
-$tdatapayrollamt33[".googleLikeFields"][] = "UserName";
-$tdatapayrollamt33[".googleLikeFields"][] = "Status";
-$tdatapayrollamt33[".googleLikeFields"][] = "Employer";
-$tdatapayrollamt33[".googleLikeFields"][] = "Division";
-$tdatapayrollamt33[".googleLikeFields"][] = "FromDate";
-$tdatapayrollamt33[".googleLikeFields"][] = "ToDate";
-$tdatapayrollamt33[".googleLikeFields"][] = "BasicMonthly";
-$tdatapayrollamt33[".googleLikeFields"][] = "BasicDaily";
-$tdatapayrollamt33[".googleLikeFields"][] = "DWork";
-$tdatapayrollamt33[".googleLikeFields"][] = "Absent";
-$tdatapayrollamt33[".googleLikeFields"][] = "RegPay";
-$tdatapayrollamt33[".googleLikeFields"][] = "Late";
-$tdatapayrollamt33[".googleLikeFields"][] = "UnderTime";
-$tdatapayrollamt33[".googleLikeFields"][] = "RHoliday";
-$tdatapayrollamt33[".googleLikeFields"][] = "SHoliday";
-$tdatapayrollamt33[".googleLikeFields"][] = "CHoliday";
-$tdatapayrollamt33[".googleLikeFields"][] = "RegOT";
-$tdatapayrollamt33[".googleLikeFields"][] = "RHOT";
-$tdatapayrollamt33[".googleLikeFields"][] = "SHOT";
-$tdatapayrollamt33[".googleLikeFields"][] = "CHOT";
-$tdatapayrollamt33[".googleLikeFields"][] = "RDOT";
-$tdatapayrollamt33[".googleLikeFields"][] = "OT";
-$tdatapayrollamt33[".googleLikeFields"][] = "RD";
-$tdatapayrollamt33[".googleLikeFields"][] = "ND";
-$tdatapayrollamt33[".googleLikeFields"][] = "RHND";
-$tdatapayrollamt33[".googleLikeFields"][] = "SHND";
-$tdatapayrollamt33[".googleLikeFields"][] = "CHND";
-$tdatapayrollamt33[".googleLikeFields"][] = "RDND";
-$tdatapayrollamt33[".googleLikeFields"][] = "VL";
-$tdatapayrollamt33[".googleLikeFields"][] = "SL";
-$tdatapayrollamt33[".googleLikeFields"][] = "EL";
-$tdatapayrollamt33[".googleLikeFields"][] = "PL";
-$tdatapayrollamt33[".googleLikeFields"][] = "TrO";
-$tdatapayrollamt33[".googleLikeFields"][] = "WageType";
-$tdatapayrollamt33[".googleLikeFields"][] = "LateMins";
-$tdatapayrollamt33[".googleLikeFields"][] = "UndertimeMins";
-$tdatapayrollamt33[".googleLikeFields"][] = "RHolidayHrs";
-$tdatapayrollamt33[".googleLikeFields"][] = "SHolidayHrs";
-$tdatapayrollamt33[".googleLikeFields"][] = "CHolidayHrs";
-$tdatapayrollamt33[".googleLikeFields"][] = "RegOTHrs";
-$tdatapayrollamt33[".googleLikeFields"][] = "RHOTHrs";
-$tdatapayrollamt33[".googleLikeFields"][] = "SHOTHRs";
-$tdatapayrollamt33[".googleLikeFields"][] = "CHOTHrs";
-$tdatapayrollamt33[".googleLikeFields"][] = "RDOTHrs";
-$tdatapayrollamt33[".googleLikeFields"][] = "RDHrs";
-$tdatapayrollamt33[".googleLikeFields"][] = "RegNDHrs";
-$tdatapayrollamt33[".googleLikeFields"][] = "RHNDHrs";
-$tdatapayrollamt33[".googleLikeFields"][] = "SHNDHrs";
-$tdatapayrollamt33[".googleLikeFields"][] = "CHNDHrs";
-$tdatapayrollamt33[".googleLikeFields"][] = "RDNDHrs";
-$tdatapayrollamt33[".googleLikeFields"][] = "VLBalance";
-$tdatapayrollamt33[".googleLikeFields"][] = "SLBalance";
-$tdatapayrollamt33[".googleLikeFields"][] = "ELBalance";
-$tdatapayrollamt33[".googleLikeFields"][] = "PLBalance";
-$tdatapayrollamt33[".googleLikeFields"][] = "PayDate";
-$tdatapayrollamt33[".googleLikeFields"][] = "LWOP";
-$tdatapayrollamt33[".googleLikeFields"][] = "LWOPdays";
-$tdatapayrollamt33[".googleLikeFields"][] = "TAdj";
-$tdatapayrollamt33[".googleLikeFields"][] = "TAdjt";
-$tdatapayrollamt33[".googleLikeFields"][] = "Ttax";
-$tdatapayrollamt33[".googleLikeFields"][] = "SSS";
-$tdatapayrollamt33[".googleLikeFields"][] = "PagIbig";
-$tdatapayrollamt33[".googleLikeFields"][] = "PHIC";
-$tdatapayrollamt33[".googleLikeFields"][] = "TDeductions";
-$tdatapayrollamt33[".googleLikeFields"][] = "Taxable";
-$tdatapayrollamt33[".googleLikeFields"][] = "GrossPay";
-$tdatapayrollamt33[".googleLikeFields"][] = "NetPay";
-$tdatapayrollamt33[".googleLikeFields"][] = "VLDays";
-$tdatapayrollamt33[".googleLikeFields"][] = "ELDays";
-$tdatapayrollamt33[".googleLikeFields"][] = "SLDays";
-$tdatapayrollamt33[".googleLikeFields"][] = "PLDays";
-$tdatapayrollamt33[".googleLikeFields"][] = "TND";
 
-
+$tdatapayrollamt33[".panelSearchFields"] = array();
+$tdatapayrollamt33[".searchPanelOptions"] = array();
+$tdatapayrollamt33[".panelSearchFields"][] = "FromDate";
+	$tdatapayrollamt33[".panelSearchFields"][] = "ToDate";
+	$tdatapayrollamt33[".panelSearchFields"][] = "UserName";
+	
 $tdatapayrollamt33[".advSearchFields"] = array();
-$tdatapayrollamt33[".advSearchFields"][] = "OT";
-$tdatapayrollamt33[".advSearchFields"][] = "TDeductions";
-$tdatapayrollamt33[".advSearchFields"][] = "PtabID";
 $tdatapayrollamt33[".advSearchFields"][] = "FromDate";
 $tdatapayrollamt33[".advSearchFields"][] = "ToDate";
 $tdatapayrollamt33[".advSearchFields"][] = "EmployeeID";
@@ -520,70 +380,6 @@ $tdatapayrollamt33[".advSearchFields"][] = "UserName";
 $tdatapayrollamt33[".advSearchFields"][] = "Status";
 $tdatapayrollamt33[".advSearchFields"][] = "Employer";
 $tdatapayrollamt33[".advSearchFields"][] = "Division";
-$tdatapayrollamt33[".advSearchFields"][] = "WageType";
-$tdatapayrollamt33[".advSearchFields"][] = "BasicMonthly";
-$tdatapayrollamt33[".advSearchFields"][] = "BasicDaily";
-$tdatapayrollamt33[".advSearchFields"][] = "DWork";
-$tdatapayrollamt33[".advSearchFields"][] = "Absent";
-$tdatapayrollamt33[".advSearchFields"][] = "RegPay";
-$tdatapayrollamt33[".advSearchFields"][] = "LateMins";
-$tdatapayrollamt33[".advSearchFields"][] = "Late";
-$tdatapayrollamt33[".advSearchFields"][] = "UndertimeMins";
-$tdatapayrollamt33[".advSearchFields"][] = "UnderTime";
-$tdatapayrollamt33[".advSearchFields"][] = "RHoliday";
-$tdatapayrollamt33[".advSearchFields"][] = "SHoliday";
-$tdatapayrollamt33[".advSearchFields"][] = "CHoliday";
-$tdatapayrollamt33[".advSearchFields"][] = "RegOT";
-$tdatapayrollamt33[".advSearchFields"][] = "RHOT";
-$tdatapayrollamt33[".advSearchFields"][] = "SHOT";
-$tdatapayrollamt33[".advSearchFields"][] = "CHOT";
-$tdatapayrollamt33[".advSearchFields"][] = "RDOT";
-$tdatapayrollamt33[".advSearchFields"][] = "RD";
-$tdatapayrollamt33[".advSearchFields"][] = "ND";
-$tdatapayrollamt33[".advSearchFields"][] = "RHND";
-$tdatapayrollamt33[".advSearchFields"][] = "SHND";
-$tdatapayrollamt33[".advSearchFields"][] = "CHND";
-$tdatapayrollamt33[".advSearchFields"][] = "RDND";
-$tdatapayrollamt33[".advSearchFields"][] = "TND";
-$tdatapayrollamt33[".advSearchFields"][] = "VL";
-$tdatapayrollamt33[".advSearchFields"][] = "SL";
-$tdatapayrollamt33[".advSearchFields"][] = "EL";
-$tdatapayrollamt33[".advSearchFields"][] = "PL";
-$tdatapayrollamt33[".advSearchFields"][] = "TrO";
-$tdatapayrollamt33[".advSearchFields"][] = "RHolidayHrs";
-$tdatapayrollamt33[".advSearchFields"][] = "SHolidayHrs";
-$tdatapayrollamt33[".advSearchFields"][] = "CHolidayHrs";
-$tdatapayrollamt33[".advSearchFields"][] = "RegOTHrs";
-$tdatapayrollamt33[".advSearchFields"][] = "RHOTHrs";
-$tdatapayrollamt33[".advSearchFields"][] = "SHOTHRs";
-$tdatapayrollamt33[".advSearchFields"][] = "CHOTHrs";
-$tdatapayrollamt33[".advSearchFields"][] = "RDOTHrs";
-$tdatapayrollamt33[".advSearchFields"][] = "RDHrs";
-$tdatapayrollamt33[".advSearchFields"][] = "RegNDHrs";
-$tdatapayrollamt33[".advSearchFields"][] = "RHNDHrs";
-$tdatapayrollamt33[".advSearchFields"][] = "SHNDHrs";
-$tdatapayrollamt33[".advSearchFields"][] = "CHNDHrs";
-$tdatapayrollamt33[".advSearchFields"][] = "RDNDHrs";
-$tdatapayrollamt33[".advSearchFields"][] = "VLBalance";
-$tdatapayrollamt33[".advSearchFields"][] = "SLBalance";
-$tdatapayrollamt33[".advSearchFields"][] = "ELBalance";
-$tdatapayrollamt33[".advSearchFields"][] = "PLBalance";
-$tdatapayrollamt33[".advSearchFields"][] = "PayDate";
-$tdatapayrollamt33[".advSearchFields"][] = "LWOP";
-$tdatapayrollamt33[".advSearchFields"][] = "LWOPdays";
-$tdatapayrollamt33[".advSearchFields"][] = "TAdj";
-$tdatapayrollamt33[".advSearchFields"][] = "TAdjt";
-$tdatapayrollamt33[".advSearchFields"][] = "Ttax";
-$tdatapayrollamt33[".advSearchFields"][] = "SSS";
-$tdatapayrollamt33[".advSearchFields"][] = "PagIbig";
-$tdatapayrollamt33[".advSearchFields"][] = "PHIC";
-$tdatapayrollamt33[".advSearchFields"][] = "Taxable";
-$tdatapayrollamt33[".advSearchFields"][] = "GrossPay";
-$tdatapayrollamt33[".advSearchFields"][] = "NetPay";
-$tdatapayrollamt33[".advSearchFields"][] = "VLDays";
-$tdatapayrollamt33[".advSearchFields"][] = "ELDays";
-$tdatapayrollamt33[".advSearchFields"][] = "SLDays";
-$tdatapayrollamt33[".advSearchFields"][] = "PLDays";
 
 $tdatapayrollamt33[".tableType"] = "list";
 
@@ -875,11 +671,10 @@ $tdatapayrollamt33[".viewFields"] = array();
 $tdatapayrollamt33[".addFields"] = array();
 
 $tdatapayrollamt33[".masterListFields"] = array();
-$tdatapayrollamt33[".masterListFields"][] = "OT";
-$tdatapayrollamt33[".masterListFields"][] = "TDeductions";
 $tdatapayrollamt33[".masterListFields"][] = "PtabID";
 $tdatapayrollamt33[".masterListFields"][] = "FromDate";
 $tdatapayrollamt33[".masterListFields"][] = "ToDate";
+$tdatapayrollamt33[".masterListFields"][] = "PayDate";
 $tdatapayrollamt33[".masterListFields"][] = "EmployeeID";
 $tdatapayrollamt33[".masterListFields"][] = "UserName";
 $tdatapayrollamt33[".masterListFields"][] = "Status";
@@ -890,65 +685,66 @@ $tdatapayrollamt33[".masterListFields"][] = "BasicMonthly";
 $tdatapayrollamt33[".masterListFields"][] = "BasicDaily";
 $tdatapayrollamt33[".masterListFields"][] = "DWork";
 $tdatapayrollamt33[".masterListFields"][] = "Absent";
+$tdatapayrollamt33[".masterListFields"][] = "LWOPdays";
+$tdatapayrollamt33[".masterListFields"][] = "LWOP";
 $tdatapayrollamt33[".masterListFields"][] = "RegPay";
 $tdatapayrollamt33[".masterListFields"][] = "LateMins";
 $tdatapayrollamt33[".masterListFields"][] = "Late";
 $tdatapayrollamt33[".masterListFields"][] = "UndertimeMins";
 $tdatapayrollamt33[".masterListFields"][] = "UnderTime";
+$tdatapayrollamt33[".masterListFields"][] = "RHolidayHrs";
 $tdatapayrollamt33[".masterListFields"][] = "RHoliday";
+$tdatapayrollamt33[".masterListFields"][] = "SHolidayHrs";
 $tdatapayrollamt33[".masterListFields"][] = "SHoliday";
+$tdatapayrollamt33[".masterListFields"][] = "CHolidayHrs";
 $tdatapayrollamt33[".masterListFields"][] = "CHoliday";
+$tdatapayrollamt33[".masterListFields"][] = "RegOTHrs";
 $tdatapayrollamt33[".masterListFields"][] = "RegOT";
+$tdatapayrollamt33[".masterListFields"][] = "RHOTHrs";
 $tdatapayrollamt33[".masterListFields"][] = "RHOT";
+$tdatapayrollamt33[".masterListFields"][] = "SHOTHRs";
 $tdatapayrollamt33[".masterListFields"][] = "SHOT";
+$tdatapayrollamt33[".masterListFields"][] = "CHOTHrs";
 $tdatapayrollamt33[".masterListFields"][] = "CHOT";
+$tdatapayrollamt33[".masterListFields"][] = "RDOTHrs";
 $tdatapayrollamt33[".masterListFields"][] = "RDOT";
+$tdatapayrollamt33[".masterListFields"][] = "OT";
+$tdatapayrollamt33[".masterListFields"][] = "RDHrs";
 $tdatapayrollamt33[".masterListFields"][] = "RD";
+$tdatapayrollamt33[".masterListFields"][] = "RegNDHrs";
 $tdatapayrollamt33[".masterListFields"][] = "ND";
+$tdatapayrollamt33[".masterListFields"][] = "RHNDHrs";
 $tdatapayrollamt33[".masterListFields"][] = "RHND";
+$tdatapayrollamt33[".masterListFields"][] = "SHNDHrs";
 $tdatapayrollamt33[".masterListFields"][] = "SHND";
+$tdatapayrollamt33[".masterListFields"][] = "CHNDHrs";
 $tdatapayrollamt33[".masterListFields"][] = "CHND";
+$tdatapayrollamt33[".masterListFields"][] = "RDNDHrs";
 $tdatapayrollamt33[".masterListFields"][] = "RDND";
 $tdatapayrollamt33[".masterListFields"][] = "TND";
+$tdatapayrollamt33[".masterListFields"][] = "VLDays";
 $tdatapayrollamt33[".masterListFields"][] = "VL";
+$tdatapayrollamt33[".masterListFields"][] = "SLDays";
 $tdatapayrollamt33[".masterListFields"][] = "SL";
+$tdatapayrollamt33[".masterListFields"][] = "ELDays";
 $tdatapayrollamt33[".masterListFields"][] = "EL";
+$tdatapayrollamt33[".masterListFields"][] = "PLDays";
 $tdatapayrollamt33[".masterListFields"][] = "PL";
 $tdatapayrollamt33[".masterListFields"][] = "TrO";
-$tdatapayrollamt33[".masterListFields"][] = "RHolidayHrs";
-$tdatapayrollamt33[".masterListFields"][] = "SHolidayHrs";
-$tdatapayrollamt33[".masterListFields"][] = "CHolidayHrs";
-$tdatapayrollamt33[".masterListFields"][] = "RegOTHrs";
-$tdatapayrollamt33[".masterListFields"][] = "RHOTHrs";
-$tdatapayrollamt33[".masterListFields"][] = "SHOTHRs";
-$tdatapayrollamt33[".masterListFields"][] = "CHOTHrs";
-$tdatapayrollamt33[".masterListFields"][] = "RDOTHrs";
-$tdatapayrollamt33[".masterListFields"][] = "RDHrs";
-$tdatapayrollamt33[".masterListFields"][] = "RegNDHrs";
-$tdatapayrollamt33[".masterListFields"][] = "RHNDHrs";
-$tdatapayrollamt33[".masterListFields"][] = "SHNDHrs";
-$tdatapayrollamt33[".masterListFields"][] = "CHNDHrs";
-$tdatapayrollamt33[".masterListFields"][] = "RDNDHrs";
 $tdatapayrollamt33[".masterListFields"][] = "VLBalance";
 $tdatapayrollamt33[".masterListFields"][] = "SLBalance";
 $tdatapayrollamt33[".masterListFields"][] = "ELBalance";
 $tdatapayrollamt33[".masterListFields"][] = "PLBalance";
-$tdatapayrollamt33[".masterListFields"][] = "PayDate";
-$tdatapayrollamt33[".masterListFields"][] = "LWOP";
-$tdatapayrollamt33[".masterListFields"][] = "LWOPdays";
 $tdatapayrollamt33[".masterListFields"][] = "TAdj";
 $tdatapayrollamt33[".masterListFields"][] = "TAdjt";
 $tdatapayrollamt33[".masterListFields"][] = "Ttax";
 $tdatapayrollamt33[".masterListFields"][] = "SSS";
 $tdatapayrollamt33[".masterListFields"][] = "PagIbig";
 $tdatapayrollamt33[".masterListFields"][] = "PHIC";
+$tdatapayrollamt33[".masterListFields"][] = "TDeductions";
 $tdatapayrollamt33[".masterListFields"][] = "Taxable";
 $tdatapayrollamt33[".masterListFields"][] = "GrossPay";
 $tdatapayrollamt33[".masterListFields"][] = "NetPay";
-$tdatapayrollamt33[".masterListFields"][] = "VLDays";
-$tdatapayrollamt33[".masterListFields"][] = "ELDays";
-$tdatapayrollamt33[".masterListFields"][] = "SLDays";
-$tdatapayrollamt33[".masterListFields"][] = "PLDays";
 
 $tdatapayrollamt33[".inlineAddFields"] = array();
 
@@ -960,11 +756,10 @@ $tdatapayrollamt33[".updateSelectedFields"] = array();
 
 
 $tdatapayrollamt33[".exportFields"] = array();
-$tdatapayrollamt33[".exportFields"][] = "OT";
-$tdatapayrollamt33[".exportFields"][] = "TDeductions";
 $tdatapayrollamt33[".exportFields"][] = "PtabID";
 $tdatapayrollamt33[".exportFields"][] = "FromDate";
 $tdatapayrollamt33[".exportFields"][] = "ToDate";
+$tdatapayrollamt33[".exportFields"][] = "PayDate";
 $tdatapayrollamt33[".exportFields"][] = "EmployeeID";
 $tdatapayrollamt33[".exportFields"][] = "UserName";
 $tdatapayrollamt33[".exportFields"][] = "Status";
@@ -975,74 +770,74 @@ $tdatapayrollamt33[".exportFields"][] = "BasicMonthly";
 $tdatapayrollamt33[".exportFields"][] = "BasicDaily";
 $tdatapayrollamt33[".exportFields"][] = "DWork";
 $tdatapayrollamt33[".exportFields"][] = "Absent";
+$tdatapayrollamt33[".exportFields"][] = "LWOPdays";
+$tdatapayrollamt33[".exportFields"][] = "LWOP";
 $tdatapayrollamt33[".exportFields"][] = "RegPay";
 $tdatapayrollamt33[".exportFields"][] = "LateMins";
 $tdatapayrollamt33[".exportFields"][] = "Late";
 $tdatapayrollamt33[".exportFields"][] = "UndertimeMins";
 $tdatapayrollamt33[".exportFields"][] = "UnderTime";
+$tdatapayrollamt33[".exportFields"][] = "RHolidayHrs";
 $tdatapayrollamt33[".exportFields"][] = "RHoliday";
+$tdatapayrollamt33[".exportFields"][] = "SHolidayHrs";
 $tdatapayrollamt33[".exportFields"][] = "SHoliday";
+$tdatapayrollamt33[".exportFields"][] = "CHolidayHrs";
 $tdatapayrollamt33[".exportFields"][] = "CHoliday";
+$tdatapayrollamt33[".exportFields"][] = "RegOTHrs";
 $tdatapayrollamt33[".exportFields"][] = "RegOT";
+$tdatapayrollamt33[".exportFields"][] = "RHOTHrs";
 $tdatapayrollamt33[".exportFields"][] = "RHOT";
+$tdatapayrollamt33[".exportFields"][] = "SHOTHRs";
 $tdatapayrollamt33[".exportFields"][] = "SHOT";
+$tdatapayrollamt33[".exportFields"][] = "CHOTHrs";
 $tdatapayrollamt33[".exportFields"][] = "CHOT";
+$tdatapayrollamt33[".exportFields"][] = "RDOTHrs";
 $tdatapayrollamt33[".exportFields"][] = "RDOT";
+$tdatapayrollamt33[".exportFields"][] = "OT";
+$tdatapayrollamt33[".exportFields"][] = "RDHrs";
 $tdatapayrollamt33[".exportFields"][] = "RD";
+$tdatapayrollamt33[".exportFields"][] = "RegNDHrs";
 $tdatapayrollamt33[".exportFields"][] = "ND";
+$tdatapayrollamt33[".exportFields"][] = "RHNDHrs";
 $tdatapayrollamt33[".exportFields"][] = "RHND";
+$tdatapayrollamt33[".exportFields"][] = "SHNDHrs";
 $tdatapayrollamt33[".exportFields"][] = "SHND";
+$tdatapayrollamt33[".exportFields"][] = "CHNDHrs";
 $tdatapayrollamt33[".exportFields"][] = "CHND";
+$tdatapayrollamt33[".exportFields"][] = "RDNDHrs";
 $tdatapayrollamt33[".exportFields"][] = "RDND";
 $tdatapayrollamt33[".exportFields"][] = "TND";
+$tdatapayrollamt33[".exportFields"][] = "VLDays";
 $tdatapayrollamt33[".exportFields"][] = "VL";
+$tdatapayrollamt33[".exportFields"][] = "SLDays";
 $tdatapayrollamt33[".exportFields"][] = "SL";
+$tdatapayrollamt33[".exportFields"][] = "ELDays";
 $tdatapayrollamt33[".exportFields"][] = "EL";
+$tdatapayrollamt33[".exportFields"][] = "PLDays";
 $tdatapayrollamt33[".exportFields"][] = "PL";
 $tdatapayrollamt33[".exportFields"][] = "TrO";
-$tdatapayrollamt33[".exportFields"][] = "RHolidayHrs";
-$tdatapayrollamt33[".exportFields"][] = "SHolidayHrs";
-$tdatapayrollamt33[".exportFields"][] = "CHolidayHrs";
-$tdatapayrollamt33[".exportFields"][] = "RegOTHrs";
-$tdatapayrollamt33[".exportFields"][] = "RHOTHrs";
-$tdatapayrollamt33[".exportFields"][] = "SHOTHRs";
-$tdatapayrollamt33[".exportFields"][] = "CHOTHrs";
-$tdatapayrollamt33[".exportFields"][] = "RDOTHrs";
-$tdatapayrollamt33[".exportFields"][] = "RDHrs";
-$tdatapayrollamt33[".exportFields"][] = "RegNDHrs";
-$tdatapayrollamt33[".exportFields"][] = "RHNDHrs";
-$tdatapayrollamt33[".exportFields"][] = "SHNDHrs";
-$tdatapayrollamt33[".exportFields"][] = "CHNDHrs";
-$tdatapayrollamt33[".exportFields"][] = "RDNDHrs";
 $tdatapayrollamt33[".exportFields"][] = "VLBalance";
 $tdatapayrollamt33[".exportFields"][] = "SLBalance";
 $tdatapayrollamt33[".exportFields"][] = "ELBalance";
 $tdatapayrollamt33[".exportFields"][] = "PLBalance";
-$tdatapayrollamt33[".exportFields"][] = "PayDate";
-$tdatapayrollamt33[".exportFields"][] = "LWOP";
-$tdatapayrollamt33[".exportFields"][] = "LWOPdays";
 $tdatapayrollamt33[".exportFields"][] = "TAdj";
 $tdatapayrollamt33[".exportFields"][] = "TAdjt";
 $tdatapayrollamt33[".exportFields"][] = "Ttax";
 $tdatapayrollamt33[".exportFields"][] = "SSS";
 $tdatapayrollamt33[".exportFields"][] = "PagIbig";
 $tdatapayrollamt33[".exportFields"][] = "PHIC";
+$tdatapayrollamt33[".exportFields"][] = "TDeductions";
 $tdatapayrollamt33[".exportFields"][] = "Taxable";
 $tdatapayrollamt33[".exportFields"][] = "GrossPay";
 $tdatapayrollamt33[".exportFields"][] = "NetPay";
-$tdatapayrollamt33[".exportFields"][] = "VLDays";
-$tdatapayrollamt33[".exportFields"][] = "ELDays";
-$tdatapayrollamt33[".exportFields"][] = "SLDays";
-$tdatapayrollamt33[".exportFields"][] = "PLDays";
 
 $tdatapayrollamt33[".importFields"] = array();
 
 $tdatapayrollamt33[".printFields"] = array();
-$tdatapayrollamt33[".printFields"][] = "OT";
-$tdatapayrollamt33[".printFields"][] = "TDeductions";
 $tdatapayrollamt33[".printFields"][] = "PtabID";
 $tdatapayrollamt33[".printFields"][] = "FromDate";
 $tdatapayrollamt33[".printFields"][] = "ToDate";
+$tdatapayrollamt33[".printFields"][] = "PayDate";
 $tdatapayrollamt33[".printFields"][] = "EmployeeID";
 $tdatapayrollamt33[".printFields"][] = "UserName";
 $tdatapayrollamt33[".printFields"][] = "Status";
@@ -1053,65 +848,66 @@ $tdatapayrollamt33[".printFields"][] = "BasicMonthly";
 $tdatapayrollamt33[".printFields"][] = "BasicDaily";
 $tdatapayrollamt33[".printFields"][] = "DWork";
 $tdatapayrollamt33[".printFields"][] = "Absent";
+$tdatapayrollamt33[".printFields"][] = "LWOPdays";
+$tdatapayrollamt33[".printFields"][] = "LWOP";
 $tdatapayrollamt33[".printFields"][] = "RegPay";
 $tdatapayrollamt33[".printFields"][] = "LateMins";
 $tdatapayrollamt33[".printFields"][] = "Late";
 $tdatapayrollamt33[".printFields"][] = "UndertimeMins";
 $tdatapayrollamt33[".printFields"][] = "UnderTime";
+$tdatapayrollamt33[".printFields"][] = "RHolidayHrs";
 $tdatapayrollamt33[".printFields"][] = "RHoliday";
+$tdatapayrollamt33[".printFields"][] = "SHolidayHrs";
 $tdatapayrollamt33[".printFields"][] = "SHoliday";
+$tdatapayrollamt33[".printFields"][] = "CHolidayHrs";
 $tdatapayrollamt33[".printFields"][] = "CHoliday";
+$tdatapayrollamt33[".printFields"][] = "RegOTHrs";
 $tdatapayrollamt33[".printFields"][] = "RegOT";
+$tdatapayrollamt33[".printFields"][] = "RHOTHrs";
 $tdatapayrollamt33[".printFields"][] = "RHOT";
+$tdatapayrollamt33[".printFields"][] = "SHOTHRs";
 $tdatapayrollamt33[".printFields"][] = "SHOT";
+$tdatapayrollamt33[".printFields"][] = "CHOTHrs";
 $tdatapayrollamt33[".printFields"][] = "CHOT";
+$tdatapayrollamt33[".printFields"][] = "RDOTHrs";
 $tdatapayrollamt33[".printFields"][] = "RDOT";
+$tdatapayrollamt33[".printFields"][] = "OT";
+$tdatapayrollamt33[".printFields"][] = "RDHrs";
 $tdatapayrollamt33[".printFields"][] = "RD";
+$tdatapayrollamt33[".printFields"][] = "RegNDHrs";
 $tdatapayrollamt33[".printFields"][] = "ND";
+$tdatapayrollamt33[".printFields"][] = "RHNDHrs";
 $tdatapayrollamt33[".printFields"][] = "RHND";
+$tdatapayrollamt33[".printFields"][] = "SHNDHrs";
 $tdatapayrollamt33[".printFields"][] = "SHND";
+$tdatapayrollamt33[".printFields"][] = "CHNDHrs";
 $tdatapayrollamt33[".printFields"][] = "CHND";
+$tdatapayrollamt33[".printFields"][] = "RDNDHrs";
 $tdatapayrollamt33[".printFields"][] = "RDND";
 $tdatapayrollamt33[".printFields"][] = "TND";
+$tdatapayrollamt33[".printFields"][] = "VLDays";
 $tdatapayrollamt33[".printFields"][] = "VL";
+$tdatapayrollamt33[".printFields"][] = "SLDays";
 $tdatapayrollamt33[".printFields"][] = "SL";
+$tdatapayrollamt33[".printFields"][] = "ELDays";
 $tdatapayrollamt33[".printFields"][] = "EL";
+$tdatapayrollamt33[".printFields"][] = "PLDays";
 $tdatapayrollamt33[".printFields"][] = "PL";
 $tdatapayrollamt33[".printFields"][] = "TrO";
-$tdatapayrollamt33[".printFields"][] = "RHolidayHrs";
-$tdatapayrollamt33[".printFields"][] = "SHolidayHrs";
-$tdatapayrollamt33[".printFields"][] = "CHolidayHrs";
-$tdatapayrollamt33[".printFields"][] = "RegOTHrs";
-$tdatapayrollamt33[".printFields"][] = "RHOTHrs";
-$tdatapayrollamt33[".printFields"][] = "SHOTHRs";
-$tdatapayrollamt33[".printFields"][] = "CHOTHrs";
-$tdatapayrollamt33[".printFields"][] = "RDOTHrs";
-$tdatapayrollamt33[".printFields"][] = "RDHrs";
-$tdatapayrollamt33[".printFields"][] = "RegNDHrs";
-$tdatapayrollamt33[".printFields"][] = "RHNDHrs";
-$tdatapayrollamt33[".printFields"][] = "SHNDHrs";
-$tdatapayrollamt33[".printFields"][] = "CHNDHrs";
-$tdatapayrollamt33[".printFields"][] = "RDNDHrs";
 $tdatapayrollamt33[".printFields"][] = "VLBalance";
 $tdatapayrollamt33[".printFields"][] = "SLBalance";
 $tdatapayrollamt33[".printFields"][] = "ELBalance";
 $tdatapayrollamt33[".printFields"][] = "PLBalance";
-$tdatapayrollamt33[".printFields"][] = "PayDate";
-$tdatapayrollamt33[".printFields"][] = "LWOP";
-$tdatapayrollamt33[".printFields"][] = "LWOPdays";
 $tdatapayrollamt33[".printFields"][] = "TAdj";
 $tdatapayrollamt33[".printFields"][] = "TAdjt";
 $tdatapayrollamt33[".printFields"][] = "Ttax";
 $tdatapayrollamt33[".printFields"][] = "SSS";
 $tdatapayrollamt33[".printFields"][] = "PagIbig";
 $tdatapayrollamt33[".printFields"][] = "PHIC";
+$tdatapayrollamt33[".printFields"][] = "TDeductions";
 $tdatapayrollamt33[".printFields"][] = "Taxable";
 $tdatapayrollamt33[".printFields"][] = "GrossPay";
 $tdatapayrollamt33[".printFields"][] = "NetPay";
-$tdatapayrollamt33[".printFields"][] = "VLDays";
-$tdatapayrollamt33[".printFields"][] = "ELDays";
-$tdatapayrollamt33[".printFields"][] = "SLDays";
-$tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 //	PtabID
@@ -1137,8 +933,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -1229,12 +1024,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -2030,8 +1819,8 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -2156,8 +1945,8 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -2220,8 +2009,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -2313,12 +2101,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -2347,8 +2129,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -2440,12 +2221,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -2474,8 +2249,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -2567,12 +2341,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -2601,8 +2369,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -2694,12 +2461,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -2728,8 +2489,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -2821,12 +2581,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -2855,8 +2609,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -2948,12 +2701,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -2982,8 +2729,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3075,12 +2821,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -3109,8 +2849,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3202,12 +2941,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -3236,8 +2969,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3329,12 +3061,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -3363,8 +3089,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3456,12 +3181,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -3490,8 +3209,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3583,12 +3301,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -3617,8 +3329,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3710,12 +3421,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -3744,8 +3449,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3837,12 +3541,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -3871,8 +3569,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3964,12 +3661,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -3998,8 +3689,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4091,12 +3781,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -4125,8 +3809,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4220,12 +3903,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -4254,8 +3931,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4347,12 +4023,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -4381,8 +4051,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4474,12 +4143,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -4508,8 +4171,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4601,12 +4263,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -4635,8 +4291,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4728,12 +4383,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -4762,8 +4411,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4855,12 +4503,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -4889,8 +4531,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4982,12 +4623,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -5016,8 +4651,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -5109,12 +4743,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -5143,8 +4771,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -5236,12 +4863,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -5270,8 +4891,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -5363,12 +4983,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -5397,8 +5011,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -5490,12 +5103,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -5524,8 +5131,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -5617,12 +5223,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -5651,8 +5251,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -5768,12 +5367,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Equals";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -5802,8 +5395,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -5895,12 +5487,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -5929,8 +5515,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -6022,12 +5607,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -6056,8 +5635,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -6149,12 +5727,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -6183,8 +5755,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -6276,12 +5847,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -6310,8 +5875,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -6403,12 +5967,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -6437,8 +5995,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -6530,12 +6087,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -6564,8 +6115,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -6657,12 +6207,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -6691,8 +6235,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -6784,12 +6327,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -6818,8 +6355,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -6911,12 +6447,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -6945,8 +6475,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -7038,12 +6567,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -7072,8 +6595,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -7165,12 +6687,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -7199,8 +6715,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -7292,12 +6807,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -7326,8 +6835,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -7419,12 +6927,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -7453,8 +6955,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -7546,12 +7047,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -7580,8 +7075,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -7673,12 +7167,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -7707,8 +7195,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -7800,12 +7287,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -7834,8 +7315,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -7927,12 +7407,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -7961,8 +7435,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -8054,12 +7527,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -8088,8 +7555,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -8181,12 +7647,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -8215,8 +7675,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -8308,12 +7767,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -8342,8 +7795,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -8404,8 +7856,8 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -8434,12 +7886,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Equals";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
-// the end of search options settings
 
 
 
@@ -8468,8 +7914,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -8561,12 +8006,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -8595,8 +8034,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -8688,12 +8126,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -8722,8 +8154,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -8815,12 +8246,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -8849,8 +8274,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -8942,12 +8366,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -8961,7 +8379,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	$fdata["GoodName"] = "Ttax";
 	$fdata["ownerTable"] = "payrollamt33";
 	$fdata["Label"] = GetFieldLabel("payrollamt33","Ttax");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -8976,8 +8394,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -9069,12 +8486,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -9103,8 +8514,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -9196,12 +8606,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -9230,8 +8634,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -9323,12 +8726,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -9357,8 +8754,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -9450,12 +8846,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -9484,8 +8874,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -9577,12 +8966,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -9611,8 +8994,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -9704,12 +9086,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -9738,8 +9114,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -9831,12 +9206,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -9865,8 +9234,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -9958,12 +9326,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -9992,8 +9354,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -10085,12 +9446,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -10119,8 +9474,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -10212,12 +9566,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -10246,8 +9594,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -10339,12 +9686,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -10373,8 +9714,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -10466,12 +9806,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -10500,8 +9834,7 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 	
 
 	
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -10593,12 +9926,6 @@ $tdatapayrollamt33[".printFields"][] = "PLDays";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -11813,6 +11140,10 @@ $proto155["m_columns"][] = "TND";
 $proto155["m_columns"][] = "EmployerName";
 $proto155["m_columns"][] = "PayrollID";
 $proto155["m_columns"][] = "Employer";
+$proto155["m_columns"][] = "TNDHr";
+$proto155["m_columns"][] = "ThirToDate";
+$proto155["m_columns"][] = "TaxableToDate";
+$proto155["m_columns"][] = "TaxToDate";
 $obj = new SQLTable($proto155);
 
 $proto154["m_table"] = $obj;

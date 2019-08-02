@@ -35,6 +35,24 @@ $dalTablestandardsetup["CHFactorDaily"] = array("type"=>5,"varname"=>"CHFactorDa
 $dalTablestandardsetup["SHRDFactorDaily"] = array("type"=>5,"varname"=>"SHRDFactorDaily", "name" => "SHRDFactorDaily");
 $dalTablestandardsetup["SHRDOTFactorDaily"] = array("type"=>5,"varname"=>"SHRDOTFactorDaily", "name" => "SHRDOTFactorDaily");
 $dalTablestandardsetup["CHOTFactorDaily"] = array("type"=>5,"varname"=>"CHOTFactorDaily", "name" => "CHOTFactorDaily");
+$dalTablestandardsetup["BonusAnnualLimit"] = array("type"=>14,"varname"=>"BonusAnnualLimit", "name" => "BonusAnnualLimit");
+$dalTablestandardsetup["RegNDOTFactor"] = array("type"=>5,"varname"=>"RegNDOTFactor", "name" => "RegNDOTFactor");
+$dalTablestandardsetup["RHNDOTFactor"] = array("type"=>5,"varname"=>"RHNDOTFactor", "name" => "RHNDOTFactor");
+$dalTablestandardsetup["SHNDOTFactor"] = array("type"=>5,"varname"=>"SHNDOTFactor", "name" => "SHNDOTFactor");
+$dalTablestandardsetup["CHNDOTFactor"] = array("type"=>5,"varname"=>"CHNDOTFactor", "name" => "CHNDOTFactor");
+$dalTablestandardsetup["RDNDOTFactor"] = array("type"=>5,"varname"=>"RDNDOTFactor", "name" => "RDNDOTFactor");
+$dalTablestandardsetup["DoubleHoliday"] = array("type"=>5,"varname"=>"DoubleHoliday", "name" => "DoubleHoliday");
+$dalTablestandardsetup["DoubleHolidayRD"] = array("type"=>5,"varname"=>"DoubleHolidayRD", "name" => "DoubleHolidayRD");
+$dalTablestandardsetup["DoubleHolidayOT"] = array("type"=>5,"varname"=>"DoubleHolidayOT", "name" => "DoubleHolidayOT");
+$dalTablestandardsetup["DoubleHolidayRDOT"] = array("type"=>5,"varname"=>"DoubleHolidayRDOT", "name" => "DoubleHolidayRDOT");
+$dalTablestandardsetup["SHRDNDFactor"] = array("type"=>5,"varname"=>"SHRDNDFactor", "name" => "SHRDNDFactor");
+$dalTablestandardsetup["RHRDNDFactor"] = array("type"=>5,"varname"=>"RHRDNDFactor", "name" => "RHRDNDFactor");
+$dalTablestandardsetup["SHRDNDOTFactor"] = array("type"=>5,"varname"=>"SHRDNDOTFactor", "name" => "SHRDNDOTFactor");
+$dalTablestandardsetup["RHRDNDOTFacotr"] = array("type"=>5,"varname"=>"RHRDNDOTFacotr", "name" => "RHRDNDOTFacotr");
+$dalTablestandardsetup["DoubleHolidayND"] = array("type"=>5,"varname"=>"DoubleHolidayND", "name" => "DoubleHolidayND");
+$dalTablestandardsetup["DoubleHolidayRDND"] = array("type"=>5,"varname"=>"DoubleHolidayRDND", "name" => "DoubleHolidayRDND");
+$dalTablestandardsetup["DoubleHolidayNDOT"] = array("type"=>5,"varname"=>"DoubleHolidayNDOT", "name" => "DoubleHolidayNDOT");
+$dalTablestandardsetup["DoubleHolidayRDNDOT"] = array("type"=>5,"varname"=>"DoubleHolidayRDNDOT", "name" => "DoubleHolidayRDNDOT");
 	$dalTablestandardsetup["SID"]["key"]=true;
 
 $dal_info["payrollflex_at_localhost__standardsetup"] = &$dalTablestandardsetup;

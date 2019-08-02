@@ -567,10 +567,6 @@ class AuditTrailTable
 		{
 			return false;
 		}
-		if($table=="dtrsummary")
-		{
-			return false;
-		}
 		if($table=="payrollamt33")
 		{
 			return false;
@@ -600,10 +596,6 @@ class AuditTrailTable
 			return false;
 		}
 		if($table=="loanbalance31")
-		{
-			return false;
-		}
-		if($table=="payrolltab1")
 		{
 			return false;
 		}
@@ -671,10 +663,6 @@ class AuditTrailTable
 		{
 			return false;
 		}
-		if($table=="overtimeapp")
-		{
-			return false;
-		}
 		if($table=="divisionaccess")
 		{
 			return false;
@@ -708,6 +696,78 @@ class AuditTrailTable
 			return false;
 		}
 		if($table=="clocktypes")
+		{
+			return false;
+		}
+		if($table=="demo_logemp")
+		{
+			return false;
+		}
+		if($table=="userinfo")
+		{
+			return false;
+		}
+		if($table=="leavesapp2")
+		{
+			return false;
+		}
+		if($table=="thirtax")
+		{
+			return false;
+		}
+		if($table=="thirtaxsum")
+		{
+			return false;
+		}
+		if($table=="filelog")
+		{
+			return false;
+		}
+		if($table=="payrolltab1")
+		{
+			return false;
+		}
+		if($table=="filelog1")
+		{
+			return false;
+		}
+		if($table=="filelog2")
+		{
+			return false;
+		}
+		if($table=="filelog3")
+		{
+			return false;
+		}
+		if($table=="leaveremarks")
+		{
+			return false;
+		}
+		if($table=="dtrsummary2")
+		{
+			return false;
+		}
+		if($table=="demo_user_open")
+		{
+			return false;
+		}
+		if($table=="overtimefileapp")
+		{
+			return false;
+		}
+		if($table=="overtimefileapp2")
+		{
+			return false;
+		}
+		if($table=="demo_useremp")
+		{
+			return false;
+		}
+		if($table=="leaves")
+		{
+			return false;
+		}
+		if($table=="approvalbutton")
 		{
 			return false;
 		}
@@ -1274,10 +1334,6 @@ class AuditTrailFile
 		{
 			return false;
 		}
-		if($table=="dtrsummary")
-		{
-			return false;
-		}
 		if($table=="payrollamt33")
 		{
 			return false;
@@ -1307,10 +1363,6 @@ class AuditTrailFile
 			return false;
 		}
 		if($table=="loanbalance31")
-		{
-			return false;
-		}
-		if($table=="payrolltab1")
 		{
 			return false;
 		}
@@ -1378,10 +1430,6 @@ class AuditTrailFile
 		{
 			return false;
 		}
-		if($table=="overtimeapp")
-		{
-			return false;
-		}
 		if($table=="divisionaccess")
 		{
 			return false;
@@ -1415,6 +1463,78 @@ class AuditTrailFile
 			return false;
 		}
 		if($table=="clocktypes")
+		{
+			return false;
+		}
+		if($table=="demo_logemp")
+		{
+			return false;
+		}
+		if($table=="userinfo")
+		{
+			return false;
+		}
+		if($table=="leavesapp2")
+		{
+			return false;
+		}
+		if($table=="thirtax")
+		{
+			return false;
+		}
+		if($table=="thirtaxsum")
+		{
+			return false;
+		}
+		if($table=="filelog")
+		{
+			return false;
+		}
+		if($table=="payrolltab1")
+		{
+			return false;
+		}
+		if($table=="filelog1")
+		{
+			return false;
+		}
+		if($table=="filelog2")
+		{
+			return false;
+		}
+		if($table=="filelog3")
+		{
+			return false;
+		}
+		if($table=="leaveremarks")
+		{
+			return false;
+		}
+		if($table=="dtrsummary2")
+		{
+			return false;
+		}
+		if($table=="demo_user_open")
+		{
+			return false;
+		}
+		if($table=="overtimefileapp")
+		{
+			return false;
+		}
+		if($table=="overtimefileapp2")
+		{
+			return false;
+		}
+		if($table=="demo_useremp")
+		{
+			return false;
+		}
+		if($table=="leaves")
+		{
+			return false;
+		}
+		if($table=="approvalbutton")
 		{
 			return false;
 		}

@@ -532,43 +532,36 @@ $exd=$values["ExitDate"];
 $ddiv=$values["Division"];
 
 
+if ($exd!=NULL) {
+
+
+$sqp = "DELETE FROM indschedule WHERE EmployeeID='$eid' and SDate>='$exd'";
+CustomQuery($sqp);
+
+$sqo = "Update demo_user set Inactive=1 where EmployeeID='$eid'";
+ CustomQuery($sqo);
+}
+
+else {
+
+$sqr = "Update demo_user set Inactive=0 where EmployeeID='$eid'";
+ CustomQuery($sqr);
+}
+
+
+
+
+
 //$sv=DBLookup("select StatutoryPayment from divisions where DvID='$ddiv'");
-
-$ds=DBLookup("select WorkingDaysInYearDailies from standardsetup where SID=1");
-
-$bd2=($bd*$ds)/12;
-
-if ($wt==1) {
-    $m=$bm;
-    $ai=$bm*12;
-    $txr=DBLookup("select Rate from annualtaxtab where '$ai' between IncomeFrom and IncomeTo");
-    $txb=DBLookup("select Base from annualtaxtab where '$ai' between IncomeFrom and IncomeTo");
-    $txe=DBLookup("select Excess from annualtaxtab where '$ai' between IncomeFrom and IncomeTo");
-
-    $atx=$txb+(($txr/100)*($ai-$txe));
-    $mtx=($txb+(($txr/100)*($ai-$txe)))/12;
-    $sq = "Update demo_user set AnnualIncome='$ai', AnnualTax='$atx', MonthlyTax='$mtx', BasicDailyPay=NULL  where EmployeeID='$eid'";
-    CustomQuery($sq);
+$bmo=DBLookup("select BMonthly from nettaxable where EmployeeID='$eid'");
 
 
-} else {
- $m=$bd2;
-    $ai2=$bd*$ds;
-    $txr2=DBLookup("select Rate from annualtaxtab where '$ai' between IncomeFrom and IncomeTo");
-    $txb2=DBLookup("select Base from annualtaxtab where '$ai' between IncomeFrom and IncomeTo");
-    $txe2=DBLookup("select Excess from annualtaxtab where '$ai' between IncomeFrom and IncomeTo");
-    $atx2=$txb2+(($txr2/100)*($ai2-$txe2));
-    $mtx2=($txb2+(($txr2/100)*($ai2-$txe2)))/12;
-    $sqt = "Update demo_user set AnnualIncome='$ai2', AnnualTax='$atx2', MonthlyTax='$mtx2', BasicMonthlyPay=NULL where EmployeeID='$eid'";
-    CustomQuery($sqt);
 
 
-};
 
-
-$er=DBLookup("select ER from ssstable where '$m' between CompFrom and CompTo");
-$ee=DBLookup("select EE from ssstable where '$m' between CompFrom and CompTo");
-$ec=DBLookup("select EC from ssstable where '$m' between CompFrom and CompTo");
+$er=DBLookup("select ER from ssstable where '$bmo' between CompFrom and CompTo");
+$ee=DBLookup("select EE from ssstable where '$bmo' between CompFrom and CompTo");
+$ec=DBLookup("select EC from ssstable where '$bmo' between CompFrom and CompTo");
 
 if ($ups!=1) {
 $sql = "Update demo_user set SSSER='$er', SSSEE='$ee', SSSEC='$ec' where EmployeeID='$eid'";
@@ -576,12 +569,12 @@ $sql = "Update demo_user set SSSER='$er', SSSEE='$ee', SSSEC='$ec' where Employe
 };
 
 
-$pc=DBLookup("select PcntRate from philhealthtable where '$m' between SalaryFrom and SalaryTo");
-$er2=DBLookup("select ER from philhealthtable where '$m' between SalaryFrom and SalaryTo");
-$ee2=DBLookup("select EE from philhealthtable where '$m' between SalaryFrom and SalaryTo");
+$pc=DBLookup("select PcntRate from philhealthtable where '$bmo' between SalaryFrom and SalaryTo");
+$er2=DBLookup("select ER from philhealthtable where '$bmo' between SalaryFrom and SalaryTo");
+$ee2=DBLookup("select EE from philhealthtable where '$bmo' between SalaryFrom and SalaryTo");
 
 if ($pc>0) {
-$n=($m*($pc/100))/2;
+$n=($bmo*($pc/100))/2;
 
 if ($ups!=1) {
 $sql3 = "Update demo_user set PhilHealthEE='$n', PhilHealthER='$n' where EmployeeID='$eid'";
@@ -607,6 +600,25 @@ $sql4 = "Update demo_user set PagIbigER='$er3', PagIbigEE='$ee3'  where Employee
  CustomQuery($sql4);
 };
 
+//tax
+
+$ai=DBLookup("select NetMoTaxable from nettaxable where EmployeeID='$eid'");
+$tpx=DBLookup("select TPeriods from nettaxable where EmployeeID='$eid'");
+$tnx=DBLookup("select TotalNoTax from nettaxable where EmployeeID='$eid'");
+
+$ani=$ai*12;
+
+    $txr=DBLookup("select Rate from annualtaxtab where '$ani' between IncomeFrom and IncomeTo");
+    $txb=DBLookup("select Base from annualtaxtab where '$ani' between IncomeFrom and IncomeTo");
+    $txe=DBLookup("select Excess from annualtaxtab where '$ani' between IncomeFrom and IncomeTo");
+
+    $atx=$txb+(($txr/100)*($ani-$txe));
+ //   $mtx=($txb+(($txr/100)*($ai-$txe)))/12
+
+    $txpp=($txb+(($txr/100)*($ani-$txe)))/$tpx;
+
+$sq = "Update demo_user set PreCalMoTaxable='$ai', PresetMoNonTax='$tnx', CalMonthly='$bmo', TaxPeriods='$tpx', TaxPerPeriod='$txpp' where EmployeeID='$eid'";
+CustomQuery($sq);
 
 
 //$sqe = "DELETE FROM indschedule WHERE EmployeeID='$eid' and SDate>='$exd'";

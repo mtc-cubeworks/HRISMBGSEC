@@ -466,12 +466,13 @@ $globalSettings["useBuiltInMailer"] = false;
 
 $globalSettings["useCustomSMTPSettings"] = true;
 
-$globalSettings["strSMTPUser"] = "admin@pamocorgroup.com";
-$globalSettings["strSMTPServer"] = "173.254.28.87";
-$globalSettings["strSMTPPort"] = "26";
-$globalSettings["strSMTPPassword"] = "Badzilla1023";
-$globalSettings["strFromEmail"] = "admin@pamocorgroup.com";
+$globalSettings["strSMTPUser"] = "noreplypayrollflex@gmail.com";
+$globalSettings["strSMTPServer"] = "smtp.gmail.com";
+$globalSettings["strSMTPPort"] = "465";
+$globalSettings["strSMTPPassword"] = "CJ101@#\$";
+$globalSettings["strFromEmail"] = "noreplypayrollflex@gmail.com";
 
+$globalSettings["SMTPSecure"] = "ssl";
 //
 
 
@@ -678,16 +679,14 @@ $tableCaptions["English"]["pagibigtable"] = "Pag-ibig Table";
 $tableCaptions["English"]["pprint"] = "Pprint";
 $tableCaptions["English"]["statutorylock"] = "Statutory Button Lock";
 $tableCaptions["English"]["payroll21"] = "Print Summary 2";
-$tableCaptions["English"]["dtrsummary"] = "DTR Summary";
 $tableCaptions["English"]["payrollamt33"] = "Payroll Summary";
 $tableCaptions["English"]["leaves1"] = "Leaves Entry";
 $tableCaptions["English"]["ssscontsummary"] = "Contribution Summary";
 $tableCaptions["English"]["leaves11"] = "File Leave";
-$tableCaptions["English"]["leavesapp"] = "Leaves Approval";
+$tableCaptions["English"]["leavesapp"] = "Leaves Approval (Supervisor)";
 $tableCaptions["English"]["leavebalance1"] = "My Leave Balances";
 $tableCaptions["English"]["indleave1"] = "My Approved Leaves";
 $tableCaptions["English"]["loanbalance31"] = "My Loan Balances";
-$tableCaptions["English"]["payrolltab1"] = "My Payslip";
 $tableCaptions["English"]["loansreport"] = "Loan Summary";
 $tableCaptions["English"]["contlo"] = "Contribution and Loans Report";
 $tableCaptions["English"]["statpay"] = "Statutory Deduction Period";
@@ -704,7 +703,6 @@ $tableCaptions["English"]["schedby"] = "Sched By";
 $tableCaptions["English"]["overtimes"] = "Overtime Entry";
 $tableCaptions["English"]["overtimetab"] = "Overtimetab";
 $tableCaptions["English"]["overtimefile"] = "File Overtime";
-$tableCaptions["English"]["overtimeapp"] = "Overtime Approval";
 $tableCaptions["English"]["divisionaccess"] = "Division Access";
 $tableCaptions["English"]["indovertime1"] = "My Approved Overtime";
 $tableCaptions["English"]["payrolldiv"] = "Payroll Prints";
@@ -714,11 +712,61 @@ $tableCaptions["English"]["indbreaks"] = "Breaks";
 $tableCaptions["English"]["dtrtable"] = "Dtrtable";
 $tableCaptions["English"]["periods"] = "Periods";
 $tableCaptions["English"]["clocktypes"] = "Clock Types";
+$tableCaptions["English"]["demo_logemp"] = "My DTR Logs";
+$tableCaptions["English"]["userinfo"] = "User Info";
+$tableCaptions["English"]["leavesapp2"] = "Leaves Approval (Manager)";
+$tableCaptions["English"]["thirtax"] = "13th Month and Tax";
+$tableCaptions["English"]["thirtaxsum"] = "13th Month and Tax To-Date";
+$tableCaptions["English"]["filelog"] = "File Log";
+$tableCaptions["English"]["payrolltab1"] = "My Payslip";
+$tableCaptions["English"]["filelog1"] = "Filelog Approval (Supervisor)";
+$tableCaptions["English"]["filelog2"] = "Filelog Approval (Manager)";
+$tableCaptions["English"]["filelog3"] = "Filelog HR Approval";
+$tableCaptions["English"]["leaveremarks"] = "Leave Remarks";
+$tableCaptions["English"]["dtrsummary2"] = "DTR Summary";
+$tableCaptions["English"]["demo_user_open"] = "Employee Admin";
+$tableCaptions["English"]["overtimefileapp"] = "Overtime Approval (Supervisor)";
+$tableCaptions["English"]["overtimefileapp2"] = "Overtime Approval (Manager)";
+$tableCaptions["English"]["demo_useremp"] = "My Personal Data";
+$tableCaptions["English"]["leaves"] = "Leaves";
+$tableCaptions["English"]["approvalbutton"] = "Approval Selection";
 $tableCaptions[""] = array();
 $tableCaptions[""][""] = "";
 $tableCaptions[""]["demo_device"] = "Device";
 $tableCaptions[""]["demo_user1"] = "Employees Approval";
 $tableCaptions[""]["clocktypes"] = "Clocktypes";
+$tableCaptions[""]["adjtypes"] = "Adjustment Types";
+$tableCaptions[""]["demo_user"] = "Employees";
+$tableCaptions[""]["payrollearnadj"] = "Earning Adjustments";
+$tableCaptions[""]["demo_log"] = "Log";
+$tableCaptions[""]["demo_logemp"] = "Demo Logemp";
+$tableCaptions[""]["payrolltax"] = "Tax";
+$tableCaptions[""]["payrolltab"] = "Payroll Table";
+$tableCaptions[""]["indschedule1"] = "OT/ND/RD Approval";
+$tableCaptions[""]["indschedule"] = "DTR Schedule";
+$tableCaptions[""]["standardsetup"] = "Standard Setup";
+$tableCaptions[""]["dtrrange"] = "Process DTR";
+$tableCaptions[""]["empindschedule"] = "Uploaded Schedule";
+$tableCaptions[""]["userinfo"] = "Userinfo";
+$tableCaptions[""]["leavesapp"] = "Leaves Approval";
+$tableCaptions[""]["leavesapp2"] = "Leavesapp2";
+$tableCaptions[""]["thirtax"] = "Thirtax";
+$tableCaptions[""]["thirtaxsum"] = "Thirtaxsum";
+$tableCaptions[""]["filelog"] = "Filelog";
+$tableCaptions[""]["payrolltab1"] = "Payrolltab1";
+$tableCaptions[""]["filelog1"] = "Filelog1";
+$tableCaptions[""]["filelog2"] = "Filelog2";
+$tableCaptions[""]["filelog3"] = "Filelog3";
+$tableCaptions[""]["leaveremarks"] = "Leaveremarks";
+$tableCaptions[""]["dtrsummary2"] = "Dtrsummary2";
+$tableCaptions[""]["demo_user_open"] = "Demo User Open";
+$tableCaptions[""]["overtimefile"] = "File Overtime";
+$tableCaptions[""]["overtimefileapp"] = "Overtimefileapp";
+$tableCaptions[""]["overtimefileapp2"] = "Overtimefileapp2";
+$tableCaptions[""]["demo_useremp"] = "Demo Useremp";
+$tableCaptions[""]["leaves"] = "Leaves";
+$tableCaptions[""]["leaves11"] = "File Leave";
+$tableCaptions[""]["approvalbutton"] = "Approvalbutton";
 
 
 $globalEvents = new class_GlobalEvents;
@@ -766,7 +814,7 @@ $_cachedSeachClauses = array();
 Labels::setProjectLogo('
 <DIV style="position: relative; height: 40px; top: -6px; white-space: nowrap;">
 
-    <IMG height="80%" id="navbarlogo" alt="PayrollFlex" src="/images/logo.gif">   
+    <IMG height="80%" id="navbarlogo" alt="PayrollFlex" src="images/logo.gif">   
 
 </DIV>
 ');

@@ -276,6 +276,21 @@ if($rowcount)
 			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("Inactive")))
 				$class = ' rnr-field-number';
 			$row["Inactive_class"] = $class;
+	//	OPrincipal - Number
+			$viewContainer->recId = $recordsCounter;
+		    $value = $viewContainer->showDBValue("OPrincipal", $data, $keylink);
+			$row["OPrincipal_value"] = $value;
+			$format = $pSet->getViewFormat("OPrincipal");
+			$class = "rnr-field-text";
+			if($format==FORMAT_FILE) 
+				$class = ' rnr-field-file'; 
+			if($format==FORMAT_AUDIO)
+				$class = ' rnr-field-audio';
+			if($format==FORMAT_CHECKBOX)
+				$class = ' rnr-field-checkbox';
+			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("OPrincipal")))
+				$class = ' rnr-field-number';
+			$row["OPrincipal_class"] = $class;
 		$rowinfo[] = $row;
 		if ($b) {
 			$rowinfo2[] = $row;

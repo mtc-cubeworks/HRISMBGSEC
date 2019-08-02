@@ -80,6 +80,24 @@ $dalTableindschedule["PreLogMins"] = array("type"=>5,"varname"=>"PreLogMins", "n
 $dalTableindschedule["IncludeBreakLate"] = array("type"=>16,"varname"=>"IncludeBreakLate", "name" => "IncludeBreakLate");
 $dalTableindschedule["GracePeriodMins"] = array("type"=>5,"varname"=>"GracePeriodMins", "name" => "GracePeriodMins");
 $dalTableindschedule["WithAddBreaks"] = array("type"=>16,"varname"=>"WithAddBreaks", "name" => "WithAddBreaks");
+$dalTableindschedule["ANDOTMins"] = array("type"=>5,"varname"=>"ANDOTMins", "name" => "ANDOTMins");
+$dalTableindschedule["RegNDOTHrs"] = array("type"=>5,"varname"=>"RegNDOTHrs", "name" => "RegNDOTHrs");
+$dalTableindschedule["RHNDOTHrs"] = array("type"=>5,"varname"=>"RHNDOTHrs", "name" => "RHNDOTHrs");
+$dalTableindschedule["SHNDOTHrs"] = array("type"=>5,"varname"=>"SHNDOTHrs", "name" => "SHNDOTHrs");
+$dalTableindschedule["CHNDOTHrs"] = array("type"=>5,"varname"=>"CHNDOTHrs", "name" => "CHNDOTHrs");
+$dalTableindschedule["RDNDOTHrs"] = array("type"=>5,"varname"=>"RDNDOTHrs", "name" => "RDNDOTHrs");
+$dalTableindschedule["DH"] = array("type"=>5,"varname"=>"DH", "name" => "DH");
+$dalTableindschedule["DHRD"] = array("type"=>5,"varname"=>"DHRD", "name" => "DHRD");
+$dalTableindschedule["DHOT"] = array("type"=>5,"varname"=>"DHOT", "name" => "DHOT");
+$dalTableindschedule["DHRDOT"] = array("type"=>5,"varname"=>"DHRDOT", "name" => "DHRDOT");
+$dalTableindschedule["SHRDND"] = array("type"=>5,"varname"=>"SHRDND", "name" => "SHRDND");
+$dalTableindschedule["RHRDND"] = array("type"=>5,"varname"=>"RHRDND", "name" => "RHRDND");
+$dalTableindschedule["SHRDNDOT"] = array("type"=>5,"varname"=>"SHRDNDOT", "name" => "SHRDNDOT");
+$dalTableindschedule["RHRDNDOT"] = array("type"=>5,"varname"=>"RHRDNDOT", "name" => "RHRDNDOT");
+$dalTableindschedule["DHND"] = array("type"=>5,"varname"=>"DHND", "name" => "DHND");
+$dalTableindschedule["DHRDND"] = array("type"=>5,"varname"=>"DHRDND", "name" => "DHRDND");
+$dalTableindschedule["DHNDOT"] = array("type"=>5,"varname"=>"DHNDOT", "name" => "DHNDOT");
+$dalTableindschedule["DHRDNDOT"] = array("type"=>5,"varname"=>"DHRDNDOT", "name" => "DHRDNDOT");
 	$dalTableindschedule["ScID"]["key"]=true;
 	$dalTableindschedule["EmployeeID"]["key"]=true;
 

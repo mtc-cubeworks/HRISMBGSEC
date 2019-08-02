@@ -132,7 +132,7 @@ $tdataremovedata[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																				
+																																																																																																																																																																																																																																																																														
 
 $tdataremovedata[".ajaxCodeSnippetAdded"] = false;
 
@@ -514,8 +514,8 @@ $tdataremovedata[".printFields"][] = "Date";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	

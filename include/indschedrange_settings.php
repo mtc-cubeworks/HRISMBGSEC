@@ -180,9 +180,9 @@ $tdataindschedrange[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
 							
-																																																														
+																																																																										
 
 $tdataindschedrange[".ajaxCodeSnippetAdded"] = false;
 
@@ -778,8 +778,8 @@ $tdataindschedrange[".printFields"][] = "EmployeeID";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -912,8 +912,8 @@ $tdataindschedrange[".printFields"][] = "EmployeeID";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	

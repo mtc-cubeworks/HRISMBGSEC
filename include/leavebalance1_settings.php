@@ -163,7 +163,7 @@ $tdataleavebalance1[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																				
+																																																																																																																																																																																																																																																																														
 
 $tdataleavebalance1[".ajaxCodeSnippetAdded"] = false;
 
@@ -614,7 +614,7 @@ $tdataleavebalance1[".printFields"][] = "PLBalance";
 	$fdata["GoodName"] = "AllowableSickLeave";
 	$fdata["ownerTable"] = "leavebalance";
 	$fdata["Label"] = GetFieldLabel("leavebalance1","AllowableSickLeave");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -874,7 +874,7 @@ $tdataleavebalance1[".printFields"][] = "PLBalance";
 	$fdata["GoodName"] = "AllowableVacationLeave";
 	$fdata["ownerTable"] = "leavebalance";
 	$fdata["Label"] = GetFieldLabel("leavebalance1","AllowableVacationLeave");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -1134,7 +1134,7 @@ $tdataleavebalance1[".printFields"][] = "PLBalance";
 	$fdata["GoodName"] = "AllowableEmergencyLeave";
 	$fdata["ownerTable"] = "leavebalance";
 	$fdata["Label"] = GetFieldLabel("leavebalance1","AllowableEmergencyLeave");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -1394,7 +1394,7 @@ $tdataleavebalance1[".printFields"][] = "PLBalance";
 	$fdata["GoodName"] = "AllowablePaternityLeave";
 	$fdata["ownerTable"] = "leavebalance";
 	$fdata["Label"] = GetFieldLabel("leavebalance1","AllowablePaternityLeave");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -2669,15 +2669,18 @@ $proto39["m_columns"][] = "LogID";
 $proto39["m_columns"][] = "LateFixPenalty";
 $proto39["m_columns"][] = "DoNotUpdateContributions";
 $proto39["m_columns"][] = "ExcludeContributionOnPayroll";
-$proto39["m_columns"][] = "AnnualIncome";
-$proto39["m_columns"][] = "AnnualTax";
-$proto39["m_columns"][] = "MonthlyTax";
 $proto39["m_columns"][] = "Birthday";
 $proto39["m_columns"][] = "Bank";
 $proto39["m_columns"][] = "NoLateDeduction";
 $proto39["m_columns"][] = "IncludeBreakLate";
 $proto39["m_columns"][] = "GracePeriodMins";
 $proto39["m_columns"][] = "WithAdditionalBreaks";
+$proto39["m_columns"][] = "TaxPeriods";
+$proto39["m_columns"][] = "PresetMoNonTax";
+$proto39["m_columns"][] = "PreCalMoTaxable";
+$proto39["m_columns"][] = "CalMonthly";
+$proto39["m_columns"][] = "TaxPerPeriod";
+$proto39["m_columns"][] = "Superior2";
 $obj = new SQLTable($proto39);
 
 $proto38["m_table"] = $obj;

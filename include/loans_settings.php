@@ -26,7 +26,7 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsloans["English"]["LoanID"] = "Loan ID";
 	$fieldToolTipsloans["English"]["LoanID"] = "";
 	$placeHoldersloans["English"]["LoanID"] = "";
-	$fieldLabelsloans["English"]["Principal"] = "Principal";
+	$fieldLabelsloans["English"]["Principal"] = "Principal Balance";
 	$fieldToolTipsloans["English"]["Principal"] = "";
 	$placeHoldersloans["English"]["Principal"] = "";
 	$fieldLabelsloans["English"]["MonthlyAmortization"] = "Monthly Amortization";
@@ -50,6 +50,9 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsloans["English"]["Inactive"] = "Inactive";
 	$fieldToolTipsloans["English"]["Inactive"] = "";
 	$placeHoldersloans["English"]["Inactive"] = "";
+	$fieldLabelsloans["English"]["OPrincipal"] = "Principal";
+	$fieldToolTipsloans["English"]["OPrincipal"] = "";
+	$placeHoldersloans["English"]["OPrincipal"] = "";
 	if (count($fieldToolTipsloans["English"]))
 		$tdataloans[".isUseToolTips"] = true;
 }
@@ -157,7 +160,7 @@ $tdataloans[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
 
 $tdataloans[".ajaxCodeSnippetAdded"] = false;
 
@@ -179,6 +182,7 @@ $tdataloans[".requiredSearchFields"] = array();
 
 $tdataloans[".allSearchFields"][] = "LoanID";
 	$tdataloans[".allSearchFields"][] = "EmployeeID";
+	$tdataloans[".allSearchFields"][] = "OPrincipal";
 	$tdataloans[".allSearchFields"][] = "Principal";
 	$tdataloans[".allSearchFields"][] = "MonthlyAmortization";
 	$tdataloans[".allSearchFields"][] = "StartDate";
@@ -198,11 +202,13 @@ $tdataloans[".googleLikeFields"][] = "LoanDescription";
 $tdataloans[".googleLikeFields"][] = "PerPayrollAmount";
 $tdataloans[".googleLikeFields"][] = "PaymentPeriod";
 $tdataloans[".googleLikeFields"][] = "Inactive";
+$tdataloans[".googleLikeFields"][] = "OPrincipal";
 
 
 $tdataloans[".advSearchFields"] = array();
 $tdataloans[".advSearchFields"][] = "LoanID";
 $tdataloans[".advSearchFields"][] = "EmployeeID";
+$tdataloans[".advSearchFields"][] = "OPrincipal";
 $tdataloans[".advSearchFields"][] = "Principal";
 $tdataloans[".advSearchFields"][] = "MonthlyAmortization";
 $tdataloans[".advSearchFields"][] = "StartDate";
@@ -240,6 +246,11 @@ $tdataloans[".listGridLayout"] = 3;
 
 $tdataloans[".totalsFields"] = array();
 $tdataloans[".totalsFields"][] = array(
+	"fName" => "OPrincipal",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Number');
+$tdataloans[".totalsFields"][] = array(
 	"fName" => "Principal",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
@@ -270,7 +281,7 @@ $tdataloans[".orderindexes"] = array();
 	$tdataloans[".orderindexes"][] = array(1, (0 ? "ASC" : "DESC"), "LoanID");
 
 
-$tdataloans[".sqlHead"] = "SELECT LoanID,  EmployeeID,  Principal,  MonthlyAmortization,  StartDate,  LoanDescription,  PerPayrollAmount,  PaymentPeriod,  Inactive";
+$tdataloans[".sqlHead"] = "SELECT LoanID,  EmployeeID,  Principal,  MonthlyAmortization,  StartDate,  LoanDescription,  PerPayrollAmount,  PaymentPeriod,  Inactive,  OPrincipal";
 $tdataloans[".sqlFrom"] = "FROM loans";
 $tdataloans[".sqlWhereExpr"] = "";
 $tdataloans[".sqlTail"] = "";
@@ -317,6 +328,7 @@ $tdataloans[".Keys"] = $tableKeysloans;
 $tdataloans[".listFields"] = array();
 $tdataloans[".listFields"][] = "LoanID";
 $tdataloans[".listFields"][] = "EmployeeID";
+$tdataloans[".listFields"][] = "OPrincipal";
 $tdataloans[".listFields"][] = "Principal";
 $tdataloans[".listFields"][] = "MonthlyAmortization";
 $tdataloans[".listFields"][] = "StartDate";
@@ -331,6 +343,7 @@ $tdataloans[".hideMobileList"] = array();
 $tdataloans[".viewFields"] = array();
 $tdataloans[".viewFields"][] = "LoanID";
 $tdataloans[".viewFields"][] = "EmployeeID";
+$tdataloans[".viewFields"][] = "OPrincipal";
 $tdataloans[".viewFields"][] = "Principal";
 $tdataloans[".viewFields"][] = "MonthlyAmortization";
 $tdataloans[".viewFields"][] = "StartDate";
@@ -341,6 +354,7 @@ $tdataloans[".viewFields"][] = "Inactive";
 
 $tdataloans[".addFields"] = array();
 $tdataloans[".addFields"][] = "EmployeeID";
+$tdataloans[".addFields"][] = "OPrincipal";
 $tdataloans[".addFields"][] = "Principal";
 $tdataloans[".addFields"][] = "MonthlyAmortization";
 $tdataloans[".addFields"][] = "StartDate";
@@ -352,6 +366,7 @@ $tdataloans[".addFields"][] = "Inactive";
 $tdataloans[".masterListFields"] = array();
 $tdataloans[".masterListFields"][] = "LoanID";
 $tdataloans[".masterListFields"][] = "EmployeeID";
+$tdataloans[".masterListFields"][] = "OPrincipal";
 $tdataloans[".masterListFields"][] = "Principal";
 $tdataloans[".masterListFields"][] = "MonthlyAmortization";
 $tdataloans[".masterListFields"][] = "StartDate";
@@ -362,6 +377,7 @@ $tdataloans[".masterListFields"][] = "Inactive";
 
 $tdataloans[".inlineAddFields"] = array();
 $tdataloans[".inlineAddFields"][] = "EmployeeID";
+$tdataloans[".inlineAddFields"][] = "OPrincipal";
 $tdataloans[".inlineAddFields"][] = "Principal";
 $tdataloans[".inlineAddFields"][] = "MonthlyAmortization";
 $tdataloans[".inlineAddFields"][] = "StartDate";
@@ -372,6 +388,7 @@ $tdataloans[".inlineAddFields"][] = "Inactive";
 
 $tdataloans[".editFields"] = array();
 $tdataloans[".editFields"][] = "EmployeeID";
+$tdataloans[".editFields"][] = "OPrincipal";
 $tdataloans[".editFields"][] = "Principal";
 $tdataloans[".editFields"][] = "MonthlyAmortization";
 $tdataloans[".editFields"][] = "StartDate";
@@ -382,6 +399,7 @@ $tdataloans[".editFields"][] = "Inactive";
 
 $tdataloans[".inlineEditFields"] = array();
 $tdataloans[".inlineEditFields"][] = "EmployeeID";
+$tdataloans[".inlineEditFields"][] = "OPrincipal";
 $tdataloans[".inlineEditFields"][] = "Principal";
 $tdataloans[".inlineEditFields"][] = "MonthlyAmortization";
 $tdataloans[".inlineEditFields"][] = "StartDate";
@@ -404,6 +422,7 @@ $tdataloans[".updateSelectedFields"][] = "Inactive";
 $tdataloans[".exportFields"] = array();
 $tdataloans[".exportFields"][] = "LoanID";
 $tdataloans[".exportFields"][] = "EmployeeID";
+$tdataloans[".exportFields"][] = "OPrincipal";
 $tdataloans[".exportFields"][] = "Principal";
 $tdataloans[".exportFields"][] = "MonthlyAmortization";
 $tdataloans[".exportFields"][] = "StartDate";
@@ -422,10 +441,12 @@ $tdataloans[".importFields"][] = "LoanDescription";
 $tdataloans[".importFields"][] = "PerPayrollAmount";
 $tdataloans[".importFields"][] = "PaymentPeriod";
 $tdataloans[".importFields"][] = "Inactive";
+$tdataloans[".importFields"][] = "OPrincipal";
 
 $tdataloans[".printFields"] = array();
 $tdataloans[".printFields"][] = "LoanID";
 $tdataloans[".printFields"][] = "EmployeeID";
+$tdataloans[".printFields"][] = "OPrincipal";
 $tdataloans[".printFields"][] = "Principal";
 $tdataloans[".printFields"][] = "MonthlyAmortization";
 $tdataloans[".printFields"][] = "StartDate";
@@ -860,7 +881,7 @@ $tdataloans[".printFields"][] = "Inactive";
 	$fdata["GoodName"] = "MonthlyAmortization";
 	$fdata["ownerTable"] = "loans";
 	$fdata["Label"] = GetFieldLabel("loans","MonthlyAmortization");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -1075,8 +1096,8 @@ $tdataloans[".printFields"][] = "Inactive";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -1282,7 +1303,7 @@ $tdataloans[".printFields"][] = "Inactive";
 	$fdata["GoodName"] = "PerPayrollAmount";
 	$fdata["ownerTable"] = "loans";
 	$fdata["Label"] = GetFieldLabel("loans","PerPayrollAmount");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -1690,6 +1711,138 @@ $tdataloans[".printFields"][] = "Inactive";
 
 
 	$tdataloans["Inactive"] = $fdata;
+//	OPrincipal
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 10;
+	$fdata["strName"] = "OPrincipal";
+	$fdata["GoodName"] = "OPrincipal";
+	$fdata["ownerTable"] = "loans";
+	$fdata["Label"] = GetFieldLabel("loans","OPrincipal");
+	$fdata["FieldType"] = 14;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "OPrincipal";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "OPrincipal";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "number";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdataloans["OPrincipal"] = $fdata;
 
 
 $tables_data["loans"]=&$tdataloans;
@@ -1753,7 +1906,7 @@ function createSqlQuery_loans()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "LoanID,  EmployeeID,  Principal,  MonthlyAmortization,  StartDate,  LoanDescription,  PerPayrollAmount,  PaymentPeriod,  Inactive";
+$proto0["m_strFieldList"] = "LoanID,  EmployeeID,  Principal,  MonthlyAmortization,  StartDate,  LoanDescription,  PerPayrollAmount,  PaymentPeriod,  Inactive,  OPrincipal";
 $proto0["m_strFrom"] = "FROM loans";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "ORDER BY LoanID DESC";
@@ -1919,60 +2072,75 @@ $proto22["m_alias"] = "";
 $obj = new SQLFieldListItem($proto22);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto24=array();
-$proto24["m_link"] = "SQLL_MAIN";
-			$proto25=array();
-$proto25["m_strName"] = "loans";
-$proto25["m_srcTableName"] = "loans";
-$proto25["m_columns"] = array();
-$proto25["m_columns"][] = "LoanID";
-$proto25["m_columns"][] = "EmployeeID";
-$proto25["m_columns"][] = "Principal";
-$proto25["m_columns"][] = "MonthlyAmortization";
-$proto25["m_columns"][] = "StartDate";
-$proto25["m_columns"][] = "LoanDescription";
-$proto25["m_columns"][] = "PerPayrollAmount";
-$proto25["m_columns"][] = "PaymentPeriod";
-$proto25["m_columns"][] = "Inactive";
-$obj = new SQLTable($proto25);
+						$proto24=array();
+			$obj = new SQLField(array(
+	"m_strName" => "OPrincipal",
+	"m_strTable" => "loans",
+	"m_srcTableName" => "loans"
+));
 
-$proto24["m_table"] = $obj;
-$proto24["m_sql"] = "loans";
-$proto24["m_alias"] = "";
+$proto24["m_sql"] = "OPrincipal";
 $proto24["m_srcTableName"] = "loans";
-$proto26=array();
-$proto26["m_sql"] = "";
-$proto26["m_uniontype"] = "SQLL_UNKNOWN";
+$proto24["m_expr"]=$obj;
+$proto24["m_alias"] = "";
+$obj = new SQLFieldListItem($proto24);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto26=array();
+$proto26["m_link"] = "SQLL_MAIN";
+			$proto27=array();
+$proto27["m_strName"] = "loans";
+$proto27["m_srcTableName"] = "loans";
+$proto27["m_columns"] = array();
+$proto27["m_columns"][] = "LoanID";
+$proto27["m_columns"][] = "EmployeeID";
+$proto27["m_columns"][] = "Principal";
+$proto27["m_columns"][] = "MonthlyAmortization";
+$proto27["m_columns"][] = "StartDate";
+$proto27["m_columns"][] = "LoanDescription";
+$proto27["m_columns"][] = "PerPayrollAmount";
+$proto27["m_columns"][] = "PaymentPeriod";
+$proto27["m_columns"][] = "Inactive";
+$proto27["m_columns"][] = "OPrincipal";
+$obj = new SQLTable($proto27);
+
+$proto26["m_table"] = $obj;
+$proto26["m_sql"] = "loans";
+$proto26["m_alias"] = "";
+$proto26["m_srcTableName"] = "loans";
+$proto28=array();
+$proto28["m_sql"] = "";
+$proto28["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto26["m_column"]=$obj;
-$proto26["m_contained"] = array();
-$proto26["m_strCase"] = "";
-$proto26["m_havingmode"] = false;
-$proto26["m_inBrackets"] = false;
-$proto26["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto26);
+$proto28["m_column"]=$obj;
+$proto28["m_contained"] = array();
+$proto28["m_strCase"] = "";
+$proto28["m_havingmode"] = false;
+$proto28["m_inBrackets"] = false;
+$proto28["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto28);
 
-$proto24["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto24);
+$proto26["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto26);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
 $proto0["m_orderby"] = array();
-												$proto28=array();
+												$proto30=array();
 						$obj = new SQLField(array(
 	"m_strName" => "LoanID",
 	"m_strTable" => "loans",
 	"m_srcTableName" => "loans"
 ));
 
-$proto28["m_column"]=$obj;
-$proto28["m_bAsc"] = 0;
-$proto28["m_nColumn"] = 0;
-$obj = new SQLOrderByItem($proto28);
+$proto30["m_column"]=$obj;
+$proto30["m_bAsc"] = 0;
+$proto30["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto30);
 
 $proto0["m_orderby"][]=$obj;					
 $proto0["m_srcTableName"]="loans";		
@@ -1986,11 +2154,12 @@ $queryData_loans = createSqlQuery_loans();
 	
 		;
 
-									
+										
 
 $tdataloans[".sqlquery"] = $queryData_loans;
 
-$tableEvents["loans"] = new eventsBase;
-$tdataloans[".hasEvents"] = false;
+include_once(getabspath("include/loans_events.php"));
+$tableEvents["loans"] = new eventclass_loans;
+$tdataloans[".hasEvents"] = true;
 
 ?>

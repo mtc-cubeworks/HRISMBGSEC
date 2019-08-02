@@ -29,9 +29,6 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsadjtypes["English"]["AdjType"] = "Adjustment Type";
 	$fieldToolTipsadjtypes["English"]["AdjType"] = "";
 	$placeHoldersadjtypes["English"]["AdjType"] = "";
-	$fieldLabelsadjtypes["English"]["NonTaxLimit"] = "Non Tax Limit";
-	$fieldToolTipsadjtypes["English"]["NonTaxLimit"] = "";
-	$placeHoldersadjtypes["English"]["NonTaxLimit"] = "";
 	if (count($fieldToolTipsadjtypes["English"]))
 		$tdataadjtypes[".isUseToolTips"] = true;
 }
@@ -137,7 +134,7 @@ $tdataadjtypes[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																				
+																																																																																																																																																																																																																																																																														
 
 $tdataadjtypes[".ajaxCodeSnippetAdded"] = false;
 
@@ -158,19 +155,16 @@ $tdataadjtypes[".requiredSearchFields"] = array();
 
 $tdataadjtypes[".allSearchFields"][] = "adjtID";
 	$tdataadjtypes[".allSearchFields"][] = "AdjType";
-	$tdataadjtypes[".allSearchFields"][] = "NonTaxLimit";
 	
 
 $tdataadjtypes[".googleLikeFields"] = array();
 $tdataadjtypes[".googleLikeFields"][] = "adjtID";
 $tdataadjtypes[".googleLikeFields"][] = "AdjType";
-$tdataadjtypes[".googleLikeFields"][] = "NonTaxLimit";
 
 
 $tdataadjtypes[".advSearchFields"] = array();
 $tdataadjtypes[".advSearchFields"][] = "adjtID";
 $tdataadjtypes[".advSearchFields"][] = "AdjType";
-$tdataadjtypes[".advSearchFields"][] = "NonTaxLimit";
 
 $tdataadjtypes[".tableType"] = "list";
 
@@ -213,7 +207,7 @@ $tdataadjtypes[".strOrderBy"] = $tstrOrderBy;
 
 $tdataadjtypes[".orderindexes"] = array();
 
-$tdataadjtypes[".sqlHead"] = "SELECT adjtID,  	AdjType,  	NonTaxLimit";
+$tdataadjtypes[".sqlHead"] = "SELECT adjtID,  	AdjType";
 $tdataadjtypes[".sqlFrom"] = "FROM adjtypes";
 $tdataadjtypes[".sqlWhereExpr"] = "";
 $tdataadjtypes[".sqlTail"] = "";
@@ -260,7 +254,6 @@ $tdataadjtypes[".Keys"] = $tableKeysadjtypes;
 $tdataadjtypes[".listFields"] = array();
 $tdataadjtypes[".listFields"][] = "adjtID";
 $tdataadjtypes[".listFields"][] = "AdjType";
-$tdataadjtypes[".listFields"][] = "NonTaxLimit";
 
 $tdataadjtypes[".hideMobileList"] = array();
 
@@ -268,48 +261,38 @@ $tdataadjtypes[".hideMobileList"] = array();
 $tdataadjtypes[".viewFields"] = array();
 $tdataadjtypes[".viewFields"][] = "adjtID";
 $tdataadjtypes[".viewFields"][] = "AdjType";
-$tdataadjtypes[".viewFields"][] = "NonTaxLimit";
 
 $tdataadjtypes[".addFields"] = array();
 $tdataadjtypes[".addFields"][] = "AdjType";
-$tdataadjtypes[".addFields"][] = "NonTaxLimit";
 
 $tdataadjtypes[".masterListFields"] = array();
 $tdataadjtypes[".masterListFields"][] = "adjtID";
 $tdataadjtypes[".masterListFields"][] = "AdjType";
-$tdataadjtypes[".masterListFields"][] = "NonTaxLimit";
 
 $tdataadjtypes[".inlineAddFields"] = array();
 $tdataadjtypes[".inlineAddFields"][] = "AdjType";
-$tdataadjtypes[".inlineAddFields"][] = "NonTaxLimit";
 
 $tdataadjtypes[".editFields"] = array();
 $tdataadjtypes[".editFields"][] = "AdjType";
-$tdataadjtypes[".editFields"][] = "NonTaxLimit";
 
 $tdataadjtypes[".inlineEditFields"] = array();
 $tdataadjtypes[".inlineEditFields"][] = "AdjType";
-$tdataadjtypes[".inlineEditFields"][] = "NonTaxLimit";
 
 $tdataadjtypes[".updateSelectedFields"] = array();
 $tdataadjtypes[".updateSelectedFields"][] = "AdjType";
-$tdataadjtypes[".updateSelectedFields"][] = "NonTaxLimit";
 
 
 $tdataadjtypes[".exportFields"] = array();
 $tdataadjtypes[".exportFields"][] = "adjtID";
 $tdataadjtypes[".exportFields"][] = "AdjType";
-$tdataadjtypes[".exportFields"][] = "NonTaxLimit";
 
 $tdataadjtypes[".importFields"] = array();
 $tdataadjtypes[".importFields"][] = "adjtID";
 $tdataadjtypes[".importFields"][] = "AdjType";
-$tdataadjtypes[".importFields"][] = "NonTaxLimit";
 
 $tdataadjtypes[".printFields"] = array();
 $tdataadjtypes[".printFields"][] = "adjtID";
 $tdataadjtypes[".printFields"][] = "AdjType";
-$tdataadjtypes[".printFields"][] = "NonTaxLimit";
 
 
 //	adjtID
@@ -574,139 +557,6 @@ $tdataadjtypes[".printFields"][] = "NonTaxLimit";
 
 
 	$tdataadjtypes["AdjType"] = $fdata;
-//	NonTaxLimit
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 3;
-	$fdata["strName"] = "NonTaxLimit";
-	$fdata["GoodName"] = "NonTaxLimit";
-	$fdata["ownerTable"] = "adjtypes";
-	$fdata["Label"] = GetFieldLabel("adjtypes","NonTaxLimit");
-	$fdata["FieldType"] = 14;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
-
-		$fdata["bViewPage"] = true;
-
-		$fdata["bAdvancedSearch"] = true;
-
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "NonTaxLimit";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "NonTaxLimit";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Number");
-
-	
-	
-	
-	
-	
-	
-		$vdata["DecimalDigits"] = 2;
-
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-
-
-	$tdataadjtypes["NonTaxLimit"] = $fdata;
 
 
 $tables_data["adjtypes"]=&$tdataadjtypes;
@@ -740,7 +590,7 @@ function createSqlQuery_adjtypes()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "adjtID,  	AdjType,  	NonTaxLimit";
+$proto0["m_strFieldList"] = "adjtID,  	AdjType";
 $proto0["m_strFrom"] = "FROM adjtypes";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -808,53 +658,38 @@ $proto8["m_alias"] = "";
 $obj = new SQLFieldListItem($proto8);
 
 $proto0["m_fieldlist"][]=$obj;
-						$proto10=array();
-			$obj = new SQLField(array(
-	"m_strName" => "NonTaxLimit",
-	"m_strTable" => "adjtypes",
-	"m_srcTableName" => "adjtypes"
-));
-
-$proto10["m_sql"] = "NonTaxLimit";
-$proto10["m_srcTableName"] = "adjtypes";
-$proto10["m_expr"]=$obj;
-$proto10["m_alias"] = "";
-$obj = new SQLFieldListItem($proto10);
-
-$proto0["m_fieldlist"][]=$obj;
 $proto0["m_fromlist"] = array();
-												$proto12=array();
-$proto12["m_link"] = "SQLL_MAIN";
-			$proto13=array();
-$proto13["m_strName"] = "adjtypes";
-$proto13["m_srcTableName"] = "adjtypes";
-$proto13["m_columns"] = array();
-$proto13["m_columns"][] = "adjtID";
-$proto13["m_columns"][] = "AdjType";
-$proto13["m_columns"][] = "NonTaxLimit";
-$obj = new SQLTable($proto13);
+												$proto10=array();
+$proto10["m_link"] = "SQLL_MAIN";
+			$proto11=array();
+$proto11["m_strName"] = "adjtypes";
+$proto11["m_srcTableName"] = "adjtypes";
+$proto11["m_columns"] = array();
+$proto11["m_columns"][] = "adjtID";
+$proto11["m_columns"][] = "AdjType";
+$obj = new SQLTable($proto11);
 
-$proto12["m_table"] = $obj;
-$proto12["m_sql"] = "adjtypes";
-$proto12["m_alias"] = "";
-$proto12["m_srcTableName"] = "adjtypes";
-$proto14=array();
-$proto14["m_sql"] = "";
-$proto14["m_uniontype"] = "SQLL_UNKNOWN";
+$proto10["m_table"] = $obj;
+$proto10["m_sql"] = "adjtypes";
+$proto10["m_alias"] = "";
+$proto10["m_srcTableName"] = "adjtypes";
+$proto12=array();
+$proto12["m_sql"] = "";
+$proto12["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto14["m_column"]=$obj;
-$proto14["m_contained"] = array();
-$proto14["m_strCase"] = "";
-$proto14["m_havingmode"] = false;
-$proto14["m_inBrackets"] = false;
-$proto14["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto14);
+$proto12["m_column"]=$obj;
+$proto12["m_contained"] = array();
+$proto12["m_strCase"] = "";
+$proto12["m_havingmode"] = false;
+$proto12["m_inBrackets"] = false;
+$proto12["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto12);
 
-$proto12["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto12);
+$proto10["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto10);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -870,7 +705,7 @@ $queryData_adjtypes = createSqlQuery_adjtypes();
 	
 		;
 
-			
+		
 
 $tdataadjtypes[".sqlquery"] = $queryData_adjtypes;
 

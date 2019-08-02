@@ -165,7 +165,7 @@ $tdataindschedule11[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																				
+																																																																																																																																																																																																																																																																														
 
 $tdataindschedule11[".ajaxCodeSnippetAdded"] = false;
 
@@ -344,10 +344,8 @@ $tdataindschedule11[".hideMobileList"] = array();
 
 
 $tdataindschedule11[".viewFields"] = array();
-$tdataindschedule11[".viewFields"][] = "SDate";
 
 $tdataindschedule11[".addFields"] = array();
-$tdataindschedule11[".addFields"][] = "SDate";
 
 $tdataindschedule11[".masterListFields"] = array();
 $tdataindschedule11[".masterListFields"][] = "SDate";
@@ -367,7 +365,6 @@ $tdataindschedule11[".masterListFields"][] = "ApprovedRD";
 $tdataindschedule11[".masterListFields"][] = "RDMins";
 
 $tdataindschedule11[".inlineAddFields"] = array();
-$tdataindschedule11[".inlineAddFields"][] = "SDate";
 
 $tdataindschedule11[".editFields"] = array();
 $tdataindschedule11[".editFields"][] = "SDate";
@@ -436,7 +433,6 @@ $tdataindschedule11[".exportFields"][] = "ApprovedRD";
 $tdataindschedule11[".exportFields"][] = "RDMins";
 
 $tdataindschedule11[".importFields"] = array();
-$tdataindschedule11[".importFields"][] = "SDate";
 
 $tdataindschedule11[".printFields"] = array();
 $tdataindschedule11[".printFields"][] = "SDate";
@@ -2259,10 +2255,8 @@ $tdataindschedule11[".printFields"][] = "RDMins";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
+	
+	
 		$fdata["bEditPage"] = true;
 
 		$fdata["bInlineEdit"] = true;
@@ -2270,8 +2264,7 @@ $tdataindschedule11[".printFields"][] = "RDMins";
 		$fdata["bUpdateSelected"] = true;
 
 
-		$fdata["bViewPage"] = true;
-
+	
 		$fdata["bAdvancedSearch"] = true;
 
 		$fdata["bPrinterPage"] = true;
@@ -2334,8 +2327,8 @@ $tdataindschedule11[".printFields"][] = "RDMins";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -2745,6 +2738,24 @@ $proto37["m_columns"][] = "PreLogMins";
 $proto37["m_columns"][] = "IncludeBreakLate";
 $proto37["m_columns"][] = "GracePeriodMins";
 $proto37["m_columns"][] = "WithAddBreaks";
+$proto37["m_columns"][] = "ANDOTMins";
+$proto37["m_columns"][] = "RegNDOTHrs";
+$proto37["m_columns"][] = "RHNDOTHrs";
+$proto37["m_columns"][] = "SHNDOTHrs";
+$proto37["m_columns"][] = "CHNDOTHrs";
+$proto37["m_columns"][] = "RDNDOTHrs";
+$proto37["m_columns"][] = "DH";
+$proto37["m_columns"][] = "DHRD";
+$proto37["m_columns"][] = "DHOT";
+$proto37["m_columns"][] = "DHRDOT";
+$proto37["m_columns"][] = "SHRDND";
+$proto37["m_columns"][] = "RHRDND";
+$proto37["m_columns"][] = "SHRDNDOT";
+$proto37["m_columns"][] = "RHRDNDOT";
+$proto37["m_columns"][] = "DHND";
+$proto37["m_columns"][] = "DHRDND";
+$proto37["m_columns"][] = "DHNDOT";
+$proto37["m_columns"][] = "DHRDNDOT";
 $obj = new SQLTable($proto37);
 
 $proto36["m_table"] = $obj;

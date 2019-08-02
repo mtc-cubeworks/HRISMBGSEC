@@ -26,10 +26,15 @@ $dalTablepayrollamt3["CHOT"] = array("type"=>5,"varname"=>"CHOT", "name" => "CHO
 $dalTablepayrollamt3["RDOT"] = array("type"=>5,"varname"=>"RDOT", "name" => "RDOT");
 $dalTablepayrollamt3["RD"] = array("type"=>5,"varname"=>"RD", "name" => "RD");
 $dalTablepayrollamt3["ND"] = array("type"=>5,"varname"=>"ND", "name" => "ND");
+$dalTablepayrollamt3["NDOT"] = array("type"=>5,"varname"=>"NDOT", "name" => "NDOT");
 $dalTablepayrollamt3["RHND"] = array("type"=>5,"varname"=>"RHND", "name" => "RHND");
+$dalTablepayrollamt3["RHNDOT"] = array("type"=>5,"varname"=>"RHNDOT", "name" => "RHNDOT");
 $dalTablepayrollamt3["SHND"] = array("type"=>5,"varname"=>"SHND", "name" => "SHND");
+$dalTablepayrollamt3["SHNDOT"] = array("type"=>5,"varname"=>"SHNDOT", "name" => "SHNDOT");
 $dalTablepayrollamt3["CHND"] = array("type"=>5,"varname"=>"CHND", "name" => "CHND");
+$dalTablepayrollamt3["CHNDOT"] = array("type"=>5,"varname"=>"CHNDOT", "name" => "CHNDOT");
 $dalTablepayrollamt3["RDND"] = array("type"=>5,"varname"=>"RDND", "name" => "RDND");
+$dalTablepayrollamt3["RDNDOT"] = array("type"=>5,"varname"=>"RDNDOT", "name" => "RDNDOT");
 $dalTablepayrollamt3["TND"] = array("type"=>5,"varname"=>"TND", "name" => "TND");
 $dalTablepayrollamt3["VL"] = array("type"=>5,"varname"=>"VL", "name" => "VL");
 $dalTablepayrollamt3["SL"] = array("type"=>5,"varname"=>"SL", "name" => "SL");
@@ -57,6 +62,7 @@ $dalTablepayrollamt3["RHNDHrs"] = array("type"=>5,"varname"=>"RHNDHrs", "name" =
 $dalTablepayrollamt3["SHNDHrs"] = array("type"=>5,"varname"=>"SHNDHrs", "name" => "SHNDHrs");
 $dalTablepayrollamt3["CHNDHrs"] = array("type"=>5,"varname"=>"CHNDHrs", "name" => "CHNDHrs");
 $dalTablepayrollamt3["RDNDHrs"] = array("type"=>5,"varname"=>"RDNDHrs", "name" => "RDNDHrs");
+$dalTablepayrollamt3["TNDHr"] = array("type"=>5,"varname"=>"TNDHr", "name" => "TNDHr");
 $dalTablepayrollamt3["VLBalance"] = array("type"=>5,"varname"=>"VLBalance", "name" => "VLBalance");
 $dalTablepayrollamt3["SLBalance"] = array("type"=>5,"varname"=>"SLBalance", "name" => "SLBalance");
 $dalTablepayrollamt3["ELBalance"] = array("type"=>5,"varname"=>"ELBalance", "name" => "ELBalance");
@@ -66,7 +72,7 @@ $dalTablepayrollamt3["LWOPdays"] = array("type"=>5,"varname"=>"LWOPdays", "name"
 $dalTablepayrollamt3["TAdj"] = array("type"=>5,"varname"=>"TAdj", "name" => "TAdj");
 $dalTablepayrollamt3["TAdjt"] = array("type"=>5,"varname"=>"TAdjt", "name" => "TAdjt");
 $dalTablepayrollamt3["TDeduct"] = array("type"=>5,"varname"=>"TDeduct", "name" => "TDeduct");
-$dalTablepayrollamt3["Ttax"] = array("type"=>5,"varname"=>"Ttax", "name" => "Ttax");
+$dalTablepayrollamt3["Ttax"] = array("type"=>14,"varname"=>"Ttax", "name" => "Ttax");
 $dalTablepayrollamt3["SSS"] = array("type"=>5,"varname"=>"SSS", "name" => "SSS");
 $dalTablepayrollamt3["PagIbig"] = array("type"=>5,"varname"=>"PagIbig", "name" => "PagIbig");
 $dalTablepayrollamt3["PHIC"] = array("type"=>5,"varname"=>"PHIC", "name" => "PHIC");
@@ -88,6 +94,33 @@ $dalTablepayrollamt3["PayrollID"] = array("type"=>3,"varname"=>"PayrollID", "nam
 $dalTablepayrollamt3["Division"] = array("type"=>3,"varname"=>"Division", "name" => "Division");
 $dalTablepayrollamt3["Employer"] = array("type"=>3,"varname"=>"Employer", "name" => "Employer");
 $dalTablepayrollamt3["PayDate"] = array("type"=>7,"varname"=>"PayDate", "name" => "PayDate");
+$dalTablepayrollamt3["ThirToDate"] = array("type"=>14,"varname"=>"ThirToDate", "name" => "ThirToDate");
+$dalTablepayrollamt3["TaxableToDate"] = array("type"=>14,"varname"=>"TaxableToDate", "name" => "TaxableToDate");
+$dalTablepayrollamt3["TaxToDate"] = array("type"=>14,"varname"=>"TaxToDate", "name" => "TaxToDate");
+$dalTablepayrollamt3["DH"] = array("type"=>5,"varname"=>"DH", "name" => "DH");
+$dalTablepayrollamt3["DHpay"] = array("type"=>5,"varname"=>"DHpay", "name" => "DHpay");
+$dalTablepayrollamt3["DHRD"] = array("type"=>5,"varname"=>"DHRD", "name" => "DHRD");
+$dalTablepayrollamt3["DHRDpay"] = array("type"=>5,"varname"=>"DHRDpay", "name" => "DHRDpay");
+$dalTablepayrollamt3["DHOT"] = array("type"=>5,"varname"=>"DHOT", "name" => "DHOT");
+$dalTablepayrollamt3["DHOTpay"] = array("type"=>5,"varname"=>"DHOTpay", "name" => "DHOTpay");
+$dalTablepayrollamt3["DHRDOT"] = array("type"=>5,"varname"=>"DHRDOT", "name" => "DHRDOT");
+$dalTablepayrollamt3["DHRDOTpay"] = array("type"=>5,"varname"=>"DHRDOTpay", "name" => "DHRDOTpay");
+$dalTablepayrollamt3["SHRDND"] = array("type"=>5,"varname"=>"SHRDND", "name" => "SHRDND");
+$dalTablepayrollamt3["SHRDNDpay"] = array("type"=>5,"varname"=>"SHRDNDpay", "name" => "SHRDNDpay");
+$dalTablepayrollamt3["RHRDND"] = array("type"=>5,"varname"=>"RHRDND", "name" => "RHRDND");
+$dalTablepayrollamt3["RHRDNDpay"] = array("type"=>5,"varname"=>"RHRDNDpay", "name" => "RHRDNDpay");
+$dalTablepayrollamt3["SHRDNDOT"] = array("type"=>5,"varname"=>"SHRDNDOT", "name" => "SHRDNDOT");
+$dalTablepayrollamt3["SHRDNDOTpay"] = array("type"=>5,"varname"=>"SHRDNDOTpay", "name" => "SHRDNDOTpay");
+$dalTablepayrollamt3["RHRDNDOT"] = array("type"=>5,"varname"=>"RHRDNDOT", "name" => "RHRDNDOT");
+$dalTablepayrollamt3["RHRDNDOTpay"] = array("type"=>5,"varname"=>"RHRDNDOTpay", "name" => "RHRDNDOTpay");
+$dalTablepayrollamt3["DHND"] = array("type"=>5,"varname"=>"DHND", "name" => "DHND");
+$dalTablepayrollamt3["DHNDpay"] = array("type"=>5,"varname"=>"DHNDpay", "name" => "DHNDpay");
+$dalTablepayrollamt3["DHRDND"] = array("type"=>5,"varname"=>"DHRDND", "name" => "DHRDND");
+$dalTablepayrollamt3["DHRDNDpay"] = array("type"=>5,"varname"=>"DHRDNDpay", "name" => "DHRDNDpay");
+$dalTablepayrollamt3["DHNDOT"] = array("type"=>5,"varname"=>"DHNDOT", "name" => "DHNDOT");
+$dalTablepayrollamt3["DHNDOTpay"] = array("type"=>5,"varname"=>"DHNDOTpay", "name" => "DHNDOTpay");
+$dalTablepayrollamt3["DHRDNDOT"] = array("type"=>5,"varname"=>"DHRDNDOT", "name" => "DHRDNDOT");
+$dalTablepayrollamt3["DHRDNDOTpay"] = array("type"=>5,"varname"=>"DHRDNDOTpay", "name" => "DHRDNDOTpay");
 
 $dal_info["payrollflex_at_localhost__payrollamt3"] = &$dalTablepayrollamt3;
 ?>

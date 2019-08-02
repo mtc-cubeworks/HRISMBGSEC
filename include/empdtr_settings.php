@@ -178,7 +178,7 @@ $tdataempdtr[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																				
+																																																																																																																																																																																																																																																																														
 
 $tdataempdtr[".ajaxCodeSnippetAdded"] = false;
 
@@ -235,7 +235,6 @@ $tdataempdtr[".listGridLayout"] = 3;
 
 
 
-$tdataempdtr[".noRecordsFirstPage"] = true;
 
 // view page pdf
 
@@ -829,8 +828,8 @@ $tdataempdtr[".printFields"][] = "Shift";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -1485,8 +1484,8 @@ $tdataempdtr[".printFields"][] = "Shift";
 	
 	
 		$edata["DateEditType"] = 11;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -1605,8 +1604,8 @@ $tdataempdtr[".printFields"][] = "Shift";
 	
 	
 		$edata["DateEditType"] = 11;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -2865,8 +2864,8 @@ $tdataempdtr[".printFields"][] = "Shift";
 	
 	
 		$edata["DateEditType"] = 11;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -2985,8 +2984,8 @@ $tdataempdtr[".printFields"][] = "Shift";
 	
 	
 		$edata["DateEditType"] = 11;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -3720,6 +3719,24 @@ $proto49["m_columns"][] = "PreLogMins";
 $proto49["m_columns"][] = "IncludeBreakLate";
 $proto49["m_columns"][] = "GracePeriodMins";
 $proto49["m_columns"][] = "WithAddBreaks";
+$proto49["m_columns"][] = "ANDOTMins";
+$proto49["m_columns"][] = "RegNDOTHrs";
+$proto49["m_columns"][] = "RHNDOTHrs";
+$proto49["m_columns"][] = "SHNDOTHrs";
+$proto49["m_columns"][] = "CHNDOTHrs";
+$proto49["m_columns"][] = "RDNDOTHrs";
+$proto49["m_columns"][] = "DH";
+$proto49["m_columns"][] = "DHRD";
+$proto49["m_columns"][] = "DHOT";
+$proto49["m_columns"][] = "DHRDOT";
+$proto49["m_columns"][] = "SHRDND";
+$proto49["m_columns"][] = "RHRDND";
+$proto49["m_columns"][] = "SHRDNDOT";
+$proto49["m_columns"][] = "RHRDNDOT";
+$proto49["m_columns"][] = "DHND";
+$proto49["m_columns"][] = "DHRDND";
+$proto49["m_columns"][] = "DHNDOT";
+$proto49["m_columns"][] = "DHRDNDOT";
 $obj = new SQLTable($proto49);
 
 $proto48["m_table"] = $obj;

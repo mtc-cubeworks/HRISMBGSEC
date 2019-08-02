@@ -164,7 +164,7 @@ $tdatapayrollearnadj[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
 
 $tdatapayrollearnadj[".ajaxCodeSnippetAdded"] = false;
 
@@ -350,7 +350,6 @@ $tdatapayrollearnadj[".viewFields"][] = "eaID";
 $tdatapayrollearnadj[".viewFields"][] = "PSID";
 
 $tdatapayrollearnadj[".addFields"] = array();
-$tdatapayrollearnadj[".addFields"][] = "PtabID";
 $tdatapayrollearnadj[".addFields"][] = "Employer";
 $tdatapayrollearnadj[".addFields"][] = "Division";
 $tdatapayrollearnadj[".addFields"][] = "WageType";
@@ -377,7 +376,6 @@ $tdatapayrollearnadj[".masterListFields"][] = "eaID";
 $tdatapayrollearnadj[".masterListFields"][] = "PSID";
 
 $tdatapayrollearnadj[".inlineAddFields"] = array();
-$tdatapayrollearnadj[".inlineAddFields"][] = "PtabID";
 $tdatapayrollearnadj[".inlineAddFields"][] = "Employer";
 $tdatapayrollearnadj[".inlineAddFields"][] = "Division";
 $tdatapayrollearnadj[".inlineAddFields"][] = "WageType";
@@ -980,8 +978,8 @@ $tdatapayrollearnadj[".printFields"][] = "PSID";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -1112,8 +1110,8 @@ $tdatapayrollearnadj[".printFields"][] = "PSID";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -1587,10 +1585,8 @@ $tdatapayrollearnadj[".printFields"][] = "PSID";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
+	
+	
 		$fdata["bEditPage"] = true;
 
 		$fdata["bInlineEdit"] = true;
@@ -1644,7 +1640,7 @@ $tdatapayrollearnadj[".printFields"][] = "PSID";
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Readonly");
 
 	
 	
@@ -1663,17 +1659,14 @@ $tdatapayrollearnadj[".printFields"][] = "PSID";
 	
 	
 	
-			$edata["HTML5InuptType"] = "number";
-
-		$edata["EditParams"] = "";
-		
+	
+	
 		$edata["controlWidth"] = 70;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
 							
 	
 	//	End validation
@@ -2514,7 +2507,8 @@ $queryData_payrollearnadj = createSqlQuery_payrollearnadj();
 
 $tdatapayrollearnadj[".sqlquery"] = $queryData_payrollearnadj;
 
-$tableEvents["payrollearnadj"] = new eventsBase;
-$tdatapayrollearnadj[".hasEvents"] = false;
+include_once(getabspath("include/payrollearnadj_events.php"));
+$tableEvents["payrollearnadj"] = new eventclass_payrollearnadj;
+$tdatapayrollearnadj[".hasEvents"] = true;
 
 ?>

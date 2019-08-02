@@ -618,8 +618,6 @@ class Chart
 			return true;
 		if("payroll" == $this->chrt_array['tables'][0])
 			return true;
-		if("dtrsummary" == $this->chrt_array['tables'][0])
-			return true;
 		if("payrollamt33" == $this->chrt_array['tables'][0])
 			return true;
 		if("leaves" == $this->chrt_array['tables'][0])
@@ -635,8 +633,6 @@ class Chart
 		if("indleave" == $this->chrt_array['tables'][0])
 			return true;
 		if("loanbalance3" == $this->chrt_array['tables'][0])
-			return true;
-		if("payrolltab" == $this->chrt_array['tables'][0])
 			return true;
 		if("loansreport" == $this->chrt_array['tables'][0])
 			return true;
@@ -670,8 +666,6 @@ class Chart
 			return true;
 		if("overtimefile" == $this->chrt_array['tables'][0])
 			return true;
-		if("overtimefile" == $this->chrt_array['tables'][0])
-			return true;
 		if("divisionaccess" == $this->chrt_array['tables'][0])
 			return true;
 		if("indovertime" == $this->chrt_array['tables'][0])
@@ -689,6 +683,42 @@ class Chart
 		if("periods" == $this->chrt_array['tables'][0])
 			return true;
 		if("clocktypes" == $this->chrt_array['tables'][0])
+			return true;
+		if("demo_log" == $this->chrt_array['tables'][0])
+			return true;
+		if("userinfo" == $this->chrt_array['tables'][0])
+			return true;
+		if("leaves" == $this->chrt_array['tables'][0])
+			return true;
+		if("thirtax" == $this->chrt_array['tables'][0])
+			return true;
+		if("thirtaxsum" == $this->chrt_array['tables'][0])
+			return true;
+		if("filelog" == $this->chrt_array['tables'][0])
+			return true;
+		if("payrolltab" == $this->chrt_array['tables'][0])
+			return true;
+		if("filelog" == $this->chrt_array['tables'][0])
+			return true;
+		if("filelog" == $this->chrt_array['tables'][0])
+			return true;
+		if("filelog" == $this->chrt_array['tables'][0])
+			return true;
+		if("leaveremarks" == $this->chrt_array['tables'][0])
+			return true;
+		if("dtrsummary2" == $this->chrt_array['tables'][0])
+			return true;
+		if("demo_user" == $this->chrt_array['tables'][0])
+			return true;
+		if("overtimefile" == $this->chrt_array['tables'][0])
+			return true;
+		if("overtimefile" == $this->chrt_array['tables'][0])
+			return true;
+		if("demo_user" == $this->chrt_array['tables'][0])
+			return true;
+		if("leaves" == $this->chrt_array['tables'][0])
+			return true;
+		if("approvalbutton" == $this->chrt_array['tables'][0])
 			return true;
 		return false;
 	}

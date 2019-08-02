@@ -139,6 +139,7 @@ $tdatapayrollstatutories[".afterAddActionDetTable"] = "";
 
 $tdatapayrollstatutories[".list"] = true;
 
+$tdatapayrollstatutories[".inlineEdit"] = true;
 
 
 $tdatapayrollstatutories[".reorderRecordsByHeader"] = true;
@@ -147,6 +148,7 @@ $tdatapayrollstatutories[".reorderRecordsByHeader"] = true;
 $tdatapayrollstatutories[".exportFormatting"] = 2;
 $tdatapayrollstatutories[".exportDelimiter"] = ",";
 		
+$tdatapayrollstatutories[".inlineAdd"] = true;
 $tdatapayrollstatutories[".view"] = true;
 
 $tdatapayrollstatutories[".import"] = true;
@@ -180,7 +182,7 @@ $tdatapayrollstatutories[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
 
 $tdatapayrollstatutories[".ajaxCodeSnippetAdded"] = false;
 
@@ -483,13 +485,20 @@ $tdatapayrollstatutories[".inlineAddFields"] = array();
 $tdatapayrollstatutories[".inlineAddFields"][] = "Employer";
 $tdatapayrollstatutories[".inlineAddFields"][] = "Division";
 $tdatapayrollstatutories[".inlineAddFields"][] = "WageType";
+$tdatapayrollstatutories[".inlineAddFields"][] = "EmployeeID";
+$tdatapayrollstatutories[".inlineAddFields"][] = "FromDate";
+$tdatapayrollstatutories[".inlineAddFields"][] = "ToDate";
+$tdatapayrollstatutories[".inlineAddFields"][] = "SSS";
 $tdatapayrollstatutories[".inlineAddFields"][] = "SSSER";
 $tdatapayrollstatutories[".inlineAddFields"][] = "SSSEC";
 $tdatapayrollstatutories[".inlineAddFields"][] = "SSSTotal";
+$tdatapayrollstatutories[".inlineAddFields"][] = "PagIbig";
 $tdatapayrollstatutories[".inlineAddFields"][] = "PagIbigER";
 $tdatapayrollstatutories[".inlineAddFields"][] = "PagIbigTotal";
+$tdatapayrollstatutories[".inlineAddFields"][] = "PHIC";
 $tdatapayrollstatutories[".inlineAddFields"][] = "PHICER";
 $tdatapayrollstatutories[".inlineAddFields"][] = "PHICTotal";
+$tdatapayrollstatutories[".inlineAddFields"][] = "PSID";
 
 $tdatapayrollstatutories[".editFields"] = array();
 $tdatapayrollstatutories[".editFields"][] = "Employer";
@@ -514,13 +523,20 @@ $tdatapayrollstatutories[".inlineEditFields"] = array();
 $tdatapayrollstatutories[".inlineEditFields"][] = "Employer";
 $tdatapayrollstatutories[".inlineEditFields"][] = "Division";
 $tdatapayrollstatutories[".inlineEditFields"][] = "WageType";
+$tdatapayrollstatutories[".inlineEditFields"][] = "EmployeeID";
+$tdatapayrollstatutories[".inlineEditFields"][] = "FromDate";
+$tdatapayrollstatutories[".inlineEditFields"][] = "ToDate";
+$tdatapayrollstatutories[".inlineEditFields"][] = "SSS";
 $tdatapayrollstatutories[".inlineEditFields"][] = "SSSER";
 $tdatapayrollstatutories[".inlineEditFields"][] = "SSSEC";
 $tdatapayrollstatutories[".inlineEditFields"][] = "SSSTotal";
+$tdatapayrollstatutories[".inlineEditFields"][] = "PagIbig";
 $tdatapayrollstatutories[".inlineEditFields"][] = "PagIbigER";
 $tdatapayrollstatutories[".inlineEditFields"][] = "PagIbigTotal";
+$tdatapayrollstatutories[".inlineEditFields"][] = "PHIC";
 $tdatapayrollstatutories[".inlineEditFields"][] = "PHICER";
 $tdatapayrollstatutories[".inlineEditFields"][] = "PHICTotal";
+$tdatapayrollstatutories[".inlineEditFields"][] = "PSID";
 
 $tdatapayrollstatutories[".updateSelectedFields"] = array();
 $tdatapayrollstatutories[".updateSelectedFields"][] = "Employer";
@@ -751,10 +767,12 @@ $tdatapayrollstatutories[".printFields"][] = "PSID";
 
 		$fdata["bAddPage"] = true;
 
-	
+		$fdata["bInlineAdd"] = true;
+
 		$fdata["bEditPage"] = true;
 
-	
+		$fdata["bInlineEdit"] = true;
+
 		$fdata["bUpdateSelected"] = true;
 
 
@@ -882,10 +900,12 @@ $tdatapayrollstatutories[".printFields"][] = "PSID";
 
 		$fdata["bAddPage"] = true;
 
-	
+		$fdata["bInlineAdd"] = true;
+
 		$fdata["bEditPage"] = true;
 
-	
+		$fdata["bInlineEdit"] = true;
+
 		$fdata["bUpdateSelected"] = true;
 
 
@@ -1013,10 +1033,12 @@ $tdatapayrollstatutories[".printFields"][] = "PSID";
 
 		$fdata["bAddPage"] = true;
 
-	
+		$fdata["bInlineAdd"] = true;
+
 		$fdata["bEditPage"] = true;
 
-	
+		$fdata["bInlineEdit"] = true;
+
 		$fdata["bUpdateSelected"] = true;
 
 
@@ -1144,10 +1166,12 @@ $tdatapayrollstatutories[".printFields"][] = "PSID";
 
 		$fdata["bAddPage"] = true;
 
-	
+		$fdata["bInlineAdd"] = true;
+
 		$fdata["bEditPage"] = true;
 
-	
+		$fdata["bInlineEdit"] = true;
+
 		$fdata["bUpdateSelected"] = true;
 
 
@@ -1215,8 +1239,8 @@ $tdatapayrollstatutories[".printFields"][] = "PSID";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -1274,10 +1298,12 @@ $tdatapayrollstatutories[".printFields"][] = "PSID";
 
 		$fdata["bAddPage"] = true;
 
-	
+		$fdata["bInlineAdd"] = true;
+
 		$fdata["bEditPage"] = true;
 
-	
+		$fdata["bInlineEdit"] = true;
+
 		$fdata["bUpdateSelected"] = true;
 
 
@@ -1345,8 +1371,8 @@ $tdatapayrollstatutories[".printFields"][] = "PSID";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -1404,10 +1430,12 @@ $tdatapayrollstatutories[".printFields"][] = "PSID";
 
 		$fdata["bAddPage"] = true;
 
-	
+		$fdata["bInlineAdd"] = true;
+
 		$fdata["bEditPage"] = true;
 
-	
+		$fdata["bInlineEdit"] = true;
+
 		$fdata["bUpdateSelected"] = true;
 
 
@@ -1559,10 +1587,12 @@ $tdatapayrollstatutories[".printFields"][] = "PSID";
 
 		$fdata["bAddPage"] = true;
 
-	
+		$fdata["bInlineAdd"] = true;
+
 		$fdata["bEditPage"] = true;
 
-	
+		$fdata["bInlineEdit"] = true;
+
 		$fdata["bUpdateSelected"] = true;
 
 
@@ -3500,7 +3530,8 @@ $queryData_payrollstatutories = createSqlQuery_payrollstatutories();
 
 $tdatapayrollstatutories[".sqlquery"] = $queryData_payrollstatutories;
 
-$tableEvents["payrollstatutories"] = new eventsBase;
-$tdatapayrollstatutories[".hasEvents"] = false;
+include_once(getabspath("include/payrollstatutories_events.php"));
+$tableEvents["payrollstatutories"] = new eventclass_payrollstatutories;
+$tdatapayrollstatutories[".hasEvents"] = true;
 
 ?>

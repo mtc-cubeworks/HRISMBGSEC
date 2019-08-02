@@ -151,7 +151,7 @@ $tdataindovertime1[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																				
+																																																																																																																																																																																																																																																																														
 
 $tdataindovertime1[".ajaxCodeSnippetAdded"] = false;
 
@@ -886,8 +886,8 @@ $tdataindovertime1[".printFields"][] = "NoMins";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -1150,8 +1150,8 @@ $tdataindovertime1[".printFields"][] = "NoMins";
 	
 	
 		$edata["DateEditType"] = 11;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -1283,8 +1283,8 @@ $tdataindovertime1[".printFields"][] = "NoMins";
 	
 	
 		$edata["DateEditType"] = 11;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	

@@ -114,7 +114,6 @@ $tdatapayrolltax[".list"] = true;
 
 $tdatapayrolltax[".inlineEdit"] = true;
 
-$tdatapayrolltax[".updateSelected"] = true;
 
 $tdatapayrolltax[".reorderRecordsByHeader"] = true;
 
@@ -123,7 +122,6 @@ $tdatapayrolltax[".exportFormatting"] = 2;
 $tdatapayrolltax[".exportDelimiter"] = ",";
 		
 $tdatapayrolltax[".inlineAdd"] = true;
-$tdatapayrolltax[".copy"] = true;
 $tdatapayrolltax[".view"] = true;
 
 $tdatapayrolltax[".import"] = true;
@@ -157,7 +155,7 @@ $tdatapayrolltax[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
 
 $tdatapayrolltax[".ajaxCodeSnippetAdded"] = false;
 
@@ -243,7 +241,7 @@ $tdatapayrolltax[".totalsFields"][] = array(
 	"fName" => "Tax",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
-	"viewFormat" => '');
+	"viewFormat" => 'Number');
 
 $tdatapayrolltax[".pageSize"] = 20;
 
@@ -714,7 +712,7 @@ $tdatapayrolltax[".printFields"][] = "PSID";
 	$fdata["GoodName"] = "Tax";
 	$fdata["ownerTable"] = "payrolltax";
 	$fdata["Label"] = GetFieldLabel("payrolltax","Tax");
-	$fdata["FieldType"] = 200;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -754,7 +752,7 @@ $tdatapayrolltax[".printFields"][] = "PSID";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "");
+	$vdata = array("ViewFormat" => "Number");
 
 	
 	
@@ -762,7 +760,8 @@ $tdatapayrolltax[".printFields"][] = "PSID";
 	
 	
 	
-	
+		$vdata["DecimalDigits"] = 2;
+
 	
 	
 	
@@ -928,8 +927,8 @@ $tdatapayrolltax[".printFields"][] = "PSID";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -1060,8 +1059,8 @@ $tdatapayrolltax[".printFields"][] = "PSID";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -1993,7 +1992,8 @@ $queryData_payrolltax = createSqlQuery_payrolltax();
 
 $tdatapayrolltax[".sqlquery"] = $queryData_payrolltax;
 
-$tableEvents["payrolltax"] = new eventsBase;
-$tdatapayrolltax[".hasEvents"] = false;
+include_once(getabspath("include/payrolltax_events.php"));
+$tableEvents["payrolltax"] = new eventclass_payrolltax;
+$tdatapayrolltax[".hasEvents"] = true;
 
 ?>

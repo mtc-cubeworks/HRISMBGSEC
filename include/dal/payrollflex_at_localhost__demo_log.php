@@ -7,7 +7,8 @@ $dalTabledemo_log["EmployeeID"] = array("type"=>3,"varname"=>"EmployeeID", "name
 $dalTabledemo_log["TransID"] = array("type"=>3,"varname"=>"TransID", "name" => "TransID");
 $dalTabledemo_log["MLogID"] = array("type"=>3,"varname"=>"MLogID", "name" => "MLogID");
 $dalTabledemo_log["MLogDate"] = array("type"=>135,"varname"=>"MLogDate", "name" => "MLogDate");
-$dalTabledemo_log["ClockType"] = array("type"=>16,"varname"=>"ClockType", "name" => "ClockType");
+$dalTabledemo_log["ClockType"] = array("type"=>200,"varname"=>"ClockType", "name" => "ClockType");
+$dalTabledemo_log["TransID2"] = array("type"=>3,"varname"=>"TransID2", "name" => "TransID2");
 	$dalTabledemo_log["EmployeeID"]["key"]=true;
 	$dalTabledemo_log["TransID"]["key"]=true;
 

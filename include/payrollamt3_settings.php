@@ -330,7 +330,7 @@ $tdatapayrollamt3[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
 
 $tdatapayrollamt3[".ajaxCodeSnippetAdded"] = false;
 
@@ -1879,8 +1879,8 @@ $tdatapayrollamt3[".printFields"][] = "AgentShare";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -2006,8 +2006,8 @@ $tdatapayrollamt3[".printFields"][] = "AgentShare";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
 
 	
 	
@@ -8838,7 +8838,7 @@ $tdatapayrollamt3[".printFields"][] = "AgentShare";
 	$fdata["GoodName"] = "Ttax";
 	$fdata["ownerTable"] = "payrollamt3";
 	$fdata["Label"] = GetFieldLabel("payrollamt3","Ttax");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -11394,10 +11394,15 @@ $proto149["m_columns"][] = "CHOT";
 $proto149["m_columns"][] = "RDOT";
 $proto149["m_columns"][] = "RD";
 $proto149["m_columns"][] = "ND";
+$proto149["m_columns"][] = "NDOT";
 $proto149["m_columns"][] = "RHND";
+$proto149["m_columns"][] = "RHNDOT";
 $proto149["m_columns"][] = "SHND";
+$proto149["m_columns"][] = "SHNDOT";
 $proto149["m_columns"][] = "CHND";
+$proto149["m_columns"][] = "CHNDOT";
 $proto149["m_columns"][] = "RDND";
+$proto149["m_columns"][] = "RDNDOT";
 $proto149["m_columns"][] = "TND";
 $proto149["m_columns"][] = "VL";
 $proto149["m_columns"][] = "SL";
@@ -11425,6 +11430,7 @@ $proto149["m_columns"][] = "RHNDHrs";
 $proto149["m_columns"][] = "SHNDHrs";
 $proto149["m_columns"][] = "CHNDHrs";
 $proto149["m_columns"][] = "RDNDHrs";
+$proto149["m_columns"][] = "TNDHr";
 $proto149["m_columns"][] = "VLBalance";
 $proto149["m_columns"][] = "SLBalance";
 $proto149["m_columns"][] = "ELBalance";
@@ -11456,6 +11462,33 @@ $proto149["m_columns"][] = "PayrollID";
 $proto149["m_columns"][] = "Division";
 $proto149["m_columns"][] = "Employer";
 $proto149["m_columns"][] = "PayDate";
+$proto149["m_columns"][] = "ThirToDate";
+$proto149["m_columns"][] = "TaxableToDate";
+$proto149["m_columns"][] = "TaxToDate";
+$proto149["m_columns"][] = "DH";
+$proto149["m_columns"][] = "DHpay";
+$proto149["m_columns"][] = "DHRD";
+$proto149["m_columns"][] = "DHRDpay";
+$proto149["m_columns"][] = "DHOT";
+$proto149["m_columns"][] = "DHOTpay";
+$proto149["m_columns"][] = "DHRDOT";
+$proto149["m_columns"][] = "DHRDOTpay";
+$proto149["m_columns"][] = "SHRDND";
+$proto149["m_columns"][] = "SHRDNDpay";
+$proto149["m_columns"][] = "RHRDND";
+$proto149["m_columns"][] = "RHRDNDpay";
+$proto149["m_columns"][] = "SHRDNDOT";
+$proto149["m_columns"][] = "SHRDNDOTpay";
+$proto149["m_columns"][] = "RHRDNDOT";
+$proto149["m_columns"][] = "RHRDNDOTpay";
+$proto149["m_columns"][] = "DHND";
+$proto149["m_columns"][] = "DHNDpay";
+$proto149["m_columns"][] = "DHRDND";
+$proto149["m_columns"][] = "DHRDNDpay";
+$proto149["m_columns"][] = "DHNDOT";
+$proto149["m_columns"][] = "DHNDOTpay";
+$proto149["m_columns"][] = "DHRDNDOT";
+$proto149["m_columns"][] = "DHRDNDOTpay";
 $obj = new SQLTable($proto149);
 
 $proto148["m_table"] = $obj;

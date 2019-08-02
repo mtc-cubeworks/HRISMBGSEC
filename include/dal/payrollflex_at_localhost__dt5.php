@@ -57,6 +57,30 @@ $dalTabledt5["LateMins"] = array("type"=>200,"varname"=>"LateMins", "name" => "L
 $dalTabledt5["UnderstimeMins"] = array("type"=>200,"varname"=>"UnderstimeMins", "name" => "UnderstimeMins");
 $dalTabledt5["BreakLateMins"] = array("type"=>200,"varname"=>"BreakLateMins", "name" => "BreakLateMins");
 $dalTabledt5["EarlyMins"] = array("type"=>200,"varname"=>"EarlyMins", "name" => "EarlyMins");
+$dalTabledt5["ANDOTMins"] = array("type"=>5,"varname"=>"ANDOTMins", "name" => "ANDOTMins");
+$dalTabledt5["RegNDOT"] = array("type"=>5,"varname"=>"RegNDOT", "name" => "RegNDOT");
+$dalTabledt5["RHNDOT"] = array("type"=>5,"varname"=>"RHNDOT", "name" => "RHNDOT");
+$dalTabledt5["SHNDOT"] = array("type"=>5,"varname"=>"SHNDOT", "name" => "SHNDOT");
+$dalTabledt5["CHNDOT"] = array("type"=>5,"varname"=>"CHNDOT", "name" => "CHNDOT");
+$dalTabledt5["RDNDOT"] = array("type"=>5,"varname"=>"RDNDOT", "name" => "RDNDOT");
+$dalTabledt5["SchedType"] = array("type"=>3,"varname"=>"SchedType", "name" => "SchedType");
+$dalTabledt5["RegNDOTHrs"] = array("type"=>5,"varname"=>"RegNDOTHrs", "name" => "RegNDOTHrs");
+$dalTabledt5["RHNDOTHrs"] = array("type"=>5,"varname"=>"RHNDOTHrs", "name" => "RHNDOTHrs");
+$dalTabledt5["SHNDOTHrs"] = array("type"=>5,"varname"=>"SHNDOTHrs", "name" => "SHNDOTHrs");
+$dalTabledt5["CHNDOTHrs"] = array("type"=>5,"varname"=>"CHNDOTHrs", "name" => "CHNDOTHrs");
+$dalTabledt5["RDNDOTHrs"] = array("type"=>5,"varname"=>"RDNDOTHrs", "name" => "RDNDOTHrs");
+$dalTabledt5["DH"] = array("type"=>5,"varname"=>"DH", "name" => "DH");
+$dalTabledt5["DHRD"] = array("type"=>5,"varname"=>"DHRD", "name" => "DHRD");
+$dalTabledt5["DHOT"] = array("type"=>5,"varname"=>"DHOT", "name" => "DHOT");
+$dalTabledt5["DHRDOT"] = array("type"=>5,"varname"=>"DHRDOT", "name" => "DHRDOT");
+$dalTabledt5["SHRDND"] = array("type"=>5,"varname"=>"SHRDND", "name" => "SHRDND");
+$dalTabledt5["RHRDND"] = array("type"=>5,"varname"=>"RHRDND", "name" => "RHRDND");
+$dalTabledt5["SHRDNDOT"] = array("type"=>5,"varname"=>"SHRDNDOT", "name" => "SHRDNDOT");
+$dalTabledt5["RHRDNDOT"] = array("type"=>5,"varname"=>"RHRDNDOT", "name" => "RHRDNDOT");
+$dalTabledt5["DHND"] = array("type"=>5,"varname"=>"DHND", "name" => "DHND");
+$dalTabledt5["DHRDND"] = array("type"=>5,"varname"=>"DHRDND", "name" => "DHRDND");
+$dalTabledt5["DHNDOT"] = array("type"=>5,"varname"=>"DHNDOT", "name" => "DHNDOT");
+$dalTabledt5["DHRDNDOT"] = array("type"=>5,"varname"=>"DHRDNDOT", "name" => "DHRDNDOT");
 
 $dal_info["payrollflex_at_localhost__dt5"] = &$dalTabledt5;
 ?>
