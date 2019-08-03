@@ -45,16 +45,6 @@
 		</div>
 	</div>
 {END RegOTHrs_tabfieldblock}
-{BEGIN RDOTHrs_tabfieldblock}
-	<div class="bs-viewcontrolgroup col-md-6 {$fielddispclass_RDOTHrs}" data-fieldname="RDOTHrs" >
-		<label class=" control-label" for="{$labelfor_RDOTHrs}">
-			{$label indschedule RDOTHrs}
-		</label>
-		<div class="" >
-			{$RDOTHrs_value}
-		</div>
-	</div>
-{END RDOTHrs_tabfieldblock}
 {BEGIN SHOTHrs_tabfieldblock}
 	<div class="bs-viewcontrolgroup col-md-6 {$fielddispclass_SHOTHrs}" data-fieldname="SHOTHrs" >
 		<label class=" control-label" for="{$labelfor_SHOTHrs}">
@@ -75,6 +65,16 @@
 		</div>
 	</div>
 {END CHOTHrs_tabfieldblock}
+{BEGIN RDOTHrs_tabfieldblock}
+	<div class="bs-viewcontrolgroup col-md-6 {$fielddispclass_RDOTHrs}" data-fieldname="RDOTHrs" >
+		<label class=" control-label" for="{$labelfor_RDOTHrs}">
+			{$label indschedule RDOTHrs}
+		</label>
+		<div class="" >
+			{$RDOTHrs_value}
+		</div>
+	</div>
+{END RDOTHrs_tabfieldblock}
 {BEGIN RHOTHrs_tabfieldblock}
 	<div class="bs-viewcontrolgroup col-md-6 {$fielddispclass_RHOTHrs}" data-fieldname="RHOTHrs" >
 		<label class=" control-label" for="{$labelfor_RHOTHrs}">
@@ -95,26 +95,116 @@
 		</div>
 	</div>
 {END TrODay_tabfieldblock}
-{BEGIN RDMins_tabfieldblock}
-	<div class="bs-viewcontrolgroup col-md-6 {$fielddispclass_RDMins}" data-fieldname="RDMins" >
-		<label class=" control-label" for="{$labelfor_RDMins}">
-			{$label indschedule RDMins}
+{BEGIN RegNDOTHrs_tabfieldblock}
+	<div class="bs-viewcontrolgroup col-md-6 {$fielddispclass_RegNDOTHrs}" data-fieldname="RegNDOTHrs" >
+		<label class=" control-label" for="{$labelfor_RegNDOTHrs}">
+			{$label indschedule RegNDOTHrs}
 		</label>
 		<div class="" >
-			{$RDMins_value}
+			{$RegNDOTHrs_value}
 		</div>
 	</div>
-{END RDMins_tabfieldblock}
-{BEGIN ApprovedRD_tabfieldblock}
-	<div class="bs-viewcontrolgroup col-md-6 {$fielddispclass_ApprovedRD}" data-fieldname="ApprovedRD" >
-		<label class=" control-label" for="{$labelfor_ApprovedRD}">
-			{$label indschedule ApprovedRD}
+{END RegNDOTHrs_tabfieldblock}
+{BEGIN RHNDOTHrs_tabfieldblock}
+	<div class="bs-viewcontrolgroup col-md-6 {$fielddispclass_RHNDOTHrs}" data-fieldname="RHNDOTHrs" >
+		<label class=" control-label" for="{$labelfor_RHNDOTHrs}">
+			{$label indschedule RHNDOTHrs}
 		</label>
 		<div class="" >
-			{$ApprovedRD_value}
+			{$RHNDOTHrs_value}
 		</div>
 	</div>
-{END ApprovedRD_tabfieldblock}
+{END RHNDOTHrs_tabfieldblock}
+{BEGIN SHNDOTHrs_tabfieldblock}
+	<div class="bs-viewcontrolgroup col-md-6 {$fielddispclass_SHNDOTHrs}" data-fieldname="SHNDOTHrs" >
+		<label class=" control-label" for="{$labelfor_SHNDOTHrs}">
+			{$label indschedule SHNDOTHrs}
+		</label>
+		<div class="" >
+			{$SHNDOTHrs_value}
+		</div>
+	</div>
+{END SHNDOTHrs_tabfieldblock}
+{BEGIN CHNDOTHrs_tabfieldblock}
+	<div class="bs-viewcontrolgroup col-md-6 {$fielddispclass_CHNDOTHrs}" data-fieldname="CHNDOTHrs" >
+		<label class=" control-label" for="{$labelfor_CHNDOTHrs}">
+			{$label indschedule CHNDOTHrs}
+		</label>
+		<div class="" >
+			{$CHNDOTHrs_value}
+		</div>
+	</div>
+{END CHNDOTHrs_tabfieldblock}
+{BEGIN RDNDOTHrs_tabfieldblock}
+	<div class="bs-viewcontrolgroup col-md-6 {$fielddispclass_RDNDOTHrs}" data-fieldname="RDNDOTHrs" >
+		<label class=" control-label" for="{$labelfor_RDNDOTHrs}">
+			{$label indschedule RDNDOTHrs}
+		</label>
+		<div class="" >
+			{$RDNDOTHrs_value}
+		</div>
+	</div>
+{END RDNDOTHrs_tabfieldblock}
+{BEGIN RHRDNDOT_tabfieldblock}
+	<div class="bs-viewcontrolgroup col-md-6 {$fielddispclass_RHRDNDOT}" data-fieldname="RHRDNDOT" >
+		<label class=" control-label" for="{$labelfor_RHRDNDOT}">
+			{$label indschedule RHRDNDOT}
+		</label>
+		<div class="" >
+			{$RHRDNDOT_value}
+		</div>
+	</div>
+{END RHRDNDOT_tabfieldblock}
+{BEGIN SHRDNDOT_tabfieldblock}
+	<div class="bs-viewcontrolgroup col-md-6 {$fielddispclass_SHRDNDOT}" data-fieldname="SHRDNDOT" >
+		<label class=" control-label" for="{$labelfor_SHRDNDOT}">
+			{$label indschedule SHRDNDOT}
+		</label>
+		<div class="" >
+			{$SHRDNDOT_value}
+		</div>
+	</div>
+{END SHRDNDOT_tabfieldblock}
+{BEGIN DHRDNDOT_tabfieldblock}
+	<div class="bs-viewcontrolgroup col-md-6 {$fielddispclass_DHRDNDOT}" data-fieldname="DHRDNDOT" >
+		<label class=" control-label" for="{$labelfor_DHRDNDOT}">
+			{$label indschedule DHRDNDOT}
+		</label>
+		<div class="" >
+			{$DHRDNDOT_value}
+		</div>
+	</div>
+{END DHRDNDOT_tabfieldblock}
+{BEGIN DHOT_tabfieldblock}
+	<div class="bs-viewcontrolgroup col-md-6 {$fielddispclass_DHOT}" data-fieldname="DHOT" >
+		<label class=" control-label" for="{$labelfor_DHOT}">
+			{$label indschedule DHOT}
+		</label>
+		<div class="" >
+			{$DHOT_value}
+		</div>
+	</div>
+{END DHOT_tabfieldblock}
+{BEGIN DHNDOT_tabfieldblock}
+	<div class="bs-viewcontrolgroup col-md-6 {$fielddispclass_DHNDOT}" data-fieldname="DHNDOT" >
+		<label class=" control-label" for="{$labelfor_DHNDOT}">
+			{$label indschedule DHNDOT}
+		</label>
+		<div class="" >
+			{$DHNDOT_value}
+		</div>
+	</div>
+{END DHNDOT_tabfieldblock}
+{BEGIN DHRDOT_tabfieldblock}
+	<div class="bs-viewcontrolgroup col-md-6 {$fielddispclass_DHRDOT}" data-fieldname="DHRDOT" >
+		<label class=" control-label" for="{$labelfor_DHRDOT}">
+			{$label indschedule DHRDOT}
+		</label>
+		<div class="" >
+			{$DHRDOT_value}
+		</div>
+	</div>
+{END DHRDOT_tabfieldblock}
 </div>
 
 

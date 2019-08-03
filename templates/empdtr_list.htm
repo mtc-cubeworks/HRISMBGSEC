@@ -115,7 +115,7 @@
 	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
 		<button class="btn btn-primary" id="searchButton{$id}" {$searchbutton_attrs}>Search</button>
 		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}>
-		Reset
+		Show all
 		</button>
 	</div>
 </div>
@@ -240,10 +240,10 @@
 {BEGIN searchform_text}<input type="search" class="form-control" {$searchfor_attrs} size="25">
 {END searchform_text}
 	<span class="input-group-btn">
-	{BEGIN searchform_clear_search}<button class="btn btn-default" {$clearSearchCont_attrs} {$clear_searchbutton_attrs} title="Reset">
+	{BEGIN searchform_showall}<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Show all">
 			<span class="glyphicon glyphicon-remove"></span>
 		</button>
-	{END searchform_clear_search}		
+	{END searchform_showall}
 	{BEGIN searchform_search}<button {$searchbutton_attrs} class="btn btn-primary" >
 		<span class="glyphicon glyphicon-search"></span>
 	</button>

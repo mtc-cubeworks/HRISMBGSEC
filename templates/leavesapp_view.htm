@@ -161,6 +161,56 @@
 		</div>
 	</div>
 {END Days_fieldblock}
+					{BEGIN Superior_fieldblock}
+	<div class="{$fielddispclass_Superior} col-md-6 bs-viewcontrolgroup" data-fieldname="Superior">
+		<label class="control-label" for="{$labelfor_Superior}">
+			{$label leavesapp Superior}
+		</label>
+		<div class="" >
+			{$Superior_value}&nbsp;
+		</div>
+	</div>
+{END Superior_fieldblock}
+					{BEGIN TotalDays_fieldblock}
+	<div class="{$fielddispclass_TotalDays} col-md-6 bs-viewcontrolgroup" data-fieldname="TotalDays">
+		<label class="control-label" for="{$labelfor_TotalDays}">
+			{$label leavesapp TotalDays}
+		</label>
+		<div class="" >
+			{$TotalDays_value}&nbsp;
+		</div>
+	</div>
+{END TotalDays_fieldblock}
+					{BEGIN 1stApproval_fieldblock}
+	<div class="{$fielddispclass_1stApproval} col-md-6 bs-viewcontrolgroup" data-fieldname="1stApproval">
+		<label class="control-label" for="{$labelfor_1stApproval}">
+			{$label leavesapp 1stApproval}
+		</label>
+		<div class="" >
+			{$1stApproval_value}&nbsp;
+		</div>
+	</div>
+{END 1stApproval_fieldblock}
+					{BEGIN Superior2_fieldblock}
+	<div class="{$fielddispclass_Superior2} col-md-6 bs-viewcontrolgroup" data-fieldname="Superior2">
+		<label class="control-label" for="{$labelfor_Superior2}">
+			{$label leavesapp Superior2}
+		</label>
+		<div class="" >
+			{$Superior2_value}&nbsp;
+		</div>
+	</div>
+{END Superior2_fieldblock}
+					{BEGIN 2ndApproval_fieldblock}
+	<div class="{$fielddispclass_2ndApproval} col-md-6 bs-viewcontrolgroup" data-fieldname="2ndApproval">
+		<label class="control-label" for="{$labelfor_2ndApproval}">
+			{$label leavesapp 2ndApproval}
+		</label>
+		<div class="" >
+			{$2ndApproval_value}&nbsp;
+		</div>
+	</div>
+{END 2ndApproval_fieldblock}
 					{BEGIN Approved_fieldblock}
 	<div class="{$fielddispclass_Approved} col-md-6 bs-viewcontrolgroup" data-fieldname="Approved">
 		<label class="control-label" for="{$labelfor_Approved}">
@@ -221,16 +271,26 @@
 		</div>
 	</div>
 {END Locked_fieldblock}
-					{BEGIN Superior_fieldblock}
-	<div class="{$fielddispclass_Superior} col-md-6 bs-viewcontrolgroup" data-fieldname="Superior">
-		<label class="control-label" for="{$labelfor_Superior}">
-			{$label leavesapp Superior}
-		</label>
-		<div class="" >
-			{$Superior_value}&nbsp;
+			</div>
+	<div class="bs-2column">
+			
+			
+
+{BEGIN details_leaveremarks}
+<div data-pageid="1" data-container="detailscontainer" class=" bs-details"> 
+	<div class="panel panel-info details-grid">
+		<div class="panel-heading">
+			<h4 class="panel-title">Leave Remarks</h4>
+		</div>
+		<div class="panel-body">
+			{$displayDetailTable_leaveremarks}
 		</div>
 	</div>
-{END Superior_fieldblock}
+</div>
+{END details_leaveremarks}
+	
+	</div>
+	<div class="container">
 	</div>
 </div>
 

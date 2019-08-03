@@ -120,6 +120,31 @@
 				{$label leaves1 Days}
 			</th>
 			{END Days_fieldheadercolumn}
+			{BEGIN TotalDays_fieldheadercolumn}
+			<th class="{$TotalDays_class}" {$TotalDays_style}  data-field="TotalDays">
+				{$label leaves1 TotalDays}
+			</th>
+			{END TotalDays_fieldheadercolumn}
+			{BEGIN Superior_fieldheadercolumn}
+			<th class="{$Superior_class}" {$Superior_style}  data-field="Superior">
+				{$label leaves1 Superior}
+			</th>
+			{END Superior_fieldheadercolumn}
+			{BEGIN 1stApproval_fieldheadercolumn}
+			<th class="{$1stApproval_class}" {$1stApproval_style}  data-field="1stApproval">
+				{$label leaves1 1stApproval}
+			</th>
+			{END 1stApproval_fieldheadercolumn}
+			{BEGIN Superior2_fieldheadercolumn}
+			<th class="{$Superior2_class}" {$Superior2_style}  data-field="Superior2">
+				{$label leaves1 Superior2}
+			</th>
+			{END Superior2_fieldheadercolumn}
+			{BEGIN 2ndApproval_fieldheadercolumn}
+			<th class="{$2ndApproval_class}" {$2ndApproval_style}  data-field="2ndApproval">
+				{$label leaves1 2ndApproval}
+			</th>
+			{END 2ndApproval_fieldheadercolumn}
 			{BEGIN Approved_fieldheadercolumn}
 			<th class="{$Approved_class}" {$Approved_style}  data-field="Approved">
 				{$label leaves1 Approved}
@@ -150,11 +175,6 @@
 				{$label leaves1 Locked}
 			</th>
 			{END Locked_fieldheadercolumn}
-			{BEGIN Superior_fieldheadercolumn}
-			<th class="{$Superior_class}" {$Superior_style}  data-field="Superior">
-				{$label leaves1 Superior}
-			</th>
-			{END Superior_fieldheadercolumn}
 			{BEGIN endrecordheader_block}
 			<th class="rnr-cs">&nbsp;</th>
 			{END endrecordheader_block}
@@ -217,6 +237,31 @@
 				{$Days_value}
 			</td>
 			{END Days_fieldcolumn}
+			{BEGIN TotalDays_fieldcolumn}
+			<td  class="{$TotalDays_class}" {$TotalDays_style} {$recordattrs}>
+				{$TotalDays_value}
+			</td>
+			{END TotalDays_fieldcolumn}
+			{BEGIN Superior_fieldcolumn}
+			<td  class="{$Superior_class}" {$Superior_style} {$recordattrs}>
+				{$Superior_value}
+			</td>
+			{END Superior_fieldcolumn}
+			{BEGIN 1stApproval_fieldcolumn}
+			<td  class="{$1stApproval_class}" {$1stApproval_style} {$recordattrs}>
+				{$1stApproval_value}
+			</td>
+			{END 1stApproval_fieldcolumn}
+			{BEGIN Superior2_fieldcolumn}
+			<td  class="{$Superior2_class}" {$Superior2_style} {$recordattrs}>
+				{$Superior2_value}
+			</td>
+			{END Superior2_fieldcolumn}
+			{BEGIN 2ndApproval_fieldcolumn}
+			<td  class="{$2ndApproval_class}" {$2ndApproval_style} {$recordattrs}>
+				{$2ndApproval_value}
+			</td>
+			{END 2ndApproval_fieldcolumn}
 			{BEGIN Approved_fieldcolumn}
 			<td  class="{$Approved_class}" {$Approved_style} {$recordattrs}>
 				{$Approved_value}
@@ -247,11 +292,6 @@
 				{$Locked_value}
 			</td>
 			{END Locked_fieldcolumn}
-			{BEGIN Superior_fieldcolumn}
-			<td  class="{$Superior_class}" {$Superior_style} {$recordattrs}>
-				{$Superior_value}
-			</td>
-			{END Superior_fieldcolumn}
 			{BEGIN endrecord_block}
 			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
 			{END endrecord_block}

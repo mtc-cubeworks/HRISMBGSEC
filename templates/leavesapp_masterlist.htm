@@ -1,0 +1,145 @@
+<div {$pageattrs}>
+
+{BEGIN container_column}
+<div class="rnr-c rnr-ch rnr-c-column">
+
+{BEGIN masterlist_title}
+<div  class="style1 rnr-bl rnr-b-masterlistheader {$brickclass_masterlistheader}"><a {$backtomasterlink_attrs} class="btn btn-link btn-xs">Back to {$backtomasterlink_caption}</a><span>{$pagetitlelabel leavesapp masterlist}</span></div>
+{END masterlist_title}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_column}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+	<style>
+	.bs-gridcell[data-field=LvID]:before {
+		content: "{$label leavesapp LvID}";
+	}
+	.bs-gridcell[data-field=FromDate]:before {
+		content: "{$label leavesapp FromDate}";
+	}
+	.bs-gridcell[data-field=LeaveType]:before {
+		content: "{$label leavesapp LeaveType}";
+	}
+	.bs-gridcell[data-field=Days]:before {
+		content: "{$label leavesapp Days}";
+	}
+	.bs-gridcell[data-field=EmployeeID]:before {
+		content: "{$label leavesapp EmployeeID}";
+	}
+	.bs-gridcell[data-field=ToDate]:before {
+		content: "{$label leavesapp ToDate}";
+	}
+	.bs-gridcell[data-field=Approved]:before {
+		content: "{$label leavesapp Approved}";
+	}
+	.bs-gridcell[data-field=ApprovedDate]:before {
+		content: "{$label leavesapp ApprovedDate}";
+	}
+	.bs-gridcell[data-field=Approvedby]:before {
+		content: "{$label leavesapp Approvedby}";
+	}
+	.bs-gridcell[data-field=Posted]:before {
+		content: "{$label leavesapp Posted}";
+	}
+	.bs-gridcell[data-field=DateCreated]:before {
+		content: "{$label leavesapp DateCreated}";
+	}
+	.bs-gridcell[data-field=ApprovedTime]:before {
+		content: "{$label leavesapp ApprovedTime}";
+	}
+	.bs-gridcell[data-field=FirstHalf]:before {
+		content: "{$label leavesapp FirstHalf}";
+	}
+	.bs-gridcell[data-field=SecondHalf]:before {
+		content: "{$label leavesapp SecondHalf}";
+	}
+	.bs-gridcell[data-field=Locked]:before {
+		content: "{$label leavesapp Locked}";
+	}
+	.bs-gridcell[data-field=Superior]:before {
+		content: "{$label leavesapp Superior}";
+	}
+	.bs-gridcell[data-field=Reason]:before {
+		content: "{$label leavesapp Reason}";
+	}
+	.bs-gridcell[data-field=Superior2]:before {
+		content: "{$label leavesapp Superior2}";
+	}
+	.bs-gridcell[data-field=1stApproval]:before {
+		content: "{$label leavesapp 1stApproval}";
+	}
+	.bs-gridcell[data-field=2ndApproval]:before {
+		content: "{$label leavesapp 2ndApproval}";
+	}
+	.bs-gridcell[data-field=TotalDays]:before {
+		content: "{$label leavesapp TotalDays}";
+	}
+</style>
+<table {$masterlistgrid_hiddenattr} data-pageid="{$pageid}" data-brick="masterlistgrid" class="table rnr-b-mastergridfields rnr-gridtable bs-flexgrid" >
+		<thead>
+		<tr>
+			<th class="{$LvID_class}">{$label leavesapp LvID}</th>
+			<th class="{$DateCreated_class}">{$label leavesapp DateCreated}</th>
+			<th class="{$LeaveType_class}">{$label leavesapp LeaveType}</th>
+			<th class="{$EmployeeID_class}">{$label leavesapp EmployeeID}</th>
+			<th class="{$FromDate_class}">{$label leavesapp FromDate}</th>
+			<th class="{$ToDate_class}">{$label leavesapp ToDate}</th>
+			<th class="{$Reason_class}">{$label leavesapp Reason}</th>
+			<th class="{$FirstHalf_class}">{$label leavesapp FirstHalf}</th>
+			<th class="{$SecondHalf_class}">{$label leavesapp SecondHalf}</th>
+			<th class="{$Days_class}">{$label leavesapp Days}</th>
+			<th class="{$Superior_class}">{$label leavesapp Superior}</th>
+			<th class="{$1stApproval_class}">{$label leavesapp 1stApproval}</th>
+			<th class="{$TotalDays_class}">{$label leavesapp TotalDays}</th>
+			<th class="{$Superior2_class}">{$label leavesapp Superior2}</th>
+			<th class="{$2ndApproval_class}">{$label leavesapp 2ndApproval}</th>
+			<th class="{$Approved_class}">{$label leavesapp Approved}</th>
+			<th class="{$ApprovedDate_class}">{$label leavesapp ApprovedDate}</th>
+			<th class="{$ApprovedTime_class}">{$label leavesapp ApprovedTime}</th>
+			<th class="{$Approvedby_class}">{$label leavesapp Approvedby}</th>
+			<th class="{$Posted_class}">{$label leavesapp Posted}</th>
+			<th class="{$Locked_class}">{$label leavesapp Locked}</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td class="{$LvID_class} bs-gridcell" data-field=LvID>{$LvID_mastervalue}</td>
+			<td class="{$DateCreated_class} bs-gridcell" data-field=DateCreated>{$DateCreated_mastervalue}</td>
+			<td class="{$LeaveType_class} bs-gridcell" data-field=LeaveType>{$LeaveType_mastervalue}</td>
+			<td class="{$EmployeeID_class} bs-gridcell" data-field=EmployeeID>{$EmployeeID_mastervalue}</td>
+			<td class="{$FromDate_class} bs-gridcell" data-field=FromDate>{$FromDate_mastervalue}</td>
+			<td class="{$ToDate_class} bs-gridcell" data-field=ToDate>{$ToDate_mastervalue}</td>
+			<td class="{$Reason_class} bs-gridcell" data-field=Reason>{$Reason_mastervalue}</td>
+			<td class="{$FirstHalf_class} bs-gridcell" data-field=FirstHalf>{$FirstHalf_mastervalue}</td>
+			<td class="{$SecondHalf_class} bs-gridcell" data-field=SecondHalf>{$SecondHalf_mastervalue}</td>
+			<td class="{$Days_class} bs-gridcell" data-field=Days>{$Days_mastervalue}</td>
+			<td class="{$Superior_class} bs-gridcell" data-field=Superior>{$Superior_mastervalue}</td>
+			<td class="{$1stApproval_class} bs-gridcell" data-field=1stApproval>{$1stApproval_mastervalue}</td>
+			<td class="{$TotalDays_class} bs-gridcell" data-field=TotalDays>{$TotalDays_mastervalue}</td>
+			<td class="{$Superior2_class} bs-gridcell" data-field=Superior2>{$Superior2_mastervalue}</td>
+			<td class="{$2ndApproval_class} bs-gridcell" data-field=2ndApproval>{$2ndApproval_mastervalue}</td>
+			<td class="{$Approved_class} bs-gridcell" data-field=Approved>{$Approved_mastervalue}</td>
+			<td class="{$ApprovedDate_class} bs-gridcell" data-field=ApprovedDate>{$ApprovedDate_mastervalue}</td>
+			<td class="{$ApprovedTime_class} bs-gridcell" data-field=ApprovedTime>{$ApprovedTime_mastervalue}</td>
+			<td class="{$Approvedby_class} bs-gridcell" data-field=Approvedby>{$Approvedby_mastervalue}</td>
+			<td class="{$Posted_class} bs-gridcell" data-field=Posted>{$Posted_mastervalue}</td>
+			<td class="{$Locked_class} bs-gridcell" data-field=Locked>{$Locked_mastervalue}</td>
+		</tr>
+	</tbody>
+
+</table> 
+
+
+
+
+{END container_mastergrid}
+
+</div>

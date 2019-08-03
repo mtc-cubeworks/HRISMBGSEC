@@ -544,6 +544,9 @@
 	.bs-gridcell[data-field=Inactive]:before {
 		content: "{$label loans Inactive}";
 	}
+	.bs-gridcell[data-field=OPrincipal]:before {
+		content: "{$label loans OPrincipal}";
+	}
 </style>
 <table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
 	<thead>
@@ -583,6 +586,19 @@
 									{END EmployeeID_fieldheader}
 									</th>
 									{END EmployeeID_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN OPrincipal_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$OPrincipal_class}" data-field=OPrincipal>
+									{BEGIN OPrincipal_fieldheader}
+																				<span {$OPrincipal_orderlinkattrs}>
+											{$label loans OPrincipal}
+										</span>
+									{END OPrincipal_fieldheader}
+									</th>
+									{END OPrincipal_fieldheadercolumn}
 									
 									
 									
@@ -747,6 +763,13 @@
 {END EmployeeID_fieldcolumn}
 
 
+	{BEGIN OPrincipal_fieldcolumn}
+	<td class="bs-gridcell {$OPrincipal_class}"  data-field=OPrincipal {$rowstyle} {$recordattrs}>
+		{$OPrincipal_value}
+	</td>
+{END OPrincipal_fieldcolumn}
+
+
 	{BEGIN Principal_fieldcolumn}
 	<td class="bs-gridcell {$Principal_class}"  data-field=Principal {$rowstyle} {$recordattrs}>
 		{$Principal_value}
@@ -825,6 +848,14 @@
 										<td class="bs-gridcell {$EmployeeID_class}" data-field="EmployeeID">
 																				</td>
 										{END EmployeeID_fieldfootercolumn}
+										{BEGIN OPrincipal_fieldfootercolumn}
+										<td class="bs-gridcell {$OPrincipal_class}" data-field="OPrincipal">
+																					{BEGIN OPrincipal_showtotal}
+																							Total:
+											{$OPrincipal_total}
+											{END OPrincipal_showtotal}
+										</td>
+										{END OPrincipal_fieldfootercolumn}
 										{BEGIN Principal_fieldfootercolumn}
 										<td class="bs-gridcell {$Principal_class}" data-field="Principal">
 																					{BEGIN Principal_showtotal}

@@ -1,6 +1,0 @@
-Import into ssstable
-4/11/2019 7:27:57 AM
-
-37 out of 37 records processed successfully.
-37 records added.
-0 records updated.

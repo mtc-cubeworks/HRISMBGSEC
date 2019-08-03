@@ -28,6 +28,7 @@
 			<th class="{$Department_class}">{$label dt5 Department}</th>
 			<th class="{$WageType_class}">{$label dt5 WageType}</th>
 			<th class="{$SDate_class}">{$label dt5 SDate}</th>
+			<th class="{$SchedType_class}">{$label dt5 SchedType}</th>
 			<th class="{$DayIs_class}">{$label dt5 DayIs}</th>
 			<th class="{$RestDay_class}">{$label dt5 RestDay}</th>
 			<th class="{$STimeIn_class}">{$label dt5 STimeIn}</th>
@@ -51,8 +52,14 @@
 			<th class="{$NDMins_class}">{$label dt5 NDMins}</th>
 			<th class="{$ApprovedNightDiff_class}">{$label dt5 ApprovedNightDiff}</th>
 			<th class="{$ANDiff_class}">{$label dt5 ANDiff}</th>
+			<th class="{$ANDOTMins_class}">{$label dt5 ANDOTMins}</th>
 			<th class="{$ApprovedRD_class}">{$label dt5 ApprovedRD}</th>
 			<th class="{$RDMins_class}">{$label dt5 RDMins}</th>
+			<th class="{$RDNDOTHrs_class}">{$label dt5 RDNDOTHrs}</th>
+			<th class="{$CHNDOTHrs_class}">{$label dt5 CHNDOTHrs}</th>
+			<th class="{$SHNDOTHrs_class}">{$label dt5 SHNDOTHrs}</th>
+			<th class="{$RHNDOTHrs_class}">{$label dt5 RHNDOTHrs}</th>
+			<th class="{$RegNDOTHrs_class}">{$label dt5 RegNDOTHrs}</th>
 			<th class="{$RHolidayHrs_class}">{$label dt5 RHolidayHrs}</th>
 			<th class="{$SHolidayHrs_class}">{$label dt5 SHolidayHrs}</th>
 			<th class="{$CHolidayHrs_class}">{$label dt5 CHolidayHrs}</th>
@@ -71,6 +78,23 @@
 			<th class="{$SHND_class}">{$label dt5 SHND}</th>
 			<th class="{$CHND_class}">{$label dt5 CHND}</th>
 			<th class="{$RDND_class}">{$label dt5 RDND}</th>
+			<th class="{$RegNDOT_class}">{$label dt5 RegNDOT}</th>
+			<th class="{$RHNDOT_class}">{$label dt5 RHNDOT}</th>
+			<th class="{$SHNDOT_class}">{$label dt5 SHNDOT}</th>
+			<th class="{$CHNDOT_class}">{$label dt5 CHNDOT}</th>
+			<th class="{$RDNDOT_class}">{$label dt5 RDNDOT}</th>
+			<th class="{$DH_class}">{$label dt5 DH}</th>
+			<th class="{$DHRD_class}">{$label dt5 DHRD}</th>
+			<th class="{$DHOT_class}">{$label dt5 DHOT}</th>
+			<th class="{$DHRDOT_class}">{$label dt5 DHRDOT}</th>
+			<th class="{$SHRDND_class}">{$label dt5 SHRDND}</th>
+			<th class="{$RHRDND_class}">{$label dt5 RHRDND}</th>
+			<th class="{$RHRDNDOT_class}">{$label dt5 RHRDNDOT}</th>
+			<th class="{$SHRDNDOT_class}">{$label dt5 SHRDNDOT}</th>
+			<th class="{$DHND_class}">{$label dt5 DHND}</th>
+			<th class="{$DHRDND_class}">{$label dt5 DHRDND}</th>
+			<th class="{$DHNDOT_class}">{$label dt5 DHNDOT}</th>
+			<th class="{$DHRDNDOT_class}">{$label dt5 DHRDNDOT}</th>
 			<th class="{$Rlink_class}">{$label dt5 Rlink}</th>
 		</tr>
 	</thead>
@@ -84,6 +108,7 @@
 			<td class="{$Department_class}">{$Department_mastervalue}</td>
 			<td class="{$WageType_class}">{$WageType_mastervalue}</td>
 			<td class="{$SDate_class}">{$SDate_mastervalue}</td>
+			<td class="{$SchedType_class}">{$SchedType_mastervalue}</td>
 			<td class="{$DayIs_class}">{$DayIs_mastervalue}</td>
 			<td class="{$RestDay_class}">{$RestDay_mastervalue}</td>
 			<td class="{$STimeIn_class}">{$STimeIn_mastervalue}</td>
@@ -107,8 +132,14 @@
 			<td class="{$NDMins_class}">{$NDMins_mastervalue}</td>
 			<td class="{$ApprovedNightDiff_class}">{$ApprovedNightDiff_mastervalue}</td>
 			<td class="{$ANDiff_class}">{$ANDiff_mastervalue}</td>
+			<td class="{$ANDOTMins_class}">{$ANDOTMins_mastervalue}</td>
 			<td class="{$ApprovedRD_class}">{$ApprovedRD_mastervalue}</td>
 			<td class="{$RDMins_class}">{$RDMins_mastervalue}</td>
+			<td class="{$RDNDOTHrs_class}">{$RDNDOTHrs_mastervalue}</td>
+			<td class="{$CHNDOTHrs_class}">{$CHNDOTHrs_mastervalue}</td>
+			<td class="{$SHNDOTHrs_class}">{$SHNDOTHrs_mastervalue}</td>
+			<td class="{$RHNDOTHrs_class}">{$RHNDOTHrs_mastervalue}</td>
+			<td class="{$RegNDOTHrs_class}">{$RegNDOTHrs_mastervalue}</td>
 			<td class="{$RHolidayHrs_class}">{$RHolidayHrs_mastervalue}</td>
 			<td class="{$SHolidayHrs_class}">{$SHolidayHrs_mastervalue}</td>
 			<td class="{$CHolidayHrs_class}">{$CHolidayHrs_mastervalue}</td>
@@ -127,6 +158,23 @@
 			<td class="{$SHND_class}">{$SHND_mastervalue}</td>
 			<td class="{$CHND_class}">{$CHND_mastervalue}</td>
 			<td class="{$RDND_class}">{$RDND_mastervalue}</td>
+			<td class="{$RegNDOT_class}">{$RegNDOT_mastervalue}</td>
+			<td class="{$RHNDOT_class}">{$RHNDOT_mastervalue}</td>
+			<td class="{$SHNDOT_class}">{$SHNDOT_mastervalue}</td>
+			<td class="{$CHNDOT_class}">{$CHNDOT_mastervalue}</td>
+			<td class="{$RDNDOT_class}">{$RDNDOT_mastervalue}</td>
+			<td class="{$DH_class}">{$DH_mastervalue}</td>
+			<td class="{$DHRD_class}">{$DHRD_mastervalue}</td>
+			<td class="{$DHOT_class}">{$DHOT_mastervalue}</td>
+			<td class="{$DHRDOT_class}">{$DHRDOT_mastervalue}</td>
+			<td class="{$SHRDND_class}">{$SHRDND_mastervalue}</td>
+			<td class="{$RHRDND_class}">{$RHRDND_mastervalue}</td>
+			<td class="{$RHRDNDOT_class}">{$RHRDNDOT_mastervalue}</td>
+			<td class="{$SHRDNDOT_class}">{$SHRDNDOT_mastervalue}</td>
+			<td class="{$DHND_class}">{$DHND_mastervalue}</td>
+			<td class="{$DHRDND_class}">{$DHRDND_mastervalue}</td>
+			<td class="{$DHNDOT_class}">{$DHNDOT_mastervalue}</td>
+			<td class="{$DHRDNDOT_class}">{$DHRDNDOT_mastervalue}</td>
 			<td class="{$Rlink_class}">{$Rlink_mastervalue}</td>
 		</tr>
 	</tbody>

@@ -141,6 +141,16 @@
 		</div>
 	</div>
 {END SDate_fieldblock}
+					{BEGIN SchedType_fieldblock}
+	<div class="{$fielddispclass_SchedType} col-md-6 bs-viewcontrolgroup" data-fieldname="SchedType">
+		<label class="control-label" for="{$labelfor_SchedType}">
+			{$label dt5 SchedType}
+		</label>
+		<div class="" >
+			{$SchedType_value}&nbsp;
+		</div>
+	</div>
+{END SchedType_fieldblock}
 					{BEGIN DayIs_fieldblock}
 	<div class="{$fielddispclass_DayIs} col-md-6 bs-viewcontrolgroup" data-fieldname="DayIs">
 		<label class="control-label" for="{$labelfor_DayIs}">
@@ -371,6 +381,16 @@
 		</div>
 	</div>
 {END ANDiff_fieldblock}
+					{BEGIN ANDOTMins_fieldblock}
+	<div class="{$fielddispclass_ANDOTMins} col-md-6 bs-viewcontrolgroup" data-fieldname="ANDOTMins">
+		<label class="control-label" for="{$labelfor_ANDOTMins}">
+			{$label dt5 ANDOTMins}
+		</label>
+		<div class="" >
+			{$ANDOTMins_value}&nbsp;
+		</div>
+	</div>
+{END ANDOTMins_fieldblock}
 					{BEGIN ApprovedRD_fieldblock}
 	<div class="{$fielddispclass_ApprovedRD} col-md-6 bs-viewcontrolgroup" data-fieldname="ApprovedRD">
 		<label class="control-label" for="{$labelfor_ApprovedRD}">
@@ -391,6 +411,56 @@
 		</div>
 	</div>
 {END RDMins_fieldblock}
+					{BEGIN RDNDOTHrs_fieldblock}
+	<div class="{$fielddispclass_RDNDOTHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="RDNDOTHrs">
+		<label class="control-label" for="{$labelfor_RDNDOTHrs}">
+			{$label dt5 RDNDOTHrs}
+		</label>
+		<div class="" >
+			{$RDNDOTHrs_value}&nbsp;
+		</div>
+	</div>
+{END RDNDOTHrs_fieldblock}
+					{BEGIN CHNDOTHrs_fieldblock}
+	<div class="{$fielddispclass_CHNDOTHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="CHNDOTHrs">
+		<label class="control-label" for="{$labelfor_CHNDOTHrs}">
+			{$label dt5 CHNDOTHrs}
+		</label>
+		<div class="" >
+			{$CHNDOTHrs_value}&nbsp;
+		</div>
+	</div>
+{END CHNDOTHrs_fieldblock}
+					{BEGIN SHNDOTHrs_fieldblock}
+	<div class="{$fielddispclass_SHNDOTHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="SHNDOTHrs">
+		<label class="control-label" for="{$labelfor_SHNDOTHrs}">
+			{$label dt5 SHNDOTHrs}
+		</label>
+		<div class="" >
+			{$SHNDOTHrs_value}&nbsp;
+		</div>
+	</div>
+{END SHNDOTHrs_fieldblock}
+					{BEGIN RHNDOTHrs_fieldblock}
+	<div class="{$fielddispclass_RHNDOTHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="RHNDOTHrs">
+		<label class="control-label" for="{$labelfor_RHNDOTHrs}">
+			{$label dt5 RHNDOTHrs}
+		</label>
+		<div class="" >
+			{$RHNDOTHrs_value}&nbsp;
+		</div>
+	</div>
+{END RHNDOTHrs_fieldblock}
+					{BEGIN RegNDOTHrs_fieldblock}
+	<div class="{$fielddispclass_RegNDOTHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="RegNDOTHrs">
+		<label class="control-label" for="{$labelfor_RegNDOTHrs}">
+			{$label dt5 RegNDOTHrs}
+		</label>
+		<div class="" >
+			{$RegNDOTHrs_value}&nbsp;
+		</div>
+	</div>
+{END RegNDOTHrs_fieldblock}
 					{BEGIN RHolidayHrs_fieldblock}
 	<div class="{$fielddispclass_RHolidayHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="RHolidayHrs">
 		<label class="control-label" for="{$labelfor_RHolidayHrs}">
@@ -561,6 +631,186 @@
 		</div>
 	</div>
 {END CHND_fieldblock}
+					{BEGIN RDND_fieldblock}
+	<div class="{$fielddispclass_RDND} col-md-6 bs-viewcontrolgroup" data-fieldname="RDND">
+		<label class="control-label" for="{$labelfor_RDND}">
+			{$label dt5 RDND}
+		</label>
+		<div class="" >
+			{$RDND_value}&nbsp;
+		</div>
+	</div>
+{END RDND_fieldblock}
+					{BEGIN RegNDOT_fieldblock}
+	<div class="{$fielddispclass_RegNDOT} col-md-6 bs-viewcontrolgroup" data-fieldname="RegNDOT">
+		<label class="control-label" for="{$labelfor_RegNDOT}">
+			{$label dt5 RegNDOT}
+		</label>
+		<div class="" >
+			{$RegNDOT_value}&nbsp;
+		</div>
+	</div>
+{END RegNDOT_fieldblock}
+					{BEGIN RHNDOT_fieldblock}
+	<div class="{$fielddispclass_RHNDOT} col-md-6 bs-viewcontrolgroup" data-fieldname="RHNDOT">
+		<label class="control-label" for="{$labelfor_RHNDOT}">
+			{$label dt5 RHNDOT}
+		</label>
+		<div class="" >
+			{$RHNDOT_value}&nbsp;
+		</div>
+	</div>
+{END RHNDOT_fieldblock}
+					{BEGIN SHNDOT_fieldblock}
+	<div class="{$fielddispclass_SHNDOT} col-md-6 bs-viewcontrolgroup" data-fieldname="SHNDOT">
+		<label class="control-label" for="{$labelfor_SHNDOT}">
+			{$label dt5 SHNDOT}
+		</label>
+		<div class="" >
+			{$SHNDOT_value}&nbsp;
+		</div>
+	</div>
+{END SHNDOT_fieldblock}
+					{BEGIN CHNDOT_fieldblock}
+	<div class="{$fielddispclass_CHNDOT} col-md-6 bs-viewcontrolgroup" data-fieldname="CHNDOT">
+		<label class="control-label" for="{$labelfor_CHNDOT}">
+			{$label dt5 CHNDOT}
+		</label>
+		<div class="" >
+			{$CHNDOT_value}&nbsp;
+		</div>
+	</div>
+{END CHNDOT_fieldblock}
+					{BEGIN RDNDOT_fieldblock}
+	<div class="{$fielddispclass_RDNDOT} col-md-6 bs-viewcontrolgroup" data-fieldname="RDNDOT">
+		<label class="control-label" for="{$labelfor_RDNDOT}">
+			{$label dt5 RDNDOT}
+		</label>
+		<div class="" >
+			{$RDNDOT_value}&nbsp;
+		</div>
+	</div>
+{END RDNDOT_fieldblock}
+					{BEGIN DH_fieldblock}
+	<div class="{$fielddispclass_DH} col-md-6 bs-viewcontrolgroup" data-fieldname="DH">
+		<label class="control-label" for="{$labelfor_DH}">
+			{$label dt5 DH}
+		</label>
+		<div class="" >
+			{$DH_value}&nbsp;
+		</div>
+	</div>
+{END DH_fieldblock}
+					{BEGIN DHRD_fieldblock}
+	<div class="{$fielddispclass_DHRD} col-md-6 bs-viewcontrolgroup" data-fieldname="DHRD">
+		<label class="control-label" for="{$labelfor_DHRD}">
+			{$label dt5 DHRD}
+		</label>
+		<div class="" >
+			{$DHRD_value}&nbsp;
+		</div>
+	</div>
+{END DHRD_fieldblock}
+					{BEGIN DHOT_fieldblock}
+	<div class="{$fielddispclass_DHOT} col-md-6 bs-viewcontrolgroup" data-fieldname="DHOT">
+		<label class="control-label" for="{$labelfor_DHOT}">
+			{$label dt5 DHOT}
+		</label>
+		<div class="" >
+			{$DHOT_value}&nbsp;
+		</div>
+	</div>
+{END DHOT_fieldblock}
+					{BEGIN DHRDOT_fieldblock}
+	<div class="{$fielddispclass_DHRDOT} col-md-6 bs-viewcontrolgroup" data-fieldname="DHRDOT">
+		<label class="control-label" for="{$labelfor_DHRDOT}">
+			{$label dt5 DHRDOT}
+		</label>
+		<div class="" >
+			{$DHRDOT_value}&nbsp;
+		</div>
+	</div>
+{END DHRDOT_fieldblock}
+					{BEGIN SHRDND_fieldblock}
+	<div class="{$fielddispclass_SHRDND} col-md-6 bs-viewcontrolgroup" data-fieldname="SHRDND">
+		<label class="control-label" for="{$labelfor_SHRDND}">
+			{$label dt5 SHRDND}
+		</label>
+		<div class="" >
+			{$SHRDND_value}&nbsp;
+		</div>
+	</div>
+{END SHRDND_fieldblock}
+					{BEGIN RHRDND_fieldblock}
+	<div class="{$fielddispclass_RHRDND} col-md-6 bs-viewcontrolgroup" data-fieldname="RHRDND">
+		<label class="control-label" for="{$labelfor_RHRDND}">
+			{$label dt5 RHRDND}
+		</label>
+		<div class="" >
+			{$RHRDND_value}&nbsp;
+		</div>
+	</div>
+{END RHRDND_fieldblock}
+					{BEGIN RHRDNDOT_fieldblock}
+	<div class="{$fielddispclass_RHRDNDOT} col-md-6 bs-viewcontrolgroup" data-fieldname="RHRDNDOT">
+		<label class="control-label" for="{$labelfor_RHRDNDOT}">
+			{$label dt5 RHRDNDOT}
+		</label>
+		<div class="" >
+			{$RHRDNDOT_value}&nbsp;
+		</div>
+	</div>
+{END RHRDNDOT_fieldblock}
+					{BEGIN SHRDNDOT_fieldblock}
+	<div class="{$fielddispclass_SHRDNDOT} col-md-6 bs-viewcontrolgroup" data-fieldname="SHRDNDOT">
+		<label class="control-label" for="{$labelfor_SHRDNDOT}">
+			{$label dt5 SHRDNDOT}
+		</label>
+		<div class="" >
+			{$SHRDNDOT_value}&nbsp;
+		</div>
+	</div>
+{END SHRDNDOT_fieldblock}
+					{BEGIN DHND_fieldblock}
+	<div class="{$fielddispclass_DHND} col-md-6 bs-viewcontrolgroup" data-fieldname="DHND">
+		<label class="control-label" for="{$labelfor_DHND}">
+			{$label dt5 DHND}
+		</label>
+		<div class="" >
+			{$DHND_value}&nbsp;
+		</div>
+	</div>
+{END DHND_fieldblock}
+					{BEGIN DHRDND_fieldblock}
+	<div class="{$fielddispclass_DHRDND} col-md-6 bs-viewcontrolgroup" data-fieldname="DHRDND">
+		<label class="control-label" for="{$labelfor_DHRDND}">
+			{$label dt5 DHRDND}
+		</label>
+		<div class="" >
+			{$DHRDND_value}&nbsp;
+		</div>
+	</div>
+{END DHRDND_fieldblock}
+					{BEGIN DHNDOT_fieldblock}
+	<div class="{$fielddispclass_DHNDOT} col-md-6 bs-viewcontrolgroup" data-fieldname="DHNDOT">
+		<label class="control-label" for="{$labelfor_DHNDOT}">
+			{$label dt5 DHNDOT}
+		</label>
+		<div class="" >
+			{$DHNDOT_value}&nbsp;
+		</div>
+	</div>
+{END DHNDOT_fieldblock}
+					{BEGIN DHRDNDOT_fieldblock}
+	<div class="{$fielddispclass_DHRDNDOT} col-md-6 bs-viewcontrolgroup" data-fieldname="DHRDNDOT">
+		<label class="control-label" for="{$labelfor_DHRDNDOT}">
+			{$label dt5 DHRDNDOT}
+		</label>
+		<div class="" >
+			{$DHRDNDOT_value}&nbsp;
+		</div>
+	</div>
+{END DHRDNDOT_fieldblock}
 			</div>
 	<div class="bs-2column">
 			
@@ -581,16 +831,6 @@
 	
 	</div>
 	<div class="container">
-					{BEGIN RDND_fieldblock}
-	<div class="{$fielddispclass_RDND} col-md-6 bs-viewcontrolgroup" data-fieldname="RDND">
-		<label class="control-label" for="{$labelfor_RDND}">
-			{$label dt5 RDND}
-		</label>
-		<div class="" >
-			{$RDND_value}&nbsp;
-		</div>
-	</div>
-{END RDND_fieldblock}
 					{BEGIN Rlink_fieldblock}
 	<div class="{$fielddispclass_Rlink} col-md-6 bs-viewcontrolgroup" data-fieldname="Rlink">
 		<label class="control-label" for="{$labelfor_Rlink}">

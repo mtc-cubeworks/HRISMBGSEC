@@ -595,6 +595,60 @@
 	.bs-gridcell[data-field=PreTimeInMins]:before {
 		content: "{$label standardsetup PreTimeInMins}";
 	}
+	.bs-gridcell[data-field=BonusAnnualLimit]:before {
+		content: "{$label standardsetup BonusAnnualLimit}";
+	}
+	.bs-gridcell[data-field=RegNDOTFactor]:before {
+		content: "{$label standardsetup RegNDOTFactor}";
+	}
+	.bs-gridcell[data-field=RHNDOTFactor]:before {
+		content: "{$label standardsetup RHNDOTFactor}";
+	}
+	.bs-gridcell[data-field=SHNDOTFactor]:before {
+		content: "{$label standardsetup SHNDOTFactor}";
+	}
+	.bs-gridcell[data-field=CHNDOTFactor]:before {
+		content: "{$label standardsetup CHNDOTFactor}";
+	}
+	.bs-gridcell[data-field=RDNDOTFactor]:before {
+		content: "{$label standardsetup RDNDOTFactor}";
+	}
+	.bs-gridcell[data-field=DoubleHoliday]:before {
+		content: "{$label standardsetup DoubleHoliday}";
+	}
+	.bs-gridcell[data-field=DoubleHolidayRD]:before {
+		content: "{$label standardsetup DoubleHolidayRD}";
+	}
+	.bs-gridcell[data-field=DoubleHolidayOT]:before {
+		content: "{$label standardsetup DoubleHolidayOT}";
+	}
+	.bs-gridcell[data-field=DoubleHolidayRDOT]:before {
+		content: "{$label standardsetup DoubleHolidayRDOT}";
+	}
+	.bs-gridcell[data-field=SHRDNDFactor]:before {
+		content: "{$label standardsetup SHRDNDFactor}";
+	}
+	.bs-gridcell[data-field=RHRDNDFactor]:before {
+		content: "{$label standardsetup RHRDNDFactor}";
+	}
+	.bs-gridcell[data-field=SHRDNDOTFactor]:before {
+		content: "{$label standardsetup SHRDNDOTFactor}";
+	}
+	.bs-gridcell[data-field=RHRDNDOTFacotr]:before {
+		content: "{$label standardsetup RHRDNDOTFacotr}";
+	}
+	.bs-gridcell[data-field=DoubleHolidayND]:before {
+		content: "{$label standardsetup DoubleHolidayND}";
+	}
+	.bs-gridcell[data-field=DoubleHolidayRDND]:before {
+		content: "{$label standardsetup DoubleHolidayRDND}";
+	}
+	.bs-gridcell[data-field=DoubleHolidayNDOT]:before {
+		content: "{$label standardsetup DoubleHolidayNDOT}";
+	}
+	.bs-gridcell[data-field=DoubleHolidayRDNDOT]:before {
+		content: "{$label standardsetup DoubleHolidayRDNDOT}";
+	}
 </style>
 <table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
 	<thead>
@@ -660,6 +714,123 @@
 									{END WorkingDaysInYearDailies_fieldheader}
 									</th>
 									{END WorkingDaysInYearDailies_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN AllowableLeaveFrom_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$AllowableLeaveFrom_class}" data-field=AllowableLeaveFrom>
+									{BEGIN AllowableLeaveFrom_fieldheader}
+																				<span {$AllowableLeaveFrom_orderlinkattrs}>
+											{$label standardsetup AllowableLeaveFrom}
+										</span>
+									{END AllowableLeaveFrom_fieldheader}
+									</th>
+									{END AllowableLeaveFrom_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN AllowableLeaveTo_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$AllowableLeaveTo_class}" data-field=AllowableLeaveTo>
+									{BEGIN AllowableLeaveTo_fieldheader}
+																				<span {$AllowableLeaveTo_orderlinkattrs}>
+											{$label standardsetup AllowableLeaveTo}
+										</span>
+									{END AllowableLeaveTo_fieldheader}
+									</th>
+									{END AllowableLeaveTo_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RHFactor_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RHFactor_class}" data-field=RHFactor>
+									{BEGIN RHFactor_fieldheader}
+																				<span {$RHFactor_orderlinkattrs}>
+											{$label standardsetup RHFactor}
+										</span>
+									{END RHFactor_fieldheader}
+									</th>
+									{END RHFactor_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SHFactor_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SHFactor_class}" data-field=SHFactor>
+									{BEGIN SHFactor_fieldheader}
+																				<span {$SHFactor_orderlinkattrs}>
+											{$label standardsetup SHFactor}
+										</span>
+									{END SHFactor_fieldheader}
+									</th>
+									{END SHFactor_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SHFactorDaily_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SHFactorDaily_class}" data-field=SHFactorDaily>
+									{BEGIN SHFactorDaily_fieldheader}
+																				<span {$SHFactorDaily_orderlinkattrs}>
+											{$label standardsetup SHFactorDaily}
+										</span>
+									{END SHFactorDaily_fieldheader}
+									</th>
+									{END SHFactorDaily_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN CHFactor_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$CHFactor_class}" data-field=CHFactor>
+									{BEGIN CHFactor_fieldheader}
+																				<span {$CHFactor_orderlinkattrs}>
+											{$label standardsetup CHFactor}
+										</span>
+									{END CHFactor_fieldheader}
+									</th>
+									{END CHFactor_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN CHFactorDaily_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$CHFactorDaily_class}" data-field=CHFactorDaily>
+									{BEGIN CHFactorDaily_fieldheader}
+																				<span {$CHFactorDaily_orderlinkattrs}>
+											{$label standardsetup CHFactorDaily}
+										</span>
+									{END CHFactorDaily_fieldheader}
+									</th>
+									{END CHFactorDaily_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN DoubleHoliday_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$DoubleHoliday_class}" data-field=DoubleHoliday>
+									{BEGIN DoubleHoliday_fieldheader}
+																				<span {$DoubleHoliday_orderlinkattrs}>
+											{$label standardsetup DoubleHoliday}
+										</span>
+									{END DoubleHoliday_fieldheader}
+									</th>
+									{END DoubleHoliday_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN ReqBeforeHoliday_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$ReqBeforeHoliday_class}" data-field=ReqBeforeHoliday>
+									{BEGIN ReqBeforeHoliday_fieldheader}
+																				<span {$ReqBeforeHoliday_orderlinkattrs}>
+											{$label standardsetup ReqBeforeHoliday}
+										</span>
+									{END ReqBeforeHoliday_fieldheader}
+									</th>
+									{END ReqBeforeHoliday_fieldheadercolumn}
 									
 									
 									
@@ -794,106 +965,132 @@
 									
 									
 									
-									{BEGIN AllowableLeaveFrom_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$AllowableLeaveFrom_class}" data-field=AllowableLeaveFrom>
-									{BEGIN AllowableLeaveFrom_fieldheader}
-																				<span {$AllowableLeaveFrom_orderlinkattrs}>
-											{$label standardsetup AllowableLeaveFrom}
+									{BEGIN RHNDOTFactor_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RHNDOTFactor_class}" data-field=RHNDOTFactor>
+									{BEGIN RHNDOTFactor_fieldheader}
+																				<span {$RHNDOTFactor_orderlinkattrs}>
+											{$label standardsetup RHNDOTFactor}
 										</span>
-									{END AllowableLeaveFrom_fieldheader}
+									{END RHNDOTFactor_fieldheader}
 									</th>
-									{END AllowableLeaveFrom_fieldheadercolumn}
+									{END RHNDOTFactor_fieldheadercolumn}
 									
 									
 									
 									
-									{BEGIN AllowableLeaveTo_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$AllowableLeaveTo_class}" data-field=AllowableLeaveTo>
-									{BEGIN AllowableLeaveTo_fieldheader}
-																				<span {$AllowableLeaveTo_orderlinkattrs}>
-											{$label standardsetup AllowableLeaveTo}
+									{BEGIN SHNDOTFactor_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SHNDOTFactor_class}" data-field=SHNDOTFactor>
+									{BEGIN SHNDOTFactor_fieldheader}
+																				<span {$SHNDOTFactor_orderlinkattrs}>
+											{$label standardsetup SHNDOTFactor}
 										</span>
-									{END AllowableLeaveTo_fieldheader}
+									{END SHNDOTFactor_fieldheader}
 									</th>
-									{END AllowableLeaveTo_fieldheadercolumn}
+									{END SHNDOTFactor_fieldheadercolumn}
 									
 									
 									
 									
-									{BEGIN RHFactor_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$RHFactor_class}" data-field=RHFactor>
-									{BEGIN RHFactor_fieldheader}
-																				<span {$RHFactor_orderlinkattrs}>
-											{$label standardsetup RHFactor}
+									{BEGIN CHNDOTFactor_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$CHNDOTFactor_class}" data-field=CHNDOTFactor>
+									{BEGIN CHNDOTFactor_fieldheader}
+																				<span {$CHNDOTFactor_orderlinkattrs}>
+											{$label standardsetup CHNDOTFactor}
 										</span>
-									{END RHFactor_fieldheader}
+									{END CHNDOTFactor_fieldheader}
 									</th>
-									{END RHFactor_fieldheadercolumn}
+									{END CHNDOTFactor_fieldheadercolumn}
 									
 									
 									
 									
-									{BEGIN SHFactor_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$SHFactor_class}" data-field=SHFactor>
-									{BEGIN SHFactor_fieldheader}
-																				<span {$SHFactor_orderlinkattrs}>
-											{$label standardsetup SHFactor}
+									{BEGIN RDNDOTFactor_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RDNDOTFactor_class}" data-field=RDNDOTFactor>
+									{BEGIN RDNDOTFactor_fieldheader}
+																				<span {$RDNDOTFactor_orderlinkattrs}>
+											{$label standardsetup RDNDOTFactor}
 										</span>
-									{END SHFactor_fieldheader}
+									{END RDNDOTFactor_fieldheader}
 									</th>
-									{END SHFactor_fieldheadercolumn}
+									{END RDNDOTFactor_fieldheadercolumn}
 									
 									
 									
 									
-									{BEGIN SHFactorDaily_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$SHFactorDaily_class}" data-field=SHFactorDaily>
-									{BEGIN SHFactorDaily_fieldheader}
-																				<span {$SHFactorDaily_orderlinkattrs}>
-											{$label standardsetup SHFactorDaily}
+									{BEGIN RHRDNDOTFacotr_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RHRDNDOTFacotr_class}" data-field=RHRDNDOTFacotr>
+									{BEGIN RHRDNDOTFacotr_fieldheader}
+																				<span {$RHRDNDOTFacotr_orderlinkattrs}>
+											{$label standardsetup RHRDNDOTFacotr}
 										</span>
-									{END SHFactorDaily_fieldheader}
+									{END RHRDNDOTFacotr_fieldheader}
 									</th>
-									{END SHFactorDaily_fieldheadercolumn}
+									{END RHRDNDOTFacotr_fieldheadercolumn}
 									
 									
 									
 									
-									{BEGIN CHFactor_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$CHFactor_class}" data-field=CHFactor>
-									{BEGIN CHFactor_fieldheader}
-																				<span {$CHFactor_orderlinkattrs}>
-											{$label standardsetup CHFactor}
+									{BEGIN SHRDNDOTFactor_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SHRDNDOTFactor_class}" data-field=SHRDNDOTFactor>
+									{BEGIN SHRDNDOTFactor_fieldheader}
+																				<span {$SHRDNDOTFactor_orderlinkattrs}>
+											{$label standardsetup SHRDNDOTFactor}
 										</span>
-									{END CHFactor_fieldheader}
+									{END SHRDNDOTFactor_fieldheader}
 									</th>
-									{END CHFactor_fieldheadercolumn}
+									{END SHRDNDOTFactor_fieldheadercolumn}
 									
 									
 									
 									
-									{BEGIN CHFactorDaily_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$CHFactorDaily_class}" data-field=CHFactorDaily>
-									{BEGIN CHFactorDaily_fieldheader}
-																				<span {$CHFactorDaily_orderlinkattrs}>
-											{$label standardsetup CHFactorDaily}
+									{BEGIN DoubleHolidayOT_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$DoubleHolidayOT_class}" data-field=DoubleHolidayOT>
+									{BEGIN DoubleHolidayOT_fieldheader}
+																				<span {$DoubleHolidayOT_orderlinkattrs}>
+											{$label standardsetup DoubleHolidayOT}
 										</span>
-									{END CHFactorDaily_fieldheader}
+									{END DoubleHolidayOT_fieldheader}
 									</th>
-									{END CHFactorDaily_fieldheadercolumn}
+									{END DoubleHolidayOT_fieldheadercolumn}
 									
 									
 									
 									
-									{BEGIN ReqBeforeHoliday_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$ReqBeforeHoliday_class}" data-field=ReqBeforeHoliday>
-									{BEGIN ReqBeforeHoliday_fieldheader}
-																				<span {$ReqBeforeHoliday_orderlinkattrs}>
-											{$label standardsetup ReqBeforeHoliday}
+									{BEGIN DoubleHolidayRDOT_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$DoubleHolidayRDOT_class}" data-field=DoubleHolidayRDOT>
+									{BEGIN DoubleHolidayRDOT_fieldheader}
+																				<span {$DoubleHolidayRDOT_orderlinkattrs}>
+											{$label standardsetup DoubleHolidayRDOT}
 										</span>
-									{END ReqBeforeHoliday_fieldheader}
+									{END DoubleHolidayRDOT_fieldheader}
 									</th>
-									{END ReqBeforeHoliday_fieldheadercolumn}
+									{END DoubleHolidayRDOT_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN DoubleHolidayNDOT_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$DoubleHolidayNDOT_class}" data-field=DoubleHolidayNDOT>
+									{BEGIN DoubleHolidayNDOT_fieldheader}
+																				<span {$DoubleHolidayNDOT_orderlinkattrs}>
+											{$label standardsetup DoubleHolidayNDOT}
+										</span>
+									{END DoubleHolidayNDOT_fieldheader}
+									</th>
+									{END DoubleHolidayNDOT_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN DoubleHolidayRDNDOT_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$DoubleHolidayRDNDOT_class}" data-field=DoubleHolidayRDNDOT>
+									{BEGIN DoubleHolidayRDNDOT_fieldheader}
+																				<span {$DoubleHolidayRDNDOT_orderlinkattrs}>
+											{$label standardsetup DoubleHolidayRDNDOT}
+										</span>
+									{END DoubleHolidayRDNDOT_fieldheader}
+									</th>
+									{END DoubleHolidayRDNDOT_fieldheadercolumn}
 									
 									
 									
@@ -989,6 +1186,71 @@
 									
 									
 									
+									{BEGIN RegNDOTFactor_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RegNDOTFactor_class}" data-field=RegNDOTFactor>
+									{BEGIN RegNDOTFactor_fieldheader}
+																				<span {$RegNDOTFactor_orderlinkattrs}>
+											{$label standardsetup RegNDOTFactor}
+										</span>
+									{END RegNDOTFactor_fieldheader}
+									</th>
+									{END RegNDOTFactor_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RHRDNDFactor_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RHRDNDFactor_class}" data-field=RHRDNDFactor>
+									{BEGIN RHRDNDFactor_fieldheader}
+																				<span {$RHRDNDFactor_orderlinkattrs}>
+											{$label standardsetup RHRDNDFactor}
+										</span>
+									{END RHRDNDFactor_fieldheader}
+									</th>
+									{END RHRDNDFactor_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SHRDNDFactor_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SHRDNDFactor_class}" data-field=SHRDNDFactor>
+									{BEGIN SHRDNDFactor_fieldheader}
+																				<span {$SHRDNDFactor_orderlinkattrs}>
+											{$label standardsetup SHRDNDFactor}
+										</span>
+									{END SHRDNDFactor_fieldheader}
+									</th>
+									{END SHRDNDFactor_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN DoubleHolidayND_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$DoubleHolidayND_class}" data-field=DoubleHolidayND>
+									{BEGIN DoubleHolidayND_fieldheader}
+																				<span {$DoubleHolidayND_orderlinkattrs}>
+											{$label standardsetup DoubleHolidayND}
+										</span>
+									{END DoubleHolidayND_fieldheader}
+									</th>
+									{END DoubleHolidayND_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN DoubleHolidayRDND_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$DoubleHolidayRDND_class}" data-field=DoubleHolidayRDND>
+									{BEGIN DoubleHolidayRDND_fieldheader}
+																				<span {$DoubleHolidayRDND_orderlinkattrs}>
+											{$label standardsetup DoubleHolidayRDND}
+										</span>
+									{END DoubleHolidayRDND_fieldheader}
+									</th>
+									{END DoubleHolidayRDND_fieldheadercolumn}
+									
+									
+									
+									
 									{BEGIN RDFactor_fieldheadercolumn}
 									<th class="rnr-gridfieldlabel {$RDFactor_class}" data-field=RDFactor>
 									{BEGIN RDFactor_fieldheader}
@@ -1037,6 +1299,32 @@
 									{END SHRDFactorDaily_fieldheader}
 									</th>
 									{END SHRDFactorDaily_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN DoubleHolidayRD_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$DoubleHolidayRD_class}" data-field=DoubleHolidayRD>
+									{BEGIN DoubleHolidayRD_fieldheader}
+																				<span {$DoubleHolidayRD_orderlinkattrs}>
+											{$label standardsetup DoubleHolidayRD}
+										</span>
+									{END DoubleHolidayRD_fieldheader}
+									</th>
+									{END DoubleHolidayRD_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN BonusAnnualLimit_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$BonusAnnualLimit_class}" data-field=BonusAnnualLimit>
+									{BEGIN BonusAnnualLimit_fieldheader}
+																				<span {$BonusAnnualLimit_orderlinkattrs}>
+											{$label standardsetup BonusAnnualLimit}
+										</span>
+									{END BonusAnnualLimit_fieldheader}
+									</th>
+									{END BonusAnnualLimit_fieldheadercolumn}
 									
 									
 									
@@ -1119,6 +1407,69 @@
 {END WorkingDaysInYearDailies_fieldcolumn}
 
 
+	{BEGIN AllowableLeaveFrom_fieldcolumn}
+	<td class="bs-gridcell {$AllowableLeaveFrom_class}"  data-field=AllowableLeaveFrom {$rowstyle} {$recordattrs}>
+		{$AllowableLeaveFrom_value}
+	</td>
+{END AllowableLeaveFrom_fieldcolumn}
+
+
+	{BEGIN AllowableLeaveTo_fieldcolumn}
+	<td class="bs-gridcell {$AllowableLeaveTo_class}"  data-field=AllowableLeaveTo {$rowstyle} {$recordattrs}>
+		{$AllowableLeaveTo_value}
+	</td>
+{END AllowableLeaveTo_fieldcolumn}
+
+
+	{BEGIN RHFactor_fieldcolumn}
+	<td class="bs-gridcell {$RHFactor_class}"  data-field=RHFactor {$rowstyle} {$recordattrs}>
+		{$RHFactor_value}
+	</td>
+{END RHFactor_fieldcolumn}
+
+
+	{BEGIN SHFactor_fieldcolumn}
+	<td class="bs-gridcell {$SHFactor_class}"  data-field=SHFactor {$rowstyle} {$recordattrs}>
+		{$SHFactor_value}
+	</td>
+{END SHFactor_fieldcolumn}
+
+
+	{BEGIN SHFactorDaily_fieldcolumn}
+	<td class="bs-gridcell {$SHFactorDaily_class}"  data-field=SHFactorDaily {$rowstyle} {$recordattrs}>
+		{$SHFactorDaily_value}
+	</td>
+{END SHFactorDaily_fieldcolumn}
+
+
+	{BEGIN CHFactor_fieldcolumn}
+	<td class="bs-gridcell {$CHFactor_class}"  data-field=CHFactor {$rowstyle} {$recordattrs}>
+		{$CHFactor_value}
+	</td>
+{END CHFactor_fieldcolumn}
+
+
+	{BEGIN CHFactorDaily_fieldcolumn}
+	<td class="bs-gridcell {$CHFactorDaily_class}"  data-field=CHFactorDaily {$rowstyle} {$recordattrs}>
+		{$CHFactorDaily_value}
+	</td>
+{END CHFactorDaily_fieldcolumn}
+
+
+	{BEGIN DoubleHoliday_fieldcolumn}
+	<td class="bs-gridcell {$DoubleHoliday_class}"  data-field=DoubleHoliday {$rowstyle} {$recordattrs}>
+		{$DoubleHoliday_value}
+	</td>
+{END DoubleHoliday_fieldcolumn}
+
+
+	{BEGIN ReqBeforeHoliday_fieldcolumn}
+	<td class="bs-gridcell {$ReqBeforeHoliday_class}"  data-field=ReqBeforeHoliday {$rowstyle} {$recordattrs}>
+		{$ReqBeforeHoliday_value}
+	</td>
+{END ReqBeforeHoliday_fieldcolumn}
+
+
 	{BEGIN RegOTFactor_fieldcolumn}
 	<td class="bs-gridcell {$RegOTFactor_class}"  data-field=RegOTFactor {$rowstyle} {$recordattrs}>
 		{$RegOTFactor_value}
@@ -1189,60 +1540,74 @@
 {END SHRDOTFactorDaily_fieldcolumn}
 
 
-	{BEGIN AllowableLeaveFrom_fieldcolumn}
-	<td class="bs-gridcell {$AllowableLeaveFrom_class}"  data-field=AllowableLeaveFrom {$rowstyle} {$recordattrs}>
-		{$AllowableLeaveFrom_value}
+	{BEGIN RHNDOTFactor_fieldcolumn}
+	<td class="bs-gridcell {$RHNDOTFactor_class}"  data-field=RHNDOTFactor {$rowstyle} {$recordattrs}>
+		{$RHNDOTFactor_value}
 	</td>
-{END AllowableLeaveFrom_fieldcolumn}
+{END RHNDOTFactor_fieldcolumn}
 
 
-	{BEGIN AllowableLeaveTo_fieldcolumn}
-	<td class="bs-gridcell {$AllowableLeaveTo_class}"  data-field=AllowableLeaveTo {$rowstyle} {$recordattrs}>
-		{$AllowableLeaveTo_value}
+	{BEGIN SHNDOTFactor_fieldcolumn}
+	<td class="bs-gridcell {$SHNDOTFactor_class}"  data-field=SHNDOTFactor {$rowstyle} {$recordattrs}>
+		{$SHNDOTFactor_value}
 	</td>
-{END AllowableLeaveTo_fieldcolumn}
+{END SHNDOTFactor_fieldcolumn}
 
 
-	{BEGIN RHFactor_fieldcolumn}
-	<td class="bs-gridcell {$RHFactor_class}"  data-field=RHFactor {$rowstyle} {$recordattrs}>
-		{$RHFactor_value}
+	{BEGIN CHNDOTFactor_fieldcolumn}
+	<td class="bs-gridcell {$CHNDOTFactor_class}"  data-field=CHNDOTFactor {$rowstyle} {$recordattrs}>
+		{$CHNDOTFactor_value}
 	</td>
-{END RHFactor_fieldcolumn}
+{END CHNDOTFactor_fieldcolumn}
 
 
-	{BEGIN SHFactor_fieldcolumn}
-	<td class="bs-gridcell {$SHFactor_class}"  data-field=SHFactor {$rowstyle} {$recordattrs}>
-		{$SHFactor_value}
+	{BEGIN RDNDOTFactor_fieldcolumn}
+	<td class="bs-gridcell {$RDNDOTFactor_class}"  data-field=RDNDOTFactor {$rowstyle} {$recordattrs}>
+		{$RDNDOTFactor_value}
 	</td>
-{END SHFactor_fieldcolumn}
+{END RDNDOTFactor_fieldcolumn}
 
 
-	{BEGIN SHFactorDaily_fieldcolumn}
-	<td class="bs-gridcell {$SHFactorDaily_class}"  data-field=SHFactorDaily {$rowstyle} {$recordattrs}>
-		{$SHFactorDaily_value}
+	{BEGIN RHRDNDOTFacotr_fieldcolumn}
+	<td class="bs-gridcell {$RHRDNDOTFacotr_class}"  data-field=RHRDNDOTFacotr {$rowstyle} {$recordattrs}>
+		{$RHRDNDOTFacotr_value}
 	</td>
-{END SHFactorDaily_fieldcolumn}
+{END RHRDNDOTFacotr_fieldcolumn}
 
 
-	{BEGIN CHFactor_fieldcolumn}
-	<td class="bs-gridcell {$CHFactor_class}"  data-field=CHFactor {$rowstyle} {$recordattrs}>
-		{$CHFactor_value}
+	{BEGIN SHRDNDOTFactor_fieldcolumn}
+	<td class="bs-gridcell {$SHRDNDOTFactor_class}"  data-field=SHRDNDOTFactor {$rowstyle} {$recordattrs}>
+		{$SHRDNDOTFactor_value}
 	</td>
-{END CHFactor_fieldcolumn}
+{END SHRDNDOTFactor_fieldcolumn}
 
 
-	{BEGIN CHFactorDaily_fieldcolumn}
-	<td class="bs-gridcell {$CHFactorDaily_class}"  data-field=CHFactorDaily {$rowstyle} {$recordattrs}>
-		{$CHFactorDaily_value}
+	{BEGIN DoubleHolidayOT_fieldcolumn}
+	<td class="bs-gridcell {$DoubleHolidayOT_class}"  data-field=DoubleHolidayOT {$rowstyle} {$recordattrs}>
+		{$DoubleHolidayOT_value}
 	</td>
-{END CHFactorDaily_fieldcolumn}
+{END DoubleHolidayOT_fieldcolumn}
 
 
-	{BEGIN ReqBeforeHoliday_fieldcolumn}
-	<td class="bs-gridcell {$ReqBeforeHoliday_class}"  data-field=ReqBeforeHoliday {$rowstyle} {$recordattrs}>
-		{$ReqBeforeHoliday_value}
+	{BEGIN DoubleHolidayRDOT_fieldcolumn}
+	<td class="bs-gridcell {$DoubleHolidayRDOT_class}"  data-field=DoubleHolidayRDOT {$rowstyle} {$recordattrs}>
+		{$DoubleHolidayRDOT_value}
 	</td>
-{END ReqBeforeHoliday_fieldcolumn}
+{END DoubleHolidayRDOT_fieldcolumn}
+
+
+	{BEGIN DoubleHolidayNDOT_fieldcolumn}
+	<td class="bs-gridcell {$DoubleHolidayNDOT_class}"  data-field=DoubleHolidayNDOT {$rowstyle} {$recordattrs}>
+		{$DoubleHolidayNDOT_value}
+	</td>
+{END DoubleHolidayNDOT_fieldcolumn}
+
+
+	{BEGIN DoubleHolidayRDNDOT_fieldcolumn}
+	<td class="bs-gridcell {$DoubleHolidayRDNDOT_class}"  data-field=DoubleHolidayRDNDOT {$rowstyle} {$recordattrs}>
+		{$DoubleHolidayRDNDOT_value}
+	</td>
+{END DoubleHolidayRDNDOT_fieldcolumn}
 
 
 	{BEGIN NightDiffStartTime_fieldcolumn}
@@ -1294,6 +1659,41 @@
 {END RDNDiffFactor_fieldcolumn}
 
 
+	{BEGIN RegNDOTFactor_fieldcolumn}
+	<td class="bs-gridcell {$RegNDOTFactor_class}"  data-field=RegNDOTFactor {$rowstyle} {$recordattrs}>
+		{$RegNDOTFactor_value}
+	</td>
+{END RegNDOTFactor_fieldcolumn}
+
+
+	{BEGIN RHRDNDFactor_fieldcolumn}
+	<td class="bs-gridcell {$RHRDNDFactor_class}"  data-field=RHRDNDFactor {$rowstyle} {$recordattrs}>
+		{$RHRDNDFactor_value}
+	</td>
+{END RHRDNDFactor_fieldcolumn}
+
+
+	{BEGIN SHRDNDFactor_fieldcolumn}
+	<td class="bs-gridcell {$SHRDNDFactor_class}"  data-field=SHRDNDFactor {$rowstyle} {$recordattrs}>
+		{$SHRDNDFactor_value}
+	</td>
+{END SHRDNDFactor_fieldcolumn}
+
+
+	{BEGIN DoubleHolidayND_fieldcolumn}
+	<td class="bs-gridcell {$DoubleHolidayND_class}"  data-field=DoubleHolidayND {$rowstyle} {$recordattrs}>
+		{$DoubleHolidayND_value}
+	</td>
+{END DoubleHolidayND_fieldcolumn}
+
+
+	{BEGIN DoubleHolidayRDND_fieldcolumn}
+	<td class="bs-gridcell {$DoubleHolidayRDND_class}"  data-field=DoubleHolidayRDND {$rowstyle} {$recordattrs}>
+		{$DoubleHolidayRDND_value}
+	</td>
+{END DoubleHolidayRDND_fieldcolumn}
+
+
 	{BEGIN RDFactor_fieldcolumn}
 	<td class="bs-gridcell {$RDFactor_class}"  data-field=RDFactor {$rowstyle} {$recordattrs}>
 		{$RDFactor_value}
@@ -1320,6 +1720,20 @@
 		{$SHRDFactorDaily_value}
 	</td>
 {END SHRDFactorDaily_fieldcolumn}
+
+
+	{BEGIN DoubleHolidayRD_fieldcolumn}
+	<td class="bs-gridcell {$DoubleHolidayRD_class}"  data-field=DoubleHolidayRD {$rowstyle} {$recordattrs}>
+		{$DoubleHolidayRD_value}
+	</td>
+{END DoubleHolidayRD_fieldcolumn}
+
+
+	{BEGIN BonusAnnualLimit_fieldcolumn}
+	<td class="bs-gridcell {$BonusAnnualLimit_class}"  data-field=BonusAnnualLimit {$rowstyle} {$recordattrs}>
+		{$BonusAnnualLimit_value}
+	</td>
+{END BonusAnnualLimit_fieldcolumn}
 
 	{BEGIN endrecord_block}
 	<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>

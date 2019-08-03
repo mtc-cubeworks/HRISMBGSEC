@@ -75,16 +75,21 @@
 				{$label indleave LtID}
 			</th>
 			{END LtID_fieldheadercolumn}
-			{BEGIN LeaveType_fieldheadercolumn}
-			<th class="{$LeaveType_class}" {$LeaveType_style}  data-field="LeaveType">
-				{$label indleave LeaveType}
-			</th>
-			{END LeaveType_fieldheadercolumn}
 			{BEGIN EmployeeID_fieldheadercolumn}
 			<th class="{$EmployeeID_class}" {$EmployeeID_style}  data-field="EmployeeID">
 				{$label indleave EmployeeID}
 			</th>
 			{END EmployeeID_fieldheadercolumn}
+			{BEGIN LeaveType_fieldheadercolumn}
+			<th class="{$LeaveType_class}" {$LeaveType_style}  data-field="LeaveType">
+				{$label indleave LeaveType}
+			</th>
+			{END LeaveType_fieldheadercolumn}
+			{BEGIN Reason_fieldheadercolumn}
+			<th class="{$Reason_class}" {$Reason_style}  data-field="Reason">
+				{$label indleave Reason}
+			</th>
+			{END Reason_fieldheadercolumn}
 			{BEGIN LDate_fieldheadercolumn}
 			<th class="{$LDate_class}" {$LDate_style}  data-field="LDate">
 				{$label indleave LDate}
@@ -132,16 +137,21 @@
 				{$LtID_value}
 			</td>
 			{END LtID_fieldcolumn}
-			{BEGIN LeaveType_fieldcolumn}
-			<td  class="{$LeaveType_class}" {$LeaveType_style} {$recordattrs}>
-				{$LeaveType_value}
-			</td>
-			{END LeaveType_fieldcolumn}
 			{BEGIN EmployeeID_fieldcolumn}
 			<td  class="{$EmployeeID_class}" {$EmployeeID_style} {$recordattrs}>
 				{$EmployeeID_value}
 			</td>
 			{END EmployeeID_fieldcolumn}
+			{BEGIN LeaveType_fieldcolumn}
+			<td  class="{$LeaveType_class}" {$LeaveType_style} {$recordattrs}>
+				{$LeaveType_value}
+			</td>
+			{END LeaveType_fieldcolumn}
+			{BEGIN Reason_fieldcolumn}
+			<td  class="{$Reason_class}" {$Reason_style} {$recordattrs}>
+				{$Reason_value}
+			</td>
+			{END Reason_fieldcolumn}
 			{BEGIN LDate_fieldcolumn}
 			<td  class="{$LDate_class}" {$LDate_style} {$recordattrs}>
 				{$LDate_value}

@@ -105,9 +105,6 @@
 	.bs-gridcell[data-field=SSSEC]:before {
 		content: "{$label demo_user SSSEC}";
 	}
-	.bs-gridcell[data-field=PresetTax]:before {
-		content: "{$label demo_user PresetTax}";
-	}
 	.bs-gridcell[data-field=Level]:before {
 		content: "{$label demo_user Level}";
 	}
@@ -177,6 +174,24 @@
 	.bs-gridcell[data-field=WithAdditionalBreaks]:before {
 		content: "{$label demo_user WithAdditionalBreaks}";
 	}
+	.bs-gridcell[data-field=TaxPeriods]:before {
+		content: "{$label demo_user TaxPeriods}";
+	}
+	.bs-gridcell[data-field=PresetMoNonTax]:before {
+		content: "{$label demo_user PresetMoNonTax}";
+	}
+	.bs-gridcell[data-field=PreCalMoTaxable]:before {
+		content: "{$label demo_user PreCalMoTaxable}";
+	}
+	.bs-gridcell[data-field=CalMonthly]:before {
+		content: "{$label demo_user CalMonthly}";
+	}
+	.bs-gridcell[data-field=TaxPerPeriod]:before {
+		content: "{$label demo_user TaxPerPeriod}";
+	}
+	.bs-gridcell[data-field=Superior2]:before {
+		content: "{$label demo_user Superior2}";
+	}
 </style>
 <table {$masterlistgrid_hiddenattr} data-pageid="{$pageid}" data-brick="masterlistgrid" class="table rnr-b-mastergridfields rnr-gridtable bs-flexgrid" >
 		<thead>
@@ -194,6 +209,7 @@
 			<th class="{$Status_class}">{$label demo_user Status}</th>
 			<th class="{$Position_class}">{$label demo_user Position}</th>
 			<th class="{$Superior_class}">{$label demo_user Superior}</th>
+			<th class="{$Superior2_class}">{$label demo_user Superior2}</th>
 			<th class="{$Mobile_class}">{$label demo_user Mobile}</th>
 			<th class="{$Address_class}">{$label demo_user Address}</th>
 			<th class="{$Birthday_class}">{$label demo_user Birthday}</th>
@@ -219,13 +235,17 @@
 			<th class="{$PhilHealthER_class}">{$label demo_user PhilHealthER}</th>
 			<th class="{$PagIbigEE_class}">{$label demo_user PagIbigEE}</th>
 			<th class="{$PagIbigER_class}">{$label demo_user PagIbigER}</th>
-			<th class="{$PresetTax_class}">{$label demo_user PresetTax}</th>
 			<th class="{$NoLateDeduction_class}">{$label demo_user NoLateDeduction}</th>
 			<th class="{$GracePeriodMins_class}">{$label demo_user GracePeriodMins}</th>
 			<th class="{$WithAdditionalBreaks_class}">{$label demo_user WithAdditionalBreaks}</th>
 			<th class="{$IncludeBreakLate_class}">{$label demo_user IncludeBreakLate}</th>
 			<th class="{$LateFixPenalty_class}">{$label demo_user LateFixPenalty}</th>
 			<th class="{$user_id_class}">{$label demo_user user_id}</th>
+			<th class="{$CalMonthly_class}">{$label demo_user CalMonthly}</th>
+			<th class="{$PresetMoNonTax_class}">{$label demo_user PresetMoNonTax}</th>
+			<th class="{$PreCalMoTaxable_class}">{$label demo_user PreCalMoTaxable}</th>
+			<th class="{$TaxPeriods_class}">{$label demo_user TaxPeriods}</th>
+			<th class="{$TaxPerPeriod_class}">{$label demo_user TaxPerPeriod}</th>
 			<th class="{$DateCreated_class}">{$label demo_user DateCreated}</th>
 			<th class="{$Preparedby_class}">{$label demo_user Preparedby}</th>
 			<th class="{$Checked_class}">{$label demo_user Checked}</th>
@@ -252,6 +272,7 @@
 			<td class="{$Status_class} bs-gridcell" data-field=Status>{$Status_mastervalue}</td>
 			<td class="{$Position_class} bs-gridcell" data-field=Position>{$Position_mastervalue}</td>
 			<td class="{$Superior_class} bs-gridcell" data-field=Superior>{$Superior_mastervalue}</td>
+			<td class="{$Superior2_class} bs-gridcell" data-field=Superior2>{$Superior2_mastervalue}</td>
 			<td class="{$Mobile_class} bs-gridcell" data-field=Mobile>{$Mobile_mastervalue}</td>
 			<td class="{$Address_class} bs-gridcell" data-field=Address>{$Address_mastervalue}</td>
 			<td class="{$Birthday_class} bs-gridcell" data-field=Birthday>{$Birthday_mastervalue}</td>
@@ -277,13 +298,17 @@
 			<td class="{$PhilHealthER_class} bs-gridcell" data-field=PhilHealthER>{$PhilHealthER_mastervalue}</td>
 			<td class="{$PagIbigEE_class} bs-gridcell" data-field=PagIbigEE>{$PagIbigEE_mastervalue}</td>
 			<td class="{$PagIbigER_class} bs-gridcell" data-field=PagIbigER>{$PagIbigER_mastervalue}</td>
-			<td class="{$PresetTax_class} bs-gridcell" data-field=PresetTax>{$PresetTax_mastervalue}</td>
 			<td class="{$NoLateDeduction_class} bs-gridcell" data-field=NoLateDeduction>{$NoLateDeduction_mastervalue}</td>
 			<td class="{$GracePeriodMins_class} bs-gridcell" data-field=GracePeriodMins>{$GracePeriodMins_mastervalue}</td>
 			<td class="{$WithAdditionalBreaks_class} bs-gridcell" data-field=WithAdditionalBreaks>{$WithAdditionalBreaks_mastervalue}</td>
 			<td class="{$IncludeBreakLate_class} bs-gridcell" data-field=IncludeBreakLate>{$IncludeBreakLate_mastervalue}</td>
 			<td class="{$LateFixPenalty_class} bs-gridcell" data-field=LateFixPenalty>{$LateFixPenalty_mastervalue}</td>
 			<td class="{$user_id_class} bs-gridcell" data-field=user_id>{$user_id_mastervalue}</td>
+			<td class="{$CalMonthly_class} bs-gridcell" data-field=CalMonthly>{$CalMonthly_mastervalue}</td>
+			<td class="{$PresetMoNonTax_class} bs-gridcell" data-field=PresetMoNonTax>{$PresetMoNonTax_mastervalue}</td>
+			<td class="{$PreCalMoTaxable_class} bs-gridcell" data-field=PreCalMoTaxable>{$PreCalMoTaxable_mastervalue}</td>
+			<td class="{$TaxPeriods_class} bs-gridcell" data-field=TaxPeriods>{$TaxPeriods_mastervalue}</td>
+			<td class="{$TaxPerPeriod_class} bs-gridcell" data-field=TaxPerPeriod>{$TaxPerPeriod_mastervalue}</td>
 			<td class="{$DateCreated_class} bs-gridcell" data-field=DateCreated>{$DateCreated_mastervalue}</td>
 			<td class="{$Preparedby_class} bs-gridcell" data-field=Preparedby>{$Preparedby_mastervalue}</td>
 			<td class="{$Checked_class} bs-gridcell" data-field=Checked>{$Checked_mastervalue}</td>

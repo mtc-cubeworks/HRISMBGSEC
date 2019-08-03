@@ -410,6 +410,20 @@
 								</label>
 							</div>
 					{END print_details_emphistory}
+					{BEGIN print_details_thirtax}<div class="rnr-printdetialstable">
+								<label for="printDetailsthirtax{$id}">
+									<input type="checkbox" value="thirtax" id="printDetailsthirtax{$id}" checked>
+									13th Month and Tax
+								</label>
+							</div>
+					{END print_details_thirtax}
+					{BEGIN print_details_thirtaxsum}<div class="rnr-printdetialstable">
+								<label for="printDetailsthirtaxsum{$id}">
+									<input type="checkbox" value="thirtaxsum" id="printDetailsthirtaxsum{$id}" checked>
+									13th Month and Tax To-Date
+								</label>
+							</div>
+					{END print_details_thirtaxsum}
 				</div>
 			</div>
 		{END print_details}
@@ -577,9 +591,6 @@
 	.bs-gridcell[data-field=SSSEC]:before {
 		content: "{$label demo_user SSSEC}";
 	}
-	.bs-gridcell[data-field=PresetTax]:before {
-		content: "{$label demo_user PresetTax}";
-	}
 	.bs-gridcell[data-field=Level]:before {
 		content: "{$label demo_user Level}";
 	}
@@ -648,6 +659,24 @@
 	}
 	.bs-gridcell[data-field=WithAdditionalBreaks]:before {
 		content: "{$label demo_user WithAdditionalBreaks}";
+	}
+	.bs-gridcell[data-field=TaxPeriods]:before {
+		content: "{$label demo_user TaxPeriods}";
+	}
+	.bs-gridcell[data-field=PresetMoNonTax]:before {
+		content: "{$label demo_user PresetMoNonTax}";
+	}
+	.bs-gridcell[data-field=PreCalMoTaxable]:before {
+		content: "{$label demo_user PreCalMoTaxable}";
+	}
+	.bs-gridcell[data-field=CalMonthly]:before {
+		content: "{$label demo_user CalMonthly}";
+	}
+	.bs-gridcell[data-field=TaxPerPeriod]:before {
+		content: "{$label demo_user TaxPerPeriod}";
+	}
+	.bs-gridcell[data-field=Superior2]:before {
+		content: "{$label demo_user Superior2}";
 	}
 </style>
 <table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
@@ -803,6 +832,17 @@
 									{END Superior_fieldheader}
 									</th>
 									{END Superior_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Superior2_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Superior2_class}" data-field=Superior2>
+									{BEGIN Superior2_fieldheader}<span {$Superior2_orderlinkattrs}>
+											{$label demo_user Superior2}
+										</span>
+									{END Superior2_fieldheader}
+									</th>
+									{END Superior2_fieldheadercolumn}
 									
 									
 									
@@ -1082,17 +1122,6 @@
 									
 									
 									
-									{BEGIN PresetTax_fieldheadercolumn}<th class="rnr-gridfieldlabel {$PresetTax_class}" data-field=PresetTax>
-									{BEGIN PresetTax_fieldheader}<span {$PresetTax_orderlinkattrs}>
-											{$label demo_user PresetTax}
-										</span>
-									{END PresetTax_fieldheader}
-									</th>
-									{END PresetTax_fieldheadercolumn}
-									
-									
-									
-									
 									{BEGIN NoLateDeduction_fieldheadercolumn}<th class="rnr-gridfieldlabel {$NoLateDeduction_class}" data-field=NoLateDeduction>
 									{BEGIN NoLateDeduction_fieldheader}<span {$NoLateDeduction_orderlinkattrs}>
 											{$label demo_user NoLateDeduction}
@@ -1155,6 +1184,61 @@
 									{END user_id_fieldheader}
 									</th>
 									{END user_id_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN CalMonthly_fieldheadercolumn}<th class="rnr-gridfieldlabel {$CalMonthly_class}" data-field=CalMonthly>
+									{BEGIN CalMonthly_fieldheader}<span {$CalMonthly_orderlinkattrs}>
+											{$label demo_user CalMonthly}
+										</span>
+									{END CalMonthly_fieldheader}
+									</th>
+									{END CalMonthly_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN PresetMoNonTax_fieldheadercolumn}<th class="rnr-gridfieldlabel {$PresetMoNonTax_class}" data-field=PresetMoNonTax>
+									{BEGIN PresetMoNonTax_fieldheader}<span {$PresetMoNonTax_orderlinkattrs}>
+											{$label demo_user PresetMoNonTax}
+										</span>
+									{END PresetMoNonTax_fieldheader}
+									</th>
+									{END PresetMoNonTax_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN PreCalMoTaxable_fieldheadercolumn}<th class="rnr-gridfieldlabel {$PreCalMoTaxable_class}" data-field=PreCalMoTaxable>
+									{BEGIN PreCalMoTaxable_fieldheader}<span {$PreCalMoTaxable_orderlinkattrs}>
+											{$label demo_user PreCalMoTaxable}
+										</span>
+									{END PreCalMoTaxable_fieldheader}
+									</th>
+									{END PreCalMoTaxable_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN TaxPeriods_fieldheadercolumn}<th class="rnr-gridfieldlabel {$TaxPeriods_class}" data-field=TaxPeriods>
+									{BEGIN TaxPeriods_fieldheader}<span {$TaxPeriods_orderlinkattrs}>
+											{$label demo_user TaxPeriods}
+										</span>
+									{END TaxPeriods_fieldheader}
+									</th>
+									{END TaxPeriods_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN TaxPerPeriod_fieldheadercolumn}<th class="rnr-gridfieldlabel {$TaxPerPeriod_class}" data-field=TaxPerPeriod>
+									{BEGIN TaxPerPeriod_fieldheader}<span {$TaxPerPeriod_orderlinkattrs}>
+											{$label demo_user TaxPerPeriod}
+										</span>
+									{END TaxPerPeriod_fieldheader}
+									</th>
+									{END TaxPerPeriod_fieldheadercolumn}
 									
 									
 									
@@ -1306,6 +1390,16 @@
 						{$emphistory_childnumber}
 					</span></a>
 				{END emphistory_childcount}
+								{BEGIN thirtax_childcount}<a {$thirtax_link_attrs} class="{$thirtax_dlink_class}" title="13th Month and Tax">
+					<span class="details-badge badge thirtax_badge" {$thirtax_childnumber_attr}>
+						{$thirtax_childnumber}
+					</span></a>
+				{END thirtax_childcount}
+								{BEGIN thirtaxsum_childcount}<a {$thirtaxsum_link_attrs} class="{$thirtaxsum_dlink_class}" title="13th Month and Tax To-Date">
+					<span class="details-badge badge thirtaxsum_badge" {$thirtaxsum_childnumber_attr}>
+						{$thirtaxsum_childnumber}
+					</span></a>
+				{END thirtaxsum_childcount}
 		{END dtables_link}
 	
 	
@@ -1389,6 +1483,12 @@
 		{$Superior_value}
 	</td>
 {END Superior_fieldcolumn}
+
+
+	{BEGIN Superior2_fieldcolumn}<td class="bs-gridcell {$Superior2_class}"  data-field=Superior2 {$rowstyle} {$recordattrs}>
+		{$Superior2_value}
+	</td>
+{END Superior2_fieldcolumn}
 
 
 	{BEGIN Mobile_fieldcolumn}<td class="bs-gridcell {$Mobile_class}"  data-field=Mobile {$rowstyle} {$recordattrs}>
@@ -1541,12 +1641,6 @@
 {END PagIbigER_fieldcolumn}
 
 
-	{BEGIN PresetTax_fieldcolumn}<td class="bs-gridcell {$PresetTax_class}"  data-field=PresetTax {$rowstyle} {$recordattrs}>
-		{$PresetTax_value}
-	</td>
-{END PresetTax_fieldcolumn}
-
-
 	{BEGIN NoLateDeduction_fieldcolumn}<td class="bs-gridcell {$NoLateDeduction_class}"  data-field=NoLateDeduction {$rowstyle} {$recordattrs}>
 		{$NoLateDeduction_value}
 	</td>
@@ -1581,6 +1675,36 @@
 		{$user_id_value}
 	</td>
 {END user_id_fieldcolumn}
+
+
+	{BEGIN CalMonthly_fieldcolumn}<td class="bs-gridcell {$CalMonthly_class}"  data-field=CalMonthly {$rowstyle} {$recordattrs}>
+		{$CalMonthly_value}
+	</td>
+{END CalMonthly_fieldcolumn}
+
+
+	{BEGIN PresetMoNonTax_fieldcolumn}<td class="bs-gridcell {$PresetMoNonTax_class}"  data-field=PresetMoNonTax {$rowstyle} {$recordattrs}>
+		{$PresetMoNonTax_value}
+	</td>
+{END PresetMoNonTax_fieldcolumn}
+
+
+	{BEGIN PreCalMoTaxable_fieldcolumn}<td class="bs-gridcell {$PreCalMoTaxable_class}"  data-field=PreCalMoTaxable {$rowstyle} {$recordattrs}>
+		{$PreCalMoTaxable_value}
+	</td>
+{END PreCalMoTaxable_fieldcolumn}
+
+
+	{BEGIN TaxPeriods_fieldcolumn}<td class="bs-gridcell {$TaxPeriods_class}"  data-field=TaxPeriods {$rowstyle} {$recordattrs}>
+		{$TaxPeriods_value}
+	</td>
+{END TaxPeriods_fieldcolumn}
+
+
+	{BEGIN TaxPerPeriod_fieldcolumn}<td class="bs-gridcell {$TaxPerPeriod_class}"  data-field=TaxPerPeriod {$rowstyle} {$recordattrs}>
+		{$TaxPerPeriod_value}
+	</td>
+{END TaxPerPeriod_fieldcolumn}
 
 
 	{BEGIN DateCreated_fieldcolumn}<td class="bs-gridcell {$DateCreated_class}"  data-field=DateCreated {$rowstyle} {$recordattrs}>

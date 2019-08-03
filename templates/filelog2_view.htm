@@ -1,0 +1,338 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_viewpage}
+<div {$viewpage_chiddenattr} data-pageid="{$pageid}" data-container="viewpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-12 "> 
+
+{BEGIN viewheader}
+	<h2 {$viewheader_hiddenattr} data-pageid="{$pageid}" data-brick="viewheader" >{$pagetitlelabel filelog2 view}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END viewheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_viewpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class=" form-horizontal  col-md-12 "> 
+
+
+<div {$viewfields_hiddenattr} data-pageid="{$pageid}" data-brick="viewfields" >
+
+	<div class="container">
+					{BEGIN Locked_fieldblock}
+	<div class="{$fielddispclass_Locked} col-md-6 bs-viewcontrolgroup" data-fieldname="Locked">
+		<label class="control-label" for="{$labelfor_Locked}">
+			{$label filelog2 Locked}
+		</label>
+		<div class="" >
+			{$Locked_value}&nbsp;
+		</div>
+	</div>
+{END Locked_fieldblock}
+					{BEGIN TransID2_fieldblock}
+	<div class="{$fielddispclass_TransID2} col-md-6 bs-viewcontrolgroup" data-fieldname="TransID2">
+		<label class="control-label" for="{$labelfor_TransID2}">
+			{$label filelog2 TransID2}
+		</label>
+		<div class="" >
+			{$TransID2_value}&nbsp;
+		</div>
+	</div>
+{END TransID2_fieldblock}
+					{BEGIN EmployeeID_fieldblock}
+	<div class="{$fielddispclass_EmployeeID} col-md-6 bs-viewcontrolgroup" data-fieldname="EmployeeID">
+		<label class="control-label" for="{$labelfor_EmployeeID}">
+			{$label filelog2 EmployeeID}
+		</label>
+		<div class="" >
+			{$EmployeeID_value}&nbsp;
+		</div>
+	</div>
+{END EmployeeID_fieldblock}
+					{BEGIN log_time_fieldblock}
+	<div class="{$fielddispclass_log_time} col-md-6 bs-viewcontrolgroup" data-fieldname="log_time">
+		<label class="control-label" for="{$labelfor_log_time}">
+			{$label filelog2 log_time}
+		</label>
+		<div class="" >
+			{$log_time_value}&nbsp;
+		</div>
+	</div>
+{END log_time_fieldblock}
+					{BEGIN Reason_fieldblock}
+	<div class="{$fielddispclass_Reason} col-md-6 bs-viewcontrolgroup" data-fieldname="Reason">
+		<label class="control-label" for="{$labelfor_Reason}">
+			{$label filelog2 Reason}
+		</label>
+		<div class="" >
+			{$Reason_value}&nbsp;
+		</div>
+	</div>
+{END Reason_fieldblock}
+					{BEGIN ClockType_fieldblock}
+	<div class="{$fielddispclass_ClockType} col-md-6 bs-viewcontrolgroup" data-fieldname="ClockType">
+		<label class="control-label" for="{$labelfor_ClockType}">
+			{$label filelog2 ClockType}
+		</label>
+		<div class="" >
+			{$ClockType_value}&nbsp;
+		</div>
+	</div>
+{END ClockType_fieldblock}
+					{BEGIN data_fieldblock}
+	<div class="{$fielddispclass_data} col-md-6 bs-viewcontrolgroup" data-fieldname="data">
+		<label class="control-label" for="{$labelfor_data}">
+			{$label filelog2 data}
+		</label>
+		<div class="" >
+			{$data_value}&nbsp;
+		</div>
+	</div>
+{END data_fieldblock}
+					{BEGIN MLogID_fieldblock}
+	<div class="{$fielddispclass_MLogID} col-md-6 bs-viewcontrolgroup" data-fieldname="MLogID">
+		<label class="control-label" for="{$labelfor_MLogID}">
+			{$label filelog2 MLogID}
+		</label>
+		<div class="" >
+			{$MLogID_value}&nbsp;
+		</div>
+	</div>
+{END MLogID_fieldblock}
+					{BEGIN MLogDate_fieldblock}
+	<div class="{$fielddispclass_MLogDate} col-md-6 bs-viewcontrolgroup" data-fieldname="MLogDate">
+		<label class="control-label" for="{$labelfor_MLogDate}">
+			{$label filelog2 MLogDate}
+		</label>
+		<div class="" >
+			{$MLogDate_value}&nbsp;
+		</div>
+	</div>
+{END MLogDate_fieldblock}
+					{BEGIN CheckedBy_fieldblock}
+	<div class="{$fielddispclass_CheckedBy} col-md-6 bs-viewcontrolgroup" data-fieldname="CheckedBy">
+		<label class="control-label" for="{$labelfor_CheckedBy}">
+			{$label filelog2 CheckedBy}
+		</label>
+		<div class="" >
+			{$CheckedBy_value}&nbsp;
+		</div>
+	</div>
+{END CheckedBy_fieldblock}
+					{BEGIN Checked_fieldblock}
+	<div class="{$fielddispclass_Checked} col-md-6 bs-viewcontrolgroup" data-fieldname="Checked">
+		<label class="control-label" for="{$labelfor_Checked}">
+			{$label filelog2 Checked}
+		</label>
+		<div class="" >
+			{$Checked_value}&nbsp;
+		</div>
+	</div>
+{END Checked_fieldblock}
+					{BEGIN ApprovedBy_fieldblock}
+	<div class="{$fielddispclass_ApprovedBy} col-md-6 bs-viewcontrolgroup" data-fieldname="ApprovedBy">
+		<label class="control-label" for="{$labelfor_ApprovedBy}">
+			{$label filelog2 ApprovedBy}
+		</label>
+		<div class="" >
+			{$ApprovedBy_value}&nbsp;
+		</div>
+	</div>
+{END ApprovedBy_fieldblock}
+					{BEGIN Approved_fieldblock}
+	<div class="{$fielddispclass_Approved} col-md-6 bs-viewcontrolgroup" data-fieldname="Approved">
+		<label class="control-label" for="{$labelfor_Approved}">
+			{$label filelog2 Approved}
+		</label>
+		<div class="" >
+			{$Approved_value}&nbsp;
+		</div>
+	</div>
+{END Approved_fieldblock}
+					{BEGIN HRApproval_fieldblock}
+	<div class="{$fielddispclass_HRApproval} col-md-6 bs-viewcontrolgroup" data-fieldname="HRApproval">
+		<label class="control-label" for="{$labelfor_HRApproval}">
+			{$label filelog2 HRApproval}
+		</label>
+		<div class="" >
+			{$HRApproval_value}&nbsp;
+		</div>
+	</div>
+{END HRApproval_fieldblock}
+					{BEGIN HRApproved_fieldblock}
+	<div class="{$fielddispclass_HRApproved} col-md-6 bs-viewcontrolgroup" data-fieldname="HRApproved">
+		<label class="control-label" for="{$labelfor_HRApproved}">
+			{$label filelog2 HRApproved}
+		</label>
+		<div class="" >
+			{$HRApproved_value}&nbsp;
+		</div>
+	</div>
+{END HRApproved_fieldblock}
+					{BEGIN HRApprovedDate_fieldblock}
+	<div class="{$fielddispclass_HRApprovedDate} col-md-6 bs-viewcontrolgroup" data-fieldname="HRApprovedDate">
+		<label class="control-label" for="{$labelfor_HRApprovedDate}">
+			{$label filelog2 HRApprovedDate}
+		</label>
+		<div class="" >
+			{$HRApprovedDate_value}&nbsp;
+		</div>
+	</div>
+{END HRApprovedDate_fieldblock}
+	</div>
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_buttons}
+<div {$buttons_chiddenattr} data-pageid="{$pageid}" data-container="buttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-6 "> 
+
+{BEGIN viewbuttons}
+{BEGIN back_button}
+<button class="btn btn-primary" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{BEGIN close_button}
+<button href="#" class="btn btn-primary" {$closebutton_attrs}>Close window</button>
+{END close_button}
+{END viewbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+
+
+{BEGIN container_leftbuttons_1}
+<div {$leftbuttons_1_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons_1" class="   col-md-4 "> 
+
+{BEGIN rightviewbuttons}
+<div class="btn-group" role="group">
+		{BEGIN prev_button}
+	<button class="btn btn-default {$prevbutton_class}" {$prevbutton_attrs}><span class="glyphicon glyphicon-chevron-left"></span></button>
+	{END prev_button}
+	{BEGIN next_button}
+	<button class="btn btn-default {$nextbutton_class}" {$nextbutton_attrs}><span class="glyphicon glyphicon-chevron-right"></span></button>
+	{END next_button}
+		{BEGIN view_menu_button}
+	<div class="btn-group dropup" role="group">
+		<button class="btn btn-default dropdown-toggle {$groupbutton_class}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+		<ul class="dropdown-menu dropdown-left">
+									{BEGIN edit_page_button}
+				<li><a href=# {$edit_page_button_attrs}>Edit</a></li>
+			{END edit_page_button}
+		</ul>
+	</div>
+	{END view_menu_button}
+</div>
+{END rightviewbuttons}
+
+
+
+</div>
+{END container_leftbuttons_1}
+
+
+
+
+
+
+</div>
+{END container_buttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

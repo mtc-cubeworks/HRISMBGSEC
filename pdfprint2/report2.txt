@@ -1,0 +1,10 @@
+// Put your code here.
+var message = result["txt"] + "";
+ctrl.setMessage(message);
+
+var b = result["loc"];
+
+if (b==0)
+{
+location.reload(); 
+}

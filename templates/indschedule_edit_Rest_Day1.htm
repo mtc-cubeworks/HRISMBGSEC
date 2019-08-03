@@ -1,0 +1,66 @@
+<div {$pageattrs}>
+
+{BEGIN container_tabfields}
+<div {$tabfields_chiddenattr} data-pageid="{$pageid}" data-container="tabfields" class=" form-horizontal   "> 
+
+
+{BEGIN RDMins_tabfieldblock}
+<div class="container">
+	<div class="form-group in-tab {$fielddispclass_RDMins}" data-fieldname="RDMins" data-signal-error-for="RDMins{$id}" >
+		<label class="col-md-3 control-label" for="{$labelfor_RDMins}">
+			{BEGIN RDMins_label}{$label indschedule RDMins}{END RDMins_label}
+		</label>
+		<div class="col-md-6 " >
+			{$RDMins_editcontrol}
+		</div>
+		<div class="col-md-3 help-block " data-helpfor="RDMins">
+			<div class="text-muted" >
+			{$tooltip indschedule RDMins}
+			</div>
+		</div>
+	</div>
+</div>
+{END RDMins_tabfieldblock}
+{BEGIN ApprovedRD_tabfieldblock}
+<div class="container">
+	<div class="form-group in-tab {$fielddispclass_ApprovedRD}" data-fieldname="ApprovedRD" data-signal-error-for="ApprovedRD{$id}" >
+		<label class="col-md-3 control-label" for="{$labelfor_ApprovedRD}">
+			{BEGIN ApprovedRD_label}{$label indschedule ApprovedRD}{END ApprovedRD_label}
+		</label>
+		<div class="col-md-6 " >
+			{$ApprovedRD_editcontrol}
+		</div>
+		<div class="col-md-3 help-block " data-helpfor="ApprovedRD">
+			<div class="text-muted" >
+			{$tooltip indschedule ApprovedRD}
+			</div>
+		</div>
+	</div>
+</div>
+{END ApprovedRD_tabfieldblock}
+{BEGIN RDHrs_tabfieldblock}
+<div class="container">
+	<div class="form-group in-tab {$fielddispclass_RDHrs}" data-fieldname="RDHrs" data-signal-error-for="RDHrs{$id}" >
+		<label class="col-md-3 control-label" for="{$labelfor_RDHrs}">
+			{BEGIN RDHrs_label}{$label indschedule RDHrs}{END RDHrs_label}
+		</label>
+		<div class="col-md-6 " >
+			{$RDHrs_editcontrol}
+		</div>
+		<div class="col-md-3 help-block " data-helpfor="RDHrs">
+			<div class="text-muted" >
+			{$tooltip indschedule RDHrs}
+			</div>
+		</div>
+	</div>
+</div>
+{END RDHrs_tabfieldblock}
+
+
+
+
+
+</div>
+{END container_tabfields}
+
+</div>

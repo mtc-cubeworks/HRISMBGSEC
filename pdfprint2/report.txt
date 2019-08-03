@@ -1,0 +1,243 @@
+
+
+
+// Put your code here.
+$data = $button->getCurrentRecord();
+$result['record'] = $data;
+$fd= $data["IDate"];
+$lk= $data["Locked"];
+
+global $dal;
+
+$loc = DBLookup("SELECT Locked FROM cashlock WHERE SDate='$fd'");
+
+
+if ($loc==null or $loc==0) {
+$result["txt"] = $params["txt"]." Cash Count is not yet Locked.";
+$result['loc'] = 1;
+
+}
+
+else {
+
+if ($lk!=1) {
+
+$result['loc'] = 0;
+
+$sqd = "DELETE FROM inventorydailyreport WHERE DateR='$fd'";
+CustomQuery($sqd);
+
+$sqe = "DELETE FROM loaddailyreport WHERE DateR='$fd'";
+CustomQuery($sqe);
+
+
+$date=date_create($fd);
+$indate=date_format($date,"Y-m-d");
+$dayn= date('N', strtotime($indate));
+
+
+
+$gd = DBLookup("SELECT MAX(TDate) FROM transbal2 WHERE TDate<'$fd'");
+
+
+$rs2 = DB::Query("select * from transbal2 where TDate='$gd'");
+ 
+  while( $dataz = $rs2->fetchAssoc() )
+ 
+  {
+$prod3=$dataz["ProdID"];
+$qbal3=$dataz["QtyBalance"];
+$dt=$dataz["TDate"];
+
+$srp = DBLookup("SELECT SRP FROM products WHERE ProdID='$prod3'");
+$ucs = DBLookup("SELECT Cost FROM products WHERE ProdID='$prod3'");
+
+
+$datav = array();
+$datav["Product"] = $prod3;
+$datav["LO"]  = $qbal3;
+$datav["DateR"] = $fd;
+$datav["UnitCost"] = $ucs;
+$datav["UnitPrice"] = $srp;
+$datav["DayIs"] = $dayn;
+
+DB::Insert("inventorydailyreport", $datav );
+
+
+  } //End 
+
+
+
+$rs3 = DB::Query("select * from secondup where TDate='$fd'");
+ 
+  while( $datad = $rs3->fetchAssoc() )
+ 
+  {
+$prod7=$datad["ProdID"];
+
+
+$srp = DBLookup("SELECT SRP FROM products WHERE ProdID='$prod7'");
+$ucs = DBLookup("SELECT Cost FROM products WHERE ProdID='$prod7'");
+
+
+$datae = array();
+$datae["Product"] = $prod7;
+
+$datae["DateR"] = $fd;
+$datae["UnitCost"] = $ucs;
+$datae["UnitPrice"] = $srp;
+$datae["DayIs"] = $dayn;
+
+DB::Insert("inventorydailyreport", $datae );
+
+
+  } //End 
+
+
+
+
+
+$ru = DB::Query("select * from finalrep where DateR='$fd'");
+ 
+  while( $datac = $ru->fetchAssoc() )
+ 
+  {
+$prod=$datac["Product"];
+$trr=$datac["TRR"];
+$tsi=$datac["TStockIn"];
+$tso=$datac["TStockOut"];
+$tpu=$datac["TPullOut"];
+$tva=$datac["TVale"];
+$tfr=$datac["TFree"];
+$tdel=$datac["TDel"];
+$tba=$datac["QtyBalance"];
+$qsal4=$datac["QSales"];
+$qsal5=$datac["QTSales"];
+$tadj=$datac["TAdj"];
+$subt4=$datac["SubT"];
+$subt5=$datac["SubT2"];
+$subc4=$datac["SubCost"];
+$subc5=$datac["SubCost2"];
+
+$sql4 = "UPDATE inventorydailyreport SET QtyRR=NULLIF('$trr',''), QtyStockIn=NULLIF('$tsi',''), QtyStockOut=NULLIF('$tso',''),
+QtyPullOut=NULLIF('$tpu',''), QtyVale=NULLIF('$tva',''), QtyFree=NULLIF('$tfr',''), QtyAdj=NULLIF('$tadj',''),
+QtyDelivery=NULLIF('$tdel',''), QtyBalance=NULLIF('$tba',''), SubTotal=NULLIF('$subt4',''), QtySales=NULLIF('$qsal4',''), QtyTSales=NULLIF('$qsal5',''), SubTotal2=NULLIF('$subt5',''),
+SubCost=NULLIF('$subc4',''), SubCost2=NULLIF('$subc5','') WHERE Product='$prod' and DateR='$fd' ";
+CustomQuery($sql4);
+
+
+};
+
+//End Invventory
+
+
+
+//start load
+
+$gl = DBLookup("SELECT MAX(TDate) FROM loadbal2 WHERE TDate<'$fd'");
+
+
+$rb = DB::Query("select * from loadbal2 where TDate='$gl'");
+ 
+  while( $dl = $rb->fetchAssoc() )
+ 
+  {
+$prov=$dl["Provider"];
+$loadb=$dl["LoadBalance"];
+$dt=$dl["TDate"];
+
+
+
+$dal = array();
+$dal["Provider"] = $prov;
+$dal["LO"]  = $loadb;
+$dal["DateR"] = $fd;
+$dal["DayIs"] = $dayn;
+
+DB::Insert("loaddailyreport", $dal );
+
+
+  } //End 
+
+
+$rc = DB::Query("select * from secloadup where TDate='$fd'");
+ 
+  while( $dr = $rc->fetchAssoc() )
+ 
+  {
+$prov1=$dr["Provider"];
+
+
+$dac = array();
+$dac["Provider"] = $prov1;
+$dac["DateR"] = $fd;
+$dac["DayIs"] = $dayn;
+
+DB::Insert("loaddailyreport", $dac );
+
+
+  } //End 
+
+
+$re = DB::Query("select * from loadday3 where DateR='$fd'");
+ 
+  while( $dad = $re->fetchAssoc() )
+ 
+  {
+$prv=$dad["Provider"];
+$tlr=$dad["LRec"];
+$tlc=$dad["LCost"];
+$tls=$dad["LServ"];
+$tlsa=$dad["LSal"];
+$tcb=$dad["CalBal"];
+$tcv=$dad["CalVar"];
+$tlb=$dad["LoadBalance"];
+
+
+$sqle = "UPDATE loaddailyreport SET LoadRec=NULLIF('$tlr',''), LoadCostSub=NULLIF('$tlc',''),
+ServiceChargeSub=NULLIF('$tls',''), LoadSalesSub=NULLIF('$tlsa',''), CalBalance=NULLIF('$tcb',''), 
+Variance=NULLIF('$tcv',''), LoadBalance=NULLIF('$tlb','') WHERE Provider='$prv' and DateR='$fd' ";
+CustomQuery($sqle);
+
+
+};
+
+
+$ru2 = DB::Query("select * from gtotalf where DateR='$fd'");
+ 
+  while( $datas = $ru2->fetchAssoc() )
+ 
+  {
+
+$s1=$datas["TSales"];
+$s2=$datas["TSales2"];
+$c1=$datas["SubCost"];
+$c2=$datas["SubCost2"];
+$tex=$datas["TExp"];
+$tca=$datas["TCash"];
+$ncas=$datas["NetCash"];
+$casvar=$datas["CashVariance"];
+$tdis=$datas["TotalDiscount"];
+$lvar=$datas["LTVariance"];
+
+
+$sql5 = "UPDATE inventorydate SET Expenses=NULLIF('$tex',''), CashCount=NULLIF('$tca','') , Discount=NULLIF('$tdis',''),
+CashSales=NULLIF('$s1',''), NetCashSales=NULLIF('$ncas',''), CashVariance=NULLIF('$casvar',''), LoadVariance=NULLIF('$lvar',''), TotalSales=NULLIF('$s2',''), CashCost=NULLIF('$c1',''), TotalCost=NULLIF('$c2','')  WHERE IDate='$fd' ";
+CustomQuery($sql5);
+
+}; 
+
+$result["txt"] = $params["txt"]." Done!";
+    
+}; //close unlocked
+
+if ($lk==1) {
+$result["txt"] = $params["txt"]." Date is Already Locked!";
+$result['loc'] = 1;
+};
+
+
+}
+
+
+

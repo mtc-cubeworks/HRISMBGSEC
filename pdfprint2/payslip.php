@@ -133,8 +133,9 @@ $pdf->Cell(37	,3,'Rest Day (days):',0,0);
 $pdf->Cell(10	,3,number_format($invoice['RDHrs'],2),0,0);
 $pdf->Cell(15	,3,number_format($invoice['RD'],2),0,1,'R');
 $pdf->Cell(37	,3,'Night Diff:',0,0);
-$pdf->Cell(10	,3,number_format($invoice['NDHrs'],2),0,0);
+$pdf->Cell(10	,3,number_format($invoice['TNDHr'],2),0,0);
 $pdf->Cell(15	,3,number_format($invoice['TND'],2),0,1,'R');
+
 
 $pdf->Cell(37	,3,'Allowance (days):',0,0);
 $pdf->Cell(10	,3,number_format($invoice['AllowDays'],2),0,0);
@@ -211,9 +212,20 @@ $pdf->setFillColor(230,230,230);
 $pdf->Cell(40	,7,'GROSS PAY: ',0,0,'',1);
 $pdf->Cell(22	,7,number_format($invoice['GrossPay'],2),0,1,'R',1);
 $pdf->SetFont('Arial','',7);
-//$pdf->Cell(40	,7,'Taxable: ',0,0);
-//$pdf->Cell(22	,7,number_format($invoice['Taxable'],2),0,1,'R',0);
-
+$pdf->Cell(40	,7,'Taxable: ',0,0);
+$pdf->Cell(22	,7,number_format($invoice['Taxable'],2),0,1,'R',0);
+$pdf->SetFont('Arial','B',7);
+$pdf->Cell(22	,7,'Taxable To-Date: ',0,0);
+$pdf->SetFont('Arial','',7);
+$pdf->Cell(30	,7,number_format($invoice['TaxableToDate'],2),0,0,'L',0);
+$pdf->SetFont('Arial','B',7);
+$pdf->Cell(18	,7,'Tax To-Date: ',0,0);
+$pdf->SetFont('Arial','',7);
+$pdf->Cell(22	,7,number_format($invoice['TaxToDate'],2),0,0,'L',0);
+$pdf->SetFont('Arial','B',7);
+$pdf->Cell(26	,7,'13th Month To-Date: ',0,0);
+$pdf->SetFont('Arial','',7);
+$pdf->Cell(30	,7,number_format($invoice['ThirToDate'],2),0,0,'L',0);
 
 
 

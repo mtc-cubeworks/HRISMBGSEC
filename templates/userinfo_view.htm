@@ -1,0 +1,678 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_viewpage}
+<div {$viewpage_chiddenattr} data-pageid="{$pageid}" data-container="viewpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-12 "> 
+
+{BEGIN viewheader}
+	<h2 {$viewheader_hiddenattr} data-pageid="{$pageid}" data-brick="viewheader" >{$pagetitlelabel userinfo view}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END viewheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_viewpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class=" form-horizontal  col-md-12 "> 
+
+
+<div {$viewfields_hiddenattr} data-pageid="{$pageid}" data-brick="viewfields" >
+
+	<div class="container">
+					{BEGIN USERID_fieldblock}
+	<div class="{$fielddispclass_USERID} col-md-6 bs-viewcontrolgroup" data-fieldname="USERID">
+		<label class="control-label" for="{$labelfor_USERID}">
+			{$label userinfo USERID}
+		</label>
+		<div class="" >
+			{$USERID_value}&nbsp;
+		</div>
+	</div>
+{END USERID_fieldblock}
+					{BEGIN Badgenumber_fieldblock}
+	<div class="{$fielddispclass_Badgenumber} col-md-6 bs-viewcontrolgroup" data-fieldname="Badgenumber">
+		<label class="control-label" for="{$labelfor_Badgenumber}">
+			{$label userinfo Badgenumber}
+		</label>
+		<div class="" >
+			{$Badgenumber_value}&nbsp;
+		</div>
+	</div>
+{END Badgenumber_fieldblock}
+					{BEGIN SSN_fieldblock}
+	<div class="{$fielddispclass_SSN} col-md-6 bs-viewcontrolgroup" data-fieldname="SSN">
+		<label class="control-label" for="{$labelfor_SSN}">
+			{$label userinfo SSN}
+		</label>
+		<div class="" >
+			{$SSN_value}&nbsp;
+		</div>
+	</div>
+{END SSN_fieldblock}
+					{BEGIN Name_fieldblock}
+	<div class="{$fielddispclass_Name} col-md-6 bs-viewcontrolgroup" data-fieldname="Name">
+		<label class="control-label" for="{$labelfor_Name}">
+			{$label userinfo Name}
+		</label>
+		<div class="" >
+			{$Name_value}&nbsp;
+		</div>
+	</div>
+{END Name_fieldblock}
+					{BEGIN Gender_fieldblock}
+	<div class="{$fielddispclass_Gender} col-md-6 bs-viewcontrolgroup" data-fieldname="Gender">
+		<label class="control-label" for="{$labelfor_Gender}">
+			{$label userinfo Gender}
+		</label>
+		<div class="" >
+			{$Gender_value}&nbsp;
+		</div>
+	</div>
+{END Gender_fieldblock}
+					{BEGIN TITLE_fieldblock}
+	<div class="{$fielddispclass_TITLE} col-md-6 bs-viewcontrolgroup" data-fieldname="TITLE">
+		<label class="control-label" for="{$labelfor_TITLE}">
+			{$label userinfo TITLE}
+		</label>
+		<div class="" >
+			{$TITLE_value}&nbsp;
+		</div>
+	</div>
+{END TITLE_fieldblock}
+					{BEGIN PAGER_fieldblock}
+	<div class="{$fielddispclass_PAGER} col-md-6 bs-viewcontrolgroup" data-fieldname="PAGER">
+		<label class="control-label" for="{$labelfor_PAGER}">
+			{$label userinfo PAGER}
+		</label>
+		<div class="" >
+			{$PAGER_value}&nbsp;
+		</div>
+	</div>
+{END PAGER_fieldblock}
+					{BEGIN BIRTHDAY_fieldblock}
+	<div class="{$fielddispclass_BIRTHDAY} col-md-6 bs-viewcontrolgroup" data-fieldname="BIRTHDAY">
+		<label class="control-label" for="{$labelfor_BIRTHDAY}">
+			{$label userinfo BIRTHDAY}
+		</label>
+		<div class="" >
+			{$BIRTHDAY_value}&nbsp;
+		</div>
+	</div>
+{END BIRTHDAY_fieldblock}
+					{BEGIN HIREDDAY_fieldblock}
+	<div class="{$fielddispclass_HIREDDAY} col-md-6 bs-viewcontrolgroup" data-fieldname="HIREDDAY">
+		<label class="control-label" for="{$labelfor_HIREDDAY}">
+			{$label userinfo HIREDDAY}
+		</label>
+		<div class="" >
+			{$HIREDDAY_value}&nbsp;
+		</div>
+	</div>
+{END HIREDDAY_fieldblock}
+					{BEGIN street_fieldblock}
+	<div class="{$fielddispclass_street} col-md-6 bs-viewcontrolgroup" data-fieldname="street">
+		<label class="control-label" for="{$labelfor_street}">
+			{$label userinfo street}
+		</label>
+		<div class="" >
+			{$street_value}&nbsp;
+		</div>
+	</div>
+{END street_fieldblock}
+					{BEGIN CITY_fieldblock}
+	<div class="{$fielddispclass_CITY} col-md-6 bs-viewcontrolgroup" data-fieldname="CITY">
+		<label class="control-label" for="{$labelfor_CITY}">
+			{$label userinfo CITY}
+		</label>
+		<div class="" >
+			{$CITY_value}&nbsp;
+		</div>
+	</div>
+{END CITY_fieldblock}
+					{BEGIN STATE_fieldblock}
+	<div class="{$fielddispclass_STATE} col-md-6 bs-viewcontrolgroup" data-fieldname="STATE">
+		<label class="control-label" for="{$labelfor_STATE}">
+			{$label userinfo STATE}
+		</label>
+		<div class="" >
+			{$STATE_value}&nbsp;
+		</div>
+	</div>
+{END STATE_fieldblock}
+					{BEGIN ZIP_fieldblock}
+	<div class="{$fielddispclass_ZIP} col-md-6 bs-viewcontrolgroup" data-fieldname="ZIP">
+		<label class="control-label" for="{$labelfor_ZIP}">
+			{$label userinfo ZIP}
+		</label>
+		<div class="" >
+			{$ZIP_value}&nbsp;
+		</div>
+	</div>
+{END ZIP_fieldblock}
+					{BEGIN OPHONE_fieldblock}
+	<div class="{$fielddispclass_OPHONE} col-md-6 bs-viewcontrolgroup" data-fieldname="OPHONE">
+		<label class="control-label" for="{$labelfor_OPHONE}">
+			{$label userinfo OPHONE}
+		</label>
+		<div class="" >
+			{$OPHONE_value}&nbsp;
+		</div>
+	</div>
+{END OPHONE_fieldblock}
+					{BEGIN FPHONE_fieldblock}
+	<div class="{$fielddispclass_FPHONE} col-md-6 bs-viewcontrolgroup" data-fieldname="FPHONE">
+		<label class="control-label" for="{$labelfor_FPHONE}">
+			{$label userinfo FPHONE}
+		</label>
+		<div class="" >
+			{$FPHONE_value}&nbsp;
+		</div>
+	</div>
+{END FPHONE_fieldblock}
+					{BEGIN VERIFICATIONMETHOD_fieldblock}
+	<div class="{$fielddispclass_VERIFICATIONMETHOD} col-md-6 bs-viewcontrolgroup" data-fieldname="VERIFICATIONMETHOD">
+		<label class="control-label" for="{$labelfor_VERIFICATIONMETHOD}">
+			{$label userinfo VERIFICATIONMETHOD}
+		</label>
+		<div class="" >
+			{$VERIFICATIONMETHOD_value}&nbsp;
+		</div>
+	</div>
+{END VERIFICATIONMETHOD_fieldblock}
+					{BEGIN DEFAULTDEPTID_fieldblock}
+	<div class="{$fielddispclass_DEFAULTDEPTID} col-md-6 bs-viewcontrolgroup" data-fieldname="DEFAULTDEPTID">
+		<label class="control-label" for="{$labelfor_DEFAULTDEPTID}">
+			{$label userinfo DEFAULTDEPTID}
+		</label>
+		<div class="" >
+			{$DEFAULTDEPTID_value}&nbsp;
+		</div>
+	</div>
+{END DEFAULTDEPTID_fieldblock}
+					{BEGIN SECURITYFLAGS_fieldblock}
+	<div class="{$fielddispclass_SECURITYFLAGS} col-md-6 bs-viewcontrolgroup" data-fieldname="SECURITYFLAGS">
+		<label class="control-label" for="{$labelfor_SECURITYFLAGS}">
+			{$label userinfo SECURITYFLAGS}
+		</label>
+		<div class="" >
+			{$SECURITYFLAGS_value}&nbsp;
+		</div>
+	</div>
+{END SECURITYFLAGS_fieldblock}
+					{BEGIN ATT_fieldblock}
+	<div class="{$fielddispclass_ATT} col-md-6 bs-viewcontrolgroup" data-fieldname="ATT">
+		<label class="control-label" for="{$labelfor_ATT}">
+			{$label userinfo ATT}
+		</label>
+		<div class="" >
+			{$ATT_value}&nbsp;
+		</div>
+	</div>
+{END ATT_fieldblock}
+					{BEGIN INLATE_fieldblock}
+	<div class="{$fielddispclass_INLATE} col-md-6 bs-viewcontrolgroup" data-fieldname="INLATE">
+		<label class="control-label" for="{$labelfor_INLATE}">
+			{$label userinfo INLATE}
+		</label>
+		<div class="" >
+			{$INLATE_value}&nbsp;
+		</div>
+	</div>
+{END INLATE_fieldblock}
+					{BEGIN OUTEARLY_fieldblock}
+	<div class="{$fielddispclass_OUTEARLY} col-md-6 bs-viewcontrolgroup" data-fieldname="OUTEARLY">
+		<label class="control-label" for="{$labelfor_OUTEARLY}">
+			{$label userinfo OUTEARLY}
+		</label>
+		<div class="" >
+			{$OUTEARLY_value}&nbsp;
+		</div>
+	</div>
+{END OUTEARLY_fieldblock}
+					{BEGIN OVERTIME_fieldblock}
+	<div class="{$fielddispclass_OVERTIME} col-md-6 bs-viewcontrolgroup" data-fieldname="OVERTIME">
+		<label class="control-label" for="{$labelfor_OVERTIME}">
+			{$label userinfo OVERTIME}
+		</label>
+		<div class="" >
+			{$OVERTIME_value}&nbsp;
+		</div>
+	</div>
+{END OVERTIME_fieldblock}
+					{BEGIN SEP_fieldblock}
+	<div class="{$fielddispclass_SEP} col-md-6 bs-viewcontrolgroup" data-fieldname="SEP">
+		<label class="control-label" for="{$labelfor_SEP}">
+			{$label userinfo SEP}
+		</label>
+		<div class="" >
+			{$SEP_value}&nbsp;
+		</div>
+	</div>
+{END SEP_fieldblock}
+					{BEGIN HOLIDAY_fieldblock}
+	<div class="{$fielddispclass_HOLIDAY} col-md-6 bs-viewcontrolgroup" data-fieldname="HOLIDAY">
+		<label class="control-label" for="{$labelfor_HOLIDAY}">
+			{$label userinfo HOLIDAY}
+		</label>
+		<div class="" >
+			{$HOLIDAY_value}&nbsp;
+		</div>
+	</div>
+{END HOLIDAY_fieldblock}
+					{BEGIN MINZU_fieldblock}
+	<div class="{$fielddispclass_MINZU} col-md-6 bs-viewcontrolgroup" data-fieldname="MINZU">
+		<label class="control-label" for="{$labelfor_MINZU}">
+			{$label userinfo MINZU}
+		</label>
+		<div class="" >
+			{$MINZU_value}&nbsp;
+		</div>
+	</div>
+{END MINZU_fieldblock}
+					{BEGIN PASSWORD_fieldblock}
+	<div class="{$fielddispclass_PASSWORD} col-md-6 bs-viewcontrolgroup" data-fieldname="PASSWORD">
+		<label class="control-label" for="{$labelfor_PASSWORD}">
+			{$label userinfo PASSWORD}
+		</label>
+		<div class="" >
+			{$PASSWORD_value}&nbsp;
+		</div>
+	</div>
+{END PASSWORD_fieldblock}
+					{BEGIN LUNCHDURATION_fieldblock}
+	<div class="{$fielddispclass_LUNCHDURATION} col-md-6 bs-viewcontrolgroup" data-fieldname="LUNCHDURATION">
+		<label class="control-label" for="{$labelfor_LUNCHDURATION}">
+			{$label userinfo LUNCHDURATION}
+		</label>
+		<div class="" >
+			{$LUNCHDURATION_value}&nbsp;
+		</div>
+	</div>
+{END LUNCHDURATION_fieldblock}
+					{BEGIN PHOTO_fieldblock}
+	<div class="{$fielddispclass_PHOTO} col-md-6 bs-viewcontrolgroup" data-fieldname="PHOTO">
+		<label class="control-label" for="{$labelfor_PHOTO}">
+			{$label userinfo PHOTO}
+		</label>
+		<div class="" >
+			{$PHOTO_value}&nbsp;
+		</div>
+	</div>
+{END PHOTO_fieldblock}
+					{BEGIN mverifypass_fieldblock}
+	<div class="{$fielddispclass_mverifypass} col-md-6 bs-viewcontrolgroup" data-fieldname="mverifypass">
+		<label class="control-label" for="{$labelfor_mverifypass}">
+			{$label userinfo mverifypass}
+		</label>
+		<div class="" >
+			{$mverifypass_value}&nbsp;
+		</div>
+	</div>
+{END mverifypass_fieldblock}
+					{BEGIN Notes_fieldblock}
+	<div class="{$fielddispclass_Notes} col-md-6 bs-viewcontrolgroup" data-fieldname="Notes">
+		<label class="control-label" for="{$labelfor_Notes}">
+			{$label userinfo Notes}
+		</label>
+		<div class="" >
+			{$Notes_value}&nbsp;
+		</div>
+	</div>
+{END Notes_fieldblock}
+					{BEGIN privilege_fieldblock}
+	<div class="{$fielddispclass_privilege} col-md-6 bs-viewcontrolgroup" data-fieldname="privilege">
+		<label class="control-label" for="{$labelfor_privilege}">
+			{$label userinfo privilege}
+		</label>
+		<div class="" >
+			{$privilege_value}&nbsp;
+		</div>
+	</div>
+{END privilege_fieldblock}
+					{BEGIN InheritDeptSch_fieldblock}
+	<div class="{$fielddispclass_InheritDeptSch} col-md-6 bs-viewcontrolgroup" data-fieldname="InheritDeptSch">
+		<label class="control-label" for="{$labelfor_InheritDeptSch}">
+			{$label userinfo InheritDeptSch}
+		</label>
+		<div class="" >
+			{$InheritDeptSch_value}&nbsp;
+		</div>
+	</div>
+{END InheritDeptSch_fieldblock}
+					{BEGIN InheritDeptSchClass_fieldblock}
+	<div class="{$fielddispclass_InheritDeptSchClass} col-md-6 bs-viewcontrolgroup" data-fieldname="InheritDeptSchClass">
+		<label class="control-label" for="{$labelfor_InheritDeptSchClass}">
+			{$label userinfo InheritDeptSchClass}
+		</label>
+		<div class="" >
+			{$InheritDeptSchClass_value}&nbsp;
+		</div>
+	</div>
+{END InheritDeptSchClass_fieldblock}
+					{BEGIN AutoSchPlan_fieldblock}
+	<div class="{$fielddispclass_AutoSchPlan} col-md-6 bs-viewcontrolgroup" data-fieldname="AutoSchPlan">
+		<label class="control-label" for="{$labelfor_AutoSchPlan}">
+			{$label userinfo AutoSchPlan}
+		</label>
+		<div class="" >
+			{$AutoSchPlan_value}&nbsp;
+		</div>
+	</div>
+{END AutoSchPlan_fieldblock}
+					{BEGIN MinAutoSchInterval_fieldblock}
+	<div class="{$fielddispclass_MinAutoSchInterval} col-md-6 bs-viewcontrolgroup" data-fieldname="MinAutoSchInterval">
+		<label class="control-label" for="{$labelfor_MinAutoSchInterval}">
+			{$label userinfo MinAutoSchInterval}
+		</label>
+		<div class="" >
+			{$MinAutoSchInterval_value}&nbsp;
+		</div>
+	</div>
+{END MinAutoSchInterval_fieldblock}
+					{BEGIN RegisterOT_fieldblock}
+	<div class="{$fielddispclass_RegisterOT} col-md-6 bs-viewcontrolgroup" data-fieldname="RegisterOT">
+		<label class="control-label" for="{$labelfor_RegisterOT}">
+			{$label userinfo RegisterOT}
+		</label>
+		<div class="" >
+			{$RegisterOT_value}&nbsp;
+		</div>
+	</div>
+{END RegisterOT_fieldblock}
+					{BEGIN InheritDeptRule_fieldblock}
+	<div class="{$fielddispclass_InheritDeptRule} col-md-6 bs-viewcontrolgroup" data-fieldname="InheritDeptRule">
+		<label class="control-label" for="{$labelfor_InheritDeptRule}">
+			{$label userinfo InheritDeptRule}
+		</label>
+		<div class="" >
+			{$InheritDeptRule_value}&nbsp;
+		</div>
+	</div>
+{END InheritDeptRule_fieldblock}
+					{BEGIN EMPRIVILEGE_fieldblock}
+	<div class="{$fielddispclass_EMPRIVILEGE} col-md-6 bs-viewcontrolgroup" data-fieldname="EMPRIVILEGE">
+		<label class="control-label" for="{$labelfor_EMPRIVILEGE}">
+			{$label userinfo EMPRIVILEGE}
+		</label>
+		<div class="" >
+			{$EMPRIVILEGE_value}&nbsp;
+		</div>
+	</div>
+{END EMPRIVILEGE_fieldblock}
+					{BEGIN CardNo_fieldblock}
+	<div class="{$fielddispclass_CardNo} col-md-6 bs-viewcontrolgroup" data-fieldname="CardNo">
+		<label class="control-label" for="{$labelfor_CardNo}">
+			{$label userinfo CardNo}
+		</label>
+		<div class="" >
+			{$CardNo_value}&nbsp;
+		</div>
+	</div>
+{END CardNo_fieldblock}
+					{BEGIN FaceGroup_fieldblock}
+	<div class="{$fielddispclass_FaceGroup} col-md-6 bs-viewcontrolgroup" data-fieldname="FaceGroup">
+		<label class="control-label" for="{$labelfor_FaceGroup}">
+			{$label userinfo FaceGroup}
+		</label>
+		<div class="" >
+			{$FaceGroup_value}&nbsp;
+		</div>
+	</div>
+{END FaceGroup_fieldblock}
+					{BEGIN AccGroup_fieldblock}
+	<div class="{$fielddispclass_AccGroup} col-md-6 bs-viewcontrolgroup" data-fieldname="AccGroup">
+		<label class="control-label" for="{$labelfor_AccGroup}">
+			{$label userinfo AccGroup}
+		</label>
+		<div class="" >
+			{$AccGroup_value}&nbsp;
+		</div>
+	</div>
+{END AccGroup_fieldblock}
+					{BEGIN UseAccGroupTZ_fieldblock}
+	<div class="{$fielddispclass_UseAccGroupTZ} col-md-6 bs-viewcontrolgroup" data-fieldname="UseAccGroupTZ">
+		<label class="control-label" for="{$labelfor_UseAccGroupTZ}">
+			{$label userinfo UseAccGroupTZ}
+		</label>
+		<div class="" >
+			{$UseAccGroupTZ_value}&nbsp;
+		</div>
+	</div>
+{END UseAccGroupTZ_fieldblock}
+					{BEGIN VerifyCode_fieldblock}
+	<div class="{$fielddispclass_VerifyCode} col-md-6 bs-viewcontrolgroup" data-fieldname="VerifyCode">
+		<label class="control-label" for="{$labelfor_VerifyCode}">
+			{$label userinfo VerifyCode}
+		</label>
+		<div class="" >
+			{$VerifyCode_value}&nbsp;
+		</div>
+	</div>
+{END VerifyCode_fieldblock}
+					{BEGIN Expires_fieldblock}
+	<div class="{$fielddispclass_Expires} col-md-6 bs-viewcontrolgroup" data-fieldname="Expires">
+		<label class="control-label" for="{$labelfor_Expires}">
+			{$label userinfo Expires}
+		</label>
+		<div class="" >
+			{$Expires_value}&nbsp;
+		</div>
+	</div>
+{END Expires_fieldblock}
+					{BEGIN ValidCount_fieldblock}
+	<div class="{$fielddispclass_ValidCount} col-md-6 bs-viewcontrolgroup" data-fieldname="ValidCount">
+		<label class="control-label" for="{$labelfor_ValidCount}">
+			{$label userinfo ValidCount}
+		</label>
+		<div class="" >
+			{$ValidCount_value}&nbsp;
+		</div>
+	</div>
+{END ValidCount_fieldblock}
+					{BEGIN ValidTimeBegin_fieldblock}
+	<div class="{$fielddispclass_ValidTimeBegin} col-md-6 bs-viewcontrolgroup" data-fieldname="ValidTimeBegin">
+		<label class="control-label" for="{$labelfor_ValidTimeBegin}">
+			{$label userinfo ValidTimeBegin}
+		</label>
+		<div class="" >
+			{$ValidTimeBegin_value}&nbsp;
+		</div>
+	</div>
+{END ValidTimeBegin_fieldblock}
+					{BEGIN ValidTimeEnd_fieldblock}
+	<div class="{$fielddispclass_ValidTimeEnd} col-md-6 bs-viewcontrolgroup" data-fieldname="ValidTimeEnd">
+		<label class="control-label" for="{$labelfor_ValidTimeEnd}">
+			{$label userinfo ValidTimeEnd}
+		</label>
+		<div class="" >
+			{$ValidTimeEnd_value}&nbsp;
+		</div>
+	</div>
+{END ValidTimeEnd_fieldblock}
+					{BEGIN TimeZone1_fieldblock}
+	<div class="{$fielddispclass_TimeZone1} col-md-6 bs-viewcontrolgroup" data-fieldname="TimeZone1">
+		<label class="control-label" for="{$labelfor_TimeZone1}">
+			{$label userinfo TimeZone1}
+		</label>
+		<div class="" >
+			{$TimeZone1_value}&nbsp;
+		</div>
+	</div>
+{END TimeZone1_fieldblock}
+					{BEGIN TimeZone2_fieldblock}
+	<div class="{$fielddispclass_TimeZone2} col-md-6 bs-viewcontrolgroup" data-fieldname="TimeZone2">
+		<label class="control-label" for="{$labelfor_TimeZone2}">
+			{$label userinfo TimeZone2}
+		</label>
+		<div class="" >
+			{$TimeZone2_value}&nbsp;
+		</div>
+	</div>
+{END TimeZone2_fieldblock}
+					{BEGIN TimeZone3_fieldblock}
+	<div class="{$fielddispclass_TimeZone3} col-md-6 bs-viewcontrolgroup" data-fieldname="TimeZone3">
+		<label class="control-label" for="{$labelfor_TimeZone3}">
+			{$label userinfo TimeZone3}
+		</label>
+		<div class="" >
+			{$TimeZone3_value}&nbsp;
+		</div>
+	</div>
+{END TimeZone3_fieldblock}
+	</div>
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_buttons}
+<div {$buttons_chiddenattr} data-pageid="{$pageid}" data-container="buttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-6 "> 
+
+{BEGIN viewbuttons}
+{BEGIN back_button}
+<button class="btn btn-primary" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{BEGIN close_button}
+<button href="#" class="btn btn-primary" {$closebutton_attrs}>Close window</button>
+{END close_button}
+{END viewbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+
+
+{BEGIN container_leftbuttons_1}
+<div {$leftbuttons_1_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons_1" class="   col-md-4 "> 
+
+{BEGIN rightviewbuttons}
+<div class="btn-group" role="group">
+		{BEGIN prev_button}
+	<button class="btn btn-default {$prevbutton_class}" {$prevbutton_attrs}><span class="glyphicon glyphicon-chevron-left"></span></button>
+	{END prev_button}
+	{BEGIN next_button}
+	<button class="btn btn-default {$nextbutton_class}" {$nextbutton_attrs}><span class="glyphicon glyphicon-chevron-right"></span></button>
+	{END next_button}
+		{BEGIN view_menu_button}
+	<div class="btn-group dropup" role="group">
+		<button class="btn btn-default dropdown-toggle {$groupbutton_class}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+		<ul class="dropdown-menu dropdown-left">
+									{BEGIN edit_page_button}
+				<li><a href=# {$edit_page_button_attrs}>Edit</a></li>
+			{END edit_page_button}
+		</ul>
+	</div>
+	{END view_menu_button}
+</div>
+{END rightviewbuttons}
+
+
+
+</div>
+{END container_leftbuttons_1}
+
+
+
+
+
+
+</div>
+{END container_buttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

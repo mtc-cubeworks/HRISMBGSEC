@@ -97,6 +97,30 @@
 				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
 		</div>
 		</TBODY>{END searchCtrlBlock}
+		 
+		{BEGIN searchCtrlBlock_UserName}<div class="form-group srchPanelRow {$filterRow_class_UserName}" {$filterRow_attrs_UserName}>
+			<label>
+			
+			{$label empindschedule UserName}</label>
+							{$delCtrlButt}
+
+								<span class="rnr-searchtype">{$searchtype_UserName}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol_UserName}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_UserName}</span>
+		</div>
+		{END searchCtrlBlock_UserName}
+		 
+		{BEGIN searchCtrlBlock_SDate}<div class="form-group srchPanelRow {$filterRow_class_SDate}" {$filterRow_attrs_SDate}>
+			<label>
+			
+			{$label empindschedule SDate}</label>
+							{$delCtrlButt}
+
+								<span class="rnr-searchtype">{$searchtype_SDate}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol_SDate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_SDate}</span>
+		</div>
+		{END searchCtrlBlock_SDate}
 
 
 	</div>
@@ -104,7 +128,7 @@
 	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
 		<button class="btn btn-primary" id="searchButton{$id}" {$searchbutton_attrs}>Search</button>
 		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}>
-		Show all
+		Reset
 		</button>
 	</div>
 </div>
@@ -238,10 +262,10 @@
 {BEGIN searchform_text}<input type="search" class="form-control" {$searchfor_attrs} size="25">
 {END searchform_text}
 	<span class="input-group-btn">
-	{BEGIN searchform_showall}<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Show all">
+	{BEGIN searchform_clear_search}<button class="btn btn-default" {$clearSearchCont_attrs} {$clear_searchbutton_attrs} title="Reset">
 			<span class="glyphicon glyphicon-remove"></span>
 		</button>
-	{END searchform_showall}
+	{END searchform_clear_search}		
 	{BEGIN searchform_search}<button {$searchbutton_attrs} class="btn btn-primary" >
 		<span class="glyphicon glyphicon-search"></span>
 	</button>
@@ -628,6 +652,9 @@
 	.bs-gridcell[data-field=IncludeBreakLate]:before {
 		content: "{$label empindschedule IncludeBreakLate}";
 	}
+	.bs-gridcell[data-field=EmployeeID]:before {
+		content: "{$label empindschedule EmployeeID}";
+	}
 </style>
 <table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
 	<thead>
@@ -641,8 +668,16 @@
 									{END checkbox_column}
 
 																		
-									{BEGIN indschedule_dtable_column}<th >&nbsp;</th>
-									{END indschedule_dtable_column}
+									{BEGIN EmployeeID_fieldheadercolumn}<th class="rnr-gridfieldlabel {$EmployeeID_class}" data-field=EmployeeID>
+									{BEGIN EmployeeID_fieldheader}<span {$EmployeeID_orderlinkattrs}>
+											{$label empindschedule EmployeeID}
+										</span>
+									{END EmployeeID_fieldheader}
+									</th>
+									{END EmployeeID_fieldheadercolumn}
+									
+									
+									
 									
 									{BEGIN ScID_fieldheadercolumn}<th class="rnr-gridfieldlabel {$ScID_class}" data-field=ScID>
 									{BEGIN ScID_fieldheader}<span {$ScID_orderlinkattrs}>
@@ -1184,10 +1219,7 @@
 	
 	<span data-hidden {$ieditbuttonsholder_attrs}></span>
 
-		{BEGIN copy_column}{BEGIN copy_link}<a class="glyphicon glyphicon-duplicate" {$copylink_attrs} title="Copy"></a>
-	{END copy_link}
-	{END copy_column}
-
+	
 		{BEGIN view_column}{BEGIN view_link}<a class="glyphicon glyphicon-search" {$viewlink_attrs} title="View"></a>
 	{END view_link}
 	{END view_column}
@@ -1202,34 +1234,10 @@
 
 	
 
-	{BEGIN indschedule_dtable_column}<TD class="rnr-nowrap bs-griddetails" {$rowstyle} {$recordattrs}>
-	
-			{BEGIN ileave_dtable_link}<span>
-			<a {$ileave_dtablelink_attrs}>
-			Leave Summary
-							<span {$ileave_childnumber_attr} dir="ltr">
-				{BEGIN ileave_childcount}
-					({$ileave_childnumber})
-				{END ileave_childcount}</span>
-			</a>
-						&nbsp;
-		</span>
-		{END ileave_dtable_link}
-		{BEGIN indschedule1_dtable_link}<span>
-			<a {$indschedule1_dtablelink_attrs}>
-			OT/ND/RD Approval
-							<span {$indschedule1_childnumber_attr} dir="ltr">
-				{BEGIN indschedule1_childcount}
-					({$indschedule1_childnumber})
-				{END indschedule1_childcount}</span>
-			</a>
-						&nbsp;
-		</span>
-		{END indschedule1_dtable_link}
-
-	
+	{BEGIN EmployeeID_fieldcolumn}<td class="bs-gridcell {$EmployeeID_class}"  data-field=EmployeeID {$rowstyle} {$recordattrs}>
+		{$EmployeeID_value}
 	</td>
-	{END indschedule_dtable_column}
+{END EmployeeID_fieldcolumn}
 
 
 	{BEGIN ScID_fieldcolumn}<td class="bs-gridcell {$ScID_class}"  data-field=ScID {$rowstyle} {$recordattrs}>
@@ -1530,9 +1538,9 @@
 									{END checkbox_column}
 
 									
-										{BEGIN indschedule_dtable_column}<TD class="bs-gridcell"></td>
-									{END indschedule_dtable_column}
-
+										{BEGIN EmployeeID_fieldfootercolumn}<td class="bs-gridcell {$EmployeeID_class}" data-field="EmployeeID">
+																				</td>
+										{END EmployeeID_fieldfootercolumn}
 										{BEGIN ScID_fieldfootercolumn}<td class="bs-gridcell {$ScID_class}" data-field="ScID">
 																				</td>
 										{END ScID_fieldfootercolumn}
