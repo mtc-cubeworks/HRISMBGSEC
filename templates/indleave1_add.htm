@@ -93,6 +93,24 @@
 
 
 <div {$addfields_hiddenattr} data-pageid="{$pageid}" data-brick="addfields" class="form-horizontal" role="form">
+			{BEGIN LDate_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_LDate}" data-fieldname="LDate" data-signal-error-for="LDate{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_LDate}">
+		{BEGIN LDate_label}{$label indleave1 LDate}{END LDate_label}
+	</label>
+	<div class="col-md-6" >
+		{$LDate_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="LDate">
+		<div class="text-muted" >
+		{$tooltip indleave1 LDate}
+		</div>
+	</div>
+</div>
+</div>
+{END LDate_fieldblock}
+
 			{BEGIN LeaveType_fieldblock}
 <div class=container>
 <div class="form-group {$fielddispclass_LeaveType}" data-fieldname="LeaveType" data-signal-error-for="LeaveType{$id}" >
@@ -111,23 +129,23 @@
 </div>
 {END LeaveType_fieldblock}
 
-			{BEGIN LDate_fieldblock}
+			{BEGIN Reason_fieldblock}
 <div class=container>
-<div class="form-group {$fielddispclass_LDate}" data-fieldname="LDate" data-signal-error-for="LDate{$id}" >
-	<label class="col-md-3 control-label" for="{$labelfor_LDate}">
-		{BEGIN LDate_label}{$label indleave1 LDate}{END LDate_label}
+<div class="form-group {$fielddispclass_Reason}" data-fieldname="Reason" data-signal-error-for="Reason{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Reason}">
+		{BEGIN Reason_label}{$label indleave1 Reason}{END Reason_label}
 	</label>
 	<div class="col-md-6" >
-		{$LDate_editcontrol}
+		{$Reason_editcontrol}
 	</div>
-	<div class="col-md-3 help-block" data-helpfor="LDate">
+	<div class="col-md-3 help-block" data-helpfor="Reason">
 		<div class="text-muted" >
-		{$tooltip indleave1 LDate}
+		{$tooltip indleave1 Reason}
 		</div>
 	</div>
 </div>
 </div>
-{END LDate_fieldblock}
+{END Reason_fieldblock}
 
 			{BEGIN FirtHalf_fieldblock}
 <div class=container>

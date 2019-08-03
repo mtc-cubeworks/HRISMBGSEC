@@ -1,0 +1,348 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_viewpage}
+<div {$viewpage_chiddenattr} data-pageid="{$pageid}" data-container="viewpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-12 "> 
+
+{BEGIN viewheader}
+	<h2 {$viewheader_hiddenattr} data-pageid="{$pageid}" data-brick="viewheader" >{$pagetitlelabel overtimefileapp view}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END viewheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_viewpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class=" form-horizontal  col-md-12 "> 
+
+
+<div {$viewfields_hiddenattr} data-pageid="{$pageid}" data-brick="viewfields" >
+
+	<div class="container">
+					{BEGIN ItiD_fieldblock}
+	<div class="{$fielddispclass_ItiD} col-md-6 bs-viewcontrolgroup" data-fieldname="ItiD">
+		<label class="control-label" for="{$labelfor_ItiD}">
+			{$label overtimefileapp ItiD}
+		</label>
+		<div class="" >
+			{$ItiD_value}&nbsp;
+		</div>
+	</div>
+{END ItiD_fieldblock}
+					{BEGIN DateCreated_fieldblock}
+	<div class="{$fielddispclass_DateCreated} col-md-6 bs-viewcontrolgroup" data-fieldname="DateCreated">
+		<label class="control-label" for="{$labelfor_DateCreated}">
+			{$label overtimefileapp DateCreated}
+		</label>
+		<div class="" >
+			{$DateCreated_value}&nbsp;
+		</div>
+	</div>
+{END DateCreated_fieldblock}
+					{BEGIN EmployeeID_fieldblock}
+	<div class="{$fielddispclass_EmployeeID} col-md-6 bs-viewcontrolgroup" data-fieldname="EmployeeID">
+		<label class="control-label" for="{$labelfor_EmployeeID}">
+			{$label overtimefileapp EmployeeID}
+		</label>
+		<div class="" >
+			{$EmployeeID_value}&nbsp;
+		</div>
+	</div>
+{END EmployeeID_fieldblock}
+					{BEGIN Reason_fieldblock}
+	<div class="{$fielddispclass_Reason} col-md-6 bs-viewcontrolgroup" data-fieldname="Reason">
+		<label class="control-label" for="{$labelfor_Reason}">
+			{$label overtimefileapp Reason}
+		</label>
+		<div class="" >
+			{$Reason_value}&nbsp;
+		</div>
+	</div>
+{END Reason_fieldblock}
+					{BEGIN FromDateTime_fieldblock}
+	<div class="{$fielddispclass_FromDateTime} col-md-6 bs-viewcontrolgroup" data-fieldname="FromDateTime">
+		<label class="control-label" for="{$labelfor_FromDateTime}">
+			{$label overtimefileapp FromDateTime}
+		</label>
+		<div class="" >
+			{$FromDateTime_value}&nbsp;
+		</div>
+	</div>
+{END FromDateTime_fieldblock}
+					{BEGIN ToDateTime_fieldblock}
+	<div class="{$fielddispclass_ToDateTime} col-md-6 bs-viewcontrolgroup" data-fieldname="ToDateTime">
+		<label class="control-label" for="{$labelfor_ToDateTime}">
+			{$label overtimefileapp ToDateTime}
+		</label>
+		<div class="" >
+			{$ToDateTime_value}&nbsp;
+		</div>
+	</div>
+{END ToDateTime_fieldblock}
+					{BEGIN NoMins_fieldblock}
+	<div class="{$fielddispclass_NoMins} col-md-6 bs-viewcontrolgroup" data-fieldname="NoMins">
+		<label class="control-label" for="{$labelfor_NoMins}">
+			{$label overtimefileapp NoMins}
+		</label>
+		<div class="" >
+			{$NoMins_value}&nbsp;
+		</div>
+	</div>
+{END NoMins_fieldblock}
+					{BEGIN Approved_fieldblock}
+	<div class="{$fielddispclass_Approved} col-md-6 bs-viewcontrolgroup" data-fieldname="Approved">
+		<label class="control-label" for="{$labelfor_Approved}">
+			{$label overtimefileapp Approved}
+		</label>
+		<div class="" >
+			{$Approved_value}&nbsp;
+		</div>
+	</div>
+{END Approved_fieldblock}
+					{BEGIN Approvedby_fieldblock}
+	<div class="{$fielddispclass_Approvedby} col-md-6 bs-viewcontrolgroup" data-fieldname="Approvedby">
+		<label class="control-label" for="{$labelfor_Approvedby}">
+			{$label overtimefileapp Approvedby}
+		</label>
+		<div class="" >
+			{$Approvedby_value}&nbsp;
+		</div>
+	</div>
+{END Approvedby_fieldblock}
+					{BEGIN ApprovedDate_fieldblock}
+	<div class="{$fielddispclass_ApprovedDate} col-md-6 bs-viewcontrolgroup" data-fieldname="ApprovedDate">
+		<label class="control-label" for="{$labelfor_ApprovedDate}">
+			{$label overtimefileapp ApprovedDate}
+		</label>
+		<div class="" >
+			{$ApprovedDate_value}&nbsp;
+		</div>
+	</div>
+{END ApprovedDate_fieldblock}
+					{BEGIN ApprovedTime_fieldblock}
+	<div class="{$fielddispclass_ApprovedTime} col-md-6 bs-viewcontrolgroup" data-fieldname="ApprovedTime">
+		<label class="control-label" for="{$labelfor_ApprovedTime}">
+			{$label overtimefileapp ApprovedTime}
+		</label>
+		<div class="" >
+			{$ApprovedTime_value}&nbsp;
+		</div>
+	</div>
+{END ApprovedTime_fieldblock}
+					{BEGIN Posted_fieldblock}
+	<div class="{$fielddispclass_Posted} col-md-6 bs-viewcontrolgroup" data-fieldname="Posted">
+		<label class="control-label" for="{$labelfor_Posted}">
+			{$label overtimefileapp Posted}
+		</label>
+		<div class="" >
+			{$Posted_value}&nbsp;
+		</div>
+	</div>
+{END Posted_fieldblock}
+					{BEGIN Locked_fieldblock}
+	<div class="{$fielddispclass_Locked} col-md-6 bs-viewcontrolgroup" data-fieldname="Locked">
+		<label class="control-label" for="{$labelfor_Locked}">
+			{$label overtimefileapp Locked}
+		</label>
+		<div class="" >
+			{$Locked_value}&nbsp;
+		</div>
+	</div>
+{END Locked_fieldblock}
+					{BEGIN Superior_fieldblock}
+	<div class="{$fielddispclass_Superior} col-md-6 bs-viewcontrolgroup" data-fieldname="Superior">
+		<label class="control-label" for="{$labelfor_Superior}">
+			{$label overtimefileapp Superior}
+		</label>
+		<div class="" >
+			{$Superior_value}&nbsp;
+		</div>
+	</div>
+{END Superior_fieldblock}
+					{BEGIN 1stApproval_fieldblock}
+	<div class="{$fielddispclass_1stApproval} col-md-6 bs-viewcontrolgroup" data-fieldname="1stApproval">
+		<label class="control-label" for="{$labelfor_1stApproval}">
+			{$label overtimefileapp 1stApproval}
+		</label>
+		<div class="" >
+			{$1stApproval_value}&nbsp;
+		</div>
+	</div>
+{END 1stApproval_fieldblock}
+					{BEGIN Superior2_fieldblock}
+	<div class="{$fielddispclass_Superior2} col-md-6 bs-viewcontrolgroup" data-fieldname="Superior2">
+		<label class="control-label" for="{$labelfor_Superior2}">
+			{$label overtimefileapp Superior2}
+		</label>
+		<div class="" >
+			{$Superior2_value}&nbsp;
+		</div>
+	</div>
+{END Superior2_fieldblock}
+					{BEGIN 2ndApproval_fieldblock}
+	<div class="{$fielddispclass_2ndApproval} col-md-6 bs-viewcontrolgroup" data-fieldname="2ndApproval">
+		<label class="control-label" for="{$labelfor_2ndApproval}">
+			{$label overtimefileapp 2ndApproval}
+		</label>
+		<div class="" >
+			{$2ndApproval_value}&nbsp;
+		</div>
+	</div>
+{END 2ndApproval_fieldblock}
+	</div>
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_buttons}
+<div {$buttons_chiddenattr} data-pageid="{$pageid}" data-container="buttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-6 "> 
+
+{BEGIN viewbuttons}
+{BEGIN back_button}
+<button class="btn btn-primary" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{BEGIN close_button}
+<button href="#" class="btn btn-primary" {$closebutton_attrs}>Close window</button>
+{END close_button}
+{END viewbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+
+
+{BEGIN container_leftbuttons_1}
+<div {$leftbuttons_1_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons_1" class="   col-md-4 "> 
+
+{BEGIN rightviewbuttons}
+<div class="btn-group" role="group">
+		{BEGIN prev_button}
+	<button class="btn btn-default {$prevbutton_class}" {$prevbutton_attrs}><span class="glyphicon glyphicon-chevron-left"></span></button>
+	{END prev_button}
+	{BEGIN next_button}
+	<button class="btn btn-default {$nextbutton_class}" {$nextbutton_attrs}><span class="glyphicon glyphicon-chevron-right"></span></button>
+	{END next_button}
+		{BEGIN view_menu_button}
+	<div class="btn-group dropup" role="group">
+		<button class="btn btn-default dropdown-toggle {$groupbutton_class}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+		<ul class="dropdown-menu dropdown-left">
+									{BEGIN edit_page_button}
+				<li><a href=# {$edit_page_button_attrs}>Edit</a></li>
+			{END edit_page_button}
+		</ul>
+	</div>
+	{END view_menu_button}
+</div>
+{END rightviewbuttons}
+
+
+
+</div>
+{END container_leftbuttons_1}
+
+
+
+
+
+
+</div>
+{END container_buttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -523,6 +523,9 @@
 	.bs-gridcell[data-field=SecondHalf]:before {
 		content: "{$label indleave SecondHalf}";
 	}
+	.bs-gridcell[data-field=Reason]:before {
+		content: "{$label indleave Reason}";
+	}
 </style>
 <table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
 	<thead>
@@ -553,6 +556,19 @@
 									
 									
 									
+									{BEGIN EmployeeID_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$EmployeeID_class}" data-field=EmployeeID>
+									{BEGIN EmployeeID_fieldheader}
+																				<span {$EmployeeID_orderlinkattrs}>
+											{$label indleave EmployeeID}
+										</span>
+									{END EmployeeID_fieldheader}
+									</th>
+									{END EmployeeID_fieldheadercolumn}
+									
+									
+									
+									
 									{BEGIN LeaveType_fieldheadercolumn}
 									<th class="rnr-gridfieldlabel {$LeaveType_class}" data-field=LeaveType>
 									{BEGIN LeaveType_fieldheader}
@@ -566,15 +582,15 @@
 									
 									
 									
-									{BEGIN EmployeeID_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$EmployeeID_class}" data-field=EmployeeID>
-									{BEGIN EmployeeID_fieldheader}
-																				<span {$EmployeeID_orderlinkattrs}>
-											{$label indleave EmployeeID}
+									{BEGIN Reason_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Reason_class}" data-field=Reason>
+									{BEGIN Reason_fieldheader}
+																				<span {$Reason_orderlinkattrs}>
+											{$label indleave Reason}
 										</span>
-									{END EmployeeID_fieldheader}
+									{END Reason_fieldheader}
 									</th>
-									{END EmployeeID_fieldheadercolumn}
+									{END Reason_fieldheadercolumn}
 									
 									
 									
@@ -714,6 +730,13 @@
 {END LtID_fieldcolumn}
 
 
+	{BEGIN EmployeeID_fieldcolumn}
+	<td class="bs-gridcell {$EmployeeID_class}"  data-field=EmployeeID {$rowstyle} {$recordattrs}>
+		{$EmployeeID_value}
+	</td>
+{END EmployeeID_fieldcolumn}
+
+
 	{BEGIN LeaveType_fieldcolumn}
 	<td class="bs-gridcell {$LeaveType_class}"  data-field=LeaveType {$rowstyle} {$recordattrs}>
 		{$LeaveType_value}
@@ -721,11 +744,11 @@
 {END LeaveType_fieldcolumn}
 
 
-	{BEGIN EmployeeID_fieldcolumn}
-	<td class="bs-gridcell {$EmployeeID_class}"  data-field=EmployeeID {$rowstyle} {$recordattrs}>
-		{$EmployeeID_value}
+	{BEGIN Reason_fieldcolumn}
+	<td class="bs-gridcell {$Reason_class}"  data-field=Reason {$rowstyle} {$recordattrs}>
+		{$Reason_value}
 	</td>
-{END EmployeeID_fieldcolumn}
+{END Reason_fieldcolumn}
 
 
 	{BEGIN LDate_fieldcolumn}

@@ -101,6 +101,11 @@
 				{$label loans EmployeeID}
 			</th>
 			{END EmployeeID_fieldheadercolumn}
+			{BEGIN OPrincipal_fieldheadercolumn}
+			<th class="{$OPrincipal_class}" {$OPrincipal_style}  data-field="OPrincipal">
+				{$label loans OPrincipal}
+			</th>
+			{END OPrincipal_fieldheadercolumn}
 			{BEGIN Principal_fieldheadercolumn}
 			<th class="{$Principal_class}" {$Principal_style}  data-field="Principal">
 				{$label loans Principal}
@@ -158,6 +163,11 @@
 				{$EmployeeID_value}
 			</td>
 			{END EmployeeID_fieldcolumn}
+			{BEGIN OPrincipal_fieldcolumn}
+			<td  class="{$OPrincipal_class}" {$OPrincipal_style} {$recordattrs}>
+				{$OPrincipal_value}
+			</td>
+			{END OPrincipal_fieldcolumn}
 			{BEGIN Principal_fieldcolumn}
 			<td  class="{$Principal_class}" {$Principal_style} {$recordattrs}>
 				{$Principal_value}
@@ -213,6 +223,14 @@
 			<td>
 						</td>
 			{END EmployeeID_fieldfootercolumn}
+			{BEGIN OPrincipal_fieldfootercolumn}
+			<td>
+							{BEGIN OPrincipal_showtotal}
+									Total:
+				{$OPrincipal_total}
+				{END OPrincipal_showtotal}
+			</td>
+			{END OPrincipal_fieldfootercolumn}
 			{BEGIN Principal_fieldfootercolumn}
 			<td>
 							{BEGIN Principal_showtotal}

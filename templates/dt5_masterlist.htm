@@ -174,6 +174,78 @@
 	.bs-gridcell[data-field=EarlyMins]:before {
 		content: "{$label dt5 EarlyMins}";
 	}
+	.bs-gridcell[data-field=ANDOTMins]:before {
+		content: "{$label dt5 ANDOTMins}";
+	}
+	.bs-gridcell[data-field=RegNDOT]:before {
+		content: "{$label dt5 RegNDOT}";
+	}
+	.bs-gridcell[data-field=RHNDOT]:before {
+		content: "{$label dt5 RHNDOT}";
+	}
+	.bs-gridcell[data-field=SHNDOT]:before {
+		content: "{$label dt5 SHNDOT}";
+	}
+	.bs-gridcell[data-field=CHNDOT]:before {
+		content: "{$label dt5 CHNDOT}";
+	}
+	.bs-gridcell[data-field=RDNDOT]:before {
+		content: "{$label dt5 RDNDOT}";
+	}
+	.bs-gridcell[data-field=RegNDOTHrs]:before {
+		content: "{$label dt5 RegNDOTHrs}";
+	}
+	.bs-gridcell[data-field=RHNDOTHrs]:before {
+		content: "{$label dt5 RHNDOTHrs}";
+	}
+	.bs-gridcell[data-field=SHNDOTHrs]:before {
+		content: "{$label dt5 SHNDOTHrs}";
+	}
+	.bs-gridcell[data-field=CHNDOTHrs]:before {
+		content: "{$label dt5 CHNDOTHrs}";
+	}
+	.bs-gridcell[data-field=RDNDOTHrs]:before {
+		content: "{$label dt5 RDNDOTHrs}";
+	}
+	.bs-gridcell[data-field=DH]:before {
+		content: "{$label dt5 DH}";
+	}
+	.bs-gridcell[data-field=DHRD]:before {
+		content: "{$label dt5 DHRD}";
+	}
+	.bs-gridcell[data-field=DHOT]:before {
+		content: "{$label dt5 DHOT}";
+	}
+	.bs-gridcell[data-field=DHRDOT]:before {
+		content: "{$label dt5 DHRDOT}";
+	}
+	.bs-gridcell[data-field=SHRDND]:before {
+		content: "{$label dt5 SHRDND}";
+	}
+	.bs-gridcell[data-field=RHRDND]:before {
+		content: "{$label dt5 RHRDND}";
+	}
+	.bs-gridcell[data-field=SHRDNDOT]:before {
+		content: "{$label dt5 SHRDNDOT}";
+	}
+	.bs-gridcell[data-field=RHRDNDOT]:before {
+		content: "{$label dt5 RHRDNDOT}";
+	}
+	.bs-gridcell[data-field=DHND]:before {
+		content: "{$label dt5 DHND}";
+	}
+	.bs-gridcell[data-field=DHRDND]:before {
+		content: "{$label dt5 DHRDND}";
+	}
+	.bs-gridcell[data-field=DHNDOT]:before {
+		content: "{$label dt5 DHNDOT}";
+	}
+	.bs-gridcell[data-field=DHRDNDOT]:before {
+		content: "{$label dt5 DHRDNDOT}";
+	}
+	.bs-gridcell[data-field=SchedType]:before {
+		content: "{$label dt5 SchedType}";
+	}
 </style>
 <table {$masterlistgrid_hiddenattr} data-pageid="{$pageid}" data-brick="masterlistgrid" class="table rnr-b-mastergridfields rnr-gridtable bs-flexgrid" >
 		<thead>
@@ -186,6 +258,7 @@
 			<th class="{$Department_class}">{$label dt5 Department}</th>
 			<th class="{$WageType_class}">{$label dt5 WageType}</th>
 			<th class="{$SDate_class}">{$label dt5 SDate}</th>
+			<th class="{$SchedType_class}">{$label dt5 SchedType}</th>
 			<th class="{$DayIs_class}">{$label dt5 DayIs}</th>
 			<th class="{$RestDay_class}">{$label dt5 RestDay}</th>
 			<th class="{$STimeIn_class}">{$label dt5 STimeIn}</th>
@@ -209,8 +282,14 @@
 			<th class="{$NDMins_class}">{$label dt5 NDMins}</th>
 			<th class="{$ApprovedNightDiff_class}">{$label dt5 ApprovedNightDiff}</th>
 			<th class="{$ANDiff_class}">{$label dt5 ANDiff}</th>
+			<th class="{$ANDOTMins_class}">{$label dt5 ANDOTMins}</th>
 			<th class="{$ApprovedRD_class}">{$label dt5 ApprovedRD}</th>
 			<th class="{$RDMins_class}">{$label dt5 RDMins}</th>
+			<th class="{$RDNDOTHrs_class}">{$label dt5 RDNDOTHrs}</th>
+			<th class="{$CHNDOTHrs_class}">{$label dt5 CHNDOTHrs}</th>
+			<th class="{$SHNDOTHrs_class}">{$label dt5 SHNDOTHrs}</th>
+			<th class="{$RHNDOTHrs_class}">{$label dt5 RHNDOTHrs}</th>
+			<th class="{$RegNDOTHrs_class}">{$label dt5 RegNDOTHrs}</th>
 			<th class="{$RHolidayHrs_class}">{$label dt5 RHolidayHrs}</th>
 			<th class="{$SHolidayHrs_class}">{$label dt5 SHolidayHrs}</th>
 			<th class="{$CHolidayHrs_class}">{$label dt5 CHolidayHrs}</th>
@@ -229,6 +308,23 @@
 			<th class="{$SHND_class}">{$label dt5 SHND}</th>
 			<th class="{$CHND_class}">{$label dt5 CHND}</th>
 			<th class="{$RDND_class}">{$label dt5 RDND}</th>
+			<th class="{$RegNDOT_class}">{$label dt5 RegNDOT}</th>
+			<th class="{$RHNDOT_class}">{$label dt5 RHNDOT}</th>
+			<th class="{$SHNDOT_class}">{$label dt5 SHNDOT}</th>
+			<th class="{$CHNDOT_class}">{$label dt5 CHNDOT}</th>
+			<th class="{$RDNDOT_class}">{$label dt5 RDNDOT}</th>
+			<th class="{$DH_class}">{$label dt5 DH}</th>
+			<th class="{$DHRD_class}">{$label dt5 DHRD}</th>
+			<th class="{$DHOT_class}">{$label dt5 DHOT}</th>
+			<th class="{$DHRDOT_class}">{$label dt5 DHRDOT}</th>
+			<th class="{$SHRDND_class}">{$label dt5 SHRDND}</th>
+			<th class="{$RHRDND_class}">{$label dt5 RHRDND}</th>
+			<th class="{$RHRDNDOT_class}">{$label dt5 RHRDNDOT}</th>
+			<th class="{$SHRDNDOT_class}">{$label dt5 SHRDNDOT}</th>
+			<th class="{$DHND_class}">{$label dt5 DHND}</th>
+			<th class="{$DHRDND_class}">{$label dt5 DHRDND}</th>
+			<th class="{$DHNDOT_class}">{$label dt5 DHNDOT}</th>
+			<th class="{$DHRDNDOT_class}">{$label dt5 DHRDNDOT}</th>
 			<th class="{$Rlink_class}">{$label dt5 Rlink}</th>
 		</tr>
 	</thead>
@@ -243,6 +339,7 @@
 			<td class="{$Department_class} bs-gridcell" data-field=Department>{$Department_mastervalue}</td>
 			<td class="{$WageType_class} bs-gridcell" data-field=WageType>{$WageType_mastervalue}</td>
 			<td class="{$SDate_class} bs-gridcell" data-field=SDate>{$SDate_mastervalue}</td>
+			<td class="{$SchedType_class} bs-gridcell" data-field=SchedType>{$SchedType_mastervalue}</td>
 			<td class="{$DayIs_class} bs-gridcell" data-field=DayIs>{$DayIs_mastervalue}</td>
 			<td class="{$RestDay_class} bs-gridcell" data-field=RestDay>{$RestDay_mastervalue}</td>
 			<td class="{$STimeIn_class} bs-gridcell" data-field=STimeIn>{$STimeIn_mastervalue}</td>
@@ -266,8 +363,14 @@
 			<td class="{$NDMins_class} bs-gridcell" data-field=NDMins>{$NDMins_mastervalue}</td>
 			<td class="{$ApprovedNightDiff_class} bs-gridcell" data-field=ApprovedNightDiff>{$ApprovedNightDiff_mastervalue}</td>
 			<td class="{$ANDiff_class} bs-gridcell" data-field=ANDiff>{$ANDiff_mastervalue}</td>
+			<td class="{$ANDOTMins_class} bs-gridcell" data-field=ANDOTMins>{$ANDOTMins_mastervalue}</td>
 			<td class="{$ApprovedRD_class} bs-gridcell" data-field=ApprovedRD>{$ApprovedRD_mastervalue}</td>
 			<td class="{$RDMins_class} bs-gridcell" data-field=RDMins>{$RDMins_mastervalue}</td>
+			<td class="{$RDNDOTHrs_class} bs-gridcell" data-field=RDNDOTHrs>{$RDNDOTHrs_mastervalue}</td>
+			<td class="{$CHNDOTHrs_class} bs-gridcell" data-field=CHNDOTHrs>{$CHNDOTHrs_mastervalue}</td>
+			<td class="{$SHNDOTHrs_class} bs-gridcell" data-field=SHNDOTHrs>{$SHNDOTHrs_mastervalue}</td>
+			<td class="{$RHNDOTHrs_class} bs-gridcell" data-field=RHNDOTHrs>{$RHNDOTHrs_mastervalue}</td>
+			<td class="{$RegNDOTHrs_class} bs-gridcell" data-field=RegNDOTHrs>{$RegNDOTHrs_mastervalue}</td>
 			<td class="{$RHolidayHrs_class} bs-gridcell" data-field=RHolidayHrs>{$RHolidayHrs_mastervalue}</td>
 			<td class="{$SHolidayHrs_class} bs-gridcell" data-field=SHolidayHrs>{$SHolidayHrs_mastervalue}</td>
 			<td class="{$CHolidayHrs_class} bs-gridcell" data-field=CHolidayHrs>{$CHolidayHrs_mastervalue}</td>
@@ -286,6 +389,23 @@
 			<td class="{$SHND_class} bs-gridcell" data-field=SHND>{$SHND_mastervalue}</td>
 			<td class="{$CHND_class} bs-gridcell" data-field=CHND>{$CHND_mastervalue}</td>
 			<td class="{$RDND_class} bs-gridcell" data-field=RDND>{$RDND_mastervalue}</td>
+			<td class="{$RegNDOT_class} bs-gridcell" data-field=RegNDOT>{$RegNDOT_mastervalue}</td>
+			<td class="{$RHNDOT_class} bs-gridcell" data-field=RHNDOT>{$RHNDOT_mastervalue}</td>
+			<td class="{$SHNDOT_class} bs-gridcell" data-field=SHNDOT>{$SHNDOT_mastervalue}</td>
+			<td class="{$CHNDOT_class} bs-gridcell" data-field=CHNDOT>{$CHNDOT_mastervalue}</td>
+			<td class="{$RDNDOT_class} bs-gridcell" data-field=RDNDOT>{$RDNDOT_mastervalue}</td>
+			<td class="{$DH_class} bs-gridcell" data-field=DH>{$DH_mastervalue}</td>
+			<td class="{$DHRD_class} bs-gridcell" data-field=DHRD>{$DHRD_mastervalue}</td>
+			<td class="{$DHOT_class} bs-gridcell" data-field=DHOT>{$DHOT_mastervalue}</td>
+			<td class="{$DHRDOT_class} bs-gridcell" data-field=DHRDOT>{$DHRDOT_mastervalue}</td>
+			<td class="{$SHRDND_class} bs-gridcell" data-field=SHRDND>{$SHRDND_mastervalue}</td>
+			<td class="{$RHRDND_class} bs-gridcell" data-field=RHRDND>{$RHRDND_mastervalue}</td>
+			<td class="{$RHRDNDOT_class} bs-gridcell" data-field=RHRDNDOT>{$RHRDNDOT_mastervalue}</td>
+			<td class="{$SHRDNDOT_class} bs-gridcell" data-field=SHRDNDOT>{$SHRDNDOT_mastervalue}</td>
+			<td class="{$DHND_class} bs-gridcell" data-field=DHND>{$DHND_mastervalue}</td>
+			<td class="{$DHRDND_class} bs-gridcell" data-field=DHRDND>{$DHRDND_mastervalue}</td>
+			<td class="{$DHNDOT_class} bs-gridcell" data-field=DHNDOT>{$DHNDOT_mastervalue}</td>
+			<td class="{$DHRDNDOT_class} bs-gridcell" data-field=DHRDNDOT>{$DHRDNDOT_mastervalue}</td>
 			<td class="{$Rlink_class} bs-gridcell" data-field=Rlink>{$Rlink_mastervalue}</td>
 		</tr>
 	</tbody>

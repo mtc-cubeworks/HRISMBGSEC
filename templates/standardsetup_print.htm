@@ -90,6 +90,51 @@
 				{$label standardsetup WorkingDaysInYearDailies}
 			</th>
 			{END WorkingDaysInYearDailies_fieldheadercolumn}
+			{BEGIN AllowableLeaveFrom_fieldheadercolumn}
+			<th class="{$AllowableLeaveFrom_class}" {$AllowableLeaveFrom_style}  data-field="AllowableLeaveFrom">
+				{$label standardsetup AllowableLeaveFrom}
+			</th>
+			{END AllowableLeaveFrom_fieldheadercolumn}
+			{BEGIN AllowableLeaveTo_fieldheadercolumn}
+			<th class="{$AllowableLeaveTo_class}" {$AllowableLeaveTo_style}  data-field="AllowableLeaveTo">
+				{$label standardsetup AllowableLeaveTo}
+			</th>
+			{END AllowableLeaveTo_fieldheadercolumn}
+			{BEGIN RHFactor_fieldheadercolumn}
+			<th class="{$RHFactor_class}" {$RHFactor_style}  data-field="RHFactor">
+				{$label standardsetup RHFactor}
+			</th>
+			{END RHFactor_fieldheadercolumn}
+			{BEGIN SHFactor_fieldheadercolumn}
+			<th class="{$SHFactor_class}" {$SHFactor_style}  data-field="SHFactor">
+				{$label standardsetup SHFactor}
+			</th>
+			{END SHFactor_fieldheadercolumn}
+			{BEGIN SHFactorDaily_fieldheadercolumn}
+			<th class="{$SHFactorDaily_class}" {$SHFactorDaily_style}  data-field="SHFactorDaily">
+				{$label standardsetup SHFactorDaily}
+			</th>
+			{END SHFactorDaily_fieldheadercolumn}
+			{BEGIN CHFactor_fieldheadercolumn}
+			<th class="{$CHFactor_class}" {$CHFactor_style}  data-field="CHFactor">
+				{$label standardsetup CHFactor}
+			</th>
+			{END CHFactor_fieldheadercolumn}
+			{BEGIN CHFactorDaily_fieldheadercolumn}
+			<th class="{$CHFactorDaily_class}" {$CHFactorDaily_style}  data-field="CHFactorDaily">
+				{$label standardsetup CHFactorDaily}
+			</th>
+			{END CHFactorDaily_fieldheadercolumn}
+			{BEGIN DoubleHoliday_fieldheadercolumn}
+			<th class="{$DoubleHoliday_class}" {$DoubleHoliday_style}  data-field="DoubleHoliday">
+				{$label standardsetup DoubleHoliday}
+			</th>
+			{END DoubleHoliday_fieldheadercolumn}
+			{BEGIN ReqBeforeHoliday_fieldheadercolumn}
+			<th class="{$ReqBeforeHoliday_class}" {$ReqBeforeHoliday_style}  data-field="ReqBeforeHoliday">
+				{$label standardsetup ReqBeforeHoliday}
+			</th>
+			{END ReqBeforeHoliday_fieldheadercolumn}
 			{BEGIN RegOTFactor_fieldheadercolumn}
 			<th class="{$RegOTFactor_class}" {$RegOTFactor_style}  data-field="RegOTFactor">
 				{$label standardsetup RegOTFactor}
@@ -140,46 +185,56 @@
 				{$label standardsetup SHRDOTFactorDaily}
 			</th>
 			{END SHRDOTFactorDaily_fieldheadercolumn}
-			{BEGIN AllowableLeaveFrom_fieldheadercolumn}
-			<th class="{$AllowableLeaveFrom_class}" {$AllowableLeaveFrom_style}  data-field="AllowableLeaveFrom">
-				{$label standardsetup AllowableLeaveFrom}
+			{BEGIN RHNDOTFactor_fieldheadercolumn}
+			<th class="{$RHNDOTFactor_class}" {$RHNDOTFactor_style}  data-field="RHNDOTFactor">
+				{$label standardsetup RHNDOTFactor}
 			</th>
-			{END AllowableLeaveFrom_fieldheadercolumn}
-			{BEGIN AllowableLeaveTo_fieldheadercolumn}
-			<th class="{$AllowableLeaveTo_class}" {$AllowableLeaveTo_style}  data-field="AllowableLeaveTo">
-				{$label standardsetup AllowableLeaveTo}
+			{END RHNDOTFactor_fieldheadercolumn}
+			{BEGIN SHNDOTFactor_fieldheadercolumn}
+			<th class="{$SHNDOTFactor_class}" {$SHNDOTFactor_style}  data-field="SHNDOTFactor">
+				{$label standardsetup SHNDOTFactor}
 			</th>
-			{END AllowableLeaveTo_fieldheadercolumn}
-			{BEGIN RHFactor_fieldheadercolumn}
-			<th class="{$RHFactor_class}" {$RHFactor_style}  data-field="RHFactor">
-				{$label standardsetup RHFactor}
+			{END SHNDOTFactor_fieldheadercolumn}
+			{BEGIN CHNDOTFactor_fieldheadercolumn}
+			<th class="{$CHNDOTFactor_class}" {$CHNDOTFactor_style}  data-field="CHNDOTFactor">
+				{$label standardsetup CHNDOTFactor}
 			</th>
-			{END RHFactor_fieldheadercolumn}
-			{BEGIN SHFactor_fieldheadercolumn}
-			<th class="{$SHFactor_class}" {$SHFactor_style}  data-field="SHFactor">
-				{$label standardsetup SHFactor}
+			{END CHNDOTFactor_fieldheadercolumn}
+			{BEGIN RDNDOTFactor_fieldheadercolumn}
+			<th class="{$RDNDOTFactor_class}" {$RDNDOTFactor_style}  data-field="RDNDOTFactor">
+				{$label standardsetup RDNDOTFactor}
 			</th>
-			{END SHFactor_fieldheadercolumn}
-			{BEGIN SHFactorDaily_fieldheadercolumn}
-			<th class="{$SHFactorDaily_class}" {$SHFactorDaily_style}  data-field="SHFactorDaily">
-				{$label standardsetup SHFactorDaily}
+			{END RDNDOTFactor_fieldheadercolumn}
+			{BEGIN RHRDNDOTFacotr_fieldheadercolumn}
+			<th class="{$RHRDNDOTFacotr_class}" {$RHRDNDOTFacotr_style}  data-field="RHRDNDOTFacotr">
+				{$label standardsetup RHRDNDOTFacotr}
 			</th>
-			{END SHFactorDaily_fieldheadercolumn}
-			{BEGIN CHFactor_fieldheadercolumn}
-			<th class="{$CHFactor_class}" {$CHFactor_style}  data-field="CHFactor">
-				{$label standardsetup CHFactor}
+			{END RHRDNDOTFacotr_fieldheadercolumn}
+			{BEGIN SHRDNDOTFactor_fieldheadercolumn}
+			<th class="{$SHRDNDOTFactor_class}" {$SHRDNDOTFactor_style}  data-field="SHRDNDOTFactor">
+				{$label standardsetup SHRDNDOTFactor}
 			</th>
-			{END CHFactor_fieldheadercolumn}
-			{BEGIN CHFactorDaily_fieldheadercolumn}
-			<th class="{$CHFactorDaily_class}" {$CHFactorDaily_style}  data-field="CHFactorDaily">
-				{$label standardsetup CHFactorDaily}
+			{END SHRDNDOTFactor_fieldheadercolumn}
+			{BEGIN DoubleHolidayOT_fieldheadercolumn}
+			<th class="{$DoubleHolidayOT_class}" {$DoubleHolidayOT_style}  data-field="DoubleHolidayOT">
+				{$label standardsetup DoubleHolidayOT}
 			</th>
-			{END CHFactorDaily_fieldheadercolumn}
-			{BEGIN ReqBeforeHoliday_fieldheadercolumn}
-			<th class="{$ReqBeforeHoliday_class}" {$ReqBeforeHoliday_style}  data-field="ReqBeforeHoliday">
-				{$label standardsetup ReqBeforeHoliday}
+			{END DoubleHolidayOT_fieldheadercolumn}
+			{BEGIN DoubleHolidayRDOT_fieldheadercolumn}
+			<th class="{$DoubleHolidayRDOT_class}" {$DoubleHolidayRDOT_style}  data-field="DoubleHolidayRDOT">
+				{$label standardsetup DoubleHolidayRDOT}
 			</th>
-			{END ReqBeforeHoliday_fieldheadercolumn}
+			{END DoubleHolidayRDOT_fieldheadercolumn}
+			{BEGIN DoubleHolidayNDOT_fieldheadercolumn}
+			<th class="{$DoubleHolidayNDOT_class}" {$DoubleHolidayNDOT_style}  data-field="DoubleHolidayNDOT">
+				{$label standardsetup DoubleHolidayNDOT}
+			</th>
+			{END DoubleHolidayNDOT_fieldheadercolumn}
+			{BEGIN DoubleHolidayRDNDOT_fieldheadercolumn}
+			<th class="{$DoubleHolidayRDNDOT_class}" {$DoubleHolidayRDNDOT_style}  data-field="DoubleHolidayRDNDOT">
+				{$label standardsetup DoubleHolidayRDNDOT}
+			</th>
+			{END DoubleHolidayRDNDOT_fieldheadercolumn}
 			{BEGIN NightDiffStartTime_fieldheadercolumn}
 			<th class="{$NightDiffStartTime_class}" {$NightDiffStartTime_style}  data-field="NightDiffStartTime">
 				{$label standardsetup NightDiffStartTime}
@@ -215,6 +270,31 @@
 				{$label standardsetup RDNDiffFactor}
 			</th>
 			{END RDNDiffFactor_fieldheadercolumn}
+			{BEGIN RegNDOTFactor_fieldheadercolumn}
+			<th class="{$RegNDOTFactor_class}" {$RegNDOTFactor_style}  data-field="RegNDOTFactor">
+				{$label standardsetup RegNDOTFactor}
+			</th>
+			{END RegNDOTFactor_fieldheadercolumn}
+			{BEGIN RHRDNDFactor_fieldheadercolumn}
+			<th class="{$RHRDNDFactor_class}" {$RHRDNDFactor_style}  data-field="RHRDNDFactor">
+				{$label standardsetup RHRDNDFactor}
+			</th>
+			{END RHRDNDFactor_fieldheadercolumn}
+			{BEGIN SHRDNDFactor_fieldheadercolumn}
+			<th class="{$SHRDNDFactor_class}" {$SHRDNDFactor_style}  data-field="SHRDNDFactor">
+				{$label standardsetup SHRDNDFactor}
+			</th>
+			{END SHRDNDFactor_fieldheadercolumn}
+			{BEGIN DoubleHolidayND_fieldheadercolumn}
+			<th class="{$DoubleHolidayND_class}" {$DoubleHolidayND_style}  data-field="DoubleHolidayND">
+				{$label standardsetup DoubleHolidayND}
+			</th>
+			{END DoubleHolidayND_fieldheadercolumn}
+			{BEGIN DoubleHolidayRDND_fieldheadercolumn}
+			<th class="{$DoubleHolidayRDND_class}" {$DoubleHolidayRDND_style}  data-field="DoubleHolidayRDND">
+				{$label standardsetup DoubleHolidayRDND}
+			</th>
+			{END DoubleHolidayRDND_fieldheadercolumn}
 			{BEGIN RDFactor_fieldheadercolumn}
 			<th class="{$RDFactor_class}" {$RDFactor_style}  data-field="RDFactor">
 				{$label standardsetup RDFactor}
@@ -235,6 +315,16 @@
 				{$label standardsetup SHRDFactorDaily}
 			</th>
 			{END SHRDFactorDaily_fieldheadercolumn}
+			{BEGIN DoubleHolidayRD_fieldheadercolumn}
+			<th class="{$DoubleHolidayRD_class}" {$DoubleHolidayRD_style}  data-field="DoubleHolidayRD">
+				{$label standardsetup DoubleHolidayRD}
+			</th>
+			{END DoubleHolidayRD_fieldheadercolumn}
+			{BEGIN BonusAnnualLimit_fieldheadercolumn}
+			<th class="{$BonusAnnualLimit_class}" {$BonusAnnualLimit_style}  data-field="BonusAnnualLimit">
+				{$label standardsetup BonusAnnualLimit}
+			</th>
+			{END BonusAnnualLimit_fieldheadercolumn}
 			{BEGIN endrecordheader_block}
 			<th class="rnr-cs">&nbsp;</th>
 			{END endrecordheader_block}
@@ -267,6 +357,51 @@
 				{$WorkingDaysInYearDailies_value}
 			</td>
 			{END WorkingDaysInYearDailies_fieldcolumn}
+			{BEGIN AllowableLeaveFrom_fieldcolumn}
+			<td  class="{$AllowableLeaveFrom_class}" {$AllowableLeaveFrom_style} {$recordattrs}>
+				{$AllowableLeaveFrom_value}
+			</td>
+			{END AllowableLeaveFrom_fieldcolumn}
+			{BEGIN AllowableLeaveTo_fieldcolumn}
+			<td  class="{$AllowableLeaveTo_class}" {$AllowableLeaveTo_style} {$recordattrs}>
+				{$AllowableLeaveTo_value}
+			</td>
+			{END AllowableLeaveTo_fieldcolumn}
+			{BEGIN RHFactor_fieldcolumn}
+			<td  class="{$RHFactor_class}" {$RHFactor_style} {$recordattrs}>
+				{$RHFactor_value}
+			</td>
+			{END RHFactor_fieldcolumn}
+			{BEGIN SHFactor_fieldcolumn}
+			<td  class="{$SHFactor_class}" {$SHFactor_style} {$recordattrs}>
+				{$SHFactor_value}
+			</td>
+			{END SHFactor_fieldcolumn}
+			{BEGIN SHFactorDaily_fieldcolumn}
+			<td  class="{$SHFactorDaily_class}" {$SHFactorDaily_style} {$recordattrs}>
+				{$SHFactorDaily_value}
+			</td>
+			{END SHFactorDaily_fieldcolumn}
+			{BEGIN CHFactor_fieldcolumn}
+			<td  class="{$CHFactor_class}" {$CHFactor_style} {$recordattrs}>
+				{$CHFactor_value}
+			</td>
+			{END CHFactor_fieldcolumn}
+			{BEGIN CHFactorDaily_fieldcolumn}
+			<td  class="{$CHFactorDaily_class}" {$CHFactorDaily_style} {$recordattrs}>
+				{$CHFactorDaily_value}
+			</td>
+			{END CHFactorDaily_fieldcolumn}
+			{BEGIN DoubleHoliday_fieldcolumn}
+			<td  class="{$DoubleHoliday_class}" {$DoubleHoliday_style} {$recordattrs}>
+				{$DoubleHoliday_value}
+			</td>
+			{END DoubleHoliday_fieldcolumn}
+			{BEGIN ReqBeforeHoliday_fieldcolumn}
+			<td  class="{$ReqBeforeHoliday_class}" {$ReqBeforeHoliday_style} {$recordattrs}>
+				{$ReqBeforeHoliday_value}
+			</td>
+			{END ReqBeforeHoliday_fieldcolumn}
 			{BEGIN RegOTFactor_fieldcolumn}
 			<td  class="{$RegOTFactor_class}" {$RegOTFactor_style} {$recordattrs}>
 				{$RegOTFactor_value}
@@ -317,46 +452,56 @@
 				{$SHRDOTFactorDaily_value}
 			</td>
 			{END SHRDOTFactorDaily_fieldcolumn}
-			{BEGIN AllowableLeaveFrom_fieldcolumn}
-			<td  class="{$AllowableLeaveFrom_class}" {$AllowableLeaveFrom_style} {$recordattrs}>
-				{$AllowableLeaveFrom_value}
+			{BEGIN RHNDOTFactor_fieldcolumn}
+			<td  class="{$RHNDOTFactor_class}" {$RHNDOTFactor_style} {$recordattrs}>
+				{$RHNDOTFactor_value}
 			</td>
-			{END AllowableLeaveFrom_fieldcolumn}
-			{BEGIN AllowableLeaveTo_fieldcolumn}
-			<td  class="{$AllowableLeaveTo_class}" {$AllowableLeaveTo_style} {$recordattrs}>
-				{$AllowableLeaveTo_value}
+			{END RHNDOTFactor_fieldcolumn}
+			{BEGIN SHNDOTFactor_fieldcolumn}
+			<td  class="{$SHNDOTFactor_class}" {$SHNDOTFactor_style} {$recordattrs}>
+				{$SHNDOTFactor_value}
 			</td>
-			{END AllowableLeaveTo_fieldcolumn}
-			{BEGIN RHFactor_fieldcolumn}
-			<td  class="{$RHFactor_class}" {$RHFactor_style} {$recordattrs}>
-				{$RHFactor_value}
+			{END SHNDOTFactor_fieldcolumn}
+			{BEGIN CHNDOTFactor_fieldcolumn}
+			<td  class="{$CHNDOTFactor_class}" {$CHNDOTFactor_style} {$recordattrs}>
+				{$CHNDOTFactor_value}
 			</td>
-			{END RHFactor_fieldcolumn}
-			{BEGIN SHFactor_fieldcolumn}
-			<td  class="{$SHFactor_class}" {$SHFactor_style} {$recordattrs}>
-				{$SHFactor_value}
+			{END CHNDOTFactor_fieldcolumn}
+			{BEGIN RDNDOTFactor_fieldcolumn}
+			<td  class="{$RDNDOTFactor_class}" {$RDNDOTFactor_style} {$recordattrs}>
+				{$RDNDOTFactor_value}
 			</td>
-			{END SHFactor_fieldcolumn}
-			{BEGIN SHFactorDaily_fieldcolumn}
-			<td  class="{$SHFactorDaily_class}" {$SHFactorDaily_style} {$recordattrs}>
-				{$SHFactorDaily_value}
+			{END RDNDOTFactor_fieldcolumn}
+			{BEGIN RHRDNDOTFacotr_fieldcolumn}
+			<td  class="{$RHRDNDOTFacotr_class}" {$RHRDNDOTFacotr_style} {$recordattrs}>
+				{$RHRDNDOTFacotr_value}
 			</td>
-			{END SHFactorDaily_fieldcolumn}
-			{BEGIN CHFactor_fieldcolumn}
-			<td  class="{$CHFactor_class}" {$CHFactor_style} {$recordattrs}>
-				{$CHFactor_value}
+			{END RHRDNDOTFacotr_fieldcolumn}
+			{BEGIN SHRDNDOTFactor_fieldcolumn}
+			<td  class="{$SHRDNDOTFactor_class}" {$SHRDNDOTFactor_style} {$recordattrs}>
+				{$SHRDNDOTFactor_value}
 			</td>
-			{END CHFactor_fieldcolumn}
-			{BEGIN CHFactorDaily_fieldcolumn}
-			<td  class="{$CHFactorDaily_class}" {$CHFactorDaily_style} {$recordattrs}>
-				{$CHFactorDaily_value}
+			{END SHRDNDOTFactor_fieldcolumn}
+			{BEGIN DoubleHolidayOT_fieldcolumn}
+			<td  class="{$DoubleHolidayOT_class}" {$DoubleHolidayOT_style} {$recordattrs}>
+				{$DoubleHolidayOT_value}
 			</td>
-			{END CHFactorDaily_fieldcolumn}
-			{BEGIN ReqBeforeHoliday_fieldcolumn}
-			<td  class="{$ReqBeforeHoliday_class}" {$ReqBeforeHoliday_style} {$recordattrs}>
-				{$ReqBeforeHoliday_value}
+			{END DoubleHolidayOT_fieldcolumn}
+			{BEGIN DoubleHolidayRDOT_fieldcolumn}
+			<td  class="{$DoubleHolidayRDOT_class}" {$DoubleHolidayRDOT_style} {$recordattrs}>
+				{$DoubleHolidayRDOT_value}
 			</td>
-			{END ReqBeforeHoliday_fieldcolumn}
+			{END DoubleHolidayRDOT_fieldcolumn}
+			{BEGIN DoubleHolidayNDOT_fieldcolumn}
+			<td  class="{$DoubleHolidayNDOT_class}" {$DoubleHolidayNDOT_style} {$recordattrs}>
+				{$DoubleHolidayNDOT_value}
+			</td>
+			{END DoubleHolidayNDOT_fieldcolumn}
+			{BEGIN DoubleHolidayRDNDOT_fieldcolumn}
+			<td  class="{$DoubleHolidayRDNDOT_class}" {$DoubleHolidayRDNDOT_style} {$recordattrs}>
+				{$DoubleHolidayRDNDOT_value}
+			</td>
+			{END DoubleHolidayRDNDOT_fieldcolumn}
 			{BEGIN NightDiffStartTime_fieldcolumn}
 			<td  class="{$NightDiffStartTime_class}" {$NightDiffStartTime_style} {$recordattrs}>
 				{$NightDiffStartTime_value}
@@ -392,6 +537,31 @@
 				{$RDNDiffFactor_value}
 			</td>
 			{END RDNDiffFactor_fieldcolumn}
+			{BEGIN RegNDOTFactor_fieldcolumn}
+			<td  class="{$RegNDOTFactor_class}" {$RegNDOTFactor_style} {$recordattrs}>
+				{$RegNDOTFactor_value}
+			</td>
+			{END RegNDOTFactor_fieldcolumn}
+			{BEGIN RHRDNDFactor_fieldcolumn}
+			<td  class="{$RHRDNDFactor_class}" {$RHRDNDFactor_style} {$recordattrs}>
+				{$RHRDNDFactor_value}
+			</td>
+			{END RHRDNDFactor_fieldcolumn}
+			{BEGIN SHRDNDFactor_fieldcolumn}
+			<td  class="{$SHRDNDFactor_class}" {$SHRDNDFactor_style} {$recordattrs}>
+				{$SHRDNDFactor_value}
+			</td>
+			{END SHRDNDFactor_fieldcolumn}
+			{BEGIN DoubleHolidayND_fieldcolumn}
+			<td  class="{$DoubleHolidayND_class}" {$DoubleHolidayND_style} {$recordattrs}>
+				{$DoubleHolidayND_value}
+			</td>
+			{END DoubleHolidayND_fieldcolumn}
+			{BEGIN DoubleHolidayRDND_fieldcolumn}
+			<td  class="{$DoubleHolidayRDND_class}" {$DoubleHolidayRDND_style} {$recordattrs}>
+				{$DoubleHolidayRDND_value}
+			</td>
+			{END DoubleHolidayRDND_fieldcolumn}
 			{BEGIN RDFactor_fieldcolumn}
 			<td  class="{$RDFactor_class}" {$RDFactor_style} {$recordattrs}>
 				{$RDFactor_value}
@@ -412,6 +582,16 @@
 				{$SHRDFactorDaily_value}
 			</td>
 			{END SHRDFactorDaily_fieldcolumn}
+			{BEGIN DoubleHolidayRD_fieldcolumn}
+			<td  class="{$DoubleHolidayRD_class}" {$DoubleHolidayRD_style} {$recordattrs}>
+				{$DoubleHolidayRD_value}
+			</td>
+			{END DoubleHolidayRD_fieldcolumn}
+			{BEGIN BonusAnnualLimit_fieldcolumn}
+			<td  class="{$BonusAnnualLimit_class}" {$BonusAnnualLimit_style} {$recordattrs}>
+				{$BonusAnnualLimit_value}
+			</td>
+			{END BonusAnnualLimit_fieldcolumn}
 			{BEGIN endrecord_block}
 			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
 			{END endrecord_block}

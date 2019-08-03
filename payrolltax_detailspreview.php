@@ -196,7 +196,7 @@ if($rowcount)
 			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("EmployeeID")))
 				$class = ' rnr-field-number';
 			$row["EmployeeID_class"] = $class;
-	//	Tax - 
+	//	Tax - Number
 			$viewContainer->recId = $recordsCounter;
 		    $value = $viewContainer->showDBValue("Tax", $data, $keylink);
 			$row["Tax_value"] = $value;

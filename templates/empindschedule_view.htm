@@ -61,6 +61,16 @@
 <div {$viewfields_hiddenattr} data-pageid="{$pageid}" data-brick="viewfields" >
 
 	<div class="container">
+					{BEGIN EmployeeID_fieldblock}
+	<div class="{$fielddispclass_EmployeeID} col-md-6 bs-viewcontrolgroup" data-fieldname="EmployeeID">
+		<label class="control-label" for="{$labelfor_EmployeeID}">
+			{$label empindschedule EmployeeID}
+		</label>
+		<div class="" >
+			{$EmployeeID_value}&nbsp;
+		</div>
+	</div>
+{END EmployeeID_fieldblock}
 			</div>
 	<div class="bs-2column">
 		<div class="bs-details">

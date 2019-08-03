@@ -81,26 +81,26 @@
 		</div>
 	</div>
 {END Locked_fieldblock}
-					{BEGIN Email_fieldblock}
-	<div class="{$fielddispclass_Email} col-md-6 bs-viewcontrolgroup" data-fieldname="Email">
-		<label class="control-label" for="{$labelfor_Email}">
-			{$label payrolltab1 Email}
+					{BEGIN FromDate_fieldblock}
+	<div class="{$fielddispclass_FromDate} col-md-6 bs-viewcontrolgroup" data-fieldname="FromDate">
+		<label class="control-label" for="{$labelfor_FromDate}">
+			{$label payrolltab1 FromDate}
 		</label>
 		<div class="" >
-			{$Email_value}&nbsp;
+			{$FromDate_value}&nbsp;
 		</div>
 	</div>
-{END Email_fieldblock}
-					{BEGIN PayrollID_fieldblock}
-	<div class="{$fielddispclass_PayrollID} col-md-6 bs-viewcontrolgroup" data-fieldname="PayrollID">
-		<label class="control-label" for="{$labelfor_PayrollID}">
-			{$label payrolltab1 PayrollID}
+{END FromDate_fieldblock}
+					{BEGIN ToDate_fieldblock}
+	<div class="{$fielddispclass_ToDate} col-md-6 bs-viewcontrolgroup" data-fieldname="ToDate">
+		<label class="control-label" for="{$labelfor_ToDate}">
+			{$label payrolltab1 ToDate}
 		</label>
 		<div class="" >
-			{$PayrollID_value}&nbsp;
+			{$ToDate_value}&nbsp;
 		</div>
 	</div>
-{END PayrollID_fieldblock}
+{END ToDate_fieldblock}
 					{BEGIN EmployeeID_fieldblock}
 	<div class="{$fielddispclass_EmployeeID} col-md-6 bs-viewcontrolgroup" data-fieldname="EmployeeID">
 		<label class="control-label" for="{$labelfor_EmployeeID}">
@@ -121,6 +121,16 @@
 		</div>
 	</div>
 {END UserName_fieldblock}
+					{BEGIN Email_fieldblock}
+	<div class="{$fielddispclass_Email} col-md-6 bs-viewcontrolgroup" data-fieldname="Email">
+		<label class="control-label" for="{$labelfor_Email}">
+			{$label payrolltab1 Email}
+		</label>
+		<div class="" >
+			{$Email_value}&nbsp;
+		</div>
+	</div>
+{END Email_fieldblock}
 					{BEGIN Position_fieldblock}
 	<div class="{$fielddispclass_Position} col-md-6 bs-viewcontrolgroup" data-fieldname="Position">
 		<label class="control-label" for="{$labelfor_Position}">
@@ -171,26 +181,6 @@
 		</div>
 	</div>
 {END Status_fieldblock}
-					{BEGIN FromDate_fieldblock}
-	<div class="{$fielddispclass_FromDate} col-md-6 bs-viewcontrolgroup" data-fieldname="FromDate">
-		<label class="control-label" for="{$labelfor_FromDate}">
-			{$label payrolltab1 FromDate}
-		</label>
-		<div class="" >
-			{$FromDate_value}&nbsp;
-		</div>
-	</div>
-{END FromDate_fieldblock}
-					{BEGIN ToDate_fieldblock}
-	<div class="{$fielddispclass_ToDate} col-md-6 bs-viewcontrolgroup" data-fieldname="ToDate">
-		<label class="control-label" for="{$labelfor_ToDate}">
-			{$label payrolltab1 ToDate}
-		</label>
-		<div class="" >
-			{$ToDate_value}&nbsp;
-		</div>
-	</div>
-{END ToDate_fieldblock}
 					{BEGIN BasicMonthly_fieldblock}
 	<div class="{$fielddispclass_BasicMonthly} col-md-6 bs-viewcontrolgroup" data-fieldname="BasicMonthly">
 		<label class="control-label" for="{$labelfor_BasicMonthly}">
@@ -361,6 +351,116 @@
 		</div>
 	</div>
 {END NDHrs_fieldblock}
+					{BEGIN NDOTHrs_fieldblock}
+	<div class="{$fielddispclass_NDOTHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="NDOTHrs">
+		<label class="control-label" for="{$labelfor_NDOTHrs}">
+			{$label payrolltab1 NDOTHrs}
+		</label>
+		<div class="" >
+			{$NDOTHrs_value}&nbsp;
+		</div>
+	</div>
+{END NDOTHrs_fieldblock}
+					{BEGIN RegNDOTHrs_fieldblock}
+	<div class="{$fielddispclass_RegNDOTHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="RegNDOTHrs">
+		<label class="control-label" for="{$labelfor_RegNDOTHrs}">
+			{$label payrolltab1 RegNDOTHrs}
+		</label>
+		<div class="" >
+			{$RegNDOTHrs_value}&nbsp;
+		</div>
+	</div>
+{END RegNDOTHrs_fieldblock}
+					{BEGIN RHNDOTHrs_fieldblock}
+	<div class="{$fielddispclass_RHNDOTHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="RHNDOTHrs">
+		<label class="control-label" for="{$labelfor_RHNDOTHrs}">
+			{$label payrolltab1 RHNDOTHrs}
+		</label>
+		<div class="" >
+			{$RHNDOTHrs_value}&nbsp;
+		</div>
+	</div>
+{END RHNDOTHrs_fieldblock}
+					{BEGIN CHNDOTHrs_fieldblock}
+	<div class="{$fielddispclass_CHNDOTHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="CHNDOTHrs">
+		<label class="control-label" for="{$labelfor_CHNDOTHrs}">
+			{$label payrolltab1 CHNDOTHrs}
+		</label>
+		<div class="" >
+			{$CHNDOTHrs_value}&nbsp;
+		</div>
+	</div>
+{END CHNDOTHrs_fieldblock}
+					{BEGIN SHNDOTHrs_fieldblock}
+	<div class="{$fielddispclass_SHNDOTHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="SHNDOTHrs">
+		<label class="control-label" for="{$labelfor_SHNDOTHrs}">
+			{$label payrolltab1 SHNDOTHrs}
+		</label>
+		<div class="" >
+			{$SHNDOTHrs_value}&nbsp;
+		</div>
+	</div>
+{END SHNDOTHrs_fieldblock}
+					{BEGIN SHRDNDOT_fieldblock}
+	<div class="{$fielddispclass_SHRDNDOT} col-md-6 bs-viewcontrolgroup" data-fieldname="SHRDNDOT">
+		<label class="control-label" for="{$labelfor_SHRDNDOT}">
+			{$label payrolltab1 SHRDNDOT}
+		</label>
+		<div class="" >
+			{$SHRDNDOT_value}&nbsp;
+		</div>
+	</div>
+{END SHRDNDOT_fieldblock}
+					{BEGIN RHRDNDOT_fieldblock}
+	<div class="{$fielddispclass_RHRDNDOT} col-md-6 bs-viewcontrolgroup" data-fieldname="RHRDNDOT">
+		<label class="control-label" for="{$labelfor_RHRDNDOT}">
+			{$label payrolltab1 RHRDNDOT}
+		</label>
+		<div class="" >
+			{$RHRDNDOT_value}&nbsp;
+		</div>
+	</div>
+{END RHRDNDOT_fieldblock}
+					{BEGIN RDNDOTHrs_fieldblock}
+	<div class="{$fielddispclass_RDNDOTHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="RDNDOTHrs">
+		<label class="control-label" for="{$labelfor_RDNDOTHrs}">
+			{$label payrolltab1 RDNDOTHrs}
+		</label>
+		<div class="" >
+			{$RDNDOTHrs_value}&nbsp;
+		</div>
+	</div>
+{END RDNDOTHrs_fieldblock}
+					{BEGIN DHRDOT_fieldblock}
+	<div class="{$fielddispclass_DHRDOT} col-md-6 bs-viewcontrolgroup" data-fieldname="DHRDOT">
+		<label class="control-label" for="{$labelfor_DHRDOT}">
+			{$label payrolltab1 DHRDOT}
+		</label>
+		<div class="" >
+			{$DHRDOT_value}&nbsp;
+		</div>
+	</div>
+{END DHRDOT_fieldblock}
+					{BEGIN DHRDNDOT_fieldblock}
+	<div class="{$fielddispclass_DHRDNDOT} col-md-6 bs-viewcontrolgroup" data-fieldname="DHRDNDOT">
+		<label class="control-label" for="{$labelfor_DHRDNDOT}">
+			{$label payrolltab1 DHRDNDOT}
+		</label>
+		<div class="" >
+			{$DHRDNDOT_value}&nbsp;
+		</div>
+	</div>
+{END DHRDNDOT_fieldblock}
+					{BEGIN DHNDOT_fieldblock}
+	<div class="{$fielddispclass_DHNDOT} col-md-6 bs-viewcontrolgroup" data-fieldname="DHNDOT">
+		<label class="control-label" for="{$labelfor_DHNDOT}">
+			{$label payrolltab1 DHNDOT}
+		</label>
+		<div class="" >
+			{$DHNDOT_value}&nbsp;
+		</div>
+	</div>
+{END DHNDOT_fieldblock}
 					{BEGIN RDHrs_fieldblock}
 	<div class="{$fielddispclass_RDHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="RDHrs">
 		<label class="control-label" for="{$labelfor_RDHrs}">
@@ -421,6 +521,76 @@
 		</div>
 	</div>
 {END RDNDHrs_fieldblock}
+					{BEGIN DHRDND_fieldblock}
+	<div class="{$fielddispclass_DHRDND} col-md-6 bs-viewcontrolgroup" data-fieldname="DHRDND">
+		<label class="control-label" for="{$labelfor_DHRDND}">
+			{$label payrolltab1 DHRDND}
+		</label>
+		<div class="" >
+			{$DHRDND_value}&nbsp;
+		</div>
+	</div>
+{END DHRDND_fieldblock}
+					{BEGIN DHND_fieldblock}
+	<div class="{$fielddispclass_DHND} col-md-6 bs-viewcontrolgroup" data-fieldname="DHND">
+		<label class="control-label" for="{$labelfor_DHND}">
+			{$label payrolltab1 DHND}
+		</label>
+		<div class="" >
+			{$DHND_value}&nbsp;
+		</div>
+	</div>
+{END DHND_fieldblock}
+					{BEGIN RHRDND_fieldblock}
+	<div class="{$fielddispclass_RHRDND} col-md-6 bs-viewcontrolgroup" data-fieldname="RHRDND">
+		<label class="control-label" for="{$labelfor_RHRDND}">
+			{$label payrolltab1 RHRDND}
+		</label>
+		<div class="" >
+			{$RHRDND_value}&nbsp;
+		</div>
+	</div>
+{END RHRDND_fieldblock}
+					{BEGIN SHRDND_fieldblock}
+	<div class="{$fielddispclass_SHRDND} col-md-6 bs-viewcontrolgroup" data-fieldname="SHRDND">
+		<label class="control-label" for="{$labelfor_SHRDND}">
+			{$label payrolltab1 SHRDND}
+		</label>
+		<div class="" >
+			{$SHRDND_value}&nbsp;
+		</div>
+	</div>
+{END SHRDND_fieldblock}
+					{BEGIN DHOT_fieldblock}
+	<div class="{$fielddispclass_DHOT} col-md-6 bs-viewcontrolgroup" data-fieldname="DHOT">
+		<label class="control-label" for="{$labelfor_DHOT}">
+			{$label payrolltab1 DHOT}
+		</label>
+		<div class="" >
+			{$DHOT_value}&nbsp;
+		</div>
+	</div>
+{END DHOT_fieldblock}
+					{BEGIN DHRD_fieldblock}
+	<div class="{$fielddispclass_DHRD} col-md-6 bs-viewcontrolgroup" data-fieldname="DHRD">
+		<label class="control-label" for="{$labelfor_DHRD}">
+			{$label payrolltab1 DHRD}
+		</label>
+		<div class="" >
+			{$DHRD_value}&nbsp;
+		</div>
+	</div>
+{END DHRD_fieldblock}
+					{BEGIN DH_fieldblock}
+	<div class="{$fielddispclass_DH} col-md-6 bs-viewcontrolgroup" data-fieldname="DH">
+		<label class="control-label" for="{$labelfor_DH}">
+			{$label payrolltab1 DH}
+		</label>
+		<div class="" >
+			{$DH_value}&nbsp;
+		</div>
+	</div>
+{END DH_fieldblock}
 					{BEGIN VLDays_fieldblock}
 	<div class="{$fielddispclass_VLDays} col-md-6 bs-viewcontrolgroup" data-fieldname="VLDays">
 		<label class="control-label" for="{$labelfor_VLDays}">
@@ -531,6 +701,66 @@
 		</div>
 	</div>
 {END NDMealAllowance_fieldblock}
+					{BEGIN Thirteenth_fieldblock}
+	<div class="{$fielddispclass_Thirteenth} col-md-6 bs-viewcontrolgroup" data-fieldname="Thirteenth">
+		<label class="control-label" for="{$labelfor_Thirteenth}">
+			{$label payrolltab1 Thirteenth}
+		</label>
+		<div class="" >
+			{$Thirteenth_value}&nbsp;
+		</div>
+	</div>
+{END Thirteenth_fieldblock}
+					{BEGIN Taxable_fieldblock}
+	<div class="{$fielddispclass_Taxable} col-md-6 bs-viewcontrolgroup" data-fieldname="Taxable">
+		<label class="control-label" for="{$labelfor_Taxable}">
+			{$label payrolltab1 Taxable}
+		</label>
+		<div class="" >
+			{$Taxable_value}&nbsp;
+		</div>
+	</div>
+{END Taxable_fieldblock}
+					{BEGIN ThirToDate_fieldblock}
+	<div class="{$fielddispclass_ThirToDate} col-md-6 bs-viewcontrolgroup" data-fieldname="ThirToDate">
+		<label class="control-label" for="{$labelfor_ThirToDate}">
+			{$label payrolltab1 ThirToDate}
+		</label>
+		<div class="" >
+			{$ThirToDate_value}&nbsp;
+		</div>
+	</div>
+{END ThirToDate_fieldblock}
+					{BEGIN TaxableToDate_fieldblock}
+	<div class="{$fielddispclass_TaxableToDate} col-md-6 bs-viewcontrolgroup" data-fieldname="TaxableToDate">
+		<label class="control-label" for="{$labelfor_TaxableToDate}">
+			{$label payrolltab1 TaxableToDate}
+		</label>
+		<div class="" >
+			{$TaxableToDate_value}&nbsp;
+		</div>
+	</div>
+{END TaxableToDate_fieldblock}
+					{BEGIN TaxToDate_fieldblock}
+	<div class="{$fielddispclass_TaxToDate} col-md-6 bs-viewcontrolgroup" data-fieldname="TaxToDate">
+		<label class="control-label" for="{$labelfor_TaxToDate}">
+			{$label payrolltab1 TaxToDate}
+		</label>
+		<div class="" >
+			{$TaxToDate_value}&nbsp;
+		</div>
+	</div>
+{END TaxToDate_fieldblock}
+					{BEGIN PayrollID_fieldblock}
+	<div class="{$fielddispclass_PayrollID} col-md-6 bs-viewcontrolgroup" data-fieldname="PayrollID">
+		<label class="control-label" for="{$labelfor_PayrollID}">
+			{$label payrolltab1 PayrollID}
+		</label>
+		<div class="" >
+			{$PayrollID_value}&nbsp;
+		</div>
+	</div>
+{END PayrollID_fieldblock}
 	</div>
 </div>
 
@@ -589,7 +819,17 @@
 	{BEGIN next_button}
 	<button class="btn btn-default {$nextbutton_class}" {$nextbutton_attrs}><span class="glyphicon glyphicon-chevron-right"></span></button>
 	{END next_button}
+		{BEGIN view_menu_button}
+	<div class="btn-group dropup" role="group">
+		<button class="btn btn-default dropdown-toggle {$groupbutton_class}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+		<ul class="dropdown-menu dropdown-left">
+									{BEGIN edit_page_button}
+				<li><a href=# {$edit_page_button_attrs}>Edit</a></li>
+			{END edit_page_button}
+		</ul>
 	</div>
+	{END view_menu_button}
+</div>
 {END rightviewbuttons}
 
 

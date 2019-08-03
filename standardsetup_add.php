@@ -280,26 +280,6 @@ $page_layouts["standardsetup_add_Working_Days1"] = $layout;
 $layout = new TLayout("tab_bootstrap", "Metro1DeliciousLavender1", "MobileDeliciousLavender1");
 $layout->version = 3;
 	$layout->bootstrapTheme = "default";
-		$layout->customCssPageName = "standardsetup_add_Overtime_Factors1";
-$layout->blocks["bare"] = array();
-$layout->containers["tabfields"] = array();
-$layout->container_properties["tabfields"] = array(  );
-$layout->containers["tabfields"][] = array("name"=>"bstabfields",
-	"block"=>"", "substyle"=>1  );
-
-$layout->skins["tabfields"] = "";
-
-$layout->blocks["bare"][] = "tabfields";
-$page_layouts["standardsetup_add_Overtime_Factors1"] = $layout;
-
-
-
-
-
-
-$layout = new TLayout("tab_bootstrap", "Metro1DeliciousLavender1", "MobileDeliciousLavender1");
-$layout->version = 3;
-	$layout->bootstrapTheme = "default";
 		$layout->customCssPageName = "standardsetup_add_Leave_Range1";
 $layout->blocks["bare"] = array();
 $layout->containers["tabfields"] = array();
@@ -331,6 +311,26 @@ $layout->skins["tabfields"] = "";
 
 $layout->blocks["bare"][] = "tabfields";
 $page_layouts["standardsetup_add_Holiday_Factor1"] = $layout;
+
+
+
+
+
+
+$layout = new TLayout("tab_bootstrap", "Metro1DeliciousLavender1", "MobileDeliciousLavender1");
+$layout->version = 3;
+	$layout->bootstrapTheme = "default";
+		$layout->customCssPageName = "standardsetup_add_Overtime_Factors1";
+$layout->blocks["bare"] = array();
+$layout->containers["tabfields"] = array();
+$layout->container_properties["tabfields"] = array(  );
+$layout->containers["tabfields"][] = array("name"=>"bstabfields",
+	"block"=>"", "substyle"=>1  );
+
+$layout->skins["tabfields"] = "";
+
+$layout->blocks["bare"][] = "tabfields";
+$page_layouts["standardsetup_add_Overtime_Factors1"] = $layout;
 
 
 
@@ -380,7 +380,7 @@ $page_layouts["standardsetup_add_Rest_Day_Factor1"] = $layout;
 $layout = new TLayout("tab_bootstrap", "Metro1DeliciousLavender1", "MobileDeliciousLavender1");
 $layout->version = 3;
 	$layout->bootstrapTheme = "default";
-		$layout->customCssPageName = "standardsetup_add_Rest_Day_Holiday1";
+		$layout->customCssPageName = "standardsetup_add_Bonus1";
 $layout->blocks["bare"] = array();
 $layout->containers["tabfields"] = array();
 $layout->container_properties["tabfields"] = array(  );
@@ -390,7 +390,7 @@ $layout->containers["tabfields"][] = array("name"=>"bstabfields",
 $layout->skins["tabfields"] = "";
 
 $layout->blocks["bare"][] = "tabfields";
-$page_layouts["standardsetup_add_Rest_Day_Holiday1"] = $layout;
+$page_layouts["standardsetup_add_Bonus1"] = $layout;
 
 
 

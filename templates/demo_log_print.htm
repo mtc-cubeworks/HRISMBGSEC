@@ -105,6 +105,11 @@
 				{$label demo_log MLogDate}
 			</th>
 			{END MLogDate_fieldheadercolumn}
+			{BEGIN TransID2_fieldheadercolumn}
+			<th class="{$TransID2_class}" {$TransID2_style}  data-field="TransID2">
+				{$label demo_log TransID2}
+			</th>
+			{END TransID2_fieldheadercolumn}
 			{BEGIN endrecordheader_block}
 			<th class="rnr-cs">&nbsp;</th>
 			{END endrecordheader_block}
@@ -152,6 +157,11 @@
 				{$MLogDate_value}
 			</td>
 			{END MLogDate_fieldcolumn}
+			{BEGIN TransID2_fieldcolumn}
+			<td  class="{$TransID2_class}" {$TransID2_style} {$recordattrs}>
+				{$TransID2_value}
+			</td>
+			{END TransID2_fieldcolumn}
 			{BEGIN endrecord_block}
 			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
 			{END endrecord_block}

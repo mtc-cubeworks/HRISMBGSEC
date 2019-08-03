@@ -255,6 +255,78 @@
 </div>
 {END Days_fieldblock}
 
+			{BEGIN Superior_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Superior}" data-fieldname="Superior" data-signal-error-for="Superior{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Superior}">
+		{BEGIN Superior_label}{$label leavesapp Superior}{END Superior_label}
+	</label>
+	<div class="col-md-6" >
+		{$Superior_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Superior">
+		<div class="text-muted" >
+		{$tooltip leavesapp Superior}
+		</div>
+	</div>
+</div>
+</div>
+{END Superior_fieldblock}
+
+			{BEGIN 1stApproval_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_1stApproval}" data-fieldname="1stApproval" data-signal-error-for="1stApproval{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_1stApproval}">
+		{BEGIN 1stApproval_label}{$label leavesapp 1stApproval}{END 1stApproval_label}
+	</label>
+	<div class="col-md-6" >
+		{$1stApproval_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="1stApproval">
+		<div class="text-muted" >
+		{$tooltip leavesapp 1stApproval}
+		</div>
+	</div>
+</div>
+</div>
+{END 1stApproval_fieldblock}
+
+			{BEGIN Superior2_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Superior2}" data-fieldname="Superior2" data-signal-error-for="Superior2{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Superior2}">
+		{BEGIN Superior2_label}{$label leavesapp Superior2}{END Superior2_label}
+	</label>
+	<div class="col-md-6" >
+		{$Superior2_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Superior2">
+		<div class="text-muted" >
+		{$tooltip leavesapp Superior2}
+		</div>
+	</div>
+</div>
+</div>
+{END Superior2_fieldblock}
+
+			{BEGIN 2ndApproval_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_2ndApproval}" data-fieldname="2ndApproval" data-signal-error-for="2ndApproval{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_2ndApproval}">
+		{BEGIN 2ndApproval_label}{$label leavesapp 2ndApproval}{END 2ndApproval_label}
+	</label>
+	<div class="col-md-6" >
+		{$2ndApproval_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="2ndApproval">
+		<div class="text-muted" >
+		{$tooltip leavesapp 2ndApproval}
+		</div>
+	</div>
+</div>
+</div>
+{END 2ndApproval_fieldblock}
+
 			{BEGIN Approved_fieldblock}
 <div class=container>
 <div class="form-group {$fielddispclass_Approved}" data-fieldname="Approved" data-signal-error-for="Approved{$id}" >
@@ -363,23 +435,56 @@
 </div>
 {END Locked_fieldblock}
 
-			{BEGIN Superior_fieldblock}
-<div class=container>
-<div class="form-group {$fielddispclass_Superior}" data-fieldname="Superior" data-signal-error-for="Superior{$id}" >
-	<label class="col-md-3 control-label" for="{$labelfor_Superior}">
-		{BEGIN Superior_label}{$label leavesapp Superior}{END Superior_label}
-	</label>
-	<div class="col-md-6" >
-		{$Superior_editcontrol}
-	</div>
-	<div class="col-md-3 help-block" data-helpfor="Superior">
-		<div class="text-muted" >
-		{$tooltip leavesapp Superior}
-		</div>
-	</div>
+			
+		
+
+
+
+
+
+{BEGIN details_leaveremarks}
+<div data-pageid="1" class="bs-details"> 
+<div class="panel panel-info details-grid">
+
+<div class="panel-heading">
+	<h4 class="panel-title">Leave Remarks
+		<span>
+{BEGIN details_inlineadd_leaveremarks_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_inlineadd_leaveremarks_attrs}>Inline Add</button>
+{END details_inlineadd_leaveremarks_link}		
+{BEGIN details_add_leaveremarks_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_add_leaveremarks_attrs}>Add new</button>
+{END details_add_leaveremarks_link}
+{BEGIN details_edit_leaveremarks_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_edit_leaveremarks_attrs}>Edit</button>
+{END details_edit_leaveremarks_link}
+{BEGIN details_updateselected_leaveremarks_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_updateselected_leaveremarks_attrs}>Update selected</button>
+{END details_updateselected_leaveremarks_link}
+
+
+{BEGIN details_delete_leaveremarks_link}
+			<button type="button" class="btn btn-xs btn-info " disabled {$details_delete_leaveremarks_attrs}>Delete</button>
+{END details_delete_leaveremarks_link}
+
+{BEGIN saveall_leaveremarks_link}
+			<button type="button" class="btn btn-xs btn-info" {$savealllink_leaveremarks_attrs} {$savealllink_leaveremarks_span}>Save all</button>
+{END saveall_leaveremarks_link}
+{BEGIN cancelall_leaveremarks_link}
+			<button type="button" class="btn btn-xs btn-info" {$cancelalllink_leaveremarks_attrs} {$cancelalllink_leaveremarks_span}>Cancel</button>
+{END cancelall_leaveremarks_link}
+		</span>
+	</h4>
+</div>
+<div class="panel-body">
+	{$displayDetailTable_leaveremarks}
 </div>
 </div>
-{END Superior_fieldblock}
+</div>
+{END details_leaveremarks}
+	
+	
+	
 
 
 </div>

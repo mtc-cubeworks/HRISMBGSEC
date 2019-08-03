@@ -1,0 +1,437 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_searchpage}
+<div {$searchpage_chiddenattr} data-pageid="{$pageid}" data-container="searchpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN searchheader}
+	<h2 {$bssearchheader_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchheader" >{$pagetitlelabel filelog1 search}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END searchheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_searchpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$bssearchfields_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchfields" class="form-horizontal" role="form">
+<div class="container">
+	<div class="form-group">
+		<div class="col-md-12" >
+			&nbsp;
+		</div>
+	</div>
+</div>
+	{BEGIN Locked_fieldblock}		
+	<div class="container {$fielddispclass_Locked}" data-fieldname="Locked">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Locked}">
+				{$label filelog1 Locked}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Locked}
+			</div>
+			<div class="col-md-4" >
+				{$Locked_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Locked_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Locked_fieldblock}
+	{BEGIN TransID2_fieldblock}		
+	<div class="container {$fielddispclass_TransID2}" data-fieldname="TransID2">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_TransID2}">
+				{$label filelog1 TransID2}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_TransID2}
+			</div>
+			<div class="col-md-4" >
+				{$TransID2_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$TransID2_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END TransID2_fieldblock}
+	{BEGIN EmployeeID_fieldblock}		
+	<div class="container {$fielddispclass_EmployeeID}" data-fieldname="EmployeeID">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_EmployeeID}">
+				{$label filelog1 EmployeeID}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_EmployeeID}
+			</div>
+			<div class="col-md-4" >
+				{$EmployeeID_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$EmployeeID_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END EmployeeID_fieldblock}
+	{BEGIN log_time_fieldblock}		
+	<div class="container {$fielddispclass_log_time}" data-fieldname="log_time">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_log_time}">
+				{$label filelog1 log_time}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_log_time}
+			</div>
+			<div class="col-md-4" >
+				{$log_time_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$log_time_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END log_time_fieldblock}
+	{BEGIN Reason_fieldblock}		
+	<div class="container {$fielddispclass_Reason}" data-fieldname="Reason">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Reason}">
+				{$label filelog1 Reason}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Reason}
+			</div>
+			<div class="col-md-4" >
+				{$Reason_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Reason_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Reason_fieldblock}
+	{BEGIN ClockType_fieldblock}		
+	<div class="container {$fielddispclass_ClockType}" data-fieldname="ClockType">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_ClockType}">
+				{$label filelog1 ClockType}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_ClockType}
+			</div>
+			<div class="col-md-4" >
+				{$ClockType_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$ClockType_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END ClockType_fieldblock}
+	{BEGIN data_fieldblock}		
+	<div class="container {$fielddispclass_data}" data-fieldname="data">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_data}">
+				{$label filelog1 data}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_data}
+			</div>
+			<div class="col-md-4" >
+				{$data_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$data_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END data_fieldblock}
+	{BEGIN MLogID_fieldblock}		
+	<div class="container {$fielddispclass_MLogID}" data-fieldname="MLogID">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_MLogID}">
+				{$label filelog1 MLogID}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_MLogID}
+			</div>
+			<div class="col-md-4" >
+				{$MLogID_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$MLogID_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END MLogID_fieldblock}
+	{BEGIN MLogDate_fieldblock}		
+	<div class="container {$fielddispclass_MLogDate}" data-fieldname="MLogDate">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_MLogDate}">
+				{$label filelog1 MLogDate}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_MLogDate}
+			</div>
+			<div class="col-md-4" >
+				{$MLogDate_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$MLogDate_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END MLogDate_fieldblock}
+	{BEGIN CheckedBy_fieldblock}		
+	<div class="container {$fielddispclass_CheckedBy}" data-fieldname="CheckedBy">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_CheckedBy}">
+				{$label filelog1 CheckedBy}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_CheckedBy}
+			</div>
+			<div class="col-md-4" >
+				{$CheckedBy_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$CheckedBy_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END CheckedBy_fieldblock}
+	{BEGIN Checked_fieldblock}		
+	<div class="container {$fielddispclass_Checked}" data-fieldname="Checked">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Checked}">
+				{$label filelog1 Checked}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Checked}
+			</div>
+			<div class="col-md-4" >
+				{$Checked_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Checked_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Checked_fieldblock}
+	{BEGIN ApprovedBy_fieldblock}		
+	<div class="container {$fielddispclass_ApprovedBy}" data-fieldname="ApprovedBy">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_ApprovedBy}">
+				{$label filelog1 ApprovedBy}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_ApprovedBy}
+			</div>
+			<div class="col-md-4" >
+				{$ApprovedBy_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$ApprovedBy_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END ApprovedBy_fieldblock}
+	{BEGIN Approved_fieldblock}		
+	<div class="container {$fielddispclass_Approved}" data-fieldname="Approved">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Approved}">
+				{$label filelog1 Approved}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Approved}
+			</div>
+			<div class="col-md-4" >
+				{$Approved_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Approved_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Approved_fieldblock}
+	{BEGIN HRApproval_fieldblock}		
+	<div class="container {$fielddispclass_HRApproval}" data-fieldname="HRApproval">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_HRApproval}">
+				{$label filelog1 HRApproval}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_HRApproval}
+			</div>
+			<div class="col-md-4" >
+				{$HRApproval_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$HRApproval_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END HRApproval_fieldblock}
+	{BEGIN HRApproved_fieldblock}		
+	<div class="container {$fielddispclass_HRApproved}" data-fieldname="HRApproved">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_HRApproved}">
+				{$label filelog1 HRApproved}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_HRApproved}
+			</div>
+			<div class="col-md-4" >
+				{$HRApproved_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$HRApproved_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END HRApproved_fieldblock}
+	{BEGIN HRApprovedDate_fieldblock}		
+	<div class="container {$fielddispclass_HRApprovedDate}" data-fieldname="HRApprovedDate">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_HRApprovedDate}">
+				{$label filelog1 HRApprovedDate}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_HRApprovedDate}
+			</div>
+			<div class="col-md-4" >
+				{$HRApprovedDate_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$HRApprovedDate_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END HRApprovedDate_fieldblock}
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container form-horizontal   "> 
+
+
+
+
+{BEGIN container_bbuttons}
+<div {$bbuttons_chiddenattr} data-pageid="{$pageid}" data-container="bbuttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-10 col-md-offset-2"> 
+
+{BEGIN searchbuttons}
+{BEGIN search_button}
+<button class="btn btn-primary" {$searchbutton_attrs}>Search</button>
+{END search_button} 
+{BEGIN reset_button}
+<button class="btn btn-default" {$resetbutton_attrs}>Reset</button>
+{END reset_button}
+{BEGIN back_button}
+<button class="btn btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{END searchbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+</div>
+{END container_bbuttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

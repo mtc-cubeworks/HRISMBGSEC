@@ -141,6 +141,11 @@
 				{$label indschedule1 ANDiff}
 			</th>
 			{END ANDiff_fieldheadercolumn}
+			{BEGIN ANDOTMins_fieldheadercolumn}
+			<th class="{$ANDOTMins_class}" {$ANDOTMins_style}  data-field="ANDOTMins">
+				{$label indschedule1 ANDOTMins}
+			</th>
+			{END ANDOTMins_fieldheadercolumn}
 			{BEGIN NDMealAllowancePerShift_fieldheadercolumn}
 			<th class="{$NDMealAllowancePerShift_class}" {$NDMealAllowancePerShift_style}  data-field="NDMealAllowancePerShift">
 				{$label indschedule1 NDMealAllowancePerShift}
@@ -233,6 +238,11 @@
 				{$ANDiff_value}
 			</td>
 			{END ANDiff_fieldcolumn}
+			{BEGIN ANDOTMins_fieldcolumn}
+			<td  class="{$ANDOTMins_class}" {$ANDOTMins_style} {$recordattrs}>
+				{$ANDOTMins_value}
+			</td>
+			{END ANDOTMins_fieldcolumn}
 			{BEGIN NDMealAllowancePerShift_fieldcolumn}
 			<td  class="{$NDMealAllowancePerShift_class}" {$NDMealAllowancePerShift_style} {$recordattrs}>
 				{$NDMealAllowancePerShift_value}

@@ -91,6 +91,11 @@
 	{BEGIN grid_header}
 		<tr class="{$gridHeader_class}" >
 		{BEGIN record_header}
+			{BEGIN EmployeeID_fieldheadercolumn}
+			<th class="{$EmployeeID_class}" {$EmployeeID_style}  data-field="EmployeeID">
+				{$label empindschedule EmployeeID}
+			</th>
+			{END EmployeeID_fieldheadercolumn}
 			{BEGIN ScID_fieldheadercolumn}
 			<th class="{$ScID_class}" {$ScID_style}  data-field="ScID">
 				{$label empindschedule ScID}
@@ -338,6 +343,11 @@
 	{BEGIN grid_row}
 		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
 		{BEGIN grid_record}
+			{BEGIN EmployeeID_fieldcolumn}
+			<td  class="{$EmployeeID_class}" {$EmployeeID_style} {$recordattrs}>
+				{$EmployeeID_value}
+			</td>
+			{END EmployeeID_fieldcolumn}
 			{BEGIN ScID_fieldcolumn}
 			<td  class="{$ScID_class}" {$ScID_style} {$recordattrs}>
 				{$ScID_value}
@@ -585,6 +595,10 @@
 	<tfoot>
 		<tr class=" style1">
 		{BEGIN totals_record}
+			{BEGIN EmployeeID_fieldfootercolumn}
+			<td>
+						</td>
+			{END EmployeeID_fieldfootercolumn}
 			{BEGIN ScID_fieldfootercolumn}
 			<td>
 						</td>

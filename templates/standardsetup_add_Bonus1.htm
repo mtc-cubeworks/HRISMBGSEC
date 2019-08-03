@@ -1,0 +1,32 @@
+<div {$pageattrs}>
+
+{BEGIN container_tabfields}
+<div {$tabfields_chiddenattr} data-pageid="{$pageid}" data-container="tabfields" class=" form-horizontal   "> 
+
+
+{BEGIN BonusAnnualLimit_tabfieldblock}
+<div class="container">
+	<div class="form-group in-tab {$fielddispclass_BonusAnnualLimit}" data-fieldname="BonusAnnualLimit" data-signal-error-for="BonusAnnualLimit{$id}" >
+		<label class="col-md-3 control-label" for="{$labelfor_BonusAnnualLimit}">
+			{BEGIN BonusAnnualLimit_label}{$label standardsetup BonusAnnualLimit}{END BonusAnnualLimit_label}
+		</label>
+		<div class="col-md-6 " >
+			{$BonusAnnualLimit_editcontrol}
+		</div>
+		<div class="col-md-3 help-block " data-helpfor="BonusAnnualLimit">
+			<div class="text-muted" >
+			{$tooltip standardsetup BonusAnnualLimit}
+			</div>
+		</div>
+	</div>
+</div>
+{END BonusAnnualLimit_tabfieldblock}
+
+
+
+
+
+</div>
+{END container_tabfields}
+
+</div>

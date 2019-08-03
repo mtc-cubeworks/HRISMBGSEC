@@ -1,0 +1,275 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_searchpage}
+<div {$searchpage_chiddenattr} data-pageid="{$pageid}" data-container="searchpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN searchheader}
+	<h2 {$bssearchheader_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchheader" >{$pagetitlelabel leaveremarks2 search}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END searchheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_searchpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$bssearchfields_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchfields" class="form-horizontal" role="form">
+<div class="container">
+	<div class="form-group">
+		<div class="col-md-12" >
+			&nbsp;
+		</div>
+	</div>
+</div>
+	{BEGIN LRID_fieldblock}		
+	<div class="container {$fielddispclass_LRID}" data-fieldname="LRID">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_LRID}">
+				{$label leaveremarks2 LRID}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_LRID}
+			</div>
+			<div class="col-md-4" >
+				{$LRID_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$LRID_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END LRID_fieldblock}
+	{BEGIN LRDate_fieldblock}		
+	<div class="container {$fielddispclass_LRDate}" data-fieldname="LRDate">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_LRDate}">
+				{$label leaveremarks2 LRDate}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_LRDate}
+			</div>
+			<div class="col-md-4" >
+				{$LRDate_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$LRDate_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END LRDate_fieldblock}
+	{BEGIN Remarks_fieldblock}		
+	<div class="container {$fielddispclass_Remarks}" data-fieldname="Remarks">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Remarks}">
+				{$label leaveremarks2 Remarks}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Remarks}
+			</div>
+			<div class="col-md-4" >
+				{$Remarks_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Remarks_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Remarks_fieldblock}
+	{BEGIN LogID_fieldblock}		
+	<div class="container {$fielddispclass_LogID}" data-fieldname="LogID">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_LogID}">
+				{$label leaveremarks2 LogID}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_LogID}
+			</div>
+			<div class="col-md-4" >
+				{$LogID_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$LogID_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END LogID_fieldblock}
+	{BEGIN LvID_fieldblock}		
+	<div class="container {$fielddispclass_LvID}" data-fieldname="LvID">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_LvID}">
+				{$label leaveremarks2 LvID}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_LvID}
+			</div>
+			<div class="col-md-4" >
+				{$LvID_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$LvID_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END LvID_fieldblock}
+	{BEGIN Superior_fieldblock}		
+	<div class="container {$fielddispclass_Superior}" data-fieldname="Superior">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Superior}">
+				{$label leaveremarks2 Superior}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Superior}
+			</div>
+			<div class="col-md-4" >
+				{$Superior_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Superior_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Superior_fieldblock}
+	{BEGIN Superior2_fieldblock}		
+	<div class="container {$fielddispclass_Superior2}" data-fieldname="Superior2">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Superior2}">
+				{$label leaveremarks2 Superior2}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Superior2}
+			</div>
+			<div class="col-md-4" >
+				{$Superior2_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Superior2_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Superior2_fieldblock}
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container form-horizontal   "> 
+
+
+
+
+{BEGIN container_bbuttons}
+<div {$bbuttons_chiddenattr} data-pageid="{$pageid}" data-container="bbuttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-10 col-md-offset-2"> 
+
+{BEGIN searchbuttons}
+{BEGIN search_button}
+<button class="btn btn-primary" {$searchbutton_attrs}>Search</button>
+{END search_button} 
+{BEGIN reset_button}
+<button class="btn btn-default" {$resetbutton_attrs}>Reset</button>
+{END reset_button}
+{BEGIN back_button}
+<button class="btn btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{END searchbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+</div>
+{END container_bbuttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

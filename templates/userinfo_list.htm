@@ -1,0 +1,1755 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}
+<style>
+{$containerCss}
+</style>
+<div class="sidebar bs-fixed clearfix mCustomScrollbar" data-mcs-theme="minimal-dark" {$blockattr_left}>
+	<div class="sidebar-contents mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside">
+		
+
+{BEGIN container_logo}
+<div {$logo_chiddenattr} data-pageid="{$pageid}" data-container="logo" class=" bs-sidebarlogo   "> 
+
+{BEGIN logo_block}
+<a href="{$home_link}" {$logo_hiddenattr} data-pageid="{$pageid}" data-brick="logo" class="navbar-brand" >{$logo}</a>
+{END logo_block}
+
+
+
+</div>
+{END container_logo}
+
+
+
+{BEGIN container_hdr}
+<div {$hdr_chiddenattr} data-pageid="{$pageid}" data-container="hdr" class=" navbar-default clearfix   "> 
+
+{BEGIN collapse_block}
+<button {$bsnavbarcollapse_hiddenattr} data-pageid="{$pageid}" data-brick="bsnavbarcollapse" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target=".bs-navcontrolled">	
+	<span class="sr-only">Toggle navigation</span>	
+	<span class="icon-bar"></span>					
+</button>												
+
+{END collapse_block}
+
+
+
+</div>
+{END container_hdr}
+
+{BEGIN container_sidemenu}<div {$sidemenu_chiddenattr} data-pageid="{$pageid}" data-container="sidemenu" class="bs-navform navbar-collapse sidebar-menu bs-hidden-xs bs-navcontrolled" aria-expanded="false" >												   
+{BEGIN menu_block}
+{$menu main}
+
+{END menu_block}
+
+												</div>						{END container_sidemenu}
+
+{BEGIN container_left}
+<div {$left_chiddenattr} data-pageid="{$pageid}" data-container="left" class=" sidebar-container   "> 
+
+{BEGIN searchPanel}
+<div {$searchpanel_hiddenattr} data-pageid="{$pageid}" data-brick="searchpanel" class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} >
+	<!-- Search panel content -->
+	
+	<div class="panel-heading">
+		<div class="btn-group" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Search in
+			<span class="caret"></span>
+			</button>
+		</div>
+
+		
+		<div class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Show options</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>all conditions</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>any condition</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>hide</a></li>
+			</ul>
+		</div>
+	
+		
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		{END searchCtrlBlock}
+
+
+	</div>
+	
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary" id="searchButton{$id}" {$searchbutton_attrs}>Search</button>
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}>
+		Show all
+		</button>
+	</div>
+</div>
+
+
+{END searchPanel}
+
+
+
+
+</div>
+{END container_left}
+
+
+	</div>
+</div>	
+<div class="bs-wrapper">
+	<div class="bs-fixedheader" id="fixedheader{$id}">
+		{BEGIN container_menu}<nav {$menu_chiddenattr} data-pageid="{$pageid}" data-container="menu" class="navbar navbar-default bs-fullwidth-navbar">					
+
+
+
+{BEGIN container_bc}
+<div {$bc_chiddenattr} data-pageid="{$pageid}" data-container="bc" class=" navbar-form navbar-left   "> 
+
+{BEGIN breadcrumbs}
+<ol class="breadcrumb">
+<li ><a href="{$home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumbs}
+
+
+
+</div>
+{END container_bc}
+
+
+
+
+
+
+{BEGIN container_menu_1}<div {$menu_1_chiddenattr} data-pageid="{$pageid}" data-container="menu_1" class="bs-navform navbar-collapse bs-hidden-xs bs-navcontrolled" aria-expanded="false" >												   
+
+
+
+{BEGIN container_more}
+<div {$more_chiddenattr} data-pageid="{$pageid}" data-container="more" class=" navbar-right navbar-form   "> 
+
+{BEGIN more_list}
+<div {$morebutton_hiddenattr} data-pageid="{$pageid}" data-brick="morebutton" class="btn-group bs-navsection">
+	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		<span class="glyphicon glyphicon-cog"></span>
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu">
+				{BEGIN editselected_link}
+		<li class="massButton{$id} disabled"><a href="#" {$editselectedlink_attrs} {$editselectedlink_span} >Edit selected</a></li>
+		{END editselected_link}
+
+				{BEGIN exportselected_link}
+		<li class="massButton{$id} disabled"><a href="#" {$exportselectedlink_attrs} {$exportselectedlink_span} >Export selected</a></li>
+		{END exportselected_link}
+		
+				{BEGIN deleteselected_link}
+		<li class="massButton{$id} disabled"><a href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>Delete selected</a></li>
+		{END deleteselected_link}
+		
+				<li role="separator" class="divider"></li>	
+
+				{BEGIN asearch_link}
+		<li><a href="userinfo_search.php" {$advsearchlink_attrs}>Advanced search</a></li>
+		{END asearch_link}
+
+				{BEGIN searchPanelTopButtons}
+		<li><a href=# id="showOptPanel{$id}">Show search panel</a></li>
+		{END searchPanelTopButtons}	
+		
+				
+				<li role="separator" class="divider"></li>	
+		
+				
+				{BEGIN export_link}
+		<li><a target="_blank" href="userinfo_export.php"  {$exportlink_attrs}>Export results</a></li>
+		{END export_link}
+
+		
+				
+	</ul>  
+</div>
+
+{END more_list}
+
+
+{BEGIN security_block}
+<span {$loggedas_hiddenattr} data-pageid="{$pageid}" data-brick="loggedas" id="login_block{$id}" class="bs-navsection">
+	{BEGIN guestloginbutton}
+		<button class="btn btn-info" type="button" {$guestloginlink_attrs}>Login</button>
+	{END guestloginbutton}
+	{BEGIN loggedas_message} 
+		<span class="dropdown">
+			<button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon-user"></span>	{$username}</button>
+			<ul class="dropdown-menu">
+		{BEGIN logoutbutton}
+				<li><a href="#" {$logoutlink_attrs}>Log out</a></li>
+		{END logoutbutton}
+		
+		{BEGIN adminarea_link}
+				<li><a href="admin_rights_list.php" {$adminarealink_attrs}>Admin Area</a></li>
+		{END adminarea_link}
+
+
+			</ul>
+		</span>
+	{END loggedas_message}
+</span>
+{END security_block}
+
+
+
+</div>
+{END container_more}
+
+
+
+
+
+
+
+
+{BEGIN container_more_1}
+<div {$more_1_chiddenattr} data-pageid="{$pageid}" data-container="more_1" class=" navbar-right navbar-form   "> 
+
+{BEGIN searchform_block}
+<span {$search_hiddenattr} data-pageid="{$pageid}" data-brick="search" class="form-group">
+
+ <div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Show all">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>
+{END searchform_block}
+
+
+
+</div>
+{END container_more_1}
+
+
+
+
+												</div>						{END container_menu_1}
+
+
+									</nav>{END container_menu}
+	</div>	
+	<div class="container-fluid bs-underheader bs-fixedsidebarmain" id="underheader{$id}">
+		{$header}
+		<div class="bs-sidebar-screenbound">
+			
+
+
+
+{BEGIN container_gridcontrols}
+<div {$gridcontrols_chiddenattr} data-pageid="{$pageid}" data-container="gridcontrols" class=" bs-navcontrolled bs-hidden-xs   "> 
+
+
+
+
+{BEGIN container_add_delete}
+<div {$add_delete_chiddenattr} data-pageid="{$pageid}" data-container="add_delete" class=" bottom-margin  col-md-6 "> 
+
+{BEGIN newrecord_controls_block}
+	
+	
+{END newrecord_controls_block}
+
+
+{BEGIN record_controls_block}
+<span {$recordcontrol_hiddenattr} data-pageid="{$pageid}" data-brick="recordcontrol">
+		{BEGIN deleteselected_link}
+	<button type="button" class="btn btn-default" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled>Delete</button>
+	{END deleteselected_link}
+			{BEGIN saveall_link}
+		<button type="button" class="btn btn-primary" {$savealllink_attrs} {$savealllink_span}>Save all</button>
+	{END saveall_link}
+	{BEGIN cancelall_link}
+		<button type="button" class="btn btn-default" {$cancelalllink_attrs} {$cancelalllink_span}>Cancel</button>
+	{END cancelall_link}
+</span>
+
+{END record_controls_block}
+
+
+
+</div>
+{END container_add_delete}
+
+
+
+
+
+
+
+
+{BEGIN container_gridinfo}
+<div {$gridinfo_chiddenattr} data-pageid="{$pageid}" data-container="gridinfo" class=" bottom-margin text-right col-md-6 "> 
+
+{BEGIN details_found}
+<span {$details_found_hiddenattr} data-pageid="{$pageid}" data-brick="details_found" class="form-inline form-inline-always">
+	{$records_indicator}
+	<span>
+	{BEGIN recordspp_block}
+			{$recsPerPage}
+	{END recordspp_block}
+	</span>
+</span>
+{END details_found}
+
+
+{BEGIN print_friendly}
+<span {$printpanel_hiddenattr} data-pageid="{$pageid}" data-brick="printpanel" class="bs-printpanel" id="printpanelblock{$id}">
+	<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" title="Print-friendly page">
+		<span class="glyphicon glyphicon-print" ></span>
+		<span class="caret"></span>
+    </button>
+	<ul class="dropdown-menu pull-right" >
+		<li>
+			<div class="container-fluid" id="print_friendly_scope{$id}">
+				<div class="row">
+					<div class="col-md-4">Scope:</div>
+										{BEGIN print_friendly_all}
+					<div class="col-md-8">
+						<label for="printAll{$id}">
+							<input type="radio" id="printAll{$id}" data-href="userinfo_print.php?all=1&amp;{$crosstable_attrs}" name="printScope">
+							Print all pages
+						</label>
+					</div>
+					{END print_friendly_all}
+				</div>
+				<div class="row">
+					<div class="col-md-4">&nbsp;</div>
+					<div class="col-md-8">
+						<label for="printPage{$id}">
+							<input type="radio" id="printPage{$id}" data-href="userinfo_print.php?{$crosstable_attrs}" name="printScope" checked>
+							Print this page
+						</label>
+					</div>
+				</div>
+								<div class="row">
+					<div class="col-md-4">&nbsp;</div>
+					<div class="col-md-8">
+						<label for="printSelection{$id}" style="color: gray;">
+							<input type="radio" id="printSelection{$id}" name="printScope" disabled="disabled">
+							Print selected
+						</label>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li class="divider" role="separator"></li>
+
+		
+				<li>	
+			<div class="rnr-printdetails">
+				<label for="printPerPage{$id}">
+											Records Per Page:
+				</label>
+				<input type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">		
+			</div>
+		</li>
+		<li class="divider" role="separator"></li>
+		<li class="rnr-printbutton">				
+			<button type="button" class="btn btn-primary" id="print_friendly_button{$id}" >Print</button>			
+		</li>
+	</ul>	
+</span>
+
+{END print_friendly}
+
+
+
+
+</div>
+{END container_gridinfo}
+
+
+
+
+
+
+
+</div>
+{END container_gridcontrols}
+
+
+		</div>
+		<div></div>
+		<div class="bs-sidebar-screenbound bs-minwidth">
+			
+
+{BEGIN container_tabs}
+<div {$tabs_chiddenattr} data-pageid="{$pageid}" data-container="tabs" class="    "> 
+
+{BEGIN grid_tabs}
+<div {$bsgrid_tabs_hiddenattr} data-pageid="{$pageid}" data-brick="bsgrid_tabs">
+<ul class="nav nav-tabs">
+{$grid_tabs_content}
+</ul>
+</div>
+{END grid_tabs}
+
+
+
+</div>
+{END container_tabs}
+
+
+
+{BEGIN container_message}
+<div {$message_chiddenattr} data-pageid="{$pageid}" data-container="message" class="    "> 
+
+{BEGIN message_block}
+<div {$message_hiddenattr} data-pageid="{$pageid}" data-brick="message" class="alert {$message_class}" role="alert">{$message}</div>
+{END message_block}
+
+
+
+</div>
+{END container_message}
+
+
+
+{BEGIN container_center}
+<div {$center_chiddenattr} data-pageid="{$pageid}" data-container="center" class="    "> 
+
+
+
+
+{BEGIN container_grid}
+<div {$grid_chiddenattr} data-pageid="{$pageid}" data-container="grid" class="bs-grid    "> 
+
+{BEGIN grid_block}
+	<style>
+	.bs-gridcell[data-field=USERID]:before {
+		content: "{$label userinfo USERID}";
+	}
+	.bs-gridcell[data-field=Badgenumber]:before {
+		content: "{$label userinfo Badgenumber}";
+	}
+	.bs-gridcell[data-field=SSN]:before {
+		content: "{$label userinfo SSN}";
+	}
+	.bs-gridcell[data-field=Name]:before {
+		content: "{$label userinfo Name}";
+	}
+	.bs-gridcell[data-field=Gender]:before {
+		content: "{$label userinfo Gender}";
+	}
+	.bs-gridcell[data-field=TITLE]:before {
+		content: "{$label userinfo TITLE}";
+	}
+	.bs-gridcell[data-field=PAGER]:before {
+		content: "{$label userinfo PAGER}";
+	}
+	.bs-gridcell[data-field=BIRTHDAY]:before {
+		content: "{$label userinfo BIRTHDAY}";
+	}
+	.bs-gridcell[data-field=HIREDDAY]:before {
+		content: "{$label userinfo HIREDDAY}";
+	}
+	.bs-gridcell[data-field=street]:before {
+		content: "{$label userinfo street}";
+	}
+	.bs-gridcell[data-field=CITY]:before {
+		content: "{$label userinfo CITY}";
+	}
+	.bs-gridcell[data-field=STATE]:before {
+		content: "{$label userinfo STATE}";
+	}
+	.bs-gridcell[data-field=ZIP]:before {
+		content: "{$label userinfo ZIP}";
+	}
+	.bs-gridcell[data-field=OPHONE]:before {
+		content: "{$label userinfo OPHONE}";
+	}
+	.bs-gridcell[data-field=FPHONE]:before {
+		content: "{$label userinfo FPHONE}";
+	}
+	.bs-gridcell[data-field=VERIFICATIONMETHOD]:before {
+		content: "{$label userinfo VERIFICATIONMETHOD}";
+	}
+	.bs-gridcell[data-field=DEFAULTDEPTID]:before {
+		content: "{$label userinfo DEFAULTDEPTID}";
+	}
+	.bs-gridcell[data-field=SECURITYFLAGS]:before {
+		content: "{$label userinfo SECURITYFLAGS}";
+	}
+	.bs-gridcell[data-field=ATT]:before {
+		content: "{$label userinfo ATT}";
+	}
+	.bs-gridcell[data-field=INLATE]:before {
+		content: "{$label userinfo INLATE}";
+	}
+	.bs-gridcell[data-field=OUTEARLY]:before {
+		content: "{$label userinfo OUTEARLY}";
+	}
+	.bs-gridcell[data-field=OVERTIME]:before {
+		content: "{$label userinfo OVERTIME}";
+	}
+	.bs-gridcell[data-field=SEP]:before {
+		content: "{$label userinfo SEP}";
+	}
+	.bs-gridcell[data-field=HOLIDAY]:before {
+		content: "{$label userinfo HOLIDAY}";
+	}
+	.bs-gridcell[data-field=MINZU]:before {
+		content: "{$label userinfo MINZU}";
+	}
+	.bs-gridcell[data-field=PASSWORD]:before {
+		content: "{$label userinfo PASSWORD}";
+	}
+	.bs-gridcell[data-field=LUNCHDURATION]:before {
+		content: "{$label userinfo LUNCHDURATION}";
+	}
+	.bs-gridcell[data-field=PHOTO]:before {
+		content: "{$label userinfo PHOTO}";
+	}
+	.bs-gridcell[data-field=mverifypass]:before {
+		content: "{$label userinfo mverifypass}";
+	}
+	.bs-gridcell[data-field=Notes]:before {
+		content: "{$label userinfo Notes}";
+	}
+	.bs-gridcell[data-field=privilege]:before {
+		content: "{$label userinfo privilege}";
+	}
+	.bs-gridcell[data-field=InheritDeptSch]:before {
+		content: "{$label userinfo InheritDeptSch}";
+	}
+	.bs-gridcell[data-field=InheritDeptSchClass]:before {
+		content: "{$label userinfo InheritDeptSchClass}";
+	}
+	.bs-gridcell[data-field=AutoSchPlan]:before {
+		content: "{$label userinfo AutoSchPlan}";
+	}
+	.bs-gridcell[data-field=MinAutoSchInterval]:before {
+		content: "{$label userinfo MinAutoSchInterval}";
+	}
+	.bs-gridcell[data-field=RegisterOT]:before {
+		content: "{$label userinfo RegisterOT}";
+	}
+	.bs-gridcell[data-field=InheritDeptRule]:before {
+		content: "{$label userinfo InheritDeptRule}";
+	}
+	.bs-gridcell[data-field=EMPRIVILEGE]:before {
+		content: "{$label userinfo EMPRIVILEGE}";
+	}
+	.bs-gridcell[data-field=CardNo]:before {
+		content: "{$label userinfo CardNo}";
+	}
+	.bs-gridcell[data-field=FaceGroup]:before {
+		content: "{$label userinfo FaceGroup}";
+	}
+	.bs-gridcell[data-field=AccGroup]:before {
+		content: "{$label userinfo AccGroup}";
+	}
+	.bs-gridcell[data-field=UseAccGroupTZ]:before {
+		content: "{$label userinfo UseAccGroupTZ}";
+	}
+	.bs-gridcell[data-field=VerifyCode]:before {
+		content: "{$label userinfo VerifyCode}";
+	}
+	.bs-gridcell[data-field=Expires]:before {
+		content: "{$label userinfo Expires}";
+	}
+	.bs-gridcell[data-field=ValidCount]:before {
+		content: "{$label userinfo ValidCount}";
+	}
+	.bs-gridcell[data-field=ValidTimeBegin]:before {
+		content: "{$label userinfo ValidTimeBegin}";
+	}
+	.bs-gridcell[data-field=ValidTimeEnd]:before {
+		content: "{$label userinfo ValidTimeEnd}";
+	}
+	.bs-gridcell[data-field=TimeZone1]:before {
+		content: "{$label userinfo TimeZone1}";
+	}
+	.bs-gridcell[data-field=TimeZone2]:before {
+		content: "{$label userinfo TimeZone2}";
+	}
+	.bs-gridcell[data-field=TimeZone3]:before {
+		content: "{$label userinfo TimeZone3}";
+	}
+</style>
+<table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
+	<thead>
+										{BEGIN grid_header}
+								<tr class="rnr-toprow {$gridHeader_class}" >
+									{BEGIN record_header}
+									{BEGIN listIcons_column}
+									<th iEditCont="all">&nbsp;</th>
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}
+									<th class="">
+										<input type="checkbox" {$checkboxheader_attrs}>
+									</th>
+									{END checkbox_column}
+
+																		
+									{BEGIN USERID_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$USERID_class}" data-field=USERID>
+									{BEGIN USERID_fieldheader}
+																				<span {$USERID_orderlinkattrs}>
+											{$label userinfo USERID}
+										</span>
+									{END USERID_fieldheader}
+									</th>
+									{END USERID_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Badgenumber_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Badgenumber_class}" data-field=Badgenumber>
+									{BEGIN Badgenumber_fieldheader}
+																				<span {$Badgenumber_orderlinkattrs}>
+											{$label userinfo Badgenumber}
+										</span>
+									{END Badgenumber_fieldheader}
+									</th>
+									{END Badgenumber_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SSN_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SSN_class}" data-field=SSN>
+									{BEGIN SSN_fieldheader}
+																				<span {$SSN_orderlinkattrs}>
+											{$label userinfo SSN}
+										</span>
+									{END SSN_fieldheader}
+									</th>
+									{END SSN_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Name_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Name_class}" data-field=Name>
+									{BEGIN Name_fieldheader}
+																				<span {$Name_orderlinkattrs}>
+											{$label userinfo Name}
+										</span>
+									{END Name_fieldheader}
+									</th>
+									{END Name_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Gender_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Gender_class}" data-field=Gender>
+									{BEGIN Gender_fieldheader}
+																				<span {$Gender_orderlinkattrs}>
+											{$label userinfo Gender}
+										</span>
+									{END Gender_fieldheader}
+									</th>
+									{END Gender_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN TITLE_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$TITLE_class}" data-field=TITLE>
+									{BEGIN TITLE_fieldheader}
+																				<span {$TITLE_orderlinkattrs}>
+											{$label userinfo TITLE}
+										</span>
+									{END TITLE_fieldheader}
+									</th>
+									{END TITLE_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN PAGER_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$PAGER_class}" data-field=PAGER>
+									{BEGIN PAGER_fieldheader}
+																				<span {$PAGER_orderlinkattrs}>
+											{$label userinfo PAGER}
+										</span>
+									{END PAGER_fieldheader}
+									</th>
+									{END PAGER_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN BIRTHDAY_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$BIRTHDAY_class}" data-field=BIRTHDAY>
+									{BEGIN BIRTHDAY_fieldheader}
+																				<span {$BIRTHDAY_orderlinkattrs}>
+											{$label userinfo BIRTHDAY}
+										</span>
+									{END BIRTHDAY_fieldheader}
+									</th>
+									{END BIRTHDAY_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN HIREDDAY_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$HIREDDAY_class}" data-field=HIREDDAY>
+									{BEGIN HIREDDAY_fieldheader}
+																				<span {$HIREDDAY_orderlinkattrs}>
+											{$label userinfo HIREDDAY}
+										</span>
+									{END HIREDDAY_fieldheader}
+									</th>
+									{END HIREDDAY_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN street_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$street_class}" data-field=street>
+									{BEGIN street_fieldheader}
+																				<span {$street_orderlinkattrs}>
+											{$label userinfo street}
+										</span>
+									{END street_fieldheader}
+									</th>
+									{END street_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN CITY_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$CITY_class}" data-field=CITY>
+									{BEGIN CITY_fieldheader}
+																				<span {$CITY_orderlinkattrs}>
+											{$label userinfo CITY}
+										</span>
+									{END CITY_fieldheader}
+									</th>
+									{END CITY_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN STATE_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$STATE_class}" data-field=STATE>
+									{BEGIN STATE_fieldheader}
+																				<span {$STATE_orderlinkattrs}>
+											{$label userinfo STATE}
+										</span>
+									{END STATE_fieldheader}
+									</th>
+									{END STATE_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN ZIP_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$ZIP_class}" data-field=ZIP>
+									{BEGIN ZIP_fieldheader}
+																				<span {$ZIP_orderlinkattrs}>
+											{$label userinfo ZIP}
+										</span>
+									{END ZIP_fieldheader}
+									</th>
+									{END ZIP_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN OPHONE_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$OPHONE_class}" data-field=OPHONE>
+									{BEGIN OPHONE_fieldheader}
+																				<span {$OPHONE_orderlinkattrs}>
+											{$label userinfo OPHONE}
+										</span>
+									{END OPHONE_fieldheader}
+									</th>
+									{END OPHONE_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN FPHONE_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$FPHONE_class}" data-field=FPHONE>
+									{BEGIN FPHONE_fieldheader}
+																				<span {$FPHONE_orderlinkattrs}>
+											{$label userinfo FPHONE}
+										</span>
+									{END FPHONE_fieldheader}
+									</th>
+									{END FPHONE_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN VERIFICATIONMETHOD_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$VERIFICATIONMETHOD_class}" data-field=VERIFICATIONMETHOD>
+									{BEGIN VERIFICATIONMETHOD_fieldheader}
+																				<span {$VERIFICATIONMETHOD_orderlinkattrs}>
+											{$label userinfo VERIFICATIONMETHOD}
+										</span>
+									{END VERIFICATIONMETHOD_fieldheader}
+									</th>
+									{END VERIFICATIONMETHOD_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN DEFAULTDEPTID_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$DEFAULTDEPTID_class}" data-field=DEFAULTDEPTID>
+									{BEGIN DEFAULTDEPTID_fieldheader}
+																				<span {$DEFAULTDEPTID_orderlinkattrs}>
+											{$label userinfo DEFAULTDEPTID}
+										</span>
+									{END DEFAULTDEPTID_fieldheader}
+									</th>
+									{END DEFAULTDEPTID_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SECURITYFLAGS_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SECURITYFLAGS_class}" data-field=SECURITYFLAGS>
+									{BEGIN SECURITYFLAGS_fieldheader}
+																				<span {$SECURITYFLAGS_orderlinkattrs}>
+											{$label userinfo SECURITYFLAGS}
+										</span>
+									{END SECURITYFLAGS_fieldheader}
+									</th>
+									{END SECURITYFLAGS_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN ATT_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$ATT_class}" data-field=ATT>
+									{BEGIN ATT_fieldheader}
+																				<span {$ATT_orderlinkattrs}>
+											{$label userinfo ATT}
+										</span>
+									{END ATT_fieldheader}
+									</th>
+									{END ATT_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN INLATE_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$INLATE_class}" data-field=INLATE>
+									{BEGIN INLATE_fieldheader}
+																				<span {$INLATE_orderlinkattrs}>
+											{$label userinfo INLATE}
+										</span>
+									{END INLATE_fieldheader}
+									</th>
+									{END INLATE_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN OUTEARLY_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$OUTEARLY_class}" data-field=OUTEARLY>
+									{BEGIN OUTEARLY_fieldheader}
+																				<span {$OUTEARLY_orderlinkattrs}>
+											{$label userinfo OUTEARLY}
+										</span>
+									{END OUTEARLY_fieldheader}
+									</th>
+									{END OUTEARLY_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN OVERTIME_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$OVERTIME_class}" data-field=OVERTIME>
+									{BEGIN OVERTIME_fieldheader}
+																				<span {$OVERTIME_orderlinkattrs}>
+											{$label userinfo OVERTIME}
+										</span>
+									{END OVERTIME_fieldheader}
+									</th>
+									{END OVERTIME_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SEP_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SEP_class}" data-field=SEP>
+									{BEGIN SEP_fieldheader}
+																				<span {$SEP_orderlinkattrs}>
+											{$label userinfo SEP}
+										</span>
+									{END SEP_fieldheader}
+									</th>
+									{END SEP_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN HOLIDAY_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$HOLIDAY_class}" data-field=HOLIDAY>
+									{BEGIN HOLIDAY_fieldheader}
+																				<span {$HOLIDAY_orderlinkattrs}>
+											{$label userinfo HOLIDAY}
+										</span>
+									{END HOLIDAY_fieldheader}
+									</th>
+									{END HOLIDAY_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN MINZU_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$MINZU_class}" data-field=MINZU>
+									{BEGIN MINZU_fieldheader}
+																				<span {$MINZU_orderlinkattrs}>
+											{$label userinfo MINZU}
+										</span>
+									{END MINZU_fieldheader}
+									</th>
+									{END MINZU_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN PASSWORD_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$PASSWORD_class}" data-field=PASSWORD>
+									{BEGIN PASSWORD_fieldheader}
+																				<span {$PASSWORD_orderlinkattrs}>
+											{$label userinfo PASSWORD}
+										</span>
+									{END PASSWORD_fieldheader}
+									</th>
+									{END PASSWORD_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN LUNCHDURATION_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$LUNCHDURATION_class}" data-field=LUNCHDURATION>
+									{BEGIN LUNCHDURATION_fieldheader}
+																				<span {$LUNCHDURATION_orderlinkattrs}>
+											{$label userinfo LUNCHDURATION}
+										</span>
+									{END LUNCHDURATION_fieldheader}
+									</th>
+									{END LUNCHDURATION_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN PHOTO_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$PHOTO_class}" data-field=PHOTO>
+									{BEGIN PHOTO_fieldheader}
+																				{$label userinfo PHOTO}
+									{END PHOTO_fieldheader}
+									</th>
+									{END PHOTO_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN mverifypass_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$mverifypass_class}" data-field=mverifypass>
+									{BEGIN mverifypass_fieldheader}
+																				<span {$mverifypass_orderlinkattrs}>
+											{$label userinfo mverifypass}
+										</span>
+									{END mverifypass_fieldheader}
+									</th>
+									{END mverifypass_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Notes_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Notes_class}" data-field=Notes>
+									{BEGIN Notes_fieldheader}
+																				{$label userinfo Notes}
+									{END Notes_fieldheader}
+									</th>
+									{END Notes_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN privilege_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$privilege_class}" data-field=privilege>
+									{BEGIN privilege_fieldheader}
+																				<span {$privilege_orderlinkattrs}>
+											{$label userinfo privilege}
+										</span>
+									{END privilege_fieldheader}
+									</th>
+									{END privilege_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN InheritDeptSch_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$InheritDeptSch_class}" data-field=InheritDeptSch>
+									{BEGIN InheritDeptSch_fieldheader}
+																				<span {$InheritDeptSch_orderlinkattrs}>
+											{$label userinfo InheritDeptSch}
+										</span>
+									{END InheritDeptSch_fieldheader}
+									</th>
+									{END InheritDeptSch_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN InheritDeptSchClass_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$InheritDeptSchClass_class}" data-field=InheritDeptSchClass>
+									{BEGIN InheritDeptSchClass_fieldheader}
+																				<span {$InheritDeptSchClass_orderlinkattrs}>
+											{$label userinfo InheritDeptSchClass}
+										</span>
+									{END InheritDeptSchClass_fieldheader}
+									</th>
+									{END InheritDeptSchClass_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN AutoSchPlan_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$AutoSchPlan_class}" data-field=AutoSchPlan>
+									{BEGIN AutoSchPlan_fieldheader}
+																				<span {$AutoSchPlan_orderlinkattrs}>
+											{$label userinfo AutoSchPlan}
+										</span>
+									{END AutoSchPlan_fieldheader}
+									</th>
+									{END AutoSchPlan_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN MinAutoSchInterval_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$MinAutoSchInterval_class}" data-field=MinAutoSchInterval>
+									{BEGIN MinAutoSchInterval_fieldheader}
+																				<span {$MinAutoSchInterval_orderlinkattrs}>
+											{$label userinfo MinAutoSchInterval}
+										</span>
+									{END MinAutoSchInterval_fieldheader}
+									</th>
+									{END MinAutoSchInterval_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RegisterOT_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RegisterOT_class}" data-field=RegisterOT>
+									{BEGIN RegisterOT_fieldheader}
+																				<span {$RegisterOT_orderlinkattrs}>
+											{$label userinfo RegisterOT}
+										</span>
+									{END RegisterOT_fieldheader}
+									</th>
+									{END RegisterOT_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN InheritDeptRule_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$InheritDeptRule_class}" data-field=InheritDeptRule>
+									{BEGIN InheritDeptRule_fieldheader}
+																				<span {$InheritDeptRule_orderlinkattrs}>
+											{$label userinfo InheritDeptRule}
+										</span>
+									{END InheritDeptRule_fieldheader}
+									</th>
+									{END InheritDeptRule_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN EMPRIVILEGE_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$EMPRIVILEGE_class}" data-field=EMPRIVILEGE>
+									{BEGIN EMPRIVILEGE_fieldheader}
+																				<span {$EMPRIVILEGE_orderlinkattrs}>
+											{$label userinfo EMPRIVILEGE}
+										</span>
+									{END EMPRIVILEGE_fieldheader}
+									</th>
+									{END EMPRIVILEGE_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN CardNo_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$CardNo_class}" data-field=CardNo>
+									{BEGIN CardNo_fieldheader}
+																				<span {$CardNo_orderlinkattrs}>
+											{$label userinfo CardNo}
+										</span>
+									{END CardNo_fieldheader}
+									</th>
+									{END CardNo_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN FaceGroup_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$FaceGroup_class}" data-field=FaceGroup>
+									{BEGIN FaceGroup_fieldheader}
+																				<span {$FaceGroup_orderlinkattrs}>
+											{$label userinfo FaceGroup}
+										</span>
+									{END FaceGroup_fieldheader}
+									</th>
+									{END FaceGroup_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN AccGroup_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$AccGroup_class}" data-field=AccGroup>
+									{BEGIN AccGroup_fieldheader}
+																				<span {$AccGroup_orderlinkattrs}>
+											{$label userinfo AccGroup}
+										</span>
+									{END AccGroup_fieldheader}
+									</th>
+									{END AccGroup_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN UseAccGroupTZ_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$UseAccGroupTZ_class}" data-field=UseAccGroupTZ>
+									{BEGIN UseAccGroupTZ_fieldheader}
+																				<span {$UseAccGroupTZ_orderlinkattrs}>
+											{$label userinfo UseAccGroupTZ}
+										</span>
+									{END UseAccGroupTZ_fieldheader}
+									</th>
+									{END UseAccGroupTZ_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN VerifyCode_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$VerifyCode_class}" data-field=VerifyCode>
+									{BEGIN VerifyCode_fieldheader}
+																				<span {$VerifyCode_orderlinkattrs}>
+											{$label userinfo VerifyCode}
+										</span>
+									{END VerifyCode_fieldheader}
+									</th>
+									{END VerifyCode_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Expires_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Expires_class}" data-field=Expires>
+									{BEGIN Expires_fieldheader}
+																				<span {$Expires_orderlinkattrs}>
+											{$label userinfo Expires}
+										</span>
+									{END Expires_fieldheader}
+									</th>
+									{END Expires_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN ValidCount_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$ValidCount_class}" data-field=ValidCount>
+									{BEGIN ValidCount_fieldheader}
+																				<span {$ValidCount_orderlinkattrs}>
+											{$label userinfo ValidCount}
+										</span>
+									{END ValidCount_fieldheader}
+									</th>
+									{END ValidCount_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN ValidTimeBegin_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$ValidTimeBegin_class}" data-field=ValidTimeBegin>
+									{BEGIN ValidTimeBegin_fieldheader}
+																				<span {$ValidTimeBegin_orderlinkattrs}>
+											{$label userinfo ValidTimeBegin}
+										</span>
+									{END ValidTimeBegin_fieldheader}
+									</th>
+									{END ValidTimeBegin_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN ValidTimeEnd_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$ValidTimeEnd_class}" data-field=ValidTimeEnd>
+									{BEGIN ValidTimeEnd_fieldheader}
+																				<span {$ValidTimeEnd_orderlinkattrs}>
+											{$label userinfo ValidTimeEnd}
+										</span>
+									{END ValidTimeEnd_fieldheader}
+									</th>
+									{END ValidTimeEnd_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN TimeZone1_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$TimeZone1_class}" data-field=TimeZone1>
+									{BEGIN TimeZone1_fieldheader}
+																				<span {$TimeZone1_orderlinkattrs}>
+											{$label userinfo TimeZone1}
+										</span>
+									{END TimeZone1_fieldheader}
+									</th>
+									{END TimeZone1_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN TimeZone2_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$TimeZone2_class}" data-field=TimeZone2>
+									{BEGIN TimeZone2_fieldheader}
+																				<span {$TimeZone2_orderlinkattrs}>
+											{$label userinfo TimeZone2}
+										</span>
+									{END TimeZone2_fieldheader}
+									</th>
+									{END TimeZone2_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN TimeZone3_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$TimeZone3_class}" data-field=TimeZone3>
+									{BEGIN TimeZone3_fieldheader}
+																				<span {$TimeZone3_orderlinkattrs}>
+											{$label userinfo TimeZone3}
+										</span>
+									{END TimeZone3_fieldheader}
+									</th>
+									{END TimeZone3_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN endrecordheader_block}
+									<th class="rnr-cs">&nbsp;</th>
+									
+									{END endrecordheader_block}
+									
+									{END record_header}
+									
+								</tr>
+								{END grid_header}
+
+	</thead>
+	<tbody>	
+		{BEGIN grid_row}
+<tr class="{$rowclass} bs-gridrow" {$rowattrs} {$rowstyle}>
+	{BEGIN grid_record}
+	{BEGIN listIcons_column}
+	<td class="bs-gridicons" iEditCont="all" {$rowstyle} {$recordattrs}>
+		{BEGIN edit_column}
+	{BEGIN edit_link}
+			<a class="glyphicon glyphicon-pencil" {$editlink_attrs} title="Edit"></a>
+	{END edit_link}
+	{END edit_column}
+
+		{BEGIN inlineedit_column}
+	{BEGIN inlineedit_link}
+			<a class="glyphicon glyphicon-edit" {$inlineeditlink_attrs} title="Inline Edit"></a>
+	{END inlineedit_link}
+	{END inlineedit_column}
+	
+	<span data-hidden {$ieditbuttonsholder_attrs}></span>
+
+	
+		{BEGIN view_column}
+	{BEGIN view_link}
+			<a class="glyphicon glyphicon-search" {$viewlink_attrs} title="View"></a>
+	{END view_link}
+	{END view_column}
+	</td>	
+	{END listIcons_column}	
+
+		{BEGIN checkbox_column}
+	<td  iEditCont="checkBox" class="bs-gridcheckbox" {$rowstyle} {$recordattrs}>
+	{BEGIN checkbox}
+	<input type="checkbox" {$checkbox_attrs}>
+	{END checkbox}
+	</td>
+	{END checkbox_column}
+
+	
+
+	{BEGIN USERID_fieldcolumn}
+	<td class="bs-gridcell {$USERID_class}"  data-field=USERID {$rowstyle} {$recordattrs}>
+		{$USERID_value}
+	</td>
+{END USERID_fieldcolumn}
+
+
+	{BEGIN Badgenumber_fieldcolumn}
+	<td class="bs-gridcell {$Badgenumber_class}"  data-field=Badgenumber {$rowstyle} {$recordattrs}>
+		{$Badgenumber_value}
+	</td>
+{END Badgenumber_fieldcolumn}
+
+
+	{BEGIN SSN_fieldcolumn}
+	<td class="bs-gridcell {$SSN_class}"  data-field=SSN {$rowstyle} {$recordattrs}>
+		{$SSN_value}
+	</td>
+{END SSN_fieldcolumn}
+
+
+	{BEGIN Name_fieldcolumn}
+	<td class="bs-gridcell {$Name_class}"  data-field=Name {$rowstyle} {$recordattrs}>
+		{$Name_value}
+	</td>
+{END Name_fieldcolumn}
+
+
+	{BEGIN Gender_fieldcolumn}
+	<td class="bs-gridcell {$Gender_class}"  data-field=Gender {$rowstyle} {$recordattrs}>
+		{$Gender_value}
+	</td>
+{END Gender_fieldcolumn}
+
+
+	{BEGIN TITLE_fieldcolumn}
+	<td class="bs-gridcell {$TITLE_class}"  data-field=TITLE {$rowstyle} {$recordattrs}>
+		{$TITLE_value}
+	</td>
+{END TITLE_fieldcolumn}
+
+
+	{BEGIN PAGER_fieldcolumn}
+	<td class="bs-gridcell {$PAGER_class}"  data-field=PAGER {$rowstyle} {$recordattrs}>
+		{$PAGER_value}
+	</td>
+{END PAGER_fieldcolumn}
+
+
+	{BEGIN BIRTHDAY_fieldcolumn}
+	<td class="bs-gridcell {$BIRTHDAY_class}"  data-field=BIRTHDAY {$rowstyle} {$recordattrs}>
+		{$BIRTHDAY_value}
+	</td>
+{END BIRTHDAY_fieldcolumn}
+
+
+	{BEGIN HIREDDAY_fieldcolumn}
+	<td class="bs-gridcell {$HIREDDAY_class}"  data-field=HIREDDAY {$rowstyle} {$recordattrs}>
+		{$HIREDDAY_value}
+	</td>
+{END HIREDDAY_fieldcolumn}
+
+
+	{BEGIN street_fieldcolumn}
+	<td class="bs-gridcell {$street_class}"  data-field=street {$rowstyle} {$recordattrs}>
+		{$street_value}
+	</td>
+{END street_fieldcolumn}
+
+
+	{BEGIN CITY_fieldcolumn}
+	<td class="bs-gridcell {$CITY_class}"  data-field=CITY {$rowstyle} {$recordattrs}>
+		{$CITY_value}
+	</td>
+{END CITY_fieldcolumn}
+
+
+	{BEGIN STATE_fieldcolumn}
+	<td class="bs-gridcell {$STATE_class}"  data-field=STATE {$rowstyle} {$recordattrs}>
+		{$STATE_value}
+	</td>
+{END STATE_fieldcolumn}
+
+
+	{BEGIN ZIP_fieldcolumn}
+	<td class="bs-gridcell {$ZIP_class}"  data-field=ZIP {$rowstyle} {$recordattrs}>
+		{$ZIP_value}
+	</td>
+{END ZIP_fieldcolumn}
+
+
+	{BEGIN OPHONE_fieldcolumn}
+	<td class="bs-gridcell {$OPHONE_class}"  data-field=OPHONE {$rowstyle} {$recordattrs}>
+		{$OPHONE_value}
+	</td>
+{END OPHONE_fieldcolumn}
+
+
+	{BEGIN FPHONE_fieldcolumn}
+	<td class="bs-gridcell {$FPHONE_class}"  data-field=FPHONE {$rowstyle} {$recordattrs}>
+		{$FPHONE_value}
+	</td>
+{END FPHONE_fieldcolumn}
+
+
+	{BEGIN VERIFICATIONMETHOD_fieldcolumn}
+	<td class="bs-gridcell {$VERIFICATIONMETHOD_class}"  data-field=VERIFICATIONMETHOD {$rowstyle} {$recordattrs}>
+		{$VERIFICATIONMETHOD_value}
+	</td>
+{END VERIFICATIONMETHOD_fieldcolumn}
+
+
+	{BEGIN DEFAULTDEPTID_fieldcolumn}
+	<td class="bs-gridcell {$DEFAULTDEPTID_class}"  data-field=DEFAULTDEPTID {$rowstyle} {$recordattrs}>
+		{$DEFAULTDEPTID_value}
+	</td>
+{END DEFAULTDEPTID_fieldcolumn}
+
+
+	{BEGIN SECURITYFLAGS_fieldcolumn}
+	<td class="bs-gridcell {$SECURITYFLAGS_class}"  data-field=SECURITYFLAGS {$rowstyle} {$recordattrs}>
+		{$SECURITYFLAGS_value}
+	</td>
+{END SECURITYFLAGS_fieldcolumn}
+
+
+	{BEGIN ATT_fieldcolumn}
+	<td class="bs-gridcell {$ATT_class}"  data-field=ATT {$rowstyle} {$recordattrs}>
+		{$ATT_value}
+	</td>
+{END ATT_fieldcolumn}
+
+
+	{BEGIN INLATE_fieldcolumn}
+	<td class="bs-gridcell {$INLATE_class}"  data-field=INLATE {$rowstyle} {$recordattrs}>
+		{$INLATE_value}
+	</td>
+{END INLATE_fieldcolumn}
+
+
+	{BEGIN OUTEARLY_fieldcolumn}
+	<td class="bs-gridcell {$OUTEARLY_class}"  data-field=OUTEARLY {$rowstyle} {$recordattrs}>
+		{$OUTEARLY_value}
+	</td>
+{END OUTEARLY_fieldcolumn}
+
+
+	{BEGIN OVERTIME_fieldcolumn}
+	<td class="bs-gridcell {$OVERTIME_class}"  data-field=OVERTIME {$rowstyle} {$recordattrs}>
+		{$OVERTIME_value}
+	</td>
+{END OVERTIME_fieldcolumn}
+
+
+	{BEGIN SEP_fieldcolumn}
+	<td class="bs-gridcell {$SEP_class}"  data-field=SEP {$rowstyle} {$recordattrs}>
+		{$SEP_value}
+	</td>
+{END SEP_fieldcolumn}
+
+
+	{BEGIN HOLIDAY_fieldcolumn}
+	<td class="bs-gridcell {$HOLIDAY_class}"  data-field=HOLIDAY {$rowstyle} {$recordattrs}>
+		{$HOLIDAY_value}
+	</td>
+{END HOLIDAY_fieldcolumn}
+
+
+	{BEGIN MINZU_fieldcolumn}
+	<td class="bs-gridcell {$MINZU_class}"  data-field=MINZU {$rowstyle} {$recordattrs}>
+		{$MINZU_value}
+	</td>
+{END MINZU_fieldcolumn}
+
+
+	{BEGIN PASSWORD_fieldcolumn}
+	<td class="bs-gridcell {$PASSWORD_class}"  data-field=PASSWORD {$rowstyle} {$recordattrs}>
+		{$PASSWORD_value}
+	</td>
+{END PASSWORD_fieldcolumn}
+
+
+	{BEGIN LUNCHDURATION_fieldcolumn}
+	<td class="bs-gridcell {$LUNCHDURATION_class}"  data-field=LUNCHDURATION {$rowstyle} {$recordattrs}>
+		{$LUNCHDURATION_value}
+	</td>
+{END LUNCHDURATION_fieldcolumn}
+
+
+	{BEGIN PHOTO_fieldcolumn}
+	<td class="bs-gridcell {$PHOTO_class}"  data-field=PHOTO {$rowstyle} {$recordattrs}>
+		{$PHOTO_value}
+	</td>
+{END PHOTO_fieldcolumn}
+
+
+	{BEGIN mverifypass_fieldcolumn}
+	<td class="bs-gridcell {$mverifypass_class}"  data-field=mverifypass {$rowstyle} {$recordattrs}>
+		{$mverifypass_value}
+	</td>
+{END mverifypass_fieldcolumn}
+
+
+	{BEGIN Notes_fieldcolumn}
+	<td class="bs-gridcell {$Notes_class}"  data-field=Notes {$rowstyle} {$recordattrs}>
+		{$Notes_value}
+	</td>
+{END Notes_fieldcolumn}
+
+
+	{BEGIN privilege_fieldcolumn}
+	<td class="bs-gridcell {$privilege_class}"  data-field=privilege {$rowstyle} {$recordattrs}>
+		{$privilege_value}
+	</td>
+{END privilege_fieldcolumn}
+
+
+	{BEGIN InheritDeptSch_fieldcolumn}
+	<td class="bs-gridcell {$InheritDeptSch_class}"  data-field=InheritDeptSch {$rowstyle} {$recordattrs}>
+		{$InheritDeptSch_value}
+	</td>
+{END InheritDeptSch_fieldcolumn}
+
+
+	{BEGIN InheritDeptSchClass_fieldcolumn}
+	<td class="bs-gridcell {$InheritDeptSchClass_class}"  data-field=InheritDeptSchClass {$rowstyle} {$recordattrs}>
+		{$InheritDeptSchClass_value}
+	</td>
+{END InheritDeptSchClass_fieldcolumn}
+
+
+	{BEGIN AutoSchPlan_fieldcolumn}
+	<td class="bs-gridcell {$AutoSchPlan_class}"  data-field=AutoSchPlan {$rowstyle} {$recordattrs}>
+		{$AutoSchPlan_value}
+	</td>
+{END AutoSchPlan_fieldcolumn}
+
+
+	{BEGIN MinAutoSchInterval_fieldcolumn}
+	<td class="bs-gridcell {$MinAutoSchInterval_class}"  data-field=MinAutoSchInterval {$rowstyle} {$recordattrs}>
+		{$MinAutoSchInterval_value}
+	</td>
+{END MinAutoSchInterval_fieldcolumn}
+
+
+	{BEGIN RegisterOT_fieldcolumn}
+	<td class="bs-gridcell {$RegisterOT_class}"  data-field=RegisterOT {$rowstyle} {$recordattrs}>
+		{$RegisterOT_value}
+	</td>
+{END RegisterOT_fieldcolumn}
+
+
+	{BEGIN InheritDeptRule_fieldcolumn}
+	<td class="bs-gridcell {$InheritDeptRule_class}"  data-field=InheritDeptRule {$rowstyle} {$recordattrs}>
+		{$InheritDeptRule_value}
+	</td>
+{END InheritDeptRule_fieldcolumn}
+
+
+	{BEGIN EMPRIVILEGE_fieldcolumn}
+	<td class="bs-gridcell {$EMPRIVILEGE_class}"  data-field=EMPRIVILEGE {$rowstyle} {$recordattrs}>
+		{$EMPRIVILEGE_value}
+	</td>
+{END EMPRIVILEGE_fieldcolumn}
+
+
+	{BEGIN CardNo_fieldcolumn}
+	<td class="bs-gridcell {$CardNo_class}"  data-field=CardNo {$rowstyle} {$recordattrs}>
+		{$CardNo_value}
+	</td>
+{END CardNo_fieldcolumn}
+
+
+	{BEGIN FaceGroup_fieldcolumn}
+	<td class="bs-gridcell {$FaceGroup_class}"  data-field=FaceGroup {$rowstyle} {$recordattrs}>
+		{$FaceGroup_value}
+	</td>
+{END FaceGroup_fieldcolumn}
+
+
+	{BEGIN AccGroup_fieldcolumn}
+	<td class="bs-gridcell {$AccGroup_class}"  data-field=AccGroup {$rowstyle} {$recordattrs}>
+		{$AccGroup_value}
+	</td>
+{END AccGroup_fieldcolumn}
+
+
+	{BEGIN UseAccGroupTZ_fieldcolumn}
+	<td class="bs-gridcell {$UseAccGroupTZ_class}"  data-field=UseAccGroupTZ {$rowstyle} {$recordattrs}>
+		{$UseAccGroupTZ_value}
+	</td>
+{END UseAccGroupTZ_fieldcolumn}
+
+
+	{BEGIN VerifyCode_fieldcolumn}
+	<td class="bs-gridcell {$VerifyCode_class}"  data-field=VerifyCode {$rowstyle} {$recordattrs}>
+		{$VerifyCode_value}
+	</td>
+{END VerifyCode_fieldcolumn}
+
+
+	{BEGIN Expires_fieldcolumn}
+	<td class="bs-gridcell {$Expires_class}"  data-field=Expires {$rowstyle} {$recordattrs}>
+		{$Expires_value}
+	</td>
+{END Expires_fieldcolumn}
+
+
+	{BEGIN ValidCount_fieldcolumn}
+	<td class="bs-gridcell {$ValidCount_class}"  data-field=ValidCount {$rowstyle} {$recordattrs}>
+		{$ValidCount_value}
+	</td>
+{END ValidCount_fieldcolumn}
+
+
+	{BEGIN ValidTimeBegin_fieldcolumn}
+	<td class="bs-gridcell {$ValidTimeBegin_class}"  data-field=ValidTimeBegin {$rowstyle} {$recordattrs}>
+		{$ValidTimeBegin_value}
+	</td>
+{END ValidTimeBegin_fieldcolumn}
+
+
+	{BEGIN ValidTimeEnd_fieldcolumn}
+	<td class="bs-gridcell {$ValidTimeEnd_class}"  data-field=ValidTimeEnd {$rowstyle} {$recordattrs}>
+		{$ValidTimeEnd_value}
+	</td>
+{END ValidTimeEnd_fieldcolumn}
+
+
+	{BEGIN TimeZone1_fieldcolumn}
+	<td class="bs-gridcell {$TimeZone1_class}"  data-field=TimeZone1 {$rowstyle} {$recordattrs}>
+		{$TimeZone1_value}
+	</td>
+{END TimeZone1_fieldcolumn}
+
+
+	{BEGIN TimeZone2_fieldcolumn}
+	<td class="bs-gridcell {$TimeZone2_class}"  data-field=TimeZone2 {$rowstyle} {$recordattrs}>
+		{$TimeZone2_value}
+	</td>
+{END TimeZone2_fieldcolumn}
+
+
+	{BEGIN TimeZone3_fieldcolumn}
+	<td class="bs-gridcell {$TimeZone3_class}"  data-field=TimeZone3 {$rowstyle} {$recordattrs}>
+		{$TimeZone3_value}
+	</td>
+{END TimeZone3_fieldcolumn}
+
+	{BEGIN endrecord_block}
+	<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+	{END endrecord_block}
+									
+	{END grid_record}
+
+</tr>
+{END grid_row}
+	</tbody>
+	<tfoot>
+										
+	</tfoot>
+</table>
+
+
+
+{END grid_block}
+
+
+
+</div>
+{END container_grid}
+
+
+
+
+
+
+</div>
+{END container_center}
+
+
+
+{BEGIN container_pagination}
+<div {$pagination_chiddenattr} data-pageid="{$pageid}" data-container="pagination" class="  text-center col-md-12 "> 
+
+{BEGIN pagination_block}
+<div {$pagination_hiddenattr} data-pageid="{$pageid}" data-brick="pagination">
+{$pagination}
+</div>
+{END pagination_block}
+
+
+
+</div>
+{END container_pagination}
+
+
+		</div>
+	</div>
+</div>
+	
+
+		{$footer}
+	{END body}
+	</body>
+</html>

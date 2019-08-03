@@ -123,6 +123,24 @@
 </div>
 {END EmployeeID_fieldblock}
 
+			{BEGIN OPrincipal_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_OPrincipal}" data-fieldname="OPrincipal" data-signal-error-for="OPrincipal{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_OPrincipal}">
+		{BEGIN OPrincipal_label}{$label loans OPrincipal}{END OPrincipal_label}
+	</label>
+	<div class="col-md-6" >
+		{$OPrincipal_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="OPrincipal">
+		<div class="text-muted" >
+		{$tooltip loans OPrincipal}
+		</div>
+	</div>
+</div>
+</div>
+{END OPrincipal_fieldblock}
+
 			{BEGIN Principal_fieldblock}
 <div class=container>
 <div class="form-group {$fielddispclass_Principal}" data-fieldname="Principal" data-signal-error-for="Principal{$id}" >

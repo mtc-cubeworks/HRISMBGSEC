@@ -71,16 +71,6 @@
 		</div>
 	</div>
 {END LtID_fieldblock}
-					{BEGIN LeaveType_fieldblock}
-	<div class="{$fielddispclass_LeaveType} col-md-6 bs-viewcontrolgroup" data-fieldname="LeaveType">
-		<label class="control-label" for="{$labelfor_LeaveType}">
-			{$label indleave LeaveType}
-		</label>
-		<div class="" >
-			{$LeaveType_value}&nbsp;
-		</div>
-	</div>
-{END LeaveType_fieldblock}
 					{BEGIN EmployeeID_fieldblock}
 	<div class="{$fielddispclass_EmployeeID} col-md-6 bs-viewcontrolgroup" data-fieldname="EmployeeID">
 		<label class="control-label" for="{$labelfor_EmployeeID}">
@@ -91,6 +81,26 @@
 		</div>
 	</div>
 {END EmployeeID_fieldblock}
+					{BEGIN LeaveType_fieldblock}
+	<div class="{$fielddispclass_LeaveType} col-md-6 bs-viewcontrolgroup" data-fieldname="LeaveType">
+		<label class="control-label" for="{$labelfor_LeaveType}">
+			{$label indleave LeaveType}
+		</label>
+		<div class="" >
+			{$LeaveType_value}&nbsp;
+		</div>
+	</div>
+{END LeaveType_fieldblock}
+					{BEGIN Reason_fieldblock}
+	<div class="{$fielddispclass_Reason} col-md-6 bs-viewcontrolgroup" data-fieldname="Reason">
+		<label class="control-label" for="{$labelfor_Reason}">
+			{$label indleave Reason}
+		</label>
+		<div class="" >
+			{$Reason_value}&nbsp;
+		</div>
+	</div>
+{END Reason_fieldblock}
 					{BEGIN LDate_fieldblock}
 	<div class="{$fielddispclass_LDate} col-md-6 bs-viewcontrolgroup" data-fieldname="LDate">
 		<label class="control-label" for="{$labelfor_LDate}">

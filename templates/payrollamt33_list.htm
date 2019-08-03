@@ -107,6 +107,51 @@
 				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
 		</div>
 		{END searchCtrlBlock}
+		 
+		{BEGIN searchCtrlBlock_FromDate}
+		
+		
+		<div class="form-group srchPanelRow {$filterRow_class_FromDate}" {$filterRow_attrs_FromDate}>
+			<label>
+			
+			{$label payrollamt33 FromDate}</label>
+							{$delCtrlButt}
+
+								<span class="rnr-searchtype">{$searchtype_FromDate}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol_FromDate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_FromDate}</span>
+		</div>
+		{END searchCtrlBlock_FromDate}
+		 
+		{BEGIN searchCtrlBlock_ToDate}
+		
+		
+		<div class="form-group srchPanelRow {$filterRow_class_ToDate}" {$filterRow_attrs_ToDate}>
+			<label>
+			
+			{$label payrollamt33 ToDate}</label>
+							{$delCtrlButt}
+
+								<span class="rnr-searchtype">{$searchtype_ToDate}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol_ToDate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_ToDate}</span>
+		</div>
+		{END searchCtrlBlock_ToDate}
+		 
+		{BEGIN searchCtrlBlock_UserName}
+		
+		
+		<div class="form-group srchPanelRow {$filterRow_class_UserName}" {$filterRow_attrs_UserName}>
+			<label>
+			
+			{$label payrollamt33 UserName}</label>
+							{$delCtrlButt}
+
+								<span class="rnr-searchtype">{$searchtype_UserName}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol_UserName}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_UserName}</span>
+		</div>
+		{END searchCtrlBlock_UserName}
 
 
 	</div>
@@ -256,23 +301,6 @@
 {BEGIN searchform_block}
 <span {$search_hiddenattr} data-pageid="{$pageid}" data-brick="search" class="form-group">
 
- <div  class="input-group">
-{BEGIN searchform_text}
-	<input type="search" class="form-control" {$searchfor_attrs} size="25">
-{END searchform_text}
-	<span class="input-group-btn">
-	{BEGIN searchform_showall}
-		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Show all">
-			<span class="glyphicon glyphicon-remove"></span>
-		</button>
-	{END searchform_showall}
-	{BEGIN searchform_search}
-	<button {$searchbutton_attrs} class="btn btn-primary" >
-		<span class="glyphicon glyphicon-search"></span>
-	</button>
-	{END searchform_search}
-	</span>
-</div>
 		
 </span>
 {END searchform_block}

@@ -550,6 +550,9 @@
 	.bs-gridcell[data-field=UserName]:before {
 		content: "{$label indschedule1 UserName}";
 	}
+	.bs-gridcell[data-field=ANDOTMins]:before {
+		content: "{$label indschedule1 ANDOTMins}";
+	}
 </style>
 <table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
 	<thead>
@@ -693,6 +696,19 @@
 									{END ANDiff_fieldheader}
 									</th>
 									{END ANDiff_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN ANDOTMins_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$ANDOTMins_class}" data-field=ANDOTMins>
+									{BEGIN ANDOTMins_fieldheader}
+																				<span {$ANDOTMins_orderlinkattrs}>
+											{$label indschedule1 ANDOTMins}
+										</span>
+									{END ANDOTMins_fieldheader}
+									</th>
+									{END ANDOTMins_fieldheadercolumn}
 									
 									
 									
@@ -893,6 +909,13 @@
 		{$ANDiff_value}
 	</td>
 {END ANDiff_fieldcolumn}
+
+
+	{BEGIN ANDOTMins_fieldcolumn}
+	<td class="bs-gridcell {$ANDOTMins_class}"  data-field=ANDOTMins {$rowstyle} {$recordattrs}>
+		{$ANDOTMins_value}
+	</td>
+{END ANDOTMins_fieldcolumn}
 
 
 	{BEGIN NDMealAllowancePerShift_fieldcolumn}

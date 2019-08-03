@@ -140,6 +140,21 @@
 				{$label overtimefile Superior}
 			</th>
 			{END Superior_fieldheadercolumn}
+			{BEGIN 1stApproval_fieldheadercolumn}
+			<th class="{$1stApproval_class}" {$1stApproval_style}  data-field="1stApproval">
+				{$label overtimefile 1stApproval}
+			</th>
+			{END 1stApproval_fieldheadercolumn}
+			{BEGIN Superior2_fieldheadercolumn}
+			<th class="{$Superior2_class}" {$Superior2_style}  data-field="Superior2">
+				{$label overtimefile Superior2}
+			</th>
+			{END Superior2_fieldheadercolumn}
+			{BEGIN 2ndApproval_fieldheadercolumn}
+			<th class="{$2ndApproval_class}" {$2ndApproval_style}  data-field="2ndApproval">
+				{$label overtimefile 2ndApproval}
+			</th>
+			{END 2ndApproval_fieldheadercolumn}
 			{BEGIN endrecordheader_block}
 			<th class="rnr-cs">&nbsp;</th>
 			{END endrecordheader_block}
@@ -222,6 +237,21 @@
 				{$Superior_value}
 			</td>
 			{END Superior_fieldcolumn}
+			{BEGIN 1stApproval_fieldcolumn}
+			<td  class="{$1stApproval_class}" {$1stApproval_style} {$recordattrs}>
+				{$1stApproval_value}
+			</td>
+			{END 1stApproval_fieldcolumn}
+			{BEGIN Superior2_fieldcolumn}
+			<td  class="{$Superior2_class}" {$Superior2_style} {$recordattrs}>
+				{$Superior2_value}
+			</td>
+			{END Superior2_fieldcolumn}
+			{BEGIN 2ndApproval_fieldcolumn}
+			<td  class="{$2ndApproval_class}" {$2ndApproval_style} {$recordattrs}>
+				{$2ndApproval_value}
+			</td>
+			{END 2ndApproval_fieldcolumn}
 			{BEGIN endrecord_block}
 			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
 			{END endrecord_block}

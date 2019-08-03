@@ -1,0 +1,283 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_pdf}
+<div {$pdf_chiddenattr} data-pageid="{$pageid}" data-container="pdf" class="   col-md-12 "> 
+
+{BEGIN printbuttons}
+
+{END printbuttons}
+
+
+
+</div>
+{END container_pdf}
+
+
+
+
+
+{BEGIN container_pageheader}
+<div {$pageheader_chiddenattr} data-pageid="{$pageid}" data-container="pageheader" class="    "> 
+
+{BEGIN printheader}
+	<h2 {$printheader_hiddenattr} data-pageid="{$pageid}" data-brick="printheader" >{$pagetitlelabel filelog1 print}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END printheader}
+
+
+{BEGIN page_number}
+<span>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></span>
+{END page_number}
+
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="table table-bordered rp-maintable" {$printgrid_hiddenattr} data-pageid="{$pageid}" data-brick="printgrid" >
+	<thead>
+	{BEGIN grid_header}
+		<tr class="{$gridHeader_class}" >
+		{BEGIN record_header}
+			{BEGIN Locked_fieldheadercolumn}
+			<th class="{$Locked_class}" {$Locked_style}  data-field="Locked">
+				{$label filelog1 Locked}
+			</th>
+			{END Locked_fieldheadercolumn}
+			{BEGIN TransID2_fieldheadercolumn}
+			<th class="{$TransID2_class}" {$TransID2_style}  data-field="TransID2">
+				{$label filelog1 TransID2}
+			</th>
+			{END TransID2_fieldheadercolumn}
+			{BEGIN EmployeeID_fieldheadercolumn}
+			<th class="{$EmployeeID_class}" {$EmployeeID_style}  data-field="EmployeeID">
+				{$label filelog1 EmployeeID}
+			</th>
+			{END EmployeeID_fieldheadercolumn}
+			{BEGIN log_time_fieldheadercolumn}
+			<th class="{$log_time_class}" {$log_time_style}  data-field="log_time">
+				{$label filelog1 log_time}
+			</th>
+			{END log_time_fieldheadercolumn}
+			{BEGIN Reason_fieldheadercolumn}
+			<th class="{$Reason_class}" {$Reason_style}  data-field="Reason">
+				{$label filelog1 Reason}
+			</th>
+			{END Reason_fieldheadercolumn}
+			{BEGIN ClockType_fieldheadercolumn}
+			<th class="{$ClockType_class}" {$ClockType_style}  data-field="ClockType">
+				{$label filelog1 ClockType}
+			</th>
+			{END ClockType_fieldheadercolumn}
+			{BEGIN data_fieldheadercolumn}
+			<th class="{$data_class}" {$data_style}  data-field="data">
+				{$label filelog1 data}
+			</th>
+			{END data_fieldheadercolumn}
+			{BEGIN MLogID_fieldheadercolumn}
+			<th class="{$MLogID_class}" {$MLogID_style}  data-field="MLogID">
+				{$label filelog1 MLogID}
+			</th>
+			{END MLogID_fieldheadercolumn}
+			{BEGIN MLogDate_fieldheadercolumn}
+			<th class="{$MLogDate_class}" {$MLogDate_style}  data-field="MLogDate">
+				{$label filelog1 MLogDate}
+			</th>
+			{END MLogDate_fieldheadercolumn}
+			{BEGIN CheckedBy_fieldheadercolumn}
+			<th class="{$CheckedBy_class}" {$CheckedBy_style}  data-field="CheckedBy">
+				{$label filelog1 CheckedBy}
+			</th>
+			{END CheckedBy_fieldheadercolumn}
+			{BEGIN Checked_fieldheadercolumn}
+			<th class="{$Checked_class}" {$Checked_style}  data-field="Checked">
+				{$label filelog1 Checked}
+			</th>
+			{END Checked_fieldheadercolumn}
+			{BEGIN ApprovedBy_fieldheadercolumn}
+			<th class="{$ApprovedBy_class}" {$ApprovedBy_style}  data-field="ApprovedBy">
+				{$label filelog1 ApprovedBy}
+			</th>
+			{END ApprovedBy_fieldheadercolumn}
+			{BEGIN Approved_fieldheadercolumn}
+			<th class="{$Approved_class}" {$Approved_style}  data-field="Approved">
+				{$label filelog1 Approved}
+			</th>
+			{END Approved_fieldheadercolumn}
+			{BEGIN HRApproval_fieldheadercolumn}
+			<th class="{$HRApproval_class}" {$HRApproval_style}  data-field="HRApproval">
+				{$label filelog1 HRApproval}
+			</th>
+			{END HRApproval_fieldheadercolumn}
+			{BEGIN HRApproved_fieldheadercolumn}
+			<th class="{$HRApproved_class}" {$HRApproved_style}  data-field="HRApproved">
+				{$label filelog1 HRApproved}
+			</th>
+			{END HRApproved_fieldheadercolumn}
+			{BEGIN HRApprovedDate_fieldheadercolumn}
+			<th class="{$HRApprovedDate_class}" {$HRApprovedDate_style}  data-field="HRApprovedDate">
+				{$label filelog1 HRApprovedDate}
+			</th>
+			{END HRApprovedDate_fieldheadercolumn}
+			{BEGIN endrecordheader_block}
+			<th class="rnr-cs">&nbsp;</th>
+			{END endrecordheader_block}
+		{END record_header}
+		</tr>
+	{END grid_header}
+	</thead>
+	
+	<tbody>	
+	{BEGIN grid_row}
+		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+			{BEGIN Locked_fieldcolumn}
+			<td  class="{$Locked_class}" {$Locked_style} {$recordattrs}>
+				{$Locked_value}
+			</td>
+			{END Locked_fieldcolumn}
+			{BEGIN TransID2_fieldcolumn}
+			<td  class="{$TransID2_class}" {$TransID2_style} {$recordattrs}>
+				{$TransID2_value}
+			</td>
+			{END TransID2_fieldcolumn}
+			{BEGIN EmployeeID_fieldcolumn}
+			<td  class="{$EmployeeID_class}" {$EmployeeID_style} {$recordattrs}>
+				{$EmployeeID_value}
+			</td>
+			{END EmployeeID_fieldcolumn}
+			{BEGIN log_time_fieldcolumn}
+			<td  class="{$log_time_class}" {$log_time_style} {$recordattrs}>
+				{$log_time_value}
+			</td>
+			{END log_time_fieldcolumn}
+			{BEGIN Reason_fieldcolumn}
+			<td  class="{$Reason_class}" {$Reason_style} {$recordattrs}>
+				{$Reason_value}
+			</td>
+			{END Reason_fieldcolumn}
+			{BEGIN ClockType_fieldcolumn}
+			<td  class="{$ClockType_class}" {$ClockType_style} {$recordattrs}>
+				{$ClockType_value}
+			</td>
+			{END ClockType_fieldcolumn}
+			{BEGIN data_fieldcolumn}
+			<td  class="{$data_class}" {$data_style} {$recordattrs}>
+				{$data_value}
+			</td>
+			{END data_fieldcolumn}
+			{BEGIN MLogID_fieldcolumn}
+			<td  class="{$MLogID_class}" {$MLogID_style} {$recordattrs}>
+				{$MLogID_value}
+			</td>
+			{END MLogID_fieldcolumn}
+			{BEGIN MLogDate_fieldcolumn}
+			<td  class="{$MLogDate_class}" {$MLogDate_style} {$recordattrs}>
+				{$MLogDate_value}
+			</td>
+			{END MLogDate_fieldcolumn}
+			{BEGIN CheckedBy_fieldcolumn}
+			<td  class="{$CheckedBy_class}" {$CheckedBy_style} {$recordattrs}>
+				{$CheckedBy_value}
+			</td>
+			{END CheckedBy_fieldcolumn}
+			{BEGIN Checked_fieldcolumn}
+			<td  class="{$Checked_class}" {$Checked_style} {$recordattrs}>
+				{$Checked_value}
+			</td>
+			{END Checked_fieldcolumn}
+			{BEGIN ApprovedBy_fieldcolumn}
+			<td  class="{$ApprovedBy_class}" {$ApprovedBy_style} {$recordattrs}>
+				{$ApprovedBy_value}
+			</td>
+			{END ApprovedBy_fieldcolumn}
+			{BEGIN Approved_fieldcolumn}
+			<td  class="{$Approved_class}" {$Approved_style} {$recordattrs}>
+				{$Approved_value}
+			</td>
+			{END Approved_fieldcolumn}
+			{BEGIN HRApproval_fieldcolumn}
+			<td  class="{$HRApproval_class}" {$HRApproval_style} {$recordattrs}>
+				{$HRApproval_value}
+			</td>
+			{END HRApproval_fieldcolumn}
+			{BEGIN HRApproved_fieldcolumn}
+			<td  class="{$HRApproved_class}" {$HRApproved_style} {$recordattrs}>
+				{$HRApproved_value}
+			</td>
+			{END HRApproved_fieldcolumn}
+			{BEGIN HRApprovedDate_fieldcolumn}
+			<td  class="{$HRApprovedDate_class}" {$HRApprovedDate_style} {$recordattrs}>
+				{$HRApprovedDate_value}
+			</td>
+			{END HRApprovedDate_fieldcolumn}
+			{BEGIN endrecord_block}
+			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+			{END endrecord_block}
+		{END grid_record}
+		</tr>
+{END grid_row}
+	</tbody>
+
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

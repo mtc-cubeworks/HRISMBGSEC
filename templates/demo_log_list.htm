@@ -107,6 +107,36 @@
 				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
 		</div>
 		{END searchCtrlBlock}
+		 
+		{BEGIN searchCtrlBlock_EmployeeID}
+		
+		
+		<div class="form-group srchPanelRow {$filterRow_class_EmployeeID}" {$filterRow_attrs_EmployeeID}>
+			<label>
+			
+			{$label demo_log EmployeeID}</label>
+							{$delCtrlButt}
+
+								<span class="rnr-searchtype">{$searchtype_EmployeeID}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol_EmployeeID}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_EmployeeID}</span>
+		</div>
+		{END searchCtrlBlock_EmployeeID}
+		 
+		{BEGIN searchCtrlBlock_log_time}
+		
+		
+		<div class="form-group srchPanelRow {$filterRow_class_log_time}" {$filterRow_attrs_log_time}>
+			<label>
+			
+			{$label demo_log log_time}</label>
+							{$delCtrlButt}
+
+								<span class="rnr-searchtype">{$searchtype_log_time}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol_log_time}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_log_time}</span>
+		</div>
+		{END searchCtrlBlock_log_time}
 
 
 	</div>
@@ -517,6 +547,9 @@
 	.bs-gridcell[data-field=ClockType]:before {
 		content: "{$label demo_log ClockType}";
 	}
+	.bs-gridcell[data-field=TransID2]:before {
+		content: "{$label demo_log TransID2}";
+	}
 </style>
 <table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
 	<thead>
@@ -625,6 +658,19 @@
 									
 									
 									
+									{BEGIN TransID2_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$TransID2_class}" data-field=TransID2>
+									{BEGIN TransID2_fieldheader}
+																				<span {$TransID2_orderlinkattrs}>
+											{$label demo_log TransID2}
+										</span>
+									{END TransID2_fieldheader}
+									</th>
+									{END TransID2_fieldheadercolumn}
+									
+									
+									
+									
 									{BEGIN endrecordheader_block}
 									<th class="rnr-cs">&nbsp;</th>
 									
@@ -722,6 +768,13 @@
 		{$MLogDate_value}
 	</td>
 {END MLogDate_fieldcolumn}
+
+
+	{BEGIN TransID2_fieldcolumn}
+	<td class="bs-gridcell {$TransID2_class}"  data-field=TransID2 {$rowstyle} {$recordattrs}>
+		{$TransID2_value}
+	</td>
+{END TransID2_fieldcolumn}
 
 	{BEGIN endrecord_block}
 	<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>

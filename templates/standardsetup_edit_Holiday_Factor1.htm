@@ -89,6 +89,23 @@
 	</div>
 </div>
 {END CHFactorDaily_tabfieldblock}
+{BEGIN DoubleHoliday_tabfieldblock}
+<div class="container">
+	<div class="form-group in-tab {$fielddispclass_DoubleHoliday}" data-fieldname="DoubleHoliday" data-signal-error-for="DoubleHoliday{$id}" >
+		<label class="col-md-3 control-label" for="{$labelfor_DoubleHoliday}">
+			{BEGIN DoubleHoliday_label}{$label standardsetup DoubleHoliday}{END DoubleHoliday_label}
+		</label>
+		<div class="col-md-6 " >
+			{$DoubleHoliday_editcontrol}
+		</div>
+		<div class="col-md-3 help-block " data-helpfor="DoubleHoliday">
+			<div class="text-muted" >
+			{$tooltip standardsetup DoubleHoliday}
+			</div>
+		</div>
+	</div>
+</div>
+{END DoubleHoliday_tabfieldblock}
 {BEGIN ReqBeforeHoliday_tabfieldblock}
 <div class="container">
 	<div class="form-group in-tab {$fielddispclass_ReqBeforeHoliday}" data-fieldname="ReqBeforeHoliday" data-signal-error-for="ReqBeforeHoliday{$id}" >

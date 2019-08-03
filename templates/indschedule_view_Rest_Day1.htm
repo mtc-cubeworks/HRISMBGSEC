@@ -1,0 +1,48 @@
+<div {$pageattrs}>
+
+{BEGIN container_tabfields}
+<div {$tabfields_chiddenattr} data-pageid="{$pageid}" data-container="tabfields" class="    "> 
+
+
+<div class="container">
+{BEGIN RDMins_tabfieldblock}
+	<div class="bs-viewcontrolgroup col-md-6 {$fielddispclass_RDMins}" data-fieldname="RDMins" >
+		<label class=" control-label" for="{$labelfor_RDMins}">
+			{$label indschedule RDMins}
+		</label>
+		<div class="" >
+			{$RDMins_value}
+		</div>
+	</div>
+{END RDMins_tabfieldblock}
+{BEGIN ApprovedRD_tabfieldblock}
+	<div class="bs-viewcontrolgroup col-md-6 {$fielddispclass_ApprovedRD}" data-fieldname="ApprovedRD" >
+		<label class=" control-label" for="{$labelfor_ApprovedRD}">
+			{$label indschedule ApprovedRD}
+		</label>
+		<div class="" >
+			{$ApprovedRD_value}
+		</div>
+	</div>
+{END ApprovedRD_tabfieldblock}
+{BEGIN RDHrs_tabfieldblock}
+	<div class="bs-viewcontrolgroup col-md-6 {$fielddispclass_RDHrs}" data-fieldname="RDHrs" >
+		<label class=" control-label" for="{$labelfor_RDHrs}">
+			{$label indschedule RDHrs}
+		</label>
+		<div class="" >
+			{$RDHrs_value}
+		</div>
+	</div>
+{END RDHrs_tabfieldblock}
+</div>
+
+
+
+
+
+
+</div>
+{END container_tabfields}
+
+</div>

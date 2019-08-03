@@ -1,0 +1,79 @@
+<div {$pageattrs}>
+
+{BEGIN container_column}
+<div class="rnr-c rnr-ch rnr-c-column">
+
+{BEGIN masterlist_title}
+<div  class="style1 rnr-bl rnr-b-masterprintheader {$brickclass_masterprintheader}"><span>{$pagetitlelabel leavesapp2 masterprint}</span></div>
+{END masterlist_title}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_column}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+<table {$bsmasterprintgrid_hiddenattr} data-pageid="{$pageid}" data-brick="bsmasterprintgrid" class="table rnr-b-mastergridfields rnr-gridtable" >
+		<thead>
+		<tr>
+			<th class="{$LvID_class}">{$label leavesapp2 LvID}</th>
+			<th class="{$DateCreated_class}">{$label leavesapp2 DateCreated}</th>
+			<th class="{$LeaveType_class}">{$label leavesapp2 LeaveType}</th>
+			<th class="{$EmployeeID_class}">{$label leavesapp2 EmployeeID}</th>
+			<th class="{$FromDate_class}">{$label leavesapp2 FromDate}</th>
+			<th class="{$ToDate_class}">{$label leavesapp2 ToDate}</th>
+			<th class="{$Reason_class}">{$label leavesapp2 Reason}</th>
+			<th class="{$FirstHalf_class}">{$label leavesapp2 FirstHalf}</th>
+			<th class="{$SecondHalf_class}">{$label leavesapp2 SecondHalf}</th>
+			<th class="{$Days_class}">{$label leavesapp2 Days}</th>
+			<th class="{$Superior_class}">{$label leavesapp2 Superior}</th>
+			<th class="{$1stApproval_class}">{$label leavesapp2 1stApproval}</th>
+			<th class="{$Superior2_class}">{$label leavesapp2 Superior2}</th>
+			<th class="{$2ndApproval_class}">{$label leavesapp2 2ndApproval}</th>
+			<th class="{$TotalDays_class}">{$label leavesapp2 TotalDays}</th>
+			<th class="{$Approved_class}">{$label leavesapp2 Approved}</th>
+			<th class="{$ApprovedDate_class}">{$label leavesapp2 ApprovedDate}</th>
+			<th class="{$ApprovedTime_class}">{$label leavesapp2 ApprovedTime}</th>
+			<th class="{$Approvedby_class}">{$label leavesapp2 Approvedby}</th>
+			<th class="{$Posted_class}">{$label leavesapp2 Posted}</th>
+			<th class="{$Locked_class}">{$label leavesapp2 Locked}</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="{$LvID_class}">{$LvID_mastervalue}</td>
+			<td class="{$DateCreated_class}">{$DateCreated_mastervalue}</td>
+			<td class="{$LeaveType_class}">{$LeaveType_mastervalue}</td>
+			<td class="{$EmployeeID_class}">{$EmployeeID_mastervalue}</td>
+			<td class="{$FromDate_class}">{$FromDate_mastervalue}</td>
+			<td class="{$ToDate_class}">{$ToDate_mastervalue}</td>
+			<td class="{$Reason_class}">{$Reason_mastervalue}</td>
+			<td class="{$FirstHalf_class}">{$FirstHalf_mastervalue}</td>
+			<td class="{$SecondHalf_class}">{$SecondHalf_mastervalue}</td>
+			<td class="{$Days_class}">{$Days_mastervalue}</td>
+			<td class="{$Superior_class}">{$Superior_mastervalue}</td>
+			<td class="{$1stApproval_class}">{$1stApproval_mastervalue}</td>
+			<td class="{$Superior2_class}">{$Superior2_mastervalue}</td>
+			<td class="{$2ndApproval_class}">{$2ndApproval_mastervalue}</td>
+			<td class="{$TotalDays_class}">{$TotalDays_mastervalue}</td>
+			<td class="{$Approved_class}">{$Approved_mastervalue}</td>
+			<td class="{$ApprovedDate_class}">{$ApprovedDate_mastervalue}</td>
+			<td class="{$ApprovedTime_class}">{$ApprovedTime_mastervalue}</td>
+			<td class="{$Approvedby_class}">{$Approvedby_mastervalue}</td>
+			<td class="{$Posted_class}">{$Posted_mastervalue}</td>
+			<td class="{$Locked_class}">{$Locked_mastervalue}</td>
+		</tr>
+	</tbody>
+
+</table> 
+
+
+
+
+{END container_mastergrid}
+
+</div>
