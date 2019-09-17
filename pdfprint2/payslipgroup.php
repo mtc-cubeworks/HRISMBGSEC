@@ -12,7 +12,7 @@ $query = mysqli_query($con,"select * from payrollamt33
 	where ToDate = '".$_GET['ps1']."' AND Division = '".$_GET['dv1']."'  AND WageType = '".$_GET['wt1']."' AND Employer = '".$_GET['em1']."'");
 	
 
-$pdf = new FPDF('L','mm',array(250,210));
+$pdf = new FPDF('L','mm',array(180,270));
 
 while($invoice = mysqli_fetch_array($query )){
 $pdf->AddPage();
