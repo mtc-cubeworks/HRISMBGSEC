@@ -1,0 +1,401 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_searchpage}
+<div {$searchpage_chiddenattr} data-pageid="{$pageid}" data-container="searchpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN searchheader}
+	<h2 {$bssearchheader_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchheader" >{$pagetitlelabel otndrdglobal1 search}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END searchheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_searchpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$bssearchfields_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchfields" class="form-horizontal" role="form">
+<div class="container">
+	<div class="form-group">
+		<div class="col-md-12" >
+			&nbsp;
+		</div>
+	</div>
+</div>
+	{BEGIN GAID_fieldblock}		
+	<div class="container {$fielddispclass_GAID}" data-fieldname="GAID">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_GAID}">
+				{$label otndrdglobal1 GAID}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_GAID}
+			</div>
+			<div class="col-md-4" >
+				{$GAID_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$GAID_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END GAID_fieldblock}
+	{BEGIN Employee_fieldblock}		
+	<div class="container {$fielddispclass_Employee}" data-fieldname="Employee">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Employee}">
+				{$label otndrdglobal1 Employee}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Employee}
+			</div>
+			<div class="col-md-4" >
+				{$Employee_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Employee_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Employee_fieldblock}
+	{BEGIN ApprovedOT_fieldblock}		
+	<div class="container {$fielddispclass_ApprovedOT}" data-fieldname="ApprovedOT">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_ApprovedOT}">
+				{$label otndrdglobal1 ApprovedOT}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_ApprovedOT}
+			</div>
+			<div class="col-md-4" >
+				{$ApprovedOT_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$ApprovedOT_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END ApprovedOT_fieldblock}
+	{BEGIN FiledOTOnly_fieldblock}		
+	<div class="container {$fielddispclass_FiledOTOnly}" data-fieldname="FiledOTOnly">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_FiledOTOnly}">
+				{$label otndrdglobal1 FiledOTOnly}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_FiledOTOnly}
+			</div>
+			<div class="col-md-4" >
+				{$FiledOTOnly_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$FiledOTOnly_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END FiledOTOnly_fieldblock}
+	{BEGIN EarlyOT_fieldblock}		
+	<div class="container {$fielddispclass_EarlyOT}" data-fieldname="EarlyOT">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_EarlyOT}">
+				{$label otndrdglobal1 EarlyOT}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_EarlyOT}
+			</div>
+			<div class="col-md-4" >
+				{$EarlyOT_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$EarlyOT_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END EarlyOT_fieldblock}
+	{BEGIN PostOT_fieldblock}		
+	<div class="container {$fielddispclass_PostOT}" data-fieldname="PostOT">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_PostOT}">
+				{$label otndrdglobal1 PostOT}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_PostOT}
+			</div>
+			<div class="col-md-4" >
+				{$PostOT_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$PostOT_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END PostOT_fieldblock}
+	{BEGIN OTGreaterThan_fieldblock}		
+	<div class="container {$fielddispclass_OTGreaterThan}" data-fieldname="OTGreaterThan">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_OTGreaterThan}">
+				{$label otndrdglobal1 OTGreaterThan}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_OTGreaterThan}
+			</div>
+			<div class="col-md-4" >
+				{$OTGreaterThan_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$OTGreaterThan_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END OTGreaterThan_fieldblock}
+	{BEGIN OTMinimum_fieldblock}		
+	<div class="container {$fielddispclass_OTMinimum}" data-fieldname="OTMinimum">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_OTMinimum}">
+				{$label otndrdglobal1 OTMinimum}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_OTMinimum}
+			</div>
+			<div class="col-md-4" >
+				{$OTMinimum_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$OTMinimum_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END OTMinimum_fieldblock}
+	{BEGIN ApprovedND_fieldblock}		
+	<div class="container {$fielddispclass_ApprovedND}" data-fieldname="ApprovedND">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_ApprovedND}">
+				{$label otndrdglobal1 ApprovedND}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_ApprovedND}
+			</div>
+			<div class="col-md-4" >
+				{$ApprovedND_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$ApprovedND_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END ApprovedND_fieldblock}
+	{BEGIN NDGreaterThan_fieldblock}		
+	<div class="container {$fielddispclass_NDGreaterThan}" data-fieldname="NDGreaterThan">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_NDGreaterThan}">
+				{$label otndrdglobal1 NDGreaterThan}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_NDGreaterThan}
+			</div>
+			<div class="col-md-4" >
+				{$NDGreaterThan_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$NDGreaterThan_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END NDGreaterThan_fieldblock}
+	{BEGIN NDMinimum_fieldblock}		
+	<div class="container {$fielddispclass_NDMinimum}" data-fieldname="NDMinimum">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_NDMinimum}">
+				{$label otndrdglobal1 NDMinimum}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_NDMinimum}
+			</div>
+			<div class="col-md-4" >
+				{$NDMinimum_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$NDMinimum_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END NDMinimum_fieldblock}
+	{BEGIN ApprovedRD_fieldblock}		
+	<div class="container {$fielddispclass_ApprovedRD}" data-fieldname="ApprovedRD">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_ApprovedRD}">
+				{$label otndrdglobal1 ApprovedRD}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_ApprovedRD}
+			</div>
+			<div class="col-md-4" >
+				{$ApprovedRD_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$ApprovedRD_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END ApprovedRD_fieldblock}
+	{BEGIN RDGreaterThan_fieldblock}		
+	<div class="container {$fielddispclass_RDGreaterThan}" data-fieldname="RDGreaterThan">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RDGreaterThan}">
+				{$label otndrdglobal1 RDGreaterThan}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RDGreaterThan}
+			</div>
+			<div class="col-md-4" >
+				{$RDGreaterThan_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RDGreaterThan_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RDGreaterThan_fieldblock}
+	{BEGIN RDMinimum_fieldblock}		
+	<div class="container {$fielddispclass_RDMinimum}" data-fieldname="RDMinimum">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RDMinimum}">
+				{$label otndrdglobal1 RDMinimum}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RDMinimum}
+			</div>
+			<div class="col-md-4" >
+				{$RDMinimum_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RDMinimum_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RDMinimum_fieldblock}
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container form-horizontal   "> 
+
+
+
+
+{BEGIN container_bbuttons}
+<div {$bbuttons_chiddenattr} data-pageid="{$pageid}" data-container="bbuttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-10 col-md-offset-2"> 
+
+{BEGIN searchbuttons}
+{BEGIN search_button}
+<button class="btn btn-primary" {$searchbutton_attrs}>Search</button>
+{END search_button} 
+{BEGIN reset_button}
+<button class="btn btn-default" {$resetbutton_attrs}>Reset</button>
+{END reset_button}
+{BEGIN back_button}
+<button class="btn btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{END searchbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+</div>
+{END container_bbuttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

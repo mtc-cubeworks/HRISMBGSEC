@@ -1,0 +1,6 @@
+Import into payrolltax
+9/16/2019 4:28:48 AM
+
+83 out of 83 records processed successfully.
+83 records added.
+0 records updated.

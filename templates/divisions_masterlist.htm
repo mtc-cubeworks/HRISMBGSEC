@@ -1,0 +1,70 @@
+<div {$pageattrs}>
+
+{BEGIN container_column}
+<div class="rnr-c rnr-ch rnr-c-column">
+
+{BEGIN masterlist_title}
+<div  class="style1 rnr-bl rnr-b-masterlistheader {$brickclass_masterlistheader}"><a {$backtomasterlink_attrs} class="btn btn-link btn-xs">Back to {$backtomasterlink_caption}</a><span>{$pagetitlelabel divisions masterlist}</span></div>
+{END masterlist_title}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_column}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+	<style>
+	.bs-gridcell[data-field=DvID]:before {
+		content: "{$label divisions DvID}";
+	}
+	.bs-gridcell[data-field=Division]:before {
+		content: "{$label divisions Division}";
+	}
+	.bs-gridcell[data-field=MontlyPaymentPeriods]:before {
+		content: "{$label divisions MontlyPaymentPeriods}";
+	}
+	.bs-gridcell[data-field=StatutoryPayment]:before {
+		content: "{$label divisions StatutoryPayment}";
+	}
+	.bs-gridcell[data-field=MinimumMonhtlyWage]:before {
+		content: "{$label divisions MinimumMonhtlyWage}";
+	}
+	.bs-gridcell[data-field=MinimumDailyWage]:before {
+		content: "{$label divisions MinimumDailyWage}";
+	}
+</style>
+<table {$masterlistgrid_hiddenattr} data-pageid="{$pageid}" data-brick="masterlistgrid" class="table rnr-b-mastergridfields rnr-gridtable bs-flexgrid" >
+		<thead>
+		<tr>
+			<th class="{$DvID_class}">{$label divisions DvID}</th>
+			<th class="{$Division_class}">{$label divisions Division}</th>
+			<th class="{$MontlyPaymentPeriods_class}">{$label divisions MontlyPaymentPeriods}</th>
+			<th class="{$StatutoryPayment_class}">{$label divisions StatutoryPayment}</th>
+			<th class="{$MinimumMonhtlyWage_class}">{$label divisions MinimumMonhtlyWage}</th>
+			<th class="{$MinimumDailyWage_class}">{$label divisions MinimumDailyWage}</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td class="{$DvID_class} bs-gridcell" data-field=DvID>{$DvID_mastervalue}</td>
+			<td class="{$Division_class} bs-gridcell" data-field=Division>{$Division_mastervalue}</td>
+			<td class="{$MontlyPaymentPeriods_class} bs-gridcell" data-field=MontlyPaymentPeriods>{$MontlyPaymentPeriods_mastervalue}</td>
+			<td class="{$StatutoryPayment_class} bs-gridcell" data-field=StatutoryPayment>{$StatutoryPayment_mastervalue}</td>
+			<td class="{$MinimumMonhtlyWage_class} bs-gridcell" data-field=MinimumMonhtlyWage>{$MinimumMonhtlyWage_mastervalue}</td>
+			<td class="{$MinimumDailyWage_class} bs-gridcell" data-field=MinimumDailyWage>{$MinimumDailyWage_mastervalue}</td>
+		</tr>
+	</tbody>
+
+</table> 
+
+
+
+
+{END container_mastergrid}
+
+</div>

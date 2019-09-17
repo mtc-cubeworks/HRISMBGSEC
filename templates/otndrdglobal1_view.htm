@@ -1,0 +1,318 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_viewpage}
+<div {$viewpage_chiddenattr} data-pageid="{$pageid}" data-container="viewpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-12 "> 
+
+{BEGIN viewheader}
+	<h2 {$viewheader_hiddenattr} data-pageid="{$pageid}" data-brick="viewheader" >{$pagetitlelabel otndrdglobal1 view}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END viewheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_viewpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class=" form-horizontal  col-md-12 "> 
+
+
+<div {$viewfields_hiddenattr} data-pageid="{$pageid}" data-brick="viewfields" >
+
+	<div class="container">
+					{BEGIN GAID_fieldblock}
+	<div class="{$fielddispclass_GAID} col-md-6 bs-viewcontrolgroup" data-fieldname="GAID">
+		<label class="control-label" for="{$labelfor_GAID}">
+			{$label otndrdglobal1 GAID}
+		</label>
+		<div class="" >
+			{$GAID_value}&nbsp;
+		</div>
+	</div>
+{END GAID_fieldblock}
+					{BEGIN Employee_fieldblock}
+	<div class="{$fielddispclass_Employee} col-md-6 bs-viewcontrolgroup" data-fieldname="Employee">
+		<label class="control-label" for="{$labelfor_Employee}">
+			{$label otndrdglobal1 Employee}
+		</label>
+		<div class="" >
+			{$Employee_value}&nbsp;
+		</div>
+	</div>
+{END Employee_fieldblock}
+					{BEGIN ApprovedOT_fieldblock}
+	<div class="{$fielddispclass_ApprovedOT} col-md-6 bs-viewcontrolgroup" data-fieldname="ApprovedOT">
+		<label class="control-label" for="{$labelfor_ApprovedOT}">
+			{$label otndrdglobal1 ApprovedOT}
+		</label>
+		<div class="" >
+			{$ApprovedOT_value}&nbsp;
+		</div>
+	</div>
+{END ApprovedOT_fieldblock}
+					{BEGIN FiledOTOnly_fieldblock}
+	<div class="{$fielddispclass_FiledOTOnly} col-md-6 bs-viewcontrolgroup" data-fieldname="FiledOTOnly">
+		<label class="control-label" for="{$labelfor_FiledOTOnly}">
+			{$label otndrdglobal1 FiledOTOnly}
+		</label>
+		<div class="" >
+			{$FiledOTOnly_value}&nbsp;
+		</div>
+	</div>
+{END FiledOTOnly_fieldblock}
+					{BEGIN EarlyOT_fieldblock}
+	<div class="{$fielddispclass_EarlyOT} col-md-6 bs-viewcontrolgroup" data-fieldname="EarlyOT">
+		<label class="control-label" for="{$labelfor_EarlyOT}">
+			{$label otndrdglobal1 EarlyOT}
+		</label>
+		<div class="" >
+			{$EarlyOT_value}&nbsp;
+		</div>
+	</div>
+{END EarlyOT_fieldblock}
+					{BEGIN PostOT_fieldblock}
+	<div class="{$fielddispclass_PostOT} col-md-6 bs-viewcontrolgroup" data-fieldname="PostOT">
+		<label class="control-label" for="{$labelfor_PostOT}">
+			{$label otndrdglobal1 PostOT}
+		</label>
+		<div class="" >
+			{$PostOT_value}&nbsp;
+		</div>
+	</div>
+{END PostOT_fieldblock}
+					{BEGIN OTGreaterThan_fieldblock}
+	<div class="{$fielddispclass_OTGreaterThan} col-md-6 bs-viewcontrolgroup" data-fieldname="OTGreaterThan">
+		<label class="control-label" for="{$labelfor_OTGreaterThan}">
+			{$label otndrdglobal1 OTGreaterThan}
+		</label>
+		<div class="" >
+			{$OTGreaterThan_value}&nbsp;
+		</div>
+	</div>
+{END OTGreaterThan_fieldblock}
+					{BEGIN OTMinimum_fieldblock}
+	<div class="{$fielddispclass_OTMinimum} col-md-6 bs-viewcontrolgroup" data-fieldname="OTMinimum">
+		<label class="control-label" for="{$labelfor_OTMinimum}">
+			{$label otndrdglobal1 OTMinimum}
+		</label>
+		<div class="" >
+			{$OTMinimum_value}&nbsp;
+		</div>
+	</div>
+{END OTMinimum_fieldblock}
+					{BEGIN ApprovedND_fieldblock}
+	<div class="{$fielddispclass_ApprovedND} col-md-6 bs-viewcontrolgroup" data-fieldname="ApprovedND">
+		<label class="control-label" for="{$labelfor_ApprovedND}">
+			{$label otndrdglobal1 ApprovedND}
+		</label>
+		<div class="" >
+			{$ApprovedND_value}&nbsp;
+		</div>
+	</div>
+{END ApprovedND_fieldblock}
+					{BEGIN NDGreaterThan_fieldblock}
+	<div class="{$fielddispclass_NDGreaterThan} col-md-6 bs-viewcontrolgroup" data-fieldname="NDGreaterThan">
+		<label class="control-label" for="{$labelfor_NDGreaterThan}">
+			{$label otndrdglobal1 NDGreaterThan}
+		</label>
+		<div class="" >
+			{$NDGreaterThan_value}&nbsp;
+		</div>
+	</div>
+{END NDGreaterThan_fieldblock}
+					{BEGIN NDMinimum_fieldblock}
+	<div class="{$fielddispclass_NDMinimum} col-md-6 bs-viewcontrolgroup" data-fieldname="NDMinimum">
+		<label class="control-label" for="{$labelfor_NDMinimum}">
+			{$label otndrdglobal1 NDMinimum}
+		</label>
+		<div class="" >
+			{$NDMinimum_value}&nbsp;
+		</div>
+	</div>
+{END NDMinimum_fieldblock}
+					{BEGIN ApprovedRD_fieldblock}
+	<div class="{$fielddispclass_ApprovedRD} col-md-6 bs-viewcontrolgroup" data-fieldname="ApprovedRD">
+		<label class="control-label" for="{$labelfor_ApprovedRD}">
+			{$label otndrdglobal1 ApprovedRD}
+		</label>
+		<div class="" >
+			{$ApprovedRD_value}&nbsp;
+		</div>
+	</div>
+{END ApprovedRD_fieldblock}
+					{BEGIN RDGreaterThan_fieldblock}
+	<div class="{$fielddispclass_RDGreaterThan} col-md-6 bs-viewcontrolgroup" data-fieldname="RDGreaterThan">
+		<label class="control-label" for="{$labelfor_RDGreaterThan}">
+			{$label otndrdglobal1 RDGreaterThan}
+		</label>
+		<div class="" >
+			{$RDGreaterThan_value}&nbsp;
+		</div>
+	</div>
+{END RDGreaterThan_fieldblock}
+					{BEGIN RDMinimum_fieldblock}
+	<div class="{$fielddispclass_RDMinimum} col-md-6 bs-viewcontrolgroup" data-fieldname="RDMinimum">
+		<label class="control-label" for="{$labelfor_RDMinimum}">
+			{$label otndrdglobal1 RDMinimum}
+		</label>
+		<div class="" >
+			{$RDMinimum_value}&nbsp;
+		</div>
+	</div>
+{END RDMinimum_fieldblock}
+	</div>
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_buttons}
+<div {$buttons_chiddenattr} data-pageid="{$pageid}" data-container="buttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-6 "> 
+
+{BEGIN viewbuttons}
+{BEGIN back_button}
+<button class="btn btn-primary" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{BEGIN close_button}
+<button href="#" class="btn btn-primary" {$closebutton_attrs}>Close window</button>
+{END close_button}
+{END viewbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+
+
+{BEGIN container_leftbuttons_1}
+<div {$leftbuttons_1_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons_1" class="   col-md-4 "> 
+
+{BEGIN rightviewbuttons}
+<div class="btn-group" role="group">
+		{BEGIN prev_button}
+	<button class="btn btn-default {$prevbutton_class}" {$prevbutton_attrs}><span class="glyphicon glyphicon-chevron-left"></span></button>
+	{END prev_button}
+	{BEGIN next_button}
+	<button class="btn btn-default {$nextbutton_class}" {$nextbutton_attrs}><span class="glyphicon glyphicon-chevron-right"></span></button>
+	{END next_button}
+		{BEGIN view_menu_button}
+	<div class="btn-group dropup" role="group">
+		<button class="btn btn-default dropdown-toggle {$groupbutton_class}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+		<ul class="dropdown-menu dropdown-left">
+									{BEGIN edit_page_button}
+				<li><a href=# {$edit_page_button_attrs}>Edit</a></li>
+			{END edit_page_button}
+		</ul>
+	</div>
+	{END view_menu_button}
+</div>
+{END rightviewbuttons}
+
+
+
+</div>
+{END container_leftbuttons_1}
+
+
+
+
+
+
+</div>
+{END container_buttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

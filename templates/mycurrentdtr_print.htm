@@ -1,0 +1,1370 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_pdf}
+<div {$pdf_chiddenattr} data-pageid="{$pageid}" data-container="pdf" class="   col-md-12 "> 
+
+{BEGIN printbuttons}
+
+{END printbuttons}
+
+
+
+</div>
+{END container_pdf}
+
+
+
+
+
+{BEGIN container_pageheader}
+<div {$pageheader_chiddenattr} data-pageid="{$pageid}" data-container="pageheader" class="    "> 
+
+{BEGIN printheader}
+	<h2 {$printheader_hiddenattr} data-pageid="{$pageid}" data-brick="printheader" >{$pagetitlelabel mycurrentdtr print}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END printheader}
+
+
+{BEGIN page_number}
+<span>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></span>
+{END page_number}
+
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="table table-bordered rp-maintable" {$printgrid_hiddenattr} data-pageid="{$pageid}" data-brick="printgrid" >
+	<thead>
+	{BEGIN grid_header}
+		<tr class="{$gridHeader_class}" >
+		{BEGIN record_header}
+			{BEGIN ScID_fieldheadercolumn}
+			<th class="{$ScID_class}" {$ScID_style}  data-field="ScID">
+				{$label mycurrentdtr ScID}
+			</th>
+			{END ScID_fieldheadercolumn}
+			{BEGIN EmployeeID_fieldheadercolumn}
+			<th class="{$EmployeeID_class}" {$EmployeeID_style}  data-field="EmployeeID">
+				{$label mycurrentdtr EmployeeID}
+			</th>
+			{END EmployeeID_fieldheadercolumn}
+			{BEGIN UserName_fieldheadercolumn}
+			<th class="{$UserName_class}" {$UserName_style}  data-field="UserName">
+				{$label mycurrentdtr UserName}
+			</th>
+			{END UserName_fieldheadercolumn}
+			{BEGIN Employer_fieldheadercolumn}
+			<th class="{$Employer_class}" {$Employer_style}  data-field="Employer">
+				{$label mycurrentdtr Employer}
+			</th>
+			{END Employer_fieldheadercolumn}
+			{BEGIN Division_fieldheadercolumn}
+			<th class="{$Division_class}" {$Division_style}  data-field="Division">
+				{$label mycurrentdtr Division}
+			</th>
+			{END Division_fieldheadercolumn}
+			{BEGIN Department_fieldheadercolumn}
+			<th class="{$Department_class}" {$Department_style}  data-field="Department">
+				{$label mycurrentdtr Department}
+			</th>
+			{END Department_fieldheadercolumn}
+			{BEGIN WageType_fieldheadercolumn}
+			<th class="{$WageType_class}" {$WageType_style}  data-field="WageType">
+				{$label mycurrentdtr WageType}
+			</th>
+			{END WageType_fieldheadercolumn}
+			{BEGIN SDate_fieldheadercolumn}
+			<th class="{$SDate_class}" {$SDate_style}  data-field="SDate">
+				{$label mycurrentdtr SDate}
+			</th>
+			{END SDate_fieldheadercolumn}
+			{BEGIN DayIs_fieldheadercolumn}
+			<th class="{$DayIs_class}" {$DayIs_style}  data-field="DayIs">
+				{$label mycurrentdtr DayIs}
+			</th>
+			{END DayIs_fieldheadercolumn}
+			{BEGIN RestDay_fieldheadercolumn}
+			<th class="{$RestDay_class}" {$RestDay_style}  data-field="RestDay">
+				{$label mycurrentdtr RestDay}
+			</th>
+			{END RestDay_fieldheadercolumn}
+			{BEGIN STimeIn_fieldheadercolumn}
+			<th class="{$STimeIn_class}" {$STimeIn_style}  data-field="STimeIn">
+				{$label mycurrentdtr STimeIn}
+			</th>
+			{END STimeIn_fieldheadercolumn}
+			{BEGIN STimeOut_fieldheadercolumn}
+			<th class="{$STimeOut_class}" {$STimeOut_style}  data-field="STimeOut">
+				{$label mycurrentdtr STimeOut}
+			</th>
+			{END STimeOut_fieldheadercolumn}
+			{BEGIN TimeIn_fieldheadercolumn}
+			<th class="{$TimeIn_class}" {$TimeIn_style}  data-field="TimeIn">
+				{$label mycurrentdtr TimeIn}
+			</th>
+			{END TimeIn_fieldheadercolumn}
+			{BEGIN TimeOut_fieldheadercolumn}
+			<th class="{$TimeOut_class}" {$TimeOut_style}  data-field="TimeOut">
+				{$label mycurrentdtr TimeOut}
+			</th>
+			{END TimeOut_fieldheadercolumn}
+			{BEGIN AfterBreakLogOut_fieldheadercolumn}
+			<th class="{$AfterBreakLogOut_class}" {$AfterBreakLogOut_style}  data-field="AfterBreakLogOut">
+				{$label mycurrentdtr AfterBreakLogOut}
+			</th>
+			{END AfterBreakLogOut_fieldheadercolumn}
+			{BEGIN AfterBreakLog_fieldheadercolumn}
+			<th class="{$AfterBreakLog_class}" {$AfterBreakLog_style}  data-field="AfterBreakLog">
+				{$label mycurrentdtr AfterBreakLog}
+			</th>
+			{END AfterBreakLog_fieldheadercolumn}
+			{BEGIN MisPunched_fieldheadercolumn}
+			<th class="{$MisPunched_class}" {$MisPunched_style}  data-field="MisPunched">
+				{$label mycurrentdtr MisPunched}
+			</th>
+			{END MisPunched_fieldheadercolumn}
+			{BEGIN RegWD_fieldheadercolumn}
+			<th class="{$RegWD_class}" {$RegWD_style}  data-field="RegWD">
+				{$label mycurrentdtr RegWD}
+			</th>
+			{END RegWD_fieldheadercolumn}
+			{BEGIN DWork_fieldheadercolumn}
+			<th class="{$DWork_class}" {$DWork_style}  data-field="DWork">
+				{$label mycurrentdtr DWork}
+			</th>
+			{END DWork_fieldheadercolumn}
+			{BEGIN Absent_fieldheadercolumn}
+			<th class="{$Absent_class}" {$Absent_style}  data-field="Absent">
+				{$label mycurrentdtr Absent}
+			</th>
+			{END Absent_fieldheadercolumn}
+			{BEGIN LateMins_fieldheadercolumn}
+			<th class="{$LateMins_class}" {$LateMins_style}  data-field="LateMins">
+				{$label mycurrentdtr LateMins}
+			</th>
+			{END LateMins_fieldheadercolumn}
+			{BEGIN UnderstimeMins_fieldheadercolumn}
+			<th class="{$UnderstimeMins_class}" {$UnderstimeMins_style}  data-field="UnderstimeMins">
+				{$label mycurrentdtr UnderstimeMins}
+			</th>
+			{END UnderstimeMins_fieldheadercolumn}
+			{BEGIN BreakLateMins_fieldheadercolumn}
+			<th class="{$BreakLateMins_class}" {$BreakLateMins_style}  data-field="BreakLateMins">
+				{$label mycurrentdtr BreakLateMins}
+			</th>
+			{END BreakLateMins_fieldheadercolumn}
+			{BEGIN HolidayType_fieldheadercolumn}
+			<th class="{$HolidayType_class}" {$HolidayType_style}  data-field="HolidayType">
+				{$label mycurrentdtr HolidayType}
+			</th>
+			{END HolidayType_fieldheadercolumn}
+			{BEGIN VL_fieldheadercolumn}
+			<th class="{$VL_class}" {$VL_style}  data-field="VL">
+				{$label mycurrentdtr VL}
+			</th>
+			{END VL_fieldheadercolumn}
+			{BEGIN SL_fieldheadercolumn}
+			<th class="{$SL_class}" {$SL_style}  data-field="SL">
+				{$label mycurrentdtr SL}
+			</th>
+			{END SL_fieldheadercolumn}
+			{BEGIN EL_fieldheadercolumn}
+			<th class="{$EL_class}" {$EL_style}  data-field="EL">
+				{$label mycurrentdtr EL}
+			</th>
+			{END EL_fieldheadercolumn}
+			{BEGIN PL_fieldheadercolumn}
+			<th class="{$PL_class}" {$PL_style}  data-field="PL">
+				{$label mycurrentdtr PL}
+			</th>
+			{END PL_fieldheadercolumn}
+			{BEGIN TrO_fieldheadercolumn}
+			<th class="{$TrO_class}" {$TrO_style}  data-field="TrO">
+				{$label mycurrentdtr TrO}
+			</th>
+			{END TrO_fieldheadercolumn}
+			{BEGIN RH_fieldheadercolumn}
+			<th class="{$RH_class}" {$RH_style}  data-field="RH">
+				{$label mycurrentdtr RH}
+			</th>
+			{END RH_fieldheadercolumn}
+			{BEGIN SH_fieldheadercolumn}
+			<th class="{$SH_class}" {$SH_style}  data-field="SH">
+				{$label mycurrentdtr SH}
+			</th>
+			{END SH_fieldheadercolumn}
+			{BEGIN DH_fieldheadercolumn}
+			<th class="{$DH_class}" {$DH_style}  data-field="DH">
+				{$label mycurrentdtr DH}
+			</th>
+			{END DH_fieldheadercolumn}
+			{BEGIN RegRD_fieldheadercolumn}
+			<th class="{$RegRD_class}" {$RegRD_style}  data-field="RegRD">
+				{$label mycurrentdtr RegRD}
+			</th>
+			{END RegRD_fieldheadercolumn}
+			{BEGIN EarlyMins_fieldheadercolumn}
+			<th class="{$EarlyMins_class}" {$EarlyMins_style}  data-field="EarlyMins">
+				{$label mycurrentdtr EarlyMins}
+			</th>
+			{END EarlyMins_fieldheadercolumn}
+			{BEGIN PostMins_fieldheadercolumn}
+			<th class="{$PostMins_class}" {$PostMins_style}  data-field="PostMins">
+				{$label mycurrentdtr PostMins}
+			</th>
+			{END PostMins_fieldheadercolumn}
+			{BEGIN TempOT_fieldheadercolumn}
+			<th class="{$TempOT_class}" {$TempOT_style}  data-field="TempOT">
+				{$label mycurrentdtr TempOT}
+			</th>
+			{END TempOT_fieldheadercolumn}
+			{BEGIN ApprovedOT_fieldheadercolumn}
+			<th class="{$ApprovedOT_class}" {$ApprovedOT_style}  data-field="ApprovedOT">
+				{$label mycurrentdtr ApprovedOT}
+			</th>
+			{END ApprovedOT_fieldheadercolumn}
+			{BEGIN AOTMins_fieldheadercolumn}
+			<th class="{$AOTMins_class}" {$AOTMins_style}  data-field="AOTMins">
+				{$label mycurrentdtr AOTMins}
+			</th>
+			{END AOTMins_fieldheadercolumn}
+			{BEGIN NDMins_fieldheadercolumn}
+			<th class="{$NDMins_class}" {$NDMins_style}  data-field="NDMins">
+				{$label mycurrentdtr NDMins}
+			</th>
+			{END NDMins_fieldheadercolumn}
+			{BEGIN NDOTMins_fieldheadercolumn}
+			<th class="{$NDOTMins_class}" {$NDOTMins_style}  data-field="NDOTMins">
+				{$label mycurrentdtr NDOTMins}
+			</th>
+			{END NDOTMins_fieldheadercolumn}
+			{BEGIN ApprovedNightDiff_fieldheadercolumn}
+			<th class="{$ApprovedNightDiff_class}" {$ApprovedNightDiff_style}  data-field="ApprovedNightDiff">
+				{$label mycurrentdtr ApprovedNightDiff}
+			</th>
+			{END ApprovedNightDiff_fieldheadercolumn}
+			{BEGIN ANDiff_fieldheadercolumn}
+			<th class="{$ANDiff_class}" {$ANDiff_style}  data-field="ANDiff">
+				{$label mycurrentdtr ANDiff}
+			</th>
+			{END ANDiff_fieldheadercolumn}
+			{BEGIN ApprovedRD_fieldheadercolumn}
+			<th class="{$ApprovedRD_class}" {$ApprovedRD_style}  data-field="ApprovedRD">
+				{$label mycurrentdtr ApprovedRD}
+			</th>
+			{END ApprovedRD_fieldheadercolumn}
+			{BEGIN RDMins_fieldheadercolumn}
+			<th class="{$RDMins_class}" {$RDMins_style}  data-field="RDMins">
+				{$label mycurrentdtr RDMins}
+			</th>
+			{END RDMins_fieldheadercolumn}
+			{BEGIN RegOT_fieldheadercolumn}
+			<th class="{$RegOT_class}" {$RegOT_style}  data-field="RegOT">
+				{$label mycurrentdtr RegOT}
+			</th>
+			{END RegOT_fieldheadercolumn}
+			{BEGIN RHOT_fieldheadercolumn}
+			<th class="{$RHOT_class}" {$RHOT_style}  data-field="RHOT">
+				{$label mycurrentdtr RHOT}
+			</th>
+			{END RHOT_fieldheadercolumn}
+			{BEGIN SHOT_fieldheadercolumn}
+			<th class="{$SHOT_class}" {$SHOT_style}  data-field="SHOT">
+				{$label mycurrentdtr SHOT}
+			</th>
+			{END SHOT_fieldheadercolumn}
+			{BEGIN SHOTD_fieldheadercolumn}
+			<th class="{$SHOTD_class}" {$SHOTD_style}  data-field="SHOTD">
+				{$label mycurrentdtr SHOTD}
+			</th>
+			{END SHOTD_fieldheadercolumn}
+			{BEGIN RDOT_fieldheadercolumn}
+			<th class="{$RDOT_class}" {$RDOT_style}  data-field="RDOT">
+				{$label mycurrentdtr RDOT}
+			</th>
+			{END RDOT_fieldheadercolumn}
+			{BEGIN DHOT_fieldheadercolumn}
+			<th class="{$DHOT_class}" {$DHOT_style}  data-field="DHOT">
+				{$label mycurrentdtr DHOT}
+			</th>
+			{END DHOT_fieldheadercolumn}
+			{BEGIN NDOT_fieldheadercolumn}
+			<th class="{$NDOT_class}" {$NDOT_style}  data-field="NDOT">
+				{$label mycurrentdtr NDOT}
+			</th>
+			{END NDOT_fieldheadercolumn}
+			{BEGIN RegND_fieldheadercolumn}
+			<th class="{$RegND_class}" {$RegND_style}  data-field="RegND">
+				{$label mycurrentdtr RegND}
+			</th>
+			{END RegND_fieldheadercolumn}
+			{BEGIN RHND_fieldheadercolumn}
+			<th class="{$RHND_class}" {$RHND_style}  data-field="RHND">
+				{$label mycurrentdtr RHND}
+			</th>
+			{END RHND_fieldheadercolumn}
+			{BEGIN SHND_fieldheadercolumn}
+			<th class="{$SHND_class}" {$SHND_style}  data-field="SHND">
+				{$label mycurrentdtr SHND}
+			</th>
+			{END SHND_fieldheadercolumn}
+			{BEGIN DHND_fieldheadercolumn}
+			<th class="{$DHND_class}" {$DHND_style}  data-field="DHND">
+				{$label mycurrentdtr DHND}
+			</th>
+			{END DHND_fieldheadercolumn}
+			{BEGIN RDND_fieldheadercolumn}
+			<th class="{$RDND_class}" {$RDND_style}  data-field="RDND">
+				{$label mycurrentdtr RDND}
+			</th>
+			{END RDND_fieldheadercolumn}
+			{BEGIN RHNDOT_fieldheadercolumn}
+			<th class="{$RHNDOT_class}" {$RHNDOT_style}  data-field="RHNDOT">
+				{$label mycurrentdtr RHNDOT}
+			</th>
+			{END RHNDOT_fieldheadercolumn}
+			{BEGIN SHNDOT_fieldheadercolumn}
+			<th class="{$SHNDOT_class}" {$SHNDOT_style}  data-field="SHNDOT">
+				{$label mycurrentdtr SHNDOT}
+			</th>
+			{END SHNDOT_fieldheadercolumn}
+			{BEGIN DHNDOT_fieldheadercolumn}
+			<th class="{$DHNDOT_class}" {$DHNDOT_style}  data-field="DHNDOT">
+				{$label mycurrentdtr DHNDOT}
+			</th>
+			{END DHNDOT_fieldheadercolumn}
+			{BEGIN RDNDOT_fieldheadercolumn}
+			<th class="{$RDNDOT_class}" {$RDNDOT_style}  data-field="RDNDOT">
+				{$label mycurrentdtr RDNDOT}
+			</th>
+			{END RDNDOT_fieldheadercolumn}
+			{BEGIN RHRD_fieldheadercolumn}
+			<th class="{$RHRD_class}" {$RHRD_style}  data-field="RHRD">
+				{$label mycurrentdtr RHRD}
+			</th>
+			{END RHRD_fieldheadercolumn}
+			{BEGIN SHRD_fieldheadercolumn}
+			<th class="{$SHRD_class}" {$SHRD_style}  data-field="SHRD">
+				{$label mycurrentdtr SHRD}
+			</th>
+			{END SHRD_fieldheadercolumn}
+			{BEGIN DHRD_fieldheadercolumn}
+			<th class="{$DHRD_class}" {$DHRD_style}  data-field="DHRD">
+				{$label mycurrentdtr DHRD}
+			</th>
+			{END DHRD_fieldheadercolumn}
+			{BEGIN RHRDOT_fieldheadercolumn}
+			<th class="{$RHRDOT_class}" {$RHRDOT_style}  data-field="RHRDOT">
+				{$label mycurrentdtr RHRDOT}
+			</th>
+			{END RHRDOT_fieldheadercolumn}
+			{BEGIN SHRDOT_fieldheadercolumn}
+			<th class="{$SHRDOT_class}" {$SHRDOT_style}  data-field="SHRDOT">
+				{$label mycurrentdtr SHRDOT}
+			</th>
+			{END SHRDOT_fieldheadercolumn}
+			{BEGIN SHRDOTD_fieldheadercolumn}
+			<th class="{$SHRDOTD_class}" {$SHRDOTD_style}  data-field="SHRDOTD">
+				{$label mycurrentdtr SHRDOTD}
+			</th>
+			{END SHRDOTD_fieldheadercolumn}
+			{BEGIN DHRDOT_fieldheadercolumn}
+			<th class="{$DHRDOT_class}" {$DHRDOT_style}  data-field="DHRDOT">
+				{$label mycurrentdtr DHRDOT}
+			</th>
+			{END DHRDOT_fieldheadercolumn}
+			{BEGIN RHRDND_fieldheadercolumn}
+			<th class="{$RHRDND_class}" {$RHRDND_style}  data-field="RHRDND">
+				{$label mycurrentdtr RHRDND}
+			</th>
+			{END RHRDND_fieldheadercolumn}
+			{BEGIN SHRDND_fieldheadercolumn}
+			<th class="{$SHRDND_class}" {$SHRDND_style}  data-field="SHRDND">
+				{$label mycurrentdtr SHRDND}
+			</th>
+			{END SHRDND_fieldheadercolumn}
+			{BEGIN DHRDND_fieldheadercolumn}
+			<th class="{$DHRDND_class}" {$DHRDND_style}  data-field="DHRDND">
+				{$label mycurrentdtr DHRDND}
+			</th>
+			{END DHRDND_fieldheadercolumn}
+			{BEGIN RHRDNDOT_fieldheadercolumn}
+			<th class="{$RHRDNDOT_class}" {$RHRDNDOT_style}  data-field="RHRDNDOT">
+				{$label mycurrentdtr RHRDNDOT}
+			</th>
+			{END RHRDNDOT_fieldheadercolumn}
+			{BEGIN SHRDNDOT_fieldheadercolumn}
+			<th class="{$SHRDNDOT_class}" {$SHRDNDOT_style}  data-field="SHRDNDOT">
+				{$label mycurrentdtr SHRDNDOT}
+			</th>
+			{END SHRDNDOT_fieldheadercolumn}
+			{BEGIN DHRDNDOT_fieldheadercolumn}
+			<th class="{$DHRDNDOT_class}" {$DHRDNDOT_style}  data-field="DHRDNDOT">
+				{$label mycurrentdtr DHRDNDOT}
+			</th>
+			{END DHRDNDOT_fieldheadercolumn}
+			{BEGIN Rlink_fieldheadercolumn}
+			<th class="{$Rlink_class}" {$Rlink_style}  data-field="Rlink">
+				{$label mycurrentdtr Rlink}
+			</th>
+			{END Rlink_fieldheadercolumn}
+			{BEGIN endrecordheader_block}
+			<th class="rnr-cs">&nbsp;</th>
+			{END endrecordheader_block}
+		{END record_header}
+		</tr>
+	{END grid_header}
+	</thead>
+	
+	<tbody>	
+	{BEGIN grid_row}
+		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+			{BEGIN ScID_fieldcolumn}
+			<td  class="{$ScID_class}" {$ScID_style} {$recordattrs}>
+				{$ScID_value}
+			</td>
+			{END ScID_fieldcolumn}
+			{BEGIN EmployeeID_fieldcolumn}
+			<td  class="{$EmployeeID_class}" {$EmployeeID_style} {$recordattrs}>
+				{$EmployeeID_value}
+			</td>
+			{END EmployeeID_fieldcolumn}
+			{BEGIN UserName_fieldcolumn}
+			<td  class="{$UserName_class}" {$UserName_style} {$recordattrs}>
+				{$UserName_value}
+			</td>
+			{END UserName_fieldcolumn}
+			{BEGIN Employer_fieldcolumn}
+			<td  class="{$Employer_class}" {$Employer_style} {$recordattrs}>
+				{$Employer_value}
+			</td>
+			{END Employer_fieldcolumn}
+			{BEGIN Division_fieldcolumn}
+			<td  class="{$Division_class}" {$Division_style} {$recordattrs}>
+				{$Division_value}
+			</td>
+			{END Division_fieldcolumn}
+			{BEGIN Department_fieldcolumn}
+			<td  class="{$Department_class}" {$Department_style} {$recordattrs}>
+				{$Department_value}
+			</td>
+			{END Department_fieldcolumn}
+			{BEGIN WageType_fieldcolumn}
+			<td  class="{$WageType_class}" {$WageType_style} {$recordattrs}>
+				{$WageType_value}
+			</td>
+			{END WageType_fieldcolumn}
+			{BEGIN SDate_fieldcolumn}
+			<td  class="{$SDate_class}" {$SDate_style} {$recordattrs}>
+				{$SDate_value}
+			</td>
+			{END SDate_fieldcolumn}
+			{BEGIN DayIs_fieldcolumn}
+			<td  class="{$DayIs_class}" {$DayIs_style} {$recordattrs}>
+				{$DayIs_value}
+			</td>
+			{END DayIs_fieldcolumn}
+			{BEGIN RestDay_fieldcolumn}
+			<td  class="{$RestDay_class}" {$RestDay_style} {$recordattrs}>
+				{$RestDay_value}
+			</td>
+			{END RestDay_fieldcolumn}
+			{BEGIN STimeIn_fieldcolumn}
+			<td  class="{$STimeIn_class}" {$STimeIn_style} {$recordattrs}>
+				{$STimeIn_value}
+			</td>
+			{END STimeIn_fieldcolumn}
+			{BEGIN STimeOut_fieldcolumn}
+			<td  class="{$STimeOut_class}" {$STimeOut_style} {$recordattrs}>
+				{$STimeOut_value}
+			</td>
+			{END STimeOut_fieldcolumn}
+			{BEGIN TimeIn_fieldcolumn}
+			<td  class="{$TimeIn_class}" {$TimeIn_style} {$recordattrs}>
+				{$TimeIn_value}
+			</td>
+			{END TimeIn_fieldcolumn}
+			{BEGIN TimeOut_fieldcolumn}
+			<td  class="{$TimeOut_class}" {$TimeOut_style} {$recordattrs}>
+				{$TimeOut_value}
+			</td>
+			{END TimeOut_fieldcolumn}
+			{BEGIN AfterBreakLogOut_fieldcolumn}
+			<td  class="{$AfterBreakLogOut_class}" {$AfterBreakLogOut_style} {$recordattrs}>
+				{$AfterBreakLogOut_value}
+			</td>
+			{END AfterBreakLogOut_fieldcolumn}
+			{BEGIN AfterBreakLog_fieldcolumn}
+			<td  class="{$AfterBreakLog_class}" {$AfterBreakLog_style} {$recordattrs}>
+				{$AfterBreakLog_value}
+			</td>
+			{END AfterBreakLog_fieldcolumn}
+			{BEGIN MisPunched_fieldcolumn}
+			<td  class="{$MisPunched_class}" {$MisPunched_style} {$recordattrs}>
+				{$MisPunched_value}
+			</td>
+			{END MisPunched_fieldcolumn}
+			{BEGIN RegWD_fieldcolumn}
+			<td  class="{$RegWD_class}" {$RegWD_style} {$recordattrs}>
+				{$RegWD_value}
+			</td>
+			{END RegWD_fieldcolumn}
+			{BEGIN DWork_fieldcolumn}
+			<td  class="{$DWork_class}" {$DWork_style} {$recordattrs}>
+				{$DWork_value}
+			</td>
+			{END DWork_fieldcolumn}
+			{BEGIN Absent_fieldcolumn}
+			<td  class="{$Absent_class}" {$Absent_style} {$recordattrs}>
+				{$Absent_value}
+			</td>
+			{END Absent_fieldcolumn}
+			{BEGIN LateMins_fieldcolumn}
+			<td  class="{$LateMins_class}" {$LateMins_style} {$recordattrs}>
+				{$LateMins_value}
+			</td>
+			{END LateMins_fieldcolumn}
+			{BEGIN UnderstimeMins_fieldcolumn}
+			<td  class="{$UnderstimeMins_class}" {$UnderstimeMins_style} {$recordattrs}>
+				{$UnderstimeMins_value}
+			</td>
+			{END UnderstimeMins_fieldcolumn}
+			{BEGIN BreakLateMins_fieldcolumn}
+			<td  class="{$BreakLateMins_class}" {$BreakLateMins_style} {$recordattrs}>
+				{$BreakLateMins_value}
+			</td>
+			{END BreakLateMins_fieldcolumn}
+			{BEGIN HolidayType_fieldcolumn}
+			<td  class="{$HolidayType_class}" {$HolidayType_style} {$recordattrs}>
+				{$HolidayType_value}
+			</td>
+			{END HolidayType_fieldcolumn}
+			{BEGIN VL_fieldcolumn}
+			<td  class="{$VL_class}" {$VL_style} {$recordattrs}>
+				{$VL_value}
+			</td>
+			{END VL_fieldcolumn}
+			{BEGIN SL_fieldcolumn}
+			<td  class="{$SL_class}" {$SL_style} {$recordattrs}>
+				{$SL_value}
+			</td>
+			{END SL_fieldcolumn}
+			{BEGIN EL_fieldcolumn}
+			<td  class="{$EL_class}" {$EL_style} {$recordattrs}>
+				{$EL_value}
+			</td>
+			{END EL_fieldcolumn}
+			{BEGIN PL_fieldcolumn}
+			<td  class="{$PL_class}" {$PL_style} {$recordattrs}>
+				{$PL_value}
+			</td>
+			{END PL_fieldcolumn}
+			{BEGIN TrO_fieldcolumn}
+			<td  class="{$TrO_class}" {$TrO_style} {$recordattrs}>
+				{$TrO_value}
+			</td>
+			{END TrO_fieldcolumn}
+			{BEGIN RH_fieldcolumn}
+			<td  class="{$RH_class}" {$RH_style} {$recordattrs}>
+				{$RH_value}
+			</td>
+			{END RH_fieldcolumn}
+			{BEGIN SH_fieldcolumn}
+			<td  class="{$SH_class}" {$SH_style} {$recordattrs}>
+				{$SH_value}
+			</td>
+			{END SH_fieldcolumn}
+			{BEGIN DH_fieldcolumn}
+			<td  class="{$DH_class}" {$DH_style} {$recordattrs}>
+				{$DH_value}
+			</td>
+			{END DH_fieldcolumn}
+			{BEGIN RegRD_fieldcolumn}
+			<td  class="{$RegRD_class}" {$RegRD_style} {$recordattrs}>
+				{$RegRD_value}
+			</td>
+			{END RegRD_fieldcolumn}
+			{BEGIN EarlyMins_fieldcolumn}
+			<td  class="{$EarlyMins_class}" {$EarlyMins_style} {$recordattrs}>
+				{$EarlyMins_value}
+			</td>
+			{END EarlyMins_fieldcolumn}
+			{BEGIN PostMins_fieldcolumn}
+			<td  class="{$PostMins_class}" {$PostMins_style} {$recordattrs}>
+				{$PostMins_value}
+			</td>
+			{END PostMins_fieldcolumn}
+			{BEGIN TempOT_fieldcolumn}
+			<td  class="{$TempOT_class}" {$TempOT_style} {$recordattrs}>
+				{$TempOT_value}
+			</td>
+			{END TempOT_fieldcolumn}
+			{BEGIN ApprovedOT_fieldcolumn}
+			<td  class="{$ApprovedOT_class}" {$ApprovedOT_style} {$recordattrs}>
+				{$ApprovedOT_value}
+			</td>
+			{END ApprovedOT_fieldcolumn}
+			{BEGIN AOTMins_fieldcolumn}
+			<td  class="{$AOTMins_class}" {$AOTMins_style} {$recordattrs}>
+				{$AOTMins_value}
+			</td>
+			{END AOTMins_fieldcolumn}
+			{BEGIN NDMins_fieldcolumn}
+			<td  class="{$NDMins_class}" {$NDMins_style} {$recordattrs}>
+				{$NDMins_value}
+			</td>
+			{END NDMins_fieldcolumn}
+			{BEGIN NDOTMins_fieldcolumn}
+			<td  class="{$NDOTMins_class}" {$NDOTMins_style} {$recordattrs}>
+				{$NDOTMins_value}
+			</td>
+			{END NDOTMins_fieldcolumn}
+			{BEGIN ApprovedNightDiff_fieldcolumn}
+			<td  class="{$ApprovedNightDiff_class}" {$ApprovedNightDiff_style} {$recordattrs}>
+				{$ApprovedNightDiff_value}
+			</td>
+			{END ApprovedNightDiff_fieldcolumn}
+			{BEGIN ANDiff_fieldcolumn}
+			<td  class="{$ANDiff_class}" {$ANDiff_style} {$recordattrs}>
+				{$ANDiff_value}
+			</td>
+			{END ANDiff_fieldcolumn}
+			{BEGIN ApprovedRD_fieldcolumn}
+			<td  class="{$ApprovedRD_class}" {$ApprovedRD_style} {$recordattrs}>
+				{$ApprovedRD_value}
+			</td>
+			{END ApprovedRD_fieldcolumn}
+			{BEGIN RDMins_fieldcolumn}
+			<td  class="{$RDMins_class}" {$RDMins_style} {$recordattrs}>
+				{$RDMins_value}
+			</td>
+			{END RDMins_fieldcolumn}
+			{BEGIN RegOT_fieldcolumn}
+			<td  class="{$RegOT_class}" {$RegOT_style} {$recordattrs}>
+				{$RegOT_value}
+			</td>
+			{END RegOT_fieldcolumn}
+			{BEGIN RHOT_fieldcolumn}
+			<td  class="{$RHOT_class}" {$RHOT_style} {$recordattrs}>
+				{$RHOT_value}
+			</td>
+			{END RHOT_fieldcolumn}
+			{BEGIN SHOT_fieldcolumn}
+			<td  class="{$SHOT_class}" {$SHOT_style} {$recordattrs}>
+				{$SHOT_value}
+			</td>
+			{END SHOT_fieldcolumn}
+			{BEGIN SHOTD_fieldcolumn}
+			<td  class="{$SHOTD_class}" {$SHOTD_style} {$recordattrs}>
+				{$SHOTD_value}
+			</td>
+			{END SHOTD_fieldcolumn}
+			{BEGIN RDOT_fieldcolumn}
+			<td  class="{$RDOT_class}" {$RDOT_style} {$recordattrs}>
+				{$RDOT_value}
+			</td>
+			{END RDOT_fieldcolumn}
+			{BEGIN DHOT_fieldcolumn}
+			<td  class="{$DHOT_class}" {$DHOT_style} {$recordattrs}>
+				{$DHOT_value}
+			</td>
+			{END DHOT_fieldcolumn}
+			{BEGIN NDOT_fieldcolumn}
+			<td  class="{$NDOT_class}" {$NDOT_style} {$recordattrs}>
+				{$NDOT_value}
+			</td>
+			{END NDOT_fieldcolumn}
+			{BEGIN RegND_fieldcolumn}
+			<td  class="{$RegND_class}" {$RegND_style} {$recordattrs}>
+				{$RegND_value}
+			</td>
+			{END RegND_fieldcolumn}
+			{BEGIN RHND_fieldcolumn}
+			<td  class="{$RHND_class}" {$RHND_style} {$recordattrs}>
+				{$RHND_value}
+			</td>
+			{END RHND_fieldcolumn}
+			{BEGIN SHND_fieldcolumn}
+			<td  class="{$SHND_class}" {$SHND_style} {$recordattrs}>
+				{$SHND_value}
+			</td>
+			{END SHND_fieldcolumn}
+			{BEGIN DHND_fieldcolumn}
+			<td  class="{$DHND_class}" {$DHND_style} {$recordattrs}>
+				{$DHND_value}
+			</td>
+			{END DHND_fieldcolumn}
+			{BEGIN RDND_fieldcolumn}
+			<td  class="{$RDND_class}" {$RDND_style} {$recordattrs}>
+				{$RDND_value}
+			</td>
+			{END RDND_fieldcolumn}
+			{BEGIN RHNDOT_fieldcolumn}
+			<td  class="{$RHNDOT_class}" {$RHNDOT_style} {$recordattrs}>
+				{$RHNDOT_value}
+			</td>
+			{END RHNDOT_fieldcolumn}
+			{BEGIN SHNDOT_fieldcolumn}
+			<td  class="{$SHNDOT_class}" {$SHNDOT_style} {$recordattrs}>
+				{$SHNDOT_value}
+			</td>
+			{END SHNDOT_fieldcolumn}
+			{BEGIN DHNDOT_fieldcolumn}
+			<td  class="{$DHNDOT_class}" {$DHNDOT_style} {$recordattrs}>
+				{$DHNDOT_value}
+			</td>
+			{END DHNDOT_fieldcolumn}
+			{BEGIN RDNDOT_fieldcolumn}
+			<td  class="{$RDNDOT_class}" {$RDNDOT_style} {$recordattrs}>
+				{$RDNDOT_value}
+			</td>
+			{END RDNDOT_fieldcolumn}
+			{BEGIN RHRD_fieldcolumn}
+			<td  class="{$RHRD_class}" {$RHRD_style} {$recordattrs}>
+				{$RHRD_value}
+			</td>
+			{END RHRD_fieldcolumn}
+			{BEGIN SHRD_fieldcolumn}
+			<td  class="{$SHRD_class}" {$SHRD_style} {$recordattrs}>
+				{$SHRD_value}
+			</td>
+			{END SHRD_fieldcolumn}
+			{BEGIN DHRD_fieldcolumn}
+			<td  class="{$DHRD_class}" {$DHRD_style} {$recordattrs}>
+				{$DHRD_value}
+			</td>
+			{END DHRD_fieldcolumn}
+			{BEGIN RHRDOT_fieldcolumn}
+			<td  class="{$RHRDOT_class}" {$RHRDOT_style} {$recordattrs}>
+				{$RHRDOT_value}
+			</td>
+			{END RHRDOT_fieldcolumn}
+			{BEGIN SHRDOT_fieldcolumn}
+			<td  class="{$SHRDOT_class}" {$SHRDOT_style} {$recordattrs}>
+				{$SHRDOT_value}
+			</td>
+			{END SHRDOT_fieldcolumn}
+			{BEGIN SHRDOTD_fieldcolumn}
+			<td  class="{$SHRDOTD_class}" {$SHRDOTD_style} {$recordattrs}>
+				{$SHRDOTD_value}
+			</td>
+			{END SHRDOTD_fieldcolumn}
+			{BEGIN DHRDOT_fieldcolumn}
+			<td  class="{$DHRDOT_class}" {$DHRDOT_style} {$recordattrs}>
+				{$DHRDOT_value}
+			</td>
+			{END DHRDOT_fieldcolumn}
+			{BEGIN RHRDND_fieldcolumn}
+			<td  class="{$RHRDND_class}" {$RHRDND_style} {$recordattrs}>
+				{$RHRDND_value}
+			</td>
+			{END RHRDND_fieldcolumn}
+			{BEGIN SHRDND_fieldcolumn}
+			<td  class="{$SHRDND_class}" {$SHRDND_style} {$recordattrs}>
+				{$SHRDND_value}
+			</td>
+			{END SHRDND_fieldcolumn}
+			{BEGIN DHRDND_fieldcolumn}
+			<td  class="{$DHRDND_class}" {$DHRDND_style} {$recordattrs}>
+				{$DHRDND_value}
+			</td>
+			{END DHRDND_fieldcolumn}
+			{BEGIN RHRDNDOT_fieldcolumn}
+			<td  class="{$RHRDNDOT_class}" {$RHRDNDOT_style} {$recordattrs}>
+				{$RHRDNDOT_value}
+			</td>
+			{END RHRDNDOT_fieldcolumn}
+			{BEGIN SHRDNDOT_fieldcolumn}
+			<td  class="{$SHRDNDOT_class}" {$SHRDNDOT_style} {$recordattrs}>
+				{$SHRDNDOT_value}
+			</td>
+			{END SHRDNDOT_fieldcolumn}
+			{BEGIN DHRDNDOT_fieldcolumn}
+			<td  class="{$DHRDNDOT_class}" {$DHRDNDOT_style} {$recordattrs}>
+				{$DHRDNDOT_value}
+			</td>
+			{END DHRDNDOT_fieldcolumn}
+			{BEGIN Rlink_fieldcolumn}
+			<td  class="{$Rlink_class}" {$Rlink_style} {$recordattrs}>
+				{$Rlink_value}
+			</td>
+			{END Rlink_fieldcolumn}
+			{BEGIN endrecord_block}
+			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+			{END endrecord_block}
+		{END grid_record}
+		</tr>
+{END grid_row}
+	</tbody>
+
+{BEGIN totals_row}
+	<tfoot>
+		<tr class=" style1">
+		{BEGIN totals_record}
+			{BEGIN ScID_fieldfootercolumn}
+			<td>
+						</td>
+			{END ScID_fieldfootercolumn}
+			{BEGIN EmployeeID_fieldfootercolumn}
+			<td>
+						</td>
+			{END EmployeeID_fieldfootercolumn}
+			{BEGIN UserName_fieldfootercolumn}
+			<td>
+						</td>
+			{END UserName_fieldfootercolumn}
+			{BEGIN Employer_fieldfootercolumn}
+			<td>
+						</td>
+			{END Employer_fieldfootercolumn}
+			{BEGIN Division_fieldfootercolumn}
+			<td>
+						</td>
+			{END Division_fieldfootercolumn}
+			{BEGIN Department_fieldfootercolumn}
+			<td>
+						</td>
+			{END Department_fieldfootercolumn}
+			{BEGIN WageType_fieldfootercolumn}
+			<td>
+						</td>
+			{END WageType_fieldfootercolumn}
+			{BEGIN SDate_fieldfootercolumn}
+			<td>
+						</td>
+			{END SDate_fieldfootercolumn}
+			{BEGIN DayIs_fieldfootercolumn}
+			<td>
+						</td>
+			{END DayIs_fieldfootercolumn}
+			{BEGIN RestDay_fieldfootercolumn}
+			<td>
+						</td>
+			{END RestDay_fieldfootercolumn}
+			{BEGIN STimeIn_fieldfootercolumn}
+			<td>
+						</td>
+			{END STimeIn_fieldfootercolumn}
+			{BEGIN STimeOut_fieldfootercolumn}
+			<td>
+						</td>
+			{END STimeOut_fieldfootercolumn}
+			{BEGIN TimeIn_fieldfootercolumn}
+			<td>
+						</td>
+			{END TimeIn_fieldfootercolumn}
+			{BEGIN TimeOut_fieldfootercolumn}
+			<td>
+						</td>
+			{END TimeOut_fieldfootercolumn}
+			{BEGIN AfterBreakLogOut_fieldfootercolumn}
+			<td>
+						</td>
+			{END AfterBreakLogOut_fieldfootercolumn}
+			{BEGIN AfterBreakLog_fieldfootercolumn}
+			<td>
+						</td>
+			{END AfterBreakLog_fieldfootercolumn}
+			{BEGIN MisPunched_fieldfootercolumn}
+			<td>
+							{BEGIN MisPunched_showtotal}
+									Total:
+				{$MisPunched_total}
+				{END MisPunched_showtotal}
+			</td>
+			{END MisPunched_fieldfootercolumn}
+			{BEGIN RegWD_fieldfootercolumn}
+			<td>
+							{BEGIN RegWD_showtotal}
+									Total:
+				{$RegWD_total}
+				{END RegWD_showtotal}
+			</td>
+			{END RegWD_fieldfootercolumn}
+			{BEGIN DWork_fieldfootercolumn}
+			<td>
+							{BEGIN DWork_showtotal}
+									Total:
+				{$DWork_total}
+				{END DWork_showtotal}
+			</td>
+			{END DWork_fieldfootercolumn}
+			{BEGIN Absent_fieldfootercolumn}
+			<td>
+							{BEGIN Absent_showtotal}
+									Total:
+				{$Absent_total}
+				{END Absent_showtotal}
+			</td>
+			{END Absent_fieldfootercolumn}
+			{BEGIN LateMins_fieldfootercolumn}
+			<td>
+							{BEGIN LateMins_showtotal}
+									Total:
+				{$LateMins_total}
+				{END LateMins_showtotal}
+			</td>
+			{END LateMins_fieldfootercolumn}
+			{BEGIN UnderstimeMins_fieldfootercolumn}
+			<td>
+							{BEGIN UnderstimeMins_showtotal}
+									Total:
+				{$UnderstimeMins_total}
+				{END UnderstimeMins_showtotal}
+			</td>
+			{END UnderstimeMins_fieldfootercolumn}
+			{BEGIN BreakLateMins_fieldfootercolumn}
+			<td>
+							{BEGIN BreakLateMins_showtotal}
+									Total:
+				{$BreakLateMins_total}
+				{END BreakLateMins_showtotal}
+			</td>
+			{END BreakLateMins_fieldfootercolumn}
+			{BEGIN HolidayType_fieldfootercolumn}
+			<td>
+						</td>
+			{END HolidayType_fieldfootercolumn}
+			{BEGIN VL_fieldfootercolumn}
+			<td>
+							{BEGIN VL_showtotal}
+									Total:
+				{$VL_total}
+				{END VL_showtotal}
+			</td>
+			{END VL_fieldfootercolumn}
+			{BEGIN SL_fieldfootercolumn}
+			<td>
+							{BEGIN SL_showtotal}
+									Total:
+				{$SL_total}
+				{END SL_showtotal}
+			</td>
+			{END SL_fieldfootercolumn}
+			{BEGIN EL_fieldfootercolumn}
+			<td>
+							{BEGIN EL_showtotal}
+									Total:
+				{$EL_total}
+				{END EL_showtotal}
+			</td>
+			{END EL_fieldfootercolumn}
+			{BEGIN PL_fieldfootercolumn}
+			<td>
+							{BEGIN PL_showtotal}
+									Total:
+				{$PL_total}
+				{END PL_showtotal}
+			</td>
+			{END PL_fieldfootercolumn}
+			{BEGIN TrO_fieldfootercolumn}
+			<td>
+							{BEGIN TrO_showtotal}
+									Total:
+				{$TrO_total}
+				{END TrO_showtotal}
+			</td>
+			{END TrO_fieldfootercolumn}
+			{BEGIN RH_fieldfootercolumn}
+			<td>
+						</td>
+			{END RH_fieldfootercolumn}
+			{BEGIN SH_fieldfootercolumn}
+			<td>
+						</td>
+			{END SH_fieldfootercolumn}
+			{BEGIN DH_fieldfootercolumn}
+			<td>
+							{BEGIN DH_showtotal}
+									Total:
+				{$DH_total}
+				{END DH_showtotal}
+			</td>
+			{END DH_fieldfootercolumn}
+			{BEGIN RegRD_fieldfootercolumn}
+			<td>
+							{BEGIN RegRD_showtotal}
+									Total:
+				{$RegRD_total}
+				{END RegRD_showtotal}
+			</td>
+			{END RegRD_fieldfootercolumn}
+			{BEGIN EarlyMins_fieldfootercolumn}
+			<td>
+							{BEGIN EarlyMins_showtotal}
+									Count:
+				{$EarlyMins_total}
+				{END EarlyMins_showtotal}
+			</td>
+			{END EarlyMins_fieldfootercolumn}
+			{BEGIN PostMins_fieldfootercolumn}
+			<td>
+						</td>
+			{END PostMins_fieldfootercolumn}
+			{BEGIN TempOT_fieldfootercolumn}
+			<td>
+							{BEGIN TempOT_showtotal}
+									Total:
+				{$TempOT_total}
+				{END TempOT_showtotal}
+			</td>
+			{END TempOT_fieldfootercolumn}
+			{BEGIN ApprovedOT_fieldfootercolumn}
+			<td>
+						</td>
+			{END ApprovedOT_fieldfootercolumn}
+			{BEGIN AOTMins_fieldfootercolumn}
+			<td>
+							{BEGIN AOTMins_showtotal}
+									Total:
+				{$AOTMins_total}
+				{END AOTMins_showtotal}
+			</td>
+			{END AOTMins_fieldfootercolumn}
+			{BEGIN NDMins_fieldfootercolumn}
+			<td>
+							{BEGIN NDMins_showtotal}
+									Total:
+				{$NDMins_total}
+				{END NDMins_showtotal}
+			</td>
+			{END NDMins_fieldfootercolumn}
+			{BEGIN NDOTMins_fieldfootercolumn}
+			<td>
+							{BEGIN NDOTMins_showtotal}
+									Total:
+				{$NDOTMins_total}
+				{END NDOTMins_showtotal}
+			</td>
+			{END NDOTMins_fieldfootercolumn}
+			{BEGIN ApprovedNightDiff_fieldfootercolumn}
+			<td>
+						</td>
+			{END ApprovedNightDiff_fieldfootercolumn}
+			{BEGIN ANDiff_fieldfootercolumn}
+			<td>
+							{BEGIN ANDiff_showtotal}
+									Total:
+				{$ANDiff_total}
+				{END ANDiff_showtotal}
+			</td>
+			{END ANDiff_fieldfootercolumn}
+			{BEGIN ApprovedRD_fieldfootercolumn}
+			<td>
+						</td>
+			{END ApprovedRD_fieldfootercolumn}
+			{BEGIN RDMins_fieldfootercolumn}
+			<td>
+							{BEGIN RDMins_showtotal}
+									Total:
+				{$RDMins_total}
+				{END RDMins_showtotal}
+			</td>
+			{END RDMins_fieldfootercolumn}
+			{BEGIN RegOT_fieldfootercolumn}
+			<td>
+							{BEGIN RegOT_showtotal}
+									Total:
+				{$RegOT_total}
+				{END RegOT_showtotal}
+			</td>
+			{END RegOT_fieldfootercolumn}
+			{BEGIN RHOT_fieldfootercolumn}
+			<td>
+							{BEGIN RHOT_showtotal}
+									Total:
+				{$RHOT_total}
+				{END RHOT_showtotal}
+			</td>
+			{END RHOT_fieldfootercolumn}
+			{BEGIN SHOT_fieldfootercolumn}
+			<td>
+							{BEGIN SHOT_showtotal}
+									Total:
+				{$SHOT_total}
+				{END SHOT_showtotal}
+			</td>
+			{END SHOT_fieldfootercolumn}
+			{BEGIN SHOTD_fieldfootercolumn}
+			<td>
+							{BEGIN SHOTD_showtotal}
+									Total:
+				{$SHOTD_total}
+				{END SHOTD_showtotal}
+			</td>
+			{END SHOTD_fieldfootercolumn}
+			{BEGIN RDOT_fieldfootercolumn}
+			<td>
+							{BEGIN RDOT_showtotal}
+									Total:
+				{$RDOT_total}
+				{END RDOT_showtotal}
+			</td>
+			{END RDOT_fieldfootercolumn}
+			{BEGIN DHOT_fieldfootercolumn}
+			<td>
+							{BEGIN DHOT_showtotal}
+									Total:
+				{$DHOT_total}
+				{END DHOT_showtotal}
+			</td>
+			{END DHOT_fieldfootercolumn}
+			{BEGIN NDOT_fieldfootercolumn}
+			<td>
+							{BEGIN NDOT_showtotal}
+									Total:
+				{$NDOT_total}
+				{END NDOT_showtotal}
+			</td>
+			{END NDOT_fieldfootercolumn}
+			{BEGIN RegND_fieldfootercolumn}
+			<td>
+							{BEGIN RegND_showtotal}
+									Total:
+				{$RegND_total}
+				{END RegND_showtotal}
+			</td>
+			{END RegND_fieldfootercolumn}
+			{BEGIN RHND_fieldfootercolumn}
+			<td>
+							{BEGIN RHND_showtotal}
+									Total:
+				{$RHND_total}
+				{END RHND_showtotal}
+			</td>
+			{END RHND_fieldfootercolumn}
+			{BEGIN SHND_fieldfootercolumn}
+			<td>
+							{BEGIN SHND_showtotal}
+									Total:
+				{$SHND_total}
+				{END SHND_showtotal}
+			</td>
+			{END SHND_fieldfootercolumn}
+			{BEGIN DHND_fieldfootercolumn}
+			<td>
+							{BEGIN DHND_showtotal}
+									Total:
+				{$DHND_total}
+				{END DHND_showtotal}
+			</td>
+			{END DHND_fieldfootercolumn}
+			{BEGIN RDND_fieldfootercolumn}
+			<td>
+							{BEGIN RDND_showtotal}
+									Total:
+				{$RDND_total}
+				{END RDND_showtotal}
+			</td>
+			{END RDND_fieldfootercolumn}
+			{BEGIN RHNDOT_fieldfootercolumn}
+			<td>
+							{BEGIN RHNDOT_showtotal}
+									Total:
+				{$RHNDOT_total}
+				{END RHNDOT_showtotal}
+			</td>
+			{END RHNDOT_fieldfootercolumn}
+			{BEGIN SHNDOT_fieldfootercolumn}
+			<td>
+							{BEGIN SHNDOT_showtotal}
+									Total:
+				{$SHNDOT_total}
+				{END SHNDOT_showtotal}
+			</td>
+			{END SHNDOT_fieldfootercolumn}
+			{BEGIN DHNDOT_fieldfootercolumn}
+			<td>
+							{BEGIN DHNDOT_showtotal}
+									Total:
+				{$DHNDOT_total}
+				{END DHNDOT_showtotal}
+			</td>
+			{END DHNDOT_fieldfootercolumn}
+			{BEGIN RDNDOT_fieldfootercolumn}
+			<td>
+							{BEGIN RDNDOT_showtotal}
+									Total:
+				{$RDNDOT_total}
+				{END RDNDOT_showtotal}
+			</td>
+			{END RDNDOT_fieldfootercolumn}
+			{BEGIN RHRD_fieldfootercolumn}
+			<td>
+							{BEGIN RHRD_showtotal}
+									Total:
+				{$RHRD_total}
+				{END RHRD_showtotal}
+			</td>
+			{END RHRD_fieldfootercolumn}
+			{BEGIN SHRD_fieldfootercolumn}
+			<td>
+							{BEGIN SHRD_showtotal}
+									Total:
+				{$SHRD_total}
+				{END SHRD_showtotal}
+			</td>
+			{END SHRD_fieldfootercolumn}
+			{BEGIN DHRD_fieldfootercolumn}
+			<td>
+							{BEGIN DHRD_showtotal}
+									Total:
+				{$DHRD_total}
+				{END DHRD_showtotal}
+			</td>
+			{END DHRD_fieldfootercolumn}
+			{BEGIN RHRDOT_fieldfootercolumn}
+			<td>
+							{BEGIN RHRDOT_showtotal}
+									Total:
+				{$RHRDOT_total}
+				{END RHRDOT_showtotal}
+			</td>
+			{END RHRDOT_fieldfootercolumn}
+			{BEGIN SHRDOT_fieldfootercolumn}
+			<td>
+							{BEGIN SHRDOT_showtotal}
+									Total:
+				{$SHRDOT_total}
+				{END SHRDOT_showtotal}
+			</td>
+			{END SHRDOT_fieldfootercolumn}
+			{BEGIN SHRDOTD_fieldfootercolumn}
+			<td>
+							{BEGIN SHRDOTD_showtotal}
+									Total:
+				{$SHRDOTD_total}
+				{END SHRDOTD_showtotal}
+			</td>
+			{END SHRDOTD_fieldfootercolumn}
+			{BEGIN DHRDOT_fieldfootercolumn}
+			<td>
+							{BEGIN DHRDOT_showtotal}
+									Total:
+				{$DHRDOT_total}
+				{END DHRDOT_showtotal}
+			</td>
+			{END DHRDOT_fieldfootercolumn}
+			{BEGIN RHRDND_fieldfootercolumn}
+			<td>
+							{BEGIN RHRDND_showtotal}
+									Total:
+				{$RHRDND_total}
+				{END RHRDND_showtotal}
+			</td>
+			{END RHRDND_fieldfootercolumn}
+			{BEGIN SHRDND_fieldfootercolumn}
+			<td>
+							{BEGIN SHRDND_showtotal}
+									Total:
+				{$SHRDND_total}
+				{END SHRDND_showtotal}
+			</td>
+			{END SHRDND_fieldfootercolumn}
+			{BEGIN DHRDND_fieldfootercolumn}
+			<td>
+							{BEGIN DHRDND_showtotal}
+									Total:
+				{$DHRDND_total}
+				{END DHRDND_showtotal}
+			</td>
+			{END DHRDND_fieldfootercolumn}
+			{BEGIN RHRDNDOT_fieldfootercolumn}
+			<td>
+							{BEGIN RHRDNDOT_showtotal}
+									Total:
+				{$RHRDNDOT_total}
+				{END RHRDNDOT_showtotal}
+			</td>
+			{END RHRDNDOT_fieldfootercolumn}
+			{BEGIN SHRDNDOT_fieldfootercolumn}
+			<td>
+							{BEGIN SHRDNDOT_showtotal}
+									Total:
+				{$SHRDNDOT_total}
+				{END SHRDNDOT_showtotal}
+			</td>
+			{END SHRDNDOT_fieldfootercolumn}
+			{BEGIN DHRDNDOT_fieldfootercolumn}
+			<td>
+							{BEGIN DHRDNDOT_showtotal}
+									Total:
+				{$DHRDNDOT_total}
+				{END DHRDNDOT_showtotal}
+			</td>
+			{END DHRDNDOT_fieldfootercolumn}
+			{BEGIN Rlink_fieldfootercolumn}
+			<td>
+						</td>
+			{END Rlink_fieldfootercolumn}
+			{BEGIN endrecordtotals_block}
+			<td class="rnr-cs"></td>
+			{END endrecordtotals_block}
+		{END totals_record}
+		</tr>
+	</tfoot>
+{END totals_row}
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

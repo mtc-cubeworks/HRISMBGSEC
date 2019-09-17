@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD> 
+
+<META http-equiv="X-UA-Compatible" content="IE=Edge"> 
+<META name="viewport" content="width=device-width, initial-scale=1.0"> 
+<TITLE>{$pagetitle}</TITLE> 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<LINK href="styles/default.css" rel="stylesheet" type="text/css"> {BEGIN rtlCSS}<LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">{END rtlCSS} {BEGIN styleCSSFiles}<LINK href="{$stylepath}" rel="stylesheet" type="text/css">{END styleCSSFiles} 
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001">     
+</HEAD> 
+<BODY class="{$stylename} function-list" {$bodyattrs}>{BEGIN body}
+
+<STYLE>
+{$containerCss}
+</STYLE>
+ 
+<DIV class="sidebar bs-fixed clearfix mCustomScrollbar" data-mcs-theme="minimal-dark" {$blockattr_left}>
+<DIV class="sidebar-contents mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside">
+{BEGIN container_logo}<DIV class="bs-sidebarlogo" data-container="logo" data-pageid="{$pageid}" {$logo_chiddenattr}>{BEGIN logo_block}<A class="navbar-brand" href="{$home_link}" data-brick="logo" data-pageid="{$pageid}" {$logo_hiddenattr}>{$logo}</A> {END logo_block}</DIV>
+{END container_logo}{BEGIN container_hdr}<DIV class="navbar-default clearfix" data-container="hdr" data-pageid="{$pageid}" {$hdr_chiddenattr}>{BEGIN collapse_block}<BUTTON class="navbar-toggle collapsed" type="button" data-brick="bsnavbarcollapse" data-pageid="{$pageid}" data-target=".bs-navcontrolled" data-runner-toggle="collapse" {$bsnavbarcollapse_hiddenattr}><SPAN class="sr-only">Toggle 
+ navigation</SPAN>	<SPAN class="icon-bar"></SPAN></BUTTON>	{END collapse_block}</DIV>
+{END container_hdr}{BEGIN container_sidemenu}<DIV class="bs-navform navbar-collapse sidebar-menu bs-hidden-xs bs-navcontrolled" aria-expanded="false" data-container="sidemenu" data-pageid="{$pageid}" {$sidemenu_chiddenattr}>{BEGIN menu_block}
+{$menu main}{END menu_block}</DIV>
+{END container_sidemenu}{BEGIN container_left}<DIV class="sidebar-container" data-container="left" data-pageid="{$pageid}" {$left_chiddenattr}>
+{BEGIN searchPanel}<DIV class="searchOptions panel panel-primary searchPanelContainer" data-brick="searchpanel" data-pageid="{$pageid}" {$searchpanel_hiddenattr} {$srchOpt_attrs}><!-- Search panel content --> 
+<DIV class="panel-heading">
+<DIV class="btn-group" id="addSearchFieldButton{$id}"><BUTTON class="btn btn-default dropdown-toggle" id="showHideControlChooseMenu{$id}" aria-expanded="false" aria-haspopup="true" type="button" data-toggle="dropdown">	Search in <SPAN class="caret"></SPAN> </BUTTON> </DIV> 
+<DIV class="btn-group searchpanel-options" id="searchPanelOptions{$id}"><BUTTON class="btn btn-default dropdown-toggle" aria-expanded="false" aria-haspopup="true" type="button" data-toggle="dropdown"><SPAN class="glyphicon glyphicon glyphicon-option-vertical"></SPAN> 
+</BUTTON> 
+<UL class="dropdown-menu dropdown-left">
+  <LI id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><A>Show options</A></LI>
+  <LI class="divider" role="separator"></LI>
+  <LI class="srchCritTop" style="display: none;"><A><INPUT name="srchType{$id}" id="radioAll" type="radio" {$all_checkbox}><LABEL for="radioAll"><SPAN class="glyphicon">&nbsp;</SPAN>all 
+    conditions</LABEL></A></LI>
+  <LI class="srchCritTop" style="display: none;"><A><INPUT name="srchType{$id}" id="radioAny" type="radio" {$any_checkbox}><LABEL for="radioAny"><SPAN class="glyphicon">&nbsp;</SPAN>any 
+    condition</LABEL></A></LI>
+  <LI class="divider" role="separator"></LI>
+  <LI><A class="close-button"><SPAN class="glyphicon glyphicon-remove">&nbsp;</SPAN>hide</A></LI></UL></DIV></DIV>
+<DIV class="panel-body controlsBlock" {$bottomSearchButt_attrs}>
+{BEGIN searchCtrlBlock}<DIV class="srchPanelRow form-group" {$filterRow_attrs}><LABEL>
+{$fLabel}</LABEL>	{$delCtrlButt} 
+<SPAN class="rnr-searchtype">
+{$searchtype}</SPAN> <SPAN class="rnr-searchcontrol">
+{$searchcontrol}</SPAN> <SPAN class="rnr-searchcontrol">
+{$searchcontrol1}</SPAN> </DIV>{END searchCtrlBlock}</DIV>
+<DIV class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}><BUTTON class="btn btn-primary" id="searchButton{$id}" {$searchbutton_attrs}>Search</BUTTON> <BUTTON class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}>	Show all </BUTTON> 
+</DIV></DIV>{END searchPanel}</DIV>{END container_left}</DIV></DIV>
+<DIV class="bs-wrapper">
+<DIV class="bs-fixedheader" id="fixedheader{$id}">{BEGIN container_menu}<NAV class="navbar navbar-default bs-fullwidth-navbar" data-container="menu" data-pageid="{$pageid}" {$menu_chiddenattr}>
+{BEGIN container_bc}<DIV class="navbar-form navbar-left" data-container="bc" data-pageid="{$pageid}" {$bc_chiddenattr}>
+{BEGIN breadcrumbs}<OL class="breadcrumb">
+  <LI><A href="{$home_link}"><SPAN class="glyphicon glyphicon-home"></SPAN></A> 
+  {$crumb_dropdown}</LI> 
+  {BEGIN crumb}<LI class="{$crumb_item_class}"> {BEGIN crumb_title_link}<A {$crumb_attrs}>
+  {$crumb_title}</A> {END crumb_title_link}{BEGIN crumb_title_span}<SPAN {$crumb_attrs}>
+  {$crumb_title}</SPAN>	
+  {END crumb_title_span}{$crumb_dropdown} </LI> {END crumb}</OL>{END breadcrumbs}</DIV>
+{END container_bc}{BEGIN container_menu_1}<DIV class="bs-navform navbar-collapse bs-hidden-xs bs-navcontrolled" aria-expanded="false" data-container="menu_1" data-pageid="{$pageid}" {$menu_1_chiddenattr}>
+{BEGIN container_more}<DIV class="navbar-right navbar-form" data-container="more" data-pageid="{$pageid}" {$more_chiddenattr}>
+{BEGIN more_list}<DIV class="btn-group bs-navsection" data-brick="morebutton" data-pageid="{$pageid}" {$morebutton_hiddenattr}><BUTTON class="btn btn-default dropdown-toggle" aria-expanded="false" aria-haspopup="true" type="button" data-toggle="dropdown"><SPAN class="glyphicon glyphicon-cog"></SPAN> <SPAN class="caret"></SPAN> </BUTTON> 
+<UL class="dropdown-menu">
+  {BEGIN exportselected_link}<LI class="massButton{$id} disabled"><A href="#" {$exportselectedlink_attrs} {$exportselectedlink_span}>Export 
+    selected</A></LI>
+  {END exportselected_link}{BEGIN deleteselected_link}<LI class="massButton{$id} disabled"><A href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>Delete 
+    selected</A></LI>
+  {END deleteselected_link}<LI class="divider" role="separator"></LI>
+  {BEGIN asearch_link}<LI><A href="otndrdglobal1_search.php" {$advsearchlink_attrs}>Advanced search</A></LI>
+  {END asearch_link}{BEGIN searchPanelTopButtons}<LI><A id="showOptPanel{$id}" href="#">Show search panel</A></LI>
+  {END searchPanelTopButtons}<LI class="divider" role="separator"></LI>
+  {BEGIN export_link}<LI><A href="otndrdglobal1_export.php" target="_blank" {$exportlink_attrs}>Export   
+  results</A></LI>{END export_link}</UL></DIV> {END more_list}{BEGIN security_block}<SPAN class="bs-navsection" id="login_block{$id}" data-brick="loggedas" data-pageid="{$pageid}" {$loggedas_hiddenattr}>{BEGIN guestloginbutton}<BUTTON class="btn btn-info" type="button" {$guestloginlink_attrs}>Login</BUTTON> {END guestloginbutton}{BEGIN loggedas_message}<SPAN class="dropdown"><BUTTON class="btn btn-info dropdown-toggle" aria-expanded="false" aria-haspopup="true" type="button" data-toggle="dropdown"><SPAN class="glyphicon glyphicon-user"></SPAN>	
+{$username}</BUTTON> 
+<UL class="dropdown-menu">
+  {BEGIN logoutbutton}<LI><A href="#" {$logoutlink_attrs}>Log out</A></LI>
+  {END logoutbutton}{BEGIN adminarea_link}<LI><A href="admin_rights_list.php" {$adminarealink_attrs}>Admin 
+ Area</A></LI>{END adminarea_link}</UL></SPAN> {END loggedas_message}</SPAN> {END security_block}</DIV>
+{END container_more}{BEGIN container_more_1}<DIV class="navbar-right navbar-form" data-container="more_1" data-pageid="{$pageid}" {$more_1_chiddenattr}>{BEGIN searchform_block}<SPAN class="form-group" data-brick="search" data-pageid="{$pageid}" {$search_hiddenattr}>
+<DIV class="input-group">{BEGIN searchform_text}<INPUT class="form-control" type="search" size="25" {$searchfor_attrs}>{END searchform_text} 
+<SPAN class="input-group-btn">{BEGIN searchform_showall}<BUTTON title="Show all" class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}><SPAN class="glyphicon glyphicon-remove"></SPAN> </BUTTON> {END searchform_showall}{BEGIN searchform_search}<BUTTON class="btn btn-primary" {$searchbutton_attrs}><SPAN class="glyphicon glyphicon-search"></SPAN> 
+</BUTTON> {END searchform_search}</SPAN> </DIV> </SPAN> {END searchform_block}</DIV>{END container_more_1}</DIV>{END container_menu_1}</NAV>{END container_menu}</DIV>
+<DIV class="container-fluid bs-underheader bs-fixedsidebarmain" id="underheader{$id}">
+{$header} 
+<DIV class="bs-sidebar-screenbound">
+{BEGIN container_gridcontrols}<DIV class="bs-navcontrolled bs-hidden-xs" data-container="gridcontrols" data-pageid="{$pageid}" {$gridcontrols_chiddenattr}>
+{BEGIN container_add_delete}<DIV class="bottom-margin col-md-6" data-container="add_delete" data-pageid="{$pageid}" {$add_delete_chiddenattr}>{BEGIN newrecord_controls_block}{BEGIN add_link}<A class="btn btn-primary" type="button" data-brick="add" data-pageid="{$pageid}" {$add_hiddenattr} {$addlink_attrs}>Add new</A> 
+{END add_link}{END newrecord_controls_block}{BEGIN record_controls_block}<SPAN data-brick="recordcontrol" data-pageid="{$pageid}" {$recordcontrol_hiddenattr}>{BEGIN deleteselected_link}<BUTTON disabled class="btn btn-default" type="button" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>Delete</BUTTON> {END deleteselected_link}</SPAN> {END record_controls_block}</DIV>
+{END container_add_delete}{BEGIN container_gridinfo}<DIV class="bottom-margin text-right col-md-6" data-container="gridinfo" data-pageid="{$pageid}" {$gridinfo_chiddenattr}>{BEGIN details_found}<SPAN class="form-inline form-inline-always" data-brick="details_found" data-pageid="{$pageid}" {$details_found_hiddenattr}>
+{$records_indicator} <SPAN>{BEGIN recordspp_block}
+{$recsPerPage}{END recordspp_block} </SPAN> </SPAN> {END details_found}{BEGIN print_friendly}<SPAN class="bs-printpanel" id="printpanelblock{$id}" data-brick="printpanel" data-pageid="{$pageid}" {$printpanel_hiddenattr}><BUTTON title="Print-friendly page" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><SPAN class="glyphicon glyphicon-print"></SPAN> <SPAN class="caret"></SPAN> </BUTTON> 
+<UL class="dropdown-menu pull-right">
+  <LI>
+  <DIV class="container-fluid" id="print_friendly_scope{$id}">
+  <DIV class="row">
+  <DIV class="col-md-4">Scope:</DIV>
+  {BEGIN print_friendly_all}<DIV class="col-md-8"><LABEL for="printAll{$id}"><INPUT name="printScope" id="printAll{$id}" type="radio" data-href="otndrdglobal1_print.php?all=1&amp;{$crosstable_attrs}">	Print 
+    all pages </LABEL> </DIV>{END print_friendly_all}</DIV>
+  <DIV class="row">
+  <DIV class="col-md-4">&nbsp;</DIV>
+  <DIV class="col-md-8"><LABEL for="printPage{$id}"><INPUT name="printScope" id="printPage{$id}" type="radio" checked data-href="otndrdglobal1_print.php?{$crosstable_attrs}">	Print 
+    this page </LABEL> </DIV></DIV>
+  <DIV class="row">
+  <DIV class="col-md-4">&nbsp;</DIV>
+  <DIV class="col-md-8"><LABEL style="color: gray;" 
+  for="printSelection{$id}"><INPUT name="printScope" disabled="disabled" id="printSelection{$id}" type="radio">	Print selected </LABEL> </DIV></DIV></DIV></LI>
+  <LI class="divider" role="separator"></LI>
+  <LI>
+  <DIV class="rnr-printdetails"><LABEL for="printPerPage{$id}">	Records Per   
+  Page: </LABEL> 
+<INPUT class="rnr-printrecspp" id="printPerPage{$id}" type="number" value="{$print_recspp}">	</DIV></LI>
+  <LI class="divider" role="separator"></LI>
+  <LI class="rnr-printbutton"><BUTTON class="btn btn-primary" id="print_friendly_button{$id}" type="button">Print</BUTTON>	</LI></UL></SPAN> {END print_friendly}</DIV>{END container_gridinfo}</DIV>{END container_gridcontrols}</DIV>
+<DIV></DIV>
+<DIV class="bs-sidebar-screenbound bs-minwidth">
+{BEGIN container_tabs}<DIV class=" " data-container="tabs" data-pageid="{$pageid}" {$tabs_chiddenattr}>
+{BEGIN grid_tabs}<DIV data-brick="bsgrid_tabs" data-pageid="{$pageid}" {$bsgrid_tabs_hiddenattr}>
+<UL class="nav nav-tabs">
+  {$grid_tabs_content} </UL></DIV>{END grid_tabs}</DIV>
+{END container_tabs}{BEGIN container_message}<DIV class=" " data-container="message" data-pageid="{$pageid}" {$message_chiddenattr}>
+{BEGIN message_block}<DIV class="alert {$message_class}" role="alert" data-brick="message" data-pageid="{$pageid}" {$message_hiddenattr}>
+{$message}</DIV>{END message_block}</DIV>
+{END container_message}{BEGIN container_center}<DIV class=" " data-container="center" data-pageid="{$pageid}" {$center_chiddenattr}>
+{BEGIN container_grid}<DIV class="bs-grid" data-container="grid" data-pageid="{$pageid}" {$grid_chiddenattr}>{BEGIN grid_block}
+<STYLE>
+	.bs-gridcell[data-field=GAID]:before {
+		content: "{$label otndrdglobal1 GAID}";
+	}
+	.bs-gridcell[data-field=ApprovedOT]:before {
+		content: "{$label otndrdglobal1 ApprovedOT}";
+	}
+	.bs-gridcell[data-field=EarlyOT]:before {
+		content: "{$label otndrdglobal1 EarlyOT}";
+	}
+	.bs-gridcell[data-field=PostOT]:before {
+		content: "{$label otndrdglobal1 PostOT}";
+	}
+	.bs-gridcell[data-field=OTGreaterThan]:before {
+		content: "{$label otndrdglobal1 OTGreaterThan}";
+	}
+	.bs-gridcell[data-field=ApprovedND]:before {
+		content: "{$label otndrdglobal1 ApprovedND}";
+	}
+	.bs-gridcell[data-field=NDGreaterThan]:before {
+		content: "{$label otndrdglobal1 NDGreaterThan}";
+	}
+	.bs-gridcell[data-field=ApprovedRD]:before {
+		content: "{$label otndrdglobal1 ApprovedRD}";
+	}
+	.bs-gridcell[data-field=RDGreaterThan]:before {
+		content: "{$label otndrdglobal1 RDGreaterThan}";
+	}
+	.bs-gridcell[data-field=FiledOTOnly]:before {
+		content: "{$label otndrdglobal1 FiledOTOnly}";
+	}
+	.bs-gridcell[data-field=OTMinimum]:before {
+		content: "{$label otndrdglobal1 OTMinimum}";
+	}
+	.bs-gridcell[data-field=NDMinimum]:before {
+		content: "{$label otndrdglobal1 NDMinimum}";
+	}
+	.bs-gridcell[data-field=RDMinimum]:before {
+		content: "{$label otndrdglobal1 RDMinimum}";
+	}
+	.bs-gridcell[data-field=Employee]:before {
+		content: "{$label otndrdglobal1 Employee}";
+	}
+</STYLE>
+ 
+<TABLE class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" style="width: 1875px;" cellpadding="0" data-brick="grid" data-pageid="{$pageid}" {$grid_hiddenattr}>
+  <THEAD>{BEGIN grid_header}
+  <TR class="rnr-toprow {$gridHeader_class}">{BEGIN record_header}
+    {BEGIN listIcons_column}<TH style="width: 49px;" rowspan="1" colspan="1" ieditcont="all">&nbsp;</TH>{END listIcons_column} 
+    {BEGIN checkbox_column}<TH style="width: 30px;" rowspan="1" colspan="1"><INPUT type="checkbox" {$checkboxheader_attrs}> </TH>
+    {END checkbox_column}{BEGIN GAID_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$GAID_class}" style="width: 81px;" rowspan="1" colspan="1" data-field="GAID">{BEGIN GAID_fieldheader}<SPAN {$GAID_orderlinkattrs}>
+      {$label otndrdglobal1 GAID} 
+      </SPAN> {END GAID_fieldheader}</TH>
+    {END GAID_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$GAID_class} runner-cc"></TH>
+    {BEGIN Employee_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Employee_class}" style="width: 109px;" rowspan="1" colspan="1" data-field="Employee">{BEGIN Employee_fieldheader}<SPAN {$Employee_orderlinkattrs}>
+      {$label otndrdglobal1 Employee} 
+      </SPAN> {END Employee_fieldheader}</TH>
+    {END Employee_fieldheadercolumn}{BEGIN ApprovedOT_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$ApprovedOT_class}" style="width: 126px;" rowspan="1" colspan="1" data-field="ApprovedOT">{BEGIN ApprovedOT_fieldheader}<SPAN {$ApprovedOT_orderlinkattrs}>
+      {$label otndrdglobal1 ApprovedOT} </SPAN> {END ApprovedOT_fieldheader}</TH>
+    {END ApprovedOT_fieldheadercolumn}{BEGIN FiledOTOnly_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$FiledOTOnly_class}" style="width: 125px;" rowspan="1" colspan="1" data-field="FiledOTOnly">{BEGIN FiledOTOnly_fieldheader}<SPAN {$FiledOTOnly_orderlinkattrs}>
+      {$label otndrdglobal1 FiledOTOnly} </SPAN> {END FiledOTOnly_fieldheader}</TH>
+    {END FiledOTOnly_fieldheadercolumn}{BEGIN EarlyOT_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$EarlyOT_class}" style="width: 98px;" rowspan="1" colspan="1" data-field="EarlyOT">{BEGIN EarlyOT_fieldheader}<SPAN {$EarlyOT_orderlinkattrs}>
+      {$label otndrdglobal1 EarlyOT} </SPAN> {END EarlyOT_fieldheader}</TH>
+    {END EarlyOT_fieldheadercolumn}{BEGIN PostOT_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$PostOT_class}" style="width: 94px;" rowspan="1" colspan="1" data-field="PostOT">{BEGIN PostOT_fieldheader}<SPAN {$PostOT_orderlinkattrs}>
+      {$label otndrdglobal1 PostOT} </SPAN> {END PostOT_fieldheader}</TH>
+    {END PostOT_fieldheadercolumn}{BEGIN OTGreaterThan_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$OTGreaterThan_class}" style="width: 173px;" rowspan="1" colspan="1" data-field="OTGreaterThan">{BEGIN OTGreaterThan_fieldheader}<SPAN {$OTGreaterThan_orderlinkattrs}>
+      {$label otndrdglobal1 OTGreaterThan} </SPAN> {END OTGreaterThan_fieldheader}</TH>
+    {END OTGreaterThan_fieldheadercolumn}{BEGIN OTMinimum_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$OTMinimum_class}" style="width: 123px;" rowspan="1" colspan="1" data-field="OTMinimum">{BEGIN OTMinimum_fieldheader}<SPAN {$OTMinimum_orderlinkattrs}>
+      {$label otndrdglobal1 OTMinimum} </SPAN> {END OTMinimum_fieldheader}</TH>
+    {END OTMinimum_fieldheadercolumn}{BEGIN ApprovedND_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$ApprovedND_class}" style="width: 127px;" rowspan="1" colspan="1" data-field="ApprovedND">{BEGIN ApprovedND_fieldheader}<SPAN {$ApprovedND_orderlinkattrs}>
+      {$label otndrdglobal1 ApprovedND} </SPAN> {END ApprovedND_fieldheader}</TH>
+    {END ApprovedND_fieldheadercolumn}{BEGIN NDGreaterThan_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$NDGreaterThan_class}" style="width: 174px;" rowspan="1" colspan="1" data-field="NDGreaterThan">{BEGIN NDGreaterThan_fieldheader}<SPAN {$NDGreaterThan_orderlinkattrs}>
+      {$label otndrdglobal1 NDGreaterThan} </SPAN> {END NDGreaterThan_fieldheader}</TH>
+    {END NDGreaterThan_fieldheadercolumn}{BEGIN NDMinimum_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$NDMinimum_class}" style="width: 124px;" rowspan="1" colspan="1" data-field="NDMinimum">{BEGIN NDMinimum_fieldheader}<SPAN {$NDMinimum_orderlinkattrs}>
+      {$label otndrdglobal1 NDMinimum} </SPAN> {END NDMinimum_fieldheader}</TH>
+    {END NDMinimum_fieldheadercolumn}{BEGIN ApprovedRD_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$ApprovedRD_class}" style="width: 127px;" rowspan="1" colspan="1" data-field="ApprovedRD">{BEGIN ApprovedRD_fieldheader}<SPAN {$ApprovedRD_orderlinkattrs}>
+      {$label otndrdglobal1 ApprovedRD} </SPAN> {END ApprovedRD_fieldheader}</TH>
+    {END ApprovedRD_fieldheadercolumn}{BEGIN RDGreaterThan_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$RDGreaterThan_class}" style="width: 170px;" rowspan="1" colspan="1" data-field="RDGreaterThan">{BEGIN RDGreaterThan_fieldheader}<SPAN {$RDGreaterThan_orderlinkattrs}>
+      {$label otndrdglobal1 RDGreaterThan} </SPAN> {END RDGreaterThan_fieldheader}</TH>
+    {END RDGreaterThan_fieldheadercolumn}{BEGIN RDMinimum_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$RDMinimum_class}" style="width: 124px;" rowspan="1" colspan="1" data-field="RDMinimum">{BEGIN RDMinimum_fieldheader}<SPAN {$RDMinimum_orderlinkattrs}>
+      {$label otndrdglobal1 RDMinimum} </SPAN> {END RDMinimum_fieldheader}</TH>
+    {END RDMinimum_fieldheadercolumn}{BEGIN endrecordheader_block}<TH class="rnr-cs" style="width: 21px;" rowspan="1" colspan="1">&nbsp;</TH>{END endrecordheader_block}{END record_header}</TR>{END grid_header}</THEAD>
+  <TBODY>
+  {BEGIN grid_row}<TR class="{$rowclass} bs-gridrow" {$rowattrs} {$rowstyle}>{BEGIN grid_record}
+    {BEGIN listIcons_column}<TD class="bs-gridicons" style="width: 49px;" rowspan="1" colspan="1" ieditcont="all" {$rowstyle} {$recordattrs}>{BEGIN edit_column}{BEGIN edit_link}<A title="Edit" class="glyphicon glyphicon-pencil" {$editlink_attrs}></A> 
+      {END edit_link}{END edit_column}<SPAN data-hidden {$ieditbuttonsholder_attrs}></SPAN> {BEGIN view_column}{BEGIN view_link}<A title="View" class="glyphicon glyphicon-search" {$viewlink_attrs}></A> 
+    {END view_link}{END view_column}</TD>
+    {END listIcons_column}{BEGIN checkbox_column}<TD class="bs-gridcheckbox" style="width: 30px;" rowspan="1" colspan="1" ieditcont="checkBox" {$rowstyle} {$recordattrs}>{BEGIN checkbox}<INPUT type="checkbox" {$checkbox_attrs}>{END checkbox} 
+    </TD>
+    {END checkbox_column}{BEGIN GAID_fieldcolumn}<TD class="bs-gridcell {$GAID_class}" style="width: 81px;" rowspan="1" colspan="1" data-field="GAID" {$rowstyle} {$recordattrs}>
+      {$GAID_value} </TD>
+    {END GAID_fieldcolumn}<TD class="bs-gridcell {$GAID_class} runner-cc" rowspan="1" colspan="1"><A class="rnr-button btn btn-default" id="Process_Approval2" href="#" typeid="ib">Process Approval</A></TD>
+    {BEGIN Employee_fieldcolumn}<TD class="bs-gridcell {$Employee_class}" style="width: 109px;" rowspan="1" colspan="1" data-field="Employee" {$rowstyle} {$recordattrs}>
+      {$Employee_value} </TD>
+    {END Employee_fieldcolumn}{BEGIN ApprovedOT_fieldcolumn}<TD class="bs-gridcell {$ApprovedOT_class}" style="width: 126px;" rowspan="1" colspan="1" data-field="ApprovedOT" {$rowstyle} {$recordattrs}>
+      {$ApprovedOT_value} </TD>
+    {END ApprovedOT_fieldcolumn}{BEGIN FiledOTOnly_fieldcolumn}<TD class="bs-gridcell {$FiledOTOnly_class}" style="width: 125px;" rowspan="1" colspan="1" data-field="FiledOTOnly" {$rowstyle} {$recordattrs}>
+      {$FiledOTOnly_value} </TD>
+    {END FiledOTOnly_fieldcolumn}{BEGIN EarlyOT_fieldcolumn}<TD class="bs-gridcell {$EarlyOT_class}" style="width: 98px;" rowspan="1" colspan="1" data-field="EarlyOT" {$rowstyle} {$recordattrs}>
+      {$EarlyOT_value} </TD>
+    {END EarlyOT_fieldcolumn}{BEGIN PostOT_fieldcolumn}<TD class="bs-gridcell {$PostOT_class}" style="width: 94px;" rowspan="1" colspan="1" data-field="PostOT" {$rowstyle} {$recordattrs}>
+      {$PostOT_value} </TD>
+    {END PostOT_fieldcolumn}{BEGIN OTGreaterThan_fieldcolumn}<TD class="bs-gridcell {$OTGreaterThan_class}" style="width: 173px;" rowspan="1" colspan="1" data-field="OTGreaterThan" {$rowstyle} {$recordattrs}>
+      {$OTGreaterThan_value} </TD>
+    {END OTGreaterThan_fieldcolumn}{BEGIN OTMinimum_fieldcolumn}<TD class="bs-gridcell {$OTMinimum_class}" style="width: 123px;" rowspan="1" colspan="1" data-field="OTMinimum" {$rowstyle} {$recordattrs}>
+      {$OTMinimum_value} </TD>
+    {END OTMinimum_fieldcolumn}{BEGIN ApprovedND_fieldcolumn}<TD class="bs-gridcell {$ApprovedND_class}" style="width: 127px;" rowspan="1" colspan="1" data-field="ApprovedND" {$rowstyle} {$recordattrs}>
+      {$ApprovedND_value} </TD>
+    {END ApprovedND_fieldcolumn}{BEGIN NDGreaterThan_fieldcolumn}<TD class="bs-gridcell {$NDGreaterThan_class}" style="width: 174px;" rowspan="1" colspan="1" data-field="NDGreaterThan" {$rowstyle} {$recordattrs}>
+      {$NDGreaterThan_value} </TD>
+    {END NDGreaterThan_fieldcolumn}{BEGIN NDMinimum_fieldcolumn}<TD class="bs-gridcell {$NDMinimum_class}" style="width: 124px;" rowspan="1" colspan="1" data-field="NDMinimum" {$rowstyle} {$recordattrs}>
+      {$NDMinimum_value} </TD>
+    {END NDMinimum_fieldcolumn}{BEGIN ApprovedRD_fieldcolumn}<TD class="bs-gridcell {$ApprovedRD_class}" style="width: 127px;" rowspan="1" colspan="1" data-field="ApprovedRD" {$rowstyle} {$recordattrs}>
+      {$ApprovedRD_value} </TD>
+    {END ApprovedRD_fieldcolumn}{BEGIN RDGreaterThan_fieldcolumn}<TD class="bs-gridcell {$RDGreaterThan_class}" style="width: 170px;" rowspan="1" colspan="1" data-field="RDGreaterThan" {$rowstyle} {$recordattrs}>
+      {$RDGreaterThan_value} </TD>
+    {END RDGreaterThan_fieldcolumn}{BEGIN RDMinimum_fieldcolumn}<TD class="bs-gridcell {$RDMinimum_class}" style="width: 124px;" rowspan="1" colspan="1" data-field="RDMinimum" {$rowstyle} {$recordattrs}>
+      {$RDMinimum_value} </TD>
+    {END RDMinimum_fieldcolumn}{BEGIN endrecord_block}<TD class="rnr-cs" style="width: 21px;" rowspan="1" colspan="1" {$endrecordblock_attrs}>&nbsp;</TD>{END endrecord_block}{END grid_record}</TR>{END grid_row}</TBODY>
+  <TFOOT></TFOOT></TABLE>{END grid_block}</DIV>{END container_grid}</DIV>
+{END container_center}{BEGIN container_pagination}<DIV class="text-center col-md-12" data-container="pagination" data-pageid="{$pageid}" {$pagination_chiddenattr}>
+{BEGIN pagination_block}<DIV data-brick="pagination" data-pageid="{$pageid}" {$pagination_hiddenattr}>
+{$pagination} </DIV>{END pagination_block}</DIV>{END container_pagination}</DIV> </DIV></DIV>
+{$footer}{END body} </BODY></HTML>

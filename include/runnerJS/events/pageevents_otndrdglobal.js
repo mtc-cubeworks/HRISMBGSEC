@@ -1,0 +1,5 @@
+
+Runner.pages.PageSettings.addPageEvent('otndrdglobal',Runner.pages.constants.PAGE_LIST,"afterPageReady",function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='Process_Approval';if(!pageObj.buttonEventBefore['Process_Approval']){pageObj.buttonEventBefore['Process_Approval']=function(params,ctrl,pageObj,proxy,pageid,rowData,row){params["txt"]="Returning...";ctrl.setMessage("Sending request to server...");}}
+if(!pageObj.buttonEventAfter['Process_Approval']){pageObj.buttonEventAfter['Process_Approval']=function(result,ctrl,pageObj,proxy,pageid,rowData,row){window.location.href="dtrrange_list.php";}}
+$('a[id="Process_Approval"]').each(function(){if($(this).closest('.gridRowAdd').length){return;}
+this.id="Process_Approval"+"_"+Runner.genId();var button_Process_Approval=new Runner.form.Button({id:this.id,btnName:"Process_Approval"});button_Process_Approval.init({args:[pageObj,proxy,pageid]});});});

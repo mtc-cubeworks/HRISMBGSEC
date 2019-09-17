@@ -1,0 +1,415 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_editpage}
+<div {$editpage_chiddenattr} data-pageid="{$pageid}" data-container="editpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-9 col-md-offset-3"> 
+
+{BEGIN addheader}
+	<h2 {$addheader_hiddenattr} data-pageid="{$pageid}" data-brick="addheader" >{$pagetitlelabel otndrdglobal1 add}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END addheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+
+
+{BEGIN container_message}
+<div {$message_chiddenattr} data-pageid="{$pageid}" data-container="message" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN message_block}
+<div {$message_hiddenattr} data-pageid="{$pageid}" data-brick="message" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		<button class="btn btn-sm btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>View</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>Edit</button>
+{END edit_page_button}
+</div>
+</div>
+
+{END message_block}
+
+
+
+</div>
+{END container_message}
+
+
+
+
+
+
+
+</div>
+{END container_editpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$addfields_hiddenattr} data-pageid="{$pageid}" data-brick="addfields" class="form-horizontal" role="form">
+			{BEGIN Employee_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Employee}" data-fieldname="Employee" data-signal-error-for="Employee{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Employee}">
+		{BEGIN Employee_label}{$label otndrdglobal1 Employee}{END Employee_label}
+	</label>
+	<div class="col-md-6" >
+		{$Employee_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Employee">
+		<div class="text-muted" >
+		{$tooltip otndrdglobal1 Employee}
+		</div>
+	</div>
+</div>
+</div>
+{END Employee_fieldblock}
+
+			{BEGIN ApprovedOT_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_ApprovedOT}" data-fieldname="ApprovedOT" data-signal-error-for="ApprovedOT{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_ApprovedOT}">
+		{BEGIN ApprovedOT_label}{$label otndrdglobal1 ApprovedOT}{END ApprovedOT_label}
+	</label>
+	<div class="col-md-6" >
+		{$ApprovedOT_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="ApprovedOT">
+		<div class="text-muted" >
+		{$tooltip otndrdglobal1 ApprovedOT}
+		</div>
+	</div>
+</div>
+</div>
+{END ApprovedOT_fieldblock}
+
+			{BEGIN FiledOTOnly_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_FiledOTOnly}" data-fieldname="FiledOTOnly" data-signal-error-for="FiledOTOnly{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_FiledOTOnly}">
+		{BEGIN FiledOTOnly_label}{$label otndrdglobal1 FiledOTOnly}{END FiledOTOnly_label}
+	</label>
+	<div class="col-md-6" >
+		{$FiledOTOnly_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="FiledOTOnly">
+		<div class="text-muted" >
+		{$tooltip otndrdglobal1 FiledOTOnly}
+		</div>
+	</div>
+</div>
+</div>
+{END FiledOTOnly_fieldblock}
+
+			{BEGIN EarlyOT_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_EarlyOT}" data-fieldname="EarlyOT" data-signal-error-for="EarlyOT{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_EarlyOT}">
+		{BEGIN EarlyOT_label}{$label otndrdglobal1 EarlyOT}{END EarlyOT_label}
+	</label>
+	<div class="col-md-6" >
+		{$EarlyOT_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="EarlyOT">
+		<div class="text-muted" >
+		{$tooltip otndrdglobal1 EarlyOT}
+		</div>
+	</div>
+</div>
+</div>
+{END EarlyOT_fieldblock}
+
+			{BEGIN PostOT_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_PostOT}" data-fieldname="PostOT" data-signal-error-for="PostOT{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_PostOT}">
+		{BEGIN PostOT_label}{$label otndrdglobal1 PostOT}{END PostOT_label}
+	</label>
+	<div class="col-md-6" >
+		{$PostOT_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="PostOT">
+		<div class="text-muted" >
+		{$tooltip otndrdglobal1 PostOT}
+		</div>
+	</div>
+</div>
+</div>
+{END PostOT_fieldblock}
+
+			{BEGIN OTGreaterThan_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_OTGreaterThan}" data-fieldname="OTGreaterThan" data-signal-error-for="OTGreaterThan{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_OTGreaterThan}">
+		{BEGIN OTGreaterThan_label}{$label otndrdglobal1 OTGreaterThan}{END OTGreaterThan_label}
+	</label>
+	<div class="col-md-6" >
+		{$OTGreaterThan_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="OTGreaterThan">
+		<div class="text-muted" >
+		{$tooltip otndrdglobal1 OTGreaterThan}
+		</div>
+	</div>
+</div>
+</div>
+{END OTGreaterThan_fieldblock}
+
+			{BEGIN OTMinimum_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_OTMinimum}" data-fieldname="OTMinimum" data-signal-error-for="OTMinimum{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_OTMinimum}">
+		{BEGIN OTMinimum_label}{$label otndrdglobal1 OTMinimum}{END OTMinimum_label}
+	</label>
+	<div class="col-md-6" >
+		{$OTMinimum_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="OTMinimum">
+		<div class="text-muted" >
+		{$tooltip otndrdglobal1 OTMinimum}
+		</div>
+	</div>
+</div>
+</div>
+{END OTMinimum_fieldblock}
+
+			{BEGIN ApprovedND_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_ApprovedND}" data-fieldname="ApprovedND" data-signal-error-for="ApprovedND{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_ApprovedND}">
+		{BEGIN ApprovedND_label}{$label otndrdglobal1 ApprovedND}{END ApprovedND_label}
+	</label>
+	<div class="col-md-6" >
+		{$ApprovedND_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="ApprovedND">
+		<div class="text-muted" >
+		{$tooltip otndrdglobal1 ApprovedND}
+		</div>
+	</div>
+</div>
+</div>
+{END ApprovedND_fieldblock}
+
+			{BEGIN NDGreaterThan_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_NDGreaterThan}" data-fieldname="NDGreaterThan" data-signal-error-for="NDGreaterThan{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_NDGreaterThan}">
+		{BEGIN NDGreaterThan_label}{$label otndrdglobal1 NDGreaterThan}{END NDGreaterThan_label}
+	</label>
+	<div class="col-md-6" >
+		{$NDGreaterThan_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="NDGreaterThan">
+		<div class="text-muted" >
+		{$tooltip otndrdglobal1 NDGreaterThan}
+		</div>
+	</div>
+</div>
+</div>
+{END NDGreaterThan_fieldblock}
+
+			{BEGIN NDMinimum_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_NDMinimum}" data-fieldname="NDMinimum" data-signal-error-for="NDMinimum{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_NDMinimum}">
+		{BEGIN NDMinimum_label}{$label otndrdglobal1 NDMinimum}{END NDMinimum_label}
+	</label>
+	<div class="col-md-6" >
+		{$NDMinimum_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="NDMinimum">
+		<div class="text-muted" >
+		{$tooltip otndrdglobal1 NDMinimum}
+		</div>
+	</div>
+</div>
+</div>
+{END NDMinimum_fieldblock}
+
+			{BEGIN ApprovedRD_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_ApprovedRD}" data-fieldname="ApprovedRD" data-signal-error-for="ApprovedRD{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_ApprovedRD}">
+		{BEGIN ApprovedRD_label}{$label otndrdglobal1 ApprovedRD}{END ApprovedRD_label}
+	</label>
+	<div class="col-md-6" >
+		{$ApprovedRD_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="ApprovedRD">
+		<div class="text-muted" >
+		{$tooltip otndrdglobal1 ApprovedRD}
+		</div>
+	</div>
+</div>
+</div>
+{END ApprovedRD_fieldblock}
+
+			{BEGIN RDGreaterThan_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_RDGreaterThan}" data-fieldname="RDGreaterThan" data-signal-error-for="RDGreaterThan{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_RDGreaterThan}">
+		{BEGIN RDGreaterThan_label}{$label otndrdglobal1 RDGreaterThan}{END RDGreaterThan_label}
+	</label>
+	<div class="col-md-6" >
+		{$RDGreaterThan_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="RDGreaterThan">
+		<div class="text-muted" >
+		{$tooltip otndrdglobal1 RDGreaterThan}
+		</div>
+	</div>
+</div>
+</div>
+{END RDGreaterThan_fieldblock}
+
+			{BEGIN RDMinimum_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_RDMinimum}" data-fieldname="RDMinimum" data-signal-error-for="RDMinimum{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_RDMinimum}">
+		{BEGIN RDMinimum_label}{$label otndrdglobal1 RDMinimum}{END RDMinimum_label}
+	</label>
+	<div class="col-md-6" >
+		{$RDMinimum_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="RDMinimum">
+		<div class="text-muted" >
+		{$tooltip otndrdglobal1 RDMinimum}
+		</div>
+	</div>
+</div>
+</div>
+{END RDMinimum_fieldblock}
+
+
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_buttons}
+<div {$buttons_chiddenattr} data-pageid="{$pageid}" data-container="buttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-3 col-md-offset-3"> 
+
+{BEGIN addbuttons}
+	{BEGIN save_button}
+	<button class="btn btn-primary" {$savebutton_attrs}>Save</button>
+	{END save_button}
+	{BEGIN reset_button}
+	<button class="btn btn-default" id="resetButton{$id}">Reset</button>
+	{END reset_button}
+	{BEGIN back_button}
+		<button class="btn btn-default" id="backButton{$id}">Back to list</button>
+	{END back_button}
+	{BEGIN cancel_button}
+	<a href="#" class="btn btn-default" id="cancelButton{$id}">Cancel</a>
+	{END cancel_button}
+
+{END addbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+</div>
+{END container_buttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

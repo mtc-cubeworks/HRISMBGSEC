@@ -1,0 +1,263 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_pdf}
+<div {$pdf_chiddenattr} data-pageid="{$pageid}" data-container="pdf" class="   col-md-12 "> 
+
+{BEGIN printbuttons}
+
+{END printbuttons}
+
+
+
+</div>
+{END container_pdf}
+
+
+
+
+
+{BEGIN container_pageheader}
+<div {$pageheader_chiddenattr} data-pageid="{$pageid}" data-container="pageheader" class="    "> 
+
+{BEGIN printheader}
+	<h2 {$printheader_hiddenattr} data-pageid="{$pageid}" data-brick="printheader" >{$pagetitlelabel otndrdglobal1 print}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END printheader}
+
+
+{BEGIN page_number}
+<span>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></span>
+{END page_number}
+
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="table table-bordered rp-maintable" {$printgrid_hiddenattr} data-pageid="{$pageid}" data-brick="printgrid" >
+	<thead>
+	{BEGIN grid_header}
+		<tr class="{$gridHeader_class}" >
+		{BEGIN record_header}
+			{BEGIN GAID_fieldheadercolumn}
+			<th class="{$GAID_class}" {$GAID_style}  data-field="GAID">
+				{$label otndrdglobal1 GAID}
+			</th>
+			{END GAID_fieldheadercolumn}
+			{BEGIN Employee_fieldheadercolumn}
+			<th class="{$Employee_class}" {$Employee_style}  data-field="Employee">
+				{$label otndrdglobal1 Employee}
+			</th>
+			{END Employee_fieldheadercolumn}
+			{BEGIN ApprovedOT_fieldheadercolumn}
+			<th class="{$ApprovedOT_class}" {$ApprovedOT_style}  data-field="ApprovedOT">
+				{$label otndrdglobal1 ApprovedOT}
+			</th>
+			{END ApprovedOT_fieldheadercolumn}
+			{BEGIN FiledOTOnly_fieldheadercolumn}
+			<th class="{$FiledOTOnly_class}" {$FiledOTOnly_style}  data-field="FiledOTOnly">
+				{$label otndrdglobal1 FiledOTOnly}
+			</th>
+			{END FiledOTOnly_fieldheadercolumn}
+			{BEGIN EarlyOT_fieldheadercolumn}
+			<th class="{$EarlyOT_class}" {$EarlyOT_style}  data-field="EarlyOT">
+				{$label otndrdglobal1 EarlyOT}
+			</th>
+			{END EarlyOT_fieldheadercolumn}
+			{BEGIN PostOT_fieldheadercolumn}
+			<th class="{$PostOT_class}" {$PostOT_style}  data-field="PostOT">
+				{$label otndrdglobal1 PostOT}
+			</th>
+			{END PostOT_fieldheadercolumn}
+			{BEGIN OTGreaterThan_fieldheadercolumn}
+			<th class="{$OTGreaterThan_class}" {$OTGreaterThan_style}  data-field="OTGreaterThan">
+				{$label otndrdglobal1 OTGreaterThan}
+			</th>
+			{END OTGreaterThan_fieldheadercolumn}
+			{BEGIN OTMinimum_fieldheadercolumn}
+			<th class="{$OTMinimum_class}" {$OTMinimum_style}  data-field="OTMinimum">
+				{$label otndrdglobal1 OTMinimum}
+			</th>
+			{END OTMinimum_fieldheadercolumn}
+			{BEGIN ApprovedND_fieldheadercolumn}
+			<th class="{$ApprovedND_class}" {$ApprovedND_style}  data-field="ApprovedND">
+				{$label otndrdglobal1 ApprovedND}
+			</th>
+			{END ApprovedND_fieldheadercolumn}
+			{BEGIN NDGreaterThan_fieldheadercolumn}
+			<th class="{$NDGreaterThan_class}" {$NDGreaterThan_style}  data-field="NDGreaterThan">
+				{$label otndrdglobal1 NDGreaterThan}
+			</th>
+			{END NDGreaterThan_fieldheadercolumn}
+			{BEGIN NDMinimum_fieldheadercolumn}
+			<th class="{$NDMinimum_class}" {$NDMinimum_style}  data-field="NDMinimum">
+				{$label otndrdglobal1 NDMinimum}
+			</th>
+			{END NDMinimum_fieldheadercolumn}
+			{BEGIN ApprovedRD_fieldheadercolumn}
+			<th class="{$ApprovedRD_class}" {$ApprovedRD_style}  data-field="ApprovedRD">
+				{$label otndrdglobal1 ApprovedRD}
+			</th>
+			{END ApprovedRD_fieldheadercolumn}
+			{BEGIN RDGreaterThan_fieldheadercolumn}
+			<th class="{$RDGreaterThan_class}" {$RDGreaterThan_style}  data-field="RDGreaterThan">
+				{$label otndrdglobal1 RDGreaterThan}
+			</th>
+			{END RDGreaterThan_fieldheadercolumn}
+			{BEGIN RDMinimum_fieldheadercolumn}
+			<th class="{$RDMinimum_class}" {$RDMinimum_style}  data-field="RDMinimum">
+				{$label otndrdglobal1 RDMinimum}
+			</th>
+			{END RDMinimum_fieldheadercolumn}
+			{BEGIN endrecordheader_block}
+			<th class="rnr-cs">&nbsp;</th>
+			{END endrecordheader_block}
+		{END record_header}
+		</tr>
+	{END grid_header}
+	</thead>
+	
+	<tbody>	
+	{BEGIN grid_row}
+		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+			{BEGIN GAID_fieldcolumn}
+			<td  class="{$GAID_class}" {$GAID_style} {$recordattrs}>
+				{$GAID_value}
+			</td>
+			{END GAID_fieldcolumn}
+			{BEGIN Employee_fieldcolumn}
+			<td  class="{$Employee_class}" {$Employee_style} {$recordattrs}>
+				{$Employee_value}
+			</td>
+			{END Employee_fieldcolumn}
+			{BEGIN ApprovedOT_fieldcolumn}
+			<td  class="{$ApprovedOT_class}" {$ApprovedOT_style} {$recordattrs}>
+				{$ApprovedOT_value}
+			</td>
+			{END ApprovedOT_fieldcolumn}
+			{BEGIN FiledOTOnly_fieldcolumn}
+			<td  class="{$FiledOTOnly_class}" {$FiledOTOnly_style} {$recordattrs}>
+				{$FiledOTOnly_value}
+			</td>
+			{END FiledOTOnly_fieldcolumn}
+			{BEGIN EarlyOT_fieldcolumn}
+			<td  class="{$EarlyOT_class}" {$EarlyOT_style} {$recordattrs}>
+				{$EarlyOT_value}
+			</td>
+			{END EarlyOT_fieldcolumn}
+			{BEGIN PostOT_fieldcolumn}
+			<td  class="{$PostOT_class}" {$PostOT_style} {$recordattrs}>
+				{$PostOT_value}
+			</td>
+			{END PostOT_fieldcolumn}
+			{BEGIN OTGreaterThan_fieldcolumn}
+			<td  class="{$OTGreaterThan_class}" {$OTGreaterThan_style} {$recordattrs}>
+				{$OTGreaterThan_value}
+			</td>
+			{END OTGreaterThan_fieldcolumn}
+			{BEGIN OTMinimum_fieldcolumn}
+			<td  class="{$OTMinimum_class}" {$OTMinimum_style} {$recordattrs}>
+				{$OTMinimum_value}
+			</td>
+			{END OTMinimum_fieldcolumn}
+			{BEGIN ApprovedND_fieldcolumn}
+			<td  class="{$ApprovedND_class}" {$ApprovedND_style} {$recordattrs}>
+				{$ApprovedND_value}
+			</td>
+			{END ApprovedND_fieldcolumn}
+			{BEGIN NDGreaterThan_fieldcolumn}
+			<td  class="{$NDGreaterThan_class}" {$NDGreaterThan_style} {$recordattrs}>
+				{$NDGreaterThan_value}
+			</td>
+			{END NDGreaterThan_fieldcolumn}
+			{BEGIN NDMinimum_fieldcolumn}
+			<td  class="{$NDMinimum_class}" {$NDMinimum_style} {$recordattrs}>
+				{$NDMinimum_value}
+			</td>
+			{END NDMinimum_fieldcolumn}
+			{BEGIN ApprovedRD_fieldcolumn}
+			<td  class="{$ApprovedRD_class}" {$ApprovedRD_style} {$recordattrs}>
+				{$ApprovedRD_value}
+			</td>
+			{END ApprovedRD_fieldcolumn}
+			{BEGIN RDGreaterThan_fieldcolumn}
+			<td  class="{$RDGreaterThan_class}" {$RDGreaterThan_style} {$recordattrs}>
+				{$RDGreaterThan_value}
+			</td>
+			{END RDGreaterThan_fieldcolumn}
+			{BEGIN RDMinimum_fieldcolumn}
+			<td  class="{$RDMinimum_class}" {$RDMinimum_style} {$recordattrs}>
+				{$RDMinimum_value}
+			</td>
+			{END RDMinimum_fieldcolumn}
+			{BEGIN endrecord_block}
+			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+			{END endrecord_block}
+		{END grid_record}
+		</tr>
+{END grid_row}
+	</tbody>
+
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
