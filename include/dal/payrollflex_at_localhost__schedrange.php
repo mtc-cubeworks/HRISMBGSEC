@@ -25,6 +25,7 @@ $dalTableschedrange["RestDays"] = array("type"=>200,"varname"=>"RestDays", "name
 $dalTableschedrange["SchedBy"] = array("type"=>3,"varname"=>"SchedBy", "name" => "SchedBy");
 $dalTableschedrange["Employer"] = array("type"=>3,"varname"=>"Employer", "name" => "Employer");
 $dalTableschedrange["Division"] = array("type"=>3,"varname"=>"Division", "name" => "Division");
+$dalTableschedrange["PreLogMins"] = array("type"=>5,"varname"=>"PreLogMins", "name" => "PreLogMins");
 	$dalTableschedrange["ScRID"]["key"]=true;
 
 $dal_info["payrollflex_at_localhost__schedrange"] = &$dalTableschedrange;

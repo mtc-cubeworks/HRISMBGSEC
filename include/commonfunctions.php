@@ -361,8 +361,6 @@ function checkTableName($shortTName, $type=false)
 		return true;
 	if ("payrollstatutories" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
-	if ("loanbalance3" == $shortTName && ($type===false || ($type!==false && $type == 0)))
-		return true;
 	if ("payrolltax" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
 	if ("payrollamt3" == $shortTName && ($type===false || ($type!==false && $type == 0)))
@@ -414,8 +412,6 @@ function checkTableName($shortTName, $type=false)
 	if ("leavebalance1" == $shortTName && ($type===false || ($type!==false && $type == 1)))
 		return true;
 	if ("indleave1" == $shortTName && ($type===false || ($type!==false && $type == 1)))
-		return true;
-	if ("loanbalance31" == $shortTName && ($type===false || ($type!==false && $type == 1)))
 		return true;
 	if ("loansreport" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
@@ -479,8 +475,6 @@ function checkTableName($shortTName, $type=false)
 		return true;
 	if ("filelog" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
-	if ("payrolltab1" == $shortTName && ($type===false || ($type!==false && $type == 1)))
-		return true;
 	if ("filelog1" == $shortTName && ($type===false || ($type!==false && $type == 1)))
 		return true;
 	if ("filelog2" == $shortTName && ($type===false || ($type!==false && $type == 1)))
@@ -502,6 +496,30 @@ function checkTableName($shortTName, $type=false)
 	if ("leaves" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
 	if ("approvalbutton" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("otherpayments" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("payrolltab1" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
+	if ("mycurrentdtr" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
+	if ("otndrdglobal" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("dtrrange1" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
+	if ("dtrempl" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("otndrdglobal1" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
+	if ("deductypes" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("magroups" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("mdgroups" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("loanbalnew5" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("loanbalnew51" == $shortTName && ($type===false || ($type!==false && $type == 1)))
 		return true;
 	return false;
 }
@@ -782,11 +800,6 @@ function GetTablesList($pdfMode = false)
 	{
 		$arr[]="payrollstatutories";
 	}
-	$strPerm = GetUserPermissions("loanbalance3");
-	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
-	{
-		$arr[]="loanbalance3";
-	}
 	$strPerm = GetUserPermissions("payrolltax");
 	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
 	{
@@ -916,11 +929,6 @@ function GetTablesList($pdfMode = false)
 	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
 	{
 		$arr[]="indleave1";
-	}
-	$strPerm = GetUserPermissions("loanbalance31");
-	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
-	{
-		$arr[]="loanbalance31";
 	}
 	$strPerm = GetUserPermissions("loansreport");
 	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
@@ -1077,11 +1085,6 @@ function GetTablesList($pdfMode = false)
 	{
 		$arr[]="filelog";
 	}
-	$strPerm = GetUserPermissions("payrolltab1");
-	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
-	{
-		$arr[]="payrolltab1";
-	}
 	$strPerm = GetUserPermissions("filelog1");
 	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
 	{
@@ -1136,6 +1139,66 @@ function GetTablesList($pdfMode = false)
 	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
 	{
 		$arr[]="approvalbutton";
+	}
+	$strPerm = GetUserPermissions("otherpayments");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="otherpayments";
+	}
+	$strPerm = GetUserPermissions("payrolltab1");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="payrolltab1";
+	}
+	$strPerm = GetUserPermissions("mycurrentdtr");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="mycurrentdtr";
+	}
+	$strPerm = GetUserPermissions("otndrdglobal");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="otndrdglobal";
+	}
+	$strPerm = GetUserPermissions("dtrrange1");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="dtrrange1";
+	}
+	$strPerm = GetUserPermissions("dtrempl");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="dtrempl";
+	}
+	$strPerm = GetUserPermissions("otndrdglobal1");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="otndrdglobal1";
+	}
+	$strPerm = GetUserPermissions("deductypes");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="deductypes";
+	}
+	$strPerm = GetUserPermissions("magroups");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="magroups";
+	}
+	$strPerm = GetUserPermissions("mdgroups");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="mdgroups";
+	}
+	$strPerm = GetUserPermissions("loanbalnew5");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="loanbalnew5";
+	}
+	$strPerm = GetUserPermissions("loanbalnew51");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="loanbalnew51";
 	}
 	return $arr;
 }
@@ -1192,7 +1255,6 @@ function GetTablesListWithoutSecurity()
 	$arr[]="indovertime";
 	$arr[]="forapp";
 	$arr[]="payrollstatutories";
-	$arr[]="loanbalance3";
 	$arr[]="payrolltax";
 	$arr[]="payrollamt3";
 	$arr[]="empdeminimis";
@@ -1219,7 +1281,6 @@ function GetTablesListWithoutSecurity()
 	$arr[]="leavesapp";
 	$arr[]="leavebalance1";
 	$arr[]="indleave1";
-	$arr[]="loanbalance31";
 	$arr[]="loansreport";
 	$arr[]="contlo";
 	$arr[]="statpay";
@@ -1251,7 +1312,6 @@ function GetTablesListWithoutSecurity()
 	$arr[]="thirtax";
 	$arr[]="thirtaxsum";
 	$arr[]="filelog";
-	$arr[]="payrolltab1";
 	$arr[]="filelog1";
 	$arr[]="filelog2";
 	$arr[]="filelog3";
@@ -1263,6 +1323,18 @@ function GetTablesListWithoutSecurity()
 	$arr[]="demo_useremp";
 	$arr[]="leaves";
 	$arr[]="approvalbutton";
+	$arr[]="otherpayments";
+	$arr[]="payrolltab1";
+	$arr[]="mycurrentdtr";
+	$arr[]="otndrdglobal";
+	$arr[]="dtrrange1";
+	$arr[]="dtrempl";
+	$arr[]="otndrdglobal1";
+	$arr[]="deductypes";
+	$arr[]="magroups";
+	$arr[]="mdgroups";
+	$arr[]="loanbalnew5";
+	$arr[]="loanbalnew51";
 	return $arr;
 }
 
@@ -2123,7 +2195,6 @@ function SetAuthSessionData($pUsername, &$data, $fromFacebook, $password, &$page
 		$_SESSION["_leavesapp_OwnerID"] = $data["EmployeeID"];
 		$_SESSION["_leavebalance1_OwnerID"] = $data["EmployeeID"];
 		$_SESSION["_indleave1_OwnerID"] = $data["EmployeeID"];
-		$_SESSION["_loanbalance31_OwnerID"] = $data["EmployeeID"];
 		$_SESSION["_loansreport_OwnerID"] = $data["LogID"];
 		$_SESSION["_indschedrange_OwnerID"] = $data["EmployeeID"];
 		$_SESSION["_empdtr_OwnerID"] = $data["EmployeeID"];
@@ -2133,7 +2204,6 @@ function SetAuthSessionData($pUsername, &$data, $fromFacebook, $password, &$page
 		$_SESSION["_demo_logemp_OwnerID"] = $data["EmployeeID"];
 		$_SESSION["_leavesapp2_OwnerID"] = $data["EmployeeID"];
 		$_SESSION["_filelog_OwnerID"] = $data["EmployeeID"];
-		$_SESSION["_payrolltab1_OwnerID"] = $data["EmployeeID"];
 		$_SESSION["_filelog1_OwnerID"] = $data["EmployeeID"];
 		$_SESSION["_filelog2_OwnerID"] = $data["EmployeeID"];
 		$_SESSION["_filelog3_OwnerID"] = $data["EmployeeID"];
@@ -2141,6 +2211,9 @@ function SetAuthSessionData($pUsername, &$data, $fromFacebook, $password, &$page
 		$_SESSION["_overtimefileapp_OwnerID"] = $data["EmployeeID"];
 		$_SESSION["_overtimefileapp2_OwnerID"] = $data["EmployeeID"];
 		$_SESSION["_demo_useremp_OwnerID"] = $data["EmployeeID"];
+		$_SESSION["_payrolltab1_OwnerID"] = $data["EmployeeID"];
+		$_SESSION["_mycurrentdtr_OwnerID"] = $data["EmployeeID"];
+		$_SESSION["_loanbalnew51_OwnerID"] = $data["EmployeeID"];
 
 	$_SESSION["UserData"] = $data;
 	
@@ -2229,12 +2302,6 @@ function CheckSecurity($strValue, $strAction, $table = "")
 				if(!($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
 				return false;
 		}
-		if($table=="loanbalance31")
-		{
-
-				if(!($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
-				return false;
-		}
 		if($table=="loansreport")
 		{
 
@@ -2289,12 +2356,6 @@ function CheckSecurity($strValue, $strAction, $table = "")
 				if(!($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
 				return false;
 		}
-		if($table=="payrolltab1")
-		{
-
-				if(!($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
-				return false;
-		}
 		if($table=="filelog1")
 		{
 
@@ -2326,6 +2387,24 @@ function CheckSecurity($strValue, $strAction, $table = "")
 				return false;
 		}
 		if($table=="demo_useremp")
+		{
+
+				if(!($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
+				return false;
+		}
+		if($table=="payrolltab1")
+		{
+
+				if(!($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
+				return false;
+		}
+		if($table=="mycurrentdtr")
+		{
+
+				if(!($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
+				return false;
+		}
+		if($table=="loanbalnew51")
 		{
 
 				if(!($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
@@ -2422,10 +2501,6 @@ function SecuritySQL($strAction, $table="", $strPerm="")
 		{
 				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
 		}
-		if($table=="loanbalance31")
-		{
-				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
-		}
 		if($table=="loansreport")
 		{
 				if($strAction == "Edit" || $strAction == "Delete")
@@ -2463,10 +2538,6 @@ function SecuritySQL($strAction, $table="", $strPerm="")
 		{
 				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
 		}
-		if($table=="payrolltab1")
-		{
-				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
-		}
 		if($table=="filelog1")
 		{
 				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
@@ -2488,6 +2559,18 @@ function SecuritySQL($strAction, $table="", $strPerm="")
 				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
 		}
 		if($table=="demo_useremp")
+		{
+				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
+		}
+		if($table=="payrolltab1")
+		{
+				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
+		}
+		if($table=="mycurrentdtr")
+		{
+				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
+		}
+		if($table=="loanbalnew51")
 		{
 				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
 		}

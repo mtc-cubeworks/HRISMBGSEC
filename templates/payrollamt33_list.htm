@@ -301,6 +301,23 @@
 {BEGIN searchform_block}
 <span {$search_hiddenattr} data-pageid="{$pageid}" data-brick="search" class="form-group">
 
+ <div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Show all">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
 		
 </span>
 {END searchform_block}
@@ -515,6 +532,9 @@
 	.bs-gridcell[data-field=Division]:before {
 		content: "{$label payrollamt33 Division}";
 	}
+	.bs-gridcell[data-field=WageType]:before {
+		content: "{$label payrollamt33 WageType}";
+	}
 	.bs-gridcell[data-field=FromDate]:before {
 		content: "{$label payrollamt33 FromDate}";
 	}
@@ -536,122 +556,149 @@
 	.bs-gridcell[data-field=RegPay]:before {
 		content: "{$label payrollamt33 RegPay}";
 	}
-	.bs-gridcell[data-field=Late]:before {
-		content: "{$label payrollamt33 Late}";
-	}
-	.bs-gridcell[data-field=UnderTime]:before {
-		content: "{$label payrollamt33 UnderTime}";
-	}
-	.bs-gridcell[data-field=RHoliday]:before {
-		content: "{$label payrollamt33 RHoliday}";
-	}
-	.bs-gridcell[data-field=SHoliday]:before {
-		content: "{$label payrollamt33 SHoliday}";
-	}
-	.bs-gridcell[data-field=CHoliday]:before {
-		content: "{$label payrollamt33 CHoliday}";
-	}
-	.bs-gridcell[data-field=RegOT]:before {
-		content: "{$label payrollamt33 RegOT}";
-	}
-	.bs-gridcell[data-field=RHOT]:before {
-		content: "{$label payrollamt33 RHOT}";
-	}
-	.bs-gridcell[data-field=SHOT]:before {
-		content: "{$label payrollamt33 SHOT}";
-	}
-	.bs-gridcell[data-field=CHOT]:before {
-		content: "{$label payrollamt33 CHOT}";
-	}
-	.bs-gridcell[data-field=RDOT]:before {
-		content: "{$label payrollamt33 RDOT}";
-	}
-	.bs-gridcell[data-field=OT]:before {
-		content: "{$label payrollamt33 OT}";
-	}
-	.bs-gridcell[data-field=RD]:before {
-		content: "{$label payrollamt33 RD}";
-	}
-	.bs-gridcell[data-field=ND]:before {
-		content: "{$label payrollamt33 ND}";
-	}
-	.bs-gridcell[data-field=RHND]:before {
-		content: "{$label payrollamt33 RHND}";
-	}
-	.bs-gridcell[data-field=SHND]:before {
-		content: "{$label payrollamt33 SHND}";
-	}
-	.bs-gridcell[data-field=CHND]:before {
-		content: "{$label payrollamt33 CHND}";
-	}
-	.bs-gridcell[data-field=RDND]:before {
-		content: "{$label payrollamt33 RDND}";
-	}
-	.bs-gridcell[data-field=VL]:before {
-		content: "{$label payrollamt33 VL}";
-	}
-	.bs-gridcell[data-field=SL]:before {
-		content: "{$label payrollamt33 SL}";
-	}
-	.bs-gridcell[data-field=EL]:before {
-		content: "{$label payrollamt33 EL}";
-	}
-	.bs-gridcell[data-field=PL]:before {
-		content: "{$label payrollamt33 PL}";
-	}
-	.bs-gridcell[data-field=TrO]:before {
-		content: "{$label payrollamt33 TrO}";
-	}
-	.bs-gridcell[data-field=WageType]:before {
-		content: "{$label payrollamt33 WageType}";
-	}
 	.bs-gridcell[data-field=LateMins]:before {
 		content: "{$label payrollamt33 LateMins}";
+	}
+	.bs-gridcell[data-field=Late]:before {
+		content: "{$label payrollamt33 Late}";
 	}
 	.bs-gridcell[data-field=UndertimeMins]:before {
 		content: "{$label payrollamt33 UndertimeMins}";
 	}
-	.bs-gridcell[data-field=RHolidayHrs]:before {
-		content: "{$label payrollamt33 RHolidayHrs}";
+	.bs-gridcell[data-field=UnderTime]:before {
+		content: "{$label payrollamt33 UnderTime}";
 	}
-	.bs-gridcell[data-field=SHolidayHrs]:before {
-		content: "{$label payrollamt33 SHolidayHrs}";
+	.bs-gridcell[data-field=LWOPdays]:before {
+		content: "{$label payrollamt33 LWOPdays}";
 	}
-	.bs-gridcell[data-field=CHolidayHrs]:before {
-		content: "{$label payrollamt33 CHolidayHrs}";
+	.bs-gridcell[data-field=LWOP]:before {
+		content: "{$label payrollamt33 LWOP}";
 	}
 	.bs-gridcell[data-field=RegOTHrs]:before {
 		content: "{$label payrollamt33 RegOTHrs}";
 	}
+	.bs-gridcell[data-field=RegOT]:before {
+		content: "{$label payrollamt33 RegOT}";
+	}
 	.bs-gridcell[data-field=RHOTHrs]:before {
 		content: "{$label payrollamt33 RHOTHrs}";
 	}
-	.bs-gridcell[data-field=SHOTHRs]:before {
-		content: "{$label payrollamt33 SHOTHRs}";
+	.bs-gridcell[data-field=RHOT]:before {
+		content: "{$label payrollamt33 RHOT}";
 	}
-	.bs-gridcell[data-field=CHOTHrs]:before {
-		content: "{$label payrollamt33 CHOTHrs}";
+	.bs-gridcell[data-field=SHOTHrs]:before {
+		content: "{$label payrollamt33 SHOTHrs}";
+	}
+	.bs-gridcell[data-field=SHOT]:before {
+		content: "{$label payrollamt33 SHOT}";
+	}
+	.bs-gridcell[data-field=DHOT]:before {
+		content: "{$label payrollamt33 DHOT}";
+	}
+	.bs-gridcell[data-field=DHOTpay]:before {
+		content: "{$label payrollamt33 DHOTpay}";
 	}
 	.bs-gridcell[data-field=RDOTHrs]:before {
 		content: "{$label payrollamt33 RDOTHrs}";
 	}
+	.bs-gridcell[data-field=RDOT]:before {
+		content: "{$label payrollamt33 RDOT}";
+	}
+	.bs-gridcell[data-field=RHRDOT]:before {
+		content: "{$label payrollamt33 RHRDOT}";
+	}
+	.bs-gridcell[data-field=RHRDOTpay]:before {
+		content: "{$label payrollamt33 RHRDOTpay}";
+	}
+	.bs-gridcell[data-field=SHRDOT]:before {
+		content: "{$label payrollamt33 SHRDOT}";
+	}
+	.bs-gridcell[data-field=SHRDOTpay]:before {
+		content: "{$label payrollamt33 SHRDOTpay}";
+	}
+	.bs-gridcell[data-field=DHRDOT]:before {
+		content: "{$label payrollamt33 DHRDOT}";
+	}
+	.bs-gridcell[data-field=DHRDOTpay]:before {
+		content: "{$label payrollamt33 DHRDOTpay}";
+	}
+	.bs-gridcell[data-field=TNDOTHr]:before {
+		content: "{$label payrollamt33 TNDOTHr}";
+	}
+	.bs-gridcell[data-field=TNDOT]:before {
+		content: "{$label payrollamt33 TNDOT}";
+	}
+	.bs-gridcell[data-field=RHolidayHrs]:before {
+		content: "{$label payrollamt33 RHolidayHrs}";
+	}
+	.bs-gridcell[data-field=RHoliday]:before {
+		content: "{$label payrollamt33 RHoliday}";
+	}
+	.bs-gridcell[data-field=SHolidayHrs]:before {
+		content: "{$label payrollamt33 SHolidayHrs}";
+	}
+	.bs-gridcell[data-field=SHoliday]:before {
+		content: "{$label payrollamt33 SHoliday}";
+	}
+	.bs-gridcell[data-field=DH]:before {
+		content: "{$label payrollamt33 DH}";
+	}
+	.bs-gridcell[data-field=DHpay]:before {
+		content: "{$label payrollamt33 DHpay}";
+	}
 	.bs-gridcell[data-field=RDHrs]:before {
 		content: "{$label payrollamt33 RDHrs}";
 	}
-	.bs-gridcell[data-field=RegNDHrs]:before {
-		content: "{$label payrollamt33 RegNDHrs}";
+	.bs-gridcell[data-field=RD]:before {
+		content: "{$label payrollamt33 RD}";
 	}
-	.bs-gridcell[data-field=RHNDHrs]:before {
-		content: "{$label payrollamt33 RHNDHrs}";
+	.bs-gridcell[data-field=RHRD]:before {
+		content: "{$label payrollamt33 RHRD}";
 	}
-	.bs-gridcell[data-field=SHNDHrs]:before {
-		content: "{$label payrollamt33 SHNDHrs}";
+	.bs-gridcell[data-field=RHRDpay]:before {
+		content: "{$label payrollamt33 RHRDpay}";
 	}
-	.bs-gridcell[data-field=CHNDHrs]:before {
-		content: "{$label payrollamt33 CHNDHrs}";
+	.bs-gridcell[data-field=SHRD]:before {
+		content: "{$label payrollamt33 SHRD}";
 	}
-	.bs-gridcell[data-field=RDNDHrs]:before {
-		content: "{$label payrollamt33 RDNDHrs}";
+	.bs-gridcell[data-field=SHRDpay]:before {
+		content: "{$label payrollamt33 SHRDpay}";
+	}
+	.bs-gridcell[data-field=DHRD]:before {
+		content: "{$label payrollamt33 DHRD}";
+	}
+	.bs-gridcell[data-field=DHRDpay]:before {
+		content: "{$label payrollamt33 DHRDpay}";
+	}
+	.bs-gridcell[data-field=TNDHr]:before {
+		content: "{$label payrollamt33 TNDHr}";
+	}
+	.bs-gridcell[data-field=TND]:before {
+		content: "{$label payrollamt33 TND}";
+	}
+	.bs-gridcell[data-field=VLDays]:before {
+		content: "{$label payrollamt33 VLDays}";
+	}
+	.bs-gridcell[data-field=VL]:before {
+		content: "{$label payrollamt33 VL}";
+	}
+	.bs-gridcell[data-field=SLDays]:before {
+		content: "{$label payrollamt33 SLDays}";
+	}
+	.bs-gridcell[data-field=SL]:before {
+		content: "{$label payrollamt33 SL}";
+	}
+	.bs-gridcell[data-field=ELDays]:before {
+		content: "{$label payrollamt33 ELDays}";
+	}
+	.bs-gridcell[data-field=EL]:before {
+		content: "{$label payrollamt33 EL}";
+	}
+	.bs-gridcell[data-field=PLDays]:before {
+		content: "{$label payrollamt33 PLDays}";
+	}
+	.bs-gridcell[data-field=PL]:before {
+		content: "{$label payrollamt33 PL}";
 	}
 	.bs-gridcell[data-field=VLBalance]:before {
 		content: "{$label payrollamt33 VLBalance}";
@@ -665,14 +712,11 @@
 	.bs-gridcell[data-field=PLBalance]:before {
 		content: "{$label payrollamt33 PLBalance}";
 	}
-	.bs-gridcell[data-field=PayDate]:before {
-		content: "{$label payrollamt33 PayDate}";
+	.bs-gridcell[data-field=OTHrs]:before {
+		content: "{$label payrollamt33 OTHrs}";
 	}
-	.bs-gridcell[data-field=LWOP]:before {
-		content: "{$label payrollamt33 LWOP}";
-	}
-	.bs-gridcell[data-field=LWOPdays]:before {
-		content: "{$label payrollamt33 LWOPdays}";
+	.bs-gridcell[data-field=OT]:before {
+		content: "{$label payrollamt33 OT}";
 	}
 	.bs-gridcell[data-field=TAdj]:before {
 		content: "{$label payrollamt33 TAdj}";
@@ -704,20 +748,14 @@
 	.bs-gridcell[data-field=NetPay]:before {
 		content: "{$label payrollamt33 NetPay}";
 	}
-	.bs-gridcell[data-field=VLDays]:before {
-		content: "{$label payrollamt33 VLDays}";
+	.bs-gridcell[data-field=ThirToDate]:before {
+		content: "{$label payrollamt33 ThirToDate}";
 	}
-	.bs-gridcell[data-field=ELDays]:before {
-		content: "{$label payrollamt33 ELDays}";
+	.bs-gridcell[data-field=TaxableToDate]:before {
+		content: "{$label payrollamt33 TaxableToDate}";
 	}
-	.bs-gridcell[data-field=SLDays]:before {
-		content: "{$label payrollamt33 SLDays}";
-	}
-	.bs-gridcell[data-field=PLDays]:before {
-		content: "{$label payrollamt33 PLDays}";
-	}
-	.bs-gridcell[data-field=TND]:before {
-		content: "{$label payrollamt33 TND}";
+	.bs-gridcell[data-field=TaxToDate]:before {
+		content: "{$label payrollamt33 TaxToDate}";
 	}
 </style>
 <table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
@@ -771,19 +809,6 @@
 									{END ToDate_fieldheader}
 									</th>
 									{END ToDate_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN PayDate_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$PayDate_class}" data-field=PayDate>
-									{BEGIN PayDate_fieldheader}
-																				<span {$PayDate_orderlinkattrs}>
-											{$label payrollamt33 PayDate}
-										</span>
-									{END PayDate_fieldheader}
-									</th>
-									{END PayDate_fieldheadercolumn}
 									
 									
 									
@@ -918,32 +943,6 @@
 									
 									
 									
-									{BEGIN LWOPdays_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$LWOPdays_class}" data-field=LWOPdays>
-									{BEGIN LWOPdays_fieldheader}
-																				<span {$LWOPdays_orderlinkattrs}>
-											{$label payrollamt33 LWOPdays}
-										</span>
-									{END LWOPdays_fieldheader}
-									</th>
-									{END LWOPdays_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN LWOP_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$LWOP_class}" data-field=LWOP>
-									{BEGIN LWOP_fieldheader}
-																				<span {$LWOP_orderlinkattrs}>
-											{$label payrollamt33 LWOP}
-										</span>
-									{END LWOP_fieldheader}
-									</th>
-									{END LWOP_fieldheadercolumn}
-									
-									
-									
-									
 									{BEGIN RegPay_fieldheadercolumn}
 									<th class="rnr-gridfieldlabel {$RegPay_class}" data-field=RegPay>
 									{BEGIN RegPay_fieldheader}
@@ -1009,80 +1008,28 @@
 									
 									
 									
-									{BEGIN RHolidayHrs_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$RHolidayHrs_class}" data-field=RHolidayHrs>
-									{BEGIN RHolidayHrs_fieldheader}
-																				<span {$RHolidayHrs_orderlinkattrs}>
-											{$label payrollamt33 RHolidayHrs}
+									{BEGIN LWOPdays_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$LWOPdays_class}" data-field=LWOPdays>
+									{BEGIN LWOPdays_fieldheader}
+																				<span {$LWOPdays_orderlinkattrs}>
+											{$label payrollamt33 LWOPdays}
 										</span>
-									{END RHolidayHrs_fieldheader}
+									{END LWOPdays_fieldheader}
 									</th>
-									{END RHolidayHrs_fieldheadercolumn}
+									{END LWOPdays_fieldheadercolumn}
 									
 									
 									
 									
-									{BEGIN RHoliday_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$RHoliday_class}" data-field=RHoliday>
-									{BEGIN RHoliday_fieldheader}
-																				<span {$RHoliday_orderlinkattrs}>
-											{$label payrollamt33 RHoliday}
+									{BEGIN LWOP_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$LWOP_class}" data-field=LWOP>
+									{BEGIN LWOP_fieldheader}
+																				<span {$LWOP_orderlinkattrs}>
+											{$label payrollamt33 LWOP}
 										</span>
-									{END RHoliday_fieldheader}
+									{END LWOP_fieldheader}
 									</th>
-									{END RHoliday_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN SHolidayHrs_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$SHolidayHrs_class}" data-field=SHolidayHrs>
-									{BEGIN SHolidayHrs_fieldheader}
-																				<span {$SHolidayHrs_orderlinkattrs}>
-											{$label payrollamt33 SHolidayHrs}
-										</span>
-									{END SHolidayHrs_fieldheader}
-									</th>
-									{END SHolidayHrs_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN SHoliday_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$SHoliday_class}" data-field=SHoliday>
-									{BEGIN SHoliday_fieldheader}
-																				<span {$SHoliday_orderlinkattrs}>
-											{$label payrollamt33 SHoliday}
-										</span>
-									{END SHoliday_fieldheader}
-									</th>
-									{END SHoliday_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN CHolidayHrs_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$CHolidayHrs_class}" data-field=CHolidayHrs>
-									{BEGIN CHolidayHrs_fieldheader}
-																				<span {$CHolidayHrs_orderlinkattrs}>
-											{$label payrollamt33 CHolidayHrs}
-										</span>
-									{END CHolidayHrs_fieldheader}
-									</th>
-									{END CHolidayHrs_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN CHoliday_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$CHoliday_class}" data-field=CHoliday>
-									{BEGIN CHoliday_fieldheader}
-																				<span {$CHoliday_orderlinkattrs}>
-											{$label payrollamt33 CHoliday}
-										</span>
-									{END CHoliday_fieldheader}
-									</th>
-									{END CHoliday_fieldheadercolumn}
+									{END LWOP_fieldheadercolumn}
 									
 									
 									
@@ -1139,15 +1086,15 @@
 									
 									
 									
-									{BEGIN SHOTHRs_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$SHOTHRs_class}" data-field=SHOTHRs>
-									{BEGIN SHOTHRs_fieldheader}
-																				<span {$SHOTHRs_orderlinkattrs}>
-											{$label payrollamt33 SHOTHRs}
+									{BEGIN SHOTHrs_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SHOTHrs_class}" data-field=SHOTHrs>
+									{BEGIN SHOTHrs_fieldheader}
+																				<span {$SHOTHrs_orderlinkattrs}>
+											{$label payrollamt33 SHOTHrs}
 										</span>
-									{END SHOTHRs_fieldheader}
+									{END SHOTHrs_fieldheader}
 									</th>
-									{END SHOTHRs_fieldheadercolumn}
+									{END SHOTHrs_fieldheadercolumn}
 									
 									
 									
@@ -1165,28 +1112,28 @@
 									
 									
 									
-									{BEGIN CHOTHrs_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$CHOTHrs_class}" data-field=CHOTHrs>
-									{BEGIN CHOTHrs_fieldheader}
-																				<span {$CHOTHrs_orderlinkattrs}>
-											{$label payrollamt33 CHOTHrs}
+									{BEGIN DHOT_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$DHOT_class}" data-field=DHOT>
+									{BEGIN DHOT_fieldheader}
+																				<span {$DHOT_orderlinkattrs}>
+											{$label payrollamt33 DHOT}
 										</span>
-									{END CHOTHrs_fieldheader}
+									{END DHOT_fieldheader}
 									</th>
-									{END CHOTHrs_fieldheadercolumn}
+									{END DHOT_fieldheadercolumn}
 									
 									
 									
 									
-									{BEGIN CHOT_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$CHOT_class}" data-field=CHOT>
-									{BEGIN CHOT_fieldheader}
-																				<span {$CHOT_orderlinkattrs}>
-											{$label payrollamt33 CHOT}
+									{BEGIN DHOTpay_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$DHOTpay_class}" data-field=DHOTpay>
+									{BEGIN DHOTpay_fieldheader}
+																				<span {$DHOTpay_orderlinkattrs}>
+											{$label payrollamt33 DHOTpay}
 										</span>
-									{END CHOT_fieldheader}
+									{END DHOTpay_fieldheader}
 									</th>
-									{END CHOT_fieldheadercolumn}
+									{END DHOTpay_fieldheadercolumn}
 									
 									
 									
@@ -1217,15 +1164,184 @@
 									
 									
 									
-									{BEGIN OT_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$OT_class}" data-field=OT>
-									{BEGIN OT_fieldheader}
-																				<span {$OT_orderlinkattrs}>
-											{$label payrollamt33 OT}
+									{BEGIN RHRDOT_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RHRDOT_class}" data-field=RHRDOT>
+									{BEGIN RHRDOT_fieldheader}
+																				<span {$RHRDOT_orderlinkattrs}>
+											{$label payrollamt33 RHRDOT}
 										</span>
-									{END OT_fieldheader}
+									{END RHRDOT_fieldheader}
 									</th>
-									{END OT_fieldheadercolumn}
+									{END RHRDOT_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RHRDOTpay_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RHRDOTpay_class}" data-field=RHRDOTpay>
+									{BEGIN RHRDOTpay_fieldheader}
+																				<span {$RHRDOTpay_orderlinkattrs}>
+											{$label payrollamt33 RHRDOTpay}
+										</span>
+									{END RHRDOTpay_fieldheader}
+									</th>
+									{END RHRDOTpay_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SHRDOT_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SHRDOT_class}" data-field=SHRDOT>
+									{BEGIN SHRDOT_fieldheader}
+																				<span {$SHRDOT_orderlinkattrs}>
+											{$label payrollamt33 SHRDOT}
+										</span>
+									{END SHRDOT_fieldheader}
+									</th>
+									{END SHRDOT_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SHRDOTpay_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SHRDOTpay_class}" data-field=SHRDOTpay>
+									{BEGIN SHRDOTpay_fieldheader}
+																				<span {$SHRDOTpay_orderlinkattrs}>
+											{$label payrollamt33 SHRDOTpay}
+										</span>
+									{END SHRDOTpay_fieldheader}
+									</th>
+									{END SHRDOTpay_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN DHRDOT_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$DHRDOT_class}" data-field=DHRDOT>
+									{BEGIN DHRDOT_fieldheader}
+																				<span {$DHRDOT_orderlinkattrs}>
+											{$label payrollamt33 DHRDOT}
+										</span>
+									{END DHRDOT_fieldheader}
+									</th>
+									{END DHRDOT_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN DHRDOTpay_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$DHRDOTpay_class}" data-field=DHRDOTpay>
+									{BEGIN DHRDOTpay_fieldheader}
+																				<span {$DHRDOTpay_orderlinkattrs}>
+											{$label payrollamt33 DHRDOTpay}
+										</span>
+									{END DHRDOTpay_fieldheader}
+									</th>
+									{END DHRDOTpay_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN TNDOTHr_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$TNDOTHr_class}" data-field=TNDOTHr>
+									{BEGIN TNDOTHr_fieldheader}
+																				<span {$TNDOTHr_orderlinkattrs}>
+											{$label payrollamt33 TNDOTHr}
+										</span>
+									{END TNDOTHr_fieldheader}
+									</th>
+									{END TNDOTHr_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN TNDOT_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$TNDOT_class}" data-field=TNDOT>
+									{BEGIN TNDOT_fieldheader}
+																				<span {$TNDOT_orderlinkattrs}>
+											{$label payrollamt33 TNDOT}
+										</span>
+									{END TNDOT_fieldheader}
+									</th>
+									{END TNDOT_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RHolidayHrs_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RHolidayHrs_class}" data-field=RHolidayHrs>
+									{BEGIN RHolidayHrs_fieldheader}
+																				<span {$RHolidayHrs_orderlinkattrs}>
+											{$label payrollamt33 RHolidayHrs}
+										</span>
+									{END RHolidayHrs_fieldheader}
+									</th>
+									{END RHolidayHrs_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RHoliday_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RHoliday_class}" data-field=RHoliday>
+									{BEGIN RHoliday_fieldheader}
+																				<span {$RHoliday_orderlinkattrs}>
+											{$label payrollamt33 RHoliday}
+										</span>
+									{END RHoliday_fieldheader}
+									</th>
+									{END RHoliday_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SHolidayHrs_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SHolidayHrs_class}" data-field=SHolidayHrs>
+									{BEGIN SHolidayHrs_fieldheader}
+																				<span {$SHolidayHrs_orderlinkattrs}>
+											{$label payrollamt33 SHolidayHrs}
+										</span>
+									{END SHolidayHrs_fieldheader}
+									</th>
+									{END SHolidayHrs_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SHoliday_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SHoliday_class}" data-field=SHoliday>
+									{BEGIN SHoliday_fieldheader}
+																				<span {$SHoliday_orderlinkattrs}>
+											{$label payrollamt33 SHoliday}
+										</span>
+									{END SHoliday_fieldheader}
+									</th>
+									{END SHoliday_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN DH_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$DH_class}" data-field=DH>
+									{BEGIN DH_fieldheader}
+																				<span {$DH_orderlinkattrs}>
+											{$label payrollamt33 DH}
+										</span>
+									{END DH_fieldheader}
+									</th>
+									{END DH_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN DHpay_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$DHpay_class}" data-field=DHpay>
+									{BEGIN DHpay_fieldheader}
+																				<span {$DHpay_orderlinkattrs}>
+											{$label payrollamt33 DHpay}
+										</span>
+									{END DHpay_fieldheader}
+									</th>
+									{END DHpay_fieldheadercolumn}
 									
 									
 									
@@ -1256,132 +1372,93 @@
 									
 									
 									
-									{BEGIN RegNDHrs_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$RegNDHrs_class}" data-field=RegNDHrs>
-									{BEGIN RegNDHrs_fieldheader}
-																				<span {$RegNDHrs_orderlinkattrs}>
-											{$label payrollamt33 RegNDHrs}
+									{BEGIN RHRD_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RHRD_class}" data-field=RHRD>
+									{BEGIN RHRD_fieldheader}
+																				<span {$RHRD_orderlinkattrs}>
+											{$label payrollamt33 RHRD}
 										</span>
-									{END RegNDHrs_fieldheader}
+									{END RHRD_fieldheader}
 									</th>
-									{END RegNDHrs_fieldheadercolumn}
+									{END RHRD_fieldheadercolumn}
 									
 									
 									
 									
-									{BEGIN ND_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$ND_class}" data-field=ND>
-									{BEGIN ND_fieldheader}
-																				<span {$ND_orderlinkattrs}>
-											{$label payrollamt33 ND}
+									{BEGIN RHRDpay_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RHRDpay_class}" data-field=RHRDpay>
+									{BEGIN RHRDpay_fieldheader}
+																				<span {$RHRDpay_orderlinkattrs}>
+											{$label payrollamt33 RHRDpay}
 										</span>
-									{END ND_fieldheader}
+									{END RHRDpay_fieldheader}
 									</th>
-									{END ND_fieldheadercolumn}
+									{END RHRDpay_fieldheadercolumn}
 									
 									
 									
 									
-									{BEGIN RHNDHrs_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$RHNDHrs_class}" data-field=RHNDHrs>
-									{BEGIN RHNDHrs_fieldheader}
-																				<span {$RHNDHrs_orderlinkattrs}>
-											{$label payrollamt33 RHNDHrs}
+									{BEGIN SHRD_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SHRD_class}" data-field=SHRD>
+									{BEGIN SHRD_fieldheader}
+																				<span {$SHRD_orderlinkattrs}>
+											{$label payrollamt33 SHRD}
 										</span>
-									{END RHNDHrs_fieldheader}
+									{END SHRD_fieldheader}
 									</th>
-									{END RHNDHrs_fieldheadercolumn}
+									{END SHRD_fieldheadercolumn}
 									
 									
 									
 									
-									{BEGIN RHND_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$RHND_class}" data-field=RHND>
-									{BEGIN RHND_fieldheader}
-																				<span {$RHND_orderlinkattrs}>
-											{$label payrollamt33 RHND}
+									{BEGIN SHRDpay_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SHRDpay_class}" data-field=SHRDpay>
+									{BEGIN SHRDpay_fieldheader}
+																				<span {$SHRDpay_orderlinkattrs}>
+											{$label payrollamt33 SHRDpay}
 										</span>
-									{END RHND_fieldheader}
+									{END SHRDpay_fieldheader}
 									</th>
-									{END RHND_fieldheadercolumn}
+									{END SHRDpay_fieldheadercolumn}
 									
 									
 									
 									
-									{BEGIN SHNDHrs_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$SHNDHrs_class}" data-field=SHNDHrs>
-									{BEGIN SHNDHrs_fieldheader}
-																				<span {$SHNDHrs_orderlinkattrs}>
-											{$label payrollamt33 SHNDHrs}
+									{BEGIN DHRD_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$DHRD_class}" data-field=DHRD>
+									{BEGIN DHRD_fieldheader}
+																				<span {$DHRD_orderlinkattrs}>
+											{$label payrollamt33 DHRD}
 										</span>
-									{END SHNDHrs_fieldheader}
+									{END DHRD_fieldheader}
 									</th>
-									{END SHNDHrs_fieldheadercolumn}
+									{END DHRD_fieldheadercolumn}
 									
 									
 									
 									
-									{BEGIN SHND_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$SHND_class}" data-field=SHND>
-									{BEGIN SHND_fieldheader}
-																				<span {$SHND_orderlinkattrs}>
-											{$label payrollamt33 SHND}
+									{BEGIN DHRDpay_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$DHRDpay_class}" data-field=DHRDpay>
+									{BEGIN DHRDpay_fieldheader}
+																				<span {$DHRDpay_orderlinkattrs}>
+											{$label payrollamt33 DHRDpay}
 										</span>
-									{END SHND_fieldheader}
+									{END DHRDpay_fieldheader}
 									</th>
-									{END SHND_fieldheadercolumn}
+									{END DHRDpay_fieldheadercolumn}
 									
 									
 									
 									
-									{BEGIN CHNDHrs_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$CHNDHrs_class}" data-field=CHNDHrs>
-									{BEGIN CHNDHrs_fieldheader}
-																				<span {$CHNDHrs_orderlinkattrs}>
-											{$label payrollamt33 CHNDHrs}
+									{BEGIN TNDHr_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$TNDHr_class}" data-field=TNDHr>
+									{BEGIN TNDHr_fieldheader}
+																				<span {$TNDHr_orderlinkattrs}>
+											{$label payrollamt33 TNDHr}
 										</span>
-									{END CHNDHrs_fieldheader}
+									{END TNDHr_fieldheader}
 									</th>
-									{END CHNDHrs_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN CHND_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$CHND_class}" data-field=CHND>
-									{BEGIN CHND_fieldheader}
-																				<span {$CHND_orderlinkattrs}>
-											{$label payrollamt33 CHND}
-										</span>
-									{END CHND_fieldheader}
-									</th>
-									{END CHND_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN RDNDHrs_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$RDNDHrs_class}" data-field=RDNDHrs>
-									{BEGIN RDNDHrs_fieldheader}
-																				<span {$RDNDHrs_orderlinkattrs}>
-											{$label payrollamt33 RDNDHrs}
-										</span>
-									{END RDNDHrs_fieldheader}
-									</th>
-									{END RDNDHrs_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN RDND_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$RDND_class}" data-field=RDND>
-									{BEGIN RDND_fieldheader}
-																				<span {$RDND_orderlinkattrs}>
-											{$label payrollamt33 RDND}
-										</span>
-									{END RDND_fieldheader}
-									</th>
-									{END RDND_fieldheadercolumn}
+									{END TNDHr_fieldheadercolumn}
 									
 									
 									
@@ -1503,19 +1580,6 @@
 									
 									
 									
-									{BEGIN TrO_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$TrO_class}" data-field=TrO>
-									{BEGIN TrO_fieldheader}
-																				<span {$TrO_orderlinkattrs}>
-											{$label payrollamt33 TrO}
-										</span>
-									{END TrO_fieldheader}
-									</th>
-									{END TrO_fieldheadercolumn}
-									
-									
-									
-									
 									{BEGIN VLBalance_fieldheadercolumn}
 									<th class="rnr-gridfieldlabel {$VLBalance_class}" data-field=VLBalance>
 									{BEGIN VLBalance_fieldheader}
@@ -1564,6 +1628,32 @@
 									{END PLBalance_fieldheader}
 									</th>
 									{END PLBalance_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN OTHrs_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$OTHrs_class}" data-field=OTHrs>
+									{BEGIN OTHrs_fieldheader}
+																				<span {$OTHrs_orderlinkattrs}>
+											{$label payrollamt33 OTHrs}
+										</span>
+									{END OTHrs_fieldheader}
+									</th>
+									{END OTHrs_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN OT_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$OT_class}" data-field=OT>
+									{BEGIN OT_fieldheader}
+																				<span {$OT_orderlinkattrs}>
+											{$label payrollamt33 OT}
+										</span>
+									{END OT_fieldheader}
+									</th>
+									{END OT_fieldheadercolumn}
 									
 									
 									
@@ -1698,6 +1788,45 @@
 									
 									
 									
+									{BEGIN TaxableToDate_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$TaxableToDate_class}" data-field=TaxableToDate>
+									{BEGIN TaxableToDate_fieldheader}
+																				<span {$TaxableToDate_orderlinkattrs}>
+											{$label payrollamt33 TaxableToDate}
+										</span>
+									{END TaxableToDate_fieldheader}
+									</th>
+									{END TaxableToDate_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN ThirToDate_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$ThirToDate_class}" data-field=ThirToDate>
+									{BEGIN ThirToDate_fieldheader}
+																				<span {$ThirToDate_orderlinkattrs}>
+											{$label payrollamt33 ThirToDate}
+										</span>
+									{END ThirToDate_fieldheader}
+									</th>
+									{END ThirToDate_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN TaxToDate_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$TaxToDate_class}" data-field=TaxToDate>
+									{BEGIN TaxToDate_fieldheader}
+																				<span {$TaxToDate_orderlinkattrs}>
+											{$label payrollamt33 TaxToDate}
+										</span>
+									{END TaxToDate_fieldheader}
+									</th>
+									{END TaxToDate_fieldheadercolumn}
+									
+									
+									
+									
 									{BEGIN endrecordheader_block}
 									<th class="rnr-cs">&nbsp;</th>
 									
@@ -1720,7 +1849,12 @@
 	<span data-hidden {$ieditbuttonsholder_attrs}></span>
 
 	
-		</td>	
+		{BEGIN view_column}
+	{BEGIN view_link}
+			<a class="glyphicon glyphicon-search" {$viewlink_attrs} title="View"></a>
+	{END view_link}
+	{END view_column}
+	</td>	
 	{END listIcons_column}	
 
 		{BEGIN checkbox_column}
@@ -1752,13 +1886,6 @@
 		{$ToDate_value}
 	</td>
 {END ToDate_fieldcolumn}
-
-
-	{BEGIN PayDate_fieldcolumn}
-	<td class="bs-gridcell {$PayDate_class}"  data-field=PayDate {$rowstyle} {$recordattrs}>
-		{$PayDate_value}
-	</td>
-{END PayDate_fieldcolumn}
 
 
 	{BEGIN EmployeeID_fieldcolumn}
@@ -1831,20 +1958,6 @@
 {END Absent_fieldcolumn}
 
 
-	{BEGIN LWOPdays_fieldcolumn}
-	<td class="bs-gridcell {$LWOPdays_class}"  data-field=LWOPdays {$rowstyle} {$recordattrs}>
-		{$LWOPdays_value}
-	</td>
-{END LWOPdays_fieldcolumn}
-
-
-	{BEGIN LWOP_fieldcolumn}
-	<td class="bs-gridcell {$LWOP_class}"  data-field=LWOP {$rowstyle} {$recordattrs}>
-		{$LWOP_value}
-	</td>
-{END LWOP_fieldcolumn}
-
-
 	{BEGIN RegPay_fieldcolumn}
 	<td class="bs-gridcell {$RegPay_class}"  data-field=RegPay {$rowstyle} {$recordattrs}>
 		{$RegPay_value}
@@ -1880,46 +1993,18 @@
 {END UnderTime_fieldcolumn}
 
 
-	{BEGIN RHolidayHrs_fieldcolumn}
-	<td class="bs-gridcell {$RHolidayHrs_class}"  data-field=RHolidayHrs {$rowstyle} {$recordattrs}>
-		{$RHolidayHrs_value}
+	{BEGIN LWOPdays_fieldcolumn}
+	<td class="bs-gridcell {$LWOPdays_class}"  data-field=LWOPdays {$rowstyle} {$recordattrs}>
+		{$LWOPdays_value}
 	</td>
-{END RHolidayHrs_fieldcolumn}
+{END LWOPdays_fieldcolumn}
 
 
-	{BEGIN RHoliday_fieldcolumn}
-	<td class="bs-gridcell {$RHoliday_class}"  data-field=RHoliday {$rowstyle} {$recordattrs}>
-		{$RHoliday_value}
+	{BEGIN LWOP_fieldcolumn}
+	<td class="bs-gridcell {$LWOP_class}"  data-field=LWOP {$rowstyle} {$recordattrs}>
+		{$LWOP_value}
 	</td>
-{END RHoliday_fieldcolumn}
-
-
-	{BEGIN SHolidayHrs_fieldcolumn}
-	<td class="bs-gridcell {$SHolidayHrs_class}"  data-field=SHolidayHrs {$rowstyle} {$recordattrs}>
-		{$SHolidayHrs_value}
-	</td>
-{END SHolidayHrs_fieldcolumn}
-
-
-	{BEGIN SHoliday_fieldcolumn}
-	<td class="bs-gridcell {$SHoliday_class}"  data-field=SHoliday {$rowstyle} {$recordattrs}>
-		{$SHoliday_value}
-	</td>
-{END SHoliday_fieldcolumn}
-
-
-	{BEGIN CHolidayHrs_fieldcolumn}
-	<td class="bs-gridcell {$CHolidayHrs_class}"  data-field=CHolidayHrs {$rowstyle} {$recordattrs}>
-		{$CHolidayHrs_value}
-	</td>
-{END CHolidayHrs_fieldcolumn}
-
-
-	{BEGIN CHoliday_fieldcolumn}
-	<td class="bs-gridcell {$CHoliday_class}"  data-field=CHoliday {$rowstyle} {$recordattrs}>
-		{$CHoliday_value}
-	</td>
-{END CHoliday_fieldcolumn}
+{END LWOP_fieldcolumn}
 
 
 	{BEGIN RegOTHrs_fieldcolumn}
@@ -1950,11 +2035,11 @@
 {END RHOT_fieldcolumn}
 
 
-	{BEGIN SHOTHRs_fieldcolumn}
-	<td class="bs-gridcell {$SHOTHRs_class}"  data-field=SHOTHRs {$rowstyle} {$recordattrs}>
-		{$SHOTHRs_value}
+	{BEGIN SHOTHrs_fieldcolumn}
+	<td class="bs-gridcell {$SHOTHrs_class}"  data-field=SHOTHrs {$rowstyle} {$recordattrs}>
+		{$SHOTHrs_value}
 	</td>
-{END SHOTHRs_fieldcolumn}
+{END SHOTHrs_fieldcolumn}
 
 
 	{BEGIN SHOT_fieldcolumn}
@@ -1964,18 +2049,18 @@
 {END SHOT_fieldcolumn}
 
 
-	{BEGIN CHOTHrs_fieldcolumn}
-	<td class="bs-gridcell {$CHOTHrs_class}"  data-field=CHOTHrs {$rowstyle} {$recordattrs}>
-		{$CHOTHrs_value}
+	{BEGIN DHOT_fieldcolumn}
+	<td class="bs-gridcell {$DHOT_class}"  data-field=DHOT {$rowstyle} {$recordattrs}>
+		{$DHOT_value}
 	</td>
-{END CHOTHrs_fieldcolumn}
+{END DHOT_fieldcolumn}
 
 
-	{BEGIN CHOT_fieldcolumn}
-	<td class="bs-gridcell {$CHOT_class}"  data-field=CHOT {$rowstyle} {$recordattrs}>
-		{$CHOT_value}
+	{BEGIN DHOTpay_fieldcolumn}
+	<td class="bs-gridcell {$DHOTpay_class}"  data-field=DHOTpay {$rowstyle} {$recordattrs}>
+		{$DHOTpay_value}
 	</td>
-{END CHOT_fieldcolumn}
+{END DHOTpay_fieldcolumn}
 
 
 	{BEGIN RDOTHrs_fieldcolumn}
@@ -1992,11 +2077,102 @@
 {END RDOT_fieldcolumn}
 
 
-	{BEGIN OT_fieldcolumn}
-	<td class="bs-gridcell {$OT_class}"  data-field=OT {$rowstyle} {$recordattrs}>
-		{$OT_value}
+	{BEGIN RHRDOT_fieldcolumn}
+	<td class="bs-gridcell {$RHRDOT_class}"  data-field=RHRDOT {$rowstyle} {$recordattrs}>
+		{$RHRDOT_value}
 	</td>
-{END OT_fieldcolumn}
+{END RHRDOT_fieldcolumn}
+
+
+	{BEGIN RHRDOTpay_fieldcolumn}
+	<td class="bs-gridcell {$RHRDOTpay_class}"  data-field=RHRDOTpay {$rowstyle} {$recordattrs}>
+		{$RHRDOTpay_value}
+	</td>
+{END RHRDOTpay_fieldcolumn}
+
+
+	{BEGIN SHRDOT_fieldcolumn}
+	<td class="bs-gridcell {$SHRDOT_class}"  data-field=SHRDOT {$rowstyle} {$recordattrs}>
+		{$SHRDOT_value}
+	</td>
+{END SHRDOT_fieldcolumn}
+
+
+	{BEGIN SHRDOTpay_fieldcolumn}
+	<td class="bs-gridcell {$SHRDOTpay_class}"  data-field=SHRDOTpay {$rowstyle} {$recordattrs}>
+		{$SHRDOTpay_value}
+	</td>
+{END SHRDOTpay_fieldcolumn}
+
+
+	{BEGIN DHRDOT_fieldcolumn}
+	<td class="bs-gridcell {$DHRDOT_class}"  data-field=DHRDOT {$rowstyle} {$recordattrs}>
+		{$DHRDOT_value}
+	</td>
+{END DHRDOT_fieldcolumn}
+
+
+	{BEGIN DHRDOTpay_fieldcolumn}
+	<td class="bs-gridcell {$DHRDOTpay_class}"  data-field=DHRDOTpay {$rowstyle} {$recordattrs}>
+		{$DHRDOTpay_value}
+	</td>
+{END DHRDOTpay_fieldcolumn}
+
+
+	{BEGIN TNDOTHr_fieldcolumn}
+	<td class="bs-gridcell {$TNDOTHr_class}"  data-field=TNDOTHr {$rowstyle} {$recordattrs}>
+		{$TNDOTHr_value}
+	</td>
+{END TNDOTHr_fieldcolumn}
+
+
+	{BEGIN TNDOT_fieldcolumn}
+	<td class="bs-gridcell {$TNDOT_class}"  data-field=TNDOT {$rowstyle} {$recordattrs}>
+		{$TNDOT_value}
+	</td>
+{END TNDOT_fieldcolumn}
+
+
+	{BEGIN RHolidayHrs_fieldcolumn}
+	<td class="bs-gridcell {$RHolidayHrs_class}"  data-field=RHolidayHrs {$rowstyle} {$recordattrs}>
+		{$RHolidayHrs_value}
+	</td>
+{END RHolidayHrs_fieldcolumn}
+
+
+	{BEGIN RHoliday_fieldcolumn}
+	<td class="bs-gridcell {$RHoliday_class}"  data-field=RHoliday {$rowstyle} {$recordattrs}>
+		{$RHoliday_value}
+	</td>
+{END RHoliday_fieldcolumn}
+
+
+	{BEGIN SHolidayHrs_fieldcolumn}
+	<td class="bs-gridcell {$SHolidayHrs_class}"  data-field=SHolidayHrs {$rowstyle} {$recordattrs}>
+		{$SHolidayHrs_value}
+	</td>
+{END SHolidayHrs_fieldcolumn}
+
+
+	{BEGIN SHoliday_fieldcolumn}
+	<td class="bs-gridcell {$SHoliday_class}"  data-field=SHoliday {$rowstyle} {$recordattrs}>
+		{$SHoliday_value}
+	</td>
+{END SHoliday_fieldcolumn}
+
+
+	{BEGIN DH_fieldcolumn}
+	<td class="bs-gridcell {$DH_class}"  data-field=DH {$rowstyle} {$recordattrs}>
+		{$DH_value}
+	</td>
+{END DH_fieldcolumn}
+
+
+	{BEGIN DHpay_fieldcolumn}
+	<td class="bs-gridcell {$DHpay_class}"  data-field=DHpay {$rowstyle} {$recordattrs}>
+		{$DHpay_value}
+	</td>
+{END DHpay_fieldcolumn}
 
 
 	{BEGIN RDHrs_fieldcolumn}
@@ -2013,74 +2189,53 @@
 {END RD_fieldcolumn}
 
 
-	{BEGIN RegNDHrs_fieldcolumn}
-	<td class="bs-gridcell {$RegNDHrs_class}"  data-field=RegNDHrs {$rowstyle} {$recordattrs}>
-		{$RegNDHrs_value}
+	{BEGIN RHRD_fieldcolumn}
+	<td class="bs-gridcell {$RHRD_class}"  data-field=RHRD {$rowstyle} {$recordattrs}>
+		{$RHRD_value}
 	</td>
-{END RegNDHrs_fieldcolumn}
+{END RHRD_fieldcolumn}
 
 
-	{BEGIN ND_fieldcolumn}
-	<td class="bs-gridcell {$ND_class}"  data-field=ND {$rowstyle} {$recordattrs}>
-		{$ND_value}
+	{BEGIN RHRDpay_fieldcolumn}
+	<td class="bs-gridcell {$RHRDpay_class}"  data-field=RHRDpay {$rowstyle} {$recordattrs}>
+		{$RHRDpay_value}
 	</td>
-{END ND_fieldcolumn}
+{END RHRDpay_fieldcolumn}
 
 
-	{BEGIN RHNDHrs_fieldcolumn}
-	<td class="bs-gridcell {$RHNDHrs_class}"  data-field=RHNDHrs {$rowstyle} {$recordattrs}>
-		{$RHNDHrs_value}
+	{BEGIN SHRD_fieldcolumn}
+	<td class="bs-gridcell {$SHRD_class}"  data-field=SHRD {$rowstyle} {$recordattrs}>
+		{$SHRD_value}
 	</td>
-{END RHNDHrs_fieldcolumn}
+{END SHRD_fieldcolumn}
 
 
-	{BEGIN RHND_fieldcolumn}
-	<td class="bs-gridcell {$RHND_class}"  data-field=RHND {$rowstyle} {$recordattrs}>
-		{$RHND_value}
+	{BEGIN SHRDpay_fieldcolumn}
+	<td class="bs-gridcell {$SHRDpay_class}"  data-field=SHRDpay {$rowstyle} {$recordattrs}>
+		{$SHRDpay_value}
 	</td>
-{END RHND_fieldcolumn}
+{END SHRDpay_fieldcolumn}
 
 
-	{BEGIN SHNDHrs_fieldcolumn}
-	<td class="bs-gridcell {$SHNDHrs_class}"  data-field=SHNDHrs {$rowstyle} {$recordattrs}>
-		{$SHNDHrs_value}
+	{BEGIN DHRD_fieldcolumn}
+	<td class="bs-gridcell {$DHRD_class}"  data-field=DHRD {$rowstyle} {$recordattrs}>
+		{$DHRD_value}
 	</td>
-{END SHNDHrs_fieldcolumn}
+{END DHRD_fieldcolumn}
 
 
-	{BEGIN SHND_fieldcolumn}
-	<td class="bs-gridcell {$SHND_class}"  data-field=SHND {$rowstyle} {$recordattrs}>
-		{$SHND_value}
+	{BEGIN DHRDpay_fieldcolumn}
+	<td class="bs-gridcell {$DHRDpay_class}"  data-field=DHRDpay {$rowstyle} {$recordattrs}>
+		{$DHRDpay_value}
 	</td>
-{END SHND_fieldcolumn}
+{END DHRDpay_fieldcolumn}
 
 
-	{BEGIN CHNDHrs_fieldcolumn}
-	<td class="bs-gridcell {$CHNDHrs_class}"  data-field=CHNDHrs {$rowstyle} {$recordattrs}>
-		{$CHNDHrs_value}
+	{BEGIN TNDHr_fieldcolumn}
+	<td class="bs-gridcell {$TNDHr_class}"  data-field=TNDHr {$rowstyle} {$recordattrs}>
+		{$TNDHr_value}
 	</td>
-{END CHNDHrs_fieldcolumn}
-
-
-	{BEGIN CHND_fieldcolumn}
-	<td class="bs-gridcell {$CHND_class}"  data-field=CHND {$rowstyle} {$recordattrs}>
-		{$CHND_value}
-	</td>
-{END CHND_fieldcolumn}
-
-
-	{BEGIN RDNDHrs_fieldcolumn}
-	<td class="bs-gridcell {$RDNDHrs_class}"  data-field=RDNDHrs {$rowstyle} {$recordattrs}>
-		{$RDNDHrs_value}
-	</td>
-{END RDNDHrs_fieldcolumn}
-
-
-	{BEGIN RDND_fieldcolumn}
-	<td class="bs-gridcell {$RDND_class}"  data-field=RDND {$rowstyle} {$recordattrs}>
-		{$RDND_value}
-	</td>
-{END RDND_fieldcolumn}
+{END TNDHr_fieldcolumn}
 
 
 	{BEGIN TND_fieldcolumn}
@@ -2146,13 +2301,6 @@
 {END PL_fieldcolumn}
 
 
-	{BEGIN TrO_fieldcolumn}
-	<td class="bs-gridcell {$TrO_class}"  data-field=TrO {$rowstyle} {$recordattrs}>
-		{$TrO_value}
-	</td>
-{END TrO_fieldcolumn}
-
-
 	{BEGIN VLBalance_fieldcolumn}
 	<td class="bs-gridcell {$VLBalance_class}"  data-field=VLBalance {$rowstyle} {$recordattrs}>
 		{$VLBalance_value}
@@ -2179,6 +2327,20 @@
 		{$PLBalance_value}
 	</td>
 {END PLBalance_fieldcolumn}
+
+
+	{BEGIN OTHrs_fieldcolumn}
+	<td class="bs-gridcell {$OTHrs_class}"  data-field=OTHrs {$rowstyle} {$recordattrs}>
+		{$OTHrs_value}
+	</td>
+{END OTHrs_fieldcolumn}
+
+
+	{BEGIN OT_fieldcolumn}
+	<td class="bs-gridcell {$OT_class}"  data-field=OT {$rowstyle} {$recordattrs}>
+		{$OT_value}
+	</td>
+{END OT_fieldcolumn}
 
 
 	{BEGIN TAdj_fieldcolumn}
@@ -2250,6 +2412,27 @@
 	</td>
 {END NetPay_fieldcolumn}
 
+
+	{BEGIN TaxableToDate_fieldcolumn}
+	<td class="bs-gridcell {$TaxableToDate_class}"  data-field=TaxableToDate {$rowstyle} {$recordattrs}>
+		{$TaxableToDate_value}
+	</td>
+{END TaxableToDate_fieldcolumn}
+
+
+	{BEGIN ThirToDate_fieldcolumn}
+	<td class="bs-gridcell {$ThirToDate_class}"  data-field=ThirToDate {$rowstyle} {$recordattrs}>
+		{$ThirToDate_value}
+	</td>
+{END ThirToDate_fieldcolumn}
+
+
+	{BEGIN TaxToDate_fieldcolumn}
+	<td class="bs-gridcell {$TaxToDate_class}"  data-field=TaxToDate {$rowstyle} {$recordattrs}>
+		{$TaxToDate_value}
+	</td>
+{END TaxToDate_fieldcolumn}
+
 	{BEGIN endrecord_block}
 	<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
 	{END endrecord_block}
@@ -2284,10 +2467,6 @@
 										<td class="bs-gridcell {$ToDate_class}" data-field="ToDate">
 																				</td>
 										{END ToDate_fieldfootercolumn}
-										{BEGIN PayDate_fieldfootercolumn}
-										<td class="bs-gridcell {$PayDate_class}" data-field="PayDate">
-																				</td>
-										{END PayDate_fieldfootercolumn}
 										{BEGIN EmployeeID_fieldfootercolumn}
 										<td class="bs-gridcell {$EmployeeID_class}" data-field="EmployeeID">
 																				</td>
@@ -2326,16 +2505,12 @@
 										{END DWork_fieldfootercolumn}
 										{BEGIN Absent_fieldfootercolumn}
 										<td class="bs-gridcell {$Absent_class}" data-field="Absent">
-																				</td>
+																					{BEGIN Absent_showtotal}
+																							Total:
+											{$Absent_total}
+											{END Absent_showtotal}
+										</td>
 										{END Absent_fieldfootercolumn}
-										{BEGIN LWOPdays_fieldfootercolumn}
-										<td class="bs-gridcell {$LWOPdays_class}" data-field="LWOPdays">
-																				</td>
-										{END LWOPdays_fieldfootercolumn}
-										{BEGIN LWOP_fieldfootercolumn}
-										<td class="bs-gridcell {$LWOP_class}" data-field="LWOP">
-																				</td>
-										{END LWOP_fieldfootercolumn}
 										{BEGIN RegPay_fieldfootercolumn}
 										<td class="bs-gridcell {$RegPay_class}" data-field="RegPay">
 																					{BEGIN RegPay_showtotal}
@@ -2346,7 +2521,11 @@
 										{END RegPay_fieldfootercolumn}
 										{BEGIN LateMins_fieldfootercolumn}
 										<td class="bs-gridcell {$LateMins_class}" data-field="LateMins">
-																				</td>
+																					{BEGIN LateMins_showtotal}
+																							Total:
+											{$LateMins_total}
+											{END LateMins_showtotal}
+										</td>
 										{END LateMins_fieldfootercolumn}
 										{BEGIN Late_fieldfootercolumn}
 										<td class="bs-gridcell {$Late_class}" data-field="Late">
@@ -2358,7 +2537,11 @@
 										{END Late_fieldfootercolumn}
 										{BEGIN UndertimeMins_fieldfootercolumn}
 										<td class="bs-gridcell {$UndertimeMins_class}" data-field="UndertimeMins">
-																				</td>
+																					{BEGIN UndertimeMins_showtotal}
+																							Total:
+											{$UndertimeMins_total}
+											{END UndertimeMins_showtotal}
+										</td>
 										{END UndertimeMins_fieldfootercolumn}
 										{BEGIN UnderTime_fieldfootercolumn}
 										<td class="bs-gridcell {$UnderTime_class}" data-field="UnderTime">
@@ -2368,45 +2551,29 @@
 											{END UnderTime_showtotal}
 										</td>
 										{END UnderTime_fieldfootercolumn}
-										{BEGIN RHolidayHrs_fieldfootercolumn}
-										<td class="bs-gridcell {$RHolidayHrs_class}" data-field="RHolidayHrs">
-																				</td>
-										{END RHolidayHrs_fieldfootercolumn}
-										{BEGIN RHoliday_fieldfootercolumn}
-										<td class="bs-gridcell {$RHoliday_class}" data-field="RHoliday">
-																					{BEGIN RHoliday_showtotal}
+										{BEGIN LWOPdays_fieldfootercolumn}
+										<td class="bs-gridcell {$LWOPdays_class}" data-field="LWOPdays">
+																					{BEGIN LWOPdays_showtotal}
 																							Total:
-											{$RHoliday_total}
-											{END RHoliday_showtotal}
+											{$LWOPdays_total}
+											{END LWOPdays_showtotal}
 										</td>
-										{END RHoliday_fieldfootercolumn}
-										{BEGIN SHolidayHrs_fieldfootercolumn}
-										<td class="bs-gridcell {$SHolidayHrs_class}" data-field="SHolidayHrs">
-																				</td>
-										{END SHolidayHrs_fieldfootercolumn}
-										{BEGIN SHoliday_fieldfootercolumn}
-										<td class="bs-gridcell {$SHoliday_class}" data-field="SHoliday">
-																					{BEGIN SHoliday_showtotal}
+										{END LWOPdays_fieldfootercolumn}
+										{BEGIN LWOP_fieldfootercolumn}
+										<td class="bs-gridcell {$LWOP_class}" data-field="LWOP">
+																					{BEGIN LWOP_showtotal}
 																							Total:
-											{$SHoliday_total}
-											{END SHoliday_showtotal}
+											{$LWOP_total}
+											{END LWOP_showtotal}
 										</td>
-										{END SHoliday_fieldfootercolumn}
-										{BEGIN CHolidayHrs_fieldfootercolumn}
-										<td class="bs-gridcell {$CHolidayHrs_class}" data-field="CHolidayHrs">
-																				</td>
-										{END CHolidayHrs_fieldfootercolumn}
-										{BEGIN CHoliday_fieldfootercolumn}
-										<td class="bs-gridcell {$CHoliday_class}" data-field="CHoliday">
-																					{BEGIN CHoliday_showtotal}
-																							Total:
-											{$CHoliday_total}
-											{END CHoliday_showtotal}
-										</td>
-										{END CHoliday_fieldfootercolumn}
+										{END LWOP_fieldfootercolumn}
 										{BEGIN RegOTHrs_fieldfootercolumn}
 										<td class="bs-gridcell {$RegOTHrs_class}" data-field="RegOTHrs">
-																				</td>
+																					{BEGIN RegOTHrs_showtotal}
+																							Total:
+											{$RegOTHrs_total}
+											{END RegOTHrs_showtotal}
+										</td>
 										{END RegOTHrs_fieldfootercolumn}
 										{BEGIN RegOT_fieldfootercolumn}
 										<td class="bs-gridcell {$RegOT_class}" data-field="RegOT">
@@ -2418,7 +2585,11 @@
 										{END RegOT_fieldfootercolumn}
 										{BEGIN RHOTHrs_fieldfootercolumn}
 										<td class="bs-gridcell {$RHOTHrs_class}" data-field="RHOTHrs">
-																				</td>
+																					{BEGIN RHOTHrs_showtotal}
+																							Total:
+											{$RHOTHrs_total}
+											{END RHOTHrs_showtotal}
+										</td>
 										{END RHOTHrs_fieldfootercolumn}
 										{BEGIN RHOT_fieldfootercolumn}
 										<td class="bs-gridcell {$RHOT_class}" data-field="RHOT">
@@ -2428,10 +2599,14 @@
 											{END RHOT_showtotal}
 										</td>
 										{END RHOT_fieldfootercolumn}
-										{BEGIN SHOTHRs_fieldfootercolumn}
-										<td class="bs-gridcell {$SHOTHRs_class}" data-field="SHOTHRs">
-																				</td>
-										{END SHOTHRs_fieldfootercolumn}
+										{BEGIN SHOTHrs_fieldfootercolumn}
+										<td class="bs-gridcell {$SHOTHrs_class}" data-field="SHOTHrs">
+																					{BEGIN SHOTHrs_showtotal}
+																							Total:
+											{$SHOTHrs_total}
+											{END SHOTHrs_showtotal}
+										</td>
+										{END SHOTHrs_fieldfootercolumn}
 										{BEGIN SHOT_fieldfootercolumn}
 										<td class="bs-gridcell {$SHOT_class}" data-field="SHOT">
 																					{BEGIN SHOT_showtotal}
@@ -2440,21 +2615,29 @@
 											{END SHOT_showtotal}
 										</td>
 										{END SHOT_fieldfootercolumn}
-										{BEGIN CHOTHrs_fieldfootercolumn}
-										<td class="bs-gridcell {$CHOTHrs_class}" data-field="CHOTHrs">
-																				</td>
-										{END CHOTHrs_fieldfootercolumn}
-										{BEGIN CHOT_fieldfootercolumn}
-										<td class="bs-gridcell {$CHOT_class}" data-field="CHOT">
-																					{BEGIN CHOT_showtotal}
+										{BEGIN DHOT_fieldfootercolumn}
+										<td class="bs-gridcell {$DHOT_class}" data-field="DHOT">
+																					{BEGIN DHOT_showtotal}
 																							Total:
-											{$CHOT_total}
-											{END CHOT_showtotal}
+											{$DHOT_total}
+											{END DHOT_showtotal}
 										</td>
-										{END CHOT_fieldfootercolumn}
+										{END DHOT_fieldfootercolumn}
+										{BEGIN DHOTpay_fieldfootercolumn}
+										<td class="bs-gridcell {$DHOTpay_class}" data-field="DHOTpay">
+																					{BEGIN DHOTpay_showtotal}
+																							Total:
+											{$DHOTpay_total}
+											{END DHOTpay_showtotal}
+										</td>
+										{END DHOTpay_fieldfootercolumn}
 										{BEGIN RDOTHrs_fieldfootercolumn}
 										<td class="bs-gridcell {$RDOTHrs_class}" data-field="RDOTHrs">
-																				</td>
+																					{BEGIN RDOTHrs_showtotal}
+																							Total:
+											{$RDOTHrs_total}
+											{END RDOTHrs_showtotal}
+										</td>
 										{END RDOTHrs_fieldfootercolumn}
 										{BEGIN RDOT_fieldfootercolumn}
 										<td class="bs-gridcell {$RDOT_class}" data-field="RDOT">
@@ -2464,17 +2647,125 @@
 											{END RDOT_showtotal}
 										</td>
 										{END RDOT_fieldfootercolumn}
-										{BEGIN OT_fieldfootercolumn}
-										<td class="bs-gridcell {$OT_class}" data-field="OT">
-																					{BEGIN OT_showtotal}
+										{BEGIN RHRDOT_fieldfootercolumn}
+										<td class="bs-gridcell {$RHRDOT_class}" data-field="RHRDOT">
+																					{BEGIN RHRDOT_showtotal}
 																							Total:
-											{$OT_total}
-											{END OT_showtotal}
+											{$RHRDOT_total}
+											{END RHRDOT_showtotal}
 										</td>
-										{END OT_fieldfootercolumn}
+										{END RHRDOT_fieldfootercolumn}
+										{BEGIN RHRDOTpay_fieldfootercolumn}
+										<td class="bs-gridcell {$RHRDOTpay_class}" data-field="RHRDOTpay">
+																					{BEGIN RHRDOTpay_showtotal}
+																							Total:
+											{$RHRDOTpay_total}
+											{END RHRDOTpay_showtotal}
+										</td>
+										{END RHRDOTpay_fieldfootercolumn}
+										{BEGIN SHRDOT_fieldfootercolumn}
+										<td class="bs-gridcell {$SHRDOT_class}" data-field="SHRDOT">
+																					{BEGIN SHRDOT_showtotal}
+																							Total:
+											{$SHRDOT_total}
+											{END SHRDOT_showtotal}
+										</td>
+										{END SHRDOT_fieldfootercolumn}
+										{BEGIN SHRDOTpay_fieldfootercolumn}
+										<td class="bs-gridcell {$SHRDOTpay_class}" data-field="SHRDOTpay">
+																					{BEGIN SHRDOTpay_showtotal}
+																							Total:
+											{$SHRDOTpay_total}
+											{END SHRDOTpay_showtotal}
+										</td>
+										{END SHRDOTpay_fieldfootercolumn}
+										{BEGIN DHRDOT_fieldfootercolumn}
+										<td class="bs-gridcell {$DHRDOT_class}" data-field="DHRDOT">
+																					{BEGIN DHRDOT_showtotal}
+																							Total:
+											{$DHRDOT_total}
+											{END DHRDOT_showtotal}
+										</td>
+										{END DHRDOT_fieldfootercolumn}
+										{BEGIN DHRDOTpay_fieldfootercolumn}
+										<td class="bs-gridcell {$DHRDOTpay_class}" data-field="DHRDOTpay">
+																					{BEGIN DHRDOTpay_showtotal}
+																							Total:
+											{$DHRDOTpay_total}
+											{END DHRDOTpay_showtotal}
+										</td>
+										{END DHRDOTpay_fieldfootercolumn}
+										{BEGIN TNDOTHr_fieldfootercolumn}
+										<td class="bs-gridcell {$TNDOTHr_class}" data-field="TNDOTHr">
+																					{BEGIN TNDOTHr_showtotal}
+																							Total:
+											{$TNDOTHr_total}
+											{END TNDOTHr_showtotal}
+										</td>
+										{END TNDOTHr_fieldfootercolumn}
+										{BEGIN TNDOT_fieldfootercolumn}
+										<td class="bs-gridcell {$TNDOT_class}" data-field="TNDOT">
+																					{BEGIN TNDOT_showtotal}
+																							Total:
+											{$TNDOT_total}
+											{END TNDOT_showtotal}
+										</td>
+										{END TNDOT_fieldfootercolumn}
+										{BEGIN RHolidayHrs_fieldfootercolumn}
+										<td class="bs-gridcell {$RHolidayHrs_class}" data-field="RHolidayHrs">
+																					{BEGIN RHolidayHrs_showtotal}
+																							Total:
+											{$RHolidayHrs_total}
+											{END RHolidayHrs_showtotal}
+										</td>
+										{END RHolidayHrs_fieldfootercolumn}
+										{BEGIN RHoliday_fieldfootercolumn}
+										<td class="bs-gridcell {$RHoliday_class}" data-field="RHoliday">
+																					{BEGIN RHoliday_showtotal}
+																							Total:
+											{$RHoliday_total}
+											{END RHoliday_showtotal}
+										</td>
+										{END RHoliday_fieldfootercolumn}
+										{BEGIN SHolidayHrs_fieldfootercolumn}
+										<td class="bs-gridcell {$SHolidayHrs_class}" data-field="SHolidayHrs">
+																					{BEGIN SHolidayHrs_showtotal}
+																							Total:
+											{$SHolidayHrs_total}
+											{END SHolidayHrs_showtotal}
+										</td>
+										{END SHolidayHrs_fieldfootercolumn}
+										{BEGIN SHoliday_fieldfootercolumn}
+										<td class="bs-gridcell {$SHoliday_class}" data-field="SHoliday">
+																					{BEGIN SHoliday_showtotal}
+																							Total:
+											{$SHoliday_total}
+											{END SHoliday_showtotal}
+										</td>
+										{END SHoliday_fieldfootercolumn}
+										{BEGIN DH_fieldfootercolumn}
+										<td class="bs-gridcell {$DH_class}" data-field="DH">
+																					{BEGIN DH_showtotal}
+																							Total:
+											{$DH_total}
+											{END DH_showtotal}
+										</td>
+										{END DH_fieldfootercolumn}
+										{BEGIN DHpay_fieldfootercolumn}
+										<td class="bs-gridcell {$DHpay_class}" data-field="DHpay">
+																					{BEGIN DHpay_showtotal}
+																							Total:
+											{$DHpay_total}
+											{END DHpay_showtotal}
+										</td>
+										{END DHpay_fieldfootercolumn}
 										{BEGIN RDHrs_fieldfootercolumn}
 										<td class="bs-gridcell {$RDHrs_class}" data-field="RDHrs">
-																				</td>
+																					{BEGIN RDHrs_showtotal}
+																							Total:
+											{$RDHrs_total}
+											{END RDHrs_showtotal}
+										</td>
 										{END RDHrs_fieldfootercolumn}
 										{BEGIN RD_fieldfootercolumn}
 										<td class="bs-gridcell {$RD_class}" data-field="RD">
@@ -2484,46 +2775,62 @@
 											{END RD_showtotal}
 										</td>
 										{END RD_fieldfootercolumn}
-										{BEGIN RegNDHrs_fieldfootercolumn}
-										<td class="bs-gridcell {$RegNDHrs_class}" data-field="RegNDHrs">
-																				</td>
-										{END RegNDHrs_fieldfootercolumn}
-										{BEGIN ND_fieldfootercolumn}
-										<td class="bs-gridcell {$ND_class}" data-field="ND">
-																				</td>
-										{END ND_fieldfootercolumn}
-										{BEGIN RHNDHrs_fieldfootercolumn}
-										<td class="bs-gridcell {$RHNDHrs_class}" data-field="RHNDHrs">
-																				</td>
-										{END RHNDHrs_fieldfootercolumn}
-										{BEGIN RHND_fieldfootercolumn}
-										<td class="bs-gridcell {$RHND_class}" data-field="RHND">
-																				</td>
-										{END RHND_fieldfootercolumn}
-										{BEGIN SHNDHrs_fieldfootercolumn}
-										<td class="bs-gridcell {$SHNDHrs_class}" data-field="SHNDHrs">
-																				</td>
-										{END SHNDHrs_fieldfootercolumn}
-										{BEGIN SHND_fieldfootercolumn}
-										<td class="bs-gridcell {$SHND_class}" data-field="SHND">
-																				</td>
-										{END SHND_fieldfootercolumn}
-										{BEGIN CHNDHrs_fieldfootercolumn}
-										<td class="bs-gridcell {$CHNDHrs_class}" data-field="CHNDHrs">
-																				</td>
-										{END CHNDHrs_fieldfootercolumn}
-										{BEGIN CHND_fieldfootercolumn}
-										<td class="bs-gridcell {$CHND_class}" data-field="CHND">
-																				</td>
-										{END CHND_fieldfootercolumn}
-										{BEGIN RDNDHrs_fieldfootercolumn}
-										<td class="bs-gridcell {$RDNDHrs_class}" data-field="RDNDHrs">
-																				</td>
-										{END RDNDHrs_fieldfootercolumn}
-										{BEGIN RDND_fieldfootercolumn}
-										<td class="bs-gridcell {$RDND_class}" data-field="RDND">
-																				</td>
-										{END RDND_fieldfootercolumn}
+										{BEGIN RHRD_fieldfootercolumn}
+										<td class="bs-gridcell {$RHRD_class}" data-field="RHRD">
+																					{BEGIN RHRD_showtotal}
+																							Total:
+											{$RHRD_total}
+											{END RHRD_showtotal}
+										</td>
+										{END RHRD_fieldfootercolumn}
+										{BEGIN RHRDpay_fieldfootercolumn}
+										<td class="bs-gridcell {$RHRDpay_class}" data-field="RHRDpay">
+																					{BEGIN RHRDpay_showtotal}
+																							Total:
+											{$RHRDpay_total}
+											{END RHRDpay_showtotal}
+										</td>
+										{END RHRDpay_fieldfootercolumn}
+										{BEGIN SHRD_fieldfootercolumn}
+										<td class="bs-gridcell {$SHRD_class}" data-field="SHRD">
+																					{BEGIN SHRD_showtotal}
+																							Total:
+											{$SHRD_total}
+											{END SHRD_showtotal}
+										</td>
+										{END SHRD_fieldfootercolumn}
+										{BEGIN SHRDpay_fieldfootercolumn}
+										<td class="bs-gridcell {$SHRDpay_class}" data-field="SHRDpay">
+																					{BEGIN SHRDpay_showtotal}
+																							Total:
+											{$SHRDpay_total}
+											{END SHRDpay_showtotal}
+										</td>
+										{END SHRDpay_fieldfootercolumn}
+										{BEGIN DHRD_fieldfootercolumn}
+										<td class="bs-gridcell {$DHRD_class}" data-field="DHRD">
+																					{BEGIN DHRD_showtotal}
+																							Total:
+											{$DHRD_total}
+											{END DHRD_showtotal}
+										</td>
+										{END DHRD_fieldfootercolumn}
+										{BEGIN DHRDpay_fieldfootercolumn}
+										<td class="bs-gridcell {$DHRDpay_class}" data-field="DHRDpay">
+																					{BEGIN DHRDpay_showtotal}
+																							Total:
+											{$DHRDpay_total}
+											{END DHRDpay_showtotal}
+										</td>
+										{END DHRDpay_fieldfootercolumn}
+										{BEGIN TNDHr_fieldfootercolumn}
+										<td class="bs-gridcell {$TNDHr_class}" data-field="TNDHr">
+																					{BEGIN TNDHr_showtotal}
+																							Total:
+											{$TNDHr_total}
+											{END TNDHr_showtotal}
+										</td>
+										{END TNDHr_fieldfootercolumn}
 										{BEGIN TND_fieldfootercolumn}
 										<td class="bs-gridcell {$TND_class}" data-field="TND">
 																					{BEGIN TND_showtotal}
@@ -2534,56 +2841,116 @@
 										{END TND_fieldfootercolumn}
 										{BEGIN VLDays_fieldfootercolumn}
 										<td class="bs-gridcell {$VLDays_class}" data-field="VLDays">
-																				</td>
+																					{BEGIN VLDays_showtotal}
+																							Total:
+											{$VLDays_total}
+											{END VLDays_showtotal}
+										</td>
 										{END VLDays_fieldfootercolumn}
 										{BEGIN VL_fieldfootercolumn}
 										<td class="bs-gridcell {$VL_class}" data-field="VL">
-																				</td>
+																					{BEGIN VL_showtotal}
+																							Total:
+											{$VL_total}
+											{END VL_showtotal}
+										</td>
 										{END VL_fieldfootercolumn}
 										{BEGIN SLDays_fieldfootercolumn}
 										<td class="bs-gridcell {$SLDays_class}" data-field="SLDays">
-																				</td>
+																					{BEGIN SLDays_showtotal}
+																							Total:
+											{$SLDays_total}
+											{END SLDays_showtotal}
+										</td>
 										{END SLDays_fieldfootercolumn}
 										{BEGIN SL_fieldfootercolumn}
 										<td class="bs-gridcell {$SL_class}" data-field="SL">
-																				</td>
+																					{BEGIN SL_showtotal}
+																							Total:
+											{$SL_total}
+											{END SL_showtotal}
+										</td>
 										{END SL_fieldfootercolumn}
 										{BEGIN ELDays_fieldfootercolumn}
 										<td class="bs-gridcell {$ELDays_class}" data-field="ELDays">
-																				</td>
+																					{BEGIN ELDays_showtotal}
+																							Total:
+											{$ELDays_total}
+											{END ELDays_showtotal}
+										</td>
 										{END ELDays_fieldfootercolumn}
 										{BEGIN EL_fieldfootercolumn}
 										<td class="bs-gridcell {$EL_class}" data-field="EL">
-																				</td>
+																					{BEGIN EL_showtotal}
+																							Total:
+											{$EL_total}
+											{END EL_showtotal}
+										</td>
 										{END EL_fieldfootercolumn}
 										{BEGIN PLDays_fieldfootercolumn}
 										<td class="bs-gridcell {$PLDays_class}" data-field="PLDays">
-																				</td>
+																					{BEGIN PLDays_showtotal}
+																							Total:
+											{$PLDays_total}
+											{END PLDays_showtotal}
+										</td>
 										{END PLDays_fieldfootercolumn}
 										{BEGIN PL_fieldfootercolumn}
 										<td class="bs-gridcell {$PL_class}" data-field="PL">
-																				</td>
+																					{BEGIN PL_showtotal}
+																							Total:
+											{$PL_total}
+											{END PL_showtotal}
+										</td>
 										{END PL_fieldfootercolumn}
-										{BEGIN TrO_fieldfootercolumn}
-										<td class="bs-gridcell {$TrO_class}" data-field="TrO">
-																				</td>
-										{END TrO_fieldfootercolumn}
 										{BEGIN VLBalance_fieldfootercolumn}
 										<td class="bs-gridcell {$VLBalance_class}" data-field="VLBalance">
-																				</td>
+																					{BEGIN VLBalance_showtotal}
+																							Total:
+											{$VLBalance_total}
+											{END VLBalance_showtotal}
+										</td>
 										{END VLBalance_fieldfootercolumn}
 										{BEGIN SLBalance_fieldfootercolumn}
 										<td class="bs-gridcell {$SLBalance_class}" data-field="SLBalance">
-																				</td>
+																					{BEGIN SLBalance_showtotal}
+																							Total:
+											{$SLBalance_total}
+											{END SLBalance_showtotal}
+										</td>
 										{END SLBalance_fieldfootercolumn}
 										{BEGIN ELBalance_fieldfootercolumn}
 										<td class="bs-gridcell {$ELBalance_class}" data-field="ELBalance">
-																				</td>
+																					{BEGIN ELBalance_showtotal}
+																							Total:
+											{$ELBalance_total}
+											{END ELBalance_showtotal}
+										</td>
 										{END ELBalance_fieldfootercolumn}
 										{BEGIN PLBalance_fieldfootercolumn}
 										<td class="bs-gridcell {$PLBalance_class}" data-field="PLBalance">
-																				</td>
+																					{BEGIN PLBalance_showtotal}
+																							Total:
+											{$PLBalance_total}
+											{END PLBalance_showtotal}
+										</td>
 										{END PLBalance_fieldfootercolumn}
+										{BEGIN OTHrs_fieldfootercolumn}
+										<td class="bs-gridcell {$OTHrs_class}" data-field="OTHrs">
+																					{BEGIN OTHrs_showtotal}
+																							Total:
+											{$OTHrs_total}
+											{END OTHrs_showtotal}
+										</td>
+										{END OTHrs_fieldfootercolumn}
+										{BEGIN OT_fieldfootercolumn}
+										<td class="bs-gridcell {$OT_class}" data-field="OT">
+																					{BEGIN OT_showtotal}
+																							Total:
+											{$OT_total}
+											{END OT_showtotal}
+										</td>
+										{END OT_fieldfootercolumn}
 										{BEGIN TAdj_fieldfootercolumn}
 										<td class="bs-gridcell {$TAdj_class}" data-field="TAdj">
 																					{BEGIN TAdj_showtotal}
@@ -2664,6 +3031,30 @@
 											{END NetPay_showtotal}
 										</td>
 										{END NetPay_fieldfootercolumn}
+										{BEGIN TaxableToDate_fieldfootercolumn}
+										<td class="bs-gridcell {$TaxableToDate_class}" data-field="TaxableToDate">
+																					{BEGIN TaxableToDate_showtotal}
+																							Total:
+											{$TaxableToDate_total}
+											{END TaxableToDate_showtotal}
+										</td>
+										{END TaxableToDate_fieldfootercolumn}
+										{BEGIN ThirToDate_fieldfootercolumn}
+										<td class="bs-gridcell {$ThirToDate_class}" data-field="ThirToDate">
+																					{BEGIN ThirToDate_showtotal}
+																							Total:
+											{$ThirToDate_total}
+											{END ThirToDate_showtotal}
+										</td>
+										{END ThirToDate_fieldfootercolumn}
+										{BEGIN TaxToDate_fieldfootercolumn}
+										<td class="bs-gridcell {$TaxToDate_class}" data-field="TaxToDate">
+																					{BEGIN TaxToDate_showtotal}
+																							Total:
+											{$TaxToDate_total}
+											{END TaxToDate_showtotal}
+										</td>
+										{END TaxToDate_fieldfootercolumn}
 									{BEGIN endrecordtotals_block}
 									<td class="rnr-cs bs-gridcell"></td>
 									{END endrecordtotals_block}

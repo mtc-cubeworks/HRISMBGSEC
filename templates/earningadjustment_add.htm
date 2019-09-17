@@ -129,24 +129,6 @@
 </div>
 {END AdjustmentDescription_fieldblock}
 
-			{BEGIN PerPayrollAmount_fieldblock}
-<div class=container>
-<div class="form-group {$fielddispclass_PerPayrollAmount}" data-fieldname="PerPayrollAmount" data-signal-error-for="PerPayrollAmount{$id}" >
-	<label class="col-md-3 control-label" for="{$labelfor_PerPayrollAmount}">
-		{BEGIN PerPayrollAmount_label}{$label earningadjustment PerPayrollAmount}{END PerPayrollAmount_label}
-	</label>
-	<div class="col-md-6" >
-		{$PerPayrollAmount_editcontrol}
-	</div>
-	<div class="col-md-3 help-block" data-helpfor="PerPayrollAmount">
-		<div class="text-muted" >
-		{$tooltip earningadjustment PerPayrollAmount}
-		</div>
-	</div>
-</div>
-</div>
-{END PerPayrollAmount_fieldblock}
-
 			{BEGIN PaymentPeriod_fieldblock}
 <div class=container>
 <div class="form-group {$fielddispclass_PaymentPeriod}" data-fieldname="PaymentPeriod" data-signal-error-for="PaymentPeriod{$id}" >
@@ -164,6 +146,42 @@
 </div>
 </div>
 {END PaymentPeriod_fieldblock}
+
+			{BEGIN PerDay_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_PerDay}" data-fieldname="PerDay" data-signal-error-for="PerDay{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_PerDay}">
+		{BEGIN PerDay_label}{$label earningadjustment PerDay}{END PerDay_label}
+	</label>
+	<div class="col-md-6" >
+		{$PerDay_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="PerDay">
+		<div class="text-muted" >
+		{$tooltip earningadjustment PerDay}
+		</div>
+	</div>
+</div>
+</div>
+{END PerDay_fieldblock}
+
+			{BEGIN PerPayrollAmount_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_PerPayrollAmount}" data-fieldname="PerPayrollAmount" data-signal-error-for="PerPayrollAmount{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_PerPayrollAmount}">
+		{BEGIN PerPayrollAmount_label}{$label earningadjustment PerPayrollAmount}{END PerPayrollAmount_label}
+	</label>
+	<div class="col-md-6" >
+		{$PerPayrollAmount_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="PerPayrollAmount">
+		<div class="text-muted" >
+		{$tooltip earningadjustment PerPayrollAmount}
+		</div>
+	</div>
+</div>
+</div>
+{END PerPayrollAmount_fieldblock}
 
 			{BEGIN LessAbsences_fieldblock}
 <div class=container>

@@ -252,7 +252,7 @@ $tdataleaves[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																														
+																																																																																																																																																																																																																																																																		
 
 $tdataleaves[".ajaxCodeSnippetAdded"] = false;
 
@@ -382,7 +382,7 @@ $tdataleaves[".strOrderBy"] = $tstrOrderBy;
 
 $tdataleaves[".orderindexes"] = array();
 
-$tdataleaves[".sqlHead"] = "SELECT LvID,  FromDate,  LeaveType,  Days,  EmployeeID,  ToDate,  Approved,  ApprovedDate,  Approvedby,  Posted,  DateCreated,  ApprovedTime,  FirstHalf,  SecondHalf,  Locked,  Superior,  Reason,  Superior2,  `1stApproval`,  `2ndApproval`,  TotalDays";
+$tdataleaves[".sqlHead"] = "SELECT LvID,  	FromDate,  	LeaveType,  	Days,  	EmployeeID,  	ToDate,  	Approved,  	ApprovedDate,  	Approvedby,  	Posted,  	DateCreated,  	ApprovedTime,  	FirstHalf,  	SecondHalf,  	Locked,  	Superior,  	Reason,  	Superior2,  	`1stApproval`,  	`2ndApproval`,  	TotalDays";
 $tdataleaves[".sqlFrom"] = "FROM leaves";
 $tdataleaves[".sqlWhereExpr"] = "";
 $tdataleaves[".sqlTail"] = "";
@@ -3408,7 +3408,7 @@ function createSqlQuery_leaves()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "LvID,  FromDate,  LeaveType,  Days,  EmployeeID,  ToDate,  Approved,  ApprovedDate,  Approvedby,  Posted,  DateCreated,  ApprovedTime,  FirstHalf,  SecondHalf,  Locked,  Superior,  Reason,  Superior2,  `1stApproval`,  `2ndApproval`,  TotalDays";
+$proto0["m_strFieldList"] = "LvID,  	FromDate,  	LeaveType,  	Days,  	EmployeeID,  	ToDate,  	Approved,  	ApprovedDate,  	Approvedby,  	Posted,  	DateCreated,  	ApprovedTime,  	FirstHalf,  	SecondHalf,  	Locked,  	Superior,  	Reason,  	Superior2,  	`1stApproval`,  	`2ndApproval`,  	TotalDays";
 $proto0["m_strFrom"] = "FROM leaves";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";

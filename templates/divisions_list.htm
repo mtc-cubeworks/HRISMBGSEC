@@ -414,7 +414,29 @@
 		</li>
 		<li class="divider" role="separator"></li>
 
-		
+				<li>			
+		{BEGIN print_details}
+			<div class="rnr-printdetails">
+				<label for="printDetailsToggler{$id}">
+					<input type="checkbox" id="printDetailsToggler{$id}">
+					Print details
+				</label>
+				<div class="rnr-printdetailstables"  id="printdetailstables{$id}" style="display:none;">
+					{BEGIN print_details_holidays}
+						
+							<div class="rnr-printdetialstable">
+								<label for="printDetailsholidays{$id}">
+									<input type="checkbox" value="holidays" id="printDetailsholidays{$id}" checked>
+									Holidays
+								</label>
+							</div>
+					{END print_details_holidays}
+				</div>
+			</div>
+		{END print_details}
+		</li>
+		<li class="divider" role="separator"></li>
+
 				<li>	
 			<div class="rnr-printdetails">
 				<label for="printPerPage{$id}">
@@ -530,7 +552,10 @@
 									</th>
 									{END checkbox_column}
 
-																		
+																		{BEGIN divisions_dtable_column}
+									<th >&nbsp;</th>
+									{END divisions_dtable_column}
+									
 									{BEGIN DvID_fieldheadercolumn}
 									<th class="rnr-gridfieldlabel {$DvID_class}" data-field=DvID>
 									{BEGIN DvID_fieldheader}
@@ -657,7 +682,24 @@
 	</td>
 	{END checkbox_column}
 
+		{BEGIN divisions_dtable_column}
+	<td class="rnr-nowrap bs-griddetails" {$rowstyle} {$recordattrs}>
 	
+			{BEGIN dtables_link}
+		
+							
+				
+					<a {$dtables_link_attrs}  title="Show details">
+				<span class="badge holidays_badge" {$holidays_childnumber_attr}>
+					<span class="glyphicon glyphicon-th-list"></span> 
+					<span class="{$holidays_cntspan_class}" >{$holidays_childnumber}</span>
+				</span></a>
+		{END dtables_link}
+	
+	
+	</td>
+	{END divisions_dtable_column}
+
 
 	{BEGIN DvID_fieldcolumn}
 	<td class="bs-gridcell {$DvID_class}"  data-field=DvID {$rowstyle} {$recordattrs}>

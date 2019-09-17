@@ -212,6 +212,11 @@ $layout->skins["menu"] = "";
 
 $layout->blocks["top"][] = "menu";
 $layout->blocks["topmiddle"] = array();
+$layout->containers["masterinfo"] = array();
+$layout->container_properties["masterinfo"] = array(  );
+$layout->containers["masterinfo"][] = array("name"=>"masterinfo",
+	"block"=>"mastertable_block", "substyle"=>1  );
+
 $layout->skins["masterinfo"] = "";
 
 $layout->blocks["topmiddle"][] = "masterinfo";

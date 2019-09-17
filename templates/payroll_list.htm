@@ -537,9 +537,6 @@
 	.bs-gridcell[data-field=PayToDate]:before {
 		content: "{$label payroll PayToDate}";
 	}
-	.bs-gridcell[data-field=PayPeriod]:before {
-		content: "{$label payroll PayPeriod}";
-	}
 	.bs-gridcell[data-field=Locked]:before {
 		content: "{$label payroll Locked}";
 	}
@@ -554,9 +551,6 @@
 	}
 	.bs-gridcell[data-field=Adjustments]:before {
 		content: "{$label payroll Adjustments}";
-	}
-	.bs-gridcell[data-field=MoAdjustment]:before {
-		content: "{$label payroll MoAdjustment}";
 	}
 	.bs-gridcell[data-field=PresetTax]:before {
 		content: "{$label payroll PresetTax}";
@@ -661,16 +655,6 @@
 									
 									
 									
-									{BEGIN PayPeriod_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$PayPeriod_class}" style="width: 112px;" rowspan="1" colspan="1" data-field="PayPeriod">{BEGIN PayPeriod_fieldheader}<span {$PayPeriod_orderlinkattrs}>
-											{$label payroll PayPeriod}
-										</span>
-									{END PayPeriod_fieldheader}
-									</th>
-									{END PayPeriod_fieldheadercolumn}
-									
-									
-									
-									
 									{BEGIN PayDate_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$PayDate_class}" style="width: 101px;" rowspan="1" colspan="1" data-field="PayDate">{BEGIN PayDate_fieldheader}<span {$PayDate_orderlinkattrs}>
 											{$label payroll PayDate}
 										</span>
@@ -717,16 +701,6 @@
 									{END Adjustments_fieldheader}
 									</th>
 									{END Adjustments_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN MoAdjustment_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$MoAdjustment_class}" style="width: 136px;" rowspan="1" colspan="1" data-field="MoAdjustment">{BEGIN MoAdjustment_fieldheader}<span {$MoAdjustment_orderlinkattrs}>
-											{$label payroll MoAdjustment}
-										</span>
-									{END MoAdjustment_fieldheader}
-									</th>
-									{END MoAdjustment_fieldheadercolumn}
 									
 									
 									
@@ -847,12 +821,6 @@
 {END PayToDate_fieldcolumn}
 
 
-	{BEGIN PayPeriod_fieldcolumn}<TD class="bs-gridcell {$PayPeriod_class}" style="width: 112px;" rowspan="1" colspan="1" data-field="PayPeriod" {$rowstyle} {$recordattrs}>
-      {$PayPeriod_value}
-	</td>
-{END PayPeriod_fieldcolumn}
-
-
 	{BEGIN PayDate_fieldcolumn}<TD class="bs-gridcell {$PayDate_class}" style="width: 101px;" rowspan="1" colspan="1" data-field="PayDate" {$rowstyle} {$recordattrs}>
       {$PayDate_value}
 	</td>
@@ -881,12 +849,6 @@
       {$Adjustments_value}
 	</td>
 {END Adjustments_fieldcolumn}
-
-
-	{BEGIN MoAdjustment_fieldcolumn}<TD class="bs-gridcell {$MoAdjustment_class}" style="width: 136px;" rowspan="1" colspan="1" data-field="MoAdjustment" {$rowstyle} {$recordattrs}>
-      {$MoAdjustment_value}
-	</td>
-{END MoAdjustment_fieldcolumn}
 
 
 	{BEGIN PresetTax_fieldcolumn}<TD class="bs-gridcell {$PresetTax_class}" style="width: 111px;" rowspan="1" colspan="1" data-field="PresetTax" {$rowstyle} {$recordattrs}>

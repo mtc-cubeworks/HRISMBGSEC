@@ -106,16 +106,21 @@
 				{$label earningadjustment AdjustmentDescription}
 			</th>
 			{END AdjustmentDescription_fieldheadercolumn}
-			{BEGIN PerPayrollAmount_fieldheadercolumn}
-			<th class="{$PerPayrollAmount_class}" {$PerPayrollAmount_style}  data-field="PerPayrollAmount">
-				{$label earningadjustment PerPayrollAmount}
-			</th>
-			{END PerPayrollAmount_fieldheadercolumn}
 			{BEGIN PaymentPeriod_fieldheadercolumn}
 			<th class="{$PaymentPeriod_class}" {$PaymentPeriod_style}  data-field="PaymentPeriod">
 				{$label earningadjustment PaymentPeriod}
 			</th>
 			{END PaymentPeriod_fieldheadercolumn}
+			{BEGIN PerDay_fieldheadercolumn}
+			<th class="{$PerDay_class}" {$PerDay_style}  data-field="PerDay">
+				{$label earningadjustment PerDay}
+			</th>
+			{END PerDay_fieldheadercolumn}
+			{BEGIN PerPayrollAmount_fieldheadercolumn}
+			<th class="{$PerPayrollAmount_class}" {$PerPayrollAmount_style}  data-field="PerPayrollAmount">
+				{$label earningadjustment PerPayrollAmount}
+			</th>
+			{END PerPayrollAmount_fieldheadercolumn}
 			{BEGIN LessAbsences_fieldheadercolumn}
 			<th class="{$LessAbsences_class}" {$LessAbsences_style}  data-field="LessAbsences">
 				{$label earningadjustment LessAbsences}
@@ -153,16 +158,21 @@
 				{$AdjustmentDescription_value}
 			</td>
 			{END AdjustmentDescription_fieldcolumn}
-			{BEGIN PerPayrollAmount_fieldcolumn}
-			<td  class="{$PerPayrollAmount_class}" {$PerPayrollAmount_style} {$recordattrs}>
-				{$PerPayrollAmount_value}
-			</td>
-			{END PerPayrollAmount_fieldcolumn}
 			{BEGIN PaymentPeriod_fieldcolumn}
 			<td  class="{$PaymentPeriod_class}" {$PaymentPeriod_style} {$recordattrs}>
 				{$PaymentPeriod_value}
 			</td>
 			{END PaymentPeriod_fieldcolumn}
+			{BEGIN PerDay_fieldcolumn}
+			<td  class="{$PerDay_class}" {$PerDay_style} {$recordattrs}>
+				{$PerDay_value}
+			</td>
+			{END PerDay_fieldcolumn}
+			{BEGIN PerPayrollAmount_fieldcolumn}
+			<td  class="{$PerPayrollAmount_class}" {$PerPayrollAmount_style} {$recordattrs}>
+				{$PerPayrollAmount_value}
+			</td>
+			{END PerPayrollAmount_fieldcolumn}
 			{BEGIN LessAbsences_fieldcolumn}
 			<td  class="{$LessAbsences_class}" {$LessAbsences_style} {$recordattrs}>
 				{$LessAbsences_value}
@@ -197,6 +207,14 @@
 			<td>
 						</td>
 			{END AdjustmentDescription_fieldfootercolumn}
+			{BEGIN PaymentPeriod_fieldfootercolumn}
+			<td>
+						</td>
+			{END PaymentPeriod_fieldfootercolumn}
+			{BEGIN PerDay_fieldfootercolumn}
+			<td>
+						</td>
+			{END PerDay_fieldfootercolumn}
 			{BEGIN PerPayrollAmount_fieldfootercolumn}
 			<td>
 							{BEGIN PerPayrollAmount_showtotal}
@@ -205,10 +223,6 @@
 				{END PerPayrollAmount_showtotal}
 			</td>
 			{END PerPayrollAmount_fieldfootercolumn}
-			{BEGIN PaymentPeriod_fieldfootercolumn}
-			<td>
-						</td>
-			{END PaymentPeriod_fieldfootercolumn}
 			{BEGIN LessAbsences_fieldfootercolumn}
 			<td>
 						</td>

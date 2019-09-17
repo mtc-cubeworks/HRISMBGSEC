@@ -526,26 +526,17 @@
 	.bs-gridcell[data-field=SHOTFactor]:before {
 		content: "{$label standardsetup SHOTFactor}";
 	}
-	.bs-gridcell[data-field=CHOTFactor]:before {
-		content: "{$label standardsetup CHOTFactor}";
-	}
 	.bs-gridcell[data-field=RHNDiffFactor]:before {
 		content: "{$label standardsetup RHNDiffFactor}";
 	}
 	.bs-gridcell[data-field=SHNDiffFactor]:before {
 		content: "{$label standardsetup SHNDiffFactor}";
 	}
-	.bs-gridcell[data-field=CHNDiffFactor]:before {
-		content: "{$label standardsetup CHNDiffFactor}";
-	}
 	.bs-gridcell[data-field=RHFactor]:before {
 		content: "{$label standardsetup RHFactor}";
 	}
 	.bs-gridcell[data-field=SHFactor]:before {
 		content: "{$label standardsetup SHFactor}";
-	}
-	.bs-gridcell[data-field=CHFactor]:before {
-		content: "{$label standardsetup CHFactor}";
 	}
 	.bs-gridcell[data-field=RDFactor]:before {
 		content: "{$label standardsetup RDFactor}";
@@ -577,23 +568,8 @@
 	.bs-gridcell[data-field=SHFactorDaily]:before {
 		content: "{$label standardsetup SHFactorDaily}";
 	}
-	.bs-gridcell[data-field=SHOTFactorDaily]:before {
-		content: "{$label standardsetup SHOTFactorDaily}";
-	}
-	.bs-gridcell[data-field=CHFactorDaily]:before {
-		content: "{$label standardsetup CHFactorDaily}";
-	}
 	.bs-gridcell[data-field=SHRDFactorDaily]:before {
 		content: "{$label standardsetup SHRDFactorDaily}";
-	}
-	.bs-gridcell[data-field=SHRDOTFactorDaily]:before {
-		content: "{$label standardsetup SHRDOTFactorDaily}";
-	}
-	.bs-gridcell[data-field=CHOTFactorDaily]:before {
-		content: "{$label standardsetup CHOTFactorDaily}";
-	}
-	.bs-gridcell[data-field=PreTimeInMins]:before {
-		content: "{$label standardsetup PreTimeInMins}";
 	}
 	.bs-gridcell[data-field=BonusAnnualLimit]:before {
 		content: "{$label standardsetup BonusAnnualLimit}";
@@ -606,9 +582,6 @@
 	}
 	.bs-gridcell[data-field=SHNDOTFactor]:before {
 		content: "{$label standardsetup SHNDOTFactor}";
-	}
-	.bs-gridcell[data-field=CHNDOTFactor]:before {
-		content: "{$label standardsetup CHNDOTFactor}";
 	}
 	.bs-gridcell[data-field=RDNDOTFactor]:before {
 		content: "{$label standardsetup RDNDOTFactor}";
@@ -649,6 +622,12 @@
 	.bs-gridcell[data-field=DoubleHolidayRDNDOT]:before {
 		content: "{$label standardsetup DoubleHolidayRDNDOT}";
 	}
+	.bs-gridcell[data-field=SHOTDFactor]:before {
+		content: "{$label standardsetup SHOTDFactor}";
+	}
+	.bs-gridcell[data-field=SHRDOTDFactor]:before {
+		content: "{$label standardsetup SHRDOTDFactor}";
+	}
 </style>
 <table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
 	<thead>
@@ -675,19 +654,6 @@
 									{END SID_fieldheader}
 									</th>
 									{END SID_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN PreTimeInMins_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$PreTimeInMins_class}" data-field=PreTimeInMins>
-									{BEGIN PreTimeInMins_fieldheader}
-																				<span {$PreTimeInMins_orderlinkattrs}>
-											{$label standardsetup PreTimeInMins}
-										</span>
-									{END PreTimeInMins_fieldheader}
-									</th>
-									{END PreTimeInMins_fieldheadercolumn}
 									
 									
 									
@@ -783,32 +749,6 @@
 									
 									
 									
-									{BEGIN CHFactor_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$CHFactor_class}" data-field=CHFactor>
-									{BEGIN CHFactor_fieldheader}
-																				<span {$CHFactor_orderlinkattrs}>
-											{$label standardsetup CHFactor}
-										</span>
-									{END CHFactor_fieldheader}
-									</th>
-									{END CHFactor_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN CHFactorDaily_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$CHFactorDaily_class}" data-field=CHFactorDaily>
-									{BEGIN CHFactorDaily_fieldheader}
-																				<span {$CHFactorDaily_orderlinkattrs}>
-											{$label standardsetup CHFactorDaily}
-										</span>
-									{END CHFactorDaily_fieldheader}
-									</th>
-									{END CHFactorDaily_fieldheadercolumn}
-									
-									
-									
-									
 									{BEGIN DoubleHoliday_fieldheadercolumn}
 									<th class="rnr-gridfieldlabel {$DoubleHoliday_class}" data-field=DoubleHoliday>
 									{BEGIN DoubleHoliday_fieldheader}
@@ -874,41 +814,28 @@
 									
 									
 									
-									{BEGIN SHOTFactorDaily_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$SHOTFactorDaily_class}" data-field=SHOTFactorDaily>
-									{BEGIN SHOTFactorDaily_fieldheader}
-																				<span {$SHOTFactorDaily_orderlinkattrs}>
-											{$label standardsetup SHOTFactorDaily}
+									{BEGIN SHOTDFactor_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SHOTDFactor_class}" data-field=SHOTDFactor>
+									{BEGIN SHOTDFactor_fieldheader}
+																				<span {$SHOTDFactor_orderlinkattrs}>
+											{$label standardsetup SHOTDFactor}
 										</span>
-									{END SHOTFactorDaily_fieldheader}
+									{END SHOTDFactor_fieldheader}
 									</th>
-									{END SHOTFactorDaily_fieldheadercolumn}
+									{END SHOTDFactor_fieldheadercolumn}
 									
 									
 									
 									
-									{BEGIN CHOTFactor_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$CHOTFactor_class}" data-field=CHOTFactor>
-									{BEGIN CHOTFactor_fieldheader}
-																				<span {$CHOTFactor_orderlinkattrs}>
-											{$label standardsetup CHOTFactor}
+									{BEGIN SHRDOTDFactor_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SHRDOTDFactor_class}" data-field=SHRDOTDFactor>
+									{BEGIN SHRDOTDFactor_fieldheader}
+																				<span {$SHRDOTDFactor_orderlinkattrs}>
+											{$label standardsetup SHRDOTDFactor}
 										</span>
-									{END CHOTFactor_fieldheader}
+									{END SHRDOTDFactor_fieldheader}
 									</th>
-									{END CHOTFactor_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN CHOTFactorDaily_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$CHOTFactorDaily_class}" data-field=CHOTFactorDaily>
-									{BEGIN CHOTFactorDaily_fieldheader}
-																				<span {$CHOTFactorDaily_orderlinkattrs}>
-											{$label standardsetup CHOTFactorDaily}
-										</span>
-									{END CHOTFactorDaily_fieldheader}
-									</th>
-									{END CHOTFactorDaily_fieldheadercolumn}
+									{END SHRDOTDFactor_fieldheadercolumn}
 									
 									
 									
@@ -952,19 +879,6 @@
 									
 									
 									
-									{BEGIN SHRDOTFactorDaily_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$SHRDOTFactorDaily_class}" data-field=SHRDOTFactorDaily>
-									{BEGIN SHRDOTFactorDaily_fieldheader}
-																				<span {$SHRDOTFactorDaily_orderlinkattrs}>
-											{$label standardsetup SHRDOTFactorDaily}
-										</span>
-									{END SHRDOTFactorDaily_fieldheader}
-									</th>
-									{END SHRDOTFactorDaily_fieldheadercolumn}
-									
-									
-									
-									
 									{BEGIN RHNDOTFactor_fieldheadercolumn}
 									<th class="rnr-gridfieldlabel {$RHNDOTFactor_class}" data-field=RHNDOTFactor>
 									{BEGIN RHNDOTFactor_fieldheader}
@@ -987,19 +901,6 @@
 									{END SHNDOTFactor_fieldheader}
 									</th>
 									{END SHNDOTFactor_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN CHNDOTFactor_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$CHNDOTFactor_class}" data-field=CHNDOTFactor>
-									{BEGIN CHNDOTFactor_fieldheader}
-																				<span {$CHNDOTFactor_orderlinkattrs}>
-											{$label standardsetup CHNDOTFactor}
-										</span>
-									{END CHNDOTFactor_fieldheader}
-									</th>
-									{END CHNDOTFactor_fieldheadercolumn}
 									
 									
 									
@@ -1156,19 +1057,6 @@
 									{END SHNDiffFactor_fieldheader}
 									</th>
 									{END SHNDiffFactor_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN CHNDiffFactor_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$CHNDiffFactor_class}" data-field=CHNDiffFactor>
-									{BEGIN CHNDiffFactor_fieldheader}
-																				<span {$CHNDiffFactor_orderlinkattrs}>
-											{$label standardsetup CHNDiffFactor}
-										</span>
-									{END CHNDiffFactor_fieldheader}
-									</th>
-									{END CHNDiffFactor_fieldheadercolumn}
 									
 									
 									
@@ -1386,13 +1274,6 @@
 {END SID_fieldcolumn}
 
 
-	{BEGIN PreTimeInMins_fieldcolumn}
-	<td class="bs-gridcell {$PreTimeInMins_class}"  data-field=PreTimeInMins {$rowstyle} {$recordattrs}>
-		{$PreTimeInMins_value}
-	</td>
-{END PreTimeInMins_fieldcolumn}
-
-
 	{BEGIN WorkingDaysInYear_fieldcolumn}
 	<td class="bs-gridcell {$WorkingDaysInYear_class}"  data-field=WorkingDaysInYear {$rowstyle} {$recordattrs}>
 		{$WorkingDaysInYear_value}
@@ -1442,20 +1323,6 @@
 {END SHFactorDaily_fieldcolumn}
 
 
-	{BEGIN CHFactor_fieldcolumn}
-	<td class="bs-gridcell {$CHFactor_class}"  data-field=CHFactor {$rowstyle} {$recordattrs}>
-		{$CHFactor_value}
-	</td>
-{END CHFactor_fieldcolumn}
-
-
-	{BEGIN CHFactorDaily_fieldcolumn}
-	<td class="bs-gridcell {$CHFactorDaily_class}"  data-field=CHFactorDaily {$rowstyle} {$recordattrs}>
-		{$CHFactorDaily_value}
-	</td>
-{END CHFactorDaily_fieldcolumn}
-
-
 	{BEGIN DoubleHoliday_fieldcolumn}
 	<td class="bs-gridcell {$DoubleHoliday_class}"  data-field=DoubleHoliday {$rowstyle} {$recordattrs}>
 		{$DoubleHoliday_value}
@@ -1491,25 +1358,18 @@
 {END SHOTFactor_fieldcolumn}
 
 
-	{BEGIN SHOTFactorDaily_fieldcolumn}
-	<td class="bs-gridcell {$SHOTFactorDaily_class}"  data-field=SHOTFactorDaily {$rowstyle} {$recordattrs}>
-		{$SHOTFactorDaily_value}
+	{BEGIN SHOTDFactor_fieldcolumn}
+	<td class="bs-gridcell {$SHOTDFactor_class}"  data-field=SHOTDFactor {$rowstyle} {$recordattrs}>
+		{$SHOTDFactor_value}
 	</td>
-{END SHOTFactorDaily_fieldcolumn}
+{END SHOTDFactor_fieldcolumn}
 
 
-	{BEGIN CHOTFactor_fieldcolumn}
-	<td class="bs-gridcell {$CHOTFactor_class}"  data-field=CHOTFactor {$rowstyle} {$recordattrs}>
-		{$CHOTFactor_value}
+	{BEGIN SHRDOTDFactor_fieldcolumn}
+	<td class="bs-gridcell {$SHRDOTDFactor_class}"  data-field=SHRDOTDFactor {$rowstyle} {$recordattrs}>
+		{$SHRDOTDFactor_value}
 	</td>
-{END CHOTFactor_fieldcolumn}
-
-
-	{BEGIN CHOTFactorDaily_fieldcolumn}
-	<td class="bs-gridcell {$CHOTFactorDaily_class}"  data-field=CHOTFactorDaily {$rowstyle} {$recordattrs}>
-		{$CHOTFactorDaily_value}
-	</td>
-{END CHOTFactorDaily_fieldcolumn}
+{END SHRDOTDFactor_fieldcolumn}
 
 
 	{BEGIN RDOTFactor_fieldcolumn}
@@ -1533,13 +1393,6 @@
 {END SHRDOTFactor_fieldcolumn}
 
 
-	{BEGIN SHRDOTFactorDaily_fieldcolumn}
-	<td class="bs-gridcell {$SHRDOTFactorDaily_class}"  data-field=SHRDOTFactorDaily {$rowstyle} {$recordattrs}>
-		{$SHRDOTFactorDaily_value}
-	</td>
-{END SHRDOTFactorDaily_fieldcolumn}
-
-
 	{BEGIN RHNDOTFactor_fieldcolumn}
 	<td class="bs-gridcell {$RHNDOTFactor_class}"  data-field=RHNDOTFactor {$rowstyle} {$recordattrs}>
 		{$RHNDOTFactor_value}
@@ -1552,13 +1405,6 @@
 		{$SHNDOTFactor_value}
 	</td>
 {END SHNDOTFactor_fieldcolumn}
-
-
-	{BEGIN CHNDOTFactor_fieldcolumn}
-	<td class="bs-gridcell {$CHNDOTFactor_class}"  data-field=CHNDOTFactor {$rowstyle} {$recordattrs}>
-		{$CHNDOTFactor_value}
-	</td>
-{END CHNDOTFactor_fieldcolumn}
 
 
 	{BEGIN RDNDOTFactor_fieldcolumn}
@@ -1643,13 +1489,6 @@
 		{$SHNDiffFactor_value}
 	</td>
 {END SHNDiffFactor_fieldcolumn}
-
-
-	{BEGIN CHNDiffFactor_fieldcolumn}
-	<td class="bs-gridcell {$CHNDiffFactor_class}"  data-field=CHNDiffFactor {$rowstyle} {$recordattrs}>
-		{$CHNDiffFactor_value}
-	</td>
-{END CHNDiffFactor_fieldcolumn}
 
 
 	{BEGIN RDNDiffFactor_fieldcolumn}

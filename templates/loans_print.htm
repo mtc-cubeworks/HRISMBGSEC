@@ -101,6 +101,21 @@
 				{$label loans EmployeeID}
 			</th>
 			{END EmployeeID_fieldheadercolumn}
+			{BEGIN DType_fieldheadercolumn}
+			<th class="{$DType_class}" {$DType_style}  data-field="DType">
+				{$label loans DType}
+			</th>
+			{END DType_fieldheadercolumn}
+			{BEGIN PaymentPeriod_fieldheadercolumn}
+			<th class="{$PaymentPeriod_class}" {$PaymentPeriod_style}  data-field="PaymentPeriod">
+				{$label loans PaymentPeriod}
+			</th>
+			{END PaymentPeriod_fieldheadercolumn}
+			{BEGIN LoanDescription_fieldheadercolumn}
+			<th class="{$LoanDescription_class}" {$LoanDescription_style}  data-field="LoanDescription">
+				{$label loans LoanDescription}
+			</th>
+			{END LoanDescription_fieldheadercolumn}
 			{BEGIN OPrincipal_fieldheadercolumn}
 			<th class="{$OPrincipal_class}" {$OPrincipal_style}  data-field="OPrincipal">
 				{$label loans OPrincipal}
@@ -111,31 +126,31 @@
 				{$label loans Principal}
 			</th>
 			{END Principal_fieldheadercolumn}
-			{BEGIN MonthlyAmortization_fieldheadercolumn}
-			<th class="{$MonthlyAmortization_class}" {$MonthlyAmortization_style}  data-field="MonthlyAmortization">
-				{$label loans MonthlyAmortization}
+			{BEGIN PerDay_fieldheadercolumn}
+			<th class="{$PerDay_class}" {$PerDay_style}  data-field="PerDay">
+				{$label loans PerDay}
 			</th>
-			{END MonthlyAmortization_fieldheadercolumn}
-			{BEGIN StartDate_fieldheadercolumn}
-			<th class="{$StartDate_class}" {$StartDate_style}  data-field="StartDate">
-				{$label loans StartDate}
-			</th>
-			{END StartDate_fieldheadercolumn}
-			{BEGIN LoanDescription_fieldheadercolumn}
-			<th class="{$LoanDescription_class}" {$LoanDescription_style}  data-field="LoanDescription">
-				{$label loans LoanDescription}
-			</th>
-			{END LoanDescription_fieldheadercolumn}
+			{END PerDay_fieldheadercolumn}
 			{BEGIN PerPayrollAmount_fieldheadercolumn}
 			<th class="{$PerPayrollAmount_class}" {$PerPayrollAmount_style}  data-field="PerPayrollAmount">
 				{$label loans PerPayrollAmount}
 			</th>
 			{END PerPayrollAmount_fieldheadercolumn}
-			{BEGIN PaymentPeriod_fieldheadercolumn}
-			<th class="{$PaymentPeriod_class}" {$PaymentPeriod_style}  data-field="PaymentPeriod">
-				{$label loans PaymentPeriod}
+			{BEGIN MonthlyAmortization_fieldheadercolumn}
+			<th class="{$MonthlyAmortization_class}" {$MonthlyAmortization_style}  data-field="MonthlyAmortization">
+				{$label loans MonthlyAmortization}
 			</th>
-			{END PaymentPeriod_fieldheadercolumn}
+			{END MonthlyAmortization_fieldheadercolumn}
+			{BEGIN LessAbsences_fieldheadercolumn}
+			<th class="{$LessAbsences_class}" {$LessAbsences_style}  data-field="LessAbsences">
+				{$label loans LessAbsences}
+			</th>
+			{END LessAbsences_fieldheadercolumn}
+			{BEGIN StartDate_fieldheadercolumn}
+			<th class="{$StartDate_class}" {$StartDate_style}  data-field="StartDate">
+				{$label loans StartDate}
+			</th>
+			{END StartDate_fieldheadercolumn}
 			{BEGIN Inactive_fieldheadercolumn}
 			<th class="{$Inactive_class}" {$Inactive_style}  data-field="Inactive">
 				{$label loans Inactive}
@@ -163,6 +178,21 @@
 				{$EmployeeID_value}
 			</td>
 			{END EmployeeID_fieldcolumn}
+			{BEGIN DType_fieldcolumn}
+			<td  class="{$DType_class}" {$DType_style} {$recordattrs}>
+				{$DType_value}
+			</td>
+			{END DType_fieldcolumn}
+			{BEGIN PaymentPeriod_fieldcolumn}
+			<td  class="{$PaymentPeriod_class}" {$PaymentPeriod_style} {$recordattrs}>
+				{$PaymentPeriod_value}
+			</td>
+			{END PaymentPeriod_fieldcolumn}
+			{BEGIN LoanDescription_fieldcolumn}
+			<td  class="{$LoanDescription_class}" {$LoanDescription_style} {$recordattrs}>
+				{$LoanDescription_value}
+			</td>
+			{END LoanDescription_fieldcolumn}
 			{BEGIN OPrincipal_fieldcolumn}
 			<td  class="{$OPrincipal_class}" {$OPrincipal_style} {$recordattrs}>
 				{$OPrincipal_value}
@@ -173,31 +203,31 @@
 				{$Principal_value}
 			</td>
 			{END Principal_fieldcolumn}
-			{BEGIN MonthlyAmortization_fieldcolumn}
-			<td  class="{$MonthlyAmortization_class}" {$MonthlyAmortization_style} {$recordattrs}>
-				{$MonthlyAmortization_value}
+			{BEGIN PerDay_fieldcolumn}
+			<td  class="{$PerDay_class}" {$PerDay_style} {$recordattrs}>
+				{$PerDay_value}
 			</td>
-			{END MonthlyAmortization_fieldcolumn}
-			{BEGIN StartDate_fieldcolumn}
-			<td  class="{$StartDate_class}" {$StartDate_style} {$recordattrs}>
-				{$StartDate_value}
-			</td>
-			{END StartDate_fieldcolumn}
-			{BEGIN LoanDescription_fieldcolumn}
-			<td  class="{$LoanDescription_class}" {$LoanDescription_style} {$recordattrs}>
-				{$LoanDescription_value}
-			</td>
-			{END LoanDescription_fieldcolumn}
+			{END PerDay_fieldcolumn}
 			{BEGIN PerPayrollAmount_fieldcolumn}
 			<td  class="{$PerPayrollAmount_class}" {$PerPayrollAmount_style} {$recordattrs}>
 				{$PerPayrollAmount_value}
 			</td>
 			{END PerPayrollAmount_fieldcolumn}
-			{BEGIN PaymentPeriod_fieldcolumn}
-			<td  class="{$PaymentPeriod_class}" {$PaymentPeriod_style} {$recordattrs}>
-				{$PaymentPeriod_value}
+			{BEGIN MonthlyAmortization_fieldcolumn}
+			<td  class="{$MonthlyAmortization_class}" {$MonthlyAmortization_style} {$recordattrs}>
+				{$MonthlyAmortization_value}
 			</td>
-			{END PaymentPeriod_fieldcolumn}
+			{END MonthlyAmortization_fieldcolumn}
+			{BEGIN LessAbsences_fieldcolumn}
+			<td  class="{$LessAbsences_class}" {$LessAbsences_style} {$recordattrs}>
+				{$LessAbsences_value}
+			</td>
+			{END LessAbsences_fieldcolumn}
+			{BEGIN StartDate_fieldcolumn}
+			<td  class="{$StartDate_class}" {$StartDate_style} {$recordattrs}>
+				{$StartDate_value}
+			</td>
+			{END StartDate_fieldcolumn}
 			{BEGIN Inactive_fieldcolumn}
 			<td  class="{$Inactive_class}" {$Inactive_style} {$recordattrs}>
 				{$Inactive_value}
@@ -223,6 +253,18 @@
 			<td>
 						</td>
 			{END EmployeeID_fieldfootercolumn}
+			{BEGIN DType_fieldfootercolumn}
+			<td>
+						</td>
+			{END DType_fieldfootercolumn}
+			{BEGIN PaymentPeriod_fieldfootercolumn}
+			<td>
+						</td>
+			{END PaymentPeriod_fieldfootercolumn}
+			{BEGIN LoanDescription_fieldfootercolumn}
+			<td>
+						</td>
+			{END LoanDescription_fieldfootercolumn}
 			{BEGIN OPrincipal_fieldfootercolumn}
 			<td>
 							{BEGIN OPrincipal_showtotal}
@@ -239,22 +281,10 @@
 				{END Principal_showtotal}
 			</td>
 			{END Principal_fieldfootercolumn}
-			{BEGIN MonthlyAmortization_fieldfootercolumn}
-			<td>
-							{BEGIN MonthlyAmortization_showtotal}
-									Total:
-				{$MonthlyAmortization_total}
-				{END MonthlyAmortization_showtotal}
-			</td>
-			{END MonthlyAmortization_fieldfootercolumn}
-			{BEGIN StartDate_fieldfootercolumn}
+			{BEGIN PerDay_fieldfootercolumn}
 			<td>
 						</td>
-			{END StartDate_fieldfootercolumn}
-			{BEGIN LoanDescription_fieldfootercolumn}
-			<td>
-						</td>
-			{END LoanDescription_fieldfootercolumn}
+			{END PerDay_fieldfootercolumn}
 			{BEGIN PerPayrollAmount_fieldfootercolumn}
 			<td>
 							{BEGIN PerPayrollAmount_showtotal}
@@ -263,10 +293,22 @@
 				{END PerPayrollAmount_showtotal}
 			</td>
 			{END PerPayrollAmount_fieldfootercolumn}
-			{BEGIN PaymentPeriod_fieldfootercolumn}
+			{BEGIN MonthlyAmortization_fieldfootercolumn}
+			<td>
+							{BEGIN MonthlyAmortization_showtotal}
+									Total:
+				{$MonthlyAmortization_total}
+				{END MonthlyAmortization_showtotal}
+			</td>
+			{END MonthlyAmortization_fieldfootercolumn}
+			{BEGIN LessAbsences_fieldfootercolumn}
 			<td>
 						</td>
-			{END PaymentPeriod_fieldfootercolumn}
+			{END LessAbsences_fieldfootercolumn}
+			{BEGIN StartDate_fieldfootercolumn}
+			<td>
+						</td>
+			{END StartDate_fieldfootercolumn}
 			{BEGIN Inactive_fieldfootercolumn}
 			<td>
 						</td>

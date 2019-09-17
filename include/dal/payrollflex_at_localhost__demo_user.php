@@ -69,6 +69,7 @@ $dalTabledemo_user["PreCalMoTaxable"] = array("type"=>14,"varname"=>"PreCalMoTax
 $dalTabledemo_user["CalMonthly"] = array("type"=>14,"varname"=>"CalMonthly", "name" => "CalMonthly");
 $dalTabledemo_user["TaxPerPeriod"] = array("type"=>14,"varname"=>"TaxPerPeriod", "name" => "TaxPerPeriod");
 $dalTabledemo_user["Superior2"] = array("type"=>3,"varname"=>"Superior2", "name" => "Superior2");
+$dalTabledemo_user["ExcludeBio"] = array("type"=>3,"varname"=>"ExcludeBio", "name" => "ExcludeBio");
 	$dalTabledemo_user["user_id"]["key"]=true;
 
 $dal_info["payrollflex_at_localhost__demo_user"] = &$dalTabledemo_user;

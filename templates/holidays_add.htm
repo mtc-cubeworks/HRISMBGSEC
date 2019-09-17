@@ -201,6 +201,24 @@
 </div>
 {END HolidayDay_fieldblock}
 
+			{BEGIN Division_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Division}" data-fieldname="Division" data-signal-error-for="Division{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Division}">
+		{BEGIN Division_label}{$label holidays Division}{END Division_label}
+	</label>
+	<div class="col-md-6" >
+		{$Division_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Division">
+		<div class="text-muted" >
+		{$tooltip holidays Division}
+		</div>
+	</div>
+</div>
+</div>
+{END Division_fieldblock}
+
 
 </div>
 

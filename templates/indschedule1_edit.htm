@@ -219,6 +219,24 @@
 </div>
 {END NDMins_fieldblock}
 
+			{BEGIN NDOTMins_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_NDOTMins}" data-fieldname="NDOTMins" data-signal-error-for="NDOTMins{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_NDOTMins}">
+		{BEGIN NDOTMins_label}{$label indschedule1 NDOTMins}{END NDOTMins_label}
+	</label>
+	<div class="col-md-6" >
+		{$NDOTMins_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="NDOTMins">
+		<div class="text-muted" >
+		{$tooltip indschedule1 NDOTMins}
+		</div>
+	</div>
+</div>
+</div>
+{END NDOTMins_fieldblock}
+
 			{BEGIN ApprovedNightDiff_fieldblock}
 <div class=container>
 <div class="form-group {$fielddispclass_ApprovedNightDiff}" data-fieldname="ApprovedNightDiff" data-signal-error-for="ApprovedNightDiff{$id}" >
@@ -272,60 +290,6 @@
 </div>
 </div>
 {END ANDOTMins_fieldblock}
-
-			{BEGIN NDMealAllowancePerShift_fieldblock}
-<div class=container>
-<div class="form-group {$fielddispclass_NDMealAllowancePerShift}" data-fieldname="NDMealAllowancePerShift" data-signal-error-for="NDMealAllowancePerShift{$id}" >
-	<label class="col-md-3 control-label" for="{$labelfor_NDMealAllowancePerShift}">
-		{BEGIN NDMealAllowancePerShift_label}{$label indschedule1 NDMealAllowancePerShift}{END NDMealAllowancePerShift_label}
-	</label>
-	<div class="col-md-6" >
-		{$NDMealAllowancePerShift_editcontrol}
-	</div>
-	<div class="col-md-3 help-block" data-helpfor="NDMealAllowancePerShift">
-		<div class="text-muted" >
-		{$tooltip indschedule1 NDMealAllowancePerShift}
-		</div>
-	</div>
-</div>
-</div>
-{END NDMealAllowancePerShift_fieldblock}
-
-			{BEGIN NDMinimumHrs_fieldblock}
-<div class=container>
-<div class="form-group {$fielddispclass_NDMinimumHrs}" data-fieldname="NDMinimumHrs" data-signal-error-for="NDMinimumHrs{$id}" >
-	<label class="col-md-3 control-label" for="{$labelfor_NDMinimumHrs}">
-		{BEGIN NDMinimumHrs_label}{$label indschedule1 NDMinimumHrs}{END NDMinimumHrs_label}
-	</label>
-	<div class="col-md-6" >
-		{$NDMinimumHrs_editcontrol}
-	</div>
-	<div class="col-md-3 help-block" data-helpfor="NDMinimumHrs">
-		<div class="text-muted" >
-		{$tooltip indschedule1 NDMinimumHrs}
-		</div>
-	</div>
-</div>
-</div>
-{END NDMinimumHrs_fieldblock}
-
-			{BEGIN NDMealAllowance_fieldblock}
-<div class=container>
-<div class="form-group {$fielddispclass_NDMealAllowance}" data-fieldname="NDMealAllowance" data-signal-error-for="NDMealAllowance{$id}" >
-	<label class="col-md-3 control-label" for="{$labelfor_NDMealAllowance}">
-		{BEGIN NDMealAllowance_label}{$label indschedule1 NDMealAllowance}{END NDMealAllowance_label}
-	</label>
-	<div class="col-md-6" >
-		{$NDMealAllowance_editcontrol}
-	</div>
-	<div class="col-md-3 help-block" data-helpfor="NDMealAllowance">
-		<div class="text-muted" >
-		{$tooltip indschedule1 NDMealAllowance}
-		</div>
-	</div>
-</div>
-</div>
-{END NDMealAllowance_fieldblock}
 
 			{BEGIN WorkMinsNet_fieldblock}
 <div class=container>

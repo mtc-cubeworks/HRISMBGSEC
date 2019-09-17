@@ -2840,8 +2840,6 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "forapp" ] = "forapp";
 	$projectEntities[ "payrollstatutories" ] = array( "url" => "payrollstatutories", "type" => 0 );
 	$projectEntitiesReverse[ "payrollstatutories" ] = "payrollstatutories";
-	$projectEntities[ "loanbalance3" ] = array( "url" => "loanbalance3", "type" => 0 );
-	$projectEntitiesReverse[ "loanbalance3" ] = "loanbalance3";
 	$projectEntities[ "payrolltax" ] = array( "url" => "payrolltax", "type" => 0 );
 	$projectEntitiesReverse[ "payrolltax" ] = "payrolltax";
 	$projectEntities[ "payrollamt3" ] = array( "url" => "payrollamt3", "type" => 0 );
@@ -2894,8 +2892,6 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "leavebalance1" ] = "leavebalance1";
 	$projectEntities[ "indleave1" ] = array( "url" => "indleave1", "type" => 1 );
 	$projectEntitiesReverse[ "indleave1" ] = "indleave1";
-	$projectEntities[ "loanbalance31" ] = array( "url" => "loanbalance31", "type" => 1 );
-	$projectEntitiesReverse[ "loanbalance31" ] = "loanbalance31";
 	$projectEntities[ "loansreport" ] = array( "url" => "loansreport", "type" => 0 );
 	$projectEntitiesReverse[ "loansreport" ] = "loansreport";
 	$projectEntities[ "contlo" ] = array( "url" => "contlo", "type" => 0 );
@@ -2958,8 +2954,6 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "thirtaxsum" ] = "thirtaxsum";
 	$projectEntities[ "filelog" ] = array( "url" => "filelog", "type" => 0 );
 	$projectEntitiesReverse[ "filelog" ] = "filelog";
-	$projectEntities[ "payrolltab1" ] = array( "url" => "payrolltab1", "type" => 1 );
-	$projectEntitiesReverse[ "payrolltab1" ] = "payrolltab1";
 	$projectEntities[ "filelog1" ] = array( "url" => "filelog1", "type" => 1 );
 	$projectEntitiesReverse[ "filelog1" ] = "filelog1";
 	$projectEntities[ "filelog2" ] = array( "url" => "filelog2", "type" => 1 );
@@ -2982,6 +2976,30 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "leaves" ] = "leaves";
 	$projectEntities[ "approvalbutton" ] = array( "url" => "approvalbutton", "type" => 0 );
 	$projectEntitiesReverse[ "approvalbutton" ] = "approvalbutton";
+	$projectEntities[ "otherpayments" ] = array( "url" => "otherpayments", "type" => 0 );
+	$projectEntitiesReverse[ "otherpayments" ] = "otherpayments";
+	$projectEntities[ "payrolltab1" ] = array( "url" => "payrolltab1", "type" => 1 );
+	$projectEntitiesReverse[ "payrolltab1" ] = "payrolltab1";
+	$projectEntities[ "mycurrentdtr" ] = array( "url" => "mycurrentdtr", "type" => 1 );
+	$projectEntitiesReverse[ "mycurrentdtr" ] = "mycurrentdtr";
+	$projectEntities[ "otndrdglobal" ] = array( "url" => "otndrdglobal", "type" => 0 );
+	$projectEntitiesReverse[ "otndrdglobal" ] = "otndrdglobal";
+	$projectEntities[ "dtrrange1" ] = array( "url" => "dtrrange1", "type" => 1 );
+	$projectEntitiesReverse[ "dtrrange1" ] = "dtrrange1";
+	$projectEntities[ "dtrempl" ] = array( "url" => "dtrempl", "type" => 0 );
+	$projectEntitiesReverse[ "dtrempl" ] = "dtrempl";
+	$projectEntities[ "otndrdglobal1" ] = array( "url" => "otndrdglobal1", "type" => 1 );
+	$projectEntitiesReverse[ "otndrdglobal1" ] = "otndrdglobal1";
+	$projectEntities[ "deductypes" ] = array( "url" => "deductypes", "type" => 0 );
+	$projectEntitiesReverse[ "deductypes" ] = "deductypes";
+	$projectEntities[ "magroups" ] = array( "url" => "magroups", "type" => 0 );
+	$projectEntitiesReverse[ "magroups" ] = "magroups";
+	$projectEntities[ "mdgroups" ] = array( "url" => "mdgroups", "type" => 0 );
+	$projectEntitiesReverse[ "mdgroups" ] = "mdgroups";
+	$projectEntities[ "loanbalnew5" ] = array( "url" => "loanbalnew5", "type" => 0 );
+	$projectEntitiesReverse[ "loanbalnew5" ] = "loanbalnew5";
+	$projectEntities[ "loanbalnew51" ] = array( "url" => "loanbalnew51", "type" => 1 );
+	$projectEntitiesReverse[ "loanbalnew51" ] = "loanbalnew51";
 }
 
 function findTable( $table ) {

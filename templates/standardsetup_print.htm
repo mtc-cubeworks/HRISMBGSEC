@@ -75,11 +75,6 @@
 				{$label standardsetup SID}
 			</th>
 			{END SID_fieldheadercolumn}
-			{BEGIN PreTimeInMins_fieldheadercolumn}
-			<th class="{$PreTimeInMins_class}" {$PreTimeInMins_style}  data-field="PreTimeInMins">
-				{$label standardsetup PreTimeInMins}
-			</th>
-			{END PreTimeInMins_fieldheadercolumn}
 			{BEGIN WorkingDaysInYear_fieldheadercolumn}
 			<th class="{$WorkingDaysInYear_class}" {$WorkingDaysInYear_style}  data-field="WorkingDaysInYear">
 				{$label standardsetup WorkingDaysInYear}
@@ -115,16 +110,6 @@
 				{$label standardsetup SHFactorDaily}
 			</th>
 			{END SHFactorDaily_fieldheadercolumn}
-			{BEGIN CHFactor_fieldheadercolumn}
-			<th class="{$CHFactor_class}" {$CHFactor_style}  data-field="CHFactor">
-				{$label standardsetup CHFactor}
-			</th>
-			{END CHFactor_fieldheadercolumn}
-			{BEGIN CHFactorDaily_fieldheadercolumn}
-			<th class="{$CHFactorDaily_class}" {$CHFactorDaily_style}  data-field="CHFactorDaily">
-				{$label standardsetup CHFactorDaily}
-			</th>
-			{END CHFactorDaily_fieldheadercolumn}
 			{BEGIN DoubleHoliday_fieldheadercolumn}
 			<th class="{$DoubleHoliday_class}" {$DoubleHoliday_style}  data-field="DoubleHoliday">
 				{$label standardsetup DoubleHoliday}
@@ -150,21 +135,16 @@
 				{$label standardsetup SHOTFactor}
 			</th>
 			{END SHOTFactor_fieldheadercolumn}
-			{BEGIN SHOTFactorDaily_fieldheadercolumn}
-			<th class="{$SHOTFactorDaily_class}" {$SHOTFactorDaily_style}  data-field="SHOTFactorDaily">
-				{$label standardsetup SHOTFactorDaily}
+			{BEGIN SHOTDFactor_fieldheadercolumn}
+			<th class="{$SHOTDFactor_class}" {$SHOTDFactor_style}  data-field="SHOTDFactor">
+				{$label standardsetup SHOTDFactor}
 			</th>
-			{END SHOTFactorDaily_fieldheadercolumn}
-			{BEGIN CHOTFactor_fieldheadercolumn}
-			<th class="{$CHOTFactor_class}" {$CHOTFactor_style}  data-field="CHOTFactor">
-				{$label standardsetup CHOTFactor}
+			{END SHOTDFactor_fieldheadercolumn}
+			{BEGIN SHRDOTDFactor_fieldheadercolumn}
+			<th class="{$SHRDOTDFactor_class}" {$SHRDOTDFactor_style}  data-field="SHRDOTDFactor">
+				{$label standardsetup SHRDOTDFactor}
 			</th>
-			{END CHOTFactor_fieldheadercolumn}
-			{BEGIN CHOTFactorDaily_fieldheadercolumn}
-			<th class="{$CHOTFactorDaily_class}" {$CHOTFactorDaily_style}  data-field="CHOTFactorDaily">
-				{$label standardsetup CHOTFactorDaily}
-			</th>
-			{END CHOTFactorDaily_fieldheadercolumn}
+			{END SHRDOTDFactor_fieldheadercolumn}
 			{BEGIN RDOTFactor_fieldheadercolumn}
 			<th class="{$RDOTFactor_class}" {$RDOTFactor_style}  data-field="RDOTFactor">
 				{$label standardsetup RDOTFactor}
@@ -180,11 +160,6 @@
 				{$label standardsetup SHRDOTFactor}
 			</th>
 			{END SHRDOTFactor_fieldheadercolumn}
-			{BEGIN SHRDOTFactorDaily_fieldheadercolumn}
-			<th class="{$SHRDOTFactorDaily_class}" {$SHRDOTFactorDaily_style}  data-field="SHRDOTFactorDaily">
-				{$label standardsetup SHRDOTFactorDaily}
-			</th>
-			{END SHRDOTFactorDaily_fieldheadercolumn}
 			{BEGIN RHNDOTFactor_fieldheadercolumn}
 			<th class="{$RHNDOTFactor_class}" {$RHNDOTFactor_style}  data-field="RHNDOTFactor">
 				{$label standardsetup RHNDOTFactor}
@@ -195,11 +170,6 @@
 				{$label standardsetup SHNDOTFactor}
 			</th>
 			{END SHNDOTFactor_fieldheadercolumn}
-			{BEGIN CHNDOTFactor_fieldheadercolumn}
-			<th class="{$CHNDOTFactor_class}" {$CHNDOTFactor_style}  data-field="CHNDOTFactor">
-				{$label standardsetup CHNDOTFactor}
-			</th>
-			{END CHNDOTFactor_fieldheadercolumn}
 			{BEGIN RDNDOTFactor_fieldheadercolumn}
 			<th class="{$RDNDOTFactor_class}" {$RDNDOTFactor_style}  data-field="RDNDOTFactor">
 				{$label standardsetup RDNDOTFactor}
@@ -260,11 +230,6 @@
 				{$label standardsetup SHNDiffFactor}
 			</th>
 			{END SHNDiffFactor_fieldheadercolumn}
-			{BEGIN CHNDiffFactor_fieldheadercolumn}
-			<th class="{$CHNDiffFactor_class}" {$CHNDiffFactor_style}  data-field="CHNDiffFactor">
-				{$label standardsetup CHNDiffFactor}
-			</th>
-			{END CHNDiffFactor_fieldheadercolumn}
 			{BEGIN RDNDiffFactor_fieldheadercolumn}
 			<th class="{$RDNDiffFactor_class}" {$RDNDiffFactor_style}  data-field="RDNDiffFactor">
 				{$label standardsetup RDNDiffFactor}
@@ -342,11 +307,6 @@
 				{$SID_value}
 			</td>
 			{END SID_fieldcolumn}
-			{BEGIN PreTimeInMins_fieldcolumn}
-			<td  class="{$PreTimeInMins_class}" {$PreTimeInMins_style} {$recordattrs}>
-				{$PreTimeInMins_value}
-			</td>
-			{END PreTimeInMins_fieldcolumn}
 			{BEGIN WorkingDaysInYear_fieldcolumn}
 			<td  class="{$WorkingDaysInYear_class}" {$WorkingDaysInYear_style} {$recordattrs}>
 				{$WorkingDaysInYear_value}
@@ -382,16 +342,6 @@
 				{$SHFactorDaily_value}
 			</td>
 			{END SHFactorDaily_fieldcolumn}
-			{BEGIN CHFactor_fieldcolumn}
-			<td  class="{$CHFactor_class}" {$CHFactor_style} {$recordattrs}>
-				{$CHFactor_value}
-			</td>
-			{END CHFactor_fieldcolumn}
-			{BEGIN CHFactorDaily_fieldcolumn}
-			<td  class="{$CHFactorDaily_class}" {$CHFactorDaily_style} {$recordattrs}>
-				{$CHFactorDaily_value}
-			</td>
-			{END CHFactorDaily_fieldcolumn}
 			{BEGIN DoubleHoliday_fieldcolumn}
 			<td  class="{$DoubleHoliday_class}" {$DoubleHoliday_style} {$recordattrs}>
 				{$DoubleHoliday_value}
@@ -417,21 +367,16 @@
 				{$SHOTFactor_value}
 			</td>
 			{END SHOTFactor_fieldcolumn}
-			{BEGIN SHOTFactorDaily_fieldcolumn}
-			<td  class="{$SHOTFactorDaily_class}" {$SHOTFactorDaily_style} {$recordattrs}>
-				{$SHOTFactorDaily_value}
+			{BEGIN SHOTDFactor_fieldcolumn}
+			<td  class="{$SHOTDFactor_class}" {$SHOTDFactor_style} {$recordattrs}>
+				{$SHOTDFactor_value}
 			</td>
-			{END SHOTFactorDaily_fieldcolumn}
-			{BEGIN CHOTFactor_fieldcolumn}
-			<td  class="{$CHOTFactor_class}" {$CHOTFactor_style} {$recordattrs}>
-				{$CHOTFactor_value}
+			{END SHOTDFactor_fieldcolumn}
+			{BEGIN SHRDOTDFactor_fieldcolumn}
+			<td  class="{$SHRDOTDFactor_class}" {$SHRDOTDFactor_style} {$recordattrs}>
+				{$SHRDOTDFactor_value}
 			</td>
-			{END CHOTFactor_fieldcolumn}
-			{BEGIN CHOTFactorDaily_fieldcolumn}
-			<td  class="{$CHOTFactorDaily_class}" {$CHOTFactorDaily_style} {$recordattrs}>
-				{$CHOTFactorDaily_value}
-			</td>
-			{END CHOTFactorDaily_fieldcolumn}
+			{END SHRDOTDFactor_fieldcolumn}
 			{BEGIN RDOTFactor_fieldcolumn}
 			<td  class="{$RDOTFactor_class}" {$RDOTFactor_style} {$recordattrs}>
 				{$RDOTFactor_value}
@@ -447,11 +392,6 @@
 				{$SHRDOTFactor_value}
 			</td>
 			{END SHRDOTFactor_fieldcolumn}
-			{BEGIN SHRDOTFactorDaily_fieldcolumn}
-			<td  class="{$SHRDOTFactorDaily_class}" {$SHRDOTFactorDaily_style} {$recordattrs}>
-				{$SHRDOTFactorDaily_value}
-			</td>
-			{END SHRDOTFactorDaily_fieldcolumn}
 			{BEGIN RHNDOTFactor_fieldcolumn}
 			<td  class="{$RHNDOTFactor_class}" {$RHNDOTFactor_style} {$recordattrs}>
 				{$RHNDOTFactor_value}
@@ -462,11 +402,6 @@
 				{$SHNDOTFactor_value}
 			</td>
 			{END SHNDOTFactor_fieldcolumn}
-			{BEGIN CHNDOTFactor_fieldcolumn}
-			<td  class="{$CHNDOTFactor_class}" {$CHNDOTFactor_style} {$recordattrs}>
-				{$CHNDOTFactor_value}
-			</td>
-			{END CHNDOTFactor_fieldcolumn}
 			{BEGIN RDNDOTFactor_fieldcolumn}
 			<td  class="{$RDNDOTFactor_class}" {$RDNDOTFactor_style} {$recordattrs}>
 				{$RDNDOTFactor_value}
@@ -527,11 +462,6 @@
 				{$SHNDiffFactor_value}
 			</td>
 			{END SHNDiffFactor_fieldcolumn}
-			{BEGIN CHNDiffFactor_fieldcolumn}
-			<td  class="{$CHNDiffFactor_class}" {$CHNDiffFactor_style} {$recordattrs}>
-				{$CHNDiffFactor_value}
-			</td>
-			{END CHNDiffFactor_fieldcolumn}
 			{BEGIN RDNDiffFactor_fieldcolumn}
 			<td  class="{$RDNDiffFactor_class}" {$RDNDiffFactor_style} {$recordattrs}>
 				{$RDNDiffFactor_value}

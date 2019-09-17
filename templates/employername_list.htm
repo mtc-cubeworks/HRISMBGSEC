@@ -526,6 +526,9 @@
 	.bs-gridcell[data-field=AdminEmail]:before {
 		content: "{$label employername AdminEmail}";
 	}
+	.bs-gridcell[data-field=Logo]:before {
+		content: "{$label employername Logo}";
+	}
 </style>
 <table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
 	<thead>
@@ -660,6 +663,19 @@
 									
 									
 									
+									{BEGIN Logo_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Logo_class}" data-field=Logo>
+									{BEGIN Logo_fieldheader}
+																				<span {$Logo_orderlinkattrs}>
+											{$label employername Logo}
+										</span>
+									{END Logo_fieldheader}
+									</th>
+									{END Logo_fieldheadercolumn}
+									
+									
+									
+									
 									{BEGIN AdminEmail_fieldheadercolumn}
 									<th class="rnr-gridfieldlabel {$AdminEmail_class}" data-field=AdminEmail>
 									{BEGIN AdminEmail_fieldheader}
@@ -784,6 +800,13 @@
 		{$ZipCode_value}
 	</td>
 {END ZipCode_fieldcolumn}
+
+
+	{BEGIN Logo_fieldcolumn}
+	<td class="bs-gridcell {$Logo_class}"  data-field=Logo {$rowstyle} {$recordattrs}>
+		{$Logo_value}
+	</td>
+{END Logo_fieldcolumn}
 
 
 	{BEGIN AdminEmail_fieldcolumn}

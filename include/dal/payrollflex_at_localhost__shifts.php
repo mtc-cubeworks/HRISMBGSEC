@@ -16,6 +16,8 @@ $dalTableshifts["FirstHalfMins"] = array("type"=>5,"varname"=>"FirstHalfMins", "
 $dalTableshifts["SecondHalfMins"] = array("type"=>5,"varname"=>"SecondHalfMins", "name" => "SecondHalfMins");
 $dalTableshifts["AutoApproveNDiff"] = array("type"=>16,"varname"=>"AutoApproveNDiff", "name" => "AutoApproveNDiff");
 $dalTableshifts["SchedType"] = array("type"=>3,"varname"=>"SchedType", "name" => "SchedType");
+$dalTableshifts["AutoApproveRD"] = array("type"=>16,"varname"=>"AutoApproveRD", "name" => "AutoApproveRD");
+$dalTableshifts["PreLogMins"] = array("type"=>5,"varname"=>"PreLogMins", "name" => "PreLogMins");
 	$dalTableshifts["shID"]["key"]=true;
 
 $dal_info["payrollflex_at_localhost__shifts"] = &$dalTableshifts;

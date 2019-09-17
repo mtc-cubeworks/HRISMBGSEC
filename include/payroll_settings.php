@@ -35,16 +35,13 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelspayroll["English"]["PayToDate"] = "Pay To Date";
 	$fieldToolTipspayroll["English"]["PayToDate"] = "";
 	$placeHolderspayroll["English"]["PayToDate"] = "";
-	$fieldLabelspayroll["English"]["PayPeriod"] = "Pay Period";
-	$fieldToolTipspayroll["English"]["PayPeriod"] = "";
-	$placeHolderspayroll["English"]["PayPeriod"] = "";
 	$fieldLabelspayroll["English"]["Locked"] = "Locked";
 	$fieldToolTipspayroll["English"]["Locked"] = "";
 	$placeHolderspayroll["English"]["Locked"] = "";
 	$fieldLabelspayroll["English"]["Statutories"] = "Statutories";
 	$fieldToolTipspayroll["English"]["Statutories"] = "";
 	$placeHolderspayroll["English"]["Statutories"] = "";
-	$fieldLabelspayroll["English"]["Stat_Loans"] = "Stat Loans";
+	$fieldLabelspayroll["English"]["Stat_Loans"] = "Statutory Loans";
 	$fieldToolTipspayroll["English"]["Stat_Loans"] = "";
 	$placeHolderspayroll["English"]["Stat_Loans"] = "";
 	$fieldLabelspayroll["English"]["Deductions"] = "Deductions";
@@ -53,13 +50,10 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelspayroll["English"]["Adjustments"] = "Adjustments";
 	$fieldToolTipspayroll["English"]["Adjustments"] = "";
 	$placeHolderspayroll["English"]["Adjustments"] = "";
-	$fieldLabelspayroll["English"]["MoAdjustment"] = "Mo Adjustment";
-	$fieldToolTipspayroll["English"]["MoAdjustment"] = "";
-	$placeHolderspayroll["English"]["MoAdjustment"] = "";
 	$fieldLabelspayroll["English"]["PresetTax"] = "Tax";
 	$fieldToolTipspayroll["English"]["PresetTax"] = "";
 	$placeHolderspayroll["English"]["PresetTax"] = "";
-	$fieldLabelspayroll["English"]["13thMonth"] = "13th Month";
+	$fieldLabelspayroll["English"]["13thMonth"] = "Pay 13th Month";
 	$fieldToolTipspayroll["English"]["13thMonth"] = "";
 	$placeHolderspayroll["English"]["13thMonth"] = "";
 	$fieldLabelspayroll["English"]["Employer"] = "Employer";
@@ -178,8 +172,8 @@ $tdatapayroll[".rowHighlite"] = true;
 
 
 																																			
-																																																																																																																																																																									
-																																																																										
+																																																																																																																									
+																																																																																																														
 
 $tdatapayroll[".ajaxCodeSnippetAdded"] = false;
 
@@ -205,13 +199,11 @@ $tdatapayroll[".allSearchFields"][] = "PSID";
 	$tdatapayroll[".allSearchFields"][] = "WageType";
 	$tdatapayroll[".allSearchFields"][] = "PayFromDate";
 	$tdatapayroll[".allSearchFields"][] = "PayToDate";
-	$tdatapayroll[".allSearchFields"][] = "PayPeriod";
 	$tdatapayroll[".allSearchFields"][] = "PayDate";
 	$tdatapayroll[".allSearchFields"][] = "Statutories";
 	$tdatapayroll[".allSearchFields"][] = "Stat Loans";
 	$tdatapayroll[".allSearchFields"][] = "Deductions";
 	$tdatapayroll[".allSearchFields"][] = "Adjustments";
-	$tdatapayroll[".allSearchFields"][] = "MoAdjustment";
 	$tdatapayroll[".allSearchFields"][] = "PresetTax";
 	$tdatapayroll[".allSearchFields"][] = "13thMonth";
 	
@@ -221,13 +213,11 @@ $tdatapayroll[".googleLikeFields"][] = "PSID";
 $tdatapayroll[".googleLikeFields"][] = "PayDate";
 $tdatapayroll[".googleLikeFields"][] = "PayFromDate";
 $tdatapayroll[".googleLikeFields"][] = "PayToDate";
-$tdatapayroll[".googleLikeFields"][] = "PayPeriod";
 $tdatapayroll[".googleLikeFields"][] = "Locked";
 $tdatapayroll[".googleLikeFields"][] = "Statutories";
 $tdatapayroll[".googleLikeFields"][] = "Stat Loans";
 $tdatapayroll[".googleLikeFields"][] = "Deductions";
 $tdatapayroll[".googleLikeFields"][] = "Adjustments";
-$tdatapayroll[".googleLikeFields"][] = "MoAdjustment";
 $tdatapayroll[".googleLikeFields"][] = "PresetTax";
 $tdatapayroll[".googleLikeFields"][] = "13thMonth";
 $tdatapayroll[".googleLikeFields"][] = "Employer";
@@ -250,13 +240,11 @@ $tdatapayroll[".advSearchFields"][] = "Division";
 $tdatapayroll[".advSearchFields"][] = "WageType";
 $tdatapayroll[".advSearchFields"][] = "PayFromDate";
 $tdatapayroll[".advSearchFields"][] = "PayToDate";
-$tdatapayroll[".advSearchFields"][] = "PayPeriod";
 $tdatapayroll[".advSearchFields"][] = "PayDate";
 $tdatapayroll[".advSearchFields"][] = "Statutories";
 $tdatapayroll[".advSearchFields"][] = "Stat Loans";
 $tdatapayroll[".advSearchFields"][] = "Deductions";
 $tdatapayroll[".advSearchFields"][] = "Adjustments";
-$tdatapayroll[".advSearchFields"][] = "MoAdjustment";
 $tdatapayroll[".advSearchFields"][] = "PresetTax";
 $tdatapayroll[".advSearchFields"][] = "13thMonth";
 
@@ -303,7 +291,7 @@ $tdatapayroll[".orderindexes"] = array();
 	$tdatapayroll[".orderindexes"][] = array(1, (0 ? "ASC" : "DESC"), "PSID");
 
 
-$tdatapayroll[".sqlHead"] = "SELECT PSID,  PayDate,  PayFromDate,  PayToDate,  PayPeriod,  Locked,  Statutories,  `Stat Loans`,  Deductions,  Adjustments,  MoAdjustment,  PresetTax,  `13thMonth`,  Employer,  Division,  WageType";
+$tdatapayroll[".sqlHead"] = "SELECT PSID,  PayDate,  PayFromDate,  PayToDate,  Locked,  Statutories,  `Stat Loans`,  Deductions,  Adjustments,  PresetTax,  `13thMonth`,  Employer,  Division,  WageType";
 $tdatapayroll[".sqlFrom"] = "FROM payroll";
 $tdatapayroll[".sqlWhereExpr"] = "";
 $tdatapayroll[".sqlTail"] = "";
@@ -366,13 +354,11 @@ $tdatapayroll[".listFields"][] = "Division";
 $tdatapayroll[".listFields"][] = "WageType";
 $tdatapayroll[".listFields"][] = "PayFromDate";
 $tdatapayroll[".listFields"][] = "PayToDate";
-$tdatapayroll[".listFields"][] = "PayPeriod";
 $tdatapayroll[".listFields"][] = "PayDate";
 $tdatapayroll[".listFields"][] = "Statutories";
 $tdatapayroll[".listFields"][] = "Stat Loans";
 $tdatapayroll[".listFields"][] = "Deductions";
 $tdatapayroll[".listFields"][] = "Adjustments";
-$tdatapayroll[".listFields"][] = "MoAdjustment";
 $tdatapayroll[".listFields"][] = "PresetTax";
 $tdatapayroll[".listFields"][] = "13thMonth";
 
@@ -387,13 +373,11 @@ $tdatapayroll[".viewFields"][] = "Division";
 $tdatapayroll[".viewFields"][] = "WageType";
 $tdatapayroll[".viewFields"][] = "PayFromDate";
 $tdatapayroll[".viewFields"][] = "PayToDate";
-$tdatapayroll[".viewFields"][] = "PayPeriod";
 $tdatapayroll[".viewFields"][] = "PayDate";
 $tdatapayroll[".viewFields"][] = "Statutories";
 $tdatapayroll[".viewFields"][] = "Stat Loans";
 $tdatapayroll[".viewFields"][] = "Deductions";
 $tdatapayroll[".viewFields"][] = "Adjustments";
-$tdatapayroll[".viewFields"][] = "MoAdjustment";
 $tdatapayroll[".viewFields"][] = "PresetTax";
 $tdatapayroll[".viewFields"][] = "13thMonth";
 
@@ -404,13 +388,11 @@ $tdatapayroll[".addFields"][] = "Division";
 $tdatapayroll[".addFields"][] = "WageType";
 $tdatapayroll[".addFields"][] = "PayFromDate";
 $tdatapayroll[".addFields"][] = "PayToDate";
-$tdatapayroll[".addFields"][] = "PayPeriod";
 $tdatapayroll[".addFields"][] = "PayDate";
 $tdatapayroll[".addFields"][] = "Statutories";
 $tdatapayroll[".addFields"][] = "Stat Loans";
 $tdatapayroll[".addFields"][] = "Deductions";
 $tdatapayroll[".addFields"][] = "Adjustments";
-$tdatapayroll[".addFields"][] = "MoAdjustment";
 $tdatapayroll[".addFields"][] = "PresetTax";
 $tdatapayroll[".addFields"][] = "13thMonth";
 
@@ -422,13 +404,11 @@ $tdatapayroll[".masterListFields"][] = "Division";
 $tdatapayroll[".masterListFields"][] = "WageType";
 $tdatapayroll[".masterListFields"][] = "PayFromDate";
 $tdatapayroll[".masterListFields"][] = "PayToDate";
-$tdatapayroll[".masterListFields"][] = "PayPeriod";
 $tdatapayroll[".masterListFields"][] = "PayDate";
 $tdatapayroll[".masterListFields"][] = "Statutories";
 $tdatapayroll[".masterListFields"][] = "Stat Loans";
 $tdatapayroll[".masterListFields"][] = "Deductions";
 $tdatapayroll[".masterListFields"][] = "Adjustments";
-$tdatapayroll[".masterListFields"][] = "MoAdjustment";
 $tdatapayroll[".masterListFields"][] = "PresetTax";
 $tdatapayroll[".masterListFields"][] = "13thMonth";
 
@@ -439,13 +419,11 @@ $tdatapayroll[".inlineAddFields"][] = "Division";
 $tdatapayroll[".inlineAddFields"][] = "WageType";
 $tdatapayroll[".inlineAddFields"][] = "PayFromDate";
 $tdatapayroll[".inlineAddFields"][] = "PayToDate";
-$tdatapayroll[".inlineAddFields"][] = "PayPeriod";
 $tdatapayroll[".inlineAddFields"][] = "PayDate";
 $tdatapayroll[".inlineAddFields"][] = "Statutories";
 $tdatapayroll[".inlineAddFields"][] = "Stat Loans";
 $tdatapayroll[".inlineAddFields"][] = "Deductions";
 $tdatapayroll[".inlineAddFields"][] = "Adjustments";
-$tdatapayroll[".inlineAddFields"][] = "MoAdjustment";
 $tdatapayroll[".inlineAddFields"][] = "PresetTax";
 $tdatapayroll[".inlineAddFields"][] = "13thMonth";
 
@@ -456,13 +434,11 @@ $tdatapayroll[".editFields"][] = "Division";
 $tdatapayroll[".editFields"][] = "WageType";
 $tdatapayroll[".editFields"][] = "PayFromDate";
 $tdatapayroll[".editFields"][] = "PayToDate";
-$tdatapayroll[".editFields"][] = "PayPeriod";
 $tdatapayroll[".editFields"][] = "PayDate";
 $tdatapayroll[".editFields"][] = "Statutories";
 $tdatapayroll[".editFields"][] = "Stat Loans";
 $tdatapayroll[".editFields"][] = "Deductions";
 $tdatapayroll[".editFields"][] = "Adjustments";
-$tdatapayroll[".editFields"][] = "MoAdjustment";
 $tdatapayroll[".editFields"][] = "PresetTax";
 $tdatapayroll[".editFields"][] = "13thMonth";
 
@@ -473,13 +449,11 @@ $tdatapayroll[".inlineEditFields"][] = "Division";
 $tdatapayroll[".inlineEditFields"][] = "WageType";
 $tdatapayroll[".inlineEditFields"][] = "PayFromDate";
 $tdatapayroll[".inlineEditFields"][] = "PayToDate";
-$tdatapayroll[".inlineEditFields"][] = "PayPeriod";
 $tdatapayroll[".inlineEditFields"][] = "PayDate";
 $tdatapayroll[".inlineEditFields"][] = "Statutories";
 $tdatapayroll[".inlineEditFields"][] = "Stat Loans";
 $tdatapayroll[".inlineEditFields"][] = "Deductions";
 $tdatapayroll[".inlineEditFields"][] = "Adjustments";
-$tdatapayroll[".inlineEditFields"][] = "MoAdjustment";
 $tdatapayroll[".inlineEditFields"][] = "PresetTax";
 $tdatapayroll[".inlineEditFields"][] = "13thMonth";
 
@@ -487,7 +461,6 @@ $tdatapayroll[".updateSelectedFields"] = array();
 $tdatapayroll[".updateSelectedFields"][] = "Locked";
 $tdatapayroll[".updateSelectedFields"][] = "PayFromDate";
 $tdatapayroll[".updateSelectedFields"][] = "PayToDate";
-$tdatapayroll[".updateSelectedFields"][] = "PayPeriod";
 $tdatapayroll[".updateSelectedFields"][] = "PayDate";
 
 
@@ -499,13 +472,11 @@ $tdatapayroll[".exportFields"][] = "Division";
 $tdatapayroll[".exportFields"][] = "WageType";
 $tdatapayroll[".exportFields"][] = "PayFromDate";
 $tdatapayroll[".exportFields"][] = "PayToDate";
-$tdatapayroll[".exportFields"][] = "PayPeriod";
 $tdatapayroll[".exportFields"][] = "PayDate";
 $tdatapayroll[".exportFields"][] = "Statutories";
 $tdatapayroll[".exportFields"][] = "Stat Loans";
 $tdatapayroll[".exportFields"][] = "Deductions";
 $tdatapayroll[".exportFields"][] = "Adjustments";
-$tdatapayroll[".exportFields"][] = "MoAdjustment";
 $tdatapayroll[".exportFields"][] = "PresetTax";
 $tdatapayroll[".exportFields"][] = "13thMonth";
 
@@ -514,13 +485,11 @@ $tdatapayroll[".importFields"][] = "PSID";
 $tdatapayroll[".importFields"][] = "PayDate";
 $tdatapayroll[".importFields"][] = "PayFromDate";
 $tdatapayroll[".importFields"][] = "PayToDate";
-$tdatapayroll[".importFields"][] = "PayPeriod";
 $tdatapayroll[".importFields"][] = "Locked";
 $tdatapayroll[".importFields"][] = "Statutories";
 $tdatapayroll[".importFields"][] = "Stat Loans";
 $tdatapayroll[".importFields"][] = "Deductions";
 $tdatapayroll[".importFields"][] = "Adjustments";
-$tdatapayroll[".importFields"][] = "MoAdjustment";
 $tdatapayroll[".importFields"][] = "PresetTax";
 $tdatapayroll[".importFields"][] = "13thMonth";
 $tdatapayroll[".importFields"][] = "Employer";
@@ -535,13 +504,11 @@ $tdatapayroll[".printFields"][] = "Division";
 $tdatapayroll[".printFields"][] = "WageType";
 $tdatapayroll[".printFields"][] = "PayFromDate";
 $tdatapayroll[".printFields"][] = "PayToDate";
-$tdatapayroll[".printFields"][] = "PayPeriod";
 $tdatapayroll[".printFields"][] = "PayDate";
 $tdatapayroll[".printFields"][] = "Statutories";
 $tdatapayroll[".printFields"][] = "Stat Loans";
 $tdatapayroll[".printFields"][] = "Deductions";
 $tdatapayroll[".printFields"][] = "Adjustments";
-$tdatapayroll[".printFields"][] = "MoAdjustment";
 $tdatapayroll[".printFields"][] = "PresetTax";
 $tdatapayroll[".printFields"][] = "13thMonth";
 
@@ -1068,142 +1035,10 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 
 
 	$tdatapayroll["PayToDate"] = $fdata;
-//	PayPeriod
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 5;
-	$fdata["strName"] = "PayPeriod";
-	$fdata["GoodName"] = "PayPeriod";
-	$fdata["ownerTable"] = "payroll";
-	$fdata["Label"] = GetFieldLabel("payroll","PayPeriod");
-	$fdata["FieldType"] = 7;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
-
-		$fdata["bViewPage"] = true;
-
-		$fdata["bAdvancedSearch"] = true;
-
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "PayPeriod";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "PayPeriod";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Short Date");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Date");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 0;
-	$edata["LastYearFactor"] = 21;
-
-	
-	
-	
-		$edata["controlWidth"] = 120;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Equals";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
-// the end of search options settings
-
-
-
-
-	$tdatapayroll["PayPeriod"] = $fdata;
 //	Locked
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 6;
+	$fdata["Index"] = 5;
 	$fdata["strName"] = "Locked";
 	$fdata["GoodName"] = "Locked";
 	$fdata["ownerTable"] = "payroll";
@@ -1331,7 +1166,7 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 //	Statutories
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 7;
+	$fdata["Index"] = 6;
 	$fdata["strName"] = "Statutories";
 	$fdata["GoodName"] = "Statutories";
 	$fdata["ownerTable"] = "payroll";
@@ -1458,7 +1293,7 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 //	Stat Loans
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 8;
+	$fdata["Index"] = 7;
 	$fdata["strName"] = "Stat Loans";
 	$fdata["GoodName"] = "Stat_Loans";
 	$fdata["ownerTable"] = "payroll";
@@ -1585,7 +1420,7 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 //	Deductions
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 9;
+	$fdata["Index"] = 8;
 	$fdata["strName"] = "Deductions";
 	$fdata["GoodName"] = "Deductions";
 	$fdata["ownerTable"] = "payroll";
@@ -1712,7 +1547,7 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 //	Adjustments
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 10;
+	$fdata["Index"] = 9;
 	$fdata["strName"] = "Adjustments";
 	$fdata["GoodName"] = "Adjustments";
 	$fdata["ownerTable"] = "payroll";
@@ -1836,137 +1671,10 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 
 
 	$tdatapayroll["Adjustments"] = $fdata;
-//	MoAdjustment
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 11;
-	$fdata["strName"] = "MoAdjustment";
-	$fdata["GoodName"] = "MoAdjustment";
-	$fdata["ownerTable"] = "payroll";
-	$fdata["Label"] = GetFieldLabel("payroll","MoAdjustment");
-	$fdata["FieldType"] = 16;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-	
-
-		$fdata["bViewPage"] = true;
-
-		$fdata["bAdvancedSearch"] = true;
-
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "MoAdjustment";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "MoAdjustment";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Checkbox");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Checkbox");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-	
-	
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Equals";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-
-
-	$tdatapayroll["MoAdjustment"] = $fdata;
 //	PresetTax
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 12;
+	$fdata["Index"] = 10;
 	$fdata["strName"] = "PresetTax";
 	$fdata["GoodName"] = "PresetTax";
 	$fdata["ownerTable"] = "payroll";
@@ -2093,7 +1801,7 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 //	13thMonth
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 13;
+	$fdata["Index"] = 11;
 	$fdata["strName"] = "13thMonth";
 	$fdata["GoodName"] = "13thMonth";
 	$fdata["ownerTable"] = "payroll";
@@ -2220,7 +1928,7 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 //	Employer
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 14;
+	$fdata["Index"] = 12;
 	$fdata["strName"] = "Employer";
 	$fdata["GoodName"] = "Employer";
 	$fdata["ownerTable"] = "payroll";
@@ -2378,7 +2086,7 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 //	Division
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 15;
+	$fdata["Index"] = 13;
 	$fdata["strName"] = "Division";
 	$fdata["GoodName"] = "Division";
 	$fdata["ownerTable"] = "payroll";
@@ -2536,7 +2244,7 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 //	WageType
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 16;
+	$fdata["Index"] = 14;
 	$fdata["strName"] = "WageType";
 	$fdata["GoodName"] = "WageType";
 	$fdata["ownerTable"] = "payroll";
@@ -2710,7 +2418,7 @@ $detailsTablesData["payroll"] = array();
 	$detailsParam = array();
 	$detailsParam["dDataSourceTable"]="payrolltab";
 		$detailsParam["dOriginalTable"] = "payrolltab";
-		$detailsParam["proceedLink"] = true;
+		$detailsParam["proceedLink"] = false;
 				$detailsParam["dType"]=PAGE_LIST;
 	$detailsParam["dShortTable"] = "payrolltab";
 	$detailsParam["dCaptionTable"] = GetTableCaption("payrolltab");
@@ -2825,7 +2533,7 @@ function createSqlQuery_payroll()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "PSID,  PayDate,  PayFromDate,  PayToDate,  PayPeriod,  Locked,  Statutories,  `Stat Loans`,  Deductions,  Adjustments,  MoAdjustment,  PresetTax,  `13thMonth`,  Employer,  Division,  WageType";
+$proto0["m_strFieldList"] = "PSID,  PayDate,  PayFromDate,  PayToDate,  Locked,  Statutories,  `Stat Loans`,  Deductions,  Adjustments,  PresetTax,  `13thMonth`,  Employer,  Division,  WageType";
 $proto0["m_strFrom"] = "FROM payroll";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "ORDER BY PSID DESC";
@@ -2923,12 +2631,12 @@ $obj = new SQLFieldListItem($proto12);
 $proto0["m_fieldlist"][]=$obj;
 						$proto14=array();
 			$obj = new SQLField(array(
-	"m_strName" => "PayPeriod",
+	"m_strName" => "Locked",
 	"m_strTable" => "payroll",
 	"m_srcTableName" => "payroll"
 ));
 
-$proto14["m_sql"] = "PayPeriod";
+$proto14["m_sql"] = "Locked";
 $proto14["m_srcTableName"] = "payroll";
 $proto14["m_expr"]=$obj;
 $proto14["m_alias"] = "";
@@ -2937,12 +2645,12 @@ $obj = new SQLFieldListItem($proto14);
 $proto0["m_fieldlist"][]=$obj;
 						$proto16=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Locked",
+	"m_strName" => "Statutories",
 	"m_strTable" => "payroll",
 	"m_srcTableName" => "payroll"
 ));
 
-$proto16["m_sql"] = "Locked";
+$proto16["m_sql"] = "Statutories";
 $proto16["m_srcTableName"] = "payroll";
 $proto16["m_expr"]=$obj;
 $proto16["m_alias"] = "";
@@ -2951,12 +2659,12 @@ $obj = new SQLFieldListItem($proto16);
 $proto0["m_fieldlist"][]=$obj;
 						$proto18=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Statutories",
+	"m_strName" => "Stat Loans",
 	"m_strTable" => "payroll",
 	"m_srcTableName" => "payroll"
 ));
 
-$proto18["m_sql"] = "Statutories";
+$proto18["m_sql"] = "`Stat Loans`";
 $proto18["m_srcTableName"] = "payroll";
 $proto18["m_expr"]=$obj;
 $proto18["m_alias"] = "";
@@ -2965,12 +2673,12 @@ $obj = new SQLFieldListItem($proto18);
 $proto0["m_fieldlist"][]=$obj;
 						$proto20=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Stat Loans",
+	"m_strName" => "Deductions",
 	"m_strTable" => "payroll",
 	"m_srcTableName" => "payroll"
 ));
 
-$proto20["m_sql"] = "`Stat Loans`";
+$proto20["m_sql"] = "Deductions";
 $proto20["m_srcTableName"] = "payroll";
 $proto20["m_expr"]=$obj;
 $proto20["m_alias"] = "";
@@ -2979,12 +2687,12 @@ $obj = new SQLFieldListItem($proto20);
 $proto0["m_fieldlist"][]=$obj;
 						$proto22=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Deductions",
+	"m_strName" => "Adjustments",
 	"m_strTable" => "payroll",
 	"m_srcTableName" => "payroll"
 ));
 
-$proto22["m_sql"] = "Deductions";
+$proto22["m_sql"] = "Adjustments";
 $proto22["m_srcTableName"] = "payroll";
 $proto22["m_expr"]=$obj;
 $proto22["m_alias"] = "";
@@ -2993,12 +2701,12 @@ $obj = new SQLFieldListItem($proto22);
 $proto0["m_fieldlist"][]=$obj;
 						$proto24=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Adjustments",
+	"m_strName" => "PresetTax",
 	"m_strTable" => "payroll",
 	"m_srcTableName" => "payroll"
 ));
 
-$proto24["m_sql"] = "Adjustments";
+$proto24["m_sql"] = "PresetTax";
 $proto24["m_srcTableName"] = "payroll";
 $proto24["m_expr"]=$obj;
 $proto24["m_alias"] = "";
@@ -3007,12 +2715,12 @@ $obj = new SQLFieldListItem($proto24);
 $proto0["m_fieldlist"][]=$obj;
 						$proto26=array();
 			$obj = new SQLField(array(
-	"m_strName" => "MoAdjustment",
+	"m_strName" => "13thMonth",
 	"m_strTable" => "payroll",
 	"m_srcTableName" => "payroll"
 ));
 
-$proto26["m_sql"] = "MoAdjustment";
+$proto26["m_sql"] = "`13thMonth`";
 $proto26["m_srcTableName"] = "payroll";
 $proto26["m_expr"]=$obj;
 $proto26["m_alias"] = "";
@@ -3021,12 +2729,12 @@ $obj = new SQLFieldListItem($proto26);
 $proto0["m_fieldlist"][]=$obj;
 						$proto28=array();
 			$obj = new SQLField(array(
-	"m_strName" => "PresetTax",
+	"m_strName" => "Employer",
 	"m_strTable" => "payroll",
 	"m_srcTableName" => "payroll"
 ));
 
-$proto28["m_sql"] = "PresetTax";
+$proto28["m_sql"] = "Employer";
 $proto28["m_srcTableName"] = "payroll";
 $proto28["m_expr"]=$obj;
 $proto28["m_alias"] = "";
@@ -3035,12 +2743,12 @@ $obj = new SQLFieldListItem($proto28);
 $proto0["m_fieldlist"][]=$obj;
 						$proto30=array();
 			$obj = new SQLField(array(
-	"m_strName" => "13thMonth",
+	"m_strName" => "Division",
 	"m_strTable" => "payroll",
 	"m_srcTableName" => "payroll"
 ));
 
-$proto30["m_sql"] = "`13thMonth`";
+$proto30["m_sql"] = "Division";
 $proto30["m_srcTableName"] = "payroll";
 $proto30["m_expr"]=$obj;
 $proto30["m_alias"] = "";
@@ -3049,107 +2757,79 @@ $obj = new SQLFieldListItem($proto30);
 $proto0["m_fieldlist"][]=$obj;
 						$proto32=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Employer",
+	"m_strName" => "WageType",
 	"m_strTable" => "payroll",
 	"m_srcTableName" => "payroll"
 ));
 
-$proto32["m_sql"] = "Employer";
+$proto32["m_sql"] = "WageType";
 $proto32["m_srcTableName"] = "payroll";
 $proto32["m_expr"]=$obj;
 $proto32["m_alias"] = "";
 $obj = new SQLFieldListItem($proto32);
 
 $proto0["m_fieldlist"][]=$obj;
-						$proto34=array();
-			$obj = new SQLField(array(
-	"m_strName" => "Division",
-	"m_strTable" => "payroll",
-	"m_srcTableName" => "payroll"
-));
-
-$proto34["m_sql"] = "Division";
-$proto34["m_srcTableName"] = "payroll";
-$proto34["m_expr"]=$obj;
-$proto34["m_alias"] = "";
-$obj = new SQLFieldListItem($proto34);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto36=array();
-			$obj = new SQLField(array(
-	"m_strName" => "WageType",
-	"m_strTable" => "payroll",
-	"m_srcTableName" => "payroll"
-));
-
-$proto36["m_sql"] = "WageType";
-$proto36["m_srcTableName"] = "payroll";
-$proto36["m_expr"]=$obj;
-$proto36["m_alias"] = "";
-$obj = new SQLFieldListItem($proto36);
-
-$proto0["m_fieldlist"][]=$obj;
 $proto0["m_fromlist"] = array();
-												$proto38=array();
-$proto38["m_link"] = "SQLL_MAIN";
-			$proto39=array();
-$proto39["m_strName"] = "payroll";
-$proto39["m_srcTableName"] = "payroll";
-$proto39["m_columns"] = array();
-$proto39["m_columns"][] = "PSID";
-$proto39["m_columns"][] = "PayDate";
-$proto39["m_columns"][] = "PayFromDate";
-$proto39["m_columns"][] = "PayToDate";
-$proto39["m_columns"][] = "PayPeriod";
-$proto39["m_columns"][] = "Statutories";
-$proto39["m_columns"][] = "Stat Loans";
-$proto39["m_columns"][] = "Deductions";
-$proto39["m_columns"][] = "Adjustments";
-$proto39["m_columns"][] = "MoAdjustment";
-$proto39["m_columns"][] = "PresetTax";
-$proto39["m_columns"][] = "13thMonth";
-$proto39["m_columns"][] = "Locked";
-$proto39["m_columns"][] = "Division";
-$proto39["m_columns"][] = "Employer";
-$proto39["m_columns"][] = "WageType";
-$obj = new SQLTable($proto39);
+												$proto34=array();
+$proto34["m_link"] = "SQLL_MAIN";
+			$proto35=array();
+$proto35["m_strName"] = "payroll";
+$proto35["m_srcTableName"] = "payroll";
+$proto35["m_columns"] = array();
+$proto35["m_columns"][] = "PSID";
+$proto35["m_columns"][] = "PayDate";
+$proto35["m_columns"][] = "PayFromDate";
+$proto35["m_columns"][] = "PayToDate";
+$proto35["m_columns"][] = "PayPeriod";
+$proto35["m_columns"][] = "Statutories";
+$proto35["m_columns"][] = "Stat Loans";
+$proto35["m_columns"][] = "Deductions";
+$proto35["m_columns"][] = "Adjustments";
+$proto35["m_columns"][] = "MoAdjustment";
+$proto35["m_columns"][] = "PresetTax";
+$proto35["m_columns"][] = "13thMonth";
+$proto35["m_columns"][] = "Locked";
+$proto35["m_columns"][] = "Division";
+$proto35["m_columns"][] = "Employer";
+$proto35["m_columns"][] = "WageType";
+$obj = new SQLTable($proto35);
 
-$proto38["m_table"] = $obj;
-$proto38["m_sql"] = "payroll";
-$proto38["m_alias"] = "";
-$proto38["m_srcTableName"] = "payroll";
-$proto40=array();
-$proto40["m_sql"] = "";
-$proto40["m_uniontype"] = "SQLL_UNKNOWN";
+$proto34["m_table"] = $obj;
+$proto34["m_sql"] = "payroll";
+$proto34["m_alias"] = "";
+$proto34["m_srcTableName"] = "payroll";
+$proto36=array();
+$proto36["m_sql"] = "";
+$proto36["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto40["m_column"]=$obj;
-$proto40["m_contained"] = array();
-$proto40["m_strCase"] = "";
-$proto40["m_havingmode"] = false;
-$proto40["m_inBrackets"] = false;
-$proto40["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto40);
+$proto36["m_column"]=$obj;
+$proto36["m_contained"] = array();
+$proto36["m_strCase"] = "";
+$proto36["m_havingmode"] = false;
+$proto36["m_inBrackets"] = false;
+$proto36["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto36);
 
-$proto38["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto38);
+$proto34["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto34);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
 $proto0["m_orderby"] = array();
-												$proto42=array();
+												$proto38=array();
 						$obj = new SQLField(array(
 	"m_strName" => "PSID",
 	"m_strTable" => "payroll",
 	"m_srcTableName" => "payroll"
 ));
 
-$proto42["m_column"]=$obj;
-$proto42["m_bAsc"] = 0;
-$proto42["m_nColumn"] = 0;
-$obj = new SQLOrderByItem($proto42);
+$proto38["m_column"]=$obj;
+$proto38["m_bAsc"] = 0;
+$proto38["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto38);
 
 $proto0["m_orderby"][]=$obj;					
 $proto0["m_srcTableName"]="payroll";		
@@ -3163,7 +2843,7 @@ $queryData_payroll = createSqlQuery_payroll();
 	
 		;
 
-																
+														
 
 $tdatapayroll[".sqlquery"] = $queryData_payroll;
 

@@ -66,6 +66,42 @@
 		</div>
 	</div>
 </div>
+	{BEGIN PtabID_fieldblock}		
+	<div class="container {$fielddispclass_PtabID}" data-fieldname="PtabID">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_PtabID}">
+				{$label payrolltab PtabID}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_PtabID}
+			</div>
+			<div class="col-md-4" >
+				{$PtabID_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$PtabID_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END PtabID_fieldblock}
+	{BEGIN Locked_fieldblock}		
+	<div class="container {$fielddispclass_Locked}" data-fieldname="Locked">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Locked}">
+				{$label payrolltab Locked}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Locked}
+			</div>
+			<div class="col-md-4" >
+				{$Locked_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Locked_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Locked_fieldblock}
 	{BEGIN FromDate_fieldblock}		
 	<div class="container {$fielddispclass_FromDate}" data-fieldname="FromDate">
 		<div class="form-group">
@@ -102,6 +138,24 @@
 		</div>
 	</div>
 {END ToDate_fieldblock}
+	{BEGIN EmployeeID_fieldblock}		
+	<div class="container {$fielddispclass_EmployeeID}" data-fieldname="EmployeeID">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_EmployeeID}">
+				{$label payrolltab EmployeeID}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_EmployeeID}
+			</div>
+			<div class="col-md-4" >
+				{$EmployeeID_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$EmployeeID_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END EmployeeID_fieldblock}
 	{BEGIN UserName_fieldblock}		
 	<div class="container {$fielddispclass_UserName}" data-fieldname="UserName">
 		<div class="form-group">
@@ -120,6 +174,42 @@
 		</div>
 	</div>
 {END UserName_fieldblock}
+	{BEGIN Email_fieldblock}		
+	<div class="container {$fielddispclass_Email}" data-fieldname="Email">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Email}">
+				{$label payrolltab Email}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Email}
+			</div>
+			<div class="col-md-4" >
+				{$Email_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Email_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Email_fieldblock}
+	{BEGIN Position_fieldblock}		
+	<div class="container {$fielddispclass_Position}" data-fieldname="Position">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Position}">
+				{$label payrolltab Position}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Position}
+			</div>
+			<div class="col-md-4" >
+				{$Position_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Position_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Position_fieldblock}
 	{BEGIN Division_fieldblock}		
 	<div class="container {$fielddispclass_Division}" data-fieldname="Division">
 		<div class="form-group">
@@ -228,6 +318,906 @@
 		</div>
 	</div>
 {END BasicDaily_fieldblock}
+	{BEGIN DWork_fieldblock}		
+	<div class="container {$fielddispclass_DWork}" data-fieldname="DWork">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_DWork}">
+				{$label payrolltab DWork}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_DWork}
+			</div>
+			<div class="col-md-4" >
+				{$DWork_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$DWork_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END DWork_fieldblock}
+	{BEGIN Absent_fieldblock}		
+	<div class="container {$fielddispclass_Absent}" data-fieldname="Absent">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Absent}">
+				{$label payrolltab Absent}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Absent}
+			</div>
+			<div class="col-md-4" >
+				{$Absent_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Absent_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Absent_fieldblock}
+	{BEGIN LateMins_fieldblock}		
+	<div class="container {$fielddispclass_LateMins}" data-fieldname="LateMins">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_LateMins}">
+				{$label payrolltab LateMins}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_LateMins}
+			</div>
+			<div class="col-md-4" >
+				{$LateMins_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$LateMins_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END LateMins_fieldblock}
+	{BEGIN UndertimeMins_fieldblock}		
+	<div class="container {$fielddispclass_UndertimeMins}" data-fieldname="UndertimeMins">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_UndertimeMins}">
+				{$label payrolltab UndertimeMins}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_UndertimeMins}
+			</div>
+			<div class="col-md-4" >
+				{$UndertimeMins_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$UndertimeMins_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END UndertimeMins_fieldblock}
+	{BEGIN VLDays_fieldblock}		
+	<div class="container {$fielddispclass_VLDays}" data-fieldname="VLDays">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_VLDays}">
+				{$label payrolltab VLDays}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_VLDays}
+			</div>
+			<div class="col-md-4" >
+				{$VLDays_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$VLDays_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END VLDays_fieldblock}
+	{BEGIN SLDays_fieldblock}		
+	<div class="container {$fielddispclass_SLDays}" data-fieldname="SLDays">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SLDays}">
+				{$label payrolltab SLDays}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SLDays}
+			</div>
+			<div class="col-md-4" >
+				{$SLDays_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SLDays_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SLDays_fieldblock}
+	{BEGIN ELDays_fieldblock}		
+	<div class="container {$fielddispclass_ELDays}" data-fieldname="ELDays">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_ELDays}">
+				{$label payrolltab ELDays}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_ELDays}
+			</div>
+			<div class="col-md-4" >
+				{$ELDays_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$ELDays_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END ELDays_fieldblock}
+	{BEGIN PLDays_fieldblock}		
+	<div class="container {$fielddispclass_PLDays}" data-fieldname="PLDays">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_PLDays}">
+				{$label payrolltab PLDays}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_PLDays}
+			</div>
+			<div class="col-md-4" >
+				{$PLDays_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$PLDays_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END PLDays_fieldblock}
+	{BEGIN TrODays_fieldblock}		
+	<div class="container {$fielddispclass_TrODays}" data-fieldname="TrODays">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_TrODays}">
+				{$label payrolltab TrODays}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_TrODays}
+			</div>
+			<div class="col-md-4" >
+				{$TrODays_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$TrODays_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END TrODays_fieldblock}
+	{BEGIN PLBalance_fieldblock}		
+	<div class="container {$fielddispclass_PLBalance}" data-fieldname="PLBalance">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_PLBalance}">
+				{$label payrolltab PLBalance}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_PLBalance}
+			</div>
+			<div class="col-md-4" >
+				{$PLBalance_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$PLBalance_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END PLBalance_fieldblock}
+	{BEGIN ELBalance_fieldblock}		
+	<div class="container {$fielddispclass_ELBalance}" data-fieldname="ELBalance">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_ELBalance}">
+				{$label payrolltab ELBalance}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_ELBalance}
+			</div>
+			<div class="col-md-4" >
+				{$ELBalance_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$ELBalance_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END ELBalance_fieldblock}
+	{BEGIN SLBalance_fieldblock}		
+	<div class="container {$fielddispclass_SLBalance}" data-fieldname="SLBalance">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SLBalance}">
+				{$label payrolltab SLBalance}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SLBalance}
+			</div>
+			<div class="col-md-4" >
+				{$SLBalance_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SLBalance_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SLBalance_fieldblock}
+	{BEGIN VLBalance_fieldblock}		
+	<div class="container {$fielddispclass_VLBalance}" data-fieldname="VLBalance">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_VLBalance}">
+				{$label payrolltab VLBalance}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_VLBalance}
+			</div>
+			<div class="col-md-4" >
+				{$VLBalance_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$VLBalance_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END VLBalance_fieldblock}
+	{BEGIN RHolidayHrs_fieldblock}		
+	<div class="container {$fielddispclass_RHolidayHrs}" data-fieldname="RHolidayHrs">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RHolidayHrs}">
+				{$label payrolltab RHolidayHrs}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RHolidayHrs}
+			</div>
+			<div class="col-md-4" >
+				{$RHolidayHrs_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RHolidayHrs_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RHolidayHrs_fieldblock}
+	{BEGIN SHolidayHrs_fieldblock}		
+	<div class="container {$fielddispclass_SHolidayHrs}" data-fieldname="SHolidayHrs">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SHolidayHrs}">
+				{$label payrolltab SHolidayHrs}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SHolidayHrs}
+			</div>
+			<div class="col-md-4" >
+				{$SHolidayHrs_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SHolidayHrs_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SHolidayHrs_fieldblock}
+	{BEGIN DH_fieldblock}		
+	<div class="container {$fielddispclass_DH}" data-fieldname="DH">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_DH}">
+				{$label payrolltab DH}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_DH}
+			</div>
+			<div class="col-md-4" >
+				{$DH_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$DH_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END DH_fieldblock}
+	{BEGIN RegRD_fieldblock}		
+	<div class="container {$fielddispclass_RegRD}" data-fieldname="RegRD">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RegRD}">
+				{$label payrolltab RegRD}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RegRD}
+			</div>
+			<div class="col-md-4" >
+				{$RegRD_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RegRD_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RegRD_fieldblock}
+	{BEGIN ExcessHrs_fieldblock}		
+	<div class="container {$fielddispclass_ExcessHrs}" data-fieldname="ExcessHrs">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_ExcessHrs}">
+				{$label payrolltab ExcessHrs}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_ExcessHrs}
+			</div>
+			<div class="col-md-4" >
+				{$ExcessHrs_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$ExcessHrs_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END ExcessHrs_fieldblock}
+	{BEGIN RegOTHrs_fieldblock}		
+	<div class="container {$fielddispclass_RegOTHrs}" data-fieldname="RegOTHrs">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RegOTHrs}">
+				{$label payrolltab RegOTHrs}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RegOTHrs}
+			</div>
+			<div class="col-md-4" >
+				{$RegOTHrs_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RegOTHrs_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RegOTHrs_fieldblock}
+	{BEGIN RHOTHrs_fieldblock}		
+	<div class="container {$fielddispclass_RHOTHrs}" data-fieldname="RHOTHrs">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RHOTHrs}">
+				{$label payrolltab RHOTHrs}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RHOTHrs}
+			</div>
+			<div class="col-md-4" >
+				{$RHOTHrs_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RHOTHrs_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RHOTHrs_fieldblock}
+	{BEGIN SHOTHRs_fieldblock}		
+	<div class="container {$fielddispclass_SHOTHRs}" data-fieldname="SHOTHRs">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SHOTHRs}">
+				{$label payrolltab SHOTHRs}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SHOTHRs}
+			</div>
+			<div class="col-md-4" >
+				{$SHOTHRs_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SHOTHRs_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SHOTHRs_fieldblock}
+	{BEGIN SHOTD_fieldblock}		
+	<div class="container {$fielddispclass_SHOTD}" data-fieldname="SHOTD">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SHOTD}">
+				{$label payrolltab SHOTD}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SHOTD}
+			</div>
+			<div class="col-md-4" >
+				{$SHOTD_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SHOTD_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SHOTD_fieldblock}
+	{BEGIN RDOTHrs_fieldblock}		
+	<div class="container {$fielddispclass_RDOTHrs}" data-fieldname="RDOTHrs">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RDOTHrs}">
+				{$label payrolltab RDOTHrs}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RDOTHrs}
+			</div>
+			<div class="col-md-4" >
+				{$RDOTHrs_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RDOTHrs_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RDOTHrs_fieldblock}
+	{BEGIN DHOT_fieldblock}		
+	<div class="container {$fielddispclass_DHOT}" data-fieldname="DHOT">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_DHOT}">
+				{$label payrolltab DHOT}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_DHOT}
+			</div>
+			<div class="col-md-4" >
+				{$DHOT_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$DHOT_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END DHOT_fieldblock}
+	{BEGIN NDOTHrs_fieldblock}		
+	<div class="container {$fielddispclass_NDOTHrs}" data-fieldname="NDOTHrs">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_NDOTHrs}">
+				{$label payrolltab NDOTHrs}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_NDOTHrs}
+			</div>
+			<div class="col-md-4" >
+				{$NDOTHrs_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$NDOTHrs_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END NDOTHrs_fieldblock}
+	{BEGIN RegND_fieldblock}		
+	<div class="container {$fielddispclass_RegND}" data-fieldname="RegND">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RegND}">
+				{$label payrolltab RegND}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RegND}
+			</div>
+			<div class="col-md-4" >
+				{$RegND_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RegND_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RegND_fieldblock}
+	{BEGIN RHNDHrs_fieldblock}		
+	<div class="container {$fielddispclass_RHNDHrs}" data-fieldname="RHNDHrs">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RHNDHrs}">
+				{$label payrolltab RHNDHrs}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RHNDHrs}
+			</div>
+			<div class="col-md-4" >
+				{$RHNDHrs_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RHNDHrs_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RHNDHrs_fieldblock}
+	{BEGIN SHNDHrs_fieldblock}		
+	<div class="container {$fielddispclass_SHNDHrs}" data-fieldname="SHNDHrs">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SHNDHrs}">
+				{$label payrolltab SHNDHrs}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SHNDHrs}
+			</div>
+			<div class="col-md-4" >
+				{$SHNDHrs_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SHNDHrs_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SHNDHrs_fieldblock}
+	{BEGIN DHND_fieldblock}		
+	<div class="container {$fielddispclass_DHND}" data-fieldname="DHND">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_DHND}">
+				{$label payrolltab DHND}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_DHND}
+			</div>
+			<div class="col-md-4" >
+				{$DHND_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$DHND_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END DHND_fieldblock}
+	{BEGIN RDNDHrs_fieldblock}		
+	<div class="container {$fielddispclass_RDNDHrs}" data-fieldname="RDNDHrs">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RDNDHrs}">
+				{$label payrolltab RDNDHrs}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RDNDHrs}
+			</div>
+			<div class="col-md-4" >
+				{$RDNDHrs_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RDNDHrs_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RDNDHrs_fieldblock}
+	{BEGIN RHNDOTHrs_fieldblock}		
+	<div class="container {$fielddispclass_RHNDOTHrs}" data-fieldname="RHNDOTHrs">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RHNDOTHrs}">
+				{$label payrolltab RHNDOTHrs}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RHNDOTHrs}
+			</div>
+			<div class="col-md-4" >
+				{$RHNDOTHrs_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RHNDOTHrs_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RHNDOTHrs_fieldblock}
+	{BEGIN SHNDOTHrs_fieldblock}		
+	<div class="container {$fielddispclass_SHNDOTHrs}" data-fieldname="SHNDOTHrs">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SHNDOTHrs}">
+				{$label payrolltab SHNDOTHrs}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SHNDOTHrs}
+			</div>
+			<div class="col-md-4" >
+				{$SHNDOTHrs_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SHNDOTHrs_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SHNDOTHrs_fieldblock}
+	{BEGIN DHNDOT_fieldblock}		
+	<div class="container {$fielddispclass_DHNDOT}" data-fieldname="DHNDOT">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_DHNDOT}">
+				{$label payrolltab DHNDOT}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_DHNDOT}
+			</div>
+			<div class="col-md-4" >
+				{$DHNDOT_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$DHNDOT_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END DHNDOT_fieldblock}
+	{BEGIN RDNDOTHrs_fieldblock}		
+	<div class="container {$fielddispclass_RDNDOTHrs}" data-fieldname="RDNDOTHrs">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RDNDOTHrs}">
+				{$label payrolltab RDNDOTHrs}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RDNDOTHrs}
+			</div>
+			<div class="col-md-4" >
+				{$RDNDOTHrs_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RDNDOTHrs_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RDNDOTHrs_fieldblock}
+	{BEGIN RHRD_fieldblock}		
+	<div class="container {$fielddispclass_RHRD}" data-fieldname="RHRD">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RHRD}">
+				{$label payrolltab RHRD}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RHRD}
+			</div>
+			<div class="col-md-4" >
+				{$RHRD_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RHRD_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RHRD_fieldblock}
+	{BEGIN SHRD_fieldblock}		
+	<div class="container {$fielddispclass_SHRD}" data-fieldname="SHRD">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SHRD}">
+				{$label payrolltab SHRD}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SHRD}
+			</div>
+			<div class="col-md-4" >
+				{$SHRD_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SHRD_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SHRD_fieldblock}
+	{BEGIN DHRD_fieldblock}		
+	<div class="container {$fielddispclass_DHRD}" data-fieldname="DHRD">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_DHRD}">
+				{$label payrolltab DHRD}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_DHRD}
+			</div>
+			<div class="col-md-4" >
+				{$DHRD_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$DHRD_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END DHRD_fieldblock}
+	{BEGIN RHRDOT_fieldblock}		
+	<div class="container {$fielddispclass_RHRDOT}" data-fieldname="RHRDOT">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RHRDOT}">
+				{$label payrolltab RHRDOT}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RHRDOT}
+			</div>
+			<div class="col-md-4" >
+				{$RHRDOT_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RHRDOT_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RHRDOT_fieldblock}
+	{BEGIN SHRDOT_fieldblock}		
+	<div class="container {$fielddispclass_SHRDOT}" data-fieldname="SHRDOT">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SHRDOT}">
+				{$label payrolltab SHRDOT}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SHRDOT}
+			</div>
+			<div class="col-md-4" >
+				{$SHRDOT_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SHRDOT_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SHRDOT_fieldblock}
+	{BEGIN SHRDOTD_fieldblock}		
+	<div class="container {$fielddispclass_SHRDOTD}" data-fieldname="SHRDOTD">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SHRDOTD}">
+				{$label payrolltab SHRDOTD}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SHRDOTD}
+			</div>
+			<div class="col-md-4" >
+				{$SHRDOTD_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SHRDOTD_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SHRDOTD_fieldblock}
+	{BEGIN DHRDOT_fieldblock}		
+	<div class="container {$fielddispclass_DHRDOT}" data-fieldname="DHRDOT">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_DHRDOT}">
+				{$label payrolltab DHRDOT}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_DHRDOT}
+			</div>
+			<div class="col-md-4" >
+				{$DHRDOT_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$DHRDOT_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END DHRDOT_fieldblock}
+	{BEGIN RHRDND_fieldblock}		
+	<div class="container {$fielddispclass_RHRDND}" data-fieldname="RHRDND">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RHRDND}">
+				{$label payrolltab RHRDND}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RHRDND}
+			</div>
+			<div class="col-md-4" >
+				{$RHRDND_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RHRDND_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RHRDND_fieldblock}
+	{BEGIN SHRDND_fieldblock}		
+	<div class="container {$fielddispclass_SHRDND}" data-fieldname="SHRDND">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SHRDND}">
+				{$label payrolltab SHRDND}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SHRDND}
+			</div>
+			<div class="col-md-4" >
+				{$SHRDND_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SHRDND_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SHRDND_fieldblock}
+	{BEGIN DHRDND_fieldblock}		
+	<div class="container {$fielddispclass_DHRDND}" data-fieldname="DHRDND">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_DHRDND}">
+				{$label payrolltab DHRDND}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_DHRDND}
+			</div>
+			<div class="col-md-4" >
+				{$DHRDND_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$DHRDND_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END DHRDND_fieldblock}
+	{BEGIN RHRDNDOT_fieldblock}		
+	<div class="container {$fielddispclass_RHRDNDOT}" data-fieldname="RHRDNDOT">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RHRDNDOT}">
+				{$label payrolltab RHRDNDOT}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RHRDNDOT}
+			</div>
+			<div class="col-md-4" >
+				{$RHRDNDOT_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RHRDNDOT_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RHRDNDOT_fieldblock}
+	{BEGIN SHRDNDOT_fieldblock}		
+	<div class="container {$fielddispclass_SHRDNDOT}" data-fieldname="SHRDNDOT">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SHRDNDOT}">
+				{$label payrolltab SHRDNDOT}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SHRDNDOT}
+			</div>
+			<div class="col-md-4" >
+				{$SHRDNDOT_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SHRDNDOT_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SHRDNDOT_fieldblock}
+	{BEGIN DHRDNDOT_fieldblock}		
+	<div class="container {$fielddispclass_DHRDNDOT}" data-fieldname="DHRDNDOT">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_DHRDNDOT}">
+				{$label payrolltab DHRDNDOT}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_DHRDNDOT}
+			</div>
+			<div class="col-md-4" >
+				{$DHRDNDOT_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$DHRDNDOT_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END DHRDNDOT_fieldblock}
+	{BEGIN NDMealAllowance_fieldblock}		
+	<div class="container {$fielddispclass_NDMealAllowance}" data-fieldname="NDMealAllowance">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_NDMealAllowance}">
+				{$label payrolltab NDMealAllowance}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_NDMealAllowance}
+			</div>
+			<div class="col-md-4" >
+				{$NDMealAllowance_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$NDMealAllowance_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END NDMealAllowance_fieldblock}
+	{BEGIN Thirteenth_fieldblock}		
+	<div class="container {$fielddispclass_Thirteenth}" data-fieldname="Thirteenth">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Thirteenth}">
+				{$label payrolltab Thirteenth}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Thirteenth}
+			</div>
+			<div class="col-md-4" >
+				{$Thirteenth_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Thirteenth_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Thirteenth_fieldblock}
+	{BEGIN Taxable_fieldblock}		
+	<div class="container {$fielddispclass_Taxable}" data-fieldname="Taxable">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Taxable}">
+				{$label payrolltab Taxable}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Taxable}
+			</div>
+			<div class="col-md-4" >
+				{$Taxable_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Taxable_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Taxable_fieldblock}
 	{BEGIN ThirToDate_fieldblock}		
 	<div class="container {$fielddispclass_ThirToDate}" data-fieldname="ThirToDate">
 		<div class="form-group">
@@ -282,6 +1272,24 @@
 		</div>
 	</div>
 {END TaxToDate_fieldblock}
+	{BEGIN PayrollID_fieldblock}		
+	<div class="container {$fielddispclass_PayrollID}" data-fieldname="PayrollID">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_PayrollID}">
+				{$label payrolltab PayrollID}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_PayrollID}
+			</div>
+			<div class="col-md-4" >
+				{$PayrollID_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$PayrollID_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END PayrollID_fieldblock}
 </div>
 
 

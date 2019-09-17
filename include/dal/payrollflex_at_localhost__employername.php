@@ -10,6 +10,7 @@ $dalTableemployername["PagIbig"] = array("type"=>200,"varname"=>"PagIbig", "name
 $dalTableemployername["TelNo"] = array("type"=>200,"varname"=>"TelNo", "name" => "TelNo");
 $dalTableemployername["ZipCode"] = array("type"=>200,"varname"=>"ZipCode", "name" => "ZipCode");
 $dalTableemployername["AdminEmail"] = array("type"=>200,"varname"=>"AdminEmail", "name" => "AdminEmail");
+$dalTableemployername["Logo"] = array("type"=>200,"varname"=>"Logo", "name" => "Logo");
 	$dalTableemployername["EnID"]["key"]=true;
 
 $dal_info["payrollflex_at_localhost__employername"] = &$dalTableemployername;

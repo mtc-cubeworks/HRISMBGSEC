@@ -688,6 +688,9 @@
 	.bs-gridcell[data-field=DeMinimis]:before {
 		content: "{$label demo_user_open DeMinimis}";
 	}
+	.bs-gridcell[data-field=ExcludeBio]:before {
+		content: "{$label demo_user_open ExcludeBio}";
+	}
 </style>
 <table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
 	<thead>
@@ -968,6 +971,17 @@
 									
 									
 									
+									{BEGIN ExcludeBio_fieldheadercolumn}<th class="rnr-gridfieldlabel {$ExcludeBio_class}" data-field=ExcludeBio>
+									{BEGIN ExcludeBio_fieldheader}<span {$ExcludeBio_orderlinkattrs}>
+											{$label demo_user_open ExcludeBio}
+										</span>
+									{END ExcludeBio_fieldheader}
+									</th>
+									{END ExcludeBio_fieldheadercolumn}
+									
+									
+									
+									
 									{BEGIN AllowableSickLeave_fieldheadercolumn}<th class="rnr-gridfieldlabel {$AllowableSickLeave_class}" data-field=AllowableSickLeave>
 									{BEGIN AllowableSickLeave_fieldheader}<span {$AllowableSickLeave_orderlinkattrs}>
 											{$label demo_user_open AllowableSickLeave}
@@ -1177,6 +1191,17 @@
 									
 									
 									
+									{BEGIN user_id_fieldheadercolumn}<th class="rnr-gridfieldlabel {$user_id_class}" data-field=user_id>
+									{BEGIN user_id_fieldheader}<span {$user_id_orderlinkattrs}>
+											{$label demo_user_open user_id}
+										</span>
+									{END user_id_fieldheader}
+									</th>
+									{END user_id_fieldheadercolumn}
+									
+									
+									
+									
 									{BEGIN GracePeriodMins_fieldheadercolumn}<th class="rnr-gridfieldlabel {$GracePeriodMins_class}" data-field=GracePeriodMins>
 									{BEGIN GracePeriodMins_fieldheader}<span {$GracePeriodMins_orderlinkattrs}>
 											{$label demo_user_open GracePeriodMins}
@@ -1195,17 +1220,6 @@
 									{END WithAdditionalBreaks_fieldheader}
 									</th>
 									{END WithAdditionalBreaks_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN user_id_fieldheadercolumn}<th class="rnr-gridfieldlabel {$user_id_class}" data-field=user_id>
-									{BEGIN user_id_fieldheader}<span {$user_id_orderlinkattrs}>
-											{$label demo_user_open user_id}
-										</span>
-									{END user_id_fieldheader}
-									</th>
-									{END user_id_fieldheadercolumn}
 									
 									
 									
@@ -1597,6 +1611,12 @@
 {END AccountNo_fieldcolumn}
 
 
+	{BEGIN ExcludeBio_fieldcolumn}<td class="bs-gridcell {$ExcludeBio_class}"  data-field=ExcludeBio {$rowstyle} {$recordattrs}>
+		{$ExcludeBio_value}
+	</td>
+{END ExcludeBio_fieldcolumn}
+
+
 	{BEGIN AllowableSickLeave_fieldcolumn}<td class="bs-gridcell {$AllowableSickLeave_class}"  data-field=AllowableSickLeave {$rowstyle} {$recordattrs}>
 		{$AllowableSickLeave_value}
 	</td>
@@ -1711,6 +1731,12 @@
 {END NoLateDeduction_fieldcolumn}
 
 
+	{BEGIN user_id_fieldcolumn}<td class="bs-gridcell {$user_id_class}"  data-field=user_id {$rowstyle} {$recordattrs}>
+		{$user_id_value}
+	</td>
+{END user_id_fieldcolumn}
+
+
 	{BEGIN GracePeriodMins_fieldcolumn}<td class="bs-gridcell {$GracePeriodMins_class}"  data-field=GracePeriodMins {$rowstyle} {$recordattrs}>
 		{$GracePeriodMins_value}
 	</td>
@@ -1721,12 +1747,6 @@
 		{$WithAdditionalBreaks_value}
 	</td>
 {END WithAdditionalBreaks_fieldcolumn}
-
-
-	{BEGIN user_id_fieldcolumn}<td class="bs-gridcell {$user_id_class}"  data-field=user_id {$rowstyle} {$recordattrs}>
-		{$user_id_value}
-	</td>
-{END user_id_fieldcolumn}
 
 
 	{BEGIN IncludeBreakLate_fieldcolumn}<td class="bs-gridcell {$IncludeBreakLate_class}"  data-field=IncludeBreakLate {$rowstyle} {$recordattrs}>

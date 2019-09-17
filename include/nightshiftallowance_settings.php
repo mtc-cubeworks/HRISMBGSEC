@@ -135,7 +135,7 @@ $tdatanightshiftallowance[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																														
+																																																																																																																																																																																																																																																																		
 
 $tdatanightshiftallowance[".ajaxCodeSnippetAdded"] = false;
 

@@ -146,12 +146,13 @@ $tdatadtrrange[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																
+																																																																																																																																									
 							
 							
 							
 							
-																																																																																						
+																																																																																					
+																																
 
 $tdatadtrrange[".ajaxCodeSnippetAdded"] = false;
 
@@ -237,7 +238,7 @@ $tdatadtrrange[".strOrderBy"] = $tstrOrderBy;
 
 $tdatadtrrange[".orderindexes"] = array();
 
-$tdatadtrrange[".sqlHead"] = "SELECT DrID,  	FromDate,  	ToDate,  	Employer,  	WageType,  	Division";
+$tdatadtrrange[".sqlHead"] = "SELECT DrID,  FromDate,  ToDate,  Employer,  WageType,  Division";
 $tdatadtrrange[".sqlFrom"] = "FROM dtrrange";
 $tdatadtrrange[".sqlWhereExpr"] = "";
 $tdatadtrrange[".sqlTail"] = "";
@@ -1277,7 +1278,7 @@ function createSqlQuery_dtrrange()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "DrID,  	FromDate,  	ToDate,  	Employer,  	WageType,  	Division";
+$proto0["m_strFieldList"] = "DrID,  FromDate,  ToDate,  Employer,  WageType,  Division";
 $proto0["m_strFrom"] = "FROM dtrrange";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -1414,6 +1415,7 @@ $proto19["m_columns"][] = "ToDate";
 $proto19["m_columns"][] = "Employer";
 $proto19["m_columns"][] = "WageType";
 $proto19["m_columns"][] = "Division";
+$proto19["m_columns"][] = "Employee";
 $obj = new SQLTable($proto19);
 
 $proto18["m_table"] = $obj;

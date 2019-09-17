@@ -70,6 +70,26 @@
 	{BEGIN grid_header}
 		<tr class="{$gridHeader_class}" >
 		{BEGIN record_header}
+			{BEGIN RDOTh_fieldheadercolumn}
+			<th class="{$RDOTh_class}" {$RDOTh_style}  data-field="RDOTh">
+				{$label dtrsummary2 RDOTh}
+			</th>
+			{END RDOTh_fieldheadercolumn}
+			{BEGIN RegNDh_fieldheadercolumn}
+			<th class="{$RegNDh_class}" {$RegNDh_style}  data-field="RegNDh">
+				{$label dtrsummary2 RegNDh}
+			</th>
+			{END RegNDh_fieldheadercolumn}
+			{BEGIN RegRDh_fieldheadercolumn}
+			<th class="{$RegRDh_class}" {$RegRDh_style}  data-field="RegRDh">
+				{$label dtrsummary2 RegRDh}
+			</th>
+			{END RegRDh_fieldheadercolumn}
+			{BEGIN RDNDh_fieldheadercolumn}
+			<th class="{$RDNDh_class}" {$RDNDh_style}  data-field="RDNDh">
+				{$label dtrsummary2 RDNDh}
+			</th>
+			{END RDNDh_fieldheadercolumn}
 			{BEGIN EmployeeID_fieldheadercolumn}
 			<th class="{$EmployeeID_class}" {$EmployeeID_style}  data-field="EmployeeID">
 				{$label dtrsummary2 EmployeeID}
@@ -125,76 +145,6 @@
 				{$label dtrsummary2 UndertimeMins}
 			</th>
 			{END UndertimeMins_fieldheadercolumn}
-			{BEGIN ExcessHrs_fieldheadercolumn}
-			<th class="{$ExcessHrs_class}" {$ExcessHrs_style}  data-field="ExcessHrs">
-				{$label dtrsummary2 ExcessHrs}
-			</th>
-			{END ExcessHrs_fieldheadercolumn}
-			{BEGIN RegOTHrs_fieldheadercolumn}
-			<th class="{$RegOTHrs_class}" {$RegOTHrs_style}  data-field="RegOTHrs">
-				{$label dtrsummary2 RegOTHrs}
-			</th>
-			{END RegOTHrs_fieldheadercolumn}
-			{BEGIN RHOTHrs_fieldheadercolumn}
-			<th class="{$RHOTHrs_class}" {$RHOTHrs_style}  data-field="RHOTHrs">
-				{$label dtrsummary2 RHOTHrs}
-			</th>
-			{END RHOTHrs_fieldheadercolumn}
-			{BEGIN SHOTHRs_fieldheadercolumn}
-			<th class="{$SHOTHRs_class}" {$SHOTHRs_style}  data-field="SHOTHRs">
-				{$label dtrsummary2 SHOTHRs}
-			</th>
-			{END SHOTHRs_fieldheadercolumn}
-			{BEGIN CHOTHrs_fieldheadercolumn}
-			<th class="{$CHOTHrs_class}" {$CHOTHrs_style}  data-field="CHOTHrs">
-				{$label dtrsummary2 CHOTHrs}
-			</th>
-			{END CHOTHrs_fieldheadercolumn}
-			{BEGIN RDOTHrs_fieldheadercolumn}
-			<th class="{$RDOTHrs_class}" {$RDOTHrs_style}  data-field="RDOTHrs">
-				{$label dtrsummary2 RDOTHrs}
-			</th>
-			{END RDOTHrs_fieldheadercolumn}
-			{BEGIN NDHrs_fieldheadercolumn}
-			<th class="{$NDHrs_class}" {$NDHrs_style}  data-field="NDHrs">
-				{$label dtrsummary2 NDHrs}
-			</th>
-			{END NDHrs_fieldheadercolumn}
-			{BEGIN NDOTHrs_fieldheadercolumn}
-			<th class="{$NDOTHrs_class}" {$NDOTHrs_style}  data-field="NDOTHrs">
-				{$label dtrsummary2 NDOTHrs}
-			</th>
-			{END NDOTHrs_fieldheadercolumn}
-			{BEGIN RDHrs_fieldheadercolumn}
-			<th class="{$RDHrs_class}" {$RDHrs_style}  data-field="RDHrs">
-				{$label dtrsummary2 RDHrs}
-			</th>
-			{END RDHrs_fieldheadercolumn}
-			{BEGIN RegNDHrs_fieldheadercolumn}
-			<th class="{$RegNDHrs_class}" {$RegNDHrs_style}  data-field="RegNDHrs">
-				{$label dtrsummary2 RegNDHrs}
-			</th>
-			{END RegNDHrs_fieldheadercolumn}
-			{BEGIN RHNDHrs_fieldheadercolumn}
-			<th class="{$RHNDHrs_class}" {$RHNDHrs_style}  data-field="RHNDHrs">
-				{$label dtrsummary2 RHNDHrs}
-			</th>
-			{END RHNDHrs_fieldheadercolumn}
-			{BEGIN SHNDHrs_fieldheadercolumn}
-			<th class="{$SHNDHrs_class}" {$SHNDHrs_style}  data-field="SHNDHrs">
-				{$label dtrsummary2 SHNDHrs}
-			</th>
-			{END SHNDHrs_fieldheadercolumn}
-			{BEGIN CHNDHrs_fieldheadercolumn}
-			<th class="{$CHNDHrs_class}" {$CHNDHrs_style}  data-field="CHNDHrs">
-				{$label dtrsummary2 CHNDHrs}
-			</th>
-			{END CHNDHrs_fieldheadercolumn}
-			{BEGIN RDNDHrs_fieldheadercolumn}
-			<th class="{$RDNDHrs_class}" {$RDNDHrs_style}  data-field="RDNDHrs">
-				{$label dtrsummary2 RDNDHrs}
-			</th>
-			{END RDNDHrs_fieldheadercolumn}
 			{BEGIN VLDays_fieldheadercolumn}
 			<th class="{$VLDays_class}" {$VLDays_style}  data-field="VLDays">
 				{$label dtrsummary2 VLDays}
@@ -220,121 +170,161 @@
 				{$label dtrsummary2 TrODays}
 			</th>
 			{END TrODays_fieldheadercolumn}
-			{BEGIN RLink_fieldheadercolumn}
-			<th class="{$RLink_class}" {$RLink_style}  data-field="RLink">
-				{$label dtrsummary2 RLink}
+			{BEGIN RHh_fieldheadercolumn}
+			<th class="{$RHh_class}" {$RHh_style}  data-field="RHh">
+				{$label dtrsummary2 RHh}
 			</th>
-			{END RLink_fieldheadercolumn}
-			{BEGIN NDMealAllowance_fieldheadercolumn}
-			<th class="{$NDMealAllowance_class}" {$NDMealAllowance_style}  data-field="NDMealAllowance">
-				{$label dtrsummary2 NDMealAllowance}
+			{END RHh_fieldheadercolumn}
+			{BEGIN SHh_fieldheadercolumn}
+			<th class="{$SHh_class}" {$SHh_style}  data-field="SHh">
+				{$label dtrsummary2 SHh}
 			</th>
-			{END NDMealAllowance_fieldheadercolumn}
-			{BEGIN RHolidayHrs_fieldheadercolumn}
-			<th class="{$RHolidayHrs_class}" {$RHolidayHrs_style}  data-field="RHolidayHrs">
-				{$label dtrsummary2 RHolidayHrs}
-			</th>
-			{END RHolidayHrs_fieldheadercolumn}
-			{BEGIN SHolidayHrs_fieldheadercolumn}
-			<th class="{$SHolidayHrs_class}" {$SHolidayHrs_style}  data-field="SHolidayHrs">
-				{$label dtrsummary2 SHolidayHrs}
-			</th>
-			{END SHolidayHrs_fieldheadercolumn}
-			{BEGIN CHolidayHrs_fieldheadercolumn}
-			<th class="{$CHolidayHrs_class}" {$CHolidayHrs_style}  data-field="CHolidayHrs">
-				{$label dtrsummary2 CHolidayHrs}
-			</th>
-			{END CHolidayHrs_fieldheadercolumn}
-			{BEGIN TBreakLateMins_fieldheadercolumn}
-			<th class="{$TBreakLateMins_class}" {$TBreakLateMins_style}  data-field="TBreakLateMins">
-				{$label dtrsummary2 TBreakLateMins}
-			</th>
-			{END TBreakLateMins_fieldheadercolumn}
-			{BEGIN RegNDOTHrs_fieldheadercolumn}
-			<th class="{$RegNDOTHrs_class}" {$RegNDOTHrs_style}  data-field="RegNDOTHrs">
-				{$label dtrsummary2 RegNDOTHrs}
-			</th>
-			{END RegNDOTHrs_fieldheadercolumn}
-			{BEGIN RHNDOTHrs_fieldheadercolumn}
-			<th class="{$RHNDOTHrs_class}" {$RHNDOTHrs_style}  data-field="RHNDOTHrs">
-				{$label dtrsummary2 RHNDOTHrs}
-			</th>
-			{END RHNDOTHrs_fieldheadercolumn}
-			{BEGIN SHNDOTHrs_fieldheadercolumn}
-			<th class="{$SHNDOTHrs_class}" {$SHNDOTHrs_style}  data-field="SHNDOTHrs">
-				{$label dtrsummary2 SHNDOTHrs}
-			</th>
-			{END SHNDOTHrs_fieldheadercolumn}
-			{BEGIN CHNDOTHrs_fieldheadercolumn}
-			<th class="{$CHNDOTHrs_class}" {$CHNDOTHrs_style}  data-field="CHNDOTHrs">
-				{$label dtrsummary2 CHNDOTHrs}
-			</th>
-			{END CHNDOTHrs_fieldheadercolumn}
-			{BEGIN RDNDOTHrs_fieldheadercolumn}
-			<th class="{$RDNDOTHrs_class}" {$RDNDOTHrs_style}  data-field="RDNDOTHrs">
-				{$label dtrsummary2 RDNDOTHrs}
-			</th>
-			{END RDNDOTHrs_fieldheadercolumn}
+			{END SHh_fieldheadercolumn}
 			{BEGIN DHh_fieldheadercolumn}
 			<th class="{$DHh_class}" {$DHh_style}  data-field="DHh">
 				{$label dtrsummary2 DHh}
 			</th>
 			{END DHh_fieldheadercolumn}
-			{BEGIN DHRDh_fieldheadercolumn}
-			<th class="{$DHRDh_class}" {$DHRDh_style}  data-field="DHRDh">
-				{$label dtrsummary2 DHRDh}
+			{BEGIN ExcessHrs_fieldheadercolumn}
+			<th class="{$ExcessHrs_class}" {$ExcessHrs_style}  data-field="ExcessHrs">
+				{$label dtrsummary2 ExcessHrs}
 			</th>
-			{END DHRDh_fieldheadercolumn}
+			{END ExcessHrs_fieldheadercolumn}
+			{BEGIN RegOTh_fieldheadercolumn}
+			<th class="{$RegOTh_class}" {$RegOTh_style}  data-field="RegOTh">
+				{$label dtrsummary2 RegOTh}
+			</th>
+			{END RegOTh_fieldheadercolumn}
+			{BEGIN RHOTh_fieldheadercolumn}
+			<th class="{$RHOTh_class}" {$RHOTh_style}  data-field="RHOTh">
+				{$label dtrsummary2 RHOTh}
+			</th>
+			{END RHOTh_fieldheadercolumn}
+			{BEGIN SHOTh_fieldheadercolumn}
+			<th class="{$SHOTh_class}" {$SHOTh_style}  data-field="SHOTh">
+				{$label dtrsummary2 SHOTh}
+			</th>
+			{END SHOTh_fieldheadercolumn}
+			{BEGIN SHOTDh_fieldheadercolumn}
+			<th class="{$SHOTDh_class}" {$SHOTDh_style}  data-field="SHOTDh">
+				{$label dtrsummary2 SHOTDh}
+			</th>
+			{END SHOTDh_fieldheadercolumn}
 			{BEGIN DHOTh_fieldheadercolumn}
 			<th class="{$DHOTh_class}" {$DHOTh_style}  data-field="DHOTh">
 				{$label dtrsummary2 DHOTh}
 			</th>
 			{END DHOTh_fieldheadercolumn}
-			{BEGIN DHRDOTh_fieldheadercolumn}
-			<th class="{$DHRDOTh_class}" {$DHRDOTh_style}  data-field="DHRDOTh">
-				{$label dtrsummary2 DHRDOTh}
+			{BEGIN NDOTh_fieldheadercolumn}
+			<th class="{$NDOTh_class}" {$NDOTh_style}  data-field="NDOTh">
+				{$label dtrsummary2 NDOTh}
 			</th>
-			{END DHRDOTh_fieldheadercolumn}
-			{BEGIN SHRDNDh_fieldheadercolumn}
-			<th class="{$SHRDNDh_class}" {$SHRDNDh_style}  data-field="SHRDNDh">
-				{$label dtrsummary2 SHRDNDh}
+			{END NDOTh_fieldheadercolumn}
+			{BEGIN RHNDh_fieldheadercolumn}
+			<th class="{$RHNDh_class}" {$RHNDh_style}  data-field="RHNDh">
+				{$label dtrsummary2 RHNDh}
 			</th>
-			{END SHRDNDh_fieldheadercolumn}
-			{BEGIN RHRDNDh_fieldheadercolumn}
-			<th class="{$RHRDNDh_class}" {$RHRDNDh_style}  data-field="RHRDNDh">
-				{$label dtrsummary2 RHRDNDh}
+			{END RHNDh_fieldheadercolumn}
+			{BEGIN SHNDh_fieldheadercolumn}
+			<th class="{$SHNDh_class}" {$SHNDh_style}  data-field="SHNDh">
+				{$label dtrsummary2 SHNDh}
 			</th>
-			{END RHRDNDh_fieldheadercolumn}
-			{BEGIN SHRDNDOTh_fieldheadercolumn}
-			<th class="{$SHRDNDOTh_class}" {$SHRDNDOTh_style}  data-field="SHRDNDOTh">
-				{$label dtrsummary2 SHRDNDOTh}
-			</th>
-			{END SHRDNDOTh_fieldheadercolumn}
-			{BEGIN RHRDNDOTh_fieldheadercolumn}
-			<th class="{$RHRDNDOTh_class}" {$RHRDNDOTh_style}  data-field="RHRDNDOTh">
-				{$label dtrsummary2 RHRDNDOTh}
-			</th>
-			{END RHRDNDOTh_fieldheadercolumn}
+			{END SHNDh_fieldheadercolumn}
 			{BEGIN DHNDh_fieldheadercolumn}
 			<th class="{$DHNDh_class}" {$DHNDh_style}  data-field="DHNDh">
 				{$label dtrsummary2 DHNDh}
 			</th>
 			{END DHNDh_fieldheadercolumn}
-			{BEGIN DHRDNDh_fieldheadercolumn}
-			<th class="{$DHRDNDh_class}" {$DHRDNDh_style}  data-field="DHRDNDh">
-				{$label dtrsummary2 DHRDNDh}
+			{BEGIN RHNDOTh_fieldheadercolumn}
+			<th class="{$RHNDOTh_class}" {$RHNDOTh_style}  data-field="RHNDOTh">
+				{$label dtrsummary2 RHNDOTh}
 			</th>
-			{END DHRDNDh_fieldheadercolumn}
+			{END RHNDOTh_fieldheadercolumn}
+			{BEGIN SHNDOTh_fieldheadercolumn}
+			<th class="{$SHNDOTh_class}" {$SHNDOTh_style}  data-field="SHNDOTh">
+				{$label dtrsummary2 SHNDOTh}
+			</th>
+			{END SHNDOTh_fieldheadercolumn}
 			{BEGIN DHNDOTh_fieldheadercolumn}
 			<th class="{$DHNDOTh_class}" {$DHNDOTh_style}  data-field="DHNDOTh">
 				{$label dtrsummary2 DHNDOTh}
 			</th>
 			{END DHNDOTh_fieldheadercolumn}
+			{BEGIN RDNDOTh_fieldheadercolumn}
+			<th class="{$RDNDOTh_class}" {$RDNDOTh_style}  data-field="RDNDOTh">
+				{$label dtrsummary2 RDNDOTh}
+			</th>
+			{END RDNDOTh_fieldheadercolumn}
+			{BEGIN RHRDh_fieldheadercolumn}
+			<th class="{$RHRDh_class}" {$RHRDh_style}  data-field="RHRDh">
+				{$label dtrsummary2 RHRDh}
+			</th>
+			{END RHRDh_fieldheadercolumn}
+			{BEGIN SHRDh_fieldheadercolumn}
+			<th class="{$SHRDh_class}" {$SHRDh_style}  data-field="SHRDh">
+				{$label dtrsummary2 SHRDh}
+			</th>
+			{END SHRDh_fieldheadercolumn}
+			{BEGIN DHRDh_fieldheadercolumn}
+			<th class="{$DHRDh_class}" {$DHRDh_style}  data-field="DHRDh">
+				{$label dtrsummary2 DHRDh}
+			</th>
+			{END DHRDh_fieldheadercolumn}
+			{BEGIN RHRDOTh_fieldheadercolumn}
+			<th class="{$RHRDOTh_class}" {$RHRDOTh_style}  data-field="RHRDOTh">
+				{$label dtrsummary2 RHRDOTh}
+			</th>
+			{END RHRDOTh_fieldheadercolumn}
+			{BEGIN SHRDOTh_fieldheadercolumn}
+			<th class="{$SHRDOTh_class}" {$SHRDOTh_style}  data-field="SHRDOTh">
+				{$label dtrsummary2 SHRDOTh}
+			</th>
+			{END SHRDOTh_fieldheadercolumn}
+			{BEGIN SHRDOTDh_fieldheadercolumn}
+			<th class="{$SHRDOTDh_class}" {$SHRDOTDh_style}  data-field="SHRDOTDh">
+				{$label dtrsummary2 SHRDOTDh}
+			</th>
+			{END SHRDOTDh_fieldheadercolumn}
+			{BEGIN DHRDOTh_fieldheadercolumn}
+			<th class="{$DHRDOTh_class}" {$DHRDOTh_style}  data-field="DHRDOTh">
+				{$label dtrsummary2 DHRDOTh}
+			</th>
+			{END DHRDOTh_fieldheadercolumn}
+			{BEGIN RHRDNDh_fieldheadercolumn}
+			<th class="{$RHRDNDh_class}" {$RHRDNDh_style}  data-field="RHRDNDh">
+				{$label dtrsummary2 RHRDNDh}
+			</th>
+			{END RHRDNDh_fieldheadercolumn}
+			{BEGIN SHRDNDh_fieldheadercolumn}
+			<th class="{$SHRDNDh_class}" {$SHRDNDh_style}  data-field="SHRDNDh">
+				{$label dtrsummary2 SHRDNDh}
+			</th>
+			{END SHRDNDh_fieldheadercolumn}
+			{BEGIN DHRDNDh_fieldheadercolumn}
+			<th class="{$DHRDNDh_class}" {$DHRDNDh_style}  data-field="DHRDNDh">
+				{$label dtrsummary2 DHRDNDh}
+			</th>
+			{END DHRDNDh_fieldheadercolumn}
+			{BEGIN RHRDNDOTh_fieldheadercolumn}
+			<th class="{$RHRDNDOTh_class}" {$RHRDNDOTh_style}  data-field="RHRDNDOTh">
+				{$label dtrsummary2 RHRDNDOTh}
+			</th>
+			{END RHRDNDOTh_fieldheadercolumn}
+			{BEGIN SHRDNDOTh_fieldheadercolumn}
+			<th class="{$SHRDNDOTh_class}" {$SHRDNDOTh_style}  data-field="SHRDNDOTh">
+				{$label dtrsummary2 SHRDNDOTh}
+			</th>
+			{END SHRDNDOTh_fieldheadercolumn}
 			{BEGIN DHRDNDOTh_fieldheadercolumn}
 			<th class="{$DHRDNDOTh_class}" {$DHRDNDOTh_style}  data-field="DHRDNDOTh">
 				{$label dtrsummary2 DHRDNDOTh}
 			</th>
 			{END DHRDNDOTh_fieldheadercolumn}
+			{BEGIN RLink_fieldheadercolumn}
+			<th class="{$RLink_class}" {$RLink_style}  data-field="RLink">
+				{$label dtrsummary2 RLink}
+			</th>
+			{END RLink_fieldheadercolumn}
 			{BEGIN endrecordheader_block}
 			<th class="rnr-cs">&nbsp;</th>
 			{END endrecordheader_block}
@@ -347,6 +337,26 @@
 	{BEGIN grid_row}
 		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
 		{BEGIN grid_record}
+			{BEGIN RDOTh_fieldcolumn}
+			<td  class="{$RDOTh_class}" {$RDOTh_style} {$recordattrs}>
+				{$RDOTh_value}
+			</td>
+			{END RDOTh_fieldcolumn}
+			{BEGIN RegNDh_fieldcolumn}
+			<td  class="{$RegNDh_class}" {$RegNDh_style} {$recordattrs}>
+				{$RegNDh_value}
+			</td>
+			{END RegNDh_fieldcolumn}
+			{BEGIN RegRDh_fieldcolumn}
+			<td  class="{$RegRDh_class}" {$RegRDh_style} {$recordattrs}>
+				{$RegRDh_value}
+			</td>
+			{END RegRDh_fieldcolumn}
+			{BEGIN RDNDh_fieldcolumn}
+			<td  class="{$RDNDh_class}" {$RDNDh_style} {$recordattrs}>
+				{$RDNDh_value}
+			</td>
+			{END RDNDh_fieldcolumn}
 			{BEGIN EmployeeID_fieldcolumn}
 			<td  class="{$EmployeeID_class}" {$EmployeeID_style} {$recordattrs}>
 				{$EmployeeID_value}
@@ -402,76 +412,6 @@
 				{$UndertimeMins_value}
 			</td>
 			{END UndertimeMins_fieldcolumn}
-			{BEGIN ExcessHrs_fieldcolumn}
-			<td  class="{$ExcessHrs_class}" {$ExcessHrs_style} {$recordattrs}>
-				{$ExcessHrs_value}
-			</td>
-			{END ExcessHrs_fieldcolumn}
-			{BEGIN RegOTHrs_fieldcolumn}
-			<td  class="{$RegOTHrs_class}" {$RegOTHrs_style} {$recordattrs}>
-				{$RegOTHrs_value}
-			</td>
-			{END RegOTHrs_fieldcolumn}
-			{BEGIN RHOTHrs_fieldcolumn}
-			<td  class="{$RHOTHrs_class}" {$RHOTHrs_style} {$recordattrs}>
-				{$RHOTHrs_value}
-			</td>
-			{END RHOTHrs_fieldcolumn}
-			{BEGIN SHOTHRs_fieldcolumn}
-			<td  class="{$SHOTHRs_class}" {$SHOTHRs_style} {$recordattrs}>
-				{$SHOTHRs_value}
-			</td>
-			{END SHOTHRs_fieldcolumn}
-			{BEGIN CHOTHrs_fieldcolumn}
-			<td  class="{$CHOTHrs_class}" {$CHOTHrs_style} {$recordattrs}>
-				{$CHOTHrs_value}
-			</td>
-			{END CHOTHrs_fieldcolumn}
-			{BEGIN RDOTHrs_fieldcolumn}
-			<td  class="{$RDOTHrs_class}" {$RDOTHrs_style} {$recordattrs}>
-				{$RDOTHrs_value}
-			</td>
-			{END RDOTHrs_fieldcolumn}
-			{BEGIN NDHrs_fieldcolumn}
-			<td  class="{$NDHrs_class}" {$NDHrs_style} {$recordattrs}>
-				{$NDHrs_value}
-			</td>
-			{END NDHrs_fieldcolumn}
-			{BEGIN NDOTHrs_fieldcolumn}
-			<td  class="{$NDOTHrs_class}" {$NDOTHrs_style} {$recordattrs}>
-				{$NDOTHrs_value}
-			</td>
-			{END NDOTHrs_fieldcolumn}
-			{BEGIN RDHrs_fieldcolumn}
-			<td  class="{$RDHrs_class}" {$RDHrs_style} {$recordattrs}>
-				{$RDHrs_value}
-			</td>
-			{END RDHrs_fieldcolumn}
-			{BEGIN RegNDHrs_fieldcolumn}
-			<td  class="{$RegNDHrs_class}" {$RegNDHrs_style} {$recordattrs}>
-				{$RegNDHrs_value}
-			</td>
-			{END RegNDHrs_fieldcolumn}
-			{BEGIN RHNDHrs_fieldcolumn}
-			<td  class="{$RHNDHrs_class}" {$RHNDHrs_style} {$recordattrs}>
-				{$RHNDHrs_value}
-			</td>
-			{END RHNDHrs_fieldcolumn}
-			{BEGIN SHNDHrs_fieldcolumn}
-			<td  class="{$SHNDHrs_class}" {$SHNDHrs_style} {$recordattrs}>
-				{$SHNDHrs_value}
-			</td>
-			{END SHNDHrs_fieldcolumn}
-			{BEGIN CHNDHrs_fieldcolumn}
-			<td  class="{$CHNDHrs_class}" {$CHNDHrs_style} {$recordattrs}>
-				{$CHNDHrs_value}
-			</td>
-			{END CHNDHrs_fieldcolumn}
-			{BEGIN RDNDHrs_fieldcolumn}
-			<td  class="{$RDNDHrs_class}" {$RDNDHrs_style} {$recordattrs}>
-				{$RDNDHrs_value}
-			</td>
-			{END RDNDHrs_fieldcolumn}
 			{BEGIN VLDays_fieldcolumn}
 			<td  class="{$VLDays_class}" {$VLDays_style} {$recordattrs}>
 				{$VLDays_value}
@@ -497,121 +437,161 @@
 				{$TrODays_value}
 			</td>
 			{END TrODays_fieldcolumn}
-			{BEGIN RLink_fieldcolumn}
-			<td  class="{$RLink_class}" {$RLink_style} {$recordattrs}>
-				{$RLink_value}
+			{BEGIN RHh_fieldcolumn}
+			<td  class="{$RHh_class}" {$RHh_style} {$recordattrs}>
+				{$RHh_value}
 			</td>
-			{END RLink_fieldcolumn}
-			{BEGIN NDMealAllowance_fieldcolumn}
-			<td  class="{$NDMealAllowance_class}" {$NDMealAllowance_style} {$recordattrs}>
-				{$NDMealAllowance_value}
+			{END RHh_fieldcolumn}
+			{BEGIN SHh_fieldcolumn}
+			<td  class="{$SHh_class}" {$SHh_style} {$recordattrs}>
+				{$SHh_value}
 			</td>
-			{END NDMealAllowance_fieldcolumn}
-			{BEGIN RHolidayHrs_fieldcolumn}
-			<td  class="{$RHolidayHrs_class}" {$RHolidayHrs_style} {$recordattrs}>
-				{$RHolidayHrs_value}
-			</td>
-			{END RHolidayHrs_fieldcolumn}
-			{BEGIN SHolidayHrs_fieldcolumn}
-			<td  class="{$SHolidayHrs_class}" {$SHolidayHrs_style} {$recordattrs}>
-				{$SHolidayHrs_value}
-			</td>
-			{END SHolidayHrs_fieldcolumn}
-			{BEGIN CHolidayHrs_fieldcolumn}
-			<td  class="{$CHolidayHrs_class}" {$CHolidayHrs_style} {$recordattrs}>
-				{$CHolidayHrs_value}
-			</td>
-			{END CHolidayHrs_fieldcolumn}
-			{BEGIN TBreakLateMins_fieldcolumn}
-			<td  class="{$TBreakLateMins_class}" {$TBreakLateMins_style} {$recordattrs}>
-				{$TBreakLateMins_value}
-			</td>
-			{END TBreakLateMins_fieldcolumn}
-			{BEGIN RegNDOTHrs_fieldcolumn}
-			<td  class="{$RegNDOTHrs_class}" {$RegNDOTHrs_style} {$recordattrs}>
-				{$RegNDOTHrs_value}
-			</td>
-			{END RegNDOTHrs_fieldcolumn}
-			{BEGIN RHNDOTHrs_fieldcolumn}
-			<td  class="{$RHNDOTHrs_class}" {$RHNDOTHrs_style} {$recordattrs}>
-				{$RHNDOTHrs_value}
-			</td>
-			{END RHNDOTHrs_fieldcolumn}
-			{BEGIN SHNDOTHrs_fieldcolumn}
-			<td  class="{$SHNDOTHrs_class}" {$SHNDOTHrs_style} {$recordattrs}>
-				{$SHNDOTHrs_value}
-			</td>
-			{END SHNDOTHrs_fieldcolumn}
-			{BEGIN CHNDOTHrs_fieldcolumn}
-			<td  class="{$CHNDOTHrs_class}" {$CHNDOTHrs_style} {$recordattrs}>
-				{$CHNDOTHrs_value}
-			</td>
-			{END CHNDOTHrs_fieldcolumn}
-			{BEGIN RDNDOTHrs_fieldcolumn}
-			<td  class="{$RDNDOTHrs_class}" {$RDNDOTHrs_style} {$recordattrs}>
-				{$RDNDOTHrs_value}
-			</td>
-			{END RDNDOTHrs_fieldcolumn}
+			{END SHh_fieldcolumn}
 			{BEGIN DHh_fieldcolumn}
 			<td  class="{$DHh_class}" {$DHh_style} {$recordattrs}>
 				{$DHh_value}
 			</td>
 			{END DHh_fieldcolumn}
-			{BEGIN DHRDh_fieldcolumn}
-			<td  class="{$DHRDh_class}" {$DHRDh_style} {$recordattrs}>
-				{$DHRDh_value}
+			{BEGIN ExcessHrs_fieldcolumn}
+			<td  class="{$ExcessHrs_class}" {$ExcessHrs_style} {$recordattrs}>
+				{$ExcessHrs_value}
 			</td>
-			{END DHRDh_fieldcolumn}
+			{END ExcessHrs_fieldcolumn}
+			{BEGIN RegOTh_fieldcolumn}
+			<td  class="{$RegOTh_class}" {$RegOTh_style} {$recordattrs}>
+				{$RegOTh_value}
+			</td>
+			{END RegOTh_fieldcolumn}
+			{BEGIN RHOTh_fieldcolumn}
+			<td  class="{$RHOTh_class}" {$RHOTh_style} {$recordattrs}>
+				{$RHOTh_value}
+			</td>
+			{END RHOTh_fieldcolumn}
+			{BEGIN SHOTh_fieldcolumn}
+			<td  class="{$SHOTh_class}" {$SHOTh_style} {$recordattrs}>
+				{$SHOTh_value}
+			</td>
+			{END SHOTh_fieldcolumn}
+			{BEGIN SHOTDh_fieldcolumn}
+			<td  class="{$SHOTDh_class}" {$SHOTDh_style} {$recordattrs}>
+				{$SHOTDh_value}
+			</td>
+			{END SHOTDh_fieldcolumn}
 			{BEGIN DHOTh_fieldcolumn}
 			<td  class="{$DHOTh_class}" {$DHOTh_style} {$recordattrs}>
 				{$DHOTh_value}
 			</td>
 			{END DHOTh_fieldcolumn}
-			{BEGIN DHRDOTh_fieldcolumn}
-			<td  class="{$DHRDOTh_class}" {$DHRDOTh_style} {$recordattrs}>
-				{$DHRDOTh_value}
+			{BEGIN NDOTh_fieldcolumn}
+			<td  class="{$NDOTh_class}" {$NDOTh_style} {$recordattrs}>
+				{$NDOTh_value}
 			</td>
-			{END DHRDOTh_fieldcolumn}
-			{BEGIN SHRDNDh_fieldcolumn}
-			<td  class="{$SHRDNDh_class}" {$SHRDNDh_style} {$recordattrs}>
-				{$SHRDNDh_value}
+			{END NDOTh_fieldcolumn}
+			{BEGIN RHNDh_fieldcolumn}
+			<td  class="{$RHNDh_class}" {$RHNDh_style} {$recordattrs}>
+				{$RHNDh_value}
 			</td>
-			{END SHRDNDh_fieldcolumn}
-			{BEGIN RHRDNDh_fieldcolumn}
-			<td  class="{$RHRDNDh_class}" {$RHRDNDh_style} {$recordattrs}>
-				{$RHRDNDh_value}
+			{END RHNDh_fieldcolumn}
+			{BEGIN SHNDh_fieldcolumn}
+			<td  class="{$SHNDh_class}" {$SHNDh_style} {$recordattrs}>
+				{$SHNDh_value}
 			</td>
-			{END RHRDNDh_fieldcolumn}
-			{BEGIN SHRDNDOTh_fieldcolumn}
-			<td  class="{$SHRDNDOTh_class}" {$SHRDNDOTh_style} {$recordattrs}>
-				{$SHRDNDOTh_value}
-			</td>
-			{END SHRDNDOTh_fieldcolumn}
-			{BEGIN RHRDNDOTh_fieldcolumn}
-			<td  class="{$RHRDNDOTh_class}" {$RHRDNDOTh_style} {$recordattrs}>
-				{$RHRDNDOTh_value}
-			</td>
-			{END RHRDNDOTh_fieldcolumn}
+			{END SHNDh_fieldcolumn}
 			{BEGIN DHNDh_fieldcolumn}
 			<td  class="{$DHNDh_class}" {$DHNDh_style} {$recordattrs}>
 				{$DHNDh_value}
 			</td>
 			{END DHNDh_fieldcolumn}
-			{BEGIN DHRDNDh_fieldcolumn}
-			<td  class="{$DHRDNDh_class}" {$DHRDNDh_style} {$recordattrs}>
-				{$DHRDNDh_value}
+			{BEGIN RHNDOTh_fieldcolumn}
+			<td  class="{$RHNDOTh_class}" {$RHNDOTh_style} {$recordattrs}>
+				{$RHNDOTh_value}
 			</td>
-			{END DHRDNDh_fieldcolumn}
+			{END RHNDOTh_fieldcolumn}
+			{BEGIN SHNDOTh_fieldcolumn}
+			<td  class="{$SHNDOTh_class}" {$SHNDOTh_style} {$recordattrs}>
+				{$SHNDOTh_value}
+			</td>
+			{END SHNDOTh_fieldcolumn}
 			{BEGIN DHNDOTh_fieldcolumn}
 			<td  class="{$DHNDOTh_class}" {$DHNDOTh_style} {$recordattrs}>
 				{$DHNDOTh_value}
 			</td>
 			{END DHNDOTh_fieldcolumn}
+			{BEGIN RDNDOTh_fieldcolumn}
+			<td  class="{$RDNDOTh_class}" {$RDNDOTh_style} {$recordattrs}>
+				{$RDNDOTh_value}
+			</td>
+			{END RDNDOTh_fieldcolumn}
+			{BEGIN RHRDh_fieldcolumn}
+			<td  class="{$RHRDh_class}" {$RHRDh_style} {$recordattrs}>
+				{$RHRDh_value}
+			</td>
+			{END RHRDh_fieldcolumn}
+			{BEGIN SHRDh_fieldcolumn}
+			<td  class="{$SHRDh_class}" {$SHRDh_style} {$recordattrs}>
+				{$SHRDh_value}
+			</td>
+			{END SHRDh_fieldcolumn}
+			{BEGIN DHRDh_fieldcolumn}
+			<td  class="{$DHRDh_class}" {$DHRDh_style} {$recordattrs}>
+				{$DHRDh_value}
+			</td>
+			{END DHRDh_fieldcolumn}
+			{BEGIN RHRDOTh_fieldcolumn}
+			<td  class="{$RHRDOTh_class}" {$RHRDOTh_style} {$recordattrs}>
+				{$RHRDOTh_value}
+			</td>
+			{END RHRDOTh_fieldcolumn}
+			{BEGIN SHRDOTh_fieldcolumn}
+			<td  class="{$SHRDOTh_class}" {$SHRDOTh_style} {$recordattrs}>
+				{$SHRDOTh_value}
+			</td>
+			{END SHRDOTh_fieldcolumn}
+			{BEGIN SHRDOTDh_fieldcolumn}
+			<td  class="{$SHRDOTDh_class}" {$SHRDOTDh_style} {$recordattrs}>
+				{$SHRDOTDh_value}
+			</td>
+			{END SHRDOTDh_fieldcolumn}
+			{BEGIN DHRDOTh_fieldcolumn}
+			<td  class="{$DHRDOTh_class}" {$DHRDOTh_style} {$recordattrs}>
+				{$DHRDOTh_value}
+			</td>
+			{END DHRDOTh_fieldcolumn}
+			{BEGIN RHRDNDh_fieldcolumn}
+			<td  class="{$RHRDNDh_class}" {$RHRDNDh_style} {$recordattrs}>
+				{$RHRDNDh_value}
+			</td>
+			{END RHRDNDh_fieldcolumn}
+			{BEGIN SHRDNDh_fieldcolumn}
+			<td  class="{$SHRDNDh_class}" {$SHRDNDh_style} {$recordattrs}>
+				{$SHRDNDh_value}
+			</td>
+			{END SHRDNDh_fieldcolumn}
+			{BEGIN DHRDNDh_fieldcolumn}
+			<td  class="{$DHRDNDh_class}" {$DHRDNDh_style} {$recordattrs}>
+				{$DHRDNDh_value}
+			</td>
+			{END DHRDNDh_fieldcolumn}
+			{BEGIN RHRDNDOTh_fieldcolumn}
+			<td  class="{$RHRDNDOTh_class}" {$RHRDNDOTh_style} {$recordattrs}>
+				{$RHRDNDOTh_value}
+			</td>
+			{END RHRDNDOTh_fieldcolumn}
+			{BEGIN SHRDNDOTh_fieldcolumn}
+			<td  class="{$SHRDNDOTh_class}" {$SHRDNDOTh_style} {$recordattrs}>
+				{$SHRDNDOTh_value}
+			</td>
+			{END SHRDNDOTh_fieldcolumn}
 			{BEGIN DHRDNDOTh_fieldcolumn}
 			<td  class="{$DHRDNDOTh_class}" {$DHRDNDOTh_style} {$recordattrs}>
 				{$DHRDNDOTh_value}
 			</td>
 			{END DHRDNDOTh_fieldcolumn}
+			{BEGIN RLink_fieldcolumn}
+			<td  class="{$RLink_class}" {$RLink_style} {$recordattrs}>
+				{$RLink_value}
+			</td>
+			{END RLink_fieldcolumn}
 			{BEGIN endrecord_block}
 			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
 			{END endrecord_block}

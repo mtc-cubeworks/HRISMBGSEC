@@ -4,23 +4,6 @@
 <div {$tabfields_chiddenattr} data-pageid="{$pageid}" data-container="tabfields" class=" form-horizontal   "> 
 
 
-{BEGIN RDMins_tabfieldblock}
-<div class="container">
-	<div class="form-group in-tab {$fielddispclass_RDMins}" data-fieldname="RDMins" data-signal-error-for="RDMins{$id}" >
-		<label class="col-md-3 control-label" for="{$labelfor_RDMins}">
-			{BEGIN RDMins_label}{$label indschedule RDMins}{END RDMins_label}
-		</label>
-		<div class="col-md-6 " >
-			{$RDMins_editcontrol}
-		</div>
-		<div class="col-md-3 help-block " data-helpfor="RDMins">
-			<div class="text-muted" >
-			{$tooltip indschedule RDMins}
-			</div>
-		</div>
-	</div>
-</div>
-{END RDMins_tabfieldblock}
 {BEGIN ApprovedRD_tabfieldblock}
 <div class="container">
 	<div class="form-group in-tab {$fielddispclass_ApprovedRD}" data-fieldname="ApprovedRD" data-signal-error-for="ApprovedRD{$id}" >
@@ -38,23 +21,74 @@
 	</div>
 </div>
 {END ApprovedRD_tabfieldblock}
-{BEGIN RDHrs_tabfieldblock}
+{BEGIN RegRD_tabfieldblock}
 <div class="container">
-	<div class="form-group in-tab {$fielddispclass_RDHrs}" data-fieldname="RDHrs" data-signal-error-for="RDHrs{$id}" >
-		<label class="col-md-3 control-label" for="{$labelfor_RDHrs}">
-			{BEGIN RDHrs_label}{$label indschedule RDHrs}{END RDHrs_label}
+	<div class="form-group in-tab {$fielddispclass_RegRD}" data-fieldname="RegRD" data-signal-error-for="RegRD{$id}" >
+		<label class="col-md-3 control-label" for="{$labelfor_RegRD}">
+			{BEGIN RegRD_label}{$label indschedule RegRD}{END RegRD_label}
 		</label>
 		<div class="col-md-6 " >
-			{$RDHrs_editcontrol}
+			{$RegRD_editcontrol}
 		</div>
-		<div class="col-md-3 help-block " data-helpfor="RDHrs">
+		<div class="col-md-3 help-block " data-helpfor="RegRD">
 			<div class="text-muted" >
-			{$tooltip indschedule RDHrs}
+			{$tooltip indschedule RegRD}
 			</div>
 		</div>
 	</div>
 </div>
-{END RDHrs_tabfieldblock}
+{END RegRD_tabfieldblock}
+{BEGIN RHRD_tabfieldblock}
+<div class="container">
+	<div class="form-group in-tab {$fielddispclass_RHRD}" data-fieldname="RHRD" data-signal-error-for="RHRD{$id}" >
+		<label class="col-md-3 control-label" for="{$labelfor_RHRD}">
+			{BEGIN RHRD_label}{$label indschedule RHRD}{END RHRD_label}
+		</label>
+		<div class="col-md-6 " >
+			{$RHRD_editcontrol}
+		</div>
+		<div class="col-md-3 help-block " data-helpfor="RHRD">
+			<div class="text-muted" >
+			{$tooltip indschedule RHRD}
+			</div>
+		</div>
+	</div>
+</div>
+{END RHRD_tabfieldblock}
+{BEGIN SHRD_tabfieldblock}
+<div class="container">
+	<div class="form-group in-tab {$fielddispclass_SHRD}" data-fieldname="SHRD" data-signal-error-for="SHRD{$id}" >
+		<label class="col-md-3 control-label" for="{$labelfor_SHRD}">
+			{BEGIN SHRD_label}{$label indschedule SHRD}{END SHRD_label}
+		</label>
+		<div class="col-md-6 " >
+			{$SHRD_editcontrol}
+		</div>
+		<div class="col-md-3 help-block " data-helpfor="SHRD">
+			<div class="text-muted" >
+			{$tooltip indschedule SHRD}
+			</div>
+		</div>
+	</div>
+</div>
+{END SHRD_tabfieldblock}
+{BEGIN DHRD_tabfieldblock}
+<div class="container">
+	<div class="form-group in-tab {$fielddispclass_DHRD}" data-fieldname="DHRD" data-signal-error-for="DHRD{$id}" >
+		<label class="col-md-3 control-label" for="{$labelfor_DHRD}">
+			{BEGIN DHRD_label}{$label indschedule DHRD}{END DHRD_label}
+		</label>
+		<div class="col-md-6 " >
+			{$DHRD_editcontrol}
+		</div>
+		<div class="col-md-3 help-block " data-helpfor="DHRD">
+			<div class="text-muted" >
+			{$tooltip indschedule DHRD}
+			</div>
+		</div>
+	</div>
+</div>
+{END DHRD_tabfieldblock}
 
 
 

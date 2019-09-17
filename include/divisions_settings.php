@@ -147,7 +147,7 @@ $tdatadivisions[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																														
+																																																																																																																																																																																																																																																																		
 
 $tdatadivisions[".ajaxCodeSnippetAdded"] = false;
 
@@ -1189,6 +1189,39 @@ $page_titles["divisions"] = &$pageTitlesdivisions;
 // -----------------start  prepare master-details data arrays ------------------------------//
 // tables which are detail tables for current table (master)
 $detailsTablesData["divisions"] = array();
+//	holidays
+	
+	
+
+		$dIndex = 0;
+	$detailsParam = array();
+	$detailsParam["dDataSourceTable"]="holidays";
+		$detailsParam["dOriginalTable"] = "holidays";
+		$detailsParam["proceedLink"] = true;
+				$detailsParam["dType"]=PAGE_LIST;
+	$detailsParam["dShortTable"] = "holidays";
+	$detailsParam["dCaptionTable"] = GetTableCaption("holidays");
+	$detailsParam["masterKeys"] =array();
+	$detailsParam["detailKeys"] =array();
+
+	$detailsParam["dispChildCount"] = "1";
+
+		$detailsParam["hideChild"] = false;
+						$detailsParam["previewOnList"] = "1";
+		$detailsParam["previewOnAdd"] = 0;
+		$detailsParam["previewOnEdit"] = 1;
+		$detailsParam["previewOnView"] = 1;
+		
+	$detailsTablesData["divisions"][$dIndex] = $detailsParam;
+
+	
+		$detailsTablesData["divisions"][$dIndex]["masterKeys"] = array();
+
+	$detailsTablesData["divisions"][$dIndex]["masterKeys"][]="DvID";
+
+				$detailsTablesData["divisions"][$dIndex]["detailKeys"] = array();
+
+	$detailsTablesData["divisions"][$dIndex]["detailKeys"][]="Division";
 
 // tables which are master tables for current table (detail)
 $masterTablesData["divisions"] = array();

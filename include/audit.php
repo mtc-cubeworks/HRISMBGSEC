@@ -487,10 +487,6 @@ class AuditTrailTable
 		{
 			return false;
 		}
-		if($table=="loanbalance3")
-		{
-			return false;
-		}
 		if($table=="payrolltax")
 		{
 			return false;
@@ -592,10 +588,6 @@ class AuditTrailTable
 			return false;
 		}
 		if($table=="indleave1")
-		{
-			return false;
-		}
-		if($table=="loanbalance31")
 		{
 			return false;
 		}
@@ -723,10 +715,6 @@ class AuditTrailTable
 		{
 			return false;
 		}
-		if($table=="payrolltab1")
-		{
-			return false;
-		}
 		if($table=="filelog1")
 		{
 			return false;
@@ -768,6 +756,54 @@ class AuditTrailTable
 			return false;
 		}
 		if($table=="approvalbutton")
+		{
+			return false;
+		}
+		if($table=="otherpayments")
+		{
+			return false;
+		}
+		if($table=="payrolltab1")
+		{
+			return false;
+		}
+		if($table=="mycurrentdtr")
+		{
+			return false;
+		}
+		if($table=="otndrdglobal")
+		{
+			return false;
+		}
+		if($table=="dtrrange1")
+		{
+			return false;
+		}
+		if($table=="dtrempl")
+		{
+			return false;
+		}
+		if($table=="otndrdglobal1")
+		{
+			return false;
+		}
+		if($table=="deductypes")
+		{
+			return false;
+		}
+		if($table=="magroups")
+		{
+			return false;
+		}
+		if($table=="mdgroups")
+		{
+			return false;
+		}
+		if($table=="loanbalnew5")
+		{
+			return false;
+		}
+		if($table=="loanbalnew51")
 		{
 			return false;
 		}
@@ -1254,10 +1290,6 @@ class AuditTrailFile
 		{
 			return false;
 		}
-		if($table=="loanbalance3")
-		{
-			return false;
-		}
 		if($table=="payrolltax")
 		{
 			return false;
@@ -1359,10 +1391,6 @@ class AuditTrailFile
 			return false;
 		}
 		if($table=="indleave1")
-		{
-			return false;
-		}
-		if($table=="loanbalance31")
 		{
 			return false;
 		}
@@ -1490,10 +1518,6 @@ class AuditTrailFile
 		{
 			return false;
 		}
-		if($table=="payrolltab1")
-		{
-			return false;
-		}
 		if($table=="filelog1")
 		{
 			return false;
@@ -1535,6 +1559,54 @@ class AuditTrailFile
 			return false;
 		}
 		if($table=="approvalbutton")
+		{
+			return false;
+		}
+		if($table=="otherpayments")
+		{
+			return false;
+		}
+		if($table=="payrolltab1")
+		{
+			return false;
+		}
+		if($table=="mycurrentdtr")
+		{
+			return false;
+		}
+		if($table=="otndrdglobal")
+		{
+			return false;
+		}
+		if($table=="dtrrange1")
+		{
+			return false;
+		}
+		if($table=="dtrempl")
+		{
+			return false;
+		}
+		if($table=="otndrdglobal1")
+		{
+			return false;
+		}
+		if($table=="deductypes")
+		{
+			return false;
+		}
+		if($table=="magroups")
+		{
+			return false;
+		}
+		if($table=="mdgroups")
+		{
+			return false;
+		}
+		if($table=="loanbalnew5")
+		{
+			return false;
+		}
+		if($table=="loanbalnew51")
 		{
 			return false;
 		}

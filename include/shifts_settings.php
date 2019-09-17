@@ -53,15 +53,15 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsshifts["English"]["SecondHalfMins"] = "Second Half Mins";
 	$fieldToolTipsshifts["English"]["SecondHalfMins"] = "";
 	$placeHoldersshifts["English"]["SecondHalfMins"] = "";
-	$fieldLabelsshifts["English"]["AutoApproveNDiff"] = "Auto Approve NDiff";
-	$fieldToolTipsshifts["English"]["AutoApproveNDiff"] = "";
-	$placeHoldersshifts["English"]["AutoApproveNDiff"] = "";
 	$fieldLabelsshifts["English"]["ReqLogOutInOnBreak"] = "Req'd Break Log";
 	$fieldToolTipsshifts["English"]["ReqLogOutInOnBreak"] = "";
 	$placeHoldersshifts["English"]["ReqLogOutInOnBreak"] = "";
 	$fieldLabelsshifts["English"]["SchedType"] = "Sched Type";
 	$fieldToolTipsshifts["English"]["SchedType"] = "";
 	$placeHoldersshifts["English"]["SchedType"] = "";
+	$fieldLabelsshifts["English"]["PreLogMins"] = "PreLog Mins";
+	$fieldToolTipsshifts["English"]["PreLogMins"] = "";
+	$placeHoldersshifts["English"]["PreLogMins"] = "";
 	if (count($fieldToolTipsshifts["English"]))
 		$tdatashifts[".isUseToolTips"] = true;
 }
@@ -71,6 +71,9 @@ if(mlang_getcurrentlang()=="")
 	$fieldToolTipsshifts[""] = array();
 	$placeHoldersshifts[""] = array();
 	$pageTitlesshifts[""] = array();
+	$fieldLabelsshifts[""]["PreLogMins"] = "Pre Log Mins";
+	$fieldToolTipsshifts[""]["PreLogMins"] = "";
+	$placeHoldersshifts[""]["PreLogMins"] = "";
 	if (count($fieldToolTipsshifts[""]))
 		$tdatashifts[".isUseToolTips"] = true;
 }
@@ -169,7 +172,7 @@ $tdatashifts[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																														
+																																																																																																																																																																																																																																																																		
 
 $tdatashifts[".ajaxCodeSnippetAdded"] = false;
 
@@ -191,6 +194,7 @@ $tdatashifts[".requiredSearchFields"] = array();
 $tdatashifts[".allSearchFields"][] = "shID";
 	$tdatashifts[".allSearchFields"][] = "Shift";
 	$tdatashifts[".allSearchFields"][] = "SchedType";
+	$tdatashifts[".allSearchFields"][] = "PreLogMins";
 	$tdatashifts[".allSearchFields"][] = "TimeIn";
 	$tdatashifts[".allSearchFields"][] = "TimeOut";
 	$tdatashifts[".allSearchFields"][] = "LunchBreakTimeFrom";
@@ -200,7 +204,6 @@ $tdatashifts[".allSearchFields"][] = "shID";
 	$tdatashifts[".allSearchFields"][] = "BreakMins";
 	$tdatashifts[".allSearchFields"][] = "SecondHalfMins";
 	$tdatashifts[".allSearchFields"][] = "MinsPerDay";
-	$tdatashifts[".allSearchFields"][] = "AutoApproveNDiff";
 	
 
 $tdatashifts[".googleLikeFields"] = array();
@@ -214,15 +217,16 @@ $tdatashifts[".googleLikeFields"][] = "LunchBreakTimeFrom";
 $tdatashifts[".googleLikeFields"][] = "LunchBreakTimeTo";
 $tdatashifts[".googleLikeFields"][] = "FirstHalfMins";
 $tdatashifts[".googleLikeFields"][] = "SecondHalfMins";
-$tdatashifts[".googleLikeFields"][] = "AutoApproveNDiff";
 $tdatashifts[".googleLikeFields"][] = "ReqLogOutInOnBreak";
 $tdatashifts[".googleLikeFields"][] = "SchedType";
+$tdatashifts[".googleLikeFields"][] = "PreLogMins";
 
 
 $tdatashifts[".advSearchFields"] = array();
 $tdatashifts[".advSearchFields"][] = "shID";
 $tdatashifts[".advSearchFields"][] = "Shift";
 $tdatashifts[".advSearchFields"][] = "SchedType";
+$tdatashifts[".advSearchFields"][] = "PreLogMins";
 $tdatashifts[".advSearchFields"][] = "TimeIn";
 $tdatashifts[".advSearchFields"][] = "TimeOut";
 $tdatashifts[".advSearchFields"][] = "LunchBreakTimeFrom";
@@ -232,7 +236,6 @@ $tdatashifts[".advSearchFields"][] = "FirstHalfMins";
 $tdatashifts[".advSearchFields"][] = "BreakMins";
 $tdatashifts[".advSearchFields"][] = "SecondHalfMins";
 $tdatashifts[".advSearchFields"][] = "MinsPerDay";
-$tdatashifts[".advSearchFields"][] = "AutoApproveNDiff";
 
 $tdatashifts[".tableType"] = "list";
 
@@ -275,7 +278,7 @@ $tdatashifts[".strOrderBy"] = $tstrOrderBy;
 
 $tdatashifts[".orderindexes"] = array();
 
-$tdatashifts[".sqlHead"] = "SELECT shID,  Shift,  TimeIn,  TimeOut,  BreakMins,  MinsPerDay,  LunchBreakTimeFrom,  LunchBreakTimeTo,  FirstHalfMins,  SecondHalfMins,  AutoApproveNDiff,  ReqLogOutInOnBreak,  SchedType";
+$tdatashifts[".sqlHead"] = "SELECT shID,  Shift,  TimeIn,  TimeOut,  BreakMins,  MinsPerDay,  LunchBreakTimeFrom,  LunchBreakTimeTo,  FirstHalfMins,  SecondHalfMins,  ReqLogOutInOnBreak,  SchedType,  PreLogMins";
 $tdatashifts[".sqlFrom"] = "FROM shifts";
 $tdatashifts[".sqlWhereExpr"] = "";
 $tdatashifts[".sqlTail"] = "";
@@ -323,6 +326,7 @@ $tdatashifts[".listFields"] = array();
 $tdatashifts[".listFields"][] = "shID";
 $tdatashifts[".listFields"][] = "Shift";
 $tdatashifts[".listFields"][] = "SchedType";
+$tdatashifts[".listFields"][] = "PreLogMins";
 $tdatashifts[".listFields"][] = "TimeIn";
 $tdatashifts[".listFields"][] = "TimeOut";
 $tdatashifts[".listFields"][] = "LunchBreakTimeFrom";
@@ -332,7 +336,6 @@ $tdatashifts[".listFields"][] = "FirstHalfMins";
 $tdatashifts[".listFields"][] = "BreakMins";
 $tdatashifts[".listFields"][] = "SecondHalfMins";
 $tdatashifts[".listFields"][] = "MinsPerDay";
-$tdatashifts[".listFields"][] = "AutoApproveNDiff";
 
 $tdatashifts[".hideMobileList"] = array();
 
@@ -341,6 +344,7 @@ $tdatashifts[".viewFields"] = array();
 $tdatashifts[".viewFields"][] = "shID";
 $tdatashifts[".viewFields"][] = "Shift";
 $tdatashifts[".viewFields"][] = "SchedType";
+$tdatashifts[".viewFields"][] = "PreLogMins";
 $tdatashifts[".viewFields"][] = "TimeIn";
 $tdatashifts[".viewFields"][] = "TimeOut";
 $tdatashifts[".viewFields"][] = "LunchBreakTimeFrom";
@@ -350,11 +354,11 @@ $tdatashifts[".viewFields"][] = "FirstHalfMins";
 $tdatashifts[".viewFields"][] = "BreakMins";
 $tdatashifts[".viewFields"][] = "SecondHalfMins";
 $tdatashifts[".viewFields"][] = "MinsPerDay";
-$tdatashifts[".viewFields"][] = "AutoApproveNDiff";
 
 $tdatashifts[".addFields"] = array();
 $tdatashifts[".addFields"][] = "Shift";
 $tdatashifts[".addFields"][] = "SchedType";
+$tdatashifts[".addFields"][] = "PreLogMins";
 $tdatashifts[".addFields"][] = "TimeIn";
 $tdatashifts[".addFields"][] = "TimeOut";
 $tdatashifts[".addFields"][] = "LunchBreakTimeFrom";
@@ -364,12 +368,12 @@ $tdatashifts[".addFields"][] = "FirstHalfMins";
 $tdatashifts[".addFields"][] = "BreakMins";
 $tdatashifts[".addFields"][] = "SecondHalfMins";
 $tdatashifts[".addFields"][] = "MinsPerDay";
-$tdatashifts[".addFields"][] = "AutoApproveNDiff";
 
 $tdatashifts[".masterListFields"] = array();
 $tdatashifts[".masterListFields"][] = "shID";
 $tdatashifts[".masterListFields"][] = "Shift";
 $tdatashifts[".masterListFields"][] = "SchedType";
+$tdatashifts[".masterListFields"][] = "PreLogMins";
 $tdatashifts[".masterListFields"][] = "TimeIn";
 $tdatashifts[".masterListFields"][] = "TimeOut";
 $tdatashifts[".masterListFields"][] = "LunchBreakTimeFrom";
@@ -379,11 +383,11 @@ $tdatashifts[".masterListFields"][] = "FirstHalfMins";
 $tdatashifts[".masterListFields"][] = "BreakMins";
 $tdatashifts[".masterListFields"][] = "SecondHalfMins";
 $tdatashifts[".masterListFields"][] = "MinsPerDay";
-$tdatashifts[".masterListFields"][] = "AutoApproveNDiff";
 
 $tdatashifts[".inlineAddFields"] = array();
 $tdatashifts[".inlineAddFields"][] = "Shift";
 $tdatashifts[".inlineAddFields"][] = "SchedType";
+$tdatashifts[".inlineAddFields"][] = "PreLogMins";
 $tdatashifts[".inlineAddFields"][] = "TimeIn";
 $tdatashifts[".inlineAddFields"][] = "TimeOut";
 $tdatashifts[".inlineAddFields"][] = "LunchBreakTimeFrom";
@@ -393,11 +397,11 @@ $tdatashifts[".inlineAddFields"][] = "FirstHalfMins";
 $tdatashifts[".inlineAddFields"][] = "BreakMins";
 $tdatashifts[".inlineAddFields"][] = "SecondHalfMins";
 $tdatashifts[".inlineAddFields"][] = "MinsPerDay";
-$tdatashifts[".inlineAddFields"][] = "AutoApproveNDiff";
 
 $tdatashifts[".editFields"] = array();
 $tdatashifts[".editFields"][] = "Shift";
 $tdatashifts[".editFields"][] = "SchedType";
+$tdatashifts[".editFields"][] = "PreLogMins";
 $tdatashifts[".editFields"][] = "TimeIn";
 $tdatashifts[".editFields"][] = "TimeOut";
 $tdatashifts[".editFields"][] = "LunchBreakTimeFrom";
@@ -407,11 +411,11 @@ $tdatashifts[".editFields"][] = "FirstHalfMins";
 $tdatashifts[".editFields"][] = "BreakMins";
 $tdatashifts[".editFields"][] = "SecondHalfMins";
 $tdatashifts[".editFields"][] = "MinsPerDay";
-$tdatashifts[".editFields"][] = "AutoApproveNDiff";
 
 $tdatashifts[".inlineEditFields"] = array();
 $tdatashifts[".inlineEditFields"][] = "Shift";
 $tdatashifts[".inlineEditFields"][] = "SchedType";
+$tdatashifts[".inlineEditFields"][] = "PreLogMins";
 $tdatashifts[".inlineEditFields"][] = "TimeIn";
 $tdatashifts[".inlineEditFields"][] = "TimeOut";
 $tdatashifts[".inlineEditFields"][] = "LunchBreakTimeFrom";
@@ -421,7 +425,6 @@ $tdatashifts[".inlineEditFields"][] = "FirstHalfMins";
 $tdatashifts[".inlineEditFields"][] = "BreakMins";
 $tdatashifts[".inlineEditFields"][] = "SecondHalfMins";
 $tdatashifts[".inlineEditFields"][] = "MinsPerDay";
-$tdatashifts[".inlineEditFields"][] = "AutoApproveNDiff";
 
 $tdatashifts[".updateSelectedFields"] = array();
 $tdatashifts[".updateSelectedFields"][] = "Shift";
@@ -439,6 +442,7 @@ $tdatashifts[".exportFields"] = array();
 $tdatashifts[".exportFields"][] = "shID";
 $tdatashifts[".exportFields"][] = "Shift";
 $tdatashifts[".exportFields"][] = "SchedType";
+$tdatashifts[".exportFields"][] = "PreLogMins";
 $tdatashifts[".exportFields"][] = "TimeIn";
 $tdatashifts[".exportFields"][] = "TimeOut";
 $tdatashifts[".exportFields"][] = "LunchBreakTimeFrom";
@@ -448,7 +452,6 @@ $tdatashifts[".exportFields"][] = "FirstHalfMins";
 $tdatashifts[".exportFields"][] = "BreakMins";
 $tdatashifts[".exportFields"][] = "SecondHalfMins";
 $tdatashifts[".exportFields"][] = "MinsPerDay";
-$tdatashifts[".exportFields"][] = "AutoApproveNDiff";
 
 $tdatashifts[".importFields"] = array();
 $tdatashifts[".importFields"][] = "shID";
@@ -461,14 +464,15 @@ $tdatashifts[".importFields"][] = "LunchBreakTimeFrom";
 $tdatashifts[".importFields"][] = "LunchBreakTimeTo";
 $tdatashifts[".importFields"][] = "FirstHalfMins";
 $tdatashifts[".importFields"][] = "SecondHalfMins";
-$tdatashifts[".importFields"][] = "AutoApproveNDiff";
 $tdatashifts[".importFields"][] = "ReqLogOutInOnBreak";
 $tdatashifts[".importFields"][] = "SchedType";
+$tdatashifts[".importFields"][] = "PreLogMins";
 
 $tdatashifts[".printFields"] = array();
 $tdatashifts[".printFields"][] = "shID";
 $tdatashifts[".printFields"][] = "Shift";
 $tdatashifts[".printFields"][] = "SchedType";
+$tdatashifts[".printFields"][] = "PreLogMins";
 $tdatashifts[".printFields"][] = "TimeIn";
 $tdatashifts[".printFields"][] = "TimeOut";
 $tdatashifts[".printFields"][] = "LunchBreakTimeFrom";
@@ -478,7 +482,6 @@ $tdatashifts[".printFields"][] = "FirstHalfMins";
 $tdatashifts[".printFields"][] = "BreakMins";
 $tdatashifts[".printFields"][] = "SecondHalfMins";
 $tdatashifts[".printFields"][] = "MinsPerDay";
-$tdatashifts[".printFields"][] = "AutoApproveNDiff";
 
 
 //	shID
@@ -1818,137 +1821,10 @@ $tdatashifts[".printFields"][] = "AutoApproveNDiff";
 
 
 	$tdatashifts["SecondHalfMins"] = $fdata;
-//	AutoApproveNDiff
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 11;
-	$fdata["strName"] = "AutoApproveNDiff";
-	$fdata["GoodName"] = "AutoApproveNDiff";
-	$fdata["ownerTable"] = "shifts";
-	$fdata["Label"] = GetFieldLabel("shifts","AutoApproveNDiff");
-	$fdata["FieldType"] = 16;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-	
-
-		$fdata["bViewPage"] = true;
-
-		$fdata["bAdvancedSearch"] = true;
-
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "AutoApproveNDiff";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "AutoApproveNDiff";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Checkbox");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Checkbox");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-	
-	
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Equals";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-
-
-	$tdatashifts["AutoApproveNDiff"] = $fdata;
 //	ReqLogOutInOnBreak
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 12;
+	$fdata["Index"] = 11;
 	$fdata["strName"] = "ReqLogOutInOnBreak";
 	$fdata["GoodName"] = "ReqLogOutInOnBreak";
 	$fdata["ownerTable"] = "shifts";
@@ -2075,7 +1951,7 @@ $tdatashifts[".printFields"][] = "AutoApproveNDiff";
 //	SchedType
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 13;
+	$fdata["Index"] = 12;
 	$fdata["strName"] = "SchedType";
 	$fdata["GoodName"] = "SchedType";
 	$fdata["ownerTable"] = "shifts";
@@ -2230,6 +2106,138 @@ $tdatashifts[".printFields"][] = "AutoApproveNDiff";
 
 
 	$tdatashifts["SchedType"] = $fdata;
+//	PreLogMins
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 13;
+	$fdata["strName"] = "PreLogMins";
+	$fdata["GoodName"] = "PreLogMins";
+	$fdata["ownerTable"] = "shifts";
+	$fdata["Label"] = GetFieldLabel("shifts","PreLogMins");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "PreLogMins";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "PreLogMins";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdatashifts["PreLogMins"] = $fdata;
 
 
 $tables_data["shifts"]=&$tdatashifts;
@@ -2296,7 +2304,7 @@ function createSqlQuery_shifts()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "shID,  Shift,  TimeIn,  TimeOut,  BreakMins,  MinsPerDay,  LunchBreakTimeFrom,  LunchBreakTimeTo,  FirstHalfMins,  SecondHalfMins,  AutoApproveNDiff,  ReqLogOutInOnBreak,  SchedType";
+$proto0["m_strFieldList"] = "shID,  Shift,  TimeIn,  TimeOut,  BreakMins,  MinsPerDay,  LunchBreakTimeFrom,  LunchBreakTimeTo,  FirstHalfMins,  SecondHalfMins,  ReqLogOutInOnBreak,  SchedType,  PreLogMins";
 $proto0["m_strFrom"] = "FROM shifts";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -2478,12 +2486,12 @@ $obj = new SQLFieldListItem($proto24);
 $proto0["m_fieldlist"][]=$obj;
 						$proto26=array();
 			$obj = new SQLField(array(
-	"m_strName" => "AutoApproveNDiff",
+	"m_strName" => "ReqLogOutInOnBreak",
 	"m_strTable" => "shifts",
 	"m_srcTableName" => "shifts"
 ));
 
-$proto26["m_sql"] = "AutoApproveNDiff";
+$proto26["m_sql"] = "ReqLogOutInOnBreak";
 $proto26["m_srcTableName"] = "shifts";
 $proto26["m_expr"]=$obj;
 $proto26["m_alias"] = "";
@@ -2492,12 +2500,12 @@ $obj = new SQLFieldListItem($proto26);
 $proto0["m_fieldlist"][]=$obj;
 						$proto28=array();
 			$obj = new SQLField(array(
-	"m_strName" => "ReqLogOutInOnBreak",
+	"m_strName" => "SchedType",
 	"m_strTable" => "shifts",
 	"m_srcTableName" => "shifts"
 ));
 
-$proto28["m_sql"] = "ReqLogOutInOnBreak";
+$proto28["m_sql"] = "SchedType";
 $proto28["m_srcTableName"] = "shifts";
 $proto28["m_expr"]=$obj;
 $proto28["m_alias"] = "";
@@ -2506,12 +2514,12 @@ $obj = new SQLFieldListItem($proto28);
 $proto0["m_fieldlist"][]=$obj;
 						$proto30=array();
 			$obj = new SQLField(array(
-	"m_strName" => "SchedType",
+	"m_strName" => "PreLogMins",
 	"m_strTable" => "shifts",
 	"m_srcTableName" => "shifts"
 ));
 
-$proto30["m_sql"] = "SchedType";
+$proto30["m_sql"] = "PreLogMins";
 $proto30["m_srcTableName"] = "shifts";
 $proto30["m_expr"]=$obj;
 $proto30["m_alias"] = "";
@@ -2541,6 +2549,8 @@ $proto33["m_columns"][] = "FirstHalfMins";
 $proto33["m_columns"][] = "SecondHalfMins";
 $proto33["m_columns"][] = "AutoApproveNDiff";
 $proto33["m_columns"][] = "SchedType";
+$proto33["m_columns"][] = "AutoApproveRD";
+$proto33["m_columns"][] = "PreLogMins";
 $obj = new SQLTable($proto33);
 
 $proto32["m_table"] = $obj;

@@ -578,8 +578,6 @@ class Chart
 			return true;
 		if("payrollstatutories" == $this->chrt_array['tables'][0])
 			return true;
-		if("loanbalance3" == $this->chrt_array['tables'][0])
-			return true;
 		if("payrolltax" == $this->chrt_array['tables'][0])
 			return true;
 		if("payrollamt3" == $this->chrt_array['tables'][0])
@@ -631,8 +629,6 @@ class Chart
 		if("leavebalance" == $this->chrt_array['tables'][0])
 			return true;
 		if("indleave" == $this->chrt_array['tables'][0])
-			return true;
-		if("loanbalance3" == $this->chrt_array['tables'][0])
 			return true;
 		if("loansreport" == $this->chrt_array['tables'][0])
 			return true;
@@ -696,8 +692,6 @@ class Chart
 			return true;
 		if("filelog" == $this->chrt_array['tables'][0])
 			return true;
-		if("payrolltab" == $this->chrt_array['tables'][0])
-			return true;
 		if("filelog" == $this->chrt_array['tables'][0])
 			return true;
 		if("filelog" == $this->chrt_array['tables'][0])
@@ -719,6 +713,30 @@ class Chart
 		if("leaves" == $this->chrt_array['tables'][0])
 			return true;
 		if("approvalbutton" == $this->chrt_array['tables'][0])
+			return true;
+		if("otherpayments" == $this->chrt_array['tables'][0])
+			return true;
+		if("payrolltab" == $this->chrt_array['tables'][0])
+			return true;
+		if("dt5" == $this->chrt_array['tables'][0])
+			return true;
+		if("otndrdglobal" == $this->chrt_array['tables'][0])
+			return true;
+		if("dtrrange" == $this->chrt_array['tables'][0])
+			return true;
+		if("dtrempl" == $this->chrt_array['tables'][0])
+			return true;
+		if("otndrdglobal" == $this->chrt_array['tables'][0])
+			return true;
+		if("deductypes" == $this->chrt_array['tables'][0])
+			return true;
+		if("magroups" == $this->chrt_array['tables'][0])
+			return true;
+		if("mdgroups" == $this->chrt_array['tables'][0])
+			return true;
+		if("loanbalnew5" == $this->chrt_array['tables'][0])
+			return true;
+		if("loanbalnew5" == $this->chrt_array['tables'][0])
 			return true;
 		return false;
 	}

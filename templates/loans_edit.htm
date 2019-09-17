@@ -123,6 +123,60 @@
 </div>
 {END EmployeeID_fieldblock}
 
+			{BEGIN DType_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_DType}" data-fieldname="DType" data-signal-error-for="DType{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_DType}">
+		{BEGIN DType_label}{$label loans DType}{END DType_label}
+	</label>
+	<div class="col-md-6" >
+		{$DType_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="DType">
+		<div class="text-muted" >
+		{$tooltip loans DType}
+		</div>
+	</div>
+</div>
+</div>
+{END DType_fieldblock}
+
+			{BEGIN PaymentPeriod_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_PaymentPeriod}" data-fieldname="PaymentPeriod" data-signal-error-for="PaymentPeriod{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_PaymentPeriod}">
+		{BEGIN PaymentPeriod_label}{$label loans PaymentPeriod}{END PaymentPeriod_label}
+	</label>
+	<div class="col-md-6" >
+		{$PaymentPeriod_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="PaymentPeriod">
+		<div class="text-muted" >
+		{$tooltip loans PaymentPeriod}
+		</div>
+	</div>
+</div>
+</div>
+{END PaymentPeriod_fieldblock}
+
+			{BEGIN LoanDescription_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_LoanDescription}" data-fieldname="LoanDescription" data-signal-error-for="LoanDescription{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_LoanDescription}">
+		{BEGIN LoanDescription_label}{$label loans LoanDescription}{END LoanDescription_label}
+	</label>
+	<div class="col-md-6" >
+		{$LoanDescription_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="LoanDescription">
+		<div class="text-muted" >
+		{$tooltip loans LoanDescription}
+		</div>
+	</div>
+</div>
+</div>
+{END LoanDescription_fieldblock}
+
 			{BEGIN OPrincipal_fieldblock}
 <div class=container>
 <div class="form-group {$fielddispclass_OPrincipal}" data-fieldname="OPrincipal" data-signal-error-for="OPrincipal{$id}" >
@@ -159,59 +213,23 @@
 </div>
 {END Principal_fieldblock}
 
-			{BEGIN MonthlyAmortization_fieldblock}
+			{BEGIN PerDay_fieldblock}
 <div class=container>
-<div class="form-group {$fielddispclass_MonthlyAmortization}" data-fieldname="MonthlyAmortization" data-signal-error-for="MonthlyAmortization{$id}" >
-	<label class="col-md-3 control-label" for="{$labelfor_MonthlyAmortization}">
-		{BEGIN MonthlyAmortization_label}{$label loans MonthlyAmortization}{END MonthlyAmortization_label}
+<div class="form-group {$fielddispclass_PerDay}" data-fieldname="PerDay" data-signal-error-for="PerDay{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_PerDay}">
+		{BEGIN PerDay_label}{$label loans PerDay}{END PerDay_label}
 	</label>
 	<div class="col-md-6" >
-		{$MonthlyAmortization_editcontrol}
+		{$PerDay_editcontrol}
 	</div>
-	<div class="col-md-3 help-block" data-helpfor="MonthlyAmortization">
+	<div class="col-md-3 help-block" data-helpfor="PerDay">
 		<div class="text-muted" >
-		{$tooltip loans MonthlyAmortization}
+		{$tooltip loans PerDay}
 		</div>
 	</div>
 </div>
 </div>
-{END MonthlyAmortization_fieldblock}
-
-			{BEGIN StartDate_fieldblock}
-<div class=container>
-<div class="form-group {$fielddispclass_StartDate}" data-fieldname="StartDate" data-signal-error-for="StartDate{$id}" >
-	<label class="col-md-3 control-label" for="{$labelfor_StartDate}">
-		{BEGIN StartDate_label}{$label loans StartDate}{END StartDate_label}
-	</label>
-	<div class="col-md-6" >
-		{$StartDate_editcontrol}
-	</div>
-	<div class="col-md-3 help-block" data-helpfor="StartDate">
-		<div class="text-muted" >
-		{$tooltip loans StartDate}
-		</div>
-	</div>
-</div>
-</div>
-{END StartDate_fieldblock}
-
-			{BEGIN LoanDescription_fieldblock}
-<div class=container>
-<div class="form-group {$fielddispclass_LoanDescription}" data-fieldname="LoanDescription" data-signal-error-for="LoanDescription{$id}" >
-	<label class="col-md-3 control-label" for="{$labelfor_LoanDescription}">
-		{BEGIN LoanDescription_label}{$label loans LoanDescription}{END LoanDescription_label}
-	</label>
-	<div class="col-md-6" >
-		{$LoanDescription_editcontrol}
-	</div>
-	<div class="col-md-3 help-block" data-helpfor="LoanDescription">
-		<div class="text-muted" >
-		{$tooltip loans LoanDescription}
-		</div>
-	</div>
-</div>
-</div>
-{END LoanDescription_fieldblock}
+{END PerDay_fieldblock}
 
 			{BEGIN PerPayrollAmount_fieldblock}
 <div class=container>
@@ -231,23 +249,59 @@
 </div>
 {END PerPayrollAmount_fieldblock}
 
-			{BEGIN PaymentPeriod_fieldblock}
+			{BEGIN MonthlyAmortization_fieldblock}
 <div class=container>
-<div class="form-group {$fielddispclass_PaymentPeriod}" data-fieldname="PaymentPeriod" data-signal-error-for="PaymentPeriod{$id}" >
-	<label class="col-md-3 control-label" for="{$labelfor_PaymentPeriod}">
-		{BEGIN PaymentPeriod_label}{$label loans PaymentPeriod}{END PaymentPeriod_label}
+<div class="form-group {$fielddispclass_MonthlyAmortization}" data-fieldname="MonthlyAmortization" data-signal-error-for="MonthlyAmortization{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_MonthlyAmortization}">
+		{BEGIN MonthlyAmortization_label}{$label loans MonthlyAmortization}{END MonthlyAmortization_label}
 	</label>
 	<div class="col-md-6" >
-		{$PaymentPeriod_editcontrol}
+		{$MonthlyAmortization_editcontrol}
 	</div>
-	<div class="col-md-3 help-block" data-helpfor="PaymentPeriod">
+	<div class="col-md-3 help-block" data-helpfor="MonthlyAmortization">
 		<div class="text-muted" >
-		{$tooltip loans PaymentPeriod}
+		{$tooltip loans MonthlyAmortization}
 		</div>
 	</div>
 </div>
 </div>
-{END PaymentPeriod_fieldblock}
+{END MonthlyAmortization_fieldblock}
+
+			{BEGIN LessAbsences_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_LessAbsences}" data-fieldname="LessAbsences" data-signal-error-for="LessAbsences{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_LessAbsences}">
+		{BEGIN LessAbsences_label}{$label loans LessAbsences}{END LessAbsences_label}
+	</label>
+	<div class="col-md-6" >
+		{$LessAbsences_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="LessAbsences">
+		<div class="text-muted" >
+		{$tooltip loans LessAbsences}
+		</div>
+	</div>
+</div>
+</div>
+{END LessAbsences_fieldblock}
+
+			{BEGIN StartDate_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_StartDate}" data-fieldname="StartDate" data-signal-error-for="StartDate{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_StartDate}">
+		{BEGIN StartDate_label}{$label loans StartDate}{END StartDate_label}
+	</label>
+	<div class="col-md-6" >
+		{$StartDate_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="StartDate">
+		<div class="text-muted" >
+		{$tooltip loans StartDate}
+		</div>
+	</div>
+</div>
+</div>
+{END StartDate_fieldblock}
 
 			{BEGIN Inactive_fieldblock}
 <div class=container>

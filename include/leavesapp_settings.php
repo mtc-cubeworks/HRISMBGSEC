@@ -190,7 +190,7 @@ $tdataleavesapp[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																														
+																																																																																																																																																																																																																																																																		
 
 $tdataleavesapp[".ajaxCodeSnippetAdded"] = false;
 

@@ -255,6 +255,24 @@
 </div>
 {END Amount_fieldblock}
 
+			{BEGIN OtherPayment_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_OtherPayment}" data-fieldname="OtherPayment" data-signal-error-for="OtherPayment{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_OtherPayment}">
+		{BEGIN OtherPayment_label}{$label payrolldeductions OtherPayment}{END OtherPayment_label}
+	</label>
+	<div class="col-md-6" >
+		{$OtherPayment_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="OtherPayment">
+		<div class="text-muted" >
+		{$tooltip payrolldeductions OtherPayment}
+		</div>
+	</div>
+</div>
+</div>
+{END OtherPayment_fieldblock}
+
 			{BEGIN LoanID_fieldblock}
 <div class=container>
 <div class="form-group {$fielddispclass_LoanID}" data-fieldname="LoanID" data-signal-error-for="LoanID{$id}" >

@@ -396,6 +396,21 @@ if($rowcount)
 			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("SchedBy")))
 				$class = ' rnr-field-number';
 			$row["SchedBy_class"] = $class;
+	//	PreLogMins - Number
+			$viewContainer->recId = $recordsCounter;
+		    $value = $viewContainer->showDBValue("PreLogMins", $data, $keylink);
+			$row["PreLogMins_value"] = $value;
+			$format = $pSet->getViewFormat("PreLogMins");
+			$class = "rnr-field-text";
+			if($format==FORMAT_FILE) 
+				$class = ' rnr-field-file'; 
+			if($format==FORMAT_AUDIO)
+				$class = ' rnr-field-audio';
+			if($format==FORMAT_CHECKBOX)
+				$class = ' rnr-field-checkbox';
+			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("PreLogMins")))
+				$class = ' rnr-field-number';
+			$row["PreLogMins_class"] = $class;
 		$rowinfo[] = $row;
 		if ($b) {
 			$rowinfo2[] = $row;

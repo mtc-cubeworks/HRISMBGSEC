@@ -115,6 +115,11 @@
 				{$label employername ZipCode}
 			</th>
 			{END ZipCode_fieldheadercolumn}
+			{BEGIN Logo_fieldheadercolumn}
+			<th class="{$Logo_class}" {$Logo_style}  data-field="Logo">
+				{$label employername Logo}
+			</th>
+			{END Logo_fieldheadercolumn}
 			{BEGIN AdminEmail_fieldheadercolumn}
 			<th class="{$AdminEmail_class}" {$AdminEmail_style}  data-field="AdminEmail">
 				{$label employername AdminEmail}
@@ -177,6 +182,11 @@
 				{$ZipCode_value}
 			</td>
 			{END ZipCode_fieldcolumn}
+			{BEGIN Logo_fieldcolumn}
+			<td  class="{$Logo_class}" {$Logo_style} {$recordattrs}>
+				{$Logo_value}
+			</td>
+			{END Logo_fieldcolumn}
 			{BEGIN AdminEmail_fieldcolumn}
 			<td  class="{$AdminEmail_class}" {$AdminEmail_style} {$recordattrs}>
 				{$AdminEmail_value}

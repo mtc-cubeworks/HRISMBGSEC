@@ -6,6 +6,7 @@ $dalTabledtrrange["ToDate"] = array("type"=>7,"varname"=>"ToDate", "name" => "To
 $dalTabledtrrange["Employer"] = array("type"=>3,"varname"=>"Employer", "name" => "Employer");
 $dalTabledtrrange["WageType"] = array("type"=>16,"varname"=>"WageType", "name" => "WageType");
 $dalTabledtrrange["Division"] = array("type"=>3,"varname"=>"Division", "name" => "Division");
+$dalTabledtrrange["Employee"] = array("type"=>3,"varname"=>"Employee", "name" => "Employee");
 	$dalTabledtrrange["DrID"]["key"]=true;
 
 $dal_info["payrollflex_at_localhost__dtrrange"] = &$dalTabledtrrange;

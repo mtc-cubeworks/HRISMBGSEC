@@ -389,26 +389,6 @@ $page_layouts["indschedule_edit_Leaves1"] = $layout;
 $layout = new TLayout("tab_bootstrap", "Metro1DeliciousLavender1", "MobileDeliciousLavender1");
 $layout->version = 3;
 	$layout->bootstrapTheme = "default";
-		$layout->customCssPageName = "indschedule_edit_Sched_Setup1";
-$layout->blocks["bare"] = array();
-$layout->containers["tabfields"] = array();
-$layout->container_properties["tabfields"] = array(  );
-$layout->containers["tabfields"][] = array("name"=>"bstabfields",
-	"block"=>"", "substyle"=>1  );
-
-$layout->skins["tabfields"] = "";
-
-$layout->blocks["bare"][] = "tabfields";
-$page_layouts["indschedule_edit_Sched_Setup1"] = $layout;
-
-
-
-
-
-
-$layout = new TLayout("tab_bootstrap", "Metro1DeliciousLavender1", "MobileDeliciousLavender1");
-$layout->version = 3;
-	$layout->bootstrapTheme = "default";
 		$layout->customCssPageName = "indschedule_edit_Rest_Day1";
 $layout->blocks["bare"] = array();
 $layout->containers["tabfields"] = array();
@@ -420,6 +400,26 @@ $layout->skins["tabfields"] = "";
 
 $layout->blocks["bare"][] = "tabfields";
 $page_layouts["indschedule_edit_Rest_Day1"] = $layout;
+
+
+
+
+
+
+$layout = new TLayout("tab_bootstrap", "Metro1DeliciousLavender1", "MobileDeliciousLavender1");
+$layout->version = 3;
+	$layout->bootstrapTheme = "default";
+		$layout->customCssPageName = "indschedule_edit_Sched_Setup1";
+$layout->blocks["bare"] = array();
+$layout->containers["tabfields"] = array();
+$layout->container_properties["tabfields"] = array(  );
+$layout->containers["tabfields"][] = array("name"=>"bstabfields",
+	"block"=>"", "substyle"=>1  );
+
+$layout->skins["tabfields"] = "";
+
+$layout->blocks["bare"][] = "tabfields";
+$page_layouts["indschedule_edit_Sched_Setup1"] = $layout;
 
 
 

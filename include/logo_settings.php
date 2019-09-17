@@ -132,7 +132,7 @@ $tdatalogo[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																														
+																																																																																																																																																																																																																																																																		
 
 $tdatalogo[".ajaxCodeSnippetAdded"] = false;
 
@@ -463,7 +463,7 @@ $tdatalogo[".printFields"][] = "Logo";
 	
 				$fdata["FieldPermissions"] = true;
 
-				$fdata["UploadFolder"] = "files";
+				$fdata["UploadFolder"] = "images";
 
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();

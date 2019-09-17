@@ -183,23 +183,6 @@
 </div>
 {END PayToDate_fieldblock}
 
-			{BEGIN PayPeriod_fieldblock}<div class=container>
-<div class="form-group {$fielddispclass_PayPeriod}" data-fieldname="PayPeriod" data-signal-error-for="PayPeriod{$id}" >
-	<label class="col-md-3 control-label" for="{$labelfor_PayPeriod}">
-		{BEGIN PayPeriod_label}{$label payroll PayPeriod}{END PayPeriod_label}
-	</label>
-	<div class="col-md-6" >
-		{$PayPeriod_editcontrol}
-	</div>
-	<div class="col-md-3 help-block" data-helpfor="PayPeriod">
-		<div class="text-muted" >
-		{$tooltip payroll PayPeriod}
-		</div>
-	</div>
-</div>
-</div>
-{END PayPeriod_fieldblock}
-
 			{BEGIN PayDate_fieldblock}<div class=container>
 <div class="form-group {$fielddispclass_PayDate}" data-fieldname="PayDate" data-signal-error-for="PayDate{$id}" >
 	<label class="col-md-3 control-label" for="{$labelfor_PayDate}">
@@ -284,23 +267,6 @@
 </div>
 </div>
 {END Adjustments_fieldblock}
-
-			{BEGIN MoAdjustment_fieldblock}<div class=container>
-<div class="form-group {$fielddispclass_MoAdjustment}" data-fieldname="MoAdjustment" data-signal-error-for="MoAdjustment{$id}" >
-	<label class="col-md-3 control-label" for="{$labelfor_MoAdjustment}">
-		{BEGIN MoAdjustment_label}{$label payroll MoAdjustment}{END MoAdjustment_label}
-	</label>
-	<div class="col-md-6" >
-		{$MoAdjustment_editcontrol}
-	</div>
-	<div class="col-md-3 help-block" data-helpfor="MoAdjustment">
-		<div class="text-muted" >
-		{$tooltip payroll MoAdjustment}
-		</div>
-	</div>
-</div>
-</div>
-{END MoAdjustment_fieldblock}
 
 			{BEGIN PresetTax_fieldblock}<div class=container>
 <div class="form-group {$fielddispclass_PresetTax}" data-fieldname="PresetTax" data-signal-error-for="PresetTax{$id}" >

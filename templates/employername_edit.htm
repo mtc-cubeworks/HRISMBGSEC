@@ -237,6 +237,24 @@
 </div>
 {END ZipCode_fieldblock}
 
+			{BEGIN Logo_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Logo}" data-fieldname="Logo" data-signal-error-for="Logo{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Logo}">
+		{BEGIN Logo_label}{$label employername Logo}{END Logo_label}
+	</label>
+	<div class="col-md-6" >
+		{$Logo_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Logo">
+		<div class="text-muted" >
+		{$tooltip employername Logo}
+		</div>
+	</div>
+</div>
+</div>
+{END Logo_fieldblock}
+
 			{BEGIN AdminEmail_fieldblock}
 <div class=container>
 <div class="form-group {$fielddispclass_AdminEmail}" data-fieldname="AdminEmail" data-signal-error-for="AdminEmail{$id}" >

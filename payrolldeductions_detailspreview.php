@@ -346,6 +346,21 @@ if($rowcount)
 			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("WageType")))
 				$class = ' rnr-field-number';
 			$row["WageType_class"] = $class;
+	//	OtherPayment - 
+			$viewContainer->recId = $recordsCounter;
+		    $value = $viewContainer->showDBValue("OtherPayment", $data, $keylink);
+			$row["OtherPayment_value"] = $value;
+			$format = $pSet->getViewFormat("OtherPayment");
+			$class = "rnr-field-text";
+			if($format==FORMAT_FILE) 
+				$class = ' rnr-field-file'; 
+			if($format==FORMAT_AUDIO)
+				$class = ' rnr-field-audio';
+			if($format==FORMAT_CHECKBOX)
+				$class = ' rnr-field-checkbox';
+			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("OtherPayment")))
+				$class = ' rnr-field-number';
+			$row["OtherPayment_class"] = $class;
 		$rowinfo[] = $row;
 		if ($b) {
 			$rowinfo2[] = $row;

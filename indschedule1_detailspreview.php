@@ -284,6 +284,36 @@ if($rowcount)
 			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("NDMins")))
 				$class = ' rnr-field-number';
 			$row["NDMins_class"] = $class;
+	//	NDOTMins - Number
+			$viewContainer->recId = $recordsCounter;
+		    $value = $viewContainer->showDBValue("NDOTMins", $data, $keylink);
+			$row["NDOTMins_value"] = $value;
+			$format = $pSet->getViewFormat("NDOTMins");
+			$class = "rnr-field-text";
+			if($format==FORMAT_FILE) 
+				$class = ' rnr-field-file'; 
+			if($format==FORMAT_AUDIO)
+				$class = ' rnr-field-audio';
+			if($format==FORMAT_CHECKBOX)
+				$class = ' rnr-field-checkbox';
+			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("NDOTMins")))
+				$class = ' rnr-field-number';
+			$row["NDOTMins_class"] = $class;
+	//	ANDOTMins - Number
+			$viewContainer->recId = $recordsCounter;
+		    $value = $viewContainer->showDBValue("ANDOTMins", $data, $keylink);
+			$row["ANDOTMins_value"] = $value;
+			$format = $pSet->getViewFormat("ANDOTMins");
+			$class = "rnr-field-text";
+			if($format==FORMAT_FILE) 
+				$class = ' rnr-field-file'; 
+			if($format==FORMAT_AUDIO)
+				$class = ' rnr-field-audio';
+			if($format==FORMAT_CHECKBOX)
+				$class = ' rnr-field-checkbox';
+			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("ANDOTMins")))
+				$class = ' rnr-field-number';
+			$row["ANDOTMins_class"] = $class;
 	//	WorkMinsNet - Number
 			$viewContainer->recId = $recordsCounter;
 		    $value = $viewContainer->showDBValue("WorkMinsNet", $data, $keylink);
@@ -314,51 +344,6 @@ if($rowcount)
 			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("FiledOT")))
 				$class = ' rnr-field-number';
 			$row["FiledOT_class"] = $class;
-	//	NDMealAllowancePerShift - Number
-			$viewContainer->recId = $recordsCounter;
-		    $value = $viewContainer->showDBValue("NDMealAllowancePerShift", $data, $keylink);
-			$row["NDMealAllowancePerShift_value"] = $value;
-			$format = $pSet->getViewFormat("NDMealAllowancePerShift");
-			$class = "rnr-field-text";
-			if($format==FORMAT_FILE) 
-				$class = ' rnr-field-file'; 
-			if($format==FORMAT_AUDIO)
-				$class = ' rnr-field-audio';
-			if($format==FORMAT_CHECKBOX)
-				$class = ' rnr-field-checkbox';
-			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("NDMealAllowancePerShift")))
-				$class = ' rnr-field-number';
-			$row["NDMealAllowancePerShift_class"] = $class;
-	//	NDMinimumHrs - Number
-			$viewContainer->recId = $recordsCounter;
-		    $value = $viewContainer->showDBValue("NDMinimumHrs", $data, $keylink);
-			$row["NDMinimumHrs_value"] = $value;
-			$format = $pSet->getViewFormat("NDMinimumHrs");
-			$class = "rnr-field-text";
-			if($format==FORMAT_FILE) 
-				$class = ' rnr-field-file'; 
-			if($format==FORMAT_AUDIO)
-				$class = ' rnr-field-audio';
-			if($format==FORMAT_CHECKBOX)
-				$class = ' rnr-field-checkbox';
-			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("NDMinimumHrs")))
-				$class = ' rnr-field-number';
-			$row["NDMinimumHrs_class"] = $class;
-	//	NDMealAllowance - Number
-			$viewContainer->recId = $recordsCounter;
-		    $value = $viewContainer->showDBValue("NDMealAllowance", $data, $keylink);
-			$row["NDMealAllowance_value"] = $value;
-			$format = $pSet->getViewFormat("NDMealAllowance");
-			$class = "rnr-field-text";
-			if($format==FORMAT_FILE) 
-				$class = ' rnr-field-file'; 
-			if($format==FORMAT_AUDIO)
-				$class = ' rnr-field-audio';
-			if($format==FORMAT_CHECKBOX)
-				$class = ' rnr-field-checkbox';
-			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("NDMealAllowance")))
-				$class = ' rnr-field-number';
-			$row["NDMealAllowance_class"] = $class;
 	//	SDate - Short Date
 			$viewContainer->recId = $recordsCounter;
 		    $value = $viewContainer->showDBValue("SDate", $data, $keylink);
@@ -389,21 +374,6 @@ if($rowcount)
 			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("UserName")))
 				$class = ' rnr-field-number';
 			$row["UserName_class"] = $class;
-	//	ANDOTMins - Number
-			$viewContainer->recId = $recordsCounter;
-		    $value = $viewContainer->showDBValue("ANDOTMins", $data, $keylink);
-			$row["ANDOTMins_value"] = $value;
-			$format = $pSet->getViewFormat("ANDOTMins");
-			$class = "rnr-field-text";
-			if($format==FORMAT_FILE) 
-				$class = ' rnr-field-file'; 
-			if($format==FORMAT_AUDIO)
-				$class = ' rnr-field-audio';
-			if($format==FORMAT_CHECKBOX)
-				$class = ' rnr-field-checkbox';
-			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("ANDOTMins")))
-				$class = ' rnr-field-number';
-			$row["ANDOTMins_class"] = $class;
 		$rowinfo[] = $row;
 		if ($b) {
 			$rowinfo2[] = $row;

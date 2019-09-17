@@ -273,7 +273,7 @@ $tdataempindschedule[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
 
 $tdataempindschedule[".ajaxCodeSnippetAdded"] = false;
 
@@ -1328,30 +1328,7 @@ $tdataempindschedule[".updateSelectedFields"][] = "Mispunched";
 $tdataempindschedule[".updateSelectedFields"][] = "RegWD";
 $tdataempindschedule[".updateSelectedFields"][] = "DWork";
 $tdataempindschedule[".updateSelectedFields"][] = "Absent";
-$tdataempindschedule[".updateSelectedFields"][] = "LateMins";
-$tdataempindschedule[".updateSelectedFields"][] = "UndertimeMins";
 $tdataempindschedule[".updateSelectedFields"][] = "HolidayType";
-$tdataempindschedule[".updateSelectedFields"][] = "RHolidayHrs";
-$tdataempindschedule[".updateSelectedFields"][] = "SHolidayHrs";
-$tdataempindschedule[".updateSelectedFields"][] = "CHolidayHrs";
-$tdataempindschedule[".updateSelectedFields"][] = "NDHrs";
-$tdataempindschedule[".updateSelectedFields"][] = "RegNDHrs";
-$tdataempindschedule[".updateSelectedFields"][] = "RDHrs";
-$tdataempindschedule[".updateSelectedFields"][] = "RHNDHrs";
-$tdataempindschedule[".updateSelectedFields"][] = "RDNDHrs";
-$tdataempindschedule[".updateSelectedFields"][] = "SHNDHrs";
-$tdataempindschedule[".updateSelectedFields"][] = "CHNDHrs";
-$tdataempindschedule[".updateSelectedFields"][] = "ExcessHrs";
-$tdataempindschedule[".updateSelectedFields"][] = "RegOTHrs";
-$tdataempindschedule[".updateSelectedFields"][] = "RDOTHrs";
-$tdataempindschedule[".updateSelectedFields"][] = "SHOTHrs";
-$tdataempindschedule[".updateSelectedFields"][] = "CHOTHrs";
-$tdataempindschedule[".updateSelectedFields"][] = "RHOTHrs";
-$tdataempindschedule[".updateSelectedFields"][] = "TrODay";
-$tdataempindschedule[".updateSelectedFields"][] = "VLDay";
-$tdataempindschedule[".updateSelectedFields"][] = "SLDay";
-$tdataempindschedule[".updateSelectedFields"][] = "ELDay";
-$tdataempindschedule[".updateSelectedFields"][] = "PLDay";
 $tdataempindschedule[".updateSelectedFields"][] = "SchedType";
 $tdataempindschedule[".updateSelectedFields"][] = "Shift";
 
@@ -3409,7 +3386,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 	$fdata["GoodName"] = "RegWD";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("empindschedule","RegWD");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -3532,7 +3509,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 	$fdata["GoodName"] = "DWork";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("empindschedule","DWork");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -3655,7 +3632,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 	$fdata["GoodName"] = "Absent";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("empindschedule","Absent");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -3780,7 +3757,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 	$fdata["GoodName"] = "LateMins";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("empindschedule","LateMins");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -3796,8 +3773,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -3906,7 +3882,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 	$fdata["GoodName"] = "UndertimeMins";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("empindschedule","UndertimeMins");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -3922,8 +3898,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -4032,7 +4007,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 	$fdata["GoodName"] = "RHolidayHrs";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("empindschedule","RHolidayHrs");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -4048,8 +4023,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -4158,7 +4132,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 	$fdata["GoodName"] = "SHolidayHrs";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("empindschedule","SHolidayHrs");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -4174,8 +4148,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -4284,7 +4257,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 	$fdata["GoodName"] = "CHolidayHrs";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("empindschedule","CHolidayHrs");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -4300,8 +4273,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -4410,7 +4382,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 	$fdata["GoodName"] = "ExcessHrs";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("empindschedule","ExcessHrs");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -4426,8 +4398,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -4536,7 +4507,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 	$fdata["GoodName"] = "RegOTHrs";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("empindschedule","RegOTHrs");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -4552,8 +4523,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -4662,7 +4632,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 	$fdata["GoodName"] = "RHOTHrs";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("empindschedule","RHOTHrs");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -4678,8 +4648,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -4788,7 +4757,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 	$fdata["GoodName"] = "SHOTHrs";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("empindschedule","SHOTHrs");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -4804,8 +4773,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -4914,7 +4882,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 	$fdata["GoodName"] = "CHOTHrs";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("empindschedule","CHOTHrs");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -4930,8 +4898,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -5040,7 +5007,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 	$fdata["GoodName"] = "RDOTHrs";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("empindschedule","RDOTHrs");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -5056,8 +5023,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -5166,7 +5132,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 	$fdata["GoodName"] = "NDHrs";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("empindschedule","NDHrs");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -5182,8 +5148,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -5292,7 +5257,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 	$fdata["GoodName"] = "RDHrs";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("empindschedule","RDHrs");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -5308,8 +5273,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -5418,7 +5382,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 	$fdata["GoodName"] = "RegNDHrs";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("empindschedule","RegNDHrs");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -5434,8 +5398,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -5544,7 +5507,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 	$fdata["GoodName"] = "RHNDHrs";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("empindschedule","RHNDHrs");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -5560,8 +5523,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -5670,7 +5632,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 	$fdata["GoodName"] = "SHNDHrs";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("empindschedule","SHNDHrs");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -5686,8 +5648,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -5796,7 +5757,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 	$fdata["GoodName"] = "CHNDHrs";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("empindschedule","CHNDHrs");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -5812,8 +5773,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -5922,7 +5882,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 	$fdata["GoodName"] = "RDNDHrs";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("empindschedule","RDNDHrs");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -5938,8 +5898,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -6048,7 +6007,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 	$fdata["GoodName"] = "VLDay";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("empindschedule","VLDay");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -6064,8 +6023,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -6174,7 +6132,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 	$fdata["GoodName"] = "SLDay";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("empindschedule","SLDay");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -6190,8 +6148,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -6300,7 +6257,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 	$fdata["GoodName"] = "ELDay";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("empindschedule","ELDay");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -6316,8 +6273,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -6426,7 +6382,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 	$fdata["GoodName"] = "PLDay";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("empindschedule","PLDay");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -6442,8 +6398,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -6552,7 +6507,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 	$fdata["GoodName"] = "TrODay";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("empindschedule","TrODay");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -6568,8 +6523,7 @@ $tdataempindschedule[".printFields"][] = "Shift";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -8601,6 +8555,15 @@ $proto103["m_columns"][] = "DHND";
 $proto103["m_columns"][] = "DHRDND";
 $proto103["m_columns"][] = "DHNDOT";
 $proto103["m_columns"][] = "DHRDNDOT";
+$proto103["m_columns"][] = "RHRDOT";
+$proto103["m_columns"][] = "SHRDOT";
+$proto103["m_columns"][] = "RegND";
+$proto103["m_columns"][] = "RegRD";
+$proto103["m_columns"][] = "SHOTD";
+$proto103["m_columns"][] = "SHRDOTD";
+$proto103["m_columns"][] = "NDOT";
+$proto103["m_columns"][] = "RHRD";
+$proto103["m_columns"][] = "SHRD";
 $obj = new SQLTable($proto103);
 
 $proto102["m_table"] = $obj;

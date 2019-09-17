@@ -78,6 +78,9 @@
 	.bs-gridcell[data-field=Division]:before {
 		content: "{$label schedrange Division}";
 	}
+	.bs-gridcell[data-field=PreLogMins]:before {
+		content: "{$label schedrange PreLogMins}";
+	}
 </style>
 <table {$masterlistgrid_hiddenattr} data-pageid="{$pageid}" data-brick="masterlistgrid" class="table rnr-b-mastergridfields rnr-gridtable bs-flexgrid" >
 		<thead>
@@ -91,6 +94,7 @@
 			<th class="{$SchedType_class}">{$label schedrange SchedType}</th>
 			<th class="{$SchedBy_class}">{$label schedrange SchedBy}</th>
 			<th class="{$RestDays_class}">{$label schedrange RestDays}</th>
+			<th class="{$PreLogMins_class}">{$label schedrange PreLogMins}</th>
 			<th class="{$TimeIn_class}">{$label schedrange TimeIn}</th>
 			<th class="{$TimeOut_class}">{$label schedrange TimeOut}</th>
 			<th class="{$LunchBreakTimeFrom_class}">{$label schedrange LunchBreakTimeFrom}</th>
@@ -114,6 +118,7 @@
 			<td class="{$SchedType_class} bs-gridcell" data-field=SchedType>{$SchedType_mastervalue}</td>
 			<td class="{$SchedBy_class} bs-gridcell" data-field=SchedBy>{$SchedBy_mastervalue}</td>
 			<td class="{$RestDays_class} bs-gridcell" data-field=RestDays>{$RestDays_mastervalue}</td>
+			<td class="{$PreLogMins_class} bs-gridcell" data-field=PreLogMins>{$PreLogMins_mastervalue}</td>
 			<td class="{$TimeIn_class} bs-gridcell" data-field=TimeIn>{$TimeIn_mastervalue}</td>
 			<td class="{$TimeOut_class} bs-gridcell" data-field=TimeOut>{$TimeOut_mastervalue}</td>
 			<td class="{$LunchBreakTimeFrom_class} bs-gridcell" data-field=LunchBreakTimeFrom>{$LunchBreakTimeFrom_mastervalue}</td>

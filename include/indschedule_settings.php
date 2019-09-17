@@ -44,25 +44,16 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsindschedule["English"]["ApprovedOT"] = "Approved OT";
 	$fieldToolTipsindschedule["English"]["ApprovedOT"] = "";
 	$placeHoldersindschedule["English"]["ApprovedOT"] = "";
-	$fieldLabelsindschedule["English"]["AOTMins"] = "AOTMins";
-	$fieldToolTipsindschedule["English"]["AOTMins"] = "";
-	$placeHoldersindschedule["English"]["AOTMins"] = "";
 	$fieldLabelsindschedule["English"]["WageType"] = "Wage Type";
 	$fieldToolTipsindschedule["English"]["WageType"] = "";
 	$placeHoldersindschedule["English"]["WageType"] = "";
-	$fieldLabelsindschedule["English"]["ApprovedNightDiff"] = "Approved Night Diff";
+	$fieldLabelsindschedule["English"]["ApprovedNightDiff"] = "Approved ND";
 	$fieldToolTipsindschedule["English"]["ApprovedNightDiff"] = "";
 	$placeHoldersindschedule["English"]["ApprovedNightDiff"] = "";
-	$fieldLabelsindschedule["English"]["ANDiff"] = "ANDiff";
-	$fieldToolTipsindschedule["English"]["ANDiff"] = "";
-	$placeHoldersindschedule["English"]["ANDiff"] = "";
 	$fieldLabelsindschedule["English"]["EmployeeID"] = "Biometric ID";
 	$fieldToolTipsindschedule["English"]["EmployeeID"] = "";
 	$placeHoldersindschedule["English"]["EmployeeID"] = "";
-	$fieldLabelsindschedule["English"]["MinsPerDay"] = "Mins Per Day";
-	$fieldToolTipsindschedule["English"]["MinsPerDay"] = "";
-	$placeHoldersindschedule["English"]["MinsPerDay"] = "";
-	$fieldLabelsindschedule["English"]["BreakMins"] = "Break Mins";
+	$fieldLabelsindschedule["English"]["BreakMins"] = "Break (m)";
 	$fieldToolTipsindschedule["English"]["BreakMins"] = "";
 	$placeHoldersindschedule["English"]["BreakMins"] = "";
 	$fieldLabelsindschedule["English"]["Shift"] = "Shift";
@@ -71,24 +62,12 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsindschedule["English"]["ApprovedRD"] = "Approved RD";
 	$fieldToolTipsindschedule["English"]["ApprovedRD"] = "";
 	$placeHoldersindschedule["English"]["ApprovedRD"] = "";
-	$fieldLabelsindschedule["English"]["RDMins"] = "RDMins";
-	$fieldToolTipsindschedule["English"]["RDMins"] = "";
-	$placeHoldersindschedule["English"]["RDMins"] = "";
 	$fieldLabelsindschedule["English"]["LunchBreakFrom"] = "SBreak Out";
 	$fieldToolTipsindschedule["English"]["LunchBreakFrom"] = "";
 	$placeHoldersindschedule["English"]["LunchBreakFrom"] = "";
 	$fieldLabelsindschedule["English"]["LunchBreakTo"] = "SBreak In";
 	$fieldToolTipsindschedule["English"]["LunchBreakTo"] = "";
 	$placeHoldersindschedule["English"]["LunchBreakTo"] = "";
-	$fieldLabelsindschedule["English"]["NDMealAllowancePerShift"] = "NDMeal Allowance Per Shift";
-	$fieldToolTipsindschedule["English"]["NDMealAllowancePerShift"] = "";
-	$placeHoldersindschedule["English"]["NDMealAllowancePerShift"] = "";
-	$fieldLabelsindschedule["English"]["NDMinimumHrs"] = "NDMinimum Hrs";
-	$fieldToolTipsindschedule["English"]["NDMinimumHrs"] = "";
-	$placeHoldersindschedule["English"]["NDMinimumHrs"] = "";
-	$fieldLabelsindschedule["English"]["NDMealAllowance"] = "NDMeal Allowance";
-	$fieldToolTipsindschedule["English"]["NDMealAllowance"] = "";
-	$placeHoldersindschedule["English"]["NDMealAllowance"] = "";
 	$fieldLabelsindschedule["English"]["Division"] = "Division";
 	$fieldToolTipsindschedule["English"]["Division"] = "";
 	$placeHoldersindschedule["English"]["Division"] = "";
@@ -116,58 +95,40 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsindschedule["English"]["Absent"] = "Absent";
 	$fieldToolTipsindschedule["English"]["Absent"] = "";
 	$placeHoldersindschedule["English"]["Absent"] = "";
-	$fieldLabelsindschedule["English"]["LateMins"] = "Late Mins";
+	$fieldLabelsindschedule["English"]["LateMins"] = "Late (m)";
 	$fieldToolTipsindschedule["English"]["LateMins"] = "";
 	$placeHoldersindschedule["English"]["LateMins"] = "";
-	$fieldLabelsindschedule["English"]["UndertimeMins"] = "Undertime Mins";
+	$fieldLabelsindschedule["English"]["UndertimeMins"] = "Undertime (m)";
 	$fieldToolTipsindschedule["English"]["UndertimeMins"] = "";
 	$placeHoldersindschedule["English"]["UndertimeMins"] = "";
-	$fieldLabelsindschedule["English"]["RHolidayHrs"] = "RHoliday Hrs";
+	$fieldLabelsindschedule["English"]["RHolidayHrs"] = "RH (h)";
 	$fieldToolTipsindschedule["English"]["RHolidayHrs"] = "";
 	$placeHoldersindschedule["English"]["RHolidayHrs"] = "";
-	$fieldLabelsindschedule["English"]["SHolidayHrs"] = "SHoliday Hrs";
+	$fieldLabelsindschedule["English"]["SHolidayHrs"] = "SH (h)";
 	$fieldToolTipsindschedule["English"]["SHolidayHrs"] = "";
 	$placeHoldersindschedule["English"]["SHolidayHrs"] = "";
-	$fieldLabelsindschedule["English"]["CHolidayHrs"] = "CHoliday Hrs";
-	$fieldToolTipsindschedule["English"]["CHolidayHrs"] = "";
-	$placeHoldersindschedule["English"]["CHolidayHrs"] = "";
-	$fieldLabelsindschedule["English"]["ExcessHrs"] = "Excess Hrs";
+	$fieldLabelsindschedule["English"]["ExcessHrs"] = "Temp OT (h)";
 	$fieldToolTipsindschedule["English"]["ExcessHrs"] = "";
 	$placeHoldersindschedule["English"]["ExcessHrs"] = "";
-	$fieldLabelsindschedule["English"]["RegOTHrs"] = "Reg OTHrs";
+	$fieldLabelsindschedule["English"]["RegOTHrs"] = "Reg OT (h)";
 	$fieldToolTipsindschedule["English"]["RegOTHrs"] = "";
 	$placeHoldersindschedule["English"]["RegOTHrs"] = "";
-	$fieldLabelsindschedule["English"]["RHOTHrs"] = "RHOTHrs";
+	$fieldLabelsindschedule["English"]["RHOTHrs"] = "RH-OT (h)";
 	$fieldToolTipsindschedule["English"]["RHOTHrs"] = "";
 	$placeHoldersindschedule["English"]["RHOTHrs"] = "";
-	$fieldLabelsindschedule["English"]["SHOTHrs"] = "SHOTHrs";
+	$fieldLabelsindschedule["English"]["SHOTHrs"] = "SH-OT (h)";
 	$fieldToolTipsindschedule["English"]["SHOTHrs"] = "";
 	$placeHoldersindschedule["English"]["SHOTHrs"] = "";
-	$fieldLabelsindschedule["English"]["CHOTHrs"] = "CHOTHrs";
-	$fieldToolTipsindschedule["English"]["CHOTHrs"] = "";
-	$placeHoldersindschedule["English"]["CHOTHrs"] = "";
-	$fieldLabelsindschedule["English"]["RDOTHrs"] = "RDOTHrs";
+	$fieldLabelsindschedule["English"]["RDOTHrs"] = "RD-OT (h)";
 	$fieldToolTipsindschedule["English"]["RDOTHrs"] = "";
 	$placeHoldersindschedule["English"]["RDOTHrs"] = "";
-	$fieldLabelsindschedule["English"]["NDHrs"] = "NDHrs";
-	$fieldToolTipsindschedule["English"]["NDHrs"] = "";
-	$placeHoldersindschedule["English"]["NDHrs"] = "";
-	$fieldLabelsindschedule["English"]["RDHrs"] = "RDHrs";
-	$fieldToolTipsindschedule["English"]["RDHrs"] = "";
-	$placeHoldersindschedule["English"]["RDHrs"] = "";
-	$fieldLabelsindschedule["English"]["RegNDHrs"] = "Reg NDHrs";
-	$fieldToolTipsindschedule["English"]["RegNDHrs"] = "";
-	$placeHoldersindschedule["English"]["RegNDHrs"] = "";
-	$fieldLabelsindschedule["English"]["RHNDHrs"] = "RHNDHrs";
+	$fieldLabelsindschedule["English"]["RHNDHrs"] = "RH-ND (h)";
 	$fieldToolTipsindschedule["English"]["RHNDHrs"] = "";
 	$placeHoldersindschedule["English"]["RHNDHrs"] = "";
-	$fieldLabelsindschedule["English"]["SHNDHrs"] = "SHNDHrs";
+	$fieldLabelsindschedule["English"]["SHNDHrs"] = "SH-ND (h)";
 	$fieldToolTipsindschedule["English"]["SHNDHrs"] = "";
 	$placeHoldersindschedule["English"]["SHNDHrs"] = "";
-	$fieldLabelsindschedule["English"]["CHNDHrs"] = "CHNDHrs";
-	$fieldToolTipsindschedule["English"]["CHNDHrs"] = "";
-	$placeHoldersindschedule["English"]["CHNDHrs"] = "";
-	$fieldLabelsindschedule["English"]["RDNDHrs"] = "RDNDHrs";
+	$fieldLabelsindschedule["English"]["RDNDHrs"] = "RD-ND (h)";
 	$fieldToolTipsindschedule["English"]["RDNDHrs"] = "";
 	$placeHoldersindschedule["English"]["RDNDHrs"] = "";
 	$fieldLabelsindschedule["English"]["VLDay"] = "VLDay";
@@ -197,10 +158,10 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsindschedule["English"]["Holiday2ndHalf"] = "Holiday2nd Half";
 	$fieldToolTipsindschedule["English"]["Holiday2ndHalf"] = "";
 	$placeHoldersindschedule["English"]["Holiday2ndHalf"] = "";
-	$fieldLabelsindschedule["English"]["TotLateMins"] = "Tot Late Mins";
+	$fieldLabelsindschedule["English"]["TotLateMins"] = "Tot Late (m)";
 	$fieldToolTipsindschedule["English"]["TotLateMins"] = "";
 	$placeHoldersindschedule["English"]["TotLateMins"] = "";
-	$fieldLabelsindschedule["English"]["LatePenaltyMins"] = "Late Penalty Mins";
+	$fieldLabelsindschedule["English"]["LatePenaltyMins"] = "Late Penalty (m)";
 	$fieldToolTipsindschedule["English"]["LatePenaltyMins"] = "";
 	$placeHoldersindschedule["English"]["LatePenaltyMins"] = "";
 	$fieldLabelsindschedule["English"]["Employer"] = "Employer";
@@ -215,72 +176,81 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsindschedule["English"]["AfterBreakLog"] = "Break In";
 	$fieldToolTipsindschedule["English"]["AfterBreakLog"] = "";
 	$placeHoldersindschedule["English"]["AfterBreakLog"] = "";
-	$fieldLabelsindschedule["English"]["PreLogMins"] = "Pre Log-In Mins";
-	$fieldToolTipsindschedule["English"]["PreLogMins"] = "";
-	$placeHoldersindschedule["English"]["PreLogMins"] = "";
-	$fieldLabelsindschedule["English"]["IncludeBreakLate"] = "Include Break Late";
-	$fieldToolTipsindschedule["English"]["IncludeBreakLate"] = "";
-	$placeHoldersindschedule["English"]["IncludeBreakLate"] = "";
-	$fieldLabelsindschedule["English"]["GracePeriodMins"] = "Grace Period Mins";
-	$fieldToolTipsindschedule["English"]["GracePeriodMins"] = "";
-	$placeHoldersindschedule["English"]["GracePeriodMins"] = "";
-	$fieldLabelsindschedule["English"]["BreakLateMins"] = "Break Late Mins";
+	$fieldLabelsindschedule["English"]["BreakLateMins"] = "Break Late (m)";
 	$fieldToolTipsindschedule["English"]["BreakLateMins"] = "";
 	$placeHoldersindschedule["English"]["BreakLateMins"] = "";
-	$fieldLabelsindschedule["English"]["ANDOTMins"] = "ANDOTMins";
-	$fieldToolTipsindschedule["English"]["ANDOTMins"] = "";
-	$placeHoldersindschedule["English"]["ANDOTMins"] = "";
-	$fieldLabelsindschedule["English"]["RegNDOTHrs"] = "Reg NDOTHrs";
-	$fieldToolTipsindschedule["English"]["RegNDOTHrs"] = "";
-	$placeHoldersindschedule["English"]["RegNDOTHrs"] = "";
-	$fieldLabelsindschedule["English"]["RHNDOTHrs"] = "RHNDOTHrs";
+	$fieldLabelsindschedule["English"]["RHNDOTHrs"] = "RH-ND-OT (h)";
 	$fieldToolTipsindschedule["English"]["RHNDOTHrs"] = "";
 	$placeHoldersindschedule["English"]["RHNDOTHrs"] = "";
-	$fieldLabelsindschedule["English"]["SHNDOTHrs"] = "SHNDOTHrs";
+	$fieldLabelsindschedule["English"]["SHNDOTHrs"] = "SH-ND-OT (h)";
 	$fieldToolTipsindschedule["English"]["SHNDOTHrs"] = "";
 	$placeHoldersindschedule["English"]["SHNDOTHrs"] = "";
-	$fieldLabelsindschedule["English"]["CHNDOTHrs"] = "CHNDOTHrs";
-	$fieldToolTipsindschedule["English"]["CHNDOTHrs"] = "";
-	$placeHoldersindschedule["English"]["CHNDOTHrs"] = "";
-	$fieldLabelsindschedule["English"]["RDNDOTHrs"] = "RDNDOTHrs";
+	$fieldLabelsindschedule["English"]["RDNDOTHrs"] = "RD-ND-OT (h)";
 	$fieldToolTipsindschedule["English"]["RDNDOTHrs"] = "";
 	$placeHoldersindschedule["English"]["RDNDOTHrs"] = "";
-	$fieldLabelsindschedule["English"]["DH"] = "DH";
+	$fieldLabelsindschedule["English"]["DH"] = "DH (h)";
 	$fieldToolTipsindschedule["English"]["DH"] = "";
 	$placeHoldersindschedule["English"]["DH"] = "";
-	$fieldLabelsindschedule["English"]["DHRD"] = "DHRD";
+	$fieldLabelsindschedule["English"]["DHRD"] = "DH-RD (h)";
 	$fieldToolTipsindschedule["English"]["DHRD"] = "";
 	$placeHoldersindschedule["English"]["DHRD"] = "";
-	$fieldLabelsindschedule["English"]["DHOT"] = "DHOT";
+	$fieldLabelsindschedule["English"]["DHOT"] = "DH-OT (h)";
 	$fieldToolTipsindschedule["English"]["DHOT"] = "";
 	$placeHoldersindschedule["English"]["DHOT"] = "";
-	$fieldLabelsindschedule["English"]["DHRDOT"] = "DHRDOT";
+	$fieldLabelsindschedule["English"]["DHRDOT"] = "DH-RD-OT (h)";
 	$fieldToolTipsindschedule["English"]["DHRDOT"] = "";
 	$placeHoldersindschedule["English"]["DHRDOT"] = "";
-	$fieldLabelsindschedule["English"]["SHRDND"] = "SHRDND";
+	$fieldLabelsindschedule["English"]["SHRDND"] = "SH-RD-ND (h)";
 	$fieldToolTipsindschedule["English"]["SHRDND"] = "";
 	$placeHoldersindschedule["English"]["SHRDND"] = "";
-	$fieldLabelsindschedule["English"]["RHRDND"] = "RHRDND";
+	$fieldLabelsindschedule["English"]["RHRDND"] = "RH-RD-ND (h)";
 	$fieldToolTipsindschedule["English"]["RHRDND"] = "";
 	$placeHoldersindschedule["English"]["RHRDND"] = "";
-	$fieldLabelsindschedule["English"]["SHRDNDOT"] = "SHRDNDOT";
+	$fieldLabelsindschedule["English"]["SHRDNDOT"] = "SH-RD-ND-OT (h)";
 	$fieldToolTipsindschedule["English"]["SHRDNDOT"] = "";
 	$placeHoldersindschedule["English"]["SHRDNDOT"] = "";
-	$fieldLabelsindschedule["English"]["RHRDNDOT"] = "RHRDNDOT";
+	$fieldLabelsindschedule["English"]["RHRDNDOT"] = "RH-RD-ND-OT (h)";
 	$fieldToolTipsindschedule["English"]["RHRDNDOT"] = "";
 	$placeHoldersindschedule["English"]["RHRDNDOT"] = "";
-	$fieldLabelsindschedule["English"]["DHND"] = "DHND";
+	$fieldLabelsindschedule["English"]["DHND"] = "DH-ND (h)";
 	$fieldToolTipsindschedule["English"]["DHND"] = "";
 	$placeHoldersindschedule["English"]["DHND"] = "";
-	$fieldLabelsindschedule["English"]["DHRDND"] = "DHRDND";
+	$fieldLabelsindschedule["English"]["DHRDND"] = "DH-RD-ND (h)";
 	$fieldToolTipsindschedule["English"]["DHRDND"] = "";
 	$placeHoldersindschedule["English"]["DHRDND"] = "";
-	$fieldLabelsindschedule["English"]["DHNDOT"] = "DHNDOT";
+	$fieldLabelsindschedule["English"]["DHNDOT"] = "DH-ND-OT (h)";
 	$fieldToolTipsindschedule["English"]["DHNDOT"] = "";
 	$placeHoldersindschedule["English"]["DHNDOT"] = "";
-	$fieldLabelsindschedule["English"]["DHRDNDOT"] = "DHRDNDOT";
+	$fieldLabelsindschedule["English"]["DHRDNDOT"] = "DH-RD-ND-OT (h)";
 	$fieldToolTipsindschedule["English"]["DHRDNDOT"] = "";
 	$placeHoldersindschedule["English"]["DHRDNDOT"] = "";
+	$fieldLabelsindschedule["English"]["RHRDOT"] = "RH-RD-OT (h)";
+	$fieldToolTipsindschedule["English"]["RHRDOT"] = "";
+	$placeHoldersindschedule["English"]["RHRDOT"] = "";
+	$fieldLabelsindschedule["English"]["SHRDOT"] = "SH-RD-OT (h)";
+	$fieldToolTipsindschedule["English"]["SHRDOT"] = "";
+	$placeHoldersindschedule["English"]["SHRDOT"] = "";
+	$fieldLabelsindschedule["English"]["RegND"] = "Reg ND (h)";
+	$fieldToolTipsindschedule["English"]["RegND"] = "";
+	$placeHoldersindschedule["English"]["RegND"] = "";
+	$fieldLabelsindschedule["English"]["RegRD"] = "Reg RD (h)";
+	$fieldToolTipsindschedule["English"]["RegRD"] = "";
+	$placeHoldersindschedule["English"]["RegRD"] = "";
+	$fieldLabelsindschedule["English"]["SHOTD"] = "SH-OT-D (h)";
+	$fieldToolTipsindschedule["English"]["SHOTD"] = "";
+	$placeHoldersindschedule["English"]["SHOTD"] = "";
+	$fieldLabelsindschedule["English"]["SHRDOTD"] = "SH-RD-OT-D (h)";
+	$fieldToolTipsindschedule["English"]["SHRDOTD"] = "";
+	$placeHoldersindschedule["English"]["SHRDOTD"] = "";
+	$fieldLabelsindschedule["English"]["NDOT"] = "ND-OT (h)";
+	$fieldToolTipsindschedule["English"]["NDOT"] = "";
+	$placeHoldersindschedule["English"]["NDOT"] = "";
+	$fieldLabelsindschedule["English"]["RHRD"] = "RH-RD (h)";
+	$fieldToolTipsindschedule["English"]["RHRD"] = "";
+	$placeHoldersindschedule["English"]["RHRD"] = "";
+	$fieldLabelsindschedule["English"]["SHRD"] = "SH-RD (h)";
+	$fieldToolTipsindschedule["English"]["SHRD"] = "";
+	$placeHoldersindschedule["English"]["SHRD"] = "";
 	if (count($fieldToolTipsindschedule["English"]))
 		$tdataindschedule[".isUseToolTips"] = true;
 }
@@ -290,21 +260,12 @@ if(mlang_getcurrentlang()=="")
 	$fieldToolTipsindschedule[""] = array();
 	$placeHoldersindschedule[""] = array();
 	$pageTitlesindschedule[""] = array();
-	$fieldLabelsindschedule[""]["ANDOTMins"] = "ANDOTMins";
-	$fieldToolTipsindschedule[""]["ANDOTMins"] = "";
-	$placeHoldersindschedule[""]["ANDOTMins"] = "";
-	$fieldLabelsindschedule[""]["RegNDOTHrs"] = "Reg NDOTHrs";
-	$fieldToolTipsindschedule[""]["RegNDOTHrs"] = "";
-	$placeHoldersindschedule[""]["RegNDOTHrs"] = "";
 	$fieldLabelsindschedule[""]["RHNDOTHrs"] = "RHNDOTHrs";
 	$fieldToolTipsindschedule[""]["RHNDOTHrs"] = "";
 	$placeHoldersindschedule[""]["RHNDOTHrs"] = "";
 	$fieldLabelsindschedule[""]["SHNDOTHrs"] = "SHNDOTHrs";
 	$fieldToolTipsindschedule[""]["SHNDOTHrs"] = "";
 	$placeHoldersindschedule[""]["SHNDOTHrs"] = "";
-	$fieldLabelsindschedule[""]["CHNDOTHrs"] = "CHNDOTHrs";
-	$fieldToolTipsindschedule[""]["CHNDOTHrs"] = "";
-	$placeHoldersindschedule[""]["CHNDOTHrs"] = "";
 	$fieldLabelsindschedule[""]["RDNDOTHrs"] = "RDNDOTHrs";
 	$fieldToolTipsindschedule[""]["RDNDOTHrs"] = "";
 	$placeHoldersindschedule[""]["RDNDOTHrs"] = "";
@@ -344,6 +305,33 @@ if(mlang_getcurrentlang()=="")
 	$fieldLabelsindschedule[""]["DHRDNDOT"] = "DHRDNDOT";
 	$fieldToolTipsindschedule[""]["DHRDNDOT"] = "";
 	$placeHoldersindschedule[""]["DHRDNDOT"] = "";
+	$fieldLabelsindschedule[""]["RHRDOT"] = "RHRDOT";
+	$fieldToolTipsindschedule[""]["RHRDOT"] = "";
+	$placeHoldersindschedule[""]["RHRDOT"] = "";
+	$fieldLabelsindschedule[""]["SHRDOT"] = "SHRDOT";
+	$fieldToolTipsindschedule[""]["SHRDOT"] = "";
+	$placeHoldersindschedule[""]["SHRDOT"] = "";
+	$fieldLabelsindschedule[""]["RegND"] = "Reg ND";
+	$fieldToolTipsindschedule[""]["RegND"] = "";
+	$placeHoldersindschedule[""]["RegND"] = "";
+	$fieldLabelsindschedule[""]["RegRD"] = "Reg RD";
+	$fieldToolTipsindschedule[""]["RegRD"] = "";
+	$placeHoldersindschedule[""]["RegRD"] = "";
+	$fieldLabelsindschedule[""]["SHOTD"] = "SHOTD";
+	$fieldToolTipsindschedule[""]["SHOTD"] = "";
+	$placeHoldersindschedule[""]["SHOTD"] = "";
+	$fieldLabelsindschedule[""]["SHRDOTD"] = "SHRDOTD";
+	$fieldToolTipsindschedule[""]["SHRDOTD"] = "";
+	$placeHoldersindschedule[""]["SHRDOTD"] = "";
+	$fieldLabelsindschedule[""]["NDOT"] = "NDOT";
+	$fieldToolTipsindschedule[""]["NDOT"] = "";
+	$placeHoldersindschedule[""]["NDOT"] = "";
+	$fieldLabelsindschedule[""]["RHRD"] = "RHRD";
+	$fieldToolTipsindschedule[""]["RHRD"] = "";
+	$placeHoldersindschedule[""]["RHRD"] = "";
+	$fieldLabelsindschedule[""]["SHRD"] = "SHRD";
+	$fieldToolTipsindschedule[""]["SHRD"] = "";
+	$placeHoldersindschedule[""]["SHRD"] = "";
 	if (count($fieldToolTipsindschedule[""]))
 		$tdataindschedule[".isUseToolTips"] = true;
 }
@@ -441,7 +429,7 @@ $tdataindschedule[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																														
+																																																																																																																																																																																																																																																																		
 
 $tdataindschedule[".ajaxCodeSnippetAdded"] = false;
 
@@ -465,6 +453,15 @@ $tdataindschedule[".allSearchFields"][] = "UserName";
 	$tdataindschedule[".allSearchFields"][] = "WageType";
 	$tdataindschedule[".allSearchFields"][] = "SDate";
 	$tdataindschedule[".allSearchFields"][] = "Mispunched";
+	$tdataindschedule[".allSearchFields"][] = "RegND";
+	$tdataindschedule[".allSearchFields"][] = "SHOTD";
+	$tdataindschedule[".allSearchFields"][] = "NDOT";
+	$tdataindschedule[".allSearchFields"][] = "RHRDOT";
+	$tdataindschedule[".allSearchFields"][] = "SHRDOT";
+	$tdataindschedule[".allSearchFields"][] = "SHRDOTD";
+	$tdataindschedule[".allSearchFields"][] = "RegRD";
+	$tdataindschedule[".allSearchFields"][] = "RHRD";
+	$tdataindschedule[".allSearchFields"][] = "SHRD";
 	
 
 $tdataindschedule[".googleLikeFields"] = array();
@@ -473,6 +470,15 @@ $tdataindschedule[".googleLikeFields"][] = "SDate";
 $tdataindschedule[".googleLikeFields"][] = "WageType";
 $tdataindschedule[".googleLikeFields"][] = "Division";
 $tdataindschedule[".googleLikeFields"][] = "Mispunched";
+$tdataindschedule[".googleLikeFields"][] = "RHRDOT";
+$tdataindschedule[".googleLikeFields"][] = "SHRDOT";
+$tdataindschedule[".googleLikeFields"][] = "RegND";
+$tdataindschedule[".googleLikeFields"][] = "RegRD";
+$tdataindschedule[".googleLikeFields"][] = "SHOTD";
+$tdataindschedule[".googleLikeFields"][] = "SHRDOTD";
+$tdataindschedule[".googleLikeFields"][] = "NDOT";
+$tdataindschedule[".googleLikeFields"][] = "RHRD";
+$tdataindschedule[".googleLikeFields"][] = "SHRD";
 
 $tdataindschedule[".panelSearchFields"] = array();
 $tdataindschedule[".searchPanelOptions"] = array();
@@ -487,6 +493,15 @@ $tdataindschedule[".advSearchFields"][] = "Division";
 $tdataindschedule[".advSearchFields"][] = "WageType";
 $tdataindschedule[".advSearchFields"][] = "SDate";
 $tdataindschedule[".advSearchFields"][] = "Mispunched";
+$tdataindschedule[".advSearchFields"][] = "RegND";
+$tdataindschedule[".advSearchFields"][] = "SHOTD";
+$tdataindschedule[".advSearchFields"][] = "NDOT";
+$tdataindschedule[".advSearchFields"][] = "RHRDOT";
+$tdataindschedule[".advSearchFields"][] = "SHRDOT";
+$tdataindschedule[".advSearchFields"][] = "SHRDOTD";
+$tdataindschedule[".advSearchFields"][] = "RegRD";
+$tdataindschedule[".advSearchFields"][] = "RHRD";
+$tdataindschedule[".advSearchFields"][] = "SHRD";
 
 $tdataindschedule[".tableType"] = "list";
 
@@ -520,177 +535,242 @@ $tdataindschedule[".totalsFields"][] = array(
 	"fName" => "RegWD",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
+	"viewFormat" => 'Custom');
 $tdataindschedule[".totalsFields"][] = array(
 	"fName" => "DWork",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
+	"viewFormat" => 'Custom');
 $tdataindschedule[".totalsFields"][] = array(
 	"fName" => "Absent",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
+	"viewFormat" => 'Custom');
 $tdataindschedule[".totalsFields"][] = array(
 	"fName" => "LateMins",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
+	"viewFormat" => 'Custom');
 $tdataindschedule[".totalsFields"][] = array(
 	"fName" => "UndertimeMins",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
+	"viewFormat" => 'Custom');
 $tdataindschedule[".totalsFields"][] = array(
 	"fName" => "LatePenaltyMins",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
+	"viewFormat" => 'Custom');
+$tdataindschedule[".totalsFields"][] = array(
+	"fName" => "LateFixPenalty",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Custom');
+$tdataindschedule[".totalsFields"][] = array(
+	"fName" => "BreakLateMins",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Custom');
 $tdataindschedule[".totalsFields"][] = array(
 	"fName" => "TotLateMins",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
+	"viewFormat" => 'Custom');
 $tdataindschedule[".totalsFields"][] = array(
 	"fName" => "RHolidayHrs",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
+	"viewFormat" => 'Custom');
 $tdataindschedule[".totalsFields"][] = array(
 	"fName" => "SHolidayHrs",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
+	"viewFormat" => 'Custom');
 $tdataindschedule[".totalsFields"][] = array(
-	"fName" => "CHolidayHrs",
+	"fName" => "DH",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
+	"viewFormat" => 'Custom');
 $tdataindschedule[".totalsFields"][] = array(
-	"fName" => "NDHrs",
+	"fName" => "RegND",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
-$tdataindschedule[".totalsFields"][] = array(
-	"fName" => "ANDiff",
-	"numRows" => 0,
-	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
-$tdataindschedule[".totalsFields"][] = array(
-	"fName" => "ANDOTMins",
-	"numRows" => 0,
-	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
-$tdataindschedule[".totalsFields"][] = array(
-	"fName" => "RegNDHrs",
-	"numRows" => 0,
-	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
+	"viewFormat" => 'Custom');
 $tdataindschedule[".totalsFields"][] = array(
 	"fName" => "RHNDHrs",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
-$tdataindschedule[".totalsFields"][] = array(
-	"fName" => "RDNDHrs",
-	"numRows" => 0,
-	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
+	"viewFormat" => 'Custom');
 $tdataindschedule[".totalsFields"][] = array(
 	"fName" => "SHNDHrs",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
+	"viewFormat" => 'Custom');
 $tdataindschedule[".totalsFields"][] = array(
-	"fName" => "CHNDHrs",
+	"fName" => "DHND",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
+	"viewFormat" => 'Custom');
+$tdataindschedule[".totalsFields"][] = array(
+	"fName" => "RDNDHrs",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Custom');
+$tdataindschedule[".totalsFields"][] = array(
+	"fName" => "RHRDND",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Custom');
+$tdataindschedule[".totalsFields"][] = array(
+	"fName" => "SHRDND",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Custom');
+$tdataindschedule[".totalsFields"][] = array(
+	"fName" => "DHRDND",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Custom');
 $tdataindschedule[".totalsFields"][] = array(
 	"fName" => "ExcessHrs",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
+	"viewFormat" => 'Custom');
 $tdataindschedule[".totalsFields"][] = array(
 	"fName" => "RegOTHrs",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
-$tdataindschedule[".totalsFields"][] = array(
-	"fName" => "SHOTHrs",
-	"numRows" => 0,
-	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
-$tdataindschedule[".totalsFields"][] = array(
-	"fName" => "CHOTHrs",
-	"numRows" => 0,
-	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
-$tdataindschedule[".totalsFields"][] = array(
-	"fName" => "RDOTHrs",
-	"numRows" => 0,
-	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
+	"viewFormat" => 'Custom');
 $tdataindschedule[".totalsFields"][] = array(
 	"fName" => "RHOTHrs",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
+	"viewFormat" => 'Custom');
 $tdataindschedule[".totalsFields"][] = array(
-	"fName" => "TrODay",
+	"fName" => "SHOTHrs",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
+	"viewFormat" => 'Custom');
 $tdataindschedule[".totalsFields"][] = array(
-	"fName" => "RegNDOTHrs",
+	"fName" => "SHOTD",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
+	"viewFormat" => 'Custom');
+$tdataindschedule[".totalsFields"][] = array(
+	"fName" => "DHOT",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Custom');
+$tdataindschedule[".totalsFields"][] = array(
+	"fName" => "RDOTHrs",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Custom');
+$tdataindschedule[".totalsFields"][] = array(
+	"fName" => "NDOT",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Custom');
 $tdataindschedule[".totalsFields"][] = array(
 	"fName" => "RHNDOTHrs",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
+	"viewFormat" => 'Custom');
 $tdataindschedule[".totalsFields"][] = array(
 	"fName" => "SHNDOTHrs",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
+	"viewFormat" => 'Custom');
 $tdataindschedule[".totalsFields"][] = array(
-	"fName" => "CHNDOTHrs",
+	"fName" => "DHNDOT",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
+	"viewFormat" => 'Custom');
 $tdataindschedule[".totalsFields"][] = array(
 	"fName" => "RDNDOTHrs",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
+	"viewFormat" => 'Custom');
+$tdataindschedule[".totalsFields"][] = array(
+	"fName" => "RHRDOT",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Custom');
+$tdataindschedule[".totalsFields"][] = array(
+	"fName" => "SHRDOT",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Custom');
+$tdataindschedule[".totalsFields"][] = array(
+	"fName" => "SHRDOTD",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Custom');
+$tdataindschedule[".totalsFields"][] = array(
+	"fName" => "DHRDOT",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Custom');
+$tdataindschedule[".totalsFields"][] = array(
+	"fName" => "RHRDNDOT",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Custom');
+$tdataindschedule[".totalsFields"][] = array(
+	"fName" => "SHRDNDOT",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Custom');
+$tdataindschedule[".totalsFields"][] = array(
+	"fName" => "DHRDNDOT",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Custom');
 $tdataindschedule[".totalsFields"][] = array(
 	"fName" => "VLDay",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
+	"viewFormat" => 'Custom');
 $tdataindschedule[".totalsFields"][] = array(
 	"fName" => "SLDay",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
+	"viewFormat" => 'Custom');
 $tdataindschedule[".totalsFields"][] = array(
 	"fName" => "ELDay",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
+	"viewFormat" => 'Custom');
 $tdataindschedule[".totalsFields"][] = array(
 	"fName" => "PLDay",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
+	"viewFormat" => 'Custom');
 $tdataindschedule[".totalsFields"][] = array(
-	"fName" => "RDHrs",
+	"fName" => "TrODay",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
+	"viewFormat" => 'Custom');
+$tdataindschedule[".totalsFields"][] = array(
+	"fName" => "RegRD",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Custom');
+$tdataindschedule[".totalsFields"][] = array(
+	"fName" => "RHRD",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Custom');
+$tdataindschedule[".totalsFields"][] = array(
+	"fName" => "SHRD",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Custom');
+$tdataindschedule[".totalsFields"][] = array(
+	"fName" => "DHRD",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Custom');
 
 $tdataindschedule[".pageSize"] = 20;
 
@@ -707,7 +787,7 @@ $tdataindschedule[".orderindexes"] = array();
 	$tdataindschedule[".orderindexes"][] = array(1, (1 ? "ASC" : "DESC"), "ScID");
 
 
-$tdataindschedule[".sqlHead"] = "SELECT ScID,  UserName,  SDate,  STimeIn,  STimeOut,  SchedType,  ApprovedOT,  AOTMins,  WageType,  ApprovedNightDiff,  ANDiff,  EmployeeID,  MinsPerDay,  BreakMins,  Shift,  ApprovedRD,  RDMins,  LunchBreakFrom,  LunchBreakTo,  NDMealAllowancePerShift,  NDMinimumHrs,  NDMealAllowance,  Division,  TimeIn,  TimeOut,  DayIs,  RestDay,  Department,  RegWD,  DWork,  Absent,  LateMins,  UndertimeMins,  RHolidayHrs,  SHolidayHrs,  CHolidayHrs,  ExcessHrs,  RegOTHrs,  RHOTHrs,  SHOTHrs,  CHOTHrs,  RDOTHrs,  NDHrs,  RDHrs,  RegNDHrs,  RHNDHrs,  SHNDHrs,  CHNDHrs,  RDNDHrs,  VLDay,  SLDay,  ELDay,  PLDay,  TrODay,  HolidayType,  Mispunched,  Holiday1stHalf,  Holiday2ndHalf,  TotLateMins,  LatePenaltyMins,  Employer,  LateFixPenalty,  AfterBreakLogOut,  AfterBreakLog,  PreLogMins,  IncludeBreakLate,  GracePeriodMins,  BreakLateMins,  ANDOTMins,  RegNDOTHrs,  RHNDOTHrs,  SHNDOTHrs,  CHNDOTHrs,  RDNDOTHrs,  DH,  DHRD,  DHOT,  DHRDOT,  SHRDND,  RHRDND,  SHRDNDOT,  RHRDNDOT,  DHND,  DHRDND,  DHNDOT,  DHRDNDOT";
+$tdataindschedule[".sqlHead"] = "SELECT ScID,  UserName,  SDate,  STimeIn,  STimeOut,  SchedType,  ApprovedOT,  WageType,  ApprovedNightDiff,  EmployeeID,  BreakMins,  Shift,  ApprovedRD,  LunchBreakFrom,  LunchBreakTo,  Division,  TimeIn,  TimeOut,  DayIs,  RestDay,  Department,  RegWD,  DWork,  Absent,  LateMins,  UndertimeMins,  RHolidayHrs,  SHolidayHrs,  ExcessHrs,  RegOTHrs,  RHOTHrs,  SHOTHrs,  RDOTHrs,  RHNDHrs,  SHNDHrs,  RDNDHrs,  VLDay,  SLDay,  ELDay,  PLDay,  TrODay,  HolidayType,  Mispunched,  Holiday1stHalf,  Holiday2ndHalf,  TotLateMins,  LatePenaltyMins,  Employer,  LateFixPenalty,  AfterBreakLogOut,  AfterBreakLog,  BreakLateMins,  RHNDOTHrs,  SHNDOTHrs,  RDNDOTHrs,  DH,  DHRD,  DHOT,  DHRDOT,  SHRDND,  RHRDND,  SHRDNDOT,  RHRDNDOT,  DHND,  DHRDND,  DHNDOT,  DHRDNDOT,  RHRDOT,  SHRDOT,  RegND,  RegRD,  SHOTD,  SHRDOTD,  NDOT,  RHRD,  SHRD";
 $tdataindschedule[".sqlFrom"] = "FROM indschedule";
 $tdataindschedule[".sqlWhereExpr"] = "";
 $tdataindschedule[".sqlTail"] = "";
@@ -769,23 +849,17 @@ $arrEditTabs[] = array('tabId'=>'Time_Log1',
 	$tabFields = array();
 	
 	
-		$tabFields[] = "PreLogMins";
-	
-		$tabFields[] = "IncludeBreakLate";
-	
-		$tabFields[] = "GracePeriodMins";
-	
 		$tabFields[] = "LateMins";
 	
 		$tabFields[] = "UndertimeMins";
 	
 		$tabFields[] = "LatePenaltyMins";
 	
-		$tabFields[] = "TotLateMins";
-	
 		$tabFields[] = "LateFixPenalty";
 	
 		$tabFields[] = "BreakLateMins";
+	
+		$tabFields[] = "TotLateMins";
 $arrEditTabs[] = array('tabId'=>'Lates_and_Undertime1',
 					   'tabName'=>"Lates and Undertime",
 					   'nType'=>'0',
@@ -806,56 +880,38 @@ $arrEditTabs[] = array('tabId'=>'Lates_and_Undertime1',
 	
 		$tabFields[] = "SHolidayHrs";
 	
-		$tabFields[] = "CHolidayHrs";
-	
 		$tabFields[] = "DH";
-	
-		$tabFields[] = "DHRD";
 $arrEditTabs[] = array('tabId'=>'Holiday1',
 					   'tabName'=>"Holiday",
 					   'nType'=>'0',
-					   'nOrder'=>33,
+					   'nOrder'=>30,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
 	$tabFields = array();
 	
 	
-		$tabFields[] = "NDHrs";
-	
 		$tabFields[] = "ApprovedNightDiff";
 	
-		$tabFields[] = "ANDiff";
-	
-		$tabFields[] = "ANDOTMins";
-	
-		$tabFields[] = "RegNDHrs";
+		$tabFields[] = "RegND";
 	
 		$tabFields[] = "RHNDHrs";
 	
-		$tabFields[] = "RDNDHrs";
-	
 		$tabFields[] = "SHNDHrs";
-	
-		$tabFields[] = "CHNDHrs";
 	
 		$tabFields[] = "DHND";
 	
-		$tabFields[] = "DHRDND";
-	
-		$tabFields[] = "SHRDND";
+		$tabFields[] = "RDNDHrs";
 	
 		$tabFields[] = "RHRDND";
 	
-		$tabFields[] = "NDMealAllowance";
+		$tabFields[] = "SHRDND";
 	
-		$tabFields[] = "NDMealAllowancePerShift";
-	
-		$tabFields[] = "NDMinimumHrs";
+		$tabFields[] = "DHRDND";
 $arrEditTabs[] = array('tabId'=>'Night_Diff1',
 					   'tabName'=>"Night Diff",
 					   'nType'=>'0',
-					   'nOrder'=>42,
+					   'nOrder'=>37,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -866,45 +922,45 @@ $arrEditTabs[] = array('tabId'=>'Night_Diff1',
 	
 		$tabFields[] = "ApprovedOT";
 	
-		$tabFields[] = "AOTMins";
-	
 		$tabFields[] = "RegOTHrs";
-	
-		$tabFields[] = "SHOTHrs";
-	
-		$tabFields[] = "CHOTHrs";
-	
-		$tabFields[] = "RDOTHrs";
 	
 		$tabFields[] = "RHOTHrs";
 	
-		$tabFields[] = "TrODay";
+		$tabFields[] = "SHOTHrs";
 	
-		$tabFields[] = "RegNDOTHrs";
+		$tabFields[] = "SHOTD";
+	
+		$tabFields[] = "DHOT";
+	
+		$tabFields[] = "RDOTHrs";
+	
+		$tabFields[] = "NDOT";
 	
 		$tabFields[] = "RHNDOTHrs";
 	
 		$tabFields[] = "SHNDOTHrs";
 	
-		$tabFields[] = "CHNDOTHrs";
+		$tabFields[] = "DHNDOT";
 	
 		$tabFields[] = "RDNDOTHrs";
+	
+		$tabFields[] = "RHRDOT";
+	
+		$tabFields[] = "SHRDOT";
+	
+		$tabFields[] = "SHRDOTD";
+	
+		$tabFields[] = "DHRDOT";
 	
 		$tabFields[] = "RHRDNDOT";
 	
 		$tabFields[] = "SHRDNDOT";
 	
 		$tabFields[] = "DHRDNDOT";
-	
-		$tabFields[] = "DHOT";
-	
-		$tabFields[] = "DHNDOT";
-	
-		$tabFields[] = "DHRDOT";
 $arrEditTabs[] = array('tabId'=>'Overtime1',
 					   'tabName'=>"Overtime",
 					   'nType'=>'0',
-					   'nOrder'=>59,
+					   'nOrder'=>47,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -918,10 +974,31 @@ $arrEditTabs[] = array('tabId'=>'Overtime1',
 		$tabFields[] = "ELDay";
 	
 		$tabFields[] = "PLDay";
+	
+		$tabFields[] = "TrODay";
 $arrEditTabs[] = array('tabId'=>'Leaves1',
 					   'tabName'=>"Leaves",
 					   'nType'=>'0',
-					   'nOrder'=>80,
+					   'nOrder'=>68,
+					   'tabGroup'=>1,
+					   'arrFields'=> $tabFields,
+					   'expandSec'=>0);
+	$tabFields = array();
+	
+	
+		$tabFields[] = "ApprovedRD";
+	
+		$tabFields[] = "RegRD";
+	
+		$tabFields[] = "RHRD";
+	
+		$tabFields[] = "SHRD";
+	
+		$tabFields[] = "DHRD";
+$arrEditTabs[] = array('tabId'=>'Rest_Day1',
+					   'tabName'=>"Rest Day",
+					   'nType'=>'0',
+					   'nOrder'=>74,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -932,28 +1009,11 @@ $arrEditTabs[] = array('tabId'=>'Leaves1',
 	
 		$tabFields[] = "Shift";
 	
-		$tabFields[] = "MinsPerDay";
-	
 		$tabFields[] = "BreakMins";
 $arrEditTabs[] = array('tabId'=>'Sched_Setup1',
 					   'tabName'=>"Sched Setup",
 					   'nType'=>'0',
-					   'nOrder'=>85,
-					   'tabGroup'=>1,
-					   'arrFields'=> $tabFields,
-					   'expandSec'=>0);
-	$tabFields = array();
-	
-	
-		$tabFields[] = "RDMins";
-	
-		$tabFields[] = "ApprovedRD";
-	
-		$tabFields[] = "RDHrs";
-$arrEditTabs[] = array('tabId'=>'Rest_Day1',
-					   'tabName'=>"Rest Day",
-					   'nType'=>'0',
-					   'nOrder'=>90,
+					   'nOrder'=>80,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -1016,23 +1076,17 @@ $arrAddTabs[] = array('tabId'=>'Time_Log1',
 	$tabFields = array();
 	
 	
-		$tabFields[] = "PreLogMins";
-	
-		$tabFields[] = "IncludeBreakLate";
-	
-		$tabFields[] = "GracePeriodMins";
-	
 		$tabFields[] = "LateMins";
 	
 		$tabFields[] = "UndertimeMins";
 	
 		$tabFields[] = "LatePenaltyMins";
 	
-		$tabFields[] = "TotLateMins";
-	
 		$tabFields[] = "LateFixPenalty";
 	
 		$tabFields[] = "BreakLateMins";
+	
+		$tabFields[] = "TotLateMins";
 $arrAddTabs[] = array('tabId'=>'Lates_and_Undertime1',
 					  'tabName'=>"Lates and Undertime",
 					  'nType'=>'0',
@@ -1053,56 +1107,38 @@ $arrAddTabs[] = array('tabId'=>'Lates_and_Undertime1',
 	
 		$tabFields[] = "SHolidayHrs";
 	
-		$tabFields[] = "CHolidayHrs";
-	
 		$tabFields[] = "DH";
-	
-		$tabFields[] = "DHRD";
 $arrAddTabs[] = array('tabId'=>'Holiday1',
 					  'tabName'=>"Holiday",
 					  'nType'=>'0',
-					  'nOrder'=>33,
+					  'nOrder'=>30,
 					  'tabGroup'=>1,
 					  'arrFields'=> $tabFields,
 					  'expandSec'=>0);
 	$tabFields = array();
 	
 	
-		$tabFields[] = "NDHrs";
-	
 		$tabFields[] = "ApprovedNightDiff";
 	
-		$tabFields[] = "ANDiff";
-	
-		$tabFields[] = "ANDOTMins";
-	
-		$tabFields[] = "RegNDHrs";
+		$tabFields[] = "RegND";
 	
 		$tabFields[] = "RHNDHrs";
 	
-		$tabFields[] = "RDNDHrs";
-	
 		$tabFields[] = "SHNDHrs";
-	
-		$tabFields[] = "CHNDHrs";
 	
 		$tabFields[] = "DHND";
 	
-		$tabFields[] = "DHRDND";
-	
-		$tabFields[] = "SHRDND";
+		$tabFields[] = "RDNDHrs";
 	
 		$tabFields[] = "RHRDND";
 	
-		$tabFields[] = "NDMealAllowance";
+		$tabFields[] = "SHRDND";
 	
-		$tabFields[] = "NDMealAllowancePerShift";
-	
-		$tabFields[] = "NDMinimumHrs";
+		$tabFields[] = "DHRDND";
 $arrAddTabs[] = array('tabId'=>'Night_Diff1',
 					  'tabName'=>"Night Diff",
 					  'nType'=>'0',
-					  'nOrder'=>42,
+					  'nOrder'=>37,
 					  'tabGroup'=>1,
 					  'arrFields'=> $tabFields,
 					  'expandSec'=>0);
@@ -1113,45 +1149,45 @@ $arrAddTabs[] = array('tabId'=>'Night_Diff1',
 	
 		$tabFields[] = "ApprovedOT";
 	
-		$tabFields[] = "AOTMins";
-	
 		$tabFields[] = "RegOTHrs";
-	
-		$tabFields[] = "SHOTHrs";
-	
-		$tabFields[] = "CHOTHrs";
-	
-		$tabFields[] = "RDOTHrs";
 	
 		$tabFields[] = "RHOTHrs";
 	
-		$tabFields[] = "TrODay";
+		$tabFields[] = "SHOTHrs";
 	
-		$tabFields[] = "RegNDOTHrs";
+		$tabFields[] = "SHOTD";
+	
+		$tabFields[] = "DHOT";
+	
+		$tabFields[] = "RDOTHrs";
+	
+		$tabFields[] = "NDOT";
 	
 		$tabFields[] = "RHNDOTHrs";
 	
 		$tabFields[] = "SHNDOTHrs";
 	
-		$tabFields[] = "CHNDOTHrs";
+		$tabFields[] = "DHNDOT";
 	
 		$tabFields[] = "RDNDOTHrs";
+	
+		$tabFields[] = "RHRDOT";
+	
+		$tabFields[] = "SHRDOT";
+	
+		$tabFields[] = "SHRDOTD";
+	
+		$tabFields[] = "DHRDOT";
 	
 		$tabFields[] = "RHRDNDOT";
 	
 		$tabFields[] = "SHRDNDOT";
 	
 		$tabFields[] = "DHRDNDOT";
-	
-		$tabFields[] = "DHOT";
-	
-		$tabFields[] = "DHNDOT";
-	
-		$tabFields[] = "DHRDOT";
 $arrAddTabs[] = array('tabId'=>'Overtime1',
 					  'tabName'=>"Overtime",
 					  'nType'=>'0',
-					  'nOrder'=>59,
+					  'nOrder'=>47,
 					  'tabGroup'=>1,
 					  'arrFields'=> $tabFields,
 					  'expandSec'=>0);
@@ -1165,10 +1201,31 @@ $arrAddTabs[] = array('tabId'=>'Overtime1',
 		$tabFields[] = "ELDay";
 	
 		$tabFields[] = "PLDay";
+	
+		$tabFields[] = "TrODay";
 $arrAddTabs[] = array('tabId'=>'Leaves1',
 					  'tabName'=>"Leaves",
 					  'nType'=>'0',
-					  'nOrder'=>80,
+					  'nOrder'=>68,
+					  'tabGroup'=>1,
+					  'arrFields'=> $tabFields,
+					  'expandSec'=>0);
+	$tabFields = array();
+	
+	
+		$tabFields[] = "ApprovedRD";
+	
+		$tabFields[] = "RegRD";
+	
+		$tabFields[] = "RHRD";
+	
+		$tabFields[] = "SHRD";
+	
+		$tabFields[] = "DHRD";
+$arrAddTabs[] = array('tabId'=>'Rest_Day1',
+					  'tabName'=>"Rest Day",
+					  'nType'=>'0',
+					  'nOrder'=>74,
 					  'tabGroup'=>1,
 					  'arrFields'=> $tabFields,
 					  'expandSec'=>0);
@@ -1179,28 +1236,11 @@ $arrAddTabs[] = array('tabId'=>'Leaves1',
 	
 		$tabFields[] = "Shift";
 	
-		$tabFields[] = "MinsPerDay";
-	
 		$tabFields[] = "BreakMins";
 $arrAddTabs[] = array('tabId'=>'Sched_Setup1',
 					  'tabName'=>"Sched Setup",
 					  'nType'=>'0',
-					  'nOrder'=>85,
-					  'tabGroup'=>1,
-					  'arrFields'=> $tabFields,
-					  'expandSec'=>0);
-	$tabFields = array();
-	
-	
-		$tabFields[] = "RDMins";
-	
-		$tabFields[] = "ApprovedRD";
-	
-		$tabFields[] = "RDHrs";
-$arrAddTabs[] = array('tabId'=>'Rest_Day1',
-					  'tabName'=>"Rest Day",
-					  'nType'=>'0',
-					  'nOrder'=>90,
+					  'nOrder'=>80,
 					  'tabGroup'=>1,
 					  'arrFields'=> $tabFields,
 					  'expandSec'=>0);
@@ -1234,25 +1274,22 @@ $arrViewTabs = array();
 $arrViewTabs[] = array('tabId'=>'Time_Log1',
 					   'tabName'=>"Time Log",
 					   'nType'=>'0',
-					   'nOrder'=>2,
+					   'nOrder'=>1,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
 	$tabFields = array();
 	
-	$tabFields[] = "PreLogMins";
-	$tabFields[] = "IncludeBreakLate";
-	$tabFields[] = "GracePeriodMins";
 	$tabFields[] = "LateMins";
 	$tabFields[] = "UndertimeMins";
 	$tabFields[] = "LatePenaltyMins";
-	$tabFields[] = "TotLateMins";
 	$tabFields[] = "LateFixPenalty";
 	$tabFields[] = "BreakLateMins";
+	$tabFields[] = "TotLateMins";
 $arrViewTabs[] = array('tabId'=>'Lates_and_Undertime1',
 					   'tabName'=>"Lates and Undertime",
 					   'nType'=>'0',
-					   'nOrder'=>24,
+					   'nOrder'=>23,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -1263,38 +1300,29 @@ $arrViewTabs[] = array('tabId'=>'Lates_and_Undertime1',
 	$tabFields[] = "Holiday2ndHalf";
 	$tabFields[] = "RHolidayHrs";
 	$tabFields[] = "SHolidayHrs";
-	$tabFields[] = "CHolidayHrs";
 	$tabFields[] = "DH";
-	$tabFields[] = "DHRD";
 $arrViewTabs[] = array('tabId'=>'Holiday1',
 					   'tabName'=>"Holiday",
 					   'nType'=>'0',
-					   'nOrder'=>34,
+					   'nOrder'=>30,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
 	$tabFields = array();
 	
-	$tabFields[] = "NDHrs";
 	$tabFields[] = "ApprovedNightDiff";
-	$tabFields[] = "ANDiff";
-	$tabFields[] = "ANDOTMins";
-	$tabFields[] = "RegNDHrs";
+	$tabFields[] = "RegND";
 	$tabFields[] = "RHNDHrs";
-	$tabFields[] = "RDNDHrs";
 	$tabFields[] = "SHNDHrs";
-	$tabFields[] = "CHNDHrs";
 	$tabFields[] = "DHND";
-	$tabFields[] = "DHRDND";
-	$tabFields[] = "SHRDND";
+	$tabFields[] = "RDNDHrs";
 	$tabFields[] = "RHRDND";
-	$tabFields[] = "NDMealAllowance";
-	$tabFields[] = "NDMealAllowancePerShift";
-	$tabFields[] = "NDMinimumHrs";
+	$tabFields[] = "SHRDND";
+	$tabFields[] = "DHRDND";
 $arrViewTabs[] = array('tabId'=>'Night_Diff1',
 					   'tabName'=>"Night Diff",
 					   'nType'=>'0',
-					   'nOrder'=>43,
+					   'nOrder'=>37,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -1302,28 +1330,28 @@ $arrViewTabs[] = array('tabId'=>'Night_Diff1',
 	
 	$tabFields[] = "ExcessHrs";
 	$tabFields[] = "ApprovedOT";
-	$tabFields[] = "AOTMins";
 	$tabFields[] = "RegOTHrs";
-	$tabFields[] = "SHOTHrs";
-	$tabFields[] = "CHOTHrs";
-	$tabFields[] = "RDOTHrs";
 	$tabFields[] = "RHOTHrs";
-	$tabFields[] = "TrODay";
-	$tabFields[] = "RegNDOTHrs";
+	$tabFields[] = "SHOTHrs";
+	$tabFields[] = "SHOTD";
+	$tabFields[] = "DHOT";
+	$tabFields[] = "RDOTHrs";
+	$tabFields[] = "NDOT";
 	$tabFields[] = "RHNDOTHrs";
 	$tabFields[] = "SHNDOTHrs";
-	$tabFields[] = "CHNDOTHrs";
+	$tabFields[] = "DHNDOT";
 	$tabFields[] = "RDNDOTHrs";
+	$tabFields[] = "RHRDOT";
+	$tabFields[] = "SHRDOT";
+	$tabFields[] = "SHRDOTD";
+	$tabFields[] = "DHRDOT";
 	$tabFields[] = "RHRDNDOT";
 	$tabFields[] = "SHRDNDOT";
 	$tabFields[] = "DHRDNDOT";
-	$tabFields[] = "DHOT";
-	$tabFields[] = "DHNDOT";
-	$tabFields[] = "DHRDOT";
 $arrViewTabs[] = array('tabId'=>'Overtime1',
 					   'tabName'=>"Overtime",
 					   'nType'=>'0',
-					   'nOrder'=>60,
+					   'nOrder'=>47,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -1333,10 +1361,25 @@ $arrViewTabs[] = array('tabId'=>'Overtime1',
 	$tabFields[] = "SLDay";
 	$tabFields[] = "ELDay";
 	$tabFields[] = "PLDay";
+	$tabFields[] = "TrODay";
 $arrViewTabs[] = array('tabId'=>'Leaves1',
 					   'tabName'=>"Leaves",
 					   'nType'=>'0',
-					   'nOrder'=>81,
+					   'nOrder'=>68,
+					   'tabGroup'=>1,
+					   'arrFields'=> $tabFields,
+					   'expandSec'=>0);
+	$tabFields = array();
+	
+	$tabFields[] = "ApprovedRD";
+	$tabFields[] = "RegRD";
+	$tabFields[] = "RHRD";
+	$tabFields[] = "SHRD";
+	$tabFields[] = "DHRD";
+$arrViewTabs[] = array('tabId'=>'Rest_Day1',
+					   'tabName'=>"Rest Day",
+					   'nType'=>'0',
+					   'nOrder'=>74,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -1344,24 +1387,11 @@ $arrViewTabs[] = array('tabId'=>'Leaves1',
 	
 	$tabFields[] = "SchedType";
 	$tabFields[] = "Shift";
-	$tabFields[] = "MinsPerDay";
 	$tabFields[] = "BreakMins";
 $arrViewTabs[] = array('tabId'=>'Sched_Setup1',
 					   'tabName'=>"Sched Setup",
 					   'nType'=>'0',
-					   'nOrder'=>86,
-					   'tabGroup'=>1,
-					   'arrFields'=> $tabFields,
-					   'expandSec'=>0);
-	$tabFields = array();
-	
-	$tabFields[] = "RDMins";
-	$tabFields[] = "ApprovedRD";
-	$tabFields[] = "RDHrs";
-$arrViewTabs[] = array('tabId'=>'Rest_Day1',
-					   'tabName'=>"Rest Day",
-					   'nType'=>'0',
-					   'nOrder'=>91,
+					   'nOrder'=>80,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -1424,70 +1454,60 @@ $tdataindschedule[".listFields"][] = "Mispunched";
 $tdataindschedule[".listFields"][] = "RegWD";
 $tdataindschedule[".listFields"][] = "DWork";
 $tdataindschedule[".listFields"][] = "Absent";
-$tdataindschedule[".listFields"][] = "PreLogMins";
-$tdataindschedule[".listFields"][] = "IncludeBreakLate";
-$tdataindschedule[".listFields"][] = "GracePeriodMins";
 $tdataindschedule[".listFields"][] = "LateMins";
 $tdataindschedule[".listFields"][] = "UndertimeMins";
 $tdataindschedule[".listFields"][] = "LatePenaltyMins";
-$tdataindschedule[".listFields"][] = "TotLateMins";
 $tdataindschedule[".listFields"][] = "LateFixPenalty";
 $tdataindschedule[".listFields"][] = "BreakLateMins";
+$tdataindschedule[".listFields"][] = "TotLateMins";
 $tdataindschedule[".listFields"][] = "HolidayType";
 $tdataindschedule[".listFields"][] = "Holiday1stHalf";
 $tdataindschedule[".listFields"][] = "Holiday2ndHalf";
 $tdataindschedule[".listFields"][] = "RHolidayHrs";
 $tdataindschedule[".listFields"][] = "SHolidayHrs";
-$tdataindschedule[".listFields"][] = "CHolidayHrs";
 $tdataindschedule[".listFields"][] = "DH";
-$tdataindschedule[".listFields"][] = "DHRD";
-$tdataindschedule[".listFields"][] = "NDHrs";
 $tdataindschedule[".listFields"][] = "ApprovedNightDiff";
-$tdataindschedule[".listFields"][] = "ANDiff";
-$tdataindschedule[".listFields"][] = "ANDOTMins";
-$tdataindschedule[".listFields"][] = "RegNDHrs";
+$tdataindschedule[".listFields"][] = "RegND";
 $tdataindschedule[".listFields"][] = "RHNDHrs";
-$tdataindschedule[".listFields"][] = "RDNDHrs";
 $tdataindschedule[".listFields"][] = "SHNDHrs";
-$tdataindschedule[".listFields"][] = "CHNDHrs";
 $tdataindschedule[".listFields"][] = "DHND";
-$tdataindschedule[".listFields"][] = "DHRDND";
-$tdataindschedule[".listFields"][] = "SHRDND";
+$tdataindschedule[".listFields"][] = "RDNDHrs";
 $tdataindschedule[".listFields"][] = "RHRDND";
-$tdataindschedule[".listFields"][] = "NDMealAllowance";
-$tdataindschedule[".listFields"][] = "NDMealAllowancePerShift";
-$tdataindschedule[".listFields"][] = "NDMinimumHrs";
+$tdataindschedule[".listFields"][] = "SHRDND";
+$tdataindschedule[".listFields"][] = "DHRDND";
 $tdataindschedule[".listFields"][] = "ExcessHrs";
 $tdataindschedule[".listFields"][] = "ApprovedOT";
-$tdataindschedule[".listFields"][] = "AOTMins";
 $tdataindschedule[".listFields"][] = "RegOTHrs";
-$tdataindschedule[".listFields"][] = "SHOTHrs";
-$tdataindschedule[".listFields"][] = "CHOTHrs";
-$tdataindschedule[".listFields"][] = "RDOTHrs";
 $tdataindschedule[".listFields"][] = "RHOTHrs";
-$tdataindschedule[".listFields"][] = "TrODay";
-$tdataindschedule[".listFields"][] = "RegNDOTHrs";
+$tdataindschedule[".listFields"][] = "SHOTHrs";
+$tdataindschedule[".listFields"][] = "SHOTD";
+$tdataindschedule[".listFields"][] = "DHOT";
+$tdataindschedule[".listFields"][] = "RDOTHrs";
+$tdataindschedule[".listFields"][] = "NDOT";
 $tdataindschedule[".listFields"][] = "RHNDOTHrs";
 $tdataindschedule[".listFields"][] = "SHNDOTHrs";
-$tdataindschedule[".listFields"][] = "CHNDOTHrs";
+$tdataindschedule[".listFields"][] = "DHNDOT";
 $tdataindschedule[".listFields"][] = "RDNDOTHrs";
+$tdataindschedule[".listFields"][] = "RHRDOT";
+$tdataindschedule[".listFields"][] = "SHRDOT";
+$tdataindschedule[".listFields"][] = "SHRDOTD";
+$tdataindschedule[".listFields"][] = "DHRDOT";
 $tdataindschedule[".listFields"][] = "RHRDNDOT";
 $tdataindschedule[".listFields"][] = "SHRDNDOT";
 $tdataindschedule[".listFields"][] = "DHRDNDOT";
-$tdataindschedule[".listFields"][] = "DHOT";
-$tdataindschedule[".listFields"][] = "DHNDOT";
-$tdataindschedule[".listFields"][] = "DHRDOT";
 $tdataindschedule[".listFields"][] = "VLDay";
 $tdataindschedule[".listFields"][] = "SLDay";
 $tdataindschedule[".listFields"][] = "ELDay";
 $tdataindschedule[".listFields"][] = "PLDay";
+$tdataindschedule[".listFields"][] = "TrODay";
+$tdataindschedule[".listFields"][] = "ApprovedRD";
+$tdataindschedule[".listFields"][] = "RegRD";
+$tdataindschedule[".listFields"][] = "RHRD";
+$tdataindschedule[".listFields"][] = "SHRD";
+$tdataindschedule[".listFields"][] = "DHRD";
 $tdataindschedule[".listFields"][] = "SchedType";
 $tdataindschedule[".listFields"][] = "Shift";
-$tdataindschedule[".listFields"][] = "MinsPerDay";
 $tdataindschedule[".listFields"][] = "BreakMins";
-$tdataindschedule[".listFields"][] = "RDMins";
-$tdataindschedule[".listFields"][] = "ApprovedRD";
-$tdataindschedule[".listFields"][] = "RDHrs";
 
 $tdataindschedule[".hideMobileList"] = array();
 
@@ -1515,70 +1535,60 @@ $tdataindschedule[".viewFields"][] = "Mispunched";
 $tdataindschedule[".viewFields"][] = "RegWD";
 $tdataindschedule[".viewFields"][] = "DWork";
 $tdataindschedule[".viewFields"][] = "Absent";
-$tdataindschedule[".viewFields"][] = "PreLogMins";
-$tdataindschedule[".viewFields"][] = "IncludeBreakLate";
-$tdataindschedule[".viewFields"][] = "GracePeriodMins";
 $tdataindschedule[".viewFields"][] = "LateMins";
 $tdataindschedule[".viewFields"][] = "UndertimeMins";
 $tdataindschedule[".viewFields"][] = "LatePenaltyMins";
-$tdataindschedule[".viewFields"][] = "TotLateMins";
 $tdataindschedule[".viewFields"][] = "LateFixPenalty";
 $tdataindschedule[".viewFields"][] = "BreakLateMins";
+$tdataindschedule[".viewFields"][] = "TotLateMins";
 $tdataindschedule[".viewFields"][] = "HolidayType";
 $tdataindschedule[".viewFields"][] = "Holiday1stHalf";
 $tdataindschedule[".viewFields"][] = "Holiday2ndHalf";
 $tdataindschedule[".viewFields"][] = "RHolidayHrs";
 $tdataindschedule[".viewFields"][] = "SHolidayHrs";
-$tdataindschedule[".viewFields"][] = "CHolidayHrs";
 $tdataindschedule[".viewFields"][] = "DH";
-$tdataindschedule[".viewFields"][] = "DHRD";
-$tdataindschedule[".viewFields"][] = "NDHrs";
 $tdataindschedule[".viewFields"][] = "ApprovedNightDiff";
-$tdataindschedule[".viewFields"][] = "ANDiff";
-$tdataindschedule[".viewFields"][] = "ANDOTMins";
-$tdataindschedule[".viewFields"][] = "RegNDHrs";
+$tdataindschedule[".viewFields"][] = "RegND";
 $tdataindschedule[".viewFields"][] = "RHNDHrs";
-$tdataindschedule[".viewFields"][] = "RDNDHrs";
 $tdataindschedule[".viewFields"][] = "SHNDHrs";
-$tdataindschedule[".viewFields"][] = "CHNDHrs";
 $tdataindschedule[".viewFields"][] = "DHND";
-$tdataindschedule[".viewFields"][] = "DHRDND";
-$tdataindschedule[".viewFields"][] = "SHRDND";
+$tdataindschedule[".viewFields"][] = "RDNDHrs";
 $tdataindschedule[".viewFields"][] = "RHRDND";
-$tdataindschedule[".viewFields"][] = "NDMealAllowance";
-$tdataindschedule[".viewFields"][] = "NDMealAllowancePerShift";
-$tdataindschedule[".viewFields"][] = "NDMinimumHrs";
+$tdataindschedule[".viewFields"][] = "SHRDND";
+$tdataindschedule[".viewFields"][] = "DHRDND";
 $tdataindschedule[".viewFields"][] = "ExcessHrs";
 $tdataindschedule[".viewFields"][] = "ApprovedOT";
-$tdataindschedule[".viewFields"][] = "AOTMins";
 $tdataindschedule[".viewFields"][] = "RegOTHrs";
-$tdataindschedule[".viewFields"][] = "SHOTHrs";
-$tdataindschedule[".viewFields"][] = "CHOTHrs";
-$tdataindschedule[".viewFields"][] = "RDOTHrs";
 $tdataindschedule[".viewFields"][] = "RHOTHrs";
-$tdataindschedule[".viewFields"][] = "TrODay";
-$tdataindschedule[".viewFields"][] = "RegNDOTHrs";
+$tdataindschedule[".viewFields"][] = "SHOTHrs";
+$tdataindschedule[".viewFields"][] = "SHOTD";
+$tdataindschedule[".viewFields"][] = "DHOT";
+$tdataindschedule[".viewFields"][] = "RDOTHrs";
+$tdataindschedule[".viewFields"][] = "NDOT";
 $tdataindschedule[".viewFields"][] = "RHNDOTHrs";
 $tdataindschedule[".viewFields"][] = "SHNDOTHrs";
-$tdataindschedule[".viewFields"][] = "CHNDOTHrs";
+$tdataindschedule[".viewFields"][] = "DHNDOT";
 $tdataindschedule[".viewFields"][] = "RDNDOTHrs";
+$tdataindschedule[".viewFields"][] = "RHRDOT";
+$tdataindschedule[".viewFields"][] = "SHRDOT";
+$tdataindschedule[".viewFields"][] = "SHRDOTD";
+$tdataindschedule[".viewFields"][] = "DHRDOT";
 $tdataindschedule[".viewFields"][] = "RHRDNDOT";
 $tdataindschedule[".viewFields"][] = "SHRDNDOT";
 $tdataindschedule[".viewFields"][] = "DHRDNDOT";
-$tdataindschedule[".viewFields"][] = "DHOT";
-$tdataindschedule[".viewFields"][] = "DHNDOT";
-$tdataindschedule[".viewFields"][] = "DHRDOT";
 $tdataindschedule[".viewFields"][] = "VLDay";
 $tdataindschedule[".viewFields"][] = "SLDay";
 $tdataindschedule[".viewFields"][] = "ELDay";
 $tdataindschedule[".viewFields"][] = "PLDay";
+$tdataindschedule[".viewFields"][] = "TrODay";
+$tdataindschedule[".viewFields"][] = "ApprovedRD";
+$tdataindschedule[".viewFields"][] = "RegRD";
+$tdataindschedule[".viewFields"][] = "RHRD";
+$tdataindschedule[".viewFields"][] = "SHRD";
+$tdataindschedule[".viewFields"][] = "DHRD";
 $tdataindschedule[".viewFields"][] = "SchedType";
 $tdataindschedule[".viewFields"][] = "Shift";
-$tdataindschedule[".viewFields"][] = "MinsPerDay";
 $tdataindschedule[".viewFields"][] = "BreakMins";
-$tdataindschedule[".viewFields"][] = "RDMins";
-$tdataindschedule[".viewFields"][] = "ApprovedRD";
-$tdataindschedule[".viewFields"][] = "RDHrs";
 
 $tdataindschedule[".addFields"] = array();
 $tdataindschedule[".addFields"][] = "EmployeeID";
@@ -1602,70 +1612,60 @@ $tdataindschedule[".addFields"][] = "Mispunched";
 $tdataindschedule[".addFields"][] = "RegWD";
 $tdataindschedule[".addFields"][] = "DWork";
 $tdataindschedule[".addFields"][] = "Absent";
-$tdataindschedule[".addFields"][] = "PreLogMins";
-$tdataindschedule[".addFields"][] = "IncludeBreakLate";
-$tdataindschedule[".addFields"][] = "GracePeriodMins";
 $tdataindschedule[".addFields"][] = "LateMins";
 $tdataindschedule[".addFields"][] = "UndertimeMins";
 $tdataindschedule[".addFields"][] = "LatePenaltyMins";
-$tdataindschedule[".addFields"][] = "TotLateMins";
 $tdataindschedule[".addFields"][] = "LateFixPenalty";
 $tdataindschedule[".addFields"][] = "BreakLateMins";
+$tdataindschedule[".addFields"][] = "TotLateMins";
 $tdataindschedule[".addFields"][] = "HolidayType";
 $tdataindschedule[".addFields"][] = "Holiday1stHalf";
 $tdataindschedule[".addFields"][] = "Holiday2ndHalf";
 $tdataindschedule[".addFields"][] = "RHolidayHrs";
 $tdataindschedule[".addFields"][] = "SHolidayHrs";
-$tdataindschedule[".addFields"][] = "CHolidayHrs";
 $tdataindschedule[".addFields"][] = "DH";
-$tdataindschedule[".addFields"][] = "DHRD";
-$tdataindschedule[".addFields"][] = "NDHrs";
 $tdataindschedule[".addFields"][] = "ApprovedNightDiff";
-$tdataindschedule[".addFields"][] = "ANDiff";
-$tdataindschedule[".addFields"][] = "ANDOTMins";
-$tdataindschedule[".addFields"][] = "RegNDHrs";
+$tdataindschedule[".addFields"][] = "RegND";
 $tdataindschedule[".addFields"][] = "RHNDHrs";
-$tdataindschedule[".addFields"][] = "RDNDHrs";
 $tdataindschedule[".addFields"][] = "SHNDHrs";
-$tdataindschedule[".addFields"][] = "CHNDHrs";
 $tdataindschedule[".addFields"][] = "DHND";
-$tdataindschedule[".addFields"][] = "DHRDND";
-$tdataindschedule[".addFields"][] = "SHRDND";
+$tdataindschedule[".addFields"][] = "RDNDHrs";
 $tdataindschedule[".addFields"][] = "RHRDND";
-$tdataindschedule[".addFields"][] = "NDMealAllowance";
-$tdataindschedule[".addFields"][] = "NDMealAllowancePerShift";
-$tdataindschedule[".addFields"][] = "NDMinimumHrs";
+$tdataindschedule[".addFields"][] = "SHRDND";
+$tdataindschedule[".addFields"][] = "DHRDND";
 $tdataindschedule[".addFields"][] = "ExcessHrs";
 $tdataindschedule[".addFields"][] = "ApprovedOT";
-$tdataindschedule[".addFields"][] = "AOTMins";
 $tdataindschedule[".addFields"][] = "RegOTHrs";
-$tdataindschedule[".addFields"][] = "SHOTHrs";
-$tdataindschedule[".addFields"][] = "CHOTHrs";
-$tdataindschedule[".addFields"][] = "RDOTHrs";
 $tdataindschedule[".addFields"][] = "RHOTHrs";
-$tdataindschedule[".addFields"][] = "TrODay";
-$tdataindschedule[".addFields"][] = "RegNDOTHrs";
+$tdataindschedule[".addFields"][] = "SHOTHrs";
+$tdataindschedule[".addFields"][] = "SHOTD";
+$tdataindschedule[".addFields"][] = "DHOT";
+$tdataindschedule[".addFields"][] = "RDOTHrs";
+$tdataindschedule[".addFields"][] = "NDOT";
 $tdataindschedule[".addFields"][] = "RHNDOTHrs";
 $tdataindschedule[".addFields"][] = "SHNDOTHrs";
-$tdataindschedule[".addFields"][] = "CHNDOTHrs";
+$tdataindschedule[".addFields"][] = "DHNDOT";
 $tdataindschedule[".addFields"][] = "RDNDOTHrs";
+$tdataindschedule[".addFields"][] = "RHRDOT";
+$tdataindschedule[".addFields"][] = "SHRDOT";
+$tdataindschedule[".addFields"][] = "SHRDOTD";
+$tdataindschedule[".addFields"][] = "DHRDOT";
 $tdataindschedule[".addFields"][] = "RHRDNDOT";
 $tdataindschedule[".addFields"][] = "SHRDNDOT";
 $tdataindschedule[".addFields"][] = "DHRDNDOT";
-$tdataindschedule[".addFields"][] = "DHOT";
-$tdataindschedule[".addFields"][] = "DHNDOT";
-$tdataindschedule[".addFields"][] = "DHRDOT";
 $tdataindschedule[".addFields"][] = "VLDay";
 $tdataindschedule[".addFields"][] = "SLDay";
 $tdataindschedule[".addFields"][] = "ELDay";
 $tdataindschedule[".addFields"][] = "PLDay";
+$tdataindschedule[".addFields"][] = "TrODay";
+$tdataindschedule[".addFields"][] = "ApprovedRD";
+$tdataindschedule[".addFields"][] = "RegRD";
+$tdataindschedule[".addFields"][] = "RHRD";
+$tdataindschedule[".addFields"][] = "SHRD";
+$tdataindschedule[".addFields"][] = "DHRD";
 $tdataindschedule[".addFields"][] = "SchedType";
 $tdataindschedule[".addFields"][] = "Shift";
-$tdataindschedule[".addFields"][] = "MinsPerDay";
 $tdataindschedule[".addFields"][] = "BreakMins";
-$tdataindschedule[".addFields"][] = "RDMins";
-$tdataindschedule[".addFields"][] = "ApprovedRD";
-$tdataindschedule[".addFields"][] = "RDHrs";
 
 $tdataindschedule[".masterListFields"] = array();
 $tdataindschedule[".masterListFields"][] = "ScID";
@@ -1690,70 +1690,60 @@ $tdataindschedule[".masterListFields"][] = "Mispunched";
 $tdataindschedule[".masterListFields"][] = "RegWD";
 $tdataindschedule[".masterListFields"][] = "DWork";
 $tdataindschedule[".masterListFields"][] = "Absent";
-$tdataindschedule[".masterListFields"][] = "PreLogMins";
-$tdataindschedule[".masterListFields"][] = "IncludeBreakLate";
-$tdataindschedule[".masterListFields"][] = "GracePeriodMins";
 $tdataindschedule[".masterListFields"][] = "LateMins";
 $tdataindschedule[".masterListFields"][] = "UndertimeMins";
 $tdataindschedule[".masterListFields"][] = "LatePenaltyMins";
-$tdataindschedule[".masterListFields"][] = "TotLateMins";
 $tdataindschedule[".masterListFields"][] = "LateFixPenalty";
 $tdataindschedule[".masterListFields"][] = "BreakLateMins";
+$tdataindschedule[".masterListFields"][] = "TotLateMins";
 $tdataindschedule[".masterListFields"][] = "HolidayType";
 $tdataindschedule[".masterListFields"][] = "Holiday1stHalf";
 $tdataindschedule[".masterListFields"][] = "Holiday2ndHalf";
 $tdataindschedule[".masterListFields"][] = "RHolidayHrs";
 $tdataindschedule[".masterListFields"][] = "SHolidayHrs";
-$tdataindschedule[".masterListFields"][] = "CHolidayHrs";
 $tdataindschedule[".masterListFields"][] = "DH";
-$tdataindschedule[".masterListFields"][] = "DHRD";
-$tdataindschedule[".masterListFields"][] = "NDHrs";
 $tdataindschedule[".masterListFields"][] = "ApprovedNightDiff";
-$tdataindschedule[".masterListFields"][] = "ANDiff";
-$tdataindschedule[".masterListFields"][] = "ANDOTMins";
-$tdataindschedule[".masterListFields"][] = "RegNDHrs";
+$tdataindschedule[".masterListFields"][] = "RegND";
 $tdataindschedule[".masterListFields"][] = "RHNDHrs";
-$tdataindschedule[".masterListFields"][] = "RDNDHrs";
 $tdataindschedule[".masterListFields"][] = "SHNDHrs";
-$tdataindschedule[".masterListFields"][] = "CHNDHrs";
 $tdataindschedule[".masterListFields"][] = "DHND";
-$tdataindschedule[".masterListFields"][] = "DHRDND";
-$tdataindschedule[".masterListFields"][] = "SHRDND";
+$tdataindschedule[".masterListFields"][] = "RDNDHrs";
 $tdataindschedule[".masterListFields"][] = "RHRDND";
-$tdataindschedule[".masterListFields"][] = "NDMealAllowance";
-$tdataindschedule[".masterListFields"][] = "NDMealAllowancePerShift";
-$tdataindschedule[".masterListFields"][] = "NDMinimumHrs";
+$tdataindschedule[".masterListFields"][] = "SHRDND";
+$tdataindschedule[".masterListFields"][] = "DHRDND";
 $tdataindschedule[".masterListFields"][] = "ExcessHrs";
 $tdataindschedule[".masterListFields"][] = "ApprovedOT";
-$tdataindschedule[".masterListFields"][] = "AOTMins";
 $tdataindschedule[".masterListFields"][] = "RegOTHrs";
-$tdataindschedule[".masterListFields"][] = "SHOTHrs";
-$tdataindschedule[".masterListFields"][] = "CHOTHrs";
-$tdataindschedule[".masterListFields"][] = "RDOTHrs";
 $tdataindschedule[".masterListFields"][] = "RHOTHrs";
-$tdataindschedule[".masterListFields"][] = "TrODay";
-$tdataindschedule[".masterListFields"][] = "RegNDOTHrs";
+$tdataindschedule[".masterListFields"][] = "SHOTHrs";
+$tdataindschedule[".masterListFields"][] = "SHOTD";
+$tdataindschedule[".masterListFields"][] = "DHOT";
+$tdataindschedule[".masterListFields"][] = "RDOTHrs";
+$tdataindschedule[".masterListFields"][] = "NDOT";
 $tdataindschedule[".masterListFields"][] = "RHNDOTHrs";
 $tdataindschedule[".masterListFields"][] = "SHNDOTHrs";
-$tdataindschedule[".masterListFields"][] = "CHNDOTHrs";
+$tdataindschedule[".masterListFields"][] = "DHNDOT";
 $tdataindschedule[".masterListFields"][] = "RDNDOTHrs";
+$tdataindschedule[".masterListFields"][] = "RHRDOT";
+$tdataindschedule[".masterListFields"][] = "SHRDOT";
+$tdataindschedule[".masterListFields"][] = "SHRDOTD";
+$tdataindschedule[".masterListFields"][] = "DHRDOT";
 $tdataindschedule[".masterListFields"][] = "RHRDNDOT";
 $tdataindschedule[".masterListFields"][] = "SHRDNDOT";
 $tdataindschedule[".masterListFields"][] = "DHRDNDOT";
-$tdataindschedule[".masterListFields"][] = "DHOT";
-$tdataindschedule[".masterListFields"][] = "DHNDOT";
-$tdataindschedule[".masterListFields"][] = "DHRDOT";
 $tdataindschedule[".masterListFields"][] = "VLDay";
 $tdataindschedule[".masterListFields"][] = "SLDay";
 $tdataindschedule[".masterListFields"][] = "ELDay";
 $tdataindschedule[".masterListFields"][] = "PLDay";
+$tdataindschedule[".masterListFields"][] = "TrODay";
+$tdataindschedule[".masterListFields"][] = "ApprovedRD";
+$tdataindschedule[".masterListFields"][] = "RegRD";
+$tdataindschedule[".masterListFields"][] = "RHRD";
+$tdataindschedule[".masterListFields"][] = "SHRD";
+$tdataindschedule[".masterListFields"][] = "DHRD";
 $tdataindschedule[".masterListFields"][] = "SchedType";
 $tdataindschedule[".masterListFields"][] = "Shift";
-$tdataindschedule[".masterListFields"][] = "MinsPerDay";
 $tdataindschedule[".masterListFields"][] = "BreakMins";
-$tdataindschedule[".masterListFields"][] = "RDMins";
-$tdataindschedule[".masterListFields"][] = "ApprovedRD";
-$tdataindschedule[".masterListFields"][] = "RDHrs";
 
 $tdataindschedule[".inlineAddFields"] = array();
 $tdataindschedule[".inlineAddFields"][] = "EmployeeID";
@@ -1777,70 +1767,60 @@ $tdataindschedule[".inlineAddFields"][] = "Mispunched";
 $tdataindschedule[".inlineAddFields"][] = "RegWD";
 $tdataindschedule[".inlineAddFields"][] = "DWork";
 $tdataindschedule[".inlineAddFields"][] = "Absent";
-$tdataindschedule[".inlineAddFields"][] = "PreLogMins";
-$tdataindschedule[".inlineAddFields"][] = "IncludeBreakLate";
-$tdataindschedule[".inlineAddFields"][] = "GracePeriodMins";
 $tdataindschedule[".inlineAddFields"][] = "LateMins";
 $tdataindschedule[".inlineAddFields"][] = "UndertimeMins";
 $tdataindschedule[".inlineAddFields"][] = "LatePenaltyMins";
-$tdataindschedule[".inlineAddFields"][] = "TotLateMins";
 $tdataindschedule[".inlineAddFields"][] = "LateFixPenalty";
 $tdataindschedule[".inlineAddFields"][] = "BreakLateMins";
+$tdataindschedule[".inlineAddFields"][] = "TotLateMins";
 $tdataindschedule[".inlineAddFields"][] = "HolidayType";
 $tdataindschedule[".inlineAddFields"][] = "Holiday1stHalf";
 $tdataindschedule[".inlineAddFields"][] = "Holiday2ndHalf";
 $tdataindschedule[".inlineAddFields"][] = "RHolidayHrs";
 $tdataindschedule[".inlineAddFields"][] = "SHolidayHrs";
-$tdataindschedule[".inlineAddFields"][] = "CHolidayHrs";
 $tdataindschedule[".inlineAddFields"][] = "DH";
-$tdataindschedule[".inlineAddFields"][] = "DHRD";
-$tdataindschedule[".inlineAddFields"][] = "NDHrs";
 $tdataindschedule[".inlineAddFields"][] = "ApprovedNightDiff";
-$tdataindschedule[".inlineAddFields"][] = "ANDiff";
-$tdataindschedule[".inlineAddFields"][] = "ANDOTMins";
-$tdataindschedule[".inlineAddFields"][] = "RegNDHrs";
+$tdataindschedule[".inlineAddFields"][] = "RegND";
 $tdataindschedule[".inlineAddFields"][] = "RHNDHrs";
-$tdataindschedule[".inlineAddFields"][] = "RDNDHrs";
 $tdataindschedule[".inlineAddFields"][] = "SHNDHrs";
-$tdataindschedule[".inlineAddFields"][] = "CHNDHrs";
 $tdataindschedule[".inlineAddFields"][] = "DHND";
-$tdataindschedule[".inlineAddFields"][] = "DHRDND";
-$tdataindschedule[".inlineAddFields"][] = "SHRDND";
+$tdataindschedule[".inlineAddFields"][] = "RDNDHrs";
 $tdataindschedule[".inlineAddFields"][] = "RHRDND";
-$tdataindschedule[".inlineAddFields"][] = "NDMealAllowance";
-$tdataindschedule[".inlineAddFields"][] = "NDMealAllowancePerShift";
-$tdataindschedule[".inlineAddFields"][] = "NDMinimumHrs";
+$tdataindschedule[".inlineAddFields"][] = "SHRDND";
+$tdataindschedule[".inlineAddFields"][] = "DHRDND";
 $tdataindschedule[".inlineAddFields"][] = "ExcessHrs";
 $tdataindschedule[".inlineAddFields"][] = "ApprovedOT";
-$tdataindschedule[".inlineAddFields"][] = "AOTMins";
 $tdataindschedule[".inlineAddFields"][] = "RegOTHrs";
-$tdataindschedule[".inlineAddFields"][] = "SHOTHrs";
-$tdataindschedule[".inlineAddFields"][] = "CHOTHrs";
-$tdataindschedule[".inlineAddFields"][] = "RDOTHrs";
 $tdataindschedule[".inlineAddFields"][] = "RHOTHrs";
-$tdataindschedule[".inlineAddFields"][] = "TrODay";
-$tdataindschedule[".inlineAddFields"][] = "RegNDOTHrs";
+$tdataindschedule[".inlineAddFields"][] = "SHOTHrs";
+$tdataindschedule[".inlineAddFields"][] = "SHOTD";
+$tdataindschedule[".inlineAddFields"][] = "DHOT";
+$tdataindschedule[".inlineAddFields"][] = "RDOTHrs";
+$tdataindschedule[".inlineAddFields"][] = "NDOT";
 $tdataindschedule[".inlineAddFields"][] = "RHNDOTHrs";
 $tdataindschedule[".inlineAddFields"][] = "SHNDOTHrs";
-$tdataindschedule[".inlineAddFields"][] = "CHNDOTHrs";
+$tdataindschedule[".inlineAddFields"][] = "DHNDOT";
 $tdataindschedule[".inlineAddFields"][] = "RDNDOTHrs";
+$tdataindschedule[".inlineAddFields"][] = "RHRDOT";
+$tdataindschedule[".inlineAddFields"][] = "SHRDOT";
+$tdataindschedule[".inlineAddFields"][] = "SHRDOTD";
+$tdataindschedule[".inlineAddFields"][] = "DHRDOT";
 $tdataindschedule[".inlineAddFields"][] = "RHRDNDOT";
 $tdataindschedule[".inlineAddFields"][] = "SHRDNDOT";
 $tdataindschedule[".inlineAddFields"][] = "DHRDNDOT";
-$tdataindschedule[".inlineAddFields"][] = "DHOT";
-$tdataindschedule[".inlineAddFields"][] = "DHNDOT";
-$tdataindschedule[".inlineAddFields"][] = "DHRDOT";
 $tdataindschedule[".inlineAddFields"][] = "VLDay";
 $tdataindschedule[".inlineAddFields"][] = "SLDay";
 $tdataindschedule[".inlineAddFields"][] = "ELDay";
 $tdataindschedule[".inlineAddFields"][] = "PLDay";
+$tdataindschedule[".inlineAddFields"][] = "TrODay";
+$tdataindschedule[".inlineAddFields"][] = "ApprovedRD";
+$tdataindschedule[".inlineAddFields"][] = "RegRD";
+$tdataindschedule[".inlineAddFields"][] = "RHRD";
+$tdataindschedule[".inlineAddFields"][] = "SHRD";
+$tdataindschedule[".inlineAddFields"][] = "DHRD";
 $tdataindschedule[".inlineAddFields"][] = "SchedType";
 $tdataindschedule[".inlineAddFields"][] = "Shift";
-$tdataindschedule[".inlineAddFields"][] = "MinsPerDay";
 $tdataindschedule[".inlineAddFields"][] = "BreakMins";
-$tdataindschedule[".inlineAddFields"][] = "RDMins";
-$tdataindschedule[".inlineAddFields"][] = "ApprovedRD";
-$tdataindschedule[".inlineAddFields"][] = "RDHrs";
 
 $tdataindschedule[".editFields"] = array();
 $tdataindschedule[".editFields"][] = "EmployeeID";
@@ -1864,70 +1844,60 @@ $tdataindschedule[".editFields"][] = "Mispunched";
 $tdataindschedule[".editFields"][] = "RegWD";
 $tdataindschedule[".editFields"][] = "DWork";
 $tdataindschedule[".editFields"][] = "Absent";
-$tdataindschedule[".editFields"][] = "PreLogMins";
-$tdataindschedule[".editFields"][] = "IncludeBreakLate";
-$tdataindschedule[".editFields"][] = "GracePeriodMins";
 $tdataindschedule[".editFields"][] = "LateMins";
 $tdataindschedule[".editFields"][] = "UndertimeMins";
 $tdataindschedule[".editFields"][] = "LatePenaltyMins";
-$tdataindschedule[".editFields"][] = "TotLateMins";
 $tdataindschedule[".editFields"][] = "LateFixPenalty";
 $tdataindschedule[".editFields"][] = "BreakLateMins";
+$tdataindschedule[".editFields"][] = "TotLateMins";
 $tdataindschedule[".editFields"][] = "HolidayType";
 $tdataindschedule[".editFields"][] = "Holiday1stHalf";
 $tdataindschedule[".editFields"][] = "Holiday2ndHalf";
 $tdataindschedule[".editFields"][] = "RHolidayHrs";
 $tdataindschedule[".editFields"][] = "SHolidayHrs";
-$tdataindschedule[".editFields"][] = "CHolidayHrs";
 $tdataindschedule[".editFields"][] = "DH";
-$tdataindschedule[".editFields"][] = "DHRD";
-$tdataindschedule[".editFields"][] = "NDHrs";
 $tdataindschedule[".editFields"][] = "ApprovedNightDiff";
-$tdataindschedule[".editFields"][] = "ANDiff";
-$tdataindschedule[".editFields"][] = "ANDOTMins";
-$tdataindschedule[".editFields"][] = "RegNDHrs";
+$tdataindschedule[".editFields"][] = "RegND";
 $tdataindschedule[".editFields"][] = "RHNDHrs";
-$tdataindschedule[".editFields"][] = "RDNDHrs";
 $tdataindschedule[".editFields"][] = "SHNDHrs";
-$tdataindschedule[".editFields"][] = "CHNDHrs";
 $tdataindschedule[".editFields"][] = "DHND";
-$tdataindschedule[".editFields"][] = "DHRDND";
-$tdataindschedule[".editFields"][] = "SHRDND";
+$tdataindschedule[".editFields"][] = "RDNDHrs";
 $tdataindschedule[".editFields"][] = "RHRDND";
-$tdataindschedule[".editFields"][] = "NDMealAllowance";
-$tdataindschedule[".editFields"][] = "NDMealAllowancePerShift";
-$tdataindschedule[".editFields"][] = "NDMinimumHrs";
+$tdataindschedule[".editFields"][] = "SHRDND";
+$tdataindschedule[".editFields"][] = "DHRDND";
 $tdataindschedule[".editFields"][] = "ExcessHrs";
 $tdataindschedule[".editFields"][] = "ApprovedOT";
-$tdataindschedule[".editFields"][] = "AOTMins";
 $tdataindschedule[".editFields"][] = "RegOTHrs";
-$tdataindschedule[".editFields"][] = "SHOTHrs";
-$tdataindschedule[".editFields"][] = "CHOTHrs";
-$tdataindschedule[".editFields"][] = "RDOTHrs";
 $tdataindschedule[".editFields"][] = "RHOTHrs";
-$tdataindschedule[".editFields"][] = "TrODay";
-$tdataindschedule[".editFields"][] = "RegNDOTHrs";
+$tdataindschedule[".editFields"][] = "SHOTHrs";
+$tdataindschedule[".editFields"][] = "SHOTD";
+$tdataindschedule[".editFields"][] = "DHOT";
+$tdataindschedule[".editFields"][] = "RDOTHrs";
+$tdataindschedule[".editFields"][] = "NDOT";
 $tdataindschedule[".editFields"][] = "RHNDOTHrs";
 $tdataindschedule[".editFields"][] = "SHNDOTHrs";
-$tdataindschedule[".editFields"][] = "CHNDOTHrs";
+$tdataindschedule[".editFields"][] = "DHNDOT";
 $tdataindschedule[".editFields"][] = "RDNDOTHrs";
+$tdataindschedule[".editFields"][] = "RHRDOT";
+$tdataindschedule[".editFields"][] = "SHRDOT";
+$tdataindschedule[".editFields"][] = "SHRDOTD";
+$tdataindschedule[".editFields"][] = "DHRDOT";
 $tdataindschedule[".editFields"][] = "RHRDNDOT";
 $tdataindschedule[".editFields"][] = "SHRDNDOT";
 $tdataindschedule[".editFields"][] = "DHRDNDOT";
-$tdataindschedule[".editFields"][] = "DHOT";
-$tdataindschedule[".editFields"][] = "DHNDOT";
-$tdataindschedule[".editFields"][] = "DHRDOT";
 $tdataindschedule[".editFields"][] = "VLDay";
 $tdataindschedule[".editFields"][] = "SLDay";
 $tdataindschedule[".editFields"][] = "ELDay";
 $tdataindschedule[".editFields"][] = "PLDay";
+$tdataindschedule[".editFields"][] = "TrODay";
+$tdataindschedule[".editFields"][] = "ApprovedRD";
+$tdataindschedule[".editFields"][] = "RegRD";
+$tdataindschedule[".editFields"][] = "RHRD";
+$tdataindschedule[".editFields"][] = "SHRD";
+$tdataindschedule[".editFields"][] = "DHRD";
 $tdataindschedule[".editFields"][] = "SchedType";
 $tdataindschedule[".editFields"][] = "Shift";
-$tdataindschedule[".editFields"][] = "MinsPerDay";
 $tdataindschedule[".editFields"][] = "BreakMins";
-$tdataindschedule[".editFields"][] = "RDMins";
-$tdataindschedule[".editFields"][] = "ApprovedRD";
-$tdataindschedule[".editFields"][] = "RDHrs";
 
 $tdataindschedule[".inlineEditFields"] = array();
 $tdataindschedule[".inlineEditFields"][] = "EmployeeID";
@@ -1951,70 +1921,60 @@ $tdataindschedule[".inlineEditFields"][] = "Mispunched";
 $tdataindschedule[".inlineEditFields"][] = "RegWD";
 $tdataindschedule[".inlineEditFields"][] = "DWork";
 $tdataindschedule[".inlineEditFields"][] = "Absent";
-$tdataindschedule[".inlineEditFields"][] = "PreLogMins";
-$tdataindschedule[".inlineEditFields"][] = "IncludeBreakLate";
-$tdataindschedule[".inlineEditFields"][] = "GracePeriodMins";
 $tdataindschedule[".inlineEditFields"][] = "LateMins";
 $tdataindschedule[".inlineEditFields"][] = "UndertimeMins";
 $tdataindschedule[".inlineEditFields"][] = "LatePenaltyMins";
-$tdataindschedule[".inlineEditFields"][] = "TotLateMins";
 $tdataindschedule[".inlineEditFields"][] = "LateFixPenalty";
 $tdataindschedule[".inlineEditFields"][] = "BreakLateMins";
+$tdataindschedule[".inlineEditFields"][] = "TotLateMins";
 $tdataindschedule[".inlineEditFields"][] = "HolidayType";
 $tdataindschedule[".inlineEditFields"][] = "Holiday1stHalf";
 $tdataindschedule[".inlineEditFields"][] = "Holiday2ndHalf";
 $tdataindschedule[".inlineEditFields"][] = "RHolidayHrs";
 $tdataindschedule[".inlineEditFields"][] = "SHolidayHrs";
-$tdataindschedule[".inlineEditFields"][] = "CHolidayHrs";
 $tdataindschedule[".inlineEditFields"][] = "DH";
-$tdataindschedule[".inlineEditFields"][] = "DHRD";
-$tdataindschedule[".inlineEditFields"][] = "NDHrs";
 $tdataindschedule[".inlineEditFields"][] = "ApprovedNightDiff";
-$tdataindschedule[".inlineEditFields"][] = "ANDiff";
-$tdataindschedule[".inlineEditFields"][] = "ANDOTMins";
-$tdataindschedule[".inlineEditFields"][] = "RegNDHrs";
+$tdataindschedule[".inlineEditFields"][] = "RegND";
 $tdataindschedule[".inlineEditFields"][] = "RHNDHrs";
-$tdataindschedule[".inlineEditFields"][] = "RDNDHrs";
 $tdataindschedule[".inlineEditFields"][] = "SHNDHrs";
-$tdataindschedule[".inlineEditFields"][] = "CHNDHrs";
 $tdataindschedule[".inlineEditFields"][] = "DHND";
-$tdataindschedule[".inlineEditFields"][] = "DHRDND";
-$tdataindschedule[".inlineEditFields"][] = "SHRDND";
+$tdataindschedule[".inlineEditFields"][] = "RDNDHrs";
 $tdataindschedule[".inlineEditFields"][] = "RHRDND";
-$tdataindschedule[".inlineEditFields"][] = "NDMealAllowance";
-$tdataindschedule[".inlineEditFields"][] = "NDMealAllowancePerShift";
-$tdataindschedule[".inlineEditFields"][] = "NDMinimumHrs";
+$tdataindschedule[".inlineEditFields"][] = "SHRDND";
+$tdataindschedule[".inlineEditFields"][] = "DHRDND";
 $tdataindschedule[".inlineEditFields"][] = "ExcessHrs";
 $tdataindschedule[".inlineEditFields"][] = "ApprovedOT";
-$tdataindschedule[".inlineEditFields"][] = "AOTMins";
 $tdataindschedule[".inlineEditFields"][] = "RegOTHrs";
-$tdataindschedule[".inlineEditFields"][] = "SHOTHrs";
-$tdataindschedule[".inlineEditFields"][] = "CHOTHrs";
-$tdataindschedule[".inlineEditFields"][] = "RDOTHrs";
 $tdataindschedule[".inlineEditFields"][] = "RHOTHrs";
-$tdataindschedule[".inlineEditFields"][] = "TrODay";
-$tdataindschedule[".inlineEditFields"][] = "RegNDOTHrs";
+$tdataindschedule[".inlineEditFields"][] = "SHOTHrs";
+$tdataindschedule[".inlineEditFields"][] = "SHOTD";
+$tdataindschedule[".inlineEditFields"][] = "DHOT";
+$tdataindschedule[".inlineEditFields"][] = "RDOTHrs";
+$tdataindschedule[".inlineEditFields"][] = "NDOT";
 $tdataindschedule[".inlineEditFields"][] = "RHNDOTHrs";
 $tdataindschedule[".inlineEditFields"][] = "SHNDOTHrs";
-$tdataindschedule[".inlineEditFields"][] = "CHNDOTHrs";
+$tdataindschedule[".inlineEditFields"][] = "DHNDOT";
 $tdataindschedule[".inlineEditFields"][] = "RDNDOTHrs";
+$tdataindschedule[".inlineEditFields"][] = "RHRDOT";
+$tdataindschedule[".inlineEditFields"][] = "SHRDOT";
+$tdataindschedule[".inlineEditFields"][] = "SHRDOTD";
+$tdataindschedule[".inlineEditFields"][] = "DHRDOT";
 $tdataindschedule[".inlineEditFields"][] = "RHRDNDOT";
 $tdataindschedule[".inlineEditFields"][] = "SHRDNDOT";
 $tdataindschedule[".inlineEditFields"][] = "DHRDNDOT";
-$tdataindschedule[".inlineEditFields"][] = "DHOT";
-$tdataindschedule[".inlineEditFields"][] = "DHNDOT";
-$tdataindschedule[".inlineEditFields"][] = "DHRDOT";
 $tdataindschedule[".inlineEditFields"][] = "VLDay";
 $tdataindschedule[".inlineEditFields"][] = "SLDay";
 $tdataindschedule[".inlineEditFields"][] = "ELDay";
 $tdataindschedule[".inlineEditFields"][] = "PLDay";
+$tdataindschedule[".inlineEditFields"][] = "TrODay";
+$tdataindschedule[".inlineEditFields"][] = "ApprovedRD";
+$tdataindschedule[".inlineEditFields"][] = "RegRD";
+$tdataindschedule[".inlineEditFields"][] = "RHRD";
+$tdataindschedule[".inlineEditFields"][] = "SHRD";
+$tdataindschedule[".inlineEditFields"][] = "DHRD";
 $tdataindschedule[".inlineEditFields"][] = "SchedType";
 $tdataindschedule[".inlineEditFields"][] = "Shift";
-$tdataindschedule[".inlineEditFields"][] = "MinsPerDay";
 $tdataindschedule[".inlineEditFields"][] = "BreakMins";
-$tdataindschedule[".inlineEditFields"][] = "RDMins";
-$tdataindschedule[".inlineEditFields"][] = "ApprovedRD";
-$tdataindschedule[".inlineEditFields"][] = "RDHrs";
 
 $tdataindschedule[".updateSelectedFields"] = array();
 $tdataindschedule[".updateSelectedFields"][] = "EmployeeID";
@@ -2039,45 +1999,32 @@ $tdataindschedule[".updateSelectedFields"][] = "Absent";
 $tdataindschedule[".updateSelectedFields"][] = "LateMins";
 $tdataindschedule[".updateSelectedFields"][] = "UndertimeMins";
 $tdataindschedule[".updateSelectedFields"][] = "LatePenaltyMins";
-$tdataindschedule[".updateSelectedFields"][] = "TotLateMins";
 $tdataindschedule[".updateSelectedFields"][] = "LateFixPenalty";
+$tdataindschedule[".updateSelectedFields"][] = "TotLateMins";
 $tdataindschedule[".updateSelectedFields"][] = "HolidayType";
 $tdataindschedule[".updateSelectedFields"][] = "Holiday1stHalf";
 $tdataindschedule[".updateSelectedFields"][] = "Holiday2ndHalf";
 $tdataindschedule[".updateSelectedFields"][] = "RHolidayHrs";
 $tdataindschedule[".updateSelectedFields"][] = "SHolidayHrs";
-$tdataindschedule[".updateSelectedFields"][] = "CHolidayHrs";
-$tdataindschedule[".updateSelectedFields"][] = "NDHrs";
 $tdataindschedule[".updateSelectedFields"][] = "ApprovedNightDiff";
-$tdataindschedule[".updateSelectedFields"][] = "ANDiff";
-$tdataindschedule[".updateSelectedFields"][] = "RegNDHrs";
 $tdataindschedule[".updateSelectedFields"][] = "RHNDHrs";
-$tdataindschedule[".updateSelectedFields"][] = "RDNDHrs";
 $tdataindschedule[".updateSelectedFields"][] = "SHNDHrs";
-$tdataindschedule[".updateSelectedFields"][] = "CHNDHrs";
-$tdataindschedule[".updateSelectedFields"][] = "NDMealAllowance";
-$tdataindschedule[".updateSelectedFields"][] = "NDMealAllowancePerShift";
-$tdataindschedule[".updateSelectedFields"][] = "NDMinimumHrs";
+$tdataindschedule[".updateSelectedFields"][] = "RDNDHrs";
 $tdataindschedule[".updateSelectedFields"][] = "ExcessHrs";
 $tdataindschedule[".updateSelectedFields"][] = "ApprovedOT";
-$tdataindschedule[".updateSelectedFields"][] = "AOTMins";
 $tdataindschedule[".updateSelectedFields"][] = "RegOTHrs";
-$tdataindschedule[".updateSelectedFields"][] = "SHOTHrs";
-$tdataindschedule[".updateSelectedFields"][] = "CHOTHrs";
-$tdataindschedule[".updateSelectedFields"][] = "RDOTHrs";
 $tdataindschedule[".updateSelectedFields"][] = "RHOTHrs";
-$tdataindschedule[".updateSelectedFields"][] = "TrODay";
+$tdataindschedule[".updateSelectedFields"][] = "SHOTHrs";
+$tdataindschedule[".updateSelectedFields"][] = "RDOTHrs";
 $tdataindschedule[".updateSelectedFields"][] = "VLDay";
 $tdataindschedule[".updateSelectedFields"][] = "SLDay";
 $tdataindschedule[".updateSelectedFields"][] = "ELDay";
 $tdataindschedule[".updateSelectedFields"][] = "PLDay";
+$tdataindschedule[".updateSelectedFields"][] = "TrODay";
+$tdataindschedule[".updateSelectedFields"][] = "ApprovedRD";
 $tdataindschedule[".updateSelectedFields"][] = "SchedType";
 $tdataindschedule[".updateSelectedFields"][] = "Shift";
-$tdataindschedule[".updateSelectedFields"][] = "MinsPerDay";
 $tdataindschedule[".updateSelectedFields"][] = "BreakMins";
-$tdataindschedule[".updateSelectedFields"][] = "RDMins";
-$tdataindschedule[".updateSelectedFields"][] = "ApprovedRD";
-$tdataindschedule[".updateSelectedFields"][] = "RDHrs";
 
 
 $tdataindschedule[".exportFields"] = array();
@@ -2103,70 +2050,60 @@ $tdataindschedule[".exportFields"][] = "Mispunched";
 $tdataindschedule[".exportFields"][] = "RegWD";
 $tdataindschedule[".exportFields"][] = "DWork";
 $tdataindschedule[".exportFields"][] = "Absent";
-$tdataindschedule[".exportFields"][] = "PreLogMins";
-$tdataindschedule[".exportFields"][] = "IncludeBreakLate";
-$tdataindschedule[".exportFields"][] = "GracePeriodMins";
 $tdataindschedule[".exportFields"][] = "LateMins";
 $tdataindschedule[".exportFields"][] = "UndertimeMins";
 $tdataindschedule[".exportFields"][] = "LatePenaltyMins";
-$tdataindschedule[".exportFields"][] = "TotLateMins";
 $tdataindschedule[".exportFields"][] = "LateFixPenalty";
 $tdataindschedule[".exportFields"][] = "BreakLateMins";
+$tdataindschedule[".exportFields"][] = "TotLateMins";
 $tdataindschedule[".exportFields"][] = "HolidayType";
 $tdataindschedule[".exportFields"][] = "Holiday1stHalf";
 $tdataindschedule[".exportFields"][] = "Holiday2ndHalf";
 $tdataindschedule[".exportFields"][] = "RHolidayHrs";
 $tdataindschedule[".exportFields"][] = "SHolidayHrs";
-$tdataindschedule[".exportFields"][] = "CHolidayHrs";
 $tdataindschedule[".exportFields"][] = "DH";
-$tdataindschedule[".exportFields"][] = "DHRD";
-$tdataindschedule[".exportFields"][] = "NDHrs";
 $tdataindschedule[".exportFields"][] = "ApprovedNightDiff";
-$tdataindschedule[".exportFields"][] = "ANDiff";
-$tdataindschedule[".exportFields"][] = "ANDOTMins";
-$tdataindschedule[".exportFields"][] = "RegNDHrs";
+$tdataindschedule[".exportFields"][] = "RegND";
 $tdataindschedule[".exportFields"][] = "RHNDHrs";
-$tdataindschedule[".exportFields"][] = "RDNDHrs";
 $tdataindschedule[".exportFields"][] = "SHNDHrs";
-$tdataindschedule[".exportFields"][] = "CHNDHrs";
 $tdataindschedule[".exportFields"][] = "DHND";
-$tdataindschedule[".exportFields"][] = "DHRDND";
-$tdataindschedule[".exportFields"][] = "SHRDND";
+$tdataindschedule[".exportFields"][] = "RDNDHrs";
 $tdataindschedule[".exportFields"][] = "RHRDND";
-$tdataindschedule[".exportFields"][] = "NDMealAllowance";
-$tdataindschedule[".exportFields"][] = "NDMealAllowancePerShift";
-$tdataindschedule[".exportFields"][] = "NDMinimumHrs";
+$tdataindschedule[".exportFields"][] = "SHRDND";
+$tdataindschedule[".exportFields"][] = "DHRDND";
 $tdataindschedule[".exportFields"][] = "ExcessHrs";
 $tdataindschedule[".exportFields"][] = "ApprovedOT";
-$tdataindschedule[".exportFields"][] = "AOTMins";
 $tdataindschedule[".exportFields"][] = "RegOTHrs";
-$tdataindschedule[".exportFields"][] = "SHOTHrs";
-$tdataindschedule[".exportFields"][] = "CHOTHrs";
-$tdataindschedule[".exportFields"][] = "RDOTHrs";
 $tdataindschedule[".exportFields"][] = "RHOTHrs";
-$tdataindschedule[".exportFields"][] = "TrODay";
-$tdataindschedule[".exportFields"][] = "RegNDOTHrs";
+$tdataindschedule[".exportFields"][] = "SHOTHrs";
+$tdataindschedule[".exportFields"][] = "SHOTD";
+$tdataindschedule[".exportFields"][] = "DHOT";
+$tdataindschedule[".exportFields"][] = "RDOTHrs";
+$tdataindschedule[".exportFields"][] = "NDOT";
 $tdataindschedule[".exportFields"][] = "RHNDOTHrs";
 $tdataindschedule[".exportFields"][] = "SHNDOTHrs";
-$tdataindschedule[".exportFields"][] = "CHNDOTHrs";
+$tdataindschedule[".exportFields"][] = "DHNDOT";
 $tdataindschedule[".exportFields"][] = "RDNDOTHrs";
+$tdataindschedule[".exportFields"][] = "RHRDOT";
+$tdataindschedule[".exportFields"][] = "SHRDOT";
+$tdataindschedule[".exportFields"][] = "SHRDOTD";
+$tdataindschedule[".exportFields"][] = "DHRDOT";
 $tdataindschedule[".exportFields"][] = "RHRDNDOT";
 $tdataindschedule[".exportFields"][] = "SHRDNDOT";
 $tdataindschedule[".exportFields"][] = "DHRDNDOT";
-$tdataindschedule[".exportFields"][] = "DHOT";
-$tdataindschedule[".exportFields"][] = "DHNDOT";
-$tdataindschedule[".exportFields"][] = "DHRDOT";
 $tdataindschedule[".exportFields"][] = "VLDay";
 $tdataindschedule[".exportFields"][] = "SLDay";
 $tdataindschedule[".exportFields"][] = "ELDay";
 $tdataindschedule[".exportFields"][] = "PLDay";
+$tdataindschedule[".exportFields"][] = "TrODay";
+$tdataindschedule[".exportFields"][] = "ApprovedRD";
+$tdataindschedule[".exportFields"][] = "RegRD";
+$tdataindschedule[".exportFields"][] = "RHRD";
+$tdataindschedule[".exportFields"][] = "SHRD";
+$tdataindschedule[".exportFields"][] = "DHRD";
 $tdataindschedule[".exportFields"][] = "SchedType";
 $tdataindschedule[".exportFields"][] = "Shift";
-$tdataindschedule[".exportFields"][] = "MinsPerDay";
 $tdataindschedule[".exportFields"][] = "BreakMins";
-$tdataindschedule[".exportFields"][] = "RDMins";
-$tdataindschedule[".exportFields"][] = "ApprovedRD";
-$tdataindschedule[".exportFields"][] = "RDHrs";
 
 $tdataindschedule[".importFields"] = array();
 $tdataindschedule[".importFields"][] = "ScID";
@@ -2176,21 +2113,14 @@ $tdataindschedule[".importFields"][] = "STimeIn";
 $tdataindschedule[".importFields"][] = "STimeOut";
 $tdataindschedule[".importFields"][] = "SchedType";
 $tdataindschedule[".importFields"][] = "ApprovedOT";
-$tdataindschedule[".importFields"][] = "AOTMins";
 $tdataindschedule[".importFields"][] = "WageType";
 $tdataindschedule[".importFields"][] = "ApprovedNightDiff";
-$tdataindschedule[".importFields"][] = "ANDiff";
 $tdataindschedule[".importFields"][] = "EmployeeID";
-$tdataindschedule[".importFields"][] = "MinsPerDay";
 $tdataindschedule[".importFields"][] = "BreakMins";
 $tdataindschedule[".importFields"][] = "Shift";
 $tdataindschedule[".importFields"][] = "ApprovedRD";
-$tdataindschedule[".importFields"][] = "RDMins";
 $tdataindschedule[".importFields"][] = "LunchBreakFrom";
 $tdataindschedule[".importFields"][] = "LunchBreakTo";
-$tdataindschedule[".importFields"][] = "NDMealAllowancePerShift";
-$tdataindschedule[".importFields"][] = "NDMinimumHrs";
-$tdataindschedule[".importFields"][] = "NDMealAllowance";
 $tdataindschedule[".importFields"][] = "Division";
 $tdataindschedule[".importFields"][] = "TimeIn";
 $tdataindschedule[".importFields"][] = "TimeOut";
@@ -2204,19 +2134,13 @@ $tdataindschedule[".importFields"][] = "LateMins";
 $tdataindschedule[".importFields"][] = "UndertimeMins";
 $tdataindschedule[".importFields"][] = "RHolidayHrs";
 $tdataindschedule[".importFields"][] = "SHolidayHrs";
-$tdataindschedule[".importFields"][] = "CHolidayHrs";
 $tdataindschedule[".importFields"][] = "ExcessHrs";
 $tdataindschedule[".importFields"][] = "RegOTHrs";
 $tdataindschedule[".importFields"][] = "RHOTHrs";
 $tdataindschedule[".importFields"][] = "SHOTHrs";
-$tdataindschedule[".importFields"][] = "CHOTHrs";
 $tdataindschedule[".importFields"][] = "RDOTHrs";
-$tdataindschedule[".importFields"][] = "NDHrs";
-$tdataindschedule[".importFields"][] = "RDHrs";
-$tdataindschedule[".importFields"][] = "RegNDHrs";
 $tdataindschedule[".importFields"][] = "RHNDHrs";
 $tdataindschedule[".importFields"][] = "SHNDHrs";
-$tdataindschedule[".importFields"][] = "CHNDHrs";
 $tdataindschedule[".importFields"][] = "RDNDHrs";
 $tdataindschedule[".importFields"][] = "VLDay";
 $tdataindschedule[".importFields"][] = "SLDay";
@@ -2233,15 +2157,9 @@ $tdataindschedule[".importFields"][] = "Employer";
 $tdataindschedule[".importFields"][] = "LateFixPenalty";
 $tdataindschedule[".importFields"][] = "AfterBreakLogOut";
 $tdataindschedule[".importFields"][] = "AfterBreakLog";
-$tdataindschedule[".importFields"][] = "PreLogMins";
-$tdataindschedule[".importFields"][] = "IncludeBreakLate";
-$tdataindschedule[".importFields"][] = "GracePeriodMins";
 $tdataindschedule[".importFields"][] = "BreakLateMins";
-$tdataindschedule[".importFields"][] = "ANDOTMins";
-$tdataindschedule[".importFields"][] = "RegNDOTHrs";
 $tdataindschedule[".importFields"][] = "RHNDOTHrs";
 $tdataindschedule[".importFields"][] = "SHNDOTHrs";
-$tdataindschedule[".importFields"][] = "CHNDOTHrs";
 $tdataindschedule[".importFields"][] = "RDNDOTHrs";
 $tdataindschedule[".importFields"][] = "DH";
 $tdataindschedule[".importFields"][] = "DHRD";
@@ -2255,6 +2173,15 @@ $tdataindschedule[".importFields"][] = "DHND";
 $tdataindschedule[".importFields"][] = "DHRDND";
 $tdataindschedule[".importFields"][] = "DHNDOT";
 $tdataindschedule[".importFields"][] = "DHRDNDOT";
+$tdataindschedule[".importFields"][] = "RHRDOT";
+$tdataindschedule[".importFields"][] = "SHRDOT";
+$tdataindschedule[".importFields"][] = "RegND";
+$tdataindschedule[".importFields"][] = "RegRD";
+$tdataindschedule[".importFields"][] = "SHOTD";
+$tdataindschedule[".importFields"][] = "SHRDOTD";
+$tdataindschedule[".importFields"][] = "NDOT";
+$tdataindschedule[".importFields"][] = "RHRD";
+$tdataindschedule[".importFields"][] = "SHRD";
 
 $tdataindschedule[".printFields"] = array();
 $tdataindschedule[".printFields"][] = "ScID";
@@ -2279,70 +2206,60 @@ $tdataindschedule[".printFields"][] = "Mispunched";
 $tdataindschedule[".printFields"][] = "RegWD";
 $tdataindschedule[".printFields"][] = "DWork";
 $tdataindschedule[".printFields"][] = "Absent";
-$tdataindschedule[".printFields"][] = "PreLogMins";
-$tdataindschedule[".printFields"][] = "IncludeBreakLate";
-$tdataindschedule[".printFields"][] = "GracePeriodMins";
 $tdataindschedule[".printFields"][] = "LateMins";
 $tdataindschedule[".printFields"][] = "UndertimeMins";
 $tdataindschedule[".printFields"][] = "LatePenaltyMins";
-$tdataindschedule[".printFields"][] = "TotLateMins";
 $tdataindschedule[".printFields"][] = "LateFixPenalty";
 $tdataindschedule[".printFields"][] = "BreakLateMins";
+$tdataindschedule[".printFields"][] = "TotLateMins";
 $tdataindschedule[".printFields"][] = "HolidayType";
 $tdataindschedule[".printFields"][] = "Holiday1stHalf";
 $tdataindschedule[".printFields"][] = "Holiday2ndHalf";
 $tdataindschedule[".printFields"][] = "RHolidayHrs";
 $tdataindschedule[".printFields"][] = "SHolidayHrs";
-$tdataindschedule[".printFields"][] = "CHolidayHrs";
 $tdataindschedule[".printFields"][] = "DH";
-$tdataindschedule[".printFields"][] = "DHRD";
-$tdataindschedule[".printFields"][] = "NDHrs";
 $tdataindschedule[".printFields"][] = "ApprovedNightDiff";
-$tdataindschedule[".printFields"][] = "ANDiff";
-$tdataindschedule[".printFields"][] = "ANDOTMins";
-$tdataindschedule[".printFields"][] = "RegNDHrs";
+$tdataindschedule[".printFields"][] = "RegND";
 $tdataindschedule[".printFields"][] = "RHNDHrs";
-$tdataindschedule[".printFields"][] = "RDNDHrs";
 $tdataindschedule[".printFields"][] = "SHNDHrs";
-$tdataindschedule[".printFields"][] = "CHNDHrs";
 $tdataindschedule[".printFields"][] = "DHND";
-$tdataindschedule[".printFields"][] = "DHRDND";
-$tdataindschedule[".printFields"][] = "SHRDND";
+$tdataindschedule[".printFields"][] = "RDNDHrs";
 $tdataindschedule[".printFields"][] = "RHRDND";
-$tdataindschedule[".printFields"][] = "NDMealAllowance";
-$tdataindschedule[".printFields"][] = "NDMealAllowancePerShift";
-$tdataindschedule[".printFields"][] = "NDMinimumHrs";
+$tdataindschedule[".printFields"][] = "SHRDND";
+$tdataindschedule[".printFields"][] = "DHRDND";
 $tdataindschedule[".printFields"][] = "ExcessHrs";
 $tdataindschedule[".printFields"][] = "ApprovedOT";
-$tdataindschedule[".printFields"][] = "AOTMins";
 $tdataindschedule[".printFields"][] = "RegOTHrs";
-$tdataindschedule[".printFields"][] = "SHOTHrs";
-$tdataindschedule[".printFields"][] = "CHOTHrs";
-$tdataindschedule[".printFields"][] = "RDOTHrs";
 $tdataindschedule[".printFields"][] = "RHOTHrs";
-$tdataindschedule[".printFields"][] = "TrODay";
-$tdataindschedule[".printFields"][] = "RegNDOTHrs";
+$tdataindschedule[".printFields"][] = "SHOTHrs";
+$tdataindschedule[".printFields"][] = "SHOTD";
+$tdataindschedule[".printFields"][] = "DHOT";
+$tdataindschedule[".printFields"][] = "RDOTHrs";
+$tdataindschedule[".printFields"][] = "NDOT";
 $tdataindschedule[".printFields"][] = "RHNDOTHrs";
 $tdataindschedule[".printFields"][] = "SHNDOTHrs";
-$tdataindschedule[".printFields"][] = "CHNDOTHrs";
+$tdataindschedule[".printFields"][] = "DHNDOT";
 $tdataindschedule[".printFields"][] = "RDNDOTHrs";
+$tdataindschedule[".printFields"][] = "RHRDOT";
+$tdataindschedule[".printFields"][] = "SHRDOT";
+$tdataindschedule[".printFields"][] = "SHRDOTD";
+$tdataindschedule[".printFields"][] = "DHRDOT";
 $tdataindschedule[".printFields"][] = "RHRDNDOT";
 $tdataindschedule[".printFields"][] = "SHRDNDOT";
 $tdataindschedule[".printFields"][] = "DHRDNDOT";
-$tdataindschedule[".printFields"][] = "DHOT";
-$tdataindschedule[".printFields"][] = "DHNDOT";
-$tdataindschedule[".printFields"][] = "DHRDOT";
 $tdataindschedule[".printFields"][] = "VLDay";
 $tdataindschedule[".printFields"][] = "SLDay";
 $tdataindschedule[".printFields"][] = "ELDay";
 $tdataindschedule[".printFields"][] = "PLDay";
+$tdataindschedule[".printFields"][] = "TrODay";
+$tdataindschedule[".printFields"][] = "ApprovedRD";
+$tdataindschedule[".printFields"][] = "RegRD";
+$tdataindschedule[".printFields"][] = "RHRD";
+$tdataindschedule[".printFields"][] = "SHRD";
+$tdataindschedule[".printFields"][] = "DHRD";
 $tdataindschedule[".printFields"][] = "SchedType";
 $tdataindschedule[".printFields"][] = "Shift";
-$tdataindschedule[".printFields"][] = "MinsPerDay";
 $tdataindschedule[".printFields"][] = "BreakMins";
-$tdataindschedule[".printFields"][] = "RDMins";
-$tdataindschedule[".printFields"][] = "ApprovedRD";
-$tdataindschedule[".printFields"][] = "RDHrs";
 
 
 //	ScID
@@ -3262,136 +3179,10 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 
 
 	$tdataindschedule["ApprovedOT"] = $fdata;
-//	AOTMins
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 8;
-	$fdata["strName"] = "AOTMins";
-	$fdata["GoodName"] = "AOTMins";
-	$fdata["ownerTable"] = "indschedule";
-	$fdata["Label"] = GetFieldLabel("indschedule","AOTMins");
-	$fdata["FieldType"] = 5;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
-
-		$fdata["bViewPage"] = true;
-
-	
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "AOTMins";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "AOTMins";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Number");
-
-	
-	
-	
-	
-	
-	
-		$vdata["DecimalDigits"] = 2;
-
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "number";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 80;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-
-
-
-
-	$tdataindschedule["AOTMins"] = $fdata;
 //	WageType
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 9;
+	$fdata["Index"] = 8;
 	$fdata["strName"] = "WageType";
 	$fdata["GoodName"] = "WageType";
 	$fdata["ownerTable"] = "indschedule";
@@ -3548,7 +3339,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	ApprovedNightDiff
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 10;
+	$fdata["Index"] = 9;
 	$fdata["strName"] = "ApprovedNightDiff";
 	$fdata["GoodName"] = "ApprovedNightDiff";
 	$fdata["ownerTable"] = "indschedule";
@@ -3666,136 +3457,10 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 
 
 	$tdataindschedule["ApprovedNightDiff"] = $fdata;
-//	ANDiff
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 11;
-	$fdata["strName"] = "ANDiff";
-	$fdata["GoodName"] = "ANDiff";
-	$fdata["ownerTable"] = "indschedule";
-	$fdata["Label"] = GetFieldLabel("indschedule","ANDiff");
-	$fdata["FieldType"] = 5;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
-
-		$fdata["bViewPage"] = true;
-
-	
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "ANDiff";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "ANDiff";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Number");
-
-	
-	
-	
-	
-	
-	
-		$vdata["DecimalDigits"] = 2;
-
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "number";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 80;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-
-
-
-
-	$tdataindschedule["ANDiff"] = $fdata;
 //	EmployeeID
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 12;
+	$fdata["Index"] = 10;
 	$fdata["strName"] = "EmployeeID";
 	$fdata["GoodName"] = "EmployeeID";
 	$fdata["ownerTable"] = "indschedule";
@@ -3917,136 +3582,10 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 
 
 	$tdataindschedule["EmployeeID"] = $fdata;
-//	MinsPerDay
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 13;
-	$fdata["strName"] = "MinsPerDay";
-	$fdata["GoodName"] = "MinsPerDay";
-	$fdata["ownerTable"] = "indschedule";
-	$fdata["Label"] = GetFieldLabel("indschedule","MinsPerDay");
-	$fdata["FieldType"] = 5;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
-
-		$fdata["bViewPage"] = true;
-
-	
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "MinsPerDay";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "MinsPerDay";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Number");
-
-	
-	
-	
-	
-	
-	
-		$vdata["DecimalDigits"] = 2;
-
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "number";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 70;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-
-
-
-
-	$tdataindschedule["MinsPerDay"] = $fdata;
 //	BreakMins
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 14;
+	$fdata["Index"] = 11;
 	$fdata["strName"] = "BreakMins";
 	$fdata["GoodName"] = "BreakMins";
 	$fdata["ownerTable"] = "indschedule";
@@ -4172,7 +3711,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	Shift
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 15;
+	$fdata["Index"] = 12;
 	$fdata["strName"] = "Shift";
 	$fdata["GoodName"] = "Shift";
 	$fdata["ownerTable"] = "indschedule";
@@ -4322,7 +3861,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	ApprovedRD
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 16;
+	$fdata["Index"] = 13;
 	$fdata["strName"] = "ApprovedRD";
 	$fdata["GoodName"] = "ApprovedRD";
 	$fdata["ownerTable"] = "indschedule";
@@ -4440,136 +3979,10 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 
 
 	$tdataindschedule["ApprovedRD"] = $fdata;
-//	RDMins
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 17;
-	$fdata["strName"] = "RDMins";
-	$fdata["GoodName"] = "RDMins";
-	$fdata["ownerTable"] = "indschedule";
-	$fdata["Label"] = GetFieldLabel("indschedule","RDMins");
-	$fdata["FieldType"] = 5;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
-
-		$fdata["bViewPage"] = true;
-
-	
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "RDMins";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "RDMins";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Number");
-
-	
-	
-	
-	
-	
-	
-		$vdata["DecimalDigits"] = 2;
-
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "number";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 80;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-
-
-
-
-	$tdataindschedule["RDMins"] = $fdata;
 //	LunchBreakFrom
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 18;
+	$fdata["Index"] = 14;
 	$fdata["strName"] = "LunchBreakFrom";
 	$fdata["GoodName"] = "LunchBreakFrom";
 	$fdata["ownerTable"] = "indschedule";
@@ -4698,7 +4111,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	LunchBreakTo
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 19;
+	$fdata["Index"] = 15;
 	$fdata["strName"] = "LunchBreakTo";
 	$fdata["GoodName"] = "LunchBreakTo";
 	$fdata["ownerTable"] = "indschedule";
@@ -4824,388 +4237,10 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 
 
 	$tdataindschedule["LunchBreakTo"] = $fdata;
-//	NDMealAllowancePerShift
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 20;
-	$fdata["strName"] = "NDMealAllowancePerShift";
-	$fdata["GoodName"] = "NDMealAllowancePerShift";
-	$fdata["ownerTable"] = "indschedule";
-	$fdata["Label"] = GetFieldLabel("indschedule","NDMealAllowancePerShift");
-	$fdata["FieldType"] = 5;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
-
-		$fdata["bViewPage"] = true;
-
-	
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "NDMealAllowancePerShift";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "NDMealAllowancePerShift";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Number");
-
-	
-	
-	
-	
-	
-	
-		$vdata["DecimalDigits"] = 2;
-
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-
-
-
-
-	$tdataindschedule["NDMealAllowancePerShift"] = $fdata;
-//	NDMinimumHrs
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 21;
-	$fdata["strName"] = "NDMinimumHrs";
-	$fdata["GoodName"] = "NDMinimumHrs";
-	$fdata["ownerTable"] = "indschedule";
-	$fdata["Label"] = GetFieldLabel("indschedule","NDMinimumHrs");
-	$fdata["FieldType"] = 5;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
-
-		$fdata["bViewPage"] = true;
-
-	
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "NDMinimumHrs";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "NDMinimumHrs";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Number");
-
-	
-	
-	
-	
-	
-	
-		$vdata["DecimalDigits"] = 2;
-
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-
-
-
-
-	$tdataindschedule["NDMinimumHrs"] = $fdata;
-//	NDMealAllowance
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 22;
-	$fdata["strName"] = "NDMealAllowance";
-	$fdata["GoodName"] = "NDMealAllowance";
-	$fdata["ownerTable"] = "indschedule";
-	$fdata["Label"] = GetFieldLabel("indschedule","NDMealAllowance");
-	$fdata["FieldType"] = 5;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
-
-		$fdata["bViewPage"] = true;
-
-	
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "NDMealAllowance";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "NDMealAllowance";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Number");
-
-	
-	
-	
-	
-	
-	
-		$vdata["DecimalDigits"] = 2;
-
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-
-
-
-
-	$tdataindschedule["NDMealAllowance"] = $fdata;
 //	Division
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 23;
+	$fdata["Index"] = 16;
 	$fdata["strName"] = "Division";
 	$fdata["GoodName"] = "Division";
 	$fdata["ownerTable"] = "indschedule";
@@ -5362,7 +4397,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	TimeIn
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 24;
+	$fdata["Index"] = 17;
 	$fdata["strName"] = "TimeIn";
 	$fdata["GoodName"] = "TimeIn";
 	$fdata["ownerTable"] = "indschedule";
@@ -5488,7 +4523,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	TimeOut
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 25;
+	$fdata["Index"] = 18;
 	$fdata["strName"] = "TimeOut";
 	$fdata["GoodName"] = "TimeOut";
 	$fdata["ownerTable"] = "indschedule";
@@ -5614,7 +4649,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	DayIs
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 26;
+	$fdata["Index"] = 19;
 	$fdata["strName"] = "DayIs";
 	$fdata["GoodName"] = "DayIs";
 	$fdata["ownerTable"] = "indschedule";
@@ -5764,7 +4799,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	RestDay
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 27;
+	$fdata["Index"] = 20;
 	$fdata["strName"] = "RestDay";
 	$fdata["GoodName"] = "RestDay";
 	$fdata["ownerTable"] = "indschedule";
@@ -5885,7 +4920,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	Department
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 28;
+	$fdata["Index"] = 21;
 	$fdata["strName"] = "Department";
 	$fdata["GoodName"] = "Department";
 	$fdata["ownerTable"] = "indschedule";
@@ -6035,12 +5070,12 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	RegWD
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 29;
+	$fdata["Index"] = 22;
 	$fdata["strName"] = "RegWD";
 	$fdata["GoodName"] = "RegWD";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","RegWD");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -6080,7 +5115,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -6088,15 +5123,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -6158,12 +5191,12 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	DWork
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 30;
+	$fdata["Index"] = 23;
 	$fdata["strName"] = "DWork";
 	$fdata["GoodName"] = "DWork";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","DWork");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -6203,7 +5236,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -6211,15 +5244,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -6281,12 +5312,12 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	Absent
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 31;
+	$fdata["Index"] = 24;
 	$fdata["strName"] = "Absent";
 	$fdata["GoodName"] = "Absent";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","Absent");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -6326,7 +5357,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -6334,15 +5365,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -6406,12 +5435,12 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	LateMins
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 32;
+	$fdata["Index"] = 25;
 	$fdata["strName"] = "LateMins";
 	$fdata["GoodName"] = "LateMins";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","LateMins");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -6451,7 +5480,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -6459,15 +5488,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -6532,12 +5559,12 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	UndertimeMins
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 33;
+	$fdata["Index"] = 26;
 	$fdata["strName"] = "UndertimeMins";
 	$fdata["GoodName"] = "UndertimeMins";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","UndertimeMins");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -6577,7 +5604,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -6585,15 +5612,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -6658,12 +5683,12 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	RHolidayHrs
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 34;
+	$fdata["Index"] = 27;
 	$fdata["strName"] = "RHolidayHrs";
 	$fdata["GoodName"] = "RHolidayHrs";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","RHolidayHrs");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -6703,7 +5728,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -6711,15 +5736,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -6784,12 +5807,12 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	SHolidayHrs
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 35;
+	$fdata["Index"] = 28;
 	$fdata["strName"] = "SHolidayHrs";
 	$fdata["GoodName"] = "SHolidayHrs";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","SHolidayHrs");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -6829,7 +5852,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -6837,15 +5860,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -6907,141 +5928,15 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 
 
 	$tdataindschedule["SHolidayHrs"] = $fdata;
-//	CHolidayHrs
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 36;
-	$fdata["strName"] = "CHolidayHrs";
-	$fdata["GoodName"] = "CHolidayHrs";
-	$fdata["ownerTable"] = "indschedule";
-	$fdata["Label"] = GetFieldLabel("indschedule","CHolidayHrs");
-	$fdata["FieldType"] = 5;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
-
-		$fdata["bViewPage"] = true;
-
-	
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "CHolidayHrs";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "CHolidayHrs";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Number");
-
-	
-	
-	
-	
-	
-	
-		$vdata["DecimalDigits"] = 2;
-
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-
-
-
-
-	$tdataindschedule["CHolidayHrs"] = $fdata;
 //	ExcessHrs
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 37;
+	$fdata["Index"] = 29;
 	$fdata["strName"] = "ExcessHrs";
 	$fdata["GoodName"] = "ExcessHrs";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","ExcessHrs");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -7081,7 +5976,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -7089,15 +5984,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -7125,7 +6018,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
+			$edata["HTML5InuptType"] = "number";
 
 		$edata["EditParams"] = "";
 		
@@ -7162,12 +6055,12 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	RegOTHrs
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 38;
+	$fdata["Index"] = 30;
 	$fdata["strName"] = "RegOTHrs";
 	$fdata["GoodName"] = "RegOTHrs";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","RegOTHrs");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -7207,7 +6100,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -7215,15 +6108,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -7288,12 +6179,12 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	RHOTHrs
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 39;
+	$fdata["Index"] = 31;
 	$fdata["strName"] = "RHOTHrs";
 	$fdata["GoodName"] = "RHOTHrs";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","RHOTHrs");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -7333,7 +6224,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -7341,15 +6232,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -7414,12 +6303,12 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	SHOTHrs
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 40;
+	$fdata["Index"] = 32;
 	$fdata["strName"] = "SHOTHrs";
 	$fdata["GoodName"] = "SHOTHrs";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","SHOTHrs");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -7459,7 +6348,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -7467,15 +6356,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -7537,141 +6424,15 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 
 
 	$tdataindschedule["SHOTHrs"] = $fdata;
-//	CHOTHrs
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 41;
-	$fdata["strName"] = "CHOTHrs";
-	$fdata["GoodName"] = "CHOTHrs";
-	$fdata["ownerTable"] = "indschedule";
-	$fdata["Label"] = GetFieldLabel("indschedule","CHOTHrs");
-	$fdata["FieldType"] = 5;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
-
-		$fdata["bViewPage"] = true;
-
-	
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "CHOTHrs";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "CHOTHrs";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Number");
-
-	
-	
-	
-	
-	
-	
-		$vdata["DecimalDigits"] = 2;
-
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-
-
-
-
-	$tdataindschedule["CHOTHrs"] = $fdata;
 //	RDOTHrs
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 42;
+	$fdata["Index"] = 33;
 	$fdata["strName"] = "RDOTHrs";
 	$fdata["GoodName"] = "RDOTHrs";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","RDOTHrs");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -7711,7 +6472,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -7719,15 +6480,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -7789,393 +6548,15 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 
 
 	$tdataindschedule["RDOTHrs"] = $fdata;
-//	NDHrs
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 43;
-	$fdata["strName"] = "NDHrs";
-	$fdata["GoodName"] = "NDHrs";
-	$fdata["ownerTable"] = "indschedule";
-	$fdata["Label"] = GetFieldLabel("indschedule","NDHrs");
-	$fdata["FieldType"] = 5;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
-
-		$fdata["bViewPage"] = true;
-
-	
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "NDHrs";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "NDHrs";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Number");
-
-	
-	
-	
-	
-	
-	
-		$vdata["DecimalDigits"] = 2;
-
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-
-
-
-
-	$tdataindschedule["NDHrs"] = $fdata;
-//	RDHrs
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 44;
-	$fdata["strName"] = "RDHrs";
-	$fdata["GoodName"] = "RDHrs";
-	$fdata["ownerTable"] = "indschedule";
-	$fdata["Label"] = GetFieldLabel("indschedule","RDHrs");
-	$fdata["FieldType"] = 5;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
-
-		$fdata["bViewPage"] = true;
-
-	
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "RDHrs";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "RDHrs";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Number");
-
-	
-	
-	
-	
-	
-	
-		$vdata["DecimalDigits"] = 2;
-
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-
-
-
-
-	$tdataindschedule["RDHrs"] = $fdata;
-//	RegNDHrs
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 45;
-	$fdata["strName"] = "RegNDHrs";
-	$fdata["GoodName"] = "RegNDHrs";
-	$fdata["ownerTable"] = "indschedule";
-	$fdata["Label"] = GetFieldLabel("indschedule","RegNDHrs");
-	$fdata["FieldType"] = 5;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
-
-		$fdata["bViewPage"] = true;
-
-	
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "RegNDHrs";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "RegNDHrs";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Number");
-
-	
-	
-	
-	
-	
-	
-		$vdata["DecimalDigits"] = 2;
-
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-
-
-
-
-	$tdataindschedule["RegNDHrs"] = $fdata;
 //	RHNDHrs
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 46;
+	$fdata["Index"] = 34;
 	$fdata["strName"] = "RHNDHrs";
 	$fdata["GoodName"] = "RHNDHrs";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","RHNDHrs");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -8215,7 +6596,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -8223,15 +6604,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -8296,12 +6675,12 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	SHNDHrs
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 47;
+	$fdata["Index"] = 35;
 	$fdata["strName"] = "SHNDHrs";
 	$fdata["GoodName"] = "SHNDHrs";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","SHNDHrs");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -8341,7 +6720,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -8349,15 +6728,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -8419,141 +6796,15 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 
 
 	$tdataindschedule["SHNDHrs"] = $fdata;
-//	CHNDHrs
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 48;
-	$fdata["strName"] = "CHNDHrs";
-	$fdata["GoodName"] = "CHNDHrs";
-	$fdata["ownerTable"] = "indschedule";
-	$fdata["Label"] = GetFieldLabel("indschedule","CHNDHrs");
-	$fdata["FieldType"] = 5;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
-
-		$fdata["bViewPage"] = true;
-
-	
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "CHNDHrs";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "CHNDHrs";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Number");
-
-	
-	
-	
-	
-	
-	
-		$vdata["DecimalDigits"] = 2;
-
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-
-
-
-
-	$tdataindschedule["CHNDHrs"] = $fdata;
 //	RDNDHrs
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 49;
+	$fdata["Index"] = 36;
 	$fdata["strName"] = "RDNDHrs";
 	$fdata["GoodName"] = "RDNDHrs";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","RDNDHrs");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -8593,7 +6844,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -8601,15 +6852,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -8674,12 +6923,12 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	VLDay
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 50;
+	$fdata["Index"] = 37;
 	$fdata["strName"] = "VLDay";
 	$fdata["GoodName"] = "VLDay";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","VLDay");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -8719,7 +6968,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -8727,15 +6976,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -8800,12 +7047,12 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	SLDay
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 51;
+	$fdata["Index"] = 38;
 	$fdata["strName"] = "SLDay";
 	$fdata["GoodName"] = "SLDay";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","SLDay");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -8845,7 +7092,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -8853,15 +7100,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -8926,12 +7171,12 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	ELDay
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 52;
+	$fdata["Index"] = 39;
 	$fdata["strName"] = "ELDay";
 	$fdata["GoodName"] = "ELDay";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","ELDay");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -8971,7 +7216,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -8979,15 +7224,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -9052,12 +7295,12 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	PLDay
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 53;
+	$fdata["Index"] = 40;
 	$fdata["strName"] = "PLDay";
 	$fdata["GoodName"] = "PLDay";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","PLDay");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -9097,7 +7340,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -9105,15 +7348,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -9178,12 +7419,12 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	TrODay
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 54;
+	$fdata["Index"] = 41;
 	$fdata["strName"] = "TrODay";
 	$fdata["GoodName"] = "TrODay";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","TrODay");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -9223,7 +7464,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -9231,15 +7472,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -9304,7 +7543,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	HolidayType
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 55;
+	$fdata["Index"] = 42;
 	$fdata["strName"] = "HolidayType";
 	$fdata["GoodName"] = "HolidayType";
 	$fdata["ownerTable"] = "indschedule";
@@ -9454,7 +7693,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	Mispunched
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 56;
+	$fdata["Index"] = 43;
 	$fdata["strName"] = "Mispunched";
 	$fdata["GoodName"] = "Mispunched";
 	$fdata["ownerTable"] = "indschedule";
@@ -9582,7 +7821,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	Holiday1stHalf
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 57;
+	$fdata["Index"] = 44;
 	$fdata["strName"] = "Holiday1stHalf";
 	$fdata["GoodName"] = "Holiday1stHalf";
 	$fdata["ownerTable"] = "indschedule";
@@ -9703,7 +7942,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	Holiday2ndHalf
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 58;
+	$fdata["Index"] = 45;
 	$fdata["strName"] = "Holiday2ndHalf";
 	$fdata["GoodName"] = "Holiday2ndHalf";
 	$fdata["ownerTable"] = "indschedule";
@@ -9824,12 +8063,12 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	TotLateMins
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 59;
+	$fdata["Index"] = 46;
 	$fdata["strName"] = "TotLateMins";
 	$fdata["GoodName"] = "TotLateMins";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","TotLateMins");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -9869,7 +8108,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -9877,15 +8116,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -9950,12 +8187,12 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	LatePenaltyMins
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 60;
+	$fdata["Index"] = 47;
 	$fdata["strName"] = "LatePenaltyMins";
 	$fdata["GoodName"] = "LatePenaltyMins";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","LatePenaltyMins");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -9995,7 +8232,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -10003,15 +8240,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -10076,7 +8311,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	Employer
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 61;
+	$fdata["Index"] = 48;
 	$fdata["strName"] = "Employer";
 	$fdata["GoodName"] = "Employer";
 	$fdata["ownerTable"] = "indschedule";
@@ -10226,7 +8461,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	LateFixPenalty
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 62;
+	$fdata["Index"] = 49;
 	$fdata["strName"] = "LateFixPenalty";
 	$fdata["GoodName"] = "LateFixPenalty";
 	$fdata["ownerTable"] = "indschedule";
@@ -10271,7 +8506,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Checkbox");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -10347,7 +8582,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	AfterBreakLogOut
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 63;
+	$fdata["Index"] = 50;
 	$fdata["strName"] = "AfterBreakLogOut";
 	$fdata["GoodName"] = "AfterBreakLogOut";
 	$fdata["ownerTable"] = "indschedule";
@@ -10472,7 +8707,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	AfterBreakLog
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 64;
+	$fdata["Index"] = 51;
 	$fdata["strName"] = "AfterBreakLog";
 	$fdata["GoodName"] = "AfterBreakLog";
 	$fdata["ownerTable"] = "indschedule";
@@ -10594,385 +8829,15 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 
 
 	$tdataindschedule["AfterBreakLog"] = $fdata;
-//	PreLogMins
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 65;
-	$fdata["strName"] = "PreLogMins";
-	$fdata["GoodName"] = "PreLogMins";
-	$fdata["ownerTable"] = "indschedule";
-	$fdata["Label"] = GetFieldLabel("indschedule","PreLogMins");
-	$fdata["FieldType"] = 5;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-	
-
-		$fdata["bViewPage"] = true;
-
-	
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "PreLogMins";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "PreLogMins";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Number");
-
-	
-	
-	
-	
-	
-	
-		$vdata["DecimalDigits"] = 2;
-
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-
-
-
-
-	$tdataindschedule["PreLogMins"] = $fdata;
-//	IncludeBreakLate
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 66;
-	$fdata["strName"] = "IncludeBreakLate";
-	$fdata["GoodName"] = "IncludeBreakLate";
-	$fdata["ownerTable"] = "indschedule";
-	$fdata["Label"] = GetFieldLabel("indschedule","IncludeBreakLate");
-	$fdata["FieldType"] = 16;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-	
-
-		$fdata["bViewPage"] = true;
-
-	
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "IncludeBreakLate";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "IncludeBreakLate";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Checkbox");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Checkbox");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-	
-	
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-
-
-
-
-	$tdataindschedule["IncludeBreakLate"] = $fdata;
-//	GracePeriodMins
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 67;
-	$fdata["strName"] = "GracePeriodMins";
-	$fdata["GoodName"] = "GracePeriodMins";
-	$fdata["ownerTable"] = "indschedule";
-	$fdata["Label"] = GetFieldLabel("indschedule","GracePeriodMins");
-	$fdata["FieldType"] = 5;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-	
-
-		$fdata["bViewPage"] = true;
-
-	
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "GracePeriodMins";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "GracePeriodMins";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Number");
-
-	
-	
-	
-	
-	
-	
-		$vdata["DecimalDigits"] = 2;
-
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-
-
-
-
-	$tdataindschedule["GracePeriodMins"] = $fdata;
 //	BreakLateMins
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 68;
+	$fdata["Index"] = 52;
 	$fdata["strName"] = "BreakLateMins";
 	$fdata["GoodName"] = "BreakLateMins";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","BreakLateMins");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -11011,7 +8876,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -11019,15 +8884,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -11089,265 +8952,15 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 
 
 	$tdataindschedule["BreakLateMins"] = $fdata;
-//	ANDOTMins
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 69;
-	$fdata["strName"] = "ANDOTMins";
-	$fdata["GoodName"] = "ANDOTMins";
-	$fdata["ownerTable"] = "indschedule";
-	$fdata["Label"] = GetFieldLabel("indschedule","ANDOTMins");
-	$fdata["FieldType"] = 5;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-	
-
-		$fdata["bViewPage"] = true;
-
-	
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "ANDOTMins";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "ANDOTMins";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Number");
-
-	
-	
-	
-	
-	
-	
-		$vdata["DecimalDigits"] = 2;
-
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-
-
-
-
-	$tdataindschedule["ANDOTMins"] = $fdata;
-//	RegNDOTHrs
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 70;
-	$fdata["strName"] = "RegNDOTHrs";
-	$fdata["GoodName"] = "RegNDOTHrs";
-	$fdata["ownerTable"] = "indschedule";
-	$fdata["Label"] = GetFieldLabel("indschedule","RegNDOTHrs");
-	$fdata["FieldType"] = 5;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-	
-
-		$fdata["bViewPage"] = true;
-
-	
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "RegNDOTHrs";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "RegNDOTHrs";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Number");
-
-	
-	
-	
-	
-	
-	
-		$vdata["DecimalDigits"] = 2;
-
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-
-
-
-
-	$tdataindschedule["RegNDOTHrs"] = $fdata;
 //	RHNDOTHrs
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 71;
+	$fdata["Index"] = 53;
 	$fdata["strName"] = "RHNDOTHrs";
 	$fdata["GoodName"] = "RHNDOTHrs";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","RHNDOTHrs");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -11386,7 +8999,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -11394,15 +9007,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -11467,12 +9078,12 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	SHNDOTHrs
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 72;
+	$fdata["Index"] = 54;
 	$fdata["strName"] = "SHNDOTHrs";
 	$fdata["GoodName"] = "SHNDOTHrs";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","SHNDOTHrs");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -11511,7 +9122,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -11519,15 +9130,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -11589,140 +9198,15 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 
 
 	$tdataindschedule["SHNDOTHrs"] = $fdata;
-//	CHNDOTHrs
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 73;
-	$fdata["strName"] = "CHNDOTHrs";
-	$fdata["GoodName"] = "CHNDOTHrs";
-	$fdata["ownerTable"] = "indschedule";
-	$fdata["Label"] = GetFieldLabel("indschedule","CHNDOTHrs");
-	$fdata["FieldType"] = 5;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-	
-
-		$fdata["bViewPage"] = true;
-
-	
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "CHNDOTHrs";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "CHNDOTHrs";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Number");
-
-	
-	
-	
-	
-	
-	
-		$vdata["DecimalDigits"] = 2;
-
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-
-
-
-
-	$tdataindschedule["CHNDOTHrs"] = $fdata;
 //	RDNDOTHrs
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 74;
+	$fdata["Index"] = 55;
 	$fdata["strName"] = "RDNDOTHrs";
 	$fdata["GoodName"] = "RDNDOTHrs";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","RDNDOTHrs");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -11761,7 +9245,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -11769,15 +9253,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -11842,12 +9324,12 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	DH
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 75;
+	$fdata["Index"] = 56;
 	$fdata["strName"] = "DH";
 	$fdata["GoodName"] = "DH";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","DH");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -11886,7 +9368,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -11894,15 +9376,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -11967,12 +9447,12 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	DHRD
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 76;
+	$fdata["Index"] = 57;
 	$fdata["strName"] = "DHRD";
 	$fdata["GoodName"] = "DHRD";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","DHRD");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -12011,7 +9491,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -12019,15 +9499,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -12092,12 +9570,12 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	DHOT
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 77;
+	$fdata["Index"] = 58;
 	$fdata["strName"] = "DHOT";
 	$fdata["GoodName"] = "DHOT";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","DHOT");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -12136,7 +9614,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -12144,15 +9622,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -12217,12 +9693,12 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	DHRDOT
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 78;
+	$fdata["Index"] = 59;
 	$fdata["strName"] = "DHRDOT";
 	$fdata["GoodName"] = "DHRDOT";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","DHRDOT");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -12261,7 +9737,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -12269,15 +9745,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -12342,12 +9816,12 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	SHRDND
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 79;
+	$fdata["Index"] = 60;
 	$fdata["strName"] = "SHRDND";
 	$fdata["GoodName"] = "SHRDND";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","SHRDND");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -12386,7 +9860,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -12394,15 +9868,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -12467,12 +9939,12 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	RHRDND
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 80;
+	$fdata["Index"] = 61;
 	$fdata["strName"] = "RHRDND";
 	$fdata["GoodName"] = "RHRDND";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","RHRDND");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -12511,7 +9983,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -12519,15 +9991,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -12592,12 +10062,12 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	SHRDNDOT
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 81;
+	$fdata["Index"] = 62;
 	$fdata["strName"] = "SHRDNDOT";
 	$fdata["GoodName"] = "SHRDNDOT";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","SHRDNDOT");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -12636,7 +10106,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -12644,15 +10114,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -12717,12 +10185,12 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	RHRDNDOT
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 82;
+	$fdata["Index"] = 63;
 	$fdata["strName"] = "RHRDNDOT";
 	$fdata["GoodName"] = "RHRDNDOT";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","RHRDNDOT");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -12761,7 +10229,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -12769,15 +10237,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -12842,12 +10308,12 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	DHND
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 83;
+	$fdata["Index"] = 64;
 	$fdata["strName"] = "DHND";
 	$fdata["GoodName"] = "DHND";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","DHND");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -12886,7 +10352,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -12894,15 +10360,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -12967,12 +10431,12 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	DHRDND
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 84;
+	$fdata["Index"] = 65;
 	$fdata["strName"] = "DHRDND";
 	$fdata["GoodName"] = "DHRDND";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","DHRDND");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -13011,7 +10475,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -13019,15 +10483,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -13092,12 +10554,12 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	DHNDOT
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 85;
+	$fdata["Index"] = 66;
 	$fdata["strName"] = "DHNDOT";
 	$fdata["GoodName"] = "DHNDOT";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","DHNDOT");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -13136,7 +10598,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -13144,15 +10606,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -13217,12 +10677,12 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //	DHRDNDOT
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 86;
+	$fdata["Index"] = 67;
 	$fdata["strName"] = "DHRDNDOT";
 	$fdata["GoodName"] = "DHRDNDOT";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("indschedule","DHRDNDOT");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -13261,7 +10721,7 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Number");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -13269,15 +10729,13 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 	
 	
 	
-		$vdata["DecimalDigits"] = 2;
-
 	
 	
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
+	
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -13339,6 +10797,1176 @@ $tdataindschedule[".printFields"][] = "RDHrs";
 
 
 	$tdataindschedule["DHRDNDOT"] = $fdata;
+//	RHRDOT
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 68;
+	$fdata["strName"] = "RHRDOT";
+	$fdata["GoodName"] = "RHRDOT";
+	$fdata["ownerTable"] = "indschedule";
+	$fdata["Label"] = GetFieldLabel("indschedule","RHRDOT");
+	$fdata["FieldType"] = 14;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "RHRDOT";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "RHRDOT";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Custom");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdataindschedule["RHRDOT"] = $fdata;
+//	SHRDOT
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 69;
+	$fdata["strName"] = "SHRDOT";
+	$fdata["GoodName"] = "SHRDOT";
+	$fdata["ownerTable"] = "indschedule";
+	$fdata["Label"] = GetFieldLabel("indschedule","SHRDOT");
+	$fdata["FieldType"] = 14;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "SHRDOT";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "SHRDOT";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Custom");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdataindschedule["SHRDOT"] = $fdata;
+//	RegND
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 70;
+	$fdata["strName"] = "RegND";
+	$fdata["GoodName"] = "RegND";
+	$fdata["ownerTable"] = "indschedule";
+	$fdata["Label"] = GetFieldLabel("indschedule","RegND");
+	$fdata["FieldType"] = 14;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "RegND";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "RegND";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Custom");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdataindschedule["RegND"] = $fdata;
+//	RegRD
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 71;
+	$fdata["strName"] = "RegRD";
+	$fdata["GoodName"] = "RegRD";
+	$fdata["ownerTable"] = "indschedule";
+	$fdata["Label"] = GetFieldLabel("indschedule","RegRD");
+	$fdata["FieldType"] = 14;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "RegRD";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "RegRD";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Custom");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdataindschedule["RegRD"] = $fdata;
+//	SHOTD
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 72;
+	$fdata["strName"] = "SHOTD";
+	$fdata["GoodName"] = "SHOTD";
+	$fdata["ownerTable"] = "indschedule";
+	$fdata["Label"] = GetFieldLabel("indschedule","SHOTD");
+	$fdata["FieldType"] = 14;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "SHOTD";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "SHOTD";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Custom");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdataindschedule["SHOTD"] = $fdata;
+//	SHRDOTD
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 73;
+	$fdata["strName"] = "SHRDOTD";
+	$fdata["GoodName"] = "SHRDOTD";
+	$fdata["ownerTable"] = "indschedule";
+	$fdata["Label"] = GetFieldLabel("indschedule","SHRDOTD");
+	$fdata["FieldType"] = 14;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "SHRDOTD";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "SHRDOTD";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Custom");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdataindschedule["SHRDOTD"] = $fdata;
+//	NDOT
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 74;
+	$fdata["strName"] = "NDOT";
+	$fdata["GoodName"] = "NDOT";
+	$fdata["ownerTable"] = "indschedule";
+	$fdata["Label"] = GetFieldLabel("indschedule","NDOT");
+	$fdata["FieldType"] = 14;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "NDOT";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "NDOT";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Custom");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdataindschedule["NDOT"] = $fdata;
+//	RHRD
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 75;
+	$fdata["strName"] = "RHRD";
+	$fdata["GoodName"] = "RHRD";
+	$fdata["ownerTable"] = "indschedule";
+	$fdata["Label"] = GetFieldLabel("indschedule","RHRD");
+	$fdata["FieldType"] = 14;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "RHRD";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "RHRD";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Custom");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdataindschedule["RHRD"] = $fdata;
+//	SHRD
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 76;
+	$fdata["strName"] = "SHRD";
+	$fdata["GoodName"] = "SHRD";
+	$fdata["ownerTable"] = "indschedule";
+	$fdata["Label"] = GetFieldLabel("indschedule","SHRD");
+	$fdata["FieldType"] = 14;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "SHRD";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "SHRD";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Custom");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdataindschedule["SHRD"] = $fdata;
 
 
 $tables_data["indschedule"]=&$tdataindschedule;
@@ -13476,7 +12104,7 @@ function createSqlQuery_indschedule()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "ScID,  UserName,  SDate,  STimeIn,  STimeOut,  SchedType,  ApprovedOT,  AOTMins,  WageType,  ApprovedNightDiff,  ANDiff,  EmployeeID,  MinsPerDay,  BreakMins,  Shift,  ApprovedRD,  RDMins,  LunchBreakFrom,  LunchBreakTo,  NDMealAllowancePerShift,  NDMinimumHrs,  NDMealAllowance,  Division,  TimeIn,  TimeOut,  DayIs,  RestDay,  Department,  RegWD,  DWork,  Absent,  LateMins,  UndertimeMins,  RHolidayHrs,  SHolidayHrs,  CHolidayHrs,  ExcessHrs,  RegOTHrs,  RHOTHrs,  SHOTHrs,  CHOTHrs,  RDOTHrs,  NDHrs,  RDHrs,  RegNDHrs,  RHNDHrs,  SHNDHrs,  CHNDHrs,  RDNDHrs,  VLDay,  SLDay,  ELDay,  PLDay,  TrODay,  HolidayType,  Mispunched,  Holiday1stHalf,  Holiday2ndHalf,  TotLateMins,  LatePenaltyMins,  Employer,  LateFixPenalty,  AfterBreakLogOut,  AfterBreakLog,  PreLogMins,  IncludeBreakLate,  GracePeriodMins,  BreakLateMins,  ANDOTMins,  RegNDOTHrs,  RHNDOTHrs,  SHNDOTHrs,  CHNDOTHrs,  RDNDOTHrs,  DH,  DHRD,  DHOT,  DHRDOT,  SHRDND,  RHRDND,  SHRDNDOT,  RHRDNDOT,  DHND,  DHRDND,  DHNDOT,  DHRDNDOT";
+$proto0["m_strFieldList"] = "ScID,  UserName,  SDate,  STimeIn,  STimeOut,  SchedType,  ApprovedOT,  WageType,  ApprovedNightDiff,  EmployeeID,  BreakMins,  Shift,  ApprovedRD,  LunchBreakFrom,  LunchBreakTo,  Division,  TimeIn,  TimeOut,  DayIs,  RestDay,  Department,  RegWD,  DWork,  Absent,  LateMins,  UndertimeMins,  RHolidayHrs,  SHolidayHrs,  ExcessHrs,  RegOTHrs,  RHOTHrs,  SHOTHrs,  RDOTHrs,  RHNDHrs,  SHNDHrs,  RDNDHrs,  VLDay,  SLDay,  ELDay,  PLDay,  TrODay,  HolidayType,  Mispunched,  Holiday1stHalf,  Holiday2ndHalf,  TotLateMins,  LatePenaltyMins,  Employer,  LateFixPenalty,  AfterBreakLogOut,  AfterBreakLog,  BreakLateMins,  RHNDOTHrs,  SHNDOTHrs,  RDNDOTHrs,  DH,  DHRD,  DHOT,  DHRDOT,  SHRDND,  RHRDND,  SHRDNDOT,  RHRDNDOT,  DHND,  DHRDND,  DHNDOT,  DHRDNDOT,  RHRDOT,  SHRDOT,  RegND,  RegRD,  SHOTD,  SHRDOTD,  NDOT,  RHRD,  SHRD";
 $proto0["m_strFrom"] = "FROM indschedule";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "ORDER BY ScID";
@@ -13616,12 +12244,12 @@ $obj = new SQLFieldListItem($proto18);
 $proto0["m_fieldlist"][]=$obj;
 						$proto20=array();
 			$obj = new SQLField(array(
-	"m_strName" => "AOTMins",
+	"m_strName" => "WageType",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto20["m_sql"] = "AOTMins";
+$proto20["m_sql"] = "WageType";
 $proto20["m_srcTableName"] = "indschedule";
 $proto20["m_expr"]=$obj;
 $proto20["m_alias"] = "";
@@ -13630,12 +12258,12 @@ $obj = new SQLFieldListItem($proto20);
 $proto0["m_fieldlist"][]=$obj;
 						$proto22=array();
 			$obj = new SQLField(array(
-	"m_strName" => "WageType",
+	"m_strName" => "ApprovedNightDiff",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto22["m_sql"] = "WageType";
+$proto22["m_sql"] = "ApprovedNightDiff";
 $proto22["m_srcTableName"] = "indschedule";
 $proto22["m_expr"]=$obj;
 $proto22["m_alias"] = "";
@@ -13644,12 +12272,12 @@ $obj = new SQLFieldListItem($proto22);
 $proto0["m_fieldlist"][]=$obj;
 						$proto24=array();
 			$obj = new SQLField(array(
-	"m_strName" => "ApprovedNightDiff",
+	"m_strName" => "EmployeeID",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto24["m_sql"] = "ApprovedNightDiff";
+$proto24["m_sql"] = "EmployeeID";
 $proto24["m_srcTableName"] = "indschedule";
 $proto24["m_expr"]=$obj;
 $proto24["m_alias"] = "";
@@ -13658,12 +12286,12 @@ $obj = new SQLFieldListItem($proto24);
 $proto0["m_fieldlist"][]=$obj;
 						$proto26=array();
 			$obj = new SQLField(array(
-	"m_strName" => "ANDiff",
+	"m_strName" => "BreakMins",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto26["m_sql"] = "ANDiff";
+$proto26["m_sql"] = "BreakMins";
 $proto26["m_srcTableName"] = "indschedule";
 $proto26["m_expr"]=$obj;
 $proto26["m_alias"] = "";
@@ -13672,12 +12300,12 @@ $obj = new SQLFieldListItem($proto26);
 $proto0["m_fieldlist"][]=$obj;
 						$proto28=array();
 			$obj = new SQLField(array(
-	"m_strName" => "EmployeeID",
+	"m_strName" => "Shift",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto28["m_sql"] = "EmployeeID";
+$proto28["m_sql"] = "Shift";
 $proto28["m_srcTableName"] = "indschedule";
 $proto28["m_expr"]=$obj;
 $proto28["m_alias"] = "";
@@ -13686,12 +12314,12 @@ $obj = new SQLFieldListItem($proto28);
 $proto0["m_fieldlist"][]=$obj;
 						$proto30=array();
 			$obj = new SQLField(array(
-	"m_strName" => "MinsPerDay",
+	"m_strName" => "ApprovedRD",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto30["m_sql"] = "MinsPerDay";
+$proto30["m_sql"] = "ApprovedRD";
 $proto30["m_srcTableName"] = "indschedule";
 $proto30["m_expr"]=$obj;
 $proto30["m_alias"] = "";
@@ -13700,12 +12328,12 @@ $obj = new SQLFieldListItem($proto30);
 $proto0["m_fieldlist"][]=$obj;
 						$proto32=array();
 			$obj = new SQLField(array(
-	"m_strName" => "BreakMins",
+	"m_strName" => "LunchBreakFrom",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto32["m_sql"] = "BreakMins";
+$proto32["m_sql"] = "LunchBreakFrom";
 $proto32["m_srcTableName"] = "indschedule";
 $proto32["m_expr"]=$obj;
 $proto32["m_alias"] = "";
@@ -13714,12 +12342,12 @@ $obj = new SQLFieldListItem($proto32);
 $proto0["m_fieldlist"][]=$obj;
 						$proto34=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Shift",
+	"m_strName" => "LunchBreakTo",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto34["m_sql"] = "Shift";
+$proto34["m_sql"] = "LunchBreakTo";
 $proto34["m_srcTableName"] = "indschedule";
 $proto34["m_expr"]=$obj;
 $proto34["m_alias"] = "";
@@ -13728,12 +12356,12 @@ $obj = new SQLFieldListItem($proto34);
 $proto0["m_fieldlist"][]=$obj;
 						$proto36=array();
 			$obj = new SQLField(array(
-	"m_strName" => "ApprovedRD",
+	"m_strName" => "Division",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto36["m_sql"] = "ApprovedRD";
+$proto36["m_sql"] = "Division";
 $proto36["m_srcTableName"] = "indschedule";
 $proto36["m_expr"]=$obj;
 $proto36["m_alias"] = "";
@@ -13742,12 +12370,12 @@ $obj = new SQLFieldListItem($proto36);
 $proto0["m_fieldlist"][]=$obj;
 						$proto38=array();
 			$obj = new SQLField(array(
-	"m_strName" => "RDMins",
+	"m_strName" => "TimeIn",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto38["m_sql"] = "RDMins";
+$proto38["m_sql"] = "TimeIn";
 $proto38["m_srcTableName"] = "indschedule";
 $proto38["m_expr"]=$obj;
 $proto38["m_alias"] = "";
@@ -13756,12 +12384,12 @@ $obj = new SQLFieldListItem($proto38);
 $proto0["m_fieldlist"][]=$obj;
 						$proto40=array();
 			$obj = new SQLField(array(
-	"m_strName" => "LunchBreakFrom",
+	"m_strName" => "TimeOut",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto40["m_sql"] = "LunchBreakFrom";
+$proto40["m_sql"] = "TimeOut";
 $proto40["m_srcTableName"] = "indschedule";
 $proto40["m_expr"]=$obj;
 $proto40["m_alias"] = "";
@@ -13770,12 +12398,12 @@ $obj = new SQLFieldListItem($proto40);
 $proto0["m_fieldlist"][]=$obj;
 						$proto42=array();
 			$obj = new SQLField(array(
-	"m_strName" => "LunchBreakTo",
+	"m_strName" => "DayIs",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto42["m_sql"] = "LunchBreakTo";
+$proto42["m_sql"] = "DayIs";
 $proto42["m_srcTableName"] = "indschedule";
 $proto42["m_expr"]=$obj;
 $proto42["m_alias"] = "";
@@ -13784,12 +12412,12 @@ $obj = new SQLFieldListItem($proto42);
 $proto0["m_fieldlist"][]=$obj;
 						$proto44=array();
 			$obj = new SQLField(array(
-	"m_strName" => "NDMealAllowancePerShift",
+	"m_strName" => "RestDay",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto44["m_sql"] = "NDMealAllowancePerShift";
+$proto44["m_sql"] = "RestDay";
 $proto44["m_srcTableName"] = "indschedule";
 $proto44["m_expr"]=$obj;
 $proto44["m_alias"] = "";
@@ -13798,12 +12426,12 @@ $obj = new SQLFieldListItem($proto44);
 $proto0["m_fieldlist"][]=$obj;
 						$proto46=array();
 			$obj = new SQLField(array(
-	"m_strName" => "NDMinimumHrs",
+	"m_strName" => "Department",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto46["m_sql"] = "NDMinimumHrs";
+$proto46["m_sql"] = "Department";
 $proto46["m_srcTableName"] = "indschedule";
 $proto46["m_expr"]=$obj;
 $proto46["m_alias"] = "";
@@ -13812,12 +12440,12 @@ $obj = new SQLFieldListItem($proto46);
 $proto0["m_fieldlist"][]=$obj;
 						$proto48=array();
 			$obj = new SQLField(array(
-	"m_strName" => "NDMealAllowance",
+	"m_strName" => "RegWD",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto48["m_sql"] = "NDMealAllowance";
+$proto48["m_sql"] = "RegWD";
 $proto48["m_srcTableName"] = "indschedule";
 $proto48["m_expr"]=$obj;
 $proto48["m_alias"] = "";
@@ -13826,12 +12454,12 @@ $obj = new SQLFieldListItem($proto48);
 $proto0["m_fieldlist"][]=$obj;
 						$proto50=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Division",
+	"m_strName" => "DWork",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto50["m_sql"] = "Division";
+$proto50["m_sql"] = "DWork";
 $proto50["m_srcTableName"] = "indschedule";
 $proto50["m_expr"]=$obj;
 $proto50["m_alias"] = "";
@@ -13840,12 +12468,12 @@ $obj = new SQLFieldListItem($proto50);
 $proto0["m_fieldlist"][]=$obj;
 						$proto52=array();
 			$obj = new SQLField(array(
-	"m_strName" => "TimeIn",
+	"m_strName" => "Absent",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto52["m_sql"] = "TimeIn";
+$proto52["m_sql"] = "Absent";
 $proto52["m_srcTableName"] = "indschedule";
 $proto52["m_expr"]=$obj;
 $proto52["m_alias"] = "";
@@ -13854,12 +12482,12 @@ $obj = new SQLFieldListItem($proto52);
 $proto0["m_fieldlist"][]=$obj;
 						$proto54=array();
 			$obj = new SQLField(array(
-	"m_strName" => "TimeOut",
+	"m_strName" => "LateMins",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto54["m_sql"] = "TimeOut";
+$proto54["m_sql"] = "LateMins";
 $proto54["m_srcTableName"] = "indschedule";
 $proto54["m_expr"]=$obj;
 $proto54["m_alias"] = "";
@@ -13868,12 +12496,12 @@ $obj = new SQLFieldListItem($proto54);
 $proto0["m_fieldlist"][]=$obj;
 						$proto56=array();
 			$obj = new SQLField(array(
-	"m_strName" => "DayIs",
+	"m_strName" => "UndertimeMins",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto56["m_sql"] = "DayIs";
+$proto56["m_sql"] = "UndertimeMins";
 $proto56["m_srcTableName"] = "indschedule";
 $proto56["m_expr"]=$obj;
 $proto56["m_alias"] = "";
@@ -13882,12 +12510,12 @@ $obj = new SQLFieldListItem($proto56);
 $proto0["m_fieldlist"][]=$obj;
 						$proto58=array();
 			$obj = new SQLField(array(
-	"m_strName" => "RestDay",
+	"m_strName" => "RHolidayHrs",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto58["m_sql"] = "RestDay";
+$proto58["m_sql"] = "RHolidayHrs";
 $proto58["m_srcTableName"] = "indschedule";
 $proto58["m_expr"]=$obj;
 $proto58["m_alias"] = "";
@@ -13896,12 +12524,12 @@ $obj = new SQLFieldListItem($proto58);
 $proto0["m_fieldlist"][]=$obj;
 						$proto60=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Department",
+	"m_strName" => "SHolidayHrs",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto60["m_sql"] = "Department";
+$proto60["m_sql"] = "SHolidayHrs";
 $proto60["m_srcTableName"] = "indschedule";
 $proto60["m_expr"]=$obj;
 $proto60["m_alias"] = "";
@@ -13910,12 +12538,12 @@ $obj = new SQLFieldListItem($proto60);
 $proto0["m_fieldlist"][]=$obj;
 						$proto62=array();
 			$obj = new SQLField(array(
-	"m_strName" => "RegWD",
+	"m_strName" => "ExcessHrs",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto62["m_sql"] = "RegWD";
+$proto62["m_sql"] = "ExcessHrs";
 $proto62["m_srcTableName"] = "indschedule";
 $proto62["m_expr"]=$obj;
 $proto62["m_alias"] = "";
@@ -13924,12 +12552,12 @@ $obj = new SQLFieldListItem($proto62);
 $proto0["m_fieldlist"][]=$obj;
 						$proto64=array();
 			$obj = new SQLField(array(
-	"m_strName" => "DWork",
+	"m_strName" => "RegOTHrs",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto64["m_sql"] = "DWork";
+$proto64["m_sql"] = "RegOTHrs";
 $proto64["m_srcTableName"] = "indschedule";
 $proto64["m_expr"]=$obj;
 $proto64["m_alias"] = "";
@@ -13938,12 +12566,12 @@ $obj = new SQLFieldListItem($proto64);
 $proto0["m_fieldlist"][]=$obj;
 						$proto66=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Absent",
+	"m_strName" => "RHOTHrs",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto66["m_sql"] = "Absent";
+$proto66["m_sql"] = "RHOTHrs";
 $proto66["m_srcTableName"] = "indschedule";
 $proto66["m_expr"]=$obj;
 $proto66["m_alias"] = "";
@@ -13952,12 +12580,12 @@ $obj = new SQLFieldListItem($proto66);
 $proto0["m_fieldlist"][]=$obj;
 						$proto68=array();
 			$obj = new SQLField(array(
-	"m_strName" => "LateMins",
+	"m_strName" => "SHOTHrs",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto68["m_sql"] = "LateMins";
+$proto68["m_sql"] = "SHOTHrs";
 $proto68["m_srcTableName"] = "indschedule";
 $proto68["m_expr"]=$obj;
 $proto68["m_alias"] = "";
@@ -13966,12 +12594,12 @@ $obj = new SQLFieldListItem($proto68);
 $proto0["m_fieldlist"][]=$obj;
 						$proto70=array();
 			$obj = new SQLField(array(
-	"m_strName" => "UndertimeMins",
+	"m_strName" => "RDOTHrs",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto70["m_sql"] = "UndertimeMins";
+$proto70["m_sql"] = "RDOTHrs";
 $proto70["m_srcTableName"] = "indschedule";
 $proto70["m_expr"]=$obj;
 $proto70["m_alias"] = "";
@@ -13980,12 +12608,12 @@ $obj = new SQLFieldListItem($proto70);
 $proto0["m_fieldlist"][]=$obj;
 						$proto72=array();
 			$obj = new SQLField(array(
-	"m_strName" => "RHolidayHrs",
+	"m_strName" => "RHNDHrs",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto72["m_sql"] = "RHolidayHrs";
+$proto72["m_sql"] = "RHNDHrs";
 $proto72["m_srcTableName"] = "indschedule";
 $proto72["m_expr"]=$obj;
 $proto72["m_alias"] = "";
@@ -13994,12 +12622,12 @@ $obj = new SQLFieldListItem($proto72);
 $proto0["m_fieldlist"][]=$obj;
 						$proto74=array();
 			$obj = new SQLField(array(
-	"m_strName" => "SHolidayHrs",
+	"m_strName" => "SHNDHrs",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto74["m_sql"] = "SHolidayHrs";
+$proto74["m_sql"] = "SHNDHrs";
 $proto74["m_srcTableName"] = "indschedule";
 $proto74["m_expr"]=$obj;
 $proto74["m_alias"] = "";
@@ -14008,12 +12636,12 @@ $obj = new SQLFieldListItem($proto74);
 $proto0["m_fieldlist"][]=$obj;
 						$proto76=array();
 			$obj = new SQLField(array(
-	"m_strName" => "CHolidayHrs",
+	"m_strName" => "RDNDHrs",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto76["m_sql"] = "CHolidayHrs";
+$proto76["m_sql"] = "RDNDHrs";
 $proto76["m_srcTableName"] = "indschedule";
 $proto76["m_expr"]=$obj;
 $proto76["m_alias"] = "";
@@ -14022,12 +12650,12 @@ $obj = new SQLFieldListItem($proto76);
 $proto0["m_fieldlist"][]=$obj;
 						$proto78=array();
 			$obj = new SQLField(array(
-	"m_strName" => "ExcessHrs",
+	"m_strName" => "VLDay",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto78["m_sql"] = "ExcessHrs";
+$proto78["m_sql"] = "VLDay";
 $proto78["m_srcTableName"] = "indschedule";
 $proto78["m_expr"]=$obj;
 $proto78["m_alias"] = "";
@@ -14036,12 +12664,12 @@ $obj = new SQLFieldListItem($proto78);
 $proto0["m_fieldlist"][]=$obj;
 						$proto80=array();
 			$obj = new SQLField(array(
-	"m_strName" => "RegOTHrs",
+	"m_strName" => "SLDay",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto80["m_sql"] = "RegOTHrs";
+$proto80["m_sql"] = "SLDay";
 $proto80["m_srcTableName"] = "indschedule";
 $proto80["m_expr"]=$obj;
 $proto80["m_alias"] = "";
@@ -14050,12 +12678,12 @@ $obj = new SQLFieldListItem($proto80);
 $proto0["m_fieldlist"][]=$obj;
 						$proto82=array();
 			$obj = new SQLField(array(
-	"m_strName" => "RHOTHrs",
+	"m_strName" => "ELDay",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto82["m_sql"] = "RHOTHrs";
+$proto82["m_sql"] = "ELDay";
 $proto82["m_srcTableName"] = "indschedule";
 $proto82["m_expr"]=$obj;
 $proto82["m_alias"] = "";
@@ -14064,12 +12692,12 @@ $obj = new SQLFieldListItem($proto82);
 $proto0["m_fieldlist"][]=$obj;
 						$proto84=array();
 			$obj = new SQLField(array(
-	"m_strName" => "SHOTHrs",
+	"m_strName" => "PLDay",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto84["m_sql"] = "SHOTHrs";
+$proto84["m_sql"] = "PLDay";
 $proto84["m_srcTableName"] = "indschedule";
 $proto84["m_expr"]=$obj;
 $proto84["m_alias"] = "";
@@ -14078,12 +12706,12 @@ $obj = new SQLFieldListItem($proto84);
 $proto0["m_fieldlist"][]=$obj;
 						$proto86=array();
 			$obj = new SQLField(array(
-	"m_strName" => "CHOTHrs",
+	"m_strName" => "TrODay",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto86["m_sql"] = "CHOTHrs";
+$proto86["m_sql"] = "TrODay";
 $proto86["m_srcTableName"] = "indschedule";
 $proto86["m_expr"]=$obj;
 $proto86["m_alias"] = "";
@@ -14092,12 +12720,12 @@ $obj = new SQLFieldListItem($proto86);
 $proto0["m_fieldlist"][]=$obj;
 						$proto88=array();
 			$obj = new SQLField(array(
-	"m_strName" => "RDOTHrs",
+	"m_strName" => "HolidayType",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto88["m_sql"] = "RDOTHrs";
+$proto88["m_sql"] = "HolidayType";
 $proto88["m_srcTableName"] = "indschedule";
 $proto88["m_expr"]=$obj;
 $proto88["m_alias"] = "";
@@ -14106,12 +12734,12 @@ $obj = new SQLFieldListItem($proto88);
 $proto0["m_fieldlist"][]=$obj;
 						$proto90=array();
 			$obj = new SQLField(array(
-	"m_strName" => "NDHrs",
+	"m_strName" => "Mispunched",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto90["m_sql"] = "NDHrs";
+$proto90["m_sql"] = "Mispunched";
 $proto90["m_srcTableName"] = "indschedule";
 $proto90["m_expr"]=$obj;
 $proto90["m_alias"] = "";
@@ -14120,12 +12748,12 @@ $obj = new SQLFieldListItem($proto90);
 $proto0["m_fieldlist"][]=$obj;
 						$proto92=array();
 			$obj = new SQLField(array(
-	"m_strName" => "RDHrs",
+	"m_strName" => "Holiday1stHalf",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto92["m_sql"] = "RDHrs";
+$proto92["m_sql"] = "Holiday1stHalf";
 $proto92["m_srcTableName"] = "indschedule";
 $proto92["m_expr"]=$obj;
 $proto92["m_alias"] = "";
@@ -14134,12 +12762,12 @@ $obj = new SQLFieldListItem($proto92);
 $proto0["m_fieldlist"][]=$obj;
 						$proto94=array();
 			$obj = new SQLField(array(
-	"m_strName" => "RegNDHrs",
+	"m_strName" => "Holiday2ndHalf",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto94["m_sql"] = "RegNDHrs";
+$proto94["m_sql"] = "Holiday2ndHalf";
 $proto94["m_srcTableName"] = "indschedule";
 $proto94["m_expr"]=$obj;
 $proto94["m_alias"] = "";
@@ -14148,12 +12776,12 @@ $obj = new SQLFieldListItem($proto94);
 $proto0["m_fieldlist"][]=$obj;
 						$proto96=array();
 			$obj = new SQLField(array(
-	"m_strName" => "RHNDHrs",
+	"m_strName" => "TotLateMins",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto96["m_sql"] = "RHNDHrs";
+$proto96["m_sql"] = "TotLateMins";
 $proto96["m_srcTableName"] = "indschedule";
 $proto96["m_expr"]=$obj;
 $proto96["m_alias"] = "";
@@ -14162,12 +12790,12 @@ $obj = new SQLFieldListItem($proto96);
 $proto0["m_fieldlist"][]=$obj;
 						$proto98=array();
 			$obj = new SQLField(array(
-	"m_strName" => "SHNDHrs",
+	"m_strName" => "LatePenaltyMins",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto98["m_sql"] = "SHNDHrs";
+$proto98["m_sql"] = "LatePenaltyMins";
 $proto98["m_srcTableName"] = "indschedule";
 $proto98["m_expr"]=$obj;
 $proto98["m_alias"] = "";
@@ -14176,12 +12804,12 @@ $obj = new SQLFieldListItem($proto98);
 $proto0["m_fieldlist"][]=$obj;
 						$proto100=array();
 			$obj = new SQLField(array(
-	"m_strName" => "CHNDHrs",
+	"m_strName" => "Employer",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto100["m_sql"] = "CHNDHrs";
+$proto100["m_sql"] = "Employer";
 $proto100["m_srcTableName"] = "indschedule";
 $proto100["m_expr"]=$obj;
 $proto100["m_alias"] = "";
@@ -14190,12 +12818,12 @@ $obj = new SQLFieldListItem($proto100);
 $proto0["m_fieldlist"][]=$obj;
 						$proto102=array();
 			$obj = new SQLField(array(
-	"m_strName" => "RDNDHrs",
+	"m_strName" => "LateFixPenalty",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto102["m_sql"] = "RDNDHrs";
+$proto102["m_sql"] = "LateFixPenalty";
 $proto102["m_srcTableName"] = "indschedule";
 $proto102["m_expr"]=$obj;
 $proto102["m_alias"] = "";
@@ -14204,12 +12832,12 @@ $obj = new SQLFieldListItem($proto102);
 $proto0["m_fieldlist"][]=$obj;
 						$proto104=array();
 			$obj = new SQLField(array(
-	"m_strName" => "VLDay",
+	"m_strName" => "AfterBreakLogOut",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto104["m_sql"] = "VLDay";
+$proto104["m_sql"] = "AfterBreakLogOut";
 $proto104["m_srcTableName"] = "indschedule";
 $proto104["m_expr"]=$obj;
 $proto104["m_alias"] = "";
@@ -14218,12 +12846,12 @@ $obj = new SQLFieldListItem($proto104);
 $proto0["m_fieldlist"][]=$obj;
 						$proto106=array();
 			$obj = new SQLField(array(
-	"m_strName" => "SLDay",
+	"m_strName" => "AfterBreakLog",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto106["m_sql"] = "SLDay";
+$proto106["m_sql"] = "AfterBreakLog";
 $proto106["m_srcTableName"] = "indschedule";
 $proto106["m_expr"]=$obj;
 $proto106["m_alias"] = "";
@@ -14232,12 +12860,12 @@ $obj = new SQLFieldListItem($proto106);
 $proto0["m_fieldlist"][]=$obj;
 						$proto108=array();
 			$obj = new SQLField(array(
-	"m_strName" => "ELDay",
+	"m_strName" => "BreakLateMins",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto108["m_sql"] = "ELDay";
+$proto108["m_sql"] = "BreakLateMins";
 $proto108["m_srcTableName"] = "indschedule";
 $proto108["m_expr"]=$obj;
 $proto108["m_alias"] = "";
@@ -14246,12 +12874,12 @@ $obj = new SQLFieldListItem($proto108);
 $proto0["m_fieldlist"][]=$obj;
 						$proto110=array();
 			$obj = new SQLField(array(
-	"m_strName" => "PLDay",
+	"m_strName" => "RHNDOTHrs",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto110["m_sql"] = "PLDay";
+$proto110["m_sql"] = "RHNDOTHrs";
 $proto110["m_srcTableName"] = "indschedule";
 $proto110["m_expr"]=$obj;
 $proto110["m_alias"] = "";
@@ -14260,12 +12888,12 @@ $obj = new SQLFieldListItem($proto110);
 $proto0["m_fieldlist"][]=$obj;
 						$proto112=array();
 			$obj = new SQLField(array(
-	"m_strName" => "TrODay",
+	"m_strName" => "SHNDOTHrs",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto112["m_sql"] = "TrODay";
+$proto112["m_sql"] = "SHNDOTHrs";
 $proto112["m_srcTableName"] = "indschedule";
 $proto112["m_expr"]=$obj;
 $proto112["m_alias"] = "";
@@ -14274,12 +12902,12 @@ $obj = new SQLFieldListItem($proto112);
 $proto0["m_fieldlist"][]=$obj;
 						$proto114=array();
 			$obj = new SQLField(array(
-	"m_strName" => "HolidayType",
+	"m_strName" => "RDNDOTHrs",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto114["m_sql"] = "HolidayType";
+$proto114["m_sql"] = "RDNDOTHrs";
 $proto114["m_srcTableName"] = "indschedule";
 $proto114["m_expr"]=$obj;
 $proto114["m_alias"] = "";
@@ -14288,12 +12916,12 @@ $obj = new SQLFieldListItem($proto114);
 $proto0["m_fieldlist"][]=$obj;
 						$proto116=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Mispunched",
+	"m_strName" => "DH",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto116["m_sql"] = "Mispunched";
+$proto116["m_sql"] = "DH";
 $proto116["m_srcTableName"] = "indschedule";
 $proto116["m_expr"]=$obj;
 $proto116["m_alias"] = "";
@@ -14302,12 +12930,12 @@ $obj = new SQLFieldListItem($proto116);
 $proto0["m_fieldlist"][]=$obj;
 						$proto118=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Holiday1stHalf",
+	"m_strName" => "DHRD",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto118["m_sql"] = "Holiday1stHalf";
+$proto118["m_sql"] = "DHRD";
 $proto118["m_srcTableName"] = "indschedule";
 $proto118["m_expr"]=$obj;
 $proto118["m_alias"] = "";
@@ -14316,12 +12944,12 @@ $obj = new SQLFieldListItem($proto118);
 $proto0["m_fieldlist"][]=$obj;
 						$proto120=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Holiday2ndHalf",
+	"m_strName" => "DHOT",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto120["m_sql"] = "Holiday2ndHalf";
+$proto120["m_sql"] = "DHOT";
 $proto120["m_srcTableName"] = "indschedule";
 $proto120["m_expr"]=$obj;
 $proto120["m_alias"] = "";
@@ -14330,12 +12958,12 @@ $obj = new SQLFieldListItem($proto120);
 $proto0["m_fieldlist"][]=$obj;
 						$proto122=array();
 			$obj = new SQLField(array(
-	"m_strName" => "TotLateMins",
+	"m_strName" => "DHRDOT",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto122["m_sql"] = "TotLateMins";
+$proto122["m_sql"] = "DHRDOT";
 $proto122["m_srcTableName"] = "indschedule";
 $proto122["m_expr"]=$obj;
 $proto122["m_alias"] = "";
@@ -14344,12 +12972,12 @@ $obj = new SQLFieldListItem($proto122);
 $proto0["m_fieldlist"][]=$obj;
 						$proto124=array();
 			$obj = new SQLField(array(
-	"m_strName" => "LatePenaltyMins",
+	"m_strName" => "SHRDND",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto124["m_sql"] = "LatePenaltyMins";
+$proto124["m_sql"] = "SHRDND";
 $proto124["m_srcTableName"] = "indschedule";
 $proto124["m_expr"]=$obj;
 $proto124["m_alias"] = "";
@@ -14358,12 +12986,12 @@ $obj = new SQLFieldListItem($proto124);
 $proto0["m_fieldlist"][]=$obj;
 						$proto126=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Employer",
+	"m_strName" => "RHRDND",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto126["m_sql"] = "Employer";
+$proto126["m_sql"] = "RHRDND";
 $proto126["m_srcTableName"] = "indschedule";
 $proto126["m_expr"]=$obj;
 $proto126["m_alias"] = "";
@@ -14372,12 +13000,12 @@ $obj = new SQLFieldListItem($proto126);
 $proto0["m_fieldlist"][]=$obj;
 						$proto128=array();
 			$obj = new SQLField(array(
-	"m_strName" => "LateFixPenalty",
+	"m_strName" => "SHRDNDOT",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto128["m_sql"] = "LateFixPenalty";
+$proto128["m_sql"] = "SHRDNDOT";
 $proto128["m_srcTableName"] = "indschedule";
 $proto128["m_expr"]=$obj;
 $proto128["m_alias"] = "";
@@ -14386,12 +13014,12 @@ $obj = new SQLFieldListItem($proto128);
 $proto0["m_fieldlist"][]=$obj;
 						$proto130=array();
 			$obj = new SQLField(array(
-	"m_strName" => "AfterBreakLogOut",
+	"m_strName" => "RHRDNDOT",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto130["m_sql"] = "AfterBreakLogOut";
+$proto130["m_sql"] = "RHRDNDOT";
 $proto130["m_srcTableName"] = "indschedule";
 $proto130["m_expr"]=$obj;
 $proto130["m_alias"] = "";
@@ -14400,12 +13028,12 @@ $obj = new SQLFieldListItem($proto130);
 $proto0["m_fieldlist"][]=$obj;
 						$proto132=array();
 			$obj = new SQLField(array(
-	"m_strName" => "AfterBreakLog",
+	"m_strName" => "DHND",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto132["m_sql"] = "AfterBreakLog";
+$proto132["m_sql"] = "DHND";
 $proto132["m_srcTableName"] = "indschedule";
 $proto132["m_expr"]=$obj;
 $proto132["m_alias"] = "";
@@ -14414,12 +13042,12 @@ $obj = new SQLFieldListItem($proto132);
 $proto0["m_fieldlist"][]=$obj;
 						$proto134=array();
 			$obj = new SQLField(array(
-	"m_strName" => "PreLogMins",
+	"m_strName" => "DHRDND",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto134["m_sql"] = "PreLogMins";
+$proto134["m_sql"] = "DHRDND";
 $proto134["m_srcTableName"] = "indschedule";
 $proto134["m_expr"]=$obj;
 $proto134["m_alias"] = "";
@@ -14428,12 +13056,12 @@ $obj = new SQLFieldListItem($proto134);
 $proto0["m_fieldlist"][]=$obj;
 						$proto136=array();
 			$obj = new SQLField(array(
-	"m_strName" => "IncludeBreakLate",
+	"m_strName" => "DHNDOT",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto136["m_sql"] = "IncludeBreakLate";
+$proto136["m_sql"] = "DHNDOT";
 $proto136["m_srcTableName"] = "indschedule";
 $proto136["m_expr"]=$obj;
 $proto136["m_alias"] = "";
@@ -14442,12 +13070,12 @@ $obj = new SQLFieldListItem($proto136);
 $proto0["m_fieldlist"][]=$obj;
 						$proto138=array();
 			$obj = new SQLField(array(
-	"m_strName" => "GracePeriodMins",
+	"m_strName" => "DHRDNDOT",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto138["m_sql"] = "GracePeriodMins";
+$proto138["m_sql"] = "DHRDNDOT";
 $proto138["m_srcTableName"] = "indschedule";
 $proto138["m_expr"]=$obj;
 $proto138["m_alias"] = "";
@@ -14456,12 +13084,12 @@ $obj = new SQLFieldListItem($proto138);
 $proto0["m_fieldlist"][]=$obj;
 						$proto140=array();
 			$obj = new SQLField(array(
-	"m_strName" => "BreakLateMins",
+	"m_strName" => "RHRDOT",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto140["m_sql"] = "BreakLateMins";
+$proto140["m_sql"] = "RHRDOT";
 $proto140["m_srcTableName"] = "indschedule";
 $proto140["m_expr"]=$obj;
 $proto140["m_alias"] = "";
@@ -14470,12 +13098,12 @@ $obj = new SQLFieldListItem($proto140);
 $proto0["m_fieldlist"][]=$obj;
 						$proto142=array();
 			$obj = new SQLField(array(
-	"m_strName" => "ANDOTMins",
+	"m_strName" => "SHRDOT",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto142["m_sql"] = "ANDOTMins";
+$proto142["m_sql"] = "SHRDOT";
 $proto142["m_srcTableName"] = "indschedule";
 $proto142["m_expr"]=$obj;
 $proto142["m_alias"] = "";
@@ -14484,12 +13112,12 @@ $obj = new SQLFieldListItem($proto142);
 $proto0["m_fieldlist"][]=$obj;
 						$proto144=array();
 			$obj = new SQLField(array(
-	"m_strName" => "RegNDOTHrs",
+	"m_strName" => "RegND",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto144["m_sql"] = "RegNDOTHrs";
+$proto144["m_sql"] = "RegND";
 $proto144["m_srcTableName"] = "indschedule";
 $proto144["m_expr"]=$obj;
 $proto144["m_alias"] = "";
@@ -14498,12 +13126,12 @@ $obj = new SQLFieldListItem($proto144);
 $proto0["m_fieldlist"][]=$obj;
 						$proto146=array();
 			$obj = new SQLField(array(
-	"m_strName" => "RHNDOTHrs",
+	"m_strName" => "RegRD",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto146["m_sql"] = "RHNDOTHrs";
+$proto146["m_sql"] = "RegRD";
 $proto146["m_srcTableName"] = "indschedule";
 $proto146["m_expr"]=$obj;
 $proto146["m_alias"] = "";
@@ -14512,12 +13140,12 @@ $obj = new SQLFieldListItem($proto146);
 $proto0["m_fieldlist"][]=$obj;
 						$proto148=array();
 			$obj = new SQLField(array(
-	"m_strName" => "SHNDOTHrs",
+	"m_strName" => "SHOTD",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto148["m_sql"] = "SHNDOTHrs";
+$proto148["m_sql"] = "SHOTD";
 $proto148["m_srcTableName"] = "indschedule";
 $proto148["m_expr"]=$obj;
 $proto148["m_alias"] = "";
@@ -14526,12 +13154,12 @@ $obj = new SQLFieldListItem($proto148);
 $proto0["m_fieldlist"][]=$obj;
 						$proto150=array();
 			$obj = new SQLField(array(
-	"m_strName" => "CHNDOTHrs",
+	"m_strName" => "SHRDOTD",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto150["m_sql"] = "CHNDOTHrs";
+$proto150["m_sql"] = "SHRDOTD";
 $proto150["m_srcTableName"] = "indschedule";
 $proto150["m_expr"]=$obj;
 $proto150["m_alias"] = "";
@@ -14540,12 +13168,12 @@ $obj = new SQLFieldListItem($proto150);
 $proto0["m_fieldlist"][]=$obj;
 						$proto152=array();
 			$obj = new SQLField(array(
-	"m_strName" => "RDNDOTHrs",
+	"m_strName" => "NDOT",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto152["m_sql"] = "RDNDOTHrs";
+$proto152["m_sql"] = "NDOT";
 $proto152["m_srcTableName"] = "indschedule";
 $proto152["m_expr"]=$obj;
 $proto152["m_alias"] = "";
@@ -14554,12 +13182,12 @@ $obj = new SQLFieldListItem($proto152);
 $proto0["m_fieldlist"][]=$obj;
 						$proto154=array();
 			$obj = new SQLField(array(
-	"m_strName" => "DH",
+	"m_strName" => "RHRD",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto154["m_sql"] = "DH";
+$proto154["m_sql"] = "RHRD";
 $proto154["m_srcTableName"] = "indschedule";
 $proto154["m_expr"]=$obj;
 $proto154["m_alias"] = "";
@@ -14568,301 +13196,170 @@ $obj = new SQLFieldListItem($proto154);
 $proto0["m_fieldlist"][]=$obj;
 						$proto156=array();
 			$obj = new SQLField(array(
-	"m_strName" => "DHRD",
+	"m_strName" => "SHRD",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto156["m_sql"] = "DHRD";
+$proto156["m_sql"] = "SHRD";
 $proto156["m_srcTableName"] = "indschedule";
 $proto156["m_expr"]=$obj;
 $proto156["m_alias"] = "";
 $obj = new SQLFieldListItem($proto156);
 
 $proto0["m_fieldlist"][]=$obj;
-						$proto158=array();
-			$obj = new SQLField(array(
-	"m_strName" => "DHOT",
-	"m_strTable" => "indschedule",
-	"m_srcTableName" => "indschedule"
-));
-
-$proto158["m_sql"] = "DHOT";
-$proto158["m_srcTableName"] = "indschedule";
-$proto158["m_expr"]=$obj;
-$proto158["m_alias"] = "";
-$obj = new SQLFieldListItem($proto158);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto160=array();
-			$obj = new SQLField(array(
-	"m_strName" => "DHRDOT",
-	"m_strTable" => "indschedule",
-	"m_srcTableName" => "indschedule"
-));
-
-$proto160["m_sql"] = "DHRDOT";
-$proto160["m_srcTableName"] = "indschedule";
-$proto160["m_expr"]=$obj;
-$proto160["m_alias"] = "";
-$obj = new SQLFieldListItem($proto160);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto162=array();
-			$obj = new SQLField(array(
-	"m_strName" => "SHRDND",
-	"m_strTable" => "indschedule",
-	"m_srcTableName" => "indschedule"
-));
-
-$proto162["m_sql"] = "SHRDND";
-$proto162["m_srcTableName"] = "indschedule";
-$proto162["m_expr"]=$obj;
-$proto162["m_alias"] = "";
-$obj = new SQLFieldListItem($proto162);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto164=array();
-			$obj = new SQLField(array(
-	"m_strName" => "RHRDND",
-	"m_strTable" => "indschedule",
-	"m_srcTableName" => "indschedule"
-));
-
-$proto164["m_sql"] = "RHRDND";
-$proto164["m_srcTableName"] = "indschedule";
-$proto164["m_expr"]=$obj;
-$proto164["m_alias"] = "";
-$obj = new SQLFieldListItem($proto164);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto166=array();
-			$obj = new SQLField(array(
-	"m_strName" => "SHRDNDOT",
-	"m_strTable" => "indschedule",
-	"m_srcTableName" => "indschedule"
-));
-
-$proto166["m_sql"] = "SHRDNDOT";
-$proto166["m_srcTableName"] = "indschedule";
-$proto166["m_expr"]=$obj;
-$proto166["m_alias"] = "";
-$obj = new SQLFieldListItem($proto166);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto168=array();
-			$obj = new SQLField(array(
-	"m_strName" => "RHRDNDOT",
-	"m_strTable" => "indschedule",
-	"m_srcTableName" => "indschedule"
-));
-
-$proto168["m_sql"] = "RHRDNDOT";
-$proto168["m_srcTableName"] = "indschedule";
-$proto168["m_expr"]=$obj;
-$proto168["m_alias"] = "";
-$obj = new SQLFieldListItem($proto168);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto170=array();
-			$obj = new SQLField(array(
-	"m_strName" => "DHND",
-	"m_strTable" => "indschedule",
-	"m_srcTableName" => "indschedule"
-));
-
-$proto170["m_sql"] = "DHND";
-$proto170["m_srcTableName"] = "indschedule";
-$proto170["m_expr"]=$obj;
-$proto170["m_alias"] = "";
-$obj = new SQLFieldListItem($proto170);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto172=array();
-			$obj = new SQLField(array(
-	"m_strName" => "DHRDND",
-	"m_strTable" => "indschedule",
-	"m_srcTableName" => "indschedule"
-));
-
-$proto172["m_sql"] = "DHRDND";
-$proto172["m_srcTableName"] = "indschedule";
-$proto172["m_expr"]=$obj;
-$proto172["m_alias"] = "";
-$obj = new SQLFieldListItem($proto172);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto174=array();
-			$obj = new SQLField(array(
-	"m_strName" => "DHNDOT",
-	"m_strTable" => "indschedule",
-	"m_srcTableName" => "indschedule"
-));
-
-$proto174["m_sql"] = "DHNDOT";
-$proto174["m_srcTableName"] = "indschedule";
-$proto174["m_expr"]=$obj;
-$proto174["m_alias"] = "";
-$obj = new SQLFieldListItem($proto174);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto176=array();
-			$obj = new SQLField(array(
-	"m_strName" => "DHRDNDOT",
-	"m_strTable" => "indschedule",
-	"m_srcTableName" => "indschedule"
-));
-
-$proto176["m_sql"] = "DHRDNDOT";
-$proto176["m_srcTableName"] = "indschedule";
-$proto176["m_expr"]=$obj;
-$proto176["m_alias"] = "";
-$obj = new SQLFieldListItem($proto176);
-
-$proto0["m_fieldlist"][]=$obj;
 $proto0["m_fromlist"] = array();
-												$proto178=array();
-$proto178["m_link"] = "SQLL_MAIN";
-			$proto179=array();
-$proto179["m_strName"] = "indschedule";
-$proto179["m_srcTableName"] = "indschedule";
-$proto179["m_columns"] = array();
-$proto179["m_columns"][] = "ScID";
-$proto179["m_columns"][] = "UserName";
-$proto179["m_columns"][] = "SDate";
-$proto179["m_columns"][] = "STimeIn";
-$proto179["m_columns"][] = "STimeOut";
-$proto179["m_columns"][] = "SchedType";
-$proto179["m_columns"][] = "CrossMidnight";
-$proto179["m_columns"][] = "RecordOnFirstDay";
-$proto179["m_columns"][] = "RecordOnSecondDay";
-$proto179["m_columns"][] = "ApprovedOT";
-$proto179["m_columns"][] = "AOTMins";
-$proto179["m_columns"][] = "SRestDay";
-$proto179["m_columns"][] = "WageType";
-$proto179["m_columns"][] = "ApprovedNightDiff";
-$proto179["m_columns"][] = "ANDiff";
-$proto179["m_columns"][] = "EmployeeID";
-$proto179["m_columns"][] = "MinsPerDay";
-$proto179["m_columns"][] = "BreakMins";
-$proto179["m_columns"][] = "Shift";
-$proto179["m_columns"][] = "ApprovedRD";
-$proto179["m_columns"][] = "RDMins";
-$proto179["m_columns"][] = "ScRID";
-$proto179["m_columns"][] = "LunchBreakFrom";
-$proto179["m_columns"][] = "LunchBreakTo";
-$proto179["m_columns"][] = "ReqLogOutInOnBreak";
-$proto179["m_columns"][] = "FirstHalfMins";
-$proto179["m_columns"][] = "SecondHalfMins";
-$proto179["m_columns"][] = "NDMealAllowancePerShift";
-$proto179["m_columns"][] = "NDMinimumHrs";
-$proto179["m_columns"][] = "NDMealAllowance";
-$proto179["m_columns"][] = "Division";
-$proto179["m_columns"][] = "TimeIn";
-$proto179["m_columns"][] = "TimeOut";
-$proto179["m_columns"][] = "DayIs";
-$proto179["m_columns"][] = "RestDay";
-$proto179["m_columns"][] = "Schedx";
-$proto179["m_columns"][] = "Department";
-$proto179["m_columns"][] = "RegWD";
-$proto179["m_columns"][] = "DWork";
-$proto179["m_columns"][] = "Absent";
-$proto179["m_columns"][] = "LateMins";
-$proto179["m_columns"][] = "UndertimeMins";
-$proto179["m_columns"][] = "RHolidayHrs";
-$proto179["m_columns"][] = "SHolidayHrs";
-$proto179["m_columns"][] = "CHolidayHrs";
-$proto179["m_columns"][] = "ExcessHrs";
-$proto179["m_columns"][] = "RegOTHrs";
-$proto179["m_columns"][] = "RHOTHrs";
-$proto179["m_columns"][] = "SHOTHrs";
-$proto179["m_columns"][] = "CHOTHrs";
-$proto179["m_columns"][] = "RDOTHrs";
-$proto179["m_columns"][] = "NDHrs";
-$proto179["m_columns"][] = "RDHrs";
-$proto179["m_columns"][] = "RegNDHrs";
-$proto179["m_columns"][] = "RHNDHrs";
-$proto179["m_columns"][] = "SHNDHrs";
-$proto179["m_columns"][] = "CHNDHrs";
-$proto179["m_columns"][] = "RDNDHrs";
-$proto179["m_columns"][] = "VLDay";
-$proto179["m_columns"][] = "SLDay";
-$proto179["m_columns"][] = "ELDay";
-$proto179["m_columns"][] = "PLDay";
-$proto179["m_columns"][] = "TrODay";
-$proto179["m_columns"][] = "HolidayType";
-$proto179["m_columns"][] = "Mispunched";
-$proto179["m_columns"][] = "Holiday1stHalf";
-$proto179["m_columns"][] = "Holiday2ndHalf";
-$proto179["m_columns"][] = "AfterBreakLog";
-$proto179["m_columns"][] = "BreakLateMins";
-$proto179["m_columns"][] = "TotLateMins";
-$proto179["m_columns"][] = "LatePenaltyMins";
-$proto179["m_columns"][] = "Employer";
-$proto179["m_columns"][] = "AfterBreakLogOut";
-$proto179["m_columns"][] = "LateFixPenalty";
-$proto179["m_columns"][] = "Locked";
-$proto179["m_columns"][] = "IScRID";
-$proto179["m_columns"][] = "PreLogMins";
-$proto179["m_columns"][] = "IncludeBreakLate";
-$proto179["m_columns"][] = "GracePeriodMins";
-$proto179["m_columns"][] = "WithAddBreaks";
-$proto179["m_columns"][] = "ANDOTMins";
-$proto179["m_columns"][] = "RegNDOTHrs";
-$proto179["m_columns"][] = "RHNDOTHrs";
-$proto179["m_columns"][] = "SHNDOTHrs";
-$proto179["m_columns"][] = "CHNDOTHrs";
-$proto179["m_columns"][] = "RDNDOTHrs";
-$proto179["m_columns"][] = "DH";
-$proto179["m_columns"][] = "DHRD";
-$proto179["m_columns"][] = "DHOT";
-$proto179["m_columns"][] = "DHRDOT";
-$proto179["m_columns"][] = "SHRDND";
-$proto179["m_columns"][] = "RHRDND";
-$proto179["m_columns"][] = "SHRDNDOT";
-$proto179["m_columns"][] = "RHRDNDOT";
-$proto179["m_columns"][] = "DHND";
-$proto179["m_columns"][] = "DHRDND";
-$proto179["m_columns"][] = "DHNDOT";
-$proto179["m_columns"][] = "DHRDNDOT";
-$obj = new SQLTable($proto179);
+												$proto158=array();
+$proto158["m_link"] = "SQLL_MAIN";
+			$proto159=array();
+$proto159["m_strName"] = "indschedule";
+$proto159["m_srcTableName"] = "indschedule";
+$proto159["m_columns"] = array();
+$proto159["m_columns"][] = "ScID";
+$proto159["m_columns"][] = "UserName";
+$proto159["m_columns"][] = "SDate";
+$proto159["m_columns"][] = "STimeIn";
+$proto159["m_columns"][] = "STimeOut";
+$proto159["m_columns"][] = "SchedType";
+$proto159["m_columns"][] = "CrossMidnight";
+$proto159["m_columns"][] = "RecordOnFirstDay";
+$proto159["m_columns"][] = "RecordOnSecondDay";
+$proto159["m_columns"][] = "ApprovedOT";
+$proto159["m_columns"][] = "AOTMins";
+$proto159["m_columns"][] = "SRestDay";
+$proto159["m_columns"][] = "WageType";
+$proto159["m_columns"][] = "ApprovedNightDiff";
+$proto159["m_columns"][] = "ANDiff";
+$proto159["m_columns"][] = "EmployeeID";
+$proto159["m_columns"][] = "MinsPerDay";
+$proto159["m_columns"][] = "BreakMins";
+$proto159["m_columns"][] = "Shift";
+$proto159["m_columns"][] = "ApprovedRD";
+$proto159["m_columns"][] = "RDMins";
+$proto159["m_columns"][] = "ScRID";
+$proto159["m_columns"][] = "LunchBreakFrom";
+$proto159["m_columns"][] = "LunchBreakTo";
+$proto159["m_columns"][] = "ReqLogOutInOnBreak";
+$proto159["m_columns"][] = "FirstHalfMins";
+$proto159["m_columns"][] = "SecondHalfMins";
+$proto159["m_columns"][] = "NDMealAllowancePerShift";
+$proto159["m_columns"][] = "NDMinimumHrs";
+$proto159["m_columns"][] = "NDMealAllowance";
+$proto159["m_columns"][] = "Division";
+$proto159["m_columns"][] = "TimeIn";
+$proto159["m_columns"][] = "TimeOut";
+$proto159["m_columns"][] = "DayIs";
+$proto159["m_columns"][] = "RestDay";
+$proto159["m_columns"][] = "Schedx";
+$proto159["m_columns"][] = "Department";
+$proto159["m_columns"][] = "RegWD";
+$proto159["m_columns"][] = "DWork";
+$proto159["m_columns"][] = "Absent";
+$proto159["m_columns"][] = "LateMins";
+$proto159["m_columns"][] = "UndertimeMins";
+$proto159["m_columns"][] = "RHolidayHrs";
+$proto159["m_columns"][] = "SHolidayHrs";
+$proto159["m_columns"][] = "CHolidayHrs";
+$proto159["m_columns"][] = "ExcessHrs";
+$proto159["m_columns"][] = "RegOTHrs";
+$proto159["m_columns"][] = "RHOTHrs";
+$proto159["m_columns"][] = "SHOTHrs";
+$proto159["m_columns"][] = "CHOTHrs";
+$proto159["m_columns"][] = "RDOTHrs";
+$proto159["m_columns"][] = "NDHrs";
+$proto159["m_columns"][] = "RDHrs";
+$proto159["m_columns"][] = "RegNDHrs";
+$proto159["m_columns"][] = "RHNDHrs";
+$proto159["m_columns"][] = "SHNDHrs";
+$proto159["m_columns"][] = "CHNDHrs";
+$proto159["m_columns"][] = "RDNDHrs";
+$proto159["m_columns"][] = "VLDay";
+$proto159["m_columns"][] = "SLDay";
+$proto159["m_columns"][] = "ELDay";
+$proto159["m_columns"][] = "PLDay";
+$proto159["m_columns"][] = "TrODay";
+$proto159["m_columns"][] = "HolidayType";
+$proto159["m_columns"][] = "Mispunched";
+$proto159["m_columns"][] = "Holiday1stHalf";
+$proto159["m_columns"][] = "Holiday2ndHalf";
+$proto159["m_columns"][] = "AfterBreakLog";
+$proto159["m_columns"][] = "BreakLateMins";
+$proto159["m_columns"][] = "TotLateMins";
+$proto159["m_columns"][] = "LatePenaltyMins";
+$proto159["m_columns"][] = "Employer";
+$proto159["m_columns"][] = "AfterBreakLogOut";
+$proto159["m_columns"][] = "LateFixPenalty";
+$proto159["m_columns"][] = "Locked";
+$proto159["m_columns"][] = "IScRID";
+$proto159["m_columns"][] = "PreLogMins";
+$proto159["m_columns"][] = "IncludeBreakLate";
+$proto159["m_columns"][] = "GracePeriodMins";
+$proto159["m_columns"][] = "WithAddBreaks";
+$proto159["m_columns"][] = "ANDOTMins";
+$proto159["m_columns"][] = "RegNDOTHrs";
+$proto159["m_columns"][] = "RHNDOTHrs";
+$proto159["m_columns"][] = "SHNDOTHrs";
+$proto159["m_columns"][] = "CHNDOTHrs";
+$proto159["m_columns"][] = "RDNDOTHrs";
+$proto159["m_columns"][] = "DH";
+$proto159["m_columns"][] = "DHRD";
+$proto159["m_columns"][] = "DHOT";
+$proto159["m_columns"][] = "DHRDOT";
+$proto159["m_columns"][] = "SHRDND";
+$proto159["m_columns"][] = "RHRDND";
+$proto159["m_columns"][] = "SHRDNDOT";
+$proto159["m_columns"][] = "RHRDNDOT";
+$proto159["m_columns"][] = "DHND";
+$proto159["m_columns"][] = "DHRDND";
+$proto159["m_columns"][] = "DHNDOT";
+$proto159["m_columns"][] = "DHRDNDOT";
+$proto159["m_columns"][] = "RHRDOT";
+$proto159["m_columns"][] = "SHRDOT";
+$proto159["m_columns"][] = "RegND";
+$proto159["m_columns"][] = "RegRD";
+$proto159["m_columns"][] = "SHOTD";
+$proto159["m_columns"][] = "SHRDOTD";
+$proto159["m_columns"][] = "NDOT";
+$proto159["m_columns"][] = "RHRD";
+$proto159["m_columns"][] = "SHRD";
+$obj = new SQLTable($proto159);
 
-$proto178["m_table"] = $obj;
-$proto178["m_sql"] = "indschedule";
-$proto178["m_alias"] = "";
-$proto178["m_srcTableName"] = "indschedule";
-$proto180=array();
-$proto180["m_sql"] = "";
-$proto180["m_uniontype"] = "SQLL_UNKNOWN";
+$proto158["m_table"] = $obj;
+$proto158["m_sql"] = "indschedule";
+$proto158["m_alias"] = "";
+$proto158["m_srcTableName"] = "indschedule";
+$proto160=array();
+$proto160["m_sql"] = "";
+$proto160["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto180["m_column"]=$obj;
-$proto180["m_contained"] = array();
-$proto180["m_strCase"] = "";
-$proto180["m_havingmode"] = false;
-$proto180["m_inBrackets"] = false;
-$proto180["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto180);
+$proto160["m_column"]=$obj;
+$proto160["m_contained"] = array();
+$proto160["m_strCase"] = "";
+$proto160["m_havingmode"] = false;
+$proto160["m_inBrackets"] = false;
+$proto160["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto160);
 
-$proto178["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto178);
+$proto158["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto158);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
 $proto0["m_orderby"] = array();
-												$proto182=array();
+												$proto162=array();
 						$obj = new SQLField(array(
 	"m_strName" => "ScID",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indschedule"
 ));
 
-$proto182["m_column"]=$obj;
-$proto182["m_bAsc"] = 1;
-$proto182["m_nColumn"] = 0;
-$obj = new SQLOrderByItem($proto182);
+$proto162["m_column"]=$obj;
+$proto162["m_bAsc"] = 1;
+$proto162["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto162);
 
 $proto0["m_orderby"][]=$obj;					
 $proto0["m_srcTableName"]="indschedule";		
@@ -14876,7 +13373,7 @@ $queryData_indschedule = createSqlQuery_indschedule();
 	
 		;
 
-																																																																																						
+																																																																												
 
 $tdataindschedule[".sqlquery"] = $queryData_indschedule;
 

@@ -59,6 +59,9 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelspayrolldeductions["English"]["WageType"] = "Wage Type";
 	$fieldToolTipspayrolldeductions["English"]["WageType"] = "";
 	$placeHolderspayrolldeductions["English"]["WageType"] = "";
+	$fieldLabelspayrolldeductions["English"]["OtherPayment"] = "Other Payment Method";
+	$fieldToolTipspayrolldeductions["English"]["OtherPayment"] = "";
+	$placeHolderspayrolldeductions["English"]["OtherPayment"] = "";
 	if (count($fieldToolTipspayrolldeductions["English"]))
 		$tdatapayrolldeductions[".isUseToolTips"] = true;
 }
@@ -68,6 +71,9 @@ if(mlang_getcurrentlang()=="")
 	$fieldToolTipspayrolldeductions[""] = array();
 	$placeHolderspayrolldeductions[""] = array();
 	$pageTitlespayrolldeductions[""] = array();
+	$fieldLabelspayrolldeductions[""]["OtherPayment"] = "Other Payment";
+	$fieldToolTipspayrolldeductions[""]["OtherPayment"] = "";
+	$placeHolderspayrolldeductions[""]["OtherPayment"] = "";
 	if (count($fieldToolTipspayrolldeductions[""]))
 		$tdatapayrolldeductions[".isUseToolTips"] = true;
 }
@@ -164,7 +170,7 @@ $tdatapayrolldeductions[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
 
 $tdatapayrolldeductions[".ajaxCodeSnippetAdded"] = false;
 
@@ -194,6 +200,7 @@ $tdatapayrolldeductions[".allSearchFields"][] = "PdeID";
 	$tdatapayrolldeductions[".allSearchFields"][] = "Deduction";
 	$tdatapayrolldeductions[".allSearchFields"][] = "Balance";
 	$tdatapayrolldeductions[".allSearchFields"][] = "Amount";
+	$tdatapayrolldeductions[".allSearchFields"][] = "OtherPayment";
 	$tdatapayrolldeductions[".allSearchFields"][] = "LoanID";
 	$tdatapayrolldeductions[".allSearchFields"][] = "PSID";
 	
@@ -211,6 +218,7 @@ $tdatapayrolldeductions[".googleLikeFields"][] = "Balance";
 $tdatapayrolldeductions[".googleLikeFields"][] = "Employer";
 $tdatapayrolldeductions[".googleLikeFields"][] = "Division";
 $tdatapayrolldeductions[".googleLikeFields"][] = "WageType";
+$tdatapayrolldeductions[".googleLikeFields"][] = "OtherPayment";
 
 
 $tdatapayrolldeductions[".advSearchFields"] = array();
@@ -224,6 +232,7 @@ $tdatapayrolldeductions[".advSearchFields"][] = "ToDate";
 $tdatapayrolldeductions[".advSearchFields"][] = "Deduction";
 $tdatapayrolldeductions[".advSearchFields"][] = "Balance";
 $tdatapayrolldeductions[".advSearchFields"][] = "Amount";
+$tdatapayrolldeductions[".advSearchFields"][] = "OtherPayment";
 $tdatapayrolldeductions[".advSearchFields"][] = "LoanID";
 $tdatapayrolldeductions[".advSearchFields"][] = "PSID";
 
@@ -279,7 +288,7 @@ $tdatapayrolldeductions[".strOrderBy"] = $tstrOrderBy;
 
 $tdatapayrolldeductions[".orderindexes"] = array();
 
-$tdatapayrolldeductions[".sqlHead"] = "SELECT PdeID,  	Deduction,  	Amount,  	FromDate,  	ToDate,  	EmployeeID,  	LoanID,  	PSID,  	Balance,  	Employer,  	Division,  	WageType";
+$tdatapayrolldeductions[".sqlHead"] = "SELECT PdeID,  	Deduction,  	Amount,  	FromDate,  	ToDate,  	EmployeeID,  	LoanID,  	PSID,  	Balance,  	Employer,  	Division,  	WageType,  	OtherPayment";
 $tdatapayrolldeductions[".sqlFrom"] = "FROM payrolldeductions";
 $tdatapayrolldeductions[".sqlWhereExpr"] = "";
 $tdatapayrolldeductions[".sqlTail"] = "";
@@ -334,6 +343,7 @@ $tdatapayrolldeductions[".listFields"][] = "ToDate";
 $tdatapayrolldeductions[".listFields"][] = "Deduction";
 $tdatapayrolldeductions[".listFields"][] = "Balance";
 $tdatapayrolldeductions[".listFields"][] = "Amount";
+$tdatapayrolldeductions[".listFields"][] = "OtherPayment";
 $tdatapayrolldeductions[".listFields"][] = "LoanID";
 $tdatapayrolldeductions[".listFields"][] = "PSID";
 
@@ -351,6 +361,7 @@ $tdatapayrolldeductions[".viewFields"][] = "ToDate";
 $tdatapayrolldeductions[".viewFields"][] = "Deduction";
 $tdatapayrolldeductions[".viewFields"][] = "Balance";
 $tdatapayrolldeductions[".viewFields"][] = "Amount";
+$tdatapayrolldeductions[".viewFields"][] = "OtherPayment";
 $tdatapayrolldeductions[".viewFields"][] = "LoanID";
 $tdatapayrolldeductions[".viewFields"][] = "PSID";
 
@@ -364,6 +375,7 @@ $tdatapayrolldeductions[".addFields"][] = "ToDate";
 $tdatapayrolldeductions[".addFields"][] = "Deduction";
 $tdatapayrolldeductions[".addFields"][] = "Balance";
 $tdatapayrolldeductions[".addFields"][] = "Amount";
+$tdatapayrolldeductions[".addFields"][] = "OtherPayment";
 $tdatapayrolldeductions[".addFields"][] = "LoanID";
 $tdatapayrolldeductions[".addFields"][] = "PSID";
 
@@ -378,6 +390,7 @@ $tdatapayrolldeductions[".masterListFields"][] = "ToDate";
 $tdatapayrolldeductions[".masterListFields"][] = "Deduction";
 $tdatapayrolldeductions[".masterListFields"][] = "Balance";
 $tdatapayrolldeductions[".masterListFields"][] = "Amount";
+$tdatapayrolldeductions[".masterListFields"][] = "OtherPayment";
 $tdatapayrolldeductions[".masterListFields"][] = "LoanID";
 $tdatapayrolldeductions[".masterListFields"][] = "PSID";
 
@@ -391,6 +404,7 @@ $tdatapayrolldeductions[".inlineAddFields"][] = "ToDate";
 $tdatapayrolldeductions[".inlineAddFields"][] = "Deduction";
 $tdatapayrolldeductions[".inlineAddFields"][] = "Balance";
 $tdatapayrolldeductions[".inlineAddFields"][] = "Amount";
+$tdatapayrolldeductions[".inlineAddFields"][] = "OtherPayment";
 $tdatapayrolldeductions[".inlineAddFields"][] = "LoanID";
 $tdatapayrolldeductions[".inlineAddFields"][] = "PSID";
 
@@ -404,6 +418,7 @@ $tdatapayrolldeductions[".editFields"][] = "ToDate";
 $tdatapayrolldeductions[".editFields"][] = "Deduction";
 $tdatapayrolldeductions[".editFields"][] = "Balance";
 $tdatapayrolldeductions[".editFields"][] = "Amount";
+$tdatapayrolldeductions[".editFields"][] = "OtherPayment";
 $tdatapayrolldeductions[".editFields"][] = "LoanID";
 $tdatapayrolldeductions[".editFields"][] = "PSID";
 
@@ -417,6 +432,7 @@ $tdatapayrolldeductions[".inlineEditFields"][] = "ToDate";
 $tdatapayrolldeductions[".inlineEditFields"][] = "Deduction";
 $tdatapayrolldeductions[".inlineEditFields"][] = "Balance";
 $tdatapayrolldeductions[".inlineEditFields"][] = "Amount";
+$tdatapayrolldeductions[".inlineEditFields"][] = "OtherPayment";
 $tdatapayrolldeductions[".inlineEditFields"][] = "LoanID";
 $tdatapayrolldeductions[".inlineEditFields"][] = "PSID";
 
@@ -430,6 +446,7 @@ $tdatapayrolldeductions[".updateSelectedFields"][] = "ToDate";
 $tdatapayrolldeductions[".updateSelectedFields"][] = "Deduction";
 $tdatapayrolldeductions[".updateSelectedFields"][] = "Balance";
 $tdatapayrolldeductions[".updateSelectedFields"][] = "Amount";
+$tdatapayrolldeductions[".updateSelectedFields"][] = "OtherPayment";
 $tdatapayrolldeductions[".updateSelectedFields"][] = "LoanID";
 $tdatapayrolldeductions[".updateSelectedFields"][] = "PSID";
 
@@ -445,6 +462,7 @@ $tdatapayrolldeductions[".exportFields"][] = "ToDate";
 $tdatapayrolldeductions[".exportFields"][] = "Deduction";
 $tdatapayrolldeductions[".exportFields"][] = "Balance";
 $tdatapayrolldeductions[".exportFields"][] = "Amount";
+$tdatapayrolldeductions[".exportFields"][] = "OtherPayment";
 $tdatapayrolldeductions[".exportFields"][] = "LoanID";
 $tdatapayrolldeductions[".exportFields"][] = "PSID";
 
@@ -461,6 +479,7 @@ $tdatapayrolldeductions[".importFields"][] = "Balance";
 $tdatapayrolldeductions[".importFields"][] = "Employer";
 $tdatapayrolldeductions[".importFields"][] = "Division";
 $tdatapayrolldeductions[".importFields"][] = "WageType";
+$tdatapayrolldeductions[".importFields"][] = "OtherPayment";
 
 $tdatapayrolldeductions[".printFields"] = array();
 $tdatapayrolldeductions[".printFields"][] = "PdeID";
@@ -473,6 +492,7 @@ $tdatapayrolldeductions[".printFields"][] = "ToDate";
 $tdatapayrolldeductions[".printFields"][] = "Deduction";
 $tdatapayrolldeductions[".printFields"][] = "Balance";
 $tdatapayrolldeductions[".printFields"][] = "Amount";
+$tdatapayrolldeductions[".printFields"][] = "OtherPayment";
 $tdatapayrolldeductions[".printFields"][] = "LoanID";
 $tdatapayrolldeductions[".printFields"][] = "PSID";
 
@@ -1388,7 +1408,7 @@ $tdatapayrolldeductions[".printFields"][] = "PSID";
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Readonly");
 
 	
 	
@@ -1407,17 +1427,14 @@ $tdatapayrolldeductions[".printFields"][] = "PSID";
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
+	
+	
 		$edata["controlWidth"] = 102;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
 							
 	
 	//	End validation
@@ -2180,6 +2197,163 @@ $tdatapayrolldeductions[".printFields"][] = "PSID";
 
 
 	$tdatapayrolldeductions["WageType"] = $fdata;
+//	OtherPayment
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 13;
+	$fdata["strName"] = "OtherPayment";
+	$fdata["GoodName"] = "OtherPayment";
+	$fdata["ownerTable"] = "payrolldeductions";
+	$fdata["Label"] = GetFieldLabel("payrolldeductions","OtherPayment");
+	$fdata["FieldType"] = 3;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+		$fdata["bUpdateSelected"] = true;
+
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "OtherPayment";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "OtherPayment";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Lookup wizard");
+
+	
+	
+		
+	
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "otherpayments";
+		$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "OpID";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "OtherPayment";
+	
+	
+
+	
+	$edata["LookupOrderBy"] = "OpID";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdatapayrolldeductions["OtherPayment"] = $fdata;
 
 
 $tables_data["payrolldeductions"]=&$tdatapayrolldeductions;
@@ -2251,7 +2425,7 @@ function createSqlQuery_payrolldeductions()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "PdeID,  	Deduction,  	Amount,  	FromDate,  	ToDate,  	EmployeeID,  	LoanID,  	PSID,  	Balance,  	Employer,  	Division,  	WageType";
+$proto0["m_strFieldList"] = "PdeID,  	Deduction,  	Amount,  	FromDate,  	ToDate,  	EmployeeID,  	LoanID,  	PSID,  	Balance,  	Employer,  	Division,  	WageType,  	OtherPayment";
 $proto0["m_strFrom"] = "FROM payrolldeductions";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -2459,48 +2633,63 @@ $proto28["m_alias"] = "";
 $obj = new SQLFieldListItem($proto28);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto30=array();
-$proto30["m_link"] = "SQLL_MAIN";
-			$proto31=array();
-$proto31["m_strName"] = "payrolldeductions";
-$proto31["m_srcTableName"] = "payrolldeductions";
-$proto31["m_columns"] = array();
-$proto31["m_columns"][] = "PdeID";
-$proto31["m_columns"][] = "Deduction";
-$proto31["m_columns"][] = "Amount";
-$proto31["m_columns"][] = "FromDate";
-$proto31["m_columns"][] = "ToDate";
-$proto31["m_columns"][] = "EmployeeID";
-$proto31["m_columns"][] = "LoanID";
-$proto31["m_columns"][] = "PSID";
-$proto31["m_columns"][] = "Balance";
-$proto31["m_columns"][] = "Employer";
-$proto31["m_columns"][] = "Division";
-$proto31["m_columns"][] = "WageType";
-$obj = new SQLTable($proto31);
+						$proto30=array();
+			$obj = new SQLField(array(
+	"m_strName" => "OtherPayment",
+	"m_strTable" => "payrolldeductions",
+	"m_srcTableName" => "payrolldeductions"
+));
 
-$proto30["m_table"] = $obj;
-$proto30["m_sql"] = "payrolldeductions";
-$proto30["m_alias"] = "";
+$proto30["m_sql"] = "OtherPayment";
 $proto30["m_srcTableName"] = "payrolldeductions";
-$proto32=array();
-$proto32["m_sql"] = "";
-$proto32["m_uniontype"] = "SQLL_UNKNOWN";
+$proto30["m_expr"]=$obj;
+$proto30["m_alias"] = "";
+$obj = new SQLFieldListItem($proto30);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto32=array();
+$proto32["m_link"] = "SQLL_MAIN";
+			$proto33=array();
+$proto33["m_strName"] = "payrolldeductions";
+$proto33["m_srcTableName"] = "payrolldeductions";
+$proto33["m_columns"] = array();
+$proto33["m_columns"][] = "PdeID";
+$proto33["m_columns"][] = "Deduction";
+$proto33["m_columns"][] = "Amount";
+$proto33["m_columns"][] = "FromDate";
+$proto33["m_columns"][] = "ToDate";
+$proto33["m_columns"][] = "EmployeeID";
+$proto33["m_columns"][] = "LoanID";
+$proto33["m_columns"][] = "PSID";
+$proto33["m_columns"][] = "Balance";
+$proto33["m_columns"][] = "Employer";
+$proto33["m_columns"][] = "Division";
+$proto33["m_columns"][] = "WageType";
+$proto33["m_columns"][] = "OtherPayment";
+$obj = new SQLTable($proto33);
+
+$proto32["m_table"] = $obj;
+$proto32["m_sql"] = "payrolldeductions";
+$proto32["m_alias"] = "";
+$proto32["m_srcTableName"] = "payrolldeductions";
+$proto34=array();
+$proto34["m_sql"] = "";
+$proto34["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto32["m_column"]=$obj;
-$proto32["m_contained"] = array();
-$proto32["m_strCase"] = "";
-$proto32["m_havingmode"] = false;
-$proto32["m_inBrackets"] = false;
-$proto32["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto32);
+$proto34["m_column"]=$obj;
+$proto34["m_contained"] = array();
+$proto34["m_strCase"] = "";
+$proto34["m_havingmode"] = false;
+$proto34["m_inBrackets"] = false;
+$proto34["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto34);
 
-$proto30["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto30);
+$proto32["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto32);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -2516,7 +2705,7 @@ $queryData_payrolldeductions = createSqlQuery_payrolldeductions();
 	
 		;
 
-												
+													
 
 $tdatapayrolldeductions[".sqlquery"] = $queryData_payrolldeductions;
 

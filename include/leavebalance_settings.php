@@ -164,7 +164,7 @@ $tdataleavebalance[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																														
+																																																																																																																																																																																																																																																																		
 
 $tdataleavebalance[".ajaxCodeSnippetAdded"] = false;
 
@@ -2681,6 +2681,7 @@ $proto39["m_columns"][] = "PreCalMoTaxable";
 $proto39["m_columns"][] = "CalMonthly";
 $proto39["m_columns"][] = "TaxPerPeriod";
 $proto39["m_columns"][] = "Superior2";
+$proto39["m_columns"][] = "ExcludeBio";
 $obj = new SQLTable($proto39);
 
 $proto38["m_table"] = $obj;

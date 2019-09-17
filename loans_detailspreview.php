@@ -291,6 +291,51 @@ if($rowcount)
 			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("OPrincipal")))
 				$class = ' rnr-field-number';
 			$row["OPrincipal_class"] = $class;
+	//	DType - 
+			$viewContainer->recId = $recordsCounter;
+		    $value = $viewContainer->showDBValue("DType", $data, $keylink);
+			$row["DType_value"] = $value;
+			$format = $pSet->getViewFormat("DType");
+			$class = "rnr-field-text";
+			if($format==FORMAT_FILE) 
+				$class = ' rnr-field-file'; 
+			if($format==FORMAT_AUDIO)
+				$class = ' rnr-field-audio';
+			if($format==FORMAT_CHECKBOX)
+				$class = ' rnr-field-checkbox';
+			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("DType")))
+				$class = ' rnr-field-number';
+			$row["DType_class"] = $class;
+	//	PerDay - Number
+			$viewContainer->recId = $recordsCounter;
+		    $value = $viewContainer->showDBValue("PerDay", $data, $keylink);
+			$row["PerDay_value"] = $value;
+			$format = $pSet->getViewFormat("PerDay");
+			$class = "rnr-field-text";
+			if($format==FORMAT_FILE) 
+				$class = ' rnr-field-file'; 
+			if($format==FORMAT_AUDIO)
+				$class = ' rnr-field-audio';
+			if($format==FORMAT_CHECKBOX)
+				$class = ' rnr-field-checkbox';
+			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("PerDay")))
+				$class = ' rnr-field-number';
+			$row["PerDay_class"] = $class;
+	//	LessAbsences - Checkbox
+			$viewContainer->recId = $recordsCounter;
+		    $value = $viewContainer->showDBValue("LessAbsences", $data, $keylink);
+			$row["LessAbsences_value"] = $value;
+			$format = $pSet->getViewFormat("LessAbsences");
+			$class = "rnr-field-text";
+			if($format==FORMAT_FILE) 
+				$class = ' rnr-field-file'; 
+			if($format==FORMAT_AUDIO)
+				$class = ' rnr-field-audio';
+			if($format==FORMAT_CHECKBOX)
+				$class = ' rnr-field-checkbox';
+			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("LessAbsences")))
+				$class = ' rnr-field-number';
+			$row["LessAbsences_class"] = $class;
 		$rowinfo[] = $row;
 		if ($b) {
 			$rowinfo2[] = $row;

@@ -126,6 +126,11 @@
 				{$label indschedrange RestDays}
 			</th>
 			{END RestDays_fieldheadercolumn}
+			{BEGIN PreLogMins_fieldheadercolumn}
+			<th class="{$PreLogMins_class}" {$PreLogMins_style}  data-field="PreLogMins">
+				{$label indschedrange PreLogMins}
+			</th>
+			{END PreLogMins_fieldheadercolumn}
 			{BEGIN TimeIn_fieldheadercolumn}
 			<th class="{$TimeIn_class}" {$TimeIn_style}  data-field="TimeIn">
 				{$label indschedrange TimeIn}
@@ -223,6 +228,11 @@
 				{$RestDays_value}
 			</td>
 			{END RestDays_fieldcolumn}
+			{BEGIN PreLogMins_fieldcolumn}
+			<td  class="{$PreLogMins_class}" {$PreLogMins_style} {$recordattrs}>
+				{$PreLogMins_value}
+			</td>
+			{END PreLogMins_fieldcolumn}
 			{BEGIN TimeIn_fieldcolumn}
 			<td  class="{$TimeIn_class}" {$TimeIn_style} {$recordattrs}>
 				{$TimeIn_value}

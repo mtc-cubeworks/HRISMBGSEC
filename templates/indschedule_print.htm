@@ -180,21 +180,6 @@
 				{$label indschedule Absent}
 			</th>
 			{END Absent_fieldheadercolumn}
-			{BEGIN PreLogMins_fieldheadercolumn}
-			<th class="{$PreLogMins_class}" {$PreLogMins_style}  data-field="PreLogMins">
-				{$label indschedule PreLogMins}
-			</th>
-			{END PreLogMins_fieldheadercolumn}
-			{BEGIN IncludeBreakLate_fieldheadercolumn}
-			<th class="{$IncludeBreakLate_class}" {$IncludeBreakLate_style}  data-field="IncludeBreakLate">
-				{$label indschedule IncludeBreakLate}
-			</th>
-			{END IncludeBreakLate_fieldheadercolumn}
-			{BEGIN GracePeriodMins_fieldheadercolumn}
-			<th class="{$GracePeriodMins_class}" {$GracePeriodMins_style}  data-field="GracePeriodMins">
-				{$label indschedule GracePeriodMins}
-			</th>
-			{END GracePeriodMins_fieldheadercolumn}
 			{BEGIN LateMins_fieldheadercolumn}
 			<th class="{$LateMins_class}" {$LateMins_style}  data-field="LateMins">
 				{$label indschedule LateMins}
@@ -210,11 +195,6 @@
 				{$label indschedule LatePenaltyMins}
 			</th>
 			{END LatePenaltyMins_fieldheadercolumn}
-			{BEGIN TotLateMins_fieldheadercolumn}
-			<th class="{$TotLateMins_class}" {$TotLateMins_style}  data-field="TotLateMins">
-				{$label indschedule TotLateMins}
-			</th>
-			{END TotLateMins_fieldheadercolumn}
 			{BEGIN LateFixPenalty_fieldheadercolumn}
 			<th class="{$LateFixPenalty_class}" {$LateFixPenalty_style}  data-field="LateFixPenalty">
 				{$label indschedule LateFixPenalty}
@@ -225,6 +205,11 @@
 				{$label indschedule BreakLateMins}
 			</th>
 			{END BreakLateMins_fieldheadercolumn}
+			{BEGIN TotLateMins_fieldheadercolumn}
+			<th class="{$TotLateMins_class}" {$TotLateMins_style}  data-field="TotLateMins">
+				{$label indschedule TotLateMins}
+			</th>
+			{END TotLateMins_fieldheadercolumn}
 			{BEGIN HolidayType_fieldheadercolumn}
 			<th class="{$HolidayType_class}" {$HolidayType_style}  data-field="HolidayType">
 				{$label indschedule HolidayType}
@@ -250,101 +235,56 @@
 				{$label indschedule SHolidayHrs}
 			</th>
 			{END SHolidayHrs_fieldheadercolumn}
-			{BEGIN CHolidayHrs_fieldheadercolumn}
-			<th class="{$CHolidayHrs_class}" {$CHolidayHrs_style}  data-field="CHolidayHrs">
-				{$label indschedule CHolidayHrs}
-			</th>
-			{END CHolidayHrs_fieldheadercolumn}
 			{BEGIN DH_fieldheadercolumn}
 			<th class="{$DH_class}" {$DH_style}  data-field="DH">
 				{$label indschedule DH}
 			</th>
 			{END DH_fieldheadercolumn}
-			{BEGIN DHRD_fieldheadercolumn}
-			<th class="{$DHRD_class}" {$DHRD_style}  data-field="DHRD">
-				{$label indschedule DHRD}
-			</th>
-			{END DHRD_fieldheadercolumn}
-			{BEGIN NDHrs_fieldheadercolumn}
-			<th class="{$NDHrs_class}" {$NDHrs_style}  data-field="NDHrs">
-				{$label indschedule NDHrs}
-			</th>
-			{END NDHrs_fieldheadercolumn}
 			{BEGIN ApprovedNightDiff_fieldheadercolumn}
 			<th class="{$ApprovedNightDiff_class}" {$ApprovedNightDiff_style}  data-field="ApprovedNightDiff">
 				{$label indschedule ApprovedNightDiff}
 			</th>
 			{END ApprovedNightDiff_fieldheadercolumn}
-			{BEGIN ANDiff_fieldheadercolumn}
-			<th class="{$ANDiff_class}" {$ANDiff_style}  data-field="ANDiff">
-				{$label indschedule ANDiff}
+			{BEGIN RegND_fieldheadercolumn}
+			<th class="{$RegND_class}" {$RegND_style}  data-field="RegND">
+				{$label indschedule RegND}
 			</th>
-			{END ANDiff_fieldheadercolumn}
-			{BEGIN ANDOTMins_fieldheadercolumn}
-			<th class="{$ANDOTMins_class}" {$ANDOTMins_style}  data-field="ANDOTMins">
-				{$label indschedule ANDOTMins}
-			</th>
-			{END ANDOTMins_fieldheadercolumn}
-			{BEGIN RegNDHrs_fieldheadercolumn}
-			<th class="{$RegNDHrs_class}" {$RegNDHrs_style}  data-field="RegNDHrs">
-				{$label indschedule RegNDHrs}
-			</th>
-			{END RegNDHrs_fieldheadercolumn}
+			{END RegND_fieldheadercolumn}
 			{BEGIN RHNDHrs_fieldheadercolumn}
 			<th class="{$RHNDHrs_class}" {$RHNDHrs_style}  data-field="RHNDHrs">
 				{$label indschedule RHNDHrs}
 			</th>
 			{END RHNDHrs_fieldheadercolumn}
-			{BEGIN RDNDHrs_fieldheadercolumn}
-			<th class="{$RDNDHrs_class}" {$RDNDHrs_style}  data-field="RDNDHrs">
-				{$label indschedule RDNDHrs}
-			</th>
-			{END RDNDHrs_fieldheadercolumn}
 			{BEGIN SHNDHrs_fieldheadercolumn}
 			<th class="{$SHNDHrs_class}" {$SHNDHrs_style}  data-field="SHNDHrs">
 				{$label indschedule SHNDHrs}
 			</th>
 			{END SHNDHrs_fieldheadercolumn}
-			{BEGIN CHNDHrs_fieldheadercolumn}
-			<th class="{$CHNDHrs_class}" {$CHNDHrs_style}  data-field="CHNDHrs">
-				{$label indschedule CHNDHrs}
-			</th>
-			{END CHNDHrs_fieldheadercolumn}
 			{BEGIN DHND_fieldheadercolumn}
 			<th class="{$DHND_class}" {$DHND_style}  data-field="DHND">
 				{$label indschedule DHND}
 			</th>
 			{END DHND_fieldheadercolumn}
-			{BEGIN DHRDND_fieldheadercolumn}
-			<th class="{$DHRDND_class}" {$DHRDND_style}  data-field="DHRDND">
-				{$label indschedule DHRDND}
+			{BEGIN RDNDHrs_fieldheadercolumn}
+			<th class="{$RDNDHrs_class}" {$RDNDHrs_style}  data-field="RDNDHrs">
+				{$label indschedule RDNDHrs}
 			</th>
-			{END DHRDND_fieldheadercolumn}
-			{BEGIN SHRDND_fieldheadercolumn}
-			<th class="{$SHRDND_class}" {$SHRDND_style}  data-field="SHRDND">
-				{$label indschedule SHRDND}
-			</th>
-			{END SHRDND_fieldheadercolumn}
+			{END RDNDHrs_fieldheadercolumn}
 			{BEGIN RHRDND_fieldheadercolumn}
 			<th class="{$RHRDND_class}" {$RHRDND_style}  data-field="RHRDND">
 				{$label indschedule RHRDND}
 			</th>
 			{END RHRDND_fieldheadercolumn}
-			{BEGIN NDMealAllowance_fieldheadercolumn}
-			<th class="{$NDMealAllowance_class}" {$NDMealAllowance_style}  data-field="NDMealAllowance">
-				{$label indschedule NDMealAllowance}
+			{BEGIN SHRDND_fieldheadercolumn}
+			<th class="{$SHRDND_class}" {$SHRDND_style}  data-field="SHRDND">
+				{$label indschedule SHRDND}
 			</th>
-			{END NDMealAllowance_fieldheadercolumn}
-			{BEGIN NDMealAllowancePerShift_fieldheadercolumn}
-			<th class="{$NDMealAllowancePerShift_class}" {$NDMealAllowancePerShift_style}  data-field="NDMealAllowancePerShift">
-				{$label indschedule NDMealAllowancePerShift}
+			{END SHRDND_fieldheadercolumn}
+			{BEGIN DHRDND_fieldheadercolumn}
+			<th class="{$DHRDND_class}" {$DHRDND_style}  data-field="DHRDND">
+				{$label indschedule DHRDND}
 			</th>
-			{END NDMealAllowancePerShift_fieldheadercolumn}
-			{BEGIN NDMinimumHrs_fieldheadercolumn}
-			<th class="{$NDMinimumHrs_class}" {$NDMinimumHrs_style}  data-field="NDMinimumHrs">
-				{$label indschedule NDMinimumHrs}
-			</th>
-			{END NDMinimumHrs_fieldheadercolumn}
+			{END DHRDND_fieldheadercolumn}
 			{BEGIN ExcessHrs_fieldheadercolumn}
 			<th class="{$ExcessHrs_class}" {$ExcessHrs_style}  data-field="ExcessHrs">
 				{$label indschedule ExcessHrs}
@@ -355,46 +295,41 @@
 				{$label indschedule ApprovedOT}
 			</th>
 			{END ApprovedOT_fieldheadercolumn}
-			{BEGIN AOTMins_fieldheadercolumn}
-			<th class="{$AOTMins_class}" {$AOTMins_style}  data-field="AOTMins">
-				{$label indschedule AOTMins}
-			</th>
-			{END AOTMins_fieldheadercolumn}
 			{BEGIN RegOTHrs_fieldheadercolumn}
 			<th class="{$RegOTHrs_class}" {$RegOTHrs_style}  data-field="RegOTHrs">
 				{$label indschedule RegOTHrs}
 			</th>
 			{END RegOTHrs_fieldheadercolumn}
-			{BEGIN SHOTHrs_fieldheadercolumn}
-			<th class="{$SHOTHrs_class}" {$SHOTHrs_style}  data-field="SHOTHrs">
-				{$label indschedule SHOTHrs}
-			</th>
-			{END SHOTHrs_fieldheadercolumn}
-			{BEGIN CHOTHrs_fieldheadercolumn}
-			<th class="{$CHOTHrs_class}" {$CHOTHrs_style}  data-field="CHOTHrs">
-				{$label indschedule CHOTHrs}
-			</th>
-			{END CHOTHrs_fieldheadercolumn}
-			{BEGIN RDOTHrs_fieldheadercolumn}
-			<th class="{$RDOTHrs_class}" {$RDOTHrs_style}  data-field="RDOTHrs">
-				{$label indschedule RDOTHrs}
-			</th>
-			{END RDOTHrs_fieldheadercolumn}
 			{BEGIN RHOTHrs_fieldheadercolumn}
 			<th class="{$RHOTHrs_class}" {$RHOTHrs_style}  data-field="RHOTHrs">
 				{$label indschedule RHOTHrs}
 			</th>
 			{END RHOTHrs_fieldheadercolumn}
-			{BEGIN TrODay_fieldheadercolumn}
-			<th class="{$TrODay_class}" {$TrODay_style}  data-field="TrODay">
-				{$label indschedule TrODay}
+			{BEGIN SHOTHrs_fieldheadercolumn}
+			<th class="{$SHOTHrs_class}" {$SHOTHrs_style}  data-field="SHOTHrs">
+				{$label indschedule SHOTHrs}
 			</th>
-			{END TrODay_fieldheadercolumn}
-			{BEGIN RegNDOTHrs_fieldheadercolumn}
-			<th class="{$RegNDOTHrs_class}" {$RegNDOTHrs_style}  data-field="RegNDOTHrs">
-				{$label indschedule RegNDOTHrs}
+			{END SHOTHrs_fieldheadercolumn}
+			{BEGIN SHOTD_fieldheadercolumn}
+			<th class="{$SHOTD_class}" {$SHOTD_style}  data-field="SHOTD">
+				{$label indschedule SHOTD}
 			</th>
-			{END RegNDOTHrs_fieldheadercolumn}
+			{END SHOTD_fieldheadercolumn}
+			{BEGIN DHOT_fieldheadercolumn}
+			<th class="{$DHOT_class}" {$DHOT_style}  data-field="DHOT">
+				{$label indschedule DHOT}
+			</th>
+			{END DHOT_fieldheadercolumn}
+			{BEGIN RDOTHrs_fieldheadercolumn}
+			<th class="{$RDOTHrs_class}" {$RDOTHrs_style}  data-field="RDOTHrs">
+				{$label indschedule RDOTHrs}
+			</th>
+			{END RDOTHrs_fieldheadercolumn}
+			{BEGIN NDOT_fieldheadercolumn}
+			<th class="{$NDOT_class}" {$NDOT_style}  data-field="NDOT">
+				{$label indschedule NDOT}
+			</th>
+			{END NDOT_fieldheadercolumn}
 			{BEGIN RHNDOTHrs_fieldheadercolumn}
 			<th class="{$RHNDOTHrs_class}" {$RHNDOTHrs_style}  data-field="RHNDOTHrs">
 				{$label indschedule RHNDOTHrs}
@@ -405,16 +340,36 @@
 				{$label indschedule SHNDOTHrs}
 			</th>
 			{END SHNDOTHrs_fieldheadercolumn}
-			{BEGIN CHNDOTHrs_fieldheadercolumn}
-			<th class="{$CHNDOTHrs_class}" {$CHNDOTHrs_style}  data-field="CHNDOTHrs">
-				{$label indschedule CHNDOTHrs}
+			{BEGIN DHNDOT_fieldheadercolumn}
+			<th class="{$DHNDOT_class}" {$DHNDOT_style}  data-field="DHNDOT">
+				{$label indschedule DHNDOT}
 			</th>
-			{END CHNDOTHrs_fieldheadercolumn}
+			{END DHNDOT_fieldheadercolumn}
 			{BEGIN RDNDOTHrs_fieldheadercolumn}
 			<th class="{$RDNDOTHrs_class}" {$RDNDOTHrs_style}  data-field="RDNDOTHrs">
 				{$label indschedule RDNDOTHrs}
 			</th>
 			{END RDNDOTHrs_fieldheadercolumn}
+			{BEGIN RHRDOT_fieldheadercolumn}
+			<th class="{$RHRDOT_class}" {$RHRDOT_style}  data-field="RHRDOT">
+				{$label indschedule RHRDOT}
+			</th>
+			{END RHRDOT_fieldheadercolumn}
+			{BEGIN SHRDOT_fieldheadercolumn}
+			<th class="{$SHRDOT_class}" {$SHRDOT_style}  data-field="SHRDOT">
+				{$label indschedule SHRDOT}
+			</th>
+			{END SHRDOT_fieldheadercolumn}
+			{BEGIN SHRDOTD_fieldheadercolumn}
+			<th class="{$SHRDOTD_class}" {$SHRDOTD_style}  data-field="SHRDOTD">
+				{$label indschedule SHRDOTD}
+			</th>
+			{END SHRDOTD_fieldheadercolumn}
+			{BEGIN DHRDOT_fieldheadercolumn}
+			<th class="{$DHRDOT_class}" {$DHRDOT_style}  data-field="DHRDOT">
+				{$label indschedule DHRDOT}
+			</th>
+			{END DHRDOT_fieldheadercolumn}
 			{BEGIN RHRDNDOT_fieldheadercolumn}
 			<th class="{$RHRDNDOT_class}" {$RHRDNDOT_style}  data-field="RHRDNDOT">
 				{$label indschedule RHRDNDOT}
@@ -430,21 +385,6 @@
 				{$label indschedule DHRDNDOT}
 			</th>
 			{END DHRDNDOT_fieldheadercolumn}
-			{BEGIN DHOT_fieldheadercolumn}
-			<th class="{$DHOT_class}" {$DHOT_style}  data-field="DHOT">
-				{$label indschedule DHOT}
-			</th>
-			{END DHOT_fieldheadercolumn}
-			{BEGIN DHNDOT_fieldheadercolumn}
-			<th class="{$DHNDOT_class}" {$DHNDOT_style}  data-field="DHNDOT">
-				{$label indschedule DHNDOT}
-			</th>
-			{END DHNDOT_fieldheadercolumn}
-			{BEGIN DHRDOT_fieldheadercolumn}
-			<th class="{$DHRDOT_class}" {$DHRDOT_style}  data-field="DHRDOT">
-				{$label indschedule DHRDOT}
-			</th>
-			{END DHRDOT_fieldheadercolumn}
 			{BEGIN VLDay_fieldheadercolumn}
 			<th class="{$VLDay_class}" {$VLDay_style}  data-field="VLDay">
 				{$label indschedule VLDay}
@@ -465,6 +405,36 @@
 				{$label indschedule PLDay}
 			</th>
 			{END PLDay_fieldheadercolumn}
+			{BEGIN TrODay_fieldheadercolumn}
+			<th class="{$TrODay_class}" {$TrODay_style}  data-field="TrODay">
+				{$label indschedule TrODay}
+			</th>
+			{END TrODay_fieldheadercolumn}
+			{BEGIN ApprovedRD_fieldheadercolumn}
+			<th class="{$ApprovedRD_class}" {$ApprovedRD_style}  data-field="ApprovedRD">
+				{$label indschedule ApprovedRD}
+			</th>
+			{END ApprovedRD_fieldheadercolumn}
+			{BEGIN RegRD_fieldheadercolumn}
+			<th class="{$RegRD_class}" {$RegRD_style}  data-field="RegRD">
+				{$label indschedule RegRD}
+			</th>
+			{END RegRD_fieldheadercolumn}
+			{BEGIN RHRD_fieldheadercolumn}
+			<th class="{$RHRD_class}" {$RHRD_style}  data-field="RHRD">
+				{$label indschedule RHRD}
+			</th>
+			{END RHRD_fieldheadercolumn}
+			{BEGIN SHRD_fieldheadercolumn}
+			<th class="{$SHRD_class}" {$SHRD_style}  data-field="SHRD">
+				{$label indschedule SHRD}
+			</th>
+			{END SHRD_fieldheadercolumn}
+			{BEGIN DHRD_fieldheadercolumn}
+			<th class="{$DHRD_class}" {$DHRD_style}  data-field="DHRD">
+				{$label indschedule DHRD}
+			</th>
+			{END DHRD_fieldheadercolumn}
 			{BEGIN SchedType_fieldheadercolumn}
 			<th class="{$SchedType_class}" {$SchedType_style}  data-field="SchedType">
 				{$label indschedule SchedType}
@@ -475,31 +445,11 @@
 				{$label indschedule Shift}
 			</th>
 			{END Shift_fieldheadercolumn}
-			{BEGIN MinsPerDay_fieldheadercolumn}
-			<th class="{$MinsPerDay_class}" {$MinsPerDay_style}  data-field="MinsPerDay">
-				{$label indschedule MinsPerDay}
-			</th>
-			{END MinsPerDay_fieldheadercolumn}
 			{BEGIN BreakMins_fieldheadercolumn}
 			<th class="{$BreakMins_class}" {$BreakMins_style}  data-field="BreakMins">
 				{$label indschedule BreakMins}
 			</th>
 			{END BreakMins_fieldheadercolumn}
-			{BEGIN RDMins_fieldheadercolumn}
-			<th class="{$RDMins_class}" {$RDMins_style}  data-field="RDMins">
-				{$label indschedule RDMins}
-			</th>
-			{END RDMins_fieldheadercolumn}
-			{BEGIN ApprovedRD_fieldheadercolumn}
-			<th class="{$ApprovedRD_class}" {$ApprovedRD_style}  data-field="ApprovedRD">
-				{$label indschedule ApprovedRD}
-			</th>
-			{END ApprovedRD_fieldheadercolumn}
-			{BEGIN RDHrs_fieldheadercolumn}
-			<th class="{$RDHrs_class}" {$RDHrs_style}  data-field="RDHrs">
-				{$label indschedule RDHrs}
-			</th>
-			{END RDHrs_fieldheadercolumn}
 			{BEGIN endrecordheader_block}
 			<th class="rnr-cs">&nbsp;</th>
 			{END endrecordheader_block}
@@ -622,21 +572,6 @@
 				{$Absent_value}
 			</td>
 			{END Absent_fieldcolumn}
-			{BEGIN PreLogMins_fieldcolumn}
-			<td  class="{$PreLogMins_class}" {$PreLogMins_style} {$recordattrs}>
-				{$PreLogMins_value}
-			</td>
-			{END PreLogMins_fieldcolumn}
-			{BEGIN IncludeBreakLate_fieldcolumn}
-			<td  class="{$IncludeBreakLate_class}" {$IncludeBreakLate_style} {$recordattrs}>
-				{$IncludeBreakLate_value}
-			</td>
-			{END IncludeBreakLate_fieldcolumn}
-			{BEGIN GracePeriodMins_fieldcolumn}
-			<td  class="{$GracePeriodMins_class}" {$GracePeriodMins_style} {$recordattrs}>
-				{$GracePeriodMins_value}
-			</td>
-			{END GracePeriodMins_fieldcolumn}
 			{BEGIN LateMins_fieldcolumn}
 			<td  class="{$LateMins_class}" {$LateMins_style} {$recordattrs}>
 				{$LateMins_value}
@@ -652,11 +587,6 @@
 				{$LatePenaltyMins_value}
 			</td>
 			{END LatePenaltyMins_fieldcolumn}
-			{BEGIN TotLateMins_fieldcolumn}
-			<td  class="{$TotLateMins_class}" {$TotLateMins_style} {$recordattrs}>
-				{$TotLateMins_value}
-			</td>
-			{END TotLateMins_fieldcolumn}
 			{BEGIN LateFixPenalty_fieldcolumn}
 			<td  class="{$LateFixPenalty_class}" {$LateFixPenalty_style} {$recordattrs}>
 				{$LateFixPenalty_value}
@@ -667,6 +597,11 @@
 				{$BreakLateMins_value}
 			</td>
 			{END BreakLateMins_fieldcolumn}
+			{BEGIN TotLateMins_fieldcolumn}
+			<td  class="{$TotLateMins_class}" {$TotLateMins_style} {$recordattrs}>
+				{$TotLateMins_value}
+			</td>
+			{END TotLateMins_fieldcolumn}
 			{BEGIN HolidayType_fieldcolumn}
 			<td  class="{$HolidayType_class}" {$HolidayType_style} {$recordattrs}>
 				{$HolidayType_value}
@@ -692,101 +627,56 @@
 				{$SHolidayHrs_value}
 			</td>
 			{END SHolidayHrs_fieldcolumn}
-			{BEGIN CHolidayHrs_fieldcolumn}
-			<td  class="{$CHolidayHrs_class}" {$CHolidayHrs_style} {$recordattrs}>
-				{$CHolidayHrs_value}
-			</td>
-			{END CHolidayHrs_fieldcolumn}
 			{BEGIN DH_fieldcolumn}
 			<td  class="{$DH_class}" {$DH_style} {$recordattrs}>
 				{$DH_value}
 			</td>
 			{END DH_fieldcolumn}
-			{BEGIN DHRD_fieldcolumn}
-			<td  class="{$DHRD_class}" {$DHRD_style} {$recordattrs}>
-				{$DHRD_value}
-			</td>
-			{END DHRD_fieldcolumn}
-			{BEGIN NDHrs_fieldcolumn}
-			<td  class="{$NDHrs_class}" {$NDHrs_style} {$recordattrs}>
-				{$NDHrs_value}
-			</td>
-			{END NDHrs_fieldcolumn}
 			{BEGIN ApprovedNightDiff_fieldcolumn}
 			<td  class="{$ApprovedNightDiff_class}" {$ApprovedNightDiff_style} {$recordattrs}>
 				{$ApprovedNightDiff_value}
 			</td>
 			{END ApprovedNightDiff_fieldcolumn}
-			{BEGIN ANDiff_fieldcolumn}
-			<td  class="{$ANDiff_class}" {$ANDiff_style} {$recordattrs}>
-				{$ANDiff_value}
+			{BEGIN RegND_fieldcolumn}
+			<td  class="{$RegND_class}" {$RegND_style} {$recordattrs}>
+				{$RegND_value}
 			</td>
-			{END ANDiff_fieldcolumn}
-			{BEGIN ANDOTMins_fieldcolumn}
-			<td  class="{$ANDOTMins_class}" {$ANDOTMins_style} {$recordattrs}>
-				{$ANDOTMins_value}
-			</td>
-			{END ANDOTMins_fieldcolumn}
-			{BEGIN RegNDHrs_fieldcolumn}
-			<td  class="{$RegNDHrs_class}" {$RegNDHrs_style} {$recordattrs}>
-				{$RegNDHrs_value}
-			</td>
-			{END RegNDHrs_fieldcolumn}
+			{END RegND_fieldcolumn}
 			{BEGIN RHNDHrs_fieldcolumn}
 			<td  class="{$RHNDHrs_class}" {$RHNDHrs_style} {$recordattrs}>
 				{$RHNDHrs_value}
 			</td>
 			{END RHNDHrs_fieldcolumn}
-			{BEGIN RDNDHrs_fieldcolumn}
-			<td  class="{$RDNDHrs_class}" {$RDNDHrs_style} {$recordattrs}>
-				{$RDNDHrs_value}
-			</td>
-			{END RDNDHrs_fieldcolumn}
 			{BEGIN SHNDHrs_fieldcolumn}
 			<td  class="{$SHNDHrs_class}" {$SHNDHrs_style} {$recordattrs}>
 				{$SHNDHrs_value}
 			</td>
 			{END SHNDHrs_fieldcolumn}
-			{BEGIN CHNDHrs_fieldcolumn}
-			<td  class="{$CHNDHrs_class}" {$CHNDHrs_style} {$recordattrs}>
-				{$CHNDHrs_value}
-			</td>
-			{END CHNDHrs_fieldcolumn}
 			{BEGIN DHND_fieldcolumn}
 			<td  class="{$DHND_class}" {$DHND_style} {$recordattrs}>
 				{$DHND_value}
 			</td>
 			{END DHND_fieldcolumn}
-			{BEGIN DHRDND_fieldcolumn}
-			<td  class="{$DHRDND_class}" {$DHRDND_style} {$recordattrs}>
-				{$DHRDND_value}
+			{BEGIN RDNDHrs_fieldcolumn}
+			<td  class="{$RDNDHrs_class}" {$RDNDHrs_style} {$recordattrs}>
+				{$RDNDHrs_value}
 			</td>
-			{END DHRDND_fieldcolumn}
-			{BEGIN SHRDND_fieldcolumn}
-			<td  class="{$SHRDND_class}" {$SHRDND_style} {$recordattrs}>
-				{$SHRDND_value}
-			</td>
-			{END SHRDND_fieldcolumn}
+			{END RDNDHrs_fieldcolumn}
 			{BEGIN RHRDND_fieldcolumn}
 			<td  class="{$RHRDND_class}" {$RHRDND_style} {$recordattrs}>
 				{$RHRDND_value}
 			</td>
 			{END RHRDND_fieldcolumn}
-			{BEGIN NDMealAllowance_fieldcolumn}
-			<td  class="{$NDMealAllowance_class}" {$NDMealAllowance_style} {$recordattrs}>
-				{$NDMealAllowance_value}
+			{BEGIN SHRDND_fieldcolumn}
+			<td  class="{$SHRDND_class}" {$SHRDND_style} {$recordattrs}>
+				{$SHRDND_value}
 			</td>
-			{END NDMealAllowance_fieldcolumn}
-			{BEGIN NDMealAllowancePerShift_fieldcolumn}
-			<td  class="{$NDMealAllowancePerShift_class}" {$NDMealAllowancePerShift_style} {$recordattrs}>
-				{$NDMealAllowancePerShift_value}
+			{END SHRDND_fieldcolumn}
+			{BEGIN DHRDND_fieldcolumn}
+			<td  class="{$DHRDND_class}" {$DHRDND_style} {$recordattrs}>
+				{$DHRDND_value}
 			</td>
-			{END NDMealAllowancePerShift_fieldcolumn}
-			{BEGIN NDMinimumHrs_fieldcolumn}
-			<td  class="{$NDMinimumHrs_class}" {$NDMinimumHrs_style} {$recordattrs}>
-				{$NDMinimumHrs_value}
-			</td>
-			{END NDMinimumHrs_fieldcolumn}
+			{END DHRDND_fieldcolumn}
 			{BEGIN ExcessHrs_fieldcolumn}
 			<td  class="{$ExcessHrs_class}" {$ExcessHrs_style} {$recordattrs}>
 				{$ExcessHrs_value}
@@ -797,46 +687,41 @@
 				{$ApprovedOT_value}
 			</td>
 			{END ApprovedOT_fieldcolumn}
-			{BEGIN AOTMins_fieldcolumn}
-			<td  class="{$AOTMins_class}" {$AOTMins_style} {$recordattrs}>
-				{$AOTMins_value}
-			</td>
-			{END AOTMins_fieldcolumn}
 			{BEGIN RegOTHrs_fieldcolumn}
 			<td  class="{$RegOTHrs_class}" {$RegOTHrs_style} {$recordattrs}>
 				{$RegOTHrs_value}
 			</td>
 			{END RegOTHrs_fieldcolumn}
-			{BEGIN SHOTHrs_fieldcolumn}
-			<td  class="{$SHOTHrs_class}" {$SHOTHrs_style} {$recordattrs}>
-				{$SHOTHrs_value}
-			</td>
-			{END SHOTHrs_fieldcolumn}
-			{BEGIN CHOTHrs_fieldcolumn}
-			<td  class="{$CHOTHrs_class}" {$CHOTHrs_style} {$recordattrs}>
-				{$CHOTHrs_value}
-			</td>
-			{END CHOTHrs_fieldcolumn}
-			{BEGIN RDOTHrs_fieldcolumn}
-			<td  class="{$RDOTHrs_class}" {$RDOTHrs_style} {$recordattrs}>
-				{$RDOTHrs_value}
-			</td>
-			{END RDOTHrs_fieldcolumn}
 			{BEGIN RHOTHrs_fieldcolumn}
 			<td  class="{$RHOTHrs_class}" {$RHOTHrs_style} {$recordattrs}>
 				{$RHOTHrs_value}
 			</td>
 			{END RHOTHrs_fieldcolumn}
-			{BEGIN TrODay_fieldcolumn}
-			<td  class="{$TrODay_class}" {$TrODay_style} {$recordattrs}>
-				{$TrODay_value}
+			{BEGIN SHOTHrs_fieldcolumn}
+			<td  class="{$SHOTHrs_class}" {$SHOTHrs_style} {$recordattrs}>
+				{$SHOTHrs_value}
 			</td>
-			{END TrODay_fieldcolumn}
-			{BEGIN RegNDOTHrs_fieldcolumn}
-			<td  class="{$RegNDOTHrs_class}" {$RegNDOTHrs_style} {$recordattrs}>
-				{$RegNDOTHrs_value}
+			{END SHOTHrs_fieldcolumn}
+			{BEGIN SHOTD_fieldcolumn}
+			<td  class="{$SHOTD_class}" {$SHOTD_style} {$recordattrs}>
+				{$SHOTD_value}
 			</td>
-			{END RegNDOTHrs_fieldcolumn}
+			{END SHOTD_fieldcolumn}
+			{BEGIN DHOT_fieldcolumn}
+			<td  class="{$DHOT_class}" {$DHOT_style} {$recordattrs}>
+				{$DHOT_value}
+			</td>
+			{END DHOT_fieldcolumn}
+			{BEGIN RDOTHrs_fieldcolumn}
+			<td  class="{$RDOTHrs_class}" {$RDOTHrs_style} {$recordattrs}>
+				{$RDOTHrs_value}
+			</td>
+			{END RDOTHrs_fieldcolumn}
+			{BEGIN NDOT_fieldcolumn}
+			<td  class="{$NDOT_class}" {$NDOT_style} {$recordattrs}>
+				{$NDOT_value}
+			</td>
+			{END NDOT_fieldcolumn}
 			{BEGIN RHNDOTHrs_fieldcolumn}
 			<td  class="{$RHNDOTHrs_class}" {$RHNDOTHrs_style} {$recordattrs}>
 				{$RHNDOTHrs_value}
@@ -847,16 +732,36 @@
 				{$SHNDOTHrs_value}
 			</td>
 			{END SHNDOTHrs_fieldcolumn}
-			{BEGIN CHNDOTHrs_fieldcolumn}
-			<td  class="{$CHNDOTHrs_class}" {$CHNDOTHrs_style} {$recordattrs}>
-				{$CHNDOTHrs_value}
+			{BEGIN DHNDOT_fieldcolumn}
+			<td  class="{$DHNDOT_class}" {$DHNDOT_style} {$recordattrs}>
+				{$DHNDOT_value}
 			</td>
-			{END CHNDOTHrs_fieldcolumn}
+			{END DHNDOT_fieldcolumn}
 			{BEGIN RDNDOTHrs_fieldcolumn}
 			<td  class="{$RDNDOTHrs_class}" {$RDNDOTHrs_style} {$recordattrs}>
 				{$RDNDOTHrs_value}
 			</td>
 			{END RDNDOTHrs_fieldcolumn}
+			{BEGIN RHRDOT_fieldcolumn}
+			<td  class="{$RHRDOT_class}" {$RHRDOT_style} {$recordattrs}>
+				{$RHRDOT_value}
+			</td>
+			{END RHRDOT_fieldcolumn}
+			{BEGIN SHRDOT_fieldcolumn}
+			<td  class="{$SHRDOT_class}" {$SHRDOT_style} {$recordattrs}>
+				{$SHRDOT_value}
+			</td>
+			{END SHRDOT_fieldcolumn}
+			{BEGIN SHRDOTD_fieldcolumn}
+			<td  class="{$SHRDOTD_class}" {$SHRDOTD_style} {$recordattrs}>
+				{$SHRDOTD_value}
+			</td>
+			{END SHRDOTD_fieldcolumn}
+			{BEGIN DHRDOT_fieldcolumn}
+			<td  class="{$DHRDOT_class}" {$DHRDOT_style} {$recordattrs}>
+				{$DHRDOT_value}
+			</td>
+			{END DHRDOT_fieldcolumn}
 			{BEGIN RHRDNDOT_fieldcolumn}
 			<td  class="{$RHRDNDOT_class}" {$RHRDNDOT_style} {$recordattrs}>
 				{$RHRDNDOT_value}
@@ -872,21 +777,6 @@
 				{$DHRDNDOT_value}
 			</td>
 			{END DHRDNDOT_fieldcolumn}
-			{BEGIN DHOT_fieldcolumn}
-			<td  class="{$DHOT_class}" {$DHOT_style} {$recordattrs}>
-				{$DHOT_value}
-			</td>
-			{END DHOT_fieldcolumn}
-			{BEGIN DHNDOT_fieldcolumn}
-			<td  class="{$DHNDOT_class}" {$DHNDOT_style} {$recordattrs}>
-				{$DHNDOT_value}
-			</td>
-			{END DHNDOT_fieldcolumn}
-			{BEGIN DHRDOT_fieldcolumn}
-			<td  class="{$DHRDOT_class}" {$DHRDOT_style} {$recordattrs}>
-				{$DHRDOT_value}
-			</td>
-			{END DHRDOT_fieldcolumn}
 			{BEGIN VLDay_fieldcolumn}
 			<td  class="{$VLDay_class}" {$VLDay_style} {$recordattrs}>
 				{$VLDay_value}
@@ -907,6 +797,36 @@
 				{$PLDay_value}
 			</td>
 			{END PLDay_fieldcolumn}
+			{BEGIN TrODay_fieldcolumn}
+			<td  class="{$TrODay_class}" {$TrODay_style} {$recordattrs}>
+				{$TrODay_value}
+			</td>
+			{END TrODay_fieldcolumn}
+			{BEGIN ApprovedRD_fieldcolumn}
+			<td  class="{$ApprovedRD_class}" {$ApprovedRD_style} {$recordattrs}>
+				{$ApprovedRD_value}
+			</td>
+			{END ApprovedRD_fieldcolumn}
+			{BEGIN RegRD_fieldcolumn}
+			<td  class="{$RegRD_class}" {$RegRD_style} {$recordattrs}>
+				{$RegRD_value}
+			</td>
+			{END RegRD_fieldcolumn}
+			{BEGIN RHRD_fieldcolumn}
+			<td  class="{$RHRD_class}" {$RHRD_style} {$recordattrs}>
+				{$RHRD_value}
+			</td>
+			{END RHRD_fieldcolumn}
+			{BEGIN SHRD_fieldcolumn}
+			<td  class="{$SHRD_class}" {$SHRD_style} {$recordattrs}>
+				{$SHRD_value}
+			</td>
+			{END SHRD_fieldcolumn}
+			{BEGIN DHRD_fieldcolumn}
+			<td  class="{$DHRD_class}" {$DHRD_style} {$recordattrs}>
+				{$DHRD_value}
+			</td>
+			{END DHRD_fieldcolumn}
 			{BEGIN SchedType_fieldcolumn}
 			<td  class="{$SchedType_class}" {$SchedType_style} {$recordattrs}>
 				{$SchedType_value}
@@ -917,31 +837,11 @@
 				{$Shift_value}
 			</td>
 			{END Shift_fieldcolumn}
-			{BEGIN MinsPerDay_fieldcolumn}
-			<td  class="{$MinsPerDay_class}" {$MinsPerDay_style} {$recordattrs}>
-				{$MinsPerDay_value}
-			</td>
-			{END MinsPerDay_fieldcolumn}
 			{BEGIN BreakMins_fieldcolumn}
 			<td  class="{$BreakMins_class}" {$BreakMins_style} {$recordattrs}>
 				{$BreakMins_value}
 			</td>
 			{END BreakMins_fieldcolumn}
-			{BEGIN RDMins_fieldcolumn}
-			<td  class="{$RDMins_class}" {$RDMins_style} {$recordattrs}>
-				{$RDMins_value}
-			</td>
-			{END RDMins_fieldcolumn}
-			{BEGIN ApprovedRD_fieldcolumn}
-			<td  class="{$ApprovedRD_class}" {$ApprovedRD_style} {$recordattrs}>
-				{$ApprovedRD_value}
-			</td>
-			{END ApprovedRD_fieldcolumn}
-			{BEGIN RDHrs_fieldcolumn}
-			<td  class="{$RDHrs_class}" {$RDHrs_style} {$recordattrs}>
-				{$RDHrs_value}
-			</td>
-			{END RDHrs_fieldcolumn}
 			{BEGIN endrecord_block}
 			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
 			{END endrecord_block}
@@ -950,7 +850,7 @@
 	{BEGIN details_row}
 		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
 			{BEGIN details_record}
-				<td colspan="87">
+				<td colspan="77">
 					{BEGIN details_table}
 						{$details}
 					{END details_table}
@@ -1068,18 +968,6 @@
 				{END Absent_showtotal}
 			</td>
 			{END Absent_fieldfootercolumn}
-			{BEGIN PreLogMins_fieldfootercolumn}
-			<td>
-						</td>
-			{END PreLogMins_fieldfootercolumn}
-			{BEGIN IncludeBreakLate_fieldfootercolumn}
-			<td>
-						</td>
-			{END IncludeBreakLate_fieldfootercolumn}
-			{BEGIN GracePeriodMins_fieldfootercolumn}
-			<td>
-						</td>
-			{END GracePeriodMins_fieldfootercolumn}
 			{BEGIN LateMins_fieldfootercolumn}
 			<td>
 							{BEGIN LateMins_showtotal}
@@ -1104,6 +992,22 @@
 				{END LatePenaltyMins_showtotal}
 			</td>
 			{END LatePenaltyMins_fieldfootercolumn}
+			{BEGIN LateFixPenalty_fieldfootercolumn}
+			<td>
+							{BEGIN LateFixPenalty_showtotal}
+									Total:
+				{$LateFixPenalty_total}
+				{END LateFixPenalty_showtotal}
+			</td>
+			{END LateFixPenalty_fieldfootercolumn}
+			{BEGIN BreakLateMins_fieldfootercolumn}
+			<td>
+							{BEGIN BreakLateMins_showtotal}
+									Total:
+				{$BreakLateMins_total}
+				{END BreakLateMins_showtotal}
+			</td>
+			{END BreakLateMins_fieldfootercolumn}
 			{BEGIN TotLateMins_fieldfootercolumn}
 			<td>
 							{BEGIN TotLateMins_showtotal}
@@ -1112,14 +1016,6 @@
 				{END TotLateMins_showtotal}
 			</td>
 			{END TotLateMins_fieldfootercolumn}
-			{BEGIN LateFixPenalty_fieldfootercolumn}
-			<td>
-						</td>
-			{END LateFixPenalty_fieldfootercolumn}
-			{BEGIN BreakLateMins_fieldfootercolumn}
-			<td>
-						</td>
-			{END BreakLateMins_fieldfootercolumn}
 			{BEGIN HolidayType_fieldfootercolumn}
 			<td>
 						</td>
@@ -1148,58 +1044,26 @@
 				{END SHolidayHrs_showtotal}
 			</td>
 			{END SHolidayHrs_fieldfootercolumn}
-			{BEGIN CHolidayHrs_fieldfootercolumn}
-			<td>
-							{BEGIN CHolidayHrs_showtotal}
-									Total:
-				{$CHolidayHrs_total}
-				{END CHolidayHrs_showtotal}
-			</td>
-			{END CHolidayHrs_fieldfootercolumn}
 			{BEGIN DH_fieldfootercolumn}
 			<td>
-						</td>
-			{END DH_fieldfootercolumn}
-			{BEGIN DHRD_fieldfootercolumn}
-			<td>
-						</td>
-			{END DHRD_fieldfootercolumn}
-			{BEGIN NDHrs_fieldfootercolumn}
-			<td>
-							{BEGIN NDHrs_showtotal}
+							{BEGIN DH_showtotal}
 									Total:
-				{$NDHrs_total}
-				{END NDHrs_showtotal}
+				{$DH_total}
+				{END DH_showtotal}
 			</td>
-			{END NDHrs_fieldfootercolumn}
+			{END DH_fieldfootercolumn}
 			{BEGIN ApprovedNightDiff_fieldfootercolumn}
 			<td>
 						</td>
 			{END ApprovedNightDiff_fieldfootercolumn}
-			{BEGIN ANDiff_fieldfootercolumn}
+			{BEGIN RegND_fieldfootercolumn}
 			<td>
-							{BEGIN ANDiff_showtotal}
+							{BEGIN RegND_showtotal}
 									Total:
-				{$ANDiff_total}
-				{END ANDiff_showtotal}
+				{$RegND_total}
+				{END RegND_showtotal}
 			</td>
-			{END ANDiff_fieldfootercolumn}
-			{BEGIN ANDOTMins_fieldfootercolumn}
-			<td>
-							{BEGIN ANDOTMins_showtotal}
-									Total:
-				{$ANDOTMins_total}
-				{END ANDOTMins_showtotal}
-			</td>
-			{END ANDOTMins_fieldfootercolumn}
-			{BEGIN RegNDHrs_fieldfootercolumn}
-			<td>
-							{BEGIN RegNDHrs_showtotal}
-									Total:
-				{$RegNDHrs_total}
-				{END RegNDHrs_showtotal}
-			</td>
-			{END RegNDHrs_fieldfootercolumn}
+			{END RegND_fieldfootercolumn}
 			{BEGIN RHNDHrs_fieldfootercolumn}
 			<td>
 							{BEGIN RHNDHrs_showtotal}
@@ -1208,14 +1072,6 @@
 				{END RHNDHrs_showtotal}
 			</td>
 			{END RHNDHrs_fieldfootercolumn}
-			{BEGIN RDNDHrs_fieldfootercolumn}
-			<td>
-							{BEGIN RDNDHrs_showtotal}
-									Total:
-				{$RDNDHrs_total}
-				{END RDNDHrs_showtotal}
-			</td>
-			{END RDNDHrs_fieldfootercolumn}
 			{BEGIN SHNDHrs_fieldfootercolumn}
 			<td>
 							{BEGIN SHNDHrs_showtotal}
@@ -1224,42 +1080,46 @@
 				{END SHNDHrs_showtotal}
 			</td>
 			{END SHNDHrs_fieldfootercolumn}
-			{BEGIN CHNDHrs_fieldfootercolumn}
-			<td>
-							{BEGIN CHNDHrs_showtotal}
-									Total:
-				{$CHNDHrs_total}
-				{END CHNDHrs_showtotal}
-			</td>
-			{END CHNDHrs_fieldfootercolumn}
 			{BEGIN DHND_fieldfootercolumn}
 			<td>
-						</td>
+							{BEGIN DHND_showtotal}
+									Total:
+				{$DHND_total}
+				{END DHND_showtotal}
+			</td>
 			{END DHND_fieldfootercolumn}
-			{BEGIN DHRDND_fieldfootercolumn}
+			{BEGIN RDNDHrs_fieldfootercolumn}
 			<td>
-						</td>
-			{END DHRDND_fieldfootercolumn}
-			{BEGIN SHRDND_fieldfootercolumn}
-			<td>
-						</td>
-			{END SHRDND_fieldfootercolumn}
+							{BEGIN RDNDHrs_showtotal}
+									Total:
+				{$RDNDHrs_total}
+				{END RDNDHrs_showtotal}
+			</td>
+			{END RDNDHrs_fieldfootercolumn}
 			{BEGIN RHRDND_fieldfootercolumn}
 			<td>
-						</td>
+							{BEGIN RHRDND_showtotal}
+									Total:
+				{$RHRDND_total}
+				{END RHRDND_showtotal}
+			</td>
 			{END RHRDND_fieldfootercolumn}
-			{BEGIN NDMealAllowance_fieldfootercolumn}
+			{BEGIN SHRDND_fieldfootercolumn}
 			<td>
-						</td>
-			{END NDMealAllowance_fieldfootercolumn}
-			{BEGIN NDMealAllowancePerShift_fieldfootercolumn}
+							{BEGIN SHRDND_showtotal}
+									Total:
+				{$SHRDND_total}
+				{END SHRDND_showtotal}
+			</td>
+			{END SHRDND_fieldfootercolumn}
+			{BEGIN DHRDND_fieldfootercolumn}
 			<td>
-						</td>
-			{END NDMealAllowancePerShift_fieldfootercolumn}
-			{BEGIN NDMinimumHrs_fieldfootercolumn}
-			<td>
-						</td>
-			{END NDMinimumHrs_fieldfootercolumn}
+							{BEGIN DHRDND_showtotal}
+									Total:
+				{$DHRDND_total}
+				{END DHRDND_showtotal}
+			</td>
+			{END DHRDND_fieldfootercolumn}
 			{BEGIN ExcessHrs_fieldfootercolumn}
 			<td>
 							{BEGIN ExcessHrs_showtotal}
@@ -1272,10 +1132,6 @@
 			<td>
 						</td>
 			{END ApprovedOT_fieldfootercolumn}
-			{BEGIN AOTMins_fieldfootercolumn}
-			<td>
-						</td>
-			{END AOTMins_fieldfootercolumn}
 			{BEGIN RegOTHrs_fieldfootercolumn}
 			<td>
 							{BEGIN RegOTHrs_showtotal}
@@ -1284,30 +1140,6 @@
 				{END RegOTHrs_showtotal}
 			</td>
 			{END RegOTHrs_fieldfootercolumn}
-			{BEGIN SHOTHrs_fieldfootercolumn}
-			<td>
-							{BEGIN SHOTHrs_showtotal}
-									Total:
-				{$SHOTHrs_total}
-				{END SHOTHrs_showtotal}
-			</td>
-			{END SHOTHrs_fieldfootercolumn}
-			{BEGIN CHOTHrs_fieldfootercolumn}
-			<td>
-							{BEGIN CHOTHrs_showtotal}
-									Total:
-				{$CHOTHrs_total}
-				{END CHOTHrs_showtotal}
-			</td>
-			{END CHOTHrs_fieldfootercolumn}
-			{BEGIN RDOTHrs_fieldfootercolumn}
-			<td>
-							{BEGIN RDOTHrs_showtotal}
-									Total:
-				{$RDOTHrs_total}
-				{END RDOTHrs_showtotal}
-			</td>
-			{END RDOTHrs_fieldfootercolumn}
 			{BEGIN RHOTHrs_fieldfootercolumn}
 			<td>
 							{BEGIN RHOTHrs_showtotal}
@@ -1316,22 +1148,46 @@
 				{END RHOTHrs_showtotal}
 			</td>
 			{END RHOTHrs_fieldfootercolumn}
-			{BEGIN TrODay_fieldfootercolumn}
+			{BEGIN SHOTHrs_fieldfootercolumn}
 			<td>
-							{BEGIN TrODay_showtotal}
+							{BEGIN SHOTHrs_showtotal}
 									Total:
-				{$TrODay_total}
-				{END TrODay_showtotal}
+				{$SHOTHrs_total}
+				{END SHOTHrs_showtotal}
 			</td>
-			{END TrODay_fieldfootercolumn}
-			{BEGIN RegNDOTHrs_fieldfootercolumn}
+			{END SHOTHrs_fieldfootercolumn}
+			{BEGIN SHOTD_fieldfootercolumn}
 			<td>
-							{BEGIN RegNDOTHrs_showtotal}
+							{BEGIN SHOTD_showtotal}
 									Total:
-				{$RegNDOTHrs_total}
-				{END RegNDOTHrs_showtotal}
+				{$SHOTD_total}
+				{END SHOTD_showtotal}
 			</td>
-			{END RegNDOTHrs_fieldfootercolumn}
+			{END SHOTD_fieldfootercolumn}
+			{BEGIN DHOT_fieldfootercolumn}
+			<td>
+							{BEGIN DHOT_showtotal}
+									Total:
+				{$DHOT_total}
+				{END DHOT_showtotal}
+			</td>
+			{END DHOT_fieldfootercolumn}
+			{BEGIN RDOTHrs_fieldfootercolumn}
+			<td>
+							{BEGIN RDOTHrs_showtotal}
+									Total:
+				{$RDOTHrs_total}
+				{END RDOTHrs_showtotal}
+			</td>
+			{END RDOTHrs_fieldfootercolumn}
+			{BEGIN NDOT_fieldfootercolumn}
+			<td>
+							{BEGIN NDOT_showtotal}
+									Total:
+				{$NDOT_total}
+				{END NDOT_showtotal}
+			</td>
+			{END NDOT_fieldfootercolumn}
 			{BEGIN RHNDOTHrs_fieldfootercolumn}
 			<td>
 							{BEGIN RHNDOTHrs_showtotal}
@@ -1348,14 +1204,14 @@
 				{END SHNDOTHrs_showtotal}
 			</td>
 			{END SHNDOTHrs_fieldfootercolumn}
-			{BEGIN CHNDOTHrs_fieldfootercolumn}
+			{BEGIN DHNDOT_fieldfootercolumn}
 			<td>
-							{BEGIN CHNDOTHrs_showtotal}
+							{BEGIN DHNDOT_showtotal}
 									Total:
-				{$CHNDOTHrs_total}
-				{END CHNDOTHrs_showtotal}
+				{$DHNDOT_total}
+				{END DHNDOT_showtotal}
 			</td>
-			{END CHNDOTHrs_fieldfootercolumn}
+			{END DHNDOT_fieldfootercolumn}
 			{BEGIN RDNDOTHrs_fieldfootercolumn}
 			<td>
 							{BEGIN RDNDOTHrs_showtotal}
@@ -1364,30 +1220,62 @@
 				{END RDNDOTHrs_showtotal}
 			</td>
 			{END RDNDOTHrs_fieldfootercolumn}
+			{BEGIN RHRDOT_fieldfootercolumn}
+			<td>
+							{BEGIN RHRDOT_showtotal}
+									Total:
+				{$RHRDOT_total}
+				{END RHRDOT_showtotal}
+			</td>
+			{END RHRDOT_fieldfootercolumn}
+			{BEGIN SHRDOT_fieldfootercolumn}
+			<td>
+							{BEGIN SHRDOT_showtotal}
+									Total:
+				{$SHRDOT_total}
+				{END SHRDOT_showtotal}
+			</td>
+			{END SHRDOT_fieldfootercolumn}
+			{BEGIN SHRDOTD_fieldfootercolumn}
+			<td>
+							{BEGIN SHRDOTD_showtotal}
+									Total:
+				{$SHRDOTD_total}
+				{END SHRDOTD_showtotal}
+			</td>
+			{END SHRDOTD_fieldfootercolumn}
+			{BEGIN DHRDOT_fieldfootercolumn}
+			<td>
+							{BEGIN DHRDOT_showtotal}
+									Total:
+				{$DHRDOT_total}
+				{END DHRDOT_showtotal}
+			</td>
+			{END DHRDOT_fieldfootercolumn}
 			{BEGIN RHRDNDOT_fieldfootercolumn}
 			<td>
-						</td>
+							{BEGIN RHRDNDOT_showtotal}
+									Total:
+				{$RHRDNDOT_total}
+				{END RHRDNDOT_showtotal}
+			</td>
 			{END RHRDNDOT_fieldfootercolumn}
 			{BEGIN SHRDNDOT_fieldfootercolumn}
 			<td>
-						</td>
+							{BEGIN SHRDNDOT_showtotal}
+									Total:
+				{$SHRDNDOT_total}
+				{END SHRDNDOT_showtotal}
+			</td>
 			{END SHRDNDOT_fieldfootercolumn}
 			{BEGIN DHRDNDOT_fieldfootercolumn}
 			<td>
-						</td>
+							{BEGIN DHRDNDOT_showtotal}
+									Total:
+				{$DHRDNDOT_total}
+				{END DHRDNDOT_showtotal}
+			</td>
 			{END DHRDNDOT_fieldfootercolumn}
-			{BEGIN DHOT_fieldfootercolumn}
-			<td>
-						</td>
-			{END DHOT_fieldfootercolumn}
-			{BEGIN DHNDOT_fieldfootercolumn}
-			<td>
-						</td>
-			{END DHNDOT_fieldfootercolumn}
-			{BEGIN DHRDOT_fieldfootercolumn}
-			<td>
-						</td>
-			{END DHRDOT_fieldfootercolumn}
 			{BEGIN VLDay_fieldfootercolumn}
 			<td>
 							{BEGIN VLDay_showtotal}
@@ -1420,6 +1308,50 @@
 				{END PLDay_showtotal}
 			</td>
 			{END PLDay_fieldfootercolumn}
+			{BEGIN TrODay_fieldfootercolumn}
+			<td>
+							{BEGIN TrODay_showtotal}
+									Total:
+				{$TrODay_total}
+				{END TrODay_showtotal}
+			</td>
+			{END TrODay_fieldfootercolumn}
+			{BEGIN ApprovedRD_fieldfootercolumn}
+			<td>
+						</td>
+			{END ApprovedRD_fieldfootercolumn}
+			{BEGIN RegRD_fieldfootercolumn}
+			<td>
+							{BEGIN RegRD_showtotal}
+									Total:
+				{$RegRD_total}
+				{END RegRD_showtotal}
+			</td>
+			{END RegRD_fieldfootercolumn}
+			{BEGIN RHRD_fieldfootercolumn}
+			<td>
+							{BEGIN RHRD_showtotal}
+									Total:
+				{$RHRD_total}
+				{END RHRD_showtotal}
+			</td>
+			{END RHRD_fieldfootercolumn}
+			{BEGIN SHRD_fieldfootercolumn}
+			<td>
+							{BEGIN SHRD_showtotal}
+									Total:
+				{$SHRD_total}
+				{END SHRD_showtotal}
+			</td>
+			{END SHRD_fieldfootercolumn}
+			{BEGIN DHRD_fieldfootercolumn}
+			<td>
+							{BEGIN DHRD_showtotal}
+									Total:
+				{$DHRD_total}
+				{END DHRD_showtotal}
+			</td>
+			{END DHRD_fieldfootercolumn}
 			{BEGIN SchedType_fieldfootercolumn}
 			<td>
 						</td>
@@ -1428,30 +1360,10 @@
 			<td>
 						</td>
 			{END Shift_fieldfootercolumn}
-			{BEGIN MinsPerDay_fieldfootercolumn}
-			<td>
-						</td>
-			{END MinsPerDay_fieldfootercolumn}
 			{BEGIN BreakMins_fieldfootercolumn}
 			<td>
 						</td>
 			{END BreakMins_fieldfootercolumn}
-			{BEGIN RDMins_fieldfootercolumn}
-			<td>
-						</td>
-			{END RDMins_fieldfootercolumn}
-			{BEGIN ApprovedRD_fieldfootercolumn}
-			<td>
-						</td>
-			{END ApprovedRD_fieldfootercolumn}
-			{BEGIN RDHrs_fieldfootercolumn}
-			<td>
-							{BEGIN RDHrs_showtotal}
-									Total:
-				{$RDHrs_total}
-				{END RDHrs_showtotal}
-			</td>
-			{END RDHrs_fieldfootercolumn}
 			{BEGIN endrecordtotals_block}
 			<td class="rnr-cs"></td>
 			{END endrecordtotals_block}

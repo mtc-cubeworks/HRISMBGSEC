@@ -85,6 +85,11 @@
 				{$label shifts SchedType}
 			</th>
 			{END SchedType_fieldheadercolumn}
+			{BEGIN PreLogMins_fieldheadercolumn}
+			<th class="{$PreLogMins_class}" {$PreLogMins_style}  data-field="PreLogMins">
+				{$label shifts PreLogMins}
+			</th>
+			{END PreLogMins_fieldheadercolumn}
 			{BEGIN TimeIn_fieldheadercolumn}
 			<th class="{$TimeIn_class}" {$TimeIn_style}  data-field="TimeIn">
 				{$label shifts TimeIn}
@@ -130,11 +135,6 @@
 				{$label shifts MinsPerDay}
 			</th>
 			{END MinsPerDay_fieldheadercolumn}
-			{BEGIN AutoApproveNDiff_fieldheadercolumn}
-			<th class="{$AutoApproveNDiff_class}" {$AutoApproveNDiff_style}  data-field="AutoApproveNDiff">
-				{$label shifts AutoApproveNDiff}
-			</th>
-			{END AutoApproveNDiff_fieldheadercolumn}
 			{BEGIN endrecordheader_block}
 			<th class="rnr-cs">&nbsp;</th>
 			{END endrecordheader_block}
@@ -162,6 +162,11 @@
 				{$SchedType_value}
 			</td>
 			{END SchedType_fieldcolumn}
+			{BEGIN PreLogMins_fieldcolumn}
+			<td  class="{$PreLogMins_class}" {$PreLogMins_style} {$recordattrs}>
+				{$PreLogMins_value}
+			</td>
+			{END PreLogMins_fieldcolumn}
 			{BEGIN TimeIn_fieldcolumn}
 			<td  class="{$TimeIn_class}" {$TimeIn_style} {$recordattrs}>
 				{$TimeIn_value}
@@ -207,11 +212,6 @@
 				{$MinsPerDay_value}
 			</td>
 			{END MinsPerDay_fieldcolumn}
-			{BEGIN AutoApproveNDiff_fieldcolumn}
-			<td  class="{$AutoApproveNDiff_class}" {$AutoApproveNDiff_style} {$recordattrs}>
-				{$AutoApproveNDiff_value}
-			</td>
-			{END AutoApproveNDiff_fieldcolumn}
 			{BEGIN endrecord_block}
 			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
 			{END endrecord_block}

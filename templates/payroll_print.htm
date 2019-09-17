@@ -105,11 +105,6 @@
 				{$label payroll PayToDate}
 			</th>
 			{END PayToDate_fieldheadercolumn}
-			{BEGIN PayPeriod_fieldheadercolumn}
-			<th class="{$PayPeriod_class}" {$PayPeriod_style}  data-field="PayPeriod">
-				{$label payroll PayPeriod}
-			</th>
-			{END PayPeriod_fieldheadercolumn}
 			{BEGIN PayDate_fieldheadercolumn}
 			<th class="{$PayDate_class}" {$PayDate_style}  data-field="PayDate">
 				{$label payroll PayDate}
@@ -135,11 +130,6 @@
 				{$label payroll Adjustments}
 			</th>
 			{END Adjustments_fieldheadercolumn}
-			{BEGIN MoAdjustment_fieldheadercolumn}
-			<th class="{$MoAdjustment_class}" {$MoAdjustment_style}  data-field="MoAdjustment">
-				{$label payroll MoAdjustment}
-			</th>
-			{END MoAdjustment_fieldheadercolumn}
 			{BEGIN PresetTax_fieldheadercolumn}
 			<th class="{$PresetTax_class}" {$PresetTax_style}  data-field="PresetTax">
 				{$label payroll PresetTax}
@@ -197,11 +187,6 @@
 				{$PayToDate_value}
 			</td>
 			{END PayToDate_fieldcolumn}
-			{BEGIN PayPeriod_fieldcolumn}
-			<td  class="{$PayPeriod_class}" {$PayPeriod_style} {$recordattrs}>
-				{$PayPeriod_value}
-			</td>
-			{END PayPeriod_fieldcolumn}
 			{BEGIN PayDate_fieldcolumn}
 			<td  class="{$PayDate_class}" {$PayDate_style} {$recordattrs}>
 				{$PayDate_value}
@@ -227,11 +212,6 @@
 				{$Adjustments_value}
 			</td>
 			{END Adjustments_fieldcolumn}
-			{BEGIN MoAdjustment_fieldcolumn}
-			<td  class="{$MoAdjustment_class}" {$MoAdjustment_style} {$recordattrs}>
-				{$MoAdjustment_value}
-			</td>
-			{END MoAdjustment_fieldcolumn}
 			{BEGIN PresetTax_fieldcolumn}
 			<td  class="{$PresetTax_class}" {$PresetTax_style} {$recordattrs}>
 				{$PresetTax_value}
@@ -250,7 +230,7 @@
 	{BEGIN details_row}
 		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
 			{BEGIN details_record}
-				<td colspan="17">
+				<td colspan="15">
 					{BEGIN details_table}
 						{$details}
 					{END details_table}

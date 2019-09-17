@@ -509,6 +509,9 @@
 	.bs-gridcell[data-field=SchedBy]:before {
 		content: "{$label indschedrange SchedBy}";
 	}
+	.bs-gridcell[data-field=PreLogMins]:before {
+		content: "{$label indschedrange PreLogMins}";
+	}
 </style>
 <TABLE class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" style="width: 2159px;" cellpadding="0" data-brick="grid" data-pageid="{$pageid}" {$grid_hiddenattr}>
   <thead>
@@ -590,6 +593,17 @@
 									{END RestDays_fieldheader}
 									</th>
 									{END RestDays_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN PreLogMins_fieldheadercolumn}<th class="rnr-gridfieldlabel {$PreLogMins_class}" data-field=PreLogMins>
+									{BEGIN PreLogMins_fieldheader}<span {$PreLogMins_orderlinkattrs}>
+											{$label indschedrange PreLogMins}
+										</span>
+									{END PreLogMins_fieldheader}
+									</th>
+									{END PreLogMins_fieldheadercolumn}
 									
 									
 									
@@ -774,6 +788,12 @@
       {$RestDays_value}
 	</td>
 {END RestDays_fieldcolumn}
+
+
+	{BEGIN PreLogMins_fieldcolumn}<td class="bs-gridcell {$PreLogMins_class}"  data-field=PreLogMins {$rowstyle} {$recordattrs}>
+		{$PreLogMins_value}
+	</td>
+{END PreLogMins_fieldcolumn}
 
 
 	{BEGIN TimeIn_fieldcolumn}<TD class="bs-gridcell {$TimeIn_class}" style="width: 90px;" rowspan="1" colspan="1" data-field="TimeIn" {$rowstyle} {$recordattrs}>

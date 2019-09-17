@@ -53,27 +53,18 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsstandardsetup["English"]["SHOTFactor"] = "SH-OT";
 	$fieldToolTipsstandardsetup["English"]["SHOTFactor"] = "";
 	$placeHoldersstandardsetup["English"]["SHOTFactor"] = "";
-	$fieldLabelsstandardsetup["English"]["CHOTFactor"] = "CH-OT";
-	$fieldToolTipsstandardsetup["English"]["CHOTFactor"] = "";
-	$placeHoldersstandardsetup["English"]["CHOTFactor"] = "";
 	$fieldLabelsstandardsetup["English"]["RHNDiffFactor"] = "RH-ND";
 	$fieldToolTipsstandardsetup["English"]["RHNDiffFactor"] = "";
 	$placeHoldersstandardsetup["English"]["RHNDiffFactor"] = "";
 	$fieldLabelsstandardsetup["English"]["SHNDiffFactor"] = "SH-ND";
 	$fieldToolTipsstandardsetup["English"]["SHNDiffFactor"] = "";
 	$placeHoldersstandardsetup["English"]["SHNDiffFactor"] = "";
-	$fieldLabelsstandardsetup["English"]["CHNDiffFactor"] = "CH-ND";
-	$fieldToolTipsstandardsetup["English"]["CHNDiffFactor"] = "";
-	$placeHoldersstandardsetup["English"]["CHNDiffFactor"] = "";
 	$fieldLabelsstandardsetup["English"]["RHFactor"] = "Regular Holiday";
 	$fieldToolTipsstandardsetup["English"]["RHFactor"] = "";
 	$placeHoldersstandardsetup["English"]["RHFactor"] = "";
 	$fieldLabelsstandardsetup["English"]["SHFactor"] = "Special Holiday";
 	$fieldToolTipsstandardsetup["English"]["SHFactor"] = "";
 	$placeHoldersstandardsetup["English"]["SHFactor"] = "";
-	$fieldLabelsstandardsetup["English"]["CHFactor"] = "Company Holiday";
-	$fieldToolTipsstandardsetup["English"]["CHFactor"] = "";
-	$placeHoldersstandardsetup["English"]["CHFactor"] = "";
 	$fieldLabelsstandardsetup["English"]["RDFactor"] = "Rest Day";
 	$fieldToolTipsstandardsetup["English"]["RDFactor"] = "";
 	$placeHoldersstandardsetup["English"]["RDFactor"] = "";
@@ -104,24 +95,9 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsstandardsetup["English"]["SHFactorDaily"] = "Special Holiday Daily";
 	$fieldToolTipsstandardsetup["English"]["SHFactorDaily"] = "";
 	$placeHoldersstandardsetup["English"]["SHFactorDaily"] = "";
-	$fieldLabelsstandardsetup["English"]["SHOTFactorDaily"] = "SH-OT Daily";
-	$fieldToolTipsstandardsetup["English"]["SHOTFactorDaily"] = "";
-	$placeHoldersstandardsetup["English"]["SHOTFactorDaily"] = "";
-	$fieldLabelsstandardsetup["English"]["CHFactorDaily"] = "Company Holiday Daily";
-	$fieldToolTipsstandardsetup["English"]["CHFactorDaily"] = "";
-	$placeHoldersstandardsetup["English"]["CHFactorDaily"] = "";
 	$fieldLabelsstandardsetup["English"]["SHRDFactorDaily"] = "SH-RD Daily";
 	$fieldToolTipsstandardsetup["English"]["SHRDFactorDaily"] = "";
 	$placeHoldersstandardsetup["English"]["SHRDFactorDaily"] = "";
-	$fieldLabelsstandardsetup["English"]["SHRDOTFactorDaily"] = "SH-RD-OT Daily";
-	$fieldToolTipsstandardsetup["English"]["SHRDOTFactorDaily"] = "";
-	$placeHoldersstandardsetup["English"]["SHRDOTFactorDaily"] = "";
-	$fieldLabelsstandardsetup["English"]["CHOTFactorDaily"] = "CH-OT Daily";
-	$fieldToolTipsstandardsetup["English"]["CHOTFactorDaily"] = "";
-	$placeHoldersstandardsetup["English"]["CHOTFactorDaily"] = "";
-	$fieldLabelsstandardsetup["English"]["PreTimeInMins"] = "Pre Log-In Mins";
-	$fieldToolTipsstandardsetup["English"]["PreTimeInMins"] = "";
-	$placeHoldersstandardsetup["English"]["PreTimeInMins"] = "";
 	$fieldLabelsstandardsetup["English"]["BonusAnnualLimit"] = "Bonus Annual Limit";
 	$fieldToolTipsstandardsetup["English"]["BonusAnnualLimit"] = "";
 	$placeHoldersstandardsetup["English"]["BonusAnnualLimit"] = "";
@@ -134,9 +110,6 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsstandardsetup["English"]["SHNDOTFactor"] = "SH-ND-OT";
 	$fieldToolTipsstandardsetup["English"]["SHNDOTFactor"] = "";
 	$placeHoldersstandardsetup["English"]["SHNDOTFactor"] = "";
-	$fieldLabelsstandardsetup["English"]["CHNDOTFactor"] = "CH-ND-OT";
-	$fieldToolTipsstandardsetup["English"]["CHNDOTFactor"] = "";
-	$placeHoldersstandardsetup["English"]["CHNDOTFactor"] = "";
 	$fieldLabelsstandardsetup["English"]["RDNDOTFactor"] = "RD-ND-OT";
 	$fieldToolTipsstandardsetup["English"]["RDNDOTFactor"] = "";
 	$placeHoldersstandardsetup["English"]["RDNDOTFactor"] = "";
@@ -176,6 +149,12 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsstandardsetup["English"]["DoubleHolidayRDNDOT"] = "DH-RD-ND-OT";
 	$fieldToolTipsstandardsetup["English"]["DoubleHolidayRDNDOT"] = "";
 	$placeHoldersstandardsetup["English"]["DoubleHolidayRDNDOT"] = "";
+	$fieldLabelsstandardsetup["English"]["SHOTDFactor"] = "SH-OT-D";
+	$fieldToolTipsstandardsetup["English"]["SHOTDFactor"] = "";
+	$placeHoldersstandardsetup["English"]["SHOTDFactor"] = "";
+	$fieldLabelsstandardsetup["English"]["SHRDOTDFactor"] = "SH-RD-OT-D";
+	$fieldToolTipsstandardsetup["English"]["SHRDOTDFactor"] = "";
+	$placeHoldersstandardsetup["English"]["SHRDOTDFactor"] = "";
 	if (count($fieldToolTipsstandardsetup["English"]))
 		$tdatastandardsetup[".isUseToolTips"] = true;
 }
@@ -194,9 +173,6 @@ if(mlang_getcurrentlang()=="")
 	$fieldLabelsstandardsetup[""]["SHNDOTFactor"] = "SHNDOTFactor";
 	$fieldToolTipsstandardsetup[""]["SHNDOTFactor"] = "";
 	$placeHoldersstandardsetup[""]["SHNDOTFactor"] = "";
-	$fieldLabelsstandardsetup[""]["CHNDOTFactor"] = "CHNDOTFactor";
-	$fieldToolTipsstandardsetup[""]["CHNDOTFactor"] = "";
-	$placeHoldersstandardsetup[""]["CHNDOTFactor"] = "";
 	$fieldLabelsstandardsetup[""]["RDNDOTFactor"] = "RDNDOTFactor";
 	$fieldToolTipsstandardsetup[""]["RDNDOTFactor"] = "";
 	$placeHoldersstandardsetup[""]["RDNDOTFactor"] = "";
@@ -236,6 +212,12 @@ if(mlang_getcurrentlang()=="")
 	$fieldLabelsstandardsetup[""]["DoubleHolidayRDNDOT"] = "Double Holiday RDNDOT";
 	$fieldToolTipsstandardsetup[""]["DoubleHolidayRDNDOT"] = "";
 	$placeHoldersstandardsetup[""]["DoubleHolidayRDNDOT"] = "";
+	$fieldLabelsstandardsetup[""]["SHOTDFactor"] = "SHOTDFactor";
+	$fieldToolTipsstandardsetup[""]["SHOTDFactor"] = "";
+	$placeHoldersstandardsetup[""]["SHOTDFactor"] = "";
+	$fieldLabelsstandardsetup[""]["SHRDOTDFactor"] = "SHRDOTDFactor";
+	$fieldToolTipsstandardsetup[""]["SHRDOTDFactor"] = "";
+	$placeHoldersstandardsetup[""]["SHRDOTDFactor"] = "";
 	if (count($fieldToolTipsstandardsetup[""]))
 		$tdatastandardsetup[".isUseToolTips"] = true;
 }
@@ -333,7 +315,7 @@ $tdatastandardsetup[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																														
+																																																																																																																																																																																																																																																																		
 
 $tdatastandardsetup[".ajaxCodeSnippetAdded"] = false;
 
@@ -353,7 +335,6 @@ $tdatastandardsetup[".filterFields"] = array();
 $tdatastandardsetup[".requiredSearchFields"] = array();
 
 $tdatastandardsetup[".allSearchFields"][] = "SID";
-	$tdatastandardsetup[".allSearchFields"][] = "PreTimeInMins";
 	$tdatastandardsetup[".allSearchFields"][] = "WorkingDaysInYear";
 	$tdatastandardsetup[".allSearchFields"][] = "WorkingDaysInYearDailies";
 	$tdatastandardsetup[".allSearchFields"][] = "AllowableLeaveFrom";
@@ -361,23 +342,18 @@ $tdatastandardsetup[".allSearchFields"][] = "SID";
 	$tdatastandardsetup[".allSearchFields"][] = "RHFactor";
 	$tdatastandardsetup[".allSearchFields"][] = "SHFactor";
 	$tdatastandardsetup[".allSearchFields"][] = "SHFactorDaily";
-	$tdatastandardsetup[".allSearchFields"][] = "CHFactor";
-	$tdatastandardsetup[".allSearchFields"][] = "CHFactorDaily";
 	$tdatastandardsetup[".allSearchFields"][] = "DoubleHoliday";
 	$tdatastandardsetup[".allSearchFields"][] = "ReqBeforeHoliday";
 	$tdatastandardsetup[".allSearchFields"][] = "RegOTFactor";
 	$tdatastandardsetup[".allSearchFields"][] = "RHOTFactor";
 	$tdatastandardsetup[".allSearchFields"][] = "SHOTFactor";
-	$tdatastandardsetup[".allSearchFields"][] = "SHOTFactorDaily";
-	$tdatastandardsetup[".allSearchFields"][] = "CHOTFactor";
-	$tdatastandardsetup[".allSearchFields"][] = "CHOTFactorDaily";
+	$tdatastandardsetup[".allSearchFields"][] = "SHOTDFactor";
+	$tdatastandardsetup[".allSearchFields"][] = "SHRDOTDFactor";
 	$tdatastandardsetup[".allSearchFields"][] = "RDOTFactor";
 	$tdatastandardsetup[".allSearchFields"][] = "RHRDOTFactor";
 	$tdatastandardsetup[".allSearchFields"][] = "SHRDOTFactor";
-	$tdatastandardsetup[".allSearchFields"][] = "SHRDOTFactorDaily";
 	$tdatastandardsetup[".allSearchFields"][] = "RHNDOTFactor";
 	$tdatastandardsetup[".allSearchFields"][] = "SHNDOTFactor";
-	$tdatastandardsetup[".allSearchFields"][] = "CHNDOTFactor";
 	$tdatastandardsetup[".allSearchFields"][] = "RDNDOTFactor";
 	$tdatastandardsetup[".allSearchFields"][] = "RHRDNDOTFacotr";
 	$tdatastandardsetup[".allSearchFields"][] = "SHRDNDOTFactor";
@@ -390,7 +366,6 @@ $tdatastandardsetup[".allSearchFields"][] = "SID";
 	$tdatastandardsetup[".allSearchFields"][] = "RegNDiffFactor";
 	$tdatastandardsetup[".allSearchFields"][] = "RHNDiffFactor";
 	$tdatastandardsetup[".allSearchFields"][] = "SHNDiffFactor";
-	$tdatastandardsetup[".allSearchFields"][] = "CHNDiffFactor";
 	$tdatastandardsetup[".allSearchFields"][] = "RDNDiffFactor";
 	$tdatastandardsetup[".allSearchFields"][] = "RegNDOTFactor";
 	$tdatastandardsetup[".allSearchFields"][] = "RHRDNDFactor";
@@ -416,13 +391,10 @@ $tdatastandardsetup[".googleLikeFields"][] = "AllowableLeaveFrom";
 $tdatastandardsetup[".googleLikeFields"][] = "AllowableLeaveTo";
 $tdatastandardsetup[".googleLikeFields"][] = "RHOTFactor";
 $tdatastandardsetup[".googleLikeFields"][] = "SHOTFactor";
-$tdatastandardsetup[".googleLikeFields"][] = "CHOTFactor";
 $tdatastandardsetup[".googleLikeFields"][] = "RHNDiffFactor";
 $tdatastandardsetup[".googleLikeFields"][] = "SHNDiffFactor";
-$tdatastandardsetup[".googleLikeFields"][] = "CHNDiffFactor";
 $tdatastandardsetup[".googleLikeFields"][] = "RHFactor";
 $tdatastandardsetup[".googleLikeFields"][] = "SHFactor";
-$tdatastandardsetup[".googleLikeFields"][] = "CHFactor";
 $tdatastandardsetup[".googleLikeFields"][] = "RDFactor";
 $tdatastandardsetup[".googleLikeFields"][] = "RDOTFactor";
 $tdatastandardsetup[".googleLikeFields"][] = "RDNDiffFactor";
@@ -433,17 +405,11 @@ $tdatastandardsetup[".googleLikeFields"][] = "SHRDOTFactor";
 $tdatastandardsetup[".googleLikeFields"][] = "WorkingDaysInYearDailies";
 $tdatastandardsetup[".googleLikeFields"][] = "ReqBeforeHoliday";
 $tdatastandardsetup[".googleLikeFields"][] = "SHFactorDaily";
-$tdatastandardsetup[".googleLikeFields"][] = "SHOTFactorDaily";
-$tdatastandardsetup[".googleLikeFields"][] = "CHFactorDaily";
 $tdatastandardsetup[".googleLikeFields"][] = "SHRDFactorDaily";
-$tdatastandardsetup[".googleLikeFields"][] = "SHRDOTFactorDaily";
-$tdatastandardsetup[".googleLikeFields"][] = "CHOTFactorDaily";
-$tdatastandardsetup[".googleLikeFields"][] = "PreTimeInMins";
 $tdatastandardsetup[".googleLikeFields"][] = "BonusAnnualLimit";
 $tdatastandardsetup[".googleLikeFields"][] = "RegNDOTFactor";
 $tdatastandardsetup[".googleLikeFields"][] = "RHNDOTFactor";
 $tdatastandardsetup[".googleLikeFields"][] = "SHNDOTFactor";
-$tdatastandardsetup[".googleLikeFields"][] = "CHNDOTFactor";
 $tdatastandardsetup[".googleLikeFields"][] = "RDNDOTFactor";
 $tdatastandardsetup[".googleLikeFields"][] = "DoubleHoliday";
 $tdatastandardsetup[".googleLikeFields"][] = "DoubleHolidayRD";
@@ -457,11 +423,12 @@ $tdatastandardsetup[".googleLikeFields"][] = "DoubleHolidayND";
 $tdatastandardsetup[".googleLikeFields"][] = "DoubleHolidayRDND";
 $tdatastandardsetup[".googleLikeFields"][] = "DoubleHolidayNDOT";
 $tdatastandardsetup[".googleLikeFields"][] = "DoubleHolidayRDNDOT";
+$tdatastandardsetup[".googleLikeFields"][] = "SHOTDFactor";
+$tdatastandardsetup[".googleLikeFields"][] = "SHRDOTDFactor";
 
 
 $tdatastandardsetup[".advSearchFields"] = array();
 $tdatastandardsetup[".advSearchFields"][] = "SID";
-$tdatastandardsetup[".advSearchFields"][] = "PreTimeInMins";
 $tdatastandardsetup[".advSearchFields"][] = "WorkingDaysInYear";
 $tdatastandardsetup[".advSearchFields"][] = "WorkingDaysInYearDailies";
 $tdatastandardsetup[".advSearchFields"][] = "AllowableLeaveFrom";
@@ -469,23 +436,18 @@ $tdatastandardsetup[".advSearchFields"][] = "AllowableLeaveTo";
 $tdatastandardsetup[".advSearchFields"][] = "RHFactor";
 $tdatastandardsetup[".advSearchFields"][] = "SHFactor";
 $tdatastandardsetup[".advSearchFields"][] = "SHFactorDaily";
-$tdatastandardsetup[".advSearchFields"][] = "CHFactor";
-$tdatastandardsetup[".advSearchFields"][] = "CHFactorDaily";
 $tdatastandardsetup[".advSearchFields"][] = "DoubleHoliday";
 $tdatastandardsetup[".advSearchFields"][] = "ReqBeforeHoliday";
 $tdatastandardsetup[".advSearchFields"][] = "RegOTFactor";
 $tdatastandardsetup[".advSearchFields"][] = "RHOTFactor";
 $tdatastandardsetup[".advSearchFields"][] = "SHOTFactor";
-$tdatastandardsetup[".advSearchFields"][] = "SHOTFactorDaily";
-$tdatastandardsetup[".advSearchFields"][] = "CHOTFactor";
-$tdatastandardsetup[".advSearchFields"][] = "CHOTFactorDaily";
+$tdatastandardsetup[".advSearchFields"][] = "SHOTDFactor";
+$tdatastandardsetup[".advSearchFields"][] = "SHRDOTDFactor";
 $tdatastandardsetup[".advSearchFields"][] = "RDOTFactor";
 $tdatastandardsetup[".advSearchFields"][] = "RHRDOTFactor";
 $tdatastandardsetup[".advSearchFields"][] = "SHRDOTFactor";
-$tdatastandardsetup[".advSearchFields"][] = "SHRDOTFactorDaily";
 $tdatastandardsetup[".advSearchFields"][] = "RHNDOTFactor";
 $tdatastandardsetup[".advSearchFields"][] = "SHNDOTFactor";
-$tdatastandardsetup[".advSearchFields"][] = "CHNDOTFactor";
 $tdatastandardsetup[".advSearchFields"][] = "RDNDOTFactor";
 $tdatastandardsetup[".advSearchFields"][] = "RHRDNDOTFacotr";
 $tdatastandardsetup[".advSearchFields"][] = "SHRDNDOTFactor";
@@ -498,7 +460,6 @@ $tdatastandardsetup[".advSearchFields"][] = "NightDiffEndTime";
 $tdatastandardsetup[".advSearchFields"][] = "RegNDiffFactor";
 $tdatastandardsetup[".advSearchFields"][] = "RHNDiffFactor";
 $tdatastandardsetup[".advSearchFields"][] = "SHNDiffFactor";
-$tdatastandardsetup[".advSearchFields"][] = "CHNDiffFactor";
 $tdatastandardsetup[".advSearchFields"][] = "RDNDiffFactor";
 $tdatastandardsetup[".advSearchFields"][] = "RegNDOTFactor";
 $tdatastandardsetup[".advSearchFields"][] = "RHRDNDFactor";
@@ -553,7 +514,7 @@ $tdatastandardsetup[".strOrderBy"] = $tstrOrderBy;
 
 $tdatastandardsetup[".orderindexes"] = array();
 
-$tdatastandardsetup[".sqlHead"] = "SELECT SID,  RegOTFactor,  RegNDiffFactor,  NightDiffStartTime,  NightDiffEndTime,  WorkingDaysInYear,  AllowableLeaveFrom,  AllowableLeaveTo,  RHOTFactor,  SHOTFactor,  CHOTFactor,  RHNDiffFactor,  SHNDiffFactor,  CHNDiffFactor,  RHFactor,  SHFactor,  CHFactor,  RDFactor,  RDOTFactor,  RDNDiffFactor,  RHRDFactor,  RHRDOTFactor,  SHRDFactor,  SHRDOTFactor,  WorkingDaysInYearDailies,  ReqBeforeHoliday,  SHFactorDaily,  SHOTFactorDaily,  CHFactorDaily,  SHRDFactorDaily,  SHRDOTFactorDaily,  CHOTFactorDaily,  PreTimeInMins,  BonusAnnualLimit,  RegNDOTFactor,  RHNDOTFactor,  SHNDOTFactor,  CHNDOTFactor,  RDNDOTFactor,  DoubleHoliday,  DoubleHolidayRD,  DoubleHolidayOT,  DoubleHolidayRDOT,  SHRDNDFactor,  RHRDNDFactor,  SHRDNDOTFactor,  RHRDNDOTFacotr,  DoubleHolidayND,  DoubleHolidayRDND,  DoubleHolidayNDOT,  DoubleHolidayRDNDOT";
+$tdatastandardsetup[".sqlHead"] = "SELECT SID,  RegOTFactor,  RegNDiffFactor,  NightDiffStartTime,  NightDiffEndTime,  WorkingDaysInYear,  AllowableLeaveFrom,  AllowableLeaveTo,  RHOTFactor,  SHOTFactor,  RHNDiffFactor,  SHNDiffFactor,  RHFactor,  SHFactor,  RDFactor,  RDOTFactor,  RDNDiffFactor,  RHRDFactor,  RHRDOTFactor,  SHRDFactor,  SHRDOTFactor,  WorkingDaysInYearDailies,  ReqBeforeHoliday,  SHFactorDaily,  SHRDFactorDaily,  BonusAnnualLimit,  RegNDOTFactor,  RHNDOTFactor,  SHNDOTFactor,  RDNDOTFactor,  DoubleHoliday,  DoubleHolidayRD,  DoubleHolidayOT,  DoubleHolidayRDOT,  SHRDNDFactor,  RHRDNDFactor,  SHRDNDOTFactor,  RHRDNDOTFacotr,  DoubleHolidayND,  DoubleHolidayRDND,  DoubleHolidayNDOT,  DoubleHolidayRDNDOT,  SHOTDFactor,  SHRDOTDFactor";
 $tdatastandardsetup[".sqlFrom"] = "FROM standardsetup";
 $tdatastandardsetup[".sqlWhereExpr"] = "";
 $tdatastandardsetup[".sqlTail"] = "";
@@ -563,8 +524,6 @@ $tdatastandardsetup[".sqlTail"] = "";
 $arrEditTabs = array();
 	$tabFields = array();
 	
-	
-		$tabFields[] = "PreTimeInMins";
 	
 		$tabFields[] = "WorkingDaysInYear";
 	
@@ -598,10 +557,6 @@ $arrEditTabs[] = array('tabId'=>'Leave_Range1',
 	
 		$tabFields[] = "SHFactorDaily";
 	
-		$tabFields[] = "CHFactor";
-	
-		$tabFields[] = "CHFactorDaily";
-	
 		$tabFields[] = "DoubleHoliday";
 	
 		$tabFields[] = "ReqBeforeHoliday";
@@ -621,11 +576,9 @@ $arrEditTabs[] = array('tabId'=>'Holiday_Factor1',
 	
 		$tabFields[] = "SHOTFactor";
 	
-		$tabFields[] = "SHOTFactorDaily";
+		$tabFields[] = "SHOTDFactor";
 	
-		$tabFields[] = "CHOTFactor";
-	
-		$tabFields[] = "CHOTFactorDaily";
+		$tabFields[] = "SHRDOTDFactor";
 	
 		$tabFields[] = "RDOTFactor";
 	
@@ -633,13 +586,9 @@ $arrEditTabs[] = array('tabId'=>'Holiday_Factor1',
 	
 		$tabFields[] = "SHRDOTFactor";
 	
-		$tabFields[] = "SHRDOTFactorDaily";
-	
 		$tabFields[] = "RHNDOTFactor";
 	
 		$tabFields[] = "SHNDOTFactor";
-	
-		$tabFields[] = "CHNDOTFactor";
 	
 		$tabFields[] = "RDNDOTFactor";
 	
@@ -657,7 +606,7 @@ $arrEditTabs[] = array('tabId'=>'Holiday_Factor1',
 $arrEditTabs[] = array('tabId'=>'Overtime_Factors1',
 					   'tabName'=>"Overtime Factors",
 					   'nType'=>'0',
-					   'nOrder'=>16,
+					   'nOrder'=>14,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -674,8 +623,6 @@ $arrEditTabs[] = array('tabId'=>'Overtime_Factors1',
 	
 		$tabFields[] = "SHNDiffFactor";
 	
-		$tabFields[] = "CHNDiffFactor";
-	
 		$tabFields[] = "RDNDiffFactor";
 	
 		$tabFields[] = "RegNDOTFactor";
@@ -690,7 +637,7 @@ $arrEditTabs[] = array('tabId'=>'Overtime_Factors1',
 $arrEditTabs[] = array('tabId'=>'Night_Differencial_Factor1',
 					   'tabName'=>"Night Differencial Factor",
 					   'nType'=>'0',
-					   'nOrder'=>37,
+					   'nOrder'=>32,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -709,7 +656,7 @@ $arrEditTabs[] = array('tabId'=>'Night_Differencial_Factor1',
 $arrEditTabs[] = array('tabId'=>'Rest_Day_Factor1',
 					   'tabName'=>"Rest Day Factor",
 					   'nType'=>'0',
-					   'nOrder'=>50,
+					   'nOrder'=>44,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -720,7 +667,7 @@ $arrEditTabs[] = array('tabId'=>'Rest_Day_Factor1',
 $arrEditTabs[] = array('tabId'=>'Bonus1',
 					   'tabName'=>"Bonus",
 					   'nType'=>'0',
-					   'nOrder'=>56,
+					   'nOrder'=>50,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -731,8 +678,6 @@ $tdatastandardsetup[".arrEditTabs"] = $arrEditTabs;
 $arrAddTabs = array();
 	$tabFields = array();
 	
-	
-		$tabFields[] = "PreTimeInMins";
 	
 		$tabFields[] = "WorkingDaysInYear";
 	
@@ -766,10 +711,6 @@ $arrAddTabs[] = array('tabId'=>'Leave_Range1',
 	
 		$tabFields[] = "SHFactorDaily";
 	
-		$tabFields[] = "CHFactor";
-	
-		$tabFields[] = "CHFactorDaily";
-	
 		$tabFields[] = "DoubleHoliday";
 	
 		$tabFields[] = "ReqBeforeHoliday";
@@ -789,11 +730,9 @@ $arrAddTabs[] = array('tabId'=>'Holiday_Factor1',
 	
 		$tabFields[] = "SHOTFactor";
 	
-		$tabFields[] = "SHOTFactorDaily";
+		$tabFields[] = "SHOTDFactor";
 	
-		$tabFields[] = "CHOTFactor";
-	
-		$tabFields[] = "CHOTFactorDaily";
+		$tabFields[] = "SHRDOTDFactor";
 	
 		$tabFields[] = "RDOTFactor";
 	
@@ -801,13 +740,9 @@ $arrAddTabs[] = array('tabId'=>'Holiday_Factor1',
 	
 		$tabFields[] = "SHRDOTFactor";
 	
-		$tabFields[] = "SHRDOTFactorDaily";
-	
 		$tabFields[] = "RHNDOTFactor";
 	
 		$tabFields[] = "SHNDOTFactor";
-	
-		$tabFields[] = "CHNDOTFactor";
 	
 		$tabFields[] = "RDNDOTFactor";
 	
@@ -825,7 +760,7 @@ $arrAddTabs[] = array('tabId'=>'Holiday_Factor1',
 $arrAddTabs[] = array('tabId'=>'Overtime_Factors1',
 					  'tabName'=>"Overtime Factors",
 					  'nType'=>'0',
-					  'nOrder'=>16,
+					  'nOrder'=>14,
 					  'tabGroup'=>1,
 					  'arrFields'=> $tabFields,
 					  'expandSec'=>0);
@@ -842,8 +777,6 @@ $arrAddTabs[] = array('tabId'=>'Overtime_Factors1',
 	
 		$tabFields[] = "SHNDiffFactor";
 	
-		$tabFields[] = "CHNDiffFactor";
-	
 		$tabFields[] = "RDNDiffFactor";
 	
 		$tabFields[] = "RegNDOTFactor";
@@ -858,7 +791,7 @@ $arrAddTabs[] = array('tabId'=>'Overtime_Factors1',
 $arrAddTabs[] = array('tabId'=>'Night_Differencial_Factor1',
 					  'tabName'=>"Night Differencial Factor",
 					  'nType'=>'0',
-					  'nOrder'=>37,
+					  'nOrder'=>32,
 					  'tabGroup'=>1,
 					  'arrFields'=> $tabFields,
 					  'expandSec'=>0);
@@ -877,7 +810,7 @@ $arrAddTabs[] = array('tabId'=>'Night_Differencial_Factor1',
 $arrAddTabs[] = array('tabId'=>'Rest_Day_Factor1',
 					  'tabName'=>"Rest Day Factor",
 					  'nType'=>'0',
-					  'nOrder'=>50,
+					  'nOrder'=>44,
 					  'tabGroup'=>1,
 					  'arrFields'=> $tabFields,
 					  'expandSec'=>0);
@@ -888,7 +821,7 @@ $arrAddTabs[] = array('tabId'=>'Rest_Day_Factor1',
 $arrAddTabs[] = array('tabId'=>'Bonus1',
 					  'tabName'=>"Bonus",
 					  'nType'=>'0',
-					  'nOrder'=>56,
+					  'nOrder'=>50,
 					  'tabGroup'=>1,
 					  'arrFields'=> $tabFields,
 					  'expandSec'=>0);
@@ -898,7 +831,6 @@ $tdatastandardsetup[".arrAddTabs"] = $arrAddTabs;
 $arrViewTabs = array();
 	$tabFields = array();
 	
-	$tabFields[] = "PreTimeInMins";
 	$tabFields[] = "WorkingDaysInYear";
 	$tabFields[] = "WorkingDaysInYearDailies";
 $arrViewTabs[] = array('tabId'=>'Working_Days1',
@@ -924,8 +856,6 @@ $arrViewTabs[] = array('tabId'=>'Leave_Range1',
 	$tabFields[] = "RHFactor";
 	$tabFields[] = "SHFactor";
 	$tabFields[] = "SHFactorDaily";
-	$tabFields[] = "CHFactor";
-	$tabFields[] = "CHFactorDaily";
 	$tabFields[] = "DoubleHoliday";
 	$tabFields[] = "ReqBeforeHoliday";
 $arrViewTabs[] = array('tabId'=>'Holiday_Factor1',
@@ -940,16 +870,13 @@ $arrViewTabs[] = array('tabId'=>'Holiday_Factor1',
 	$tabFields[] = "RegOTFactor";
 	$tabFields[] = "RHOTFactor";
 	$tabFields[] = "SHOTFactor";
-	$tabFields[] = "SHOTFactorDaily";
-	$tabFields[] = "CHOTFactor";
-	$tabFields[] = "CHOTFactorDaily";
+	$tabFields[] = "SHOTDFactor";
+	$tabFields[] = "SHRDOTDFactor";
 	$tabFields[] = "RDOTFactor";
 	$tabFields[] = "RHRDOTFactor";
 	$tabFields[] = "SHRDOTFactor";
-	$tabFields[] = "SHRDOTFactorDaily";
 	$tabFields[] = "RHNDOTFactor";
 	$tabFields[] = "SHNDOTFactor";
-	$tabFields[] = "CHNDOTFactor";
 	$tabFields[] = "RDNDOTFactor";
 	$tabFields[] = "RHRDNDOTFacotr";
 	$tabFields[] = "SHRDNDOTFactor";
@@ -971,7 +898,6 @@ $arrViewTabs[] = array('tabId'=>'Overtime_Factors1',
 	$tabFields[] = "RegNDiffFactor";
 	$tabFields[] = "RHNDiffFactor";
 	$tabFields[] = "SHNDiffFactor";
-	$tabFields[] = "CHNDiffFactor";
 	$tabFields[] = "RDNDiffFactor";
 	$tabFields[] = "RegNDOTFactor";
 	$tabFields[] = "RHRDNDFactor";
@@ -981,7 +907,7 @@ $arrViewTabs[] = array('tabId'=>'Overtime_Factors1',
 $arrViewTabs[] = array('tabId'=>'Night_Differencial_Factor1',
 					   'tabName'=>"Night Differencial Factor",
 					   'nType'=>'0',
-					   'nOrder'=>37,
+					   'nOrder'=>39,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -995,7 +921,7 @@ $arrViewTabs[] = array('tabId'=>'Night_Differencial_Factor1',
 $arrViewTabs[] = array('tabId'=>'Rest_Day_Factor1',
 					   'tabName'=>"Rest Day Factor",
 					   'nType'=>'0',
-					   'nOrder'=>50,
+					   'nOrder'=>52,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -1005,7 +931,7 @@ $arrViewTabs[] = array('tabId'=>'Rest_Day_Factor1',
 $arrViewTabs[] = array('tabId'=>'Bonus1',
 					   'tabName'=>"Bonus",
 					   'nType'=>'0',
-					   'nOrder'=>56,
+					   'nOrder'=>58,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -1047,7 +973,6 @@ $tdatastandardsetup[".Keys"] = $tableKeysstandardsetup;
 
 $tdatastandardsetup[".listFields"] = array();
 $tdatastandardsetup[".listFields"][] = "SID";
-$tdatastandardsetup[".listFields"][] = "PreTimeInMins";
 $tdatastandardsetup[".listFields"][] = "WorkingDaysInYear";
 $tdatastandardsetup[".listFields"][] = "WorkingDaysInYearDailies";
 $tdatastandardsetup[".listFields"][] = "AllowableLeaveFrom";
@@ -1055,23 +980,18 @@ $tdatastandardsetup[".listFields"][] = "AllowableLeaveTo";
 $tdatastandardsetup[".listFields"][] = "RHFactor";
 $tdatastandardsetup[".listFields"][] = "SHFactor";
 $tdatastandardsetup[".listFields"][] = "SHFactorDaily";
-$tdatastandardsetup[".listFields"][] = "CHFactor";
-$tdatastandardsetup[".listFields"][] = "CHFactorDaily";
 $tdatastandardsetup[".listFields"][] = "DoubleHoliday";
 $tdatastandardsetup[".listFields"][] = "ReqBeforeHoliday";
 $tdatastandardsetup[".listFields"][] = "RegOTFactor";
 $tdatastandardsetup[".listFields"][] = "RHOTFactor";
 $tdatastandardsetup[".listFields"][] = "SHOTFactor";
-$tdatastandardsetup[".listFields"][] = "SHOTFactorDaily";
-$tdatastandardsetup[".listFields"][] = "CHOTFactor";
-$tdatastandardsetup[".listFields"][] = "CHOTFactorDaily";
+$tdatastandardsetup[".listFields"][] = "SHOTDFactor";
+$tdatastandardsetup[".listFields"][] = "SHRDOTDFactor";
 $tdatastandardsetup[".listFields"][] = "RDOTFactor";
 $tdatastandardsetup[".listFields"][] = "RHRDOTFactor";
 $tdatastandardsetup[".listFields"][] = "SHRDOTFactor";
-$tdatastandardsetup[".listFields"][] = "SHRDOTFactorDaily";
 $tdatastandardsetup[".listFields"][] = "RHNDOTFactor";
 $tdatastandardsetup[".listFields"][] = "SHNDOTFactor";
-$tdatastandardsetup[".listFields"][] = "CHNDOTFactor";
 $tdatastandardsetup[".listFields"][] = "RDNDOTFactor";
 $tdatastandardsetup[".listFields"][] = "RHRDNDOTFacotr";
 $tdatastandardsetup[".listFields"][] = "SHRDNDOTFactor";
@@ -1084,7 +1004,6 @@ $tdatastandardsetup[".listFields"][] = "NightDiffEndTime";
 $tdatastandardsetup[".listFields"][] = "RegNDiffFactor";
 $tdatastandardsetup[".listFields"][] = "RHNDiffFactor";
 $tdatastandardsetup[".listFields"][] = "SHNDiffFactor";
-$tdatastandardsetup[".listFields"][] = "CHNDiffFactor";
 $tdatastandardsetup[".listFields"][] = "RDNDiffFactor";
 $tdatastandardsetup[".listFields"][] = "RegNDOTFactor";
 $tdatastandardsetup[".listFields"][] = "RHRDNDFactor";
@@ -1103,7 +1022,6 @@ $tdatastandardsetup[".hideMobileList"] = array();
 
 $tdatastandardsetup[".viewFields"] = array();
 $tdatastandardsetup[".viewFields"][] = "SID";
-$tdatastandardsetup[".viewFields"][] = "PreTimeInMins";
 $tdatastandardsetup[".viewFields"][] = "WorkingDaysInYear";
 $tdatastandardsetup[".viewFields"][] = "WorkingDaysInYearDailies";
 $tdatastandardsetup[".viewFields"][] = "AllowableLeaveFrom";
@@ -1111,23 +1029,18 @@ $tdatastandardsetup[".viewFields"][] = "AllowableLeaveTo";
 $tdatastandardsetup[".viewFields"][] = "RHFactor";
 $tdatastandardsetup[".viewFields"][] = "SHFactor";
 $tdatastandardsetup[".viewFields"][] = "SHFactorDaily";
-$tdatastandardsetup[".viewFields"][] = "CHFactor";
-$tdatastandardsetup[".viewFields"][] = "CHFactorDaily";
 $tdatastandardsetup[".viewFields"][] = "DoubleHoliday";
 $tdatastandardsetup[".viewFields"][] = "ReqBeforeHoliday";
 $tdatastandardsetup[".viewFields"][] = "RegOTFactor";
 $tdatastandardsetup[".viewFields"][] = "RHOTFactor";
 $tdatastandardsetup[".viewFields"][] = "SHOTFactor";
-$tdatastandardsetup[".viewFields"][] = "SHOTFactorDaily";
-$tdatastandardsetup[".viewFields"][] = "CHOTFactor";
-$tdatastandardsetup[".viewFields"][] = "CHOTFactorDaily";
+$tdatastandardsetup[".viewFields"][] = "SHOTDFactor";
+$tdatastandardsetup[".viewFields"][] = "SHRDOTDFactor";
 $tdatastandardsetup[".viewFields"][] = "RDOTFactor";
 $tdatastandardsetup[".viewFields"][] = "RHRDOTFactor";
 $tdatastandardsetup[".viewFields"][] = "SHRDOTFactor";
-$tdatastandardsetup[".viewFields"][] = "SHRDOTFactorDaily";
 $tdatastandardsetup[".viewFields"][] = "RHNDOTFactor";
 $tdatastandardsetup[".viewFields"][] = "SHNDOTFactor";
-$tdatastandardsetup[".viewFields"][] = "CHNDOTFactor";
 $tdatastandardsetup[".viewFields"][] = "RDNDOTFactor";
 $tdatastandardsetup[".viewFields"][] = "RHRDNDOTFacotr";
 $tdatastandardsetup[".viewFields"][] = "SHRDNDOTFactor";
@@ -1140,7 +1053,6 @@ $tdatastandardsetup[".viewFields"][] = "NightDiffEndTime";
 $tdatastandardsetup[".viewFields"][] = "RegNDiffFactor";
 $tdatastandardsetup[".viewFields"][] = "RHNDiffFactor";
 $tdatastandardsetup[".viewFields"][] = "SHNDiffFactor";
-$tdatastandardsetup[".viewFields"][] = "CHNDiffFactor";
 $tdatastandardsetup[".viewFields"][] = "RDNDiffFactor";
 $tdatastandardsetup[".viewFields"][] = "RegNDOTFactor";
 $tdatastandardsetup[".viewFields"][] = "RHRDNDFactor";
@@ -1155,7 +1067,6 @@ $tdatastandardsetup[".viewFields"][] = "DoubleHolidayRD";
 $tdatastandardsetup[".viewFields"][] = "BonusAnnualLimit";
 
 $tdatastandardsetup[".addFields"] = array();
-$tdatastandardsetup[".addFields"][] = "PreTimeInMins";
 $tdatastandardsetup[".addFields"][] = "WorkingDaysInYear";
 $tdatastandardsetup[".addFields"][] = "WorkingDaysInYearDailies";
 $tdatastandardsetup[".addFields"][] = "AllowableLeaveFrom";
@@ -1163,23 +1074,18 @@ $tdatastandardsetup[".addFields"][] = "AllowableLeaveTo";
 $tdatastandardsetup[".addFields"][] = "RHFactor";
 $tdatastandardsetup[".addFields"][] = "SHFactor";
 $tdatastandardsetup[".addFields"][] = "SHFactorDaily";
-$tdatastandardsetup[".addFields"][] = "CHFactor";
-$tdatastandardsetup[".addFields"][] = "CHFactorDaily";
 $tdatastandardsetup[".addFields"][] = "DoubleHoliday";
 $tdatastandardsetup[".addFields"][] = "ReqBeforeHoliday";
 $tdatastandardsetup[".addFields"][] = "RegOTFactor";
 $tdatastandardsetup[".addFields"][] = "RHOTFactor";
 $tdatastandardsetup[".addFields"][] = "SHOTFactor";
-$tdatastandardsetup[".addFields"][] = "SHOTFactorDaily";
-$tdatastandardsetup[".addFields"][] = "CHOTFactor";
-$tdatastandardsetup[".addFields"][] = "CHOTFactorDaily";
+$tdatastandardsetup[".addFields"][] = "SHOTDFactor";
+$tdatastandardsetup[".addFields"][] = "SHRDOTDFactor";
 $tdatastandardsetup[".addFields"][] = "RDOTFactor";
 $tdatastandardsetup[".addFields"][] = "RHRDOTFactor";
 $tdatastandardsetup[".addFields"][] = "SHRDOTFactor";
-$tdatastandardsetup[".addFields"][] = "SHRDOTFactorDaily";
 $tdatastandardsetup[".addFields"][] = "RHNDOTFactor";
 $tdatastandardsetup[".addFields"][] = "SHNDOTFactor";
-$tdatastandardsetup[".addFields"][] = "CHNDOTFactor";
 $tdatastandardsetup[".addFields"][] = "RDNDOTFactor";
 $tdatastandardsetup[".addFields"][] = "RHRDNDOTFacotr";
 $tdatastandardsetup[".addFields"][] = "SHRDNDOTFactor";
@@ -1192,7 +1098,6 @@ $tdatastandardsetup[".addFields"][] = "NightDiffEndTime";
 $tdatastandardsetup[".addFields"][] = "RegNDiffFactor";
 $tdatastandardsetup[".addFields"][] = "RHNDiffFactor";
 $tdatastandardsetup[".addFields"][] = "SHNDiffFactor";
-$tdatastandardsetup[".addFields"][] = "CHNDiffFactor";
 $tdatastandardsetup[".addFields"][] = "RDNDiffFactor";
 $tdatastandardsetup[".addFields"][] = "RegNDOTFactor";
 $tdatastandardsetup[".addFields"][] = "RHRDNDFactor";
@@ -1208,7 +1113,6 @@ $tdatastandardsetup[".addFields"][] = "BonusAnnualLimit";
 
 $tdatastandardsetup[".masterListFields"] = array();
 $tdatastandardsetup[".masterListFields"][] = "SID";
-$tdatastandardsetup[".masterListFields"][] = "PreTimeInMins";
 $tdatastandardsetup[".masterListFields"][] = "WorkingDaysInYear";
 $tdatastandardsetup[".masterListFields"][] = "WorkingDaysInYearDailies";
 $tdatastandardsetup[".masterListFields"][] = "AllowableLeaveFrom";
@@ -1216,23 +1120,18 @@ $tdatastandardsetup[".masterListFields"][] = "AllowableLeaveTo";
 $tdatastandardsetup[".masterListFields"][] = "RHFactor";
 $tdatastandardsetup[".masterListFields"][] = "SHFactor";
 $tdatastandardsetup[".masterListFields"][] = "SHFactorDaily";
-$tdatastandardsetup[".masterListFields"][] = "CHFactor";
-$tdatastandardsetup[".masterListFields"][] = "CHFactorDaily";
 $tdatastandardsetup[".masterListFields"][] = "DoubleHoliday";
 $tdatastandardsetup[".masterListFields"][] = "ReqBeforeHoliday";
 $tdatastandardsetup[".masterListFields"][] = "RegOTFactor";
 $tdatastandardsetup[".masterListFields"][] = "RHOTFactor";
 $tdatastandardsetup[".masterListFields"][] = "SHOTFactor";
-$tdatastandardsetup[".masterListFields"][] = "SHOTFactorDaily";
-$tdatastandardsetup[".masterListFields"][] = "CHOTFactor";
-$tdatastandardsetup[".masterListFields"][] = "CHOTFactorDaily";
+$tdatastandardsetup[".masterListFields"][] = "SHOTDFactor";
+$tdatastandardsetup[".masterListFields"][] = "SHRDOTDFactor";
 $tdatastandardsetup[".masterListFields"][] = "RDOTFactor";
 $tdatastandardsetup[".masterListFields"][] = "RHRDOTFactor";
 $tdatastandardsetup[".masterListFields"][] = "SHRDOTFactor";
-$tdatastandardsetup[".masterListFields"][] = "SHRDOTFactorDaily";
 $tdatastandardsetup[".masterListFields"][] = "RHNDOTFactor";
 $tdatastandardsetup[".masterListFields"][] = "SHNDOTFactor";
-$tdatastandardsetup[".masterListFields"][] = "CHNDOTFactor";
 $tdatastandardsetup[".masterListFields"][] = "RDNDOTFactor";
 $tdatastandardsetup[".masterListFields"][] = "RHRDNDOTFacotr";
 $tdatastandardsetup[".masterListFields"][] = "SHRDNDOTFactor";
@@ -1245,7 +1144,6 @@ $tdatastandardsetup[".masterListFields"][] = "NightDiffEndTime";
 $tdatastandardsetup[".masterListFields"][] = "RegNDiffFactor";
 $tdatastandardsetup[".masterListFields"][] = "RHNDiffFactor";
 $tdatastandardsetup[".masterListFields"][] = "SHNDiffFactor";
-$tdatastandardsetup[".masterListFields"][] = "CHNDiffFactor";
 $tdatastandardsetup[".masterListFields"][] = "RDNDiffFactor";
 $tdatastandardsetup[".masterListFields"][] = "RegNDOTFactor";
 $tdatastandardsetup[".masterListFields"][] = "RHRDNDFactor";
@@ -1260,7 +1158,6 @@ $tdatastandardsetup[".masterListFields"][] = "DoubleHolidayRD";
 $tdatastandardsetup[".masterListFields"][] = "BonusAnnualLimit";
 
 $tdatastandardsetup[".inlineAddFields"] = array();
-$tdatastandardsetup[".inlineAddFields"][] = "PreTimeInMins";
 $tdatastandardsetup[".inlineAddFields"][] = "WorkingDaysInYear";
 $tdatastandardsetup[".inlineAddFields"][] = "WorkingDaysInYearDailies";
 $tdatastandardsetup[".inlineAddFields"][] = "AllowableLeaveFrom";
@@ -1268,23 +1165,18 @@ $tdatastandardsetup[".inlineAddFields"][] = "AllowableLeaveTo";
 $tdatastandardsetup[".inlineAddFields"][] = "RHFactor";
 $tdatastandardsetup[".inlineAddFields"][] = "SHFactor";
 $tdatastandardsetup[".inlineAddFields"][] = "SHFactorDaily";
-$tdatastandardsetup[".inlineAddFields"][] = "CHFactor";
-$tdatastandardsetup[".inlineAddFields"][] = "CHFactorDaily";
 $tdatastandardsetup[".inlineAddFields"][] = "DoubleHoliday";
 $tdatastandardsetup[".inlineAddFields"][] = "ReqBeforeHoliday";
 $tdatastandardsetup[".inlineAddFields"][] = "RegOTFactor";
 $tdatastandardsetup[".inlineAddFields"][] = "RHOTFactor";
 $tdatastandardsetup[".inlineAddFields"][] = "SHOTFactor";
-$tdatastandardsetup[".inlineAddFields"][] = "SHOTFactorDaily";
-$tdatastandardsetup[".inlineAddFields"][] = "CHOTFactor";
-$tdatastandardsetup[".inlineAddFields"][] = "CHOTFactorDaily";
+$tdatastandardsetup[".inlineAddFields"][] = "SHOTDFactor";
+$tdatastandardsetup[".inlineAddFields"][] = "SHRDOTDFactor";
 $tdatastandardsetup[".inlineAddFields"][] = "RDOTFactor";
 $tdatastandardsetup[".inlineAddFields"][] = "RHRDOTFactor";
 $tdatastandardsetup[".inlineAddFields"][] = "SHRDOTFactor";
-$tdatastandardsetup[".inlineAddFields"][] = "SHRDOTFactorDaily";
 $tdatastandardsetup[".inlineAddFields"][] = "RHNDOTFactor";
 $tdatastandardsetup[".inlineAddFields"][] = "SHNDOTFactor";
-$tdatastandardsetup[".inlineAddFields"][] = "CHNDOTFactor";
 $tdatastandardsetup[".inlineAddFields"][] = "RDNDOTFactor";
 $tdatastandardsetup[".inlineAddFields"][] = "RHRDNDOTFacotr";
 $tdatastandardsetup[".inlineAddFields"][] = "SHRDNDOTFactor";
@@ -1297,7 +1189,6 @@ $tdatastandardsetup[".inlineAddFields"][] = "NightDiffEndTime";
 $tdatastandardsetup[".inlineAddFields"][] = "RegNDiffFactor";
 $tdatastandardsetup[".inlineAddFields"][] = "RHNDiffFactor";
 $tdatastandardsetup[".inlineAddFields"][] = "SHNDiffFactor";
-$tdatastandardsetup[".inlineAddFields"][] = "CHNDiffFactor";
 $tdatastandardsetup[".inlineAddFields"][] = "RDNDiffFactor";
 $tdatastandardsetup[".inlineAddFields"][] = "RegNDOTFactor";
 $tdatastandardsetup[".inlineAddFields"][] = "RHRDNDFactor";
@@ -1312,7 +1203,6 @@ $tdatastandardsetup[".inlineAddFields"][] = "DoubleHolidayRD";
 $tdatastandardsetup[".inlineAddFields"][] = "BonusAnnualLimit";
 
 $tdatastandardsetup[".editFields"] = array();
-$tdatastandardsetup[".editFields"][] = "PreTimeInMins";
 $tdatastandardsetup[".editFields"][] = "WorkingDaysInYear";
 $tdatastandardsetup[".editFields"][] = "WorkingDaysInYearDailies";
 $tdatastandardsetup[".editFields"][] = "AllowableLeaveFrom";
@@ -1320,23 +1210,18 @@ $tdatastandardsetup[".editFields"][] = "AllowableLeaveTo";
 $tdatastandardsetup[".editFields"][] = "RHFactor";
 $tdatastandardsetup[".editFields"][] = "SHFactor";
 $tdatastandardsetup[".editFields"][] = "SHFactorDaily";
-$tdatastandardsetup[".editFields"][] = "CHFactor";
-$tdatastandardsetup[".editFields"][] = "CHFactorDaily";
 $tdatastandardsetup[".editFields"][] = "DoubleHoliday";
 $tdatastandardsetup[".editFields"][] = "ReqBeforeHoliday";
 $tdatastandardsetup[".editFields"][] = "RegOTFactor";
 $tdatastandardsetup[".editFields"][] = "RHOTFactor";
 $tdatastandardsetup[".editFields"][] = "SHOTFactor";
-$tdatastandardsetup[".editFields"][] = "SHOTFactorDaily";
-$tdatastandardsetup[".editFields"][] = "CHOTFactor";
-$tdatastandardsetup[".editFields"][] = "CHOTFactorDaily";
+$tdatastandardsetup[".editFields"][] = "SHOTDFactor";
+$tdatastandardsetup[".editFields"][] = "SHRDOTDFactor";
 $tdatastandardsetup[".editFields"][] = "RDOTFactor";
 $tdatastandardsetup[".editFields"][] = "RHRDOTFactor";
 $tdatastandardsetup[".editFields"][] = "SHRDOTFactor";
-$tdatastandardsetup[".editFields"][] = "SHRDOTFactorDaily";
 $tdatastandardsetup[".editFields"][] = "RHNDOTFactor";
 $tdatastandardsetup[".editFields"][] = "SHNDOTFactor";
-$tdatastandardsetup[".editFields"][] = "CHNDOTFactor";
 $tdatastandardsetup[".editFields"][] = "RDNDOTFactor";
 $tdatastandardsetup[".editFields"][] = "RHRDNDOTFacotr";
 $tdatastandardsetup[".editFields"][] = "SHRDNDOTFactor";
@@ -1349,7 +1234,6 @@ $tdatastandardsetup[".editFields"][] = "NightDiffEndTime";
 $tdatastandardsetup[".editFields"][] = "RegNDiffFactor";
 $tdatastandardsetup[".editFields"][] = "RHNDiffFactor";
 $tdatastandardsetup[".editFields"][] = "SHNDiffFactor";
-$tdatastandardsetup[".editFields"][] = "CHNDiffFactor";
 $tdatastandardsetup[".editFields"][] = "RDNDiffFactor";
 $tdatastandardsetup[".editFields"][] = "RegNDOTFactor";
 $tdatastandardsetup[".editFields"][] = "RHRDNDFactor";
@@ -1364,7 +1248,6 @@ $tdatastandardsetup[".editFields"][] = "DoubleHolidayRD";
 $tdatastandardsetup[".editFields"][] = "BonusAnnualLimit";
 
 $tdatastandardsetup[".inlineEditFields"] = array();
-$tdatastandardsetup[".inlineEditFields"][] = "PreTimeInMins";
 $tdatastandardsetup[".inlineEditFields"][] = "WorkingDaysInYear";
 $tdatastandardsetup[".inlineEditFields"][] = "WorkingDaysInYearDailies";
 $tdatastandardsetup[".inlineEditFields"][] = "AllowableLeaveFrom";
@@ -1372,23 +1255,18 @@ $tdatastandardsetup[".inlineEditFields"][] = "AllowableLeaveTo";
 $tdatastandardsetup[".inlineEditFields"][] = "RHFactor";
 $tdatastandardsetup[".inlineEditFields"][] = "SHFactor";
 $tdatastandardsetup[".inlineEditFields"][] = "SHFactorDaily";
-$tdatastandardsetup[".inlineEditFields"][] = "CHFactor";
-$tdatastandardsetup[".inlineEditFields"][] = "CHFactorDaily";
 $tdatastandardsetup[".inlineEditFields"][] = "DoubleHoliday";
 $tdatastandardsetup[".inlineEditFields"][] = "ReqBeforeHoliday";
 $tdatastandardsetup[".inlineEditFields"][] = "RegOTFactor";
 $tdatastandardsetup[".inlineEditFields"][] = "RHOTFactor";
 $tdatastandardsetup[".inlineEditFields"][] = "SHOTFactor";
-$tdatastandardsetup[".inlineEditFields"][] = "SHOTFactorDaily";
-$tdatastandardsetup[".inlineEditFields"][] = "CHOTFactor";
-$tdatastandardsetup[".inlineEditFields"][] = "CHOTFactorDaily";
+$tdatastandardsetup[".inlineEditFields"][] = "SHOTDFactor";
+$tdatastandardsetup[".inlineEditFields"][] = "SHRDOTDFactor";
 $tdatastandardsetup[".inlineEditFields"][] = "RDOTFactor";
 $tdatastandardsetup[".inlineEditFields"][] = "RHRDOTFactor";
 $tdatastandardsetup[".inlineEditFields"][] = "SHRDOTFactor";
-$tdatastandardsetup[".inlineEditFields"][] = "SHRDOTFactorDaily";
 $tdatastandardsetup[".inlineEditFields"][] = "RHNDOTFactor";
 $tdatastandardsetup[".inlineEditFields"][] = "SHNDOTFactor";
-$tdatastandardsetup[".inlineEditFields"][] = "CHNDOTFactor";
 $tdatastandardsetup[".inlineEditFields"][] = "RDNDOTFactor";
 $tdatastandardsetup[".inlineEditFields"][] = "RHRDNDOTFacotr";
 $tdatastandardsetup[".inlineEditFields"][] = "SHRDNDOTFactor";
@@ -1401,7 +1279,6 @@ $tdatastandardsetup[".inlineEditFields"][] = "NightDiffEndTime";
 $tdatastandardsetup[".inlineEditFields"][] = "RegNDiffFactor";
 $tdatastandardsetup[".inlineEditFields"][] = "RHNDiffFactor";
 $tdatastandardsetup[".inlineEditFields"][] = "SHNDiffFactor";
-$tdatastandardsetup[".inlineEditFields"][] = "CHNDiffFactor";
 $tdatastandardsetup[".inlineEditFields"][] = "RDNDiffFactor";
 $tdatastandardsetup[".inlineEditFields"][] = "RegNDOTFactor";
 $tdatastandardsetup[".inlineEditFields"][] = "RHRDNDFactor";
@@ -1423,25 +1300,18 @@ $tdatastandardsetup[".updateSelectedFields"][] = "AllowableLeaveTo";
 $tdatastandardsetup[".updateSelectedFields"][] = "RHFactor";
 $tdatastandardsetup[".updateSelectedFields"][] = "SHFactor";
 $tdatastandardsetup[".updateSelectedFields"][] = "SHFactorDaily";
-$tdatastandardsetup[".updateSelectedFields"][] = "CHFactor";
-$tdatastandardsetup[".updateSelectedFields"][] = "CHFactorDaily";
 $tdatastandardsetup[".updateSelectedFields"][] = "ReqBeforeHoliday";
 $tdatastandardsetup[".updateSelectedFields"][] = "RegOTFactor";
 $tdatastandardsetup[".updateSelectedFields"][] = "RHOTFactor";
 $tdatastandardsetup[".updateSelectedFields"][] = "SHOTFactor";
-$tdatastandardsetup[".updateSelectedFields"][] = "SHOTFactorDaily";
-$tdatastandardsetup[".updateSelectedFields"][] = "CHOTFactor";
-$tdatastandardsetup[".updateSelectedFields"][] = "CHOTFactorDaily";
 $tdatastandardsetup[".updateSelectedFields"][] = "RDOTFactor";
 $tdatastandardsetup[".updateSelectedFields"][] = "RHRDOTFactor";
 $tdatastandardsetup[".updateSelectedFields"][] = "SHRDOTFactor";
-$tdatastandardsetup[".updateSelectedFields"][] = "SHRDOTFactorDaily";
 $tdatastandardsetup[".updateSelectedFields"][] = "NightDiffStartTime";
 $tdatastandardsetup[".updateSelectedFields"][] = "NightDiffEndTime";
 $tdatastandardsetup[".updateSelectedFields"][] = "RegNDiffFactor";
 $tdatastandardsetup[".updateSelectedFields"][] = "RHNDiffFactor";
 $tdatastandardsetup[".updateSelectedFields"][] = "SHNDiffFactor";
-$tdatastandardsetup[".updateSelectedFields"][] = "CHNDiffFactor";
 $tdatastandardsetup[".updateSelectedFields"][] = "RDNDiffFactor";
 $tdatastandardsetup[".updateSelectedFields"][] = "RDFactor";
 $tdatastandardsetup[".updateSelectedFields"][] = "RHRDFactor";
@@ -1451,7 +1321,6 @@ $tdatastandardsetup[".updateSelectedFields"][] = "SHRDFactorDaily";
 
 $tdatastandardsetup[".exportFields"] = array();
 $tdatastandardsetup[".exportFields"][] = "SID";
-$tdatastandardsetup[".exportFields"][] = "PreTimeInMins";
 $tdatastandardsetup[".exportFields"][] = "WorkingDaysInYear";
 $tdatastandardsetup[".exportFields"][] = "WorkingDaysInYearDailies";
 $tdatastandardsetup[".exportFields"][] = "AllowableLeaveFrom";
@@ -1459,23 +1328,18 @@ $tdatastandardsetup[".exportFields"][] = "AllowableLeaveTo";
 $tdatastandardsetup[".exportFields"][] = "RHFactor";
 $tdatastandardsetup[".exportFields"][] = "SHFactor";
 $tdatastandardsetup[".exportFields"][] = "SHFactorDaily";
-$tdatastandardsetup[".exportFields"][] = "CHFactor";
-$tdatastandardsetup[".exportFields"][] = "CHFactorDaily";
 $tdatastandardsetup[".exportFields"][] = "DoubleHoliday";
 $tdatastandardsetup[".exportFields"][] = "ReqBeforeHoliday";
 $tdatastandardsetup[".exportFields"][] = "RegOTFactor";
 $tdatastandardsetup[".exportFields"][] = "RHOTFactor";
 $tdatastandardsetup[".exportFields"][] = "SHOTFactor";
-$tdatastandardsetup[".exportFields"][] = "SHOTFactorDaily";
-$tdatastandardsetup[".exportFields"][] = "CHOTFactor";
-$tdatastandardsetup[".exportFields"][] = "CHOTFactorDaily";
+$tdatastandardsetup[".exportFields"][] = "SHOTDFactor";
+$tdatastandardsetup[".exportFields"][] = "SHRDOTDFactor";
 $tdatastandardsetup[".exportFields"][] = "RDOTFactor";
 $tdatastandardsetup[".exportFields"][] = "RHRDOTFactor";
 $tdatastandardsetup[".exportFields"][] = "SHRDOTFactor";
-$tdatastandardsetup[".exportFields"][] = "SHRDOTFactorDaily";
 $tdatastandardsetup[".exportFields"][] = "RHNDOTFactor";
 $tdatastandardsetup[".exportFields"][] = "SHNDOTFactor";
-$tdatastandardsetup[".exportFields"][] = "CHNDOTFactor";
 $tdatastandardsetup[".exportFields"][] = "RDNDOTFactor";
 $tdatastandardsetup[".exportFields"][] = "RHRDNDOTFacotr";
 $tdatastandardsetup[".exportFields"][] = "SHRDNDOTFactor";
@@ -1488,7 +1352,6 @@ $tdatastandardsetup[".exportFields"][] = "NightDiffEndTime";
 $tdatastandardsetup[".exportFields"][] = "RegNDiffFactor";
 $tdatastandardsetup[".exportFields"][] = "RHNDiffFactor";
 $tdatastandardsetup[".exportFields"][] = "SHNDiffFactor";
-$tdatastandardsetup[".exportFields"][] = "CHNDiffFactor";
 $tdatastandardsetup[".exportFields"][] = "RDNDiffFactor";
 $tdatastandardsetup[".exportFields"][] = "RegNDOTFactor";
 $tdatastandardsetup[".exportFields"][] = "RHRDNDFactor";
@@ -1513,13 +1376,10 @@ $tdatastandardsetup[".importFields"][] = "AllowableLeaveFrom";
 $tdatastandardsetup[".importFields"][] = "AllowableLeaveTo";
 $tdatastandardsetup[".importFields"][] = "RHOTFactor";
 $tdatastandardsetup[".importFields"][] = "SHOTFactor";
-$tdatastandardsetup[".importFields"][] = "CHOTFactor";
 $tdatastandardsetup[".importFields"][] = "RHNDiffFactor";
 $tdatastandardsetup[".importFields"][] = "SHNDiffFactor";
-$tdatastandardsetup[".importFields"][] = "CHNDiffFactor";
 $tdatastandardsetup[".importFields"][] = "RHFactor";
 $tdatastandardsetup[".importFields"][] = "SHFactor";
-$tdatastandardsetup[".importFields"][] = "CHFactor";
 $tdatastandardsetup[".importFields"][] = "RDFactor";
 $tdatastandardsetup[".importFields"][] = "RDOTFactor";
 $tdatastandardsetup[".importFields"][] = "RDNDiffFactor";
@@ -1530,17 +1390,11 @@ $tdatastandardsetup[".importFields"][] = "SHRDOTFactor";
 $tdatastandardsetup[".importFields"][] = "WorkingDaysInYearDailies";
 $tdatastandardsetup[".importFields"][] = "ReqBeforeHoliday";
 $tdatastandardsetup[".importFields"][] = "SHFactorDaily";
-$tdatastandardsetup[".importFields"][] = "SHOTFactorDaily";
-$tdatastandardsetup[".importFields"][] = "CHFactorDaily";
 $tdatastandardsetup[".importFields"][] = "SHRDFactorDaily";
-$tdatastandardsetup[".importFields"][] = "SHRDOTFactorDaily";
-$tdatastandardsetup[".importFields"][] = "CHOTFactorDaily";
-$tdatastandardsetup[".importFields"][] = "PreTimeInMins";
 $tdatastandardsetup[".importFields"][] = "BonusAnnualLimit";
 $tdatastandardsetup[".importFields"][] = "RegNDOTFactor";
 $tdatastandardsetup[".importFields"][] = "RHNDOTFactor";
 $tdatastandardsetup[".importFields"][] = "SHNDOTFactor";
-$tdatastandardsetup[".importFields"][] = "CHNDOTFactor";
 $tdatastandardsetup[".importFields"][] = "RDNDOTFactor";
 $tdatastandardsetup[".importFields"][] = "DoubleHoliday";
 $tdatastandardsetup[".importFields"][] = "DoubleHolidayRD";
@@ -1554,10 +1408,11 @@ $tdatastandardsetup[".importFields"][] = "DoubleHolidayND";
 $tdatastandardsetup[".importFields"][] = "DoubleHolidayRDND";
 $tdatastandardsetup[".importFields"][] = "DoubleHolidayNDOT";
 $tdatastandardsetup[".importFields"][] = "DoubleHolidayRDNDOT";
+$tdatastandardsetup[".importFields"][] = "SHOTDFactor";
+$tdatastandardsetup[".importFields"][] = "SHRDOTDFactor";
 
 $tdatastandardsetup[".printFields"] = array();
 $tdatastandardsetup[".printFields"][] = "SID";
-$tdatastandardsetup[".printFields"][] = "PreTimeInMins";
 $tdatastandardsetup[".printFields"][] = "WorkingDaysInYear";
 $tdatastandardsetup[".printFields"][] = "WorkingDaysInYearDailies";
 $tdatastandardsetup[".printFields"][] = "AllowableLeaveFrom";
@@ -1565,23 +1420,18 @@ $tdatastandardsetup[".printFields"][] = "AllowableLeaveTo";
 $tdatastandardsetup[".printFields"][] = "RHFactor";
 $tdatastandardsetup[".printFields"][] = "SHFactor";
 $tdatastandardsetup[".printFields"][] = "SHFactorDaily";
-$tdatastandardsetup[".printFields"][] = "CHFactor";
-$tdatastandardsetup[".printFields"][] = "CHFactorDaily";
 $tdatastandardsetup[".printFields"][] = "DoubleHoliday";
 $tdatastandardsetup[".printFields"][] = "ReqBeforeHoliday";
 $tdatastandardsetup[".printFields"][] = "RegOTFactor";
 $tdatastandardsetup[".printFields"][] = "RHOTFactor";
 $tdatastandardsetup[".printFields"][] = "SHOTFactor";
-$tdatastandardsetup[".printFields"][] = "SHOTFactorDaily";
-$tdatastandardsetup[".printFields"][] = "CHOTFactor";
-$tdatastandardsetup[".printFields"][] = "CHOTFactorDaily";
+$tdatastandardsetup[".printFields"][] = "SHOTDFactor";
+$tdatastandardsetup[".printFields"][] = "SHRDOTDFactor";
 $tdatastandardsetup[".printFields"][] = "RDOTFactor";
 $tdatastandardsetup[".printFields"][] = "RHRDOTFactor";
 $tdatastandardsetup[".printFields"][] = "SHRDOTFactor";
-$tdatastandardsetup[".printFields"][] = "SHRDOTFactorDaily";
 $tdatastandardsetup[".printFields"][] = "RHNDOTFactor";
 $tdatastandardsetup[".printFields"][] = "SHNDOTFactor";
-$tdatastandardsetup[".printFields"][] = "CHNDOTFactor";
 $tdatastandardsetup[".printFields"][] = "RDNDOTFactor";
 $tdatastandardsetup[".printFields"][] = "RHRDNDOTFacotr";
 $tdatastandardsetup[".printFields"][] = "SHRDNDOTFactor";
@@ -1594,7 +1444,6 @@ $tdatastandardsetup[".printFields"][] = "NightDiffEndTime";
 $tdatastandardsetup[".printFields"][] = "RegNDiffFactor";
 $tdatastandardsetup[".printFields"][] = "RHNDiffFactor";
 $tdatastandardsetup[".printFields"][] = "SHNDiffFactor";
-$tdatastandardsetup[".printFields"][] = "CHNDiffFactor";
 $tdatastandardsetup[".printFields"][] = "RDNDiffFactor";
 $tdatastandardsetup[".printFields"][] = "RegNDOTFactor";
 $tdatastandardsetup[".printFields"][] = "RHRDNDFactor";
@@ -2933,143 +2782,10 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 
 
 	$tdatastandardsetup["SHOTFactor"] = $fdata;
-//	CHOTFactor
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 11;
-	$fdata["strName"] = "CHOTFactor";
-	$fdata["GoodName"] = "CHOTFactor";
-	$fdata["ownerTable"] = "standardsetup";
-	$fdata["Label"] = GetFieldLabel("standardsetup","CHOTFactor");
-	$fdata["FieldType"] = 5;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
-
-		$fdata["bViewPage"] = true;
-
-		$fdata["bAdvancedSearch"] = true;
-
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "CHOTFactor";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "CHOTFactor";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Number");
-
-	
-	
-	
-	
-	
-	
-		$vdata["DecimalDigits"] = 2;
-
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-
-
-	$tdatastandardsetup["CHOTFactor"] = $fdata;
 //	RHNDiffFactor
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 12;
+	$fdata["Index"] = 11;
 	$fdata["strName"] = "RHNDiffFactor";
 	$fdata["GoodName"] = "RHNDiffFactor";
 	$fdata["ownerTable"] = "standardsetup";
@@ -3202,7 +2918,7 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 //	SHNDiffFactor
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 13;
+	$fdata["Index"] = 12;
 	$fdata["strName"] = "SHNDiffFactor";
 	$fdata["GoodName"] = "SHNDiffFactor";
 	$fdata["ownerTable"] = "standardsetup";
@@ -3332,143 +3048,10 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 
 
 	$tdatastandardsetup["SHNDiffFactor"] = $fdata;
-//	CHNDiffFactor
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 14;
-	$fdata["strName"] = "CHNDiffFactor";
-	$fdata["GoodName"] = "CHNDiffFactor";
-	$fdata["ownerTable"] = "standardsetup";
-	$fdata["Label"] = GetFieldLabel("standardsetup","CHNDiffFactor");
-	$fdata["FieldType"] = 5;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
-
-		$fdata["bViewPage"] = true;
-
-		$fdata["bAdvancedSearch"] = true;
-
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "CHNDiffFactor";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "CHNDiffFactor";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Number");
-
-	
-	
-	
-	
-	
-	
-		$vdata["DecimalDigits"] = 2;
-
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-
-
-	$tdatastandardsetup["CHNDiffFactor"] = $fdata;
 //	RHFactor
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 15;
+	$fdata["Index"] = 13;
 	$fdata["strName"] = "RHFactor";
 	$fdata["GoodName"] = "RHFactor";
 	$fdata["ownerTable"] = "standardsetup";
@@ -3601,7 +3184,7 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 //	SHFactor
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 16;
+	$fdata["Index"] = 14;
 	$fdata["strName"] = "SHFactor";
 	$fdata["GoodName"] = "SHFactor";
 	$fdata["ownerTable"] = "standardsetup";
@@ -3731,143 +3314,10 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 
 
 	$tdatastandardsetup["SHFactor"] = $fdata;
-//	CHFactor
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 17;
-	$fdata["strName"] = "CHFactor";
-	$fdata["GoodName"] = "CHFactor";
-	$fdata["ownerTable"] = "standardsetup";
-	$fdata["Label"] = GetFieldLabel("standardsetup","CHFactor");
-	$fdata["FieldType"] = 5;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
-
-		$fdata["bViewPage"] = true;
-
-		$fdata["bAdvancedSearch"] = true;
-
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "CHFactor";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "CHFactor";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Number");
-
-	
-	
-	
-	
-	
-	
-		$vdata["DecimalDigits"] = 2;
-
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-
-
-	$tdatastandardsetup["CHFactor"] = $fdata;
 //	RDFactor
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 18;
+	$fdata["Index"] = 15;
 	$fdata["strName"] = "RDFactor";
 	$fdata["GoodName"] = "RDFactor";
 	$fdata["ownerTable"] = "standardsetup";
@@ -4000,7 +3450,7 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 //	RDOTFactor
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 19;
+	$fdata["Index"] = 16;
 	$fdata["strName"] = "RDOTFactor";
 	$fdata["GoodName"] = "RDOTFactor";
 	$fdata["ownerTable"] = "standardsetup";
@@ -4133,7 +3583,7 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 //	RDNDiffFactor
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 20;
+	$fdata["Index"] = 17;
 	$fdata["strName"] = "RDNDiffFactor";
 	$fdata["GoodName"] = "RDNDiffFactor";
 	$fdata["ownerTable"] = "standardsetup";
@@ -4266,7 +3716,7 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 //	RHRDFactor
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 21;
+	$fdata["Index"] = 18;
 	$fdata["strName"] = "RHRDFactor";
 	$fdata["GoodName"] = "RHRDFactor";
 	$fdata["ownerTable"] = "standardsetup";
@@ -4399,7 +3849,7 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 //	RHRDOTFactor
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 22;
+	$fdata["Index"] = 19;
 	$fdata["strName"] = "RHRDOTFactor";
 	$fdata["GoodName"] = "RHRDOTFactor";
 	$fdata["ownerTable"] = "standardsetup";
@@ -4532,7 +3982,7 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 //	SHRDFactor
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 23;
+	$fdata["Index"] = 20;
 	$fdata["strName"] = "SHRDFactor";
 	$fdata["GoodName"] = "SHRDFactor";
 	$fdata["ownerTable"] = "standardsetup";
@@ -4665,7 +4115,7 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 //	SHRDOTFactor
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 24;
+	$fdata["Index"] = 21;
 	$fdata["strName"] = "SHRDOTFactor";
 	$fdata["GoodName"] = "SHRDOTFactor";
 	$fdata["ownerTable"] = "standardsetup";
@@ -4798,7 +4248,7 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 //	WorkingDaysInYearDailies
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 25;
+	$fdata["Index"] = 22;
 	$fdata["strName"] = "WorkingDaysInYearDailies";
 	$fdata["GoodName"] = "WorkingDaysInYearDailies";
 	$fdata["ownerTable"] = "standardsetup";
@@ -4931,7 +4381,7 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 //	ReqBeforeHoliday
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 26;
+	$fdata["Index"] = 23;
 	$fdata["strName"] = "ReqBeforeHoliday";
 	$fdata["GoodName"] = "ReqBeforeHoliday";
 	$fdata["ownerTable"] = "standardsetup";
@@ -5059,7 +4509,7 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 //	SHFactorDaily
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 27;
+	$fdata["Index"] = 24;
 	$fdata["strName"] = "SHFactorDaily";
 	$fdata["GoodName"] = "SHFactorDaily";
 	$fdata["ownerTable"] = "standardsetup";
@@ -5189,276 +4639,10 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 
 
 	$tdatastandardsetup["SHFactorDaily"] = $fdata;
-//	SHOTFactorDaily
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 28;
-	$fdata["strName"] = "SHOTFactorDaily";
-	$fdata["GoodName"] = "SHOTFactorDaily";
-	$fdata["ownerTable"] = "standardsetup";
-	$fdata["Label"] = GetFieldLabel("standardsetup","SHOTFactorDaily");
-	$fdata["FieldType"] = 5;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
-
-		$fdata["bViewPage"] = true;
-
-		$fdata["bAdvancedSearch"] = true;
-
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "SHOTFactorDaily";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "SHOTFactorDaily";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Number");
-
-	
-	
-	
-	
-	
-	
-		$vdata["DecimalDigits"] = 2;
-
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-
-
-	$tdatastandardsetup["SHOTFactorDaily"] = $fdata;
-//	CHFactorDaily
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 29;
-	$fdata["strName"] = "CHFactorDaily";
-	$fdata["GoodName"] = "CHFactorDaily";
-	$fdata["ownerTable"] = "standardsetup";
-	$fdata["Label"] = GetFieldLabel("standardsetup","CHFactorDaily");
-	$fdata["FieldType"] = 5;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
-
-		$fdata["bViewPage"] = true;
-
-		$fdata["bAdvancedSearch"] = true;
-
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "CHFactorDaily";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "CHFactorDaily";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Number");
-
-	
-	
-	
-	
-	
-	
-		$vdata["DecimalDigits"] = 2;
-
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-
-
-	$tdatastandardsetup["CHFactorDaily"] = $fdata;
 //	SHRDFactorDaily
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 30;
+	$fdata["Index"] = 25;
 	$fdata["strName"] = "SHRDFactorDaily";
 	$fdata["GoodName"] = "SHRDFactorDaily";
 	$fdata["ownerTable"] = "standardsetup";
@@ -5588,408 +4772,10 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 
 
 	$tdatastandardsetup["SHRDFactorDaily"] = $fdata;
-//	SHRDOTFactorDaily
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 31;
-	$fdata["strName"] = "SHRDOTFactorDaily";
-	$fdata["GoodName"] = "SHRDOTFactorDaily";
-	$fdata["ownerTable"] = "standardsetup";
-	$fdata["Label"] = GetFieldLabel("standardsetup","SHRDOTFactorDaily");
-	$fdata["FieldType"] = 5;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
-
-		$fdata["bViewPage"] = true;
-
-		$fdata["bAdvancedSearch"] = true;
-
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "SHRDOTFactorDaily";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "SHRDOTFactorDaily";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Number");
-
-	
-	
-	
-	
-	
-	
-		$vdata["DecimalDigits"] = 2;
-
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-
-
-	$tdatastandardsetup["SHRDOTFactorDaily"] = $fdata;
-//	CHOTFactorDaily
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 32;
-	$fdata["strName"] = "CHOTFactorDaily";
-	$fdata["GoodName"] = "CHOTFactorDaily";
-	$fdata["ownerTable"] = "standardsetup";
-	$fdata["Label"] = GetFieldLabel("standardsetup","CHOTFactorDaily");
-	$fdata["FieldType"] = 5;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
-
-		$fdata["bViewPage"] = true;
-
-		$fdata["bAdvancedSearch"] = true;
-
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "CHOTFactorDaily";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "CHOTFactorDaily";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Number");
-
-	
-	
-	
-	
-	
-	
-		$vdata["DecimalDigits"] = 2;
-
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-
-
-	$tdatastandardsetup["CHOTFactorDaily"] = $fdata;
-//	PreTimeInMins
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 33;
-	$fdata["strName"] = "PreTimeInMins";
-	$fdata["GoodName"] = "PreTimeInMins";
-	$fdata["ownerTable"] = "standardsetup";
-	$fdata["Label"] = GetFieldLabel("standardsetup","PreTimeInMins");
-	$fdata["FieldType"] = 5;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-	
-
-		$fdata["bViewPage"] = true;
-
-		$fdata["bAdvancedSearch"] = true;
-
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "PreTimeInMins";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "PreTimeInMins";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Number");
-
-	
-	
-	
-	
-	
-	
-		$vdata["DecimalDigits"] = 2;
-
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-
-
-	$tdatastandardsetup["PreTimeInMins"] = $fdata;
 //	BonusAnnualLimit
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 34;
+	$fdata["Index"] = 26;
 	$fdata["strName"] = "BonusAnnualLimit";
 	$fdata["GoodName"] = "BonusAnnualLimit";
 	$fdata["ownerTable"] = "standardsetup";
@@ -6121,7 +4907,7 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 //	RegNDOTFactor
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 35;
+	$fdata["Index"] = 27;
 	$fdata["strName"] = "RegNDOTFactor";
 	$fdata["GoodName"] = "RegNDOTFactor";
 	$fdata["ownerTable"] = "standardsetup";
@@ -6253,7 +5039,7 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 //	RHNDOTFactor
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 36;
+	$fdata["Index"] = 28;
 	$fdata["strName"] = "RHNDOTFactor";
 	$fdata["GoodName"] = "RHNDOTFactor";
 	$fdata["ownerTable"] = "standardsetup";
@@ -6385,7 +5171,7 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 //	SHNDOTFactor
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 37;
+	$fdata["Index"] = 29;
 	$fdata["strName"] = "SHNDOTFactor";
 	$fdata["GoodName"] = "SHNDOTFactor";
 	$fdata["ownerTable"] = "standardsetup";
@@ -6514,142 +5300,10 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 
 
 	$tdatastandardsetup["SHNDOTFactor"] = $fdata;
-//	CHNDOTFactor
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 38;
-	$fdata["strName"] = "CHNDOTFactor";
-	$fdata["GoodName"] = "CHNDOTFactor";
-	$fdata["ownerTable"] = "standardsetup";
-	$fdata["Label"] = GetFieldLabel("standardsetup","CHNDOTFactor");
-	$fdata["FieldType"] = 5;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-	
-
-		$fdata["bViewPage"] = true;
-
-		$fdata["bAdvancedSearch"] = true;
-
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "CHNDOTFactor";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "CHNDOTFactor";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Number");
-
-	
-	
-	
-	
-	
-	
-		$vdata["DecimalDigits"] = 2;
-
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-
-
-	$tdatastandardsetup["CHNDOTFactor"] = $fdata;
 //	RDNDOTFactor
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 39;
+	$fdata["Index"] = 30;
 	$fdata["strName"] = "RDNDOTFactor";
 	$fdata["GoodName"] = "RDNDOTFactor";
 	$fdata["ownerTable"] = "standardsetup";
@@ -6781,7 +5435,7 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 //	DoubleHoliday
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 40;
+	$fdata["Index"] = 31;
 	$fdata["strName"] = "DoubleHoliday";
 	$fdata["GoodName"] = "DoubleHoliday";
 	$fdata["ownerTable"] = "standardsetup";
@@ -6913,7 +5567,7 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 //	DoubleHolidayRD
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 41;
+	$fdata["Index"] = 32;
 	$fdata["strName"] = "DoubleHolidayRD";
 	$fdata["GoodName"] = "DoubleHolidayRD";
 	$fdata["ownerTable"] = "standardsetup";
@@ -7045,7 +5699,7 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 //	DoubleHolidayOT
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 42;
+	$fdata["Index"] = 33;
 	$fdata["strName"] = "DoubleHolidayOT";
 	$fdata["GoodName"] = "DoubleHolidayOT";
 	$fdata["ownerTable"] = "standardsetup";
@@ -7177,7 +5831,7 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 //	DoubleHolidayRDOT
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 43;
+	$fdata["Index"] = 34;
 	$fdata["strName"] = "DoubleHolidayRDOT";
 	$fdata["GoodName"] = "DoubleHolidayRDOT";
 	$fdata["ownerTable"] = "standardsetup";
@@ -7309,7 +5963,7 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 //	SHRDNDFactor
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 44;
+	$fdata["Index"] = 35;
 	$fdata["strName"] = "SHRDNDFactor";
 	$fdata["GoodName"] = "SHRDNDFactor";
 	$fdata["ownerTable"] = "standardsetup";
@@ -7441,7 +6095,7 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 //	RHRDNDFactor
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 45;
+	$fdata["Index"] = 36;
 	$fdata["strName"] = "RHRDNDFactor";
 	$fdata["GoodName"] = "RHRDNDFactor";
 	$fdata["ownerTable"] = "standardsetup";
@@ -7573,7 +6227,7 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 //	SHRDNDOTFactor
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 46;
+	$fdata["Index"] = 37;
 	$fdata["strName"] = "SHRDNDOTFactor";
 	$fdata["GoodName"] = "SHRDNDOTFactor";
 	$fdata["ownerTable"] = "standardsetup";
@@ -7705,7 +6359,7 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 //	RHRDNDOTFacotr
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 47;
+	$fdata["Index"] = 38;
 	$fdata["strName"] = "RHRDNDOTFacotr";
 	$fdata["GoodName"] = "RHRDNDOTFacotr";
 	$fdata["ownerTable"] = "standardsetup";
@@ -7837,7 +6491,7 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 //	DoubleHolidayND
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 48;
+	$fdata["Index"] = 39;
 	$fdata["strName"] = "DoubleHolidayND";
 	$fdata["GoodName"] = "DoubleHolidayND";
 	$fdata["ownerTable"] = "standardsetup";
@@ -7969,7 +6623,7 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 //	DoubleHolidayRDND
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 49;
+	$fdata["Index"] = 40;
 	$fdata["strName"] = "DoubleHolidayRDND";
 	$fdata["GoodName"] = "DoubleHolidayRDND";
 	$fdata["ownerTable"] = "standardsetup";
@@ -8101,7 +6755,7 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 //	DoubleHolidayNDOT
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 50;
+	$fdata["Index"] = 41;
 	$fdata["strName"] = "DoubleHolidayNDOT";
 	$fdata["GoodName"] = "DoubleHolidayNDOT";
 	$fdata["ownerTable"] = "standardsetup";
@@ -8233,7 +6887,7 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 //	DoubleHolidayRDNDOT
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 51;
+	$fdata["Index"] = 42;
 	$fdata["strName"] = "DoubleHolidayRDNDOT";
 	$fdata["GoodName"] = "DoubleHolidayRDNDOT";
 	$fdata["ownerTable"] = "standardsetup";
@@ -8362,6 +7016,270 @@ $tdatastandardsetup[".printFields"][] = "BonusAnnualLimit";
 
 
 	$tdatastandardsetup["DoubleHolidayRDNDOT"] = $fdata;
+//	SHOTDFactor
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 43;
+	$fdata["strName"] = "SHOTDFactor";
+	$fdata["GoodName"] = "SHOTDFactor";
+	$fdata["ownerTable"] = "standardsetup";
+	$fdata["Label"] = GetFieldLabel("standardsetup","SHOTDFactor");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "SHOTDFactor";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "SHOTDFactor";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdatastandardsetup["SHOTDFactor"] = $fdata;
+//	SHRDOTDFactor
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 44;
+	$fdata["strName"] = "SHRDOTDFactor";
+	$fdata["GoodName"] = "SHRDOTDFactor";
+	$fdata["ownerTable"] = "standardsetup";
+	$fdata["Label"] = GetFieldLabel("standardsetup","SHRDOTDFactor");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "SHRDOTDFactor";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "SHRDOTDFactor";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdatastandardsetup["SHRDOTDFactor"] = $fdata;
 
 
 $tables_data["standardsetup"]=&$tdatastandardsetup;
@@ -8395,7 +7313,7 @@ function createSqlQuery_standardsetup()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "SID,  RegOTFactor,  RegNDiffFactor,  NightDiffStartTime,  NightDiffEndTime,  WorkingDaysInYear,  AllowableLeaveFrom,  AllowableLeaveTo,  RHOTFactor,  SHOTFactor,  CHOTFactor,  RHNDiffFactor,  SHNDiffFactor,  CHNDiffFactor,  RHFactor,  SHFactor,  CHFactor,  RDFactor,  RDOTFactor,  RDNDiffFactor,  RHRDFactor,  RHRDOTFactor,  SHRDFactor,  SHRDOTFactor,  WorkingDaysInYearDailies,  ReqBeforeHoliday,  SHFactorDaily,  SHOTFactorDaily,  CHFactorDaily,  SHRDFactorDaily,  SHRDOTFactorDaily,  CHOTFactorDaily,  PreTimeInMins,  BonusAnnualLimit,  RegNDOTFactor,  RHNDOTFactor,  SHNDOTFactor,  CHNDOTFactor,  RDNDOTFactor,  DoubleHoliday,  DoubleHolidayRD,  DoubleHolidayOT,  DoubleHolidayRDOT,  SHRDNDFactor,  RHRDNDFactor,  SHRDNDOTFactor,  RHRDNDOTFacotr,  DoubleHolidayND,  DoubleHolidayRDND,  DoubleHolidayNDOT,  DoubleHolidayRDNDOT";
+$proto0["m_strFieldList"] = "SID,  RegOTFactor,  RegNDiffFactor,  NightDiffStartTime,  NightDiffEndTime,  WorkingDaysInYear,  AllowableLeaveFrom,  AllowableLeaveTo,  RHOTFactor,  SHOTFactor,  RHNDiffFactor,  SHNDiffFactor,  RHFactor,  SHFactor,  RDFactor,  RDOTFactor,  RDNDiffFactor,  RHRDFactor,  RHRDOTFactor,  SHRDFactor,  SHRDOTFactor,  WorkingDaysInYearDailies,  ReqBeforeHoliday,  SHFactorDaily,  SHRDFactorDaily,  BonusAnnualLimit,  RegNDOTFactor,  RHNDOTFactor,  SHNDOTFactor,  RDNDOTFactor,  DoubleHoliday,  DoubleHolidayRD,  DoubleHolidayOT,  DoubleHolidayRDOT,  SHRDNDFactor,  RHRDNDFactor,  SHRDNDOTFactor,  RHRDNDOTFacotr,  DoubleHolidayND,  DoubleHolidayRDND,  DoubleHolidayNDOT,  DoubleHolidayRDNDOT,  SHOTDFactor,  SHRDOTDFactor";
 $proto0["m_strFrom"] = "FROM standardsetup";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -8577,12 +7495,12 @@ $obj = new SQLFieldListItem($proto24);
 $proto0["m_fieldlist"][]=$obj;
 						$proto26=array();
 			$obj = new SQLField(array(
-	"m_strName" => "CHOTFactor",
+	"m_strName" => "RHNDiffFactor",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto26["m_sql"] = "CHOTFactor";
+$proto26["m_sql"] = "RHNDiffFactor";
 $proto26["m_srcTableName"] = "standardsetup";
 $proto26["m_expr"]=$obj;
 $proto26["m_alias"] = "";
@@ -8591,12 +7509,12 @@ $obj = new SQLFieldListItem($proto26);
 $proto0["m_fieldlist"][]=$obj;
 						$proto28=array();
 			$obj = new SQLField(array(
-	"m_strName" => "RHNDiffFactor",
+	"m_strName" => "SHNDiffFactor",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto28["m_sql"] = "RHNDiffFactor";
+$proto28["m_sql"] = "SHNDiffFactor";
 $proto28["m_srcTableName"] = "standardsetup";
 $proto28["m_expr"]=$obj;
 $proto28["m_alias"] = "";
@@ -8605,12 +7523,12 @@ $obj = new SQLFieldListItem($proto28);
 $proto0["m_fieldlist"][]=$obj;
 						$proto30=array();
 			$obj = new SQLField(array(
-	"m_strName" => "SHNDiffFactor",
+	"m_strName" => "RHFactor",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto30["m_sql"] = "SHNDiffFactor";
+$proto30["m_sql"] = "RHFactor";
 $proto30["m_srcTableName"] = "standardsetup";
 $proto30["m_expr"]=$obj;
 $proto30["m_alias"] = "";
@@ -8619,12 +7537,12 @@ $obj = new SQLFieldListItem($proto30);
 $proto0["m_fieldlist"][]=$obj;
 						$proto32=array();
 			$obj = new SQLField(array(
-	"m_strName" => "CHNDiffFactor",
+	"m_strName" => "SHFactor",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto32["m_sql"] = "CHNDiffFactor";
+$proto32["m_sql"] = "SHFactor";
 $proto32["m_srcTableName"] = "standardsetup";
 $proto32["m_expr"]=$obj;
 $proto32["m_alias"] = "";
@@ -8633,12 +7551,12 @@ $obj = new SQLFieldListItem($proto32);
 $proto0["m_fieldlist"][]=$obj;
 						$proto34=array();
 			$obj = new SQLField(array(
-	"m_strName" => "RHFactor",
+	"m_strName" => "RDFactor",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto34["m_sql"] = "RHFactor";
+$proto34["m_sql"] = "RDFactor";
 $proto34["m_srcTableName"] = "standardsetup";
 $proto34["m_expr"]=$obj;
 $proto34["m_alias"] = "";
@@ -8647,12 +7565,12 @@ $obj = new SQLFieldListItem($proto34);
 $proto0["m_fieldlist"][]=$obj;
 						$proto36=array();
 			$obj = new SQLField(array(
-	"m_strName" => "SHFactor",
+	"m_strName" => "RDOTFactor",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto36["m_sql"] = "SHFactor";
+$proto36["m_sql"] = "RDOTFactor";
 $proto36["m_srcTableName"] = "standardsetup";
 $proto36["m_expr"]=$obj;
 $proto36["m_alias"] = "";
@@ -8661,12 +7579,12 @@ $obj = new SQLFieldListItem($proto36);
 $proto0["m_fieldlist"][]=$obj;
 						$proto38=array();
 			$obj = new SQLField(array(
-	"m_strName" => "CHFactor",
+	"m_strName" => "RDNDiffFactor",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto38["m_sql"] = "CHFactor";
+$proto38["m_sql"] = "RDNDiffFactor";
 $proto38["m_srcTableName"] = "standardsetup";
 $proto38["m_expr"]=$obj;
 $proto38["m_alias"] = "";
@@ -8675,12 +7593,12 @@ $obj = new SQLFieldListItem($proto38);
 $proto0["m_fieldlist"][]=$obj;
 						$proto40=array();
 			$obj = new SQLField(array(
-	"m_strName" => "RDFactor",
+	"m_strName" => "RHRDFactor",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto40["m_sql"] = "RDFactor";
+$proto40["m_sql"] = "RHRDFactor";
 $proto40["m_srcTableName"] = "standardsetup";
 $proto40["m_expr"]=$obj;
 $proto40["m_alias"] = "";
@@ -8689,12 +7607,12 @@ $obj = new SQLFieldListItem($proto40);
 $proto0["m_fieldlist"][]=$obj;
 						$proto42=array();
 			$obj = new SQLField(array(
-	"m_strName" => "RDOTFactor",
+	"m_strName" => "RHRDOTFactor",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto42["m_sql"] = "RDOTFactor";
+$proto42["m_sql"] = "RHRDOTFactor";
 $proto42["m_srcTableName"] = "standardsetup";
 $proto42["m_expr"]=$obj;
 $proto42["m_alias"] = "";
@@ -8703,12 +7621,12 @@ $obj = new SQLFieldListItem($proto42);
 $proto0["m_fieldlist"][]=$obj;
 						$proto44=array();
 			$obj = new SQLField(array(
-	"m_strName" => "RDNDiffFactor",
+	"m_strName" => "SHRDFactor",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto44["m_sql"] = "RDNDiffFactor";
+$proto44["m_sql"] = "SHRDFactor";
 $proto44["m_srcTableName"] = "standardsetup";
 $proto44["m_expr"]=$obj;
 $proto44["m_alias"] = "";
@@ -8717,12 +7635,12 @@ $obj = new SQLFieldListItem($proto44);
 $proto0["m_fieldlist"][]=$obj;
 						$proto46=array();
 			$obj = new SQLField(array(
-	"m_strName" => "RHRDFactor",
+	"m_strName" => "SHRDOTFactor",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto46["m_sql"] = "RHRDFactor";
+$proto46["m_sql"] = "SHRDOTFactor";
 $proto46["m_srcTableName"] = "standardsetup";
 $proto46["m_expr"]=$obj;
 $proto46["m_alias"] = "";
@@ -8731,12 +7649,12 @@ $obj = new SQLFieldListItem($proto46);
 $proto0["m_fieldlist"][]=$obj;
 						$proto48=array();
 			$obj = new SQLField(array(
-	"m_strName" => "RHRDOTFactor",
+	"m_strName" => "WorkingDaysInYearDailies",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto48["m_sql"] = "RHRDOTFactor";
+$proto48["m_sql"] = "WorkingDaysInYearDailies";
 $proto48["m_srcTableName"] = "standardsetup";
 $proto48["m_expr"]=$obj;
 $proto48["m_alias"] = "";
@@ -8745,12 +7663,12 @@ $obj = new SQLFieldListItem($proto48);
 $proto0["m_fieldlist"][]=$obj;
 						$proto50=array();
 			$obj = new SQLField(array(
-	"m_strName" => "SHRDFactor",
+	"m_strName" => "ReqBeforeHoliday",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto50["m_sql"] = "SHRDFactor";
+$proto50["m_sql"] = "ReqBeforeHoliday";
 $proto50["m_srcTableName"] = "standardsetup";
 $proto50["m_expr"]=$obj;
 $proto50["m_alias"] = "";
@@ -8759,12 +7677,12 @@ $obj = new SQLFieldListItem($proto50);
 $proto0["m_fieldlist"][]=$obj;
 						$proto52=array();
 			$obj = new SQLField(array(
-	"m_strName" => "SHRDOTFactor",
+	"m_strName" => "SHFactorDaily",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto52["m_sql"] = "SHRDOTFactor";
+$proto52["m_sql"] = "SHFactorDaily";
 $proto52["m_srcTableName"] = "standardsetup";
 $proto52["m_expr"]=$obj;
 $proto52["m_alias"] = "";
@@ -8773,12 +7691,12 @@ $obj = new SQLFieldListItem($proto52);
 $proto0["m_fieldlist"][]=$obj;
 						$proto54=array();
 			$obj = new SQLField(array(
-	"m_strName" => "WorkingDaysInYearDailies",
+	"m_strName" => "SHRDFactorDaily",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto54["m_sql"] = "WorkingDaysInYearDailies";
+$proto54["m_sql"] = "SHRDFactorDaily";
 $proto54["m_srcTableName"] = "standardsetup";
 $proto54["m_expr"]=$obj;
 $proto54["m_alias"] = "";
@@ -8787,12 +7705,12 @@ $obj = new SQLFieldListItem($proto54);
 $proto0["m_fieldlist"][]=$obj;
 						$proto56=array();
 			$obj = new SQLField(array(
-	"m_strName" => "ReqBeforeHoliday",
+	"m_strName" => "BonusAnnualLimit",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto56["m_sql"] = "ReqBeforeHoliday";
+$proto56["m_sql"] = "BonusAnnualLimit";
 $proto56["m_srcTableName"] = "standardsetup";
 $proto56["m_expr"]=$obj;
 $proto56["m_alias"] = "";
@@ -8801,12 +7719,12 @@ $obj = new SQLFieldListItem($proto56);
 $proto0["m_fieldlist"][]=$obj;
 						$proto58=array();
 			$obj = new SQLField(array(
-	"m_strName" => "SHFactorDaily",
+	"m_strName" => "RegNDOTFactor",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto58["m_sql"] = "SHFactorDaily";
+$proto58["m_sql"] = "RegNDOTFactor";
 $proto58["m_srcTableName"] = "standardsetup";
 $proto58["m_expr"]=$obj;
 $proto58["m_alias"] = "";
@@ -8815,12 +7733,12 @@ $obj = new SQLFieldListItem($proto58);
 $proto0["m_fieldlist"][]=$obj;
 						$proto60=array();
 			$obj = new SQLField(array(
-	"m_strName" => "SHOTFactorDaily",
+	"m_strName" => "RHNDOTFactor",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto60["m_sql"] = "SHOTFactorDaily";
+$proto60["m_sql"] = "RHNDOTFactor";
 $proto60["m_srcTableName"] = "standardsetup";
 $proto60["m_expr"]=$obj;
 $proto60["m_alias"] = "";
@@ -8829,12 +7747,12 @@ $obj = new SQLFieldListItem($proto60);
 $proto0["m_fieldlist"][]=$obj;
 						$proto62=array();
 			$obj = new SQLField(array(
-	"m_strName" => "CHFactorDaily",
+	"m_strName" => "SHNDOTFactor",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto62["m_sql"] = "CHFactorDaily";
+$proto62["m_sql"] = "SHNDOTFactor";
 $proto62["m_srcTableName"] = "standardsetup";
 $proto62["m_expr"]=$obj;
 $proto62["m_alias"] = "";
@@ -8843,12 +7761,12 @@ $obj = new SQLFieldListItem($proto62);
 $proto0["m_fieldlist"][]=$obj;
 						$proto64=array();
 			$obj = new SQLField(array(
-	"m_strName" => "SHRDFactorDaily",
+	"m_strName" => "RDNDOTFactor",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto64["m_sql"] = "SHRDFactorDaily";
+$proto64["m_sql"] = "RDNDOTFactor";
 $proto64["m_srcTableName"] = "standardsetup";
 $proto64["m_expr"]=$obj;
 $proto64["m_alias"] = "";
@@ -8857,12 +7775,12 @@ $obj = new SQLFieldListItem($proto64);
 $proto0["m_fieldlist"][]=$obj;
 						$proto66=array();
 			$obj = new SQLField(array(
-	"m_strName" => "SHRDOTFactorDaily",
+	"m_strName" => "DoubleHoliday",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto66["m_sql"] = "SHRDOTFactorDaily";
+$proto66["m_sql"] = "DoubleHoliday";
 $proto66["m_srcTableName"] = "standardsetup";
 $proto66["m_expr"]=$obj;
 $proto66["m_alias"] = "";
@@ -8871,12 +7789,12 @@ $obj = new SQLFieldListItem($proto66);
 $proto0["m_fieldlist"][]=$obj;
 						$proto68=array();
 			$obj = new SQLField(array(
-	"m_strName" => "CHOTFactorDaily",
+	"m_strName" => "DoubleHolidayRD",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto68["m_sql"] = "CHOTFactorDaily";
+$proto68["m_sql"] = "DoubleHolidayRD";
 $proto68["m_srcTableName"] = "standardsetup";
 $proto68["m_expr"]=$obj;
 $proto68["m_alias"] = "";
@@ -8885,12 +7803,12 @@ $obj = new SQLFieldListItem($proto68);
 $proto0["m_fieldlist"][]=$obj;
 						$proto70=array();
 			$obj = new SQLField(array(
-	"m_strName" => "PreTimeInMins",
+	"m_strName" => "DoubleHolidayOT",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto70["m_sql"] = "PreTimeInMins";
+$proto70["m_sql"] = "DoubleHolidayOT";
 $proto70["m_srcTableName"] = "standardsetup";
 $proto70["m_expr"]=$obj;
 $proto70["m_alias"] = "";
@@ -8899,12 +7817,12 @@ $obj = new SQLFieldListItem($proto70);
 $proto0["m_fieldlist"][]=$obj;
 						$proto72=array();
 			$obj = new SQLField(array(
-	"m_strName" => "BonusAnnualLimit",
+	"m_strName" => "DoubleHolidayRDOT",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto72["m_sql"] = "BonusAnnualLimit";
+$proto72["m_sql"] = "DoubleHolidayRDOT";
 $proto72["m_srcTableName"] = "standardsetup";
 $proto72["m_expr"]=$obj;
 $proto72["m_alias"] = "";
@@ -8913,12 +7831,12 @@ $obj = new SQLFieldListItem($proto72);
 $proto0["m_fieldlist"][]=$obj;
 						$proto74=array();
 			$obj = new SQLField(array(
-	"m_strName" => "RegNDOTFactor",
+	"m_strName" => "SHRDNDFactor",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto74["m_sql"] = "RegNDOTFactor";
+$proto74["m_sql"] = "SHRDNDFactor";
 $proto74["m_srcTableName"] = "standardsetup";
 $proto74["m_expr"]=$obj;
 $proto74["m_alias"] = "";
@@ -8927,12 +7845,12 @@ $obj = new SQLFieldListItem($proto74);
 $proto0["m_fieldlist"][]=$obj;
 						$proto76=array();
 			$obj = new SQLField(array(
-	"m_strName" => "RHNDOTFactor",
+	"m_strName" => "RHRDNDFactor",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto76["m_sql"] = "RHNDOTFactor";
+$proto76["m_sql"] = "RHRDNDFactor";
 $proto76["m_srcTableName"] = "standardsetup";
 $proto76["m_expr"]=$obj;
 $proto76["m_alias"] = "";
@@ -8941,12 +7859,12 @@ $obj = new SQLFieldListItem($proto76);
 $proto0["m_fieldlist"][]=$obj;
 						$proto78=array();
 			$obj = new SQLField(array(
-	"m_strName" => "SHNDOTFactor",
+	"m_strName" => "SHRDNDOTFactor",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto78["m_sql"] = "SHNDOTFactor";
+$proto78["m_sql"] = "SHRDNDOTFactor";
 $proto78["m_srcTableName"] = "standardsetup";
 $proto78["m_expr"]=$obj;
 $proto78["m_alias"] = "";
@@ -8955,12 +7873,12 @@ $obj = new SQLFieldListItem($proto78);
 $proto0["m_fieldlist"][]=$obj;
 						$proto80=array();
 			$obj = new SQLField(array(
-	"m_strName" => "CHNDOTFactor",
+	"m_strName" => "RHRDNDOTFacotr",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto80["m_sql"] = "CHNDOTFactor";
+$proto80["m_sql"] = "RHRDNDOTFacotr";
 $proto80["m_srcTableName"] = "standardsetup";
 $proto80["m_expr"]=$obj;
 $proto80["m_alias"] = "";
@@ -8969,12 +7887,12 @@ $obj = new SQLFieldListItem($proto80);
 $proto0["m_fieldlist"][]=$obj;
 						$proto82=array();
 			$obj = new SQLField(array(
-	"m_strName" => "RDNDOTFactor",
+	"m_strName" => "DoubleHolidayND",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto82["m_sql"] = "RDNDOTFactor";
+$proto82["m_sql"] = "DoubleHolidayND";
 $proto82["m_srcTableName"] = "standardsetup";
 $proto82["m_expr"]=$obj;
 $proto82["m_alias"] = "";
@@ -8983,12 +7901,12 @@ $obj = new SQLFieldListItem($proto82);
 $proto0["m_fieldlist"][]=$obj;
 						$proto84=array();
 			$obj = new SQLField(array(
-	"m_strName" => "DoubleHoliday",
+	"m_strName" => "DoubleHolidayRDND",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto84["m_sql"] = "DoubleHoliday";
+$proto84["m_sql"] = "DoubleHolidayRDND";
 $proto84["m_srcTableName"] = "standardsetup";
 $proto84["m_expr"]=$obj;
 $proto84["m_alias"] = "";
@@ -8997,12 +7915,12 @@ $obj = new SQLFieldListItem($proto84);
 $proto0["m_fieldlist"][]=$obj;
 						$proto86=array();
 			$obj = new SQLField(array(
-	"m_strName" => "DoubleHolidayRD",
+	"m_strName" => "DoubleHolidayNDOT",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto86["m_sql"] = "DoubleHolidayRD";
+$proto86["m_sql"] = "DoubleHolidayNDOT";
 $proto86["m_srcTableName"] = "standardsetup";
 $proto86["m_expr"]=$obj;
 $proto86["m_alias"] = "";
@@ -9011,12 +7929,12 @@ $obj = new SQLFieldListItem($proto86);
 $proto0["m_fieldlist"][]=$obj;
 						$proto88=array();
 			$obj = new SQLField(array(
-	"m_strName" => "DoubleHolidayOT",
+	"m_strName" => "DoubleHolidayRDNDOT",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto88["m_sql"] = "DoubleHolidayOT";
+$proto88["m_sql"] = "DoubleHolidayRDNDOT";
 $proto88["m_srcTableName"] = "standardsetup";
 $proto88["m_expr"]=$obj;
 $proto88["m_alias"] = "";
@@ -9025,12 +7943,12 @@ $obj = new SQLFieldListItem($proto88);
 $proto0["m_fieldlist"][]=$obj;
 						$proto90=array();
 			$obj = new SQLField(array(
-	"m_strName" => "DoubleHolidayRDOT",
+	"m_strName" => "SHOTDFactor",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto90["m_sql"] = "DoubleHolidayRDOT";
+$proto90["m_sql"] = "SHOTDFactor";
 $proto90["m_srcTableName"] = "standardsetup";
 $proto90["m_expr"]=$obj;
 $proto90["m_alias"] = "";
@@ -9039,199 +7957,103 @@ $obj = new SQLFieldListItem($proto90);
 $proto0["m_fieldlist"][]=$obj;
 						$proto92=array();
 			$obj = new SQLField(array(
-	"m_strName" => "SHRDNDFactor",
+	"m_strName" => "SHRDOTDFactor",
 	"m_strTable" => "standardsetup",
 	"m_srcTableName" => "standardsetup"
 ));
 
-$proto92["m_sql"] = "SHRDNDFactor";
+$proto92["m_sql"] = "SHRDOTDFactor";
 $proto92["m_srcTableName"] = "standardsetup";
 $proto92["m_expr"]=$obj;
 $proto92["m_alias"] = "";
 $obj = new SQLFieldListItem($proto92);
 
 $proto0["m_fieldlist"][]=$obj;
-						$proto94=array();
-			$obj = new SQLField(array(
-	"m_strName" => "RHRDNDFactor",
-	"m_strTable" => "standardsetup",
-	"m_srcTableName" => "standardsetup"
-));
-
-$proto94["m_sql"] = "RHRDNDFactor";
-$proto94["m_srcTableName"] = "standardsetup";
-$proto94["m_expr"]=$obj;
-$proto94["m_alias"] = "";
-$obj = new SQLFieldListItem($proto94);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto96=array();
-			$obj = new SQLField(array(
-	"m_strName" => "SHRDNDOTFactor",
-	"m_strTable" => "standardsetup",
-	"m_srcTableName" => "standardsetup"
-));
-
-$proto96["m_sql"] = "SHRDNDOTFactor";
-$proto96["m_srcTableName"] = "standardsetup";
-$proto96["m_expr"]=$obj;
-$proto96["m_alias"] = "";
-$obj = new SQLFieldListItem($proto96);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto98=array();
-			$obj = new SQLField(array(
-	"m_strName" => "RHRDNDOTFacotr",
-	"m_strTable" => "standardsetup",
-	"m_srcTableName" => "standardsetup"
-));
-
-$proto98["m_sql"] = "RHRDNDOTFacotr";
-$proto98["m_srcTableName"] = "standardsetup";
-$proto98["m_expr"]=$obj;
-$proto98["m_alias"] = "";
-$obj = new SQLFieldListItem($proto98);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto100=array();
-			$obj = new SQLField(array(
-	"m_strName" => "DoubleHolidayND",
-	"m_strTable" => "standardsetup",
-	"m_srcTableName" => "standardsetup"
-));
-
-$proto100["m_sql"] = "DoubleHolidayND";
-$proto100["m_srcTableName"] = "standardsetup";
-$proto100["m_expr"]=$obj;
-$proto100["m_alias"] = "";
-$obj = new SQLFieldListItem($proto100);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto102=array();
-			$obj = new SQLField(array(
-	"m_strName" => "DoubleHolidayRDND",
-	"m_strTable" => "standardsetup",
-	"m_srcTableName" => "standardsetup"
-));
-
-$proto102["m_sql"] = "DoubleHolidayRDND";
-$proto102["m_srcTableName"] = "standardsetup";
-$proto102["m_expr"]=$obj;
-$proto102["m_alias"] = "";
-$obj = new SQLFieldListItem($proto102);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto104=array();
-			$obj = new SQLField(array(
-	"m_strName" => "DoubleHolidayNDOT",
-	"m_strTable" => "standardsetup",
-	"m_srcTableName" => "standardsetup"
-));
-
-$proto104["m_sql"] = "DoubleHolidayNDOT";
-$proto104["m_srcTableName"] = "standardsetup";
-$proto104["m_expr"]=$obj;
-$proto104["m_alias"] = "";
-$obj = new SQLFieldListItem($proto104);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto106=array();
-			$obj = new SQLField(array(
-	"m_strName" => "DoubleHolidayRDNDOT",
-	"m_strTable" => "standardsetup",
-	"m_srcTableName" => "standardsetup"
-));
-
-$proto106["m_sql"] = "DoubleHolidayRDNDOT";
-$proto106["m_srcTableName"] = "standardsetup";
-$proto106["m_expr"]=$obj;
-$proto106["m_alias"] = "";
-$obj = new SQLFieldListItem($proto106);
-
-$proto0["m_fieldlist"][]=$obj;
 $proto0["m_fromlist"] = array();
-												$proto108=array();
-$proto108["m_link"] = "SQLL_MAIN";
-			$proto109=array();
-$proto109["m_strName"] = "standardsetup";
-$proto109["m_srcTableName"] = "standardsetup";
-$proto109["m_columns"] = array();
-$proto109["m_columns"][] = "SID";
-$proto109["m_columns"][] = "LateGracePeriodMins";
-$proto109["m_columns"][] = "PreTimeInMins";
-$proto109["m_columns"][] = "RegOTFactor";
-$proto109["m_columns"][] = "RegNDiffFactor";
-$proto109["m_columns"][] = "NightDiffStartTime";
-$proto109["m_columns"][] = "NightDiffEndTime";
-$proto109["m_columns"][] = "WorkingDaysInYear";
-$proto109["m_columns"][] = "AllowableLeaveFrom";
-$proto109["m_columns"][] = "AllowableLeaveTo";
-$proto109["m_columns"][] = "PostTimeOutMins";
-$proto109["m_columns"][] = "RHOTFactor";
-$proto109["m_columns"][] = "SHOTFactor";
-$proto109["m_columns"][] = "CHOTFactor";
-$proto109["m_columns"][] = "RHNDiffFactor";
-$proto109["m_columns"][] = "SHNDiffFactor";
-$proto109["m_columns"][] = "CHNDiffFactor";
-$proto109["m_columns"][] = "RHFactor";
-$proto109["m_columns"][] = "SHFactor";
-$proto109["m_columns"][] = "CHFactor";
-$proto109["m_columns"][] = "RDFactor";
-$proto109["m_columns"][] = "RDOTFactor";
-$proto109["m_columns"][] = "RDNDiffFactor";
-$proto109["m_columns"][] = "RHRDFactor";
-$proto109["m_columns"][] = "RHRDOTFactor";
-$proto109["m_columns"][] = "SHRDFactor";
-$proto109["m_columns"][] = "SHRDOTFactor";
-$proto109["m_columns"][] = "WorkingDaysInYearDailies";
-$proto109["m_columns"][] = "ReqBeforeHoliday";
-$proto109["m_columns"][] = "SHFactorDaily";
-$proto109["m_columns"][] = "SHOTFactorDaily";
-$proto109["m_columns"][] = "CHFactorDaily";
-$proto109["m_columns"][] = "SHRDFactorDaily";
-$proto109["m_columns"][] = "SHRDOTFactorDaily";
-$proto109["m_columns"][] = "CHOTFactorDaily";
-$proto109["m_columns"][] = "BonusAnnualLimit";
-$proto109["m_columns"][] = "RegNDOTFactor";
-$proto109["m_columns"][] = "RHNDOTFactor";
-$proto109["m_columns"][] = "SHNDOTFactor";
-$proto109["m_columns"][] = "CHNDOTFactor";
-$proto109["m_columns"][] = "RDNDOTFactor";
-$proto109["m_columns"][] = "DoubleHoliday";
-$proto109["m_columns"][] = "DoubleHolidayRD";
-$proto109["m_columns"][] = "DoubleHolidayOT";
-$proto109["m_columns"][] = "DoubleHolidayRDOT";
-$proto109["m_columns"][] = "SHRDNDFactor";
-$proto109["m_columns"][] = "RHRDNDFactor";
-$proto109["m_columns"][] = "SHRDNDOTFactor";
-$proto109["m_columns"][] = "RHRDNDOTFacotr";
-$proto109["m_columns"][] = "DoubleHolidayND";
-$proto109["m_columns"][] = "DoubleHolidayRDND";
-$proto109["m_columns"][] = "DoubleHolidayNDOT";
-$proto109["m_columns"][] = "DoubleHolidayRDNDOT";
-$obj = new SQLTable($proto109);
+												$proto94=array();
+$proto94["m_link"] = "SQLL_MAIN";
+			$proto95=array();
+$proto95["m_strName"] = "standardsetup";
+$proto95["m_srcTableName"] = "standardsetup";
+$proto95["m_columns"] = array();
+$proto95["m_columns"][] = "SID";
+$proto95["m_columns"][] = "LateGracePeriodMins";
+$proto95["m_columns"][] = "PreTimeInMins";
+$proto95["m_columns"][] = "RegOTFactor";
+$proto95["m_columns"][] = "RegNDiffFactor";
+$proto95["m_columns"][] = "NightDiffStartTime";
+$proto95["m_columns"][] = "NightDiffEndTime";
+$proto95["m_columns"][] = "WorkingDaysInYear";
+$proto95["m_columns"][] = "AllowableLeaveFrom";
+$proto95["m_columns"][] = "AllowableLeaveTo";
+$proto95["m_columns"][] = "PostTimeOutMins";
+$proto95["m_columns"][] = "RHOTFactor";
+$proto95["m_columns"][] = "SHOTFactor";
+$proto95["m_columns"][] = "CHOTFactor";
+$proto95["m_columns"][] = "RHNDiffFactor";
+$proto95["m_columns"][] = "SHNDiffFactor";
+$proto95["m_columns"][] = "CHNDiffFactor";
+$proto95["m_columns"][] = "RHFactor";
+$proto95["m_columns"][] = "SHFactor";
+$proto95["m_columns"][] = "CHFactor";
+$proto95["m_columns"][] = "RDFactor";
+$proto95["m_columns"][] = "RDOTFactor";
+$proto95["m_columns"][] = "RDNDiffFactor";
+$proto95["m_columns"][] = "RHRDFactor";
+$proto95["m_columns"][] = "RHRDOTFactor";
+$proto95["m_columns"][] = "SHRDFactor";
+$proto95["m_columns"][] = "SHRDOTFactor";
+$proto95["m_columns"][] = "WorkingDaysInYearDailies";
+$proto95["m_columns"][] = "ReqBeforeHoliday";
+$proto95["m_columns"][] = "SHFactorDaily";
+$proto95["m_columns"][] = "SHOTFactorDaily";
+$proto95["m_columns"][] = "CHFactorDaily";
+$proto95["m_columns"][] = "SHRDFactorDaily";
+$proto95["m_columns"][] = "SHRDOTFactorDaily";
+$proto95["m_columns"][] = "CHOTFactorDaily";
+$proto95["m_columns"][] = "BonusAnnualLimit";
+$proto95["m_columns"][] = "RegNDOTFactor";
+$proto95["m_columns"][] = "RHNDOTFactor";
+$proto95["m_columns"][] = "SHNDOTFactor";
+$proto95["m_columns"][] = "CHNDOTFactor";
+$proto95["m_columns"][] = "RDNDOTFactor";
+$proto95["m_columns"][] = "DoubleHoliday";
+$proto95["m_columns"][] = "DoubleHolidayRD";
+$proto95["m_columns"][] = "DoubleHolidayOT";
+$proto95["m_columns"][] = "DoubleHolidayRDOT";
+$proto95["m_columns"][] = "SHRDNDFactor";
+$proto95["m_columns"][] = "RHRDNDFactor";
+$proto95["m_columns"][] = "SHRDNDOTFactor";
+$proto95["m_columns"][] = "RHRDNDOTFacotr";
+$proto95["m_columns"][] = "DoubleHolidayND";
+$proto95["m_columns"][] = "DoubleHolidayRDND";
+$proto95["m_columns"][] = "DoubleHolidayNDOT";
+$proto95["m_columns"][] = "DoubleHolidayRDNDOT";
+$proto95["m_columns"][] = "SHOTDFactor";
+$proto95["m_columns"][] = "SHRDOTDFactor";
+$obj = new SQLTable($proto95);
 
-$proto108["m_table"] = $obj;
-$proto108["m_sql"] = "standardsetup";
-$proto108["m_alias"] = "";
-$proto108["m_srcTableName"] = "standardsetup";
-$proto110=array();
-$proto110["m_sql"] = "";
-$proto110["m_uniontype"] = "SQLL_UNKNOWN";
+$proto94["m_table"] = $obj;
+$proto94["m_sql"] = "standardsetup";
+$proto94["m_alias"] = "";
+$proto94["m_srcTableName"] = "standardsetup";
+$proto96=array();
+$proto96["m_sql"] = "";
+$proto96["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto110["m_column"]=$obj;
-$proto110["m_contained"] = array();
-$proto110["m_strCase"] = "";
-$proto110["m_havingmode"] = false;
-$proto110["m_inBrackets"] = false;
-$proto110["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto110);
+$proto96["m_column"]=$obj;
+$proto96["m_contained"] = array();
+$proto96["m_strCase"] = "";
+$proto96["m_havingmode"] = false;
+$proto96["m_inBrackets"] = false;
+$proto96["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto96);
 
-$proto108["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto108);
+$proto94["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto94);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -9247,7 +8069,7 @@ $queryData_standardsetup = createSqlQuery_standardsetup();
 	
 		;
 
-																																																			
+																																												
 
 $tdatastandardsetup[".sqlquery"] = $queryData_standardsetup;
 

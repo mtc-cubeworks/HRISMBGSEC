@@ -1166,17 +1166,6 @@
 									
 									
 									
-									{BEGIN LateFixPenalty_fieldheadercolumn}<th class="rnr-gridfieldlabel {$LateFixPenalty_class}" data-field=LateFixPenalty>
-									{BEGIN LateFixPenalty_fieldheader}<span {$LateFixPenalty_orderlinkattrs}>
-											{$label demo_user LateFixPenalty}
-										</span>
-									{END LateFixPenalty_fieldheader}
-									</th>
-									{END LateFixPenalty_fieldheadercolumn}
-									
-									
-									
-									
 									{BEGIN user_id_fieldheadercolumn}<th class="rnr-gridfieldlabel {$user_id_class}" data-field=user_id>
 									{BEGIN user_id_fieldheader}<span {$user_id_orderlinkattrs}>
 											{$label demo_user user_id}
@@ -1184,6 +1173,17 @@
 									{END user_id_fieldheader}
 									</th>
 									{END user_id_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN LateFixPenalty_fieldheadercolumn}<th class="rnr-gridfieldlabel {$LateFixPenalty_class}" data-field=LateFixPenalty>
+									{BEGIN LateFixPenalty_fieldheader}<span {$LateFixPenalty_orderlinkattrs}>
+											{$label demo_user LateFixPenalty}
+										</span>
+									{END LateFixPenalty_fieldheader}
+									</th>
+									{END LateFixPenalty_fieldheadercolumn}
 									
 									
 									
@@ -1665,16 +1665,16 @@
 {END IncludeBreakLate_fieldcolumn}
 
 
-	{BEGIN LateFixPenalty_fieldcolumn}<td class="bs-gridcell {$LateFixPenalty_class}"  data-field=LateFixPenalty {$rowstyle} {$recordattrs}>
-		{$LateFixPenalty_value}
-	</td>
-{END LateFixPenalty_fieldcolumn}
-
-
 	{BEGIN user_id_fieldcolumn}<td class="bs-gridcell {$user_id_class}"  data-field=user_id {$rowstyle} {$recordattrs}>
 		{$user_id_value}
 	</td>
 {END user_id_fieldcolumn}
+
+
+	{BEGIN LateFixPenalty_fieldcolumn}<td class="bs-gridcell {$LateFixPenalty_class}"  data-field=LateFixPenalty {$rowstyle} {$recordattrs}>
+		{$LateFixPenalty_value}
+	</td>
+{END LateFixPenalty_fieldcolumn}
 
 
 	{BEGIN CalMonthly_fieldcolumn}<td class="bs-gridcell {$CalMonthly_class}"  data-field=CalMonthly {$rowstyle} {$recordattrs}>

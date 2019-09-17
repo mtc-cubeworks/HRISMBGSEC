@@ -529,29 +529,23 @@
 	.bs-gridcell[data-field=NDMins]:before {
 		content: "{$label indschedule1 NDMins}";
 	}
+	.bs-gridcell[data-field=NDOTMins]:before {
+		content: "{$label indschedule1 NDOTMins}";
+	}
+	.bs-gridcell[data-field=ANDOTMins]:before {
+		content: "{$label indschedule1 ANDOTMins}";
+	}
 	.bs-gridcell[data-field=WorkMinsNet]:before {
 		content: "{$label indschedule1 WorkMinsNet}";
 	}
 	.bs-gridcell[data-field=FiledOT]:before {
 		content: "{$label indschedule1 FiledOT}";
 	}
-	.bs-gridcell[data-field=NDMealAllowancePerShift]:before {
-		content: "{$label indschedule1 NDMealAllowancePerShift}";
-	}
-	.bs-gridcell[data-field=NDMinimumHrs]:before {
-		content: "{$label indschedule1 NDMinimumHrs}";
-	}
-	.bs-gridcell[data-field=NDMealAllowance]:before {
-		content: "{$label indschedule1 NDMealAllowance}";
-	}
 	.bs-gridcell[data-field=SDate]:before {
 		content: "{$label indschedule1 SDate}";
 	}
 	.bs-gridcell[data-field=UserName]:before {
 		content: "{$label indschedule1 UserName}";
-	}
-	.bs-gridcell[data-field=ANDOTMins]:before {
-		content: "{$label indschedule1 ANDOTMins}";
 	}
 </style>
 <table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
@@ -674,6 +668,19 @@
 									
 									
 									
+									{BEGIN NDOTMins_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$NDOTMins_class}" data-field=NDOTMins>
+									{BEGIN NDOTMins_fieldheader}
+																				<span {$NDOTMins_orderlinkattrs}>
+											{$label indschedule1 NDOTMins}
+										</span>
+									{END NDOTMins_fieldheader}
+									</th>
+									{END NDOTMins_fieldheadercolumn}
+									
+									
+									
+									
 									{BEGIN ApprovedNightDiff_fieldheadercolumn}
 									<th class="rnr-gridfieldlabel {$ApprovedNightDiff_class}" data-field=ApprovedNightDiff>
 									{BEGIN ApprovedNightDiff_fieldheader}
@@ -709,45 +716,6 @@
 									{END ANDOTMins_fieldheader}
 									</th>
 									{END ANDOTMins_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN NDMealAllowancePerShift_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$NDMealAllowancePerShift_class}" data-field=NDMealAllowancePerShift>
-									{BEGIN NDMealAllowancePerShift_fieldheader}
-																				<span {$NDMealAllowancePerShift_orderlinkattrs}>
-											{$label indschedule1 NDMealAllowancePerShift}
-										</span>
-									{END NDMealAllowancePerShift_fieldheader}
-									</th>
-									{END NDMealAllowancePerShift_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN NDMinimumHrs_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$NDMinimumHrs_class}" data-field=NDMinimumHrs>
-									{BEGIN NDMinimumHrs_fieldheader}
-																				<span {$NDMinimumHrs_orderlinkattrs}>
-											{$label indschedule1 NDMinimumHrs}
-										</span>
-									{END NDMinimumHrs_fieldheader}
-									</th>
-									{END NDMinimumHrs_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN NDMealAllowance_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$NDMealAllowance_class}" data-field=NDMealAllowance>
-									{BEGIN NDMealAllowance_fieldheader}
-																				<span {$NDMealAllowance_orderlinkattrs}>
-											{$label indschedule1 NDMealAllowance}
-										</span>
-									{END NDMealAllowance_fieldheader}
-									</th>
-									{END NDMealAllowance_fieldheadercolumn}
 									
 									
 									
@@ -897,6 +865,13 @@
 {END NDMins_fieldcolumn}
 
 
+	{BEGIN NDOTMins_fieldcolumn}
+	<td class="bs-gridcell {$NDOTMins_class}"  data-field=NDOTMins {$rowstyle} {$recordattrs}>
+		{$NDOTMins_value}
+	</td>
+{END NDOTMins_fieldcolumn}
+
+
 	{BEGIN ApprovedNightDiff_fieldcolumn}
 	<td class="bs-gridcell {$ApprovedNightDiff_class}"  data-field=ApprovedNightDiff {$rowstyle} {$recordattrs}>
 		{$ApprovedNightDiff_value}
@@ -916,27 +891,6 @@
 		{$ANDOTMins_value}
 	</td>
 {END ANDOTMins_fieldcolumn}
-
-
-	{BEGIN NDMealAllowancePerShift_fieldcolumn}
-	<td class="bs-gridcell {$NDMealAllowancePerShift_class}"  data-field=NDMealAllowancePerShift {$rowstyle} {$recordattrs}>
-		{$NDMealAllowancePerShift_value}
-	</td>
-{END NDMealAllowancePerShift_fieldcolumn}
-
-
-	{BEGIN NDMinimumHrs_fieldcolumn}
-	<td class="bs-gridcell {$NDMinimumHrs_class}"  data-field=NDMinimumHrs {$rowstyle} {$recordattrs}>
-		{$NDMinimumHrs_value}
-	</td>
-{END NDMinimumHrs_fieldcolumn}
-
-
-	{BEGIN NDMealAllowance_fieldcolumn}
-	<td class="bs-gridcell {$NDMealAllowance_class}"  data-field=NDMealAllowance {$rowstyle} {$recordattrs}>
-		{$NDMealAllowance_value}
-	</td>
-{END NDMealAllowance_fieldcolumn}
 
 
 	{BEGIN WorkMinsNet_fieldcolumn}

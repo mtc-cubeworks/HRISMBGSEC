@@ -422,7 +422,7 @@ $mask="";
 $mask .= "P";
 
 $pageMask[$table] = $mask;
-$tables[$table] = array("indschedule1", " " . "OT/ND/RD Approval");
+$tables[$table] = array("indschedule1", " " . "OT-ND-RD Single Approval");
 $table = "controlin";
 $mask="";
 	$mask .= "A";
@@ -471,14 +471,6 @@ $mask .= "I";
 
 $pageMask[$table] = $mask;
 $tables[$table] = array("payrollstatutories", " " . "Statutories");
-$table = "loanbalance3";
-$mask="";
-				$mask .= "S";
-$mask .= "P";
-$mask .= "I";
-
-$pageMask[$table] = $mask;
-$tables[$table] = array("loanbalance3", " " . "Loans & Deductions Balance");
 $table = "payrolltax";
 $mask="";
 	$mask .= "A";
@@ -747,15 +739,6 @@ $mask .= "M";
 
 $pageMask[$table] = $mask;
 $tables[$table] = array("indleave1", " " . "My Approved Leaves");
-$table = "loanbalance31";
-$mask="";
-				$mask .= "S";
-$mask .= "P";
-$mask .= "I";
-$mask .= "M";
-
-$pageMask[$table] = $mask;
-$tables[$table] = array("loanbalance31", " " . "My Loan Balances");
 $table = "loansreport";
 $mask="";
 	$mask .= "A";
@@ -864,7 +847,7 @@ $mask .= "P";
 $mask .= "M";
 
 $pageMask[$table] = $mask;
-$tables[$table] = array("empdtr", " " . "My DTR");
+$tables[$table] = array("empdtr", " " . "My Uploaded DTR");
 $table = "emplogins";
 $mask="";
 	$mask .= "A";
@@ -1087,18 +1070,6 @@ $mask .= "M";
 
 $pageMask[$table] = $mask;
 $tables[$table] = array("filelog", " " . "File Log");
-$table = "payrolltab1";
-$mask="";
-	$mask .= "A";
-	$mask .= "E";
-	$mask .= "D";
-	$mask .= "S";
-$mask .= "P";
-$mask .= "I";
-$mask .= "M";
-
-$pageMask[$table] = $mask;
-$tables[$table] = array("payrolltab1", " " . "My Payslip");
 $table = "filelog1";
 $mask="";
 		$mask .= "E";
@@ -1208,6 +1179,120 @@ $mask .= "I";
 
 $pageMask[$table] = $mask;
 $tables[$table] = array("approvalbutton", " " . "Approval Selection");
+$table = "otherpayments";
+$mask="";
+	$mask .= "A";
+	$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("otherpayments", " " . "Other Payment Method");
+$table = "payrolltab1";
+$mask="";
+	$mask .= "A";
+	$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+$mask .= "M";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("payrolltab1", " " . "My Payslip");
+$table = "mycurrentdtr";
+$mask="";
+				$mask .= "S";
+$mask .= "P";
+$mask .= "M";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("mycurrentdtr", " " . "My Current DTR");
+$table = "otndrdglobal";
+$mask="";
+	$mask .= "A";
+	$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("otndrdglobal", " " . "OT-ND-RD Approval");
+$table = "dtrrange1";
+$mask="";
+	$mask .= "A";
+	$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("dtrrange1", " " . "Update Employee DTR");
+$table = "dtrempl";
+$mask="";
+			
+$pageMask[$table] = $mask;
+$tables[$table] = array("dtrempl", " " . "Dtrempl");
+$table = "otndrdglobal1";
+$mask="";
+	$mask .= "A";
+	$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("otndrdglobal1", " " . "Update Employee OT-ND-RD");
+$table = "deductypes";
+$mask="";
+	$mask .= "A";
+	$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("deductypes", " " . "Deduction Category");
+$table = "magroups";
+$mask="";
+	$mask .= "A";
+	$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("magroups", " " . "Monthly Adjustment Groups");
+$table = "mdgroups";
+$mask="";
+	$mask .= "A";
+	$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("mdgroups", " " . "Monthly Deduction Groups");
+$table = "loanbalnew5";
+$mask="";
+				$mask .= "S";
+$mask .= "P";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("loanbalnew5", " " . "Loan & Deduction Balances");
+$table = "loanbalnew51";
+$mask="";
+				$mask .= "S";
+$mask .= "P";
+$mask .= "M";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("loanbalnew51", " " . "My Loan & Deduction Balance");
 
 
 

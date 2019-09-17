@@ -44,6 +44,9 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsholidays["English"]["HolidayDescription"] = "Holiday Description";
 	$fieldToolTipsholidays["English"]["HolidayDescription"] = "";
 	$placeHoldersholidays["English"]["HolidayDescription"] = "";
+	$fieldLabelsholidays["English"]["Division"] = "Division";
+	$fieldToolTipsholidays["English"]["Division"] = "";
+	$placeHoldersholidays["English"]["Division"] = "";
 	if (count($fieldToolTipsholidays["English"]))
 		$tdataholidays[".isUseToolTips"] = true;
 }
@@ -53,6 +56,9 @@ if(mlang_getcurrentlang()=="")
 	$fieldToolTipsholidays[""] = array();
 	$placeHoldersholidays[""] = array();
 	$pageTitlesholidays[""] = array();
+	$fieldLabelsholidays[""]["Division"] = "Division";
+	$fieldToolTipsholidays[""]["Division"] = "";
+	$placeHoldersholidays[""]["Division"] = "";
 	if (count($fieldToolTipsholidays[""]))
 		$tdataholidays[".isUseToolTips"] = true;
 }
@@ -95,9 +101,9 @@ $tdataholidays[".listAjax"] = false;
 	$tdataholidays[".locking"] = false;
 
 $tdataholidays[".edit"] = true;
-$tdataholidays[".afterEditAction"] = 1;
+$tdataholidays[".afterEditAction"] = 0;
 $tdataholidays[".closePopupAfterEdit"] = 1;
-$tdataholidays[".afterEditActionDetTable"] = "";
+$tdataholidays[".afterEditActionDetTable"] = "Detail tables not found!";
 
 $tdataholidays[".add"] = true;
 $tdataholidays[".afterAddAction"] = 1;
@@ -150,7 +156,7 @@ $tdataholidays[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																														
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
 
 $tdataholidays[".ajaxCodeSnippetAdded"] = false;
 
@@ -163,6 +169,7 @@ $tdataholidays[".isUseTimeForSearch"] = false;
 
 
 
+$tdataholidays[".badgeColor"] = "00c2c5";
 
 
 $tdataholidays[".allSearchFields"] = array();
@@ -176,6 +183,7 @@ $tdataholidays[".allSearchFields"][] = "HID";
 	$tdataholidays[".allSearchFields"][] = "FirstHalf";
 	$tdataholidays[".allSearchFields"][] = "SecondHalf";
 	$tdataholidays[".allSearchFields"][] = "HolidayDay";
+	$tdataholidays[".allSearchFields"][] = "Division";
 	
 
 $tdataholidays[".googleLikeFields"] = array();
@@ -186,6 +194,7 @@ $tdataholidays[".googleLikeFields"][] = "HolidayDay";
 $tdataholidays[".googleLikeFields"][] = "FirstHalf";
 $tdataholidays[".googleLikeFields"][] = "SecondHalf";
 $tdataholidays[".googleLikeFields"][] = "HolidayDescription";
+$tdataholidays[".googleLikeFields"][] = "Division";
 
 
 $tdataholidays[".advSearchFields"] = array();
@@ -196,6 +205,7 @@ $tdataholidays[".advSearchFields"][] = "HolidayType";
 $tdataholidays[".advSearchFields"][] = "FirstHalf";
 $tdataholidays[".advSearchFields"][] = "SecondHalf";
 $tdataholidays[".advSearchFields"][] = "HolidayDay";
+$tdataholidays[".advSearchFields"][] = "Division";
 
 $tdataholidays[".tableType"] = "list";
 
@@ -238,7 +248,7 @@ $tdataholidays[".strOrderBy"] = $tstrOrderBy;
 
 $tdataholidays[".orderindexes"] = array();
 
-$tdataholidays[".sqlHead"] = "SELECT HID,  HolidayDate,  HolidayType,  HolidayDay,  FirstHalf,  SecondHalf,  HolidayDescription";
+$tdataholidays[".sqlHead"] = "SELECT HID,  HolidayDate,  HolidayType,  HolidayDay,  FirstHalf,  SecondHalf,  HolidayDescription,  Division";
 $tdataholidays[".sqlFrom"] = "FROM holidays";
 $tdataholidays[".sqlWhereExpr"] = "";
 $tdataholidays[".sqlTail"] = "";
@@ -290,6 +300,7 @@ $tdataholidays[".listFields"][] = "HolidayType";
 $tdataholidays[".listFields"][] = "FirstHalf";
 $tdataholidays[".listFields"][] = "SecondHalf";
 $tdataholidays[".listFields"][] = "HolidayDay";
+$tdataholidays[".listFields"][] = "Division";
 
 $tdataholidays[".hideMobileList"] = array();
 
@@ -302,6 +313,7 @@ $tdataholidays[".viewFields"][] = "HolidayType";
 $tdataholidays[".viewFields"][] = "FirstHalf";
 $tdataholidays[".viewFields"][] = "SecondHalf";
 $tdataholidays[".viewFields"][] = "HolidayDay";
+$tdataholidays[".viewFields"][] = "Division";
 
 $tdataholidays[".addFields"] = array();
 $tdataholidays[".addFields"][] = "HolidayDate";
@@ -310,6 +322,7 @@ $tdataholidays[".addFields"][] = "HolidayType";
 $tdataholidays[".addFields"][] = "FirstHalf";
 $tdataholidays[".addFields"][] = "SecondHalf";
 $tdataholidays[".addFields"][] = "HolidayDay";
+$tdataholidays[".addFields"][] = "Division";
 
 $tdataholidays[".masterListFields"] = array();
 $tdataholidays[".masterListFields"][] = "HID";
@@ -319,6 +332,7 @@ $tdataholidays[".masterListFields"][] = "HolidayType";
 $tdataholidays[".masterListFields"][] = "FirstHalf";
 $tdataholidays[".masterListFields"][] = "SecondHalf";
 $tdataholidays[".masterListFields"][] = "HolidayDay";
+$tdataholidays[".masterListFields"][] = "Division";
 
 $tdataholidays[".inlineAddFields"] = array();
 $tdataholidays[".inlineAddFields"][] = "HolidayDate";
@@ -327,6 +341,7 @@ $tdataholidays[".inlineAddFields"][] = "HolidayType";
 $tdataholidays[".inlineAddFields"][] = "FirstHalf";
 $tdataholidays[".inlineAddFields"][] = "SecondHalf";
 $tdataholidays[".inlineAddFields"][] = "HolidayDay";
+$tdataholidays[".inlineAddFields"][] = "Division";
 
 $tdataholidays[".editFields"] = array();
 $tdataholidays[".editFields"][] = "HolidayDate";
@@ -335,6 +350,7 @@ $tdataholidays[".editFields"][] = "HolidayType";
 $tdataholidays[".editFields"][] = "FirstHalf";
 $tdataholidays[".editFields"][] = "SecondHalf";
 $tdataholidays[".editFields"][] = "HolidayDay";
+$tdataholidays[".editFields"][] = "Division";
 
 $tdataholidays[".inlineEditFields"] = array();
 $tdataholidays[".inlineEditFields"][] = "HolidayDate";
@@ -343,6 +359,7 @@ $tdataholidays[".inlineEditFields"][] = "HolidayType";
 $tdataholidays[".inlineEditFields"][] = "FirstHalf";
 $tdataholidays[".inlineEditFields"][] = "SecondHalf";
 $tdataholidays[".inlineEditFields"][] = "HolidayDay";
+$tdataholidays[".inlineEditFields"][] = "Division";
 
 $tdataholidays[".updateSelectedFields"] = array();
 $tdataholidays[".updateSelectedFields"][] = "HolidayDate";
@@ -360,6 +377,7 @@ $tdataholidays[".exportFields"][] = "HolidayType";
 $tdataholidays[".exportFields"][] = "FirstHalf";
 $tdataholidays[".exportFields"][] = "SecondHalf";
 $tdataholidays[".exportFields"][] = "HolidayDay";
+$tdataholidays[".exportFields"][] = "Division";
 
 $tdataholidays[".importFields"] = array();
 $tdataholidays[".importFields"][] = "HID";
@@ -369,6 +387,7 @@ $tdataholidays[".importFields"][] = "HolidayDay";
 $tdataholidays[".importFields"][] = "FirstHalf";
 $tdataholidays[".importFields"][] = "SecondHalf";
 $tdataholidays[".importFields"][] = "HolidayDescription";
+$tdataholidays[".importFields"][] = "Division";
 
 $tdataholidays[".printFields"] = array();
 $tdataholidays[".printFields"][] = "HID";
@@ -378,6 +397,7 @@ $tdataholidays[".printFields"][] = "HolidayType";
 $tdataholidays[".printFields"][] = "FirstHalf";
 $tdataholidays[".printFields"][] = "SecondHalf";
 $tdataholidays[".printFields"][] = "HolidayDay";
+$tdataholidays[".printFields"][] = "Division";
 
 
 //	HID
@@ -1314,6 +1334,164 @@ $tdataholidays[".printFields"][] = "HolidayDay";
 
 
 	$tdataholidays["HolidayDescription"] = $fdata;
+//	Division
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 8;
+	$fdata["strName"] = "Division";
+	$fdata["GoodName"] = "Division";
+	$fdata["ownerTable"] = "holidays";
+	$fdata["Label"] = GetFieldLabel("holidays","Division");
+	$fdata["FieldType"] = 3;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "Division";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "Division";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Lookup wizard");
+
+	
+	
+		
+	
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "divisions";
+		$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "DvID";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "Division";
+	
+	
+
+	
+	$edata["LookupOrderBy"] = "Division";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdataholidays["Division"] = $fdata;
 
 
 $tables_data["holidays"]=&$tdataholidays;
@@ -1330,6 +1508,34 @@ $detailsTablesData["holidays"] = array();
 $masterTablesData["holidays"] = array();
 
 
+	
+				$strOriginalDetailsTable="divisions";
+	$masterParams = array();
+	$masterParams["mDataSourceTable"]="divisions";
+	$masterParams["mOriginalTable"]= $strOriginalDetailsTable;
+	$masterParams["mShortTable"]= "divisions";
+	$masterParams["masterKeys"]= array();
+	$masterParams["detailKeys"]= array();
+	
+		$masterParams["dispChildCount"]= "1";
+	$masterParams["hideChild"]= "0";
+	$masterParams["dispMasterInfo"] = array();
+				$masterParams["dispMasterInfo"][PAGE_LIST] = true;
+			$masterParams["dispMasterInfo"][PAGE_PRINT] = true;
+		
+	$masterParams["previewOnList"]= 1;
+	$masterParams["previewOnAdd"]= 0;
+	$masterParams["previewOnEdit"]= 1;
+	$masterParams["previewOnView"]= 1;
+	$masterParams["proceedLink"]= 1;
+
+	$masterParams["type"] = PAGE_LIST;
+					$masterTablesData["holidays"][0] = $masterParams;
+				$masterTablesData["holidays"][0]["masterKeys"] = array();
+	$masterTablesData["holidays"][0]["masterKeys"][]="DvID";
+				$masterTablesData["holidays"][0]["detailKeys"] = array();
+	$masterTablesData["holidays"][0]["detailKeys"][]="Division";
+		
 // -----------------end  prepare master-details data arrays ------------------------------//
 
 require_once(getabspath("classes/sql.php"));
@@ -1347,7 +1553,7 @@ function createSqlQuery_holidays()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "HID,  HolidayDate,  HolidayType,  HolidayDay,  FirstHalf,  SecondHalf,  HolidayDescription";
+$proto0["m_strFieldList"] = "HID,  HolidayDate,  HolidayType,  HolidayDay,  FirstHalf,  SecondHalf,  HolidayDescription,  Division";
 $proto0["m_strFrom"] = "FROM holidays";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -1485,45 +1691,60 @@ $proto18["m_alias"] = "";
 $obj = new SQLFieldListItem($proto18);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto20=array();
-$proto20["m_link"] = "SQLL_MAIN";
-			$proto21=array();
-$proto21["m_strName"] = "holidays";
-$proto21["m_srcTableName"] = "holidays";
-$proto21["m_columns"] = array();
-$proto21["m_columns"][] = "HID";
-$proto21["m_columns"][] = "HolidayDate";
-$proto21["m_columns"][] = "HolidayType";
-$proto21["m_columns"][] = "HolidayDay";
-$proto21["m_columns"][] = "FirstHalf";
-$proto21["m_columns"][] = "SecondHalf";
-$proto21["m_columns"][] = "WholeDay";
-$proto21["m_columns"][] = "WordayBeforeHoliday";
-$proto21["m_columns"][] = "HolidayDescription";
-$obj = new SQLTable($proto21);
+						$proto20=array();
+			$obj = new SQLField(array(
+	"m_strName" => "Division",
+	"m_strTable" => "holidays",
+	"m_srcTableName" => "holidays"
+));
 
-$proto20["m_table"] = $obj;
-$proto20["m_sql"] = "holidays";
-$proto20["m_alias"] = "";
+$proto20["m_sql"] = "Division";
 $proto20["m_srcTableName"] = "holidays";
-$proto22=array();
-$proto22["m_sql"] = "";
-$proto22["m_uniontype"] = "SQLL_UNKNOWN";
+$proto20["m_expr"]=$obj;
+$proto20["m_alias"] = "";
+$obj = new SQLFieldListItem($proto20);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto22=array();
+$proto22["m_link"] = "SQLL_MAIN";
+			$proto23=array();
+$proto23["m_strName"] = "holidays";
+$proto23["m_srcTableName"] = "holidays";
+$proto23["m_columns"] = array();
+$proto23["m_columns"][] = "HID";
+$proto23["m_columns"][] = "HolidayDate";
+$proto23["m_columns"][] = "HolidayType";
+$proto23["m_columns"][] = "HolidayDay";
+$proto23["m_columns"][] = "FirstHalf";
+$proto23["m_columns"][] = "SecondHalf";
+$proto23["m_columns"][] = "WholeDay";
+$proto23["m_columns"][] = "WordayBeforeHoliday";
+$proto23["m_columns"][] = "HolidayDescription";
+$proto23["m_columns"][] = "Division";
+$obj = new SQLTable($proto23);
+
+$proto22["m_table"] = $obj;
+$proto22["m_sql"] = "holidays";
+$proto22["m_alias"] = "";
+$proto22["m_srcTableName"] = "holidays";
+$proto24=array();
+$proto24["m_sql"] = "";
+$proto24["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto22["m_column"]=$obj;
-$proto22["m_contained"] = array();
-$proto22["m_strCase"] = "";
-$proto22["m_havingmode"] = false;
-$proto22["m_inBrackets"] = false;
-$proto22["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto22);
+$proto24["m_column"]=$obj;
+$proto24["m_contained"] = array();
+$proto24["m_strCase"] = "";
+$proto24["m_havingmode"] = false;
+$proto24["m_inBrackets"] = false;
+$proto24["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto24);
 
-$proto20["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto20);
+$proto22["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto22);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -1539,7 +1760,7 @@ $queryData_holidays = createSqlQuery_holidays();
 	
 		;
 
-							
+								
 
 $tdataholidays[".sqlquery"] = $queryData_holidays;
 

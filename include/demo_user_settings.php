@@ -321,7 +321,7 @@ $tdatademo_user[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																														
+																																																																																																																																																																																																																																																																		
 
 $tdatademo_user[".ajaxCodeSnippetAdded"] = false;
 
@@ -384,8 +384,8 @@ $tdatademo_user[".allSearchFields"][] = "EmployeeID";
 	$tdatademo_user[".allSearchFields"][] = "GracePeriodMins";
 	$tdatademo_user[".allSearchFields"][] = "WithAdditionalBreaks";
 	$tdatademo_user[".allSearchFields"][] = "IncludeBreakLate";
-	$tdatademo_user[".allSearchFields"][] = "LateFixPenalty";
 	$tdatademo_user[".allSearchFields"][] = "user_id";
+	$tdatademo_user[".allSearchFields"][] = "LateFixPenalty";
 	$tdatademo_user[".allSearchFields"][] = "CalMonthly";
 	$tdatademo_user[".allSearchFields"][] = "PresetMoNonTax";
 	$tdatademo_user[".allSearchFields"][] = "PreCalMoTaxable";
@@ -506,8 +506,8 @@ $tdatademo_user[".advSearchFields"][] = "NoLateDeduction";
 $tdatademo_user[".advSearchFields"][] = "GracePeriodMins";
 $tdatademo_user[".advSearchFields"][] = "WithAdditionalBreaks";
 $tdatademo_user[".advSearchFields"][] = "IncludeBreakLate";
-$tdatademo_user[".advSearchFields"][] = "LateFixPenalty";
 $tdatademo_user[".advSearchFields"][] = "user_id";
+$tdatademo_user[".advSearchFields"][] = "LateFixPenalty";
 $tdatademo_user[".advSearchFields"][] = "CalMonthly";
 $tdatademo_user[".advSearchFields"][] = "PresetMoNonTax";
 $tdatademo_user[".advSearchFields"][] = "PreCalMoTaxable";
@@ -825,7 +825,7 @@ $arrAddTabs[] = array('tabId'=>'Primary1',
 $arrAddTabs[] = array('tabId'=>'Leave_Allowance1',
 					  'tabName'=>"Leave Allowance",
 					  'nType'=>'0',
-					  'nOrder'=>26,
+					  'nOrder'=>27,
 					  'tabGroup'=>1,
 					  'arrFields'=> $tabFields,
 					  'expandSec'=>0);
@@ -838,7 +838,7 @@ $arrAddTabs[] = array('tabId'=>'Leave_Allowance1',
 $arrAddTabs[] = array('tabId'=>'Compensation1',
 					  'tabName'=>"Compensation",
 					  'nType'=>'0',
-					  'nOrder'=>31,
+					  'nOrder'=>32,
 					  'tabGroup'=>1,
 					  'arrFields'=> $tabFields,
 					  'expandSec'=>0);
@@ -865,7 +865,7 @@ $arrAddTabs[] = array('tabId'=>'Compensation1',
 $arrAddTabs[] = array('tabId'=>'Statutory1',
 					  'tabName'=>"Statutory",
 					  'nType'=>'0',
-					  'nOrder'=>34,
+					  'nOrder'=>35,
 					  'tabGroup'=>1,
 					  'arrFields'=> $tabFields,
 					  'expandSec'=>0);
@@ -884,7 +884,7 @@ $arrAddTabs[] = array('tabId'=>'Statutory1',
 $arrAddTabs[] = array('tabId'=>'Late_Penalty1',
 					  'tabName'=>"Late Penalty",
 					  'nType'=>'0',
-					  'nOrder'=>44,
+					  'nOrder'=>45,
 					  'tabGroup'=>1,
 					  'arrFields'=> $tabFields,
 					  'expandSec'=>0);
@@ -903,7 +903,7 @@ $arrAddTabs[] = array('tabId'=>'Late_Penalty1',
 $arrAddTabs[] = array('tabId'=>'Tax1',
 					  'tabName'=>"Tax",
 					  'nType'=>'0',
-					  'nOrder'=>50,
+					  'nOrder'=>51,
 					  'tabGroup'=>1,
 					  'arrFields'=> $tabFields,
 					  'expandSec'=>0);
@@ -928,7 +928,7 @@ $arrAddTabs[] = array('tabId'=>'Tax1',
 $arrAddTabs[] = array('tabId'=>'Approval1',
 					  'tabName'=>"Approval",
 					  'nType'=>'0',
-					  'nOrder'=>56,
+					  'nOrder'=>57,
 					  'tabGroup'=>1,
 					  'arrFields'=> $tabFields,
 					  'expandSec'=>0);
@@ -978,7 +978,7 @@ $arrViewTabs[] = array('tabId'=>'Primary1',
 $arrViewTabs[] = array('tabId'=>'Leave_Allowance1',
 					   'tabName'=>"Leave Allowance",
 					   'nType'=>'0',
-					   'nOrder'=>26,
+					   'nOrder'=>27,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -989,7 +989,7 @@ $arrViewTabs[] = array('tabId'=>'Leave_Allowance1',
 $arrViewTabs[] = array('tabId'=>'Compensation1',
 					   'tabName'=>"Compensation",
 					   'nType'=>'0',
-					   'nOrder'=>31,
+					   'nOrder'=>32,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -1007,7 +1007,7 @@ $arrViewTabs[] = array('tabId'=>'Compensation1',
 $arrViewTabs[] = array('tabId'=>'Statutory1',
 					   'tabName'=>"Statutory",
 					   'nType'=>'0',
-					   'nOrder'=>34,
+					   'nOrder'=>35,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -1021,7 +1021,7 @@ $arrViewTabs[] = array('tabId'=>'Statutory1',
 $arrViewTabs[] = array('tabId'=>'Late_Penalty1',
 					   'tabName'=>"Late Penalty",
 					   'nType'=>'0',
-					   'nOrder'=>44,
+					   'nOrder'=>45,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -1035,8 +1035,8 @@ $arrViewTabs[] = array('tabId'=>'Late_Penalty1',
 $arrViewTabs[] = array('tabId'=>'Tax1',
 					   'tabName'=>"Tax",
 					   'nType'=>'0',
-					   'nOrder'=>50,
-					   'tabGroup'=>1,
+					   'nOrder'=>51,
+					   'tabGroup'=>2,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
 	$tabFields = array();
@@ -1052,7 +1052,7 @@ $arrViewTabs[] = array('tabId'=>'Tax1',
 $arrViewTabs[] = array('tabId'=>'Approval1',
 					   'tabName'=>"Approval",
 					   'nType'=>'0',
-					   'nOrder'=>56,
+					   'nOrder'=>57,
 					   'tabGroup'=>2,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -1136,8 +1136,8 @@ $tdatademo_user[".listFields"][] = "NoLateDeduction";
 $tdatademo_user[".listFields"][] = "GracePeriodMins";
 $tdatademo_user[".listFields"][] = "WithAdditionalBreaks";
 $tdatademo_user[".listFields"][] = "IncludeBreakLate";
-$tdatademo_user[".listFields"][] = "LateFixPenalty";
 $tdatademo_user[".listFields"][] = "user_id";
+$tdatademo_user[".listFields"][] = "LateFixPenalty";
 $tdatademo_user[".listFields"][] = "CalMonthly";
 $tdatademo_user[".listFields"][] = "PresetMoNonTax";
 $tdatademo_user[".listFields"][] = "PreCalMoTaxable";
@@ -1199,8 +1199,8 @@ $tdatademo_user[".viewFields"][] = "NoLateDeduction";
 $tdatademo_user[".viewFields"][] = "GracePeriodMins";
 $tdatademo_user[".viewFields"][] = "WithAdditionalBreaks";
 $tdatademo_user[".viewFields"][] = "IncludeBreakLate";
-$tdatademo_user[".viewFields"][] = "LateFixPenalty";
 $tdatademo_user[".viewFields"][] = "user_id";
+$tdatademo_user[".viewFields"][] = "LateFixPenalty";
 $tdatademo_user[".viewFields"][] = "CalMonthly";
 $tdatademo_user[".viewFields"][] = "PresetMoNonTax";
 $tdatademo_user[".viewFields"][] = "PreCalMoTaxable";
@@ -1318,8 +1318,8 @@ $tdatademo_user[".masterListFields"][] = "NoLateDeduction";
 $tdatademo_user[".masterListFields"][] = "GracePeriodMins";
 $tdatademo_user[".masterListFields"][] = "WithAdditionalBreaks";
 $tdatademo_user[".masterListFields"][] = "IncludeBreakLate";
-$tdatademo_user[".masterListFields"][] = "LateFixPenalty";
 $tdatademo_user[".masterListFields"][] = "user_id";
+$tdatademo_user[".masterListFields"][] = "LateFixPenalty";
 $tdatademo_user[".masterListFields"][] = "CalMonthly";
 $tdatademo_user[".masterListFields"][] = "PresetMoNonTax";
 $tdatademo_user[".masterListFields"][] = "PreCalMoTaxable";
@@ -1512,10 +1512,6 @@ $tdatademo_user[".inlineEditFields"][] = "Approvedby";
 $tdatademo_user[".inlineEditFields"][] = "ApprovedDate";
 
 $tdatademo_user[".updateSelectedFields"] = array();
-$tdatademo_user[".updateSelectedFields"][] = "EmployeeID";
-$tdatademo_user[".updateSelectedFields"][] = "IDNo";
-$tdatademo_user[".updateSelectedFields"][] = "Photo";
-$tdatademo_user[".updateSelectedFields"][] = "user_name";
 $tdatademo_user[".updateSelectedFields"][] = "Employer";
 $tdatademo_user[".updateSelectedFields"][] = "Division";
 $tdatademo_user[".updateSelectedFields"][] = "Department";
@@ -1525,14 +1521,8 @@ $tdatademo_user[".updateSelectedFields"][] = "ExitDate";
 $tdatademo_user[".updateSelectedFields"][] = "Status";
 $tdatademo_user[".updateSelectedFields"][] = "Position";
 $tdatademo_user[".updateSelectedFields"][] = "Superior";
-$tdatademo_user[".updateSelectedFields"][] = "Mobile";
-$tdatademo_user[".updateSelectedFields"][] = "Address";
-$tdatademo_user[".updateSelectedFields"][] = "Email";
-$tdatademo_user[".updateSelectedFields"][] = "SSSNo";
-$tdatademo_user[".updateSelectedFields"][] = "PagIbigNo";
-$tdatademo_user[".updateSelectedFields"][] = "PhilHealthNo";
-$tdatademo_user[".updateSelectedFields"][] = "TIN";
-$tdatademo_user[".updateSelectedFields"][] = "AccountNo";
+$tdatademo_user[".updateSelectedFields"][] = "Superior2";
+$tdatademo_user[".updateSelectedFields"][] = "Bank";
 $tdatademo_user[".updateSelectedFields"][] = "AllowableSickLeave";
 $tdatademo_user[".updateSelectedFields"][] = "AllowableVacationLeave";
 $tdatademo_user[".updateSelectedFields"][] = "AllowableEmergencyLeave";
@@ -1603,8 +1593,8 @@ $tdatademo_user[".exportFields"][] = "NoLateDeduction";
 $tdatademo_user[".exportFields"][] = "GracePeriodMins";
 $tdatademo_user[".exportFields"][] = "WithAdditionalBreaks";
 $tdatademo_user[".exportFields"][] = "IncludeBreakLate";
-$tdatademo_user[".exportFields"][] = "LateFixPenalty";
 $tdatademo_user[".exportFields"][] = "user_id";
+$tdatademo_user[".exportFields"][] = "LateFixPenalty";
 $tdatademo_user[".exportFields"][] = "CalMonthly";
 $tdatademo_user[".exportFields"][] = "PresetMoNonTax";
 $tdatademo_user[".exportFields"][] = "PreCalMoTaxable";
@@ -1723,8 +1713,8 @@ $tdatademo_user[".printFields"][] = "NoLateDeduction";
 $tdatademo_user[".printFields"][] = "GracePeriodMins";
 $tdatademo_user[".printFields"][] = "WithAdditionalBreaks";
 $tdatademo_user[".printFields"][] = "IncludeBreakLate";
-$tdatademo_user[".printFields"][] = "LateFixPenalty";
 $tdatademo_user[".printFields"][] = "user_id";
+$tdatademo_user[".printFields"][] = "LateFixPenalty";
 $tdatademo_user[".printFields"][] = "CalMonthly";
 $tdatademo_user[".printFields"][] = "PresetMoNonTax";
 $tdatademo_user[".printFields"][] = "PreCalMoTaxable";
@@ -1894,8 +1884,7 @@ $tdatademo_user[".printFields"][] = "ApprovedDate";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -2031,8 +2020,7 @@ $tdatademo_user[".printFields"][] = "ApprovedDate";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -2173,8 +2161,7 @@ $tdatademo_user[".printFields"][] = "ApprovedDate";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -2305,8 +2292,7 @@ $tdatademo_user[".printFields"][] = "ApprovedDate";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -2437,8 +2423,7 @@ $tdatademo_user[".printFields"][] = "ApprovedDate";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -2569,8 +2554,7 @@ $tdatademo_user[".printFields"][] = "ApprovedDate";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -2701,8 +2685,7 @@ $tdatademo_user[".printFields"][] = "ApprovedDate";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -2993,8 +2976,7 @@ $tdatademo_user[".printFields"][] = "ApprovedDate";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -5126,8 +5108,8 @@ $tdatademo_user[".printFields"][] = "ApprovedDate";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 0;
-	$edata["LastYearFactor"] = 21;
+	$edata["InitialYearFactor"] = 10;
+	$edata["LastYearFactor"] = 10;
 
 	
 	
@@ -5321,8 +5303,7 @@ $tdatademo_user[".printFields"][] = "ApprovedDate";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -5453,8 +5434,7 @@ $tdatademo_user[".printFields"][] = "ApprovedDate";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -7471,8 +7451,7 @@ $tdatademo_user[".printFields"][] = "ApprovedDate";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -7603,8 +7582,7 @@ $tdatademo_user[".printFields"][] = "ApprovedDate";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -8186,7 +8164,7 @@ $tdatademo_user[".printFields"][] = "ApprovedDate";
 	
 		$edata["DateEditType"] = 13;
 	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 21;
+	$edata["LastYearFactor"] = 10;
 
 	
 	
@@ -8250,7 +8228,8 @@ $tdatademo_user[".printFields"][] = "ApprovedDate";
 
 		$fdata["bInlineEdit"] = true;
 
-	
+		$fdata["bUpdateSelected"] = true;
+
 
 		$fdata["bViewPage"] = true;
 
@@ -9564,7 +9543,8 @@ $tdatademo_user[".printFields"][] = "ApprovedDate";
 
 		$fdata["bInlineEdit"] = true;
 
-	
+		$fdata["bUpdateSelected"] = true;
+
 
 		$fdata["bViewPage"] = true;
 
@@ -10888,6 +10868,7 @@ $proto123["m_columns"][] = "PreCalMoTaxable";
 $proto123["m_columns"][] = "CalMonthly";
 $proto123["m_columns"][] = "TaxPerPeriod";
 $proto123["m_columns"][] = "Superior2";
+$proto123["m_columns"][] = "ExcludeBio";
 $obj = new SQLTable($proto123);
 
 $proto122["m_table"] = $obj;

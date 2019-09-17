@@ -547,6 +547,15 @@
 	.bs-gridcell[data-field=OPrincipal]:before {
 		content: "{$label loans OPrincipal}";
 	}
+	.bs-gridcell[data-field=DType]:before {
+		content: "{$label loans DType}";
+	}
+	.bs-gridcell[data-field=PerDay]:before {
+		content: "{$label loans PerDay}";
+	}
+	.bs-gridcell[data-field=LessAbsences]:before {
+		content: "{$label loans LessAbsences}";
+	}
 </style>
 <table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
 	<thead>
@@ -590,6 +599,45 @@
 									
 									
 									
+									{BEGIN DType_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$DType_class}" data-field=DType>
+									{BEGIN DType_fieldheader}
+																				<span {$DType_orderlinkattrs}>
+											{$label loans DType}
+										</span>
+									{END DType_fieldheader}
+									</th>
+									{END DType_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN PaymentPeriod_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$PaymentPeriod_class}" data-field=PaymentPeriod>
+									{BEGIN PaymentPeriod_fieldheader}
+																				<span {$PaymentPeriod_orderlinkattrs}>
+											{$label loans PaymentPeriod}
+										</span>
+									{END PaymentPeriod_fieldheader}
+									</th>
+									{END PaymentPeriod_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN LoanDescription_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$LoanDescription_class}" data-field=LoanDescription>
+									{BEGIN LoanDescription_fieldheader}
+																				<span {$LoanDescription_orderlinkattrs}>
+											{$label loans LoanDescription}
+										</span>
+									{END LoanDescription_fieldheader}
+									</th>
+									{END LoanDescription_fieldheadercolumn}
+									
+									
+									
+									
 									{BEGIN OPrincipal_fieldheadercolumn}
 									<th class="rnr-gridfieldlabel {$OPrincipal_class}" data-field=OPrincipal>
 									{BEGIN OPrincipal_fieldheader}
@@ -616,41 +664,15 @@
 									
 									
 									
-									{BEGIN MonthlyAmortization_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$MonthlyAmortization_class}" data-field=MonthlyAmortization>
-									{BEGIN MonthlyAmortization_fieldheader}
-																				<span {$MonthlyAmortization_orderlinkattrs}>
-											{$label loans MonthlyAmortization}
+									{BEGIN PerDay_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$PerDay_class}" data-field=PerDay>
+									{BEGIN PerDay_fieldheader}
+																				<span {$PerDay_orderlinkattrs}>
+											{$label loans PerDay}
 										</span>
-									{END MonthlyAmortization_fieldheader}
+									{END PerDay_fieldheader}
 									</th>
-									{END MonthlyAmortization_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN StartDate_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$StartDate_class}" data-field=StartDate>
-									{BEGIN StartDate_fieldheader}
-																				<span {$StartDate_orderlinkattrs}>
-											{$label loans StartDate}
-										</span>
-									{END StartDate_fieldheader}
-									</th>
-									{END StartDate_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN LoanDescription_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$LoanDescription_class}" data-field=LoanDescription>
-									{BEGIN LoanDescription_fieldheader}
-																				<span {$LoanDescription_orderlinkattrs}>
-											{$label loans LoanDescription}
-										</span>
-									{END LoanDescription_fieldheader}
-									</th>
-									{END LoanDescription_fieldheadercolumn}
+									{END PerDay_fieldheadercolumn}
 									
 									
 									
@@ -668,15 +690,41 @@
 									
 									
 									
-									{BEGIN PaymentPeriod_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$PaymentPeriod_class}" data-field=PaymentPeriod>
-									{BEGIN PaymentPeriod_fieldheader}
-																				<span {$PaymentPeriod_orderlinkattrs}>
-											{$label loans PaymentPeriod}
+									{BEGIN MonthlyAmortization_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$MonthlyAmortization_class}" data-field=MonthlyAmortization>
+									{BEGIN MonthlyAmortization_fieldheader}
+																				<span {$MonthlyAmortization_orderlinkattrs}>
+											{$label loans MonthlyAmortization}
 										</span>
-									{END PaymentPeriod_fieldheader}
+									{END MonthlyAmortization_fieldheader}
 									</th>
-									{END PaymentPeriod_fieldheadercolumn}
+									{END MonthlyAmortization_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN LessAbsences_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$LessAbsences_class}" data-field=LessAbsences>
+									{BEGIN LessAbsences_fieldheader}
+																				<span {$LessAbsences_orderlinkattrs}>
+											{$label loans LessAbsences}
+										</span>
+									{END LessAbsences_fieldheader}
+									</th>
+									{END LessAbsences_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN StartDate_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$StartDate_class}" data-field=StartDate>
+									{BEGIN StartDate_fieldheader}
+																				<span {$StartDate_orderlinkattrs}>
+											{$label loans StartDate}
+										</span>
+									{END StartDate_fieldheader}
+									</th>
+									{END StartDate_fieldheadercolumn}
 									
 									
 									
@@ -763,6 +811,27 @@
 {END EmployeeID_fieldcolumn}
 
 
+	{BEGIN DType_fieldcolumn}
+	<td class="bs-gridcell {$DType_class}"  data-field=DType {$rowstyle} {$recordattrs}>
+		{$DType_value}
+	</td>
+{END DType_fieldcolumn}
+
+
+	{BEGIN PaymentPeriod_fieldcolumn}
+	<td class="bs-gridcell {$PaymentPeriod_class}"  data-field=PaymentPeriod {$rowstyle} {$recordattrs}>
+		{$PaymentPeriod_value}
+	</td>
+{END PaymentPeriod_fieldcolumn}
+
+
+	{BEGIN LoanDescription_fieldcolumn}
+	<td class="bs-gridcell {$LoanDescription_class}"  data-field=LoanDescription {$rowstyle} {$recordattrs}>
+		{$LoanDescription_value}
+	</td>
+{END LoanDescription_fieldcolumn}
+
+
 	{BEGIN OPrincipal_fieldcolumn}
 	<td class="bs-gridcell {$OPrincipal_class}"  data-field=OPrincipal {$rowstyle} {$recordattrs}>
 		{$OPrincipal_value}
@@ -777,25 +846,11 @@
 {END Principal_fieldcolumn}
 
 
-	{BEGIN MonthlyAmortization_fieldcolumn}
-	<td class="bs-gridcell {$MonthlyAmortization_class}"  data-field=MonthlyAmortization {$rowstyle} {$recordattrs}>
-		{$MonthlyAmortization_value}
+	{BEGIN PerDay_fieldcolumn}
+	<td class="bs-gridcell {$PerDay_class}"  data-field=PerDay {$rowstyle} {$recordattrs}>
+		{$PerDay_value}
 	</td>
-{END MonthlyAmortization_fieldcolumn}
-
-
-	{BEGIN StartDate_fieldcolumn}
-	<td class="bs-gridcell {$StartDate_class}"  data-field=StartDate {$rowstyle} {$recordattrs}>
-		{$StartDate_value}
-	</td>
-{END StartDate_fieldcolumn}
-
-
-	{BEGIN LoanDescription_fieldcolumn}
-	<td class="bs-gridcell {$LoanDescription_class}"  data-field=LoanDescription {$rowstyle} {$recordattrs}>
-		{$LoanDescription_value}
-	</td>
-{END LoanDescription_fieldcolumn}
+{END PerDay_fieldcolumn}
 
 
 	{BEGIN PerPayrollAmount_fieldcolumn}
@@ -805,11 +860,25 @@
 {END PerPayrollAmount_fieldcolumn}
 
 
-	{BEGIN PaymentPeriod_fieldcolumn}
-	<td class="bs-gridcell {$PaymentPeriod_class}"  data-field=PaymentPeriod {$rowstyle} {$recordattrs}>
-		{$PaymentPeriod_value}
+	{BEGIN MonthlyAmortization_fieldcolumn}
+	<td class="bs-gridcell {$MonthlyAmortization_class}"  data-field=MonthlyAmortization {$rowstyle} {$recordattrs}>
+		{$MonthlyAmortization_value}
 	</td>
-{END PaymentPeriod_fieldcolumn}
+{END MonthlyAmortization_fieldcolumn}
+
+
+	{BEGIN LessAbsences_fieldcolumn}
+	<td class="bs-gridcell {$LessAbsences_class}"  data-field=LessAbsences {$rowstyle} {$recordattrs}>
+		{$LessAbsences_value}
+	</td>
+{END LessAbsences_fieldcolumn}
+
+
+	{BEGIN StartDate_fieldcolumn}
+	<td class="bs-gridcell {$StartDate_class}"  data-field=StartDate {$rowstyle} {$recordattrs}>
+		{$StartDate_value}
+	</td>
+{END StartDate_fieldcolumn}
 
 
 	{BEGIN Inactive_fieldcolumn}
@@ -848,6 +917,18 @@
 										<td class="bs-gridcell {$EmployeeID_class}" data-field="EmployeeID">
 																				</td>
 										{END EmployeeID_fieldfootercolumn}
+										{BEGIN DType_fieldfootercolumn}
+										<td class="bs-gridcell {$DType_class}" data-field="DType">
+																				</td>
+										{END DType_fieldfootercolumn}
+										{BEGIN PaymentPeriod_fieldfootercolumn}
+										<td class="bs-gridcell {$PaymentPeriod_class}" data-field="PaymentPeriod">
+																				</td>
+										{END PaymentPeriod_fieldfootercolumn}
+										{BEGIN LoanDescription_fieldfootercolumn}
+										<td class="bs-gridcell {$LoanDescription_class}" data-field="LoanDescription">
+																				</td>
+										{END LoanDescription_fieldfootercolumn}
 										{BEGIN OPrincipal_fieldfootercolumn}
 										<td class="bs-gridcell {$OPrincipal_class}" data-field="OPrincipal">
 																					{BEGIN OPrincipal_showtotal}
@@ -864,22 +945,10 @@
 											{END Principal_showtotal}
 										</td>
 										{END Principal_fieldfootercolumn}
-										{BEGIN MonthlyAmortization_fieldfootercolumn}
-										<td class="bs-gridcell {$MonthlyAmortization_class}" data-field="MonthlyAmortization">
-																					{BEGIN MonthlyAmortization_showtotal}
-																							Total:
-											{$MonthlyAmortization_total}
-											{END MonthlyAmortization_showtotal}
-										</td>
-										{END MonthlyAmortization_fieldfootercolumn}
-										{BEGIN StartDate_fieldfootercolumn}
-										<td class="bs-gridcell {$StartDate_class}" data-field="StartDate">
+										{BEGIN PerDay_fieldfootercolumn}
+										<td class="bs-gridcell {$PerDay_class}" data-field="PerDay">
 																				</td>
-										{END StartDate_fieldfootercolumn}
-										{BEGIN LoanDescription_fieldfootercolumn}
-										<td class="bs-gridcell {$LoanDescription_class}" data-field="LoanDescription">
-																				</td>
-										{END LoanDescription_fieldfootercolumn}
+										{END PerDay_fieldfootercolumn}
 										{BEGIN PerPayrollAmount_fieldfootercolumn}
 										<td class="bs-gridcell {$PerPayrollAmount_class}" data-field="PerPayrollAmount">
 																					{BEGIN PerPayrollAmount_showtotal}
@@ -888,10 +957,22 @@
 											{END PerPayrollAmount_showtotal}
 										</td>
 										{END PerPayrollAmount_fieldfootercolumn}
-										{BEGIN PaymentPeriod_fieldfootercolumn}
-										<td class="bs-gridcell {$PaymentPeriod_class}" data-field="PaymentPeriod">
+										{BEGIN MonthlyAmortization_fieldfootercolumn}
+										<td class="bs-gridcell {$MonthlyAmortization_class}" data-field="MonthlyAmortization">
+																					{BEGIN MonthlyAmortization_showtotal}
+																							Total:
+											{$MonthlyAmortization_total}
+											{END MonthlyAmortization_showtotal}
+										</td>
+										{END MonthlyAmortization_fieldfootercolumn}
+										{BEGIN LessAbsences_fieldfootercolumn}
+										<td class="bs-gridcell {$LessAbsences_class}" data-field="LessAbsences">
 																				</td>
-										{END PaymentPeriod_fieldfootercolumn}
+										{END LessAbsences_fieldfootercolumn}
+										{BEGIN StartDate_fieldfootercolumn}
+										<td class="bs-gridcell {$StartDate_class}" data-field="StartDate">
+																				</td>
+										{END StartDate_fieldfootercolumn}
 										{BEGIN Inactive_fieldfootercolumn}
 										<td class="bs-gridcell {$Inactive_class}" data-field="Inactive">
 																				</td>

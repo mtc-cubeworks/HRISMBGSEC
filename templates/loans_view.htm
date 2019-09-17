@@ -97,6 +97,36 @@
 		</div>
 	</div>
 {END EmployeeID_fieldblock}
+					{BEGIN DType_fieldblock}
+	<div class="{$fielddispclass_DType} col-md-6 bs-viewcontrolgroup" data-fieldname="DType">
+		<label class="control-label" for="{$labelfor_DType}">
+			{$label loans DType}
+		</label>
+		<div class="" >
+			{$DType_value}&nbsp;
+		</div>
+	</div>
+{END DType_fieldblock}
+					{BEGIN PaymentPeriod_fieldblock}
+	<div class="{$fielddispclass_PaymentPeriod} col-md-6 bs-viewcontrolgroup" data-fieldname="PaymentPeriod">
+		<label class="control-label" for="{$labelfor_PaymentPeriod}">
+			{$label loans PaymentPeriod}
+		</label>
+		<div class="" >
+			{$PaymentPeriod_value}&nbsp;
+		</div>
+	</div>
+{END PaymentPeriod_fieldblock}
+					{BEGIN LoanDescription_fieldblock}
+	<div class="{$fielddispclass_LoanDescription} col-md-6 bs-viewcontrolgroup" data-fieldname="LoanDescription">
+		<label class="control-label" for="{$labelfor_LoanDescription}">
+			{$label loans LoanDescription}
+		</label>
+		<div class="" >
+			{$LoanDescription_value}&nbsp;
+		</div>
+	</div>
+{END LoanDescription_fieldblock}
 					{BEGIN OPrincipal_fieldblock}
 	<div class="{$fielddispclass_OPrincipal} col-md-6 bs-viewcontrolgroup" data-fieldname="OPrincipal">
 		<label class="control-label" for="{$labelfor_OPrincipal}">
@@ -117,36 +147,16 @@
 		</div>
 	</div>
 {END Principal_fieldblock}
-					{BEGIN MonthlyAmortization_fieldblock}
-	<div class="{$fielddispclass_MonthlyAmortization} col-md-6 bs-viewcontrolgroup" data-fieldname="MonthlyAmortization">
-		<label class="control-label" for="{$labelfor_MonthlyAmortization}">
-			{$label loans MonthlyAmortization}
+					{BEGIN PerDay_fieldblock}
+	<div class="{$fielddispclass_PerDay} col-md-6 bs-viewcontrolgroup" data-fieldname="PerDay">
+		<label class="control-label" for="{$labelfor_PerDay}">
+			{$label loans PerDay}
 		</label>
 		<div class="" >
-			{$MonthlyAmortization_value}&nbsp;
+			{$PerDay_value}&nbsp;
 		</div>
 	</div>
-{END MonthlyAmortization_fieldblock}
-					{BEGIN StartDate_fieldblock}
-	<div class="{$fielddispclass_StartDate} col-md-6 bs-viewcontrolgroup" data-fieldname="StartDate">
-		<label class="control-label" for="{$labelfor_StartDate}">
-			{$label loans StartDate}
-		</label>
-		<div class="" >
-			{$StartDate_value}&nbsp;
-		</div>
-	</div>
-{END StartDate_fieldblock}
-					{BEGIN LoanDescription_fieldblock}
-	<div class="{$fielddispclass_LoanDescription} col-md-6 bs-viewcontrolgroup" data-fieldname="LoanDescription">
-		<label class="control-label" for="{$labelfor_LoanDescription}">
-			{$label loans LoanDescription}
-		</label>
-		<div class="" >
-			{$LoanDescription_value}&nbsp;
-		</div>
-	</div>
-{END LoanDescription_fieldblock}
+{END PerDay_fieldblock}
 					{BEGIN PerPayrollAmount_fieldblock}
 	<div class="{$fielddispclass_PerPayrollAmount} col-md-6 bs-viewcontrolgroup" data-fieldname="PerPayrollAmount">
 		<label class="control-label" for="{$labelfor_PerPayrollAmount}">
@@ -157,16 +167,36 @@
 		</div>
 	</div>
 {END PerPayrollAmount_fieldblock}
-					{BEGIN PaymentPeriod_fieldblock}
-	<div class="{$fielddispclass_PaymentPeriod} col-md-6 bs-viewcontrolgroup" data-fieldname="PaymentPeriod">
-		<label class="control-label" for="{$labelfor_PaymentPeriod}">
-			{$label loans PaymentPeriod}
+					{BEGIN MonthlyAmortization_fieldblock}
+	<div class="{$fielddispclass_MonthlyAmortization} col-md-6 bs-viewcontrolgroup" data-fieldname="MonthlyAmortization">
+		<label class="control-label" for="{$labelfor_MonthlyAmortization}">
+			{$label loans MonthlyAmortization}
 		</label>
 		<div class="" >
-			{$PaymentPeriod_value}&nbsp;
+			{$MonthlyAmortization_value}&nbsp;
 		</div>
 	</div>
-{END PaymentPeriod_fieldblock}
+{END MonthlyAmortization_fieldblock}
+					{BEGIN LessAbsences_fieldblock}
+	<div class="{$fielddispclass_LessAbsences} col-md-6 bs-viewcontrolgroup" data-fieldname="LessAbsences">
+		<label class="control-label" for="{$labelfor_LessAbsences}">
+			{$label loans LessAbsences}
+		</label>
+		<div class="" >
+			{$LessAbsences_value}&nbsp;
+		</div>
+	</div>
+{END LessAbsences_fieldblock}
+					{BEGIN StartDate_fieldblock}
+	<div class="{$fielddispclass_StartDate} col-md-6 bs-viewcontrolgroup" data-fieldname="StartDate">
+		<label class="control-label" for="{$labelfor_StartDate}">
+			{$label loans StartDate}
+		</label>
+		<div class="" >
+			{$StartDate_value}&nbsp;
+		</div>
+	</div>
+{END StartDate_fieldblock}
 					{BEGIN Inactive_fieldblock}
 	<div class="{$fielddispclass_Inactive} col-md-6 bs-viewcontrolgroup" data-fieldname="Inactive">
 		<label class="control-label" for="{$labelfor_Inactive}">

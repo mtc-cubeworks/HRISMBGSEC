@@ -138,7 +138,7 @@ $tdataapprovalbutton[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																														
+																																																																																																																																																																																																																																																																		
 
 $tdataapprovalbutton[".ajaxCodeSnippetAdded"] = false;
 
@@ -310,8 +310,7 @@ $tdataapprovalbutton[".printFields"][] = "SelectApproval";
 	$fdata["FieldType"] = 3;
 
 	
-		$fdata["AutoInc"] = true;
-
+	
 	
 			
 		$fdata["bListPage"] = true;

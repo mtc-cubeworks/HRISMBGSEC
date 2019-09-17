@@ -206,6 +206,9 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsdemo_user1["English"]["Superior2"] = "Manager";
 	$fieldToolTipsdemo_user1["English"]["Superior2"] = "";
 	$placeHoldersdemo_user1["English"]["Superior2"] = "";
+	$fieldLabelsdemo_user1["English"]["ExcludeBio"] = "Exclude Biometric Login";
+	$fieldToolTipsdemo_user1["English"]["ExcludeBio"] = "";
+	$placeHoldersdemo_user1["English"]["ExcludeBio"] = "";
 	if (count($fieldToolTipsdemo_user1["English"]))
 		$tdatademo_user1[".isUseToolTips"] = true;
 }
@@ -236,6 +239,9 @@ if(mlang_getcurrentlang()=="")
 	$fieldLabelsdemo_user1[""]["Superior2"] = "Superior2";
 	$fieldToolTipsdemo_user1[""]["Superior2"] = "";
 	$placeHoldersdemo_user1[""]["Superior2"] = "";
+	$fieldLabelsdemo_user1[""]["ExcludeBio"] = "Exclude Bio";
+	$fieldToolTipsdemo_user1[""]["ExcludeBio"] = "";
+	$placeHoldersdemo_user1[""]["ExcludeBio"] = "";
 	if (count($fieldToolTipsdemo_user1[""]))
 		$tdatademo_user1[".isUseToolTips"] = true;
 }
@@ -328,11 +334,11 @@ $tdatademo_user1[".rowHighlite"] = true;
 
 
 
-																																																																													
-																																																																																																																																																																																								
+																																																					
+																																																																																																																																																																
 							
 							
-											
+																																															
 
 $tdatademo_user1[".ajaxCodeSnippetAdded"] = false;
 
@@ -376,6 +382,7 @@ $tdatademo_user1[".allSearchFields"][] = "EmployeeID";
 	$tdatademo_user1[".allSearchFields"][] = "TIN";
 	$tdatademo_user1[".allSearchFields"][] = "Bank";
 	$tdatademo_user1[".allSearchFields"][] = "AccountNo";
+	$tdatademo_user1[".allSearchFields"][] = "ExcludeBio";
 	$tdatademo_user1[".allSearchFields"][] = "AllowableSickLeave";
 	$tdatademo_user1[".allSearchFields"][] = "AllowableVacationLeave";
 	$tdatademo_user1[".allSearchFields"][] = "AllowableEmergencyLeave";
@@ -477,6 +484,7 @@ $tdatademo_user1[".googleLikeFields"][] = "CalMonthly";
 $tdatademo_user1[".googleLikeFields"][] = "TaxPeriods";
 $tdatademo_user1[".googleLikeFields"][] = "TaxPerPeriod";
 $tdatademo_user1[".googleLikeFields"][] = "Superior2";
+$tdatademo_user1[".googleLikeFields"][] = "ExcludeBio";
 
 
 $tdatademo_user1[".advSearchFields"] = array();
@@ -504,6 +512,7 @@ $tdatademo_user1[".advSearchFields"][] = "PhilHealthNo";
 $tdatademo_user1[".advSearchFields"][] = "TIN";
 $tdatademo_user1[".advSearchFields"][] = "Bank";
 $tdatademo_user1[".advSearchFields"][] = "AccountNo";
+$tdatademo_user1[".advSearchFields"][] = "ExcludeBio";
 $tdatademo_user1[".advSearchFields"][] = "AllowableSickLeave";
 $tdatademo_user1[".advSearchFields"][] = "AllowableVacationLeave";
 $tdatademo_user1[".advSearchFields"][] = "AllowableEmergencyLeave";
@@ -596,7 +605,7 @@ $tdatademo_user1[".orderindexes"] = array();
 	$tdatademo_user1[".orderindexes"][] = array(2, (1 ? "ASC" : "DESC"), "user_name");
 
 
-$tdatademo_user1[".sqlHead"] = "SELECT user_id,  user_name,  Photo,  SSSNo,  TIN,  Mobile,  Address,  Email,  EmployeeType,  BasicMonthlyPay,  BasicDailyPay,  EmployeeID,  Division,  Status,  Department,  AllowableSickLeave,  AllowableVacationLeave,  AllowableEmergencyLeave,  SSSEE,  SSSER,  PhilHealthEE,  PhilHealthER,  PagIbigEE,  AllowablePaternityLeave,  HiredDate,  Inactive,  ExitDate,  PagIbigER,  PagIbigNo,  PhilHealthNo,  SSSEC,  `Level`,  DateCreated,  ApprovedDate,  Approved,  Approvedby,  Preparedby,  Checkedby,  CheckedDate,  Checked,  `Position`,  Superior,  Employer,  IDNo,  AccountNo,  LateFixPenalty,  DoNotUpdateContributions,  ExcludeContributionOnPayroll,  Bank,  Birthday,  DeMinimis,  NoLateDeduction,  IncludeBreakLate,  GracePeriodMins,  WithAdditionalBreaks,  PresetMoNonTax,  PreCalMoTaxable,  CalMonthly,  TaxPeriods,  TaxPerPeriod,  Superior2";
+$tdatademo_user1[".sqlHead"] = "SELECT user_id,  user_name,  Photo,  SSSNo,  TIN,  Mobile,  Address,  Email,  EmployeeType,  BasicMonthlyPay,  BasicDailyPay,  EmployeeID,  Division,  Status,  Department,  AllowableSickLeave,  AllowableVacationLeave,  AllowableEmergencyLeave,  SSSEE,  SSSER,  PhilHealthEE,  PhilHealthER,  PagIbigEE,  AllowablePaternityLeave,  HiredDate,  Inactive,  ExitDate,  PagIbigER,  PagIbigNo,  PhilHealthNo,  SSSEC,  `Level`,  DateCreated,  ApprovedDate,  Approved,  Approvedby,  Preparedby,  Checkedby,  CheckedDate,  Checked,  `Position`,  Superior,  Employer,  IDNo,  AccountNo,  LateFixPenalty,  DoNotUpdateContributions,  ExcludeContributionOnPayroll,  Bank,  Birthday,  DeMinimis,  NoLateDeduction,  IncludeBreakLate,  GracePeriodMins,  WithAdditionalBreaks,  PresetMoNonTax,  PreCalMoTaxable,  CalMonthly,  TaxPeriods,  TaxPerPeriod,  Superior2,  ExcludeBio";
 $tdatademo_user1[".sqlFrom"] = "FROM demo_user";
 $tdatademo_user1[".sqlWhereExpr"] = "";
 $tdatademo_user1[".sqlTail"] = "";
@@ -654,6 +663,8 @@ $arrEditTabs = array();
 		$tabFields[] = "Bank";
 	
 		$tabFields[] = "AccountNo";
+	
+		$tabFields[] = "ExcludeBio";
 $arrEditTabs[] = array('tabId'=>'Primary1',
 					   'tabName'=>"Primary",
 					   'nType'=>'0',
@@ -674,7 +685,7 @@ $arrEditTabs[] = array('tabId'=>'Primary1',
 $arrEditTabs[] = array('tabId'=>'New_tab1',
 					   'tabName'=>"Leave Allowance",
 					   'nType'=>'0',
-					   'nOrder'=>26,
+					   'nOrder'=>27,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -693,7 +704,7 @@ $arrEditTabs[] = array('tabId'=>'New_tab1',
 $arrEditTabs[] = array('tabId'=>'Compensation1',
 					   'tabName'=>"Compensation",
 					   'nType'=>'0',
-					   'nOrder'=>31,
+					   'nOrder'=>32,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -720,7 +731,7 @@ $arrEditTabs[] = array('tabId'=>'Compensation1',
 $arrEditTabs[] = array('tabId'=>'Statutory1',
 					   'tabName'=>"Statutory",
 					   'nType'=>'0',
-					   'nOrder'=>37,
+					   'nOrder'=>38,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -739,7 +750,7 @@ $arrEditTabs[] = array('tabId'=>'Statutory1',
 $arrEditTabs[] = array('tabId'=>'Late_Penalty1',
 					   'tabName'=>"Late Penalty",
 					   'nType'=>'0',
-					   'nOrder'=>47,
+					   'nOrder'=>48,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -758,7 +769,7 @@ $arrEditTabs[] = array('tabId'=>'Late_Penalty1',
 $arrEditTabs[] = array('tabId'=>'Tax1',
 					   'tabName'=>"Tax",
 					   'nType'=>'0',
-					   'nOrder'=>53,
+					   'nOrder'=>54,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -783,7 +794,7 @@ $arrEditTabs[] = array('tabId'=>'Tax1',
 $arrEditTabs[] = array('tabId'=>'Approval1',
 					   'tabName'=>"Approval",
 					   'nType'=>'0',
-					   'nOrder'=>59,
+					   'nOrder'=>60,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -794,6 +805,8 @@ $tdatademo_user1[".arrEditTabs"] = $arrEditTabs;
 $arrAddTabs = array();
 	$tabFields = array();
 	
+	
+		$tabFields[] = "ExcludeBio";
 $arrAddTabs[] = array('tabId'=>'Primary1',
 					  'tabName'=>"Primary",
 					  'nType'=>'0',
@@ -806,7 +819,7 @@ $arrAddTabs[] = array('tabId'=>'Primary1',
 $arrAddTabs[] = array('tabId'=>'New_tab1',
 					  'tabName'=>"Leave Allowance",
 					  'nType'=>'0',
-					  'nOrder'=>26,
+					  'nOrder'=>27,
 					  'tabGroup'=>1,
 					  'arrFields'=> $tabFields,
 					  'expandSec'=>0);
@@ -815,7 +828,7 @@ $arrAddTabs[] = array('tabId'=>'New_tab1',
 $arrAddTabs[] = array('tabId'=>'Compensation1',
 					  'tabName'=>"Compensation",
 					  'nType'=>'0',
-					  'nOrder'=>31,
+					  'nOrder'=>32,
 					  'tabGroup'=>1,
 					  'arrFields'=> $tabFields,
 					  'expandSec'=>0);
@@ -824,7 +837,7 @@ $arrAddTabs[] = array('tabId'=>'Compensation1',
 $arrAddTabs[] = array('tabId'=>'Statutory1',
 					  'tabName'=>"Statutory",
 					  'nType'=>'0',
-					  'nOrder'=>37,
+					  'nOrder'=>38,
 					  'tabGroup'=>1,
 					  'arrFields'=> $tabFields,
 					  'expandSec'=>0);
@@ -833,7 +846,7 @@ $arrAddTabs[] = array('tabId'=>'Statutory1',
 $arrAddTabs[] = array('tabId'=>'Late_Penalty1',
 					  'tabName'=>"Late Penalty",
 					  'nType'=>'0',
-					  'nOrder'=>47,
+					  'nOrder'=>48,
 					  'tabGroup'=>1,
 					  'arrFields'=> $tabFields,
 					  'expandSec'=>0);
@@ -842,7 +855,7 @@ $arrAddTabs[] = array('tabId'=>'Late_Penalty1',
 $arrAddTabs[] = array('tabId'=>'Tax1',
 					  'tabName'=>"Tax",
 					  'nType'=>'0',
-					  'nOrder'=>53,
+					  'nOrder'=>54,
 					  'tabGroup'=>1,
 					  'arrFields'=> $tabFields,
 					  'expandSec'=>0);
@@ -851,7 +864,7 @@ $arrAddTabs[] = array('tabId'=>'Tax1',
 $arrAddTabs[] = array('tabId'=>'Approval1',
 					  'tabName'=>"Approval",
 					  'nType'=>'0',
-					  'nOrder'=>59,
+					  'nOrder'=>60,
 					  'tabGroup'=>1,
 					  'arrFields'=> $tabFields,
 					  'expandSec'=>0);
@@ -885,6 +898,7 @@ $arrViewTabs = array();
 	$tabFields[] = "TIN";
 	$tabFields[] = "Bank";
 	$tabFields[] = "AccountNo";
+	$tabFields[] = "ExcludeBio";
 $arrViewTabs[] = array('tabId'=>'Primary1',
 					   'tabName'=>"Primary",
 					   'nType'=>'0',
@@ -901,7 +915,7 @@ $arrViewTabs[] = array('tabId'=>'Primary1',
 $arrViewTabs[] = array('tabId'=>'New_tab1',
 					   'tabName'=>"Leave Allowance",
 					   'nType'=>'0',
-					   'nOrder'=>26,
+					   'nOrder'=>27,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -915,7 +929,7 @@ $arrViewTabs[] = array('tabId'=>'New_tab1',
 $arrViewTabs[] = array('tabId'=>'Compensation1',
 					   'tabName'=>"Compensation",
 					   'nType'=>'0',
-					   'nOrder'=>31,
+					   'nOrder'=>32,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -933,7 +947,7 @@ $arrViewTabs[] = array('tabId'=>'Compensation1',
 $arrViewTabs[] = array('tabId'=>'Statutory1',
 					   'tabName'=>"Statutory",
 					   'nType'=>'0',
-					   'nOrder'=>37,
+					   'nOrder'=>38,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -947,7 +961,7 @@ $arrViewTabs[] = array('tabId'=>'Statutory1',
 $arrViewTabs[] = array('tabId'=>'Late_Penalty1',
 					   'tabName'=>"Late Penalty",
 					   'nType'=>'0',
-					   'nOrder'=>47,
+					   'nOrder'=>48,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -961,7 +975,7 @@ $arrViewTabs[] = array('tabId'=>'Late_Penalty1',
 $arrViewTabs[] = array('tabId'=>'Tax1',
 					   'tabName'=>"Tax",
 					   'nType'=>'0',
-					   'nOrder'=>53,
+					   'nOrder'=>54,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -978,7 +992,7 @@ $arrViewTabs[] = array('tabId'=>'Tax1',
 $arrViewTabs[] = array('tabId'=>'Approval1',
 					   'tabName'=>"Approval",
 					   'nType'=>'0',
-					   'nOrder'=>59,
+					   'nOrder'=>60,
 					   'tabGroup'=>1,
 					   'arrFields'=> $tabFields,
 					   'expandSec'=>0);
@@ -1043,6 +1057,7 @@ $tdatademo_user1[".listFields"][] = "PhilHealthNo";
 $tdatademo_user1[".listFields"][] = "TIN";
 $tdatademo_user1[".listFields"][] = "Bank";
 $tdatademo_user1[".listFields"][] = "AccountNo";
+$tdatademo_user1[".listFields"][] = "ExcludeBio";
 $tdatademo_user1[".listFields"][] = "AllowableSickLeave";
 $tdatademo_user1[".listFields"][] = "AllowableVacationLeave";
 $tdatademo_user1[".listFields"][] = "AllowableEmergencyLeave";
@@ -1071,8 +1086,8 @@ $tdatademo_user1[".listFields"][] = "PresetMoNonTax";
 $tdatademo_user1[".listFields"][] = "PreCalMoTaxable";
 $tdatademo_user1[".listFields"][] = "TaxPeriods";
 $tdatademo_user1[".listFields"][] = "TaxPerPeriod";
-$tdatademo_user1[".listFields"][] = "Preparedby";
 $tdatademo_user1[".listFields"][] = "user_id";
+$tdatademo_user1[".listFields"][] = "Preparedby";
 $tdatademo_user1[".listFields"][] = "Checked";
 $tdatademo_user1[".listFields"][] = "Checkedby";
 $tdatademo_user1[".listFields"][] = "CheckedDate";
@@ -1109,6 +1124,7 @@ $tdatademo_user1[".viewFields"][] = "PhilHealthNo";
 $tdatademo_user1[".viewFields"][] = "TIN";
 $tdatademo_user1[".viewFields"][] = "Bank";
 $tdatademo_user1[".viewFields"][] = "AccountNo";
+$tdatademo_user1[".viewFields"][] = "ExcludeBio";
 $tdatademo_user1[".viewFields"][] = "AllowableSickLeave";
 $tdatademo_user1[".viewFields"][] = "AllowableVacationLeave";
 $tdatademo_user1[".viewFields"][] = "AllowableEmergencyLeave";
@@ -1148,6 +1164,7 @@ $tdatademo_user1[".viewFields"][] = "ApprovedDate";
 $tdatademo_user1[".viewFields"][] = "DateCreated";
 
 $tdatademo_user1[".addFields"] = array();
+$tdatademo_user1[".addFields"][] = "ExcludeBio";
 
 $tdatademo_user1[".masterListFields"] = array();
 $tdatademo_user1[".masterListFields"][] = "EmployeeID";
@@ -1174,6 +1191,7 @@ $tdatademo_user1[".masterListFields"][] = "PhilHealthNo";
 $tdatademo_user1[".masterListFields"][] = "TIN";
 $tdatademo_user1[".masterListFields"][] = "Bank";
 $tdatademo_user1[".masterListFields"][] = "AccountNo";
+$tdatademo_user1[".masterListFields"][] = "ExcludeBio";
 $tdatademo_user1[".masterListFields"][] = "AllowableSickLeave";
 $tdatademo_user1[".masterListFields"][] = "AllowableVacationLeave";
 $tdatademo_user1[".masterListFields"][] = "AllowableEmergencyLeave";
@@ -1213,6 +1231,7 @@ $tdatademo_user1[".masterListFields"][] = "ApprovedDate";
 $tdatademo_user1[".masterListFields"][] = "DateCreated";
 
 $tdatademo_user1[".inlineAddFields"] = array();
+$tdatademo_user1[".inlineAddFields"][] = "ExcludeBio";
 
 $tdatademo_user1[".editFields"] = array();
 $tdatademo_user1[".editFields"][] = "EmployeeID";
@@ -1239,6 +1258,7 @@ $tdatademo_user1[".editFields"][] = "PhilHealthNo";
 $tdatademo_user1[".editFields"][] = "TIN";
 $tdatademo_user1[".editFields"][] = "Bank";
 $tdatademo_user1[".editFields"][] = "AccountNo";
+$tdatademo_user1[".editFields"][] = "ExcludeBio";
 $tdatademo_user1[".editFields"][] = "AllowableSickLeave";
 $tdatademo_user1[".editFields"][] = "AllowableVacationLeave";
 $tdatademo_user1[".editFields"][] = "AllowableEmergencyLeave";
@@ -1301,6 +1321,7 @@ $tdatademo_user1[".inlineEditFields"][] = "PhilHealthNo";
 $tdatademo_user1[".inlineEditFields"][] = "TIN";
 $tdatademo_user1[".inlineEditFields"][] = "Bank";
 $tdatademo_user1[".inlineEditFields"][] = "AccountNo";
+$tdatademo_user1[".inlineEditFields"][] = "ExcludeBio";
 $tdatademo_user1[".inlineEditFields"][] = "AllowableSickLeave";
 $tdatademo_user1[".inlineEditFields"][] = "AllowableVacationLeave";
 $tdatademo_user1[".inlineEditFields"][] = "AllowableEmergencyLeave";
@@ -1339,27 +1360,16 @@ $tdatademo_user1[".inlineEditFields"][] = "ApprovedDate";
 $tdatademo_user1[".inlineEditFields"][] = "DateCreated";
 
 $tdatademo_user1[".updateSelectedFields"] = array();
-$tdatademo_user1[".updateSelectedFields"][] = "EmployeeID";
-$tdatademo_user1[".updateSelectedFields"][] = "IDNo";
-$tdatademo_user1[".updateSelectedFields"][] = "Photo";
-$tdatademo_user1[".updateSelectedFields"][] = "user_name";
 $tdatademo_user1[".updateSelectedFields"][] = "Employer";
 $tdatademo_user1[".updateSelectedFields"][] = "Division";
 $tdatademo_user1[".updateSelectedFields"][] = "Department";
 $tdatademo_user1[".updateSelectedFields"][] = "HiredDate";
-$tdatademo_user1[".updateSelectedFields"][] = "Inactive";
 $tdatademo_user1[".updateSelectedFields"][] = "ExitDate";
 $tdatademo_user1[".updateSelectedFields"][] = "Status";
 $tdatademo_user1[".updateSelectedFields"][] = "Position";
 $tdatademo_user1[".updateSelectedFields"][] = "Superior";
-$tdatademo_user1[".updateSelectedFields"][] = "Mobile";
-$tdatademo_user1[".updateSelectedFields"][] = "Address";
-$tdatademo_user1[".updateSelectedFields"][] = "Email";
-$tdatademo_user1[".updateSelectedFields"][] = "SSSNo";
-$tdatademo_user1[".updateSelectedFields"][] = "PagIbigNo";
-$tdatademo_user1[".updateSelectedFields"][] = "PhilHealthNo";
-$tdatademo_user1[".updateSelectedFields"][] = "TIN";
-$tdatademo_user1[".updateSelectedFields"][] = "AccountNo";
+$tdatademo_user1[".updateSelectedFields"][] = "Superior2";
+$tdatademo_user1[".updateSelectedFields"][] = "Bank";
 $tdatademo_user1[".updateSelectedFields"][] = "AllowableSickLeave";
 $tdatademo_user1[".updateSelectedFields"][] = "AllowableVacationLeave";
 $tdatademo_user1[".updateSelectedFields"][] = "AllowableEmergencyLeave";
@@ -1413,6 +1423,7 @@ $tdatademo_user1[".exportFields"][] = "PhilHealthNo";
 $tdatademo_user1[".exportFields"][] = "TIN";
 $tdatademo_user1[".exportFields"][] = "Bank";
 $tdatademo_user1[".exportFields"][] = "AccountNo";
+$tdatademo_user1[".exportFields"][] = "ExcludeBio";
 $tdatademo_user1[".exportFields"][] = "AllowableSickLeave";
 $tdatademo_user1[".exportFields"][] = "AllowableVacationLeave";
 $tdatademo_user1[".exportFields"][] = "AllowableEmergencyLeave";
@@ -1513,6 +1524,7 @@ $tdatademo_user1[".importFields"][] = "CalMonthly";
 $tdatademo_user1[".importFields"][] = "TaxPeriods";
 $tdatademo_user1[".importFields"][] = "TaxPerPeriod";
 $tdatademo_user1[".importFields"][] = "Superior2";
+$tdatademo_user1[".importFields"][] = "ExcludeBio";
 
 $tdatademo_user1[".printFields"] = array();
 $tdatademo_user1[".printFields"][] = "EmployeeID";
@@ -1539,6 +1551,7 @@ $tdatademo_user1[".printFields"][] = "PhilHealthNo";
 $tdatademo_user1[".printFields"][] = "TIN";
 $tdatademo_user1[".printFields"][] = "Bank";
 $tdatademo_user1[".printFields"][] = "AccountNo";
+$tdatademo_user1[".printFields"][] = "ExcludeBio";
 $tdatademo_user1[".printFields"][] = "AllowableSickLeave";
 $tdatademo_user1[".printFields"][] = "AllowableVacationLeave";
 $tdatademo_user1[".printFields"][] = "AllowableEmergencyLeave";
@@ -1729,8 +1742,7 @@ $tdatademo_user1[".printFields"][] = "DateCreated";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -1857,8 +1869,7 @@ $tdatademo_user1[".printFields"][] = "DateCreated";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -1998,8 +2009,7 @@ $tdatademo_user1[".printFields"][] = "DateCreated";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -2127,8 +2137,7 @@ $tdatademo_user1[".printFields"][] = "DateCreated";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -2256,8 +2265,7 @@ $tdatademo_user1[".printFields"][] = "DateCreated";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -2383,8 +2391,7 @@ $tdatademo_user1[".printFields"][] = "DateCreated";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -2510,8 +2517,7 @@ $tdatademo_user1[".printFields"][] = "DateCreated";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -3060,8 +3066,7 @@ $tdatademo_user1[".printFields"][] = "DateCreated";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -4954,8 +4959,7 @@ $tdatademo_user1[".printFields"][] = "DateCreated";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -5339,8 +5343,7 @@ $tdatademo_user1[".printFields"][] = "DateCreated";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -5468,8 +5471,7 @@ $tdatademo_user1[".printFields"][] = "DateCreated";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -7455,8 +7457,7 @@ $tdatademo_user1[".printFields"][] = "DateCreated";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -7585,8 +7586,7 @@ $tdatademo_user1[".printFields"][] = "DateCreated";
 
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -8093,7 +8093,8 @@ $tdatademo_user1[".printFields"][] = "DateCreated";
 
 		$fdata["bInlineEdit"] = true;
 
-	
+		$fdata["bUpdateSelected"] = true;
+
 
 		$fdata["bViewPage"] = true;
 
@@ -9657,7 +9658,8 @@ $tdatademo_user1[".printFields"][] = "DateCreated";
 
 		$fdata["bInlineEdit"] = true;
 
-	
+		$fdata["bUpdateSelected"] = true;
+
 
 		$fdata["bViewPage"] = true;
 
@@ -9789,6 +9791,133 @@ $tdatademo_user1[".printFields"][] = "DateCreated";
 
 
 	$tdatademo_user1["Superior2"] = $fdata;
+//	ExcludeBio
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 62;
+	$fdata["strName"] = "ExcludeBio";
+	$fdata["GoodName"] = "ExcludeBio";
+	$fdata["ownerTable"] = "demo_user";
+	$fdata["Label"] = GetFieldLabel("demo_user1","ExcludeBio");
+	$fdata["FieldType"] = 3;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "ExcludeBio";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "ExcludeBio";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Checkbox");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Checkbox");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdatademo_user1["ExcludeBio"] = $fdata;
 
 
 $tables_data["demo_user1"]=&$tdatademo_user1;
@@ -9822,7 +9951,7 @@ function createSqlQuery_demo_user1()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "user_id,  user_name,  Photo,  SSSNo,  TIN,  Mobile,  Address,  Email,  EmployeeType,  BasicMonthlyPay,  BasicDailyPay,  EmployeeID,  Division,  Status,  Department,  AllowableSickLeave,  AllowableVacationLeave,  AllowableEmergencyLeave,  SSSEE,  SSSER,  PhilHealthEE,  PhilHealthER,  PagIbigEE,  AllowablePaternityLeave,  HiredDate,  Inactive,  ExitDate,  PagIbigER,  PagIbigNo,  PhilHealthNo,  SSSEC,  `Level`,  DateCreated,  ApprovedDate,  Approved,  Approvedby,  Preparedby,  Checkedby,  CheckedDate,  Checked,  `Position`,  Superior,  Employer,  IDNo,  AccountNo,  LateFixPenalty,  DoNotUpdateContributions,  ExcludeContributionOnPayroll,  Bank,  Birthday,  DeMinimis,  NoLateDeduction,  IncludeBreakLate,  GracePeriodMins,  WithAdditionalBreaks,  PresetMoNonTax,  PreCalMoTaxable,  CalMonthly,  TaxPeriods,  TaxPerPeriod,  Superior2";
+$proto0["m_strFieldList"] = "user_id,  user_name,  Photo,  SSSNo,  TIN,  Mobile,  Address,  Email,  EmployeeType,  BasicMonthlyPay,  BasicDailyPay,  EmployeeID,  Division,  Status,  Department,  AllowableSickLeave,  AllowableVacationLeave,  AllowableEmergencyLeave,  SSSEE,  SSSER,  PhilHealthEE,  PhilHealthER,  PagIbigEE,  AllowablePaternityLeave,  HiredDate,  Inactive,  ExitDate,  PagIbigER,  PagIbigNo,  PhilHealthNo,  SSSEC,  `Level`,  DateCreated,  ApprovedDate,  Approved,  Approvedby,  Preparedby,  Checkedby,  CheckedDate,  Checked,  `Position`,  Superior,  Employer,  IDNo,  AccountNo,  LateFixPenalty,  DoNotUpdateContributions,  ExcludeContributionOnPayroll,  Bank,  Birthday,  DeMinimis,  NoLateDeduction,  IncludeBreakLate,  GracePeriodMins,  WithAdditionalBreaks,  PresetMoNonTax,  PreCalMoTaxable,  CalMonthly,  TaxPeriods,  TaxPerPeriod,  Superior2,  ExcludeBio";
 $proto0["m_strFrom"] = "FROM demo_user";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "ORDER BY user_name";
@@ -10716,120 +10845,135 @@ $proto126["m_alias"] = "";
 $obj = new SQLFieldListItem($proto126);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto128=array();
-$proto128["m_link"] = "SQLL_MAIN";
-			$proto129=array();
-$proto129["m_strName"] = "demo_user";
-$proto129["m_srcTableName"] = "demo_user1";
-$proto129["m_columns"] = array();
-$proto129["m_columns"][] = "user_id";
-$proto129["m_columns"][] = "user_name";
-$proto129["m_columns"][] = "Photo";
-$proto129["m_columns"][] = "user_photo";
-$proto129["m_columns"][] = "SSSNo";
-$proto129["m_columns"][] = "TIN";
-$proto129["m_columns"][] = "Mobile";
-$proto129["m_columns"][] = "Address";
-$proto129["m_columns"][] = "Email";
-$proto129["m_columns"][] = "EmployeeType";
-$proto129["m_columns"][] = "BasicMonthlyPay";
-$proto129["m_columns"][] = "BasicDailyPay";
-$proto129["m_columns"][] = "EmployeeID";
-$proto129["m_columns"][] = "Division";
-$proto129["m_columns"][] = "Status";
-$proto129["m_columns"][] = "Department";
-$proto129["m_columns"][] = "AllowableSickLeave";
-$proto129["m_columns"][] = "AllowableVacationLeave";
-$proto129["m_columns"][] = "AllowableEmergencyLeave";
-$proto129["m_columns"][] = "SSSEE";
-$proto129["m_columns"][] = "SSSER";
-$proto129["m_columns"][] = "PhilHealthEE";
-$proto129["m_columns"][] = "PhilHealthER";
-$proto129["m_columns"][] = "PagIbigEE";
-$proto129["m_columns"][] = "AllowablePaternityLeave";
-$proto129["m_columns"][] = "HiredDate";
-$proto129["m_columns"][] = "Inactive";
-$proto129["m_columns"][] = "ExitDate";
-$proto129["m_columns"][] = "PagIbigER";
-$proto129["m_columns"][] = "PagIbigNo";
-$proto129["m_columns"][] = "PhilHealthNo";
-$proto129["m_columns"][] = "SSSEC";
-$proto129["m_columns"][] = "Filex";
-$proto129["m_columns"][] = "PresetTax";
-$proto129["m_columns"][] = "AgentSharePerDay";
-$proto129["m_columns"][] = "AllowancePerDay";
-$proto129["m_columns"][] = "DeMinimis";
-$proto129["m_columns"][] = "Level";
-$proto129["m_columns"][] = "DateCreated";
-$proto129["m_columns"][] = "ApprovedDate";
-$proto129["m_columns"][] = "Approved";
-$proto129["m_columns"][] = "Approvedby";
-$proto129["m_columns"][] = "Preparedby";
-$proto129["m_columns"][] = "Checkedby";
-$proto129["m_columns"][] = "CheckedDate";
-$proto129["m_columns"][] = "Checked";
-$proto129["m_columns"][] = "AdjustedMonthlyPay";
-$proto129["m_columns"][] = "AdjustedDailyPay";
-$proto129["m_columns"][] = "Superior";
-$proto129["m_columns"][] = "Position";
-$proto129["m_columns"][] = "Employer";
-$proto129["m_columns"][] = "IDNo";
-$proto129["m_columns"][] = "AccountNo";
-$proto129["m_columns"][] = "LogID";
-$proto129["m_columns"][] = "LateFixPenalty";
-$proto129["m_columns"][] = "DoNotUpdateContributions";
-$proto129["m_columns"][] = "ExcludeContributionOnPayroll";
-$proto129["m_columns"][] = "Birthday";
-$proto129["m_columns"][] = "Bank";
-$proto129["m_columns"][] = "NoLateDeduction";
-$proto129["m_columns"][] = "IncludeBreakLate";
-$proto129["m_columns"][] = "GracePeriodMins";
-$proto129["m_columns"][] = "WithAdditionalBreaks";
-$proto129["m_columns"][] = "TaxPeriods";
-$proto129["m_columns"][] = "PresetMoNonTax";
-$proto129["m_columns"][] = "PreCalMoTaxable";
-$proto129["m_columns"][] = "CalMonthly";
-$proto129["m_columns"][] = "TaxPerPeriod";
-$proto129["m_columns"][] = "Superior2";
-$obj = new SQLTable($proto129);
+						$proto128=array();
+			$obj = new SQLField(array(
+	"m_strName" => "ExcludeBio",
+	"m_strTable" => "demo_user",
+	"m_srcTableName" => "demo_user1"
+));
 
-$proto128["m_table"] = $obj;
-$proto128["m_sql"] = "demo_user";
-$proto128["m_alias"] = "";
+$proto128["m_sql"] = "ExcludeBio";
 $proto128["m_srcTableName"] = "demo_user1";
-$proto130=array();
-$proto130["m_sql"] = "";
-$proto130["m_uniontype"] = "SQLL_UNKNOWN";
+$proto128["m_expr"]=$obj;
+$proto128["m_alias"] = "";
+$obj = new SQLFieldListItem($proto128);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto130=array();
+$proto130["m_link"] = "SQLL_MAIN";
+			$proto131=array();
+$proto131["m_strName"] = "demo_user";
+$proto131["m_srcTableName"] = "demo_user1";
+$proto131["m_columns"] = array();
+$proto131["m_columns"][] = "user_id";
+$proto131["m_columns"][] = "user_name";
+$proto131["m_columns"][] = "Photo";
+$proto131["m_columns"][] = "user_photo";
+$proto131["m_columns"][] = "SSSNo";
+$proto131["m_columns"][] = "TIN";
+$proto131["m_columns"][] = "Mobile";
+$proto131["m_columns"][] = "Address";
+$proto131["m_columns"][] = "Email";
+$proto131["m_columns"][] = "EmployeeType";
+$proto131["m_columns"][] = "BasicMonthlyPay";
+$proto131["m_columns"][] = "BasicDailyPay";
+$proto131["m_columns"][] = "EmployeeID";
+$proto131["m_columns"][] = "Division";
+$proto131["m_columns"][] = "Status";
+$proto131["m_columns"][] = "Department";
+$proto131["m_columns"][] = "AllowableSickLeave";
+$proto131["m_columns"][] = "AllowableVacationLeave";
+$proto131["m_columns"][] = "AllowableEmergencyLeave";
+$proto131["m_columns"][] = "SSSEE";
+$proto131["m_columns"][] = "SSSER";
+$proto131["m_columns"][] = "PhilHealthEE";
+$proto131["m_columns"][] = "PhilHealthER";
+$proto131["m_columns"][] = "PagIbigEE";
+$proto131["m_columns"][] = "AllowablePaternityLeave";
+$proto131["m_columns"][] = "HiredDate";
+$proto131["m_columns"][] = "Inactive";
+$proto131["m_columns"][] = "ExitDate";
+$proto131["m_columns"][] = "PagIbigER";
+$proto131["m_columns"][] = "PagIbigNo";
+$proto131["m_columns"][] = "PhilHealthNo";
+$proto131["m_columns"][] = "SSSEC";
+$proto131["m_columns"][] = "Filex";
+$proto131["m_columns"][] = "PresetTax";
+$proto131["m_columns"][] = "AgentSharePerDay";
+$proto131["m_columns"][] = "AllowancePerDay";
+$proto131["m_columns"][] = "DeMinimis";
+$proto131["m_columns"][] = "Level";
+$proto131["m_columns"][] = "DateCreated";
+$proto131["m_columns"][] = "ApprovedDate";
+$proto131["m_columns"][] = "Approved";
+$proto131["m_columns"][] = "Approvedby";
+$proto131["m_columns"][] = "Preparedby";
+$proto131["m_columns"][] = "Checkedby";
+$proto131["m_columns"][] = "CheckedDate";
+$proto131["m_columns"][] = "Checked";
+$proto131["m_columns"][] = "AdjustedMonthlyPay";
+$proto131["m_columns"][] = "AdjustedDailyPay";
+$proto131["m_columns"][] = "Superior";
+$proto131["m_columns"][] = "Position";
+$proto131["m_columns"][] = "Employer";
+$proto131["m_columns"][] = "IDNo";
+$proto131["m_columns"][] = "AccountNo";
+$proto131["m_columns"][] = "LogID";
+$proto131["m_columns"][] = "LateFixPenalty";
+$proto131["m_columns"][] = "DoNotUpdateContributions";
+$proto131["m_columns"][] = "ExcludeContributionOnPayroll";
+$proto131["m_columns"][] = "Birthday";
+$proto131["m_columns"][] = "Bank";
+$proto131["m_columns"][] = "NoLateDeduction";
+$proto131["m_columns"][] = "IncludeBreakLate";
+$proto131["m_columns"][] = "GracePeriodMins";
+$proto131["m_columns"][] = "WithAdditionalBreaks";
+$proto131["m_columns"][] = "TaxPeriods";
+$proto131["m_columns"][] = "PresetMoNonTax";
+$proto131["m_columns"][] = "PreCalMoTaxable";
+$proto131["m_columns"][] = "CalMonthly";
+$proto131["m_columns"][] = "TaxPerPeriod";
+$proto131["m_columns"][] = "Superior2";
+$proto131["m_columns"][] = "ExcludeBio";
+$obj = new SQLTable($proto131);
+
+$proto130["m_table"] = $obj;
+$proto130["m_sql"] = "demo_user";
+$proto130["m_alias"] = "";
+$proto130["m_srcTableName"] = "demo_user1";
+$proto132=array();
+$proto132["m_sql"] = "";
+$proto132["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto130["m_column"]=$obj;
-$proto130["m_contained"] = array();
-$proto130["m_strCase"] = "";
-$proto130["m_havingmode"] = false;
-$proto130["m_inBrackets"] = false;
-$proto130["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto130);
+$proto132["m_column"]=$obj;
+$proto132["m_contained"] = array();
+$proto132["m_strCase"] = "";
+$proto132["m_havingmode"] = false;
+$proto132["m_inBrackets"] = false;
+$proto132["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto132);
 
-$proto128["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto128);
+$proto130["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto130);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
 $proto0["m_orderby"] = array();
-												$proto132=array();
+												$proto134=array();
 						$obj = new SQLField(array(
 	"m_strName" => "user_name",
 	"m_strTable" => "demo_user",
 	"m_srcTableName" => "demo_user1"
 ));
 
-$proto132["m_column"]=$obj;
-$proto132["m_bAsc"] = 1;
-$proto132["m_nColumn"] = 0;
-$obj = new SQLOrderByItem($proto132);
+$proto134["m_column"]=$obj;
+$proto134["m_bAsc"] = 1;
+$proto134["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto134);
 
 $proto0["m_orderby"][]=$obj;					
 $proto0["m_srcTableName"]="demo_user1";		
@@ -10843,7 +10987,7 @@ $queryData_demo_user1 = createSqlQuery_demo_user1();
 	
 		;
 
-																																																													
+																																																														
 
 $tdatademo_user1[".sqlquery"] = $queryData_demo_user1;
 

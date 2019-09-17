@@ -255,7 +255,8 @@ $page_layouts["divisions_list"] = $layout;
 // end add master layouts 
 
 
-
+	
+	
 $pageMode = AddPage::readAddModeFromRequest();
 
 $xt = new Xtempl();

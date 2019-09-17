@@ -9,6 +9,7 @@ $dalTableholidays["SecondHalf"] = array("type"=>16,"varname"=>"SecondHalf", "nam
 $dalTableholidays["WholeDay"] = array("type"=>5,"varname"=>"WholeDay", "name" => "WholeDay");
 $dalTableholidays["WordayBeforeHoliday"] = array("type"=>7,"varname"=>"WordayBeforeHoliday", "name" => "WordayBeforeHoliday");
 $dalTableholidays["HolidayDescription"] = array("type"=>200,"varname"=>"HolidayDescription", "name" => "HolidayDescription");
+$dalTableholidays["Division"] = array("type"=>3,"varname"=>"Division", "name" => "Division");
 	$dalTableholidays["HID"]["key"]=true;
 
 $dal_info["payrollflex_at_localhost__holidays"] = &$dalTableholidays;

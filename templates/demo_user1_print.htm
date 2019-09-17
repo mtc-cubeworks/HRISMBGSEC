@@ -190,6 +190,11 @@
 				{$label demo_user1 AccountNo}
 			</th>
 			{END AccountNo_fieldheadercolumn}
+			{BEGIN ExcludeBio_fieldheadercolumn}
+			<th class="{$ExcludeBio_class}" {$ExcludeBio_style}  data-field="ExcludeBio">
+				{$label demo_user1 ExcludeBio}
+			</th>
+			{END ExcludeBio_fieldheadercolumn}
 			{BEGIN AllowableSickLeave_fieldheadercolumn}
 			<th class="{$AllowableSickLeave_class}" {$AllowableSickLeave_style}  data-field="AllowableSickLeave">
 				{$label demo_user1 AllowableSickLeave}
@@ -507,6 +512,11 @@
 				{$AccountNo_value}
 			</td>
 			{END AccountNo_fieldcolumn}
+			{BEGIN ExcludeBio_fieldcolumn}
+			<td  class="{$ExcludeBio_class}" {$ExcludeBio_style} {$recordattrs}>
+				{$ExcludeBio_value}
+			</td>
+			{END ExcludeBio_fieldcolumn}
 			{BEGIN AllowableSickLeave_fieldcolumn}
 			<td  class="{$AllowableSickLeave_class}" {$AllowableSickLeave_style} {$recordattrs}>
 				{$AllowableSickLeave_value}
@@ -800,6 +810,10 @@
 			<td>
 						</td>
 			{END AccountNo_fieldfootercolumn}
+			{BEGIN ExcludeBio_fieldfootercolumn}
+			<td>
+						</td>
+			{END ExcludeBio_fieldfootercolumn}
 			{BEGIN AllowableSickLeave_fieldfootercolumn}
 			<td>
 						</td>

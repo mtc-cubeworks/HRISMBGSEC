@@ -548,14 +548,14 @@
 	.bs-gridcell[data-field=SecondHalfMins]:before {
 		content: "{$label shifts SecondHalfMins}";
 	}
-	.bs-gridcell[data-field=AutoApproveNDiff]:before {
-		content: "{$label shifts AutoApproveNDiff}";
-	}
 	.bs-gridcell[data-field=ReqLogOutInOnBreak]:before {
 		content: "{$label shifts ReqLogOutInOnBreak}";
 	}
 	.bs-gridcell[data-field=SchedType]:before {
 		content: "{$label shifts SchedType}";
+	}
+	.bs-gridcell[data-field=PreLogMins]:before {
+		content: "{$label shifts PreLogMins}";
 	}
 </style>
 <table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
@@ -612,6 +612,19 @@
 									{END SchedType_fieldheader}
 									</th>
 									{END SchedType_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN PreLogMins_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$PreLogMins_class}" data-field=PreLogMins>
+									{BEGIN PreLogMins_fieldheader}
+																				<span {$PreLogMins_orderlinkattrs}>
+											{$label shifts PreLogMins}
+										</span>
+									{END PreLogMins_fieldheader}
+									</th>
+									{END PreLogMins_fieldheadercolumn}
 									
 									
 									
@@ -733,19 +746,6 @@
 									
 									
 									
-									{BEGIN AutoApproveNDiff_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$AutoApproveNDiff_class}" data-field=AutoApproveNDiff>
-									{BEGIN AutoApproveNDiff_fieldheader}
-																				<span {$AutoApproveNDiff_orderlinkattrs}>
-											{$label shifts AutoApproveNDiff}
-										</span>
-									{END AutoApproveNDiff_fieldheader}
-									</th>
-									{END AutoApproveNDiff_fieldheadercolumn}
-									
-									
-									
-									
 									{BEGIN endrecordheader_block}
 									<th class="rnr-cs">&nbsp;</th>
 									
@@ -839,6 +839,13 @@
 {END SchedType_fieldcolumn}
 
 
+	{BEGIN PreLogMins_fieldcolumn}
+	<td class="bs-gridcell {$PreLogMins_class}"  data-field=PreLogMins {$rowstyle} {$recordattrs}>
+		{$PreLogMins_value}
+	</td>
+{END PreLogMins_fieldcolumn}
+
+
 	{BEGIN TimeIn_fieldcolumn}
 	<td class="bs-gridcell {$TimeIn_class}"  data-field=TimeIn {$rowstyle} {$recordattrs}>
 		{$TimeIn_value}
@@ -900,13 +907,6 @@
 		{$MinsPerDay_value}
 	</td>
 {END MinsPerDay_fieldcolumn}
-
-
-	{BEGIN AutoApproveNDiff_fieldcolumn}
-	<td class="bs-gridcell {$AutoApproveNDiff_class}"  data-field=AutoApproveNDiff {$rowstyle} {$recordattrs}>
-		{$AutoApproveNDiff_value}
-	</td>
-{END AutoApproveNDiff_fieldcolumn}
 
 	{BEGIN endrecord_block}
 	<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>

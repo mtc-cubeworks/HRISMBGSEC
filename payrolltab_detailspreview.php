@@ -336,21 +336,6 @@ if($rowcount)
 			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("SHolidayHrs")))
 				$class = ' rnr-field-number';
 			$row["SHolidayHrs_class"] = $class;
-	//	CHolidayHrs - Number
-			$viewContainer->recId = $recordsCounter;
-		    $value = $viewContainer->showDBValue("CHolidayHrs", $data, $keylink);
-			$row["CHolidayHrs_value"] = $value;
-			$format = $pSet->getViewFormat("CHolidayHrs");
-			$class = "rnr-field-text";
-			if($format==FORMAT_FILE) 
-				$class = ' rnr-field-file'; 
-			if($format==FORMAT_AUDIO)
-				$class = ' rnr-field-audio';
-			if($format==FORMAT_CHECKBOX)
-				$class = ' rnr-field-checkbox';
-			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("CHolidayHrs")))
-				$class = ' rnr-field-number';
-			$row["CHolidayHrs_class"] = $class;
 	//	ExcessHrs - Number
 			$viewContainer->recId = $recordsCounter;
 		    $value = $viewContainer->showDBValue("ExcessHrs", $data, $keylink);
@@ -411,21 +396,6 @@ if($rowcount)
 			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("SHOTHRs")))
 				$class = ' rnr-field-number';
 			$row["SHOTHRs_class"] = $class;
-	//	CHOTHrs - Number
-			$viewContainer->recId = $recordsCounter;
-		    $value = $viewContainer->showDBValue("CHOTHrs", $data, $keylink);
-			$row["CHOTHrs_value"] = $value;
-			$format = $pSet->getViewFormat("CHOTHrs");
-			$class = "rnr-field-text";
-			if($format==FORMAT_FILE) 
-				$class = ' rnr-field-file'; 
-			if($format==FORMAT_AUDIO)
-				$class = ' rnr-field-audio';
-			if($format==FORMAT_CHECKBOX)
-				$class = ' rnr-field-checkbox';
-			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("CHOTHrs")))
-				$class = ' rnr-field-number';
-			$row["CHOTHrs_class"] = $class;
 	//	RDOTHrs - Number
 			$viewContainer->recId = $recordsCounter;
 		    $value = $viewContainer->showDBValue("RDOTHrs", $data, $keylink);
@@ -441,51 +411,6 @@ if($rowcount)
 			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("RDOTHrs")))
 				$class = ' rnr-field-number';
 			$row["RDOTHrs_class"] = $class;
-	//	NDHrs - Number
-			$viewContainer->recId = $recordsCounter;
-		    $value = $viewContainer->showDBValue("NDHrs", $data, $keylink);
-			$row["NDHrs_value"] = $value;
-			$format = $pSet->getViewFormat("NDHrs");
-			$class = "rnr-field-text";
-			if($format==FORMAT_FILE) 
-				$class = ' rnr-field-file'; 
-			if($format==FORMAT_AUDIO)
-				$class = ' rnr-field-audio';
-			if($format==FORMAT_CHECKBOX)
-				$class = ' rnr-field-checkbox';
-			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("NDHrs")))
-				$class = ' rnr-field-number';
-			$row["NDHrs_class"] = $class;
-	//	RDHrs - Number
-			$viewContainer->recId = $recordsCounter;
-		    $value = $viewContainer->showDBValue("RDHrs", $data, $keylink);
-			$row["RDHrs_value"] = $value;
-			$format = $pSet->getViewFormat("RDHrs");
-			$class = "rnr-field-text";
-			if($format==FORMAT_FILE) 
-				$class = ' rnr-field-file'; 
-			if($format==FORMAT_AUDIO)
-				$class = ' rnr-field-audio';
-			if($format==FORMAT_CHECKBOX)
-				$class = ' rnr-field-checkbox';
-			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("RDHrs")))
-				$class = ' rnr-field-number';
-			$row["RDHrs_class"] = $class;
-	//	RegNDHrs - Number
-			$viewContainer->recId = $recordsCounter;
-		    $value = $viewContainer->showDBValue("RegNDHrs", $data, $keylink);
-			$row["RegNDHrs_value"] = $value;
-			$format = $pSet->getViewFormat("RegNDHrs");
-			$class = "rnr-field-text";
-			if($format==FORMAT_FILE) 
-				$class = ' rnr-field-file'; 
-			if($format==FORMAT_AUDIO)
-				$class = ' rnr-field-audio';
-			if($format==FORMAT_CHECKBOX)
-				$class = ' rnr-field-checkbox';
-			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("RegNDHrs")))
-				$class = ' rnr-field-number';
-			$row["RegNDHrs_class"] = $class;
 	//	RHNDHrs - Number
 			$viewContainer->recId = $recordsCounter;
 		    $value = $viewContainer->showDBValue("RHNDHrs", $data, $keylink);
@@ -516,21 +441,6 @@ if($rowcount)
 			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("SHNDHrs")))
 				$class = ' rnr-field-number';
 			$row["SHNDHrs_class"] = $class;
-	//	CHNDHrs - Number
-			$viewContainer->recId = $recordsCounter;
-		    $value = $viewContainer->showDBValue("CHNDHrs", $data, $keylink);
-			$row["CHNDHrs_value"] = $value;
-			$format = $pSet->getViewFormat("CHNDHrs");
-			$class = "rnr-field-text";
-			if($format==FORMAT_FILE) 
-				$class = ' rnr-field-file'; 
-			if($format==FORMAT_AUDIO)
-				$class = ' rnr-field-audio';
-			if($format==FORMAT_CHECKBOX)
-				$class = ' rnr-field-checkbox';
-			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("CHNDHrs")))
-				$class = ' rnr-field-number';
-			$row["CHNDHrs_class"] = $class;
 	//	RDNDHrs - Number
 			$viewContainer->recId = $recordsCounter;
 		    $value = $viewContainer->showDBValue("RDNDHrs", $data, $keylink);
@@ -666,21 +576,6 @@ if($rowcount)
 			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("ToDate")))
 				$class = ' rnr-field-number';
 			$row["ToDate_class"] = $class;
-	//	AllowancePerDay - Number
-			$viewContainer->recId = $recordsCounter;
-		    $value = $viewContainer->showDBValue("AllowancePerDay", $data, $keylink);
-			$row["AllowancePerDay_value"] = $value;
-			$format = $pSet->getViewFormat("AllowancePerDay");
-			$class = "rnr-field-text";
-			if($format==FORMAT_FILE) 
-				$class = ' rnr-field-file'; 
-			if($format==FORMAT_AUDIO)
-				$class = ' rnr-field-audio';
-			if($format==FORMAT_CHECKBOX)
-				$class = ' rnr-field-checkbox';
-			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("AllowancePerDay")))
-				$class = ' rnr-field-number';
-			$row["AllowancePerDay_class"] = $class;
 	//	VLBalance - Number
 			$viewContainer->recId = $recordsCounter;
 		    $value = $viewContainer->showDBValue("VLBalance", $data, $keylink);
@@ -906,21 +801,6 @@ if($rowcount)
 			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("NDOTHrs")))
 				$class = ' rnr-field-number';
 			$row["NDOTHrs_class"] = $class;
-	//	RegNDOTHrs - Number
-			$viewContainer->recId = $recordsCounter;
-		    $value = $viewContainer->showDBValue("RegNDOTHrs", $data, $keylink);
-			$row["RegNDOTHrs_value"] = $value;
-			$format = $pSet->getViewFormat("RegNDOTHrs");
-			$class = "rnr-field-text";
-			if($format==FORMAT_FILE) 
-				$class = ' rnr-field-file'; 
-			if($format==FORMAT_AUDIO)
-				$class = ' rnr-field-audio';
-			if($format==FORMAT_CHECKBOX)
-				$class = ' rnr-field-checkbox';
-			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("RegNDOTHrs")))
-				$class = ' rnr-field-number';
-			$row["RegNDOTHrs_class"] = $class;
 	//	RHNDOTHrs - Number
 			$viewContainer->recId = $recordsCounter;
 		    $value = $viewContainer->showDBValue("RHNDOTHrs", $data, $keylink);
@@ -951,21 +831,6 @@ if($rowcount)
 			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("SHNDOTHrs")))
 				$class = ' rnr-field-number';
 			$row["SHNDOTHrs_class"] = $class;
-	//	CHNDOTHrs - Number
-			$viewContainer->recId = $recordsCounter;
-		    $value = $viewContainer->showDBValue("CHNDOTHrs", $data, $keylink);
-			$row["CHNDOTHrs_value"] = $value;
-			$format = $pSet->getViewFormat("CHNDOTHrs");
-			$class = "rnr-field-text";
-			if($format==FORMAT_FILE) 
-				$class = ' rnr-field-file'; 
-			if($format==FORMAT_AUDIO)
-				$class = ' rnr-field-audio';
-			if($format==FORMAT_CHECKBOX)
-				$class = ' rnr-field-checkbox';
-			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("CHNDOTHrs")))
-				$class = ' rnr-field-number';
-			$row["CHNDOTHrs_class"] = $class;
 	//	RDNDOTHrs - Number
 			$viewContainer->recId = $recordsCounter;
 		    $value = $viewContainer->showDBValue("RDNDOTHrs", $data, $keylink);
@@ -1206,6 +1071,126 @@ if($rowcount)
 			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("TaxToDate")))
 				$class = ' rnr-field-number';
 			$row["TaxToDate_class"] = $class;
+	//	SHOTD - Number
+			$viewContainer->recId = $recordsCounter;
+		    $value = $viewContainer->showDBValue("SHOTD", $data, $keylink);
+			$row["SHOTD_value"] = $value;
+			$format = $pSet->getViewFormat("SHOTD");
+			$class = "rnr-field-text";
+			if($format==FORMAT_FILE) 
+				$class = ' rnr-field-file'; 
+			if($format==FORMAT_AUDIO)
+				$class = ' rnr-field-audio';
+			if($format==FORMAT_CHECKBOX)
+				$class = ' rnr-field-checkbox';
+			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("SHOTD")))
+				$class = ' rnr-field-number';
+			$row["SHOTD_class"] = $class;
+	//	RegRD - Number
+			$viewContainer->recId = $recordsCounter;
+		    $value = $viewContainer->showDBValue("RegRD", $data, $keylink);
+			$row["RegRD_value"] = $value;
+			$format = $pSet->getViewFormat("RegRD");
+			$class = "rnr-field-text";
+			if($format==FORMAT_FILE) 
+				$class = ' rnr-field-file'; 
+			if($format==FORMAT_AUDIO)
+				$class = ' rnr-field-audio';
+			if($format==FORMAT_CHECKBOX)
+				$class = ' rnr-field-checkbox';
+			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("RegRD")))
+				$class = ' rnr-field-number';
+			$row["RegRD_class"] = $class;
+	//	RHRD - Number
+			$viewContainer->recId = $recordsCounter;
+		    $value = $viewContainer->showDBValue("RHRD", $data, $keylink);
+			$row["RHRD_value"] = $value;
+			$format = $pSet->getViewFormat("RHRD");
+			$class = "rnr-field-text";
+			if($format==FORMAT_FILE) 
+				$class = ' rnr-field-file'; 
+			if($format==FORMAT_AUDIO)
+				$class = ' rnr-field-audio';
+			if($format==FORMAT_CHECKBOX)
+				$class = ' rnr-field-checkbox';
+			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("RHRD")))
+				$class = ' rnr-field-number';
+			$row["RHRD_class"] = $class;
+	//	SHRD - Number
+			$viewContainer->recId = $recordsCounter;
+		    $value = $viewContainer->showDBValue("SHRD", $data, $keylink);
+			$row["SHRD_value"] = $value;
+			$format = $pSet->getViewFormat("SHRD");
+			$class = "rnr-field-text";
+			if($format==FORMAT_FILE) 
+				$class = ' rnr-field-file'; 
+			if($format==FORMAT_AUDIO)
+				$class = ' rnr-field-audio';
+			if($format==FORMAT_CHECKBOX)
+				$class = ' rnr-field-checkbox';
+			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("SHRD")))
+				$class = ' rnr-field-number';
+			$row["SHRD_class"] = $class;
+	//	RegND - Number
+			$viewContainer->recId = $recordsCounter;
+		    $value = $viewContainer->showDBValue("RegND", $data, $keylink);
+			$row["RegND_value"] = $value;
+			$format = $pSet->getViewFormat("RegND");
+			$class = "rnr-field-text";
+			if($format==FORMAT_FILE) 
+				$class = ' rnr-field-file'; 
+			if($format==FORMAT_AUDIO)
+				$class = ' rnr-field-audio';
+			if($format==FORMAT_CHECKBOX)
+				$class = ' rnr-field-checkbox';
+			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("RegND")))
+				$class = ' rnr-field-number';
+			$row["RegND_class"] = $class;
+	//	RHRDOT - Number
+			$viewContainer->recId = $recordsCounter;
+		    $value = $viewContainer->showDBValue("RHRDOT", $data, $keylink);
+			$row["RHRDOT_value"] = $value;
+			$format = $pSet->getViewFormat("RHRDOT");
+			$class = "rnr-field-text";
+			if($format==FORMAT_FILE) 
+				$class = ' rnr-field-file'; 
+			if($format==FORMAT_AUDIO)
+				$class = ' rnr-field-audio';
+			if($format==FORMAT_CHECKBOX)
+				$class = ' rnr-field-checkbox';
+			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("RHRDOT")))
+				$class = ' rnr-field-number';
+			$row["RHRDOT_class"] = $class;
+	//	SHRDOT - Number
+			$viewContainer->recId = $recordsCounter;
+		    $value = $viewContainer->showDBValue("SHRDOT", $data, $keylink);
+			$row["SHRDOT_value"] = $value;
+			$format = $pSet->getViewFormat("SHRDOT");
+			$class = "rnr-field-text";
+			if($format==FORMAT_FILE) 
+				$class = ' rnr-field-file'; 
+			if($format==FORMAT_AUDIO)
+				$class = ' rnr-field-audio';
+			if($format==FORMAT_CHECKBOX)
+				$class = ' rnr-field-checkbox';
+			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("SHRDOT")))
+				$class = ' rnr-field-number';
+			$row["SHRDOT_class"] = $class;
+	//	SHRDOTD - Number
+			$viewContainer->recId = $recordsCounter;
+		    $value = $viewContainer->showDBValue("SHRDOTD", $data, $keylink);
+			$row["SHRDOTD_value"] = $value;
+			$format = $pSet->getViewFormat("SHRDOTD");
+			$class = "rnr-field-text";
+			if($format==FORMAT_FILE) 
+				$class = ' rnr-field-file'; 
+			if($format==FORMAT_AUDIO)
+				$class = ' rnr-field-audio';
+			if($format==FORMAT_CHECKBOX)
+				$class = ' rnr-field-checkbox';
+			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("SHRDOTD")))
+				$class = ' rnr-field-number';
+			$row["SHRDOTD_class"] = $class;
 		$rowinfo[] = $row;
 		if ($b) {
 			$rowinfo2[] = $row;

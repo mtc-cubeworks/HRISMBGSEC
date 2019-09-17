@@ -102,24 +102,6 @@
 		</div>
 	</div>
 {END ToDate_fieldblock}
-	{BEGIN EmployeeID_fieldblock}		
-	<div class="container {$fielddispclass_EmployeeID}" data-fieldname="EmployeeID">
-		<div class="form-group">
-			<label class="col-md-2 control-label" for="{$labelfor_EmployeeID}">
-				{$label payrolltab1 EmployeeID}
-			</label>
-			<div class="col-md-2 bs-srchoption" >
-				{$searchtype_EmployeeID}
-			</div>
-			<div class="col-md-4" >
-				{$EmployeeID_editcontrol}
-			</div>
-			<div class="col-md-4" >
-				{$EmployeeID_editcontrol1}
-			</div>
-		</div>
-	</div>
-{END EmployeeID_fieldblock}
 	{BEGIN UserName_fieldblock}		
 	<div class="container {$fielddispclass_UserName}" data-fieldname="UserName">
 		<div class="form-group">
@@ -138,6 +120,42 @@
 		</div>
 	</div>
 {END UserName_fieldblock}
+	{BEGIN Division_fieldblock}		
+	<div class="container {$fielddispclass_Division}" data-fieldname="Division">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Division}">
+				{$label payrolltab1 Division}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Division}
+			</div>
+			<div class="col-md-4" >
+				{$Division_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Division_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Division_fieldblock}
+	{BEGIN Employer_fieldblock}		
+	<div class="container {$fielddispclass_Employer}" data-fieldname="Employer">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Employer}">
+				{$label payrolltab1 Employer}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Employer}
+			</div>
+			<div class="col-md-4" >
+				{$Employer_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Employer_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Employer_fieldblock}
 	{BEGIN WageType_fieldblock}		
 	<div class="container {$fielddispclass_WageType}" data-fieldname="WageType">
 		<div class="form-group">
@@ -210,6 +228,150 @@
 		</div>
 	</div>
 {END BasicDaily_fieldblock}
+	{BEGIN RegRD_fieldblock}		
+	<div class="container {$fielddispclass_RegRD}" data-fieldname="RegRD">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RegRD}">
+				{$label payrolltab1 RegRD}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RegRD}
+			</div>
+			<div class="col-md-4" >
+				{$RegRD_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RegRD_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RegRD_fieldblock}
+	{BEGIN SHOTD_fieldblock}		
+	<div class="container {$fielddispclass_SHOTD}" data-fieldname="SHOTD">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SHOTD}">
+				{$label payrolltab1 SHOTD}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SHOTD}
+			</div>
+			<div class="col-md-4" >
+				{$SHOTD_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SHOTD_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SHOTD_fieldblock}
+	{BEGIN RegND_fieldblock}		
+	<div class="container {$fielddispclass_RegND}" data-fieldname="RegND">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RegND}">
+				{$label payrolltab1 RegND}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RegND}
+			</div>
+			<div class="col-md-4" >
+				{$RegND_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RegND_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RegND_fieldblock}
+	{BEGIN RHRD_fieldblock}		
+	<div class="container {$fielddispclass_RHRD}" data-fieldname="RHRD">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RHRD}">
+				{$label payrolltab1 RHRD}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RHRD}
+			</div>
+			<div class="col-md-4" >
+				{$RHRD_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RHRD_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RHRD_fieldblock}
+	{BEGIN SHRD_fieldblock}		
+	<div class="container {$fielddispclass_SHRD}" data-fieldname="SHRD">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SHRD}">
+				{$label payrolltab1 SHRD}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SHRD}
+			</div>
+			<div class="col-md-4" >
+				{$SHRD_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SHRD_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SHRD_fieldblock}
+	{BEGIN RHRDOT_fieldblock}		
+	<div class="container {$fielddispclass_RHRDOT}" data-fieldname="RHRDOT">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RHRDOT}">
+				{$label payrolltab1 RHRDOT}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RHRDOT}
+			</div>
+			<div class="col-md-4" >
+				{$RHRDOT_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RHRDOT_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RHRDOT_fieldblock}
+	{BEGIN SHRDOT_fieldblock}		
+	<div class="container {$fielddispclass_SHRDOT}" data-fieldname="SHRDOT">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SHRDOT}">
+				{$label payrolltab1 SHRDOT}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SHRDOT}
+			</div>
+			<div class="col-md-4" >
+				{$SHRDOT_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SHRDOT_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SHRDOT_fieldblock}
+	{BEGIN SHRDOTD_fieldblock}		
+	<div class="container {$fielddispclass_SHRDOTD}" data-fieldname="SHRDOTD">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SHRDOTD}">
+				{$label payrolltab1 SHRDOTD}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SHRDOTD}
+			</div>
+			<div class="col-md-4" >
+				{$SHRDOTD_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SHRDOTD_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SHRDOTD_fieldblock}
 	{BEGIN ThirToDate_fieldblock}		
 	<div class="container {$fielddispclass_ThirToDate}" data-fieldname="ThirToDate">
 		<div class="form-group">

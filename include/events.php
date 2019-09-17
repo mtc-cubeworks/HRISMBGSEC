@@ -49,7 +49,6 @@ class class_GlobalEvents extends eventsBase
 		$this->events["IsRecordEditable"]["payrolldiv"] = true;
 		$this->events["IsRecordEditable"]["leavesapp2"] = true;
 		$this->events["IsRecordEditable"]["filelog"] = true;
-		$this->events["IsRecordEditable"]["payrolltab1"] = true;
 		$this->events["IsRecordEditable"]["filelog1"] = true;
 		$this->events["IsRecordEditable"]["filelog2"] = true;
 		$this->events["IsRecordEditable"]["filelog3"] = true;
@@ -57,6 +56,7 @@ class class_GlobalEvents extends eventsBase
 		$this->events["IsRecordEditable"]["overtimefileapp"] = true;
 		$this->events["IsRecordEditable"]["overtimefileapp2"] = true;
 		$this->events["IsRecordEditable"]["demo_useremp"] = true;
+		$this->events["IsRecordEditable"]["payrolltab1"] = true;
 
 		}
 
@@ -429,18 +429,6 @@ return $isEditable=false;
 
 else return $isEditable=true;;
 		}
-		if($table == "payrolltab1")
-		{
-			
-
-
-$lk=$values["Locked"];
-
-if ($lk == 1)
- return false;
-else
- return true;;
-		}
 		if($table == "filelog1")
 		{
 			
@@ -538,6 +526,18 @@ else
 // Use "Add Action" button to add code snippets.
 
 //return $isEditable;;
+		}
+		if($table == "payrolltab1")
+		{
+			
+
+
+$lk=$values["Locked"];
+
+if ($lk == 1)
+ return false;
+else
+ return true;;
 		}
 		return $isEditable;
 	}

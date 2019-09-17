@@ -320,7 +320,7 @@ $tdatademo_useremp[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																														
+																																																																																																																																																																																																																																																																		
 
 $tdatademo_useremp[".ajaxCodeSnippetAdded"] = false;
 
@@ -9641,6 +9641,7 @@ $proto127["m_columns"][] = "PreCalMoTaxable";
 $proto127["m_columns"][] = "CalMonthly";
 $proto127["m_columns"][] = "TaxPerPeriod";
 $proto127["m_columns"][] = "Superior2";
+$proto127["m_columns"][] = "ExcludeBio";
 $obj = new SQLTable($proto127);
 
 $proto126["m_table"] = $obj;

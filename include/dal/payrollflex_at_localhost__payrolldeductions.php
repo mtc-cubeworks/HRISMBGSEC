@@ -12,6 +12,7 @@ $dalTablepayrolldeductions["Balance"] = array("type"=>5,"varname"=>"Balance", "n
 $dalTablepayrolldeductions["Employer"] = array("type"=>3,"varname"=>"Employer", "name" => "Employer");
 $dalTablepayrolldeductions["Division"] = array("type"=>3,"varname"=>"Division", "name" => "Division");
 $dalTablepayrolldeductions["WageType"] = array("type"=>3,"varname"=>"WageType", "name" => "WageType");
+$dalTablepayrolldeductions["OtherPayment"] = array("type"=>3,"varname"=>"OtherPayment", "name" => "OtherPayment");
 	$dalTablepayrolldeductions["PdeID"]["key"]=true;
 
 $dal_info["payrollflex_at_localhost__payrolldeductions"] = &$dalTablepayrolldeductions;

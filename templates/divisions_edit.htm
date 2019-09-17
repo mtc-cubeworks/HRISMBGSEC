@@ -183,6 +183,57 @@
 </div>
 {END MinimumDailyWage_fieldblock}
 
+			
+		
+
+
+
+
+
+{BEGIN details_holidays}
+<div data-pageid="1" class="bs-details"> 
+<div class="panel panel-info details-grid">
+
+<div class="panel-heading">
+	<h4 class="panel-title">Holidays
+		<span>
+{BEGIN details_inlineadd_holidays_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_inlineadd_holidays_attrs}>Inline Add</button>
+{END details_inlineadd_holidays_link}		
+{BEGIN details_add_holidays_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_add_holidays_attrs}>Add new</button>
+{END details_add_holidays_link}
+{BEGIN details_edit_holidays_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_edit_holidays_attrs}>Edit</button>
+{END details_edit_holidays_link}
+{BEGIN details_updateselected_holidays_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_updateselected_holidays_attrs}>Update selected</button>
+{END details_updateselected_holidays_link}
+
+
+{BEGIN details_delete_holidays_link}
+			<button type="button" class="btn btn-xs btn-info " disabled {$details_delete_holidays_attrs}>Delete</button>
+{END details_delete_holidays_link}
+
+{BEGIN saveall_holidays_link}
+			<button type="button" class="btn btn-xs btn-info" {$savealllink_holidays_attrs} {$savealllink_holidays_span}>Save all</button>
+{END saveall_holidays_link}
+{BEGIN cancelall_holidays_link}
+			<button type="button" class="btn btn-xs btn-info" {$cancelalllink_holidays_attrs} {$cancelalllink_holidays_span}>Cancel</button>
+{END cancelall_holidays_link}
+		</span>
+	</h4>
+</div>
+<div class="panel-body">
+	{$displayDetailTable_holidays}
+</div>
+</div>
+</div>
+{END details_holidays}
+	
+	
+	
+
 
 </div>
 

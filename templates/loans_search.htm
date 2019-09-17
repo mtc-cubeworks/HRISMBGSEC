@@ -102,6 +102,60 @@
 		</div>
 	</div>
 {END EmployeeID_fieldblock}
+	{BEGIN DType_fieldblock}		
+	<div class="container {$fielddispclass_DType}" data-fieldname="DType">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_DType}">
+				{$label loans DType}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_DType}
+			</div>
+			<div class="col-md-4" >
+				{$DType_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$DType_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END DType_fieldblock}
+	{BEGIN PaymentPeriod_fieldblock}		
+	<div class="container {$fielddispclass_PaymentPeriod}" data-fieldname="PaymentPeriod">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_PaymentPeriod}">
+				{$label loans PaymentPeriod}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_PaymentPeriod}
+			</div>
+			<div class="col-md-4" >
+				{$PaymentPeriod_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$PaymentPeriod_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END PaymentPeriod_fieldblock}
+	{BEGIN LoanDescription_fieldblock}		
+	<div class="container {$fielddispclass_LoanDescription}" data-fieldname="LoanDescription">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_LoanDescription}">
+				{$label loans LoanDescription}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_LoanDescription}
+			</div>
+			<div class="col-md-4" >
+				{$LoanDescription_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$LoanDescription_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END LoanDescription_fieldblock}
 	{BEGIN OPrincipal_fieldblock}		
 	<div class="container {$fielddispclass_OPrincipal}" data-fieldname="OPrincipal">
 		<div class="form-group">
@@ -138,60 +192,24 @@
 		</div>
 	</div>
 {END Principal_fieldblock}
-	{BEGIN MonthlyAmortization_fieldblock}		
-	<div class="container {$fielddispclass_MonthlyAmortization}" data-fieldname="MonthlyAmortization">
+	{BEGIN PerDay_fieldblock}		
+	<div class="container {$fielddispclass_PerDay}" data-fieldname="PerDay">
 		<div class="form-group">
-			<label class="col-md-2 control-label" for="{$labelfor_MonthlyAmortization}">
-				{$label loans MonthlyAmortization}
+			<label class="col-md-2 control-label" for="{$labelfor_PerDay}">
+				{$label loans PerDay}
 			</label>
 			<div class="col-md-2 bs-srchoption" >
-				{$searchtype_MonthlyAmortization}
+				{$searchtype_PerDay}
 			</div>
 			<div class="col-md-4" >
-				{$MonthlyAmortization_editcontrol}
+				{$PerDay_editcontrol}
 			</div>
 			<div class="col-md-4" >
-				{$MonthlyAmortization_editcontrol1}
+				{$PerDay_editcontrol1}
 			</div>
 		</div>
 	</div>
-{END MonthlyAmortization_fieldblock}
-	{BEGIN StartDate_fieldblock}		
-	<div class="container {$fielddispclass_StartDate}" data-fieldname="StartDate">
-		<div class="form-group">
-			<label class="col-md-2 control-label" for="{$labelfor_StartDate}">
-				{$label loans StartDate}
-			</label>
-			<div class="col-md-2 bs-srchoption" >
-				{$searchtype_StartDate}
-			</div>
-			<div class="col-md-4" >
-				{$StartDate_editcontrol}
-			</div>
-			<div class="col-md-4" >
-				{$StartDate_editcontrol1}
-			</div>
-		</div>
-	</div>
-{END StartDate_fieldblock}
-	{BEGIN LoanDescription_fieldblock}		
-	<div class="container {$fielddispclass_LoanDescription}" data-fieldname="LoanDescription">
-		<div class="form-group">
-			<label class="col-md-2 control-label" for="{$labelfor_LoanDescription}">
-				{$label loans LoanDescription}
-			</label>
-			<div class="col-md-2 bs-srchoption" >
-				{$searchtype_LoanDescription}
-			</div>
-			<div class="col-md-4" >
-				{$LoanDescription_editcontrol}
-			</div>
-			<div class="col-md-4" >
-				{$LoanDescription_editcontrol1}
-			</div>
-		</div>
-	</div>
-{END LoanDescription_fieldblock}
+{END PerDay_fieldblock}
 	{BEGIN PerPayrollAmount_fieldblock}		
 	<div class="container {$fielddispclass_PerPayrollAmount}" data-fieldname="PerPayrollAmount">
 		<div class="form-group">
@@ -210,24 +228,60 @@
 		</div>
 	</div>
 {END PerPayrollAmount_fieldblock}
-	{BEGIN PaymentPeriod_fieldblock}		
-	<div class="container {$fielddispclass_PaymentPeriod}" data-fieldname="PaymentPeriod">
+	{BEGIN MonthlyAmortization_fieldblock}		
+	<div class="container {$fielddispclass_MonthlyAmortization}" data-fieldname="MonthlyAmortization">
 		<div class="form-group">
-			<label class="col-md-2 control-label" for="{$labelfor_PaymentPeriod}">
-				{$label loans PaymentPeriod}
+			<label class="col-md-2 control-label" for="{$labelfor_MonthlyAmortization}">
+				{$label loans MonthlyAmortization}
 			</label>
 			<div class="col-md-2 bs-srchoption" >
-				{$searchtype_PaymentPeriod}
+				{$searchtype_MonthlyAmortization}
 			</div>
 			<div class="col-md-4" >
-				{$PaymentPeriod_editcontrol}
+				{$MonthlyAmortization_editcontrol}
 			</div>
 			<div class="col-md-4" >
-				{$PaymentPeriod_editcontrol1}
+				{$MonthlyAmortization_editcontrol1}
 			</div>
 		</div>
 	</div>
-{END PaymentPeriod_fieldblock}
+{END MonthlyAmortization_fieldblock}
+	{BEGIN LessAbsences_fieldblock}		
+	<div class="container {$fielddispclass_LessAbsences}" data-fieldname="LessAbsences">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_LessAbsences}">
+				{$label loans LessAbsences}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_LessAbsences}
+			</div>
+			<div class="col-md-4" >
+				{$LessAbsences_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$LessAbsences_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END LessAbsences_fieldblock}
+	{BEGIN StartDate_fieldblock}		
+	<div class="container {$fielddispclass_StartDate}" data-fieldname="StartDate">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_StartDate}">
+				{$label loans StartDate}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_StartDate}
+			</div>
+			<div class="col-md-4" >
+				{$StartDate_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$StartDate_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END StartDate_fieldblock}
 	{BEGIN Inactive_fieldblock}		
 	<div class="container {$fielddispclass_Inactive}" data-fieldname="Inactive">
 		<div class="form-group">

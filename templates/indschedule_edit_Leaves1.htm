@@ -72,6 +72,23 @@
 	</div>
 </div>
 {END PLDay_tabfieldblock}
+{BEGIN TrODay_tabfieldblock}
+<div class="container">
+	<div class="form-group in-tab {$fielddispclass_TrODay}" data-fieldname="TrODay" data-signal-error-for="TrODay{$id}" >
+		<label class="col-md-3 control-label" for="{$labelfor_TrODay}">
+			{BEGIN TrODay_label}{$label indschedule TrODay}{END TrODay_label}
+		</label>
+		<div class="col-md-6 " >
+			{$TrODay_editcontrol}
+		</div>
+		<div class="col-md-3 help-block " data-helpfor="TrODay">
+			<div class="text-muted" >
+			{$tooltip indschedule TrODay}
+			</div>
+		</div>
+	</div>
+</div>
+{END TrODay_tabfieldblock}
 
 
 

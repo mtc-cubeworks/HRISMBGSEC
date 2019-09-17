@@ -53,6 +53,9 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsemployername["English"]["AdminEmail"] = "Admin Email";
 	$fieldToolTipsemployername["English"]["AdminEmail"] = "";
 	$placeHoldersemployername["English"]["AdminEmail"] = "";
+	$fieldLabelsemployername["English"]["Logo"] = "Logo";
+	$fieldToolTipsemployername["English"]["Logo"] = "";
+	$placeHoldersemployername["English"]["Logo"] = "";
 	if (count($fieldToolTipsemployername["English"]))
 		$tdataemployername[".isUseToolTips"] = true;
 }
@@ -159,7 +162,7 @@ $tdataemployername[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																														
+																																																																																																																																																																																																																																																																		
 
 $tdataemployername[".ajaxCodeSnippetAdded"] = false;
 
@@ -187,6 +190,7 @@ $tdataemployername[".allSearchFields"][] = "EnID";
 	$tdataemployername[".allSearchFields"][] = "PagIbig";
 	$tdataemployername[".allSearchFields"][] = "TelNo";
 	$tdataemployername[".allSearchFields"][] = "ZipCode";
+	$tdataemployername[".allSearchFields"][] = "Logo";
 	$tdataemployername[".allSearchFields"][] = "AdminEmail";
 	
 
@@ -201,6 +205,7 @@ $tdataemployername[".googleLikeFields"][] = "PagIbig";
 $tdataemployername[".googleLikeFields"][] = "TelNo";
 $tdataemployername[".googleLikeFields"][] = "ZipCode";
 $tdataemployername[".googleLikeFields"][] = "AdminEmail";
+$tdataemployername[".googleLikeFields"][] = "Logo";
 
 
 $tdataemployername[".advSearchFields"] = array();
@@ -213,6 +218,7 @@ $tdataemployername[".advSearchFields"][] = "PHICNo";
 $tdataemployername[".advSearchFields"][] = "PagIbig";
 $tdataemployername[".advSearchFields"][] = "TelNo";
 $tdataemployername[".advSearchFields"][] = "ZipCode";
+$tdataemployername[".advSearchFields"][] = "Logo";
 $tdataemployername[".advSearchFields"][] = "AdminEmail";
 
 $tdataemployername[".tableType"] = "list";
@@ -256,7 +262,7 @@ $tdataemployername[".strOrderBy"] = $tstrOrderBy;
 
 $tdataemployername[".orderindexes"] = array();
 
-$tdataemployername[".sqlHead"] = "SELECT EnID,  	EmployerName,  	Address,  	SSSNo,  	TIN,  	PHICNo,  	PagIbig,  	TelNo,  	ZipCode,  	AdminEmail";
+$tdataemployername[".sqlHead"] = "SELECT EnID,  	EmployerName,  	Address,  	SSSNo,  	TIN,  	PHICNo,  	PagIbig,  	TelNo,  	ZipCode,  	AdminEmail,  	Logo";
 $tdataemployername[".sqlFrom"] = "FROM employername";
 $tdataemployername[".sqlWhereExpr"] = "";
 $tdataemployername[".sqlTail"] = "";
@@ -310,6 +316,7 @@ $tdataemployername[".listFields"][] = "PHICNo";
 $tdataemployername[".listFields"][] = "PagIbig";
 $tdataemployername[".listFields"][] = "TelNo";
 $tdataemployername[".listFields"][] = "ZipCode";
+$tdataemployername[".listFields"][] = "Logo";
 $tdataemployername[".listFields"][] = "AdminEmail";
 
 $tdataemployername[".hideMobileList"] = array();
@@ -325,6 +332,7 @@ $tdataemployername[".viewFields"][] = "PHICNo";
 $tdataemployername[".viewFields"][] = "PagIbig";
 $tdataemployername[".viewFields"][] = "TelNo";
 $tdataemployername[".viewFields"][] = "ZipCode";
+$tdataemployername[".viewFields"][] = "Logo";
 $tdataemployername[".viewFields"][] = "AdminEmail";
 
 $tdataemployername[".addFields"] = array();
@@ -336,6 +344,7 @@ $tdataemployername[".addFields"][] = "PHICNo";
 $tdataemployername[".addFields"][] = "PagIbig";
 $tdataemployername[".addFields"][] = "TelNo";
 $tdataemployername[".addFields"][] = "ZipCode";
+$tdataemployername[".addFields"][] = "Logo";
 $tdataemployername[".addFields"][] = "AdminEmail";
 
 $tdataemployername[".masterListFields"] = array();
@@ -348,6 +357,7 @@ $tdataemployername[".masterListFields"][] = "PHICNo";
 $tdataemployername[".masterListFields"][] = "PagIbig";
 $tdataemployername[".masterListFields"][] = "TelNo";
 $tdataemployername[".masterListFields"][] = "ZipCode";
+$tdataemployername[".masterListFields"][] = "Logo";
 $tdataemployername[".masterListFields"][] = "AdminEmail";
 
 $tdataemployername[".inlineAddFields"] = array();
@@ -359,6 +369,7 @@ $tdataemployername[".inlineAddFields"][] = "PHICNo";
 $tdataemployername[".inlineAddFields"][] = "PagIbig";
 $tdataemployername[".inlineAddFields"][] = "TelNo";
 $tdataemployername[".inlineAddFields"][] = "ZipCode";
+$tdataemployername[".inlineAddFields"][] = "Logo";
 $tdataemployername[".inlineAddFields"][] = "AdminEmail";
 
 $tdataemployername[".editFields"] = array();
@@ -370,6 +381,7 @@ $tdataemployername[".editFields"][] = "PHICNo";
 $tdataemployername[".editFields"][] = "PagIbig";
 $tdataemployername[".editFields"][] = "TelNo";
 $tdataemployername[".editFields"][] = "ZipCode";
+$tdataemployername[".editFields"][] = "Logo";
 $tdataemployername[".editFields"][] = "AdminEmail";
 
 $tdataemployername[".inlineEditFields"] = array();
@@ -381,6 +393,7 @@ $tdataemployername[".inlineEditFields"][] = "PHICNo";
 $tdataemployername[".inlineEditFields"][] = "PagIbig";
 $tdataemployername[".inlineEditFields"][] = "TelNo";
 $tdataemployername[".inlineEditFields"][] = "ZipCode";
+$tdataemployername[".inlineEditFields"][] = "Logo";
 $tdataemployername[".inlineEditFields"][] = "AdminEmail";
 
 $tdataemployername[".updateSelectedFields"] = array();
@@ -403,6 +416,7 @@ $tdataemployername[".exportFields"][] = "PHICNo";
 $tdataemployername[".exportFields"][] = "PagIbig";
 $tdataemployername[".exportFields"][] = "TelNo";
 $tdataemployername[".exportFields"][] = "ZipCode";
+$tdataemployername[".exportFields"][] = "Logo";
 $tdataemployername[".exportFields"][] = "AdminEmail";
 
 $tdataemployername[".importFields"] = array();
@@ -416,6 +430,7 @@ $tdataemployername[".importFields"][] = "PagIbig";
 $tdataemployername[".importFields"][] = "TelNo";
 $tdataemployername[".importFields"][] = "ZipCode";
 $tdataemployername[".importFields"][] = "AdminEmail";
+$tdataemployername[".importFields"][] = "Logo";
 
 $tdataemployername[".printFields"] = array();
 $tdataemployername[".printFields"][] = "EnID";
@@ -427,6 +442,7 @@ $tdataemployername[".printFields"][] = "PHICNo";
 $tdataemployername[".printFields"][] = "PagIbig";
 $tdataemployername[".printFields"][] = "TelNo";
 $tdataemployername[".printFields"][] = "ZipCode";
+$tdataemployername[".printFields"][] = "Logo";
 $tdataemployername[".printFields"][] = "AdminEmail";
 
 
@@ -1746,6 +1762,149 @@ $tdataemployername[".printFields"][] = "AdminEmail";
 
 
 	$tdataemployername["AdminEmail"] = $fdata;
+//	Logo
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 11;
+	$fdata["strName"] = "Logo";
+	$fdata["GoodName"] = "Logo";
+	$fdata["ownerTable"] = "employername";
+	$fdata["Label"] = GetFieldLabel("employername","Logo");
+	$fdata["FieldType"] = 200;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "Logo";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "Logo";
+
+		$fdata["DeleteAssociatedFile"] = true;
+
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "File-based Image");
+
+	
+	
+				$vdata["ShowThumbnail"] = true;
+	$vdata["ThumbWidth"] = 72;
+	$vdata["ThumbHeight"] = 72;
+			$vdata["ImageWidth"] = 457;
+	$vdata["ImageHeight"] = 0;
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Document upload");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+							$edata["acceptFileTypes"] = "gif";
+						$edata["acceptFileTypes"] .= "|jpg";
+						$edata["acceptFileTypes"] .= "|png";
+		$edata["acceptFileTypes"] = "(".$edata["acceptFileTypes"].")$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+		$edata["maxFileSize"] = 1000;
+
+		$edata["maxTotalFilesSize"] = 1000;
+
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+		$edata["CreateThumbnail"] = true;
+	$edata["StrThumbnail"] = "th";
+			$edata["ThumbnailSize"] = 100;
+
+				$edata["ResizeImage"] = true;
+				$edata["NewSize"] = 600;
+
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdataemployername["Logo"] = $fdata;
 
 
 $tables_data["employername"]=&$tdataemployername;
@@ -1779,7 +1938,7 @@ function createSqlQuery_employername()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "EnID,  	EmployerName,  	Address,  	SSSNo,  	TIN,  	PHICNo,  	PagIbig,  	TelNo,  	ZipCode,  	AdminEmail";
+$proto0["m_strFieldList"] = "EnID,  	EmployerName,  	Address,  	SSSNo,  	TIN,  	PHICNo,  	PagIbig,  	TelNo,  	ZipCode,  	AdminEmail,  	Logo";
 $proto0["m_strFrom"] = "FROM employername";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -1959,46 +2118,61 @@ $proto24["m_alias"] = "";
 $obj = new SQLFieldListItem($proto24);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto26=array();
-$proto26["m_link"] = "SQLL_MAIN";
-			$proto27=array();
-$proto27["m_strName"] = "employername";
-$proto27["m_srcTableName"] = "employername";
-$proto27["m_columns"] = array();
-$proto27["m_columns"][] = "EnID";
-$proto27["m_columns"][] = "EmployerName";
-$proto27["m_columns"][] = "Address";
-$proto27["m_columns"][] = "SSSNo";
-$proto27["m_columns"][] = "TIN";
-$proto27["m_columns"][] = "PHICNo";
-$proto27["m_columns"][] = "PagIbig";
-$proto27["m_columns"][] = "TelNo";
-$proto27["m_columns"][] = "ZipCode";
-$proto27["m_columns"][] = "AdminEmail";
-$obj = new SQLTable($proto27);
+						$proto26=array();
+			$obj = new SQLField(array(
+	"m_strName" => "Logo",
+	"m_strTable" => "employername",
+	"m_srcTableName" => "employername"
+));
 
-$proto26["m_table"] = $obj;
-$proto26["m_sql"] = "employername";
-$proto26["m_alias"] = "";
+$proto26["m_sql"] = "Logo";
 $proto26["m_srcTableName"] = "employername";
-$proto28=array();
-$proto28["m_sql"] = "";
-$proto28["m_uniontype"] = "SQLL_UNKNOWN";
+$proto26["m_expr"]=$obj;
+$proto26["m_alias"] = "";
+$obj = new SQLFieldListItem($proto26);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto28=array();
+$proto28["m_link"] = "SQLL_MAIN";
+			$proto29=array();
+$proto29["m_strName"] = "employername";
+$proto29["m_srcTableName"] = "employername";
+$proto29["m_columns"] = array();
+$proto29["m_columns"][] = "EnID";
+$proto29["m_columns"][] = "EmployerName";
+$proto29["m_columns"][] = "Address";
+$proto29["m_columns"][] = "SSSNo";
+$proto29["m_columns"][] = "TIN";
+$proto29["m_columns"][] = "PHICNo";
+$proto29["m_columns"][] = "PagIbig";
+$proto29["m_columns"][] = "TelNo";
+$proto29["m_columns"][] = "ZipCode";
+$proto29["m_columns"][] = "AdminEmail";
+$proto29["m_columns"][] = "Logo";
+$obj = new SQLTable($proto29);
+
+$proto28["m_table"] = $obj;
+$proto28["m_sql"] = "employername";
+$proto28["m_alias"] = "";
+$proto28["m_srcTableName"] = "employername";
+$proto30=array();
+$proto30["m_sql"] = "";
+$proto30["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto28["m_column"]=$obj;
-$proto28["m_contained"] = array();
-$proto28["m_strCase"] = "";
-$proto28["m_havingmode"] = false;
-$proto28["m_inBrackets"] = false;
-$proto28["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto28);
+$proto30["m_column"]=$obj;
+$proto30["m_contained"] = array();
+$proto30["m_strCase"] = "";
+$proto30["m_havingmode"] = false;
+$proto30["m_inBrackets"] = false;
+$proto30["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto30);
 
-$proto26["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto26);
+$proto28["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto28);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -2014,11 +2188,12 @@ $queryData_employername = createSqlQuery_employername();
 	
 		;
 
-										
+											
 
 $tdataemployername[".sqlquery"] = $queryData_employername;
 
-$tableEvents["employername"] = new eventsBase;
-$tdataemployername[".hasEvents"] = false;
+include_once(getabspath("include/employername_events.php"));
+$tableEvents["employername"] = new eventclass_employername;
+$tdataemployername[".hasEvents"] = true;
 
 ?>

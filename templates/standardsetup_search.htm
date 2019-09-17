@@ -84,24 +84,6 @@
 		</div>
 	</div>
 {END SID_fieldblock}
-	{BEGIN PreTimeInMins_fieldblock}		
-	<div class="container {$fielddispclass_PreTimeInMins}" data-fieldname="PreTimeInMins">
-		<div class="form-group">
-			<label class="col-md-2 control-label" for="{$labelfor_PreTimeInMins}">
-				{$label standardsetup PreTimeInMins}
-			</label>
-			<div class="col-md-2 bs-srchoption" >
-				{$searchtype_PreTimeInMins}
-			</div>
-			<div class="col-md-4" >
-				{$PreTimeInMins_editcontrol}
-			</div>
-			<div class="col-md-4" >
-				{$PreTimeInMins_editcontrol1}
-			</div>
-		</div>
-	</div>
-{END PreTimeInMins_fieldblock}
 	{BEGIN WorkingDaysInYear_fieldblock}		
 	<div class="container {$fielddispclass_WorkingDaysInYear}" data-fieldname="WorkingDaysInYear">
 		<div class="form-group">
@@ -228,42 +210,6 @@
 		</div>
 	</div>
 {END SHFactorDaily_fieldblock}
-	{BEGIN CHFactor_fieldblock}		
-	<div class="container {$fielddispclass_CHFactor}" data-fieldname="CHFactor">
-		<div class="form-group">
-			<label class="col-md-2 control-label" for="{$labelfor_CHFactor}">
-				{$label standardsetup CHFactor}
-			</label>
-			<div class="col-md-2 bs-srchoption" >
-				{$searchtype_CHFactor}
-			</div>
-			<div class="col-md-4" >
-				{$CHFactor_editcontrol}
-			</div>
-			<div class="col-md-4" >
-				{$CHFactor_editcontrol1}
-			</div>
-		</div>
-	</div>
-{END CHFactor_fieldblock}
-	{BEGIN CHFactorDaily_fieldblock}		
-	<div class="container {$fielddispclass_CHFactorDaily}" data-fieldname="CHFactorDaily">
-		<div class="form-group">
-			<label class="col-md-2 control-label" for="{$labelfor_CHFactorDaily}">
-				{$label standardsetup CHFactorDaily}
-			</label>
-			<div class="col-md-2 bs-srchoption" >
-				{$searchtype_CHFactorDaily}
-			</div>
-			<div class="col-md-4" >
-				{$CHFactorDaily_editcontrol}
-			</div>
-			<div class="col-md-4" >
-				{$CHFactorDaily_editcontrol1}
-			</div>
-		</div>
-	</div>
-{END CHFactorDaily_fieldblock}
 	{BEGIN DoubleHoliday_fieldblock}		
 	<div class="container {$fielddispclass_DoubleHoliday}" data-fieldname="DoubleHoliday">
 		<div class="form-group">
@@ -354,60 +300,42 @@
 		</div>
 	</div>
 {END SHOTFactor_fieldblock}
-	{BEGIN SHOTFactorDaily_fieldblock}		
-	<div class="container {$fielddispclass_SHOTFactorDaily}" data-fieldname="SHOTFactorDaily">
+	{BEGIN SHOTDFactor_fieldblock}		
+	<div class="container {$fielddispclass_SHOTDFactor}" data-fieldname="SHOTDFactor">
 		<div class="form-group">
-			<label class="col-md-2 control-label" for="{$labelfor_SHOTFactorDaily}">
-				{$label standardsetup SHOTFactorDaily}
+			<label class="col-md-2 control-label" for="{$labelfor_SHOTDFactor}">
+				{$label standardsetup SHOTDFactor}
 			</label>
 			<div class="col-md-2 bs-srchoption" >
-				{$searchtype_SHOTFactorDaily}
+				{$searchtype_SHOTDFactor}
 			</div>
 			<div class="col-md-4" >
-				{$SHOTFactorDaily_editcontrol}
+				{$SHOTDFactor_editcontrol}
 			</div>
 			<div class="col-md-4" >
-				{$SHOTFactorDaily_editcontrol1}
+				{$SHOTDFactor_editcontrol1}
 			</div>
 		</div>
 	</div>
-{END SHOTFactorDaily_fieldblock}
-	{BEGIN CHOTFactor_fieldblock}		
-	<div class="container {$fielddispclass_CHOTFactor}" data-fieldname="CHOTFactor">
+{END SHOTDFactor_fieldblock}
+	{BEGIN SHRDOTDFactor_fieldblock}		
+	<div class="container {$fielddispclass_SHRDOTDFactor}" data-fieldname="SHRDOTDFactor">
 		<div class="form-group">
-			<label class="col-md-2 control-label" for="{$labelfor_CHOTFactor}">
-				{$label standardsetup CHOTFactor}
+			<label class="col-md-2 control-label" for="{$labelfor_SHRDOTDFactor}">
+				{$label standardsetup SHRDOTDFactor}
 			</label>
 			<div class="col-md-2 bs-srchoption" >
-				{$searchtype_CHOTFactor}
+				{$searchtype_SHRDOTDFactor}
 			</div>
 			<div class="col-md-4" >
-				{$CHOTFactor_editcontrol}
+				{$SHRDOTDFactor_editcontrol}
 			</div>
 			<div class="col-md-4" >
-				{$CHOTFactor_editcontrol1}
+				{$SHRDOTDFactor_editcontrol1}
 			</div>
 		</div>
 	</div>
-{END CHOTFactor_fieldblock}
-	{BEGIN CHOTFactorDaily_fieldblock}		
-	<div class="container {$fielddispclass_CHOTFactorDaily}" data-fieldname="CHOTFactorDaily">
-		<div class="form-group">
-			<label class="col-md-2 control-label" for="{$labelfor_CHOTFactorDaily}">
-				{$label standardsetup CHOTFactorDaily}
-			</label>
-			<div class="col-md-2 bs-srchoption" >
-				{$searchtype_CHOTFactorDaily}
-			</div>
-			<div class="col-md-4" >
-				{$CHOTFactorDaily_editcontrol}
-			</div>
-			<div class="col-md-4" >
-				{$CHOTFactorDaily_editcontrol1}
-			</div>
-		</div>
-	</div>
-{END CHOTFactorDaily_fieldblock}
+{END SHRDOTDFactor_fieldblock}
 	{BEGIN RDOTFactor_fieldblock}		
 	<div class="container {$fielddispclass_RDOTFactor}" data-fieldname="RDOTFactor">
 		<div class="form-group">
@@ -462,24 +390,6 @@
 		</div>
 	</div>
 {END SHRDOTFactor_fieldblock}
-	{BEGIN SHRDOTFactorDaily_fieldblock}		
-	<div class="container {$fielddispclass_SHRDOTFactorDaily}" data-fieldname="SHRDOTFactorDaily">
-		<div class="form-group">
-			<label class="col-md-2 control-label" for="{$labelfor_SHRDOTFactorDaily}">
-				{$label standardsetup SHRDOTFactorDaily}
-			</label>
-			<div class="col-md-2 bs-srchoption" >
-				{$searchtype_SHRDOTFactorDaily}
-			</div>
-			<div class="col-md-4" >
-				{$SHRDOTFactorDaily_editcontrol}
-			</div>
-			<div class="col-md-4" >
-				{$SHRDOTFactorDaily_editcontrol1}
-			</div>
-		</div>
-	</div>
-{END SHRDOTFactorDaily_fieldblock}
 	{BEGIN RHNDOTFactor_fieldblock}		
 	<div class="container {$fielddispclass_RHNDOTFactor}" data-fieldname="RHNDOTFactor">
 		<div class="form-group">
@@ -516,24 +426,6 @@
 		</div>
 	</div>
 {END SHNDOTFactor_fieldblock}
-	{BEGIN CHNDOTFactor_fieldblock}		
-	<div class="container {$fielddispclass_CHNDOTFactor}" data-fieldname="CHNDOTFactor">
-		<div class="form-group">
-			<label class="col-md-2 control-label" for="{$labelfor_CHNDOTFactor}">
-				{$label standardsetup CHNDOTFactor}
-			</label>
-			<div class="col-md-2 bs-srchoption" >
-				{$searchtype_CHNDOTFactor}
-			</div>
-			<div class="col-md-4" >
-				{$CHNDOTFactor_editcontrol}
-			</div>
-			<div class="col-md-4" >
-				{$CHNDOTFactor_editcontrol1}
-			</div>
-		</div>
-	</div>
-{END CHNDOTFactor_fieldblock}
 	{BEGIN RDNDOTFactor_fieldblock}		
 	<div class="container {$fielddispclass_RDNDOTFactor}" data-fieldname="RDNDOTFactor">
 		<div class="form-group">
@@ -750,24 +642,6 @@
 		</div>
 	</div>
 {END SHNDiffFactor_fieldblock}
-	{BEGIN CHNDiffFactor_fieldblock}		
-	<div class="container {$fielddispclass_CHNDiffFactor}" data-fieldname="CHNDiffFactor">
-		<div class="form-group">
-			<label class="col-md-2 control-label" for="{$labelfor_CHNDiffFactor}">
-				{$label standardsetup CHNDiffFactor}
-			</label>
-			<div class="col-md-2 bs-srchoption" >
-				{$searchtype_CHNDiffFactor}
-			</div>
-			<div class="col-md-4" >
-				{$CHNDiffFactor_editcontrol}
-			</div>
-			<div class="col-md-4" >
-				{$CHNDiffFactor_editcontrol1}
-			</div>
-		</div>
-	</div>
-{END CHNDiffFactor_fieldblock}
 	{BEGIN RDNDiffFactor_fieldblock}		
 	<div class="container {$fielddispclass_RDNDiffFactor}" data-fieldname="RDNDiffFactor">
 		<div class="form-group">

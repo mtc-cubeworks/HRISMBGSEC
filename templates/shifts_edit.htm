@@ -129,6 +129,24 @@
 </div>
 {END SchedType_fieldblock}
 
+			{BEGIN PreLogMins_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_PreLogMins}" data-fieldname="PreLogMins" data-signal-error-for="PreLogMins{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_PreLogMins}">
+		{BEGIN PreLogMins_label}{$label shifts PreLogMins}{END PreLogMins_label}
+	</label>
+	<div class="col-md-6" >
+		{$PreLogMins_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="PreLogMins">
+		<div class="text-muted" >
+		{$tooltip shifts PreLogMins}
+		</div>
+	</div>
+</div>
+</div>
+{END PreLogMins_fieldblock}
+
 			{BEGIN TimeIn_fieldblock}
 <div class=container>
 <div class="form-group {$fielddispclass_TimeIn}" data-fieldname="TimeIn" data-signal-error-for="TimeIn{$id}" >
@@ -290,24 +308,6 @@
 </div>
 </div>
 {END MinsPerDay_fieldblock}
-
-			{BEGIN AutoApproveNDiff_fieldblock}
-<div class=container>
-<div class="form-group {$fielddispclass_AutoApproveNDiff}" data-fieldname="AutoApproveNDiff" data-signal-error-for="AutoApproveNDiff{$id}" >
-	<label class="col-md-3 control-label" for="{$labelfor_AutoApproveNDiff}">
-		{BEGIN AutoApproveNDiff_label}{$label shifts AutoApproveNDiff}{END AutoApproveNDiff_label}
-	</label>
-	<div class="col-md-6" >
-		{$AutoApproveNDiff_editcontrol}
-	</div>
-	<div class="col-md-3 help-block" data-helpfor="AutoApproveNDiff">
-		<div class="text-muted" >
-		{$tooltip shifts AutoApproveNDiff}
-		</div>
-	</div>
-</div>
-</div>
-{END AutoApproveNDiff_fieldblock}
 
 			
 		

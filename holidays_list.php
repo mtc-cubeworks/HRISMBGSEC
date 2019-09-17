@@ -151,6 +151,11 @@ $layout->skins["menu"] = "";
 
 $layout->blocks["top"][] = "menu";
 $layout->blocks["topmiddle"] = array();
+$layout->containers["masterinfo"] = array();
+$layout->container_properties["masterinfo"] = array(  );
+$layout->containers["masterinfo"][] = array("name"=>"masterinfo",
+	"block"=>"mastertable_block", "substyle"=>1  );
+
 $layout->skins["masterinfo"] = "";
 
 $layout->blocks["topmiddle"][] = "masterinfo";
@@ -190,6 +195,35 @@ $page_layouts["holidays_list"] = $layout;
 
 
 // add master layouts 
+
+
+
+
+$layout = new TLayout("masterlist_bootstrap", "Metro1DeliciousLavender1", "MobileDeliciousLavender1");
+$layout->version = 3;
+	$layout->bootstrapTheme = "default";
+		$layout->customCssPageName = "divisions_masterlist";
+$layout->blocks["bare"] = array();
+$layout->containers["column"] = array();
+$layout->container_properties["column"] = array(  );
+$layout->containers["column"][] = array("name"=>"masterlistheader",
+	"block"=>"masterlist_title", "substyle"=>1  );
+
+$layout->skins["column"] = "";
+
+$layout->blocks["bare"][] = "column";
+$layout->containers["mastergrid"] = array();
+$layout->container_properties["mastergrid"] = array(  );
+$layout->containers["mastergrid"][] = array("name"=>"masterlistgrid",
+	"block"=>"", "substyle"=>1  );
+
+$layout->skins["mastergrid"] = "";
+
+$layout->blocks["bare"][] = "mastergrid";
+$page_layouts["divisions_masterlist"] = $layout;
+
+
+
 
 $options = array();
 //array of params for classes

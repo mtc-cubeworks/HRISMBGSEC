@@ -165,7 +165,7 @@ $tdataindschedule11[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																														
+																																																																																																																																																																																																																																																																		
 
 $tdataindschedule11[".ajaxCodeSnippetAdded"] = false;
 
@@ -2756,6 +2756,15 @@ $proto37["m_columns"][] = "DHND";
 $proto37["m_columns"][] = "DHRDND";
 $proto37["m_columns"][] = "DHNDOT";
 $proto37["m_columns"][] = "DHRDNDOT";
+$proto37["m_columns"][] = "RHRDOT";
+$proto37["m_columns"][] = "SHRDOT";
+$proto37["m_columns"][] = "RegND";
+$proto37["m_columns"][] = "RegRD";
+$proto37["m_columns"][] = "SHOTD";
+$proto37["m_columns"][] = "SHRDOTD";
+$proto37["m_columns"][] = "NDOT";
+$proto37["m_columns"][] = "RHRD";
+$proto37["m_columns"][] = "SHRD";
 $obj = new SQLTable($proto37);
 
 $proto36["m_table"] = $obj;
@@ -2790,8 +2799,10 @@ $proto41["m_columns"] = array();
 $proto41["m_columns"][] = "ScID";
 $proto41["m_columns"][] = "TempOT";
 $proto41["m_columns"][] = "NDMins";
+$proto41["m_columns"][] = "NDOTMins";
 $proto41["m_columns"][] = "WorkMinsNet";
 $proto41["m_columns"][] = "FiledOT";
+$proto41["m_columns"][] = "RestDay";
 $obj = new SQLTable($proto41);
 
 $proto40["m_table"] = $obj;

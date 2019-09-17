@@ -33,6 +33,11 @@ $layout->containers["pdf"][] = array("name"=>"printbuttons",
 $layout->skins["pdf"] = "";
 
 $layout->blocks["top"][] = "pdf";
+$layout->containers["master"] = array();
+$layout->container_properties["master"] = array(  );
+$layout->containers["master"][] = array("name"=>"masterinfo",
+	"block"=>"mastertable_block", "substyle"=>1  );
+
 $layout->skins["master"] = "";
 
 $layout->blocks["top"][] = "master";
@@ -57,6 +62,34 @@ $layout->skins["grid"] = "";
 $layout->blocks["top"][] = "grid";
 $page_layouts["holidays_print"] = $layout;
 
+
+
+
+			
+
+
+$layout = new TLayout("masterprint_bootstrap", "Metro1DeliciousLavender1", "MobileDeliciousLavender1");
+$layout->version = 3;
+	$layout->bootstrapTheme = "default";
+		$layout->customCssPageName = "divisions_masterprint";
+$layout->blocks["bare"] = array();
+$layout->containers["column"] = array();
+$layout->container_properties["column"] = array(  );
+$layout->containers["column"][] = array("name"=>"masterprintheader",
+	"block"=>"masterlist_title", "substyle"=>1  );
+
+$layout->skins["column"] = "";
+
+$layout->blocks["bare"][] = "column";
+$layout->containers["mastergrid"] = array();
+$layout->container_properties["mastergrid"] = array(  );
+$layout->containers["mastergrid"][] = array("name"=>"bsmasterprintgrid",
+	"block"=>"", "substyle"=>1  );
+
+$layout->skins["mastergrid"] = "";
+
+$layout->blocks["bare"][] = "mastergrid";
+$page_layouts["divisions_masterprint"] = $layout;
 
 
 

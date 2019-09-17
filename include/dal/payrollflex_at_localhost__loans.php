@@ -10,6 +10,9 @@ $dalTableloans["PerPayrollAmount"] = array("type"=>14,"varname"=>"PerPayrollAmou
 $dalTableloans["PaymentPeriod"] = array("type"=>3,"varname"=>"PaymentPeriod", "name" => "PaymentPeriod");
 $dalTableloans["Inactive"] = array("type"=>16,"varname"=>"Inactive", "name" => "Inactive");
 $dalTableloans["OPrincipal"] = array("type"=>14,"varname"=>"OPrincipal", "name" => "OPrincipal");
+$dalTableloans["DType"] = array("type"=>3,"varname"=>"DType", "name" => "DType");
+$dalTableloans["PerDay"] = array("type"=>14,"varname"=>"PerDay", "name" => "PerDay");
+$dalTableloans["LessAbsences"] = array("type"=>16,"varname"=>"LessAbsences", "name" => "LessAbsences");
 	$dalTableloans["LoanID"]["key"]=true;
 
 $dal_info["payrollflex_at_localhost__loans"] = &$dalTableloans;

@@ -190,6 +190,11 @@
 				{$label demo_user_open AccountNo}
 			</th>
 			{END AccountNo_fieldheadercolumn}
+			{BEGIN ExcludeBio_fieldheadercolumn}
+			<th class="{$ExcludeBio_class}" {$ExcludeBio_style}  data-field="ExcludeBio">
+				{$label demo_user_open ExcludeBio}
+			</th>
+			{END ExcludeBio_fieldheadercolumn}
 			{BEGIN AllowableSickLeave_fieldheadercolumn}
 			<th class="{$AllowableSickLeave_class}" {$AllowableSickLeave_style}  data-field="AllowableSickLeave">
 				{$label demo_user_open AllowableSickLeave}
@@ -285,16 +290,16 @@
 				{$label demo_user_open NoLateDeduction}
 			</th>
 			{END NoLateDeduction_fieldheadercolumn}
-			{BEGIN GracePeriodMins_fieldheadercolumn}
-			<th class="{$GracePeriodMins_class}" {$GracePeriodMins_style}  data-field="GracePeriodMins">
-				{$label demo_user_open GracePeriodMins}
-			</th>
-			{END GracePeriodMins_fieldheadercolumn}
 			{BEGIN user_id_fieldheadercolumn}
 			<th class="{$user_id_class}" {$user_id_style}  data-field="user_id">
 				{$label demo_user_open user_id}
 			</th>
 			{END user_id_fieldheadercolumn}
+			{BEGIN GracePeriodMins_fieldheadercolumn}
+			<th class="{$GracePeriodMins_class}" {$GracePeriodMins_style}  data-field="GracePeriodMins">
+				{$label demo_user_open GracePeriodMins}
+			</th>
+			{END GracePeriodMins_fieldheadercolumn}
 			{BEGIN WithAdditionalBreaks_fieldheadercolumn}
 			<th class="{$WithAdditionalBreaks_class}" {$WithAdditionalBreaks_style}  data-field="WithAdditionalBreaks">
 				{$label demo_user_open WithAdditionalBreaks}
@@ -507,6 +512,11 @@
 				{$AccountNo_value}
 			</td>
 			{END AccountNo_fieldcolumn}
+			{BEGIN ExcludeBio_fieldcolumn}
+			<td  class="{$ExcludeBio_class}" {$ExcludeBio_style} {$recordattrs}>
+				{$ExcludeBio_value}
+			</td>
+			{END ExcludeBio_fieldcolumn}
 			{BEGIN AllowableSickLeave_fieldcolumn}
 			<td  class="{$AllowableSickLeave_class}" {$AllowableSickLeave_style} {$recordattrs}>
 				{$AllowableSickLeave_value}
@@ -602,16 +612,16 @@
 				{$NoLateDeduction_value}
 			</td>
 			{END NoLateDeduction_fieldcolumn}
-			{BEGIN GracePeriodMins_fieldcolumn}
-			<td  class="{$GracePeriodMins_class}" {$GracePeriodMins_style} {$recordattrs}>
-				{$GracePeriodMins_value}
-			</td>
-			{END GracePeriodMins_fieldcolumn}
 			{BEGIN user_id_fieldcolumn}
 			<td  class="{$user_id_class}" {$user_id_style} {$recordattrs}>
 				{$user_id_value}
 			</td>
 			{END user_id_fieldcolumn}
+			{BEGIN GracePeriodMins_fieldcolumn}
+			<td  class="{$GracePeriodMins_class}" {$GracePeriodMins_style} {$recordattrs}>
+				{$GracePeriodMins_value}
+			</td>
+			{END GracePeriodMins_fieldcolumn}
 			{BEGIN WithAdditionalBreaks_fieldcolumn}
 			<td  class="{$WithAdditionalBreaks_class}" {$WithAdditionalBreaks_style} {$recordattrs}>
 				{$WithAdditionalBreaks_value}

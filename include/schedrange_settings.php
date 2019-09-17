@@ -83,6 +83,9 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsschedrange["English"]["Division"] = "Division";
 	$fieldToolTipsschedrange["English"]["Division"] = "";
 	$placeHoldersschedrange["English"]["Division"] = "";
+	$fieldLabelsschedrange["English"]["PreLogMins"] = "PreLog Mins";
+	$fieldToolTipsschedrange["English"]["PreLogMins"] = "";
+	$placeHoldersschedrange["English"]["PreLogMins"] = "";
 	if (count($fieldToolTipsschedrange["English"]))
 		$tdataschedrange[".isUseToolTips"] = true;
 }
@@ -190,9 +193,9 @@ $tdataschedrange[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																										
+																																																																																																																																			
 							
-																																																																																																					
+																																																																																																																																
 
 $tdataschedrange[".ajaxCodeSnippetAdded"] = false;
 
@@ -221,6 +224,7 @@ $tdataschedrange[".allSearchFields"][] = "ScRID";
 	$tdataschedrange[".allSearchFields"][] = "SchedType";
 	$tdataschedrange[".allSearchFields"][] = "SchedBy";
 	$tdataschedrange[".allSearchFields"][] = "RestDays";
+	$tdataschedrange[".allSearchFields"][] = "PreLogMins";
 	$tdataschedrange[".allSearchFields"][] = "TimeIn";
 	$tdataschedrange[".allSearchFields"][] = "TimeOut";
 	$tdataschedrange[".allSearchFields"][] = "LunchBreakTimeFrom";
@@ -253,6 +257,7 @@ $tdataschedrange[".googleLikeFields"][] = "RestDays";
 $tdataschedrange[".googleLikeFields"][] = "SchedBy";
 $tdataschedrange[".googleLikeFields"][] = "Employer";
 $tdataschedrange[".googleLikeFields"][] = "Division";
+$tdataschedrange[".googleLikeFields"][] = "PreLogMins";
 
 
 $tdataschedrange[".advSearchFields"] = array();
@@ -265,6 +270,7 @@ $tdataschedrange[".advSearchFields"][] = "ToDate";
 $tdataschedrange[".advSearchFields"][] = "SchedType";
 $tdataschedrange[".advSearchFields"][] = "SchedBy";
 $tdataschedrange[".advSearchFields"][] = "RestDays";
+$tdataschedrange[".advSearchFields"][] = "PreLogMins";
 $tdataschedrange[".advSearchFields"][] = "TimeIn";
 $tdataschedrange[".advSearchFields"][] = "TimeOut";
 $tdataschedrange[".advSearchFields"][] = "LunchBreakTimeFrom";
@@ -318,7 +324,7 @@ $tdataschedrange[".orderindexes"] = array();
 	$tdataschedrange[".orderindexes"][] = array(1, (0 ? "ASC" : "DESC"), "ScRID");
 
 
-$tdataschedrange[".sqlHead"] = "SELECT ScRID,  FromDate,  ToDate,  TimeIn,  TimeOut,  StrictTimeOut,  StrictTimeIn,  SchedType,  MinsPerDay,  BreakMins,  Shift,  Posted,  LunchBreakTimeFrom,  LunchBreakTimeTo,  FirstHalfMins,  SecondHalfMins,  RestDays,  SchedBy,  Employer,  Division";
+$tdataschedrange[".sqlHead"] = "SELECT ScRID,  FromDate,  ToDate,  TimeIn,  TimeOut,  StrictTimeOut,  StrictTimeIn,  SchedType,  MinsPerDay,  BreakMins,  Shift,  Posted,  LunchBreakTimeFrom,  LunchBreakTimeTo,  FirstHalfMins,  SecondHalfMins,  RestDays,  SchedBy,  Employer,  Division,  PreLogMins";
 $tdataschedrange[".sqlFrom"] = "FROM schedrange";
 $tdataschedrange[".sqlWhereExpr"] = "";
 $tdataschedrange[".sqlTail"] = "";
@@ -372,6 +378,7 @@ $tdataschedrange[".listFields"][] = "ToDate";
 $tdataschedrange[".listFields"][] = "SchedType";
 $tdataschedrange[".listFields"][] = "SchedBy";
 $tdataschedrange[".listFields"][] = "RestDays";
+$tdataschedrange[".listFields"][] = "PreLogMins";
 $tdataschedrange[".listFields"][] = "TimeIn";
 $tdataschedrange[".listFields"][] = "TimeOut";
 $tdataschedrange[".listFields"][] = "LunchBreakTimeFrom";
@@ -395,6 +402,7 @@ $tdataschedrange[".viewFields"][] = "ToDate";
 $tdataschedrange[".viewFields"][] = "SchedType";
 $tdataschedrange[".viewFields"][] = "SchedBy";
 $tdataschedrange[".viewFields"][] = "RestDays";
+$tdataschedrange[".viewFields"][] = "PreLogMins";
 $tdataschedrange[".viewFields"][] = "TimeIn";
 $tdataschedrange[".viewFields"][] = "TimeOut";
 $tdataschedrange[".viewFields"][] = "LunchBreakTimeFrom";
@@ -414,6 +422,7 @@ $tdataschedrange[".addFields"][] = "ToDate";
 $tdataschedrange[".addFields"][] = "SchedType";
 $tdataschedrange[".addFields"][] = "SchedBy";
 $tdataschedrange[".addFields"][] = "RestDays";
+$tdataschedrange[".addFields"][] = "PreLogMins";
 $tdataschedrange[".addFields"][] = "TimeIn";
 $tdataschedrange[".addFields"][] = "TimeOut";
 $tdataschedrange[".addFields"][] = "LunchBreakTimeFrom";
@@ -434,6 +443,7 @@ $tdataschedrange[".masterListFields"][] = "ToDate";
 $tdataschedrange[".masterListFields"][] = "SchedType";
 $tdataschedrange[".masterListFields"][] = "SchedBy";
 $tdataschedrange[".masterListFields"][] = "RestDays";
+$tdataschedrange[".masterListFields"][] = "PreLogMins";
 $tdataschedrange[".masterListFields"][] = "TimeIn";
 $tdataschedrange[".masterListFields"][] = "TimeOut";
 $tdataschedrange[".masterListFields"][] = "LunchBreakTimeFrom";
@@ -453,6 +463,7 @@ $tdataschedrange[".inlineAddFields"][] = "ToDate";
 $tdataschedrange[".inlineAddFields"][] = "SchedType";
 $tdataschedrange[".inlineAddFields"][] = "SchedBy";
 $tdataschedrange[".inlineAddFields"][] = "RestDays";
+$tdataschedrange[".inlineAddFields"][] = "PreLogMins";
 $tdataschedrange[".inlineAddFields"][] = "TimeIn";
 $tdataschedrange[".inlineAddFields"][] = "TimeOut";
 $tdataschedrange[".inlineAddFields"][] = "LunchBreakTimeFrom";
@@ -472,6 +483,7 @@ $tdataschedrange[".editFields"][] = "ToDate";
 $tdataschedrange[".editFields"][] = "SchedType";
 $tdataschedrange[".editFields"][] = "SchedBy";
 $tdataschedrange[".editFields"][] = "RestDays";
+$tdataschedrange[".editFields"][] = "PreLogMins";
 $tdataschedrange[".editFields"][] = "TimeIn";
 $tdataschedrange[".editFields"][] = "TimeOut";
 $tdataschedrange[".editFields"][] = "LunchBreakTimeFrom";
@@ -491,6 +503,7 @@ $tdataschedrange[".inlineEditFields"][] = "ToDate";
 $tdataschedrange[".inlineEditFields"][] = "SchedType";
 $tdataschedrange[".inlineEditFields"][] = "SchedBy";
 $tdataschedrange[".inlineEditFields"][] = "RestDays";
+$tdataschedrange[".inlineEditFields"][] = "PreLogMins";
 $tdataschedrange[".inlineEditFields"][] = "TimeIn";
 $tdataschedrange[".inlineEditFields"][] = "TimeOut";
 $tdataschedrange[".inlineEditFields"][] = "LunchBreakTimeFrom";
@@ -528,6 +541,7 @@ $tdataschedrange[".exportFields"][] = "ToDate";
 $tdataschedrange[".exportFields"][] = "SchedType";
 $tdataschedrange[".exportFields"][] = "SchedBy";
 $tdataschedrange[".exportFields"][] = "RestDays";
+$tdataschedrange[".exportFields"][] = "PreLogMins";
 $tdataschedrange[".exportFields"][] = "TimeIn";
 $tdataschedrange[".exportFields"][] = "TimeOut";
 $tdataschedrange[".exportFields"][] = "LunchBreakTimeFrom";
@@ -557,6 +571,7 @@ $tdataschedrange[".importFields"][] = "RestDays";
 $tdataschedrange[".importFields"][] = "SchedBy";
 $tdataschedrange[".importFields"][] = "Employer";
 $tdataschedrange[".importFields"][] = "Division";
+$tdataschedrange[".importFields"][] = "PreLogMins";
 
 $tdataschedrange[".printFields"] = array();
 $tdataschedrange[".printFields"][] = "ScRID";
@@ -568,6 +583,7 @@ $tdataschedrange[".printFields"][] = "ToDate";
 $tdataschedrange[".printFields"][] = "SchedType";
 $tdataschedrange[".printFields"][] = "SchedBy";
 $tdataschedrange[".printFields"][] = "RestDays";
+$tdataschedrange[".printFields"][] = "PreLogMins";
 $tdataschedrange[".printFields"][] = "TimeIn";
 $tdataschedrange[".printFields"][] = "TimeOut";
 $tdataschedrange[".printFields"][] = "LunchBreakTimeFrom";
@@ -1968,6 +1984,7 @@ $tdataschedrange[".printFields"][] = "Posted";
 	$edata["autoCompleteFields"][] = array('masterF'=>"LunchBreakTimeTo", 'lookupF'=>"LunchBreakTimeTo");
 	$edata["autoCompleteFields"][] = array('masterF'=>"FirstHalfMins", 'lookupF'=>"FirstHalfMins");
 	$edata["autoCompleteFields"][] = array('masterF'=>"SecondHalfMins", 'lookupF'=>"SecondHalfMins");
+	$edata["autoCompleteFields"][] = array('masterF'=>"PreLogMins", 'lookupF'=>"PreLogMins");
 	$edata["LCType"] = 0;
 
 	
@@ -3320,6 +3337,135 @@ $tdataschedrange[".printFields"][] = "Posted";
 
 
 	$tdataschedrange["Division"] = $fdata;
+//	PreLogMins
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 21;
+	$fdata["strName"] = "PreLogMins";
+	$fdata["GoodName"] = "PreLogMins";
+	$fdata["ownerTable"] = "schedrange";
+	$fdata["Label"] = GetFieldLabel("schedrange","PreLogMins");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "PreLogMins";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "PreLogMins";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Readonly");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdataschedrange["PreLogMins"] = $fdata;
 
 
 $tables_data["schedrange"]=&$tdataschedrange;
@@ -3386,7 +3532,7 @@ function createSqlQuery_schedrange()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "ScRID,  FromDate,  ToDate,  TimeIn,  TimeOut,  StrictTimeOut,  StrictTimeIn,  SchedType,  MinsPerDay,  BreakMins,  Shift,  Posted,  LunchBreakTimeFrom,  LunchBreakTimeTo,  FirstHalfMins,  SecondHalfMins,  RestDays,  SchedBy,  Employer,  Division";
+$proto0["m_strFieldList"] = "ScRID,  FromDate,  ToDate,  TimeIn,  TimeOut,  StrictTimeOut,  StrictTimeIn,  SchedType,  MinsPerDay,  BreakMins,  Shift,  Posted,  LunchBreakTimeFrom,  LunchBreakTimeTo,  FirstHalfMins,  SecondHalfMins,  RestDays,  SchedBy,  Employer,  Division,  PreLogMins";
 $proto0["m_strFrom"] = "FROM schedrange";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "ORDER BY ScRID DESC";
@@ -3706,76 +3852,91 @@ $proto44["m_alias"] = "";
 $obj = new SQLFieldListItem($proto44);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto46=array();
-$proto46["m_link"] = "SQLL_MAIN";
-			$proto47=array();
-$proto47["m_strName"] = "schedrange";
-$proto47["m_srcTableName"] = "schedrange";
-$proto47["m_columns"] = array();
-$proto47["m_columns"][] = "ScRID";
-$proto47["m_columns"][] = "FromDate";
-$proto47["m_columns"][] = "ToDate";
-$proto47["m_columns"][] = "TimeIn";
-$proto47["m_columns"][] = "TimeOut";
-$proto47["m_columns"][] = "StrictTimeOut";
-$proto47["m_columns"][] = "StrictTimeIn";
-$proto47["m_columns"][] = "SchedType";
-$proto47["m_columns"][] = "CrossMidnight";
-$proto47["m_columns"][] = "RecordOnFirstDay";
-$proto47["m_columns"][] = "RecordOnSecondDay";
-$proto47["m_columns"][] = "RestDay";
-$proto47["m_columns"][] = "MinsPerDay";
-$proto47["m_columns"][] = "BreakMins";
-$proto47["m_columns"][] = "Shift";
-$proto47["m_columns"][] = "Posted";
-$proto47["m_columns"][] = "LunchBreakTimeFrom";
-$proto47["m_columns"][] = "LunchBreakTimeTo";
-$proto47["m_columns"][] = "ReqLogOutInOnBreak";
-$proto47["m_columns"][] = "FirstHalfMins";
-$proto47["m_columns"][] = "SecondHalfMins";
-$proto47["m_columns"][] = "RestDays";
-$proto47["m_columns"][] = "SchedBy";
-$proto47["m_columns"][] = "Employer";
-$proto47["m_columns"][] = "Division";
-$obj = new SQLTable($proto47);
+						$proto46=array();
+			$obj = new SQLField(array(
+	"m_strName" => "PreLogMins",
+	"m_strTable" => "schedrange",
+	"m_srcTableName" => "schedrange"
+));
 
-$proto46["m_table"] = $obj;
-$proto46["m_sql"] = "schedrange";
-$proto46["m_alias"] = "";
+$proto46["m_sql"] = "PreLogMins";
 $proto46["m_srcTableName"] = "schedrange";
-$proto48=array();
-$proto48["m_sql"] = "";
-$proto48["m_uniontype"] = "SQLL_UNKNOWN";
+$proto46["m_expr"]=$obj;
+$proto46["m_alias"] = "";
+$obj = new SQLFieldListItem($proto46);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto48=array();
+$proto48["m_link"] = "SQLL_MAIN";
+			$proto49=array();
+$proto49["m_strName"] = "schedrange";
+$proto49["m_srcTableName"] = "schedrange";
+$proto49["m_columns"] = array();
+$proto49["m_columns"][] = "ScRID";
+$proto49["m_columns"][] = "FromDate";
+$proto49["m_columns"][] = "ToDate";
+$proto49["m_columns"][] = "TimeIn";
+$proto49["m_columns"][] = "TimeOut";
+$proto49["m_columns"][] = "StrictTimeOut";
+$proto49["m_columns"][] = "StrictTimeIn";
+$proto49["m_columns"][] = "SchedType";
+$proto49["m_columns"][] = "CrossMidnight";
+$proto49["m_columns"][] = "RecordOnFirstDay";
+$proto49["m_columns"][] = "RecordOnSecondDay";
+$proto49["m_columns"][] = "RestDay";
+$proto49["m_columns"][] = "MinsPerDay";
+$proto49["m_columns"][] = "BreakMins";
+$proto49["m_columns"][] = "Shift";
+$proto49["m_columns"][] = "Posted";
+$proto49["m_columns"][] = "LunchBreakTimeFrom";
+$proto49["m_columns"][] = "LunchBreakTimeTo";
+$proto49["m_columns"][] = "ReqLogOutInOnBreak";
+$proto49["m_columns"][] = "FirstHalfMins";
+$proto49["m_columns"][] = "SecondHalfMins";
+$proto49["m_columns"][] = "RestDays";
+$proto49["m_columns"][] = "SchedBy";
+$proto49["m_columns"][] = "Employer";
+$proto49["m_columns"][] = "Division";
+$proto49["m_columns"][] = "PreLogMins";
+$obj = new SQLTable($proto49);
+
+$proto48["m_table"] = $obj;
+$proto48["m_sql"] = "schedrange";
+$proto48["m_alias"] = "";
+$proto48["m_srcTableName"] = "schedrange";
+$proto50=array();
+$proto50["m_sql"] = "";
+$proto50["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto48["m_column"]=$obj;
-$proto48["m_contained"] = array();
-$proto48["m_strCase"] = "";
-$proto48["m_havingmode"] = false;
-$proto48["m_inBrackets"] = false;
-$proto48["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto48);
+$proto50["m_column"]=$obj;
+$proto50["m_contained"] = array();
+$proto50["m_strCase"] = "";
+$proto50["m_havingmode"] = false;
+$proto50["m_inBrackets"] = false;
+$proto50["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto50);
 
-$proto46["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto46);
+$proto48["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto48);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
 $proto0["m_orderby"] = array();
-												$proto50=array();
+												$proto52=array();
 						$obj = new SQLField(array(
 	"m_strName" => "ScRID",
 	"m_strTable" => "schedrange",
 	"m_srcTableName" => "schedrange"
 ));
 
-$proto50["m_column"]=$obj;
-$proto50["m_bAsc"] = 0;
-$proto50["m_nColumn"] = 0;
-$obj = new SQLOrderByItem($proto50);
+$proto52["m_column"]=$obj;
+$proto52["m_bAsc"] = 0;
+$proto52["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto52);
 
 $proto0["m_orderby"][]=$obj;					
 $proto0["m_srcTableName"]="schedrange";		
@@ -3789,7 +3950,7 @@ $queryData_schedrange = createSqlQuery_schedrange();
 	
 		;
 
-																				
+																					
 
 $tdataschedrange[".sqlquery"] = $queryData_schedrange;
 

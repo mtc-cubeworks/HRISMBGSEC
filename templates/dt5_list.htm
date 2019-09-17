@@ -167,6 +167,21 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_SDate}</span>
 		</div>
 		{END searchCtrlBlock_SDate}
+		 
+		{BEGIN searchCtrlBlock_MisPunched}
+		
+		
+		<div class="form-group srchPanelRow {$filterRow_class_MisPunched}" {$filterRow_attrs_MisPunched}>
+			<label>
+			
+			{$label dt5 MisPunched}</label>
+							{$delCtrlButt}
+
+								<span class="rnr-searchtype">{$searchtype_MisPunched}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol_MisPunched}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_MisPunched}</span>
+		</div>
+		{END searchCtrlBlock_MisPunched}
 
 
 	</div>
@@ -469,7 +484,7 @@
 							<div class="rnr-printdetialstable">
 								<label for="printDetailsindschedule1{$id}">
 									<input type="checkbox" value="indschedule1" id="printDetailsindschedule1{$id}" checked>
-									OT/ND/RD Approval
+									OT-ND-RD Single Approval
 								</label>
 							</div>
 					{END print_details_indschedule1}
@@ -671,45 +686,6 @@
 	.bs-gridcell[data-field=TrO]:before {
 		content: "{$label dt5 TrO}";
 	}
-	.bs-gridcell[data-field=RHolidayHrs]:before {
-		content: "{$label dt5 RHolidayHrs}";
-	}
-	.bs-gridcell[data-field=SHolidayHrs]:before {
-		content: "{$label dt5 SHolidayHrs}";
-	}
-	.bs-gridcell[data-field=CHolidayHrs]:before {
-		content: "{$label dt5 CHolidayHrs}";
-	}
-	.bs-gridcell[data-field=RegOT]:before {
-		content: "{$label dt5 RegOT}";
-	}
-	.bs-gridcell[data-field=RHOT]:before {
-		content: "{$label dt5 RHOT}";
-	}
-	.bs-gridcell[data-field=SHOT]:before {
-		content: "{$label dt5 SHOT}";
-	}
-	.bs-gridcell[data-field=CHOT]:before {
-		content: "{$label dt5 CHOT}";
-	}
-	.bs-gridcell[data-field=RDOT]:before {
-		content: "{$label dt5 RDOT}";
-	}
-	.bs-gridcell[data-field=RegND]:before {
-		content: "{$label dt5 RegND}";
-	}
-	.bs-gridcell[data-field=RHND]:before {
-		content: "{$label dt5 RHND}";
-	}
-	.bs-gridcell[data-field=SHND]:before {
-		content: "{$label dt5 SHND}";
-	}
-	.bs-gridcell[data-field=CHND]:before {
-		content: "{$label dt5 CHND}";
-	}
-	.bs-gridcell[data-field=RDND]:before {
-		content: "{$label dt5 RDND}";
-	}
 	.bs-gridcell[data-field=Rlink]:before {
 		content: "{$label dt5 Rlink}";
 	}
@@ -734,62 +710,17 @@
 	.bs-gridcell[data-field=EarlyMins]:before {
 		content: "{$label dt5 EarlyMins}";
 	}
-	.bs-gridcell[data-field=ANDOTMins]:before {
-		content: "{$label dt5 ANDOTMins}";
-	}
-	.bs-gridcell[data-field=RegNDOT]:before {
-		content: "{$label dt5 RegNDOT}";
-	}
-	.bs-gridcell[data-field=RHNDOT]:before {
-		content: "{$label dt5 RHNDOT}";
-	}
-	.bs-gridcell[data-field=SHNDOT]:before {
-		content: "{$label dt5 SHNDOT}";
-	}
-	.bs-gridcell[data-field=CHNDOT]:before {
-		content: "{$label dt5 CHNDOT}";
-	}
-	.bs-gridcell[data-field=RDNDOT]:before {
-		content: "{$label dt5 RDNDOT}";
-	}
-	.bs-gridcell[data-field=RegNDOTHrs]:before {
-		content: "{$label dt5 RegNDOTHrs}";
-	}
-	.bs-gridcell[data-field=RHNDOTHrs]:before {
-		content: "{$label dt5 RHNDOTHrs}";
-	}
-	.bs-gridcell[data-field=SHNDOTHrs]:before {
-		content: "{$label dt5 SHNDOTHrs}";
-	}
-	.bs-gridcell[data-field=CHNDOTHrs]:before {
-		content: "{$label dt5 CHNDOTHrs}";
-	}
-	.bs-gridcell[data-field=RDNDOTHrs]:before {
-		content: "{$label dt5 RDNDOTHrs}";
-	}
-	.bs-gridcell[data-field=DH]:before {
-		content: "{$label dt5 DH}";
-	}
-	.bs-gridcell[data-field=DHRD]:before {
-		content: "{$label dt5 DHRD}";
+	.bs-gridcell[data-field=SHOTD]:before {
+		content: "{$label dt5 SHOTD}";
 	}
 	.bs-gridcell[data-field=DHOT]:before {
 		content: "{$label dt5 DHOT}";
 	}
-	.bs-gridcell[data-field=DHRDOT]:before {
-		content: "{$label dt5 DHRDOT}";
+	.bs-gridcell[data-field=NDOT]:before {
+		content: "{$label dt5 NDOT}";
 	}
-	.bs-gridcell[data-field=SHRDND]:before {
-		content: "{$label dt5 SHRDND}";
-	}
-	.bs-gridcell[data-field=RHRDND]:before {
-		content: "{$label dt5 RHRDND}";
-	}
-	.bs-gridcell[data-field=SHRDNDOT]:before {
-		content: "{$label dt5 SHRDNDOT}";
-	}
-	.bs-gridcell[data-field=RHRDNDOT]:before {
-		content: "{$label dt5 RHRDNDOT}";
+	.bs-gridcell[data-field=SHND]:before {
+		content: "{$label dt5 SHND}";
 	}
 	.bs-gridcell[data-field=DHND]:before {
 		content: "{$label dt5 DHND}";
@@ -797,14 +728,92 @@
 	.bs-gridcell[data-field=DHRDND]:before {
 		content: "{$label dt5 DHRDND}";
 	}
+	.bs-gridcell[data-field=RHRDND]:before {
+		content: "{$label dt5 RHRDND}";
+	}
+	.bs-gridcell[data-field=SHRDND]:before {
+		content: "{$label dt5 SHRDND}";
+	}
+	.bs-gridcell[data-field=RHNDOT]:before {
+		content: "{$label dt5 RHNDOT}";
+	}
+	.bs-gridcell[data-field=SHNDOT]:before {
+		content: "{$label dt5 SHNDOT}";
+	}
 	.bs-gridcell[data-field=DHNDOT]:before {
 		content: "{$label dt5 DHNDOT}";
+	}
+	.bs-gridcell[data-field=RDNDOT]:before {
+		content: "{$label dt5 RDNDOT}";
+	}
+	.bs-gridcell[data-field=RHRDOT]:before {
+		content: "{$label dt5 RHRDOT}";
+	}
+	.bs-gridcell[data-field=SHRDOT]:before {
+		content: "{$label dt5 SHRDOT}";
+	}
+	.bs-gridcell[data-field=SHRDOTD]:before {
+		content: "{$label dt5 SHRDOTD}";
+	}
+	.bs-gridcell[data-field=DHRDOT]:before {
+		content: "{$label dt5 DHRDOT}";
+	}
+	.bs-gridcell[data-field=RHRDNDOT]:before {
+		content: "{$label dt5 RHRDNDOT}";
+	}
+	.bs-gridcell[data-field=SHRDNDOT]:before {
+		content: "{$label dt5 SHRDNDOT}";
 	}
 	.bs-gridcell[data-field=DHRDNDOT]:before {
 		content: "{$label dt5 DHRDNDOT}";
 	}
-	.bs-gridcell[data-field=SchedType]:before {
-		content: "{$label dt5 SchedType}";
+	.bs-gridcell[data-field=RH]:before {
+		content: "{$label dt5 RH}";
+	}
+	.bs-gridcell[data-field=SH]:before {
+		content: "{$label dt5 SH}";
+	}
+	.bs-gridcell[data-field=DH]:before {
+		content: "{$label dt5 DH}";
+	}
+	.bs-gridcell[data-field=RHRD]:before {
+		content: "{$label dt5 RHRD}";
+	}
+	.bs-gridcell[data-field=SHRD]:before {
+		content: "{$label dt5 SHRD}";
+	}
+	.bs-gridcell[data-field=DHRD]:before {
+		content: "{$label dt5 DHRD}";
+	}
+	.bs-gridcell[data-field=RegOT]:before {
+		content: "{$label dt5 RegOT}";
+	}
+	.bs-gridcell[data-field=RHOT]:before {
+		content: "{$label dt5 RHOT}";
+	}
+	.bs-gridcell[data-field=SHOT]:before {
+		content: "{$label dt5 SHOT}";
+	}
+	.bs-gridcell[data-field=RHND]:before {
+		content: "{$label dt5 RHND}";
+	}
+	.bs-gridcell[data-field=RDOT]:before {
+		content: "{$label dt5 RDOT}";
+	}
+	.bs-gridcell[data-field=RegND]:before {
+		content: "{$label dt5 RegND}";
+	}
+	.bs-gridcell[data-field=RegRD]:before {
+		content: "{$label dt5 RegRD}";
+	}
+	.bs-gridcell[data-field=RDND]:before {
+		content: "{$label dt5 RDND}";
+	}
+	.bs-gridcell[data-field=NDOTMins]:before {
+		content: "{$label dt5 NDOTMins}";
+	}
+	.bs-gridcell[data-field=PostMins]:before {
+		content: "{$label dt5 PostMins}";
 	}
 </style>
 <table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
@@ -926,19 +935,6 @@
 									{END SDate_fieldheader}
 									</th>
 									{END SDate_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN SchedType_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$SchedType_class}" data-field=SchedType>
-									{BEGIN SchedType_fieldheader}
-																				<span {$SchedType_orderlinkattrs}>
-											{$label dt5 SchedType}
-										</span>
-									{END SchedType_fieldheader}
-									</th>
-									{END SchedType_fieldheadercolumn}
 									
 									
 									
@@ -1099,19 +1095,6 @@
 									
 									
 									
-									{BEGIN EarlyMins_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$EarlyMins_class}" data-field=EarlyMins>
-									{BEGIN EarlyMins_fieldheader}
-																				<span {$EarlyMins_orderlinkattrs}>
-											{$label dt5 EarlyMins}
-										</span>
-									{END EarlyMins_fieldheader}
-									</th>
-									{END EarlyMins_fieldheadercolumn}
-									
-									
-									
-									
 									{BEGIN LateMins_fieldheadercolumn}
 									<th class="rnr-gridfieldlabel {$LateMins_class}" data-field=LateMins>
 									{BEGIN LateMins_fieldheader}
@@ -1160,227 +1143,6 @@
 									{END HolidayType_fieldheader}
 									</th>
 									{END HolidayType_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN TempOT_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$TempOT_class}" data-field=TempOT>
-									{BEGIN TempOT_fieldheader}
-																				<span {$TempOT_orderlinkattrs}>
-											{$label dt5 TempOT}
-										</span>
-									{END TempOT_fieldheader}
-									</th>
-									{END TempOT_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN ApprovedOT_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$ApprovedOT_class}" data-field=ApprovedOT>
-									{BEGIN ApprovedOT_fieldheader}
-																				<span {$ApprovedOT_orderlinkattrs}>
-											{$label dt5 ApprovedOT}
-										</span>
-									{END ApprovedOT_fieldheader}
-									</th>
-									{END ApprovedOT_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN AOTMins_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$AOTMins_class}" data-field=AOTMins>
-									{BEGIN AOTMins_fieldheader}
-																				<span {$AOTMins_orderlinkattrs}>
-											{$label dt5 AOTMins}
-										</span>
-									{END AOTMins_fieldheader}
-									</th>
-									{END AOTMins_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN NDMins_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$NDMins_class}" data-field=NDMins>
-									{BEGIN NDMins_fieldheader}
-																				<span {$NDMins_orderlinkattrs}>
-											{$label dt5 NDMins}
-										</span>
-									{END NDMins_fieldheader}
-									</th>
-									{END NDMins_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN ApprovedNightDiff_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$ApprovedNightDiff_class}" data-field=ApprovedNightDiff>
-									{BEGIN ApprovedNightDiff_fieldheader}
-																				<span {$ApprovedNightDiff_orderlinkattrs}>
-											{$label dt5 ApprovedNightDiff}
-										</span>
-									{END ApprovedNightDiff_fieldheader}
-									</th>
-									{END ApprovedNightDiff_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN ANDiff_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$ANDiff_class}" data-field=ANDiff>
-									{BEGIN ANDiff_fieldheader}
-																				<span {$ANDiff_orderlinkattrs}>
-											{$label dt5 ANDiff}
-										</span>
-									{END ANDiff_fieldheader}
-									</th>
-									{END ANDiff_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN ANDOTMins_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$ANDOTMins_class}" data-field=ANDOTMins>
-									{BEGIN ANDOTMins_fieldheader}
-																				<span {$ANDOTMins_orderlinkattrs}>
-											{$label dt5 ANDOTMins}
-										</span>
-									{END ANDOTMins_fieldheader}
-									</th>
-									{END ANDOTMins_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN ApprovedRD_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$ApprovedRD_class}" data-field=ApprovedRD>
-									{BEGIN ApprovedRD_fieldheader}
-																				<span {$ApprovedRD_orderlinkattrs}>
-											{$label dt5 ApprovedRD}
-										</span>
-									{END ApprovedRD_fieldheader}
-									</th>
-									{END ApprovedRD_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN RDMins_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$RDMins_class}" data-field=RDMins>
-									{BEGIN RDMins_fieldheader}
-																				<span {$RDMins_orderlinkattrs}>
-											{$label dt5 RDMins}
-										</span>
-									{END RDMins_fieldheader}
-									</th>
-									{END RDMins_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN RDNDOTHrs_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$RDNDOTHrs_class}" data-field=RDNDOTHrs>
-									{BEGIN RDNDOTHrs_fieldheader}
-																				<span {$RDNDOTHrs_orderlinkattrs}>
-											{$label dt5 RDNDOTHrs}
-										</span>
-									{END RDNDOTHrs_fieldheader}
-									</th>
-									{END RDNDOTHrs_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN CHNDOTHrs_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$CHNDOTHrs_class}" data-field=CHNDOTHrs>
-									{BEGIN CHNDOTHrs_fieldheader}
-																				<span {$CHNDOTHrs_orderlinkattrs}>
-											{$label dt5 CHNDOTHrs}
-										</span>
-									{END CHNDOTHrs_fieldheader}
-									</th>
-									{END CHNDOTHrs_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN SHNDOTHrs_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$SHNDOTHrs_class}" data-field=SHNDOTHrs>
-									{BEGIN SHNDOTHrs_fieldheader}
-																				<span {$SHNDOTHrs_orderlinkattrs}>
-											{$label dt5 SHNDOTHrs}
-										</span>
-									{END SHNDOTHrs_fieldheader}
-									</th>
-									{END SHNDOTHrs_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN RHNDOTHrs_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$RHNDOTHrs_class}" data-field=RHNDOTHrs>
-									{BEGIN RHNDOTHrs_fieldheader}
-																				<span {$RHNDOTHrs_orderlinkattrs}>
-											{$label dt5 RHNDOTHrs}
-										</span>
-									{END RHNDOTHrs_fieldheader}
-									</th>
-									{END RHNDOTHrs_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN RegNDOTHrs_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$RegNDOTHrs_class}" data-field=RegNDOTHrs>
-									{BEGIN RegNDOTHrs_fieldheader}
-																				<span {$RegNDOTHrs_orderlinkattrs}>
-											{$label dt5 RegNDOTHrs}
-										</span>
-									{END RegNDOTHrs_fieldheader}
-									</th>
-									{END RegNDOTHrs_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN RHolidayHrs_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$RHolidayHrs_class}" data-field=RHolidayHrs>
-									{BEGIN RHolidayHrs_fieldheader}
-																				<span {$RHolidayHrs_orderlinkattrs}>
-											{$label dt5 RHolidayHrs}
-										</span>
-									{END RHolidayHrs_fieldheader}
-									</th>
-									{END RHolidayHrs_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN SHolidayHrs_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$SHolidayHrs_class}" data-field=SHolidayHrs>
-									{BEGIN SHolidayHrs_fieldheader}
-																				<span {$SHolidayHrs_orderlinkattrs}>
-											{$label dt5 SHolidayHrs}
-										</span>
-									{END SHolidayHrs_fieldheader}
-									</th>
-									{END SHolidayHrs_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN CHolidayHrs_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$CHolidayHrs_class}" data-field=CHolidayHrs>
-									{BEGIN CHolidayHrs_fieldheader}
-																				<span {$CHolidayHrs_orderlinkattrs}>
-											{$label dt5 CHolidayHrs}
-										</span>
-									{END CHolidayHrs_fieldheader}
-									</th>
-									{END CHolidayHrs_fieldheadercolumn}
 									
 									
 									
@@ -1450,6 +1212,201 @@
 									
 									
 									
+									{BEGIN RH_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RH_class}" data-field=RH>
+									{BEGIN RH_fieldheader}
+																				<span {$RH_orderlinkattrs}>
+											{$label dt5 RH}
+										</span>
+									{END RH_fieldheader}
+									</th>
+									{END RH_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SH_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SH_class}" data-field=SH>
+									{BEGIN SH_fieldheader}
+																				<span {$SH_orderlinkattrs}>
+											{$label dt5 SH}
+										</span>
+									{END SH_fieldheader}
+									</th>
+									{END SH_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN DH_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$DH_class}" data-field=DH>
+									{BEGIN DH_fieldheader}
+																				<span {$DH_orderlinkattrs}>
+											{$label dt5 DH}
+										</span>
+									{END DH_fieldheader}
+									</th>
+									{END DH_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RegRD_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RegRD_class}" data-field=RegRD>
+									{BEGIN RegRD_fieldheader}
+																				<span {$RegRD_orderlinkattrs}>
+											{$label dt5 RegRD}
+										</span>
+									{END RegRD_fieldheader}
+									</th>
+									{END RegRD_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN EarlyMins_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$EarlyMins_class}" data-field=EarlyMins>
+									{BEGIN EarlyMins_fieldheader}
+																				<span {$EarlyMins_orderlinkattrs}>
+											{$label dt5 EarlyMins}
+										</span>
+									{END EarlyMins_fieldheader}
+									</th>
+									{END EarlyMins_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN PostMins_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$PostMins_class}" data-field=PostMins>
+									{BEGIN PostMins_fieldheader}
+																				<span {$PostMins_orderlinkattrs}>
+											{$label dt5 PostMins}
+										</span>
+									{END PostMins_fieldheader}
+									</th>
+									{END PostMins_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN TempOT_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$TempOT_class}" data-field=TempOT>
+									{BEGIN TempOT_fieldheader}
+																				<span {$TempOT_orderlinkattrs}>
+											{$label dt5 TempOT}
+										</span>
+									{END TempOT_fieldheader}
+									</th>
+									{END TempOT_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN ApprovedOT_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$ApprovedOT_class}" data-field=ApprovedOT>
+									{BEGIN ApprovedOT_fieldheader}
+																				<span {$ApprovedOT_orderlinkattrs}>
+											{$label dt5 ApprovedOT}
+										</span>
+									{END ApprovedOT_fieldheader}
+									</th>
+									{END ApprovedOT_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN AOTMins_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$AOTMins_class}" data-field=AOTMins>
+									{BEGIN AOTMins_fieldheader}
+																				<span {$AOTMins_orderlinkattrs}>
+											{$label dt5 AOTMins}
+										</span>
+									{END AOTMins_fieldheader}
+									</th>
+									{END AOTMins_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN NDMins_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$NDMins_class}" data-field=NDMins>
+									{BEGIN NDMins_fieldheader}
+																				<span {$NDMins_orderlinkattrs}>
+											{$label dt5 NDMins}
+										</span>
+									{END NDMins_fieldheader}
+									</th>
+									{END NDMins_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN NDOTMins_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$NDOTMins_class}" data-field=NDOTMins>
+									{BEGIN NDOTMins_fieldheader}
+																				<span {$NDOTMins_orderlinkattrs}>
+											{$label dt5 NDOTMins}
+										</span>
+									{END NDOTMins_fieldheader}
+									</th>
+									{END NDOTMins_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN ApprovedNightDiff_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$ApprovedNightDiff_class}" data-field=ApprovedNightDiff>
+									{BEGIN ApprovedNightDiff_fieldheader}
+																				<span {$ApprovedNightDiff_orderlinkattrs}>
+											{$label dt5 ApprovedNightDiff}
+										</span>
+									{END ApprovedNightDiff_fieldheader}
+									</th>
+									{END ApprovedNightDiff_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN ANDiff_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$ANDiff_class}" data-field=ANDiff>
+									{BEGIN ANDiff_fieldheader}
+																				<span {$ANDiff_orderlinkattrs}>
+											{$label dt5 ANDiff}
+										</span>
+									{END ANDiff_fieldheader}
+									</th>
+									{END ANDiff_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN ApprovedRD_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$ApprovedRD_class}" data-field=ApprovedRD>
+									{BEGIN ApprovedRD_fieldheader}
+																				<span {$ApprovedRD_orderlinkattrs}>
+											{$label dt5 ApprovedRD}
+										</span>
+									{END ApprovedRD_fieldheader}
+									</th>
+									{END ApprovedRD_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RDMins_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RDMins_class}" data-field=RDMins>
+									{BEGIN RDMins_fieldheader}
+																				<span {$RDMins_orderlinkattrs}>
+											{$label dt5 RDMins}
+										</span>
+									{END RDMins_fieldheader}
+									</th>
+									{END RDMins_fieldheadercolumn}
+									
+									
+									
+									
 									{BEGIN RegOT_fieldheadercolumn}
 									<th class="rnr-gridfieldlabel {$RegOT_class}" data-field=RegOT>
 									{BEGIN RegOT_fieldheader}
@@ -1489,15 +1446,15 @@
 									
 									
 									
-									{BEGIN CHOT_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$CHOT_class}" data-field=CHOT>
-									{BEGIN CHOT_fieldheader}
-																				<span {$CHOT_orderlinkattrs}>
-											{$label dt5 CHOT}
+									{BEGIN SHOTD_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SHOTD_class}" data-field=SHOTD>
+									{BEGIN SHOTD_fieldheader}
+																				<span {$SHOTD_orderlinkattrs}>
+											{$label dt5 SHOTD}
 										</span>
-									{END CHOT_fieldheader}
+									{END SHOTD_fieldheader}
 									</th>
-									{END CHOT_fieldheadercolumn}
+									{END SHOTD_fieldheadercolumn}
 									
 									
 									
@@ -1511,6 +1468,32 @@
 									{END RDOT_fieldheader}
 									</th>
 									{END RDOT_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN DHOT_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$DHOT_class}" data-field=DHOT>
+									{BEGIN DHOT_fieldheader}
+																				<span {$DHOT_orderlinkattrs}>
+											{$label dt5 DHOT}
+										</span>
+									{END DHOT_fieldheader}
+									</th>
+									{END DHOT_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN NDOT_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$NDOT_class}" data-field=NDOT>
+									{BEGIN NDOT_fieldheader}
+																				<span {$NDOT_orderlinkattrs}>
+											{$label dt5 NDOT}
+										</span>
+									{END NDOT_fieldheader}
+									</th>
+									{END NDOT_fieldheadercolumn}
 									
 									
 									
@@ -1554,15 +1537,15 @@
 									
 									
 									
-									{BEGIN CHND_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$CHND_class}" data-field=CHND>
-									{BEGIN CHND_fieldheader}
-																				<span {$CHND_orderlinkattrs}>
-											{$label dt5 CHND}
+									{BEGIN DHND_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$DHND_class}" data-field=DHND>
+									{BEGIN DHND_fieldheader}
+																				<span {$DHND_orderlinkattrs}>
+											{$label dt5 DHND}
 										</span>
-									{END CHND_fieldheader}
+									{END DHND_fieldheader}
 									</th>
-									{END CHND_fieldheadercolumn}
+									{END DHND_fieldheadercolumn}
 									
 									
 									
@@ -1576,19 +1559,6 @@
 									{END RDND_fieldheader}
 									</th>
 									{END RDND_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN RegNDOT_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$RegNDOT_class}" data-field=RegNDOT>
-									{BEGIN RegNDOT_fieldheader}
-																				<span {$RegNDOT_orderlinkattrs}>
-											{$label dt5 RegNDOT}
-										</span>
-									{END RegNDOT_fieldheader}
-									</th>
-									{END RegNDOT_fieldheadercolumn}
 									
 									
 									
@@ -1619,15 +1589,15 @@
 									
 									
 									
-									{BEGIN CHNDOT_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$CHNDOT_class}" data-field=CHNDOT>
-									{BEGIN CHNDOT_fieldheader}
-																				<span {$CHNDOT_orderlinkattrs}>
-											{$label dt5 CHNDOT}
+									{BEGIN DHNDOT_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$DHNDOT_class}" data-field=DHNDOT>
+									{BEGIN DHNDOT_fieldheader}
+																				<span {$DHNDOT_orderlinkattrs}>
+											{$label dt5 DHNDOT}
 										</span>
-									{END CHNDOT_fieldheader}
+									{END DHNDOT_fieldheader}
 									</th>
-									{END CHNDOT_fieldheadercolumn}
+									{END DHNDOT_fieldheadercolumn}
 									
 									
 									
@@ -1645,15 +1615,28 @@
 									
 									
 									
-									{BEGIN DH_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$DH_class}" data-field=DH>
-									{BEGIN DH_fieldheader}
-																				<span {$DH_orderlinkattrs}>
-											{$label dt5 DH}
+									{BEGIN RHRD_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RHRD_class}" data-field=RHRD>
+									{BEGIN RHRD_fieldheader}
+																				<span {$RHRD_orderlinkattrs}>
+											{$label dt5 RHRD}
 										</span>
-									{END DH_fieldheader}
+									{END RHRD_fieldheader}
 									</th>
-									{END DH_fieldheadercolumn}
+									{END RHRD_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SHRD_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SHRD_class}" data-field=SHRD>
+									{BEGIN SHRD_fieldheader}
+																				<span {$SHRD_orderlinkattrs}>
+											{$label dt5 SHRD}
+										</span>
+									{END SHRD_fieldheader}
+									</th>
+									{END SHRD_fieldheadercolumn}
 									
 									
 									
@@ -1671,15 +1654,41 @@
 									
 									
 									
-									{BEGIN DHOT_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$DHOT_class}" data-field=DHOT>
-									{BEGIN DHOT_fieldheader}
-																				<span {$DHOT_orderlinkattrs}>
-											{$label dt5 DHOT}
+									{BEGIN RHRDOT_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RHRDOT_class}" data-field=RHRDOT>
+									{BEGIN RHRDOT_fieldheader}
+																				<span {$RHRDOT_orderlinkattrs}>
+											{$label dt5 RHRDOT}
 										</span>
-									{END DHOT_fieldheader}
+									{END RHRDOT_fieldheader}
 									</th>
-									{END DHOT_fieldheadercolumn}
+									{END RHRDOT_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SHRDOT_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SHRDOT_class}" data-field=SHRDOT>
+									{BEGIN SHRDOT_fieldheader}
+																				<span {$SHRDOT_orderlinkattrs}>
+											{$label dt5 SHRDOT}
+										</span>
+									{END SHRDOT_fieldheader}
+									</th>
+									{END SHRDOT_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SHRDOTD_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SHRDOTD_class}" data-field=SHRDOTD>
+									{BEGIN SHRDOTD_fieldheader}
+																				<span {$SHRDOTD_orderlinkattrs}>
+											{$label dt5 SHRDOTD}
+										</span>
+									{END SHRDOTD_fieldheader}
+									</th>
+									{END SHRDOTD_fieldheadercolumn}
 									
 									
 									
@@ -1697,6 +1706,19 @@
 									
 									
 									
+									{BEGIN RHRDND_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RHRDND_class}" data-field=RHRDND>
+									{BEGIN RHRDND_fieldheader}
+																				<span {$RHRDND_orderlinkattrs}>
+											{$label dt5 RHRDND}
+										</span>
+									{END RHRDND_fieldheader}
+									</th>
+									{END RHRDND_fieldheadercolumn}
+									
+									
+									
+									
 									{BEGIN SHRDND_fieldheadercolumn}
 									<th class="rnr-gridfieldlabel {$SHRDND_class}" data-field=SHRDND>
 									{BEGIN SHRDND_fieldheader}
@@ -1710,15 +1732,15 @@
 									
 									
 									
-									{BEGIN RHRDND_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$RHRDND_class}" data-field=RHRDND>
-									{BEGIN RHRDND_fieldheader}
-																				<span {$RHRDND_orderlinkattrs}>
-											{$label dt5 RHRDND}
+									{BEGIN DHRDND_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$DHRDND_class}" data-field=DHRDND>
+									{BEGIN DHRDND_fieldheader}
+																				<span {$DHRDND_orderlinkattrs}>
+											{$label dt5 DHRDND}
 										</span>
-									{END RHRDND_fieldheader}
+									{END DHRDND_fieldheader}
 									</th>
-									{END RHRDND_fieldheadercolumn}
+									{END DHRDND_fieldheadercolumn}
 									
 									
 									
@@ -1745,45 +1767,6 @@
 									{END SHRDNDOT_fieldheader}
 									</th>
 									{END SHRDNDOT_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN DHND_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$DHND_class}" data-field=DHND>
-									{BEGIN DHND_fieldheader}
-																				<span {$DHND_orderlinkattrs}>
-											{$label dt5 DHND}
-										</span>
-									{END DHND_fieldheader}
-									</th>
-									{END DHND_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN DHRDND_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$DHRDND_class}" data-field=DHRDND>
-									{BEGIN DHRDND_fieldheader}
-																				<span {$DHRDND_orderlinkattrs}>
-											{$label dt5 DHRDND}
-										</span>
-									{END DHRDND_fieldheader}
-									</th>
-									{END DHRDND_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN DHNDOT_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$DHNDOT_class}" data-field=DHNDOT>
-									{BEGIN DHNDOT_fieldheader}
-																				<span {$DHNDOT_orderlinkattrs}>
-											{$label dt5 DHNDOT}
-										</span>
-									{END DHNDOT_fieldheader}
-									</th>
-									{END DHNDOT_fieldheadercolumn}
 									
 									
 									
@@ -1873,7 +1856,7 @@
 					</span></a>
 				{END ileave_childcount}
 								{BEGIN indschedule1_childcount}
-				<a {$indschedule1_link_attrs} class="{$indschedule1_dlink_class}" title="OT/ND/RD Approval">
+				<a {$indschedule1_link_attrs} class="{$indschedule1_dlink_class}" title="OT-ND-RD Single Approval">
 					<span class="details-badge badge indschedule1_badge" {$indschedule1_childnumber_attr}>
 						{$indschedule1_childnumber}
 					</span></a>
@@ -1951,13 +1934,6 @@
 		{$SDate_value}
 	</td>
 {END SDate_fieldcolumn}
-
-
-	{BEGIN SchedType_fieldcolumn}
-	<td class="bs-gridcell {$SchedType_class}"  data-field=SchedType {$rowstyle} {$recordattrs}>
-		{$SchedType_value}
-	</td>
-{END SchedType_fieldcolumn}
 
 
 	{BEGIN DayIs_fieldcolumn}
@@ -2044,13 +2020,6 @@
 {END Absent_fieldcolumn}
 
 
-	{BEGIN EarlyMins_fieldcolumn}
-	<td class="bs-gridcell {$EarlyMins_class}"  data-field=EarlyMins {$rowstyle} {$recordattrs}>
-		{$EarlyMins_value}
-	</td>
-{END EarlyMins_fieldcolumn}
-
-
 	{BEGIN LateMins_fieldcolumn}
 	<td class="bs-gridcell {$LateMins_class}"  data-field=LateMins {$rowstyle} {$recordattrs}>
 		{$LateMins_value}
@@ -2077,125 +2046,6 @@
 		{$HolidayType_value}
 	</td>
 {END HolidayType_fieldcolumn}
-
-
-	{BEGIN TempOT_fieldcolumn}
-	<td class="bs-gridcell {$TempOT_class}"  data-field=TempOT {$rowstyle} {$recordattrs}>
-		{$TempOT_value}
-	</td>
-{END TempOT_fieldcolumn}
-
-
-	{BEGIN ApprovedOT_fieldcolumn}
-	<td class="bs-gridcell {$ApprovedOT_class}"  data-field=ApprovedOT {$rowstyle} {$recordattrs}>
-		{$ApprovedOT_value}
-	</td>
-{END ApprovedOT_fieldcolumn}
-
-
-	{BEGIN AOTMins_fieldcolumn}
-	<td class="bs-gridcell {$AOTMins_class}"  data-field=AOTMins {$rowstyle} {$recordattrs}>
-		{$AOTMins_value}
-	</td>
-{END AOTMins_fieldcolumn}
-
-
-	{BEGIN NDMins_fieldcolumn}
-	<td class="bs-gridcell {$NDMins_class}"  data-field=NDMins {$rowstyle} {$recordattrs}>
-		{$NDMins_value}
-	</td>
-{END NDMins_fieldcolumn}
-
-
-	{BEGIN ApprovedNightDiff_fieldcolumn}
-	<td class="bs-gridcell {$ApprovedNightDiff_class}"  data-field=ApprovedNightDiff {$rowstyle} {$recordattrs}>
-		{$ApprovedNightDiff_value}
-	</td>
-{END ApprovedNightDiff_fieldcolumn}
-
-
-	{BEGIN ANDiff_fieldcolumn}
-	<td class="bs-gridcell {$ANDiff_class}"  data-field=ANDiff {$rowstyle} {$recordattrs}>
-		{$ANDiff_value}
-	</td>
-{END ANDiff_fieldcolumn}
-
-
-	{BEGIN ANDOTMins_fieldcolumn}
-	<td class="bs-gridcell {$ANDOTMins_class}"  data-field=ANDOTMins {$rowstyle} {$recordattrs}>
-		{$ANDOTMins_value}
-	</td>
-{END ANDOTMins_fieldcolumn}
-
-
-	{BEGIN ApprovedRD_fieldcolumn}
-	<td class="bs-gridcell {$ApprovedRD_class}"  data-field=ApprovedRD {$rowstyle} {$recordattrs}>
-		{$ApprovedRD_value}
-	</td>
-{END ApprovedRD_fieldcolumn}
-
-
-	{BEGIN RDMins_fieldcolumn}
-	<td class="bs-gridcell {$RDMins_class}"  data-field=RDMins {$rowstyle} {$recordattrs}>
-		{$RDMins_value}
-	</td>
-{END RDMins_fieldcolumn}
-
-
-	{BEGIN RDNDOTHrs_fieldcolumn}
-	<td class="bs-gridcell {$RDNDOTHrs_class}"  data-field=RDNDOTHrs {$rowstyle} {$recordattrs}>
-		{$RDNDOTHrs_value}
-	</td>
-{END RDNDOTHrs_fieldcolumn}
-
-
-	{BEGIN CHNDOTHrs_fieldcolumn}
-	<td class="bs-gridcell {$CHNDOTHrs_class}"  data-field=CHNDOTHrs {$rowstyle} {$recordattrs}>
-		{$CHNDOTHrs_value}
-	</td>
-{END CHNDOTHrs_fieldcolumn}
-
-
-	{BEGIN SHNDOTHrs_fieldcolumn}
-	<td class="bs-gridcell {$SHNDOTHrs_class}"  data-field=SHNDOTHrs {$rowstyle} {$recordattrs}>
-		{$SHNDOTHrs_value}
-	</td>
-{END SHNDOTHrs_fieldcolumn}
-
-
-	{BEGIN RHNDOTHrs_fieldcolumn}
-	<td class="bs-gridcell {$RHNDOTHrs_class}"  data-field=RHNDOTHrs {$rowstyle} {$recordattrs}>
-		{$RHNDOTHrs_value}
-	</td>
-{END RHNDOTHrs_fieldcolumn}
-
-
-	{BEGIN RegNDOTHrs_fieldcolumn}
-	<td class="bs-gridcell {$RegNDOTHrs_class}"  data-field=RegNDOTHrs {$rowstyle} {$recordattrs}>
-		{$RegNDOTHrs_value}
-	</td>
-{END RegNDOTHrs_fieldcolumn}
-
-
-	{BEGIN RHolidayHrs_fieldcolumn}
-	<td class="bs-gridcell {$RHolidayHrs_class}"  data-field=RHolidayHrs {$rowstyle} {$recordattrs}>
-		{$RHolidayHrs_value}
-	</td>
-{END RHolidayHrs_fieldcolumn}
-
-
-	{BEGIN SHolidayHrs_fieldcolumn}
-	<td class="bs-gridcell {$SHolidayHrs_class}"  data-field=SHolidayHrs {$rowstyle} {$recordattrs}>
-		{$SHolidayHrs_value}
-	</td>
-{END SHolidayHrs_fieldcolumn}
-
-
-	{BEGIN CHolidayHrs_fieldcolumn}
-	<td class="bs-gridcell {$CHolidayHrs_class}"  data-field=CHolidayHrs {$rowstyle} {$recordattrs}>
-		{$CHolidayHrs_value}
-	</td>
-{END CHolidayHrs_fieldcolumn}
 
 
 	{BEGIN VL_fieldcolumn}
@@ -2233,6 +2083,111 @@
 {END TrO_fieldcolumn}
 
 
+	{BEGIN RH_fieldcolumn}
+	<td class="bs-gridcell {$RH_class}"  data-field=RH {$rowstyle} {$recordattrs}>
+		{$RH_value}
+	</td>
+{END RH_fieldcolumn}
+
+
+	{BEGIN SH_fieldcolumn}
+	<td class="bs-gridcell {$SH_class}"  data-field=SH {$rowstyle} {$recordattrs}>
+		{$SH_value}
+	</td>
+{END SH_fieldcolumn}
+
+
+	{BEGIN DH_fieldcolumn}
+	<td class="bs-gridcell {$DH_class}"  data-field=DH {$rowstyle} {$recordattrs}>
+		{$DH_value}
+	</td>
+{END DH_fieldcolumn}
+
+
+	{BEGIN RegRD_fieldcolumn}
+	<td class="bs-gridcell {$RegRD_class}"  data-field=RegRD {$rowstyle} {$recordattrs}>
+		{$RegRD_value}
+	</td>
+{END RegRD_fieldcolumn}
+
+
+	{BEGIN EarlyMins_fieldcolumn}
+	<td class="bs-gridcell {$EarlyMins_class}"  data-field=EarlyMins {$rowstyle} {$recordattrs}>
+		{$EarlyMins_value}
+	</td>
+{END EarlyMins_fieldcolumn}
+
+
+	{BEGIN PostMins_fieldcolumn}
+	<td class="bs-gridcell {$PostMins_class}"  data-field=PostMins {$rowstyle} {$recordattrs}>
+		{$PostMins_value}
+	</td>
+{END PostMins_fieldcolumn}
+
+
+	{BEGIN TempOT_fieldcolumn}
+	<td class="bs-gridcell {$TempOT_class}"  data-field=TempOT {$rowstyle} {$recordattrs}>
+		{$TempOT_value}
+	</td>
+{END TempOT_fieldcolumn}
+
+
+	{BEGIN ApprovedOT_fieldcolumn}
+	<td class="bs-gridcell {$ApprovedOT_class}"  data-field=ApprovedOT {$rowstyle} {$recordattrs}>
+		{$ApprovedOT_value}
+	</td>
+{END ApprovedOT_fieldcolumn}
+
+
+	{BEGIN AOTMins_fieldcolumn}
+	<td class="bs-gridcell {$AOTMins_class}"  data-field=AOTMins {$rowstyle} {$recordattrs}>
+		{$AOTMins_value}
+	</td>
+{END AOTMins_fieldcolumn}
+
+
+	{BEGIN NDMins_fieldcolumn}
+	<td class="bs-gridcell {$NDMins_class}"  data-field=NDMins {$rowstyle} {$recordattrs}>
+		{$NDMins_value}
+	</td>
+{END NDMins_fieldcolumn}
+
+
+	{BEGIN NDOTMins_fieldcolumn}
+	<td class="bs-gridcell {$NDOTMins_class}"  data-field=NDOTMins {$rowstyle} {$recordattrs}>
+		{$NDOTMins_value}
+	</td>
+{END NDOTMins_fieldcolumn}
+
+
+	{BEGIN ApprovedNightDiff_fieldcolumn}
+	<td class="bs-gridcell {$ApprovedNightDiff_class}"  data-field=ApprovedNightDiff {$rowstyle} {$recordattrs}>
+		{$ApprovedNightDiff_value}
+	</td>
+{END ApprovedNightDiff_fieldcolumn}
+
+
+	{BEGIN ANDiff_fieldcolumn}
+	<td class="bs-gridcell {$ANDiff_class}"  data-field=ANDiff {$rowstyle} {$recordattrs}>
+		{$ANDiff_value}
+	</td>
+{END ANDiff_fieldcolumn}
+
+
+	{BEGIN ApprovedRD_fieldcolumn}
+	<td class="bs-gridcell {$ApprovedRD_class}"  data-field=ApprovedRD {$rowstyle} {$recordattrs}>
+		{$ApprovedRD_value}
+	</td>
+{END ApprovedRD_fieldcolumn}
+
+
+	{BEGIN RDMins_fieldcolumn}
+	<td class="bs-gridcell {$RDMins_class}"  data-field=RDMins {$rowstyle} {$recordattrs}>
+		{$RDMins_value}
+	</td>
+{END RDMins_fieldcolumn}
+
+
 	{BEGIN RegOT_fieldcolumn}
 	<td class="bs-gridcell {$RegOT_class}"  data-field=RegOT {$rowstyle} {$recordattrs}>
 		{$RegOT_value}
@@ -2254,11 +2209,11 @@
 {END SHOT_fieldcolumn}
 
 
-	{BEGIN CHOT_fieldcolumn}
-	<td class="bs-gridcell {$CHOT_class}"  data-field=CHOT {$rowstyle} {$recordattrs}>
-		{$CHOT_value}
+	{BEGIN SHOTD_fieldcolumn}
+	<td class="bs-gridcell {$SHOTD_class}"  data-field=SHOTD {$rowstyle} {$recordattrs}>
+		{$SHOTD_value}
 	</td>
-{END CHOT_fieldcolumn}
+{END SHOTD_fieldcolumn}
 
 
 	{BEGIN RDOT_fieldcolumn}
@@ -2266,6 +2221,20 @@
 		{$RDOT_value}
 	</td>
 {END RDOT_fieldcolumn}
+
+
+	{BEGIN DHOT_fieldcolumn}
+	<td class="bs-gridcell {$DHOT_class}"  data-field=DHOT {$rowstyle} {$recordattrs}>
+		{$DHOT_value}
+	</td>
+{END DHOT_fieldcolumn}
+
+
+	{BEGIN NDOT_fieldcolumn}
+	<td class="bs-gridcell {$NDOT_class}"  data-field=NDOT {$rowstyle} {$recordattrs}>
+		{$NDOT_value}
+	</td>
+{END NDOT_fieldcolumn}
 
 
 	{BEGIN RegND_fieldcolumn}
@@ -2289,11 +2258,11 @@
 {END SHND_fieldcolumn}
 
 
-	{BEGIN CHND_fieldcolumn}
-	<td class="bs-gridcell {$CHND_class}"  data-field=CHND {$rowstyle} {$recordattrs}>
-		{$CHND_value}
+	{BEGIN DHND_fieldcolumn}
+	<td class="bs-gridcell {$DHND_class}"  data-field=DHND {$rowstyle} {$recordattrs}>
+		{$DHND_value}
 	</td>
-{END CHND_fieldcolumn}
+{END DHND_fieldcolumn}
 
 
 	{BEGIN RDND_fieldcolumn}
@@ -2301,13 +2270,6 @@
 		{$RDND_value}
 	</td>
 {END RDND_fieldcolumn}
-
-
-	{BEGIN RegNDOT_fieldcolumn}
-	<td class="bs-gridcell {$RegNDOT_class}"  data-field=RegNDOT {$rowstyle} {$recordattrs}>
-		{$RegNDOT_value}
-	</td>
-{END RegNDOT_fieldcolumn}
 
 
 	{BEGIN RHNDOT_fieldcolumn}
@@ -2324,11 +2286,11 @@
 {END SHNDOT_fieldcolumn}
 
 
-	{BEGIN CHNDOT_fieldcolumn}
-	<td class="bs-gridcell {$CHNDOT_class}"  data-field=CHNDOT {$rowstyle} {$recordattrs}>
-		{$CHNDOT_value}
+	{BEGIN DHNDOT_fieldcolumn}
+	<td class="bs-gridcell {$DHNDOT_class}"  data-field=DHNDOT {$rowstyle} {$recordattrs}>
+		{$DHNDOT_value}
 	</td>
-{END CHNDOT_fieldcolumn}
+{END DHNDOT_fieldcolumn}
 
 
 	{BEGIN RDNDOT_fieldcolumn}
@@ -2338,11 +2300,18 @@
 {END RDNDOT_fieldcolumn}
 
 
-	{BEGIN DH_fieldcolumn}
-	<td class="bs-gridcell {$DH_class}"  data-field=DH {$rowstyle} {$recordattrs}>
-		{$DH_value}
+	{BEGIN RHRD_fieldcolumn}
+	<td class="bs-gridcell {$RHRD_class}"  data-field=RHRD {$rowstyle} {$recordattrs}>
+		{$RHRD_value}
 	</td>
-{END DH_fieldcolumn}
+{END RHRD_fieldcolumn}
+
+
+	{BEGIN SHRD_fieldcolumn}
+	<td class="bs-gridcell {$SHRD_class}"  data-field=SHRD {$rowstyle} {$recordattrs}>
+		{$SHRD_value}
+	</td>
+{END SHRD_fieldcolumn}
 
 
 	{BEGIN DHRD_fieldcolumn}
@@ -2352,11 +2321,25 @@
 {END DHRD_fieldcolumn}
 
 
-	{BEGIN DHOT_fieldcolumn}
-	<td class="bs-gridcell {$DHOT_class}"  data-field=DHOT {$rowstyle} {$recordattrs}>
-		{$DHOT_value}
+	{BEGIN RHRDOT_fieldcolumn}
+	<td class="bs-gridcell {$RHRDOT_class}"  data-field=RHRDOT {$rowstyle} {$recordattrs}>
+		{$RHRDOT_value}
 	</td>
-{END DHOT_fieldcolumn}
+{END RHRDOT_fieldcolumn}
+
+
+	{BEGIN SHRDOT_fieldcolumn}
+	<td class="bs-gridcell {$SHRDOT_class}"  data-field=SHRDOT {$rowstyle} {$recordattrs}>
+		{$SHRDOT_value}
+	</td>
+{END SHRDOT_fieldcolumn}
+
+
+	{BEGIN SHRDOTD_fieldcolumn}
+	<td class="bs-gridcell {$SHRDOTD_class}"  data-field=SHRDOTD {$rowstyle} {$recordattrs}>
+		{$SHRDOTD_value}
+	</td>
+{END SHRDOTD_fieldcolumn}
 
 
 	{BEGIN DHRDOT_fieldcolumn}
@@ -2366,6 +2349,13 @@
 {END DHRDOT_fieldcolumn}
 
 
+	{BEGIN RHRDND_fieldcolumn}
+	<td class="bs-gridcell {$RHRDND_class}"  data-field=RHRDND {$rowstyle} {$recordattrs}>
+		{$RHRDND_value}
+	</td>
+{END RHRDND_fieldcolumn}
+
+
 	{BEGIN SHRDND_fieldcolumn}
 	<td class="bs-gridcell {$SHRDND_class}"  data-field=SHRDND {$rowstyle} {$recordattrs}>
 		{$SHRDND_value}
@@ -2373,11 +2363,11 @@
 {END SHRDND_fieldcolumn}
 
 
-	{BEGIN RHRDND_fieldcolumn}
-	<td class="bs-gridcell {$RHRDND_class}"  data-field=RHRDND {$rowstyle} {$recordattrs}>
-		{$RHRDND_value}
+	{BEGIN DHRDND_fieldcolumn}
+	<td class="bs-gridcell {$DHRDND_class}"  data-field=DHRDND {$rowstyle} {$recordattrs}>
+		{$DHRDND_value}
 	</td>
-{END RHRDND_fieldcolumn}
+{END DHRDND_fieldcolumn}
 
 
 	{BEGIN RHRDNDOT_fieldcolumn}
@@ -2392,27 +2382,6 @@
 		{$SHRDNDOT_value}
 	</td>
 {END SHRDNDOT_fieldcolumn}
-
-
-	{BEGIN DHND_fieldcolumn}
-	<td class="bs-gridcell {$DHND_class}"  data-field=DHND {$rowstyle} {$recordattrs}>
-		{$DHND_value}
-	</td>
-{END DHND_fieldcolumn}
-
-
-	{BEGIN DHRDND_fieldcolumn}
-	<td class="bs-gridcell {$DHRDND_class}"  data-field=DHRDND {$rowstyle} {$recordattrs}>
-		{$DHRDND_value}
-	</td>
-{END DHRDND_fieldcolumn}
-
-
-	{BEGIN DHNDOT_fieldcolumn}
-	<td class="bs-gridcell {$DHNDOT_class}"  data-field=DHNDOT {$rowstyle} {$recordattrs}>
-		{$DHNDOT_value}
-	</td>
-{END DHNDOT_fieldcolumn}
 
 
 	{BEGIN DHRDNDOT_fieldcolumn}
@@ -2485,10 +2454,6 @@
 										<td class="bs-gridcell {$SDate_class}" data-field="SDate">
 																				</td>
 										{END SDate_fieldfootercolumn}
-										{BEGIN SchedType_fieldfootercolumn}
-										<td class="bs-gridcell {$SchedType_class}" data-field="SchedType">
-																				</td>
-										{END SchedType_fieldfootercolumn}
 										{BEGIN DayIs_fieldfootercolumn}
 										<td class="bs-gridcell {$DayIs_class}" data-field="DayIs">
 																				</td>
@@ -2553,14 +2518,6 @@
 											{END Absent_showtotal}
 										</td>
 										{END Absent_fieldfootercolumn}
-										{BEGIN EarlyMins_fieldfootercolumn}
-										<td class="bs-gridcell {$EarlyMins_class}" data-field="EarlyMins">
-																					{BEGIN EarlyMins_showtotal}
-																							Count:
-											{$EarlyMins_total}
-											{END EarlyMins_showtotal}
-										</td>
-										{END EarlyMins_fieldfootercolumn}
 										{BEGIN LateMins_fieldfootercolumn}
 										<td class="bs-gridcell {$LateMins_class}" data-field="LateMins">
 																					{BEGIN LateMins_showtotal}
@@ -2589,106 +2546,6 @@
 										<td class="bs-gridcell {$HolidayType_class}" data-field="HolidayType">
 																				</td>
 										{END HolidayType_fieldfootercolumn}
-										{BEGIN TempOT_fieldfootercolumn}
-										<td class="bs-gridcell {$TempOT_class}" data-field="TempOT">
-																					{BEGIN TempOT_showtotal}
-																							Total:
-											{$TempOT_total}
-											{END TempOT_showtotal}
-										</td>
-										{END TempOT_fieldfootercolumn}
-										{BEGIN ApprovedOT_fieldfootercolumn}
-										<td class="bs-gridcell {$ApprovedOT_class}" data-field="ApprovedOT">
-																				</td>
-										{END ApprovedOT_fieldfootercolumn}
-										{BEGIN AOTMins_fieldfootercolumn}
-										<td class="bs-gridcell {$AOTMins_class}" data-field="AOTMins">
-																					{BEGIN AOTMins_showtotal}
-																							Total:
-											{$AOTMins_total}
-											{END AOTMins_showtotal}
-										</td>
-										{END AOTMins_fieldfootercolumn}
-										{BEGIN NDMins_fieldfootercolumn}
-										<td class="bs-gridcell {$NDMins_class}" data-field="NDMins">
-																					{BEGIN NDMins_showtotal}
-																							Total:
-											{$NDMins_total}
-											{END NDMins_showtotal}
-										</td>
-										{END NDMins_fieldfootercolumn}
-										{BEGIN ApprovedNightDiff_fieldfootercolumn}
-										<td class="bs-gridcell {$ApprovedNightDiff_class}" data-field="ApprovedNightDiff">
-																				</td>
-										{END ApprovedNightDiff_fieldfootercolumn}
-										{BEGIN ANDiff_fieldfootercolumn}
-										<td class="bs-gridcell {$ANDiff_class}" data-field="ANDiff">
-																					{BEGIN ANDiff_showtotal}
-																							Total:
-											{$ANDiff_total}
-											{END ANDiff_showtotal}
-										</td>
-										{END ANDiff_fieldfootercolumn}
-										{BEGIN ANDOTMins_fieldfootercolumn}
-										<td class="bs-gridcell {$ANDOTMins_class}" data-field="ANDOTMins">
-																				</td>
-										{END ANDOTMins_fieldfootercolumn}
-										{BEGIN ApprovedRD_fieldfootercolumn}
-										<td class="bs-gridcell {$ApprovedRD_class}" data-field="ApprovedRD">
-																				</td>
-										{END ApprovedRD_fieldfootercolumn}
-										{BEGIN RDMins_fieldfootercolumn}
-										<td class="bs-gridcell {$RDMins_class}" data-field="RDMins">
-																					{BEGIN RDMins_showtotal}
-																							Total:
-											{$RDMins_total}
-											{END RDMins_showtotal}
-										</td>
-										{END RDMins_fieldfootercolumn}
-										{BEGIN RDNDOTHrs_fieldfootercolumn}
-										<td class="bs-gridcell {$RDNDOTHrs_class}" data-field="RDNDOTHrs">
-																				</td>
-										{END RDNDOTHrs_fieldfootercolumn}
-										{BEGIN CHNDOTHrs_fieldfootercolumn}
-										<td class="bs-gridcell {$CHNDOTHrs_class}" data-field="CHNDOTHrs">
-																				</td>
-										{END CHNDOTHrs_fieldfootercolumn}
-										{BEGIN SHNDOTHrs_fieldfootercolumn}
-										<td class="bs-gridcell {$SHNDOTHrs_class}" data-field="SHNDOTHrs">
-																				</td>
-										{END SHNDOTHrs_fieldfootercolumn}
-										{BEGIN RHNDOTHrs_fieldfootercolumn}
-										<td class="bs-gridcell {$RHNDOTHrs_class}" data-field="RHNDOTHrs">
-																				</td>
-										{END RHNDOTHrs_fieldfootercolumn}
-										{BEGIN RegNDOTHrs_fieldfootercolumn}
-										<td class="bs-gridcell {$RegNDOTHrs_class}" data-field="RegNDOTHrs">
-																				</td>
-										{END RegNDOTHrs_fieldfootercolumn}
-										{BEGIN RHolidayHrs_fieldfootercolumn}
-										<td class="bs-gridcell {$RHolidayHrs_class}" data-field="RHolidayHrs">
-																					{BEGIN RHolidayHrs_showtotal}
-																							Total:
-											{$RHolidayHrs_total}
-											{END RHolidayHrs_showtotal}
-										</td>
-										{END RHolidayHrs_fieldfootercolumn}
-										{BEGIN SHolidayHrs_fieldfootercolumn}
-										<td class="bs-gridcell {$SHolidayHrs_class}" data-field="SHolidayHrs">
-																					{BEGIN SHolidayHrs_showtotal}
-																							Total:
-											{$SHolidayHrs_total}
-											{END SHolidayHrs_showtotal}
-										</td>
-										{END SHolidayHrs_fieldfootercolumn}
-										{BEGIN CHolidayHrs_fieldfootercolumn}
-										<td class="bs-gridcell {$CHolidayHrs_class}" data-field="CHolidayHrs">
-																					{BEGIN CHolidayHrs_showtotal}
-																							Total:
-											{$CHolidayHrs_total}
-											{END CHolidayHrs_showtotal}
-										</td>
-										{END CHolidayHrs_fieldfootercolumn}
 										{BEGIN VL_fieldfootercolumn}
 										<td class="bs-gridcell {$VL_class}" data-field="VL">
 																					{BEGIN VL_showtotal}
@@ -2729,6 +2586,102 @@
 											{END TrO_showtotal}
 										</td>
 										{END TrO_fieldfootercolumn}
+										{BEGIN RH_fieldfootercolumn}
+										<td class="bs-gridcell {$RH_class}" data-field="RH">
+																				</td>
+										{END RH_fieldfootercolumn}
+										{BEGIN SH_fieldfootercolumn}
+										<td class="bs-gridcell {$SH_class}" data-field="SH">
+																				</td>
+										{END SH_fieldfootercolumn}
+										{BEGIN DH_fieldfootercolumn}
+										<td class="bs-gridcell {$DH_class}" data-field="DH">
+																					{BEGIN DH_showtotal}
+																							Total:
+											{$DH_total}
+											{END DH_showtotal}
+										</td>
+										{END DH_fieldfootercolumn}
+										{BEGIN RegRD_fieldfootercolumn}
+										<td class="bs-gridcell {$RegRD_class}" data-field="RegRD">
+																					{BEGIN RegRD_showtotal}
+																							Total:
+											{$RegRD_total}
+											{END RegRD_showtotal}
+										</td>
+										{END RegRD_fieldfootercolumn}
+										{BEGIN EarlyMins_fieldfootercolumn}
+										<td class="bs-gridcell {$EarlyMins_class}" data-field="EarlyMins">
+																					{BEGIN EarlyMins_showtotal}
+																							Count:
+											{$EarlyMins_total}
+											{END EarlyMins_showtotal}
+										</td>
+										{END EarlyMins_fieldfootercolumn}
+										{BEGIN PostMins_fieldfootercolumn}
+										<td class="bs-gridcell {$PostMins_class}" data-field="PostMins">
+																				</td>
+										{END PostMins_fieldfootercolumn}
+										{BEGIN TempOT_fieldfootercolumn}
+										<td class="bs-gridcell {$TempOT_class}" data-field="TempOT">
+																					{BEGIN TempOT_showtotal}
+																							Total:
+											{$TempOT_total}
+											{END TempOT_showtotal}
+										</td>
+										{END TempOT_fieldfootercolumn}
+										{BEGIN ApprovedOT_fieldfootercolumn}
+										<td class="bs-gridcell {$ApprovedOT_class}" data-field="ApprovedOT">
+																				</td>
+										{END ApprovedOT_fieldfootercolumn}
+										{BEGIN AOTMins_fieldfootercolumn}
+										<td class="bs-gridcell {$AOTMins_class}" data-field="AOTMins">
+																					{BEGIN AOTMins_showtotal}
+																							Total:
+											{$AOTMins_total}
+											{END AOTMins_showtotal}
+										</td>
+										{END AOTMins_fieldfootercolumn}
+										{BEGIN NDMins_fieldfootercolumn}
+										<td class="bs-gridcell {$NDMins_class}" data-field="NDMins">
+																					{BEGIN NDMins_showtotal}
+																							Total:
+											{$NDMins_total}
+											{END NDMins_showtotal}
+										</td>
+										{END NDMins_fieldfootercolumn}
+										{BEGIN NDOTMins_fieldfootercolumn}
+										<td class="bs-gridcell {$NDOTMins_class}" data-field="NDOTMins">
+																					{BEGIN NDOTMins_showtotal}
+																							Total:
+											{$NDOTMins_total}
+											{END NDOTMins_showtotal}
+										</td>
+										{END NDOTMins_fieldfootercolumn}
+										{BEGIN ApprovedNightDiff_fieldfootercolumn}
+										<td class="bs-gridcell {$ApprovedNightDiff_class}" data-field="ApprovedNightDiff">
+																				</td>
+										{END ApprovedNightDiff_fieldfootercolumn}
+										{BEGIN ANDiff_fieldfootercolumn}
+										<td class="bs-gridcell {$ANDiff_class}" data-field="ANDiff">
+																					{BEGIN ANDiff_showtotal}
+																							Total:
+											{$ANDiff_total}
+											{END ANDiff_showtotal}
+										</td>
+										{END ANDiff_fieldfootercolumn}
+										{BEGIN ApprovedRD_fieldfootercolumn}
+										<td class="bs-gridcell {$ApprovedRD_class}" data-field="ApprovedRD">
+																				</td>
+										{END ApprovedRD_fieldfootercolumn}
+										{BEGIN RDMins_fieldfootercolumn}
+										<td class="bs-gridcell {$RDMins_class}" data-field="RDMins">
+																					{BEGIN RDMins_showtotal}
+																							Total:
+											{$RDMins_total}
+											{END RDMins_showtotal}
+										</td>
+										{END RDMins_fieldfootercolumn}
 										{BEGIN RegOT_fieldfootercolumn}
 										<td class="bs-gridcell {$RegOT_class}" data-field="RegOT">
 																					{BEGIN RegOT_showtotal}
@@ -2753,14 +2706,14 @@
 											{END SHOT_showtotal}
 										</td>
 										{END SHOT_fieldfootercolumn}
-										{BEGIN CHOT_fieldfootercolumn}
-										<td class="bs-gridcell {$CHOT_class}" data-field="CHOT">
-																					{BEGIN CHOT_showtotal}
+										{BEGIN SHOTD_fieldfootercolumn}
+										<td class="bs-gridcell {$SHOTD_class}" data-field="SHOTD">
+																					{BEGIN SHOTD_showtotal}
 																							Total:
-											{$CHOT_total}
-											{END CHOT_showtotal}
+											{$SHOTD_total}
+											{END SHOTD_showtotal}
 										</td>
-										{END CHOT_fieldfootercolumn}
+										{END SHOTD_fieldfootercolumn}
 										{BEGIN RDOT_fieldfootercolumn}
 										<td class="bs-gridcell {$RDOT_class}" data-field="RDOT">
 																					{BEGIN RDOT_showtotal}
@@ -2769,6 +2722,22 @@
 											{END RDOT_showtotal}
 										</td>
 										{END RDOT_fieldfootercolumn}
+										{BEGIN DHOT_fieldfootercolumn}
+										<td class="bs-gridcell {$DHOT_class}" data-field="DHOT">
+																					{BEGIN DHOT_showtotal}
+																							Total:
+											{$DHOT_total}
+											{END DHOT_showtotal}
+										</td>
+										{END DHOT_fieldfootercolumn}
+										{BEGIN NDOT_fieldfootercolumn}
+										<td class="bs-gridcell {$NDOT_class}" data-field="NDOT">
+																					{BEGIN NDOT_showtotal}
+																							Total:
+											{$NDOT_total}
+											{END NDOT_showtotal}
+										</td>
+										{END NDOT_fieldfootercolumn}
 										{BEGIN RegND_fieldfootercolumn}
 										<td class="bs-gridcell {$RegND_class}" data-field="RegND">
 																					{BEGIN RegND_showtotal}
@@ -2793,14 +2762,14 @@
 											{END SHND_showtotal}
 										</td>
 										{END SHND_fieldfootercolumn}
-										{BEGIN CHND_fieldfootercolumn}
-										<td class="bs-gridcell {$CHND_class}" data-field="CHND">
-																					{BEGIN CHND_showtotal}
+										{BEGIN DHND_fieldfootercolumn}
+										<td class="bs-gridcell {$DHND_class}" data-field="DHND">
+																					{BEGIN DHND_showtotal}
 																							Total:
-											{$CHND_total}
-											{END CHND_showtotal}
+											{$DHND_total}
+											{END DHND_showtotal}
 										</td>
-										{END CHND_fieldfootercolumn}
+										{END DHND_fieldfootercolumn}
 										{BEGIN RDND_fieldfootercolumn}
 										<td class="bs-gridcell {$RDND_class}" data-field="RDND">
 																					{BEGIN RDND_showtotal}
@@ -2809,14 +2778,6 @@
 											{END RDND_showtotal}
 										</td>
 										{END RDND_fieldfootercolumn}
-										{BEGIN RegNDOT_fieldfootercolumn}
-										<td class="bs-gridcell {$RegNDOT_class}" data-field="RegNDOT">
-																					{BEGIN RegNDOT_showtotal}
-																							Total:
-											{$RegNDOT_total}
-											{END RegNDOT_showtotal}
-										</td>
-										{END RegNDOT_fieldfootercolumn}
 										{BEGIN RHNDOT_fieldfootercolumn}
 										<td class="bs-gridcell {$RHNDOT_class}" data-field="RHNDOT">
 																					{BEGIN RHNDOT_showtotal}
@@ -2833,14 +2794,14 @@
 											{END SHNDOT_showtotal}
 										</td>
 										{END SHNDOT_fieldfootercolumn}
-										{BEGIN CHNDOT_fieldfootercolumn}
-										<td class="bs-gridcell {$CHNDOT_class}" data-field="CHNDOT">
-																					{BEGIN CHNDOT_showtotal}
+										{BEGIN DHNDOT_fieldfootercolumn}
+										<td class="bs-gridcell {$DHNDOT_class}" data-field="DHNDOT">
+																					{BEGIN DHNDOT_showtotal}
 																							Total:
-											{$CHNDOT_total}
-											{END CHNDOT_showtotal}
+											{$DHNDOT_total}
+											{END DHNDOT_showtotal}
 										</td>
-										{END CHNDOT_fieldfootercolumn}
+										{END DHNDOT_fieldfootercolumn}
 										{BEGIN RDNDOT_fieldfootercolumn}
 										<td class="bs-gridcell {$RDNDOT_class}" data-field="RDNDOT">
 																					{BEGIN RDNDOT_showtotal}
@@ -2849,14 +2810,22 @@
 											{END RDNDOT_showtotal}
 										</td>
 										{END RDNDOT_fieldfootercolumn}
-										{BEGIN DH_fieldfootercolumn}
-										<td class="bs-gridcell {$DH_class}" data-field="DH">
-																					{BEGIN DH_showtotal}
+										{BEGIN RHRD_fieldfootercolumn}
+										<td class="bs-gridcell {$RHRD_class}" data-field="RHRD">
+																					{BEGIN RHRD_showtotal}
 																							Total:
-											{$DH_total}
-											{END DH_showtotal}
+											{$RHRD_total}
+											{END RHRD_showtotal}
 										</td>
-										{END DH_fieldfootercolumn}
+										{END RHRD_fieldfootercolumn}
+										{BEGIN SHRD_fieldfootercolumn}
+										<td class="bs-gridcell {$SHRD_class}" data-field="SHRD">
+																					{BEGIN SHRD_showtotal}
+																							Total:
+											{$SHRD_total}
+											{END SHRD_showtotal}
+										</td>
+										{END SHRD_fieldfootercolumn}
 										{BEGIN DHRD_fieldfootercolumn}
 										<td class="bs-gridcell {$DHRD_class}" data-field="DHRD">
 																					{BEGIN DHRD_showtotal}
@@ -2865,14 +2834,30 @@
 											{END DHRD_showtotal}
 										</td>
 										{END DHRD_fieldfootercolumn}
-										{BEGIN DHOT_fieldfootercolumn}
-										<td class="bs-gridcell {$DHOT_class}" data-field="DHOT">
-																					{BEGIN DHOT_showtotal}
+										{BEGIN RHRDOT_fieldfootercolumn}
+										<td class="bs-gridcell {$RHRDOT_class}" data-field="RHRDOT">
+																					{BEGIN RHRDOT_showtotal}
 																							Total:
-											{$DHOT_total}
-											{END DHOT_showtotal}
+											{$RHRDOT_total}
+											{END RHRDOT_showtotal}
 										</td>
-										{END DHOT_fieldfootercolumn}
+										{END RHRDOT_fieldfootercolumn}
+										{BEGIN SHRDOT_fieldfootercolumn}
+										<td class="bs-gridcell {$SHRDOT_class}" data-field="SHRDOT">
+																					{BEGIN SHRDOT_showtotal}
+																							Total:
+											{$SHRDOT_total}
+											{END SHRDOT_showtotal}
+										</td>
+										{END SHRDOT_fieldfootercolumn}
+										{BEGIN SHRDOTD_fieldfootercolumn}
+										<td class="bs-gridcell {$SHRDOTD_class}" data-field="SHRDOTD">
+																					{BEGIN SHRDOTD_showtotal}
+																							Total:
+											{$SHRDOTD_total}
+											{END SHRDOTD_showtotal}
+										</td>
+										{END SHRDOTD_fieldfootercolumn}
 										{BEGIN DHRDOT_fieldfootercolumn}
 										<td class="bs-gridcell {$DHRDOT_class}" data-field="DHRDOT">
 																					{BEGIN DHRDOT_showtotal}
@@ -2881,14 +2866,6 @@
 											{END DHRDOT_showtotal}
 										</td>
 										{END DHRDOT_fieldfootercolumn}
-										{BEGIN SHRDND_fieldfootercolumn}
-										<td class="bs-gridcell {$SHRDND_class}" data-field="SHRDND">
-																					{BEGIN SHRDND_showtotal}
-																							Total:
-											{$SHRDND_total}
-											{END SHRDND_showtotal}
-										</td>
-										{END SHRDND_fieldfootercolumn}
 										{BEGIN RHRDND_fieldfootercolumn}
 										<td class="bs-gridcell {$RHRDND_class}" data-field="RHRDND">
 																					{BEGIN RHRDND_showtotal}
@@ -2897,6 +2874,22 @@
 											{END RHRDND_showtotal}
 										</td>
 										{END RHRDND_fieldfootercolumn}
+										{BEGIN SHRDND_fieldfootercolumn}
+										<td class="bs-gridcell {$SHRDND_class}" data-field="SHRDND">
+																					{BEGIN SHRDND_showtotal}
+																							Total:
+											{$SHRDND_total}
+											{END SHRDND_showtotal}
+										</td>
+										{END SHRDND_fieldfootercolumn}
+										{BEGIN DHRDND_fieldfootercolumn}
+										<td class="bs-gridcell {$DHRDND_class}" data-field="DHRDND">
+																					{BEGIN DHRDND_showtotal}
+																							Total:
+											{$DHRDND_total}
+											{END DHRDND_showtotal}
+										</td>
+										{END DHRDND_fieldfootercolumn}
 										{BEGIN RHRDNDOT_fieldfootercolumn}
 										<td class="bs-gridcell {$RHRDNDOT_class}" data-field="RHRDNDOT">
 																					{BEGIN RHRDNDOT_showtotal}
@@ -2913,30 +2906,6 @@
 											{END SHRDNDOT_showtotal}
 										</td>
 										{END SHRDNDOT_fieldfootercolumn}
-										{BEGIN DHND_fieldfootercolumn}
-										<td class="bs-gridcell {$DHND_class}" data-field="DHND">
-																					{BEGIN DHND_showtotal}
-																							Total:
-											{$DHND_total}
-											{END DHND_showtotal}
-										</td>
-										{END DHND_fieldfootercolumn}
-										{BEGIN DHRDND_fieldfootercolumn}
-										<td class="bs-gridcell {$DHRDND_class}" data-field="DHRDND">
-																					{BEGIN DHRDND_showtotal}
-																							Total:
-											{$DHRDND_total}
-											{END DHRDND_showtotal}
-										</td>
-										{END DHRDND_fieldfootercolumn}
-										{BEGIN DHNDOT_fieldfootercolumn}
-										<td class="bs-gridcell {$DHNDOT_class}" data-field="DHNDOT">
-																					{BEGIN DHNDOT_showtotal}
-																							Total:
-											{$DHNDOT_total}
-											{END DHNDOT_showtotal}
-										</td>
-										{END DHNDOT_fieldfootercolumn}
 										{BEGIN DHRDNDOT_fieldfootercolumn}
 										<td class="bs-gridcell {$DHRDNDOT_class}" data-field="DHRDNDOT">
 																					{BEGIN DHRDNDOT_showtotal}

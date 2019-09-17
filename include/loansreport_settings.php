@@ -150,8 +150,8 @@ $tdataloansreport[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																									
-																																																																																																																				
+																																																																																																																																																																																																																																																																																																																																									
+																																																																																																																																																																																												
 
 $tdataloansreport[".ajaxCodeSnippetAdded"] = false;
 

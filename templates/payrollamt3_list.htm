@@ -544,9 +544,6 @@
 	.bs-gridcell[data-field=SHoliday]:before {
 		content: "{$label payrollamt3 SHoliday}";
 	}
-	.bs-gridcell[data-field=CHoliday]:before {
-		content: "{$label payrollamt3 CHoliday}";
-	}
 	.bs-gridcell[data-field=RegOT]:before {
 		content: "{$label payrollamt3 RegOT}";
 	}
@@ -555,9 +552,6 @@
 	}
 	.bs-gridcell[data-field=SHOT]:before {
 		content: "{$label payrollamt3 SHOT}";
-	}
-	.bs-gridcell[data-field=CHOT]:before {
-		content: "{$label payrollamt3 CHOT}";
 	}
 	.bs-gridcell[data-field=RDOT]:before {
 		content: "{$label payrollamt3 RDOT}";
@@ -573,9 +567,6 @@
 	}
 	.bs-gridcell[data-field=SHND]:before {
 		content: "{$label payrollamt3 SHND}";
-	}
-	.bs-gridcell[data-field=CHND]:before {
-		content: "{$label payrollamt3 CHND}";
 	}
 	.bs-gridcell[data-field=RDND]:before {
 		content: "{$label payrollamt3 RDND}";
@@ -607,26 +598,17 @@
 	.bs-gridcell[data-field=SHolidayHrs]:before {
 		content: "{$label payrollamt3 SHolidayHrs}";
 	}
-	.bs-gridcell[data-field=CHolidayHrs]:before {
-		content: "{$label payrollamt3 CHolidayHrs}";
-	}
 	.bs-gridcell[data-field=RegOTHrs]:before {
 		content: "{$label payrollamt3 RegOTHrs}";
 	}
 	.bs-gridcell[data-field=RHOTHrs]:before {
 		content: "{$label payrollamt3 RHOTHrs}";
 	}
-	.bs-gridcell[data-field=SHOTHRs]:before {
-		content: "{$label payrollamt3 SHOTHRs}";
-	}
-	.bs-gridcell[data-field=CHOTHrs]:before {
-		content: "{$label payrollamt3 CHOTHrs}";
+	.bs-gridcell[data-field=SHOTHrs]:before {
+		content: "{$label payrollamt3 SHOTHrs}";
 	}
 	.bs-gridcell[data-field=RDOTHrs]:before {
 		content: "{$label payrollamt3 RDOTHrs}";
-	}
-	.bs-gridcell[data-field=NDHrs]:before {
-		content: "{$label payrollamt3 NDHrs}";
 	}
 	.bs-gridcell[data-field=RDHrs]:before {
 		content: "{$label payrollamt3 RDHrs}";
@@ -639,9 +621,6 @@
 	}
 	.bs-gridcell[data-field=SHNDHrs]:before {
 		content: "{$label payrollamt3 SHNDHrs}";
-	}
-	.bs-gridcell[data-field=CHNDHrs]:before {
-		content: "{$label payrollamt3 CHNDHrs}";
 	}
 	.bs-gridcell[data-field=RDNDHrs]:before {
 		content: "{$label payrollamt3 RDNDHrs}";
@@ -1035,32 +1014,6 @@
 									
 									
 									
-									{BEGIN CHolidayHrs_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$CHolidayHrs_class}" data-field=CHolidayHrs>
-									{BEGIN CHolidayHrs_fieldheader}
-																				<span {$CHolidayHrs_orderlinkattrs}>
-											{$label payrollamt3 CHolidayHrs}
-										</span>
-									{END CHolidayHrs_fieldheader}
-									</th>
-									{END CHolidayHrs_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN CHoliday_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$CHoliday_class}" data-field=CHoliday>
-									{BEGIN CHoliday_fieldheader}
-																				<span {$CHoliday_orderlinkattrs}>
-											{$label payrollamt3 CHoliday}
-										</span>
-									{END CHoliday_fieldheader}
-									</th>
-									{END CHoliday_fieldheadercolumn}
-									
-									
-									
-									
 									{BEGIN RDHrs_fieldheadercolumn}
 									<th class="rnr-gridfieldlabel {$RDHrs_class}" data-field=RDHrs>
 									{BEGIN RDHrs_fieldheader}
@@ -1139,15 +1092,15 @@
 									
 									
 									
-									{BEGIN SHOTHRs_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$SHOTHRs_class}" data-field=SHOTHRs>
-									{BEGIN SHOTHRs_fieldheader}
-																				<span {$SHOTHRs_orderlinkattrs}>
-											{$label payrollamt3 SHOTHRs}
+									{BEGIN SHOTHrs_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SHOTHrs_class}" data-field=SHOTHrs>
+									{BEGIN SHOTHrs_fieldheader}
+																				<span {$SHOTHrs_orderlinkattrs}>
+											{$label payrollamt3 SHOTHrs}
 										</span>
-									{END SHOTHRs_fieldheader}
+									{END SHOTHrs_fieldheader}
 									</th>
-									{END SHOTHRs_fieldheadercolumn}
+									{END SHOTHrs_fieldheadercolumn}
 									
 									
 									
@@ -1161,32 +1114,6 @@
 									{END SHOT_fieldheader}
 									</th>
 									{END SHOT_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN CHOTHrs_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$CHOTHrs_class}" data-field=CHOTHrs>
-									{BEGIN CHOTHrs_fieldheader}
-																				<span {$CHOTHrs_orderlinkattrs}>
-											{$label payrollamt3 CHOTHrs}
-										</span>
-									{END CHOTHrs_fieldheader}
-									</th>
-									{END CHOTHrs_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN CHOT_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$CHOT_class}" data-field=CHOT>
-									{BEGIN CHOT_fieldheader}
-																				<span {$CHOT_orderlinkattrs}>
-											{$label payrollamt3 CHOT}
-										</span>
-									{END CHOT_fieldheader}
-									</th>
-									{END CHOT_fieldheadercolumn}
 									
 									
 									
@@ -1213,19 +1140,6 @@
 									{END RDOT_fieldheader}
 									</th>
 									{END RDOT_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN NDHrs_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$NDHrs_class}" data-field=NDHrs>
-									{BEGIN NDHrs_fieldheader}
-																				<span {$NDHrs_orderlinkattrs}>
-											{$label payrollamt3 NDHrs}
-										</span>
-									{END NDHrs_fieldheader}
-									</th>
-									{END NDHrs_fieldheadercolumn}
 									
 									
 									
@@ -1304,32 +1218,6 @@
 									{END SHND_fieldheader}
 									</th>
 									{END SHND_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN CHNDHrs_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$CHNDHrs_class}" data-field=CHNDHrs>
-									{BEGIN CHNDHrs_fieldheader}
-																				<span {$CHNDHrs_orderlinkattrs}>
-											{$label payrollamt3 CHNDHrs}
-										</span>
-									{END CHNDHrs_fieldheader}
-									</th>
-									{END CHNDHrs_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN CHND_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$CHND_class}" data-field=CHND>
-									{BEGIN CHND_fieldheader}
-																				<span {$CHND_orderlinkattrs}>
-											{$label payrollamt3 CHND}
-										</span>
-									{END CHND_fieldheader}
-									</th>
-									{END CHND_fieldheadercolumn}
 									
 									
 									
@@ -1854,20 +1742,6 @@
 {END SHoliday_fieldcolumn}
 
 
-	{BEGIN CHolidayHrs_fieldcolumn}
-	<td class="bs-gridcell {$CHolidayHrs_class}"  data-field=CHolidayHrs {$rowstyle} {$recordattrs}>
-		{$CHolidayHrs_value}
-	</td>
-{END CHolidayHrs_fieldcolumn}
-
-
-	{BEGIN CHoliday_fieldcolumn}
-	<td class="bs-gridcell {$CHoliday_class}"  data-field=CHoliday {$rowstyle} {$recordattrs}>
-		{$CHoliday_value}
-	</td>
-{END CHoliday_fieldcolumn}
-
-
 	{BEGIN RDHrs_fieldcolumn}
 	<td class="bs-gridcell {$RDHrs_class}"  data-field=RDHrs {$rowstyle} {$recordattrs}>
 		{$RDHrs_value}
@@ -1910,11 +1784,11 @@
 {END RHOT_fieldcolumn}
 
 
-	{BEGIN SHOTHRs_fieldcolumn}
-	<td class="bs-gridcell {$SHOTHRs_class}"  data-field=SHOTHRs {$rowstyle} {$recordattrs}>
-		{$SHOTHRs_value}
+	{BEGIN SHOTHrs_fieldcolumn}
+	<td class="bs-gridcell {$SHOTHrs_class}"  data-field=SHOTHrs {$rowstyle} {$recordattrs}>
+		{$SHOTHrs_value}
 	</td>
-{END SHOTHRs_fieldcolumn}
+{END SHOTHrs_fieldcolumn}
 
 
 	{BEGIN SHOT_fieldcolumn}
@@ -1922,20 +1796,6 @@
 		{$SHOT_value}
 	</td>
 {END SHOT_fieldcolumn}
-
-
-	{BEGIN CHOTHrs_fieldcolumn}
-	<td class="bs-gridcell {$CHOTHrs_class}"  data-field=CHOTHrs {$rowstyle} {$recordattrs}>
-		{$CHOTHrs_value}
-	</td>
-{END CHOTHrs_fieldcolumn}
-
-
-	{BEGIN CHOT_fieldcolumn}
-	<td class="bs-gridcell {$CHOT_class}"  data-field=CHOT {$rowstyle} {$recordattrs}>
-		{$CHOT_value}
-	</td>
-{END CHOT_fieldcolumn}
 
 
 	{BEGIN RDOTHrs_fieldcolumn}
@@ -1950,13 +1810,6 @@
 		{$RDOT_value}
 	</td>
 {END RDOT_fieldcolumn}
-
-
-	{BEGIN NDHrs_fieldcolumn}
-	<td class="bs-gridcell {$NDHrs_class}"  data-field=NDHrs {$rowstyle} {$recordattrs}>
-		{$NDHrs_value}
-	</td>
-{END NDHrs_fieldcolumn}
 
 
 	{BEGIN ND_fieldcolumn}
@@ -1999,20 +1852,6 @@
 		{$SHND_value}
 	</td>
 {END SHND_fieldcolumn}
-
-
-	{BEGIN CHNDHrs_fieldcolumn}
-	<td class="bs-gridcell {$CHNDHrs_class}"  data-field=CHNDHrs {$rowstyle} {$recordattrs}>
-		{$CHNDHrs_value}
-	</td>
-{END CHNDHrs_fieldcolumn}
-
-
-	{BEGIN CHND_fieldcolumn}
-	<td class="bs-gridcell {$CHND_class}"  data-field=CHND {$rowstyle} {$recordattrs}>
-		{$CHND_value}
-	</td>
-{END CHND_fieldcolumn}
 
 
 	{BEGIN RDNDHrs_fieldcolumn}

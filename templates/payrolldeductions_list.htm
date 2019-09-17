@@ -550,6 +550,9 @@
 	.bs-gridcell[data-field=WageType]:before {
 		content: "{$label payrolldeductions WageType}";
 	}
+	.bs-gridcell[data-field=OtherPayment]:before {
+		content: "{$label payrolldeductions OtherPayment}";
+	}
 </style>
 <table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
 	<thead>
@@ -693,6 +696,19 @@
 									{END Amount_fieldheader}
 									</th>
 									{END Amount_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN OtherPayment_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$OtherPayment_class}" data-field=OtherPayment>
+									{BEGIN OtherPayment_fieldheader}
+																				<span {$OtherPayment_orderlinkattrs}>
+											{$label payrolldeductions OtherPayment}
+										</span>
+									{END OtherPayment_fieldheader}
+									</th>
+									{END OtherPayment_fieldheadercolumn}
 									
 									
 									
@@ -843,6 +859,13 @@
 {END Amount_fieldcolumn}
 
 
+	{BEGIN OtherPayment_fieldcolumn}
+	<td class="bs-gridcell {$OtherPayment_class}"  data-field=OtherPayment {$rowstyle} {$recordattrs}>
+		{$OtherPayment_value}
+	</td>
+{END OtherPayment_fieldcolumn}
+
+
 	{BEGIN LoanID_fieldcolumn}
 	<td class="bs-gridcell {$LoanID_class}"  data-field=LoanID {$rowstyle} {$recordattrs}>
 		{$LoanID_value}
@@ -926,6 +949,10 @@
 											{END Amount_showtotal}
 										</td>
 										{END Amount_fieldfootercolumn}
+										{BEGIN OtherPayment_fieldfootercolumn}
+										<td class="bs-gridcell {$OtherPayment_class}" data-field="OtherPayment">
+																				</td>
+										{END OtherPayment_fieldfootercolumn}
 										{BEGIN LoanID_fieldfootercolumn}
 										<td class="bs-gridcell {$LoanID_class}" data-field="LoanID">
 																				</td>

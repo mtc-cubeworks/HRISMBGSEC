@@ -57,6 +57,7 @@ function InitLookupLinks()
 	$lookupTableLinks["logins"]["demo_log.MLogID"]["edit"] = array("table" => "demo_log", "field" => "MLogID", "page" => "edit");
 	$lookupTableLinks["clocktypes"]["demo_log.ClockType"]["edit"] = array("table" => "demo_log", "field" => "ClockType", "page" => "edit");
 	$lookupTableLinks["holidaytype"]["holidays.HolidayType"]["edit"] = array("table" => "holidays", "field" => "HolidayType", "page" => "edit");
+	$lookupTableLinks["divisions"]["holidays.Division"]["edit"] = array("table" => "holidays", "field" => "Division", "page" => "edit");
 	$lookupTableLinks["schedtype"]["schedrange.SchedType"]["edit"] = array("table" => "schedrange", "field" => "SchedType", "page" => "edit");
 	$lookupTableLinks["shifts"]["schedrange.Shift"]["edit"] = array("table" => "schedrange", "field" => "Shift", "page" => "edit");
 	$lookupTableLinks["daysweek"]["schedrange.RestDays"]["edit"] = array("table" => "schedrange", "field" => "RestDays", "page" => "edit");
@@ -76,6 +77,7 @@ function InitLookupLinks()
 	$lookupTableLinks["demo_user"]["loans.EmployeeID"]["edit"] = array("table" => "loans", "field" => "EmployeeID", "page" => "edit");
 	$lookupTableLinks["loandesriptions"]["loans.LoanDescription"]["edit"] = array("table" => "loans", "field" => "LoanDescription", "page" => "edit");
 	$lookupTableLinks["paymentperiods"]["loans.PaymentPeriod"]["edit"] = array("table" => "loans", "field" => "PaymentPeriod", "page" => "edit");
+	$lookupTableLinks["deductypes"]["loans.DType"]["edit"] = array("table" => "loans", "field" => "DType", "page" => "edit");
 	$lookupTableLinks["statpay"]["divisions.StatutoryPayment"]["edit"] = array("table" => "divisions", "field" => "StatutoryPayment", "page" => "edit");
 	$lookupTableLinks["employername"]["payroll.Employer"]["edit"] = array("table" => "payroll", "field" => "Employer", "page" => "edit");
 	$lookupTableLinks["divisions"]["payroll.Division"]["edit"] = array("table" => "payroll", "field" => "Division", "page" => "edit");
@@ -100,6 +102,7 @@ function InitLookupLinks()
 	$lookupTableLinks["employername"]["payrolldeductions.Employer"]["edit"] = array("table" => "payrolldeductions", "field" => "Employer", "page" => "edit");
 	$lookupTableLinks["divisions"]["payrolldeductions.Division"]["edit"] = array("table" => "payrolldeductions", "field" => "Division", "page" => "edit");
 	$lookupTableLinks["emptype"]["payrolldeductions.WageType"]["edit"] = array("table" => "payrolldeductions", "field" => "WageType", "page" => "edit");
+	$lookupTableLinks["otherpayments"]["payrolldeductions.OtherPayment"]["edit"] = array("table" => "payrolldeductions", "field" => "OtherPayment", "page" => "edit");
 	$lookupTableLinks["schedtype"]["shifts.SchedType"]["edit"] = array("table" => "shifts", "field" => "SchedType", "page" => "edit");
 	$lookupTableLinks["employername"]["dtrrange.Employer"]["edit"] = array("table" => "dtrrange", "field" => "Employer", "page" => "edit");
 	$lookupTableLinks["emptype"]["dtrrange.WageType"]["edit"] = array("table" => "dtrrange", "field" => "WageType", "page" => "edit");
@@ -122,8 +125,6 @@ function InitLookupLinks()
 	$lookupTableLinks["employername"]["payrollstatutories.Employer"]["edit"] = array("table" => "payrollstatutories", "field" => "Employer", "page" => "edit");
 	$lookupTableLinks["divisions"]["payrollstatutories.Division"]["edit"] = array("table" => "payrollstatutories", "field" => "Division", "page" => "edit");
 	$lookupTableLinks["emptype"]["payrollstatutories.WageType"]["edit"] = array("table" => "payrollstatutories", "field" => "WageType", "page" => "edit");
-	$lookupTableLinks["demo_user"]["loanbalance3.EmployeeID"]["edit"] = array("table" => "loanbalance3", "field" => "EmployeeID", "page" => "edit");
-	$lookupTableLinks["loandesriptions"]["loanbalance3.LoanDescription"]["edit"] = array("table" => "loanbalance3", "field" => "LoanDescription", "page" => "edit");
 	$lookupTableLinks["demo_user"]["payrolltax.EmployeeID"]["edit"] = array("table" => "payrolltax", "field" => "EmployeeID", "page" => "edit");
 	$lookupTableLinks["employername"]["payrolltax.Employer"]["edit"] = array("table" => "payrolltax", "field" => "Employer", "page" => "edit");
 	$lookupTableLinks["divisions"]["payrolltax.Division"]["edit"] = array("table" => "payrolltax", "field" => "Division", "page" => "edit");
@@ -178,8 +179,6 @@ function InitLookupLinks()
 	$lookupTableLinks["demo_user"]["indleave1.EmployeeID"]["edit"] = array("table" => "indleave1", "field" => "EmployeeID", "page" => "edit");
 	$lookupTableLinks["daylength"]["indleave1.NoDays"]["edit"] = array("table" => "indleave1", "field" => "NoDays", "page" => "edit");
 	$lookupTableLinks["leavetypes"]["indleave1.LeaveType"]["edit"] = array("table" => "indleave1", "field" => "LeaveType", "page" => "edit");
-	$lookupTableLinks["demo_user"]["loanbalance31.EmployeeID"]["edit"] = array("table" => "loanbalance31", "field" => "EmployeeID", "page" => "edit");
-	$lookupTableLinks["loandesriptions"]["loanbalance31.LoanDescription"]["edit"] = array("table" => "loanbalance31", "field" => "LoanDescription", "page" => "edit");
 	$lookupTableLinks["employername"]["loansreport.Employer"]["edit"] = array("table" => "loansreport", "field" => "Employer", "page" => "edit");
 	$lookupTableLinks["loandesriptions"]["loansreport.LoanType"]["edit"] = array("table" => "loansreport", "field" => "LoanType", "page" => "edit");
 	$lookupTableLinks["logins"]["loansreport.PreparedBy"]["edit"] = array("table" => "loansreport", "field" => "PreparedBy", "page" => "edit");
@@ -246,11 +245,6 @@ function InitLookupLinks()
 	$lookupTableLinks["approvalbutton"]["filelog.Checked"]["edit"] = array("table" => "filelog", "field" => "Checked", "page" => "edit");
 	$lookupTableLinks["approvalbutton"]["filelog.Approved"]["edit"] = array("table" => "filelog", "field" => "Approved", "page" => "edit");
 	$lookupTableLinks["approvalbutton"]["filelog.HRApproved"]["edit"] = array("table" => "filelog", "field" => "HRApproved", "page" => "edit");
-	$lookupTableLinks["emptype"]["payrolltab1.WageType"]["edit"] = array("table" => "payrolltab1", "field" => "WageType", "page" => "edit");
-	$lookupTableLinks["empstatus"]["payrolltab1.Status"]["edit"] = array("table" => "payrolltab1", "field" => "Status", "page" => "edit");
-	$lookupTableLinks["divisions"]["payrolltab1.Division"]["edit"] = array("table" => "payrolltab1", "field" => "Division", "page" => "edit");
-	$lookupTableLinks["employername"]["payrolltab1.Employer"]["edit"] = array("table" => "payrolltab1", "field" => "Employer", "page" => "edit");
-	$lookupTableLinks["positions"]["payrolltab1.Position"]["edit"] = array("table" => "payrolltab1", "field" => "Position", "page" => "edit");
 	$lookupTableLinks["demo_user"]["filelog1.EmployeeID"]["edit"] = array("table" => "filelog1", "field" => "EmployeeID", "page" => "edit");
 	$lookupTableLinks["logins"]["filelog1.MLogID"]["edit"] = array("table" => "filelog1", "field" => "MLogID", "page" => "edit");
 	$lookupTableLinks["clocktypes"]["filelog1.ClockType"]["edit"] = array("table" => "filelog1", "field" => "ClockType", "page" => "edit");
@@ -320,6 +314,32 @@ function InitLookupLinks()
 	$lookupTableLinks["employername"]["demo_useremp.Employer"]["edit"] = array("table" => "demo_useremp", "field" => "Employer", "page" => "edit");
 	$lookupTableLinks["banks"]["demo_useremp.Bank"]["edit"] = array("table" => "demo_useremp", "field" => "Bank", "page" => "edit");
 	$lookupTableLinks["demo_user"]["demo_useremp.Superior2"]["edit"] = array("table" => "demo_useremp", "field" => "Superior2", "page" => "edit");
+	$lookupTableLinks["emptype"]["payrolltab1.WageType"]["edit"] = array("table" => "payrolltab1", "field" => "WageType", "page" => "edit");
+	$lookupTableLinks["empstatus"]["payrolltab1.Status"]["edit"] = array("table" => "payrolltab1", "field" => "Status", "page" => "edit");
+	$lookupTableLinks["divisions"]["payrolltab1.Division"]["edit"] = array("table" => "payrolltab1", "field" => "Division", "page" => "edit");
+	$lookupTableLinks["employername"]["payrolltab1.Employer"]["edit"] = array("table" => "payrolltab1", "field" => "Employer", "page" => "edit");
+	$lookupTableLinks["positions"]["payrolltab1.Position"]["edit"] = array("table" => "payrolltab1", "field" => "Position", "page" => "edit");
+	$lookupTableLinks["emptype"]["mycurrentdtr.WageType"]["edit"] = array("table" => "mycurrentdtr", "field" => "WageType", "page" => "edit");
+	$lookupTableLinks["daysweek"]["mycurrentdtr.DayIs"]["edit"] = array("table" => "mycurrentdtr", "field" => "DayIs", "page" => "edit");
+	$lookupTableLinks["holidaytype"]["mycurrentdtr.HolidayType"]["edit"] = array("table" => "mycurrentdtr", "field" => "HolidayType", "page" => "edit");
+	$lookupTableLinks["divisions"]["mycurrentdtr.Division"]["edit"] = array("table" => "mycurrentdtr", "field" => "Division", "page" => "edit");
+	$lookupTableLinks["department"]["mycurrentdtr.Department"]["edit"] = array("table" => "mycurrentdtr", "field" => "Department", "page" => "edit");
+	$lookupTableLinks["employername"]["mycurrentdtr.Employer"]["edit"] = array("table" => "mycurrentdtr", "field" => "Employer", "page" => "edit");
+	$lookupTableLinks["employername"]["dtrrange1.Employer"]["edit"] = array("table" => "dtrrange1", "field" => "Employer", "page" => "edit");
+	$lookupTableLinks["emptype"]["dtrrange1.WageType"]["edit"] = array("table" => "dtrrange1", "field" => "WageType", "page" => "edit");
+	$lookupTableLinks["divisions"]["dtrrange1.Division"]["edit"] = array("table" => "dtrrange1", "field" => "Division", "page" => "edit");
+	$lookupTableLinks["dtrempl"]["dtrrange1.Employee"]["edit"] = array("table" => "dtrrange1", "field" => "Employee", "page" => "edit");
+	$lookupTableLinks["dtrempl"]["otndrdglobal1.Employee"]["edit"] = array("table" => "otndrdglobal1", "field" => "Employee", "page" => "edit");
+	$lookupTableLinks["demo_user"]["loanbalnew5.EmployeeID"]["edit"] = array("table" => "loanbalnew5", "field" => "EmployeeID", "page" => "edit");
+	$lookupTableLinks["deductypes"]["loanbalnew5.DType"]["edit"] = array("table" => "loanbalnew5", "field" => "DType", "page" => "edit");
+	$lookupTableLinks["loandesriptions"]["loanbalnew5.LoanDescription"]["edit"] = array("table" => "loanbalnew5", "field" => "LoanDescription", "page" => "edit");
+	$lookupTableLinks["paymentperiods"]["loanbalnew5.PaymentPeriod"]["edit"] = array("table" => "loanbalnew5", "field" => "PaymentPeriod", "page" => "edit");
+	$lookupTableLinks["loantypes"]["loanbalnew5.LoanType"]["edit"] = array("table" => "loanbalnew5", "field" => "LoanType", "page" => "edit");
+	$lookupTableLinks["demo_user"]["loanbalnew51.EmployeeID"]["edit"] = array("table" => "loanbalnew51", "field" => "EmployeeID", "page" => "edit");
+	$lookupTableLinks["deductypes"]["loanbalnew51.DType"]["edit"] = array("table" => "loanbalnew51", "field" => "DType", "page" => "edit");
+	$lookupTableLinks["loandesriptions"]["loanbalnew51.LoanDescription"]["edit"] = array("table" => "loanbalnew51", "field" => "LoanDescription", "page" => "edit");
+	$lookupTableLinks["paymentperiods"]["loanbalnew51.PaymentPeriod"]["edit"] = array("table" => "loanbalnew51", "field" => "PaymentPeriod", "page" => "edit");
+	$lookupTableLinks["loantypes"]["loanbalnew51.LoanType"]["edit"] = array("table" => "loanbalnew51", "field" => "LoanType", "page" => "edit");
 }
 
 ?>

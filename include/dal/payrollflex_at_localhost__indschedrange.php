@@ -24,6 +24,7 @@ $dalTableindschedrange["SecondHalfMins"] = array("type"=>5,"varname"=>"SecondHal
 $dalTableindschedrange["RestDays"] = array("type"=>200,"varname"=>"RestDays", "name" => "RestDays");
 $dalTableindschedrange["EmployeeID"] = array("type"=>3,"varname"=>"EmployeeID", "name" => "EmployeeID");
 $dalTableindschedrange["SchedBy"] = array("type"=>3,"varname"=>"SchedBy", "name" => "SchedBy");
+$dalTableindschedrange["PreLogMins"] = array("type"=>5,"varname"=>"PreLogMins", "name" => "PreLogMins");
 	$dalTableindschedrange["IScRID"]["key"]=true;
 
 $dal_info["payrollflex_at_localhost__indschedrange"] = &$dalTableindschedrange;

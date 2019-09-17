@@ -131,6 +131,11 @@
 				{$label indschedule1 NDMins}
 			</th>
 			{END NDMins_fieldheadercolumn}
+			{BEGIN NDOTMins_fieldheadercolumn}
+			<th class="{$NDOTMins_class}" {$NDOTMins_style}  data-field="NDOTMins">
+				{$label indschedule1 NDOTMins}
+			</th>
+			{END NDOTMins_fieldheadercolumn}
 			{BEGIN ApprovedNightDiff_fieldheadercolumn}
 			<th class="{$ApprovedNightDiff_class}" {$ApprovedNightDiff_style}  data-field="ApprovedNightDiff">
 				{$label indschedule1 ApprovedNightDiff}
@@ -146,21 +151,6 @@
 				{$label indschedule1 ANDOTMins}
 			</th>
 			{END ANDOTMins_fieldheadercolumn}
-			{BEGIN NDMealAllowancePerShift_fieldheadercolumn}
-			<th class="{$NDMealAllowancePerShift_class}" {$NDMealAllowancePerShift_style}  data-field="NDMealAllowancePerShift">
-				{$label indschedule1 NDMealAllowancePerShift}
-			</th>
-			{END NDMealAllowancePerShift_fieldheadercolumn}
-			{BEGIN NDMinimumHrs_fieldheadercolumn}
-			<th class="{$NDMinimumHrs_class}" {$NDMinimumHrs_style}  data-field="NDMinimumHrs">
-				{$label indschedule1 NDMinimumHrs}
-			</th>
-			{END NDMinimumHrs_fieldheadercolumn}
-			{BEGIN NDMealAllowance_fieldheadercolumn}
-			<th class="{$NDMealAllowance_class}" {$NDMealAllowance_style}  data-field="NDMealAllowance">
-				{$label indschedule1 NDMealAllowance}
-			</th>
-			{END NDMealAllowance_fieldheadercolumn}
 			{BEGIN WorkMinsNet_fieldheadercolumn}
 			<th class="{$WorkMinsNet_class}" {$WorkMinsNet_style}  data-field="WorkMinsNet">
 				{$label indschedule1 WorkMinsNet}
@@ -228,6 +218,11 @@
 				{$NDMins_value}
 			</td>
 			{END NDMins_fieldcolumn}
+			{BEGIN NDOTMins_fieldcolumn}
+			<td  class="{$NDOTMins_class}" {$NDOTMins_style} {$recordattrs}>
+				{$NDOTMins_value}
+			</td>
+			{END NDOTMins_fieldcolumn}
 			{BEGIN ApprovedNightDiff_fieldcolumn}
 			<td  class="{$ApprovedNightDiff_class}" {$ApprovedNightDiff_style} {$recordattrs}>
 				{$ApprovedNightDiff_value}
@@ -243,21 +238,6 @@
 				{$ANDOTMins_value}
 			</td>
 			{END ANDOTMins_fieldcolumn}
-			{BEGIN NDMealAllowancePerShift_fieldcolumn}
-			<td  class="{$NDMealAllowancePerShift_class}" {$NDMealAllowancePerShift_style} {$recordattrs}>
-				{$NDMealAllowancePerShift_value}
-			</td>
-			{END NDMealAllowancePerShift_fieldcolumn}
-			{BEGIN NDMinimumHrs_fieldcolumn}
-			<td  class="{$NDMinimumHrs_class}" {$NDMinimumHrs_style} {$recordattrs}>
-				{$NDMinimumHrs_value}
-			</td>
-			{END NDMinimumHrs_fieldcolumn}
-			{BEGIN NDMealAllowance_fieldcolumn}
-			<td  class="{$NDMealAllowance_class}" {$NDMealAllowance_style} {$recordattrs}>
-				{$NDMealAllowance_value}
-			</td>
-			{END NDMealAllowance_fieldcolumn}
 			{BEGIN WorkMinsNet_fieldcolumn}
 			<td  class="{$WorkMinsNet_class}" {$WorkMinsNet_style} {$recordattrs}>
 				{$WorkMinsNet_value}

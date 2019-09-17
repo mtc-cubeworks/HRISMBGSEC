@@ -61,6 +61,46 @@
 <div {$viewfields_hiddenattr} data-pageid="{$pageid}" data-brick="viewfields" >
 
 	<div class="container">
+					{BEGIN RDOTh_fieldblock}
+	<div class="{$fielddispclass_RDOTh} col-md-6 bs-viewcontrolgroup" data-fieldname="RDOTh">
+		<label class="control-label" for="{$labelfor_RDOTh}">
+			{$label dtrsummary2 RDOTh}
+		</label>
+		<div class="" >
+			{$RDOTh_value}&nbsp;
+		</div>
+	</div>
+{END RDOTh_fieldblock}
+					{BEGIN RegNDh_fieldblock}
+	<div class="{$fielddispclass_RegNDh} col-md-6 bs-viewcontrolgroup" data-fieldname="RegNDh">
+		<label class="control-label" for="{$labelfor_RegNDh}">
+			{$label dtrsummary2 RegNDh}
+		</label>
+		<div class="" >
+			{$RegNDh_value}&nbsp;
+		</div>
+	</div>
+{END RegNDh_fieldblock}
+					{BEGIN RegRDh_fieldblock}
+	<div class="{$fielddispclass_RegRDh} col-md-6 bs-viewcontrolgroup" data-fieldname="RegRDh">
+		<label class="control-label" for="{$labelfor_RegRDh}">
+			{$label dtrsummary2 RegRDh}
+		</label>
+		<div class="" >
+			{$RegRDh_value}&nbsp;
+		</div>
+	</div>
+{END RegRDh_fieldblock}
+					{BEGIN RDNDh_fieldblock}
+	<div class="{$fielddispclass_RDNDh} col-md-6 bs-viewcontrolgroup" data-fieldname="RDNDh">
+		<label class="control-label" for="{$labelfor_RDNDh}">
+			{$label dtrsummary2 RDNDh}
+		</label>
+		<div class="" >
+			{$RDNDh_value}&nbsp;
+		</div>
+	</div>
+{END RDNDh_fieldblock}
 					{BEGIN EmployeeID_fieldblock}
 	<div class="{$fielddispclass_EmployeeID} col-md-6 bs-viewcontrolgroup" data-fieldname="EmployeeID">
 		<label class="control-label" for="{$labelfor_EmployeeID}">
@@ -171,146 +211,6 @@
 		</div>
 	</div>
 {END UndertimeMins_fieldblock}
-					{BEGIN ExcessHrs_fieldblock}
-	<div class="{$fielddispclass_ExcessHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="ExcessHrs">
-		<label class="control-label" for="{$labelfor_ExcessHrs}">
-			{$label dtrsummary2 ExcessHrs}
-		</label>
-		<div class="" >
-			{$ExcessHrs_value}&nbsp;
-		</div>
-	</div>
-{END ExcessHrs_fieldblock}
-					{BEGIN RegOTHrs_fieldblock}
-	<div class="{$fielddispclass_RegOTHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="RegOTHrs">
-		<label class="control-label" for="{$labelfor_RegOTHrs}">
-			{$label dtrsummary2 RegOTHrs}
-		</label>
-		<div class="" >
-			{$RegOTHrs_value}&nbsp;
-		</div>
-	</div>
-{END RegOTHrs_fieldblock}
-					{BEGIN RHOTHrs_fieldblock}
-	<div class="{$fielddispclass_RHOTHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="RHOTHrs">
-		<label class="control-label" for="{$labelfor_RHOTHrs}">
-			{$label dtrsummary2 RHOTHrs}
-		</label>
-		<div class="" >
-			{$RHOTHrs_value}&nbsp;
-		</div>
-	</div>
-{END RHOTHrs_fieldblock}
-					{BEGIN SHOTHRs_fieldblock}
-	<div class="{$fielddispclass_SHOTHRs} col-md-6 bs-viewcontrolgroup" data-fieldname="SHOTHRs">
-		<label class="control-label" for="{$labelfor_SHOTHRs}">
-			{$label dtrsummary2 SHOTHRs}
-		</label>
-		<div class="" >
-			{$SHOTHRs_value}&nbsp;
-		</div>
-	</div>
-{END SHOTHRs_fieldblock}
-					{BEGIN CHOTHrs_fieldblock}
-	<div class="{$fielddispclass_CHOTHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="CHOTHrs">
-		<label class="control-label" for="{$labelfor_CHOTHrs}">
-			{$label dtrsummary2 CHOTHrs}
-		</label>
-		<div class="" >
-			{$CHOTHrs_value}&nbsp;
-		</div>
-	</div>
-{END CHOTHrs_fieldblock}
-					{BEGIN RDOTHrs_fieldblock}
-	<div class="{$fielddispclass_RDOTHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="RDOTHrs">
-		<label class="control-label" for="{$labelfor_RDOTHrs}">
-			{$label dtrsummary2 RDOTHrs}
-		</label>
-		<div class="" >
-			{$RDOTHrs_value}&nbsp;
-		</div>
-	</div>
-{END RDOTHrs_fieldblock}
-					{BEGIN NDHrs_fieldblock}
-	<div class="{$fielddispclass_NDHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="NDHrs">
-		<label class="control-label" for="{$labelfor_NDHrs}">
-			{$label dtrsummary2 NDHrs}
-		</label>
-		<div class="" >
-			{$NDHrs_value}&nbsp;
-		</div>
-	</div>
-{END NDHrs_fieldblock}
-					{BEGIN NDOTHrs_fieldblock}
-	<div class="{$fielddispclass_NDOTHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="NDOTHrs">
-		<label class="control-label" for="{$labelfor_NDOTHrs}">
-			{$label dtrsummary2 NDOTHrs}
-		</label>
-		<div class="" >
-			{$NDOTHrs_value}&nbsp;
-		</div>
-	</div>
-{END NDOTHrs_fieldblock}
-					{BEGIN RDHrs_fieldblock}
-	<div class="{$fielddispclass_RDHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="RDHrs">
-		<label class="control-label" for="{$labelfor_RDHrs}">
-			{$label dtrsummary2 RDHrs}
-		</label>
-		<div class="" >
-			{$RDHrs_value}&nbsp;
-		</div>
-	</div>
-{END RDHrs_fieldblock}
-					{BEGIN RegNDHrs_fieldblock}
-	<div class="{$fielddispclass_RegNDHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="RegNDHrs">
-		<label class="control-label" for="{$labelfor_RegNDHrs}">
-			{$label dtrsummary2 RegNDHrs}
-		</label>
-		<div class="" >
-			{$RegNDHrs_value}&nbsp;
-		</div>
-	</div>
-{END RegNDHrs_fieldblock}
-					{BEGIN RHNDHrs_fieldblock}
-	<div class="{$fielddispclass_RHNDHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="RHNDHrs">
-		<label class="control-label" for="{$labelfor_RHNDHrs}">
-			{$label dtrsummary2 RHNDHrs}
-		</label>
-		<div class="" >
-			{$RHNDHrs_value}&nbsp;
-		</div>
-	</div>
-{END RHNDHrs_fieldblock}
-					{BEGIN SHNDHrs_fieldblock}
-	<div class="{$fielddispclass_SHNDHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="SHNDHrs">
-		<label class="control-label" for="{$labelfor_SHNDHrs}">
-			{$label dtrsummary2 SHNDHrs}
-		</label>
-		<div class="" >
-			{$SHNDHrs_value}&nbsp;
-		</div>
-	</div>
-{END SHNDHrs_fieldblock}
-					{BEGIN CHNDHrs_fieldblock}
-	<div class="{$fielddispclass_CHNDHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="CHNDHrs">
-		<label class="control-label" for="{$labelfor_CHNDHrs}">
-			{$label dtrsummary2 CHNDHrs}
-		</label>
-		<div class="" >
-			{$CHNDHrs_value}&nbsp;
-		</div>
-	</div>
-{END CHNDHrs_fieldblock}
-					{BEGIN RDNDHrs_fieldblock}
-	<div class="{$fielddispclass_RDNDHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="RDNDHrs">
-		<label class="control-label" for="{$labelfor_RDNDHrs}">
-			{$label dtrsummary2 RDNDHrs}
-		</label>
-		<div class="" >
-			{$RDNDHrs_value}&nbsp;
-		</div>
-	</div>
-{END RDNDHrs_fieldblock}
 					{BEGIN VLDays_fieldblock}
 	<div class="{$fielddispclass_VLDays} col-md-6 bs-viewcontrolgroup" data-fieldname="VLDays">
 		<label class="control-label" for="{$labelfor_VLDays}">
@@ -361,116 +261,26 @@
 		</div>
 	</div>
 {END TrODays_fieldblock}
-					{BEGIN RLink_fieldblock}
-	<div class="{$fielddispclass_RLink} col-md-6 bs-viewcontrolgroup" data-fieldname="RLink">
-		<label class="control-label" for="{$labelfor_RLink}">
-			{$label dtrsummary2 RLink}
+					{BEGIN RHh_fieldblock}
+	<div class="{$fielddispclass_RHh} col-md-6 bs-viewcontrolgroup" data-fieldname="RHh">
+		<label class="control-label" for="{$labelfor_RHh}">
+			{$label dtrsummary2 RHh}
 		</label>
 		<div class="" >
-			{$RLink_value}&nbsp;
+			{$RHh_value}&nbsp;
 		</div>
 	</div>
-{END RLink_fieldblock}
-					{BEGIN NDMealAllowance_fieldblock}
-	<div class="{$fielddispclass_NDMealAllowance} col-md-6 bs-viewcontrolgroup" data-fieldname="NDMealAllowance">
-		<label class="control-label" for="{$labelfor_NDMealAllowance}">
-			{$label dtrsummary2 NDMealAllowance}
+{END RHh_fieldblock}
+					{BEGIN SHh_fieldblock}
+	<div class="{$fielddispclass_SHh} col-md-6 bs-viewcontrolgroup" data-fieldname="SHh">
+		<label class="control-label" for="{$labelfor_SHh}">
+			{$label dtrsummary2 SHh}
 		</label>
 		<div class="" >
-			{$NDMealAllowance_value}&nbsp;
+			{$SHh_value}&nbsp;
 		</div>
 	</div>
-{END NDMealAllowance_fieldblock}
-					{BEGIN RHolidayHrs_fieldblock}
-	<div class="{$fielddispclass_RHolidayHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="RHolidayHrs">
-		<label class="control-label" for="{$labelfor_RHolidayHrs}">
-			{$label dtrsummary2 RHolidayHrs}
-		</label>
-		<div class="" >
-			{$RHolidayHrs_value}&nbsp;
-		</div>
-	</div>
-{END RHolidayHrs_fieldblock}
-					{BEGIN SHolidayHrs_fieldblock}
-	<div class="{$fielddispclass_SHolidayHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="SHolidayHrs">
-		<label class="control-label" for="{$labelfor_SHolidayHrs}">
-			{$label dtrsummary2 SHolidayHrs}
-		</label>
-		<div class="" >
-			{$SHolidayHrs_value}&nbsp;
-		</div>
-	</div>
-{END SHolidayHrs_fieldblock}
-					{BEGIN CHolidayHrs_fieldblock}
-	<div class="{$fielddispclass_CHolidayHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="CHolidayHrs">
-		<label class="control-label" for="{$labelfor_CHolidayHrs}">
-			{$label dtrsummary2 CHolidayHrs}
-		</label>
-		<div class="" >
-			{$CHolidayHrs_value}&nbsp;
-		</div>
-	</div>
-{END CHolidayHrs_fieldblock}
-					{BEGIN TBreakLateMins_fieldblock}
-	<div class="{$fielddispclass_TBreakLateMins} col-md-6 bs-viewcontrolgroup" data-fieldname="TBreakLateMins">
-		<label class="control-label" for="{$labelfor_TBreakLateMins}">
-			{$label dtrsummary2 TBreakLateMins}
-		</label>
-		<div class="" >
-			{$TBreakLateMins_value}&nbsp;
-		</div>
-	</div>
-{END TBreakLateMins_fieldblock}
-					{BEGIN RegNDOTHrs_fieldblock}
-	<div class="{$fielddispclass_RegNDOTHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="RegNDOTHrs">
-		<label class="control-label" for="{$labelfor_RegNDOTHrs}">
-			{$label dtrsummary2 RegNDOTHrs}
-		</label>
-		<div class="" >
-			{$RegNDOTHrs_value}&nbsp;
-		</div>
-	</div>
-{END RegNDOTHrs_fieldblock}
-					{BEGIN RHNDOTHrs_fieldblock}
-	<div class="{$fielddispclass_RHNDOTHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="RHNDOTHrs">
-		<label class="control-label" for="{$labelfor_RHNDOTHrs}">
-			{$label dtrsummary2 RHNDOTHrs}
-		</label>
-		<div class="" >
-			{$RHNDOTHrs_value}&nbsp;
-		</div>
-	</div>
-{END RHNDOTHrs_fieldblock}
-					{BEGIN SHNDOTHrs_fieldblock}
-	<div class="{$fielddispclass_SHNDOTHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="SHNDOTHrs">
-		<label class="control-label" for="{$labelfor_SHNDOTHrs}">
-			{$label dtrsummary2 SHNDOTHrs}
-		</label>
-		<div class="" >
-			{$SHNDOTHrs_value}&nbsp;
-		</div>
-	</div>
-{END SHNDOTHrs_fieldblock}
-					{BEGIN CHNDOTHrs_fieldblock}
-	<div class="{$fielddispclass_CHNDOTHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="CHNDOTHrs">
-		<label class="control-label" for="{$labelfor_CHNDOTHrs}">
-			{$label dtrsummary2 CHNDOTHrs}
-		</label>
-		<div class="" >
-			{$CHNDOTHrs_value}&nbsp;
-		</div>
-	</div>
-{END CHNDOTHrs_fieldblock}
-					{BEGIN RDNDOTHrs_fieldblock}
-	<div class="{$fielddispclass_RDNDOTHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="RDNDOTHrs">
-		<label class="control-label" for="{$labelfor_RDNDOTHrs}">
-			{$label dtrsummary2 RDNDOTHrs}
-		</label>
-		<div class="" >
-			{$RDNDOTHrs_value}&nbsp;
-		</div>
-	</div>
-{END RDNDOTHrs_fieldblock}
+{END SHh_fieldblock}
 					{BEGIN DHh_fieldblock}
 	<div class="{$fielddispclass_DHh} col-md-6 bs-viewcontrolgroup" data-fieldname="DHh">
 		<label class="control-label" for="{$labelfor_DHh}">
@@ -481,16 +291,56 @@
 		</div>
 	</div>
 {END DHh_fieldblock}
-					{BEGIN DHRDh_fieldblock}
-	<div class="{$fielddispclass_DHRDh} col-md-6 bs-viewcontrolgroup" data-fieldname="DHRDh">
-		<label class="control-label" for="{$labelfor_DHRDh}">
-			{$label dtrsummary2 DHRDh}
+					{BEGIN ExcessHrs_fieldblock}
+	<div class="{$fielddispclass_ExcessHrs} col-md-6 bs-viewcontrolgroup" data-fieldname="ExcessHrs">
+		<label class="control-label" for="{$labelfor_ExcessHrs}">
+			{$label dtrsummary2 ExcessHrs}
 		</label>
 		<div class="" >
-			{$DHRDh_value}&nbsp;
+			{$ExcessHrs_value}&nbsp;
 		</div>
 	</div>
-{END DHRDh_fieldblock}
+{END ExcessHrs_fieldblock}
+					{BEGIN RegOTh_fieldblock}
+	<div class="{$fielddispclass_RegOTh} col-md-6 bs-viewcontrolgroup" data-fieldname="RegOTh">
+		<label class="control-label" for="{$labelfor_RegOTh}">
+			{$label dtrsummary2 RegOTh}
+		</label>
+		<div class="" >
+			{$RegOTh_value}&nbsp;
+		</div>
+	</div>
+{END RegOTh_fieldblock}
+					{BEGIN RHOTh_fieldblock}
+	<div class="{$fielddispclass_RHOTh} col-md-6 bs-viewcontrolgroup" data-fieldname="RHOTh">
+		<label class="control-label" for="{$labelfor_RHOTh}">
+			{$label dtrsummary2 RHOTh}
+		</label>
+		<div class="" >
+			{$RHOTh_value}&nbsp;
+		</div>
+	</div>
+{END RHOTh_fieldblock}
+					{BEGIN SHOTh_fieldblock}
+	<div class="{$fielddispclass_SHOTh} col-md-6 bs-viewcontrolgroup" data-fieldname="SHOTh">
+		<label class="control-label" for="{$labelfor_SHOTh}">
+			{$label dtrsummary2 SHOTh}
+		</label>
+		<div class="" >
+			{$SHOTh_value}&nbsp;
+		</div>
+	</div>
+{END SHOTh_fieldblock}
+					{BEGIN SHOTDh_fieldblock}
+	<div class="{$fielddispclass_SHOTDh} col-md-6 bs-viewcontrolgroup" data-fieldname="SHOTDh">
+		<label class="control-label" for="{$labelfor_SHOTDh}">
+			{$label dtrsummary2 SHOTDh}
+		</label>
+		<div class="" >
+			{$SHOTDh_value}&nbsp;
+		</div>
+	</div>
+{END SHOTDh_fieldblock}
 					{BEGIN DHOTh_fieldblock}
 	<div class="{$fielddispclass_DHOTh} col-md-6 bs-viewcontrolgroup" data-fieldname="DHOTh">
 		<label class="control-label" for="{$labelfor_DHOTh}">
@@ -501,56 +351,36 @@
 		</div>
 	</div>
 {END DHOTh_fieldblock}
-					{BEGIN DHRDOTh_fieldblock}
-	<div class="{$fielddispclass_DHRDOTh} col-md-6 bs-viewcontrolgroup" data-fieldname="DHRDOTh">
-		<label class="control-label" for="{$labelfor_DHRDOTh}">
-			{$label dtrsummary2 DHRDOTh}
+					{BEGIN NDOTh_fieldblock}
+	<div class="{$fielddispclass_NDOTh} col-md-6 bs-viewcontrolgroup" data-fieldname="NDOTh">
+		<label class="control-label" for="{$labelfor_NDOTh}">
+			{$label dtrsummary2 NDOTh}
 		</label>
 		<div class="" >
-			{$DHRDOTh_value}&nbsp;
+			{$NDOTh_value}&nbsp;
 		</div>
 	</div>
-{END DHRDOTh_fieldblock}
-					{BEGIN SHRDNDh_fieldblock}
-	<div class="{$fielddispclass_SHRDNDh} col-md-6 bs-viewcontrolgroup" data-fieldname="SHRDNDh">
-		<label class="control-label" for="{$labelfor_SHRDNDh}">
-			{$label dtrsummary2 SHRDNDh}
+{END NDOTh_fieldblock}
+					{BEGIN RHNDh_fieldblock}
+	<div class="{$fielddispclass_RHNDh} col-md-6 bs-viewcontrolgroup" data-fieldname="RHNDh">
+		<label class="control-label" for="{$labelfor_RHNDh}">
+			{$label dtrsummary2 RHNDh}
 		</label>
 		<div class="" >
-			{$SHRDNDh_value}&nbsp;
+			{$RHNDh_value}&nbsp;
 		</div>
 	</div>
-{END SHRDNDh_fieldblock}
-					{BEGIN RHRDNDh_fieldblock}
-	<div class="{$fielddispclass_RHRDNDh} col-md-6 bs-viewcontrolgroup" data-fieldname="RHRDNDh">
-		<label class="control-label" for="{$labelfor_RHRDNDh}">
-			{$label dtrsummary2 RHRDNDh}
+{END RHNDh_fieldblock}
+					{BEGIN SHNDh_fieldblock}
+	<div class="{$fielddispclass_SHNDh} col-md-6 bs-viewcontrolgroup" data-fieldname="SHNDh">
+		<label class="control-label" for="{$labelfor_SHNDh}">
+			{$label dtrsummary2 SHNDh}
 		</label>
 		<div class="" >
-			{$RHRDNDh_value}&nbsp;
+			{$SHNDh_value}&nbsp;
 		</div>
 	</div>
-{END RHRDNDh_fieldblock}
-					{BEGIN SHRDNDOTh_fieldblock}
-	<div class="{$fielddispclass_SHRDNDOTh} col-md-6 bs-viewcontrolgroup" data-fieldname="SHRDNDOTh">
-		<label class="control-label" for="{$labelfor_SHRDNDOTh}">
-			{$label dtrsummary2 SHRDNDOTh}
-		</label>
-		<div class="" >
-			{$SHRDNDOTh_value}&nbsp;
-		</div>
-	</div>
-{END SHRDNDOTh_fieldblock}
-					{BEGIN RHRDNDOTh_fieldblock}
-	<div class="{$fielddispclass_RHRDNDOTh} col-md-6 bs-viewcontrolgroup" data-fieldname="RHRDNDOTh">
-		<label class="control-label" for="{$labelfor_RHRDNDOTh}">
-			{$label dtrsummary2 RHRDNDOTh}
-		</label>
-		<div class="" >
-			{$RHRDNDOTh_value}&nbsp;
-		</div>
-	</div>
-{END RHRDNDOTh_fieldblock}
+{END SHNDh_fieldblock}
 					{BEGIN DHNDh_fieldblock}
 	<div class="{$fielddispclass_DHNDh} col-md-6 bs-viewcontrolgroup" data-fieldname="DHNDh">
 		<label class="control-label" for="{$labelfor_DHNDh}">
@@ -561,16 +391,26 @@
 		</div>
 	</div>
 {END DHNDh_fieldblock}
-					{BEGIN DHRDNDh_fieldblock}
-	<div class="{$fielddispclass_DHRDNDh} col-md-6 bs-viewcontrolgroup" data-fieldname="DHRDNDh">
-		<label class="control-label" for="{$labelfor_DHRDNDh}">
-			{$label dtrsummary2 DHRDNDh}
+					{BEGIN RHNDOTh_fieldblock}
+	<div class="{$fielddispclass_RHNDOTh} col-md-6 bs-viewcontrolgroup" data-fieldname="RHNDOTh">
+		<label class="control-label" for="{$labelfor_RHNDOTh}">
+			{$label dtrsummary2 RHNDOTh}
 		</label>
 		<div class="" >
-			{$DHRDNDh_value}&nbsp;
+			{$RHNDOTh_value}&nbsp;
 		</div>
 	</div>
-{END DHRDNDh_fieldblock}
+{END RHNDOTh_fieldblock}
+					{BEGIN SHNDOTh_fieldblock}
+	<div class="{$fielddispclass_SHNDOTh} col-md-6 bs-viewcontrolgroup" data-fieldname="SHNDOTh">
+		<label class="control-label" for="{$labelfor_SHNDOTh}">
+			{$label dtrsummary2 SHNDOTh}
+		</label>
+		<div class="" >
+			{$SHNDOTh_value}&nbsp;
+		</div>
+	</div>
+{END SHNDOTh_fieldblock}
 					{BEGIN DHNDOTh_fieldblock}
 	<div class="{$fielddispclass_DHNDOTh} col-md-6 bs-viewcontrolgroup" data-fieldname="DHNDOTh">
 		<label class="control-label" for="{$labelfor_DHNDOTh}">
@@ -581,6 +421,136 @@
 		</div>
 	</div>
 {END DHNDOTh_fieldblock}
+					{BEGIN RDNDOTh_fieldblock}
+	<div class="{$fielddispclass_RDNDOTh} col-md-6 bs-viewcontrolgroup" data-fieldname="RDNDOTh">
+		<label class="control-label" for="{$labelfor_RDNDOTh}">
+			{$label dtrsummary2 RDNDOTh}
+		</label>
+		<div class="" >
+			{$RDNDOTh_value}&nbsp;
+		</div>
+	</div>
+{END RDNDOTh_fieldblock}
+					{BEGIN RHRDh_fieldblock}
+	<div class="{$fielddispclass_RHRDh} col-md-6 bs-viewcontrolgroup" data-fieldname="RHRDh">
+		<label class="control-label" for="{$labelfor_RHRDh}">
+			{$label dtrsummary2 RHRDh}
+		</label>
+		<div class="" >
+			{$RHRDh_value}&nbsp;
+		</div>
+	</div>
+{END RHRDh_fieldblock}
+					{BEGIN SHRDh_fieldblock}
+	<div class="{$fielddispclass_SHRDh} col-md-6 bs-viewcontrolgroup" data-fieldname="SHRDh">
+		<label class="control-label" for="{$labelfor_SHRDh}">
+			{$label dtrsummary2 SHRDh}
+		</label>
+		<div class="" >
+			{$SHRDh_value}&nbsp;
+		</div>
+	</div>
+{END SHRDh_fieldblock}
+					{BEGIN DHRDh_fieldblock}
+	<div class="{$fielddispclass_DHRDh} col-md-6 bs-viewcontrolgroup" data-fieldname="DHRDh">
+		<label class="control-label" for="{$labelfor_DHRDh}">
+			{$label dtrsummary2 DHRDh}
+		</label>
+		<div class="" >
+			{$DHRDh_value}&nbsp;
+		</div>
+	</div>
+{END DHRDh_fieldblock}
+					{BEGIN RHRDOTh_fieldblock}
+	<div class="{$fielddispclass_RHRDOTh} col-md-6 bs-viewcontrolgroup" data-fieldname="RHRDOTh">
+		<label class="control-label" for="{$labelfor_RHRDOTh}">
+			{$label dtrsummary2 RHRDOTh}
+		</label>
+		<div class="" >
+			{$RHRDOTh_value}&nbsp;
+		</div>
+	</div>
+{END RHRDOTh_fieldblock}
+					{BEGIN SHRDOTh_fieldblock}
+	<div class="{$fielddispclass_SHRDOTh} col-md-6 bs-viewcontrolgroup" data-fieldname="SHRDOTh">
+		<label class="control-label" for="{$labelfor_SHRDOTh}">
+			{$label dtrsummary2 SHRDOTh}
+		</label>
+		<div class="" >
+			{$SHRDOTh_value}&nbsp;
+		</div>
+	</div>
+{END SHRDOTh_fieldblock}
+					{BEGIN SHRDOTDh_fieldblock}
+	<div class="{$fielddispclass_SHRDOTDh} col-md-6 bs-viewcontrolgroup" data-fieldname="SHRDOTDh">
+		<label class="control-label" for="{$labelfor_SHRDOTDh}">
+			{$label dtrsummary2 SHRDOTDh}
+		</label>
+		<div class="" >
+			{$SHRDOTDh_value}&nbsp;
+		</div>
+	</div>
+{END SHRDOTDh_fieldblock}
+					{BEGIN DHRDOTh_fieldblock}
+	<div class="{$fielddispclass_DHRDOTh} col-md-6 bs-viewcontrolgroup" data-fieldname="DHRDOTh">
+		<label class="control-label" for="{$labelfor_DHRDOTh}">
+			{$label dtrsummary2 DHRDOTh}
+		</label>
+		<div class="" >
+			{$DHRDOTh_value}&nbsp;
+		</div>
+	</div>
+{END DHRDOTh_fieldblock}
+					{BEGIN RHRDNDh_fieldblock}
+	<div class="{$fielddispclass_RHRDNDh} col-md-6 bs-viewcontrolgroup" data-fieldname="RHRDNDh">
+		<label class="control-label" for="{$labelfor_RHRDNDh}">
+			{$label dtrsummary2 RHRDNDh}
+		</label>
+		<div class="" >
+			{$RHRDNDh_value}&nbsp;
+		</div>
+	</div>
+{END RHRDNDh_fieldblock}
+					{BEGIN SHRDNDh_fieldblock}
+	<div class="{$fielddispclass_SHRDNDh} col-md-6 bs-viewcontrolgroup" data-fieldname="SHRDNDh">
+		<label class="control-label" for="{$labelfor_SHRDNDh}">
+			{$label dtrsummary2 SHRDNDh}
+		</label>
+		<div class="" >
+			{$SHRDNDh_value}&nbsp;
+		</div>
+	</div>
+{END SHRDNDh_fieldblock}
+					{BEGIN DHRDNDh_fieldblock}
+	<div class="{$fielddispclass_DHRDNDh} col-md-6 bs-viewcontrolgroup" data-fieldname="DHRDNDh">
+		<label class="control-label" for="{$labelfor_DHRDNDh}">
+			{$label dtrsummary2 DHRDNDh}
+		</label>
+		<div class="" >
+			{$DHRDNDh_value}&nbsp;
+		</div>
+	</div>
+{END DHRDNDh_fieldblock}
+					{BEGIN RHRDNDOTh_fieldblock}
+	<div class="{$fielddispclass_RHRDNDOTh} col-md-6 bs-viewcontrolgroup" data-fieldname="RHRDNDOTh">
+		<label class="control-label" for="{$labelfor_RHRDNDOTh}">
+			{$label dtrsummary2 RHRDNDOTh}
+		</label>
+		<div class="" >
+			{$RHRDNDOTh_value}&nbsp;
+		</div>
+	</div>
+{END RHRDNDOTh_fieldblock}
+					{BEGIN SHRDNDOTh_fieldblock}
+	<div class="{$fielddispclass_SHRDNDOTh} col-md-6 bs-viewcontrolgroup" data-fieldname="SHRDNDOTh">
+		<label class="control-label" for="{$labelfor_SHRDNDOTh}">
+			{$label dtrsummary2 SHRDNDOTh}
+		</label>
+		<div class="" >
+			{$SHRDNDOTh_value}&nbsp;
+		</div>
+	</div>
+{END SHRDNDOTh_fieldblock}
 					{BEGIN DHRDNDOTh_fieldblock}
 	<div class="{$fielddispclass_DHRDNDOTh} col-md-6 bs-viewcontrolgroup" data-fieldname="DHRDNDOTh">
 		<label class="control-label" for="{$labelfor_DHRDNDOTh}">
@@ -591,6 +561,16 @@
 		</div>
 	</div>
 {END DHRDNDOTh_fieldblock}
+					{BEGIN RLink_fieldblock}
+	<div class="{$fielddispclass_RLink} col-md-6 bs-viewcontrolgroup" data-fieldname="RLink">
+		<label class="control-label" for="{$labelfor_RLink}">
+			{$label dtrsummary2 RLink}
+		</label>
+		<div class="" >
+			{$RLink_value}&nbsp;
+		</div>
+	</div>
+{END RLink_fieldblock}
 	</div>
 </div>
 

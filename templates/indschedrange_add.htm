@@ -201,6 +201,24 @@
 </div>
 {END RestDays_fieldblock}
 
+			{BEGIN PreLogMins_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_PreLogMins}" data-fieldname="PreLogMins" data-signal-error-for="PreLogMins{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_PreLogMins}">
+		{BEGIN PreLogMins_label}{$label indschedrange PreLogMins}{END PreLogMins_label}
+	</label>
+	<div class="col-md-6" >
+		{$PreLogMins_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="PreLogMins">
+		<div class="text-muted" >
+		{$tooltip indschedrange PreLogMins}
+		</div>
+	</div>
+</div>
+</div>
+{END PreLogMins_fieldblock}
+
 			{BEGIN TimeIn_fieldblock}
 <div class=container>
 <div class="form-group {$fielddispclass_TimeIn}" data-fieldname="TimeIn" data-signal-error-for="TimeIn{$id}" >

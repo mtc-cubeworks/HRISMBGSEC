@@ -246,6 +246,24 @@
 		</div>
 	</div>
 {END Amount_fieldblock}
+	{BEGIN OtherPayment_fieldblock}		
+	<div class="container {$fielddispclass_OtherPayment}" data-fieldname="OtherPayment">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_OtherPayment}">
+				{$label payrolldeductions OtherPayment}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_OtherPayment}
+			</div>
+			<div class="col-md-4" >
+				{$OtherPayment_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$OtherPayment_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END OtherPayment_fieldblock}
 	{BEGIN LoanID_fieldblock}		
 	<div class="container {$fielddispclass_LoanID}" data-fieldname="LoanID">
 		<div class="form-group">

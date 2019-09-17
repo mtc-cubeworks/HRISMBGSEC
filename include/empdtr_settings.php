@@ -178,7 +178,7 @@ $tdataempdtr[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																														
+																																																																																																																																																																																																																																																																		
 
 $tdataempdtr[".ajaxCodeSnippetAdded"] = false;
 
@@ -2050,7 +2050,7 @@ $tdataempdtr[".printFields"][] = "Shift";
 	$fdata["GoodName"] = "Absent";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("empdtr","Absent");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -2169,7 +2169,7 @@ $tdataempdtr[".printFields"][] = "Shift";
 	$fdata["GoodName"] = "LateMins";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("empdtr","LateMins");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -2289,7 +2289,7 @@ $tdataempdtr[".printFields"][] = "Shift";
 	$fdata["GoodName"] = "UndertimeMins";
 	$fdata["ownerTable"] = "indschedule";
 	$fdata["Label"] = GetFieldLabel("empdtr","UndertimeMins");
-	$fdata["FieldType"] = 5;
+	$fdata["FieldType"] = 14;
 
 	
 	
@@ -3737,6 +3737,15 @@ $proto49["m_columns"][] = "DHND";
 $proto49["m_columns"][] = "DHRDND";
 $proto49["m_columns"][] = "DHNDOT";
 $proto49["m_columns"][] = "DHRDNDOT";
+$proto49["m_columns"][] = "RHRDOT";
+$proto49["m_columns"][] = "SHRDOT";
+$proto49["m_columns"][] = "RegND";
+$proto49["m_columns"][] = "RegRD";
+$proto49["m_columns"][] = "SHOTD";
+$proto49["m_columns"][] = "SHRDOTD";
+$proto49["m_columns"][] = "NDOT";
+$proto49["m_columns"][] = "RHRD";
+$proto49["m_columns"][] = "SHRD";
 $obj = new SQLTable($proto49);
 
 $proto48["m_table"] = $obj;
