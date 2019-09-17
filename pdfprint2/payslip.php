@@ -12,7 +12,7 @@ $query = mysqli_query($con,"select * from payrollamt33
 	where PtabID = '".$_GET['ps1']."'");
 	
 
-$pdf = new FPDF('L','mm',array(270,210));
+$pdf = new FPDF('L','mm',array(210,279));
 
 $invoice = mysqli_fetch_array($query );
 $pdf->AddPage();
