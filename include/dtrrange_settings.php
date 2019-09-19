@@ -92,9 +92,9 @@ $tdatadtrrange[".listAjax"] = false;
 	$tdatadtrrange[".locking"] = false;
 
 $tdatadtrrange[".edit"] = true;
-$tdatadtrrange[".afterEditAction"] = 1;
+$tdatadtrrange[".afterEditAction"] = 0;
 $tdatadtrrange[".closePopupAfterEdit"] = 1;
-$tdatadtrrange[".afterEditActionDetTable"] = "";
+$tdatadtrrange[".afterEditActionDetTable"] = "Detail tables not found!";
 
 $tdatadtrrange[".add"] = true;
 $tdatadtrrange[".afterAddAction"] = 1;
@@ -152,7 +152,7 @@ $tdatadtrrange[".rowHighlite"] = true;
 							
 							
 																																																																																					
-																																
+																																			
 
 $tdatadtrrange[".ajaxCodeSnippetAdded"] = false;
 

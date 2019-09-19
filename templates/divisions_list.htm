@@ -1,523 +1,136 @@
-<!doctype html>
-<html  {$html_attrs}>
-	<head>
-		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-		<title>{$pagetitle}</title>
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD> 
+<META http-equiv="X-UA-Compatible" content="IE=Edge"> 
+<META name="viewport" content="width=device-width, initial-scale=1.0"> 
+<TITLE>{$pagetitle}</TITLE> 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<LINK href="styles/default.css" rel="stylesheet" type="text/css"> {BEGIN rtlCSS}<LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">{END rtlCSS} {BEGIN styleCSSFiles}<LINK href="{$stylepath}" rel="stylesheet" type="text/css">{END styleCSSFiles}      
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001"></HEAD> 
+<BODY class="{$stylename} function-list" {$bodyattrs}>{BEGIN body}
 
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<link REL="stylesheet" href="styles/default.css" type="text/css">
-		{BEGIN rtlCSS}
-		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
-		{END rtlCSS}
-		{BEGIN styleCSSFiles}
-		<link REL="stylesheet" href="{$stylepath}" type="text/css">
-		{END styleCSSFiles}
-	</head>
-
-	<body class="{$stylename} function-list" {$bodyattrs}>
-	{BEGIN body}
-<style>
+<STYLE>
 {$containerCss}
-</style>
-<div class="sidebar bs-fixed clearfix mCustomScrollbar" data-mcs-theme="minimal-dark" {$blockattr_left}>
-	<div class="sidebar-contents mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside">
-		
-
-{BEGIN container_logo}
-<div {$logo_chiddenattr} data-pageid="{$pageid}" data-container="logo" class=" bs-sidebarlogo   "> 
-
-{BEGIN logo_block}
-<a href="{$home_link}" {$logo_hiddenattr} data-pageid="{$pageid}" data-brick="logo" class="navbar-brand" >{$logo}</a>
-{END logo_block}
-
-
-
-</div>
-{END container_logo}
-
-
-
-{BEGIN container_hdr}
-<div {$hdr_chiddenattr} data-pageid="{$pageid}" data-container="hdr" class=" navbar-default clearfix   "> 
-
-{BEGIN collapse_block}
-<button {$bsnavbarcollapse_hiddenattr} data-pageid="{$pageid}" data-brick="bsnavbarcollapse" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target=".bs-navcontrolled">	
-	<span class="sr-only">Toggle navigation</span>	
-	<span class="icon-bar"></span>					
-</button>												
-
-{END collapse_block}
-
-
-
-</div>
-{END container_hdr}
-
-{BEGIN container_sidemenu}<div {$sidemenu_chiddenattr} data-pageid="{$pageid}" data-container="sidemenu" class="bs-navform navbar-collapse sidebar-menu bs-hidden-xs bs-navcontrolled" aria-expanded="false" >												   
-{BEGIN menu_block}
-{$menu main}
-
-{END menu_block}
-
-												</div>						{END container_sidemenu}
-
-{BEGIN container_left}
-<div {$left_chiddenattr} data-pageid="{$pageid}" data-container="left" class=" sidebar-container   "> 
-
-{BEGIN searchPanel}
-<div {$searchpanel_hiddenattr} data-pageid="{$pageid}" data-brick="searchpanel" class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} >
-	<!-- Search panel content -->
-	
-	<div class="panel-heading">
-		<div class="btn-group" id="addSearchFieldButton{$id}">
-			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			Search in
-			<span class="caret"></span>
-			</button>
-		</div>
-
-		
-		<div class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
-			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
-			</button>
-			<ul class="dropdown-menu dropdown-left">
-				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Show options</a></li>
-				<li role="separator" class="divider"></li>
-				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>all conditions</label></a></li>
-				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>any condition</label></a></li>
-				<li role="separator" class="divider"></li>
-				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>hide</a></li>
-			</ul>
-		</div>
-	
-		
-		</div>
-	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
-
-
-		
-		{BEGIN searchCtrlBlock}
-		<div class="srchPanelRow form-group" {$filterRow_attrs}>
-			<label>{$fLabel}</label>	{$delCtrlButt}
-				<span class="rnr-searchtype">{$searchtype}</span>
-				<span class="rnr-searchcontrol">{$searchcontrol}</span>
-				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
-		</div>
-		{END searchCtrlBlock}
-
-
-	</div>
-	
-	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
-		<button class="btn btn-primary" id="searchButton{$id}" {$searchbutton_attrs}>Search</button>
-		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}>
-		Show all
-		</button>
-	</div>
-</div>
-
-
-{END searchPanel}
-
-
-
-
-</div>
-{END container_left}
-
-
-	</div>
-</div>	
-<div class="bs-wrapper">
-	<div class="bs-fixedheader" id="fixedheader{$id}">
-		{BEGIN container_menu}<nav {$menu_chiddenattr} data-pageid="{$pageid}" data-container="menu" class="navbar navbar-default bs-fullwidth-navbar">					
-
-
-
-{BEGIN container_bc}
-<div {$bc_chiddenattr} data-pageid="{$pageid}" data-container="bc" class=" navbar-form navbar-left   "> 
-
-{BEGIN breadcrumbs}
-<ol class="breadcrumb">
-<li ><a href="{$home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
-{BEGIN crumb}
-  <li class="{$crumb_item_class}">
-{BEGIN crumb_title_link}
-	<a {$crumb_attrs}>{$crumb_title}</a>
-{END crumb_title_link}
-{BEGIN crumb_title_span}
-	<span {$crumb_attrs}>{$crumb_title}</span>
-{END crumb_title_span}	
-	{$crumb_dropdown}
-  </li>
-{END crumb}
-</ol>
-{END breadcrumbs}
-
-
-
-</div>
-{END container_bc}
-
-
-
-
-
-
-{BEGIN container_menu_1}<div {$menu_1_chiddenattr} data-pageid="{$pageid}" data-container="menu_1" class="bs-navform navbar-collapse bs-hidden-xs bs-navcontrolled" aria-expanded="false" >												   
-
-
-
-{BEGIN container_more}
-<div {$more_chiddenattr} data-pageid="{$pageid}" data-container="more" class=" navbar-right navbar-form   "> 
-
-{BEGIN more_list}
-<div {$morebutton_hiddenattr} data-pageid="{$pageid}" data-brick="morebutton" class="btn-group bs-navsection">
-	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		<span class="glyphicon glyphicon-cog"></span>
-		<span class="caret"></span>
-	</button>
-	<ul class="dropdown-menu">
-				{BEGIN editselected_link}
-		<li class="massButton{$id} disabled"><a href="#" {$editselectedlink_attrs} {$editselectedlink_span} >Edit selected</a></li>
-		{END editselected_link}
-
-				{BEGIN exportselected_link}
-		<li class="massButton{$id} disabled"><a href="#" {$exportselectedlink_attrs} {$exportselectedlink_span} >Export selected</a></li>
-		{END exportselected_link}
-		
-				{BEGIN deleteselected_link}
-		<li class="massButton{$id} disabled"><a href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>Delete selected</a></li>
-		{END deleteselected_link}
-		
-				<li role="separator" class="divider"></li>	
-
-				{BEGIN asearch_link}
-		<li><a href="divisions_search.php" {$advsearchlink_attrs}>Advanced search</a></li>
-		{END asearch_link}
-
-				{BEGIN searchPanelTopButtons}
-		<li><a href=# id="showOptPanel{$id}">Show search panel</a></li>
-		{END searchPanelTopButtons}	
-		
-				
-				<li role="separator" class="divider"></li>	
-		
-				
-				{BEGIN export_link}
-		<li><a target="_blank" href="divisions_export.php"  {$exportlink_attrs}>Export results</a></li>
-		{END export_link}
-
-				{BEGIN import_link}
-		<li><a href="divisions_import.php?{$crosstable_attrs}"  {$importlink_attrs}>Import</a></li>
-		{END import_link}
-
-				
-	</ul>  
-</div>
-
-{END more_list}
-
-
-{BEGIN security_block}
-<span {$loggedas_hiddenattr} data-pageid="{$pageid}" data-brick="loggedas" id="login_block{$id}" class="bs-navsection">
-	{BEGIN guestloginbutton}
-		<button class="btn btn-info" type="button" {$guestloginlink_attrs}>Login</button>
-	{END guestloginbutton}
-	{BEGIN loggedas_message} 
-		<span class="dropdown">
-			<button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				<span class="glyphicon glyphicon-user"></span>	{$username}</button>
-			<ul class="dropdown-menu">
-		{BEGIN logoutbutton}
-				<li><a href="#" {$logoutlink_attrs}>Log out</a></li>
-		{END logoutbutton}
-		
-		{BEGIN adminarea_link}
-				<li><a href="admin_rights_list.php" {$adminarealink_attrs}>Admin Area</a></li>
-		{END adminarea_link}
-
-
-			</ul>
-		</span>
-	{END loggedas_message}
-</span>
-{END security_block}
-
-
-
-</div>
-{END container_more}
-
-
-
-
-
-
-
-
-{BEGIN container_more_1}
-<div {$more_1_chiddenattr} data-pageid="{$pageid}" data-container="more_1" class=" navbar-right navbar-form   "> 
-
-{BEGIN searchform_block}
-<span {$search_hiddenattr} data-pageid="{$pageid}" data-brick="search" class="form-group">
-
- <div  class="input-group">
-{BEGIN searchform_text}
-	<input type="search" class="form-control" {$searchfor_attrs} size="25">
-{END searchform_text}
-	<span class="input-group-btn">
-	{BEGIN searchform_showall}
-		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Show all">
-			<span class="glyphicon glyphicon-remove"></span>
-		</button>
-	{END searchform_showall}
-	{BEGIN searchform_search}
-	<button {$searchbutton_attrs} class="btn btn-primary" >
-		<span class="glyphicon glyphicon-search"></span>
-	</button>
-	{END searchform_search}
-	</span>
-</div>
-		
-</span>
-{END searchform_block}
-
-
-
-</div>
-{END container_more_1}
-
-
-
-
-												</div>						{END container_menu_1}
-
-
-									</nav>{END container_menu}
-	</div>	
-	<div class="container-fluid bs-underheader bs-fixedsidebarmain" id="underheader{$id}">
-		{$header}
-		<div class="bs-sidebar-screenbound">
-			
-
-
-
-{BEGIN container_gridcontrols}
-<div {$gridcontrols_chiddenattr} data-pageid="{$pageid}" data-container="gridcontrols" class=" bs-navcontrolled bs-hidden-xs   "> 
-
-
-
-
-{BEGIN container_add_delete}
-<div {$add_delete_chiddenattr} data-pageid="{$pageid}" data-container="add_delete" class=" bottom-margin  col-md-6 "> 
-
-{BEGIN newrecord_controls_block}
-		{BEGIN add_link}
-		<a {$add_hiddenattr} data-pageid="{$pageid}" data-brick="add" type="button" class="btn btn-primary" {$addlink_attrs}>Add new</a>
-	{END add_link}
-
-		{BEGIN inlineadd_link}
-		<button {$add_hiddenattr} data-pageid="{$pageid}" data-brick="add" type="button" class="btn btn-primary" {$inlineaddlink_attrs}>Inline Add</button>
-	{END inlineadd_link}
-
-{END newrecord_controls_block}
-
-
-{BEGIN record_controls_block}
-<span {$recordcontrol_hiddenattr} data-pageid="{$pageid}" data-brick="recordcontrol">
-		{BEGIN deleteselected_link}
-	<button type="button" class="btn btn-default" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled>Delete</button>
-	{END deleteselected_link}
-		{BEGIN updateselected_link}
-		<button type="button" class="btn btn-default" {$updateselectedlink_attrs} disabled>Update selected</button>
-	{END updateselected_link}
-		{BEGIN saveall_link}
-		<button type="button" class="btn btn-primary" {$savealllink_attrs} {$savealllink_span}>Save all</button>
-	{END saveall_link}
-	{BEGIN cancelall_link}
-		<button type="button" class="btn btn-default" {$cancelalllink_attrs} {$cancelalllink_span}>Cancel</button>
-	{END cancelall_link}
-</span>
-
-{END record_controls_block}
-
-
-
-</div>
-{END container_add_delete}
-
-
-
-
-
-
-
-
-{BEGIN container_gridinfo}
-<div {$gridinfo_chiddenattr} data-pageid="{$pageid}" data-container="gridinfo" class=" bottom-margin text-right col-md-6 "> 
-
-{BEGIN details_found}
-<span {$details_found_hiddenattr} data-pageid="{$pageid}" data-brick="details_found" class="form-inline form-inline-always">
-	{$records_indicator}
-	<span>
-	{BEGIN recordspp_block}
-			{$recsPerPage}
-	{END recordspp_block}
-	</span>
-</span>
-{END details_found}
-
-
-{BEGIN print_friendly}
-<span {$printpanel_hiddenattr} data-pageid="{$pageid}" data-brick="printpanel" class="bs-printpanel" id="printpanelblock{$id}">
-	<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" title="Print-friendly page">
-		<span class="glyphicon glyphicon-print" ></span>
-		<span class="caret"></span>
-    </button>
-	<ul class="dropdown-menu pull-right" >
-		<li>
-			<div class="container-fluid" id="print_friendly_scope{$id}">
-				<div class="row">
-					<div class="col-md-4">Scope:</div>
-										{BEGIN print_friendly_all}
-					<div class="col-md-8">
-						<label for="printAll{$id}">
-							<input type="radio" id="printAll{$id}" data-href="divisions_print.php?all=1&amp;{$crosstable_attrs}" name="printScope">
-							Print all pages
-						</label>
-					</div>
-					{END print_friendly_all}
-				</div>
-				<div class="row">
-					<div class="col-md-4">&nbsp;</div>
-					<div class="col-md-8">
-						<label for="printPage{$id}">
-							<input type="radio" id="printPage{$id}" data-href="divisions_print.php?{$crosstable_attrs}" name="printScope" checked>
-							Print this page
-						</label>
-					</div>
-				</div>
-								<div class="row">
-					<div class="col-md-4">&nbsp;</div>
-					<div class="col-md-8">
-						<label for="printSelection{$id}" style="color: gray;">
-							<input type="radio" id="printSelection{$id}" name="printScope" disabled="disabled">
-							Print selected
-						</label>
-					</div>
-				</div>
-			</div>
-		</li>
-		<li class="divider" role="separator"></li>
-
-				<li>			
-		{BEGIN print_details}
-			<div class="rnr-printdetails">
-				<label for="printDetailsToggler{$id}">
-					<input type="checkbox" id="printDetailsToggler{$id}">
-					Print details
-				</label>
-				<div class="rnr-printdetailstables"  id="printdetailstables{$id}" style="display:none;">
-					{BEGIN print_details_holidays}
-						
-							<div class="rnr-printdetialstable">
-								<label for="printDetailsholidays{$id}">
-									<input type="checkbox" value="holidays" id="printDetailsholidays{$id}" checked>
-									Holidays
-								</label>
-							</div>
-					{END print_details_holidays}
-				</div>
-			</div>
-		{END print_details}
-		</li>
-		<li class="divider" role="separator"></li>
-
-				<li>	
-			<div class="rnr-printdetails">
-				<label for="printPerPage{$id}">
-											Records Per Page:
-				</label>
-				<input type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">		
-			</div>
-		</li>
-		<li class="divider" role="separator"></li>
-		<li class="rnr-printbutton">				
-			<button type="button" class="btn btn-primary" id="print_friendly_button{$id}" >Print</button>			
-		</li>
-	</ul>	
-</span>
-
-{END print_friendly}
-
-
-
-
-</div>
-{END container_gridinfo}
-
-
-
-
-
-
-
-</div>
-{END container_gridcontrols}
-
-
-		</div>
-		<div></div>
-		<div class="bs-sidebar-screenbound bs-minwidth">
-			
-
-{BEGIN container_tabs}
-<div {$tabs_chiddenattr} data-pageid="{$pageid}" data-container="tabs" class="    "> 
-
-{BEGIN grid_tabs}
-<div {$bsgrid_tabs_hiddenattr} data-pageid="{$pageid}" data-brick="bsgrid_tabs">
-<ul class="nav nav-tabs">
-{$grid_tabs_content}
-</ul>
-</div>
-{END grid_tabs}
-
-
-
-</div>
-{END container_tabs}
-
-
-
-{BEGIN container_message}
-<div {$message_chiddenattr} data-pageid="{$pageid}" data-container="message" class="    "> 
-
-{BEGIN message_block}
-<div {$message_hiddenattr} data-pageid="{$pageid}" data-brick="message" class="alert {$message_class}" role="alert">{$message}</div>
-{END message_block}
-
-
-
-</div>
-{END container_message}
-
-
-
-{BEGIN container_center}
-<div {$center_chiddenattr} data-pageid="{$pageid}" data-container="center" class="    "> 
-
-
-
-
-{BEGIN container_grid}
-<div {$grid_chiddenattr} data-pageid="{$pageid}" data-container="grid" class="bs-grid    "> 
-
-{BEGIN grid_block}
-	<style>
+</STYLE>
+ 
+<DIV class="sidebar bs-fixed clearfix mCustomScrollbar" data-mcs-theme="minimal-dark" {$blockattr_left}>
+<DIV class="sidebar-contents mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside">
+{BEGIN container_logo}<DIV class="bs-sidebarlogo" data-container="logo" data-pageid="{$pageid}" {$logo_chiddenattr}>{BEGIN logo_block}<A class="navbar-brand" href="{$home_link}" data-brick="logo" data-pageid="{$pageid}" {$logo_hiddenattr}>{$logo}</A> {END logo_block}</DIV>
+{END container_logo}{BEGIN container_hdr}<DIV class="navbar-default clearfix" data-container="hdr" data-pageid="{$pageid}" {$hdr_chiddenattr}>{BEGIN collapse_block}<BUTTON class="navbar-toggle collapsed" type="button" data-brick="bsnavbarcollapse" data-pageid="{$pageid}" data-target=".bs-navcontrolled" data-runner-toggle="collapse" {$bsnavbarcollapse_hiddenattr}><SPAN class="sr-only">Toggle 
+navigation</SPAN>	<SPAN class="icon-bar"></SPAN></BUTTON>	{END collapse_block}</DIV>
+{END container_hdr}{BEGIN container_sidemenu}<DIV class="bs-navform navbar-collapse sidebar-menu bs-hidden-xs bs-navcontrolled" aria-expanded="false" data-container="sidemenu" data-pageid="{$pageid}" {$sidemenu_chiddenattr}>{BEGIN menu_block}
+{$menu main}{END menu_block}</DIV>
+{END container_sidemenu}{BEGIN container_left}<DIV class="sidebar-container" data-container="left" data-pageid="{$pageid}" {$left_chiddenattr}>
+{BEGIN searchPanel}<DIV class="searchOptions panel panel-primary searchPanelContainer" data-brick="searchpanel" data-pageid="{$pageid}" {$searchpanel_hiddenattr} {$srchOpt_attrs}><!-- Search panel content --> 
+<DIV class="panel-heading">
+<DIV class="btn-group" id="addSearchFieldButton{$id}"><BUTTON class="btn btn-default dropdown-toggle" id="showHideControlChooseMenu{$id}" aria-expanded="false" aria-haspopup="true" type="button" data-toggle="dropdown">	Search in <SPAN class="caret"></SPAN> </BUTTON> </DIV> 
+<DIV class="btn-group searchpanel-options" id="searchPanelOptions{$id}"><BUTTON class="btn btn-default dropdown-toggle" aria-expanded="false" aria-haspopup="true" type="button" data-toggle="dropdown"><SPAN class="glyphicon glyphicon glyphicon-option-vertical"></SPAN> 
+</BUTTON> 
+<UL class="dropdown-menu dropdown-left">
+  <LI id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><A>Show options</A></LI>
+  <LI class="divider" role="separator"></LI>
+  <LI class="srchCritTop" style="display: none;"><A><INPUT name="srchType{$id}" id="radioAll" type="radio" {$all_checkbox}><LABEL for="radioAll"><SPAN class="glyphicon">&nbsp;</SPAN>all 
+  conditions</LABEL></A></LI>
+  <LI class="srchCritTop" style="display: none;"><A><INPUT name="srchType{$id}" id="radioAny" type="radio" {$any_checkbox}><LABEL for="radioAny"><SPAN class="glyphicon">&nbsp;</SPAN>any 
+  condition</LABEL></A></LI>
+  <LI class="divider" role="separator"></LI>
+  <LI><A class="close-button"><SPAN class="glyphicon glyphicon-remove">&nbsp;</SPAN>hide</A></LI></UL></DIV></DIV>
+<DIV class="panel-body controlsBlock" {$bottomSearchButt_attrs}>
+{BEGIN searchCtrlBlock}<DIV class="srchPanelRow form-group" {$filterRow_attrs}><LABEL>
+{$fLabel}</LABEL>	{$delCtrlButt} 
+<SPAN class="rnr-searchtype">
+{$searchtype}</SPAN> <SPAN class="rnr-searchcontrol">
+{$searchcontrol}</SPAN> <SPAN class="rnr-searchcontrol">
+{$searchcontrol1}</SPAN> </DIV>{END searchCtrlBlock}</DIV>
+<DIV class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}><BUTTON class="btn btn-primary" id="searchButton{$id}" {$searchbutton_attrs}>Search</BUTTON> <BUTTON class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}>	Show all </BUTTON> 
+</DIV></DIV>{END searchPanel}</DIV>{END container_left}</DIV></DIV>
+<DIV class="bs-wrapper">
+<DIV class="bs-fixedheader" id="fixedheader{$id}">{BEGIN container_menu}<NAV class="navbar navbar-default bs-fullwidth-navbar" data-container="menu" data-pageid="{$pageid}" {$menu_chiddenattr}>
+{BEGIN container_bc}<DIV class="navbar-form navbar-left" data-container="bc" data-pageid="{$pageid}" {$bc_chiddenattr}>
+{BEGIN breadcrumbs}<OL class="breadcrumb">
+  <LI><A href="{$home_link}"><SPAN class="glyphicon glyphicon-home"></SPAN></A>
+  {$crumb_dropdown}</LI> 
+  {BEGIN crumb}<LI class="{$crumb_item_class}"> {BEGIN crumb_title_link}<A {$crumb_attrs}>
+  {$crumb_title}</A> {END crumb_title_link}{BEGIN crumb_title_span}<SPAN {$crumb_attrs}>
+  {$crumb_title}</SPAN>	 
+  {END crumb_title_span}{$crumb_dropdown} </LI> {END crumb}</OL>{END breadcrumbs}</DIV>
+{END container_bc}{BEGIN container_menu_1}<DIV class="bs-navform navbar-collapse bs-hidden-xs bs-navcontrolled" aria-expanded="false" data-container="menu_1" data-pageid="{$pageid}" {$menu_1_chiddenattr}>
+{BEGIN container_more}<DIV class="navbar-right navbar-form" data-container="more" data-pageid="{$pageid}" {$more_chiddenattr}>
+{BEGIN more_list}<DIV class="btn-group bs-navsection" data-brick="morebutton" data-pageid="{$pageid}" {$morebutton_hiddenattr}><BUTTON class="btn btn-default dropdown-toggle" aria-expanded="false" aria-haspopup="true" type="button" data-toggle="dropdown"><SPAN class="glyphicon glyphicon-cog"></SPAN> <SPAN class="caret"></SPAN> </BUTTON> 
+<UL class="dropdown-menu">
+  {BEGIN editselected_link}<LI class="massButton{$id} disabled"><A href="#" {$editselectedlink_attrs} {$editselectedlink_span}>Edit 
+  selected</A></LI>
+  {END editselected_link}{BEGIN exportselected_link}<LI class="massButton{$id} disabled"><A href="#" {$exportselectedlink_attrs} {$exportselectedlink_span}>Export 
+  selected</A></LI>
+  {END exportselected_link}{BEGIN deleteselected_link}<LI class="massButton{$id} disabled"><A href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>Delete 
+  selected</A></LI>
+  {END deleteselected_link}<LI class="divider" role="separator"></LI>
+  {BEGIN asearch_link}<LI><A href="divisions_search.php" {$advsearchlink_attrs}>Advanced search</A></LI>
+  {END asearch_link}{BEGIN searchPanelTopButtons}<LI><A id="showOptPanel{$id}" href="#">Show search panel</A></LI>
+  {END searchPanelTopButtons}<LI class="divider" role="separator"></LI>
+  {BEGIN export_link}<LI><A href="divisions_export.php" target="_blank" {$exportlink_attrs}>Export 
+  results</A></LI>
+  {END export_link}{BEGIN import_link}<LI><A href="divisions_import.php?{$crosstable_attrs}" {$importlink_attrs}>Import</A></LI>{END import_link}</UL></DIV> 
+{END more_list}{BEGIN security_block}<SPAN class="bs-navsection" id="login_block{$id}" data-brick="loggedas" data-pageid="{$pageid}" {$loggedas_hiddenattr}>{BEGIN guestloginbutton}<BUTTON class="btn btn-info" type="button" {$guestloginlink_attrs}>Login</BUTTON>  {END guestloginbutton}{BEGIN loggedas_message}<SPAN class="dropdown"><BUTTON class="btn btn-info dropdown-toggle" aria-expanded="false" aria-haspopup="true" type="button" data-toggle="dropdown"><SPAN class="glyphicon glyphicon-user"></SPAN>	
+{$username}</BUTTON> 
+<UL class="dropdown-menu">
+  {BEGIN logoutbutton}<LI><A href="#" {$logoutlink_attrs}>Log out</A></LI>
+  {END logoutbutton}{BEGIN adminarea_link}<LI><A href="admin_rights_list.php" {$adminarealink_attrs}>Admin 
+Area</A></LI>{END adminarea_link}</UL></SPAN> {END loggedas_message}</SPAN> {END security_block}</DIV>
+{END container_more}{BEGIN container_more_1}<DIV class="navbar-right navbar-form" data-container="more_1" data-pageid="{$pageid}" {$more_1_chiddenattr}>{BEGIN searchform_block}<SPAN class="form-group" data-brick="search" data-pageid="{$pageid}" {$search_hiddenattr}>
+<DIV class="input-group">{BEGIN searchform_text}<INPUT class="form-control" type="search" size="25" {$searchfor_attrs}>{END searchform_text} 
+<SPAN class="input-group-btn">{BEGIN searchform_showall}<BUTTON title="Show all" class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}><SPAN class="glyphicon glyphicon-remove"></SPAN> </BUTTON> {END searchform_showall}{BEGIN searchform_search}<BUTTON class="btn btn-primary" {$searchbutton_attrs}><SPAN class="glyphicon glyphicon-search"></SPAN> 
+</BUTTON> {END searchform_search}</SPAN> </DIV> </SPAN> {END searchform_block}</DIV>{END container_more_1}</DIV>{END container_menu_1}</NAV>{END container_menu}</DIV>
+<DIV class="container-fluid bs-underheader bs-fixedsidebarmain" id="underheader{$id}">
+{$header} 
+<DIV class="bs-sidebar-screenbound">
+{BEGIN container_gridcontrols}<DIV class="bs-navcontrolled bs-hidden-xs" data-container="gridcontrols" data-pageid="{$pageid}" {$gridcontrols_chiddenattr}>
+{BEGIN container_add_delete}<DIV class="bottom-margin col-md-6" data-container="add_delete" data-pageid="{$pageid}" {$add_delete_chiddenattr}>{BEGIN newrecord_controls_block}{BEGIN add_link}<A class="btn btn-primary" type="button" data-brick="add" data-pageid="{$pageid}" {$add_hiddenattr} {$addlink_attrs}>Add new</A> {END add_link}{BEGIN inlineadd_link}<BUTTON class="btn btn-primary" type="button" data-brick="add" data-pageid="{$pageid}" {$add_hiddenattr} {$inlineaddlink_attrs}>Inline Add</BUTTON> {END inlineadd_link}{END newrecord_controls_block}{BEGIN record_controls_block}<SPAN data-brick="recordcontrol" data-pageid="{$pageid}" {$recordcontrol_hiddenattr}>{BEGIN deleteselected_link}<BUTTON disabled class="btn btn-default" type="button" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>Delete</BUTTON> {END deleteselected_link}{BEGIN updateselected_link}<BUTTON disabled class="btn btn-default" type="button" {$updateselectedlink_attrs}>Update 
+selected</BUTTON> {END updateselected_link}{BEGIN saveall_link}<BUTTON class="btn btn-primary" type="button" {$savealllink_attrs} {$savealllink_span}>Save 
+all</BUTTON> {END saveall_link}{BEGIN cancelall_link}<BUTTON class="btn btn-default" type="button" {$cancelalllink_attrs} {$cancelalllink_span}>Cancel</BUTTON> 
+{END cancelall_link}</SPAN> {END record_controls_block}</DIV>
+{END container_add_delete}{BEGIN container_gridinfo}<DIV class="bottom-margin text-right col-md-6" data-container="gridinfo" data-pageid="{$pageid}" {$gridinfo_chiddenattr}>{BEGIN details_found}<SPAN class="form-inline form-inline-always" data-brick="details_found" data-pageid="{$pageid}" {$details_found_hiddenattr}>
+{$records_indicator} <SPAN>{BEGIN recordspp_block}
+{$recsPerPage}{END recordspp_block} </SPAN> </SPAN> {END details_found}{BEGIN print_friendly}<SPAN class="bs-printpanel" id="printpanelblock{$id}" data-brick="printpanel" data-pageid="{$pageid}" {$printpanel_hiddenattr}><BUTTON title="Print-friendly page" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><SPAN class="glyphicon glyphicon-print"></SPAN> <SPAN class="caret"></SPAN> </BUTTON> 
+<UL class="dropdown-menu pull-right">
+  <LI>
+  <DIV class="container-fluid" id="print_friendly_scope{$id}">
+  <DIV class="row">
+  <DIV class="col-md-4">Scope:</DIV>
+  {BEGIN print_friendly_all}<DIV class="col-md-8"><LABEL for="printAll{$id}"><INPUT name="printScope" id="printAll{$id}" type="radio" data-href="divisions_print.php?all=1&amp;{$crosstable_attrs}">	Print 
+  all pages </LABEL> </DIV>{END print_friendly_all}</DIV>
+  <DIV class="row">
+  <DIV class="col-md-4">&nbsp;</DIV>
+  <DIV class="col-md-8"><LABEL for="printPage{$id}"><INPUT name="printScope" id="printPage{$id}" type="radio" checked data-href="divisions_print.php?{$crosstable_attrs}">	Print 
+  this page </LABEL> </DIV></DIV>
+  <DIV class="row">
+  <DIV class="col-md-4">&nbsp;</DIV>
+  <DIV class="col-md-8"><LABEL style="color: gray;" 
+  for="printSelection{$id}"><INPUT name="printScope" disabled="disabled" id="printSelection{$id}" type="radio">	Print selected </LABEL> </DIV></DIV></DIV></LI>
+  <LI class="divider" role="separator"></LI>
+  <LI>
+  {BEGIN print_details}<DIV class="rnr-printdetails"><LABEL for="printDetailsToggler{$id}"><INPUT id="printDetailsToggler{$id}" type="checkbox">	Print 
+  details </LABEL> 
+  <DIV class="rnr-printdetailstables" id="printdetailstables{$id}" style="display: none;">
+  {BEGIN print_details_holidays}<DIV class="rnr-printdetialstable"><LABEL for="printDetailsholidays{$id}"><INPUT id="printDetailsholidays{$id}" type="checkbox" checked value="holidays">	Holidays </LABEL> </DIV>{END print_details_holidays}</DIV></DIV>{END print_details}</LI>
+  <LI class="divider" role="separator"></LI>
+  <LI>
+  <DIV class="rnr-printdetails"><LABEL for="printPerPage{$id}">	Records Per 
+  Page: </LABEL> 
+<INPUT class="rnr-printrecspp" id="printPerPage{$id}" type="number" value="{$print_recspp}">	</DIV></LI>
+  <LI class="divider" role="separator"></LI>
+  <LI class="rnr-printbutton"><BUTTON class="btn btn-primary" id="print_friendly_button{$id}" type="button">Print</BUTTON>	</LI></UL></SPAN> {END print_friendly}</DIV>{END container_gridinfo}</DIV>{END container_gridcontrols}</DIV>
+<DIV></DIV>
+<DIV class="bs-sidebar-screenbound bs-minwidth">
+{BEGIN container_tabs}<DIV class=" " data-container="tabs" data-pageid="{$pageid}" {$tabs_chiddenattr}>
+{BEGIN grid_tabs}<DIV data-brick="bsgrid_tabs" data-pageid="{$pageid}" {$bsgrid_tabs_hiddenattr}>
+<UL class="nav nav-tabs">
+  {$grid_tabs_content} </UL></DIV>{END grid_tabs}</DIV>
+{END container_tabs}{BEGIN container_message}<DIV class=" " data-container="message" data-pageid="{$pageid}" {$message_chiddenattr}>
+{BEGIN message_block}<DIV class="alert {$message_class}" role="alert" data-brick="message" data-pageid="{$pageid}" {$message_hiddenattr}>
+{$message}</DIV>{END message_block}</DIV>
+{END container_message}{BEGIN container_center}<DIV class=" " data-container="center" data-pageid="{$pageid}" {$center_chiddenattr}>
+{BEGIN container_grid}<DIV class="bs-grid" data-container="grid" data-pageid="{$pageid}" {$grid_chiddenattr}>{BEGIN grid_block}
+<STYLE>
 	.bs-gridcell[data-field=DvID]:before {
 		content: "{$label divisions DvID}";
 	}
@@ -536,266 +149,54 @@
 	.bs-gridcell[data-field=MinimumDailyWage]:before {
 		content: "{$label divisions MinimumDailyWage}";
 	}
-</style>
-<table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
-	<thead>
-										{BEGIN grid_header}
-								<tr class="rnr-toprow {$gridHeader_class}" >
-									{BEGIN record_header}
-									{BEGIN listIcons_column}
-									<th iEditCont="all">&nbsp;</th>
-									{END listIcons_column}	
-
-																		{BEGIN checkbox_column}
-									<th class="">
-										<input type="checkbox" {$checkboxheader_attrs}>
-									</th>
-									{END checkbox_column}
-
-																		{BEGIN divisions_dtable_column}
-									<th >&nbsp;</th>
-									{END divisions_dtable_column}
-									
-									{BEGIN DvID_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$DvID_class}" data-field=DvID>
-									{BEGIN DvID_fieldheader}
-																				<span {$DvID_orderlinkattrs}>
-											{$label divisions DvID}
-										</span>
-									{END DvID_fieldheader}
-									</th>
-									{END DvID_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN Division_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$Division_class}" data-field=Division>
-									{BEGIN Division_fieldheader}
-																				<span {$Division_orderlinkattrs}>
-											{$label divisions Division}
-										</span>
-									{END Division_fieldheader}
-									</th>
-									{END Division_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN MontlyPaymentPeriods_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$MontlyPaymentPeriods_class}" data-field=MontlyPaymentPeriods>
-									{BEGIN MontlyPaymentPeriods_fieldheader}
-																				<span {$MontlyPaymentPeriods_orderlinkattrs}>
-											{$label divisions MontlyPaymentPeriods}
-										</span>
-									{END MontlyPaymentPeriods_fieldheader}
-									</th>
-									{END MontlyPaymentPeriods_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN StatutoryPayment_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$StatutoryPayment_class}" data-field=StatutoryPayment>
-									{BEGIN StatutoryPayment_fieldheader}
-																				<span {$StatutoryPayment_orderlinkattrs}>
-											{$label divisions StatutoryPayment}
-										</span>
-									{END StatutoryPayment_fieldheader}
-									</th>
-									{END StatutoryPayment_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN MinimumMonhtlyWage_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$MinimumMonhtlyWage_class}" data-field=MinimumMonhtlyWage>
-									{BEGIN MinimumMonhtlyWage_fieldheader}
-																				<span {$MinimumMonhtlyWage_orderlinkattrs}>
-											{$label divisions MinimumMonhtlyWage}
-										</span>
-									{END MinimumMonhtlyWage_fieldheader}
-									</th>
-									{END MinimumMonhtlyWage_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN MinimumDailyWage_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$MinimumDailyWage_class}" data-field=MinimumDailyWage>
-									{BEGIN MinimumDailyWage_fieldheader}
-																				<span {$MinimumDailyWage_orderlinkattrs}>
-											{$label divisions MinimumDailyWage}
-										</span>
-									{END MinimumDailyWage_fieldheader}
-									</th>
-									{END MinimumDailyWage_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN endrecordheader_block}
-									<th class="rnr-cs">&nbsp;</th>
-									
-									{END endrecordheader_block}
-									
-									{END record_header}
-									
-								</tr>
-								{END grid_header}
-
-	</thead>
-	<tbody>	
-		{BEGIN grid_row}
-<tr class="{$rowclass} bs-gridrow" {$rowattrs} {$rowstyle}>
-	{BEGIN grid_record}
-	{BEGIN listIcons_column}
-	<td class="bs-gridicons" iEditCont="all" {$rowstyle} {$recordattrs}>
-		{BEGIN edit_column}
-	{BEGIN edit_link}
-			<a class="glyphicon glyphicon-pencil" {$editlink_attrs} title="Edit"></a>
-	{END edit_link}
-	{END edit_column}
-
-		{BEGIN inlineedit_column}
-	{BEGIN inlineedit_link}
-			<a class="glyphicon glyphicon-edit" {$inlineeditlink_attrs} title="Inline Edit"></a>
-	{END inlineedit_link}
-	{END inlineedit_column}
-	
-	<span data-hidden {$ieditbuttonsholder_attrs}></span>
-
-	
-		{BEGIN view_column}
-	{BEGIN view_link}
-			<a class="glyphicon glyphicon-search" {$viewlink_attrs} title="View"></a>
-	{END view_link}
-	{END view_column}
-	</td>	
-	{END listIcons_column}	
-
-		{BEGIN checkbox_column}
-	<td  iEditCont="checkBox" class="bs-gridcheckbox" {$rowstyle} {$recordattrs}>
-	{BEGIN checkbox}
-	<input type="checkbox" {$checkbox_attrs}>
-	{END checkbox}
-	</td>
-	{END checkbox_column}
-
-		{BEGIN divisions_dtable_column}
-	<td class="rnr-nowrap bs-griddetails" {$rowstyle} {$recordattrs}>
-	
-			{BEGIN dtables_link}
-		
-							
-				
-					<a {$dtables_link_attrs}  title="Show details">
-				<span class="badge holidays_badge" {$holidays_childnumber_attr}>
-					<span class="glyphicon glyphicon-th-list"></span> 
-					<span class="{$holidays_cntspan_class}" >{$holidays_childnumber}</span>
-				</span></a>
-		{END dtables_link}
-	
-	
-	</td>
-	{END divisions_dtable_column}
-
-
-	{BEGIN DvID_fieldcolumn}
-	<td class="bs-gridcell {$DvID_class}"  data-field=DvID {$rowstyle} {$recordattrs}>
-		{$DvID_value}
-	</td>
-{END DvID_fieldcolumn}
-
-
-	{BEGIN Division_fieldcolumn}
-	<td class="bs-gridcell {$Division_class}"  data-field=Division {$rowstyle} {$recordattrs}>
-		{$Division_value}
-	</td>
-{END Division_fieldcolumn}
-
-
-	{BEGIN MontlyPaymentPeriods_fieldcolumn}
-	<td class="bs-gridcell {$MontlyPaymentPeriods_class}"  data-field=MontlyPaymentPeriods {$rowstyle} {$recordattrs}>
-		{$MontlyPaymentPeriods_value}
-	</td>
-{END MontlyPaymentPeriods_fieldcolumn}
-
-
-	{BEGIN StatutoryPayment_fieldcolumn}
-	<td class="bs-gridcell {$StatutoryPayment_class}"  data-field=StatutoryPayment {$rowstyle} {$recordattrs}>
-		{$StatutoryPayment_value}
-	</td>
-{END StatutoryPayment_fieldcolumn}
-
-
-	{BEGIN MinimumMonhtlyWage_fieldcolumn}
-	<td class="bs-gridcell {$MinimumMonhtlyWage_class}"  data-field=MinimumMonhtlyWage {$rowstyle} {$recordattrs}>
-		{$MinimumMonhtlyWage_value}
-	</td>
-{END MinimumMonhtlyWage_fieldcolumn}
-
-
-	{BEGIN MinimumDailyWage_fieldcolumn}
-	<td class="bs-gridcell {$MinimumDailyWage_class}"  data-field=MinimumDailyWage {$rowstyle} {$recordattrs}>
-		{$MinimumDailyWage_value}
-	</td>
-{END MinimumDailyWage_fieldcolumn}
-
-	{BEGIN endrecord_block}
-	<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
-	{END endrecord_block}
-									
-	{END grid_record}
-
-</tr>
-{END grid_row}
-	</tbody>
-	<tfoot>
-										
-	</tfoot>
-</table>
-
-
-
-{END grid_block}
-
-
-
-</div>
-{END container_grid}
-
-
-
-
-
-
-</div>
-{END container_center}
-
-
-
-{BEGIN container_pagination}
-<div {$pagination_chiddenattr} data-pageid="{$pageid}" data-container="pagination" class="  text-center col-md-12 "> 
-
-{BEGIN pagination_block}
-<div {$pagination_hiddenattr} data-pageid="{$pageid}" data-brick="pagination">
-{$pagination}
-</div>
-{END pagination_block}
-
-
-
-</div>
-{END container_pagination}
-
-
-		</div>
-	</div>
-</div>
-	
-
-		{$footer}
-	{END body}
-	</body>
-</html>
+</STYLE>
+ 
+<TABLE class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" data-brick="grid" data-pageid="{$pageid}" {$grid_hiddenattr}>
+  <THEAD>{BEGIN grid_header}
+  <TR class="rnr-toprow {$gridHeader_class}">{BEGIN record_header}
+    {BEGIN listIcons_column}<TH rowspan="1" colspan="1" ieditcont="all">&nbsp;</TH>
+    {END listIcons_column}{BEGIN checkbox_column}<TH rowspan="1" colspan="1"><INPUT type="checkbox" {$checkboxheader_attrs}> </TH>
+    {END checkbox_column}{BEGIN divisions_dtable_column}<TH rowspan="1" colspan="1">&nbsp;</TH>
+    {END divisions_dtable_column}{BEGIN DvID_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$DvID_class}" rowspan="1" colspan="1" data-field="DvID">{BEGIN DvID_fieldheader}<SPAN {$DvID_orderlinkattrs}>
+      {$label divisions DvID} </SPAN> {END DvID_fieldheader}</TH>
+    {END DvID_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$DvID_class} runner-cc"></TH>
+    {BEGIN Division_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Division_class}" rowspan="1" colspan="1" data-field="Division">{BEGIN Division_fieldheader}<SPAN {$Division_orderlinkattrs}>
+      {$label divisions Division} 
+      </SPAN> {END Division_fieldheader}</TH>
+    {END Division_fieldheadercolumn}{BEGIN MontlyPaymentPeriods_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$MontlyPaymentPeriods_class}" rowspan="1" colspan="1" data-field="MontlyPaymentPeriods">{BEGIN MontlyPaymentPeriods_fieldheader}<SPAN {$MontlyPaymentPeriods_orderlinkattrs}>
+      {$label divisions MontlyPaymentPeriods} </SPAN> {END MontlyPaymentPeriods_fieldheader}</TH>
+    {END MontlyPaymentPeriods_fieldheadercolumn}{BEGIN StatutoryPayment_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$StatutoryPayment_class}" rowspan="1" colspan="1" data-field="StatutoryPayment">{BEGIN StatutoryPayment_fieldheader}<SPAN {$StatutoryPayment_orderlinkattrs}>
+      {$label divisions StatutoryPayment} </SPAN> {END StatutoryPayment_fieldheader}</TH>
+    {END StatutoryPayment_fieldheadercolumn}{BEGIN MinimumMonhtlyWage_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$MinimumMonhtlyWage_class}" rowspan="1" colspan="1" data-field="MinimumMonhtlyWage">{BEGIN MinimumMonhtlyWage_fieldheader}<SPAN {$MinimumMonhtlyWage_orderlinkattrs}>
+      {$label divisions MinimumMonhtlyWage} </SPAN> {END MinimumMonhtlyWage_fieldheader}</TH>
+    {END MinimumMonhtlyWage_fieldheadercolumn}{BEGIN MinimumDailyWage_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$MinimumDailyWage_class}" rowspan="1" colspan="1" data-field="MinimumDailyWage">{BEGIN MinimumDailyWage_fieldheader}<SPAN {$MinimumDailyWage_orderlinkattrs}>
+      {$label divisions MinimumDailyWage} </SPAN> {END MinimumDailyWage_fieldheader}</TH>
+    {END MinimumDailyWage_fieldheadercolumn}{BEGIN endrecordheader_block}<TH class="rnr-cs" rowspan="1" colspan="1">&nbsp;</TH>{END endrecordheader_block}{END record_header}</TR>{END grid_header}</THEAD>
+  <TBODY>
+  {BEGIN grid_row}<TR class="{$rowclass} bs-gridrow" {$rowattrs} {$rowstyle}>{BEGIN grid_record}
+    {BEGIN listIcons_column}<TD class="bs-gridicons" rowspan="1" colspan="1" ieditcont="all" {$rowstyle} {$recordattrs}>{BEGIN edit_column}{BEGIN edit_link}<A title="Edit" class="glyphicon glyphicon-pencil" {$editlink_attrs}></A> 
+      {END edit_link}{END edit_column}{BEGIN inlineedit_column}{BEGIN inlineedit_link}<A title="Inline Edit" class="glyphicon glyphicon-edit" {$inlineeditlink_attrs}></A> {END inlineedit_link}{END inlineedit_column}<SPAN data-hidden {$ieditbuttonsholder_attrs}></SPAN> {BEGIN view_column}{BEGIN view_link}<A title="View" class="glyphicon glyphicon-search" {$viewlink_attrs}></A> 
+    {END view_link}{END view_column}</TD>
+    {END listIcons_column}{BEGIN checkbox_column}<TD class="bs-gridcheckbox" rowspan="1" colspan="1" ieditcont="checkBox" {$rowstyle} {$recordattrs}>{BEGIN checkbox}<INPUT type="checkbox" {$checkbox_attrs}>{END checkbox} </TD>
+    {END checkbox_column}{BEGIN divisions_dtable_column}<TD class="rnr-nowrap bs-griddetails" rowspan="1" colspan="1" {$rowstyle} {$recordattrs}>{BEGIN dtables_link}<A title="Show details" {$dtables_link_attrs}><SPAN class="badge holidays_badge" {$holidays_childnumber_attr}><SPAN class="glyphicon glyphicon-th-list"></SPAN> <SPAN class="{$holidays_cntspan_class}">
+      {$holidays_childnumber}</SPAN> </SPAN></A> {END dtables_link}</TD>
+    {END divisions_dtable_column}{BEGIN DvID_fieldcolumn}<TD class="bs-gridcell {$DvID_class}" rowspan="1" colspan="1" data-field="DvID" {$rowstyle} {$recordattrs}>
+      {$DvID_value} </TD>
+    {END DvID_fieldcolumn}<TD class="bs-gridcell {$DvID_class} runner-cc" rowspan="1" colspan="1"><A class="rnr-button btn btn-default" id="Insert_Default_Holiday" href="#" typeid="ib">Insert       Default 
+      Holidays</A></TD>
+    {BEGIN Division_fieldcolumn}<TD class="bs-gridcell {$Division_class}" rowspan="1" colspan="1" data-field="Division" {$rowstyle} {$recordattrs}>
+      {$Division_value} </TD>
+    {END Division_fieldcolumn}{BEGIN MontlyPaymentPeriods_fieldcolumn}<TD class="bs-gridcell {$MontlyPaymentPeriods_class}" rowspan="1" colspan="1" data-field="MontlyPaymentPeriods" {$rowstyle} {$recordattrs}>
+      {$MontlyPaymentPeriods_value} </TD>
+    {END MontlyPaymentPeriods_fieldcolumn}{BEGIN StatutoryPayment_fieldcolumn}<TD class="bs-gridcell {$StatutoryPayment_class}" rowspan="1" colspan="1" data-field="StatutoryPayment" {$rowstyle} {$recordattrs}>
+      {$StatutoryPayment_value} </TD>
+    {END StatutoryPayment_fieldcolumn}{BEGIN MinimumMonhtlyWage_fieldcolumn}<TD class="bs-gridcell {$MinimumMonhtlyWage_class}" rowspan="1" colspan="1" data-field="MinimumMonhtlyWage" {$rowstyle} {$recordattrs}>
+      {$MinimumMonhtlyWage_value} </TD>
+    {END MinimumMonhtlyWage_fieldcolumn}{BEGIN MinimumDailyWage_fieldcolumn}<TD class="bs-gridcell {$MinimumDailyWage_class}" rowspan="1" colspan="1" data-field="MinimumDailyWage" {$rowstyle} {$recordattrs}>
+      {$MinimumDailyWage_value} </TD>
+    {END MinimumDailyWage_fieldcolumn}{BEGIN endrecord_block}<TD class="rnr-cs" rowspan="1" colspan="1" {$endrecordblock_attrs}>&nbsp;</TD>{END endrecord_block}{END grid_record}</TR>{END grid_row}</TBODY>
+  <TFOOT></TFOOT></TABLE>{END grid_block}</DIV>{END container_grid}</DIV>
+{END container_center}{BEGIN container_pagination}<DIV class="text-center col-md-12" data-container="pagination" data-pageid="{$pageid}" {$pagination_chiddenattr}>
+{BEGIN pagination_block}<DIV data-brick="pagination" data-pageid="{$pageid}" {$pagination_hiddenattr}>
+{$pagination} </DIV>{END pagination_block}</DIV>{END container_pagination}</DIV> </DIV></DIV>
+{$footer}{END body} </BODY></HTML>

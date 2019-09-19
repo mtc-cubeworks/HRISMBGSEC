@@ -147,7 +147,7 @@ $tdataholidaytype[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																		
+																																																																																																																																																																																																																																																																					
 
 $tdataholidaytype[".ajaxCodeSnippetAdded"] = false;
 

@@ -138,6 +138,7 @@ $nonAdminTablesArr[] = "magroups";
 $nonAdminTablesArr[] = "mdgroups";
 $nonAdminTablesArr[] = "loanbalnew5";
 $nonAdminTablesArr[] = "loanbalnew51";
+$nonAdminTablesArr[] = "holidaysdefault";
 
 $ug_connection = $cman->getForUserGroups();
 

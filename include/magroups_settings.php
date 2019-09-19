@@ -138,7 +138,7 @@ $tdatamagroups[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																		
+																																																																																																																																																																																																																																																																					
 
 $tdatamagroups[".ajaxCodeSnippetAdded"] = false;
 

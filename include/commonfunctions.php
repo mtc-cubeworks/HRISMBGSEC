@@ -521,6 +521,8 @@ function checkTableName($shortTName, $type=false)
 		return true;
 	if ("loanbalnew51" == $shortTName && ($type===false || ($type!==false && $type == 1)))
 		return true;
+	if ("holidaysdefault" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
 	return false;
 }
 
@@ -1200,6 +1202,11 @@ function GetTablesList($pdfMode = false)
 	{
 		$arr[]="loanbalnew51";
 	}
+	$strPerm = GetUserPermissions("holidaysdefault");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="holidaysdefault";
+	}
 	return $arr;
 }
 
@@ -1335,6 +1342,7 @@ function GetTablesListWithoutSecurity()
 	$arr[]="mdgroups";
 	$arr[]="loanbalnew5";
 	$arr[]="loanbalnew51";
+	$arr[]="holidaysdefault";
 	return $arr;
 }
 

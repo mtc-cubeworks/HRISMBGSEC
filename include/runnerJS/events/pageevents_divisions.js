@@ -1,0 +1,5 @@
+
+Runner.pages.PageSettings.addPageEvent('divisions',Runner.pages.constants.PAGE_LIST,"afterPageReady",function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='Insert_Default_Holiday';if(!pageObj.buttonEventBefore['Insert_Default_Holiday']){pageObj.buttonEventBefore['Insert_Default_Holiday']=function(params,ctrl,pageObj,proxy,pageid,rowData,row){params["txt"]="Insertng...";ctrl.setMessage("Sending request to server...");}}
+if(!pageObj.buttonEventAfter['Insert_Default_Holiday']){pageObj.buttonEventAfter['Insert_Default_Holiday']=function(result,ctrl,pageObj,proxy,pageid,rowData,row){var message=result["txt"]+" !!!";ctrl.setMessage(message);location.reload();}}
+$('a[id="Insert_Default_Holiday"]').each(function(){if($(this).closest('.gridRowAdd').length){return;}
+this.id="Insert_Default_Holiday"+"_"+Runner.genId();var button_Insert_Default_Holiday=new Runner.form.Button({id:this.id,btnName:"Insert_Default_Holiday"});button_Insert_Default_Holiday.init({args:[pageObj,proxy,pageid]});});});

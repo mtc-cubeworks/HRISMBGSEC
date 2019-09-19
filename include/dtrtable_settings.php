@@ -162,7 +162,7 @@ $tdatadtrtable[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
 
 $tdatadtrtable[".ajaxCodeSnippetAdded"] = false;
 

@@ -10,6 +10,7 @@ $dalTableindovertime["FromTime"] = array("type"=>135,"varname"=>"FromTime", "nam
 $dalTableindovertime["ToTime"] = array("type"=>135,"varname"=>"ToTime", "name" => "ToTime");
 $dalTableindovertime["Crossmidnight"] = array("type"=>16,"varname"=>"Crossmidnight", "name" => "Crossmidnight");
 $dalTableindovertime["ItiD"] = array("type"=>3,"varname"=>"ItiD", "name" => "ItiD");
+$dalTableindovertime["Reason"] = array("type"=>200,"varname"=>"Reason", "name" => "Reason");
 	$dalTableindovertime["iOTID"]["key"]=true;
 
 $dal_info["payrollflex_at_localhost__indovertime"] = &$dalTableindovertime;

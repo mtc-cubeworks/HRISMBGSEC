@@ -85,6 +85,11 @@
 				{$label indovertime EmployeeID}
 			</th>
 			{END EmployeeID_fieldheadercolumn}
+			{BEGIN Reason_fieldheadercolumn}
+			<th class="{$Reason_class}" {$Reason_style}  data-field="Reason">
+				{$label indovertime Reason}
+			</th>
+			{END Reason_fieldheadercolumn}
 			{BEGIN OTDate_fieldheadercolumn}
 			<th class="{$OTDate_class}" {$OTDate_style}  data-field="OTDate">
 				{$label indovertime OTDate}
@@ -132,6 +137,11 @@
 				{$EmployeeID_value}
 			</td>
 			{END EmployeeID_fieldcolumn}
+			{BEGIN Reason_fieldcolumn}
+			<td  class="{$Reason_class}" {$Reason_style} {$recordattrs}>
+				{$Reason_value}
+			</td>
+			{END Reason_fieldcolumn}
 			{BEGIN OTDate_fieldcolumn}
 			<td  class="{$OTDate_class}" {$OTDate_style} {$recordattrs}>
 				{$OTDate_value}

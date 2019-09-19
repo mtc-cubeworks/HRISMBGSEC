@@ -147,7 +147,7 @@ $tdataemphistory[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
 
 $tdataemphistory[".ajaxCodeSnippetAdded"] = false;
 

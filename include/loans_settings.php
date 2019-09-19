@@ -175,7 +175,7 @@ $tdataloans[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
 
 $tdataloans[".ajaxCodeSnippetAdded"] = false;
 
@@ -1153,7 +1153,7 @@ $tdataloans[".printFields"][] = "Inactive";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 0;
+	$edata["InitialYearFactor"] = 5;
 	$edata["LastYearFactor"] = 21;
 
 	

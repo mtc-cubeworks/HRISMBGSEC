@@ -122,7 +122,7 @@ $tdatadtrempl[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																		
+																																																																																																																																																																																																																																																																					
 
 $tdatadtrempl[".ajaxCodeSnippetAdded"] = false;
 

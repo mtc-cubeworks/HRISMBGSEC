@@ -517,6 +517,9 @@
 	.bs-gridcell[data-field=ToTime]:before {
 		content: "{$label indovertime ToTime}";
 	}
+	.bs-gridcell[data-field=Reason]:before {
+		content: "{$label indovertime Reason}";
+	}
 </style>
 <table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
 	<thead>
@@ -569,6 +572,19 @@
 									{END EmployeeID_fieldheader}
 									</th>
 									{END EmployeeID_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Reason_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Reason_class}" data-field=Reason>
+									{BEGIN Reason_fieldheader}
+																				<span {$Reason_orderlinkattrs}>
+											{$label indovertime Reason}
+										</span>
+									{END Reason_fieldheader}
+									</th>
+									{END Reason_fieldheadercolumn}
 									
 									
 									
@@ -699,6 +715,13 @@
 		{$EmployeeID_value}
 	</td>
 {END EmployeeID_fieldcolumn}
+
+
+	{BEGIN Reason_fieldcolumn}
+	<td class="bs-gridcell {$Reason_class}"  data-field=Reason {$rowstyle} {$recordattrs}>
+		{$Reason_value}
+	</td>
+{END Reason_fieldcolumn}
 
 
 	{BEGIN OTDate_fieldcolumn}

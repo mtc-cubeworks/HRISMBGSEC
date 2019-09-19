@@ -738,6 +738,8 @@ class Chart
 			return true;
 		if("loanbalnew5" == $this->chrt_array['tables'][0])
 			return true;
+		if("holidaysdefault" == $this->chrt_array['tables'][0])
+			return true;
 		return false;
 	}
 	

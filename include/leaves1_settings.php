@@ -192,7 +192,7 @@ $tdataleaves1[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																		
+																																																																																																																																																																																																																																																																					
 
 $tdataleaves1[".ajaxCodeSnippetAdded"] = false;
 
@@ -1250,6 +1250,7 @@ $tdataleaves1[".printFields"][] = "Locked";
 		$edata["autoCompleteFieldsOnEdit"] = 1;
 	$edata["autoCompleteFields"] = array();
 		$edata["autoCompleteFields"][] = array('masterF'=>"Superior", 'lookupF'=>"Superior");
+	$edata["autoCompleteFields"][] = array('masterF'=>"Superior2", 'lookupF'=>"Superior2");
 	$edata["LCType"] = 1;
 
 	
@@ -2720,7 +2721,7 @@ $tdataleaves1[".printFields"][] = "Locked";
 	$edata["LookupTable"] = "demo_user";
 		$edata["autoCompleteFieldsOnEdit"] = 0;
 	$edata["autoCompleteFields"] = array();
-		$edata["LCType"] = 0;
+		$edata["LCType"] = 1;
 
 	
 		
@@ -2740,8 +2741,7 @@ $tdataleaves1[".printFields"][] = "Locked";
 
 	
 	
-		$edata["SelectSize"] = 1;
-
+	
 // End Lookup Settings
 
 
@@ -3011,7 +3011,7 @@ $tdataleaves1[".printFields"][] = "Locked";
 	$edata["LookupTable"] = "demo_user";
 		$edata["autoCompleteFieldsOnEdit"] = 0;
 	$edata["autoCompleteFields"] = array();
-		$edata["LCType"] = 0;
+		$edata["LCType"] = 1;
 
 	
 		
@@ -3031,8 +3031,7 @@ $tdataleaves1[".printFields"][] = "Locked";
 
 	
 	
-		$edata["SelectSize"] = 1;
-
+	
 // End Lookup Settings
 
 

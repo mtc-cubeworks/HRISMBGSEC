@@ -155,7 +155,7 @@ $tdataearningadjustment[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
 
 $tdataearningadjustment[".ajaxCodeSnippetAdded"] = false;
 

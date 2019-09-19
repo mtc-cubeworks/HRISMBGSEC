@@ -92,9 +92,9 @@ $tdatadivisions[".listAjax"] = false;
 	$tdatadivisions[".locking"] = false;
 
 $tdatadivisions[".edit"] = true;
-$tdatadivisions[".afterEditAction"] = 1;
+$tdatadivisions[".afterEditAction"] = 0;
 $tdatadivisions[".closePopupAfterEdit"] = 1;
-$tdatadivisions[".afterEditActionDetTable"] = "";
+$tdatadivisions[".afterEditActionDetTable"] = "holidays";
 
 $tdatadivisions[".add"] = true;
 $tdatadivisions[".afterAddAction"] = 1;
@@ -147,13 +147,14 @@ $tdatadivisions[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																		
+																																																																																																																																																																																																																																																																							
+		
 
 $tdatadivisions[".ajaxCodeSnippetAdded"] = false;
 
-$tdatadivisions[".buttonsAdded"] = false;
+$tdatadivisions[".buttonsAdded"] = true;
 
-$tdatadivisions[".addPageEvents"] = false;
+$tdatadivisions[".addPageEvents"] = true;
 
 // use timepicker for search panel
 $tdatadivisions[".isUseTimeForSearch"] = false;
@@ -1423,7 +1424,8 @@ $queryData_divisions = createSqlQuery_divisions();
 
 $tdatadivisions[".sqlquery"] = $queryData_divisions;
 
-$tableEvents["divisions"] = new eventsBase;
-$tdatadivisions[".hasEvents"] = false;
+include_once(getabspath("include/divisions_events.php"));
+$tableEvents["divisions"] = new eventclass_divisions;
+$tdatadivisions[".hasEvents"] = true;
 
 ?>

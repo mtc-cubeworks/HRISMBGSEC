@@ -739,6 +739,7 @@ $tableCaptions["English"]["magroups"] = "Monthly Adjustment Groups";
 $tableCaptions["English"]["mdgroups"] = "Monthly Deduction Groups";
 $tableCaptions["English"]["loanbalnew5"] = "Loan & Deduction Balances";
 $tableCaptions["English"]["loanbalnew51"] = "My Loan & Deduction Balance";
+$tableCaptions["English"]["holidaysdefault"] = "Holiday Default";
 $tableCaptions[""] = array();
 $tableCaptions[""][""] = "";
 $tableCaptions[""]["demo_device"] = "Device";
@@ -797,6 +798,8 @@ $tableCaptions[""]["holidays"] = "Holidays";
 $tableCaptions[""]["employername"] = "Employer";
 $tableCaptions[""]["loanbalnew5"] = "Loanbalnew5";
 $tableCaptions[""]["loanbalnew51"] = "Loanbalnew51";
+$tableCaptions[""]["holidaysdefault"] = "Holidaysdefault";
+$tableCaptions[""]["divisions"] = "Divisions";
 
 
 $globalEvents = new class_GlobalEvents;

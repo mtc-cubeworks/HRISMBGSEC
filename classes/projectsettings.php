@@ -3000,6 +3000,8 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "loanbalnew5" ] = "loanbalnew5";
 	$projectEntities[ "loanbalnew51" ] = array( "url" => "loanbalnew51", "type" => 1 );
 	$projectEntitiesReverse[ "loanbalnew51" ] = "loanbalnew51";
+	$projectEntities[ "holidaysdefault" ] = array( "url" => "holidaysdefault", "type" => 0 );
+	$projectEntitiesReverse[ "holidaysdefault" ] = "holidaysdefault";
 }
 
 function findTable( $table ) {

@@ -164,7 +164,7 @@ $tdatapayrollearnadj[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
 
 $tdatapayrollearnadj[".ajaxCodeSnippetAdded"] = false;
 

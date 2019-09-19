@@ -151,7 +151,7 @@ $tdataindovertime1[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																		
+																																																																																																																																																																																																																																																																					
 
 $tdataindovertime1[".ajaxCodeSnippetAdded"] = false;
 
@@ -1512,6 +1512,7 @@ $proto21["m_columns"][] = "FromTime";
 $proto21["m_columns"][] = "ToTime";
 $proto21["m_columns"][] = "Crossmidnight";
 $proto21["m_columns"][] = "ItiD";
+$proto21["m_columns"][] = "Reason";
 $obj = new SQLTable($proto21);
 
 $proto20["m_table"] = $obj;

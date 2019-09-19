@@ -501,7 +501,8 @@ $ltype= $values["LeaveType"];
 $days= $values["Days"];
 $fh= $values["FirstHalf"];
 $sh= $values["SecondHalf"];
-$rea= $values["Reason"];
+$rea=$values["Reason"];
+$rea=addslashes($rea);
 
 
 if($ltype==1) { //Vacation Leave
@@ -563,7 +564,10 @@ $sqlv = "Update leaves set Locked=1 where LvID='$lvid'";
 $empy=$values["EmployeeID"];
 $logt=$values["FromDate"];
 $logt2=$values["ToDate"];
+
 $rea=$values["Reason"];
+$rea=addslashes($rea);
+
 $ltp=$values["LeaveType"];
 
 $su1=$values["Superior"];
@@ -617,6 +621,8 @@ $empy=$values["EmployeeID"];
 $logt=$values["FromDate"];
 $logt2=$values["ToDate"];
 $rea=$values["Reason"];
+$rea=addslashes($rea);
+
 $ltp=$values["LeaveType"];
 
 $su1=$values["Superior"];

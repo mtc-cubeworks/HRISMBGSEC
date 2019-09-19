@@ -156,7 +156,7 @@ $tdataholidays[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
 
 $tdataholidays[".ajaxCodeSnippetAdded"] = false;
 
@@ -363,10 +363,12 @@ $tdataholidays[".inlineEditFields"][] = "Division";
 
 $tdataholidays[".updateSelectedFields"] = array();
 $tdataholidays[".updateSelectedFields"][] = "HolidayDate";
+$tdataholidays[".updateSelectedFields"][] = "HolidayDescription";
 $tdataholidays[".updateSelectedFields"][] = "HolidayType";
 $tdataholidays[".updateSelectedFields"][] = "FirstHalf";
 $tdataholidays[".updateSelectedFields"][] = "SecondHalf";
 $tdataholidays[".updateSelectedFields"][] = "HolidayDay";
+$tdataholidays[".updateSelectedFields"][] = "Division";
 
 
 $tdataholidays[".exportFields"] = array();
@@ -1227,7 +1229,8 @@ $tdataholidays[".printFields"][] = "Division";
 
 		$fdata["bInlineEdit"] = true;
 
-	
+		$fdata["bUpdateSelected"] = true;
+
 
 		$fdata["bViewPage"] = true;
 
@@ -1358,7 +1361,8 @@ $tdataholidays[".printFields"][] = "Division";
 
 		$fdata["bInlineEdit"] = true;
 
-	
+		$fdata["bUpdateSelected"] = true;
+
 
 		$fdata["bViewPage"] = true;
 

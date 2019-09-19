@@ -138,7 +138,7 @@ $tdataotherpayments[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																		
+																																																																																																																																																																																																																																																																					
 
 $tdataotherpayments[".ajaxCodeSnippetAdded"] = false;
 

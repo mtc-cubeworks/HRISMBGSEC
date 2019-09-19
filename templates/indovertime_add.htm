@@ -129,6 +129,24 @@
 </div>
 {END EmployeeID_fieldblock}
 
+			{BEGIN Reason_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Reason}" data-fieldname="Reason" data-signal-error-for="Reason{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Reason}">
+		{BEGIN Reason_label}{$label indovertime Reason}{END Reason_label}
+	</label>
+	<div class="col-md-6" >
+		{$Reason_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Reason">
+		<div class="text-muted" >
+		{$tooltip indovertime Reason}
+		</div>
+	</div>
+</div>
+</div>
+{END Reason_fieldblock}
+
 			{BEGIN OTDate_fieldblock}
 <div class=container>
 <div class="form-group {$fielddispclass_OTDate}" data-fieldname="OTDate" data-signal-error-for="OTDate{$id}" >

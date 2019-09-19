@@ -136,7 +136,7 @@ $tdataschedtype[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																		
+																																																																																																																																																																																																																																																																					
 
 $tdataschedtype[".ajaxCodeSnippetAdded"] = false;
 

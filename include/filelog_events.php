@@ -601,6 +601,7 @@ $hrby=$values["HRApproval"];
 $empy=$values["EmployeeID"];
 $logt=$values["log_time"];
 $rea=$values["Reason"];
+$rea=addslashes($rea);
 
 $empr=DBLookup("SELECT Employer FROM demo_user WHERE EmployeeID='$empy'");
 

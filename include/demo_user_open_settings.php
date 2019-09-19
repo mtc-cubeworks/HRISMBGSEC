@@ -345,7 +345,7 @@ $tdatademo_user_open[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																		
+																																																																																																																																																																																																																																																																					
 
 $tdatademo_user_open[".ajaxCodeSnippetAdded"] = false;
 

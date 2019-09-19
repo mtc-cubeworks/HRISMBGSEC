@@ -136,7 +136,7 @@ $tdatapositions[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																		
+																																																																																																																																																																																																																																																																					
 
 $tdatapositions[".ajaxCodeSnippetAdded"] = false;
 

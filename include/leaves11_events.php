@@ -604,6 +604,8 @@ $empy=$values["EmployeeID"];
 $logt=$values["FromDate"];
 $logt2=$values["ToDate"];
 $rea=$values["Reason"];
+$rea=addslashes($rea);
+
 $ltp=$values["LeaveType"];
 
 
@@ -922,6 +924,8 @@ $empy=$values["EmployeeID"];
 $logt=$values["FromDate"];
 $logt2=$values["ToDate"];
 $rea=$values["Reason"];
+$rea=addslashes($rea);
+
 $ltp=$values["LeaveType"];
 
 

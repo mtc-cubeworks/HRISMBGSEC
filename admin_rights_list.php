@@ -1293,6 +1293,17 @@ $mask .= "M";
 
 $pageMask[$table] = $mask;
 $tables[$table] = array("loanbalnew51", " " . "My Loan & Deduction Balance");
+$table = "holidaysdefault";
+$mask="";
+	$mask .= "A";
+	$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("holidaysdefault", " " . "Holiday Default");
 
 
 

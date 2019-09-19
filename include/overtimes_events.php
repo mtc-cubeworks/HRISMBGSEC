@@ -286,8 +286,8 @@ $fd= $values["FromDateTime"];
 $td= $values["ToDateTime"];
 $appd= $values["Approved"];
 $nomins= $values["NoMins"];
-
-
+$rea= $values["Reason"];
+$rea= addslashes($rea);
 
 
 
@@ -324,7 +324,7 @@ $empid=$datax["EmployeeID"];
 
 
 
-$sqlr = "INSERT indovertime VALUES (NULL, '$dc', '$empid', '$fd', '$nomins', '$otid', '$fd', '$td', NULL, NULL)";
+$sqlr = "INSERT indovertime VALUES (NULL, '$dc', '$empid', '$fd', '$nomins', '$otid', '$fd', '$td', NULL, NULL, '$rea')";
 CustomQuery($sqlr);
 
 

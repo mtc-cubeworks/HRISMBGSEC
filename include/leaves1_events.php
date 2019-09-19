@@ -532,8 +532,8 @@ $tdays=$ndays*$nd;
 $squ = "Update leaves set TotalDays='$tdays' where LvID='$lv'";
  CustomQuery($squ);
 
-header("Location: leaves1_edit.php?editid1=".$values["LvID"]);
-exit();
+//header("Location: leaves1_edit.php?editid1=".$values["LvID"]);
+//exit();
 ;		
 } // function AfterAdd
 

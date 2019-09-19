@@ -139,7 +139,7 @@ $tdataloandesriptions[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																		
+																																																																																																																																																																																																																																																																					
 
 $tdataloandesriptions[".ajaxCodeSnippetAdded"] = false;
 

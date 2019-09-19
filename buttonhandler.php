@@ -221,6 +221,12 @@ if($buttId=='Payslip2')
 	$cipherer = new RunnerCipherer("payrolltab1");
 	buttonHandler_Payslip2($params);
 }
+if($buttId=='Insert_Default_Holiday')
+{
+	require_once("include/divisions_variables.php");
+	$cipherer = new RunnerCipherer("divisions");
+	buttonHandler_Insert_Default_Holiday($params);
+}
 
 
 
@@ -1799,6 +1805,7 @@ $empy=$datax2["EmployeeID"];
 $lid=$datax2["LoanID"];
 $fpay=$datax2["ForPayment"];
 $ldes=$datax2["LoanDescription"];
+$ldes=addslashes($ldes);
 $bal=$datax2["Balance"];
 $bal2=$bal-$fpay;
 
@@ -1826,6 +1833,7 @@ $empz=$datax2["EmployeeID"];
 $lid=$datax2["LoanID"];
 $fpay1=$datax2["ForPayment"];
 $ldes=$datax2["LoanDescription"];
+$ldes=addslashes($ldes);
 $bal=$datax2["Balance"];
 
 
@@ -1865,6 +1873,7 @@ while ($datax3 = db_fetch_array($rs3))
 $empa=$datax3["EmployeeID"];
 $eid=$datax3["eaID"];
 $ad=$datax3["AdjustmentDescription"];
+$ad=addslashes($ad);
 $amt=$datax3["PerPayrollAmount"];
 $la=$datax3["LessAbsences"];
 
@@ -1909,6 +1918,8 @@ while ($datad = db_fetch_array($rsd))
 $em=$datad["EmployeeID"];
 $ei=$datad["eaID"];
 $add=$datad["AdjustmentDescription"];
+$add=addslashes($add);
+
 $am=$datad["PerPayrollAmount"];
 
 
@@ -4402,6 +4413,90 @@ function buttonHandler_Payslip2($params)
 	$data = $button->getCurrentRecord();
 
 $result['PtabID'] = $data["PtabID"];;
+	RunnerContext::pop();
+	echo my_json_encode($result);
+}
+function buttonHandler_Insert_Default_Holiday($params)
+{
+	global $strTableName;
+	$result = array();
+
+	// create new button object for get record data
+	$params["keys"] = (array)my_json_decode(postvalue('keys'));
+	$params["isManyKeys"] = postvalue('isManyKeys');
+	$params["location"] = postvalue('location');
+
+	$button = new Button($params);
+	$ajax = $button; // for examle from HELP
+	$keys = $button->getKeys();
+
+	$masterData = false;
+	if ( isset($params['masterData']) && count($params['masterData']) > 0 )
+	{
+		$masterData = $params['masterData'];
+	}
+	else if ( isset($params["masterTable"]) )
+	{
+		$masterData = $button->getMasterData($params["masterTable"]);
+	}
+	
+	$contextParams = array();
+	if ( $params["location"] == PAGE_VIEW )
+	{
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["masterData"] = $masterData;
+	}
+	else if ( $params["location"] == PAGE_EDIT )
+	{
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["newData"] = $params['fieldsData'];
+		$contextParams["masterData"] = $masterData;
+	}
+	else if ( $params["location"] == "grid" )
+	{	
+		$params["location"] = "list";
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["newData"] = $params['fieldsData'];
+		$contextParams["masterData"] = $masterData;
+	}
+	else 
+	{
+		$contextParams["masterData"] = $masterData;
+	}
+
+	RunnerContext::push( new RunnerContextItem( $params["location"], $contextParams));
+	$data = $button->getCurrentRecord();
+$result['record'] = $data;
+$dvv = $data["DvID"];
+
+
+$sqd = "DELETE FROM holidays WHERE Division='$dvv'";
+CustomQuery($sqd);
+
+
+$rs = DB::Query("select * from holidaysdefault where HdID>0");
+ 
+while( $datah = $rs->fetchAssoc() )
+
+{
+
+$hd=$datah["HolidayDate"];
+$ht=$datah["HolidayType"];
+$hdd=$datah["HolidayDay"];
+$fh=$datah["FirstHalf"];
+$sh=$datah["SecondHalf"];
+$hdes=$datah["HolidayDescription"];
+$hdes=addslashes($hdes);
+
+$sqlh = "INSERT holidays VALUES (NULL, '$hd', '$ht', '$hdd', '$fh', '$sh', NULL, NULL, '$hdes', '$dvv')";
+CustomQuery($sqlh);
+
+
+};
+
+
+$result["txt"] = $params["txt"]." Done!";
+;
 	RunnerContext::pop();
 	echo my_json_encode($result);
 }

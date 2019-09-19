@@ -105,6 +105,8 @@ include_once(getabspath("include/indschedule_events.php"));
 $tableEvents["indschedule"] = new eventclass_indschedule;
 include_once(getabspath("include/loans_events.php"));
 $tableEvents["loans"] = new eventclass_loans;
+include_once(getabspath("include/divisions_events.php"));
+$tableEvents["divisions"] = new eventclass_divisions;
 include_once(getabspath("include/payroll_events.php"));
 $tableEvents["payroll"] = new eventclass_payroll;
 include_once(getabspath("include/payrolltab_events.php"));
@@ -205,6 +207,8 @@ include_once(getabspath("include/dtrrange1_events.php"));
 $tableEvents["dtrrange1"] = new eventclass_dtrrange1;
 include_once(getabspath("include/otndrdglobal1_events.php"));
 $tableEvents["otndrdglobal1"] = new eventclass_otndrdglobal1;
+include_once(getabspath("include/holidaysdefault_events.php"));
+$tableEvents["holidaysdefault"] = new eventclass_holidaysdefault;
 
 $xt = new Xtempl();
 

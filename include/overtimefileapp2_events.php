@@ -851,6 +851,8 @@ $empy=$values["EmployeeID"];
 $logt=$values["FromDateTime"];
 $logt2=$values["ToDateTime"];
 $rea=$values["Reason"];
+$rea=addslashes($rea);
+
 $nomin=$values["NoMins"];
 
 
@@ -903,6 +905,9 @@ $empy=$values["EmployeeID"];
 $logt=$values["FromDateTime"];
 $logt2=$values["ToDateTime"];
 $rea=$values["Reason"];
+$rea=addslashes($rea);
+
+
 $nomin=$values["NoMins"];
 
 

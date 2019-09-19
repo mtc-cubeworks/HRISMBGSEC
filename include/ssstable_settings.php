@@ -147,7 +147,7 @@ $tdatassstable[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																		
+																																																																																																																																																																																																																																																																					
 
 $tdatassstable[".ajaxCodeSnippetAdded"] = false;
 

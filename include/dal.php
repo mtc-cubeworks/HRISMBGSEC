@@ -82,6 +82,7 @@ class tDAL
 	var $tblpayrollflex_at_localhost__filelog;
 	var $tblpayrollflex_at_localhost__forapp;
 	var $tblpayrollflex_at_localhost__holidays;
+	var $tblpayrollflex_at_localhost__holidaysdefault;
 	var $tblpayrollflex_at_localhost__holidaytype;
 	var $tblpayrollflex_at_localhost__ileave;
 	var $tblpayrollflex_at_localhost__indbreaks;
@@ -95,7 +96,6 @@ class tDAL
 	var $tblpayrollflex_at_localhost__leaves;
 	var $tblpayrollflex_at_localhost__leavetypes;
 	var $tblpayrollflex_at_localhost__leveldrops;
-	var $tblpayrollflex_at_localhost__loanbalance3;
 	var $tblpayrollflex_at_localhost__loanbalnew5;
 	var $tblpayrollflex_at_localhost__loandesriptions;
 	var $tblpayrollflex_at_localhost__loans;
@@ -189,6 +189,7 @@ class tDAL
 		$this->lstTables[] = array("name" => "filelog", "varname" => "payrollflex_at_localhost__filelog", "altvarname" => "filelog", "connId" => "payrollflex_at_localhost", "schema" => "", "connName" => "payrollflex at localhost");
 		$this->lstTables[] = array("name" => "forapp", "varname" => "payrollflex_at_localhost__forapp", "altvarname" => "forapp", "connId" => "payrollflex_at_localhost", "schema" => "", "connName" => "payrollflex at localhost");
 		$this->lstTables[] = array("name" => "holidays", "varname" => "payrollflex_at_localhost__holidays", "altvarname" => "holidays", "connId" => "payrollflex_at_localhost", "schema" => "", "connName" => "payrollflex at localhost");
+		$this->lstTables[] = array("name" => "holidaysdefault", "varname" => "payrollflex_at_localhost__holidaysdefault", "altvarname" => "holidaysdefault", "connId" => "payrollflex_at_localhost", "schema" => "", "connName" => "payrollflex at localhost");
 		$this->lstTables[] = array("name" => "holidaytype", "varname" => "payrollflex_at_localhost__holidaytype", "altvarname" => "holidaytype", "connId" => "payrollflex_at_localhost", "schema" => "", "connName" => "payrollflex at localhost");
 		$this->lstTables[] = array("name" => "ileave", "varname" => "payrollflex_at_localhost__ileave", "altvarname" => "ileave", "connId" => "payrollflex_at_localhost", "schema" => "", "connName" => "payrollflex at localhost");
 		$this->lstTables[] = array("name" => "indbreaks", "varname" => "payrollflex_at_localhost__indbreaks", "altvarname" => "indbreaks", "connId" => "payrollflex_at_localhost", "schema" => "", "connName" => "payrollflex at localhost");
@@ -202,7 +203,6 @@ class tDAL
 		$this->lstTables[] = array("name" => "leaves", "varname" => "payrollflex_at_localhost__leaves", "altvarname" => "leaves", "connId" => "payrollflex_at_localhost", "schema" => "", "connName" => "payrollflex at localhost");
 		$this->lstTables[] = array("name" => "leavetypes", "varname" => "payrollflex_at_localhost__leavetypes", "altvarname" => "leavetypes", "connId" => "payrollflex_at_localhost", "schema" => "", "connName" => "payrollflex at localhost");
 		$this->lstTables[] = array("name" => "leveldrops", "varname" => "payrollflex_at_localhost__leveldrops", "altvarname" => "leveldrops", "connId" => "payrollflex_at_localhost", "schema" => "", "connName" => "payrollflex at localhost");
-		$this->lstTables[] = array("name" => "loanbalance3", "varname" => "payrollflex_at_localhost__loanbalance3", "altvarname" => "loanbalance3", "connId" => "payrollflex_at_localhost", "schema" => "", "connName" => "payrollflex at localhost");
 		$this->lstTables[] = array("name" => "loanbalnew5", "varname" => "payrollflex_at_localhost__loanbalnew5", "altvarname" => "loanbalnew5", "connId" => "payrollflex_at_localhost", "schema" => "", "connName" => "payrollflex at localhost");
 		$this->lstTables[] = array("name" => "loandesriptions", "varname" => "payrollflex_at_localhost__loandesriptions", "altvarname" => "loandesriptions", "connId" => "payrollflex_at_localhost", "schema" => "", "connName" => "payrollflex at localhost");
 		$this->lstTables[] = array("name" => "loans", "varname" => "payrollflex_at_localhost__loans", "altvarname" => "loans", "connId" => "payrollflex_at_localhost", "schema" => "", "connName" => "payrollflex at localhost");

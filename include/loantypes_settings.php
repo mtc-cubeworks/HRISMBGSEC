@@ -136,7 +136,7 @@ $tdataloantypes[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																		
+																																																																																																																																																																																																																																																																					
 
 $tdataloantypes[".ajaxCodeSnippetAdded"] = false;
 

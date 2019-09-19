@@ -340,6 +340,7 @@ function InitLookupLinks()
 	$lookupTableLinks["loandesriptions"]["loanbalnew51.LoanDescription"]["edit"] = array("table" => "loanbalnew51", "field" => "LoanDescription", "page" => "edit");
 	$lookupTableLinks["paymentperiods"]["loanbalnew51.PaymentPeriod"]["edit"] = array("table" => "loanbalnew51", "field" => "PaymentPeriod", "page" => "edit");
 	$lookupTableLinks["loantypes"]["loanbalnew51.LoanType"]["edit"] = array("table" => "loanbalnew51", "field" => "LoanType", "page" => "edit");
+	$lookupTableLinks["holidaytype"]["holidaysdefault.HolidayType"]["edit"] = array("table" => "holidaysdefault", "field" => "HolidayType", "page" => "edit");
 }
 
 ?>
