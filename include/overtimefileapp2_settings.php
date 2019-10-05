@@ -26,16 +26,10 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsovertimefileapp2["English"]["DateCreated"] = "Date Created";
 	$fieldToolTipsovertimefileapp2["English"]["DateCreated"] = "";
 	$placeHoldersovertimefileapp2["English"]["DateCreated"] = "";
-	$fieldLabelsovertimefileapp2["English"]["FromDateTime"] = "From Date Time";
-	$fieldToolTipsovertimefileapp2["English"]["FromDateTime"] = "";
-	$placeHoldersovertimefileapp2["English"]["FromDateTime"] = "";
-	$fieldLabelsovertimefileapp2["English"]["ToDateTime"] = "To Date Time";
-	$fieldToolTipsovertimefileapp2["English"]["ToDateTime"] = "";
-	$placeHoldersovertimefileapp2["English"]["ToDateTime"] = "";
 	$fieldLabelsovertimefileapp2["English"]["Approved"] = "Approved";
 	$fieldToolTipsovertimefileapp2["English"]["Approved"] = "";
 	$placeHoldersovertimefileapp2["English"]["Approved"] = "";
-	$fieldLabelsovertimefileapp2["English"]["Approvedby"] = "Approvedby";
+	$fieldLabelsovertimefileapp2["English"]["Approvedby"] = "Approved by";
 	$fieldToolTipsovertimefileapp2["English"]["Approvedby"] = "";
 	$placeHoldersovertimefileapp2["English"]["Approvedby"] = "";
 	$fieldLabelsovertimefileapp2["English"]["ApprovedTime"] = "Approved Time";
@@ -74,6 +68,15 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsovertimefileapp2["English"]["2ndApproval"] = "Manager Approval";
 	$fieldToolTipsovertimefileapp2["English"]["2ndApproval"] = "";
 	$placeHoldersovertimefileapp2["English"]["2ndApproval"] = "";
+	$fieldLabelsovertimefileapp2["English"]["FromTime"] = "From Time";
+	$fieldToolTipsovertimefileapp2["English"]["FromTime"] = "";
+	$placeHoldersovertimefileapp2["English"]["FromTime"] = "";
+	$fieldLabelsovertimefileapp2["English"]["ToTime"] = "To Time";
+	$fieldToolTipsovertimefileapp2["English"]["ToTime"] = "";
+	$placeHoldersovertimefileapp2["English"]["ToTime"] = "";
+	$fieldLabelsovertimefileapp2["English"]["DateOT"] = "Date OT";
+	$fieldToolTipsovertimefileapp2["English"]["DateOT"] = "";
+	$placeHoldersovertimefileapp2["English"]["DateOT"] = "";
 	if (count($fieldToolTipsovertimefileapp2["English"]))
 		$tdataovertimefileapp2[".isUseToolTips"] = true;
 }
@@ -83,6 +86,15 @@ if(mlang_getcurrentlang()=="")
 	$fieldToolTipsovertimefileapp2[""] = array();
 	$placeHoldersovertimefileapp2[""] = array();
 	$pageTitlesovertimefileapp2[""] = array();
+	$fieldLabelsovertimefileapp2[""]["FromTime"] = "From Time";
+	$fieldToolTipsovertimefileapp2[""]["FromTime"] = "";
+	$placeHoldersovertimefileapp2[""]["FromTime"] = "";
+	$fieldLabelsovertimefileapp2[""]["ToTime"] = "To Time";
+	$fieldToolTipsovertimefileapp2[""]["ToTime"] = "";
+	$placeHoldersovertimefileapp2[""]["ToTime"] = "";
+	$fieldLabelsovertimefileapp2[""]["DateOT"] = "Date OT";
+	$fieldToolTipsovertimefileapp2[""]["DateOT"] = "";
+	$placeHoldersovertimefileapp2[""]["DateOT"] = "";
 	if (count($fieldToolTipsovertimefileapp2[""]))
 		$tdataovertimefileapp2[".isUseToolTips"] = true;
 }
@@ -182,7 +194,7 @@ $tdataovertimefileapp2[".buttonsAdded"] = false;
 $tdataovertimefileapp2[".addPageEvents"] = true;
 
 // use timepicker for search panel
-$tdataovertimefileapp2[".isUseTimeForSearch"] = false;
+$tdataovertimefileapp2[".isUseTimeForSearch"] = true;
 
 
 
@@ -194,10 +206,11 @@ $tdataovertimefileapp2[".requiredSearchFields"] = array();
 
 $tdataovertimefileapp2[".allSearchFields"][] = "ItiD";
 	$tdataovertimefileapp2[".allSearchFields"][] = "DateCreated";
+	$tdataovertimefileapp2[".allSearchFields"][] = "DateOT";
 	$tdataovertimefileapp2[".allSearchFields"][] = "EmployeeID";
 	$tdataovertimefileapp2[".allSearchFields"][] = "Reason";
-	$tdataovertimefileapp2[".allSearchFields"][] = "FromDateTime";
-	$tdataovertimefileapp2[".allSearchFields"][] = "ToDateTime";
+	$tdataovertimefileapp2[".allSearchFields"][] = "FromTime";
+	$tdataovertimefileapp2[".allSearchFields"][] = "ToTime";
 	$tdataovertimefileapp2[".allSearchFields"][] = "NoMins";
 	$tdataovertimefileapp2[".allSearchFields"][] = "Approved";
 	$tdataovertimefileapp2[".allSearchFields"][] = "Approvedby";
@@ -214,8 +227,8 @@ $tdataovertimefileapp2[".allSearchFields"][] = "ItiD";
 $tdataovertimefileapp2[".googleLikeFields"] = array();
 $tdataovertimefileapp2[".googleLikeFields"][] = "ItiD";
 $tdataovertimefileapp2[".googleLikeFields"][] = "DateCreated";
-$tdataovertimefileapp2[".googleLikeFields"][] = "FromDateTime";
-$tdataovertimefileapp2[".googleLikeFields"][] = "ToDateTime";
+$tdataovertimefileapp2[".googleLikeFields"][] = "FromTime";
+$tdataovertimefileapp2[".googleLikeFields"][] = "ToTime";
 $tdataovertimefileapp2[".googleLikeFields"][] = "Approved";
 $tdataovertimefileapp2[".googleLikeFields"][] = "Approvedby";
 $tdataovertimefileapp2[".googleLikeFields"][] = "ApprovedTime";
@@ -229,15 +242,17 @@ $tdataovertimefileapp2[".googleLikeFields"][] = "Locked";
 $tdataovertimefileapp2[".googleLikeFields"][] = "Superior2";
 $tdataovertimefileapp2[".googleLikeFields"][] = "1stApproval";
 $tdataovertimefileapp2[".googleLikeFields"][] = "2ndApproval";
+$tdataovertimefileapp2[".googleLikeFields"][] = "DateOT";
 
 
 $tdataovertimefileapp2[".advSearchFields"] = array();
 $tdataovertimefileapp2[".advSearchFields"][] = "ItiD";
 $tdataovertimefileapp2[".advSearchFields"][] = "DateCreated";
+$tdataovertimefileapp2[".advSearchFields"][] = "DateOT";
 $tdataovertimefileapp2[".advSearchFields"][] = "EmployeeID";
 $tdataovertimefileapp2[".advSearchFields"][] = "Reason";
-$tdataovertimefileapp2[".advSearchFields"][] = "FromDateTime";
-$tdataovertimefileapp2[".advSearchFields"][] = "ToDateTime";
+$tdataovertimefileapp2[".advSearchFields"][] = "FromTime";
+$tdataovertimefileapp2[".advSearchFields"][] = "ToTime";
 $tdataovertimefileapp2[".advSearchFields"][] = "NoMins";
 $tdataovertimefileapp2[".advSearchFields"][] = "Approved";
 $tdataovertimefileapp2[".advSearchFields"][] = "Approvedby";
@@ -293,7 +308,7 @@ $tdataovertimefileapp2[".orderindexes"] = array();
 	$tdataovertimefileapp2[".orderindexes"][] = array(1, (0 ? "ASC" : "DESC"), "ItiD");
 
 
-$tdataovertimefileapp2[".sqlHead"] = "SELECT ItiD,  DateCreated,  FromDateTime,  ToDateTime,  Approved,  Approvedby,  ApprovedTime,  Posted,  NoMins,  ApprovedDate,  EmployeeID,  Reason,  Superior,  Locked,  Superior2,  `1stApproval`,  `2ndApproval`";
+$tdataovertimefileapp2[".sqlHead"] = "SELECT ItiD,  DateCreated,  FromTime,  ToTime,  Approved,  Approvedby,  ApprovedTime,  Posted,  NoMins,  ApprovedDate,  EmployeeID,  Reason,  Superior,  Locked,  Superior2,  `1stApproval`,  `2ndApproval`,  DateOT";
 $tdataovertimefileapp2[".sqlFrom"] = "FROM overtimefile";
 $tdataovertimefileapp2[".sqlWhereExpr"] = "";
 $tdataovertimefileapp2[".sqlTail"] = "";
@@ -340,10 +355,11 @@ $tdataovertimefileapp2[".Keys"] = $tableKeysovertimefileapp2;
 $tdataovertimefileapp2[".listFields"] = array();
 $tdataovertimefileapp2[".listFields"][] = "ItiD";
 $tdataovertimefileapp2[".listFields"][] = "DateCreated";
+$tdataovertimefileapp2[".listFields"][] = "DateOT";
 $tdataovertimefileapp2[".listFields"][] = "EmployeeID";
 $tdataovertimefileapp2[".listFields"][] = "Reason";
-$tdataovertimefileapp2[".listFields"][] = "FromDateTime";
-$tdataovertimefileapp2[".listFields"][] = "ToDateTime";
+$tdataovertimefileapp2[".listFields"][] = "FromTime";
+$tdataovertimefileapp2[".listFields"][] = "ToTime";
 $tdataovertimefileapp2[".listFields"][] = "NoMins";
 $tdataovertimefileapp2[".listFields"][] = "Approved";
 $tdataovertimefileapp2[".listFields"][] = "Approvedby";
@@ -362,10 +378,11 @@ $tdataovertimefileapp2[".hideMobileList"] = array();
 $tdataovertimefileapp2[".viewFields"] = array();
 $tdataovertimefileapp2[".viewFields"][] = "ItiD";
 $tdataovertimefileapp2[".viewFields"][] = "DateCreated";
+$tdataovertimefileapp2[".viewFields"][] = "DateOT";
 $tdataovertimefileapp2[".viewFields"][] = "EmployeeID";
 $tdataovertimefileapp2[".viewFields"][] = "Reason";
-$tdataovertimefileapp2[".viewFields"][] = "FromDateTime";
-$tdataovertimefileapp2[".viewFields"][] = "ToDateTime";
+$tdataovertimefileapp2[".viewFields"][] = "FromTime";
+$tdataovertimefileapp2[".viewFields"][] = "ToTime";
 $tdataovertimefileapp2[".viewFields"][] = "NoMins";
 $tdataovertimefileapp2[".viewFields"][] = "Approved";
 $tdataovertimefileapp2[".viewFields"][] = "Approvedby";
@@ -379,14 +396,18 @@ $tdataovertimefileapp2[".viewFields"][] = "Superior2";
 $tdataovertimefileapp2[".viewFields"][] = "2ndApproval";
 
 $tdataovertimefileapp2[".addFields"] = array();
+$tdataovertimefileapp2[".addFields"][] = "DateOT";
+$tdataovertimefileapp2[".addFields"][] = "FromTime";
+$tdataovertimefileapp2[".addFields"][] = "ToTime";
 
 $tdataovertimefileapp2[".masterListFields"] = array();
 $tdataovertimefileapp2[".masterListFields"][] = "ItiD";
 $tdataovertimefileapp2[".masterListFields"][] = "DateCreated";
+$tdataovertimefileapp2[".masterListFields"][] = "DateOT";
 $tdataovertimefileapp2[".masterListFields"][] = "EmployeeID";
 $tdataovertimefileapp2[".masterListFields"][] = "Reason";
-$tdataovertimefileapp2[".masterListFields"][] = "FromDateTime";
-$tdataovertimefileapp2[".masterListFields"][] = "ToDateTime";
+$tdataovertimefileapp2[".masterListFields"][] = "FromTime";
+$tdataovertimefileapp2[".masterListFields"][] = "ToTime";
 $tdataovertimefileapp2[".masterListFields"][] = "NoMins";
 $tdataovertimefileapp2[".masterListFields"][] = "Approved";
 $tdataovertimefileapp2[".masterListFields"][] = "Approvedby";
@@ -400,13 +421,17 @@ $tdataovertimefileapp2[".masterListFields"][] = "Superior2";
 $tdataovertimefileapp2[".masterListFields"][] = "2ndApproval";
 
 $tdataovertimefileapp2[".inlineAddFields"] = array();
+$tdataovertimefileapp2[".inlineAddFields"][] = "DateOT";
+$tdataovertimefileapp2[".inlineAddFields"][] = "FromTime";
+$tdataovertimefileapp2[".inlineAddFields"][] = "ToTime";
 
 $tdataovertimefileapp2[".editFields"] = array();
 $tdataovertimefileapp2[".editFields"][] = "DateCreated";
+$tdataovertimefileapp2[".editFields"][] = "DateOT";
 $tdataovertimefileapp2[".editFields"][] = "EmployeeID";
 $tdataovertimefileapp2[".editFields"][] = "Reason";
-$tdataovertimefileapp2[".editFields"][] = "FromDateTime";
-$tdataovertimefileapp2[".editFields"][] = "ToDateTime";
+$tdataovertimefileapp2[".editFields"][] = "FromTime";
+$tdataovertimefileapp2[".editFields"][] = "ToTime";
 $tdataovertimefileapp2[".editFields"][] = "NoMins";
 $tdataovertimefileapp2[".editFields"][] = "Approved";
 $tdataovertimefileapp2[".editFields"][] = "Approvedby";
@@ -421,10 +446,11 @@ $tdataovertimefileapp2[".editFields"][] = "2ndApproval";
 
 $tdataovertimefileapp2[".inlineEditFields"] = array();
 $tdataovertimefileapp2[".inlineEditFields"][] = "DateCreated";
+$tdataovertimefileapp2[".inlineEditFields"][] = "DateOT";
 $tdataovertimefileapp2[".inlineEditFields"][] = "EmployeeID";
 $tdataovertimefileapp2[".inlineEditFields"][] = "Reason";
-$tdataovertimefileapp2[".inlineEditFields"][] = "FromDateTime";
-$tdataovertimefileapp2[".inlineEditFields"][] = "ToDateTime";
+$tdataovertimefileapp2[".inlineEditFields"][] = "FromTime";
+$tdataovertimefileapp2[".inlineEditFields"][] = "ToTime";
 $tdataovertimefileapp2[".inlineEditFields"][] = "NoMins";
 $tdataovertimefileapp2[".inlineEditFields"][] = "Approved";
 $tdataovertimefileapp2[".inlineEditFields"][] = "Approvedby";
@@ -439,10 +465,11 @@ $tdataovertimefileapp2[".inlineEditFields"][] = "2ndApproval";
 
 $tdataovertimefileapp2[".updateSelectedFields"] = array();
 $tdataovertimefileapp2[".updateSelectedFields"][] = "DateCreated";
+$tdataovertimefileapp2[".updateSelectedFields"][] = "DateOT";
 $tdataovertimefileapp2[".updateSelectedFields"][] = "EmployeeID";
 $tdataovertimefileapp2[".updateSelectedFields"][] = "Reason";
-$tdataovertimefileapp2[".updateSelectedFields"][] = "FromDateTime";
-$tdataovertimefileapp2[".updateSelectedFields"][] = "ToDateTime";
+$tdataovertimefileapp2[".updateSelectedFields"][] = "FromTime";
+$tdataovertimefileapp2[".updateSelectedFields"][] = "ToTime";
 $tdataovertimefileapp2[".updateSelectedFields"][] = "NoMins";
 $tdataovertimefileapp2[".updateSelectedFields"][] = "Approved";
 $tdataovertimefileapp2[".updateSelectedFields"][] = "Approvedby";
@@ -459,10 +486,11 @@ $tdataovertimefileapp2[".updateSelectedFields"][] = "2ndApproval";
 $tdataovertimefileapp2[".exportFields"] = array();
 $tdataovertimefileapp2[".exportFields"][] = "ItiD";
 $tdataovertimefileapp2[".exportFields"][] = "DateCreated";
+$tdataovertimefileapp2[".exportFields"][] = "DateOT";
 $tdataovertimefileapp2[".exportFields"][] = "EmployeeID";
 $tdataovertimefileapp2[".exportFields"][] = "Reason";
-$tdataovertimefileapp2[".exportFields"][] = "FromDateTime";
-$tdataovertimefileapp2[".exportFields"][] = "ToDateTime";
+$tdataovertimefileapp2[".exportFields"][] = "FromTime";
+$tdataovertimefileapp2[".exportFields"][] = "ToTime";
 $tdataovertimefileapp2[".exportFields"][] = "NoMins";
 $tdataovertimefileapp2[".exportFields"][] = "Approved";
 $tdataovertimefileapp2[".exportFields"][] = "Approvedby";
@@ -476,14 +504,18 @@ $tdataovertimefileapp2[".exportFields"][] = "Superior2";
 $tdataovertimefileapp2[".exportFields"][] = "2ndApproval";
 
 $tdataovertimefileapp2[".importFields"] = array();
+$tdataovertimefileapp2[".importFields"][] = "FromTime";
+$tdataovertimefileapp2[".importFields"][] = "ToTime";
+$tdataovertimefileapp2[".importFields"][] = "DateOT";
 
 $tdataovertimefileapp2[".printFields"] = array();
 $tdataovertimefileapp2[".printFields"][] = "ItiD";
 $tdataovertimefileapp2[".printFields"][] = "DateCreated";
+$tdataovertimefileapp2[".printFields"][] = "DateOT";
 $tdataovertimefileapp2[".printFields"][] = "EmployeeID";
 $tdataovertimefileapp2[".printFields"][] = "Reason";
-$tdataovertimefileapp2[".printFields"][] = "FromDateTime";
-$tdataovertimefileapp2[".printFields"][] = "ToDateTime";
+$tdataovertimefileapp2[".printFields"][] = "FromTime";
+$tdataovertimefileapp2[".printFields"][] = "ToTime";
 $tdataovertimefileapp2[".printFields"][] = "NoMins";
 $tdataovertimefileapp2[".printFields"][] = "Approved";
 $tdataovertimefileapp2[".printFields"][] = "Approvedby";
@@ -754,15 +786,15 @@ $tdataovertimefileapp2[".printFields"][] = "2ndApproval";
 
 
 	$tdataovertimefileapp2["DateCreated"] = $fdata;
-//	FromDateTime
+//	FromTime
 //	Custom field settings
 	$fdata = array();
 	$fdata["Index"] = 3;
-	$fdata["strName"] = "FromDateTime";
-	$fdata["GoodName"] = "FromDateTime";
+	$fdata["strName"] = "FromTime";
+	$fdata["GoodName"] = "FromTime";
 	$fdata["ownerTable"] = "overtimefile";
-	$fdata["Label"] = GetFieldLabel("overtimefileapp2","FromDateTime");
-	$fdata["FieldType"] = 135;
+	$fdata["Label"] = GetFieldLabel("overtimefileapp2","FromTime");
+	$fdata["FieldType"] = 134;
 
 	
 	
@@ -770,8 +802,10 @@ $tdataovertimefileapp2[".printFields"][] = "2ndApproval";
 			
 		$fdata["bListPage"] = true;
 
-	
-	
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
 		$fdata["bEditPage"] = true;
 
 		$fdata["bInlineEdit"] = true;
@@ -787,10 +821,10 @@ $tdataovertimefileapp2[".printFields"][] = "2ndApproval";
 
 		$fdata["bExportPage"] = true;
 
-		$fdata["strField"] = "FromDateTime";
+		$fdata["strField"] = "FromTime";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "FromDateTime";
+	$fdata["FullName"] = "FromTime";
 
 	
 	
@@ -801,7 +835,7 @@ $tdataovertimefileapp2[".printFields"][] = "2ndApproval";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Short Date");
+	$vdata = array("ViewFormat" => "Time");
 
 	
 	
@@ -825,10 +859,9 @@ $tdataovertimefileapp2[".printFields"][] = "2ndApproval";
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Date");
+	$edata = array("EditFormat" => "Time");
 
-		$edata["ShowTime"] = true;
-
+	
 	
 		
 	
@@ -844,19 +877,18 @@ $tdataovertimefileapp2[".printFields"][] = "2ndApproval";
 
 	
 	
-		$edata["DateEditType"] = 11;
-	$edata["InitialYearFactor"] = 0;
-	$edata["LastYearFactor"] = 21;
-
 	
 	
 	
+		$edata["EditParams"] = "";
+		
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Time");
 						$edata["validateAs"]["basicValidate"][] = "IsRequired";
 		
 	
@@ -864,7 +896,12 @@ $tdataovertimefileapp2[".printFields"][] = "2ndApproval";
 
 	
 			
-	
+				$hours = 12;
+	$edata["FormatTimeAttrs"] = array("useTimePicker" => 1,
+									  "hours" => $hours,
+									  "minutes" => 1,
+									  "showSeconds" => 0);
+
 	
 	
 	$fdata["EditFormats"]["edit"] = $edata;
@@ -886,16 +923,16 @@ $tdataovertimefileapp2[".printFields"][] = "2ndApproval";
 
 
 
-	$tdataovertimefileapp2["FromDateTime"] = $fdata;
-//	ToDateTime
+	$tdataovertimefileapp2["FromTime"] = $fdata;
+//	ToTime
 //	Custom field settings
 	$fdata = array();
 	$fdata["Index"] = 4;
-	$fdata["strName"] = "ToDateTime";
-	$fdata["GoodName"] = "ToDateTime";
+	$fdata["strName"] = "ToTime";
+	$fdata["GoodName"] = "ToTime";
 	$fdata["ownerTable"] = "overtimefile";
-	$fdata["Label"] = GetFieldLabel("overtimefileapp2","ToDateTime");
-	$fdata["FieldType"] = 135;
+	$fdata["Label"] = GetFieldLabel("overtimefileapp2","ToTime");
+	$fdata["FieldType"] = 134;
 
 	
 	
@@ -903,8 +940,10 @@ $tdataovertimefileapp2[".printFields"][] = "2ndApproval";
 			
 		$fdata["bListPage"] = true;
 
-	
-	
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
 		$fdata["bEditPage"] = true;
 
 		$fdata["bInlineEdit"] = true;
@@ -920,10 +959,10 @@ $tdataovertimefileapp2[".printFields"][] = "2ndApproval";
 
 		$fdata["bExportPage"] = true;
 
-		$fdata["strField"] = "ToDateTime";
+		$fdata["strField"] = "ToTime";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "ToDateTime";
+	$fdata["FullName"] = "ToTime";
 
 	
 	
@@ -934,7 +973,7 @@ $tdataovertimefileapp2[".printFields"][] = "2ndApproval";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Short Date");
+	$vdata = array("ViewFormat" => "Time");
 
 	
 	
@@ -958,10 +997,9 @@ $tdataovertimefileapp2[".printFields"][] = "2ndApproval";
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Date");
+	$edata = array("EditFormat" => "Time");
 
-		$edata["ShowTime"] = true;
-
+	
 	
 		
 	
@@ -977,19 +1015,18 @@ $tdataovertimefileapp2[".printFields"][] = "2ndApproval";
 
 	
 	
-		$edata["DateEditType"] = 11;
-	$edata["InitialYearFactor"] = 0;
-	$edata["LastYearFactor"] = 21;
-
 	
 	
 	
+		$edata["EditParams"] = "";
+		
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Time");
 						$edata["validateAs"]["basicValidate"][] = "IsRequired";
 		
 	
@@ -997,7 +1034,12 @@ $tdataovertimefileapp2[".printFields"][] = "2ndApproval";
 
 	
 			
-	
+				$hours = 12;
+	$edata["FormatTimeAttrs"] = array("useTimePicker" => 1,
+									  "hours" => $hours,
+									  "minutes" => 1,
+									  "showSeconds" => 0);
+
 	
 	
 	$fdata["EditFormats"]["edit"] = $edata;
@@ -1019,7 +1061,7 @@ $tdataovertimefileapp2[".printFields"][] = "2ndApproval";
 
 
 
-	$tdataovertimefileapp2["ToDateTime"] = $fdata;
+	$tdataovertimefileapp2["ToTime"] = $fdata;
 //	Approved
 //	Custom field settings
 	$fdata = array();
@@ -2852,6 +2894,138 @@ $tdataovertimefileapp2[".printFields"][] = "2ndApproval";
 
 
 	$tdataovertimefileapp2["2ndApproval"] = $fdata;
+//	DateOT
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 18;
+	$fdata["strName"] = "DateOT";
+	$fdata["GoodName"] = "DateOT";
+	$fdata["ownerTable"] = "overtimefile";
+	$fdata["Label"] = GetFieldLabel("overtimefileapp2","DateOT");
+	$fdata["FieldType"] = 7;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+		$fdata["bUpdateSelected"] = true;
+
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "DateOT";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "DateOT";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Short Date");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Date");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+		$edata["DateEditType"] = 13;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 21;
+
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
+// the end of search options settings
+
+
+
+
+	$tdataovertimefileapp2["DateOT"] = $fdata;
 
 
 $tables_data["overtimefileapp2"]=&$tdataovertimefileapp2;
@@ -2885,7 +3059,7 @@ function createSqlQuery_overtimefileapp2()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "ItiD,  DateCreated,  FromDateTime,  ToDateTime,  Approved,  Approvedby,  ApprovedTime,  Posted,  NoMins,  ApprovedDate,  EmployeeID,  Reason,  Superior,  Locked,  Superior2,  `1stApproval`,  `2ndApproval`";
+$proto0["m_strFieldList"] = "ItiD,  DateCreated,  FromTime,  ToTime,  Approved,  Approvedby,  ApprovedTime,  Posted,  NoMins,  ApprovedDate,  EmployeeID,  Reason,  Superior,  Locked,  Superior2,  `1stApproval`,  `2ndApproval`,  DateOT";
 $proto0["m_strFrom"] = "FROM overtimefile";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "ORDER BY ItiD DESC";
@@ -2955,12 +3129,12 @@ $obj = new SQLFieldListItem($proto8);
 $proto0["m_fieldlist"][]=$obj;
 						$proto10=array();
 			$obj = new SQLField(array(
-	"m_strName" => "FromDateTime",
+	"m_strName" => "FromTime",
 	"m_strTable" => "overtimefile",
 	"m_srcTableName" => "overtimefileapp2"
 ));
 
-$proto10["m_sql"] = "FromDateTime";
+$proto10["m_sql"] = "FromTime";
 $proto10["m_srcTableName"] = "overtimefileapp2";
 $proto10["m_expr"]=$obj;
 $proto10["m_alias"] = "";
@@ -2969,12 +3143,12 @@ $obj = new SQLFieldListItem($proto10);
 $proto0["m_fieldlist"][]=$obj;
 						$proto12=array();
 			$obj = new SQLField(array(
-	"m_strName" => "ToDateTime",
+	"m_strName" => "ToTime",
 	"m_strTable" => "overtimefile",
 	"m_srcTableName" => "overtimefileapp2"
 ));
 
-$proto12["m_sql"] = "ToDateTime";
+$proto12["m_sql"] = "ToTime";
 $proto12["m_srcTableName"] = "overtimefileapp2";
 $proto12["m_expr"]=$obj;
 $proto12["m_alias"] = "";
@@ -3163,70 +3337,85 @@ $proto38["m_alias"] = "";
 $obj = new SQLFieldListItem($proto38);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto40=array();
-$proto40["m_link"] = "SQLL_MAIN";
-			$proto41=array();
-$proto41["m_strName"] = "overtimefile";
-$proto41["m_srcTableName"] = "overtimefileapp2";
-$proto41["m_columns"] = array();
-$proto41["m_columns"][] = "ItiD";
-$proto41["m_columns"][] = "DateCreated";
-$proto41["m_columns"][] = "FromDateTime";
-$proto41["m_columns"][] = "ToDateTime";
-$proto41["m_columns"][] = "Approved";
-$proto41["m_columns"][] = "Approvedby";
-$proto41["m_columns"][] = "ApprovedTime";
-$proto41["m_columns"][] = "Posted";
-$proto41["m_columns"][] = "NoMins";
-$proto41["m_columns"][] = "ApprovedDate";
-$proto41["m_columns"][] = "EmployeeID";
-$proto41["m_columns"][] = "Reason";
-$proto41["m_columns"][] = "Superior";
-$proto41["m_columns"][] = "Locked";
-$proto41["m_columns"][] = "Superior2";
-$proto41["m_columns"][] = "1stApproval";
-$proto41["m_columns"][] = "2ndApproval";
-$proto41["m_columns"][] = "1stDisapproval";
-$proto41["m_columns"][] = "2ndDisapproval";
-$obj = new SQLTable($proto41);
+						$proto40=array();
+			$obj = new SQLField(array(
+	"m_strName" => "DateOT",
+	"m_strTable" => "overtimefile",
+	"m_srcTableName" => "overtimefileapp2"
+));
 
-$proto40["m_table"] = $obj;
-$proto40["m_sql"] = "overtimefile";
-$proto40["m_alias"] = "";
+$proto40["m_sql"] = "DateOT";
 $proto40["m_srcTableName"] = "overtimefileapp2";
-$proto42=array();
-$proto42["m_sql"] = "";
-$proto42["m_uniontype"] = "SQLL_UNKNOWN";
+$proto40["m_expr"]=$obj;
+$proto40["m_alias"] = "";
+$obj = new SQLFieldListItem($proto40);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto42=array();
+$proto42["m_link"] = "SQLL_MAIN";
+			$proto43=array();
+$proto43["m_strName"] = "overtimefile";
+$proto43["m_srcTableName"] = "overtimefileapp2";
+$proto43["m_columns"] = array();
+$proto43["m_columns"][] = "ItiD";
+$proto43["m_columns"][] = "DateCreated";
+$proto43["m_columns"][] = "FromTime";
+$proto43["m_columns"][] = "ToTime";
+$proto43["m_columns"][] = "Approved";
+$proto43["m_columns"][] = "Approvedby";
+$proto43["m_columns"][] = "ApprovedTime";
+$proto43["m_columns"][] = "Posted";
+$proto43["m_columns"][] = "NoMins";
+$proto43["m_columns"][] = "ApprovedDate";
+$proto43["m_columns"][] = "EmployeeID";
+$proto43["m_columns"][] = "Reason";
+$proto43["m_columns"][] = "Superior";
+$proto43["m_columns"][] = "Locked";
+$proto43["m_columns"][] = "Superior2";
+$proto43["m_columns"][] = "1stApproval";
+$proto43["m_columns"][] = "2ndApproval";
+$proto43["m_columns"][] = "1stDisapproval";
+$proto43["m_columns"][] = "2ndDisapproval";
+$proto43["m_columns"][] = "DateOT";
+$obj = new SQLTable($proto43);
+
+$proto42["m_table"] = $obj;
+$proto42["m_sql"] = "overtimefile";
+$proto42["m_alias"] = "";
+$proto42["m_srcTableName"] = "overtimefileapp2";
+$proto44=array();
+$proto44["m_sql"] = "";
+$proto44["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto42["m_column"]=$obj;
-$proto42["m_contained"] = array();
-$proto42["m_strCase"] = "";
-$proto42["m_havingmode"] = false;
-$proto42["m_inBrackets"] = false;
-$proto42["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto42);
+$proto44["m_column"]=$obj;
+$proto44["m_contained"] = array();
+$proto44["m_strCase"] = "";
+$proto44["m_havingmode"] = false;
+$proto44["m_inBrackets"] = false;
+$proto44["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto44);
 
-$proto40["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto40);
+$proto42["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto42);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
 $proto0["m_orderby"] = array();
-												$proto44=array();
+												$proto46=array();
 						$obj = new SQLField(array(
 	"m_strName" => "ItiD",
 	"m_strTable" => "overtimefile",
 	"m_srcTableName" => "overtimefileapp2"
 ));
 
-$proto44["m_column"]=$obj;
-$proto44["m_bAsc"] = 0;
-$proto44["m_nColumn"] = 0;
-$obj = new SQLOrderByItem($proto44);
+$proto46["m_column"]=$obj;
+$proto46["m_bAsc"] = 0;
+$proto46["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto46);
 
 $proto0["m_orderby"][]=$obj;					
 $proto0["m_srcTableName"]="overtimefileapp2";		
@@ -3240,7 +3429,7 @@ $queryData_overtimefileapp2 = createSqlQuery_overtimefileapp2();
 	
 		;
 
-																	
+																		
 
 $tdataovertimefileapp2[".sqlquery"] = $queryData_overtimefileapp2;
 

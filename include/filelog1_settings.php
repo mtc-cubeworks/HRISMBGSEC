@@ -242,7 +242,6 @@ $tdatafilelog1[".allSearchFields"][] = "Locked";
 	$tdatafilelog1[".allSearchFields"][] = "EmployeeID";
 	$tdatafilelog1[".allSearchFields"][] = "log_time";
 	$tdatafilelog1[".allSearchFields"][] = "Reason";
-	$tdatafilelog1[".allSearchFields"][] = "ClockType";
 	$tdatafilelog1[".allSearchFields"][] = "data";
 	$tdatafilelog1[".allSearchFields"][] = "MLogID";
 	$tdatafilelog1[".allSearchFields"][] = "MLogDate";
@@ -280,7 +279,6 @@ $tdatafilelog1[".advSearchFields"][] = "TransID2";
 $tdatafilelog1[".advSearchFields"][] = "EmployeeID";
 $tdatafilelog1[".advSearchFields"][] = "log_time";
 $tdatafilelog1[".advSearchFields"][] = "Reason";
-$tdatafilelog1[".advSearchFields"][] = "ClockType";
 $tdatafilelog1[".advSearchFields"][] = "data";
 $tdatafilelog1[".advSearchFields"][] = "MLogID";
 $tdatafilelog1[".advSearchFields"][] = "MLogDate";
@@ -1386,8 +1384,7 @@ $tdatafilelog1[".printFields"][] = "HRApprovedDate";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -1503,12 +1500,6 @@ $tdatafilelog1[".printFields"][] = "HRApprovedDate";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Equals";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 

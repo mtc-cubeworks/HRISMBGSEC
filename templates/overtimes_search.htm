@@ -84,6 +84,24 @@
 		</div>
 	</div>
 {END OtiD_fieldblock}
+	{BEGIN DateOT_fieldblock}		
+	<div class="container {$fielddispclass_DateOT}" data-fieldname="DateOT">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_DateOT}">
+				{$label overtimes DateOT}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_DateOT}
+			</div>
+			<div class="col-md-4" >
+				{$DateOT_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$DateOT_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END DateOT_fieldblock}
 	{BEGIN Employer_fieldblock}		
 	<div class="container {$fielddispclass_Employer}" data-fieldname="Employer">
 		<div class="form-group">
@@ -120,24 +138,60 @@
 		</div>
 	</div>
 {END Division_fieldblock}
-	{BEGIN DateCreated_fieldblock}		
-	<div class="container {$fielddispclass_DateCreated}" data-fieldname="DateCreated">
+	{BEGIN AllEmployees_fieldblock}		
+	<div class="container {$fielddispclass_AllEmployees}" data-fieldname="AllEmployees">
 		<div class="form-group">
-			<label class="col-md-2 control-label" for="{$labelfor_DateCreated}">
-				{$label overtimes DateCreated}
+			<label class="col-md-2 control-label" for="{$labelfor_AllEmployees}">
+				{$label overtimes AllEmployees}
 			</label>
 			<div class="col-md-2 bs-srchoption" >
-				{$searchtype_DateCreated}
+				{$searchtype_AllEmployees}
 			</div>
 			<div class="col-md-4" >
-				{$DateCreated_editcontrol}
+				{$AllEmployees_editcontrol}
 			</div>
 			<div class="col-md-4" >
-				{$DateCreated_editcontrol1}
+				{$AllEmployees_editcontrol1}
 			</div>
 		</div>
 	</div>
-{END DateCreated_fieldblock}
+{END AllEmployees_fieldblock}
+	{BEGIN FromTime_fieldblock}		
+	<div class="container {$fielddispclass_FromTime}" data-fieldname="FromTime">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_FromTime}">
+				{$label overtimes FromTime}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_FromTime}
+			</div>
+			<div class="col-md-4" >
+				{$FromTime_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$FromTime_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END FromTime_fieldblock}
+	{BEGIN ToTime_fieldblock}		
+	<div class="container {$fielddispclass_ToTime}" data-fieldname="ToTime">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_ToTime}">
+				{$label overtimes ToTime}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_ToTime}
+			</div>
+			<div class="col-md-4" >
+				{$ToTime_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$ToTime_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END ToTime_fieldblock}
 	{BEGIN Reason_fieldblock}		
 	<div class="container {$fielddispclass_Reason}" data-fieldname="Reason">
 		<div class="form-group">
@@ -156,42 +210,6 @@
 		</div>
 	</div>
 {END Reason_fieldblock}
-	{BEGIN FromDateTime_fieldblock}		
-	<div class="container {$fielddispclass_FromDateTime}" data-fieldname="FromDateTime">
-		<div class="form-group">
-			<label class="col-md-2 control-label" for="{$labelfor_FromDateTime}">
-				{$label overtimes FromDateTime}
-			</label>
-			<div class="col-md-2 bs-srchoption" >
-				{$searchtype_FromDateTime}
-			</div>
-			<div class="col-md-4" >
-				{$FromDateTime_editcontrol}
-			</div>
-			<div class="col-md-4" >
-				{$FromDateTime_editcontrol1}
-			</div>
-		</div>
-	</div>
-{END FromDateTime_fieldblock}
-	{BEGIN ToDateTime_fieldblock}		
-	<div class="container {$fielddispclass_ToDateTime}" data-fieldname="ToDateTime">
-		<div class="form-group">
-			<label class="col-md-2 control-label" for="{$labelfor_ToDateTime}">
-				{$label overtimes ToDateTime}
-			</label>
-			<div class="col-md-2 bs-srchoption" >
-				{$searchtype_ToDateTime}
-			</div>
-			<div class="col-md-4" >
-				{$ToDateTime_editcontrol}
-			</div>
-			<div class="col-md-4" >
-				{$ToDateTime_editcontrol1}
-			</div>
-		</div>
-	</div>
-{END ToDateTime_fieldblock}
 	{BEGIN NoMins_fieldblock}		
 	<div class="container {$fielddispclass_NoMins}" data-fieldname="NoMins">
 		<div class="form-group">
@@ -210,6 +228,42 @@
 		</div>
 	</div>
 {END NoMins_fieldblock}
+	{BEGIN CostCenter_fieldblock}		
+	<div class="container {$fielddispclass_CostCenter}" data-fieldname="CostCenter">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_CostCenter}">
+				{$label overtimes CostCenter}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_CostCenter}
+			</div>
+			<div class="col-md-4" >
+				{$CostCenter_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$CostCenter_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END CostCenter_fieldblock}
+	{BEGIN Remarks_fieldblock}		
+	<div class="container {$fielddispclass_Remarks}" data-fieldname="Remarks">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Remarks}">
+				{$label overtimes Remarks}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Remarks}
+			</div>
+			<div class="col-md-4" >
+				{$Remarks_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Remarks_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Remarks_fieldblock}
 	{BEGIN Approved_fieldblock}		
 	<div class="container {$fielddispclass_Approved}" data-fieldname="Approved">
 		<div class="form-group">
@@ -300,6 +354,42 @@
 		</div>
 	</div>
 {END Posted_fieldblock}
+	{BEGIN DateCreated_fieldblock}		
+	<div class="container {$fielddispclass_DateCreated}" data-fieldname="DateCreated">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_DateCreated}">
+				{$label overtimes DateCreated}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_DateCreated}
+			</div>
+			<div class="col-md-4" >
+				{$DateCreated_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$DateCreated_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END DateCreated_fieldblock}
+	{BEGIN PreparedBy_fieldblock}		
+	<div class="container {$fielddispclass_PreparedBy}" data-fieldname="PreparedBy">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_PreparedBy}">
+				{$label overtimes PreparedBy}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_PreparedBy}
+			</div>
+			<div class="col-md-4" >
+				{$PreparedBy_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$PreparedBy_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END PreparedBy_fieldblock}
 </div>
 
 

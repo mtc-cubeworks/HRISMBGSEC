@@ -47,7 +47,7 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsleavesapp2["English"]["ApprovedDate"] = "Approved Date";
 	$fieldToolTipsleavesapp2["English"]["ApprovedDate"] = "";
 	$placeHoldersleavesapp2["English"]["ApprovedDate"] = "";
-	$fieldLabelsleavesapp2["English"]["Approvedby"] = "Approvedby";
+	$fieldLabelsleavesapp2["English"]["Approvedby"] = "Approved by";
 	$fieldToolTipsleavesapp2["English"]["Approvedby"] = "";
 	$placeHoldersleavesapp2["English"]["Approvedby"] = "";
 	$fieldLabelsleavesapp2["English"]["Posted"] = "Posted";

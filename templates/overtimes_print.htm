@@ -75,6 +75,11 @@
 				{$label overtimes OtiD}
 			</th>
 			{END OtiD_fieldheadercolumn}
+			{BEGIN DateOT_fieldheadercolumn}
+			<th class="{$DateOT_class}" {$DateOT_style}  data-field="DateOT">
+				{$label overtimes DateOT}
+			</th>
+			{END DateOT_fieldheadercolumn}
 			{BEGIN Employer_fieldheadercolumn}
 			<th class="{$Employer_class}" {$Employer_style}  data-field="Employer">
 				{$label overtimes Employer}
@@ -85,31 +90,41 @@
 				{$label overtimes Division}
 			</th>
 			{END Division_fieldheadercolumn}
-			{BEGIN DateCreated_fieldheadercolumn}
-			<th class="{$DateCreated_class}" {$DateCreated_style}  data-field="DateCreated">
-				{$label overtimes DateCreated}
+			{BEGIN AllEmployees_fieldheadercolumn}
+			<th class="{$AllEmployees_class}" {$AllEmployees_style}  data-field="AllEmployees">
+				{$label overtimes AllEmployees}
 			</th>
-			{END DateCreated_fieldheadercolumn}
+			{END AllEmployees_fieldheadercolumn}
+			{BEGIN FromTime_fieldheadercolumn}
+			<th class="{$FromTime_class}" {$FromTime_style}  data-field="FromTime">
+				{$label overtimes FromTime}
+			</th>
+			{END FromTime_fieldheadercolumn}
+			{BEGIN ToTime_fieldheadercolumn}
+			<th class="{$ToTime_class}" {$ToTime_style}  data-field="ToTime">
+				{$label overtimes ToTime}
+			</th>
+			{END ToTime_fieldheadercolumn}
 			{BEGIN Reason_fieldheadercolumn}
 			<th class="{$Reason_class}" {$Reason_style}  data-field="Reason">
 				{$label overtimes Reason}
 			</th>
 			{END Reason_fieldheadercolumn}
-			{BEGIN FromDateTime_fieldheadercolumn}
-			<th class="{$FromDateTime_class}" {$FromDateTime_style}  data-field="FromDateTime">
-				{$label overtimes FromDateTime}
-			</th>
-			{END FromDateTime_fieldheadercolumn}
-			{BEGIN ToDateTime_fieldheadercolumn}
-			<th class="{$ToDateTime_class}" {$ToDateTime_style}  data-field="ToDateTime">
-				{$label overtimes ToDateTime}
-			</th>
-			{END ToDateTime_fieldheadercolumn}
 			{BEGIN NoMins_fieldheadercolumn}
 			<th class="{$NoMins_class}" {$NoMins_style}  data-field="NoMins">
 				{$label overtimes NoMins}
 			</th>
 			{END NoMins_fieldheadercolumn}
+			{BEGIN CostCenter_fieldheadercolumn}
+			<th class="{$CostCenter_class}" {$CostCenter_style}  data-field="CostCenter">
+				{$label overtimes CostCenter}
+			</th>
+			{END CostCenter_fieldheadercolumn}
+			{BEGIN Remarks_fieldheadercolumn}
+			<th class="{$Remarks_class}" {$Remarks_style}  data-field="Remarks">
+				{$label overtimes Remarks}
+			</th>
+			{END Remarks_fieldheadercolumn}
 			{BEGIN Approved_fieldheadercolumn}
 			<th class="{$Approved_class}" {$Approved_style}  data-field="Approved">
 				{$label overtimes Approved}
@@ -135,6 +150,16 @@
 				{$label overtimes Posted}
 			</th>
 			{END Posted_fieldheadercolumn}
+			{BEGIN DateCreated_fieldheadercolumn}
+			<th class="{$DateCreated_class}" {$DateCreated_style}  data-field="DateCreated">
+				{$label overtimes DateCreated}
+			</th>
+			{END DateCreated_fieldheadercolumn}
+			{BEGIN PreparedBy_fieldheadercolumn}
+			<th class="{$PreparedBy_class}" {$PreparedBy_style}  data-field="PreparedBy">
+				{$label overtimes PreparedBy}
+			</th>
+			{END PreparedBy_fieldheadercolumn}
 			{BEGIN endrecordheader_block}
 			<th class="rnr-cs">&nbsp;</th>
 			{END endrecordheader_block}
@@ -152,6 +177,11 @@
 				{$OtiD_value}
 			</td>
 			{END OtiD_fieldcolumn}
+			{BEGIN DateOT_fieldcolumn}
+			<td  class="{$DateOT_class}" {$DateOT_style} {$recordattrs}>
+				{$DateOT_value}
+			</td>
+			{END DateOT_fieldcolumn}
 			{BEGIN Employer_fieldcolumn}
 			<td  class="{$Employer_class}" {$Employer_style} {$recordattrs}>
 				{$Employer_value}
@@ -162,31 +192,41 @@
 				{$Division_value}
 			</td>
 			{END Division_fieldcolumn}
-			{BEGIN DateCreated_fieldcolumn}
-			<td  class="{$DateCreated_class}" {$DateCreated_style} {$recordattrs}>
-				{$DateCreated_value}
+			{BEGIN AllEmployees_fieldcolumn}
+			<td  class="{$AllEmployees_class}" {$AllEmployees_style} {$recordattrs}>
+				{$AllEmployees_value}
 			</td>
-			{END DateCreated_fieldcolumn}
+			{END AllEmployees_fieldcolumn}
+			{BEGIN FromTime_fieldcolumn}
+			<td  class="{$FromTime_class}" {$FromTime_style} {$recordattrs}>
+				{$FromTime_value}
+			</td>
+			{END FromTime_fieldcolumn}
+			{BEGIN ToTime_fieldcolumn}
+			<td  class="{$ToTime_class}" {$ToTime_style} {$recordattrs}>
+				{$ToTime_value}
+			</td>
+			{END ToTime_fieldcolumn}
 			{BEGIN Reason_fieldcolumn}
 			<td  class="{$Reason_class}" {$Reason_style} {$recordattrs}>
 				{$Reason_value}
 			</td>
 			{END Reason_fieldcolumn}
-			{BEGIN FromDateTime_fieldcolumn}
-			<td  class="{$FromDateTime_class}" {$FromDateTime_style} {$recordattrs}>
-				{$FromDateTime_value}
-			</td>
-			{END FromDateTime_fieldcolumn}
-			{BEGIN ToDateTime_fieldcolumn}
-			<td  class="{$ToDateTime_class}" {$ToDateTime_style} {$recordattrs}>
-				{$ToDateTime_value}
-			</td>
-			{END ToDateTime_fieldcolumn}
 			{BEGIN NoMins_fieldcolumn}
 			<td  class="{$NoMins_class}" {$NoMins_style} {$recordattrs}>
 				{$NoMins_value}
 			</td>
 			{END NoMins_fieldcolumn}
+			{BEGIN CostCenter_fieldcolumn}
+			<td  class="{$CostCenter_class}" {$CostCenter_style} {$recordattrs}>
+				{$CostCenter_value}
+			</td>
+			{END CostCenter_fieldcolumn}
+			{BEGIN Remarks_fieldcolumn}
+			<td  class="{$Remarks_class}" {$Remarks_style} {$recordattrs}>
+				{$Remarks_value}
+			</td>
+			{END Remarks_fieldcolumn}
 			{BEGIN Approved_fieldcolumn}
 			<td  class="{$Approved_class}" {$Approved_style} {$recordattrs}>
 				{$Approved_value}
@@ -212,6 +252,16 @@
 				{$Posted_value}
 			</td>
 			{END Posted_fieldcolumn}
+			{BEGIN DateCreated_fieldcolumn}
+			<td  class="{$DateCreated_class}" {$DateCreated_style} {$recordattrs}>
+				{$DateCreated_value}
+			</td>
+			{END DateCreated_fieldcolumn}
+			{BEGIN PreparedBy_fieldcolumn}
+			<td  class="{$PreparedBy_class}" {$PreparedBy_style} {$recordattrs}>
+				{$PreparedBy_value}
+			</td>
+			{END PreparedBy_fieldcolumn}
 			{BEGIN endrecord_block}
 			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
 			{END endrecord_block}
@@ -220,7 +270,7 @@
 	{BEGIN details_row}
 		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
 			{BEGIN details_record}
-				<td colspan="14">
+				<td colspan="19">
 					{BEGIN details_table}
 						{$details}
 					{END details_table}

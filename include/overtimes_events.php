@@ -164,11 +164,13 @@ function AfterAdd(&$values, &$keys, $inline, &$pageObject)
 		$ot=$values["OtiD"];
 $empr=$values["Employer"];
 $dvv=$values["Division"];
-
-
+$alem=$values["AllEmployees"];
+$rea=$values["Reason"];
+$rea=addcslashes($rea);
 
 global $dal;
 
+if ($alem==1) {
 
 $rs = DB::Query("select * from demo_user where Employer='$empr' and Division='$dvv' and Inactive<>1");
  
@@ -180,6 +182,7 @@ $emid=$datax["EmployeeID"];
 $usern=$datax["user_name"];
 $usid=$datax["user_id"];
 
+
 $sql = "INSERT INTO overtimetab (UserID, UserName, EmployeeID, OtiD) values
 
   ('$usid', '$usern', '$emid', '$ot')";
@@ -188,6 +191,7 @@ CustomQuery($sql);
 
 }
 
+};
 
 
 header("Location: overtimes_edit.php?editid1=".$values["OtiD"]);
@@ -268,27 +272,21 @@ $otid= $values["OtiD"];
 
 $ab=$values["Approved"];
 
-$usn=Security::getUserName();
 
-
-$logx=DBLookup("select LogID from logins where UserName='". $usn. "'");
 
 
 if ($ab==1) {
 
-$sqa = "UPDATE overtimes SET Approvedby='$logx' WHERE OtID='$otid'";
-CustomQuery($sqa);
 
-
-
-$dc= $values["DateCreated"];
-$fd= $values["FromDateTime"];
-$td= $values["ToDateTime"];
+$cdate= $values["DateCreated"];
+$dc= $values["DateOT"];
+$fd= $values["FromTime"];
+$td= $values["ToTime"];
 $appd= $values["Approved"];
 $nomins= $values["NoMins"];
+$costc= $values["CostCenter"];
 $rea= $values["Reason"];
 $rea= addslashes($rea);
-
 
 
 $ts1 = strtotime($fd);
@@ -312,6 +310,7 @@ $inter=1;
 //CustomQuery($sqldely);
 
 $sqldel = "DELETE FROM indovertime WHERE OtID='$otid'";
+CustomQuery($sqldel);
 
 global $dal;
 $tblOrders = $dal->Table("overtimetab");
@@ -323,8 +322,11 @@ while ($datax = db_fetch_array($rs))
 $empid=$datax["EmployeeID"];
 
 
+$dhr=(DBLookup("select BasicDailyPay from demo_user where EmployeeID='$empid'"))/8;
 
-$sqlr = "INSERT indovertime VALUES (NULL, '$dc', '$empid', '$fd', '$nomins', '$otid', '$fd', '$td', NULL, NULL, '$rea')";
+
+
+$sqlr = "INSERT indovertime VALUES (NULL, '$cdate', '$empid', '$dc', '$nomins', '$otid', '$fd', '$td', NULL, NULL, '$costc', '$rea', '$dhr')";
 CustomQuery($sqlr);
 
 
@@ -338,19 +340,17 @@ $sqlup = "Update overtimes set Posted=1 where OtiD='$otid'";
 
 
 
-
 };
 
-if ($ab==NULL OR $ab==0)
+if ($ab!=1)
 
 {
-$sqb = "UPDATE overtimes SET Approvedby=NULL WHERE OtID='$otid'";
-CustomQuery($sqb);
+
 
 $sqldel = "DELETE FROM indovertime WHERE OtID='$otid'";
 CustomQuery($sqldel);
 
-$sqlup = "Update overtimes set Posted=NULL where OtiD='$otid'";
+$sqlup = "Update overtimes set Posted=NULL, ApprovedDate=NULL, Approvedby=NULL where OtiD='$otid'";
  CustomQuery($sqlup);
 
 }
@@ -436,9 +436,9 @@ $sqlup = "Update overtimes set Posted=NULL where OtiD='$otid'";
 function BeforeShowEdit(&$xt, &$templatefile, $values, &$pageObject)
 {
 
-		$attz = $xt->fetchVar("Approvedby_editcontrol");
-$attz = str_replace(">"," DISABLED=DISABLED>",$attz);
-$xt->assign("Approvedby_editcontrol",$attz);
+		//$attz = $xt->fetchVar("Approvedby_editcontrol");
+//$attz = str_replace(">"," DISABLED=DISABLED>",$attz);
+//$xt->assign("Approvedby_editcontrol",$attz);
 ;		
 } // function BeforeShowEdit
 
@@ -556,27 +556,9 @@ function BeforeAdd(&$values, &$message, $inline, &$pageObject)
 
 		
 
-$fd=$values["FromDateTime"];
-$td=$values["ToDateTime"];
-
-$fd1=strtotime($fd);
-$td1= strtotime($td);
-
-if ($fd1>=$td1) {
-
-$message = "ToDateTime should be greater than FromDateTime.";
-
-$message;
-
-return false;
-
-
-}
-
-else {
 return true;
 
-}
+
 ;		
 } // function BeforeAdd
 
@@ -649,27 +631,8 @@ function BeforeEdit(&$values, $where, &$oldvalues, &$keys, &$message, $inline, &
 {
 
 		
-$fd=$values["FromDateTime"];
-$td=$values["ToDateTime"];
-
-$fd1=strtotime($fd);
-$td1= strtotime($td);
-
-if ($fd1>=$td1) {
-
-$message = "ToDateTime should be greater than FromDateTime.";
-
-$message;
-
-return false;
-
-
-}
-
-else {
 return true;
 
-}
 ;		
 } // function BeforeEdit
 

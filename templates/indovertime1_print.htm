@@ -70,6 +70,11 @@
 	{BEGIN grid_header}
 		<tr class="{$gridHeader_class}" >
 		{BEGIN record_header}
+			{BEGIN Reason_fieldheadercolumn}
+			<th class="{$Reason_class}" {$Reason_style}  data-field="Reason">
+				{$label indovertime1 Reason}
+			</th>
+			{END Reason_fieldheadercolumn}
 			{BEGIN iOTID_fieldheadercolumn}
 			<th class="{$iOTID_class}" {$iOTID_style}  data-field="iOTID">
 				{$label indovertime1 iOTID}
@@ -117,6 +122,11 @@
 	{BEGIN grid_row}
 		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
 		{BEGIN grid_record}
+			{BEGIN Reason_fieldcolumn}
+			<td  class="{$Reason_class}" {$Reason_style} {$recordattrs}>
+				{$Reason_value}
+			</td>
+			{END Reason_fieldcolumn}
 			{BEGIN iOTID_fieldcolumn}
 			<td  class="{$iOTID_class}" {$iOTID_style} {$recordattrs}>
 				{$iOTID_value}

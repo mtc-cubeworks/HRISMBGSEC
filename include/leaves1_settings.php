@@ -47,7 +47,7 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsleaves1["English"]["ApprovedDate"] = "Approved Date";
 	$fieldToolTipsleaves1["English"]["ApprovedDate"] = "";
 	$placeHoldersleaves1["English"]["ApprovedDate"] = "";
-	$fieldLabelsleaves1["English"]["Approvedby"] = "Approvedby";
+	$fieldLabelsleaves1["English"]["Approvedby"] = "Approved by";
 	$fieldToolTipsleaves1["English"]["Approvedby"] = "";
 	$placeHoldersleaves1["English"]["Approvedby"] = "";
 	$fieldLabelsleaves1["English"]["Posted"] = "Posted";
@@ -77,7 +77,7 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsleaves1["English"]["Superior2"] = "Manager";
 	$fieldToolTipsleaves1["English"]["Superior2"] = "";
 	$placeHoldersleaves1["English"]["Superior2"] = "";
-	$fieldLabelsleaves1["English"]["1stApproval"] = "Supevisor Approval";
+	$fieldLabelsleaves1["English"]["1stApproval"] = "Supervisor Approval";
 	$fieldToolTipsleaves1["English"]["1stApproval"] = "";
 	$placeHoldersleaves1["English"]["1stApproval"] = "";
 	$fieldLabelsleaves1["English"]["2ndApproval"] = "Manager Approval";
@@ -734,7 +734,8 @@ $tdataleaves1[".printFields"][] = "Locked";
 
 
 // the field's search options settings
-	
+		$fdata["defaultSearchOption"] = "Contains";
+
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
 // the end of search options settings
@@ -867,7 +868,8 @@ $tdataleaves1[".printFields"][] = "Locked";
 
 
 // the field's search options settings
-	
+		$fdata["defaultSearchOption"] = "Equals";
+
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
 // the end of search options settings
@@ -1025,7 +1027,8 @@ $tdataleaves1[".printFields"][] = "Locked";
 
 
 // the field's search options settings
-	
+		$fdata["defaultSearchOption"] = "Equals";
+
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
 // the end of search options settings
@@ -1449,7 +1452,8 @@ $tdataleaves1[".printFields"][] = "Locked";
 
 
 // the field's search options settings
-	
+		$fdata["defaultSearchOption"] = "Equals";
+
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
 // the end of search options settings
@@ -1576,7 +1580,8 @@ $tdataleaves1[".printFields"][] = "Locked";
 
 
 // the field's search options settings
-	
+		$fdata["defaultSearchOption"] = "Equals";
+
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
 // the end of search options settings
@@ -1861,7 +1866,8 @@ $tdataleaves1[".printFields"][] = "Locked";
 
 
 // the field's search options settings
-	
+		$fdata["defaultSearchOption"] = "Equals";
+
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
 // the end of search options settings
@@ -1988,7 +1994,8 @@ $tdataleaves1[".printFields"][] = "Locked";
 
 
 // the field's search options settings
-	
+		$fdata["defaultSearchOption"] = "Equals";
+
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
 // the end of search options settings
@@ -2116,7 +2123,8 @@ $tdataleaves1[".printFields"][] = "Locked";
 
 
 // the field's search options settings
-	
+		$fdata["defaultSearchOption"] = "Contains";
+
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
 // the end of search options settings
@@ -2244,7 +2252,8 @@ $tdataleaves1[".printFields"][] = "Locked";
 
 
 // the field's search options settings
-	
+		$fdata["defaultSearchOption"] = "Contains";
+
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
 // the end of search options settings
@@ -3131,7 +3140,7 @@ $tdataleaves1[".printFields"][] = "Locked";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Checkbox");
+	$vdata = array("ViewFormat" => "");
 
 	
 	
@@ -3145,7 +3154,8 @@ $tdataleaves1[".printFields"][] = "Locked";
 	
 	
 	
-	
+		$vdata["NeedEncode"] = true;
+
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -3154,12 +3164,39 @@ $tdataleaves1[".printFields"][] = "Locked";
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Checkbox");
+	$edata = array("EditFormat" => "Lookup wizard");
 
 	
 	
 		
 	
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "approvalbutton";
+		$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 4;
+
+	
+		
+	$edata["LinkField"] = "ApBID";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "SelectApproval";
+	
+	
+
+	
+	$edata["LookupOrderBy"] = "ApBID";
+
+	
+	
+	
+	
+
+	
+	
+	
+// End Lookup Settings
 
 
 	
@@ -3258,7 +3295,7 @@ $tdataleaves1[".printFields"][] = "Locked";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Checkbox");
+	$vdata = array("ViewFormat" => "");
 
 	
 	
@@ -3272,7 +3309,8 @@ $tdataleaves1[".printFields"][] = "Locked";
 	
 	
 	
-	
+		$vdata["NeedEncode"] = true;
+
 		
 	
 	$fdata["ViewFormats"]["view"] = $vdata;
@@ -3281,12 +3319,39 @@ $tdataleaves1[".printFields"][] = "Locked";
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Checkbox");
+	$edata = array("EditFormat" => "Lookup wizard");
 
 	
 	
 		
 	
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "approvalbutton";
+		$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 4;
+
+	
+		
+	$edata["LinkField"] = "ApBID";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "SelectApproval";
+	
+	
+
+	
+	$edata["LookupOrderBy"] = "ApBID";
+
+	
+	
+	
+	
+
+	
+	
+	
+// End Lookup Settings
 
 
 	

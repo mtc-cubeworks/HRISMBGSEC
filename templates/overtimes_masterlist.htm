@@ -24,11 +24,11 @@
 	.bs-gridcell[data-field=DateCreated]:before {
 		content: "{$label overtimes DateCreated}";
 	}
-	.bs-gridcell[data-field=FromDateTime]:before {
-		content: "{$label overtimes FromDateTime}";
+	.bs-gridcell[data-field=FromTime]:before {
+		content: "{$label overtimes FromTime}";
 	}
-	.bs-gridcell[data-field=ToDateTime]:before {
-		content: "{$label overtimes ToDateTime}";
+	.bs-gridcell[data-field=ToTime]:before {
+		content: "{$label overtimes ToTime}";
 	}
 	.bs-gridcell[data-field=Approved]:before {
 		content: "{$label overtimes Approved}";
@@ -57,41 +57,66 @@
 	.bs-gridcell[data-field=Division]:before {
 		content: "{$label overtimes Division}";
 	}
+	.bs-gridcell[data-field=CostCenter]:before {
+		content: "{$label overtimes CostCenter}";
+	}
+	.bs-gridcell[data-field=AllEmployees]:before {
+		content: "{$label overtimes AllEmployees}";
+	}
+	.bs-gridcell[data-field=DateOT]:before {
+		content: "{$label overtimes DateOT}";
+	}
+	.bs-gridcell[data-field=PreparedBy]:before {
+		content: "{$label overtimes PreparedBy}";
+	}
+	.bs-gridcell[data-field=Remarks]:before {
+		content: "{$label overtimes Remarks}";
+	}
 </style>
 <table {$masterlistgrid_hiddenattr} data-pageid="{$pageid}" data-brick="masterlistgrid" class="table rnr-b-mastergridfields rnr-gridtable bs-flexgrid" >
 		<thead>
 		<tr>
 			<th class="{$OtiD_class}">{$label overtimes OtiD}</th>
+			<th class="{$DateOT_class}">{$label overtimes DateOT}</th>
 			<th class="{$Employer_class}">{$label overtimes Employer}</th>
 			<th class="{$Division_class}">{$label overtimes Division}</th>
-			<th class="{$DateCreated_class}">{$label overtimes DateCreated}</th>
+			<th class="{$AllEmployees_class}">{$label overtimes AllEmployees}</th>
+			<th class="{$FromTime_class}">{$label overtimes FromTime}</th>
+			<th class="{$ToTime_class}">{$label overtimes ToTime}</th>
 			<th class="{$Reason_class}">{$label overtimes Reason}</th>
-			<th class="{$FromDateTime_class}">{$label overtimes FromDateTime}</th>
-			<th class="{$ToDateTime_class}">{$label overtimes ToDateTime}</th>
 			<th class="{$NoMins_class}">{$label overtimes NoMins}</th>
+			<th class="{$CostCenter_class}">{$label overtimes CostCenter}</th>
+			<th class="{$Remarks_class}">{$label overtimes Remarks}</th>
 			<th class="{$Approved_class}">{$label overtimes Approved}</th>
 			<th class="{$Approvedby_class}">{$label overtimes Approvedby}</th>
 			<th class="{$ApprovedDate_class}">{$label overtimes ApprovedDate}</th>
 			<th class="{$ApprovedTime_class}">{$label overtimes ApprovedTime}</th>
 			<th class="{$Posted_class}">{$label overtimes Posted}</th>
+			<th class="{$DateCreated_class}">{$label overtimes DateCreated}</th>
+			<th class="{$PreparedBy_class}">{$label overtimes PreparedBy}</th>
 		</tr>
 	</thead>
 	
 	<tbody>
 		<tr>
 			<td class="{$OtiD_class} bs-gridcell" data-field=OtiD>{$OtiD_mastervalue}</td>
+			<td class="{$DateOT_class} bs-gridcell" data-field=DateOT>{$DateOT_mastervalue}</td>
 			<td class="{$Employer_class} bs-gridcell" data-field=Employer>{$Employer_mastervalue}</td>
 			<td class="{$Division_class} bs-gridcell" data-field=Division>{$Division_mastervalue}</td>
-			<td class="{$DateCreated_class} bs-gridcell" data-field=DateCreated>{$DateCreated_mastervalue}</td>
+			<td class="{$AllEmployees_class} bs-gridcell" data-field=AllEmployees>{$AllEmployees_mastervalue}</td>
+			<td class="{$FromTime_class} bs-gridcell" data-field=FromTime>{$FromTime_mastervalue}</td>
+			<td class="{$ToTime_class} bs-gridcell" data-field=ToTime>{$ToTime_mastervalue}</td>
 			<td class="{$Reason_class} bs-gridcell" data-field=Reason>{$Reason_mastervalue}</td>
-			<td class="{$FromDateTime_class} bs-gridcell" data-field=FromDateTime>{$FromDateTime_mastervalue}</td>
-			<td class="{$ToDateTime_class} bs-gridcell" data-field=ToDateTime>{$ToDateTime_mastervalue}</td>
 			<td class="{$NoMins_class} bs-gridcell" data-field=NoMins>{$NoMins_mastervalue}</td>
+			<td class="{$CostCenter_class} bs-gridcell" data-field=CostCenter>{$CostCenter_mastervalue}</td>
+			<td class="{$Remarks_class} bs-gridcell" data-field=Remarks>{$Remarks_mastervalue}</td>
 			<td class="{$Approved_class} bs-gridcell" data-field=Approved>{$Approved_mastervalue}</td>
 			<td class="{$Approvedby_class} bs-gridcell" data-field=Approvedby>{$Approvedby_mastervalue}</td>
 			<td class="{$ApprovedDate_class} bs-gridcell" data-field=ApprovedDate>{$ApprovedDate_mastervalue}</td>
 			<td class="{$ApprovedTime_class} bs-gridcell" data-field=ApprovedTime>{$ApprovedTime_mastervalue}</td>
 			<td class="{$Posted_class} bs-gridcell" data-field=Posted>{$Posted_mastervalue}</td>
+			<td class="{$DateCreated_class} bs-gridcell" data-field=DateCreated>{$DateCreated_mastervalue}</td>
+			<td class="{$PreparedBy_class} bs-gridcell" data-field=PreparedBy>{$PreparedBy_mastervalue}</td>
 		</tr>
 	</tbody>
 

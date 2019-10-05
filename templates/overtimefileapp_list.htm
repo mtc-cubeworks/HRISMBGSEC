@@ -484,11 +484,11 @@
 	.bs-gridcell[data-field=DateCreated]:before {
 		content: "{$label overtimefileapp DateCreated}";
 	}
-	.bs-gridcell[data-field=FromDateTime]:before {
-		content: "{$label overtimefileapp FromDateTime}";
+	.bs-gridcell[data-field=FromTime]:before {
+		content: "{$label overtimefileapp FromTime}";
 	}
-	.bs-gridcell[data-field=ToDateTime]:before {
-		content: "{$label overtimefileapp ToDateTime}";
+	.bs-gridcell[data-field=ToTime]:before {
+		content: "{$label overtimefileapp ToTime}";
 	}
 	.bs-gridcell[data-field=Approved]:before {
 		content: "{$label overtimefileapp Approved}";
@@ -528,6 +528,9 @@
 	}
 	.bs-gridcell[data-field=2ndApproval]:before {
 		content: "{$label overtimefileapp 2ndApproval}";
+	}
+	.bs-gridcell[data-field=DateOT]:before {
+		content: "{$label overtimefileapp DateOT}";
 	}
 </style>
 <table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
@@ -572,6 +575,19 @@
 									
 									
 									
+									{BEGIN DateOT_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$DateOT_class}" data-field=DateOT>
+									{BEGIN DateOT_fieldheader}
+																				<span {$DateOT_orderlinkattrs}>
+											{$label overtimefileapp DateOT}
+										</span>
+									{END DateOT_fieldheader}
+									</th>
+									{END DateOT_fieldheadercolumn}
+									
+									
+									
+									
 									{BEGIN EmployeeID_fieldheadercolumn}
 									<th class="rnr-gridfieldlabel {$EmployeeID_class}" data-field=EmployeeID>
 									{BEGIN EmployeeID_fieldheader}
@@ -598,28 +614,28 @@
 									
 									
 									
-									{BEGIN FromDateTime_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$FromDateTime_class}" data-field=FromDateTime>
-									{BEGIN FromDateTime_fieldheader}
-																				<span {$FromDateTime_orderlinkattrs}>
-											{$label overtimefileapp FromDateTime}
+									{BEGIN FromTime_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$FromTime_class}" data-field=FromTime>
+									{BEGIN FromTime_fieldheader}
+																				<span {$FromTime_orderlinkattrs}>
+											{$label overtimefileapp FromTime}
 										</span>
-									{END FromDateTime_fieldheader}
+									{END FromTime_fieldheader}
 									</th>
-									{END FromDateTime_fieldheadercolumn}
+									{END FromTime_fieldheadercolumn}
 									
 									
 									
 									
-									{BEGIN ToDateTime_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$ToDateTime_class}" data-field=ToDateTime>
-									{BEGIN ToDateTime_fieldheader}
-																				<span {$ToDateTime_orderlinkattrs}>
-											{$label overtimefileapp ToDateTime}
+									{BEGIN ToTime_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$ToTime_class}" data-field=ToTime>
+									{BEGIN ToTime_fieldheader}
+																				<span {$ToTime_orderlinkattrs}>
+											{$label overtimefileapp ToTime}
 										</span>
-									{END ToDateTime_fieldheader}
+									{END ToTime_fieldheader}
 									</th>
-									{END ToDateTime_fieldheadercolumn}
+									{END ToTime_fieldheadercolumn}
 									
 									
 									
@@ -831,6 +847,13 @@
 {END DateCreated_fieldcolumn}
 
 
+	{BEGIN DateOT_fieldcolumn}
+	<td class="bs-gridcell {$DateOT_class}"  data-field=DateOT {$rowstyle} {$recordattrs}>
+		{$DateOT_value}
+	</td>
+{END DateOT_fieldcolumn}
+
+
 	{BEGIN EmployeeID_fieldcolumn}
 	<td class="bs-gridcell {$EmployeeID_class}"  data-field=EmployeeID {$rowstyle} {$recordattrs}>
 		{$EmployeeID_value}
@@ -845,18 +868,18 @@
 {END Reason_fieldcolumn}
 
 
-	{BEGIN FromDateTime_fieldcolumn}
-	<td class="bs-gridcell {$FromDateTime_class}"  data-field=FromDateTime {$rowstyle} {$recordattrs}>
-		{$FromDateTime_value}
+	{BEGIN FromTime_fieldcolumn}
+	<td class="bs-gridcell {$FromTime_class}"  data-field=FromTime {$rowstyle} {$recordattrs}>
+		{$FromTime_value}
 	</td>
-{END FromDateTime_fieldcolumn}
+{END FromTime_fieldcolumn}
 
 
-	{BEGIN ToDateTime_fieldcolumn}
-	<td class="bs-gridcell {$ToDateTime_class}"  data-field=ToDateTime {$rowstyle} {$recordattrs}>
-		{$ToDateTime_value}
+	{BEGIN ToTime_fieldcolumn}
+	<td class="bs-gridcell {$ToTime_class}"  data-field=ToTime {$rowstyle} {$recordattrs}>
+		{$ToTime_value}
 	</td>
-{END ToDateTime_fieldcolumn}
+{END ToTime_fieldcolumn}
 
 
 	{BEGIN NoMins_fieldcolumn}

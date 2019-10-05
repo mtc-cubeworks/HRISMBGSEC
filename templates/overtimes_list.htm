@@ -464,11 +464,11 @@
 	.bs-gridcell[data-field=DateCreated]:before {
 		content: "{$label overtimes DateCreated}";
 	}
-	.bs-gridcell[data-field=FromDateTime]:before {
-		content: "{$label overtimes FromDateTime}";
+	.bs-gridcell[data-field=FromTime]:before {
+		content: "{$label overtimes FromTime}";
 	}
-	.bs-gridcell[data-field=ToDateTime]:before {
-		content: "{$label overtimes ToDateTime}";
+	.bs-gridcell[data-field=ToTime]:before {
+		content: "{$label overtimes ToTime}";
 	}
 	.bs-gridcell[data-field=Approved]:before {
 		content: "{$label overtimes Approved}";
@@ -497,6 +497,21 @@
 	.bs-gridcell[data-field=Division]:before {
 		content: "{$label overtimes Division}";
 	}
+	.bs-gridcell[data-field=CostCenter]:before {
+		content: "{$label overtimes CostCenter}";
+	}
+	.bs-gridcell[data-field=AllEmployees]:before {
+		content: "{$label overtimes AllEmployees}";
+	}
+	.bs-gridcell[data-field=DateOT]:before {
+		content: "{$label overtimes DateOT}";
+	}
+	.bs-gridcell[data-field=PreparedBy]:before {
+		content: "{$label overtimes PreparedBy}";
+	}
+	.bs-gridcell[data-field=Remarks]:before {
+		content: "{$label overtimes Remarks}";
+	}
 </style>
 <table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
 	<thead>
@@ -518,6 +533,17 @@
 									{END OtiD_fieldheader}
 									</th>
 									{END OtiD_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN DateOT_fieldheadercolumn}<th class="rnr-gridfieldlabel {$DateOT_class}" data-field=DateOT>
+									{BEGIN DateOT_fieldheader}<span {$DateOT_orderlinkattrs}>
+											{$label overtimes DateOT}
+										</span>
+									{END DateOT_fieldheader}
+									</th>
+									{END DateOT_fieldheadercolumn}
 									
 									
 									
@@ -544,13 +570,35 @@
 									
 									
 									
-									{BEGIN DateCreated_fieldheadercolumn}<th class="rnr-gridfieldlabel {$DateCreated_class}" data-field=DateCreated>
-									{BEGIN DateCreated_fieldheader}<span {$DateCreated_orderlinkattrs}>
-											{$label overtimes DateCreated}
+									{BEGIN AllEmployees_fieldheadercolumn}<th class="rnr-gridfieldlabel {$AllEmployees_class}" data-field=AllEmployees>
+									{BEGIN AllEmployees_fieldheader}<span {$AllEmployees_orderlinkattrs}>
+											{$label overtimes AllEmployees}
 										</span>
-									{END DateCreated_fieldheader}
+									{END AllEmployees_fieldheader}
 									</th>
-									{END DateCreated_fieldheadercolumn}
+									{END AllEmployees_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN FromTime_fieldheadercolumn}<th class="rnr-gridfieldlabel {$FromTime_class}" data-field=FromTime>
+									{BEGIN FromTime_fieldheader}<span {$FromTime_orderlinkattrs}>
+											{$label overtimes FromTime}
+										</span>
+									{END FromTime_fieldheader}
+									</th>
+									{END FromTime_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN ToTime_fieldheadercolumn}<th class="rnr-gridfieldlabel {$ToTime_class}" data-field=ToTime>
+									{BEGIN ToTime_fieldheader}<span {$ToTime_orderlinkattrs}>
+											{$label overtimes ToTime}
+										</span>
+									{END ToTime_fieldheader}
+									</th>
+									{END ToTime_fieldheadercolumn}
 									
 									
 									
@@ -566,28 +614,6 @@
 									
 									
 									
-									{BEGIN FromDateTime_fieldheadercolumn}<th class="rnr-gridfieldlabel {$FromDateTime_class}" data-field=FromDateTime>
-									{BEGIN FromDateTime_fieldheader}<span {$FromDateTime_orderlinkattrs}>
-											{$label overtimes FromDateTime}
-										</span>
-									{END FromDateTime_fieldheader}
-									</th>
-									{END FromDateTime_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN ToDateTime_fieldheadercolumn}<th class="rnr-gridfieldlabel {$ToDateTime_class}" data-field=ToDateTime>
-									{BEGIN ToDateTime_fieldheader}<span {$ToDateTime_orderlinkattrs}>
-											{$label overtimes ToDateTime}
-										</span>
-									{END ToDateTime_fieldheader}
-									</th>
-									{END ToDateTime_fieldheadercolumn}
-									
-									
-									
-									
 									{BEGIN NoMins_fieldheadercolumn}<th class="rnr-gridfieldlabel {$NoMins_class}" data-field=NoMins>
 									{BEGIN NoMins_fieldheader}<span {$NoMins_orderlinkattrs}>
 											{$label overtimes NoMins}
@@ -595,6 +621,28 @@
 									{END NoMins_fieldheader}
 									</th>
 									{END NoMins_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN CostCenter_fieldheadercolumn}<th class="rnr-gridfieldlabel {$CostCenter_class}" data-field=CostCenter>
+									{BEGIN CostCenter_fieldheader}<span {$CostCenter_orderlinkattrs}>
+											{$label overtimes CostCenter}
+										</span>
+									{END CostCenter_fieldheader}
+									</th>
+									{END CostCenter_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Remarks_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Remarks_class}" data-field=Remarks>
+									{BEGIN Remarks_fieldheader}<span {$Remarks_orderlinkattrs}>
+											{$label overtimes Remarks}
+										</span>
+									{END Remarks_fieldheader}
+									</th>
+									{END Remarks_fieldheadercolumn}
 									
 									
 									
@@ -650,6 +698,28 @@
 									{END Posted_fieldheader}
 									</th>
 									{END Posted_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN DateCreated_fieldheadercolumn}<th class="rnr-gridfieldlabel {$DateCreated_class}" data-field=DateCreated>
+									{BEGIN DateCreated_fieldheader}<span {$DateCreated_orderlinkattrs}>
+											{$label overtimes DateCreated}
+										</span>
+									{END DateCreated_fieldheader}
+									</th>
+									{END DateCreated_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN PreparedBy_fieldheadercolumn}<th class="rnr-gridfieldlabel {$PreparedBy_class}" data-field=PreparedBy>
+									{BEGIN PreparedBy_fieldheader}<span {$PreparedBy_orderlinkattrs}>
+											{$label overtimes PreparedBy}
+										</span>
+									{END PreparedBy_fieldheader}
+									</th>
+									{END PreparedBy_fieldheadercolumn}
 									
 									
 									
@@ -713,6 +783,12 @@
 {END OtiD_fieldcolumn}
 
 
+	{BEGIN DateOT_fieldcolumn}<td class="bs-gridcell {$DateOT_class}"  data-field=DateOT {$rowstyle} {$recordattrs}>
+		{$DateOT_value}
+	</td>
+{END DateOT_fieldcolumn}
+
+
 	{BEGIN Employer_fieldcolumn}<td class="bs-gridcell {$Employer_class}"  data-field=Employer {$rowstyle} {$recordattrs}>
 		{$Employer_value}
 	</td>
@@ -725,10 +801,22 @@
 {END Division_fieldcolumn}
 
 
-	{BEGIN DateCreated_fieldcolumn}<td class="bs-gridcell {$DateCreated_class}"  data-field=DateCreated {$rowstyle} {$recordattrs}>
-		{$DateCreated_value}
+	{BEGIN AllEmployees_fieldcolumn}<td class="bs-gridcell {$AllEmployees_class}"  data-field=AllEmployees {$rowstyle} {$recordattrs}>
+		{$AllEmployees_value}
 	</td>
-{END DateCreated_fieldcolumn}
+{END AllEmployees_fieldcolumn}
+
+
+	{BEGIN FromTime_fieldcolumn}<td class="bs-gridcell {$FromTime_class}"  data-field=FromTime {$rowstyle} {$recordattrs}>
+		{$FromTime_value}
+	</td>
+{END FromTime_fieldcolumn}
+
+
+	{BEGIN ToTime_fieldcolumn}<td class="bs-gridcell {$ToTime_class}"  data-field=ToTime {$rowstyle} {$recordattrs}>
+		{$ToTime_value}
+	</td>
+{END ToTime_fieldcolumn}
 
 
 	{BEGIN Reason_fieldcolumn}<td class="bs-gridcell {$Reason_class}"  data-field=Reason {$rowstyle} {$recordattrs}>
@@ -737,22 +825,22 @@
 {END Reason_fieldcolumn}
 
 
-	{BEGIN FromDateTime_fieldcolumn}<td class="bs-gridcell {$FromDateTime_class}"  data-field=FromDateTime {$rowstyle} {$recordattrs}>
-		{$FromDateTime_value}
-	</td>
-{END FromDateTime_fieldcolumn}
-
-
-	{BEGIN ToDateTime_fieldcolumn}<td class="bs-gridcell {$ToDateTime_class}"  data-field=ToDateTime {$rowstyle} {$recordattrs}>
-		{$ToDateTime_value}
-	</td>
-{END ToDateTime_fieldcolumn}
-
-
 	{BEGIN NoMins_fieldcolumn}<td class="bs-gridcell {$NoMins_class}"  data-field=NoMins {$rowstyle} {$recordattrs}>
 		{$NoMins_value}
 	</td>
 {END NoMins_fieldcolumn}
+
+
+	{BEGIN CostCenter_fieldcolumn}<td class="bs-gridcell {$CostCenter_class}"  data-field=CostCenter {$rowstyle} {$recordattrs}>
+		{$CostCenter_value}
+	</td>
+{END CostCenter_fieldcolumn}
+
+
+	{BEGIN Remarks_fieldcolumn}<td class="bs-gridcell {$Remarks_class}"  data-field=Remarks {$rowstyle} {$recordattrs}>
+		{$Remarks_value}
+	</td>
+{END Remarks_fieldcolumn}
 
 
 	{BEGIN Approved_fieldcolumn}<td class="bs-gridcell {$Approved_class}"  data-field=Approved {$rowstyle} {$recordattrs}>
@@ -783,6 +871,18 @@
 		{$Posted_value}
 	</td>
 {END Posted_fieldcolumn}
+
+
+	{BEGIN DateCreated_fieldcolumn}<td class="bs-gridcell {$DateCreated_class}"  data-field=DateCreated {$rowstyle} {$recordattrs}>
+		{$DateCreated_value}
+	</td>
+{END DateCreated_fieldcolumn}
+
+
+	{BEGIN PreparedBy_fieldcolumn}<td class="bs-gridcell {$PreparedBy_class}"  data-field=PreparedBy {$rowstyle} {$recordattrs}>
+		{$PreparedBy_value}
+	</td>
+{END PreparedBy_fieldcolumn}
 
 	{BEGIN endrecord_block}<TD class="rnr-cs" style="width: 3px;" {$endrecordblock_attrs}>&nbsp;</td>
 	{END endrecord_block}

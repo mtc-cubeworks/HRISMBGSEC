@@ -247,7 +247,6 @@ $tdatafilelog[".allSearchFields"][] = "Locked";
 	$tdatafilelog[".allSearchFields"][] = "EmployeeID";
 	$tdatafilelog[".allSearchFields"][] = "log_time";
 	$tdatafilelog[".allSearchFields"][] = "Reason";
-	$tdatafilelog[".allSearchFields"][] = "ClockType";
 	$tdatafilelog[".allSearchFields"][] = "data";
 	$tdatafilelog[".allSearchFields"][] = "MLogID";
 	$tdatafilelog[".allSearchFields"][] = "MLogDate";
@@ -267,7 +266,6 @@ $tdatafilelog[".googleLikeFields"][] = "EmployeeID";
 $tdatafilelog[".googleLikeFields"][] = "TransID2";
 $tdatafilelog[".googleLikeFields"][] = "MLogID";
 $tdatafilelog[".googleLikeFields"][] = "MLogDate";
-$tdatafilelog[".googleLikeFields"][] = "ClockType";
 $tdatafilelog[".googleLikeFields"][] = "CheckedBy";
 $tdatafilelog[".googleLikeFields"][] = "ApprovedBy";
 $tdatafilelog[".googleLikeFields"][] = "HRApproval";
@@ -285,7 +283,6 @@ $tdatafilelog[".advSearchFields"][] = "TransID2";
 $tdatafilelog[".advSearchFields"][] = "EmployeeID";
 $tdatafilelog[".advSearchFields"][] = "log_time";
 $tdatafilelog[".advSearchFields"][] = "Reason";
-$tdatafilelog[".advSearchFields"][] = "ClockType";
 $tdatafilelog[".advSearchFields"][] = "data";
 $tdatafilelog[".advSearchFields"][] = "MLogID";
 $tdatafilelog[".advSearchFields"][] = "MLogDate";
@@ -1427,8 +1424,7 @@ $tdatafilelog[".printFields"][] = "HRApprovedDate";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -1544,12 +1540,6 @@ $tdatafilelog[".printFields"][] = "HRApprovedDate";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Equals";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 

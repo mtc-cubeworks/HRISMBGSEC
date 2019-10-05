@@ -80,6 +80,11 @@
 				{$label overtimefileapp DateCreated}
 			</th>
 			{END DateCreated_fieldheadercolumn}
+			{BEGIN DateOT_fieldheadercolumn}
+			<th class="{$DateOT_class}" {$DateOT_style}  data-field="DateOT">
+				{$label overtimefileapp DateOT}
+			</th>
+			{END DateOT_fieldheadercolumn}
 			{BEGIN EmployeeID_fieldheadercolumn}
 			<th class="{$EmployeeID_class}" {$EmployeeID_style}  data-field="EmployeeID">
 				{$label overtimefileapp EmployeeID}
@@ -90,16 +95,16 @@
 				{$label overtimefileapp Reason}
 			</th>
 			{END Reason_fieldheadercolumn}
-			{BEGIN FromDateTime_fieldheadercolumn}
-			<th class="{$FromDateTime_class}" {$FromDateTime_style}  data-field="FromDateTime">
-				{$label overtimefileapp FromDateTime}
+			{BEGIN FromTime_fieldheadercolumn}
+			<th class="{$FromTime_class}" {$FromTime_style}  data-field="FromTime">
+				{$label overtimefileapp FromTime}
 			</th>
-			{END FromDateTime_fieldheadercolumn}
-			{BEGIN ToDateTime_fieldheadercolumn}
-			<th class="{$ToDateTime_class}" {$ToDateTime_style}  data-field="ToDateTime">
-				{$label overtimefileapp ToDateTime}
+			{END FromTime_fieldheadercolumn}
+			{BEGIN ToTime_fieldheadercolumn}
+			<th class="{$ToTime_class}" {$ToTime_style}  data-field="ToTime">
+				{$label overtimefileapp ToTime}
 			</th>
-			{END ToDateTime_fieldheadercolumn}
+			{END ToTime_fieldheadercolumn}
 			{BEGIN NoMins_fieldheadercolumn}
 			<th class="{$NoMins_class}" {$NoMins_style}  data-field="NoMins">
 				{$label overtimefileapp NoMins}
@@ -177,6 +182,11 @@
 				{$DateCreated_value}
 			</td>
 			{END DateCreated_fieldcolumn}
+			{BEGIN DateOT_fieldcolumn}
+			<td  class="{$DateOT_class}" {$DateOT_style} {$recordattrs}>
+				{$DateOT_value}
+			</td>
+			{END DateOT_fieldcolumn}
 			{BEGIN EmployeeID_fieldcolumn}
 			<td  class="{$EmployeeID_class}" {$EmployeeID_style} {$recordattrs}>
 				{$EmployeeID_value}
@@ -187,16 +197,16 @@
 				{$Reason_value}
 			</td>
 			{END Reason_fieldcolumn}
-			{BEGIN FromDateTime_fieldcolumn}
-			<td  class="{$FromDateTime_class}" {$FromDateTime_style} {$recordattrs}>
-				{$FromDateTime_value}
+			{BEGIN FromTime_fieldcolumn}
+			<td  class="{$FromTime_class}" {$FromTime_style} {$recordattrs}>
+				{$FromTime_value}
 			</td>
-			{END FromDateTime_fieldcolumn}
-			{BEGIN ToDateTime_fieldcolumn}
-			<td  class="{$ToDateTime_class}" {$ToDateTime_style} {$recordattrs}>
-				{$ToDateTime_value}
+			{END FromTime_fieldcolumn}
+			{BEGIN ToTime_fieldcolumn}
+			<td  class="{$ToTime_class}" {$ToTime_style} {$recordattrs}>
+				{$ToTime_value}
 			</td>
-			{END ToDateTime_fieldcolumn}
+			{END ToTime_fieldcolumn}
 			{BEGIN NoMins_fieldcolumn}
 			<td  class="{$NoMins_class}" {$NoMins_style} {$recordattrs}>
 				{$NoMins_value}

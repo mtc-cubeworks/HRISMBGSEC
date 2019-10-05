@@ -115,21 +115,12 @@ $tdatapayroll[".listAjax"] = false;
 
 	$tdatapayroll[".locking"] = false;
 
-$tdatapayroll[".edit"] = true;
-$tdatapayroll[".afterEditAction"] = 0;
-$tdatapayroll[".closePopupAfterEdit"] = 1;
-$tdatapayroll[".afterEditActionDetTable"] = "payrolldiv";
 
-$tdatapayroll[".add"] = true;
-$tdatapayroll[".afterAddAction"] = 1;
-$tdatapayroll[".closePopupAfterAdd"] = 1;
-$tdatapayroll[".afterAddActionDetTable"] = "";
 
 $tdatapayroll[".list"] = true;
 
 $tdatapayroll[".inlineEdit"] = true;
 
-$tdatapayroll[".updateSelected"] = true;
 
 $tdatapayroll[".reorderRecordsByHeader"] = true;
 
@@ -137,7 +128,6 @@ $tdatapayroll[".reorderRecordsByHeader"] = true;
 $tdatapayroll[".exportFormatting"] = 2;
 $tdatapayroll[".exportDelimiter"] = ",";
 		
-$tdatapayroll[".inlineAdd"] = true;
 $tdatapayroll[".view"] = true;
 
 $tdatapayroll[".import"] = true;
@@ -382,19 +372,6 @@ $tdatapayroll[".viewFields"][] = "PresetTax";
 $tdatapayroll[".viewFields"][] = "13thMonth";
 
 $tdatapayroll[".addFields"] = array();
-$tdatapayroll[".addFields"][] = "Locked";
-$tdatapayroll[".addFields"][] = "Employer";
-$tdatapayroll[".addFields"][] = "Division";
-$tdatapayroll[".addFields"][] = "WageType";
-$tdatapayroll[".addFields"][] = "PayFromDate";
-$tdatapayroll[".addFields"][] = "PayToDate";
-$tdatapayroll[".addFields"][] = "PayDate";
-$tdatapayroll[".addFields"][] = "Statutories";
-$tdatapayroll[".addFields"][] = "Stat Loans";
-$tdatapayroll[".addFields"][] = "Deductions";
-$tdatapayroll[".addFields"][] = "Adjustments";
-$tdatapayroll[".addFields"][] = "PresetTax";
-$tdatapayroll[".addFields"][] = "13thMonth";
 
 $tdatapayroll[".masterListFields"] = array();
 $tdatapayroll[".masterListFields"][] = "PSID";
@@ -413,42 +390,11 @@ $tdatapayroll[".masterListFields"][] = "PresetTax";
 $tdatapayroll[".masterListFields"][] = "13thMonth";
 
 $tdatapayroll[".inlineAddFields"] = array();
-$tdatapayroll[".inlineAddFields"][] = "Locked";
-$tdatapayroll[".inlineAddFields"][] = "Employer";
-$tdatapayroll[".inlineAddFields"][] = "Division";
-$tdatapayroll[".inlineAddFields"][] = "WageType";
-$tdatapayroll[".inlineAddFields"][] = "PayFromDate";
-$tdatapayroll[".inlineAddFields"][] = "PayToDate";
-$tdatapayroll[".inlineAddFields"][] = "PayDate";
-$tdatapayroll[".inlineAddFields"][] = "Statutories";
-$tdatapayroll[".inlineAddFields"][] = "Stat Loans";
-$tdatapayroll[".inlineAddFields"][] = "Deductions";
-$tdatapayroll[".inlineAddFields"][] = "Adjustments";
-$tdatapayroll[".inlineAddFields"][] = "PresetTax";
-$tdatapayroll[".inlineAddFields"][] = "13thMonth";
 
 $tdatapayroll[".editFields"] = array();
-$tdatapayroll[".editFields"][] = "Locked";
-$tdatapayroll[".editFields"][] = "Employer";
-$tdatapayroll[".editFields"][] = "Division";
-$tdatapayroll[".editFields"][] = "WageType";
-$tdatapayroll[".editFields"][] = "PayFromDate";
-$tdatapayroll[".editFields"][] = "PayToDate";
-$tdatapayroll[".editFields"][] = "PayDate";
-$tdatapayroll[".editFields"][] = "Statutories";
-$tdatapayroll[".editFields"][] = "Stat Loans";
-$tdatapayroll[".editFields"][] = "Deductions";
-$tdatapayroll[".editFields"][] = "Adjustments";
-$tdatapayroll[".editFields"][] = "PresetTax";
-$tdatapayroll[".editFields"][] = "13thMonth";
 
 $tdatapayroll[".inlineEditFields"] = array();
 $tdatapayroll[".inlineEditFields"][] = "Locked";
-$tdatapayroll[".inlineEditFields"][] = "Employer";
-$tdatapayroll[".inlineEditFields"][] = "Division";
-$tdatapayroll[".inlineEditFields"][] = "WageType";
-$tdatapayroll[".inlineEditFields"][] = "PayFromDate";
-$tdatapayroll[".inlineEditFields"][] = "PayToDate";
 $tdatapayroll[".inlineEditFields"][] = "PayDate";
 $tdatapayroll[".inlineEditFields"][] = "Statutories";
 $tdatapayroll[".inlineEditFields"][] = "Stat Loans";
@@ -458,10 +404,6 @@ $tdatapayroll[".inlineEditFields"][] = "PresetTax";
 $tdatapayroll[".inlineEditFields"][] = "13thMonth";
 
 $tdatapayroll[".updateSelectedFields"] = array();
-$tdatapayroll[".updateSelectedFields"][] = "Locked";
-$tdatapayroll[".updateSelectedFields"][] = "PayFromDate";
-$tdatapayroll[".updateSelectedFields"][] = "PayToDate";
-$tdatapayroll[".updateSelectedFields"][] = "PayDate";
 
 
 $tdatapayroll[".exportFields"] = array();
@@ -659,16 +601,12 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
+	
+	
+	
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -791,16 +729,11 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -921,16 +854,11 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -1051,16 +979,12 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
+	
+	
+	
 		$fdata["bInlineEdit"] = true;
 
-		$fdata["bUpdateSelected"] = true;
-
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -1179,12 +1103,9 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
+	
+	
+	
 		$fdata["bInlineEdit"] = true;
 
 	
@@ -1306,12 +1227,9 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
+	
+	
+	
 		$fdata["bInlineEdit"] = true;
 
 	
@@ -1433,12 +1351,9 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
+	
+	
+	
 		$fdata["bInlineEdit"] = true;
 
 	
@@ -1560,12 +1475,9 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
+	
+	
+	
 		$fdata["bInlineEdit"] = true;
 
 	
@@ -1687,12 +1599,9 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
+	
+	
+	
 		$fdata["bInlineEdit"] = true;
 
 	
@@ -1814,12 +1723,9 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
+	
+	
+	
 		$fdata["bInlineEdit"] = true;
 
 	
@@ -1941,14 +1847,10 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
+	
+	
+	
+	
 	
 
 		$fdata["bViewPage"] = true;
@@ -2099,14 +2001,10 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
+	
+	
+	
+	
 	
 
 		$fdata["bViewPage"] = true;
@@ -2257,14 +2155,10 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
+	
+	
+	
+	
 	
 
 		$fdata["bViewPage"] = true;

@@ -44,6 +44,9 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsindovertime1["English"]["NoMins"] = "No Mins";
 	$fieldToolTipsindovertime1["English"]["NoMins"] = "";
 	$placeHoldersindovertime1["English"]["NoMins"] = "";
+	$fieldLabelsindovertime1["English"]["Reason"] = "Reason";
+	$fieldToolTipsindovertime1["English"]["Reason"] = "";
+	$placeHoldersindovertime1["English"]["Reason"] = "";
 	if (count($fieldToolTipsindovertime1["English"]))
 		$tdataindovertime1[".isUseToolTips"] = true;
 }
@@ -160,7 +163,7 @@ $tdataindovertime1[".buttonsAdded"] = false;
 $tdataindovertime1[".addPageEvents"] = true;
 
 // use timepicker for search panel
-$tdataindovertime1[".isUseTimeForSearch"] = false;
+$tdataindovertime1[".isUseTimeForSearch"] = true;
 
 
 
@@ -171,7 +174,8 @@ $tdataindovertime1[".allSearchFields"] = array();
 $tdataindovertime1[".filterFields"] = array();
 $tdataindovertime1[".requiredSearchFields"] = array();
 
-$tdataindovertime1[".allSearchFields"][] = "iOTID";
+$tdataindovertime1[".allSearchFields"][] = "Reason";
+	$tdataindovertime1[".allSearchFields"][] = "iOTID";
 	$tdataindovertime1[".allSearchFields"][] = "DateCreated";
 	$tdataindovertime1[".allSearchFields"][] = "EmployeeID";
 	$tdataindovertime1[".allSearchFields"][] = "OTDate";
@@ -188,9 +192,11 @@ $tdataindovertime1[".googleLikeFields"][] = "OTDate";
 $tdataindovertime1[".googleLikeFields"][] = "NoMins";
 $tdataindovertime1[".googleLikeFields"][] = "FromTime";
 $tdataindovertime1[".googleLikeFields"][] = "ToTime";
+$tdataindovertime1[".googleLikeFields"][] = "Reason";
 
 
 $tdataindovertime1[".advSearchFields"] = array();
+$tdataindovertime1[".advSearchFields"][] = "Reason";
 $tdataindovertime1[".advSearchFields"][] = "iOTID";
 $tdataindovertime1[".advSearchFields"][] = "DateCreated";
 $tdataindovertime1[".advSearchFields"][] = "EmployeeID";
@@ -242,11 +248,22 @@ $tdataindovertime1[".orderindexes"] = array();
 	$tdataindovertime1[".orderindexes"][] = array(1, (0 ? "ASC" : "DESC"), "iOTID");
 
 
-$tdataindovertime1[".sqlHead"] = "SELECT iOTID,  DateCreated,  EmployeeID,  OTDate,  NoMins,  FromTime,  ToTime";
+$tdataindovertime1[".sqlHead"] = "SELECT iOTID,  DateCreated,  EmployeeID,  OTDate,  NoMins,  FromTime,  ToTime,  Reason";
 $tdataindovertime1[".sqlFrom"] = "FROM indovertime";
 $tdataindovertime1[".sqlWhereExpr"] = "";
 $tdataindovertime1[".sqlTail"] = "";
 
+//fill array of tabs for list page
+$arrGridTabs = array();
+$arrGridTabs[] = array(
+	'tabId' => "",
+	'name' => "All data",
+	'nameType' => 'Text',
+	'where' => "",	
+	'showRowCount' => 0,
+	'hideEmpty' => 0,	
+);				  
+$tdataindovertime1[".arrGridTabs"] = $arrGridTabs;
 
 
 
@@ -287,6 +304,7 @@ $tableKeysindovertime1[] = "iOTID";
 $tdataindovertime1[".Keys"] = $tableKeysindovertime1;
 
 $tdataindovertime1[".listFields"] = array();
+$tdataindovertime1[".listFields"][] = "Reason";
 $tdataindovertime1[".listFields"][] = "iOTID";
 $tdataindovertime1[".listFields"][] = "DateCreated";
 $tdataindovertime1[".listFields"][] = "EmployeeID";
@@ -299,6 +317,7 @@ $tdataindovertime1[".hideMobileList"] = array();
 
 
 $tdataindovertime1[".viewFields"] = array();
+$tdataindovertime1[".viewFields"][] = "Reason";
 $tdataindovertime1[".viewFields"][] = "iOTID";
 $tdataindovertime1[".viewFields"][] = "DateCreated";
 $tdataindovertime1[".viewFields"][] = "EmployeeID";
@@ -308,6 +327,7 @@ $tdataindovertime1[".viewFields"][] = "ToTime";
 $tdataindovertime1[".viewFields"][] = "NoMins";
 
 $tdataindovertime1[".addFields"] = array();
+$tdataindovertime1[".addFields"][] = "Reason";
 $tdataindovertime1[".addFields"][] = "DateCreated";
 $tdataindovertime1[".addFields"][] = "OTDate";
 $tdataindovertime1[".addFields"][] = "FromTime";
@@ -315,6 +335,7 @@ $tdataindovertime1[".addFields"][] = "ToTime";
 $tdataindovertime1[".addFields"][] = "NoMins";
 
 $tdataindovertime1[".masterListFields"] = array();
+$tdataindovertime1[".masterListFields"][] = "Reason";
 $tdataindovertime1[".masterListFields"][] = "iOTID";
 $tdataindovertime1[".masterListFields"][] = "DateCreated";
 $tdataindovertime1[".masterListFields"][] = "EmployeeID";
@@ -324,6 +345,7 @@ $tdataindovertime1[".masterListFields"][] = "ToTime";
 $tdataindovertime1[".masterListFields"][] = "NoMins";
 
 $tdataindovertime1[".inlineAddFields"] = array();
+$tdataindovertime1[".inlineAddFields"][] = "Reason";
 $tdataindovertime1[".inlineAddFields"][] = "DateCreated";
 $tdataindovertime1[".inlineAddFields"][] = "OTDate";
 $tdataindovertime1[".inlineAddFields"][] = "FromTime";
@@ -331,6 +353,7 @@ $tdataindovertime1[".inlineAddFields"][] = "ToTime";
 $tdataindovertime1[".inlineAddFields"][] = "NoMins";
 
 $tdataindovertime1[".editFields"] = array();
+$tdataindovertime1[".editFields"][] = "Reason";
 $tdataindovertime1[".editFields"][] = "DateCreated";
 $tdataindovertime1[".editFields"][] = "EmployeeID";
 $tdataindovertime1[".editFields"][] = "OTDate";
@@ -339,6 +362,7 @@ $tdataindovertime1[".editFields"][] = "ToTime";
 $tdataindovertime1[".editFields"][] = "NoMins";
 
 $tdataindovertime1[".inlineEditFields"] = array();
+$tdataindovertime1[".inlineEditFields"][] = "Reason";
 $tdataindovertime1[".inlineEditFields"][] = "DateCreated";
 $tdataindovertime1[".inlineEditFields"][] = "EmployeeID";
 $tdataindovertime1[".inlineEditFields"][] = "OTDate";
@@ -356,6 +380,7 @@ $tdataindovertime1[".updateSelectedFields"][] = "NoMins";
 
 
 $tdataindovertime1[".exportFields"] = array();
+$tdataindovertime1[".exportFields"][] = "Reason";
 $tdataindovertime1[".exportFields"][] = "iOTID";
 $tdataindovertime1[".exportFields"][] = "DateCreated";
 $tdataindovertime1[".exportFields"][] = "EmployeeID";
@@ -372,8 +397,10 @@ $tdataindovertime1[".importFields"][] = "OTDate";
 $tdataindovertime1[".importFields"][] = "NoMins";
 $tdataindovertime1[".importFields"][] = "FromTime";
 $tdataindovertime1[".importFields"][] = "ToTime";
+$tdataindovertime1[".importFields"][] = "Reason";
 
 $tdataindovertime1[".printFields"] = array();
+$tdataindovertime1[".printFields"][] = "Reason";
 $tdataindovertime1[".printFields"][] = "iOTID";
 $tdataindovertime1[".printFields"][] = "DateCreated";
 $tdataindovertime1[".printFields"][] = "EmployeeID";
@@ -1066,7 +1093,7 @@ $tdataindovertime1[".printFields"][] = "NoMins";
 	$fdata["GoodName"] = "FromTime";
 	$fdata["ownerTable"] = "indovertime";
 	$fdata["Label"] = GetFieldLabel("indovertime1","FromTime");
-	$fdata["FieldType"] = 135;
+	$fdata["FieldType"] = 134;
 
 	
 	
@@ -1107,7 +1134,7 @@ $tdataindovertime1[".printFields"][] = "NoMins";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Datetime");
+	$vdata = array("ViewFormat" => "Time");
 
 	
 	
@@ -1131,7 +1158,7 @@ $tdataindovertime1[".printFields"][] = "NoMins";
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Date");
+	$edata = array("EditFormat" => "Time");
 
 		$edata["ShowTime"] = true;
 
@@ -1140,7 +1167,8 @@ $tdataindovertime1[".printFields"][] = "NoMins";
 	
 
 
-	
+		$edata["IsRequired"] = true;
+
 	
 	
 			$edata["acceptFileTypes"] = ".+$";
@@ -1149,26 +1177,31 @@ $tdataindovertime1[".printFields"][] = "NoMins";
 
 	
 	
-		$edata["DateEditType"] = 11;
-	$edata["InitialYearFactor"] = 0;
-	$edata["LastYearFactor"] = 21;
-
 	
 	
 	
+		$edata["EditParams"] = "";
+		
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-	
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Time");
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
 	
 	//	End validation
 
 	
 			
-	
+				$hours = 12;
+	$edata["FormatTimeAttrs"] = array("useTimePicker" => 1,
+									  "hours" => $hours,
+									  "minutes" => 1,
+									  "showSeconds" => 0);
+
 	
 	
 	$fdata["EditFormats"]["edit"] = $edata;
@@ -1199,7 +1232,7 @@ $tdataindovertime1[".printFields"][] = "NoMins";
 	$fdata["GoodName"] = "ToTime";
 	$fdata["ownerTable"] = "indovertime";
 	$fdata["Label"] = GetFieldLabel("indovertime1","ToTime");
-	$fdata["FieldType"] = 135;
+	$fdata["FieldType"] = 134;
 
 	
 	
@@ -1240,7 +1273,7 @@ $tdataindovertime1[".printFields"][] = "NoMins";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Datetime");
+	$vdata = array("ViewFormat" => "Time");
 
 	
 	
@@ -1264,10 +1297,147 @@ $tdataindovertime1[".printFields"][] = "NoMins";
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Date");
+	$edata = array("EditFormat" => "Time");
 
 		$edata["ShowTime"] = true;
 
+	
+		
+	
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Time");
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
+	
+	//	End validation
+
+	
+			
+				$hours = 12;
+	$edata["FormatTimeAttrs"] = array("useTimePicker" => 1,
+									  "hours" => $hours,
+									  "minutes" => 1,
+									  "showSeconds" => 0);
+
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
+// the end of search options settings
+
+
+
+
+	$tdataindovertime1["ToTime"] = $fdata;
+//	Reason
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 8;
+	$fdata["strName"] = "Reason";
+	$fdata["GoodName"] = "Reason";
+	$fdata["ownerTable"] = "indovertime";
+	$fdata["Label"] = GetFieldLabel("indovertime1","Reason");
+	$fdata["FieldType"] = 200;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "Reason";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "Reason";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
 	
 		
 	
@@ -1282,13 +1452,13 @@ $tdataindovertime1[".printFields"][] = "NoMins";
 
 	
 	
-		$edata["DateEditType"] = 11;
-	$edata["InitialYearFactor"] = 0;
-	$edata["LastYearFactor"] = 21;
+	
+	
+			$edata["HTML5InuptType"] = "text";
 
-	
-	
-	
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=80";
+
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
@@ -1314,16 +1484,16 @@ $tdataindovertime1[".printFields"][] = "NoMins";
 
 
 // the field's search options settings
-		$fdata["defaultSearchOption"] = "Equals";
+		$fdata["defaultSearchOption"] = "Contains";
 
 			// the default search options list
-				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
 // the end of search options settings
 
 
 
 
-	$tdataindovertime1["ToTime"] = $fdata;
+	$tdataindovertime1["Reason"] = $fdata;
 
 
 $tables_data["indovertime1"]=&$tdataindovertime1;
@@ -1357,7 +1527,7 @@ function createSqlQuery_indovertime1()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "iOTID,  DateCreated,  EmployeeID,  OTDate,  NoMins,  FromTime,  ToTime";
+$proto0["m_strFieldList"] = "iOTID,  DateCreated,  EmployeeID,  OTDate,  NoMins,  FromTime,  ToTime,  Reason";
 $proto0["m_strFrom"] = "FROM indovertime";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "ORDER BY iOTID DESC";
@@ -1495,62 +1665,76 @@ $proto18["m_alias"] = "";
 $obj = new SQLFieldListItem($proto18);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto20=array();
-$proto20["m_link"] = "SQLL_MAIN";
-			$proto21=array();
-$proto21["m_strName"] = "indovertime";
-$proto21["m_srcTableName"] = "indovertime1";
-$proto21["m_columns"] = array();
-$proto21["m_columns"][] = "iOTID";
-$proto21["m_columns"][] = "DateCreated";
-$proto21["m_columns"][] = "EmployeeID";
-$proto21["m_columns"][] = "OTDate";
-$proto21["m_columns"][] = "NoMins";
-$proto21["m_columns"][] = "OtiD";
-$proto21["m_columns"][] = "FromTime";
-$proto21["m_columns"][] = "ToTime";
-$proto21["m_columns"][] = "Crossmidnight";
-$proto21["m_columns"][] = "ItiD";
-$proto21["m_columns"][] = "Reason";
-$obj = new SQLTable($proto21);
+						$proto20=array();
+			$obj = new SQLField(array(
+	"m_strName" => "Reason",
+	"m_strTable" => "indovertime",
+	"m_srcTableName" => "indovertime1"
+));
 
-$proto20["m_table"] = $obj;
-$proto20["m_sql"] = "indovertime";
-$proto20["m_alias"] = "";
+$proto20["m_sql"] = "Reason";
 $proto20["m_srcTableName"] = "indovertime1";
-$proto22=array();
-$proto22["m_sql"] = "";
-$proto22["m_uniontype"] = "SQLL_UNKNOWN";
+$proto20["m_expr"]=$obj;
+$proto20["m_alias"] = "";
+$obj = new SQLFieldListItem($proto20);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto22=array();
+$proto22["m_link"] = "SQLL_MAIN";
+			$proto23=array();
+$proto23["m_strName"] = "indovertime";
+$proto23["m_srcTableName"] = "indovertime1";
+$proto23["m_columns"] = array();
+$proto23["m_columns"][] = "iOTID";
+$proto23["m_columns"][] = "DateCreated";
+$proto23["m_columns"][] = "EmployeeID";
+$proto23["m_columns"][] = "OTDate";
+$proto23["m_columns"][] = "NoMins";
+$proto23["m_columns"][] = "OtiD";
+$proto23["m_columns"][] = "FromTime";
+$proto23["m_columns"][] = "ToTime";
+$proto23["m_columns"][] = "Crossmidnight";
+$proto23["m_columns"][] = "ItiD";
+$proto23["m_columns"][] = "Reason";
+$obj = new SQLTable($proto23);
+
+$proto22["m_table"] = $obj;
+$proto22["m_sql"] = "indovertime";
+$proto22["m_alias"] = "";
+$proto22["m_srcTableName"] = "indovertime1";
+$proto24=array();
+$proto24["m_sql"] = "";
+$proto24["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto22["m_column"]=$obj;
-$proto22["m_contained"] = array();
-$proto22["m_strCase"] = "";
-$proto22["m_havingmode"] = false;
-$proto22["m_inBrackets"] = false;
-$proto22["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto22);
+$proto24["m_column"]=$obj;
+$proto24["m_contained"] = array();
+$proto24["m_strCase"] = "";
+$proto24["m_havingmode"] = false;
+$proto24["m_inBrackets"] = false;
+$proto24["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto24);
 
-$proto20["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto20);
+$proto22["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto22);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
 $proto0["m_orderby"] = array();
-												$proto24=array();
+												$proto26=array();
 						$obj = new SQLField(array(
 	"m_strName" => "iOTID",
 	"m_strTable" => "indovertime",
 	"m_srcTableName" => "indovertime1"
 ));
 
-$proto24["m_column"]=$obj;
-$proto24["m_bAsc"] = 0;
-$proto24["m_nColumn"] = 0;
-$obj = new SQLOrderByItem($proto24);
+$proto26["m_column"]=$obj;
+$proto26["m_bAsc"] = 0;
+$proto26["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto26);
 
 $proto0["m_orderby"][]=$obj;					
 $proto0["m_srcTableName"]="indovertime1";		
@@ -1564,7 +1748,7 @@ $queryData_indovertime1 = createSqlQuery_indovertime1();
 	
 		;
 
-							
+								
 
 $tdataindovertime1[".sqlquery"] = $queryData_indovertime1;
 

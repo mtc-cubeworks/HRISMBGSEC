@@ -61,6 +61,16 @@
 <div {$viewfields_hiddenattr} data-pageid="{$pageid}" data-brick="viewfields" >
 
 	<div class="container">
+					{BEGIN Reason_fieldblock}
+	<div class="{$fielddispclass_Reason} col-md-6 bs-viewcontrolgroup" data-fieldname="Reason">
+		<label class="control-label" for="{$labelfor_Reason}">
+			{$label indovertime1 Reason}
+		</label>
+		<div class="" >
+			{$Reason_value}&nbsp;
+		</div>
+	</div>
+{END Reason_fieldblock}
 					{BEGIN iOTID_fieldblock}
 	<div class="{$fielddispclass_iOTID} col-md-6 bs-viewcontrolgroup" data-fieldname="iOTID">
 		<label class="control-label" for="{$labelfor_iOTID}">

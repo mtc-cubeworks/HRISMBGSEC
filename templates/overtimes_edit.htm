@@ -93,6 +93,24 @@
 
 
 
+			{BEGIN DateOT_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_DateOT}" data-fieldname="DateOT" data-signal-error-for="DateOT{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_DateOT}">
+		{BEGIN DateOT_label}{$label overtimes DateOT}{END DateOT_label}
+	</label>
+	<div class="col-md-6" >
+		{$DateOT_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="DateOT">
+		<div class="text-muted" >
+		{$tooltip overtimes DateOT}
+		</div>
+	</div>
+</div>
+</div>
+{END DateOT_fieldblock}
+
 			{BEGIN Employer_fieldblock}
 <div class=container>
 <div class="form-group {$fielddispclass_Employer}" data-fieldname="Employer" data-signal-error-for="Employer{$id}" >
@@ -129,23 +147,59 @@
 </div>
 {END Division_fieldblock}
 
-			{BEGIN DateCreated_fieldblock}
+			{BEGIN AllEmployees_fieldblock}
 <div class=container>
-<div class="form-group {$fielddispclass_DateCreated}" data-fieldname="DateCreated" data-signal-error-for="DateCreated{$id}" >
-	<label class="col-md-3 control-label" for="{$labelfor_DateCreated}">
-		{BEGIN DateCreated_label}{$label overtimes DateCreated}{END DateCreated_label}
+<div class="form-group {$fielddispclass_AllEmployees}" data-fieldname="AllEmployees" data-signal-error-for="AllEmployees{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_AllEmployees}">
+		{BEGIN AllEmployees_label}{$label overtimes AllEmployees}{END AllEmployees_label}
 	</label>
 	<div class="col-md-6" >
-		{$DateCreated_editcontrol}
+		{$AllEmployees_editcontrol}
 	</div>
-	<div class="col-md-3 help-block" data-helpfor="DateCreated">
+	<div class="col-md-3 help-block" data-helpfor="AllEmployees">
 		<div class="text-muted" >
-		{$tooltip overtimes DateCreated}
+		{$tooltip overtimes AllEmployees}
 		</div>
 	</div>
 </div>
 </div>
-{END DateCreated_fieldblock}
+{END AllEmployees_fieldblock}
+
+			{BEGIN FromTime_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_FromTime}" data-fieldname="FromTime" data-signal-error-for="FromTime{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_FromTime}">
+		{BEGIN FromTime_label}{$label overtimes FromTime}{END FromTime_label}
+	</label>
+	<div class="col-md-6" >
+		{$FromTime_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="FromTime">
+		<div class="text-muted" >
+		{$tooltip overtimes FromTime}
+		</div>
+	</div>
+</div>
+</div>
+{END FromTime_fieldblock}
+
+			{BEGIN ToTime_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_ToTime}" data-fieldname="ToTime" data-signal-error-for="ToTime{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_ToTime}">
+		{BEGIN ToTime_label}{$label overtimes ToTime}{END ToTime_label}
+	</label>
+	<div class="col-md-6" >
+		{$ToTime_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="ToTime">
+		<div class="text-muted" >
+		{$tooltip overtimes ToTime}
+		</div>
+	</div>
+</div>
+</div>
+{END ToTime_fieldblock}
 
 			{BEGIN Reason_fieldblock}
 <div class=container>
@@ -165,42 +219,6 @@
 </div>
 {END Reason_fieldblock}
 
-			{BEGIN FromDateTime_fieldblock}
-<div class=container>
-<div class="form-group {$fielddispclass_FromDateTime}" data-fieldname="FromDateTime" data-signal-error-for="FromDateTime{$id}" >
-	<label class="col-md-3 control-label" for="{$labelfor_FromDateTime}">
-		{BEGIN FromDateTime_label}{$label overtimes FromDateTime}{END FromDateTime_label}
-	</label>
-	<div class="col-md-6" >
-		{$FromDateTime_editcontrol}
-	</div>
-	<div class="col-md-3 help-block" data-helpfor="FromDateTime">
-		<div class="text-muted" >
-		{$tooltip overtimes FromDateTime}
-		</div>
-	</div>
-</div>
-</div>
-{END FromDateTime_fieldblock}
-
-			{BEGIN ToDateTime_fieldblock}
-<div class=container>
-<div class="form-group {$fielddispclass_ToDateTime}" data-fieldname="ToDateTime" data-signal-error-for="ToDateTime{$id}" >
-	<label class="col-md-3 control-label" for="{$labelfor_ToDateTime}">
-		{BEGIN ToDateTime_label}{$label overtimes ToDateTime}{END ToDateTime_label}
-	</label>
-	<div class="col-md-6" >
-		{$ToDateTime_editcontrol}
-	</div>
-	<div class="col-md-3 help-block" data-helpfor="ToDateTime">
-		<div class="text-muted" >
-		{$tooltip overtimes ToDateTime}
-		</div>
-	</div>
-</div>
-</div>
-{END ToDateTime_fieldblock}
-
 			{BEGIN NoMins_fieldblock}
 <div class=container>
 <div class="form-group {$fielddispclass_NoMins}" data-fieldname="NoMins" data-signal-error-for="NoMins{$id}" >
@@ -218,6 +236,42 @@
 </div>
 </div>
 {END NoMins_fieldblock}
+
+			{BEGIN CostCenter_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_CostCenter}" data-fieldname="CostCenter" data-signal-error-for="CostCenter{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_CostCenter}">
+		{BEGIN CostCenter_label}{$label overtimes CostCenter}{END CostCenter_label}
+	</label>
+	<div class="col-md-6" >
+		{$CostCenter_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="CostCenter">
+		<div class="text-muted" >
+		{$tooltip overtimes CostCenter}
+		</div>
+	</div>
+</div>
+</div>
+{END CostCenter_fieldblock}
+
+			{BEGIN Remarks_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Remarks}" data-fieldname="Remarks" data-signal-error-for="Remarks{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Remarks}">
+		{BEGIN Remarks_label}{$label overtimes Remarks}{END Remarks_label}
+	</label>
+	<div class="col-md-6" >
+		{$Remarks_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Remarks">
+		<div class="text-muted" >
+		{$tooltip overtimes Remarks}
+		</div>
+	</div>
+</div>
+</div>
+{END Remarks_fieldblock}
 
 			{BEGIN Approved_fieldblock}
 <div class=container>
@@ -308,6 +362,42 @@
 </div>
 </div>
 {END Posted_fieldblock}
+
+			{BEGIN DateCreated_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_DateCreated}" data-fieldname="DateCreated" data-signal-error-for="DateCreated{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_DateCreated}">
+		{BEGIN DateCreated_label}{$label overtimes DateCreated}{END DateCreated_label}
+	</label>
+	<div class="col-md-6" >
+		{$DateCreated_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="DateCreated">
+		<div class="text-muted" >
+		{$tooltip overtimes DateCreated}
+		</div>
+	</div>
+</div>
+</div>
+{END DateCreated_fieldblock}
+
+			{BEGIN PreparedBy_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_PreparedBy}" data-fieldname="PreparedBy" data-signal-error-for="PreparedBy{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_PreparedBy}">
+		{BEGIN PreparedBy_label}{$label overtimes PreparedBy}{END PreparedBy_label}
+	</label>
+	<div class="col-md-6" >
+		{$PreparedBy_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="PreparedBy">
+		<div class="text-muted" >
+		{$tooltip overtimes PreparedBy}
+		</div>
+	</div>
+</div>
+</div>
+{END PreparedBy_fieldblock}
 
 			
 		

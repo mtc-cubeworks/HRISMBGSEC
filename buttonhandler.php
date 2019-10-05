@@ -1498,23 +1498,16 @@ $posi = DBLookup("SELECT Position FROM demo_user WHERE EmployeeID='$empid'");
 
 $thirt = DBLookup("SELECT thirteenth FROM thirthind WHERE EmployeeID='$empid' and ToDate='$tod'");
 
-$sqlr = "UPDATE payrolltab SET WageType='$wt', Status='$st', BasicMonthly='$bm', BasicDaily='$bd', DWork='$dw', Absent='$ab', LateMins='$lm', UndertimeMins='$um', RHolidayHrs='$rh', SHolidayHrs='$sh',
- CHolidayHrs='$ch', ExcessHrs='$eh', RegOTHrs='$rot', RHOTHrs='$rhot', SHOTHRs='$shot', CHOTHrs='$chot', RDOTHrs='$rdot', NDHrs='$nd', NDOTHrs='$ndot', RDHrs='$rd', RegNDHrs='$rnd', RegNDOTHrs='$rndot', RHNDHrs='$rhnd', RHNDOTHrs='$rhndot', SHNDHrs='$shnd', SHNDOTHrs='$shndot', CHNDHrs='$chnd', 
- CHNDOTHrs='$chndot', RDNDHrs='$rdnd', RDNDOTHrs='$rdndot', VLDays='$vl',
- SLDays='$sl', ELDays='$el', PLDays='$pl', TrODays='$tro', FromDate='$frd',  UserName='$usern', AllowancePerDay='$alw', VLBalance='$vlb', SLBalance='$slb', ELBalance='$elb', PLBalance='$plb', AgencyShare='$ashare', NDMealallowance='$ndma', Division='$divi', Employer='$empr', Email='$email', Position='$posi', Thirteenth='$thirt',
- DH='$w1', DHRD='$w2', DHOT='$w3', DHRDOT='$w4', SHRDND='$w5', RHRDND='$w6', SHRDNDOT='$w7', RHRDNDOT='$w8', DHND='$w9', DHRDND='$w10', DHNDOT='$w11', DHRDNDOT='$w12' 
-WHERE ToDate='$tod' and EmployeeID='$empid' and Locked<>1";
-CustomQuery($sqlr);
 
 
-//
+
 $sqlr = "UPDATE payrolltab SET WageType='$wt', Status='$st', BasicMonthly='$bm', BasicDaily='$bd', DWork='$dw', Absent='$ab', LateMins='$lm', UndertimeMins='$um', RHolidayHrs='$ex25', SHolidayHrs='$ex26',
 ExcessHrs='$ex1', RegOTHrs='$ex2', RHOTHrs='$ex3', SHOTHRs='$ex4', RDOTHrs='$ex31', RHNDHrs='$ex8', SHNDHrs='$ex9', RDNDHrs='$ex34', VLDays='$vl', SLDays='$sl', ELDays='$el', PLDays='$pl', TrODays='$tro', 
 FromDate='$frd', UserName='$usern', VLBalance='$vlb', SLBalance='$slb', ELBalance='$elb', PLBalance='$plb', NDMealallowance='$ndma', Division='$divi', Employer='$empr', Email='$email', Position='$posi', Thirteenth='$thirt', NDOTHrs='$ex7',
 RHNDOTHrs='$ex14', SHNDOTHrs='$ex15', RDNDOTHrs='$ex17', DH='$ex27', DHRD='$ex30', DHOT='$ex6', DHRDOT='$ex21', SHRDND='$ex13', RHRDND='$ex12', SHRD='$ex23', RHRD='$ex22', DHND='$ex10', DHRDND='$ex11', DHNDOT='$ex16', DHRDNDOT='$ex24',
 SHOTD='$ex5', RegRD='$ex33', RHRD='$ex28', SHRD='$ex29', RegND='$ex32', RHRDOT='$ex18', SHRDOT='$ex19', SHRDOTD='$ex20' WHERE ToDate='$tod' and EmployeeID='$empid' and Locked<>1";
 CustomQuery($sqlr);
-//
+
 
 
 
@@ -4192,23 +4185,14 @@ $posi = DBLookup("SELECT Position FROM demo_user WHERE EmployeeID='$empid'");
 
 $thirt = DBLookup("SELECT thirteenth FROM thirthind WHERE EmployeeID='$empid' and ToDate='$tod'");
 
-$sqlr = "UPDATE payrolltab SET WageType='$wt', Status='$st', BasicMonthly='$bm', BasicDaily='$bd', DWork='$dw', Absent='$ab', LateMins='$lm', UndertimeMins='$um', RHolidayHrs='$rh', SHolidayHrs='$sh',
- CHolidayHrs='$ch', ExcessHrs='$eh', RegOTHrs='$rot', RHOTHrs='$rhot', SHOTHRs='$shot', CHOTHrs='$chot', RDOTHrs='$rdot', NDHrs='$nd', NDOTHrs='$ndot', RDHrs='$rd', RegNDHrs='$rnd', RegNDOTHrs='$rndot', RHNDHrs='$rhnd', RHNDOTHrs='$rhndot', SHNDHrs='$shnd', SHNDOTHrs='$shndot', CHNDHrs='$chnd', 
- CHNDOTHrs='$chndot', RDNDHrs='$rdnd', RDNDOTHrs='$rdndot', VLDays='$vl',
- SLDays='$sl', ELDays='$el', PLDays='$pl', TrODays='$tro', FromDate='$frd',  UserName='$usern', AllowancePerDay='$alw', VLBalance='$vlb', SLBalance='$slb', ELBalance='$elb', PLBalance='$plb', AgencyShare='$ashare', NDMealallowance='$ndma', Division='$divi', Employer='$empr', Email='$email', Position='$posi', Thirteenth='$thirt',
- DH='$w1', DHRD='$w2', DHOT='$w3', DHRDOT='$w4', SHRDND='$w5', RHRDND='$w6', SHRDNDOT='$w7', RHRDNDOT='$w8', DHND='$w9', DHRDND='$w10', DHNDOT='$w11', DHRDNDOT='$w12' 
-WHERE ToDate='$tod' and EmployeeID='$empid' and Locked<>1";
-CustomQuery($sqlr);
 
-
-//
 $sqlr = "UPDATE payrolltab SET WageType='$wt', Status='$st', BasicMonthly='$bm', BasicDaily='$bd', DWork='$dw', Absent='$ab', LateMins='$lm', UndertimeMins='$um', RHolidayHrs='$ex25', SHolidayHrs='$ex26',
 ExcessHrs='$ex1', RegOTHrs='$ex2', RHOTHrs='$ex3', SHOTHRs='$ex4', RDOTHrs='$ex31', RHNDHrs='$ex8', SHNDHrs='$ex9', RDNDHrs='$ex34', VLDays='$vl', SLDays='$sl', ELDays='$el', PLDays='$pl', TrODays='$tro', 
 FromDate='$frd', UserName='$usern', VLBalance='$vlb', SLBalance='$slb', ELBalance='$elb', PLBalance='$plb', NDMealallowance='$ndma', Division='$divi', Employer='$empr', Email='$email', Position='$posi', Thirteenth='$thirt', NDOTHrs='$ex7',
 RHNDOTHrs='$ex14', SHNDOTHrs='$ex15', RDNDOTHrs='$ex17', DH='$ex27', DHRD='$ex30', DHOT='$ex6', DHRDOT='$ex21', SHRDND='$ex13', RHRDND='$ex12', SHRD='$ex23', RHRD='$ex22', DHND='$ex10', DHRDND='$ex11', DHNDOT='$ex16', DHRDNDOT='$ex24',
 SHOTD='$ex5', RegRD='$ex33', RHRD='$ex28', SHRD='$ex29', RegND='$ex32', RHRDOT='$ex18', SHRDOT='$ex19', SHRDOTD='$ex20' WHERE ToDate='$tod' and EmployeeID='$empid' and Locked<>1";
 CustomQuery($sqlr);
-//
+
 
 
 

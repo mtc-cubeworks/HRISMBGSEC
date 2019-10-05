@@ -158,6 +158,8 @@ function InitLookupLinks()
 	$lookupTableLinks["logins"]["leaves1.Approvedby"]["edit"] = array("table" => "leaves1", "field" => "Approvedby", "page" => "edit");
 	$lookupTableLinks["demo_user"]["leaves1.Superior"]["edit"] = array("table" => "leaves1", "field" => "Superior", "page" => "edit");
 	$lookupTableLinks["demo_user"]["leaves1.Superior2"]["edit"] = array("table" => "leaves1", "field" => "Superior2", "page" => "edit");
+	$lookupTableLinks["approvalbutton"]["leaves1.1stApproval"]["edit"] = array("table" => "leaves1", "field" => "1stApproval", "page" => "edit");
+	$lookupTableLinks["approvalbutton"]["leaves1.2ndApproval"]["edit"] = array("table" => "leaves1", "field" => "2ndApproval", "page" => "edit");
 	$lookupTableLinks["employername"]["ssscontsummary.Employer"]["edit"] = array("table" => "ssscontsummary", "field" => "Employer", "page" => "edit");
 	$lookupTableLinks["logins"]["ssscontsummary.PreparedBy"]["edit"] = array("table" => "ssscontsummary", "field" => "PreparedBy", "page" => "edit");
 	$lookupTableLinks["leavetypes"]["leaves11.LeaveType"]["edit"] = array("table" => "leaves11", "field" => "LeaveType", "page" => "edit");

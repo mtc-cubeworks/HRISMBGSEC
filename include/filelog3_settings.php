@@ -242,7 +242,6 @@ $tdatafilelog3[".allSearchFields"][] = "Locked";
 	$tdatafilelog3[".allSearchFields"][] = "EmployeeID";
 	$tdatafilelog3[".allSearchFields"][] = "log_time";
 	$tdatafilelog3[".allSearchFields"][] = "Reason";
-	$tdatafilelog3[".allSearchFields"][] = "ClockType";
 	$tdatafilelog3[".allSearchFields"][] = "data";
 	$tdatafilelog3[".allSearchFields"][] = "MLogID";
 	$tdatafilelog3[".allSearchFields"][] = "MLogDate";
@@ -280,7 +279,6 @@ $tdatafilelog3[".advSearchFields"][] = "TransID2";
 $tdatafilelog3[".advSearchFields"][] = "EmployeeID";
 $tdatafilelog3[".advSearchFields"][] = "log_time";
 $tdatafilelog3[".advSearchFields"][] = "Reason";
-$tdatafilelog3[".advSearchFields"][] = "ClockType";
 $tdatafilelog3[".advSearchFields"][] = "data";
 $tdatafilelog3[".advSearchFields"][] = "MLogID";
 $tdatafilelog3[".advSearchFields"][] = "MLogDate";
@@ -419,16 +417,6 @@ $tdatafilelog3[".viewFields"][] = "HRApproved";
 $tdatafilelog3[".viewFields"][] = "HRApprovedDate";
 
 $tdatafilelog3[".addFields"] = array();
-$tdatafilelog3[".addFields"][] = "Locked";
-$tdatafilelog3[".addFields"][] = "EmployeeID";
-$tdatafilelog3[".addFields"][] = "log_time";
-$tdatafilelog3[".addFields"][] = "Reason";
-$tdatafilelog3[".addFields"][] = "ClockType";
-$tdatafilelog3[".addFields"][] = "data";
-$tdatafilelog3[".addFields"][] = "MLogID";
-$tdatafilelog3[".addFields"][] = "MLogDate";
-$tdatafilelog3[".addFields"][] = "CheckedBy";
-$tdatafilelog3[".addFields"][] = "ApprovedBy";
 
 $tdatafilelog3[".masterListFields"] = array();
 $tdatafilelog3[".masterListFields"][] = "Locked";
@@ -449,16 +437,6 @@ $tdatafilelog3[".masterListFields"][] = "HRApproved";
 $tdatafilelog3[".masterListFields"][] = "HRApprovedDate";
 
 $tdatafilelog3[".inlineAddFields"] = array();
-$tdatafilelog3[".inlineAddFields"][] = "Locked";
-$tdatafilelog3[".inlineAddFields"][] = "EmployeeID";
-$tdatafilelog3[".inlineAddFields"][] = "log_time";
-$tdatafilelog3[".inlineAddFields"][] = "Reason";
-$tdatafilelog3[".inlineAddFields"][] = "ClockType";
-$tdatafilelog3[".inlineAddFields"][] = "data";
-$tdatafilelog3[".inlineAddFields"][] = "MLogID";
-$tdatafilelog3[".inlineAddFields"][] = "MLogDate";
-$tdatafilelog3[".inlineAddFields"][] = "CheckedBy";
-$tdatafilelog3[".inlineAddFields"][] = "ApprovedBy";
 
 $tdatafilelog3[".editFields"] = array();
 $tdatafilelog3[".editFields"][] = "Locked";
@@ -479,7 +457,6 @@ $tdatafilelog3[".editFields"][] = "HRApproved";
 $tdatafilelog3[".editFields"][] = "HRApprovedDate";
 
 $tdatafilelog3[".inlineEditFields"] = array();
-$tdatafilelog3[".inlineEditFields"][] = "Locked";
 
 $tdatafilelog3[".updateSelectedFields"] = array();
 $tdatafilelog3[".updateSelectedFields"][] = "Locked";
@@ -571,10 +548,8 @@ $tdatafilelog3[".printFields"][] = "HRApprovedDate";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
+	
+	
 		$fdata["bEditPage"] = true;
 
 	
@@ -705,10 +680,8 @@ $tdatafilelog3[".printFields"][] = "HRApprovedDate";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
+	
+	
 		$fdata["bEditPage"] = true;
 
 	
@@ -833,10 +806,8 @@ $tdatafilelog3[".printFields"][] = "HRApprovedDate";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
+	
+	
 		$fdata["bEditPage"] = true;
 
 	
@@ -1125,10 +1096,8 @@ $tdatafilelog3[".printFields"][] = "HRApprovedDate";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
+	
+	
 		$fdata["bEditPage"] = true;
 
 	
@@ -1282,10 +1251,8 @@ $tdatafilelog3[".printFields"][] = "HRApprovedDate";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
+	
+	
 		$fdata["bEditPage"] = true;
 
 	
@@ -1411,10 +1378,8 @@ $tdatafilelog3[".printFields"][] = "HRApprovedDate";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
+	
+	
 		$fdata["bEditPage"] = true;
 
 	
@@ -1423,8 +1388,7 @@ $tdatafilelog3[".printFields"][] = "HRApprovedDate";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -1540,12 +1504,6 @@ $tdatafilelog3[".printFields"][] = "HRApprovedDate";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Equals";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -1567,10 +1525,8 @@ $tdatafilelog3[".printFields"][] = "HRApprovedDate";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
+	
+	
 		$fdata["bEditPage"] = true;
 
 	
@@ -1723,10 +1679,8 @@ $tdatafilelog3[".printFields"][] = "HRApprovedDate";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
+	
+	
 		$fdata["bEditPage"] = true;
 
 	
@@ -2618,10 +2572,8 @@ $tdatafilelog3[".printFields"][] = "HRApprovedDate";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
+	
+	
 		$fdata["bEditPage"] = true;
 
 	
@@ -2749,14 +2701,11 @@ $tdatafilelog3[".printFields"][] = "HRApprovedDate";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
+	
+	
 		$fdata["bEditPage"] = true;
 
-		$fdata["bInlineEdit"] = true;
-
+	
 		$fdata["bUpdateSelected"] = true;
 
 

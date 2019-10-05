@@ -677,27 +677,9 @@ function BeforeAdd(&$values, &$message, $inline, &$pageObject)
 {
 
 		
-$fd=$values["FromDateTime"];
-$td=$values["ToDateTime"];
-
-$fd1=strtotime($fd);
-$td1= strtotime($td);
-
-if ($fd1>=$td1) {
-
-$message = "ToDateTime should be greater than FromDateTime.";
-
-$message;
-
-return false;
-
-
-}
-
-else {
 return true;
 
-}
+
 ;		
 } // function BeforeAdd
 
@@ -772,27 +754,9 @@ function BeforeEdit(&$values, $where, &$oldvalues, &$keys, &$message, $inline, &
 		
 
 
-$fd=$values["FromDateTime"];
-$td=$values["ToDateTime"];
-
-$fd1=strtotime($fd);
-$td1= strtotime($td);
-
-if ($fd1>=$td1) {
-
-$message = "ToDateTime should be greater than FromDateTime.";
-
-$message;
-
-return false;
-
-
-}
-
-else {
 return true;
 
-}
+
 ;		
 } // function BeforeEdit
 

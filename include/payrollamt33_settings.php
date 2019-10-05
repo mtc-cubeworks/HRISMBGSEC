@@ -571,6 +571,16 @@ $tdatapayrollamt33[".listGridLayout"] = 3;
 
 $tdatapayrollamt33[".totalsFields"] = array();
 $tdatapayrollamt33[".totalsFields"][] = array(
+	"fName" => "BasicMonthly",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Number');
+$tdatapayrollamt33[".totalsFields"][] = array(
+	"fName" => "BasicDaily",
+	"numRows" => 0,
+	"totalsType" => "TOTAL",
+	"viewFormat" => 'Number');
+$tdatapayrollamt33[".totalsFields"][] = array(
 	"fName" => "Absent",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",

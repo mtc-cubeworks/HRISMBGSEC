@@ -379,27 +379,8 @@ function BeforeEdit(&$values, $where, &$oldvalues, &$keys, &$message, $inline, &
 		
 
 
-$fd=$values["FromDateTime"];
-$td=$values["ToDateTime"];
-
-$fd1=strtotime($fd);
-$td1= strtotime($td);
-
-if ($fd1>=$td1) {
-
-$message = "ToDateTime should be greater than FromDateTime.";
-
-$message;
-
-return false;
-
-
-}
-
-else {
 return true;
 
-}
 ;		
 } // function BeforeEdit
 
@@ -491,11 +472,13 @@ CustomQuery($sqa);
 
 $empid= $values["EmployeeID"];
 $dc= $values["DateCreated"];
-$fd= $values["FromDateTime"];
-$td= $values["ToDateTime"];
+$fd= $values["FromTime"];
+$td= $values["ToTime"];
 $appd= $values["Approved"];
 $nomins= $values["NoMins"];
-
+$dot= $values["DateOT"];
+$rea= $values["Reason"];
+$rea= addslashes($rea);
 
 
 $ts1 = strtotime($fd);
@@ -509,7 +492,7 @@ global $dal;
 $sqldel = "DELETE FROM indovertime WHERE ItiD='$itid'";
 CustomQuery($sqldel);
 
-$sqlr = "INSERT indovertime VALUES (NULL, '$dc', '$empid', '$fd', '$nomins', NULL, '$fd', '$td', NULL, '$itid')";
+$sqlr = "INSERT indovertime VALUES (NULL, '$dc', '$empid', '$dot', '$nomins', NULL, '$fd', '$td', NULL, '$itid', '$rea')";
 CustomQuery($sqlr);
 
 
@@ -524,8 +507,8 @@ $sqlv = "Update overtimefile set Locked=1 where ItiD='$itid'";
 $ckby=$values["Superior"];
 $apby=$values["Superior2"];
 $empy=$values["EmployeeID"];
-$logt=$values["FromDateTime"];
-$logt2=$values["ToDateTime"];
+$logt=$values["FromTime"];
+$logt2=$values["ToTime"];
 $rea=$values["Reason"];
 $rea=addslashes($rea);
 
@@ -545,7 +528,7 @@ $bcc=DBLookup("SELECT AdminEmail FROM employername WHERE EnID='$empr'");
 
 
 
-$message="Your Overtime has been approved by ".$mgrname. "\nName:".$empname."\nType: ".$ltyp1."\nReason: ".$rea."\nDate: ".$logt." - ".$logt2."\nDuration: ". $nomin."\n\nBest regards, \nPayrollFlex Admin";
+$message="Your Overtime has been approved by ".$mgrname. "\nName:".$empname."\nType: ".$ltyp1."\nReason: ".$rea."\nDate: ".$dot."\nTime: ".$logt." - ".$logt2."\nDuration: ". $nomin."\n\nBest regards, \nPayrollFlex Admin";
 $subject=$ltyp1. " Approved! - PayrollFlex";
 runner_mail(array('to'  => $email, 'cc' => $cc,
 'bcc' => $bcc, 'subject' => $subject, 'body' => $message));
@@ -579,8 +562,9 @@ if ($sup1!=NULL and $ap1==2 and $sup2==NULL) {
 $ckby=$values["Superior"];
 $apby=$values["Superior2"];
 $empy=$values["EmployeeID"];
-$logt=$values["FromDateTime"];
-$logt2=$values["ToDateTime"];
+$logt=$values["FromTime"];
+$logt2=$values["ToTime"];
+$dot= $values["DateOT"];
 $rea=$values["Reason"];
 $rea=addslashes($rea);
 
@@ -601,7 +585,7 @@ $bcc=DBLookup("SELECT AdminEmail FROM employername WHERE EnID='$empr'");
 
 
 
-$message="Your Overtime has been disapproved by ".$mgrname. "\nName:".$empname."\nType: ".$ltyp1."\nReason: ".$rea."\nDate: ".$logt." - ".$logt2."\nDuration: ". $nomin."\n\nBest regards, \nPayrollFlex Admin";
+$message="Your Overtime has been disapproved by ".$mgrname. "\nName:".$empname."\nType: ".$ltyp1."\nReason: ".$rea."\nDate: ".$dot."\nTime: ".$logt." - ".$logt2."\nDuration: ". $nomin."\n\nBest regards, \nPayrollFlex Admin";
 $subject=$ltyp1. " Disapproved! - PayrollFlex";
 runner_mail(array('to'  => $email, 'cc' => $cc,
 'bcc' => $bcc, 'subject' => $subject, 'body' => $message));

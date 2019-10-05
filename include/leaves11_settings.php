@@ -47,7 +47,7 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsleaves11["English"]["ApprovedDate"] = "Approved Date";
 	$fieldToolTipsleaves11["English"]["ApprovedDate"] = "";
 	$placeHoldersleaves11["English"]["ApprovedDate"] = "";
-	$fieldLabelsleaves11["English"]["Approvedby"] = "Approvedby";
+	$fieldLabelsleaves11["English"]["Approvedby"] = "Approved by";
 	$fieldToolTipsleaves11["English"]["Approvedby"] = "";
 	$placeHoldersleaves11["English"]["Approvedby"] = "";
 	$fieldLabelsleaves11["English"]["Posted"] = "Posted";
@@ -720,7 +720,8 @@ $tdataleaves11[".printFields"][] = "Locked";
 
 
 // the field's search options settings
-	
+		$fdata["defaultSearchOption"] = "Contains";
+
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
 // the end of search options settings
@@ -853,7 +854,8 @@ $tdataleaves11[".printFields"][] = "Locked";
 
 
 // the field's search options settings
-	
+		$fdata["defaultSearchOption"] = "Equals";
+
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
 // the end of search options settings
@@ -1011,7 +1013,8 @@ $tdataleaves11[".printFields"][] = "Locked";
 
 
 // the field's search options settings
-	
+		$fdata["defaultSearchOption"] = "Equals";
+
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
 // the end of search options settings
@@ -1436,7 +1439,8 @@ $tdataleaves11[".printFields"][] = "Locked";
 
 
 // the field's search options settings
-	
+		$fdata["defaultSearchOption"] = "Equals";
+
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
 // the end of search options settings
@@ -1561,7 +1565,8 @@ $tdataleaves11[".printFields"][] = "Locked";
 
 
 // the field's search options settings
-	
+		$fdata["defaultSearchOption"] = "Equals";
+
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
 // the end of search options settings
@@ -1968,7 +1973,8 @@ $tdataleaves11[".printFields"][] = "Locked";
 
 
 // the field's search options settings
-	
+		$fdata["defaultSearchOption"] = "Equals";
+
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
 // the end of search options settings
@@ -2096,7 +2102,8 @@ $tdataleaves11[".printFields"][] = "Locked";
 
 
 // the field's search options settings
-	
+		$fdata["defaultSearchOption"] = "Contains";
+
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
 // the end of search options settings
@@ -2223,7 +2230,8 @@ $tdataleaves11[".printFields"][] = "Locked";
 
 
 // the field's search options settings
-	
+		$fdata["defaultSearchOption"] = "Contains";
+
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
 // the end of search options settings

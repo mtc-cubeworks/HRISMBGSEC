@@ -2493,11 +2493,19 @@
 										{END WageType_fieldfootercolumn}
 										{BEGIN BasicMonthly_fieldfootercolumn}
 										<td class="bs-gridcell {$BasicMonthly_class}" data-field="BasicMonthly">
-																				</td>
+																					{BEGIN BasicMonthly_showtotal}
+																							Total:
+											{$BasicMonthly_total}
+											{END BasicMonthly_showtotal}
+										</td>
 										{END BasicMonthly_fieldfootercolumn}
 										{BEGIN BasicDaily_fieldfootercolumn}
 										<td class="bs-gridcell {$BasicDaily_class}" data-field="BasicDaily">
-																				</td>
+																					{BEGIN BasicDaily_showtotal}
+																							Total:
+											{$BasicDaily_total}
+											{END BasicDaily_showtotal}
+										</td>
 										{END BasicDaily_fieldfootercolumn}
 										{BEGIN DWork_fieldfootercolumn}
 										<td class="bs-gridcell {$DWork_class}" data-field="DWork">

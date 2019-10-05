@@ -111,6 +111,24 @@
 </div>
 {END DateCreated_fieldblock}
 
+			{BEGIN DateOT_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_DateOT}" data-fieldname="DateOT" data-signal-error-for="DateOT{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_DateOT}">
+		{BEGIN DateOT_label}{$label overtimefileapp DateOT}{END DateOT_label}
+	</label>
+	<div class="col-md-6" >
+		{$DateOT_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="DateOT">
+		<div class="text-muted" >
+		{$tooltip overtimefileapp DateOT}
+		</div>
+	</div>
+</div>
+</div>
+{END DateOT_fieldblock}
+
 			{BEGIN EmployeeID_fieldblock}
 <div class=container>
 <div class="form-group {$fielddispclass_EmployeeID}" data-fieldname="EmployeeID" data-signal-error-for="EmployeeID{$id}" >
@@ -147,41 +165,41 @@
 </div>
 {END Reason_fieldblock}
 
-			{BEGIN FromDateTime_fieldblock}
+			{BEGIN FromTime_fieldblock}
 <div class=container>
-<div class="form-group {$fielddispclass_FromDateTime}" data-fieldname="FromDateTime" data-signal-error-for="FromDateTime{$id}" >
-	<label class="col-md-3 control-label" for="{$labelfor_FromDateTime}">
-		{BEGIN FromDateTime_label}{$label overtimefileapp FromDateTime}{END FromDateTime_label}
+<div class="form-group {$fielddispclass_FromTime}" data-fieldname="FromTime" data-signal-error-for="FromTime{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_FromTime}">
+		{BEGIN FromTime_label}{$label overtimefileapp FromTime}{END FromTime_label}
 	</label>
 	<div class="col-md-6" >
-		{$FromDateTime_editcontrol}
+		{$FromTime_editcontrol}
 	</div>
-	<div class="col-md-3 help-block" data-helpfor="FromDateTime">
+	<div class="col-md-3 help-block" data-helpfor="FromTime">
 		<div class="text-muted" >
-		{$tooltip overtimefileapp FromDateTime}
+		{$tooltip overtimefileapp FromTime}
 		</div>
 	</div>
 </div>
 </div>
-{END FromDateTime_fieldblock}
+{END FromTime_fieldblock}
 
-			{BEGIN ToDateTime_fieldblock}
+			{BEGIN ToTime_fieldblock}
 <div class=container>
-<div class="form-group {$fielddispclass_ToDateTime}" data-fieldname="ToDateTime" data-signal-error-for="ToDateTime{$id}" >
-	<label class="col-md-3 control-label" for="{$labelfor_ToDateTime}">
-		{BEGIN ToDateTime_label}{$label overtimefileapp ToDateTime}{END ToDateTime_label}
+<div class="form-group {$fielddispclass_ToTime}" data-fieldname="ToTime" data-signal-error-for="ToTime{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_ToTime}">
+		{BEGIN ToTime_label}{$label overtimefileapp ToTime}{END ToTime_label}
 	</label>
 	<div class="col-md-6" >
-		{$ToDateTime_editcontrol}
+		{$ToTime_editcontrol}
 	</div>
-	<div class="col-md-3 help-block" data-helpfor="ToDateTime">
+	<div class="col-md-3 help-block" data-helpfor="ToTime">
 		<div class="text-muted" >
-		{$tooltip overtimefileapp ToDateTime}
+		{$tooltip overtimefileapp ToTime}
 		</div>
 	</div>
 </div>
 </div>
-{END ToDateTime_fieldblock}
+{END ToTime_fieldblock}
 
 			{BEGIN NoMins_fieldblock}
 <div class=container>

@@ -141,7 +141,6 @@ $tdataloans[".exportFormatting"] = 2;
 $tdataloans[".exportDelimiter"] = ",";
 		
 $tdataloans[".inlineAdd"] = true;
-$tdataloans[".copy"] = true;
 $tdataloans[".view"] = true;
 
 $tdataloans[".import"] = true;

@@ -102,6 +102,24 @@
 		</div>
 	</div>
 {END DateCreated_fieldblock}
+	{BEGIN DateOT_fieldblock}		
+	<div class="container {$fielddispclass_DateOT}" data-fieldname="DateOT">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_DateOT}">
+				{$label overtimefileapp DateOT}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_DateOT}
+			</div>
+			<div class="col-md-4" >
+				{$DateOT_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$DateOT_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END DateOT_fieldblock}
 	{BEGIN EmployeeID_fieldblock}		
 	<div class="container {$fielddispclass_EmployeeID}" data-fieldname="EmployeeID">
 		<div class="form-group">
@@ -138,42 +156,42 @@
 		</div>
 	</div>
 {END Reason_fieldblock}
-	{BEGIN FromDateTime_fieldblock}		
-	<div class="container {$fielddispclass_FromDateTime}" data-fieldname="FromDateTime">
+	{BEGIN FromTime_fieldblock}		
+	<div class="container {$fielddispclass_FromTime}" data-fieldname="FromTime">
 		<div class="form-group">
-			<label class="col-md-2 control-label" for="{$labelfor_FromDateTime}">
-				{$label overtimefileapp FromDateTime}
+			<label class="col-md-2 control-label" for="{$labelfor_FromTime}">
+				{$label overtimefileapp FromTime}
 			</label>
 			<div class="col-md-2 bs-srchoption" >
-				{$searchtype_FromDateTime}
+				{$searchtype_FromTime}
 			</div>
 			<div class="col-md-4" >
-				{$FromDateTime_editcontrol}
+				{$FromTime_editcontrol}
 			</div>
 			<div class="col-md-4" >
-				{$FromDateTime_editcontrol1}
+				{$FromTime_editcontrol1}
 			</div>
 		</div>
 	</div>
-{END FromDateTime_fieldblock}
-	{BEGIN ToDateTime_fieldblock}		
-	<div class="container {$fielddispclass_ToDateTime}" data-fieldname="ToDateTime">
+{END FromTime_fieldblock}
+	{BEGIN ToTime_fieldblock}		
+	<div class="container {$fielddispclass_ToTime}" data-fieldname="ToTime">
 		<div class="form-group">
-			<label class="col-md-2 control-label" for="{$labelfor_ToDateTime}">
-				{$label overtimefileapp ToDateTime}
+			<label class="col-md-2 control-label" for="{$labelfor_ToTime}">
+				{$label overtimefileapp ToTime}
 			</label>
 			<div class="col-md-2 bs-srchoption" >
-				{$searchtype_ToDateTime}
+				{$searchtype_ToTime}
 			</div>
 			<div class="col-md-4" >
-				{$ToDateTime_editcontrol}
+				{$ToTime_editcontrol}
 			</div>
 			<div class="col-md-4" >
-				{$ToDateTime_editcontrol1}
+				{$ToTime_editcontrol1}
 			</div>
 		</div>
 	</div>
-{END ToDateTime_fieldblock}
+{END ToTime_fieldblock}
 	{BEGIN NoMins_fieldblock}		
 	<div class="container {$fielddispclass_NoMins}" data-fieldname="NoMins">
 		<div class="form-group">

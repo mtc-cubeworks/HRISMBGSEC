@@ -71,6 +71,16 @@
 		</div>
 	</div>
 {END OtiD_fieldblock}
+					{BEGIN DateOT_fieldblock}
+	<div class="{$fielddispclass_DateOT} col-md-6 bs-viewcontrolgroup" data-fieldname="DateOT">
+		<label class="control-label" for="{$labelfor_DateOT}">
+			{$label overtimes DateOT}
+		</label>
+		<div class="" >
+			{$DateOT_value}&nbsp;
+		</div>
+	</div>
+{END DateOT_fieldblock}
 					{BEGIN Employer_fieldblock}
 	<div class="{$fielddispclass_Employer} col-md-6 bs-viewcontrolgroup" data-fieldname="Employer">
 		<label class="control-label" for="{$labelfor_Employer}">
@@ -91,16 +101,36 @@
 		</div>
 	</div>
 {END Division_fieldblock}
-					{BEGIN DateCreated_fieldblock}
-	<div class="{$fielddispclass_DateCreated} col-md-6 bs-viewcontrolgroup" data-fieldname="DateCreated">
-		<label class="control-label" for="{$labelfor_DateCreated}">
-			{$label overtimes DateCreated}
+					{BEGIN AllEmployees_fieldblock}
+	<div class="{$fielddispclass_AllEmployees} col-md-6 bs-viewcontrolgroup" data-fieldname="AllEmployees">
+		<label class="control-label" for="{$labelfor_AllEmployees}">
+			{$label overtimes AllEmployees}
 		</label>
 		<div class="" >
-			{$DateCreated_value}&nbsp;
+			{$AllEmployees_value}&nbsp;
 		</div>
 	</div>
-{END DateCreated_fieldblock}
+{END AllEmployees_fieldblock}
+					{BEGIN FromTime_fieldblock}
+	<div class="{$fielddispclass_FromTime} col-md-6 bs-viewcontrolgroup" data-fieldname="FromTime">
+		<label class="control-label" for="{$labelfor_FromTime}">
+			{$label overtimes FromTime}
+		</label>
+		<div class="" >
+			{$FromTime_value}&nbsp;
+		</div>
+	</div>
+{END FromTime_fieldblock}
+					{BEGIN ToTime_fieldblock}
+	<div class="{$fielddispclass_ToTime} col-md-6 bs-viewcontrolgroup" data-fieldname="ToTime">
+		<label class="control-label" for="{$labelfor_ToTime}">
+			{$label overtimes ToTime}
+		</label>
+		<div class="" >
+			{$ToTime_value}&nbsp;
+		</div>
+	</div>
+{END ToTime_fieldblock}
 					{BEGIN Reason_fieldblock}
 	<div class="{$fielddispclass_Reason} col-md-6 bs-viewcontrolgroup" data-fieldname="Reason">
 		<label class="control-label" for="{$labelfor_Reason}">
@@ -111,26 +141,6 @@
 		</div>
 	</div>
 {END Reason_fieldblock}
-					{BEGIN FromDateTime_fieldblock}
-	<div class="{$fielddispclass_FromDateTime} col-md-6 bs-viewcontrolgroup" data-fieldname="FromDateTime">
-		<label class="control-label" for="{$labelfor_FromDateTime}">
-			{$label overtimes FromDateTime}
-		</label>
-		<div class="" >
-			{$FromDateTime_value}&nbsp;
-		</div>
-	</div>
-{END FromDateTime_fieldblock}
-					{BEGIN ToDateTime_fieldblock}
-	<div class="{$fielddispclass_ToDateTime} col-md-6 bs-viewcontrolgroup" data-fieldname="ToDateTime">
-		<label class="control-label" for="{$labelfor_ToDateTime}">
-			{$label overtimes ToDateTime}
-		</label>
-		<div class="" >
-			{$ToDateTime_value}&nbsp;
-		</div>
-	</div>
-{END ToDateTime_fieldblock}
 					{BEGIN NoMins_fieldblock}
 	<div class="{$fielddispclass_NoMins} col-md-6 bs-viewcontrolgroup" data-fieldname="NoMins">
 		<label class="control-label" for="{$labelfor_NoMins}">
@@ -141,6 +151,26 @@
 		</div>
 	</div>
 {END NoMins_fieldblock}
+					{BEGIN CostCenter_fieldblock}
+	<div class="{$fielddispclass_CostCenter} col-md-6 bs-viewcontrolgroup" data-fieldname="CostCenter">
+		<label class="control-label" for="{$labelfor_CostCenter}">
+			{$label overtimes CostCenter}
+		</label>
+		<div class="" >
+			{$CostCenter_value}&nbsp;
+		</div>
+	</div>
+{END CostCenter_fieldblock}
+					{BEGIN Remarks_fieldblock}
+	<div class="{$fielddispclass_Remarks} col-md-6 bs-viewcontrolgroup" data-fieldname="Remarks">
+		<label class="control-label" for="{$labelfor_Remarks}">
+			{$label overtimes Remarks}
+		</label>
+		<div class="" >
+			{$Remarks_value}&nbsp;
+		</div>
+	</div>
+{END Remarks_fieldblock}
 					{BEGIN Approved_fieldblock}
 	<div class="{$fielddispclass_Approved} col-md-6 bs-viewcontrolgroup" data-fieldname="Approved">
 		<label class="control-label" for="{$labelfor_Approved}">
@@ -191,6 +221,26 @@
 		</div>
 	</div>
 {END Posted_fieldblock}
+					{BEGIN DateCreated_fieldblock}
+	<div class="{$fielddispclass_DateCreated} col-md-6 bs-viewcontrolgroup" data-fieldname="DateCreated">
+		<label class="control-label" for="{$labelfor_DateCreated}">
+			{$label overtimes DateCreated}
+		</label>
+		<div class="" >
+			{$DateCreated_value}&nbsp;
+		</div>
+	</div>
+{END DateCreated_fieldblock}
+					{BEGIN PreparedBy_fieldblock}
+	<div class="{$fielddispclass_PreparedBy} col-md-6 bs-viewcontrolgroup" data-fieldname="PreparedBy">
+		<label class="control-label" for="{$labelfor_PreparedBy}">
+			{$label overtimes PreparedBy}
+		</label>
+		<div class="" >
+			{$PreparedBy_value}&nbsp;
+		</div>
+	</div>
+{END PreparedBy_fieldblock}
 			</div>
 	<div class="bs-2column">
 			

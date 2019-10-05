@@ -800,6 +800,7 @@ $tableCaptions[""]["loanbalnew5"] = "Loanbalnew5";
 $tableCaptions[""]["loanbalnew51"] = "Loanbalnew51";
 $tableCaptions[""]["holidaysdefault"] = "Holidaysdefault";
 $tableCaptions[""]["divisions"] = "Divisions";
+$tableCaptions[""]["overtimes"] = "Overtime Entry";
 
 
 $globalEvents = new class_GlobalEvents;

@@ -163,7 +163,7 @@ $tdataindovertime[".buttonsAdded"] = false;
 $tdataindovertime[".addPageEvents"] = true;
 
 // use timepicker for search panel
-$tdataindovertime[".isUseTimeForSearch"] = false;
+$tdataindovertime[".isUseTimeForSearch"] = true;
 
 
 
@@ -1085,7 +1085,7 @@ $tdataindovertime[".printFields"][] = "NoMins";
 	$fdata["GoodName"] = "FromTime";
 	$fdata["ownerTable"] = "indovertime";
 	$fdata["Label"] = GetFieldLabel("indovertime","FromTime");
-	$fdata["FieldType"] = 135;
+	$fdata["FieldType"] = 134;
 
 	
 	
@@ -1126,7 +1126,7 @@ $tdataindovertime[".printFields"][] = "NoMins";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Datetime");
+	$vdata = array("ViewFormat" => "Time");
 
 	
 	
@@ -1150,7 +1150,7 @@ $tdataindovertime[".printFields"][] = "NoMins";
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Date");
+	$edata = array("EditFormat" => "Time");
 
 		$edata["ShowTime"] = true;
 
@@ -1159,7 +1159,8 @@ $tdataindovertime[".printFields"][] = "NoMins";
 	
 
 
-	
+		$edata["IsRequired"] = true;
+
 	
 	
 			$edata["acceptFileTypes"] = ".+$";
@@ -1168,26 +1169,31 @@ $tdataindovertime[".printFields"][] = "NoMins";
 
 	
 	
-		$edata["DateEditType"] = 11;
-	$edata["InitialYearFactor"] = 0;
-	$edata["LastYearFactor"] = 21;
-
 	
 	
 	
+		$edata["EditParams"] = "";
+		
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-	
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Time");
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
 	
 	//	End validation
 
 	
 			
-	
+				$hours = 12;
+	$edata["FormatTimeAttrs"] = array("useTimePicker" => 1,
+									  "hours" => $hours,
+									  "minutes" => 1,
+									  "showSeconds" => 0);
+
 	
 	
 	$fdata["EditFormats"]["edit"] = $edata;
@@ -1218,7 +1224,7 @@ $tdataindovertime[".printFields"][] = "NoMins";
 	$fdata["GoodName"] = "ToTime";
 	$fdata["ownerTable"] = "indovertime";
 	$fdata["Label"] = GetFieldLabel("indovertime","ToTime");
-	$fdata["FieldType"] = 135;
+	$fdata["FieldType"] = 134;
 
 	
 	
@@ -1259,7 +1265,7 @@ $tdataindovertime[".printFields"][] = "NoMins";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Datetime");
+	$vdata = array("ViewFormat" => "Time");
 
 	
 	
@@ -1283,7 +1289,7 @@ $tdataindovertime[".printFields"][] = "NoMins";
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Date");
+	$edata = array("EditFormat" => "Time");
 
 		$edata["ShowTime"] = true;
 
@@ -1292,7 +1298,8 @@ $tdataindovertime[".printFields"][] = "NoMins";
 	
 
 
-	
+		$edata["IsRequired"] = true;
+
 	
 	
 			$edata["acceptFileTypes"] = ".+$";
@@ -1301,26 +1308,31 @@ $tdataindovertime[".printFields"][] = "NoMins";
 
 	
 	
-		$edata["DateEditType"] = 11;
-	$edata["InitialYearFactor"] = 0;
-	$edata["LastYearFactor"] = 21;
-
 	
 	
 	
+		$edata["EditParams"] = "";
+		
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-	
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Time");
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
 	
 	//	End validation
 
 	
 			
-	
+				$hours = 12;
+	$edata["FormatTimeAttrs"] = array("useTimePicker" => 1,
+									  "hours" => $hours,
+									  "minutes" => 1,
+									  "showSeconds" => 0);
+
 	
 	
 	$fdata["EditFormats"]["edit"] = $edata;
