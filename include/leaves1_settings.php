@@ -142,9 +142,9 @@ $tdataleaves1[".closePopupAfterEdit"] = 1;
 $tdataleaves1[".afterEditActionDetTable"] = "Detail tables not found!";
 
 $tdataleaves1[".add"] = true;
-$tdataleaves1[".afterAddAction"] = 1;
+$tdataleaves1[".afterAddAction"] = 0;
 $tdataleaves1[".closePopupAfterAdd"] = 1;
-$tdataleaves1[".afterAddActionDetTable"] = "";
+$tdataleaves1[".afterAddActionDetTable"] = "Detail tables not found!";
 
 $tdataleaves1[".list"] = true;
 

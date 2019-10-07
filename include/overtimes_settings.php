@@ -154,9 +154,9 @@ $tdataovertimes[".closePopupAfterEdit"] = 1;
 $tdataovertimes[".afterEditActionDetTable"] = "overtimetab";
 
 $tdataovertimes[".add"] = true;
-$tdataovertimes[".afterAddAction"] = 1;
+$tdataovertimes[".afterAddAction"] = 0;
 $tdataovertimes[".closePopupAfterAdd"] = 1;
-$tdataovertimes[".afterAddActionDetTable"] = "";
+$tdataovertimes[".afterAddActionDetTable"] = "overtimetab";
 
 $tdataovertimes[".list"] = true;
 
@@ -171,7 +171,6 @@ $tdataovertimes[".exportFormatting"] = 2;
 $tdataovertimes[".exportDelimiter"] = ",";
 		
 $tdataovertimes[".inlineAdd"] = true;
-$tdataovertimes[".copy"] = true;
 $tdataovertimes[".view"] = true;
 
 $tdataovertimes[".import"] = true;

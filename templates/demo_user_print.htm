@@ -295,31 +295,6 @@
 				{$label demo_user LateFixPenalty}
 			</th>
 			{END LateFixPenalty_fieldheadercolumn}
-			{BEGIN CalMonthly_fieldheadercolumn}
-			<th class="{$CalMonthly_class}" {$CalMonthly_style}  data-field="CalMonthly">
-				{$label demo_user CalMonthly}
-			</th>
-			{END CalMonthly_fieldheadercolumn}
-			{BEGIN PresetMoNonTax_fieldheadercolumn}
-			<th class="{$PresetMoNonTax_class}" {$PresetMoNonTax_style}  data-field="PresetMoNonTax">
-				{$label demo_user PresetMoNonTax}
-			</th>
-			{END PresetMoNonTax_fieldheadercolumn}
-			{BEGIN PreCalMoTaxable_fieldheadercolumn}
-			<th class="{$PreCalMoTaxable_class}" {$PreCalMoTaxable_style}  data-field="PreCalMoTaxable">
-				{$label demo_user PreCalMoTaxable}
-			</th>
-			{END PreCalMoTaxable_fieldheadercolumn}
-			{BEGIN TaxPeriods_fieldheadercolumn}
-			<th class="{$TaxPeriods_class}" {$TaxPeriods_style}  data-field="TaxPeriods">
-				{$label demo_user TaxPeriods}
-			</th>
-			{END TaxPeriods_fieldheadercolumn}
-			{BEGIN TaxPerPeriod_fieldheadercolumn}
-			<th class="{$TaxPerPeriod_class}" {$TaxPerPeriod_style}  data-field="TaxPerPeriod">
-				{$label demo_user TaxPerPeriod}
-			</th>
-			{END TaxPerPeriod_fieldheadercolumn}
 			{BEGIN DateCreated_fieldheadercolumn}
 			<th class="{$DateCreated_class}" {$DateCreated_style}  data-field="DateCreated">
 				{$label demo_user DateCreated}
@@ -597,31 +572,6 @@
 				{$LateFixPenalty_value}
 			</td>
 			{END LateFixPenalty_fieldcolumn}
-			{BEGIN CalMonthly_fieldcolumn}
-			<td  class="{$CalMonthly_class}" {$CalMonthly_style} {$recordattrs}>
-				{$CalMonthly_value}
-			</td>
-			{END CalMonthly_fieldcolumn}
-			{BEGIN PresetMoNonTax_fieldcolumn}
-			<td  class="{$PresetMoNonTax_class}" {$PresetMoNonTax_style} {$recordattrs}>
-				{$PresetMoNonTax_value}
-			</td>
-			{END PresetMoNonTax_fieldcolumn}
-			{BEGIN PreCalMoTaxable_fieldcolumn}
-			<td  class="{$PreCalMoTaxable_class}" {$PreCalMoTaxable_style} {$recordattrs}>
-				{$PreCalMoTaxable_value}
-			</td>
-			{END PreCalMoTaxable_fieldcolumn}
-			{BEGIN TaxPeriods_fieldcolumn}
-			<td  class="{$TaxPeriods_class}" {$TaxPeriods_style} {$recordattrs}>
-				{$TaxPeriods_value}
-			</td>
-			{END TaxPeriods_fieldcolumn}
-			{BEGIN TaxPerPeriod_fieldcolumn}
-			<td  class="{$TaxPerPeriod_class}" {$TaxPerPeriod_style} {$recordattrs}>
-				{$TaxPerPeriod_value}
-			</td>
-			{END TaxPerPeriod_fieldcolumn}
 			{BEGIN DateCreated_fieldcolumn}
 			<td  class="{$DateCreated_class}" {$DateCreated_style} {$recordattrs}>
 				{$DateCreated_value}
@@ -670,7 +620,7 @@
 	{BEGIN details_row}
 		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
 			{BEGIN details_record}
-				<td colspan="59">
+				<td colspan="54">
 					{BEGIN details_table}
 						{$details}
 					{END details_table}

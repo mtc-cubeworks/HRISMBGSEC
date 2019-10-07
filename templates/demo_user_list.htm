@@ -660,21 +660,6 @@
 	.bs-gridcell[data-field=WithAdditionalBreaks]:before {
 		content: "{$label demo_user WithAdditionalBreaks}";
 	}
-	.bs-gridcell[data-field=TaxPeriods]:before {
-		content: "{$label demo_user TaxPeriods}";
-	}
-	.bs-gridcell[data-field=PresetMoNonTax]:before {
-		content: "{$label demo_user PresetMoNonTax}";
-	}
-	.bs-gridcell[data-field=PreCalMoTaxable]:before {
-		content: "{$label demo_user PreCalMoTaxable}";
-	}
-	.bs-gridcell[data-field=CalMonthly]:before {
-		content: "{$label demo_user CalMonthly}";
-	}
-	.bs-gridcell[data-field=TaxPerPeriod]:before {
-		content: "{$label demo_user TaxPerPeriod}";
-	}
 	.bs-gridcell[data-field=Superior2]:before {
 		content: "{$label demo_user Superior2}";
 	}
@@ -1188,61 +1173,6 @@
 									
 									
 									
-									{BEGIN CalMonthly_fieldheadercolumn}<th class="rnr-gridfieldlabel {$CalMonthly_class}" data-field=CalMonthly>
-									{BEGIN CalMonthly_fieldheader}<span {$CalMonthly_orderlinkattrs}>
-											{$label demo_user CalMonthly}
-										</span>
-									{END CalMonthly_fieldheader}
-									</th>
-									{END CalMonthly_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN PresetMoNonTax_fieldheadercolumn}<th class="rnr-gridfieldlabel {$PresetMoNonTax_class}" data-field=PresetMoNonTax>
-									{BEGIN PresetMoNonTax_fieldheader}<span {$PresetMoNonTax_orderlinkattrs}>
-											{$label demo_user PresetMoNonTax}
-										</span>
-									{END PresetMoNonTax_fieldheader}
-									</th>
-									{END PresetMoNonTax_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN PreCalMoTaxable_fieldheadercolumn}<th class="rnr-gridfieldlabel {$PreCalMoTaxable_class}" data-field=PreCalMoTaxable>
-									{BEGIN PreCalMoTaxable_fieldheader}<span {$PreCalMoTaxable_orderlinkattrs}>
-											{$label demo_user PreCalMoTaxable}
-										</span>
-									{END PreCalMoTaxable_fieldheader}
-									</th>
-									{END PreCalMoTaxable_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN TaxPeriods_fieldheadercolumn}<th class="rnr-gridfieldlabel {$TaxPeriods_class}" data-field=TaxPeriods>
-									{BEGIN TaxPeriods_fieldheader}<span {$TaxPeriods_orderlinkattrs}>
-											{$label demo_user TaxPeriods}
-										</span>
-									{END TaxPeriods_fieldheader}
-									</th>
-									{END TaxPeriods_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN TaxPerPeriod_fieldheadercolumn}<th class="rnr-gridfieldlabel {$TaxPerPeriod_class}" data-field=TaxPerPeriod>
-									{BEGIN TaxPerPeriod_fieldheader}<span {$TaxPerPeriod_orderlinkattrs}>
-											{$label demo_user TaxPerPeriod}
-										</span>
-									{END TaxPerPeriod_fieldheader}
-									</th>
-									{END TaxPerPeriod_fieldheadercolumn}
-									
-									
-									
-									
 									{BEGIN DateCreated_fieldheadercolumn}<th class="rnr-gridfieldlabel {$DateCreated_class}" data-field=DateCreated>
 									{BEGIN DateCreated_fieldheader}<span {$DateCreated_orderlinkattrs}>
 											{$label demo_user DateCreated}
@@ -1675,36 +1605,6 @@
 		{$LateFixPenalty_value}
 	</td>
 {END LateFixPenalty_fieldcolumn}
-
-
-	{BEGIN CalMonthly_fieldcolumn}<td class="bs-gridcell {$CalMonthly_class}"  data-field=CalMonthly {$rowstyle} {$recordattrs}>
-		{$CalMonthly_value}
-	</td>
-{END CalMonthly_fieldcolumn}
-
-
-	{BEGIN PresetMoNonTax_fieldcolumn}<td class="bs-gridcell {$PresetMoNonTax_class}"  data-field=PresetMoNonTax {$rowstyle} {$recordattrs}>
-		{$PresetMoNonTax_value}
-	</td>
-{END PresetMoNonTax_fieldcolumn}
-
-
-	{BEGIN PreCalMoTaxable_fieldcolumn}<td class="bs-gridcell {$PreCalMoTaxable_class}"  data-field=PreCalMoTaxable {$rowstyle} {$recordattrs}>
-		{$PreCalMoTaxable_value}
-	</td>
-{END PreCalMoTaxable_fieldcolumn}
-
-
-	{BEGIN TaxPeriods_fieldcolumn}<td class="bs-gridcell {$TaxPeriods_class}"  data-field=TaxPeriods {$rowstyle} {$recordattrs}>
-		{$TaxPeriods_value}
-	</td>
-{END TaxPeriods_fieldcolumn}
-
-
-	{BEGIN TaxPerPeriod_fieldcolumn}<td class="bs-gridcell {$TaxPerPeriod_class}"  data-field=TaxPerPeriod {$rowstyle} {$recordattrs}>
-		{$TaxPerPeriod_value}
-	</td>
-{END TaxPerPeriod_fieldcolumn}
 
 
 	{BEGIN DateCreated_fieldcolumn}<td class="bs-gridcell {$DateCreated_class}"  data-field=DateCreated {$rowstyle} {$recordattrs}>

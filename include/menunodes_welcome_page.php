@@ -44,8 +44,8 @@ function getMenuNodes_welcome_page($menuNodesObject)
 	$menuNode["pageType"] = "List";//
 	$menuNode["openType"] = "None";
 	
-	$menuNode["icon"] = "glyphicon-tree-conifer";
-	$menuNode["iconType"] = "2";
+	$menuNode["icon"] = "";
+	$menuNode["iconType"] = "0";
 
 			$menuNode["color"] = "#"."2F4F4F";
 	

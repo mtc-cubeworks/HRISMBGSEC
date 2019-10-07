@@ -120,7 +120,6 @@ $tdataindovertime[".exportFormatting"] = 2;
 $tdataindovertime[".exportDelimiter"] = ",";
 		
 $tdataindovertime[".inlineAdd"] = true;
-$tdataindovertime[".copy"] = true;
 $tdataindovertime[".view"] = true;
 
 $tdataindovertime[".import"] = true;
