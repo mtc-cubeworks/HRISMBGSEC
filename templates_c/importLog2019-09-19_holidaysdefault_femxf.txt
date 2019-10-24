@@ -1,0 +1,6 @@
+Import into holidaysdefault
+9/19/2019 11:54:42 AM
+
+24 out of 24 records processed successfully.
+24 records added.
+0 records updated.

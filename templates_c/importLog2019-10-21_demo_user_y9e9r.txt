@@ -1,0 +1,6 @@
+Import into demo_user
+10/21/2019 11:01:31 PM
+
+380 out of 380 records processed successfully.
+28 records added.
+352 records updated.
