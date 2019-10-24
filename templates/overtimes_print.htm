@@ -115,11 +115,6 @@
 				{$label overtimes NoMins}
 			</th>
 			{END NoMins_fieldheadercolumn}
-			{BEGIN CostCenter_fieldheadercolumn}
-			<th class="{$CostCenter_class}" {$CostCenter_style}  data-field="CostCenter">
-				{$label overtimes CostCenter}
-			</th>
-			{END CostCenter_fieldheadercolumn}
 			{BEGIN Remarks_fieldheadercolumn}
 			<th class="{$Remarks_class}" {$Remarks_style}  data-field="Remarks">
 				{$label overtimes Remarks}
@@ -140,11 +135,6 @@
 				{$label overtimes ApprovedDate}
 			</th>
 			{END ApprovedDate_fieldheadercolumn}
-			{BEGIN ApprovedTime_fieldheadercolumn}
-			<th class="{$ApprovedTime_class}" {$ApprovedTime_style}  data-field="ApprovedTime">
-				{$label overtimes ApprovedTime}
-			</th>
-			{END ApprovedTime_fieldheadercolumn}
 			{BEGIN Posted_fieldheadercolumn}
 			<th class="{$Posted_class}" {$Posted_style}  data-field="Posted">
 				{$label overtimes Posted}
@@ -217,11 +207,6 @@
 				{$NoMins_value}
 			</td>
 			{END NoMins_fieldcolumn}
-			{BEGIN CostCenter_fieldcolumn}
-			<td  class="{$CostCenter_class}" {$CostCenter_style} {$recordattrs}>
-				{$CostCenter_value}
-			</td>
-			{END CostCenter_fieldcolumn}
 			{BEGIN Remarks_fieldcolumn}
 			<td  class="{$Remarks_class}" {$Remarks_style} {$recordattrs}>
 				{$Remarks_value}
@@ -242,11 +227,6 @@
 				{$ApprovedDate_value}
 			</td>
 			{END ApprovedDate_fieldcolumn}
-			{BEGIN ApprovedTime_fieldcolumn}
-			<td  class="{$ApprovedTime_class}" {$ApprovedTime_style} {$recordattrs}>
-				{$ApprovedTime_value}
-			</td>
-			{END ApprovedTime_fieldcolumn}
 			{BEGIN Posted_fieldcolumn}
 			<td  class="{$Posted_class}" {$Posted_style} {$recordattrs}>
 				{$Posted_value}
@@ -270,7 +250,7 @@
 	{BEGIN details_row}
 		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
 			{BEGIN details_record}
-				<td colspan="19">
+				<td colspan="17">
 					{BEGIN details_table}
 						{$details}
 					{END details_table}

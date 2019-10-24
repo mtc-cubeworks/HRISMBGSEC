@@ -291,7 +291,7 @@ $tdatademo_user[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																					
+																																																																																																																																																																																																																																																																											
 
 $tdatademo_user[".ajaxCodeSnippetAdded"] = false;
 
@@ -8947,18 +8947,18 @@ $detailsTablesData["demo_user"] = array();
 				$detailsTablesData["demo_user"][$dIndex]["detailKeys"] = array();
 
 	$detailsTablesData["demo_user"][$dIndex]["detailKeys"][]="EmployeeID";
-//	empindschedule
+//	indscheduleemp
 	
 	
 
 		$dIndex = 1;
 	$detailsParam = array();
-	$detailsParam["dDataSourceTable"]="empindschedule";
+	$detailsParam["dDataSourceTable"]="indscheduleemp";
 		$detailsParam["dOriginalTable"] = "indschedule";
 		$detailsParam["proceedLink"] = true;
 				$detailsParam["dType"]=PAGE_LIST;
-	$detailsParam["dShortTable"] = "empindschedule";
-	$detailsParam["dCaptionTable"] = GetTableCaption("empindschedule");
+	$detailsParam["dShortTable"] = "indscheduleemp";
+	$detailsParam["dCaptionTable"] = GetTableCaption("indscheduleemp");
 	$detailsParam["masterKeys"] =array();
 	$detailsParam["detailKeys"] =array();
 

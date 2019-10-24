@@ -1,0 +1,401 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_searchpage}
+<div {$searchpage_chiddenattr} data-pageid="{$pageid}" data-container="searchpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN searchheader}
+	<h2 {$bssearchheader_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchheader" >{$pagetitlelabel indscheduleemp search}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END searchheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_searchpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$bssearchfields_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchfields" class="form-horizontal" role="form">
+<div class="container">
+	<div class="form-group">
+		<div class="col-md-12" >
+			&nbsp;
+		</div>
+	</div>
+</div>
+	{BEGIN UserName_fieldblock}		
+	<div class="container {$fielddispclass_UserName}" data-fieldname="UserName">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_UserName}">
+				{$label indscheduleemp UserName}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_UserName}
+			</div>
+			<div class="col-md-4" >
+				{$UserName_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$UserName_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END UserName_fieldblock}
+	{BEGIN Division_fieldblock}		
+	<div class="container {$fielddispclass_Division}" data-fieldname="Division">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Division}">
+				{$label indscheduleemp Division}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Division}
+			</div>
+			<div class="col-md-4" >
+				{$Division_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Division_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Division_fieldblock}
+	{BEGIN WageType_fieldblock}		
+	<div class="container {$fielddispclass_WageType}" data-fieldname="WageType">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_WageType}">
+				{$label indscheduleemp WageType}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_WageType}
+			</div>
+			<div class="col-md-4" >
+				{$WageType_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$WageType_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END WageType_fieldblock}
+	{BEGIN SDate_fieldblock}		
+	<div class="container {$fielddispclass_SDate}" data-fieldname="SDate">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SDate}">
+				{$label indscheduleemp SDate}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SDate}
+			</div>
+			<div class="col-md-4" >
+				{$SDate_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SDate_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SDate_fieldblock}
+	{BEGIN Mispunched_fieldblock}		
+	<div class="container {$fielddispclass_Mispunched}" data-fieldname="Mispunched">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Mispunched}">
+				{$label indscheduleemp Mispunched}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Mispunched}
+			</div>
+			<div class="col-md-4" >
+				{$Mispunched_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Mispunched_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Mispunched_fieldblock}
+	{BEGIN RegND_fieldblock}		
+	<div class="container {$fielddispclass_RegND}" data-fieldname="RegND">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RegND}">
+				{$label indscheduleemp RegND}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RegND}
+			</div>
+			<div class="col-md-4" >
+				{$RegND_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RegND_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RegND_fieldblock}
+	{BEGIN SHOTD_fieldblock}		
+	<div class="container {$fielddispclass_SHOTD}" data-fieldname="SHOTD">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SHOTD}">
+				{$label indscheduleemp SHOTD}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SHOTD}
+			</div>
+			<div class="col-md-4" >
+				{$SHOTD_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SHOTD_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SHOTD_fieldblock}
+	{BEGIN NDOT_fieldblock}		
+	<div class="container {$fielddispclass_NDOT}" data-fieldname="NDOT">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_NDOT}">
+				{$label indscheduleemp NDOT}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_NDOT}
+			</div>
+			<div class="col-md-4" >
+				{$NDOT_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$NDOT_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END NDOT_fieldblock}
+	{BEGIN RHRDOT_fieldblock}		
+	<div class="container {$fielddispclass_RHRDOT}" data-fieldname="RHRDOT">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RHRDOT}">
+				{$label indscheduleemp RHRDOT}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RHRDOT}
+			</div>
+			<div class="col-md-4" >
+				{$RHRDOT_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RHRDOT_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RHRDOT_fieldblock}
+	{BEGIN SHRDOT_fieldblock}		
+	<div class="container {$fielddispclass_SHRDOT}" data-fieldname="SHRDOT">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SHRDOT}">
+				{$label indscheduleemp SHRDOT}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SHRDOT}
+			</div>
+			<div class="col-md-4" >
+				{$SHRDOT_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SHRDOT_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SHRDOT_fieldblock}
+	{BEGIN SHRDOTD_fieldblock}		
+	<div class="container {$fielddispclass_SHRDOTD}" data-fieldname="SHRDOTD">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SHRDOTD}">
+				{$label indscheduleemp SHRDOTD}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SHRDOTD}
+			</div>
+			<div class="col-md-4" >
+				{$SHRDOTD_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SHRDOTD_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SHRDOTD_fieldblock}
+	{BEGIN RegRD_fieldblock}		
+	<div class="container {$fielddispclass_RegRD}" data-fieldname="RegRD">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RegRD}">
+				{$label indscheduleemp RegRD}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RegRD}
+			</div>
+			<div class="col-md-4" >
+				{$RegRD_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RegRD_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RegRD_fieldblock}
+	{BEGIN RHRD_fieldblock}		
+	<div class="container {$fielddispclass_RHRD}" data-fieldname="RHRD">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RHRD}">
+				{$label indscheduleemp RHRD}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RHRD}
+			</div>
+			<div class="col-md-4" >
+				{$RHRD_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RHRD_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RHRD_fieldblock}
+	{BEGIN SHRD_fieldblock}		
+	<div class="container {$fielddispclass_SHRD}" data-fieldname="SHRD">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SHRD}">
+				{$label indscheduleemp SHRD}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SHRD}
+			</div>
+			<div class="col-md-4" >
+				{$SHRD_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SHRD_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SHRD_fieldblock}
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container form-horizontal   "> 
+
+
+
+
+{BEGIN container_bbuttons}
+<div {$bbuttons_chiddenattr} data-pageid="{$pageid}" data-container="bbuttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-10 col-md-offset-2"> 
+
+{BEGIN searchbuttons}
+{BEGIN search_button}
+<button class="btn btn-primary" {$searchbutton_attrs}>Search</button>
+{END search_button} 
+{BEGIN reset_button}
+<button class="btn btn-default" {$resetbutton_attrs}>Reset</button>
+{END reset_button}
+{BEGIN back_button}
+<button class="btn btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{END searchbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+</div>
+{END container_bbuttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

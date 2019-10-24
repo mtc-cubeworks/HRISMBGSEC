@@ -638,8 +638,6 @@ class Chart
 			return true;
 		if("annualtaxtab" == $this->chrt_array['tables'][0])
 			return true;
-		if("indschedule" == $this->chrt_array['tables'][0])
-			return true;
 		if("indschedrange" == $this->chrt_array['tables'][0])
 			return true;
 		if("monthlyremittax" == $this->chrt_array['tables'][0])
@@ -739,6 +737,10 @@ class Chart
 		if("loanbalnew5" == $this->chrt_array['tables'][0])
 			return true;
 		if("holidaysdefault" == $this->chrt_array['tables'][0])
+			return true;
+		if("holidayupdate" == $this->chrt_array['tables'][0])
+			return true;
+		if("indschedule" == $this->chrt_array['tables'][0])
 			return true;
 		return false;
 	}

@@ -1,522 +1,150 @@
-<!doctype html>
-<html  {$html_attrs}>
-	<head>
-		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-		<title>{$pagetitle}</title>
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD> 
+<META http-equiv="X-UA-Compatible" content="IE=Edge"> 
+<META name="viewport" content="width=device-width, initial-scale=1.0"> 
+<TITLE>{$pagetitle}</TITLE> 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<LINK href="styles/default.css" rel="stylesheet" type="text/css"> {BEGIN rtlCSS}<LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">{END rtlCSS} {BEGIN styleCSSFiles}<LINK href="{$stylepath}" rel="stylesheet" type="text/css">{END styleCSSFiles}      
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001"></HEAD> 
+<BODY class="{$stylename} function-list" {$bodyattrs}>{BEGIN body}
 
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<link REL="stylesheet" href="styles/default.css" type="text/css">
-		{BEGIN rtlCSS}<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
-		{END rtlCSS}
-		{BEGIN styleCSSFiles}<link REL="stylesheet" href="{$stylepath}" type="text/css">
-		{END styleCSSFiles}
-	</head>
-
-	<body class="{$stylename} function-list" {$bodyattrs}>
-	{BEGIN body}<style>
+<STYLE>
 {$containerCss}
-</style>
-<div class="sidebar bs-fixed clearfix mCustomScrollbar" data-mcs-theme="minimal-dark" {$blockattr_left}>
-	<div class="sidebar-contents mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside">
-		
-
-{BEGIN container_logo}<div {$logo_chiddenattr} data-pageid="{$pageid}" data-container="logo" class=" bs-sidebarlogo   "> 
-
-{BEGIN logo_block}<a href="{$home_link}" {$logo_hiddenattr} data-pageid="{$pageid}" data-brick="logo" class="navbar-brand" >{$logo}</a>
-{END logo_block}
-
-
-
-</div>
-{END container_logo}
-
-
-
-{BEGIN container_hdr}<div {$hdr_chiddenattr} data-pageid="{$pageid}" data-container="hdr" class=" navbar-default clearfix   "> 
-
-{BEGIN collapse_block}<button {$bsnavbarcollapse_hiddenattr} data-pageid="{$pageid}" data-brick="bsnavbarcollapse" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target=".bs-navcontrolled">	
-	<span class="sr-only">Toggle navigation</span>	
-	<span class="icon-bar"></span>					
-</button>												
-
-{END collapse_block}
-
-
-
-</div>
-{END container_hdr}
-
-{BEGIN container_sidemenu}<div {$sidemenu_chiddenattr} data-pageid="{$pageid}" data-container="sidemenu" class="bs-navform navbar-collapse sidebar-menu bs-hidden-xs bs-navcontrolled" aria-expanded="false" >												   
-{BEGIN menu_block}{$menu main}
-
-{END menu_block}
-
-												</div>						{END container_sidemenu}
-
-{BEGIN container_left}<div {$left_chiddenattr} data-pageid="{$pageid}" data-container="left" class=" sidebar-container   "> 
-
-{BEGIN searchPanel}<div {$searchpanel_hiddenattr} data-pageid="{$pageid}" data-brick="searchpanel" class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} >
-	<!-- Search panel content -->
-	
-	<div class="panel-heading">
-		<div class="btn-group" id="addSearchFieldButton{$id}">
-			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			Search in
-			<span class="caret"></span>
-			</button>
-		</div>
-
-		
-		<div class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
-			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
-			</button>
-			<ul class="dropdown-menu dropdown-left">
-				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Show options</a></li>
-				<li role="separator" class="divider"></li>
-				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>all conditions</label></a></li>
-				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>any condition</label></a></li>
-				<li role="separator" class="divider"></li>
-				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>hide</a></li>
-			</ul>
-		</div>
-	
-		
-		</div>
-	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
-
-
-		
-		{BEGIN searchCtrlBlock}<div class="srchPanelRow form-group" {$filterRow_attrs}>
-			<label>{$fLabel}</label>	{$delCtrlButt}
-				<span class="rnr-searchtype">{$searchtype}</span>
-				<span class="rnr-searchcontrol">{$searchcontrol}</span>
-				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
-		</div>
-		{END searchCtrlBlock}
-		 
-		{BEGIN searchCtrlBlock_Employer}<div class="form-group srchPanelRow {$filterRow_class_Employer}" {$filterRow_attrs_Employer}>
-			<label>
-			
-			{$label payroll Employer}</label>
-							{$delCtrlButt}
-
-								<span class="rnr-searchtype">{$searchtype_Employer}</span>
-				<span class="rnr-searchcontrol">{$searchcontrol_Employer}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_Employer}</span>
-		</div>
-		{END searchCtrlBlock_Employer}
-		 
-		{BEGIN searchCtrlBlock_Division}<div class="form-group srchPanelRow {$filterRow_class_Division}" {$filterRow_attrs_Division}>
-			<label>
-			
-			{$label payroll Division}</label>
-							{$delCtrlButt}
-
-								<span class="rnr-searchtype">{$searchtype_Division}</span>
-				<span class="rnr-searchcontrol">{$searchcontrol_Division}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_Division}</span>
-		</div>
-		{END searchCtrlBlock_Division}
-		 
-		{BEGIN searchCtrlBlock_WageType}<div class="form-group srchPanelRow {$filterRow_class_WageType}" {$filterRow_attrs_WageType}>
-			<label>
-			
-			{$label payroll WageType}</label>
-							{$delCtrlButt}
-
-								<span class="rnr-searchtype">{$searchtype_WageType}</span>
-				<span class="rnr-searchcontrol">{$searchcontrol_WageType}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_WageType}</span>
-		</div>
-		{END searchCtrlBlock_WageType}
-		 
-		{BEGIN searchCtrlBlock_PayFromDate}<div class="form-group srchPanelRow {$filterRow_class_PayFromDate}" {$filterRow_attrs_PayFromDate}>
-			<label>
-			
-			{$label payroll PayFromDate}</label>
-							{$delCtrlButt}
-
-								<span class="rnr-searchtype">{$searchtype_PayFromDate}</span>
-				<span class="rnr-searchcontrol">{$searchcontrol_PayFromDate}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_PayFromDate}</span>
-		</div>
-		{END searchCtrlBlock_PayFromDate}
-		 
-		{BEGIN searchCtrlBlock_PayToDate}<div class="form-group srchPanelRow {$filterRow_class_PayToDate}" {$filterRow_attrs_PayToDate}>
-			<label>
-			
-			{$label payroll PayToDate}</label>
-							{$delCtrlButt}
-
-								<span class="rnr-searchtype">{$searchtype_PayToDate}</span>
-				<span class="rnr-searchcontrol">{$searchcontrol_PayToDate}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_PayToDate}</span>
-		</div>
-		{END searchCtrlBlock_PayToDate}
-
-
-	</div>
-	
-	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
-		<button class="btn btn-primary" id="searchButton{$id}" {$searchbutton_attrs}>Search</button>
-		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}>
-		Show all
-		</button>
-	</div>
-</div>
-
-
-{END searchPanel}
-
-
-
-
-</div>
-{END container_left}
-
-
-	</div>
-</div>	
-<div class="bs-wrapper">
-	<div class="bs-fixedheader" id="fixedheader{$id}">
-		{BEGIN container_menu}<nav {$menu_chiddenattr} data-pageid="{$pageid}" data-container="menu" class="navbar navbar-default bs-fullwidth-navbar">					
-
-
-
-{BEGIN container_bc}<div {$bc_chiddenattr} data-pageid="{$pageid}" data-container="bc" class=" navbar-form navbar-left   "> 
-
-{BEGIN breadcrumbs}<ol class="breadcrumb">
-<li ><a href="{$home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
-{BEGIN crumb}<li class="{$crumb_item_class}">
-{BEGIN crumb_title_link}<a {$crumb_attrs}>{$crumb_title}</a>
-{END crumb_title_link}
-{BEGIN crumb_title_span}<span {$crumb_attrs}>{$crumb_title}</span>
-{END crumb_title_span}	
-	{$crumb_dropdown}
-  </li>
-{END crumb}
-</ol>
-{END breadcrumbs}
-
-
-
-</div>
-{END container_bc}
-
-
-
-
-
-
-{BEGIN container_menu_1}<div {$menu_1_chiddenattr} data-pageid="{$pageid}" data-container="menu_1" class="bs-navform navbar-collapse bs-hidden-xs bs-navcontrolled" aria-expanded="false" >												   
-
-
-
-{BEGIN container_more}<div {$more_chiddenattr} data-pageid="{$pageid}" data-container="more" class=" navbar-right navbar-form   "> 
-
-{BEGIN more_list}<div {$morebutton_hiddenattr} data-pageid="{$pageid}" data-brick="morebutton" class="btn-group bs-navsection">
-	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		<span class="glyphicon glyphicon-cog"></span>
-		<span class="caret"></span>
-	</button>
-	<ul class="dropdown-menu">
-				{BEGIN editselected_link}<li class="massButton{$id} disabled"><a href="#" {$editselectedlink_attrs} {$editselectedlink_span} >Edit selected</a></li>
-		{END editselected_link}
-
-				{BEGIN exportselected_link}<li class="massButton{$id} disabled"><a href="#" {$exportselectedlink_attrs} {$exportselectedlink_span} >Export selected</a></li>
-		{END exportselected_link}
-		
-				{BEGIN deleteselected_link}<li class="massButton{$id} disabled"><a href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>Delete selected</a></li>
-		{END deleteselected_link}
-		
-				<li role="separator" class="divider"></li>	
-
-				{BEGIN asearch_link}<li><a href="payroll_search.php" {$advsearchlink_attrs}>Advanced search</a></li>
-		{END asearch_link}
-
-				{BEGIN searchPanelTopButtons}<li><a href=# id="showOptPanel{$id}">Show search panel</a></li>
-		{END searchPanelTopButtons}	
-		
-				
-				<li role="separator" class="divider"></li>	
-		
-				
-				{BEGIN export_link}<li><a target="_blank" href="payroll_export.php"  {$exportlink_attrs}>Export results</a></li>
-		{END export_link}
-
-				{BEGIN import_link}<li><a href="payroll_import.php?{$crosstable_attrs}"  {$importlink_attrs}>Import</a></li>
-		{END import_link}
-
-				
-	</ul>  
-</div>
-
-{END more_list}
-
-
-{BEGIN security_block}<span {$loggedas_hiddenattr} data-pageid="{$pageid}" data-brick="loggedas" id="login_block{$id}" class="bs-navsection">
-	{BEGIN guestloginbutton}<button class="btn btn-info" type="button" {$guestloginlink_attrs}>Login</button>
-	{END guestloginbutton}
-	{BEGIN loggedas_message}<span class="dropdown">
-			<button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				<span class="glyphicon glyphicon-user"></span>	{$username}</button>
-			<ul class="dropdown-menu">
-		{BEGIN logoutbutton}<li><a href="#" {$logoutlink_attrs}>Log out</a></li>
-		{END logoutbutton}
-		
-		{BEGIN adminarea_link}<li><a href="admin_rights_list.php" {$adminarealink_attrs}>Admin Area</a></li>
-		{END adminarea_link}
-
-
-			</ul>
-		</span>
-	{END loggedas_message}
-</span>
-{END security_block}
-
-
-
-</div>
-{END container_more}
-
-
-
-
-
-
-
-
-{BEGIN container_more_1}<div {$more_1_chiddenattr} data-pageid="{$pageid}" data-container="more_1" class=" navbar-right navbar-form   "> 
-
-{BEGIN searchform_block}<span {$search_hiddenattr} data-pageid="{$pageid}" data-brick="search" class="form-group">
-
- <div  class="input-group">
-{BEGIN searchform_text}<input type="search" class="form-control" {$searchfor_attrs} size="25">
-{END searchform_text}
-	<span class="input-group-btn">
-	{BEGIN searchform_showall}<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Show all">
-			<span class="glyphicon glyphicon-remove"></span>
-		</button>
-	{END searchform_showall}
-	{BEGIN searchform_search}<button {$searchbutton_attrs} class="btn btn-primary" >
-		<span class="glyphicon glyphicon-search"></span>
-	</button>
-	{END searchform_search}
-	</span>
-</div>
-		
-</span>
-{END searchform_block}
-
-
-
-</div>
-{END container_more_1}
-
-
-
-
-												</div>						{END container_menu_1}
-
-
-									</nav>{END container_menu}
-	</div>	
-	<div class="container-fluid bs-underheader bs-fixedsidebarmain" id="underheader{$id}">
-		{$header}
-		<div class="bs-sidebar-screenbound">
-			
-
-
-
-{BEGIN container_gridcontrols}<div {$gridcontrols_chiddenattr} data-pageid="{$pageid}" data-container="gridcontrols" class=" bs-navcontrolled bs-hidden-xs   "> 
-
-
-
-
-{BEGIN container_add_delete}<div {$add_delete_chiddenattr} data-pageid="{$pageid}" data-container="add_delete" class=" bottom-margin  col-md-6 "> 
-
-{BEGIN newrecord_controls_block}{END newrecord_controls_block}
-
-
-{BEGIN record_controls_block}<span {$recordcontrol_hiddenattr} data-pageid="{$pageid}" data-brick="recordcontrol">
-		{BEGIN deleteselected_link}<button type="button" class="btn btn-default" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled>Delete</button>
-	{END deleteselected_link}
-			{BEGIN saveall_link}<button type="button" class="btn btn-primary" {$savealllink_attrs} {$savealllink_span}>Save all</button>
-	{END saveall_link}
-	{BEGIN cancelall_link}<button type="button" class="btn btn-default" {$cancelalllink_attrs} {$cancelalllink_span}>Cancel</button>
-	{END cancelall_link}
-</span>
-
-{END record_controls_block}
-
-
-
-</div>
-{END container_add_delete}
-
-
-
-
-
-
-
-
-{BEGIN container_gridinfo}<div {$gridinfo_chiddenattr} data-pageid="{$pageid}" data-container="gridinfo" class=" bottom-margin text-right col-md-6 "> 
-
-{BEGIN details_found}<span {$details_found_hiddenattr} data-pageid="{$pageid}" data-brick="details_found" class="form-inline form-inline-always">
-	{$records_indicator}
-	<span>
-	{BEGIN recordspp_block}{$recsPerPage}
-	{END recordspp_block}
-	</span>
-</span>
-{END details_found}
-
-
-{BEGIN print_friendly}<span {$printpanel_hiddenattr} data-pageid="{$pageid}" data-brick="printpanel" class="bs-printpanel" id="printpanelblock{$id}">
-	<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" title="Print-friendly page">
-		<span class="glyphicon glyphicon-print" ></span>
-		<span class="caret"></span>
-    </button>
-	<ul class="dropdown-menu pull-right" >
-		<li>
-			<div class="container-fluid" id="print_friendly_scope{$id}">
-				<div class="row">
-					<div class="col-md-4">Scope:</div>
-										{BEGIN print_friendly_all}<div class="col-md-8">
-						<label for="printAll{$id}">
-							<input type="radio" id="printAll{$id}" data-href="payroll_print.php?all=1&amp;{$crosstable_attrs}" name="printScope">
-							Print all pages
-						</label>
-					</div>
-					{END print_friendly_all}
-				</div>
-				<div class="row">
-					<div class="col-md-4">&nbsp;</div>
-					<div class="col-md-8">
-						<label for="printPage{$id}">
-							<input type="radio" id="printPage{$id}" data-href="payroll_print.php?{$crosstable_attrs}" name="printScope" checked>
-							Print this page
-						</label>
-					</div>
-				</div>
-								<div class="row">
-					<div class="col-md-4">&nbsp;</div>
-					<div class="col-md-8">
-						<label for="printSelection{$id}" style="color: gray;">
-							<input type="radio" id="printSelection{$id}" name="printScope" disabled="disabled">
-							Print selected
-						</label>
-					</div>
-				</div>
-			</div>
-		</li>
-		<li class="divider" role="separator"></li>
-
-				<li>			
-		{BEGIN print_details}<div class="rnr-printdetails">
-				<label for="printDetailsToggler{$id}">
-					<input type="checkbox" id="printDetailsToggler{$id}">
-					Print details
-				</label>
-				<DIV class="rnr-printdetailstables" id="printdetailstables{$id}" style="display: none;">
-  {BEGIN print_details_payrolltab}<div class="rnr-printdetialstable">
-								<label for="printDetailspayrolltab{$id}">
-									<input type="checkbox" value="payrolltab" id="printDetailspayrolltab{$id}" checked>
-									Payroll Table
-								</label>
-							</div>
-					{END print_details_payrolltab}
-					{BEGIN print_details_payrolldiv}<div class="rnr-printdetialstable">
-								<label for="printDetailspayrolldiv{$id}">
-									<input type="checkbox" value="payrolldiv" id="printDetailspayrolldiv{$id}" checked>
-									Payroll Prints
-								</label>
-							</div>
-					{END print_details_payrolldiv}
-				</div>
-			</div>
-		{END print_details}
-		</li>
-		<li class="divider" role="separator"></li>
-
-				<li>	
-			<div class="rnr-printdetails">
-				<label for="printPerPage{$id}">
-											Records Per Page:
-				</label>
-				<input type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">		
-			</div>
-		</li>
-		<li class="divider" role="separator"></li>
-		<li class="rnr-printbutton">				
-			<button type="button" class="btn btn-primary" id="print_friendly_button{$id}" >Print</button>			
-		</li>
-	</ul>	
-</span>
-
-{END print_friendly}
-
-
-
-
-</div>
-{END container_gridinfo}
-
-
-
-
-
-
-
-</div>
-{END container_gridcontrols}
-
-
-		</div>
-		<div></div>
-		<div class="bs-sidebar-screenbound bs-minwidth">
-			
-
-{BEGIN container_tabs}<div {$tabs_chiddenattr} data-pageid="{$pageid}" data-container="tabs" class="    "> 
-
-{BEGIN grid_tabs}<div {$bsgrid_tabs_hiddenattr} data-pageid="{$pageid}" data-brick="bsgrid_tabs">
-<ul class="nav nav-tabs">
-{$grid_tabs_content}
-</ul>
-</div>
-{END grid_tabs}
-
-
-
-</div>
-{END container_tabs}
-
-
-
-{BEGIN container_message}<div {$message_chiddenattr} data-pageid="{$pageid}" data-container="message" class="    "> 
-
-{BEGIN message_block}<div {$message_hiddenattr} data-pageid="{$pageid}" data-brick="message" class="alert {$message_class}" role="alert">{$message}</div>
-{END message_block}
-
-
-
-</div>
-{END container_message}
-
-
-
-{BEGIN container_center}<div {$center_chiddenattr} data-pageid="{$pageid}" data-container="center" class="    "> 
-
-
-
-
-{BEGIN container_grid}<div {$grid_chiddenattr} data-pageid="{$pageid}" data-container="grid" class="bs-grid    "> 
-
-{BEGIN grid_block}<style>
+</STYLE>
+ 
+<DIV class="sidebar bs-fixed clearfix mCustomScrollbar" data-mcs-theme="minimal-dark" {$blockattr_left}>
+<DIV class="sidebar-contents mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside">
+{BEGIN container_logo}<DIV class="bs-sidebarlogo" data-container="logo" data-pageid="{$pageid}" {$logo_chiddenattr}>{BEGIN logo_block}<A class="navbar-brand" href="{$home_link}" data-brick="logo" data-pageid="{$pageid}" {$logo_hiddenattr}>{$logo}</A> {END logo_block}</DIV>
+{END container_logo}{BEGIN container_hdr}<DIV class="navbar-default clearfix" data-container="hdr" data-pageid="{$pageid}" {$hdr_chiddenattr}>{BEGIN collapse_block}<BUTTON class="navbar-toggle collapsed" type="button" data-brick="bsnavbarcollapse" data-pageid="{$pageid}" data-target=".bs-navcontrolled" data-runner-toggle="collapse" {$bsnavbarcollapse_hiddenattr}><SPAN class="sr-only">Toggle 
+navigation</SPAN>	<SPAN class="icon-bar"></SPAN></BUTTON>	{END collapse_block}</DIV>
+{END container_hdr}{BEGIN container_sidemenu}<DIV class="bs-navform navbar-collapse sidebar-menu bs-hidden-xs bs-navcontrolled" aria-expanded="false" data-container="sidemenu" data-pageid="{$pageid}" {$sidemenu_chiddenattr}>{BEGIN menu_block}
+{$menu main}{END menu_block}</DIV>
+{END container_sidemenu}{BEGIN container_left}<DIV class="sidebar-container" data-container="left" data-pageid="{$pageid}" {$left_chiddenattr}>
+{BEGIN searchPanel}<DIV class="searchOptions panel panel-primary searchPanelContainer" data-brick="searchpanel" data-pageid="{$pageid}" {$searchpanel_hiddenattr} {$srchOpt_attrs}><!-- Search panel content --> 
+<DIV class="panel-heading">
+<DIV class="btn-group" id="addSearchFieldButton{$id}"><BUTTON class="btn btn-default dropdown-toggle" id="showHideControlChooseMenu{$id}" aria-expanded="false" aria-haspopup="true" type="button" data-toggle="dropdown">	Search in <SPAN class="caret"></SPAN> </BUTTON> </DIV> 
+<DIV class="btn-group searchpanel-options" id="searchPanelOptions{$id}"><BUTTON class="btn btn-default dropdown-toggle" aria-expanded="false" aria-haspopup="true" type="button" data-toggle="dropdown"><SPAN class="glyphicon glyphicon glyphicon-option-vertical"></SPAN> 
+</BUTTON> 
+<UL class="dropdown-menu dropdown-left">
+  <LI id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><A>Show options</A></LI>
+  <LI class="divider" role="separator"></LI>
+  <LI class="srchCritTop" style="display: none;"><A><INPUT name="srchType{$id}" id="radioAll" type="radio" {$all_checkbox}><LABEL for="radioAll"><SPAN class="glyphicon">&nbsp;</SPAN>all 
+  conditions</LABEL></A></LI>
+  <LI class="srchCritTop" style="display: none;"><A><INPUT name="srchType{$id}" id="radioAny" type="radio" {$any_checkbox}><LABEL for="radioAny"><SPAN class="glyphicon">&nbsp;</SPAN>any 
+  condition</LABEL></A></LI>
+  <LI class="divider" role="separator"></LI>
+  <LI><A class="close-button"><SPAN class="glyphicon glyphicon-remove">&nbsp;</SPAN>hide</A></LI></UL></DIV></DIV>
+<DIV class="panel-body controlsBlock" {$bottomSearchButt_attrs}>
+{BEGIN searchCtrlBlock}<DIV class="srchPanelRow form-group" {$filterRow_attrs}><LABEL>
+{$fLabel}</LABEL>	{$delCtrlButt} 
+<SPAN class="rnr-searchtype">
+{$searchtype}</SPAN> <SPAN class="rnr-searchcontrol">
+{$searchcontrol}</SPAN> <SPAN class="rnr-searchcontrol">
+{$searchcontrol1}</SPAN> </DIV>
+{END searchCtrlBlock}{BEGIN searchCtrlBlock_Employer}<DIV class="form-group srchPanelRow {$filterRow_class_Employer}" {$filterRow_attrs_Employer}><LABEL>
+{$label payroll Employer}</LABEL> {$delCtrlButt} 
+<SPAN class="rnr-searchtype">{$searchtype_Employer}</SPAN> <SPAN class="rnr-searchcontrol">
+{$searchcontrol_Employer}</SPAN> <SPAN class="rnr-searchcontrol">
+{$searchcontrol1_Employer}</SPAN> </DIV>
+{END searchCtrlBlock_Employer}{BEGIN searchCtrlBlock_PayFromDate}<DIV class="form-group srchPanelRow {$filterRow_class_PayFromDate}" {$filterRow_attrs_PayFromDate}><LABEL>
+{$label payroll PayFromDate}</LABEL> {$delCtrlButt} <SPAN class="rnr-searchtype">{$searchtype_PayFromDate}</SPAN> <SPAN class="rnr-searchcontrol">
+{$searchcontrol_PayFromDate}</SPAN> <SPAN class="rnr-searchcontrol">
+{$searchcontrol1_PayFromDate}</SPAN> </DIV>
+{END searchCtrlBlock_PayFromDate}{BEGIN searchCtrlBlock_PayToDate}<DIV class="form-group srchPanelRow {$filterRow_class_PayToDate}" {$filterRow_attrs_PayToDate}><LABEL>
+{$label payroll PayToDate}</LABEL> {$delCtrlButt} <SPAN class="rnr-searchtype">{$searchtype_PayToDate}</SPAN> <SPAN class="rnr-searchcontrol">
+{$searchcontrol_PayToDate}</SPAN> <SPAN class="rnr-searchcontrol">
+{$searchcontrol1_PayToDate}</SPAN> </DIV>{END searchCtrlBlock_PayToDate}</DIV>
+<DIV class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}><BUTTON class="btn btn-primary" id="searchButton{$id}" {$searchbutton_attrs}>Search</BUTTON> <BUTTON class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}>	Show all </BUTTON> 
+</DIV></DIV>{END searchPanel}</DIV>{END container_left}</DIV></DIV>
+<DIV class="bs-wrapper">
+<DIV class="bs-fixedheader" id="fixedheader{$id}">{BEGIN container_menu}<NAV class="navbar navbar-default bs-fullwidth-navbar" data-container="menu" data-pageid="{$pageid}" {$menu_chiddenattr}>
+{BEGIN container_bc}<DIV class="navbar-form navbar-left" data-container="bc" data-pageid="{$pageid}" {$bc_chiddenattr}>
+{BEGIN breadcrumbs}<OL class="breadcrumb">
+  <LI><A href="{$home_link}"><SPAN class="glyphicon glyphicon-home"></SPAN></A>
+  {$crumb_dropdown}</LI> 
+  {BEGIN crumb}<LI class="{$crumb_item_class}"> {BEGIN crumb_title_link}<A {$crumb_attrs}>
+  {$crumb_title}</A> {END crumb_title_link}{BEGIN crumb_title_span}<SPAN {$crumb_attrs}>
+  {$crumb_title}</SPAN>	 
+  {END crumb_title_span}{$crumb_dropdown} </LI> {END crumb}</OL>{END breadcrumbs}</DIV>
+{END container_bc}{BEGIN container_menu_1}<DIV class="bs-navform navbar-collapse bs-hidden-xs bs-navcontrolled" aria-expanded="false" data-container="menu_1" data-pageid="{$pageid}" {$menu_1_chiddenattr}>
+{BEGIN container_more}<DIV class="navbar-right navbar-form" data-container="more" data-pageid="{$pageid}" {$more_chiddenattr}>
+{BEGIN more_list}<DIV class="btn-group bs-navsection" data-brick="morebutton" data-pageid="{$pageid}" {$morebutton_hiddenattr}><BUTTON class="btn btn-default dropdown-toggle" aria-expanded="false" aria-haspopup="true" type="button" data-toggle="dropdown"><SPAN class="glyphicon glyphicon-cog"></SPAN> <SPAN class="caret"></SPAN> </BUTTON> 
+<UL class="dropdown-menu">
+  {BEGIN editselected_link}<LI class="massButton{$id} disabled"><A href="#" {$editselectedlink_attrs} {$editselectedlink_span}>Edit 
+  selected</A></LI>
+  {END editselected_link}{BEGIN exportselected_link}<LI class="massButton{$id} disabled"><A href="#" {$exportselectedlink_attrs} {$exportselectedlink_span}>Export 
+  selected</A></LI>
+  {END exportselected_link}{BEGIN deleteselected_link}<LI class="massButton{$id} disabled"><A href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>Delete 
+  selected</A></LI>
+  {END deleteselected_link}<LI class="divider" role="separator"></LI>
+  {BEGIN asearch_link}<LI><A href="payroll_search.php" {$advsearchlink_attrs}>Advanced search</A></LI>
+  {END asearch_link}{BEGIN searchPanelTopButtons}<LI><A id="showOptPanel{$id}" href="#">Show search panel</A></LI>
+  {END searchPanelTopButtons}<LI class="divider" role="separator"></LI>
+  {BEGIN export_link}<LI><A href="payroll_export.php" target="_blank" {$exportlink_attrs}>Export 
+  results</A></LI>
+  {END export_link}{BEGIN import_link}<LI><A href="payroll_import.php?{$crosstable_attrs}" {$importlink_attrs}>Import</A></LI>{END import_link}</UL></DIV> 
+{END more_list}{BEGIN security_block}<SPAN class="bs-navsection" id="login_block{$id}" data-brick="loggedas" data-pageid="{$pageid}" {$loggedas_hiddenattr}>{BEGIN guestloginbutton}<BUTTON class="btn btn-info" type="button" {$guestloginlink_attrs}>Login</BUTTON> {END guestloginbutton}{BEGIN loggedas_message}<SPAN class="dropdown"><BUTTON class="btn btn-info dropdown-toggle" aria-expanded="false" aria-haspopup="true" type="button" data-toggle="dropdown"><SPAN class="glyphicon glyphicon-user"></SPAN>	
+{$username}</BUTTON> 
+<UL class="dropdown-menu">
+  {BEGIN logoutbutton}<LI><A href="#" {$logoutlink_attrs}>Log out</A></LI>
+  {END logoutbutton}{BEGIN adminarea_link}<LI><A href="admin_rights_list.php" {$adminarealink_attrs}>Admin 
+Area</A></LI>{END adminarea_link}</UL></SPAN> {END loggedas_message}</SPAN> {END security_block}</DIV>
+{END container_more}{BEGIN container_more_1}<DIV class="navbar-right navbar-form" data-container="more_1" data-pageid="{$pageid}" {$more_1_chiddenattr}>{BEGIN searchform_block}<SPAN class="form-group" data-brick="search" data-pageid="{$pageid}" {$search_hiddenattr}>
+<DIV class="input-group">{BEGIN searchform_text}<INPUT class="form-control" type="search" size="25" {$searchfor_attrs}>{END searchform_text} 
+<SPAN class="input-group-btn">{BEGIN searchform_showall}<BUTTON title="Show all" class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}><SPAN class="glyphicon glyphicon-remove"></SPAN> </BUTTON> {END searchform_showall}{BEGIN searchform_search}<BUTTON class="btn btn-primary" {$searchbutton_attrs}><SPAN class="glyphicon glyphicon-search"></SPAN> 
+</BUTTON> {END searchform_search}</SPAN> </DIV> </SPAN> {END searchform_block}</DIV>{END container_more_1}</DIV>{END container_menu_1}</NAV>{END container_menu}</DIV>
+<DIV class="container-fluid bs-underheader bs-fixedsidebarmain" id="underheader{$id}">
+{$header} 
+<DIV class="bs-sidebar-screenbound">
+{BEGIN container_gridcontrols}<DIV class="bs-navcontrolled bs-hidden-xs" data-container="gridcontrols" data-pageid="{$pageid}" {$gridcontrols_chiddenattr}>
+{BEGIN container_add_delete}<DIV class="bottom-margin col-md-6" data-container="add_delete" data-pageid="{$pageid}" {$add_delete_chiddenattr}>{BEGIN record_controls_block}<SPAN data-brick="recordcontrol" data-pageid="{$pageid}" {$recordcontrol_hiddenattr}>{BEGIN deleteselected_link}<BUTTON disabled class="btn btn-default" type="button" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>Delete</BUTTON> 
+{END deleteselected_link}{BEGIN saveall_link}<BUTTON class="btn btn-primary" type="button" {$savealllink_attrs} {$savealllink_span}>Save all</BUTTON> 
+{END saveall_link}{BEGIN cancelall_link}<BUTTON class="btn btn-default" type="button" {$cancelalllink_attrs} {$cancelalllink_span}>Cancel</BUTTON> 
+{END cancelall_link}</SPAN> {END record_controls_block}</DIV>
+{END container_add_delete}{BEGIN container_gridinfo}<DIV class="bottom-margin text-right col-md-6" data-container="gridinfo" data-pageid="{$pageid}" {$gridinfo_chiddenattr}>{BEGIN details_found}<SPAN class="form-inline form-inline-always" data-brick="details_found" data-pageid="{$pageid}" {$details_found_hiddenattr}>
+{$records_indicator} <SPAN>{BEGIN recordspp_block}
+{$recsPerPage}{END recordspp_block} </SPAN> </SPAN> {END details_found}{BEGIN print_friendly}<SPAN class="bs-printpanel" id="printpanelblock{$id}" data-brick="printpanel" data-pageid="{$pageid}" {$printpanel_hiddenattr}><BUTTON title="Print-friendly page" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><SPAN class="glyphicon glyphicon-print"></SPAN> <SPAN class="caret"></SPAN> </BUTTON> 
+<UL class="dropdown-menu pull-right">
+  <LI>
+  <DIV class="container-fluid" id="print_friendly_scope{$id}">
+  <DIV class="row">
+  <DIV class="col-md-4">Scope:</DIV>
+  {BEGIN print_friendly_all}<DIV class="col-md-8"><LABEL for="printAll{$id}"><INPUT name="printScope" id="printAll{$id}" type="radio" data-href="payroll_print.php?all=1&amp;{$crosstable_attrs}">	Print 
+  all pages </LABEL> </DIV>{END print_friendly_all}</DIV>
+  <DIV class="row">
+  <DIV class="col-md-4">&nbsp;</DIV>
+  <DIV class="col-md-8"><LABEL for="printPage{$id}"><INPUT name="printScope" id="printPage{$id}" type="radio" checked data-href="payroll_print.php?{$crosstable_attrs}">	Print 
+  this page </LABEL> </DIV></DIV>
+  <DIV class="row">
+  <DIV class="col-md-4">&nbsp;</DIV>
+  <DIV class="col-md-8"><LABEL style="color: gray;" 
+  for="printSelection{$id}"><INPUT name="printScope" disabled="disabled" id="printSelection{$id}" type="radio">	Print selected </LABEL> </DIV></DIV></DIV></LI>
+  <LI class="divider" role="separator"></LI>
+  <LI>
+  {BEGIN print_details}<DIV class="rnr-printdetails"><LABEL for="printDetailsToggler{$id}"><INPUT id="printDetailsToggler{$id}" type="checkbox">	Print 
+  details </LABEL> 
+  <DIV class="rnr-printdetailstables" id="printdetailstables{$id}" style="display: none;">
+  {BEGIN print_details_payrolltab}<DIV class="rnr-printdetialstable"><LABEL for="printDetailspayrolltab{$id}"><INPUT id="printDetailspayrolltab{$id}" type="checkbox" checked value="payrolltab">	Payroll Table </LABEL> </DIV>
+  {END print_details_payrolltab}{BEGIN print_details_payrolldiv}<DIV class="rnr-printdetialstable"><LABEL for="printDetailspayrolldiv{$id}"><INPUT id="printDetailspayrolldiv{$id}" type="checkbox" checked value="payrolldiv">	Payroll Prints </LABEL> </DIV>{END print_details_payrolldiv}</DIV></DIV>{END print_details}</LI>
+  <LI class="divider" role="separator"></LI>
+  <LI>
+  <DIV class="rnr-printdetails"><LABEL for="printPerPage{$id}">	Records Per 
+  Page: </LABEL> 
+<INPUT class="rnr-printrecspp" id="printPerPage{$id}" type="number" value="{$print_recspp}">	</DIV></LI>
+  <LI class="divider" role="separator"></LI>
+  <LI class="rnr-printbutton"><BUTTON class="btn btn-primary" id="print_friendly_button{$id}" type="button">Print</BUTTON>	</LI></UL></SPAN> {END print_friendly}</DIV>{END container_gridinfo}</DIV>{END container_gridcontrols}</DIV>
+<DIV></DIV>
+<DIV class="bs-sidebar-screenbound bs-minwidth">
+{BEGIN container_tabs}<DIV class=" " data-container="tabs" data-pageid="{$pageid}" {$tabs_chiddenattr}>
+{BEGIN grid_tabs}<DIV data-brick="bsgrid_tabs" data-pageid="{$pageid}" {$bsgrid_tabs_hiddenattr}>
+<UL class="nav nav-tabs">
+  {$grid_tabs_content} </UL></DIV>{END grid_tabs}</DIV>
+{END container_tabs}{BEGIN container_message}<DIV class=" " data-container="message" data-pageid="{$pageid}" {$message_chiddenattr}>
+{BEGIN message_block}<DIV class="alert {$message_class}" role="alert" data-brick="message" data-pageid="{$pageid}" {$message_hiddenattr}>
+{$message}</DIV>{END message_block}</DIV>
+{END container_message}{BEGIN container_center}<DIV class=" " data-container="center" data-pageid="{$pageid}" {$center_chiddenattr}>
+{BEGIN container_grid}<DIV class="bs-grid" data-container="grid" data-pageid="{$pageid}" {$grid_chiddenattr}>{BEGIN grid_block}
+<STYLE>
 	.bs-gridcell[data-field=PSID]:before {
 		content: "{$label payroll PSID}";
 	}
@@ -553,354 +181,83 @@
 	.bs-gridcell[data-field=Employer]:before {
 		content: "{$label payroll Employer}";
 	}
-	.bs-gridcell[data-field=Division]:before {
-		content: "{$label payroll Division}";
-	}
-	.bs-gridcell[data-field=WageType]:before {
-		content: "{$label payroll WageType}";
-	}
-</style>
-<TABLE class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" style="width: 1948px;" cellpadding="0" data-brick="grid" data-pageid="{$pageid}" {$grid_hiddenattr}>
-  <thead>
-										{BEGIN grid_header}<TR class="rnr-toprow {$gridHeader_class}" style="height: 40px;">{BEGIN record_header}{BEGIN listIcons_column}<TH style="width: 67px;" rowspan="1" colspan="1" ieditcont="all"> 
-        &nbsp;</th>
-									{END listIcons_column}	
-
-																		{BEGIN checkbox_column}<TH style="width: 30px;" rowspan="1" colspan="1"><input type="checkbox" {$checkboxheader_attrs}>
-									</th>
-									{END checkbox_column}
-
-																		{BEGIN payroll_dtable_column}<TH style="width: 138px;" rowspan="1" colspan="1"> &nbsp;
-</th>
-									{END payroll_dtable_column}
-									
-									{BEGIN PSID_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$PSID_class}" style="width: 80px;" rowspan="1" colspan="1" data-field="PSID">{BEGIN PSID_fieldheader}<span {$PSID_orderlinkattrs}>
-											{$label payroll PSID}
-										</span>
-									{END PSID_fieldheader}
-									</th>
-									{END PSID_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN Locked_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Locked_class}" style="width: 173px;" rowspan="1" colspan="1" data-field="Locked">{BEGIN Locked_fieldheader}<span {$Locked_orderlinkattrs}>
-											{$label payroll Locked}
-										</span>
-									{END Locked_fieldheader}
-									</th>
-									{END Locked_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN Employer_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Employer_class}" data-field=Employer>
-									{BEGIN Employer_fieldheader}<span {$Employer_orderlinkattrs}>
-											{$label payroll Employer}
-										</span>
-									{END Employer_fieldheader}
-									</th>
-									{END Employer_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN Division_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Division_class}" data-field=Division>
-									{BEGIN Division_fieldheader}<span {$Division_orderlinkattrs}>
-											{$label payroll Division}
-										</span>
-									{END Division_fieldheader}
-									</th>
-									{END Division_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN WageType_fieldheadercolumn}<th class="rnr-gridfieldlabel {$WageType_class}" data-field=WageType>
-									{BEGIN WageType_fieldheader}<span {$WageType_orderlinkattrs}>
-											{$label payroll WageType}
-										</span>
-									{END WageType_fieldheader}
-									</th>
-									{END WageType_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN PayFromDate_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$PayFromDate_class}" style="width: 133px;" rowspan="1" colspan="1" data-field="PayFromDate">{BEGIN PayFromDate_fieldheader}<span {$PayFromDate_orderlinkattrs}>
-											{$label payroll PayFromDate}
-										</span>
-									{END PayFromDate_fieldheader}
-									</th>
-									{END PayFromDate_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN PayToDate_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$PayToDate_class}" style="width: 117px;" rowspan="1" colspan="1" data-field="PayToDate">{BEGIN PayToDate_fieldheader}<span {$PayToDate_orderlinkattrs}>
-											{$label payroll PayToDate}
-										</span>
-									{END PayToDate_fieldheader}
-									</th>
-									{END PayToDate_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN PayDate_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$PayDate_class}" style="width: 101px;" rowspan="1" colspan="1" data-field="PayDate">{BEGIN PayDate_fieldheader}<span {$PayDate_orderlinkattrs}>
-											{$label payroll PayDate}
-										</span>
-									{END PayDate_fieldheader}
-									</th>
-									{END PayDate_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN Statutories_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Statutories_class}" style="width: 114px;" rowspan="1" colspan="1" data-field="Statutories">{BEGIN Statutories_fieldheader}<span {$Statutories_orderlinkattrs}>
-											{$label payroll Statutories}
-										</span>
-									{END Statutories_fieldheader}
-									</th>
-									{END Statutories_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN Stat_Loans_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Stat_Loans_class}" style="width: 114px;" rowspan="1" colspan="1" data-field="Stat_Loans">{BEGIN Stat_Loans_fieldheader}<span {$Stat_Loans_orderlinkattrs}>
-											{$label payroll Stat_Loans}
-										</span>
-									{END Stat_Loans_fieldheader}
-									</th>
-									{END Stat_Loans_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN Deductions_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Deductions_class}" style="width: 117px;" rowspan="1" colspan="1" data-field="Deductions">{BEGIN Deductions_fieldheader}<span {$Deductions_orderlinkattrs}>
-											{$label payroll Deductions}
-										</span>
-									{END Deductions_fieldheader}
-									</th>
-									{END Deductions_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN Adjustments_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Adjustments_class}" style="width: 124px;" rowspan="1" colspan="1" data-field="Adjustments">{BEGIN Adjustments_fieldheader}<span {$Adjustments_orderlinkattrs}>
-											{$label payroll Adjustments}
-										</span>
-									{END Adjustments_fieldheader}
-									</th>
-									{END Adjustments_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN PresetTax_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$PresetTax_class}" style="width: 111px;" rowspan="1" colspan="1" data-field="PresetTax">{BEGIN PresetTax_fieldheader}<span {$PresetTax_orderlinkattrs}>
-											{$label payroll PresetTax}
-										</span>
-									{END PresetTax_fieldheader}
-									</th>
-									{END PresetTax_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN 13thMonth_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$13thMonth_class}" style="width: 113px;" rowspan="1" colspan="1" data-field="13thMonth">{BEGIN 13thMonth_fieldheader}<span {$13thMonth_orderlinkattrs}>
-											{$label payroll 13thMonth}
-										</span>
-									{END 13thMonth_fieldheader}
-									</th>
-									{END 13thMonth_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN endrecordheader_block}<TH class="rnr-cs" style="width: 21px;" rowspan="1" colspan="1"> 
-        &nbsp;</th>
-									
-									{END endrecordheader_block}
-									
-									{END record_header}
-									
-								</tr>
-								{END grid_header}
-
-	</thead>
-	<tbody>	
-		{BEGIN grid_row}<tr class="{$rowclass} bs-gridrow" {$rowattrs} {$rowstyle}>
-	{BEGIN grid_record}{BEGIN listIcons_column}<TD class="bs-gridicons" style="width: 67px;" rowspan="1" colspan="1" ieditcont="all" {$rowstyle} {$recordattrs}>{BEGIN inlineedit_column}{BEGIN inlineedit_link}<a class="glyphicon glyphicon-edit" {$inlineeditlink_attrs} title="Inline Edit"></a>
-	{END inlineedit_link}
-	{END inlineedit_column}
-	
-	<span data-hidden {$ieditbuttonsholder_attrs}></span>
-
-	
-		{BEGIN view_column}{BEGIN view_link}<a class="glyphicon glyphicon-search" {$viewlink_attrs} title="View"></a>
-	{END view_link}
-	{END view_column}
-	</td>	
-	{END listIcons_column}	
-
-		{BEGIN checkbox_column}<TD class="bs-gridcheckbox" style="width: 30px;" rowspan="1" colspan="1" ieditcont="checkBox" {$rowstyle} {$recordattrs}>{BEGIN checkbox}<input type="checkbox" {$checkbox_attrs}>
-	{END checkbox}
-	</td>
-	{END checkbox_column}
-
-		{BEGIN payroll_dtable_column}<TD class="rnr-nowrap bs-griddetails" style="width: 138px;" rowspan="1" colspan="1" {$rowstyle} {$recordattrs}>{BEGIN dtables_link}<a {$dtables_link_attrs} class="glyphicon glyphicon-th-list {$dtables_link_class}" title="Show details"></a>
-								{BEGIN payrolltab_childcount}<a {$payrolltab_link_attrs} class="{$payrolltab_dlink_class}" title="Payroll Table">
-					<span class="details-badge badge payrolltab_badge" {$payrolltab_childnumber_attr}>
-						{$payrolltab_childnumber}
-					</span></a>
-				{END payrolltab_childcount}
-								{BEGIN payrolldiv_childcount}<a {$payrolldiv_link_attrs} class="{$payrolldiv_dlink_class}" title="Payroll Prints">
-					<span class="details-badge badge payrolldiv_badge" {$payrolldiv_childnumber_attr}>
-						{$payrolldiv_childnumber}
-					</span></a>
-				{END payrolldiv_childcount}
-		{END dtables_link}
-	
-	
-	<A class="rnr-button btn btn-default" id="Process_Payroll" href="#" typeid="ib"> Process Payroll 
-      </A> </td>
-	{END payroll_dtable_column}
-
-
-	{BEGIN PSID_fieldcolumn}<TD class="bs-gridcell {$PSID_class}" style="width: 80px;" rowspan="1" colspan="1" data-field="PSID" {$rowstyle} {$recordattrs}>
-      {$PSID_value}
-	</td>
-{END PSID_fieldcolumn}
-
-
-	{BEGIN Locked_fieldcolumn}<TD class="bs-gridcell {$Locked_class}" style="width: 173px;" rowspan="1" colspan="1" data-field="Locked" {$rowstyle} {$recordattrs}>
-      {$Locked_value}
-	</td>
-{END Locked_fieldcolumn}
-
-
-	{BEGIN Employer_fieldcolumn}<td class="bs-gridcell {$Employer_class}"  data-field=Employer {$rowstyle} {$recordattrs}>
-		{$Employer_value}
-	</td>
-{END Employer_fieldcolumn}
-
-
-	{BEGIN Division_fieldcolumn}<td class="bs-gridcell {$Division_class}"  data-field=Division {$rowstyle} {$recordattrs}>
-		{$Division_value}
-	</td>
-{END Division_fieldcolumn}
-
-
-	{BEGIN WageType_fieldcolumn}<td class="bs-gridcell {$WageType_class}"  data-field=WageType {$rowstyle} {$recordattrs}>
-		{$WageType_value}
-	</td>
-{END WageType_fieldcolumn}
-
-
-	{BEGIN PayFromDate_fieldcolumn}<TD class="bs-gridcell {$PayFromDate_class}" style="width: 133px;" rowspan="1" colspan="1" data-field="PayFromDate" {$rowstyle} {$recordattrs}>
-      {$PayFromDate_value}
-	</td>
-{END PayFromDate_fieldcolumn}
-
-
-	{BEGIN PayToDate_fieldcolumn}<TD class="bs-gridcell {$PayToDate_class}" style="width: 117px;" rowspan="1" colspan="1" data-field="PayToDate" {$rowstyle} {$recordattrs}>
-      {$PayToDate_value}
-	</td>
-{END PayToDate_fieldcolumn}
-
-
-	{BEGIN PayDate_fieldcolumn}<TD class="bs-gridcell {$PayDate_class}" style="width: 101px;" rowspan="1" colspan="1" data-field="PayDate" {$rowstyle} {$recordattrs}>
-      {$PayDate_value}
-	</td>
-{END PayDate_fieldcolumn}
-
-
-	{BEGIN Statutories_fieldcolumn}<TD class="bs-gridcell {$Statutories_class}" style="width: 114px;" rowspan="1" colspan="1" data-field="Statutories" {$rowstyle} {$recordattrs}>
-      {$Statutories_value}
-	</td>
-{END Statutories_fieldcolumn}
-
-
-	{BEGIN Stat_Loans_fieldcolumn}<TD class="bs-gridcell {$Stat_Loans_class}" style="width: 114px;" rowspan="1" colspan="1" data-field="Stat_Loans" {$rowstyle} {$recordattrs}>
-      {$Stat_Loans_value}
-	</td>
-{END Stat_Loans_fieldcolumn}
-
-
-	{BEGIN Deductions_fieldcolumn}<TD class="bs-gridcell {$Deductions_class}" style="width: 117px;" rowspan="1" colspan="1" data-field="Deductions" {$rowstyle} {$recordattrs}>
-      {$Deductions_value}
-	</td>
-{END Deductions_fieldcolumn}
-
-
-	{BEGIN Adjustments_fieldcolumn}<TD class="bs-gridcell {$Adjustments_class}" style="width: 124px;" rowspan="1" colspan="1" data-field="Adjustments" {$rowstyle} {$recordattrs}>
-      {$Adjustments_value}
-	</td>
-{END Adjustments_fieldcolumn}
-
-
-	{BEGIN PresetTax_fieldcolumn}<TD class="bs-gridcell {$PresetTax_class}" style="width: 111px;" rowspan="1" colspan="1" data-field="PresetTax" {$rowstyle} {$recordattrs}>
-      {$PresetTax_value}
-	</td>
-{END PresetTax_fieldcolumn}
-
-
-	{BEGIN 13thMonth_fieldcolumn}<TD class="bs-gridcell {$13thMonth_class}" style="width: 113px;" rowspan="1" colspan="1" data-field="13thMonth" {$rowstyle} {$recordattrs}>
-      {$13thMonth_value}
-	</td>
-{END 13thMonth_fieldcolumn}
-
-	{BEGIN endrecord_block}<TD class="rnr-cs" style="width: 21px;" rowspan="1" colspan="1" {$endrecordblock_attrs}></td>
-	{END endrecord_block}
-									
-	{END grid_record}
-
-</tr>
-{END grid_row}
-	</tbody>
-	<tfoot>
-										
-	</tfoot>
-</table>
-
-
-
-{END grid_block}
-
-
-
-</div>
-{END container_grid}
-
-
-
-
-
-
-</div>
-{END container_center}
-
-
-
-{BEGIN container_pagination}<div {$pagination_chiddenattr} data-pageid="{$pageid}" data-container="pagination" class="  text-center col-md-12 "> 
-
-{BEGIN pagination_block}<div {$pagination_hiddenattr} data-pageid="{$pageid}" data-brick="pagination">
-{$pagination}
-</div>
-{END pagination_block}
-
-
-
-</div>
-{END container_pagination}
-
-
-		</div>
-	</div>
-</div>
-	
-
-		{$footer}
-	{END body}
-	</body>
-</html>
+</STYLE>
+ 
+<TABLE class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" style="width: 1752px;" cellpadding="0" data-brick="grid" data-pageid="{$pageid}" {$grid_hiddenattr}>
+  <THEAD>{BEGIN grid_header}
+  <TR class="rnr-toprow {$gridHeader_class}" style="height: 40px;">{BEGIN record_header}
+    {BEGIN listIcons_column}<TH style="width: 67px;" rowspan="1" colspan="1" ieditcont="all">&nbsp;</TH>
+    {END listIcons_column}{BEGIN checkbox_column}<TH style="width: 30px;" rowspan="1" colspan="1"><INPUT type="checkbox" {$checkboxheader_attrs}> </TH>
+    {END checkbox_column}{BEGIN payroll_dtable_column}<TH style="width: 246px;" rowspan="1" colspan="1"> &nbsp;
+</TH>
+    {END payroll_dtable_column}{BEGIN PSID_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$PSID_class}" style="width: 80px;" rowspan="1" colspan="1" data-field="PSID">{BEGIN PSID_fieldheader}<SPAN {$PSID_orderlinkattrs}>
+      {$label payroll PSID} 
+      </SPAN> {END PSID_fieldheader}</TH>
+    {END PSID_fieldheadercolumn}{BEGIN Locked_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Locked_class}" style="width: 108px;" rowspan="1" colspan="1" data-field="Locked">{BEGIN Locked_fieldheader}<SPAN {$Locked_orderlinkattrs}>
+      {$label payroll Locked} 
+      </SPAN> {END Locked_fieldheader}</TH>
+    {END Locked_fieldheadercolumn}{BEGIN Employer_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Employer_class}" style="width: 142px;" data-field="Employer">{BEGIN Employer_fieldheader}<SPAN {$Employer_orderlinkattrs}>
+      {$label payroll Employer} 
+      </SPAN> {END Employer_fieldheader}</TH>
+    {END Employer_fieldheadercolumn}{BEGIN PayFromDate_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$PayFromDate_class}" style="width: 133px;" rowspan="1" colspan="1" data-field="PayFromDate">{BEGIN PayFromDate_fieldheader}<SPAN {$PayFromDate_orderlinkattrs}>
+      {$label payroll PayFromDate} </SPAN> {END PayFromDate_fieldheader}</TH>
+    {END PayFromDate_fieldheadercolumn}{BEGIN PayToDate_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$PayToDate_class}" style="width: 117px;" rowspan="1" colspan="1" data-field="PayToDate">{BEGIN PayToDate_fieldheader}<SPAN {$PayToDate_orderlinkattrs}>
+      {$label payroll PayToDate} </SPAN> {END PayToDate_fieldheader}</TH>
+    {END PayToDate_fieldheadercolumn}{BEGIN PayDate_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$PayDate_class}" style="width: 101px;" rowspan="1" colspan="1" data-field="PayDate">{BEGIN PayDate_fieldheader}<SPAN {$PayDate_orderlinkattrs}>
+      {$label payroll PayDate} </SPAN> {END PayDate_fieldheader}</TH>
+    {END PayDate_fieldheadercolumn}{BEGIN Statutories_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Statutories_class}" style="width: 114px;" rowspan="1" colspan="1" data-field="Statutories">{BEGIN Statutories_fieldheader}<SPAN {$Statutories_orderlinkattrs}>
+      {$label payroll Statutories} </SPAN> {END Statutories_fieldheader}</TH>
+    {END Statutories_fieldheadercolumn}{BEGIN Stat_Loans_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Stat_Loans_class}" style="width: 124px;" rowspan="1" colspan="1" data-field="Stat_Loans">{BEGIN Stat_Loans_fieldheader}<SPAN {$Stat_Loans_orderlinkattrs}>
+      {$label payroll Stat_Loans} </SPAN> {END Stat_Loans_fieldheader}</TH>
+    {END Stat_Loans_fieldheadercolumn}{BEGIN Deductions_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Deductions_class}" style="width: 117px;" rowspan="1" colspan="1" data-field="Deductions">{BEGIN Deductions_fieldheader}<SPAN {$Deductions_orderlinkattrs}>
+      {$label payroll Deductions} </SPAN> {END Deductions_fieldheader}</TH>
+    {END Deductions_fieldheadercolumn}{BEGIN Adjustments_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Adjustments_class}" style="width: 124px;" rowspan="1" colspan="1" data-field="Adjustments">{BEGIN Adjustments_fieldheader}<SPAN {$Adjustments_orderlinkattrs}>
+      {$label payroll Adjustments} </SPAN> {END Adjustments_fieldheader}</TH>
+    {END Adjustments_fieldheadercolumn}{BEGIN PresetTax_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$PresetTax_class}" style="width: 111px;" rowspan="1" colspan="1" data-field="PresetTax">{BEGIN PresetTax_fieldheader}<SPAN {$PresetTax_orderlinkattrs}>
+      {$label payroll PresetTax} </SPAN> {END PresetTax_fieldheader}</TH>
+    {END PresetTax_fieldheadercolumn}{BEGIN 13thMonth_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$13thMonth_class}" style="width: 120px;" rowspan="1" colspan="1" data-field="13thMonth">{BEGIN 13thMonth_fieldheader}<SPAN {$13thMonth_orderlinkattrs}>
+      {$label payroll 13thMonth} </SPAN> {END 13thMonth_fieldheader}</TH>
+    {END 13thMonth_fieldheadercolumn}{BEGIN endrecordheader_block}<TH class="rnr-cs" style="width: 21px;" rowspan="1" colspan="1"> 
+        &nbsp;</TH>{END endrecordheader_block}{END record_header}</TR>{END grid_header}</THEAD>
+  <TBODY>
+  {BEGIN grid_row}<TR class="{$rowclass} bs-gridrow" {$rowattrs} {$rowstyle}>{BEGIN grid_record}
+    {BEGIN listIcons_column}<TD class="bs-gridicons" style="width: 67px;" rowspan="1" colspan="1" ieditcont="all" {$rowstyle} {$recordattrs}>{BEGIN inlineedit_column}{BEGIN inlineedit_link}<A title="Inline Edit" class="glyphicon glyphicon-edit" {$inlineeditlink_attrs}></A> 
+      {END inlineedit_link}{END inlineedit_column}<SPAN data-hidden {$ieditbuttonsholder_attrs}></SPAN> {BEGIN view_column}{BEGIN view_link}<A title="View" class="glyphicon glyphicon-search" {$viewlink_attrs}></A> 
+    {END view_link}{END view_column}</TD>
+    {END listIcons_column}{BEGIN checkbox_column}<TD class="bs-gridcheckbox" style="width: 30px;" rowspan="1" colspan="1" ieditcont="checkBox" {$rowstyle} {$recordattrs}>{BEGIN checkbox}<INPUT type="checkbox" {$checkbox_attrs}>{END checkbox} 
+    </TD>
+    {END checkbox_column}{BEGIN payroll_dtable_column}<TD class="rnr-nowrap bs-griddetails" style="width: 246px;" rowspan="1" colspan="1" {$rowstyle} {$recordattrs}>{BEGIN dtables_link}<A title="Show details" class="glyphicon glyphicon-th-list {$dtables_link_class}" {$dtables_link_attrs}></A> {BEGIN payrolltab_childcount}<A title="Payroll Table" class="{$payrolltab_dlink_class}" {$payrolltab_link_attrs}><SPAN class="details-badge badge payrolltab_badge" {$payrolltab_childnumber_attr}>
+      {$payrolltab_childnumber} </SPAN></A> {END payrolltab_childcount}{BEGIN payrolldiv_childcount}<A title="Payroll Prints" class="{$payrolldiv_dlink_class}" {$payrolldiv_link_attrs}><SPAN class="details-badge badge payrolldiv_badge" {$payrolldiv_childnumber_attr}>
+      {$payrolldiv_childnumber} </SPAN></A> 
+      {END payrolldiv_childcount}{END dtables_link}<A class="rnr-button btn btn-default" id="Process_Payroll" href="#" typeid="ib"> Process Payroll 
+      </A> </TD>
+    {END payroll_dtable_column}{BEGIN PSID_fieldcolumn}<TD class="bs-gridcell {$PSID_class}" style="width: 80px;" rowspan="1" colspan="1" data-field="PSID" {$rowstyle} {$recordattrs}>
+      {$PSID_value} </TD>
+    {END PSID_fieldcolumn}{BEGIN Locked_fieldcolumn}<TD class="bs-gridcell {$Locked_class}" style="width: 108px;" rowspan="1" colspan="1" data-field="Locked" {$rowstyle} {$recordattrs}>
+      {$Locked_value} </TD>
+    {END Locked_fieldcolumn}{BEGIN Employer_fieldcolumn}<TD class="bs-gridcell {$Employer_class}" style="width: 142px;" data-field="Employer" {$rowstyle} {$recordattrs}>
+      {$Employer_value} </TD>
+    {END Employer_fieldcolumn}{BEGIN PayFromDate_fieldcolumn}<TD class="bs-gridcell {$PayFromDate_class}" style="width: 133px;" rowspan="1" colspan="1" data-field="PayFromDate" {$rowstyle} {$recordattrs}>
+      {$PayFromDate_value} </TD>
+    {END PayFromDate_fieldcolumn}{BEGIN PayToDate_fieldcolumn}<TD class="bs-gridcell {$PayToDate_class}" style="width: 117px;" rowspan="1" colspan="1" data-field="PayToDate" {$rowstyle} {$recordattrs}>
+      {$PayToDate_value} </TD>
+    {END PayToDate_fieldcolumn}{BEGIN PayDate_fieldcolumn}<TD class="bs-gridcell {$PayDate_class}" style="width: 101px;" rowspan="1" colspan="1" data-field="PayDate" {$rowstyle} {$recordattrs}>
+      {$PayDate_value} </TD>
+    {END PayDate_fieldcolumn}{BEGIN Statutories_fieldcolumn}<TD class="bs-gridcell {$Statutories_class}" style="width: 114px;" rowspan="1" colspan="1" data-field="Statutories" {$rowstyle} {$recordattrs}>
+      {$Statutories_value} </TD>
+    {END Statutories_fieldcolumn}{BEGIN Stat_Loans_fieldcolumn}<TD class="bs-gridcell {$Stat_Loans_class}" style="width: 124px;" rowspan="1" colspan="1" data-field="Stat_Loans" {$rowstyle} {$recordattrs}>
+      {$Stat_Loans_value} </TD>
+    {END Stat_Loans_fieldcolumn}{BEGIN Deductions_fieldcolumn}<TD class="bs-gridcell {$Deductions_class}" style="width: 117px;" rowspan="1" colspan="1" data-field="Deductions" {$rowstyle} {$recordattrs}>
+      {$Deductions_value} </TD>
+    {END Deductions_fieldcolumn}{BEGIN Adjustments_fieldcolumn}<TD class="bs-gridcell {$Adjustments_class}" style="width: 124px;" rowspan="1" colspan="1" data-field="Adjustments" {$rowstyle} {$recordattrs}>
+      {$Adjustments_value} </TD>
+    {END Adjustments_fieldcolumn}{BEGIN PresetTax_fieldcolumn}<TD class="bs-gridcell {$PresetTax_class}" style="width: 111px;" rowspan="1" colspan="1" data-field="PresetTax" {$rowstyle} {$recordattrs}>
+      {$PresetTax_value} </TD>
+    {END PresetTax_fieldcolumn}{BEGIN 13thMonth_fieldcolumn}<TD class="bs-gridcell {$13thMonth_class}" style="width: 120px;" rowspan="1" colspan="1" data-field="13thMonth" {$rowstyle} {$recordattrs}>
+      {$13thMonth_value} </TD>
+    {END 13thMonth_fieldcolumn}{BEGIN endrecord_block}<TD class="rnr-cs" style="width: 21px;" rowspan="1" colspan="1" {$endrecordblock_attrs}></TD>{END endrecord_block}{END grid_record}</TR>{END grid_row}</TBODY>
+  <TFOOT></TFOOT></TABLE>{END grid_block}</DIV>{END container_grid}</DIV>
+{END container_center}{BEGIN container_pagination}<DIV class="text-center col-md-12" data-container="pagination" data-pageid="{$pageid}" {$pagination_chiddenattr}>
+{BEGIN pagination_block}<DIV data-brick="pagination" data-pageid="{$pageid}" {$pagination_hiddenattr}>
+{$pagination} </DIV>{END pagination_block}</DIV>{END container_pagination}</DIV> </DIV></DIV>
+{$footer}{END body} </BODY></HTML>

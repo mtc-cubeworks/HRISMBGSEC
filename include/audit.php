@@ -607,10 +607,6 @@ class AuditTrailTable
 		{
 			return false;
 		}
-		if($table=="empindschedule")
-		{
-			return false;
-		}
 		if($table=="indschedrange")
 		{
 			return false;
@@ -808,6 +804,14 @@ class AuditTrailTable
 			return false;
 		}
 		if($table=="holidaysdefault")
+		{
+			return false;
+		}
+		if($table=="holidayupdate")
+		{
+			return false;
+		}
+		if($table=="indscheduleemp")
 		{
 			return false;
 		}
@@ -1414,10 +1418,6 @@ class AuditTrailFile
 		{
 			return false;
 		}
-		if($table=="empindschedule")
-		{
-			return false;
-		}
 		if($table=="indschedrange")
 		{
 			return false;
@@ -1615,6 +1615,14 @@ class AuditTrailFile
 			return false;
 		}
 		if($table=="holidaysdefault")
+		{
+			return false;
+		}
+		if($table=="holidayupdate")
+		{
+			return false;
+		}
+		if($table=="indscheduleemp")
 		{
 			return false;
 		}

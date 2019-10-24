@@ -562,7 +562,7 @@ $page_layouts["indschedrange_list"] = $layout;
 $layout = new TLayout("list_bootstrap3", "Metro1DeliciousLavender1", "MobileDeliciousLavender1");
 $layout->version = 3;
 	$layout->bootstrapTheme = "default";
-		$layout->customCssPageName = "empindschedule_list";
+		$layout->customCssPageName = "indscheduleemp_list";
 $layout->blocks["center"] = array();
 $layout->containers["tabs"] = array();
 $layout->container_properties["tabs"] = array(  );
@@ -722,7 +722,7 @@ $layout->skins["gridinfo"] = "";
 $layout->skins["gridcontrols"] = "";
 
 $layout->blocks["topmiddle"][] = "gridcontrols";
-$page_layouts["empindschedule_list"] = $layout;
+$page_layouts["indscheduleemp_list"] = $layout;
 
 
 

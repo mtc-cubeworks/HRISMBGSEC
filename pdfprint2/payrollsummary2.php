@@ -9,7 +9,7 @@ mysqli_select_db($con,'payrollflexo');
 $query = mysqli_query($con,"select * from printsummary2f
 	
 	
-	where ToDate = '".$_GET['ps1']."' AND Division = '".$_GET['dv1']."'  AND WageType = '".$_GET['wt1']."' AND Employer = '".$_GET['em1']."'");
+	where ToDate = '".$_GET['ps1']."' AND Employer = '".$_GET['em1']."'");
 	
 
 $pdf = new FPDF('L','mm',array(340,210));
@@ -19,7 +19,7 @@ $pdf->AliasNbPages();
 
 
 $qtotal = mysqli_query($con,"select * from payrsumround2
-	where ToDate = '".$_GET['ps1']."' AND Division = '".$_GET['dv1']."'  AND WageType = '".$_GET['wt1']."' AND Employer = '".$_GET['em1']."'");
+	where ToDate = '".$_GET['ps1']."' AND Employer = '".$_GET['em1']."'");
 
 while($qt= mysqli_fetch_array($qtotal)){
 $pdf->SetFont('Arial','B',10);

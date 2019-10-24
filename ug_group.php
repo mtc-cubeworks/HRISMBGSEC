@@ -88,7 +88,6 @@ $nonAdminTablesArr[] = "loansreport";
 $nonAdminTablesArr[] = "contlo";
 $nonAdminTablesArr[] = "statpay";
 $nonAdminTablesArr[] = "annualtaxtab";
-$nonAdminTablesArr[] = "empindschedule";
 $nonAdminTablesArr[] = "indschedrange";
 $nonAdminTablesArr[] = "monthlyremittax";
 $nonAdminTablesArr[] = "withholdingcat";
@@ -139,6 +138,8 @@ $nonAdminTablesArr[] = "mdgroups";
 $nonAdminTablesArr[] = "loanbalnew5";
 $nonAdminTablesArr[] = "loanbalnew51";
 $nonAdminTablesArr[] = "holidaysdefault";
+$nonAdminTablesArr[] = "holidayupdate";
+$nonAdminTablesArr[] = "indscheduleemp";
 
 $ug_connection = $cman->getForUserGroups();
 

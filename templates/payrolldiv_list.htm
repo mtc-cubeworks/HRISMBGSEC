@@ -109,18 +109,6 @@
 		</div>
 		{END searchCtrlBlock_Employer}
 		 
-		{BEGIN searchCtrlBlock_Division}<div class="form-group srchPanelRow {$filterRow_class_Division}" {$filterRow_attrs_Division}>
-			<label>
-			
-			{$label payrolldiv Division}</label>
-							{$delCtrlButt}
-
-								<span class="rnr-searchtype">{$searchtype_Division}</span>
-				<span class="rnr-searchcontrol">{$searchcontrol_Division}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_Division}</span>
-		</div>
-		{END searchCtrlBlock_Division}
-		 
 		{BEGIN searchCtrlBlock_FromDate}<div class="form-group srchPanelRow {$filterRow_class_FromDate}" {$filterRow_attrs_FromDate}>
 			<label>
 			
@@ -488,17 +476,11 @@
 	.bs-gridcell[data-field=Employer]:before {
 		content: "{$label payrolldiv Employer}";
 	}
-	.bs-gridcell[data-field=Division]:before {
-		content: "{$label payrolldiv Division}";
-	}
 	.bs-gridcell[data-field=FromDate]:before {
 		content: "{$label payrolldiv FromDate}";
 	}
 	.bs-gridcell[data-field=ToDate]:before {
 		content: "{$label payrolldiv ToDate}";
-	}
-	.bs-gridcell[data-field=WageType]:before {
-		content: "{$label payrolldiv WageType}";
 	}
 	.bs-gridcell[data-field=Locked]:before {
 		content: "{$label payrolldiv Locked}";
@@ -546,26 +528,6 @@
 									{END Employer_fieldheader}
 									</th>
 									{END Employer_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN Division_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Division_class}" style="width: 96px;" rowspan="1" colspan="1" data-field="Division">{BEGIN Division_fieldheader}<span {$Division_orderlinkattrs}>
-											{$label payrolldiv Division}
-										</span>
-									{END Division_fieldheader}
-									</th>
-									{END Division_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN WageType_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$WageType_class}" style="width: 115px;" rowspan="1" colspan="1" data-field="WageType">{BEGIN WageType_fieldheader}<span {$WageType_orderlinkattrs}>
-											{$label payrolldiv WageType}
-										</span>
-									{END WageType_fieldheader}
-									</th>
-									{END WageType_fieldheadercolumn}
 									
 									
 									
@@ -648,18 +610,6 @@
       {$Employer_value}
 	</td>
 {END Employer_fieldcolumn}
-
-
-	{BEGIN Division_fieldcolumn}<TD class="bs-gridcell {$Division_class}" style="width: 96px;" rowspan="1" colspan="1" data-field="Division" {$rowstyle} {$recordattrs}>
-      {$Division_value}
-	</td>
-{END Division_fieldcolumn}
-
-
-	{BEGIN WageType_fieldcolumn}<TD class="bs-gridcell {$WageType_class}" style="width: 115px;" rowspan="1" colspan="1" data-field="WageType" {$rowstyle} {$recordattrs}>
-      {$WageType_value}
-	</td>
-{END WageType_fieldcolumn}
 
 
 	{BEGIN FromDate_fieldcolumn}<TD class="bs-gridcell {$FromDate_class}" style="width: 110px;" rowspan="1" colspan="1" data-field="FromDate" {$rowstyle} {$recordattrs}>

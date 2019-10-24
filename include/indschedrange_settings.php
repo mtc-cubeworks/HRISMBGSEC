@@ -185,7 +185,7 @@ $tdataindschedrange[".rowHighlite"] = true;
 
 																																																																																																																																																																																																																																																																																																																																																																													
 							
-																																																																																																																																																								
+																																																																																																																																																																				
 
 $tdataindschedrange[".ajaxCodeSnippetAdded"] = false;
 

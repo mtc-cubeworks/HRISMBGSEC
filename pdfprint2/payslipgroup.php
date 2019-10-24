@@ -9,10 +9,10 @@ mysqli_select_db($con,'payrollflexo');
 $query = mysqli_query($con,"select * from payrollamt33
 	
 	
-	where ToDate = '".$_GET['ps1']."' AND Division = '".$_GET['dv1']."'  AND WageType = '".$_GET['wt1']."' AND Employer = '".$_GET['em1']."'");
+	where ToDate = '".$_GET['ps1']."' AND Employer = '".$_GET['em1']."'");
 	
 
-$pdf = new FPDF('P','mm',array(210,279));
+$pdf = new FPDF('P','mm',array(210,250));
 
 while($invoice = mysqli_fetch_array($query )){
 $pdf->AddPage();
@@ -169,7 +169,9 @@ $pdf->Cell(15	,3,number_format($invoice['VL'],2),0,1,'R');
 $pdf->Cell(37	,3,'Sick Leave (days):',0,0);
 $pdf->Cell(10	,3,number_format($invoice['SLDays'],2),0,0);
 $pdf->Cell(15	,3,number_format($invoice['SL'],2),0,1,'R');
-
+$pdf->Cell(37	,3,'Emergency Leave (days):',0,0);
+$pdf->Cell(10	,3,number_format($invoice['ELDays'],2),0,0);
+$pdf->Cell(15	,3,number_format($invoice['EL'],2),0,1,'R');
 
 
 

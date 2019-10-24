@@ -138,7 +138,7 @@ $tdataapprovalbutton[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																					
+																																																																																																																																																																																																																																																																											
 
 $tdataapprovalbutton[".ajaxCodeSnippetAdded"] = false;
 

@@ -153,8 +153,6 @@ include_once(getabspath("include/loansreport_events.php"));
 $tableEvents["loansreport"] = new eventclass_loansreport;
 include_once(getabspath("include/contlo_events.php"));
 $tableEvents["contlo"] = new eventclass_contlo;
-include_once(getabspath("include/empindschedule_events.php"));
-$tableEvents["empindschedule"] = new eventclass_empindschedule;
 include_once(getabspath("include/indschedrange_events.php"));
 $tableEvents["indschedrange"] = new eventclass_indschedrange;
 include_once(getabspath("include/monthlyremittax_events.php"));
@@ -209,6 +207,10 @@ include_once(getabspath("include/otndrdglobal1_events.php"));
 $tableEvents["otndrdglobal1"] = new eventclass_otndrdglobal1;
 include_once(getabspath("include/holidaysdefault_events.php"));
 $tableEvents["holidaysdefault"] = new eventclass_holidaysdefault;
+include_once(getabspath("include/holidayupdate_events.php"));
+$tableEvents["holidayupdate"] = new eventclass_holidayupdate;
+include_once(getabspath("include/indscheduleemp_events.php"));
+$tableEvents["indscheduleemp"] = new eventclass_indscheduleemp;
 
 $xt = new Xtempl();
 

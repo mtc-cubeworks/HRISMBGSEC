@@ -135,7 +135,7 @@ $tdataemplevels[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																					
+																																																																																																																																																																																																																																																																											
 
 $tdataemplevels[".ajaxCodeSnippetAdded"] = false;
 

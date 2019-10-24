@@ -138,7 +138,7 @@ $tdataclocktypes[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																					
+																																																																																																																																																																																																																																																																											
 
 $tdataclocktypes[".ajaxCodeSnippetAdded"] = false;
 

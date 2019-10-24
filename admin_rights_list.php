@@ -783,17 +783,6 @@ $mask .= "I";
 
 $pageMask[$table] = $mask;
 $tables[$table] = array("annualtaxtab", " " . "Annual Tax Table");
-$table = "empindschedule";
-$mask="";
-	$mask .= "A";
-	$mask .= "E";
-	$mask .= "D";
-	$mask .= "S";
-$mask .= "P";
-$mask .= "I";
-
-$pageMask[$table] = $mask;
-$tables[$table] = array("empindschedule", " " . "Uploaded Schedule");
 $table = "indschedrange";
 $mask="";
 	$mask .= "A";
@@ -889,6 +878,7 @@ $mask="";
 	$mask .= "S";
 $mask .= "P";
 $mask .= "I";
+$mask .= "M";
 
 $pageMask[$table] = $mask;
 $tables[$table] = array("overtimes", " " . "Overtime Entry");
@@ -1303,6 +1293,28 @@ $mask .= "I";
 
 $pageMask[$table] = $mask;
 $tables[$table] = array("holidaysdefault", " " . "Holiday Default");
+$table = "holidayupdate";
+$mask="";
+	$mask .= "A";
+	$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("holidayupdate", " " . "Holiday Override");
+$table = "indscheduleemp";
+$mask="";
+	$mask .= "A";
+	$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("indscheduleemp", " " . "Uploaded Schedule");
 
 
 

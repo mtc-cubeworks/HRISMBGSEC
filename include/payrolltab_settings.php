@@ -418,7 +418,7 @@ $tdatapayrolltab[".rowHighlite"] = true;
 
 
 																																																																																																																																																																																																																																																																																																																																																																																																																																																											
-																																																																																
+																																																																																												
 
 $tdatapayrolltab[".ajaxCodeSnippetAdded"] = false;
 
@@ -10641,10 +10641,6 @@ $detailsTablesData["payrolltab"] = array();
 
 	$detailsTablesData["payrolltab"][$dIndex]["masterKeys"][]="Employer";
 
-	$detailsTablesData["payrolltab"][$dIndex]["masterKeys"][]="Division";
-
-	$detailsTablesData["payrolltab"][$dIndex]["masterKeys"][]="WageType";
-
 				$detailsTablesData["payrolltab"][$dIndex]["detailKeys"] = array();
 
 	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="EmployeeID";
@@ -10657,12 +10653,6 @@ $detailsTablesData["payrolltab"] = array();
 
 		
 	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="Employer";
-
-		
-	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="Division";
-
-		
-	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="WageType";
 //	payrollearnadj
 	
 	
@@ -10699,10 +10689,6 @@ $detailsTablesData["payrolltab"] = array();
 
 	$detailsTablesData["payrolltab"][$dIndex]["masterKeys"][]="Employer";
 
-	$detailsTablesData["payrolltab"][$dIndex]["masterKeys"][]="Division";
-
-	$detailsTablesData["payrolltab"][$dIndex]["masterKeys"][]="WageType";
-
 				$detailsTablesData["payrolltab"][$dIndex]["detailKeys"] = array();
 
 	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="EmployeeID";
@@ -10715,12 +10701,6 @@ $detailsTablesData["payrolltab"] = array();
 
 		
 	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="Employer";
-
-		
-	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="Division";
-
-		
-	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="WageType";
 //	payrollstatutories
 	
 	
@@ -10757,10 +10737,6 @@ $detailsTablesData["payrolltab"] = array();
 
 	$detailsTablesData["payrolltab"][$dIndex]["masterKeys"][]="Employer";
 
-	$detailsTablesData["payrolltab"][$dIndex]["masterKeys"][]="Division";
-
-	$detailsTablesData["payrolltab"][$dIndex]["masterKeys"][]="WageType";
-
 				$detailsTablesData["payrolltab"][$dIndex]["detailKeys"] = array();
 
 	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="EmployeeID";
@@ -10773,12 +10749,6 @@ $detailsTablesData["payrolltab"] = array();
 
 		
 	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="Employer";
-
-		
-	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="Division";
-
-		
-	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="WageType";
 //	payrolltax
 	
 	
@@ -10815,10 +10785,6 @@ $detailsTablesData["payrolltab"] = array();
 
 	$detailsTablesData["payrolltab"][$dIndex]["masterKeys"][]="Employer";
 
-	$detailsTablesData["payrolltab"][$dIndex]["masterKeys"][]="Division";
-
-	$detailsTablesData["payrolltab"][$dIndex]["masterKeys"][]="WageType";
-
 				$detailsTablesData["payrolltab"][$dIndex]["detailKeys"] = array();
 
 	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="EmployeeID";
@@ -10831,12 +10797,6 @@ $detailsTablesData["payrolltab"] = array();
 
 		
 	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="Employer";
-
-		
-	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="Division";
-
-		
-	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="WageType";
 
 // tables which are master tables for current table (detail)
 $masterTablesData["payrolltab"] = array();
@@ -10868,13 +10828,9 @@ $masterTablesData["payrolltab"] = array();
 				$masterTablesData["payrolltab"][0]["masterKeys"] = array();
 	$masterTablesData["payrolltab"][0]["masterKeys"][]="PayToDate";
 				$masterTablesData["payrolltab"][0]["masterKeys"][]="Employer";
-				$masterTablesData["payrolltab"][0]["masterKeys"][]="Division";
-				$masterTablesData["payrolltab"][0]["masterKeys"][]="WageType";
 				$masterTablesData["payrolltab"][0]["detailKeys"] = array();
 	$masterTablesData["payrolltab"][0]["detailKeys"][]="ToDate";
 				$masterTablesData["payrolltab"][0]["detailKeys"][]="Employer";
-				$masterTablesData["payrolltab"][0]["detailKeys"][]="Division";
-				$masterTablesData["payrolltab"][0]["detailKeys"][]="WageType";
 		
 // -----------------end  prepare master-details data arrays ------------------------------//
 

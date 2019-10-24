@@ -164,7 +164,7 @@ $tdatapayrollearnadj[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
 
 $tdatapayrollearnadj[".ajaxCodeSnippetAdded"] = false;
 
@@ -2211,15 +2211,11 @@ $masterTablesData["payrollearnadj"] = array();
 				$masterTablesData["payrollearnadj"][0]["masterKeys"][]="ToDate";
 				$masterTablesData["payrollearnadj"][0]["masterKeys"][]="FromDate";
 				$masterTablesData["payrollearnadj"][0]["masterKeys"][]="Employer";
-				$masterTablesData["payrollearnadj"][0]["masterKeys"][]="Division";
-				$masterTablesData["payrollearnadj"][0]["masterKeys"][]="WageType";
 				$masterTablesData["payrollearnadj"][0]["detailKeys"] = array();
 	$masterTablesData["payrollearnadj"][0]["detailKeys"][]="EmployeeID";
 				$masterTablesData["payrollearnadj"][0]["detailKeys"][]="ToDate";
 				$masterTablesData["payrollearnadj"][0]["detailKeys"][]="FromDate";
 				$masterTablesData["payrollearnadj"][0]["detailKeys"][]="Employer";
-				$masterTablesData["payrollearnadj"][0]["detailKeys"][]="Division";
-				$masterTablesData["payrollearnadj"][0]["detailKeys"][]="WageType";
 		
 // -----------------end  prepare master-details data arrays ------------------------------//
 

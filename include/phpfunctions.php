@@ -1246,6 +1246,390 @@ $value=NULL;;
 		$value = '********';
 		return $value;
 	}
+				if($table=="indscheduleemp" && $field=="RegWD")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="DWork")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="Absent")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="LateMins")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="UndertimeMins")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="RHolidayHrs")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="SHolidayHrs")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="ExcessHrs")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="RegOTHrs")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="RHOTHrs")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="SHOTHrs")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="RDOTHrs")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="RHNDHrs")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="SHNDHrs")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="RDNDHrs")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="VLDay")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="SLDay")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="ELDay")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="PLDay")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="TrODay")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="TotLateMins")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="LatePenaltyMins")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="LateFixPenalty")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="BreakLateMins")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="RHNDOTHrs")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="SHNDOTHrs")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="RDNDOTHrs")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="DH")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="DHRD")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="DHOT")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="DHRDOT")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="SHRDND")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="RHRDND")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="SHRDNDOT")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="RHRDNDOT")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="DHND")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="DHRDND")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="DHNDOT")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="DHRDNDOT")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="RHRDOT")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="SHRDOT")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="RegND")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="RegRD")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="SHOTD")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="SHRDOTD")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="NDOT")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="RHRD")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
+				if($table=="indscheduleemp" && $field=="SHRD")
+	{
+		if ($value>0)
+$value=$value;
+else
+$value=NULL;;
+		return $value;
+	}
 	return $value;
 }
 

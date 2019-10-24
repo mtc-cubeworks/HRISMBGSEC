@@ -170,7 +170,7 @@ $tdatapayrolldeductions[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
 
 $tdatapayrolldeductions[".ajaxCodeSnippetAdded"] = false;
 
@@ -2398,15 +2398,11 @@ $masterTablesData["payrolldeductions"] = array();
 				$masterTablesData["payrolldeductions"][0]["masterKeys"][]="ToDate";
 				$masterTablesData["payrolldeductions"][0]["masterKeys"][]="FromDate";
 				$masterTablesData["payrolldeductions"][0]["masterKeys"][]="Employer";
-				$masterTablesData["payrolldeductions"][0]["masterKeys"][]="Division";
-				$masterTablesData["payrolldeductions"][0]["masterKeys"][]="WageType";
 				$masterTablesData["payrolldeductions"][0]["detailKeys"] = array();
 	$masterTablesData["payrolldeductions"][0]["detailKeys"][]="EmployeeID";
 				$masterTablesData["payrolldeductions"][0]["detailKeys"][]="ToDate";
 				$masterTablesData["payrolldeductions"][0]["detailKeys"][]="FromDate";
 				$masterTablesData["payrolldeductions"][0]["detailKeys"][]="Employer";
-				$masterTablesData["payrolldeductions"][0]["detailKeys"][]="Division";
-				$masterTablesData["payrolldeductions"][0]["detailKeys"][]="WageType";
 		
 // -----------------end  prepare master-details data arrays ------------------------------//
 

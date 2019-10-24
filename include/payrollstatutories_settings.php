@@ -182,7 +182,7 @@ $tdatapayrollstatutories[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
 
 $tdatapayrollstatutories[".ajaxCodeSnippetAdded"] = false;
 
@@ -3144,15 +3144,11 @@ $masterTablesData["payrollstatutories"] = array();
 				$masterTablesData["payrollstatutories"][0]["masterKeys"][]="ToDate";
 				$masterTablesData["payrollstatutories"][0]["masterKeys"][]="FromDate";
 				$masterTablesData["payrollstatutories"][0]["masterKeys"][]="Employer";
-				$masterTablesData["payrollstatutories"][0]["masterKeys"][]="Division";
-				$masterTablesData["payrollstatutories"][0]["masterKeys"][]="WageType";
 				$masterTablesData["payrollstatutories"][0]["detailKeys"] = array();
 	$masterTablesData["payrollstatutories"][0]["detailKeys"][]="EmployeeID";
 				$masterTablesData["payrollstatutories"][0]["detailKeys"][]="ToDate";
 				$masterTablesData["payrollstatutories"][0]["detailKeys"][]="FromDate";
 				$masterTablesData["payrollstatutories"][0]["detailKeys"][]="Employer";
-				$masterTablesData["payrollstatutories"][0]["detailKeys"][]="Division";
-				$masterTablesData["payrollstatutories"][0]["detailKeys"][]="WageType";
 		
 // -----------------end  prepare master-details data arrays ------------------------------//
 

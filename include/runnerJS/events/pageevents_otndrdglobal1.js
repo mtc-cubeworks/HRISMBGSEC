@@ -1,5 +1,5 @@
 
-Runner.pages.PageSettings.addPageEvent('otndrdglobal1',Runner.pages.constants.PAGE_LIST,"afterPageReady",function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='Process_Approval2';if(!pageObj.buttonEventBefore['Process_Approval2']){pageObj.buttonEventBefore['Process_Approval2']=function(params,ctrl,pageObj,proxy,pageid,rowData,row){params["txt"]="Hello";ctrl.setMessage("Sending request to server...");}}
+Runner.pages.PageSettings.addPageEvent('otndrdglobal1',Runner.pages.constants.PAGE_LIST,"afterPageReady",function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='Process_Approval2';if(!pageObj.buttonEventBefore['Process_Approval2']){pageObj.buttonEventBefore['Process_Approval2']=function(params,ctrl,pageObj,proxy,pageid,rowData,row){params["txt"]="Processing...";ctrl.setMessage("Sending request to server...");}}
 if(!pageObj.buttonEventAfter['Process_Approval2']){pageObj.buttonEventAfter['Process_Approval2']=function(result,ctrl,pageObj,proxy,pageid,rowData,row){window.location.href="dtrrange1_list.php";}}
 $('a[id="Process_Approval2"]').each(function(){if($(this).closest('.gridRowAdd').length){return;}
 this.id="Process_Approval2"+"_"+Runner.genId();var button_Process_Approval2=new Runner.form.Button({id:this.id,btnName:"Process_Approval2"});button_Process_Approval2.init({args:[pageObj,proxy,pageid]});});});

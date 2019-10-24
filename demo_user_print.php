@@ -114,7 +114,7 @@ $page_layouts["indschedrange_print"] = $layout;
 $layout = new TLayout("print_bootstrap", "Metro1DeliciousLavender1", "MobileDeliciousLavender1");
 $layout->version = 3;
 	$layout->bootstrapTheme = "default";
-		$layout->customCssPageName = "empindschedule_print";
+		$layout->customCssPageName = "indscheduleemp_print";
 $layout->blocks["top"] = array();
 $layout->containers["pdf"] = array();
 $layout->container_properties["pdf"] = array(  "print" => "none"  );
@@ -151,7 +151,7 @@ $layout->containers["grid"][] = array("name"=>"printgrid",
 $layout->skins["grid"] = "";
 
 $layout->blocks["top"][] = "grid";
-$page_layouts["empindschedule_print"] = $layout;
+$page_layouts["indscheduleemp_print"] = $layout;
 
 
 

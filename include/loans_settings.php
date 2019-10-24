@@ -174,7 +174,7 @@ $tdataloans[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
 
 $tdataloans[".ajaxCodeSnippetAdded"] = false;
 

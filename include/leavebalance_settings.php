@@ -164,7 +164,7 @@ $tdataleavebalance[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																					
+																																																																																																																																																																																																																																																																											
 
 $tdataleavebalance[".ajaxCodeSnippetAdded"] = false;
 

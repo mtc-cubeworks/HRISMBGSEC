@@ -54,12 +54,6 @@
 	.bs-gridcell[data-field=Employer]:before {
 		content: "{$label payroll Employer}";
 	}
-	.bs-gridcell[data-field=Division]:before {
-		content: "{$label payroll Division}";
-	}
-	.bs-gridcell[data-field=WageType]:before {
-		content: "{$label payroll WageType}";
-	}
 </style>
 <table {$masterlistgrid_hiddenattr} data-pageid="{$pageid}" data-brick="masterlistgrid" class="table rnr-b-mastergridfields rnr-gridtable bs-flexgrid" >
 		<thead>
@@ -67,8 +61,6 @@
 			<th class="{$PSID_class}">{$label payroll PSID}</th>
 			<th class="{$Locked_class}">{$label payroll Locked}</th>
 			<th class="{$Employer_class}">{$label payroll Employer}</th>
-			<th class="{$Division_class}">{$label payroll Division}</th>
-			<th class="{$WageType_class}">{$label payroll WageType}</th>
 			<th class="{$PayFromDate_class}">{$label payroll PayFromDate}</th>
 			<th class="{$PayToDate_class}">{$label payroll PayToDate}</th>
 			<th class="{$PayDate_class}">{$label payroll PayDate}</th>
@@ -86,8 +78,6 @@
 			<td class="{$PSID_class} bs-gridcell" data-field=PSID>{$PSID_mastervalue}</td>
 			<td class="{$Locked_class} bs-gridcell" data-field=Locked>{$Locked_mastervalue}</td>
 			<td class="{$Employer_class} bs-gridcell" data-field=Employer>{$Employer_mastervalue}</td>
-			<td class="{$Division_class} bs-gridcell" data-field=Division>{$Division_mastervalue}</td>
-			<td class="{$WageType_class} bs-gridcell" data-field=WageType>{$WageType_mastervalue}</td>
 			<td class="{$PayFromDate_class} bs-gridcell" data-field=PayFromDate>{$PayFromDate_mastervalue}</td>
 			<td class="{$PayToDate_class} bs-gridcell" data-field=PayToDate>{$PayToDate_mastervalue}</td>
 			<td class="{$PayDate_class} bs-gridcell" data-field=PayDate>{$PayDate_mastervalue}</td>

@@ -227,6 +227,12 @@ if($buttId=='Insert_Default_Holiday')
 	$cipherer = new RunnerCipherer("divisions");
 	buttonHandler_Insert_Default_Holiday($params);
 }
+if($buttId=='Update_Holiday1')
+{
+	require_once("include/holidayupdate_variables.php");
+	$cipherer = new RunnerCipherer("holidayupdate");
+	buttonHandler_Update_Holiday1($params);
+}
 
 
 
@@ -758,8 +764,8 @@ $result['record'] = $data;
 $frd= $data["FromDate"];
 $tod= $data["ToDate"];
 $empr= $data["Employer"];
-$wtt= $data["WageType"];
-$dvv= $data["Division"];
+//$wtt= $data["WageType"];
+//$dvv= $data["Division"];
 
 $tdd="'".$tod."'";
 
@@ -767,8 +773,10 @@ $tdd="'".$tod."'";
 global $dal;
 
 
-$rs = DB::Query("select * from indprocess2 where Employer='$empr' and WageType='$wtt' and Division='$dvv' and (SDate between '$frd' and '$tod')");
+
+$rs = DB::Query("select * from indprocess2 where Employer='$empr' and (SDate between '$frd' and '$tod')");
  
+
 while( $datax = $rs->fetchAssoc() )
  
 {
@@ -1019,8 +1027,8 @@ $result['record'] = $data;
 $frd= $data["FromDate"];
 $tod= $data["ToDate"];
 $empr= $data["Employer"];
-$wtt= $data["WageType"];
-$dvv= $data["Division"];
+//$wtt= $data["WageType"];
+//$dvv= $data["Division"];
 
 $tdd="'".$tod."'";
 
@@ -1028,10 +1036,9 @@ $tdd="'".$tod."'";
 global $dal;
 
 
-
-
-$rs = DB::Query("select * from dtrupload2 where Employer='$empr' and WageType='$wtt' and Division='$dvv'");
+$rs = DB::Query("select * from dtrupload2 where Employer='$empr'");
  
+
 while( $datax = $rs->fetchAssoc() )
 
 {
@@ -1177,18 +1184,19 @@ $result['record'] = $data;
 $frd= $data["FromDate"];
 $tod= $data["ToDate"];
 $empr= $data["Employer"];
-$dvv= $data["Division"];
-$wtt= $data["WageType"];
+//$dvv= $data["Division"];
+//$wtt= $data["WageType"];
 
 
 $tdd="'".$tod."'";
 
 
-
-
 global $dal;
+
+
+
 $tblName1 = $dal->Table("payroll");
-$rstmp1 = $tblName1->Query("PayToDate=".$tdd." and Employer=".$empr." and Division=".$dvv." and WageType=".$wtt,"");
+$rstmp1 = $tblName1->Query("PayToDate=".$tdd." and Employer=".$empr,"");
 $datatmp1 = db_fetch_array($rstmp1);
 if($datatmp1)
 {
@@ -1197,10 +1205,10 @@ $result["txt"] = $params["txt"]. " Payroll Main Data Exist!";
 }
 else
 {
-$sqlh = "INSERT payroll VALUES (NULL, NULL, '$frd', '$tod', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '$dvv', '$empr', '$wtt')";
+$sqlh = "INSERT payroll VALUES (NULL, NULL, '$frd', '$tod', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '$empr')";
 CustomQuery($sqlh);
 
-$sqld = "INSERT payrolldiv VALUES (NULL, '$empr', '$dvv', '$frd', '$tod', '$wtt', NULL)";
+$sqld = "INSERT payrolldiv VALUES (NULL, '$empr', NULL, '$frd', '$tod', NULL, NULL)";
 CustomQuery($sqld);
 
 
@@ -1211,7 +1219,7 @@ CustomQuery($sqld);
 
 
 $tblName = $dal->Table("payrolltab");
-$rstmp = $tblName->Query("ToDate=".$tdd." and Employer=".$empr." and Division=".$dvv." and WageType=".$wtt,"");
+$rstmp = $tblName->Query("ToDate=".$tdd." and Employer=".$empr,"");
 $datatmp = db_fetch_array($rstmp);
 if($datatmp)
 {
@@ -1222,7 +1230,7 @@ else
 {
 
 
-$rs = DB::Query("select * from dtrsummary2 where Employer='$empr' and Division='$dvv' and WageType='$wtt'");
+$rs = DB::Query("select * from dtrsummary2 where Employer='$empr'");
  
 while( $datax = $rs->fetchAssoc() )
 
@@ -1389,13 +1397,13 @@ $result['record'] = $data;
 $frd= $data["FromDate"];
 $tod= $data["ToDate"];
 $empr= $data["Employer"];
-$wtt= $data["WageType"];
-$dvv= $data["Division"];
+//$wtt= $data["WageType"];
+//$dvv= $data["Division"];
 $tdd="'".$tod."'";
 
 
 
-$chlock=DBLookup("select Locked from payroll where PayToDate='". $tod. "' and Employer='$empr' and Division='$dvv' and WageType='$wtt'");
+$chlock=DBLookup("select Locked from payroll where PayToDate='". $tod. "' and Employer='$empr'");
 
 if ($chlock!=1) {
 
@@ -1409,7 +1417,7 @@ $datatmp = db_fetch_array($rstmp);
 if($datatmp)
 {
 
-$rs = DB::Query("select * from dtrsummary2 where Employer='$empr' and WageType='$wtt' and Division='$dvv'");
+$rs = DB::Query("select * from dtrsummary2 where Employer='$empr'");
  
 while( $datax = $rs->fetchAssoc() )
 {
@@ -1582,35 +1590,35 @@ function buttonHandler_Clear_Payroll1($params)
 $result['record'] = $data;
 $frd= $data["FromDate"];
 $tod= $data["ToDate"];
-$wt1= $data["WageType"];
+//$wt1= $data["WageType"];
 $em1= $data["Employer"];
-$dvv= $data["Division"];
+//$dvv= $data["Division"];
 
 $tdd="'".$tod."'";
 
-$chlock=DBLookup("select Locked from payroll where PayToDate='". $tod. "' and Employer='$em1' and Division='$dvv' and WageType='$wt1'");
+$chlock=DBLookup("select Locked from payroll where PayToDate='". $tod. "' and Employer='$em1'");
 
 if ($chlock!=1) {
 
-$sqd1 = "DELETE FROM payroll WHERE PayToDate='$tod' and Employer='$em1' and WageType='$wt1' and Division='$dvv'";
+$sqd1 = "DELETE FROM payroll WHERE PayToDate='$tod' and Employer='$em1'";
 CustomQuery($sqd1);
 
-$sqd2 = "DELETE FROM payrolltab WHERE ToDate='$tod' and Employer='$em1' and WageType='$wt1' and Division='$dvv' ";
+$sqd2 = "DELETE FROM payrolltab WHERE ToDate='$tod' and Employer='$em1'";
 CustomQuery($sqd2);
 
-$sqd3 = "DELETE FROM payrollstatutories WHERE ToDate='$tod' and Employer='$em1' and WageType='$wt1' and Division='$dvv'";
+$sqd3 = "DELETE FROM payrollstatutories WHERE ToDate='$tod' and Employer='$em1'";
 CustomQuery($sqd3);
 
-$sqd4 = "DELETE FROM payrolldeductions WHERE ToDate='$tod' and Employer='$em1' and WageType='$wt1' and Division='$dvv'";
+$sqd4 = "DELETE FROM payrolldeductions WHERE ToDate='$tod' and Employer='$em1'";
 CustomQuery($sqd4);
 
-$sqd5 = "DELETE FROM payrollearnadj WHERE ToDate='$tod' and Employer='$em1' and WageType='$wt1' and Division='$dvv'";
+$sqd5 = "DELETE FROM payrollearnadj WHERE ToDate='$tod' and Employer='$em1'";
 CustomQuery($sqd5);
 
-$sqd6 = "DELETE FROM payrolltax WHERE ToDate='$tod' and Employer='$em1' and WageType='$wt1' and Division='$dvv'";
+$sqd6 = "DELETE FROM payrolltax WHERE ToDate='$tod' and Employer='$em1'";
 CustomQuery($sqd6);
 
-$sqd2 = "DELETE FROM payrolldiv WHERE ToDate='$tod' and Employer='$em1' and WageType='$wt1' and Division='$dvv' ";
+$sqd2 = "DELETE FROM payrolldiv WHERE ToDate='$tod' and Employer='$em1'";
 CustomQuery($sqd2);
 
 
@@ -1692,8 +1700,8 @@ $frd1= $data["PayFromDate"];
 $tod1= $data["PayToDate"];
 
 $emr1= $data["Employer"];
-$dvv1= $data["Division"];
-$wtp1= $data["WageType"];
+//$dvv1= $data["Division"];
+//$wtp1= $data["WageType"];
 
 
 $tod2="'".$tod1."'";
@@ -1732,7 +1740,7 @@ global $dal;
 //the beginning
 
 $tblOrders = $dal->Table("payrolltab");
-$rs1 = $tblOrders->Query("ToDate=".$tod2. " and Employer=".$emr1. " and Division=".$dvv1. " and WageType=".$wtp1,"");
+$rs1 = $tblOrders->Query("ToDate=".$tod2. " and Employer=".$emr1,"");
 while ($datax1 = db_fetch_array($rs1))
 {
 $empid=$datax1["EmployeeID"];
@@ -2741,9 +2749,9 @@ function buttonHandler_Payslip($params)
 
 $result['PSID'] = $data["PSID"];
 $result['PRollID'] = $data["PRollID"];
-$result['Division'] = $data["Division"];
+//$result['Division'] = $data["Division"];
 $result['Employer'] = $data["Employer"];
-$result['WageType'] = $data["WageType"];
+//$result['WageType'] = $data["WageType"];
 
 $result['ToDate'] = $data["ToDate"];
 
@@ -2809,17 +2817,17 @@ function buttonHandler_Bank_Registry($params)
 
 $result['PSID'] = $data["PSID"];
 $result['PRollID'] = $data["PRollID"];
-$result['Division'] = $data["Division"];
+//$result['Division'] = $data["Division"];
 $result['Employer'] = $data["Employer"];
-$result['WageType'] = $data["WageType"];
+//$result['WageType'] = $data["WageType"];
 
 $result['ToDate'] = $data["ToDate"];
 
 $pr=$data["PRollID"];
 $td = $data["ToDate"];
-$dv=$data["Division"];
+//$dv=$data["Division"];
 
-$sqlp = "Update payrolltab set PayrollID='". $pr. "' where ToDate='$td' AND Division='$dv'";
+$sqlp = "Update payrolltab set PayrollID='". $pr. "' where ToDate='$td'";
  CustomQuery($sqlp);
 ;
 	RunnerContext::pop();
@@ -2878,17 +2886,17 @@ function buttonHandler_Summary_A($params)
 
 $result['PSID'] = $data["PSID"];
 $result['PRollID'] = $data["PRollID"];
-$result['Division'] = $data["Division"];
+//$result['Division'] = $data["Division"];
 $result['Employer'] = $data["Employer"];
-$result['WageType'] = $data["WageType"];
+//$result['WageType'] = $data["WageType"];
 
 $result['ToDate'] = $data["ToDate"];
 
 $pr=$data["PRollID"];
 $td = $data["ToDate"];
-$dv=$data["Division"];
+//$dv=$data["Division"];
 
-$sqlp = "Update payrolltab set PayrollID='". $pr. "' where ToDate='$td' AND Division='$dv'";
+$sqlp = "Update payrolltab set PayrollID='". $pr. "' where ToDate='$td'";
  CustomQuery($sqlp);
 ;
 	RunnerContext::pop();
@@ -2947,17 +2955,17 @@ function buttonHandler_Summary_B($params)
 
 $result['PSID'] = $data["PSID"];
 $result['PRollID'] = $data["PRollID"];
-$result['Division'] = $data["Division"];
+//$result['Division'] = $data["Division"];
 $result['Employer'] = $data["Employer"];
-$result['WageType'] = $data["WageType"];
+//$result['WageType'] = $data["WageType"];
 
 $result['ToDate'] = $data["ToDate"];
 
 $pr=$data["PRollID"];
 $td = $data["ToDate"];
-$dv=$data["Division"];
+//$dv=$data["Division"];
 
-$sqlp = "Update payrolltab set PayrollID='". $pr. "' where ToDate='$td' AND Division='$dv'";
+$sqlp = "Update payrolltab set PayrollID='". $pr. "' where ToDate='$td'";
  CustomQuery($sqlp);
 ;
 	RunnerContext::pop();
@@ -3016,17 +3024,17 @@ function buttonHandler_Summary_C($params)
 
 $result['PSID'] = $data["PSID"];
 $result['PRollID'] = $data["PRollID"];
-$result['Division'] = $data["Division"];
+//$result['Division'] = $data["Division"];
 $result['Employer'] = $data["Employer"];
-$result['WageType'] = $data["WageType"];
+//$result['WageType'] = $data["WageType"];
 
 $result['ToDate'] = $data["ToDate"];
 
 $pr=$data["PRollID"];
 $td = $data["ToDate"];
-$dv=$data["Division"];
+//$dv=$data["Division"];
 
-$sqlp = "Update payrolltab set PayrollID='". $pr. "' where ToDate='$td' AND Division='$dv'";
+$sqlp = "Update payrolltab set PayrollID='". $pr. "' where ToDate='$td'";
  CustomQuery($sqlp);
 ;
 	RunnerContext::pop();
@@ -3484,7 +3492,7 @@ $dvv = DBLookup("SELECT Division FROM dtrrange WHERE DrID=1");
 global $dal;
 
 
-$rs = DB::Query("select * from otndrdapp where Employer='$empr' and WageType='$wtt' and Division='$dvv' and (SDate between '$frd' and '$tod')");
+$rs = DB::Query("select * from otndrdapp where Employer='$empr' and (SDate between '$frd' and '$tod')");
  
 while( $datax = $rs->fetchAssoc() )
  
@@ -3596,8 +3604,8 @@ $result['record'] = $data;
 $frd= $data["FromDate"];
 $tod= $data["ToDate"];
 $empr= $data["Employer"];
-$wtt= $data["WageType"];
-$dvv= $data["Division"];
+//$wtt= $data["WageType"];
+//$dvv= $data["Division"];
 $empl= $data["Employee"];
 
 
@@ -3607,7 +3615,7 @@ $tdd="'".$tod."'";
 global $dal;
 
 
-$rs = DB::Query("select * from indprocess2 where Employer='$empr' and WageType='$wtt' and Division='$dvv' and EmployeeID='$empl' and (SDate between '$frd' and '$tod')");
+$rs = DB::Query("select * from indprocess2 where Employer='$empr' and EmployeeID='$empl' and (SDate between '$frd' and '$tod')");
  
 while( $datax = $rs->fetchAssoc() )
  
@@ -3923,8 +3931,8 @@ $result['record'] = $data;
 $frd= $data["FromDate"];
 $tod= $data["ToDate"];
 $empr= $data["Employer"];
-$wtt= $data["WageType"];
-$dvv= $data["Division"];
+//$wtt= $data["WageType"];
+//$dvv= $data["Division"];
 $empl= $data["EmployeeID"];
 
 $tdd="'".$tod."'";
@@ -3935,7 +3943,7 @@ global $dal;
 
 
 
-$rs = DB::Query("select * from dtrupload2 where Employer='$empr' and WageType='$wtt' and EmployeeID='$empl' and Division='$dvv'");
+$rs = DB::Query("select * from dtrupload2 where Employer='$empr' and EmployeeID='$empl'");
  
 while( $datax = $rs->fetchAssoc() )
 
@@ -4078,15 +4086,15 @@ $result['record'] = $data;
 $frd= $data["FromDate"];
 $tod= $data["ToDate"];
 $empr= $data["Employer"];
-$wtt= $data["WageType"];
-$dvv= $data["Division"];
+//$wtt= $data["WageType"];
+//$dvv= $data["Division"];
 $empl= $data["Employee"];
 
 $tdd="'".$tod."'";
 
 
 
-$chlock=DBLookup("select Locked from payroll where PayToDate='". $tod. "' and Employer='$empr' and Division='$dvv' and WageType='$wtt'");
+$chlock=DBLookup("select Locked from payroll where PayToDate='". $tod. "' and Employer='$empr'");
 
 if ($chlock!=1) {
 
@@ -4100,7 +4108,7 @@ $datatmp = db_fetch_array($rstmp);
 if($datatmp)
 {
 
-$rs = DB::Query("select * from dtrsummary2 where Employer='$empr' and EmployeeID='$empl' and WageType='$wtt' and Division='$dvv'");
+$rs = DB::Query("select * from dtrsummary2 where Employer='$empr' and EmployeeID='$empl'");
  
 while( $datax = $rs->fetchAssoc() )
 {
@@ -4291,7 +4299,7 @@ $empl = DBLookup("SELECT Employee FROM dtrrange WHERE DrID=1");
 global $dal;
 
 
-$rs = DB::Query("select * from otndrdapp where Employer='$empr' and EmployeeID='$empl' and WageType='$wtt' and Division='$dvv' and (SDate between '$frd' and '$tod')");
+$rs = DB::Query("select * from otndrdapp where Employer='$empr' and (SDate between '$frd' and '$tod')");
  
 while( $datax = $rs->fetchAssoc() )
  
@@ -4475,6 +4483,104 @@ $hdes=addslashes($hdes);
 $sqlh = "INSERT holidays VALUES (NULL, '$hd', '$ht', '$hdd', '$fh', '$sh', NULL, NULL, '$hdes', '$dvv')";
 CustomQuery($sqlh);
 
+
+};
+
+
+$result["txt"] = $params["txt"]." Done!";
+;
+	RunnerContext::pop();
+	echo my_json_encode($result);
+}
+function buttonHandler_Update_Holiday1($params)
+{
+	global $strTableName;
+	$result = array();
+
+	// create new button object for get record data
+	$params["keys"] = (array)my_json_decode(postvalue('keys'));
+	$params["isManyKeys"] = postvalue('isManyKeys');
+	$params["location"] = postvalue('location');
+
+	$button = new Button($params);
+	$ajax = $button; // for examle from HELP
+	$keys = $button->getKeys();
+
+	$masterData = false;
+	if ( isset($params['masterData']) && count($params['masterData']) > 0 )
+	{
+		$masterData = $params['masterData'];
+	}
+	else if ( isset($params["masterTable"]) )
+	{
+		$masterData = $button->getMasterData($params["masterTable"]);
+	}
+	
+	$contextParams = array();
+	if ( $params["location"] == PAGE_VIEW )
+	{
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["masterData"] = $masterData;
+	}
+	else if ( $params["location"] == PAGE_EDIT )
+	{
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["newData"] = $params['fieldsData'];
+		$contextParams["masterData"] = $masterData;
+	}
+	else if ( $params["location"] == "grid" )
+	{	
+		$params["location"] = "list";
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["newData"] = $params['fieldsData'];
+		$contextParams["masterData"] = $masterData;
+	}
+	else 
+	{
+		$contextParams["masterData"] = $masterData;
+	}
+
+	RunnerContext::push( new RunnerContextItem( $params["location"], $contextParams));
+	$data = $button->getCurrentRecord();
+$result['record'] = $data;
+$ht = $data["HolidayType"];
+$fh = $data["1stHalf"];
+$sh = $data["2ndHalf"];
+$hd = $data["HDate"];
+$empr = $data["Employer"];
+$dv = $data["Division"];
+$dep = $data["Department"];
+$emp = $data["Employee"];
+
+if ($empr!=Null and $dv==Null and $dep==Null and $emp==Null) {
+
+$sqh = "UPDATE indschedule SET HolidayType=NULLIF('$ht',''), Holiday1stHalf=NULLIF('$fh',''), Holiday2ndHalf=NULLIF('$sh','') WHERE SDate='$hd' and Employer='$empr'";
+
+CustomQuery($sqh); 
+
+};
+
+if ($empr!=Null and $dv!=Null and $dep==Null and $emp==Null) {
+
+$sqh1 = "UPDATE indschedule SET HolidayType=NULLIF('$ht',''), Holiday1stHalf=NULLIF('$fh',''), Holiday2ndHalf=NULLIF('$sh','') WHERE SDate='$hd' and Employer='$empr' and Division='$dv'";
+
+CustomQuery($sqh1); 
+
+};
+
+if ($empr!=Null and $dv!=Null and $dep!=Null and $emp==Null) {
+
+$sqh1 = "UPDATE indschedule SET HolidayType=NULLIF('$ht',''), Holiday1stHalf=NULLIF('$fh',''), Holiday2ndHalf=NULLIF('$sh','') WHERE SDate='$hd' and Employer='$empr' and Division='$dv' and Department='$dep'";
+
+CustomQuery($sqh1); 
+
+};
+
+if ($emp!=Null) {
+
+$sqh2 = "UPDATE indschedule SET HolidayType=NULLIF('$ht',''), Holiday1stHalf=NULLIF('$fh',''), Holiday2ndHalf=NULLIF('$sh','') WHERE SDate='$hd' and EmployeeID='$emp'";
+
+CustomQuery($sqh2); 
 
 };
 

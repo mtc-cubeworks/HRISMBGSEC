@@ -12,7 +12,7 @@ $query = mysqli_query($con,"select * from payrollamt33
 	where PtabID = '".$_GET['ps1']."'");
 	
 
-$pdf = new FPDF('P','mm',array(210,279));
+$pdf = new FPDF('P','mm',array(210,250));
 
 $invoice = mysqli_fetch_array($query );
 $pdf->AddPage();
@@ -169,6 +169,9 @@ $pdf->Cell(15	,3,number_format($invoice['VL'],2),0,1,'R');
 $pdf->Cell(37	,3,'Sick Leave (days):',0,0);
 $pdf->Cell(10	,3,number_format($invoice['SLDays'],2),0,0);
 $pdf->Cell(15	,3,number_format($invoice['SL'],2),0,1,'R');
+$pdf->Cell(37	,3,'Emergency Leave (days):',0,0);
+$pdf->Cell(10	,3,number_format($invoice['ELDays'],2),0,0);
+$pdf->Cell(15	,3,number_format($invoice['EL'],2),0,1,'R');
 
 
 

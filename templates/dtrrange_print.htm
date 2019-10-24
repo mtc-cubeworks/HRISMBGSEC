@@ -90,16 +90,6 @@
 				{$label dtrrange Employer}
 			</th>
 			{END Employer_fieldheadercolumn}
-			{BEGIN Division_fieldheadercolumn}
-			<th class="{$Division_class}" {$Division_style}  data-field="Division">
-				{$label dtrrange Division}
-			</th>
-			{END Division_fieldheadercolumn}
-			{BEGIN WageType_fieldheadercolumn}
-			<th class="{$WageType_class}" {$WageType_style}  data-field="WageType">
-				{$label dtrrange WageType}
-			</th>
-			{END WageType_fieldheadercolumn}
 			{BEGIN endrecordheader_block}
 			<th class="rnr-cs">&nbsp;</th>
 			{END endrecordheader_block}
@@ -132,16 +122,6 @@
 				{$Employer_value}
 			</td>
 			{END Employer_fieldcolumn}
-			{BEGIN Division_fieldcolumn}
-			<td  class="{$Division_class}" {$Division_style} {$recordattrs}>
-				{$Division_value}
-			</td>
-			{END Division_fieldcolumn}
-			{BEGIN WageType_fieldcolumn}
-			<td  class="{$WageType_class}" {$WageType_style} {$recordattrs}>
-				{$WageType_value}
-			</td>
-			{END WageType_fieldcolumn}
 			{BEGIN endrecord_block}
 			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
 			{END endrecord_block}

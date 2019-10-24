@@ -382,13 +382,13 @@
 								</label>
 							</div>
 					{END print_details_indschedrange}
-					{BEGIN print_details_empindschedule}<div class="rnr-printdetialstable">
-								<label for="printDetailsempindschedule{$id}">
-									<input type="checkbox" value="empindschedule" id="printDetailsempindschedule{$id}" checked>
+					{BEGIN print_details_indscheduleemp}<div class="rnr-printdetialstable">
+								<label for="printDetailsindscheduleemp{$id}">
+									<input type="checkbox" value="indscheduleemp" id="printDetailsindscheduleemp{$id}" checked>
 									Uploaded Schedule
 								</label>
 							</div>
-					{END print_details_empindschedule}
+					{END print_details_indscheduleemp}
 					{BEGIN print_details_loans}<div class="rnr-printdetialstable">
 								<label for="printDetailsloans{$id}">
 									<input type="checkbox" value="loans" id="printDetailsloans{$id}" checked>
@@ -1300,11 +1300,11 @@
 		{BEGIN demo_user_dtable_column}<td class="rnr-nowrap bs-griddetails" {$rowstyle} {$recordattrs}>
 	
 			{BEGIN dtables_link}<a {$dtables_link_attrs} class="glyphicon glyphicon-th-list {$dtables_link_class}" title="Show details"></a>
-												{BEGIN empindschedule_childcount}<a {$empindschedule_link_attrs} class="{$empindschedule_dlink_class}" title="Uploaded Schedule">
-					<span class="details-badge badge empindschedule_badge" {$empindschedule_childnumber_attr}>
-						{$empindschedule_childnumber}
+												{BEGIN indscheduleemp_childcount}<a {$indscheduleemp_link_attrs} class="{$indscheduleemp_dlink_class}" title="Uploaded Schedule">
+					<span class="details-badge badge indscheduleemp_badge" {$indscheduleemp_childnumber_attr}>
+						{$indscheduleemp_childnumber}
 					</span></a>
-				{END empindschedule_childcount}
+				{END indscheduleemp_childcount}
 								{BEGIN loans_childcount}<a {$loans_link_attrs} class="{$loans_dlink_class}" title="Loans and Deductions Setup">
 					<span class="details-badge badge loans_badge" {$loans_childnumber_attr}>
 						{$loans_childnumber}

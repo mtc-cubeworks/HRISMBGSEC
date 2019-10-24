@@ -108,16 +108,6 @@ if($mastertable == "payroll")
 		$whereClauses[] = $pageObject->getFieldSQLDecrypt("Employer") . " is null";
 	else
 		$whereClauses[] = $pageObject->getFieldSQLDecrypt("Employer") . "=" . $formattedValue;
-	$formattedValue = make_db_value("Division",$_SESSION[$sessionPrefix."_masterkey4"]);
-	if( $formattedValue == "null" )
-		$whereClauses[] = $pageObject->getFieldSQLDecrypt("Division") . " is null";
-	else
-		$whereClauses[] = $pageObject->getFieldSQLDecrypt("Division") . "=" . $formattedValue;
-	$formattedValue = make_db_value("WageType",$_SESSION[$sessionPrefix."_masterkey5"]);
-	if( $formattedValue == "null" )
-		$whereClauses[] = $pageObject->getFieldSQLDecrypt("WageType") . " is null";
-	else
-		$whereClauses[] = $pageObject->getFieldSQLDecrypt("WageType") . "=" . $formattedValue;
 }
 
 $whereClauses[] = SecuritySQL("Search", $strTableName);
@@ -191,21 +181,6 @@ if($rowcount)
 			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("Employer")))
 				$class = ' rnr-field-number';
 			$row["Employer_class"] = $class;
-	//	Division - 
-			$viewContainer->recId = $recordsCounter;
-		    $value = $viewContainer->showDBValue("Division", $data, $keylink);
-			$row["Division_value"] = $value;
-			$format = $pSet->getViewFormat("Division");
-			$class = "rnr-field-text";
-			if($format==FORMAT_FILE) 
-				$class = ' rnr-field-file'; 
-			if($format==FORMAT_AUDIO)
-				$class = ' rnr-field-audio';
-			if($format==FORMAT_CHECKBOX)
-				$class = ' rnr-field-checkbox';
-			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("Division")))
-				$class = ' rnr-field-number';
-			$row["Division_class"] = $class;
 	//	FromDate - Short Date
 			$viewContainer->recId = $recordsCounter;
 		    $value = $viewContainer->showDBValue("FromDate", $data, $keylink);
@@ -236,21 +211,6 @@ if($rowcount)
 			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("ToDate")))
 				$class = ' rnr-field-number';
 			$row["ToDate_class"] = $class;
-	//	WageType - 
-			$viewContainer->recId = $recordsCounter;
-		    $value = $viewContainer->showDBValue("WageType", $data, $keylink);
-			$row["WageType_value"] = $value;
-			$format = $pSet->getViewFormat("WageType");
-			$class = "rnr-field-text";
-			if($format==FORMAT_FILE) 
-				$class = ' rnr-field-file'; 
-			if($format==FORMAT_AUDIO)
-				$class = ' rnr-field-audio';
-			if($format==FORMAT_CHECKBOX)
-				$class = ' rnr-field-checkbox';
-			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("WageType")))
-				$class = ' rnr-field-number';
-			$row["WageType_class"] = $class;
 	//	Locked - Checkbox
 			$viewContainer->recId = $recordsCounter;
 		    $value = $viewContainer->showDBValue("Locked", $data, $keylink);

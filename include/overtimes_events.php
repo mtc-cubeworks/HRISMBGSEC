@@ -284,7 +284,6 @@ $fd= $values["FromTime"];
 $td= $values["ToTime"];
 $appd= $values["Approved"];
 $nomins= $values["NoMins"];
-$costc= $values["CostCenter"];
 $rea= $values["Reason"];
 $rea= addslashes($rea);
 
@@ -322,11 +321,10 @@ while ($datax = db_fetch_array($rs))
 $empid=$datax["EmployeeID"];
 
 
-$dhr=(DBLookup("select BasicDailyPay from demo_user where EmployeeID='$empid'"))/8;
 
 
 
-$sqlr = "INSERT indovertime VALUES (NULL, '$cdate', '$empid', '$dc', '$nomins', '$otid', '$fd', '$td', NULL, NULL, '$costc', '$rea', '$dhr')";
+$sqlr = "INSERT indovertime VALUES (NULL, '$cdate', '$empid', '$dc', '$nomins', '$otid', '$fd', '$td', NULL, NULL, '$rea')";
 CustomQuery($sqlr);
 
 

@@ -42,7 +42,6 @@ class class_GlobalEvents extends eventsBase
 		$this->events["IsRecordEditable"]["payroll21"] = true;
 		$this->events["IsRecordEditable"]["leaves11"] = true;
 		$this->events["IsRecordEditable"]["leavesapp"] = true;
-		$this->events["IsRecordEditable"]["empindschedule"] = true;
 		$this->events["IsRecordEditable"]["indschedrange"] = true;
 		$this->events["IsRecordEditable"]["empdtr"] = true;
 		$this->events["IsRecordEditable"]["overtimefile"] = true;
@@ -57,6 +56,7 @@ class class_GlobalEvents extends eventsBase
 		$this->events["IsRecordEditable"]["overtimefileapp2"] = true;
 		$this->events["IsRecordEditable"]["demo_useremp"] = true;
 		$this->events["IsRecordEditable"]["payrolltab1"] = true;
+		$this->events["IsRecordEditable"]["indscheduleemp"] = true;
 
 		}
 
@@ -331,22 +331,6 @@ return $isEditable=false;
 
 else return $isEditable=true;;
 		}
-		if($table == "empindschedule")
-		{
-			
-$eid=$values["EmployeeID"] ;
-
-$lk=DBLookup("SELECT Inactive FROM demo_user WHERE EmployeeID='$eid'");
-
-if ($lk==1)
- return false;
-else
- return true;
-//if ($lk == 1)
-// return false;
-//else
-// return true;;
-		}
 		if($table == "indschedrange")
 		{
 			$eid=$values["EmployeeID"] ;
@@ -537,6 +521,20 @@ $lk=$values["Locked"];
 if ($lk == 1)
  return false;
 else
+ return true;;
+		}
+		if($table == "indscheduleemp")
+		{
+			
+
+
+//$lk=$values["Locked"];
+
+
+
+//if ($lk == 1)
+// return false;
+//else
  return true;;
 		}
 		return $isEditable;

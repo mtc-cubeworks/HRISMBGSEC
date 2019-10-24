@@ -421,8 +421,6 @@ function checkTableName($shortTName, $type=false)
 		return true;
 	if ("annualtaxtab" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
-	if ("empindschedule" == $shortTName && ($type===false || ($type!==false && $type == 1)))
-		return true;
 	if ("indschedrange" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
 	if ("monthlyremittax" == $shortTName && ($type===false || ($type!==false && $type == 0)))
@@ -522,6 +520,10 @@ function checkTableName($shortTName, $type=false)
 	if ("loanbalnew51" == $shortTName && ($type===false || ($type!==false && $type == 1)))
 		return true;
 	if ("holidaysdefault" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("holidayupdate" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("indscheduleemp" == $shortTName && ($type===false || ($type!==false && $type == 1)))
 		return true;
 	return false;
 }
@@ -952,11 +954,6 @@ function GetTablesList($pdfMode = false)
 	{
 		$arr[]="annualtaxtab";
 	}
-	$strPerm = GetUserPermissions("empindschedule");
-	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
-	{
-		$arr[]="empindschedule";
-	}
 	$strPerm = GetUserPermissions("indschedrange");
 	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
 	{
@@ -1207,6 +1204,16 @@ function GetTablesList($pdfMode = false)
 	{
 		$arr[]="holidaysdefault";
 	}
+	$strPerm = GetUserPermissions("holidayupdate");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="holidayupdate";
+	}
+	$strPerm = GetUserPermissions("indscheduleemp");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="indscheduleemp";
+	}
 	return $arr;
 }
 
@@ -1292,7 +1299,6 @@ function GetTablesListWithoutSecurity()
 	$arr[]="contlo";
 	$arr[]="statpay";
 	$arr[]="annualtaxtab";
-	$arr[]="empindschedule";
 	$arr[]="indschedrange";
 	$arr[]="monthlyremittax";
 	$arr[]="withholdingcat";
@@ -1343,6 +1349,8 @@ function GetTablesListWithoutSecurity()
 	$arr[]="loanbalnew5";
 	$arr[]="loanbalnew51";
 	$arr[]="holidaysdefault";
+	$arr[]="holidayupdate";
+	$arr[]="indscheduleemp";
 	return $arr;
 }
 
@@ -2207,6 +2215,7 @@ function SetAuthSessionData($pUsername, &$data, $fromFacebook, $password, &$page
 		$_SESSION["_indschedrange_OwnerID"] = $data["EmployeeID"];
 		$_SESSION["_empdtr_OwnerID"] = $data["EmployeeID"];
 		$_SESSION["_emplogins_OwnerID"] = $data["LogID"];
+		$_SESSION["_overtimes_OwnerID"] = $data["LogID"];
 		$_SESSION["_overtimefile_OwnerID"] = $data["EmployeeID"];
 		$_SESSION["_indovertime1_OwnerID"] = $data["EmployeeID"];
 		$_SESSION["_demo_logemp_OwnerID"] = $data["EmployeeID"];
@@ -2329,6 +2338,12 @@ function CheckSecurity($strValue, $strAction, $table = "")
 				return false;
 		}
 		if($table=="emplogins")
+		{
+
+				if(!($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
+				return false;
+		}
+		if($table=="overtimes")
 		{
 
 				if(!($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
@@ -2523,6 +2538,10 @@ function SecuritySQL($strAction, $table="", $strPerm="")
 				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
 		}
 		if($table=="emplogins")
+		{
+				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
+		}
+		if($table=="overtimes")
 		{
 				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
 		}

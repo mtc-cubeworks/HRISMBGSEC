@@ -2900,8 +2900,6 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "statpay" ] = "statpay";
 	$projectEntities[ "annualtaxtab" ] = array( "url" => "annualtaxtab", "type" => 0 );
 	$projectEntitiesReverse[ "annualtaxtab" ] = "annualtaxtab";
-	$projectEntities[ "empindschedule" ] = array( "url" => "empindschedule", "type" => 1 );
-	$projectEntitiesReverse[ "empindschedule" ] = "empindschedule";
 	$projectEntities[ "indschedrange" ] = array( "url" => "indschedrange", "type" => 0 );
 	$projectEntitiesReverse[ "indschedrange" ] = "indschedrange";
 	$projectEntities[ "monthlyremittax" ] = array( "url" => "monthlyremittax", "type" => 0 );
@@ -3002,6 +3000,10 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "loanbalnew51" ] = "loanbalnew51";
 	$projectEntities[ "holidaysdefault" ] = array( "url" => "holidaysdefault", "type" => 0 );
 	$projectEntitiesReverse[ "holidaysdefault" ] = "holidaysdefault";
+	$projectEntities[ "holidayupdate" ] = array( "url" => "holidayupdate", "type" => 0 );
+	$projectEntitiesReverse[ "holidayupdate" ] = "holidayupdate";
+	$projectEntities[ "indscheduleemp" ] = array( "url" => "indscheduleemp", "type" => 1 );
+	$projectEntitiesReverse[ "indscheduleemp" ] = "indscheduleemp";
 }
 
 function findTable( $table ) {

@@ -139,7 +139,7 @@ $tdatapaymentperiods[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																					
+																																																																																																																																																																																																																																																																											
 
 $tdatapaymentperiods[".ajaxCodeSnippetAdded"] = false;
 

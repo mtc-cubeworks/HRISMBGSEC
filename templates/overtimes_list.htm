@@ -476,9 +476,6 @@
 	.bs-gridcell[data-field=Approvedby]:before {
 		content: "{$label overtimes Approvedby}";
 	}
-	.bs-gridcell[data-field=ApprovedTime]:before {
-		content: "{$label overtimes ApprovedTime}";
-	}
 	.bs-gridcell[data-field=Posted]:before {
 		content: "{$label overtimes Posted}";
 	}
@@ -496,9 +493,6 @@
 	}
 	.bs-gridcell[data-field=Division]:before {
 		content: "{$label overtimes Division}";
-	}
-	.bs-gridcell[data-field=CostCenter]:before {
-		content: "{$label overtimes CostCenter}";
 	}
 	.bs-gridcell[data-field=AllEmployees]:before {
 		content: "{$label overtimes AllEmployees}";
@@ -625,17 +619,6 @@
 									
 									
 									
-									{BEGIN CostCenter_fieldheadercolumn}<th class="rnr-gridfieldlabel {$CostCenter_class}" data-field=CostCenter>
-									{BEGIN CostCenter_fieldheader}<span {$CostCenter_orderlinkattrs}>
-											{$label overtimes CostCenter}
-										</span>
-									{END CostCenter_fieldheader}
-									</th>
-									{END CostCenter_fieldheadercolumn}
-									
-									
-									
-									
 									{BEGIN Remarks_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Remarks_class}" data-field=Remarks>
 									{BEGIN Remarks_fieldheader}<span {$Remarks_orderlinkattrs}>
 											{$label overtimes Remarks}
@@ -676,17 +659,6 @@
 									{END ApprovedDate_fieldheader}
 									</th>
 									{END ApprovedDate_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN ApprovedTime_fieldheadercolumn}<th class="rnr-gridfieldlabel {$ApprovedTime_class}" data-field=ApprovedTime>
-									{BEGIN ApprovedTime_fieldheader}<span {$ApprovedTime_orderlinkattrs}>
-											{$label overtimes ApprovedTime}
-										</span>
-									{END ApprovedTime_fieldheader}
-									</th>
-									{END ApprovedTime_fieldheadercolumn}
 									
 									
 									
@@ -828,12 +800,6 @@
 {END NoMins_fieldcolumn}
 
 
-	{BEGIN CostCenter_fieldcolumn}<td class="bs-gridcell {$CostCenter_class}"  data-field=CostCenter {$rowstyle} {$recordattrs}>
-		{$CostCenter_value}
-	</td>
-{END CostCenter_fieldcolumn}
-
-
 	{BEGIN Remarks_fieldcolumn}<td class="bs-gridcell {$Remarks_class}"  data-field=Remarks {$rowstyle} {$recordattrs}>
 		{$Remarks_value}
 	</td>
@@ -856,12 +822,6 @@
 		{$ApprovedDate_value}
 	</td>
 {END ApprovedDate_fieldcolumn}
-
-
-	{BEGIN ApprovedTime_fieldcolumn}<td class="bs-gridcell {$ApprovedTime_class}"  data-field=ApprovedTime {$rowstyle} {$recordattrs}>
-		{$ApprovedTime_value}
-	</td>
-{END ApprovedTime_fieldcolumn}
 
 
 	{BEGIN Posted_fieldcolumn}<td class="bs-gridcell {$Posted_class}"  data-field=Posted {$rowstyle} {$recordattrs}>

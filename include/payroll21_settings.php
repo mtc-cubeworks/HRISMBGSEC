@@ -140,7 +140,7 @@ $tdatapayroll21[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																					
+																																																																																																																																																																																																																																																																											
 
 $tdatapayroll21[".ajaxCodeSnippetAdded"] = false;
 
@@ -1308,9 +1308,7 @@ $proto19["m_columns"][] = "MoAdjustment";
 $proto19["m_columns"][] = "PresetTax";
 $proto19["m_columns"][] = "13thMonth";
 $proto19["m_columns"][] = "Locked";
-$proto19["m_columns"][] = "Division";
 $proto19["m_columns"][] = "Employer";
-$proto19["m_columns"][] = "WageType";
 $obj = new SQLTable($proto19);
 
 $proto18["m_table"] = $obj;
