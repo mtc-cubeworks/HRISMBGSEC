@@ -80,12 +80,12 @@ $tdataempstatus[".listAjax"] = false;
 	$tdataempstatus[".locking"] = false;
 
 $tdataempstatus[".edit"] = true;
-$tdataempstatus[".afterEditAction"] = 1;
+$tdataempstatus[".afterEditAction"] = 0;
 $tdataempstatus[".closePopupAfterEdit"] = 1;
 $tdataempstatus[".afterEditActionDetTable"] = "";
 
 $tdataempstatus[".add"] = true;
-$tdataempstatus[".afterAddAction"] = 1;
+$tdataempstatus[".afterAddAction"] = 0;
 $tdataempstatus[".closePopupAfterAdd"] = 1;
 $tdataempstatus[".afterAddActionDetTable"] = "";
 
@@ -134,7 +134,7 @@ $tdataempstatus[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																											
+																																																																																																																																																																																																																																																																																							
 
 $tdataempstatus[".ajaxCodeSnippetAdded"] = false;
 

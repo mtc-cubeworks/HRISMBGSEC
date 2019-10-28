@@ -97,7 +97,7 @@ $tdatadtrrange1[".closePopupAfterEdit"] = 1;
 $tdatadtrrange1[".afterEditActionDetTable"] = "Detail tables not found!";
 
 $tdatadtrrange1[".add"] = true;
-$tdatadtrrange1[".afterAddAction"] = 1;
+$tdatadtrrange1[".afterAddAction"] = 0;
 $tdatadtrrange1[".closePopupAfterAdd"] = 1;
 $tdatadtrrange1[".afterAddActionDetTable"] = "";
 
@@ -149,7 +149,7 @@ $tdatadtrrange1[".rowHighlite"] = true;
 							
 							
 										
-																							
+																																			
 
 $tdatadtrrange1[".ajaxCodeSnippetAdded"] = false;
 

@@ -1,0 +1,110 @@
+<div {$pageattrs}>
+
+{BEGIN container_column}
+<div class="rnr-c rnr-ch rnr-c-column">
+
+{BEGIN masterlist_title}
+<div  class="style1 rnr-bl rnr-b-masterlistheader {$brickclass_masterlistheader}"><a {$backtomasterlink_attrs} class="btn btn-link btn-xs">Back to {$backtomasterlink_caption}</a><span>{$pagetitlelabel notes masterlist}</span></div>
+{END masterlist_title}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_column}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+	<style>
+	.bs-gridcell[data-field=NID]:before {
+		content: "{$label notes NID}";
+	}
+	.bs-gridcell[data-field=CreatedDate]:before {
+		content: "{$label notes CreatedDate}";
+	}
+	.bs-gridcell[data-field=NoteType]:before {
+		content: "{$label notes NoteType}";
+	}
+	.bs-gridcell[data-field=StartDate]:before {
+		content: "{$label notes StartDate}";
+	}
+	.bs-gridcell[data-field=EndDate]:before {
+		content: "{$label notes EndDate}";
+	}
+	.bs-gridcell[data-field=Remarks]:before {
+		content: "{$label notes Remarks}";
+	}
+	.bs-gridcell[data-field=Encodedby]:before {
+		content: "{$label notes Encodedby}";
+	}
+	.bs-gridcell[data-field=EmployeeID]:before {
+		content: "{$label notes EmployeeID}";
+	}
+	.bs-gridcell[data-field=UploadFile]:before {
+		content: "{$label notes UploadFile}";
+	}
+	.bs-gridcell[data-field=Status]:before {
+		content: "{$label notes Status}";
+	}
+	.bs-gridcell[data-field=NotifyDays]:before {
+		content: "{$label notes NotifyDays}";
+	}
+	.bs-gridcell[data-field=Closed]:before {
+		content: "{$label notes Closed}";
+	}
+	.bs-gridcell[data-field=NotifyDaysLeft]:before {
+		content: "{$label notes NotifyDaysLeft}";
+	}
+	.bs-gridcell[data-field=DaysLeft]:before {
+		content: "{$label notes DaysLeft}";
+	}
+</style>
+<table {$masterlistgrid_hiddenattr} data-pageid="{$pageid}" data-brick="masterlistgrid" class="table rnr-b-mastergridfields rnr-gridtable bs-flexgrid" >
+		<thead>
+		<tr>
+			<th class="{$NID_class}">{$label notes NID}</th>
+			<th class="{$CreatedDate_class}">{$label notes CreatedDate}</th>
+			<th class="{$EmployeeID_class}">{$label notes EmployeeID}</th>
+			<th class="{$NoteType_class}">{$label notes NoteType}</th>
+			<th class="{$StartDate_class}">{$label notes StartDate}</th>
+			<th class="{$EndDate_class}">{$label notes EndDate}</th>
+			<th class="{$Remarks_class}">{$label notes Remarks}</th>
+			<th class="{$UploadFile_class}">{$label notes UploadFile}</th>
+			<th class="{$Status_class}">{$label notes Status}</th>
+			<th class="{$NotifyDays_class}">{$label notes NotifyDays}</th>
+			<th class="{$NotifyDaysLeft_class}">{$label notes NotifyDaysLeft}</th>
+			<th class="{$DaysLeft_class}">{$label notes DaysLeft}</th>
+			<th class="{$Closed_class}">{$label notes Closed}</th>
+			<th class="{$Encodedby_class}">{$label notes Encodedby}</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td class="{$NID_class} bs-gridcell" data-field=NID>{$NID_mastervalue}</td>
+			<td class="{$CreatedDate_class} bs-gridcell" data-field=CreatedDate>{$CreatedDate_mastervalue}</td>
+			<td class="{$EmployeeID_class} bs-gridcell" data-field=EmployeeID>{$EmployeeID_mastervalue}</td>
+			<td class="{$NoteType_class} bs-gridcell" data-field=NoteType>{$NoteType_mastervalue}</td>
+			<td class="{$StartDate_class} bs-gridcell" data-field=StartDate>{$StartDate_mastervalue}</td>
+			<td class="{$EndDate_class} bs-gridcell" data-field=EndDate>{$EndDate_mastervalue}</td>
+			<td class="{$Remarks_class} bs-gridcell" data-field=Remarks>{$Remarks_mastervalue}</td>
+			<td class="{$UploadFile_class} bs-gridcell" data-field=UploadFile>{$UploadFile_mastervalue}</td>
+			<td class="{$Status_class} bs-gridcell" data-field=Status>{$Status_mastervalue}</td>
+			<td class="{$NotifyDays_class} bs-gridcell" data-field=NotifyDays>{$NotifyDays_mastervalue}</td>
+			<td class="{$NotifyDaysLeft_class} bs-gridcell" data-field=NotifyDaysLeft>{$NotifyDaysLeft_mastervalue}</td>
+			<td class="{$DaysLeft_class} bs-gridcell" data-field=DaysLeft>{$DaysLeft_mastervalue}</td>
+			<td class="{$Closed_class} bs-gridcell" data-field=Closed>{$Closed_mastervalue}</td>
+			<td class="{$Encodedby_class} bs-gridcell" data-field=Encodedby>{$Encodedby_mastervalue}</td>
+		</tr>
+	</tbody>
+
+</table> 
+
+
+
+
+{END container_mastergrid}
+
+</div>

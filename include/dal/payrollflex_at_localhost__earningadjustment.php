@@ -8,6 +8,8 @@ $dalTableearningadjustment["PaymentPeriod"] = array("type"=>3,"varname"=>"Paymen
 $dalTableearningadjustment["LessAbsences"] = array("type"=>16,"varname"=>"LessAbsences", "name" => "LessAbsences");
 $dalTableearningadjustment["Inactive"] = array("type"=>16,"varname"=>"Inactive", "name" => "Inactive");
 $dalTableearningadjustment["PerDay"] = array("type"=>14,"varname"=>"PerDay", "name" => "PerDay");
+$dalTableearningadjustment["StartDate"] = array("type"=>7,"varname"=>"StartDate", "name" => "StartDate");
+$dalTableearningadjustment["EndDate"] = array("type"=>7,"varname"=>"EndDate", "name" => "EndDate");
 	$dalTableearningadjustment["eaID"]["key"]=true;
 
 $dal_info["payrollflex_at_localhost__earningadjustment"] = &$dalTableearningadjustment;

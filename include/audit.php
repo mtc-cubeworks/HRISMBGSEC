@@ -815,6 +815,22 @@ class AuditTrailTable
 		{
 			return false;
 		}
+		if($table=="notes")
+		{
+			return false;
+		}
+		if($table=="notetypes")
+		{
+			return false;
+		}
+		if($table=="notestatus")
+		{
+			return false;
+		}
+		if($table=="notestatuses")
+		{
+			return false;
+		}
 	}
 	
 	protected function insert($datetime, $ip, $user, $table, $action, $description)
@@ -1623,6 +1639,22 @@ class AuditTrailFile
 			return false;
 		}
 		if($table=="indscheduleemp")
+		{
+			return false;
+		}
+		if($table=="notes")
+		{
+			return false;
+		}
+		if($table=="notetypes")
+		{
+			return false;
+		}
+		if($table=="notestatus")
+		{
+			return false;
+		}
+		if($table=="notestatuses")
 		{
 			return false;
 		}

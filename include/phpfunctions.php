@@ -1928,6 +1928,14 @@ function GetDefaultValue($field, $ptype, $table="")
 	{
 		return 1;
 	}
+				if($table=="notes" && $field=="CreatedDate")
+	{
+		return now();
+	}
+				if($table=="notestatus" && $field=="CreatedDate")
+	{
+		return now();
+	}
 	return "";
 }
 

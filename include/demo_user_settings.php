@@ -236,12 +236,12 @@ $tdatademo_user[".listAjax"] = false;
 	$tdatademo_user[".locking"] = false;
 
 $tdatademo_user[".edit"] = true;
-$tdatademo_user[".afterEditAction"] = 1;
+$tdatademo_user[".afterEditAction"] = 0;
 $tdatademo_user[".closePopupAfterEdit"] = 1;
 $tdatademo_user[".afterEditActionDetTable"] = "";
 
 $tdatademo_user[".add"] = true;
-$tdatademo_user[".afterAddAction"] = 1;
+$tdatademo_user[".afterAddAction"] = 0;
 $tdatademo_user[".closePopupAfterAdd"] = 1;
 $tdatademo_user[".afterAddActionDetTable"] = "";
 
@@ -291,11 +291,12 @@ $tdatademo_user[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																											
+																																																																																																																																																																																																																																																																																						
+					
 
 $tdatademo_user[".ajaxCodeSnippetAdded"] = false;
 
-$tdatademo_user[".buttonsAdded"] = false;
+$tdatademo_user[".buttonsAdded"] = true;
 
 $tdatademo_user[".addPageEvents"] = true;
 
@@ -8980,11 +8981,44 @@ $detailsTablesData["demo_user"] = array();
 				$detailsTablesData["demo_user"][$dIndex]["detailKeys"] = array();
 
 	$detailsTablesData["demo_user"][$dIndex]["detailKeys"][]="EmployeeID";
-//	loans
+//	notes
 	
 	
 
 		$dIndex = 2;
+	$detailsParam = array();
+	$detailsParam["dDataSourceTable"]="notes";
+		$detailsParam["dOriginalTable"] = "notes";
+		$detailsParam["proceedLink"] = true;
+				$detailsParam["dType"]=PAGE_LIST;
+	$detailsParam["dShortTable"] = "notes";
+	$detailsParam["dCaptionTable"] = GetTableCaption("notes");
+	$detailsParam["masterKeys"] =array();
+	$detailsParam["detailKeys"] =array();
+
+	$detailsParam["dispChildCount"] = "1";
+
+		$detailsParam["hideChild"] = false;
+						$detailsParam["previewOnList"] = "1";
+		$detailsParam["previewOnAdd"] = 0;
+		$detailsParam["previewOnEdit"] = 1;
+		$detailsParam["previewOnView"] = 1;
+		
+	$detailsTablesData["demo_user"][$dIndex] = $detailsParam;
+
+	
+		$detailsTablesData["demo_user"][$dIndex]["masterKeys"] = array();
+
+	$detailsTablesData["demo_user"][$dIndex]["masterKeys"][]="EmployeeID";
+
+				$detailsTablesData["demo_user"][$dIndex]["detailKeys"] = array();
+
+	$detailsTablesData["demo_user"][$dIndex]["detailKeys"][]="EmployeeID";
+//	loans
+	
+	
+
+		$dIndex = 3;
 	$detailsParam = array();
 	$detailsParam["dDataSourceTable"]="loans";
 		$detailsParam["dOriginalTable"] = "loans";
@@ -9017,7 +9051,7 @@ $detailsTablesData["demo_user"] = array();
 	
 	
 
-		$dIndex = 3;
+		$dIndex = 4;
 	$detailsParam = array();
 	$detailsParam["dDataSourceTable"]="earningadjustment";
 		$detailsParam["dOriginalTable"] = "earningadjustment";
@@ -9050,7 +9084,7 @@ $detailsTablesData["demo_user"] = array();
 	
 	
 
-		$dIndex = 4;
+		$dIndex = 5;
 	$detailsParam = array();
 	$detailsParam["dDataSourceTable"]="emphistory";
 		$detailsParam["dOriginalTable"] = "emphistory";
@@ -9083,7 +9117,7 @@ $detailsTablesData["demo_user"] = array();
 	
 	
 
-		$dIndex = 5;
+		$dIndex = 6;
 	$detailsParam = array();
 	$detailsParam["dDataSourceTable"]="thirtax";
 		$detailsParam["dOriginalTable"] = "thirtax";
@@ -9116,7 +9150,7 @@ $detailsTablesData["demo_user"] = array();
 	
 	
 
-		$dIndex = 6;
+		$dIndex = 7;
 	$detailsParam = array();
 	$detailsParam["dDataSourceTable"]="thirtaxsum";
 		$detailsParam["dOriginalTable"] = "thirtaxsum";

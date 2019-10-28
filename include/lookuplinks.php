@@ -342,6 +342,12 @@ function InitLookupLinks()
 	$lookupTableLinks["department"]["indscheduleemp.Department"]["edit"] = array("table" => "indscheduleemp", "field" => "Department", "page" => "edit");
 	$lookupTableLinks["holidaytype"]["indscheduleemp.HolidayType"]["edit"] = array("table" => "indscheduleemp", "field" => "HolidayType", "page" => "edit");
 	$lookupTableLinks["employername"]["indscheduleemp.Employer"]["edit"] = array("table" => "indscheduleemp", "field" => "Employer", "page" => "edit");
+	$lookupTableLinks["notetypes"]["notes.NoteType"]["edit"] = array("table" => "notes", "field" => "NoteType", "page" => "edit");
+	$lookupTableLinks["logins"]["notes.Encodedby"]["edit"] = array("table" => "notes", "field" => "Encodedby", "page" => "edit");
+	$lookupTableLinks["demo_user"]["notes.EmployeeID"]["edit"] = array("table" => "notes", "field" => "EmployeeID", "page" => "edit");
+	$lookupTableLinks["notestatuses"]["notes.Status"]["edit"] = array("table" => "notes", "field" => "Status", "page" => "edit");
+	$lookupTableLinks["notestatuses"]["notestatus.NoteStatus"]["edit"] = array("table" => "notestatus", "field" => "NoteStatus", "page" => "edit");
+	$lookupTableLinks["logins"]["notestatus.Encodedby"]["edit"] = array("table" => "notestatus", "field" => "Encodedby", "page" => "edit");
 }
 
 ?>

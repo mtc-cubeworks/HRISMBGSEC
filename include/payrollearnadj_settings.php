@@ -110,12 +110,12 @@ $tdatapayrollearnadj[".listAjax"] = false;
 	$tdatapayrollearnadj[".locking"] = false;
 
 $tdatapayrollearnadj[".edit"] = true;
-$tdatapayrollearnadj[".afterEditAction"] = 1;
+$tdatapayrollearnadj[".afterEditAction"] = 0;
 $tdatapayrollearnadj[".closePopupAfterEdit"] = 1;
 $tdatapayrollearnadj[".afterEditActionDetTable"] = "";
 
 $tdatapayrollearnadj[".add"] = true;
-$tdatapayrollearnadj[".afterAddAction"] = 1;
+$tdatapayrollearnadj[".afterAddAction"] = 0;
 $tdatapayrollearnadj[".closePopupAfterAdd"] = 1;
 $tdatapayrollearnadj[".afterAddActionDetTable"] = "";
 
@@ -164,7 +164,7 @@ $tdatapayrollearnadj[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
 
 $tdatapayrollearnadj[".ajaxCodeSnippetAdded"] = false;
 

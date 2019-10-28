@@ -741,6 +741,10 @@ $tableCaptions["English"]["loanbalnew51"] = "My Loan & Deduction Balance";
 $tableCaptions["English"]["holidaysdefault"] = "Holiday Default";
 $tableCaptions["English"]["holidayupdate"] = "Holiday Override";
 $tableCaptions["English"]["indscheduleemp"] = "Uploaded Schedule";
+$tableCaptions["English"]["notes"] = "Notes";
+$tableCaptions["English"]["notetypes"] = "Note Types";
+$tableCaptions["English"]["notestatus"] = "Note Status";
+$tableCaptions["English"]["notestatuses"] = "Note Statuses";
 $tableCaptions[""] = array();
 $tableCaptions[""][""] = "";
 $tableCaptions[""]["demo_device"] = "Device";
@@ -804,6 +808,10 @@ $tableCaptions[""]["overtimes"] = "Overtime Entry";
 $tableCaptions[""]["holidayupdate"] = "Holidayupdate";
 $tableCaptions[""]["payrolldiv"] = "Payroll Prints";
 $tableCaptions[""]["indscheduleemp"] = "Indscheduleemp";
+$tableCaptions[""]["notes"] = "Notes";
+$tableCaptions[""]["notetypes"] = "Notetypes";
+$tableCaptions[""]["notestatus"] = "Notestatus";
+$tableCaptions[""]["notestatuses"] = "Notestatuses";
 
 
 $globalEvents = new class_GlobalEvents;

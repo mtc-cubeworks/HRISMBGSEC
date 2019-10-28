@@ -81,6 +81,9 @@
 	.bs-gridcell[data-field=TotalDays]:before {
 		content: "{$label leavesapp2 TotalDays}";
 	}
+	.bs-gridcell[data-field=UploadFile]:before {
+		content: "{$label leavesapp2 UploadFile}";
+	}
 </style>
 <table {$masterlistgrid_hiddenattr} data-pageid="{$pageid}" data-brick="masterlistgrid" class="table rnr-b-mastergridfields rnr-gridtable bs-flexgrid" >
 		<thead>
@@ -92,6 +95,7 @@
 			<th class="{$FromDate_class}">{$label leavesapp2 FromDate}</th>
 			<th class="{$ToDate_class}">{$label leavesapp2 ToDate}</th>
 			<th class="{$Reason_class}">{$label leavesapp2 Reason}</th>
+			<th class="{$UploadFile_class}">{$label leavesapp2 UploadFile}</th>
 			<th class="{$FirstHalf_class}">{$label leavesapp2 FirstHalf}</th>
 			<th class="{$SecondHalf_class}">{$label leavesapp2 SecondHalf}</th>
 			<th class="{$Days_class}">{$label leavesapp2 Days}</th>
@@ -118,6 +122,7 @@
 			<td class="{$FromDate_class} bs-gridcell" data-field=FromDate>{$FromDate_mastervalue}</td>
 			<td class="{$ToDate_class} bs-gridcell" data-field=ToDate>{$ToDate_mastervalue}</td>
 			<td class="{$Reason_class} bs-gridcell" data-field=Reason>{$Reason_mastervalue}</td>
+			<td class="{$UploadFile_class} bs-gridcell" data-field=UploadFile>{$UploadFile_mastervalue}</td>
 			<td class="{$FirstHalf_class} bs-gridcell" data-field=FirstHalf>{$FirstHalf_mastervalue}</td>
 			<td class="{$SecondHalf_class} bs-gridcell" data-field=SecondHalf>{$SecondHalf_mastervalue}</td>
 			<td class="{$Days_class} bs-gridcell" data-field=Days>{$Days_mastervalue}</td>

@@ -80,12 +80,12 @@ $tdatalogo[".listAjax"] = false;
 	$tdatalogo[".locking"] = false;
 
 $tdatalogo[".edit"] = true;
-$tdatalogo[".afterEditAction"] = 1;
+$tdatalogo[".afterEditAction"] = 0;
 $tdatalogo[".closePopupAfterEdit"] = 1;
 $tdatalogo[".afterEditActionDetTable"] = "";
 
 $tdatalogo[".add"] = true;
-$tdatalogo[".afterAddAction"] = 1;
+$tdatalogo[".afterAddAction"] = 0;
 $tdatalogo[".closePopupAfterAdd"] = 1;
 $tdatalogo[".afterAddActionDetTable"] = "";
 
@@ -132,7 +132,7 @@ $tdatalogo[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																											
+																																																																																																																																																																																																																																																																																							
 
 $tdatalogo[".ajaxCodeSnippetAdded"] = false;
 

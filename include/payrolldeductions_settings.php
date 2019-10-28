@@ -116,12 +116,12 @@ $tdatapayrolldeductions[".listAjax"] = false;
 	$tdatapayrolldeductions[".locking"] = false;
 
 $tdatapayrolldeductions[".edit"] = true;
-$tdatapayrolldeductions[".afterEditAction"] = 1;
+$tdatapayrolldeductions[".afterEditAction"] = 0;
 $tdatapayrolldeductions[".closePopupAfterEdit"] = 1;
 $tdatapayrolldeductions[".afterEditActionDetTable"] = "";
 
 $tdatapayrolldeductions[".add"] = true;
-$tdatapayrolldeductions[".afterAddAction"] = 1;
+$tdatapayrolldeductions[".afterAddAction"] = 0;
 $tdatapayrolldeductions[".closePopupAfterAdd"] = 1;
 $tdatapayrolldeductions[".afterAddActionDetTable"] = "";
 
@@ -170,7 +170,7 @@ $tdatapayrolldeductions[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
 
 $tdatapayrolldeductions[".ajaxCodeSnippetAdded"] = false;
 

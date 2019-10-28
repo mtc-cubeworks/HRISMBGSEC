@@ -1315,6 +1315,52 @@ $mask .= "I";
 
 $pageMask[$table] = $mask;
 $tables[$table] = array("indscheduleemp", " " . "Uploaded Schedule");
+$table = "notes";
+$mask="";
+	$mask .= "A";
+	$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+$mask .= "M";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("notes", " " . "Notes");
+$table = "notetypes";
+$mask="";
+	$mask .= "A";
+	$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("notetypes", " " . "Note Types");
+$table = "notestatus";
+$mask="";
+	$mask .= "A";
+	$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+$mask .= "M";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("notestatus", " " . "Note Status");
+$table = "notestatuses";
+$mask="";
+	$mask .= "A";
+	$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("notestatuses", " " . "Note Statuses");
 
 
 

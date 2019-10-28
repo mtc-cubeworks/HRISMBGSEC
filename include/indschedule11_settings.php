@@ -119,7 +119,7 @@ $tdataindschedule11[".listAjax"] = false;
 	$tdataindschedule11[".locking"] = false;
 
 $tdataindschedule11[".edit"] = true;
-$tdataindschedule11[".afterEditAction"] = 1;
+$tdataindschedule11[".afterEditAction"] = 0;
 $tdataindschedule11[".closePopupAfterEdit"] = 1;
 $tdataindschedule11[".afterEditActionDetTable"] = "";
 
@@ -165,7 +165,7 @@ $tdataindschedule11[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																											
+																																																																																																																																																																																																																																																																																							
 
 $tdataindschedule11[".ajaxCodeSnippetAdded"] = false;
 

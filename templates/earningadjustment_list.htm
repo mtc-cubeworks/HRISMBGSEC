@@ -538,6 +538,12 @@
 	.bs-gridcell[data-field=PerDay]:before {
 		content: "{$label earningadjustment PerDay}";
 	}
+	.bs-gridcell[data-field=StartDate]:before {
+		content: "{$label earningadjustment StartDate}";
+	}
+	.bs-gridcell[data-field=EndDate]:before {
+		content: "{$label earningadjustment EndDate}";
+	}
 </style>
 <table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
 	<thead>
@@ -603,6 +609,32 @@
 									{END PaymentPeriod_fieldheader}
 									</th>
 									{END PaymentPeriod_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN StartDate_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$StartDate_class}" data-field=StartDate>
+									{BEGIN StartDate_fieldheader}
+																				<span {$StartDate_orderlinkattrs}>
+											{$label earningadjustment StartDate}
+										</span>
+									{END StartDate_fieldheader}
+									</th>
+									{END StartDate_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN EndDate_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$EndDate_class}" data-field=EndDate>
+									{BEGIN EndDate_fieldheader}
+																				<span {$EndDate_orderlinkattrs}>
+											{$label earningadjustment EndDate}
+										</span>
+									{END EndDate_fieldheader}
+									</th>
+									{END EndDate_fieldheadercolumn}
 									
 									
 									
@@ -737,6 +769,20 @@
 {END PaymentPeriod_fieldcolumn}
 
 
+	{BEGIN StartDate_fieldcolumn}
+	<td class="bs-gridcell {$StartDate_class}"  data-field=StartDate {$rowstyle} {$recordattrs}>
+		{$StartDate_value}
+	</td>
+{END StartDate_fieldcolumn}
+
+
+	{BEGIN EndDate_fieldcolumn}
+	<td class="bs-gridcell {$EndDate_class}"  data-field=EndDate {$rowstyle} {$recordattrs}>
+		{$EndDate_value}
+	</td>
+{END EndDate_fieldcolumn}
+
+
 	{BEGIN PerDay_fieldcolumn}
 	<td class="bs-gridcell {$PerDay_class}"  data-field=PerDay {$rowstyle} {$recordattrs}>
 		{$PerDay_value}
@@ -802,6 +848,14 @@
 										<td class="bs-gridcell {$PaymentPeriod_class}" data-field="PaymentPeriod">
 																				</td>
 										{END PaymentPeriod_fieldfootercolumn}
+										{BEGIN StartDate_fieldfootercolumn}
+										<td class="bs-gridcell {$StartDate_class}" data-field="StartDate">
+																				</td>
+										{END StartDate_fieldfootercolumn}
+										{BEGIN EndDate_fieldfootercolumn}
+										<td class="bs-gridcell {$EndDate_class}" data-field="EndDate">
+																				</td>
+										{END EndDate_fieldfootercolumn}
 										{BEGIN PerDay_fieldfootercolumn}
 										<td class="bs-gridcell {$PerDay_class}" data-field="PerDay">
 																				</td>

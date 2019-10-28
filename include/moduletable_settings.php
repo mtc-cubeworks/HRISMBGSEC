@@ -80,12 +80,12 @@ $tdatamoduletable[".listAjax"] = false;
 	$tdatamoduletable[".locking"] = false;
 
 $tdatamoduletable[".edit"] = true;
-$tdatamoduletable[".afterEditAction"] = 1;
+$tdatamoduletable[".afterEditAction"] = 0;
 $tdatamoduletable[".closePopupAfterEdit"] = 1;
 $tdatamoduletable[".afterEditActionDetTable"] = "";
 
 $tdatamoduletable[".add"] = true;
-$tdatamoduletable[".afterAddAction"] = 1;
+$tdatamoduletable[".afterAddAction"] = 0;
 $tdatamoduletable[".closePopupAfterAdd"] = 1;
 $tdatamoduletable[".afterAddActionDetTable"] = "";
 
@@ -132,7 +132,7 @@ $tdatamoduletable[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																											
+																																																																																																																																																																																																																																																																																							
 
 $tdatamoduletable[".ajaxCodeSnippetAdded"] = false;
 

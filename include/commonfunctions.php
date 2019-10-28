@@ -525,6 +525,14 @@ function checkTableName($shortTName, $type=false)
 		return true;
 	if ("indscheduleemp" == $shortTName && ($type===false || ($type!==false && $type == 1)))
 		return true;
+	if ("notes" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("notetypes" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("notestatus" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("notestatuses" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
 	return false;
 }
 
@@ -1214,6 +1222,26 @@ function GetTablesList($pdfMode = false)
 	{
 		$arr[]="indscheduleemp";
 	}
+	$strPerm = GetUserPermissions("notes");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="notes";
+	}
+	$strPerm = GetUserPermissions("notetypes");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="notetypes";
+	}
+	$strPerm = GetUserPermissions("notestatus");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="notestatus";
+	}
+	$strPerm = GetUserPermissions("notestatuses");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="notestatuses";
+	}
 	return $arr;
 }
 
@@ -1351,6 +1379,10 @@ function GetTablesListWithoutSecurity()
 	$arr[]="holidaysdefault";
 	$arr[]="holidayupdate";
 	$arr[]="indscheduleemp";
+	$arr[]="notes";
+	$arr[]="notetypes";
+	$arr[]="notestatus";
+	$arr[]="notestatuses";
 	return $arr;
 }
 
@@ -2231,6 +2263,8 @@ function SetAuthSessionData($pUsername, &$data, $fromFacebook, $password, &$page
 		$_SESSION["_payrolltab1_OwnerID"] = $data["EmployeeID"];
 		$_SESSION["_mycurrentdtr_OwnerID"] = $data["EmployeeID"];
 		$_SESSION["_loanbalnew51_OwnerID"] = $data["EmployeeID"];
+		$_SESSION["_notes_OwnerID"] = $data["LogID"];
+		$_SESSION["_notestatus_OwnerID"] = $data["LogID"];
 
 	$_SESSION["UserData"] = $data;
 	
@@ -2433,6 +2467,18 @@ function CheckSecurity($strValue, $strAction, $table = "")
 				if(!($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
 				return false;
 		}
+		if($table=="notes")
+		{
+
+				if(( $strAction=="Edit" || $strAction=="Delete") && !($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
+				return false;
+		}
+		if($table=="notestatus")
+		{
+
+				if(( $strAction=="Edit" || $strAction=="Delete") && !($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
+				return false;
+		}
 	}
 	//	 check user group permissions
 	$localAction = strtolower($strAction);
@@ -2600,6 +2646,16 @@ function SecuritySQL($strAction, $table="", $strPerm="")
 		if($table=="loanbalnew51")
 		{
 				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
+		}
+		if($table=="notes")
+		{
+				if($strAction == "Edit" || $strAction == "Delete")
+				$ret=GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
+		}
+		if($table=="notestatus")
+		{
+				if($strAction == "Edit" || $strAction == "Delete")
+				$ret=GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
 		}
 	}
 

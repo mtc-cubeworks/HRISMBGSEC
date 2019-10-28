@@ -211,6 +211,10 @@ include_once(getabspath("include/holidayupdate_events.php"));
 $tableEvents["holidayupdate"] = new eventclass_holidayupdate;
 include_once(getabspath("include/indscheduleemp_events.php"));
 $tableEvents["indscheduleemp"] = new eventclass_indscheduleemp;
+include_once(getabspath("include/notes_events.php"));
+$tableEvents["notes"] = new eventclass_notes;
+include_once(getabspath("include/notestatus_events.php"));
+$tableEvents["notestatus"] = new eventclass_notestatus;
 
 $xt = new Xtempl();
 

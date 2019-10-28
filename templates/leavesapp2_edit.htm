@@ -201,6 +201,24 @@
 </div>
 {END Reason_fieldblock}
 
+			{BEGIN UploadFile_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_UploadFile}" data-fieldname="UploadFile" data-signal-error-for="UploadFile{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_UploadFile}">
+		{BEGIN UploadFile_label}{$label leavesapp2 UploadFile}{END UploadFile_label}
+	</label>
+	<div class="col-md-6" >
+		{$UploadFile_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="UploadFile">
+		<div class="text-muted" >
+		{$tooltip leavesapp2 UploadFile}
+		</div>
+	</div>
+</div>
+</div>
+{END UploadFile_fieldblock}
+
 			{BEGIN FirstHalf_fieldblock}
 <div class=container>
 <div class="form-group {$fielddispclass_FirstHalf}" data-fieldname="FirstHalf" data-signal-error-for="FirstHalf{$id}" >

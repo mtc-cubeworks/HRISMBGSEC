@@ -140,6 +140,10 @@ $nonAdminTablesArr[] = "loanbalnew51";
 $nonAdminTablesArr[] = "holidaysdefault";
 $nonAdminTablesArr[] = "holidayupdate";
 $nonAdminTablesArr[] = "indscheduleemp";
+$nonAdminTablesArr[] = "notes";
+$nonAdminTablesArr[] = "notetypes";
+$nonAdminTablesArr[] = "notestatus";
+$nonAdminTablesArr[] = "notestatuses";
 
 $ug_connection = $cman->getForUserGroups();
 

@@ -1,0 +1,65 @@
+<div {$pageattrs}>
+
+{BEGIN container_column}
+<div class="rnr-c rnr-ch rnr-c-column">
+
+{BEGIN masterlist_title}
+<div  class="style1 rnr-bl rnr-b-masterprintheader {$brickclass_masterprintheader}"><span>{$pagetitlelabel notes masterprint}</span></div>
+{END masterlist_title}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_column}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+<table {$bsmasterprintgrid_hiddenattr} data-pageid="{$pageid}" data-brick="bsmasterprintgrid" class="table rnr-b-mastergridfields rnr-gridtable" >
+		<thead>
+		<tr>
+			<th class="{$NID_class}">{$label notes NID}</th>
+			<th class="{$CreatedDate_class}">{$label notes CreatedDate}</th>
+			<th class="{$EmployeeID_class}">{$label notes EmployeeID}</th>
+			<th class="{$NoteType_class}">{$label notes NoteType}</th>
+			<th class="{$StartDate_class}">{$label notes StartDate}</th>
+			<th class="{$EndDate_class}">{$label notes EndDate}</th>
+			<th class="{$Remarks_class}">{$label notes Remarks}</th>
+			<th class="{$UploadFile_class}">{$label notes UploadFile}</th>
+			<th class="{$Status_class}">{$label notes Status}</th>
+			<th class="{$NotifyDays_class}">{$label notes NotifyDays}</th>
+			<th class="{$NotifyDaysLeft_class}">{$label notes NotifyDaysLeft}</th>
+			<th class="{$DaysLeft_class}">{$label notes DaysLeft}</th>
+			<th class="{$Closed_class}">{$label notes Closed}</th>
+			<th class="{$Encodedby_class}">{$label notes Encodedby}</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="{$NID_class}">{$NID_mastervalue}</td>
+			<td class="{$CreatedDate_class}">{$CreatedDate_mastervalue}</td>
+			<td class="{$EmployeeID_class}">{$EmployeeID_mastervalue}</td>
+			<td class="{$NoteType_class}">{$NoteType_mastervalue}</td>
+			<td class="{$StartDate_class}">{$StartDate_mastervalue}</td>
+			<td class="{$EndDate_class}">{$EndDate_mastervalue}</td>
+			<td class="{$Remarks_class}">{$Remarks_mastervalue}</td>
+			<td class="{$UploadFile_class}">{$UploadFile_mastervalue}</td>
+			<td class="{$Status_class}">{$Status_mastervalue}</td>
+			<td class="{$NotifyDays_class}">{$NotifyDays_mastervalue}</td>
+			<td class="{$NotifyDaysLeft_class}">{$NotifyDaysLeft_mastervalue}</td>
+			<td class="{$DaysLeft_class}">{$DaysLeft_mastervalue}</td>
+			<td class="{$Closed_class}">{$Closed_mastervalue}</td>
+			<td class="{$Encodedby_class}">{$Encodedby_mastervalue}</td>
+		</tr>
+	</tbody>
+
+</table> 
+
+
+
+
+{END container_mastergrid}
+
+</div>

@@ -105,6 +105,11 @@
 				{$label leaves11 Reason}
 			</th>
 			{END Reason_fieldheadercolumn}
+			{BEGIN UploadFile_fieldheadercolumn}
+			<th class="{$UploadFile_class}" {$UploadFile_style}  data-field="UploadFile">
+				{$label leaves11 UploadFile}
+			</th>
+			{END UploadFile_fieldheadercolumn}
 			{BEGIN FirstHalf_fieldheadercolumn}
 			<th class="{$FirstHalf_class}" {$FirstHalf_style}  data-field="FirstHalf">
 				{$label leaves11 FirstHalf}
@@ -222,6 +227,11 @@
 				{$Reason_value}
 			</td>
 			{END Reason_fieldcolumn}
+			{BEGIN UploadFile_fieldcolumn}
+			<td  class="{$UploadFile_class}" {$UploadFile_style} {$recordattrs}>
+				{$UploadFile_value}
+			</td>
+			{END UploadFile_fieldcolumn}
 			{BEGIN FirstHalf_fieldcolumn}
 			<td  class="{$FirstHalf_class}" {$FirstHalf_style} {$recordattrs}>
 				{$FirstHalf_value}
@@ -300,7 +310,7 @@
 	{BEGIN details_row}
 		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
 			{BEGIN details_record}
-				<td colspan="22">
+				<td colspan="23">
 					{BEGIN details_table}
 						{$details}
 					{END details_table}

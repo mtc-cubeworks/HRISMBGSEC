@@ -3004,6 +3004,14 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "holidayupdate" ] = "holidayupdate";
 	$projectEntities[ "indscheduleemp" ] = array( "url" => "indscheduleemp", "type" => 1 );
 	$projectEntitiesReverse[ "indscheduleemp" ] = "indscheduleemp";
+	$projectEntities[ "notes" ] = array( "url" => "notes", "type" => 0 );
+	$projectEntitiesReverse[ "notes" ] = "notes";
+	$projectEntities[ "notetypes" ] = array( "url" => "notetypes", "type" => 0 );
+	$projectEntitiesReverse[ "notetypes" ] = "notetypes";
+	$projectEntities[ "notestatus" ] = array( "url" => "notestatus", "type" => 0 );
+	$projectEntitiesReverse[ "notestatus" ] = "notestatus";
+	$projectEntities[ "notestatuses" ] = array( "url" => "notestatuses", "type" => 0 );
+	$projectEntitiesReverse[ "notestatuses" ] = "notestatuses";
 }
 
 function findTable( $table ) {

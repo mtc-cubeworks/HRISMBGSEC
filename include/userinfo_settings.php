@@ -374,7 +374,7 @@ $tdatauserinfo[".listAjax"] = false;
 	$tdatauserinfo[".locking"] = false;
 
 $tdatauserinfo[".edit"] = true;
-$tdatauserinfo[".afterEditAction"] = 1;
+$tdatauserinfo[".afterEditAction"] = 0;
 $tdatauserinfo[".closePopupAfterEdit"] = 1;
 $tdatauserinfo[".afterEditActionDetTable"] = "";
 
@@ -422,7 +422,7 @@ $tdatauserinfo[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																											
+																																																																																																																																																																																																																																																																																							
 
 $tdatauserinfo[".ajaxCodeSnippetAdded"] = false;
 

@@ -362,12 +362,12 @@ $tdatapayrolltab1[".listAjax"] = false;
 	$tdatapayrolltab1[".locking"] = false;
 
 $tdatapayrolltab1[".edit"] = true;
-$tdatapayrolltab1[".afterEditAction"] = 1;
+$tdatapayrolltab1[".afterEditAction"] = 0;
 $tdatapayrolltab1[".closePopupAfterEdit"] = 1;
 $tdatapayrolltab1[".afterEditActionDetTable"] = "";
 
 $tdatapayrolltab1[".add"] = true;
-$tdatapayrolltab1[".afterAddAction"] = 1;
+$tdatapayrolltab1[".afterAddAction"] = 0;
 $tdatapayrolltab1[".closePopupAfterAdd"] = 1;
 $tdatapayrolltab1[".afterAddActionDetTable"] = "";
 
@@ -418,7 +418,7 @@ $tdatapayrolltab1[".rowHighlite"] = true;
 
 
 																																																																																																																																																																																																																																																																				
-											
+																							
 
 $tdatapayrolltab1[".ajaxCodeSnippetAdded"] = false;
 

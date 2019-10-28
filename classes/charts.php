@@ -742,6 +742,14 @@ class Chart
 			return true;
 		if("indschedule" == $this->chrt_array['tables'][0])
 			return true;
+		if("notes" == $this->chrt_array['tables'][0])
+			return true;
+		if("notetypes" == $this->chrt_array['tables'][0])
+			return true;
+		if("notestatus" == $this->chrt_array['tables'][0])
+			return true;
+		if("notestatuses" == $this->chrt_array['tables'][0])
+			return true;
 		return false;
 	}
 	

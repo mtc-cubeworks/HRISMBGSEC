@@ -163,7 +163,7 @@ $tdataotndrdglobal1[".closePopupAfterEdit"] = 1;
 $tdataotndrdglobal1[".afterEditActionDetTable"] = "Detail tables not found!";
 
 $tdataotndrdglobal1[".add"] = true;
-$tdataotndrdglobal1[".afterAddAction"] = 1;
+$tdataotndrdglobal1[".afterAddAction"] = 0;
 $tdataotndrdglobal1[".closePopupAfterAdd"] = 1;
 $tdataotndrdglobal1[".afterAddActionDetTable"] = "";
 
@@ -210,7 +210,7 @@ $tdataotndrdglobal1[".rowHighlite"] = true;
 
 
 																																																																																																																																																																																																																																																																	
-														
+																										
 
 $tdataotndrdglobal1[".ajaxCodeSnippetAdded"] = false;
 

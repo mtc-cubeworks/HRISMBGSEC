@@ -66,6 +66,24 @@
 		</div>
 	</div>
 </div>
+	{BEGIN UploadFile_fieldblock}		
+	<div class="container {$fielddispclass_UploadFile}" data-fieldname="UploadFile">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_UploadFile}">
+				{$label leaves UploadFile}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_UploadFile}
+			</div>
+			<div class="col-md-4" >
+				{$UploadFile_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$UploadFile_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END UploadFile_fieldblock}
 	{BEGIN LvID_fieldblock}		
 	<div class="container {$fielddispclass_LvID}" data-fieldname="LvID">
 		<div class="form-group">

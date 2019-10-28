@@ -111,6 +111,16 @@
 				{$label earningadjustment PaymentPeriod}
 			</th>
 			{END PaymentPeriod_fieldheadercolumn}
+			{BEGIN StartDate_fieldheadercolumn}
+			<th class="{$StartDate_class}" {$StartDate_style}  data-field="StartDate">
+				{$label earningadjustment StartDate}
+			</th>
+			{END StartDate_fieldheadercolumn}
+			{BEGIN EndDate_fieldheadercolumn}
+			<th class="{$EndDate_class}" {$EndDate_style}  data-field="EndDate">
+				{$label earningadjustment EndDate}
+			</th>
+			{END EndDate_fieldheadercolumn}
 			{BEGIN PerDay_fieldheadercolumn}
 			<th class="{$PerDay_class}" {$PerDay_style}  data-field="PerDay">
 				{$label earningadjustment PerDay}
@@ -163,6 +173,16 @@
 				{$PaymentPeriod_value}
 			</td>
 			{END PaymentPeriod_fieldcolumn}
+			{BEGIN StartDate_fieldcolumn}
+			<td  class="{$StartDate_class}" {$StartDate_style} {$recordattrs}>
+				{$StartDate_value}
+			</td>
+			{END StartDate_fieldcolumn}
+			{BEGIN EndDate_fieldcolumn}
+			<td  class="{$EndDate_class}" {$EndDate_style} {$recordattrs}>
+				{$EndDate_value}
+			</td>
+			{END EndDate_fieldcolumn}
 			{BEGIN PerDay_fieldcolumn}
 			<td  class="{$PerDay_class}" {$PerDay_style} {$recordattrs}>
 				{$PerDay_value}
@@ -211,6 +231,14 @@
 			<td>
 						</td>
 			{END PaymentPeriod_fieldfootercolumn}
+			{BEGIN StartDate_fieldfootercolumn}
+			<td>
+						</td>
+			{END StartDate_fieldfootercolumn}
+			{BEGIN EndDate_fieldfootercolumn}
+			<td>
+						</td>
+			{END EndDate_fieldfootercolumn}
 			{BEGIN PerDay_fieldfootercolumn}
 			<td>
 						</td>

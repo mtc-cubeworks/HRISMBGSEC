@@ -1,0 +1,307 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_editpage}
+<div {$editpage_chiddenattr} data-pageid="{$pageid}" data-container="editpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-9 col-md-offset-3"> 
+
+{BEGIN addheader}
+	<h2 {$addheader_hiddenattr} data-pageid="{$pageid}" data-brick="addheader" >{$pagetitlelabel notestatus add}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END addheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+
+
+{BEGIN container_message}
+<div {$message_chiddenattr} data-pageid="{$pageid}" data-container="message" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN message_block}
+<div {$message_hiddenattr} data-pageid="{$pageid}" data-brick="message" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		<button class="btn btn-sm btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>View</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>Edit</button>
+{END edit_page_button}
+</div>
+</div>
+
+{END message_block}
+
+
+
+</div>
+{END container_message}
+
+
+
+
+
+
+
+</div>
+{END container_editpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$addfields_hiddenattr} data-pageid="{$pageid}" data-brick="addfields" class="form-horizontal" role="form">
+			{BEGIN Closed_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Closed}" data-fieldname="Closed" data-signal-error-for="Closed{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Closed}">
+		{BEGIN Closed_label}{$label notestatus Closed}{END Closed_label}
+	</label>
+	<div class="col-md-6" >
+		{$Closed_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Closed">
+		<div class="text-muted" >
+		{$tooltip notestatus Closed}
+		</div>
+	</div>
+</div>
+</div>
+{END Closed_fieldblock}
+
+			{BEGIN CreatedDate_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_CreatedDate}" data-fieldname="CreatedDate" data-signal-error-for="CreatedDate{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_CreatedDate}">
+		{BEGIN CreatedDate_label}{$label notestatus CreatedDate}{END CreatedDate_label}
+	</label>
+	<div class="col-md-6" >
+		{$CreatedDate_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="CreatedDate">
+		<div class="text-muted" >
+		{$tooltip notestatus CreatedDate}
+		</div>
+	</div>
+</div>
+</div>
+{END CreatedDate_fieldblock}
+
+			{BEGIN NStatusDate_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_NStatusDate}" data-fieldname="NStatusDate" data-signal-error-for="NStatusDate{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_NStatusDate}">
+		{BEGIN NStatusDate_label}{$label notestatus NStatusDate}{END NStatusDate_label}
+	</label>
+	<div class="col-md-6" >
+		{$NStatusDate_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="NStatusDate">
+		<div class="text-muted" >
+		{$tooltip notestatus NStatusDate}
+		</div>
+	</div>
+</div>
+</div>
+{END NStatusDate_fieldblock}
+
+			{BEGIN NoteStatus_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_NoteStatus}" data-fieldname="NoteStatus" data-signal-error-for="NoteStatus{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_NoteStatus}">
+		{BEGIN NoteStatus_label}{$label notestatus NoteStatus}{END NoteStatus_label}
+	</label>
+	<div class="col-md-6" >
+		{$NoteStatus_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="NoteStatus">
+		<div class="text-muted" >
+		{$tooltip notestatus NoteStatus}
+		</div>
+	</div>
+</div>
+</div>
+{END NoteStatus_fieldblock}
+
+			{BEGIN Remarks_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Remarks}" data-fieldname="Remarks" data-signal-error-for="Remarks{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Remarks}">
+		{BEGIN Remarks_label}{$label notestatus Remarks}{END Remarks_label}
+	</label>
+	<div class="col-md-6" >
+		{$Remarks_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Remarks">
+		<div class="text-muted" >
+		{$tooltip notestatus Remarks}
+		</div>
+	</div>
+</div>
+</div>
+{END Remarks_fieldblock}
+
+			{BEGIN UploadFile_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_UploadFile}" data-fieldname="UploadFile" data-signal-error-for="UploadFile{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_UploadFile}">
+		{BEGIN UploadFile_label}{$label notestatus UploadFile}{END UploadFile_label}
+	</label>
+	<div class="col-md-6" >
+		{$UploadFile_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="UploadFile">
+		<div class="text-muted" >
+		{$tooltip notestatus UploadFile}
+		</div>
+	</div>
+</div>
+</div>
+{END UploadFile_fieldblock}
+
+			{BEGIN NID_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_NID}" data-fieldname="NID" data-signal-error-for="NID{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_NID}">
+		{BEGIN NID_label}{$label notestatus NID}{END NID_label}
+	</label>
+	<div class="col-md-6" >
+		{$NID_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="NID">
+		<div class="text-muted" >
+		{$tooltip notestatus NID}
+		</div>
+	</div>
+</div>
+</div>
+{END NID_fieldblock}
+
+
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_buttons}
+<div {$buttons_chiddenattr} data-pageid="{$pageid}" data-container="buttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-3 col-md-offset-3"> 
+
+{BEGIN addbuttons}
+	{BEGIN save_button}
+	<button class="btn btn-primary" {$savebutton_attrs}>Save</button>
+	{END save_button}
+	{BEGIN reset_button}
+	<button class="btn btn-default" id="resetButton{$id}">Reset</button>
+	{END reset_button}
+	{BEGIN back_button}
+		<button class="btn btn-default" id="backButton{$id}">Back to list</button>
+	{END back_button}
+	{BEGIN cancel_button}
+	<a href="#" class="btn btn-default" id="cancelButton{$id}">Cancel</a>
+	{END cancel_button}
+
+{END addbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+</div>
+{END container_buttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

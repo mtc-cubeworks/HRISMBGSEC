@@ -476,6 +476,57 @@
 	
 	
 
+			
+		
+
+
+
+
+
+{BEGIN details_notes}
+<div data-pageid="1" class="bs-details"> 
+<div class="panel panel-info details-grid">
+
+<div class="panel-heading">
+	<h4 class="panel-title">Notes
+		<span>
+{BEGIN details_inlineadd_notes_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_inlineadd_notes_attrs}>Inline Add</button>
+{END details_inlineadd_notes_link}		
+{BEGIN details_add_notes_link}
+			<button type="button" class="btn btn-xs btn-info" {$details_add_notes_attrs}>Add new</button>
+{END details_add_notes_link}
+{BEGIN details_edit_notes_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_edit_notes_attrs}>Edit</button>
+{END details_edit_notes_link}
+{BEGIN details_updateselected_notes_link}
+			<button type="button" class="btn btn-xs btn-info" disabled {$details_updateselected_notes_attrs}>Update selected</button>
+{END details_updateselected_notes_link}
+
+
+{BEGIN details_delete_notes_link}
+			<button type="button" class="btn btn-xs btn-info " disabled {$details_delete_notes_attrs}>Delete</button>
+{END details_delete_notes_link}
+
+{BEGIN saveall_notes_link}
+			<button type="button" class="btn btn-xs btn-info" {$savealllink_notes_attrs} {$savealllink_notes_span}>Save all</button>
+{END saveall_notes_link}
+{BEGIN cancelall_notes_link}
+			<button type="button" class="btn btn-xs btn-info" {$cancelalllink_notes_attrs} {$cancelalllink_notes_span}>Cancel</button>
+{END cancelall_notes_link}
+		</span>
+	</h4>
+</div>
+<div class="panel-body">
+	{$displayDetailTable_notes}
+</div>
+</div>
+</div>
+{END details_notes}
+	
+	
+	
+
 
 </div>
 

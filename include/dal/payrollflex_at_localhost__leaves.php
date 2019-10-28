@@ -21,6 +21,7 @@ $dalTableleaves["Superior2"] = array("type"=>3,"varname"=>"Superior2", "name" =>
 $dalTableleaves["1stApproval"] = array("type"=>16,"varname"=>"fld1stApproval", "name" => "1stApproval");
 $dalTableleaves["2ndApproval"] = array("type"=>16,"varname"=>"fld2ndApproval", "name" => "2ndApproval");
 $dalTableleaves["TotalDays"] = array("type"=>14,"varname"=>"TotalDays", "name" => "TotalDays");
+$dalTableleaves["UploadFile"] = array("type"=>200,"varname"=>"UploadFile", "name" => "UploadFile");
 	$dalTableleaves["LvID"]["key"]=true;
 
 $dal_info["payrollflex_at_localhost__leaves"] = &$dalTableleaves;

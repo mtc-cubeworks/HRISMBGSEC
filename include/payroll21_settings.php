@@ -92,7 +92,7 @@ $tdatapayroll21[".listAjax"] = false;
 	$tdatapayroll21[".locking"] = false;
 
 $tdatapayroll21[".edit"] = true;
-$tdatapayroll21[".afterEditAction"] = 1;
+$tdatapayroll21[".afterEditAction"] = 0;
 $tdatapayroll21[".closePopupAfterEdit"] = 1;
 $tdatapayroll21[".afterEditActionDetTable"] = "";
 
@@ -140,7 +140,7 @@ $tdatapayroll21[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																											
+																																																																																																																																																																																																																																																																																							
 
 $tdatapayroll21[".ajaxCodeSnippetAdded"] = false;
 
