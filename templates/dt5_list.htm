@@ -168,6 +168,21 @@
 		</div>
 		{END searchCtrlBlock_SDate}
 		 
+		{BEGIN searchCtrlBlock_RestDay}
+		
+		
+		<div class="form-group srchPanelRow {$filterRow_class_RestDay}" {$filterRow_attrs_RestDay}>
+			<label>
+			
+			{$label dt5 RestDay}</label>
+							{$delCtrlButt}
+
+								<span class="rnr-searchtype">{$searchtype_RestDay}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol_RestDay}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_RestDay}</span>
+		</div>
+		{END searchCtrlBlock_RestDay}
+		 
 		{BEGIN searchCtrlBlock_MisPunched}
 		
 		
@@ -182,6 +197,81 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_MisPunched}</span>
 		</div>
 		{END searchCtrlBlock_MisPunched}
+		 
+		{BEGIN searchCtrlBlock_Absent}
+		
+		
+		<div class="form-group srchPanelRow {$filterRow_class_Absent}" {$filterRow_attrs_Absent}>
+			<label>
+			
+			{$label dt5 Absent}</label>
+							{$delCtrlButt}
+
+								<span class="rnr-searchtype">{$searchtype_Absent}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol_Absent}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_Absent}</span>
+		</div>
+		{END searchCtrlBlock_Absent}
+		 
+		{BEGIN searchCtrlBlock_LateMins}
+		
+		
+		<div class="form-group srchPanelRow {$filterRow_class_LateMins}" {$filterRow_attrs_LateMins}>
+			<label>
+			
+			{$label dt5 LateMins}</label>
+							{$delCtrlButt}
+
+								<span class="rnr-searchtype">{$searchtype_LateMins}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol_LateMins}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_LateMins}</span>
+		</div>
+		{END searchCtrlBlock_LateMins}
+		 
+		{BEGIN searchCtrlBlock_UnderstimeMins}
+		
+		
+		<div class="form-group srchPanelRow {$filterRow_class_UnderstimeMins}" {$filterRow_attrs_UnderstimeMins}>
+			<label>
+			
+			{$label dt5 UnderstimeMins}</label>
+							{$delCtrlButt}
+
+								<span class="rnr-searchtype">{$searchtype_UnderstimeMins}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol_UnderstimeMins}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_UnderstimeMins}</span>
+		</div>
+		{END searchCtrlBlock_UnderstimeMins}
+		 
+		{BEGIN searchCtrlBlock_ApprovedOT}
+		
+		
+		<div class="form-group srchPanelRow {$filterRow_class_ApprovedOT}" {$filterRow_attrs_ApprovedOT}>
+			<label>
+			
+			{$label dt5 ApprovedOT}</label>
+							{$delCtrlButt}
+
+								<span class="rnr-searchtype">{$searchtype_ApprovedOT}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol_ApprovedOT}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_ApprovedOT}</span>
+		</div>
+		{END searchCtrlBlock_ApprovedOT}
+		 
+		{BEGIN searchCtrlBlock_AOTMins}
+		
+		
+		<div class="form-group srchPanelRow {$filterRow_class_AOTMins}" {$filterRow_attrs_AOTMins}>
+			<label>
+			
+			{$label dt5 AOTMins}</label>
+							{$delCtrlButt}
+
+								<span class="rnr-searchtype">{$searchtype_AOTMins}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol_AOTMins}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_AOTMins}</span>
+		</div>
+		{END searchCtrlBlock_AOTMins}
 
 
 	</div>
@@ -1342,19 +1432,6 @@
 									
 									
 									
-									{BEGIN NDOTMins_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$NDOTMins_class}" data-field=NDOTMins>
-									{BEGIN NDOTMins_fieldheader}
-																				<span {$NDOTMins_orderlinkattrs}>
-											{$label dt5 NDOTMins}
-										</span>
-									{END NDOTMins_fieldheader}
-									</th>
-									{END NDOTMins_fieldheadercolumn}
-									
-									
-									
-									
 									{BEGIN ApprovedNightDiff_fieldheadercolumn}
 									<th class="rnr-gridfieldlabel {$ApprovedNightDiff_class}" data-field=ApprovedNightDiff>
 									{BEGIN ApprovedNightDiff_fieldheader}
@@ -2153,13 +2230,6 @@
 {END NDMins_fieldcolumn}
 
 
-	{BEGIN NDOTMins_fieldcolumn}
-	<td class="bs-gridcell {$NDOTMins_class}"  data-field=NDOTMins {$rowstyle} {$recordattrs}>
-		{$NDOTMins_value}
-	</td>
-{END NDOTMins_fieldcolumn}
-
-
 	{BEGIN ApprovedNightDiff_fieldcolumn}
 	<td class="bs-gridcell {$ApprovedNightDiff_class}"  data-field=ApprovedNightDiff {$rowstyle} {$recordattrs}>
 		{$ApprovedNightDiff_value}
@@ -2650,14 +2720,6 @@
 											{END NDMins_showtotal}
 										</td>
 										{END NDMins_fieldfootercolumn}
-										{BEGIN NDOTMins_fieldfootercolumn}
-										<td class="bs-gridcell {$NDOTMins_class}" data-field="NDOTMins">
-																					{BEGIN NDOTMins_showtotal}
-																							Total:
-											{$NDOTMins_total}
-											{END NDOTMins_showtotal}
-										</td>
-										{END NDOTMins_fieldfootercolumn}
 										{BEGIN ApprovedNightDiff_fieldfootercolumn}
 										<td class="bs-gridcell {$ApprovedNightDiff_class}" data-field="ApprovedNightDiff">
 																				</td>

@@ -111,42 +111,6 @@
 </div>
 {END EmployeeID_fieldblock}
 
-			{BEGIN AdjustmentDescription_fieldblock}
-<div class=container>
-<div class="form-group {$fielddispclass_AdjustmentDescription}" data-fieldname="AdjustmentDescription" data-signal-error-for="AdjustmentDescription{$id}" >
-	<label class="col-md-3 control-label" for="{$labelfor_AdjustmentDescription}">
-		{BEGIN AdjustmentDescription_label}{$label earningadjustment AdjustmentDescription}{END AdjustmentDescription_label}
-	</label>
-	<div class="col-md-6" >
-		{$AdjustmentDescription_editcontrol}
-	</div>
-	<div class="col-md-3 help-block" data-helpfor="AdjustmentDescription">
-		<div class="text-muted" >
-		{$tooltip earningadjustment AdjustmentDescription}
-		</div>
-	</div>
-</div>
-</div>
-{END AdjustmentDescription_fieldblock}
-
-			{BEGIN PaymentPeriod_fieldblock}
-<div class=container>
-<div class="form-group {$fielddispclass_PaymentPeriod}" data-fieldname="PaymentPeriod" data-signal-error-for="PaymentPeriod{$id}" >
-	<label class="col-md-3 control-label" for="{$labelfor_PaymentPeriod}">
-		{BEGIN PaymentPeriod_label}{$label earningadjustment PaymentPeriod}{END PaymentPeriod_label}
-	</label>
-	<div class="col-md-6" >
-		{$PaymentPeriod_editcontrol}
-	</div>
-	<div class="col-md-3 help-block" data-helpfor="PaymentPeriod">
-		<div class="text-muted" >
-		{$tooltip earningadjustment PaymentPeriod}
-		</div>
-	</div>
-</div>
-</div>
-{END PaymentPeriod_fieldblock}
-
 			{BEGIN StartDate_fieldblock}
 <div class=container>
 <div class="form-group {$fielddispclass_StartDate}" data-fieldname="StartDate" data-signal-error-for="StartDate{$id}" >
@@ -183,23 +147,41 @@
 </div>
 {END EndDate_fieldblock}
 
-			{BEGIN PerDay_fieldblock}
+			{BEGIN AdjustmentDescription_fieldblock}
 <div class=container>
-<div class="form-group {$fielddispclass_PerDay}" data-fieldname="PerDay" data-signal-error-for="PerDay{$id}" >
-	<label class="col-md-3 control-label" for="{$labelfor_PerDay}">
-		{BEGIN PerDay_label}{$label earningadjustment PerDay}{END PerDay_label}
+<div class="form-group {$fielddispclass_AdjustmentDescription}" data-fieldname="AdjustmentDescription" data-signal-error-for="AdjustmentDescription{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_AdjustmentDescription}">
+		{BEGIN AdjustmentDescription_label}{$label earningadjustment AdjustmentDescription}{END AdjustmentDescription_label}
 	</label>
 	<div class="col-md-6" >
-		{$PerDay_editcontrol}
+		{$AdjustmentDescription_editcontrol}
 	</div>
-	<div class="col-md-3 help-block" data-helpfor="PerDay">
+	<div class="col-md-3 help-block" data-helpfor="AdjustmentDescription">
 		<div class="text-muted" >
-		{$tooltip earningadjustment PerDay}
+		{$tooltip earningadjustment AdjustmentDescription}
 		</div>
 	</div>
 </div>
 </div>
-{END PerDay_fieldblock}
+{END AdjustmentDescription_fieldblock}
+
+			{BEGIN PaymentPeriod_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_PaymentPeriod}" data-fieldname="PaymentPeriod" data-signal-error-for="PaymentPeriod{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_PaymentPeriod}">
+		{BEGIN PaymentPeriod_label}{$label earningadjustment PaymentPeriod}{END PaymentPeriod_label}
+	</label>
+	<div class="col-md-6" >
+		{$PaymentPeriod_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="PaymentPeriod">
+		<div class="text-muted" >
+		{$tooltip earningadjustment PaymentPeriod}
+		</div>
+	</div>
+</div>
+</div>
+{END PaymentPeriod_fieldblock}
 
 			{BEGIN PerPayrollAmount_fieldblock}
 <div class=container>

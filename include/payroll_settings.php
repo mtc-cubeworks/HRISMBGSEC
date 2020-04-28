@@ -59,6 +59,21 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelspayroll["English"]["Employer"] = "Employer";
 	$fieldToolTipspayroll["English"]["Employer"] = "";
 	$placeHolderspayroll["English"]["Employer"] = "";
+	$fieldLabelspayroll["English"]["Division"] = "Division";
+	$fieldToolTipspayroll["English"]["Division"] = "";
+	$placeHolderspayroll["English"]["Division"] = "";
+	$fieldLabelspayroll["English"]["WageType"] = "Wage Type";
+	$fieldToolTipspayroll["English"]["WageType"] = "";
+	$placeHolderspayroll["English"]["WageType"] = "";
+	$fieldLabelspayroll["English"]["SSS"] = "SSS";
+	$fieldToolTipspayroll["English"]["SSS"] = "";
+	$placeHolderspayroll["English"]["SSS"] = "";
+	$fieldLabelspayroll["English"]["PagIbig"] = "Pag Ibig";
+	$fieldToolTipspayroll["English"]["PagIbig"] = "";
+	$placeHolderspayroll["English"]["PagIbig"] = "";
+	$fieldLabelspayroll["English"]["PhilHealth"] = "Phil Health";
+	$fieldToolTipspayroll["English"]["PhilHealth"] = "";
+	$placeHolderspayroll["English"]["PhilHealth"] = "";
 	if (count($fieldToolTipspayroll["English"]))
 		$tdatapayroll[".isUseToolTips"] = true;
 }
@@ -68,6 +83,15 @@ if(mlang_getcurrentlang()=="")
 	$fieldToolTipspayroll[""] = array();
 	$placeHolderspayroll[""] = array();
 	$pageTitlespayroll[""] = array();
+	$fieldLabelspayroll[""]["SSS"] = "SSS";
+	$fieldToolTipspayroll[""]["SSS"] = "";
+	$placeHolderspayroll[""]["SSS"] = "";
+	$fieldLabelspayroll[""]["PagIbig"] = "Pag Ibig";
+	$fieldToolTipspayroll[""]["PagIbig"] = "";
+	$placeHolderspayroll[""]["PagIbig"] = "";
+	$fieldLabelspayroll[""]["PhilHealth"] = "Phil Health";
+	$fieldToolTipspayroll[""]["PhilHealth"] = "";
+	$placeHolderspayroll[""]["PhilHealth"] = "";
 	if (count($fieldToolTipspayroll[""]))
 		$tdatapayroll[".isUseToolTips"] = true;
 }
@@ -157,7 +181,7 @@ $tdatapayroll[".rowHighlite"] = true;
 
 																																			
 																																																																																																																									
-																																																																																																																																			
+																																																																																																																																																																										
 
 $tdatapayroll[".ajaxCodeSnippetAdded"] = false;
 
@@ -176,9 +200,14 @@ $tdatapayroll[".allSearchFields"] = array();
 $tdatapayroll[".filterFields"] = array();
 $tdatapayroll[".requiredSearchFields"] = array();
 
-$tdatapayroll[".allSearchFields"][] = "PSID";
+$tdatapayroll[".allSearchFields"][] = "SSS";
+	$tdatapayroll[".allSearchFields"][] = "PagIbig";
+	$tdatapayroll[".allSearchFields"][] = "PhilHealth";
+	$tdatapayroll[".allSearchFields"][] = "PSID";
 	$tdatapayroll[".allSearchFields"][] = "Locked";
 	$tdatapayroll[".allSearchFields"][] = "Employer";
+	$tdatapayroll[".allSearchFields"][] = "Division";
+	$tdatapayroll[".allSearchFields"][] = "WageType";
 	$tdatapayroll[".allSearchFields"][] = "PayFromDate";
 	$tdatapayroll[".allSearchFields"][] = "PayToDate";
 	$tdatapayroll[".allSearchFields"][] = "PayDate";
@@ -203,17 +232,29 @@ $tdatapayroll[".googleLikeFields"][] = "Adjustments";
 $tdatapayroll[".googleLikeFields"][] = "PresetTax";
 $tdatapayroll[".googleLikeFields"][] = "13thMonth";
 $tdatapayroll[".googleLikeFields"][] = "Employer";
+$tdatapayroll[".googleLikeFields"][] = "Division";
+$tdatapayroll[".googleLikeFields"][] = "WageType";
+$tdatapayroll[".googleLikeFields"][] = "SSS";
+$tdatapayroll[".googleLikeFields"][] = "PagIbig";
+$tdatapayroll[".googleLikeFields"][] = "PhilHealth";
 
 $tdatapayroll[".panelSearchFields"] = array();
 $tdatapayroll[".searchPanelOptions"] = array();
 $tdatapayroll[".panelSearchFields"][] = "Employer";
+	$tdatapayroll[".panelSearchFields"][] = "Division";
+	$tdatapayroll[".panelSearchFields"][] = "WageType";
 	$tdatapayroll[".panelSearchFields"][] = "PayFromDate";
 	$tdatapayroll[".panelSearchFields"][] = "PayToDate";
 	
 $tdatapayroll[".advSearchFields"] = array();
+$tdatapayroll[".advSearchFields"][] = "SSS";
+$tdatapayroll[".advSearchFields"][] = "PagIbig";
+$tdatapayroll[".advSearchFields"][] = "PhilHealth";
 $tdatapayroll[".advSearchFields"][] = "PSID";
 $tdatapayroll[".advSearchFields"][] = "Locked";
 $tdatapayroll[".advSearchFields"][] = "Employer";
+$tdatapayroll[".advSearchFields"][] = "Division";
+$tdatapayroll[".advSearchFields"][] = "WageType";
 $tdatapayroll[".advSearchFields"][] = "PayFromDate";
 $tdatapayroll[".advSearchFields"][] = "PayToDate";
 $tdatapayroll[".advSearchFields"][] = "PayDate";
@@ -267,7 +308,7 @@ $tdatapayroll[".orderindexes"] = array();
 	$tdatapayroll[".orderindexes"][] = array(1, (0 ? "ASC" : "DESC"), "PSID");
 
 
-$tdatapayroll[".sqlHead"] = "SELECT PSID,  PayDate,  PayFromDate,  PayToDate,  Locked,  Statutories,  `Stat Loans`,  Deductions,  Adjustments,  PresetTax,  `13thMonth`,  Employer";
+$tdatapayroll[".sqlHead"] = "SELECT PSID,  PayDate,  PayFromDate,  PayToDate,  Locked,  Statutories,  `Stat Loans`,  Deductions,  Adjustments,  PresetTax,  `13thMonth`,  Employer,  Division,  WageType,  SSS,  PagIbig,  PhilHealth";
 $tdatapayroll[".sqlFrom"] = "FROM payroll";
 $tdatapayroll[".sqlWhereExpr"] = "";
 $tdatapayroll[".sqlTail"] = "";
@@ -326,10 +367,15 @@ $tdatapayroll[".listFields"] = array();
 $tdatapayroll[".listFields"][] = "PSID";
 $tdatapayroll[".listFields"][] = "Locked";
 $tdatapayroll[".listFields"][] = "Employer";
+$tdatapayroll[".listFields"][] = "Division";
+$tdatapayroll[".listFields"][] = "WageType";
 $tdatapayroll[".listFields"][] = "PayFromDate";
 $tdatapayroll[".listFields"][] = "PayToDate";
 $tdatapayroll[".listFields"][] = "PayDate";
 $tdatapayroll[".listFields"][] = "Statutories";
+$tdatapayroll[".listFields"][] = "SSS";
+$tdatapayroll[".listFields"][] = "PagIbig";
+$tdatapayroll[".listFields"][] = "PhilHealth";
 $tdatapayroll[".listFields"][] = "Stat Loans";
 $tdatapayroll[".listFields"][] = "Deductions";
 $tdatapayroll[".listFields"][] = "Adjustments";
@@ -340,9 +386,14 @@ $tdatapayroll[".hideMobileList"] = array();
 
 
 $tdatapayroll[".viewFields"] = array();
+$tdatapayroll[".viewFields"][] = "SSS";
+$tdatapayroll[".viewFields"][] = "PagIbig";
+$tdatapayroll[".viewFields"][] = "PhilHealth";
 $tdatapayroll[".viewFields"][] = "PSID";
 $tdatapayroll[".viewFields"][] = "Locked";
 $tdatapayroll[".viewFields"][] = "Employer";
+$tdatapayroll[".viewFields"][] = "Division";
+$tdatapayroll[".viewFields"][] = "WageType";
 $tdatapayroll[".viewFields"][] = "PayFromDate";
 $tdatapayroll[".viewFields"][] = "PayToDate";
 $tdatapayroll[".viewFields"][] = "PayDate";
@@ -356,9 +407,14 @@ $tdatapayroll[".viewFields"][] = "13thMonth";
 $tdatapayroll[".addFields"] = array();
 
 $tdatapayroll[".masterListFields"] = array();
+$tdatapayroll[".masterListFields"][] = "SSS";
+$tdatapayroll[".masterListFields"][] = "PagIbig";
+$tdatapayroll[".masterListFields"][] = "PhilHealth";
 $tdatapayroll[".masterListFields"][] = "PSID";
 $tdatapayroll[".masterListFields"][] = "Locked";
 $tdatapayroll[".masterListFields"][] = "Employer";
+$tdatapayroll[".masterListFields"][] = "Division";
+$tdatapayroll[".masterListFields"][] = "WageType";
 $tdatapayroll[".masterListFields"][] = "PayFromDate";
 $tdatapayroll[".masterListFields"][] = "PayToDate";
 $tdatapayroll[".masterListFields"][] = "PayDate";
@@ -377,6 +433,9 @@ $tdatapayroll[".inlineEditFields"] = array();
 $tdatapayroll[".inlineEditFields"][] = "Locked";
 $tdatapayroll[".inlineEditFields"][] = "PayDate";
 $tdatapayroll[".inlineEditFields"][] = "Statutories";
+$tdatapayroll[".inlineEditFields"][] = "SSS";
+$tdatapayroll[".inlineEditFields"][] = "PagIbig";
+$tdatapayroll[".inlineEditFields"][] = "PhilHealth";
 $tdatapayroll[".inlineEditFields"][] = "Stat Loans";
 $tdatapayroll[".inlineEditFields"][] = "Deductions";
 $tdatapayroll[".inlineEditFields"][] = "Adjustments";
@@ -387,9 +446,14 @@ $tdatapayroll[".updateSelectedFields"] = array();
 
 
 $tdatapayroll[".exportFields"] = array();
+$tdatapayroll[".exportFields"][] = "SSS";
+$tdatapayroll[".exportFields"][] = "PagIbig";
+$tdatapayroll[".exportFields"][] = "PhilHealth";
 $tdatapayroll[".exportFields"][] = "PSID";
 $tdatapayroll[".exportFields"][] = "Locked";
 $tdatapayroll[".exportFields"][] = "Employer";
+$tdatapayroll[".exportFields"][] = "Division";
+$tdatapayroll[".exportFields"][] = "WageType";
 $tdatapayroll[".exportFields"][] = "PayFromDate";
 $tdatapayroll[".exportFields"][] = "PayToDate";
 $tdatapayroll[".exportFields"][] = "PayDate";
@@ -413,11 +477,21 @@ $tdatapayroll[".importFields"][] = "Adjustments";
 $tdatapayroll[".importFields"][] = "PresetTax";
 $tdatapayroll[".importFields"][] = "13thMonth";
 $tdatapayroll[".importFields"][] = "Employer";
+$tdatapayroll[".importFields"][] = "Division";
+$tdatapayroll[".importFields"][] = "WageType";
+$tdatapayroll[".importFields"][] = "SSS";
+$tdatapayroll[".importFields"][] = "PagIbig";
+$tdatapayroll[".importFields"][] = "PhilHealth";
 
 $tdatapayroll[".printFields"] = array();
+$tdatapayroll[".printFields"][] = "SSS";
+$tdatapayroll[".printFields"][] = "PagIbig";
+$tdatapayroll[".printFields"][] = "PhilHealth";
 $tdatapayroll[".printFields"][] = "PSID";
 $tdatapayroll[".printFields"][] = "Locked";
 $tdatapayroll[".printFields"][] = "Employer";
+$tdatapayroll[".printFields"][] = "Division";
+$tdatapayroll[".printFields"][] = "WageType";
 $tdatapayroll[".printFields"][] = "PayFromDate";
 $tdatapayroll[".printFields"][] = "PayToDate";
 $tdatapayroll[".printFields"][] = "PayDate";
@@ -1959,6 +2033,686 @@ $tdatapayroll[".printFields"][] = "13thMonth";
 
 
 	$tdatapayroll["Employer"] = $fdata;
+//	Division
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 13;
+	$fdata["strName"] = "Division";
+	$fdata["GoodName"] = "Division";
+	$fdata["ownerTable"] = "payroll";
+	$fdata["Label"] = GetFieldLabel("payroll","Division");
+	$fdata["FieldType"] = 3;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+	
+	
+	
+	
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "Division";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "Division";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Lookup wizard");
+
+	
+	
+		
+	
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "divisions";
+		$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "DvID";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "Division";
+	
+	
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdatapayroll["Division"] = $fdata;
+//	WageType
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 14;
+	$fdata["strName"] = "WageType";
+	$fdata["GoodName"] = "WageType";
+	$fdata["ownerTable"] = "payroll";
+	$fdata["Label"] = GetFieldLabel("payroll","WageType");
+	$fdata["FieldType"] = 3;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+	
+	
+	
+	
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "WageType";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "WageType";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Lookup wizard");
+
+	
+	
+		
+	
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "emptype";
+		$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "ECatID";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "EmployeeType";
+	
+	
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdatapayroll["WageType"] = $fdata;
+//	SSS
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 15;
+	$fdata["strName"] = "SSS";
+	$fdata["GoodName"] = "SSS";
+	$fdata["ownerTable"] = "payroll";
+	$fdata["Label"] = GetFieldLabel("payroll","SSS");
+	$fdata["FieldType"] = 16;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+	
+	
+	
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "SSS";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "SSS";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Checkbox");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Checkbox");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdatapayroll["SSS"] = $fdata;
+//	PagIbig
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 16;
+	$fdata["strName"] = "PagIbig";
+	$fdata["GoodName"] = "PagIbig";
+	$fdata["ownerTable"] = "payroll";
+	$fdata["Label"] = GetFieldLabel("payroll","PagIbig");
+	$fdata["FieldType"] = 16;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+	
+	
+	
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "PagIbig";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "PagIbig";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Checkbox");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Checkbox");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdatapayroll["PagIbig"] = $fdata;
+//	PhilHealth
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 17;
+	$fdata["strName"] = "PhilHealth";
+	$fdata["GoodName"] = "PhilHealth";
+	$fdata["ownerTable"] = "payroll";
+	$fdata["Label"] = GetFieldLabel("payroll","PhilHealth");
+	$fdata["FieldType"] = 16;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+	
+	
+	
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "PhilHealth";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "PhilHealth";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Checkbox");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Checkbox");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdatapayroll["PhilHealth"] = $fdata;
 
 
 $tables_data["payroll"]=&$tdatapayroll;
@@ -2002,12 +2756,22 @@ $detailsTablesData["payroll"] = array();
 
 	$detailsTablesData["payroll"][$dIndex]["masterKeys"][]="Employer";
 
+	$detailsTablesData["payroll"][$dIndex]["masterKeys"][]="Division";
+
+	$detailsTablesData["payroll"][$dIndex]["masterKeys"][]="WageType";
+
 				$detailsTablesData["payroll"][$dIndex]["detailKeys"] = array();
 
 	$detailsTablesData["payroll"][$dIndex]["detailKeys"][]="ToDate";
 
 		
 	$detailsTablesData["payroll"][$dIndex]["detailKeys"][]="Employer";
+
+		
+	$detailsTablesData["payroll"][$dIndex]["detailKeys"][]="Division";
+
+		
+	$detailsTablesData["payroll"][$dIndex]["detailKeys"][]="WageType";
 //	payrolldiv
 	
 	
@@ -2042,6 +2806,10 @@ $detailsTablesData["payroll"] = array();
 
 	$detailsTablesData["payroll"][$dIndex]["masterKeys"][]="Employer";
 
+	$detailsTablesData["payroll"][$dIndex]["masterKeys"][]="Division";
+
+	$detailsTablesData["payroll"][$dIndex]["masterKeys"][]="WageType";
+
 				$detailsTablesData["payroll"][$dIndex]["detailKeys"] = array();
 
 	$detailsTablesData["payroll"][$dIndex]["detailKeys"][]="FromDate";
@@ -2051,6 +2819,12 @@ $detailsTablesData["payroll"] = array();
 
 		
 	$detailsTablesData["payroll"][$dIndex]["detailKeys"][]="Employer";
+
+		
+	$detailsTablesData["payroll"][$dIndex]["detailKeys"][]="Division";
+
+		
+	$detailsTablesData["payroll"][$dIndex]["detailKeys"][]="WageType";
 
 // tables which are master tables for current table (detail)
 $masterTablesData["payroll"] = array();
@@ -2073,7 +2847,7 @@ function createSqlQuery_payroll()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "PSID,  PayDate,  PayFromDate,  PayToDate,  Locked,  Statutories,  `Stat Loans`,  Deductions,  Adjustments,  PresetTax,  `13thMonth`,  Employer";
+$proto0["m_strFieldList"] = "PSID,  PayDate,  PayFromDate,  PayToDate,  Locked,  Statutories,  `Stat Loans`,  Deductions,  Adjustments,  PresetTax,  `13thMonth`,  Employer,  Division,  WageType,  SSS,  PagIbig,  PhilHealth";
 $proto0["m_strFrom"] = "FROM payroll";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "ORDER BY PSID DESC";
@@ -2281,65 +3055,140 @@ $proto28["m_alias"] = "";
 $obj = new SQLFieldListItem($proto28);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto30=array();
-$proto30["m_link"] = "SQLL_MAIN";
-			$proto31=array();
-$proto31["m_strName"] = "payroll";
-$proto31["m_srcTableName"] = "payroll";
-$proto31["m_columns"] = array();
-$proto31["m_columns"][] = "PSID";
-$proto31["m_columns"][] = "PayDate";
-$proto31["m_columns"][] = "PayFromDate";
-$proto31["m_columns"][] = "PayToDate";
-$proto31["m_columns"][] = "PayPeriod";
-$proto31["m_columns"][] = "Statutories";
-$proto31["m_columns"][] = "Stat Loans";
-$proto31["m_columns"][] = "Deductions";
-$proto31["m_columns"][] = "Adjustments";
-$proto31["m_columns"][] = "MoAdjustment";
-$proto31["m_columns"][] = "PresetTax";
-$proto31["m_columns"][] = "13thMonth";
-$proto31["m_columns"][] = "Locked";
-$proto31["m_columns"][] = "Employer";
-$obj = new SQLTable($proto31);
+						$proto30=array();
+			$obj = new SQLField(array(
+	"m_strName" => "Division",
+	"m_strTable" => "payroll",
+	"m_srcTableName" => "payroll"
+));
 
-$proto30["m_table"] = $obj;
-$proto30["m_sql"] = "payroll";
-$proto30["m_alias"] = "";
+$proto30["m_sql"] = "Division";
 $proto30["m_srcTableName"] = "payroll";
-$proto32=array();
-$proto32["m_sql"] = "";
-$proto32["m_uniontype"] = "SQLL_UNKNOWN";
+$proto30["m_expr"]=$obj;
+$proto30["m_alias"] = "";
+$obj = new SQLFieldListItem($proto30);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto32=array();
+			$obj = new SQLField(array(
+	"m_strName" => "WageType",
+	"m_strTable" => "payroll",
+	"m_srcTableName" => "payroll"
+));
+
+$proto32["m_sql"] = "WageType";
+$proto32["m_srcTableName"] = "payroll";
+$proto32["m_expr"]=$obj;
+$proto32["m_alias"] = "";
+$obj = new SQLFieldListItem($proto32);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto34=array();
+			$obj = new SQLField(array(
+	"m_strName" => "SSS",
+	"m_strTable" => "payroll",
+	"m_srcTableName" => "payroll"
+));
+
+$proto34["m_sql"] = "SSS";
+$proto34["m_srcTableName"] = "payroll";
+$proto34["m_expr"]=$obj;
+$proto34["m_alias"] = "";
+$obj = new SQLFieldListItem($proto34);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto36=array();
+			$obj = new SQLField(array(
+	"m_strName" => "PagIbig",
+	"m_strTable" => "payroll",
+	"m_srcTableName" => "payroll"
+));
+
+$proto36["m_sql"] = "PagIbig";
+$proto36["m_srcTableName"] = "payroll";
+$proto36["m_expr"]=$obj;
+$proto36["m_alias"] = "";
+$obj = new SQLFieldListItem($proto36);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto38=array();
+			$obj = new SQLField(array(
+	"m_strName" => "PhilHealth",
+	"m_strTable" => "payroll",
+	"m_srcTableName" => "payroll"
+));
+
+$proto38["m_sql"] = "PhilHealth";
+$proto38["m_srcTableName"] = "payroll";
+$proto38["m_expr"]=$obj;
+$proto38["m_alias"] = "";
+$obj = new SQLFieldListItem($proto38);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto40=array();
+$proto40["m_link"] = "SQLL_MAIN";
+			$proto41=array();
+$proto41["m_strName"] = "payroll";
+$proto41["m_srcTableName"] = "payroll";
+$proto41["m_columns"] = array();
+$proto41["m_columns"][] = "PSID";
+$proto41["m_columns"][] = "PayDate";
+$proto41["m_columns"][] = "PayFromDate";
+$proto41["m_columns"][] = "PayToDate";
+$proto41["m_columns"][] = "PayPeriod";
+$proto41["m_columns"][] = "Statutories";
+$proto41["m_columns"][] = "Stat Loans";
+$proto41["m_columns"][] = "Deductions";
+$proto41["m_columns"][] = "Adjustments";
+$proto41["m_columns"][] = "MoAdjustment";
+$proto41["m_columns"][] = "PresetTax";
+$proto41["m_columns"][] = "13thMonth";
+$proto41["m_columns"][] = "Locked";
+$proto41["m_columns"][] = "Division";
+$proto41["m_columns"][] = "Employer";
+$proto41["m_columns"][] = "WageType";
+$proto41["m_columns"][] = "SSS";
+$proto41["m_columns"][] = "PagIbig";
+$proto41["m_columns"][] = "PhilHealth";
+$obj = new SQLTable($proto41);
+
+$proto40["m_table"] = $obj;
+$proto40["m_sql"] = "payroll";
+$proto40["m_alias"] = "";
+$proto40["m_srcTableName"] = "payroll";
+$proto42=array();
+$proto42["m_sql"] = "";
+$proto42["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto32["m_column"]=$obj;
-$proto32["m_contained"] = array();
-$proto32["m_strCase"] = "";
-$proto32["m_havingmode"] = false;
-$proto32["m_inBrackets"] = false;
-$proto32["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto32);
+$proto42["m_column"]=$obj;
+$proto42["m_contained"] = array();
+$proto42["m_strCase"] = "";
+$proto42["m_havingmode"] = false;
+$proto42["m_inBrackets"] = false;
+$proto42["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto42);
 
-$proto30["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto30);
+$proto40["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto40);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
 $proto0["m_orderby"] = array();
-												$proto34=array();
+												$proto44=array();
 						$obj = new SQLField(array(
 	"m_strName" => "PSID",
 	"m_strTable" => "payroll",
 	"m_srcTableName" => "payroll"
 ));
 
-$proto34["m_column"]=$obj;
-$proto34["m_bAsc"] = 0;
-$proto34["m_nColumn"] = 0;
-$obj = new SQLOrderByItem($proto34);
+$proto44["m_column"]=$obj;
+$proto44["m_bAsc"] = 0;
+$proto44["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto44);
 
 $proto0["m_orderby"][]=$obj;					
 $proto0["m_srcTableName"]="payroll";		
@@ -2353,7 +3202,7 @@ $queryData_payroll = createSqlQuery_payroll();
 	
 		;
 
-												
+																	
 
 $tdatapayroll[".sqlquery"] = $queryData_payroll;
 

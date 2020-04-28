@@ -1,0 +1,368 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_viewpage}
+<div {$viewpage_chiddenattr} data-pageid="{$pageid}" data-container="viewpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-12 "> 
+
+{BEGIN viewheader}
+	<h2 {$viewheader_hiddenattr} data-pageid="{$pageid}" data-brick="viewheader" >{$pagetitlelabel dtrcard view}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END viewheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_viewpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class=" form-horizontal  col-md-12 "> 
+
+
+<div {$viewfields_hiddenattr} data-pageid="{$pageid}" data-brick="viewfields" >
+
+	<div class="container">
+					{BEGIN ScID_fieldblock}
+	<div class="{$fielddispclass_ScID} col-md-6 bs-viewcontrolgroup" data-fieldname="ScID">
+		<label class="control-label" for="{$labelfor_ScID}">
+			{$label dtrcard ScID}
+		</label>
+		<div class="" >
+			{$ScID_value}&nbsp;
+		</div>
+	</div>
+{END ScID_fieldblock}
+					{BEGIN SDate_fieldblock}
+	<div class="{$fielddispclass_SDate} col-md-6 bs-viewcontrolgroup" data-fieldname="SDate">
+		<label class="control-label" for="{$labelfor_SDate}">
+			{$label dtrcard SDate}
+		</label>
+		<div class="" >
+			{$SDate_value}&nbsp;
+		</div>
+	</div>
+{END SDate_fieldblock}
+					{BEGIN EmployeeID_fieldblock}
+	<div class="{$fielddispclass_EmployeeID} col-md-6 bs-viewcontrolgroup" data-fieldname="EmployeeID">
+		<label class="control-label" for="{$labelfor_EmployeeID}">
+			{$label dtrcard EmployeeID}
+		</label>
+		<div class="" >
+			{$EmployeeID_value}&nbsp;
+		</div>
+	</div>
+{END EmployeeID_fieldblock}
+					{BEGIN DayIs_fieldblock}
+	<div class="{$fielddispclass_DayIs} col-md-6 bs-viewcontrolgroup" data-fieldname="DayIs">
+		<label class="control-label" for="{$labelfor_DayIs}">
+			{$label dtrcard DayIs}
+		</label>
+		<div class="" >
+			{$DayIs_value}&nbsp;
+		</div>
+	</div>
+{END DayIs_fieldblock}
+					{BEGIN STimeIn_fieldblock}
+	<div class="{$fielddispclass_STimeIn} col-md-6 bs-viewcontrolgroup" data-fieldname="STimeIn">
+		<label class="control-label" for="{$labelfor_STimeIn}">
+			{$label dtrcard STimeIn}
+		</label>
+		<div class="" >
+			{$STimeIn_value}&nbsp;
+		</div>
+	</div>
+{END STimeIn_fieldblock}
+					{BEGIN STimeOut_fieldblock}
+	<div class="{$fielddispclass_STimeOut} col-md-6 bs-viewcontrolgroup" data-fieldname="STimeOut">
+		<label class="control-label" for="{$labelfor_STimeOut}">
+			{$label dtrcard STimeOut}
+		</label>
+		<div class="" >
+			{$STimeOut_value}&nbsp;
+		</div>
+	</div>
+{END STimeOut_fieldblock}
+					{BEGIN TimeIn_fieldblock}
+	<div class="{$fielddispclass_TimeIn} col-md-6 bs-viewcontrolgroup" data-fieldname="TimeIn">
+		<label class="control-label" for="{$labelfor_TimeIn}">
+			{$label dtrcard TimeIn}
+		</label>
+		<div class="" >
+			{$TimeIn_value}&nbsp;
+		</div>
+	</div>
+{END TimeIn_fieldblock}
+					{BEGIN TimeOut_fieldblock}
+	<div class="{$fielddispclass_TimeOut} col-md-6 bs-viewcontrolgroup" data-fieldname="TimeOut">
+		<label class="control-label" for="{$labelfor_TimeOut}">
+			{$label dtrcard TimeOut}
+		</label>
+		<div class="" >
+			{$TimeOut_value}&nbsp;
+		</div>
+	</div>
+{END TimeOut_fieldblock}
+					{BEGIN Mispunched_fieldblock}
+	<div class="{$fielddispclass_Mispunched} col-md-6 bs-viewcontrolgroup" data-fieldname="Mispunched">
+		<label class="control-label" for="{$labelfor_Mispunched}">
+			{$label dtrcard Mispunched}
+		</label>
+		<div class="" >
+			{$Mispunched_value}&nbsp;
+		</div>
+	</div>
+{END Mispunched_fieldblock}
+					{BEGIN Late_fieldblock}
+	<div class="{$fielddispclass_Late} col-md-6 bs-viewcontrolgroup" data-fieldname="Late">
+		<label class="control-label" for="{$labelfor_Late}">
+			{$label dtrcard Late}
+		</label>
+		<div class="" >
+			{$Late_value}&nbsp;
+		</div>
+	</div>
+{END Late_fieldblock}
+					{BEGIN UTime_fieldblock}
+	<div class="{$fielddispclass_UTime} col-md-6 bs-viewcontrolgroup" data-fieldname="UTime">
+		<label class="control-label" for="{$labelfor_UTime}">
+			{$label dtrcard UTime}
+		</label>
+		<div class="" >
+			{$UTime_value}&nbsp;
+		</div>
+	</div>
+{END UTime_fieldblock}
+					{BEGIN Absent_fieldblock}
+	<div class="{$fielddispclass_Absent} col-md-6 bs-viewcontrolgroup" data-fieldname="Absent">
+		<label class="control-label" for="{$labelfor_Absent}">
+			{$label dtrcard Absent}
+		</label>
+		<div class="" >
+			{$Absent_value}&nbsp;
+		</div>
+	</div>
+{END Absent_fieldblock}
+					{BEGIN OTmins_fieldblock}
+	<div class="{$fielddispclass_OTmins} col-md-6 bs-viewcontrolgroup" data-fieldname="OTmins">
+		<label class="control-label" for="{$labelfor_OTmins}">
+			{$label dtrcard OTmins}
+		</label>
+		<div class="" >
+			{$OTmins_value}&nbsp;
+		</div>
+	</div>
+{END OTmins_fieldblock}
+					{BEGIN RestDay_fieldblock}
+	<div class="{$fielddispclass_RestDay} col-md-6 bs-viewcontrolgroup" data-fieldname="RestDay">
+		<label class="control-label" for="{$labelfor_RestDay}">
+			{$label dtrcard RestDay}
+		</label>
+		<div class="" >
+			{$RestDay_value}&nbsp;
+		</div>
+	</div>
+{END RestDay_fieldblock}
+					{BEGIN HolidayType_fieldblock}
+	<div class="{$fielddispclass_HolidayType} col-md-6 bs-viewcontrolgroup" data-fieldname="HolidayType">
+		<label class="control-label" for="{$labelfor_HolidayType}">
+			{$label dtrcard HolidayType}
+		</label>
+		<div class="" >
+			{$HolidayType_value}&nbsp;
+		</div>
+	</div>
+{END HolidayType_fieldblock}
+					{BEGIN VLDay_fieldblock}
+	<div class="{$fielddispclass_VLDay} col-md-6 bs-viewcontrolgroup" data-fieldname="VLDay">
+		<label class="control-label" for="{$labelfor_VLDay}">
+			{$label dtrcard VLDay}
+		</label>
+		<div class="" >
+			{$VLDay_value}&nbsp;
+		</div>
+	</div>
+{END VLDay_fieldblock}
+					{BEGIN SLDay_fieldblock}
+	<div class="{$fielddispclass_SLDay} col-md-6 bs-viewcontrolgroup" data-fieldname="SLDay">
+		<label class="control-label" for="{$labelfor_SLDay}">
+			{$label dtrcard SLDay}
+		</label>
+		<div class="" >
+			{$SLDay_value}&nbsp;
+		</div>
+	</div>
+{END SLDay_fieldblock}
+					{BEGIN ELDay_fieldblock}
+	<div class="{$fielddispclass_ELDay} col-md-6 bs-viewcontrolgroup" data-fieldname="ELDay">
+		<label class="control-label" for="{$labelfor_ELDay}">
+			{$label dtrcard ELDay}
+		</label>
+		<div class="" >
+			{$ELDay_value}&nbsp;
+		</div>
+	</div>
+{END ELDay_fieldblock}
+					{BEGIN PLDay_fieldblock}
+	<div class="{$fielddispclass_PLDay} col-md-6 bs-viewcontrolgroup" data-fieldname="PLDay">
+		<label class="control-label" for="{$labelfor_PLDay}">
+			{$label dtrcard PLDay}
+		</label>
+		<div class="" >
+			{$PLDay_value}&nbsp;
+		</div>
+	</div>
+{END PLDay_fieldblock}
+					{BEGIN OBDay_fieldblock}
+	<div class="{$fielddispclass_OBDay} col-md-6 bs-viewcontrolgroup" data-fieldname="OBDay">
+		<label class="control-label" for="{$labelfor_OBDay}">
+			{$label dtrcard OBDay}
+		</label>
+		<div class="" >
+			{$OBDay_value}&nbsp;
+		</div>
+	</div>
+{END OBDay_fieldblock}
+	</div>
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_buttons}
+<div {$buttons_chiddenattr} data-pageid="{$pageid}" data-container="buttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-6 "> 
+
+{BEGIN viewbuttons}
+{BEGIN back_button}
+<button class="btn btn-primary" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{BEGIN close_button}
+<button href="#" class="btn btn-primary" {$closebutton_attrs}>Close window</button>
+{END close_button}
+{END viewbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+
+
+{BEGIN container_leftbuttons_1}
+<div {$leftbuttons_1_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons_1" class="   col-md-4 "> 
+
+{BEGIN rightviewbuttons}
+<div class="btn-group" role="group">
+		{BEGIN prev_button}
+	<button class="btn btn-default {$prevbutton_class}" {$prevbutton_attrs}><span class="glyphicon glyphicon-chevron-left"></span></button>
+	{END prev_button}
+	{BEGIN next_button}
+	<button class="btn btn-default {$nextbutton_class}" {$nextbutton_attrs}><span class="glyphicon glyphicon-chevron-right"></span></button>
+	{END next_button}
+	</div>
+{END rightviewbuttons}
+
+
+
+</div>
+{END container_leftbuttons_1}
+
+
+
+
+
+
+</div>
+{END container_buttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

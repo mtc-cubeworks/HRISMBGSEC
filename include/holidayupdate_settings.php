@@ -145,6 +145,7 @@ $tdataholidayupdate[".afterAddActionDetTable"] = "Detail tables not found!";
 
 $tdataholidayupdate[".list"] = true;
 
+$tdataholidayupdate[".inlineEdit"] = true;
 
 
 $tdataholidayupdate[".reorderRecordsByHeader"] = true;
@@ -153,6 +154,7 @@ $tdataholidayupdate[".reorderRecordsByHeader"] = true;
 $tdataholidayupdate[".exportFormatting"] = 2;
 $tdataholidayupdate[".exportDelimiter"] = ",";
 		
+$tdataholidayupdate[".inlineAdd"] = true;
 $tdataholidayupdate[".view"] = true;
 
 $tdataholidayupdate[".import"] = true;
@@ -186,8 +188,8 @@ $tdataholidayupdate[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																													
-														
+																																																																																																																																																																																																																																																																										
+																																																								
 
 $tdataholidayupdate[".ajaxCodeSnippetAdded"] = false;
 
@@ -699,8 +701,7 @@ $tdataholidayupdate[".printFields"][] = "Remarks";
 // End Lookup Settings
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 			$edata["acceptFileTypes"] = ".+$";
@@ -719,8 +720,7 @@ $tdataholidayupdate[".printFields"][] = "Remarks";
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
+							
 	
 	//	End validation
 
@@ -1086,8 +1086,7 @@ $tdataholidayupdate[".printFields"][] = "Remarks";
 	
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 			$edata["acceptFileTypes"] = ".+$";
@@ -1109,8 +1108,7 @@ $tdataholidayupdate[".printFields"][] = "Remarks";
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
+	
 	
 	//	End validation
 

@@ -1,0 +1,1103 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_searchpage}
+<div {$searchpage_chiddenattr} data-pageid="{$pageid}" data-container="searchpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN searchheader}
+	<h2 {$bssearchheader_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchheader" >{$pagetitlelabel demo_useractive search}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END searchheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_searchpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$bssearchfields_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchfields" class="form-horizontal" role="form">
+<div class="container">
+	<div class="form-group">
+		<div class="col-md-12" >
+			&nbsp;
+		</div>
+	</div>
+</div>
+	{BEGIN EmployeeID_fieldblock}		
+	<div class="container {$fielddispclass_EmployeeID}" data-fieldname="EmployeeID">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_EmployeeID}">
+				{$label demo_useractive EmployeeID}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_EmployeeID}
+			</div>
+			<div class="col-md-4" >
+				{$EmployeeID_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$EmployeeID_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END EmployeeID_fieldblock}
+	{BEGIN IDNo_fieldblock}		
+	<div class="container {$fielddispclass_IDNo}" data-fieldname="IDNo">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_IDNo}">
+				{$label demo_useractive IDNo}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_IDNo}
+			</div>
+			<div class="col-md-4" >
+				{$IDNo_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$IDNo_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END IDNo_fieldblock}
+	{BEGIN Photo_fieldblock}		
+	<div class="container {$fielddispclass_Photo}" data-fieldname="Photo">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Photo}">
+				{$label demo_useractive Photo}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Photo}
+			</div>
+			<div class="col-md-4" >
+				{$Photo_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Photo_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Photo_fieldblock}
+	{BEGIN user_name_fieldblock}		
+	<div class="container {$fielddispclass_user_name}" data-fieldname="user_name">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_user_name}">
+				{$label demo_useractive user_name}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_user_name}
+			</div>
+			<div class="col-md-4" >
+				{$user_name_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$user_name_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END user_name_fieldblock}
+	{BEGIN Employer_fieldblock}		
+	<div class="container {$fielddispclass_Employer}" data-fieldname="Employer">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Employer}">
+				{$label demo_useractive Employer}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Employer}
+			</div>
+			<div class="col-md-4" >
+				{$Employer_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Employer_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Employer_fieldblock}
+	{BEGIN Division_fieldblock}		
+	<div class="container {$fielddispclass_Division}" data-fieldname="Division">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Division}">
+				{$label demo_useractive Division}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Division}
+			</div>
+			<div class="col-md-4" >
+				{$Division_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Division_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Division_fieldblock}
+	{BEGIN Department_fieldblock}		
+	<div class="container {$fielddispclass_Department}" data-fieldname="Department">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Department}">
+				{$label demo_useractive Department}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Department}
+			</div>
+			<div class="col-md-4" >
+				{$Department_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Department_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Department_fieldblock}
+	{BEGIN HiredDate_fieldblock}		
+	<div class="container {$fielddispclass_HiredDate}" data-fieldname="HiredDate">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_HiredDate}">
+				{$label demo_useractive HiredDate}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_HiredDate}
+			</div>
+			<div class="col-md-4" >
+				{$HiredDate_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$HiredDate_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END HiredDate_fieldblock}
+	{BEGIN Inactive_fieldblock}		
+	<div class="container {$fielddispclass_Inactive}" data-fieldname="Inactive">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Inactive}">
+				{$label demo_useractive Inactive}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Inactive}
+			</div>
+			<div class="col-md-4" >
+				{$Inactive_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Inactive_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Inactive_fieldblock}
+	{BEGIN ExitDate_fieldblock}		
+	<div class="container {$fielddispclass_ExitDate}" data-fieldname="ExitDate">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_ExitDate}">
+				{$label demo_useractive ExitDate}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_ExitDate}
+			</div>
+			<div class="col-md-4" >
+				{$ExitDate_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$ExitDate_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END ExitDate_fieldblock}
+	{BEGIN Status_fieldblock}		
+	<div class="container {$fielddispclass_Status}" data-fieldname="Status">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Status}">
+				{$label demo_useractive Status}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Status}
+			</div>
+			<div class="col-md-4" >
+				{$Status_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Status_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Status_fieldblock}
+	{BEGIN Position_fieldblock}		
+	<div class="container {$fielddispclass_Position}" data-fieldname="Position">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Position}">
+				{$label demo_useractive Position}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Position}
+			</div>
+			<div class="col-md-4" >
+				{$Position_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Position_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Position_fieldblock}
+	{BEGIN Superior_fieldblock}		
+	<div class="container {$fielddispclass_Superior}" data-fieldname="Superior">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Superior}">
+				{$label demo_useractive Superior}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Superior}
+			</div>
+			<div class="col-md-4" >
+				{$Superior_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Superior_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Superior_fieldblock}
+	{BEGIN Superior2_fieldblock}		
+	<div class="container {$fielddispclass_Superior2}" data-fieldname="Superior2">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Superior2}">
+				{$label demo_useractive Superior2}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Superior2}
+			</div>
+			<div class="col-md-4" >
+				{$Superior2_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Superior2_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Superior2_fieldblock}
+	{BEGIN Mobile_fieldblock}		
+	<div class="container {$fielddispclass_Mobile}" data-fieldname="Mobile">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Mobile}">
+				{$label demo_useractive Mobile}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Mobile}
+			</div>
+			<div class="col-md-4" >
+				{$Mobile_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Mobile_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Mobile_fieldblock}
+	{BEGIN Address_fieldblock}		
+	<div class="container {$fielddispclass_Address}" data-fieldname="Address">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Address}">
+				{$label demo_useractive Address}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Address}
+			</div>
+			<div class="col-md-4" >
+				{$Address_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Address_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Address_fieldblock}
+	{BEGIN Birthday_fieldblock}		
+	<div class="container {$fielddispclass_Birthday}" data-fieldname="Birthday">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Birthday}">
+				{$label demo_useractive Birthday}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Birthday}
+			</div>
+			<div class="col-md-4" >
+				{$Birthday_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Birthday_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Birthday_fieldblock}
+	{BEGIN Email_fieldblock}		
+	<div class="container {$fielddispclass_Email}" data-fieldname="Email">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Email}">
+				{$label demo_useractive Email}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Email}
+			</div>
+			<div class="col-md-4" >
+				{$Email_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Email_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Email_fieldblock}
+	{BEGIN SSSNo_fieldblock}		
+	<div class="container {$fielddispclass_SSSNo}" data-fieldname="SSSNo">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SSSNo}">
+				{$label demo_useractive SSSNo}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SSSNo}
+			</div>
+			<div class="col-md-4" >
+				{$SSSNo_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SSSNo_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SSSNo_fieldblock}
+	{BEGIN PagIbigNo_fieldblock}		
+	<div class="container {$fielddispclass_PagIbigNo}" data-fieldname="PagIbigNo">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_PagIbigNo}">
+				{$label demo_useractive PagIbigNo}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_PagIbigNo}
+			</div>
+			<div class="col-md-4" >
+				{$PagIbigNo_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$PagIbigNo_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END PagIbigNo_fieldblock}
+	{BEGIN PhilHealthNo_fieldblock}		
+	<div class="container {$fielddispclass_PhilHealthNo}" data-fieldname="PhilHealthNo">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_PhilHealthNo}">
+				{$label demo_useractive PhilHealthNo}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_PhilHealthNo}
+			</div>
+			<div class="col-md-4" >
+				{$PhilHealthNo_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$PhilHealthNo_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END PhilHealthNo_fieldblock}
+	{BEGIN TIN_fieldblock}		
+	<div class="container {$fielddispclass_TIN}" data-fieldname="TIN">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_TIN}">
+				{$label demo_useractive TIN}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_TIN}
+			</div>
+			<div class="col-md-4" >
+				{$TIN_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$TIN_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END TIN_fieldblock}
+	{BEGIN Bank_fieldblock}		
+	<div class="container {$fielddispclass_Bank}" data-fieldname="Bank">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Bank}">
+				{$label demo_useractive Bank}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Bank}
+			</div>
+			<div class="col-md-4" >
+				{$Bank_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Bank_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Bank_fieldblock}
+	{BEGIN AccountNo_fieldblock}		
+	<div class="container {$fielddispclass_AccountNo}" data-fieldname="AccountNo">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_AccountNo}">
+				{$label demo_useractive AccountNo}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_AccountNo}
+			</div>
+			<div class="col-md-4" >
+				{$AccountNo_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$AccountNo_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END AccountNo_fieldblock}
+	{BEGIN AllowableSickLeave_fieldblock}		
+	<div class="container {$fielddispclass_AllowableSickLeave}" data-fieldname="AllowableSickLeave">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_AllowableSickLeave}">
+				{$label demo_useractive AllowableSickLeave}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_AllowableSickLeave}
+			</div>
+			<div class="col-md-4" >
+				{$AllowableSickLeave_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$AllowableSickLeave_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END AllowableSickLeave_fieldblock}
+	{BEGIN AllowableVacationLeave_fieldblock}		
+	<div class="container {$fielddispclass_AllowableVacationLeave}" data-fieldname="AllowableVacationLeave">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_AllowableVacationLeave}">
+				{$label demo_useractive AllowableVacationLeave}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_AllowableVacationLeave}
+			</div>
+			<div class="col-md-4" >
+				{$AllowableVacationLeave_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$AllowableVacationLeave_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END AllowableVacationLeave_fieldblock}
+	{BEGIN AllowableEmergencyLeave_fieldblock}		
+	<div class="container {$fielddispclass_AllowableEmergencyLeave}" data-fieldname="AllowableEmergencyLeave">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_AllowableEmergencyLeave}">
+				{$label demo_useractive AllowableEmergencyLeave}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_AllowableEmergencyLeave}
+			</div>
+			<div class="col-md-4" >
+				{$AllowableEmergencyLeave_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$AllowableEmergencyLeave_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END AllowableEmergencyLeave_fieldblock}
+	{BEGIN AllowablePaternityLeave_fieldblock}		
+	<div class="container {$fielddispclass_AllowablePaternityLeave}" data-fieldname="AllowablePaternityLeave">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_AllowablePaternityLeave}">
+				{$label demo_useractive AllowablePaternityLeave}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_AllowablePaternityLeave}
+			</div>
+			<div class="col-md-4" >
+				{$AllowablePaternityLeave_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$AllowablePaternityLeave_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END AllowablePaternityLeave_fieldblock}
+	{BEGIN EmployeeType_fieldblock}		
+	<div class="container {$fielddispclass_EmployeeType}" data-fieldname="EmployeeType">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_EmployeeType}">
+				{$label demo_useractive EmployeeType}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_EmployeeType}
+			</div>
+			<div class="col-md-4" >
+				{$EmployeeType_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$EmployeeType_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END EmployeeType_fieldblock}
+	{BEGIN Level_fieldblock}		
+	<div class="container {$fielddispclass_Level}" data-fieldname="Level">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Level}">
+				{$label demo_useractive Level}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Level}
+			</div>
+			<div class="col-md-4" >
+				{$Level_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Level_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Level_fieldblock}
+	{BEGIN DoNotUpdateContributions_fieldblock}		
+	<div class="container {$fielddispclass_DoNotUpdateContributions}" data-fieldname="DoNotUpdateContributions">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_DoNotUpdateContributions}">
+				{$label demo_useractive DoNotUpdateContributions}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_DoNotUpdateContributions}
+			</div>
+			<div class="col-md-4" >
+				{$DoNotUpdateContributions_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$DoNotUpdateContributions_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END DoNotUpdateContributions_fieldblock}
+	{BEGIN ExcludeContributionOnPayroll_fieldblock}		
+	<div class="container {$fielddispclass_ExcludeContributionOnPayroll}" data-fieldname="ExcludeContributionOnPayroll">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_ExcludeContributionOnPayroll}">
+				{$label demo_useractive ExcludeContributionOnPayroll}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_ExcludeContributionOnPayroll}
+			</div>
+			<div class="col-md-4" >
+				{$ExcludeContributionOnPayroll_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$ExcludeContributionOnPayroll_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END ExcludeContributionOnPayroll_fieldblock}
+	{BEGIN SSSEE_fieldblock}		
+	<div class="container {$fielddispclass_SSSEE}" data-fieldname="SSSEE">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SSSEE}">
+				{$label demo_useractive SSSEE}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SSSEE}
+			</div>
+			<div class="col-md-4" >
+				{$SSSEE_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SSSEE_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SSSEE_fieldblock}
+	{BEGIN SSSER_fieldblock}		
+	<div class="container {$fielddispclass_SSSER}" data-fieldname="SSSER">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SSSER}">
+				{$label demo_useractive SSSER}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SSSER}
+			</div>
+			<div class="col-md-4" >
+				{$SSSER_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SSSER_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SSSER_fieldblock}
+	{BEGIN SSSEC_fieldblock}		
+	<div class="container {$fielddispclass_SSSEC}" data-fieldname="SSSEC">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_SSSEC}">
+				{$label demo_useractive SSSEC}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_SSSEC}
+			</div>
+			<div class="col-md-4" >
+				{$SSSEC_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SSSEC_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SSSEC_fieldblock}
+	{BEGIN PhilHealthEE_fieldblock}		
+	<div class="container {$fielddispclass_PhilHealthEE}" data-fieldname="PhilHealthEE">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_PhilHealthEE}">
+				{$label demo_useractive PhilHealthEE}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_PhilHealthEE}
+			</div>
+			<div class="col-md-4" >
+				{$PhilHealthEE_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$PhilHealthEE_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END PhilHealthEE_fieldblock}
+	{BEGIN PhilHealthER_fieldblock}		
+	<div class="container {$fielddispclass_PhilHealthER}" data-fieldname="PhilHealthER">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_PhilHealthER}">
+				{$label demo_useractive PhilHealthER}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_PhilHealthER}
+			</div>
+			<div class="col-md-4" >
+				{$PhilHealthER_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$PhilHealthER_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END PhilHealthER_fieldblock}
+	{BEGIN PagIbigEE_fieldblock}		
+	<div class="container {$fielddispclass_PagIbigEE}" data-fieldname="PagIbigEE">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_PagIbigEE}">
+				{$label demo_useractive PagIbigEE}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_PagIbigEE}
+			</div>
+			<div class="col-md-4" >
+				{$PagIbigEE_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$PagIbigEE_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END PagIbigEE_fieldblock}
+	{BEGIN PagIbigER_fieldblock}		
+	<div class="container {$fielddispclass_PagIbigER}" data-fieldname="PagIbigER">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_PagIbigER}">
+				{$label demo_useractive PagIbigER}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_PagIbigER}
+			</div>
+			<div class="col-md-4" >
+				{$PagIbigER_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$PagIbigER_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END PagIbigER_fieldblock}
+	{BEGIN NoLateDeduction_fieldblock}		
+	<div class="container {$fielddispclass_NoLateDeduction}" data-fieldname="NoLateDeduction">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_NoLateDeduction}">
+				{$label demo_useractive NoLateDeduction}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_NoLateDeduction}
+			</div>
+			<div class="col-md-4" >
+				{$NoLateDeduction_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$NoLateDeduction_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END NoLateDeduction_fieldblock}
+	{BEGIN GracePeriodMins_fieldblock}		
+	<div class="container {$fielddispclass_GracePeriodMins}" data-fieldname="GracePeriodMins">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_GracePeriodMins}">
+				{$label demo_useractive GracePeriodMins}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_GracePeriodMins}
+			</div>
+			<div class="col-md-4" >
+				{$GracePeriodMins_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$GracePeriodMins_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END GracePeriodMins_fieldblock}
+	{BEGIN WithAdditionalBreaks_fieldblock}		
+	<div class="container {$fielddispclass_WithAdditionalBreaks}" data-fieldname="WithAdditionalBreaks">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_WithAdditionalBreaks}">
+				{$label demo_useractive WithAdditionalBreaks}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_WithAdditionalBreaks}
+			</div>
+			<div class="col-md-4" >
+				{$WithAdditionalBreaks_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$WithAdditionalBreaks_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END WithAdditionalBreaks_fieldblock}
+	{BEGIN IncludeBreakLate_fieldblock}		
+	<div class="container {$fielddispclass_IncludeBreakLate}" data-fieldname="IncludeBreakLate">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_IncludeBreakLate}">
+				{$label demo_useractive IncludeBreakLate}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_IncludeBreakLate}
+			</div>
+			<div class="col-md-4" >
+				{$IncludeBreakLate_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$IncludeBreakLate_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END IncludeBreakLate_fieldblock}
+	{BEGIN user_id_fieldblock}		
+	<div class="container {$fielddispclass_user_id}" data-fieldname="user_id">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_user_id}">
+				{$label demo_useractive user_id}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_user_id}
+			</div>
+			<div class="col-md-4" >
+				{$user_id_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$user_id_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END user_id_fieldblock}
+	{BEGIN LateFixPenalty_fieldblock}		
+	<div class="container {$fielddispclass_LateFixPenalty}" data-fieldname="LateFixPenalty">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_LateFixPenalty}">
+				{$label demo_useractive LateFixPenalty}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_LateFixPenalty}
+			</div>
+			<div class="col-md-4" >
+				{$LateFixPenalty_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$LateFixPenalty_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END LateFixPenalty_fieldblock}
+	{BEGIN DateCreated_fieldblock}		
+	<div class="container {$fielddispclass_DateCreated}" data-fieldname="DateCreated">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_DateCreated}">
+				{$label demo_useractive DateCreated}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_DateCreated}
+			</div>
+			<div class="col-md-4" >
+				{$DateCreated_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$DateCreated_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END DateCreated_fieldblock}
+	{BEGIN Preparedby_fieldblock}		
+	<div class="container {$fielddispclass_Preparedby}" data-fieldname="Preparedby">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Preparedby}">
+				{$label demo_useractive Preparedby}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Preparedby}
+			</div>
+			<div class="col-md-4" >
+				{$Preparedby_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Preparedby_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Preparedby_fieldblock}
+	{BEGIN Checked_fieldblock}		
+	<div class="container {$fielddispclass_Checked}" data-fieldname="Checked">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Checked}">
+				{$label demo_useractive Checked}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Checked}
+			</div>
+			<div class="col-md-4" >
+				{$Checked_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Checked_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Checked_fieldblock}
+	{BEGIN Checkedby_fieldblock}		
+	<div class="container {$fielddispclass_Checkedby}" data-fieldname="Checkedby">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Checkedby}">
+				{$label demo_useractive Checkedby}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Checkedby}
+			</div>
+			<div class="col-md-4" >
+				{$Checkedby_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Checkedby_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Checkedby_fieldblock}
+	{BEGIN CheckedDate_fieldblock}		
+	<div class="container {$fielddispclass_CheckedDate}" data-fieldname="CheckedDate">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_CheckedDate}">
+				{$label demo_useractive CheckedDate}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_CheckedDate}
+			</div>
+			<div class="col-md-4" >
+				{$CheckedDate_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$CheckedDate_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END CheckedDate_fieldblock}
+	{BEGIN Approved_fieldblock}		
+	<div class="container {$fielddispclass_Approved}" data-fieldname="Approved">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Approved}">
+				{$label demo_useractive Approved}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Approved}
+			</div>
+			<div class="col-md-4" >
+				{$Approved_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Approved_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Approved_fieldblock}
+	{BEGIN Approvedby_fieldblock}		
+	<div class="container {$fielddispclass_Approvedby}" data-fieldname="Approvedby">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Approvedby}">
+				{$label demo_useractive Approvedby}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Approvedby}
+			</div>
+			<div class="col-md-4" >
+				{$Approvedby_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Approvedby_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Approvedby_fieldblock}
+	{BEGIN ApprovedDate_fieldblock}		
+	<div class="container {$fielddispclass_ApprovedDate}" data-fieldname="ApprovedDate">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_ApprovedDate}">
+				{$label demo_useractive ApprovedDate}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_ApprovedDate}
+			</div>
+			<div class="col-md-4" >
+				{$ApprovedDate_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$ApprovedDate_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END ApprovedDate_fieldblock}
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container form-horizontal   "> 
+
+
+
+
+{BEGIN container_bbuttons}
+<div {$bbuttons_chiddenattr} data-pageid="{$pageid}" data-container="bbuttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-10 col-md-offset-2"> 
+
+{BEGIN searchbuttons}
+{BEGIN search_button}
+<button class="btn btn-primary" {$searchbutton_attrs}>Search</button>
+{END search_button} 
+{BEGIN reset_button}
+<button class="btn btn-default" {$resetbutton_attrs}>Reset</button>
+{END reset_button}
+{BEGIN back_button}
+<button class="btn btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{END searchbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+</div>
+{END container_bbuttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

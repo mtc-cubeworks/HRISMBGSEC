@@ -116,7 +116,7 @@ $tdataleavebalance[".listAjax"] = false;
 	$tdataleavebalance[".locking"] = false;
 
 $tdataleavebalance[".edit"] = true;
-$tdataleavebalance[".afterEditAction"] = 0;
+$tdataleavebalance[".afterEditAction"] = 1;
 $tdataleavebalance[".closePopupAfterEdit"] = 1;
 $tdataleavebalance[".afterEditActionDetTable"] = "";
 
@@ -164,7 +164,7 @@ $tdataleavebalance[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																							
+																																																																																																																																																																																																																																																																																																																														
 
 $tdataleavebalance[".ajaxCodeSnippetAdded"] = false;
 

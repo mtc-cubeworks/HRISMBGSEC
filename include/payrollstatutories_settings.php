@@ -128,12 +128,12 @@ $tdatapayrollstatutories[".listAjax"] = false;
 	$tdatapayrollstatutories[".locking"] = false;
 
 $tdatapayrollstatutories[".edit"] = true;
-$tdatapayrollstatutories[".afterEditAction"] = 0;
+$tdatapayrollstatutories[".afterEditAction"] = 1;
 $tdatapayrollstatutories[".closePopupAfterEdit"] = 1;
 $tdatapayrollstatutories[".afterEditActionDetTable"] = "";
 
 $tdatapayrollstatutories[".add"] = true;
-$tdatapayrollstatutories[".afterAddAction"] = 0;
+$tdatapayrollstatutories[".afterAddAction"] = 1;
 $tdatapayrollstatutories[".closePopupAfterAdd"] = 1;
 $tdatapayrollstatutories[".afterAddActionDetTable"] = "";
 
@@ -182,7 +182,7 @@ $tdatapayrollstatutories[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
 
 $tdatapayrollstatutories[".ajaxCodeSnippetAdded"] = false;
 
@@ -3144,11 +3144,15 @@ $masterTablesData["payrollstatutories"] = array();
 				$masterTablesData["payrollstatutories"][0]["masterKeys"][]="ToDate";
 				$masterTablesData["payrollstatutories"][0]["masterKeys"][]="FromDate";
 				$masterTablesData["payrollstatutories"][0]["masterKeys"][]="Employer";
+				$masterTablesData["payrollstatutories"][0]["masterKeys"][]="Division";
+				$masterTablesData["payrollstatutories"][0]["masterKeys"][]="WageType";
 				$masterTablesData["payrollstatutories"][0]["detailKeys"] = array();
 	$masterTablesData["payrollstatutories"][0]["detailKeys"][]="EmployeeID";
 				$masterTablesData["payrollstatutories"][0]["detailKeys"][]="ToDate";
 				$masterTablesData["payrollstatutories"][0]["detailKeys"][]="FromDate";
 				$masterTablesData["payrollstatutories"][0]["detailKeys"][]="Employer";
+				$masterTablesData["payrollstatutories"][0]["detailKeys"][]="Division";
+				$masterTablesData["payrollstatutories"][0]["detailKeys"][]="WageType";
 		
 // -----------------end  prepare master-details data arrays ------------------------------//
 

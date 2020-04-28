@@ -20,6 +20,8 @@ class eventclass_leaves1  extends eventsBase
 
 		$this->events["AfterEdit"]=true;
 
+		$this->events["BeforeMoveNextList"]=true;
+
 
 //	onscreen events
 
@@ -292,14 +294,14 @@ return True;
 function BeforeShowAdd(&$xt, &$templatefile, &$pageObject)
 {
 
-		$att = $xt->fetchVar("Approved_editcontrol");
-$att = str_replace(">"," DISABLED=DISABLED>",$att);
-$xt->assign("Approved_editcontrol",$att);
+		//$att = $xt->fetchVar("Approved_editcontrol");
+//$att = str_replace(">"," DISABLED=DISABLED>",$att);
+//$xt->assign("Approved_editcontrol",$att);
 
 
-$attz = $xt->fetchVar("Approvedby_editcontrol");
-$attz = str_replace(">"," DISABLED=DISABLED>",$attz);
-$xt->assign("Approvedby_editcontrol",$attz);
+//$attz = $xt->fetchVar("Approvedby_editcontrol");
+//$attz = str_replace(">"," DISABLED=DISABLED>",$attz);
+//$xt->assign("Approvedby_editcontrol",$attz);
 
 
 //$at2 = $xt->fetchVar("Superior_editcontrol");
@@ -307,13 +309,13 @@ $xt->assign("Approvedby_editcontrol",$attz);
 //$xt->assign("Superior_editcontrol",$at2);
 
 
-$at3 = $xt->fetchVar("Locked_editcontrol");
-$at3 = str_replace(">"," DISABLED=DISABLED>",$at3);
-$xt->assign("Locked_editcontrol",$at3);
+//$at3 = $xt->fetchVar("Locked_editcontrol");
+//$at3 = str_replace(">"," DISABLED=DISABLED>",$at3);
+//$xt->assign("Locked_editcontrol",$at3);
 
-$at4 = $xt->fetchVar("Posted_editcontrol");
-$at4 = str_replace(">"," DISABLED=DISABLED>",$at4);
-$xt->assign("Posted_editcontrol",$at4);
+//$at4 = $xt->fetchVar("Posted_editcontrol");
+//$at4 = str_replace(">"," DISABLED=DISABLED>",$at4);
+//$xt->assign("Posted_editcontrol",$at4);
 ;		
 } // function BeforeShowAdd
 
@@ -394,9 +396,9 @@ $xt->assign("Approvedby_editcontrol",$attz);
 //$xt->assign("Superior_editcontrol",$at2);
 
 
-$at3 = $xt->fetchVar("Locked_editcontrol");
-$at3 = str_replace(">"," DISABLED=DISABLED>",$at3);
-$xt->assign("Locked_editcontrol",$at3);
+//$at3 = $xt->fetchVar("Locked_editcontrol");
+//$at3 = str_replace(">"," DISABLED=DISABLED>",$at3);
+//$xt->assign("Locked_editcontrol",$at3);
 
 $at4 = $xt->fetchVar("Posted_editcontrol");
 $at4 = str_replace(">"," DISABLED=DISABLED>",$at4);
@@ -741,6 +743,87 @@ $squ = "Update leaves set TotalDays='$tdays' where LvID='$lv'";
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+				// List page: After record processed
+function BeforeMoveNextList(&$data, &$row, &$record, &$pageObject)
+{
+
+		
+if ($data["1stApproval"]==1)  
+
+  $record["1stApproval_css"].='color:#219f17; font-weight:Bold';
+
+if ($data["1stApproval"]==2)  
+
+ { $record["1stApproval_css"].='color:#da0909; font-weight:Bold'; };
+
+if ($data["2ndApproval"]==1)  
+
+  $record["2ndApproval_css"].='color:#219f17; font-weight:Bold';
+
+if ($data["2ndApproval"]==2)  
+
+ { $record["2ndApproval_css"].='color:#da0909; font-weight:Bold'; };
+;		
+} // function BeforeMoveNextList
+
 		
 		
 		

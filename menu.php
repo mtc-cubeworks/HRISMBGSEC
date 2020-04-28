@@ -215,6 +215,18 @@ include_once(getabspath("include/notes_events.php"));
 $tableEvents["notes"] = new eventclass_notes;
 include_once(getabspath("include/notestatus_events.php"));
 $tableEvents["notestatus"] = new eventclass_notestatus;
+include_once(getabspath("include/filelogglobal_events.php"));
+$tableEvents["filelogglobal"] = new eventclass_filelogglobal;
+include_once(getabspath("include/dashrange_events.php"));
+$tableEvents["dashrange"] = new eventclass_dashrange;
+include_once(getabspath("include/demo_user11_events.php"));
+$tableEvents["demo_user11"] = new eventclass_demo_user11;
+include_once(getabspath("include/demo_useractive_events.php"));
+$tableEvents["demo_useractive"] = new eventclass_demo_useractive;
+include_once(getabspath("include/notes1_events.php"));
+$tableEvents["notes1"] = new eventclass_notes1;
+include_once(getabspath("include/filelogglobal1_events.php"));
+$tableEvents["filelogglobal1"] = new eventclass_filelogglobal1;
 
 $xt = new Xtempl();
 

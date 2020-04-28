@@ -1,0 +1,873 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_pdf}
+<div {$pdf_chiddenattr} data-pageid="{$pageid}" data-container="pdf" class="   col-md-12 "> 
+
+{BEGIN printbuttons}
+
+{END printbuttons}
+
+
+
+</div>
+{END container_pdf}
+
+
+
+
+
+{BEGIN container_pageheader}
+<div {$pageheader_chiddenattr} data-pageid="{$pageid}" data-container="pageheader" class="    "> 
+
+{BEGIN printheader}
+	<h2 {$printheader_hiddenattr} data-pageid="{$pageid}" data-brick="printheader" >{$pagetitlelabel payslipmain print}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END printheader}
+
+
+{BEGIN page_number}
+<span>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></span>
+{END page_number}
+
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="table table-bordered rp-maintable" {$printgrid_hiddenattr} data-pageid="{$pageid}" data-brick="printgrid" >
+	<thead>
+	{BEGIN grid_header}
+		<tr class="{$gridHeader_class}" >
+		{BEGIN record_header}
+			{BEGIN PFID_fieldheadercolumn}
+			<th class="{$PFID_class}" {$PFID_style}  data-field="PFID">
+				{$label payslipmain PFID}
+			</th>
+			{END PFID_fieldheadercolumn}
+			{BEGIN FromDate_fieldheadercolumn}
+			<th class="{$FromDate_class}" {$FromDate_style}  data-field="FromDate">
+				{$label payslipmain FromDate}
+			</th>
+			{END FromDate_fieldheadercolumn}
+			{BEGIN ToDate_fieldheadercolumn}
+			<th class="{$ToDate_class}" {$ToDate_style}  data-field="ToDate">
+				{$label payslipmain ToDate}
+			</th>
+			{END ToDate_fieldheadercolumn}
+			{BEGIN PayDate_fieldheadercolumn}
+			<th class="{$PayDate_class}" {$PayDate_style}  data-field="PayDate">
+				{$label payslipmain PayDate}
+			</th>
+			{END PayDate_fieldheadercolumn}
+			{BEGIN EmployeeID_fieldheadercolumn}
+			<th class="{$EmployeeID_class}" {$EmployeeID_style}  data-field="EmployeeID">
+				{$label payslipmain EmployeeID}
+			</th>
+			{END EmployeeID_fieldheadercolumn}
+			{BEGIN FullName_fieldheadercolumn}
+			<th class="{$FullName_class}" {$FullName_style}  data-field="FullName">
+				{$label payslipmain FullName}
+			</th>
+			{END FullName_fieldheadercolumn}
+			{BEGIN WageType_fieldheadercolumn}
+			<th class="{$WageType_class}" {$WageType_style}  data-field="WageType">
+				{$label payslipmain WageType}
+			</th>
+			{END WageType_fieldheadercolumn}
+			{BEGIN Status_fieldheadercolumn}
+			<th class="{$Status_class}" {$Status_style}  data-field="Status">
+				{$label payslipmain Status}
+			</th>
+			{END Status_fieldheadercolumn}
+			{BEGIN MonthlyRate_fieldheadercolumn}
+			<th class="{$MonthlyRate_class}" {$MonthlyRate_style}  data-field="MonthlyRate">
+				{$label payslipmain MonthlyRate}
+			</th>
+			{END MonthlyRate_fieldheadercolumn}
+			{BEGIN BasicDailyRate_fieldheadercolumn}
+			<th class="{$BasicDailyRate_class}" {$BasicDailyRate_style}  data-field="BasicDailyRate">
+				{$label payslipmain BasicDailyRate}
+			</th>
+			{END BasicDailyRate_fieldheadercolumn}
+			{BEGIN Division_fieldheadercolumn}
+			<th class="{$Division_class}" {$Division_style}  data-field="Division">
+				{$label payslipmain Division}
+			</th>
+			{END Division_fieldheadercolumn}
+			{BEGIN VL_fieldheadercolumn}
+			<th class="{$VL_class}" {$VL_style}  data-field="VL">
+				{$label payslipmain VL}
+			</th>
+			{END VL_fieldheadercolumn}
+			{BEGIN SL_fieldheadercolumn}
+			<th class="{$SL_class}" {$SL_style}  data-field="SL">
+				{$label payslipmain SL}
+			</th>
+			{END SL_fieldheadercolumn}
+			{BEGIN EL_fieldheadercolumn}
+			<th class="{$EL_class}" {$EL_style}  data-field="EL">
+				{$label payslipmain EL}
+			</th>
+			{END EL_fieldheadercolumn}
+			{BEGIN PL_fieldheadercolumn}
+			<th class="{$PL_class}" {$PL_style}  data-field="PL">
+				{$label payslipmain PL}
+			</th>
+			{END PL_fieldheadercolumn}
+			{BEGIN RegularPayT_fieldheadercolumn}
+			<th class="{$RegularPayT_class}" {$RegularPayT_style}  data-field="RegularPayT">
+				{$label payslipmain RegularPayT}
+			</th>
+			{END RegularPayT_fieldheadercolumn}
+			{BEGIN RegularPay_fieldheadercolumn}
+			<th class="{$RegularPay_class}" {$RegularPay_style}  data-field="RegularPay">
+				{$label payslipmain RegularPay}
+			</th>
+			{END RegularPay_fieldheadercolumn}
+			{BEGIN LateT_fieldheadercolumn}
+			<th class="{$LateT_class}" {$LateT_style}  data-field="LateT">
+				{$label payslipmain LateT}
+			</th>
+			{END LateT_fieldheadercolumn}
+			{BEGIN Late_fieldheadercolumn}
+			<th class="{$Late_class}" {$Late_style}  data-field="Late">
+				{$label payslipmain Late}
+			</th>
+			{END Late_fieldheadercolumn}
+			{BEGIN UndertimeT_fieldheadercolumn}
+			<th class="{$UndertimeT_class}" {$UndertimeT_style}  data-field="UndertimeT">
+				{$label payslipmain UndertimeT}
+			</th>
+			{END UndertimeT_fieldheadercolumn}
+			{BEGIN Undertime_fieldheadercolumn}
+			<th class="{$Undertime_class}" {$Undertime_style}  data-field="Undertime">
+				{$label payslipmain Undertime}
+			</th>
+			{END Undertime_fieldheadercolumn}
+			{BEGIN LWOPT_fieldheadercolumn}
+			<th class="{$LWOPT_class}" {$LWOPT_style}  data-field="LWOPT">
+				{$label payslipmain LWOPT}
+			</th>
+			{END LWOPT_fieldheadercolumn}
+			{BEGIN LWOP_fieldheadercolumn}
+			<th class="{$LWOP_class}" {$LWOP_style}  data-field="LWOP">
+				{$label payslipmain LWOP}
+			</th>
+			{END LWOP_fieldheadercolumn}
+			{BEGIN RegOTT_fieldheadercolumn}
+			<th class="{$RegOTT_class}" {$RegOTT_style}  data-field="RegOTT">
+				{$label payslipmain RegOTT}
+			</th>
+			{END RegOTT_fieldheadercolumn}
+			{BEGIN RegOT_fieldheadercolumn}
+			<th class="{$RegOT_class}" {$RegOT_style}  data-field="RegOT">
+				{$label payslipmain RegOT}
+			</th>
+			{END RegOT_fieldheadercolumn}
+			{BEGIN RHOTT_fieldheadercolumn}
+			<th class="{$RHOTT_class}" {$RHOTT_style}  data-field="RHOTT">
+				{$label payslipmain RHOTT}
+			</th>
+			{END RHOTT_fieldheadercolumn}
+			{BEGIN RHOT_fieldheadercolumn}
+			<th class="{$RHOT_class}" {$RHOT_style}  data-field="RHOT">
+				{$label payslipmain RHOT}
+			</th>
+			{END RHOT_fieldheadercolumn}
+			{BEGIN SHOTT_fieldheadercolumn}
+			<th class="{$SHOTT_class}" {$SHOTT_style}  data-field="SHOTT">
+				{$label payslipmain SHOTT}
+			</th>
+			{END SHOTT_fieldheadercolumn}
+			{BEGIN SHOT_fieldheadercolumn}
+			<th class="{$SHOT_class}" {$SHOT_style}  data-field="SHOT">
+				{$label payslipmain SHOT}
+			</th>
+			{END SHOT_fieldheadercolumn}
+			{BEGIN DHOTT_fieldheadercolumn}
+			<th class="{$DHOTT_class}" {$DHOTT_style}  data-field="DHOTT">
+				{$label payslipmain DHOTT}
+			</th>
+			{END DHOTT_fieldheadercolumn}
+			{BEGIN DHOT_fieldheadercolumn}
+			<th class="{$DHOT_class}" {$DHOT_style}  data-field="DHOT">
+				{$label payslipmain DHOT}
+			</th>
+			{END DHOT_fieldheadercolumn}
+			{BEGIN RDOTT_fieldheadercolumn}
+			<th class="{$RDOTT_class}" {$RDOTT_style}  data-field="RDOTT">
+				{$label payslipmain RDOTT}
+			</th>
+			{END RDOTT_fieldheadercolumn}
+			{BEGIN RDOT_fieldheadercolumn}
+			<th class="{$RDOT_class}" {$RDOT_style}  data-field="RDOT">
+				{$label payslipmain RDOT}
+			</th>
+			{END RDOT_fieldheadercolumn}
+			{BEGIN RHRDOTT_fieldheadercolumn}
+			<th class="{$RHRDOTT_class}" {$RHRDOTT_style}  data-field="RHRDOTT">
+				{$label payslipmain RHRDOTT}
+			</th>
+			{END RHRDOTT_fieldheadercolumn}
+			{BEGIN RHRDOT_fieldheadercolumn}
+			<th class="{$RHRDOT_class}" {$RHRDOT_style}  data-field="RHRDOT">
+				{$label payslipmain RHRDOT}
+			</th>
+			{END RHRDOT_fieldheadercolumn}
+			{BEGIN SHRDOTT_fieldheadercolumn}
+			<th class="{$SHRDOTT_class}" {$SHRDOTT_style}  data-field="SHRDOTT">
+				{$label payslipmain SHRDOTT}
+			</th>
+			{END SHRDOTT_fieldheadercolumn}
+			{BEGIN SHRDOT_fieldheadercolumn}
+			<th class="{$SHRDOT_class}" {$SHRDOT_style}  data-field="SHRDOT">
+				{$label payslipmain SHRDOT}
+			</th>
+			{END SHRDOT_fieldheadercolumn}
+			{BEGIN DHRDOTT_fieldheadercolumn}
+			<th class="{$DHRDOTT_class}" {$DHRDOTT_style}  data-field="DHRDOTT">
+				{$label payslipmain DHRDOTT}
+			</th>
+			{END DHRDOTT_fieldheadercolumn}
+			{BEGIN DHRDOT_fieldheadercolumn}
+			<th class="{$DHRDOT_class}" {$DHRDOT_style}  data-field="DHRDOT">
+				{$label payslipmain DHRDOT}
+			</th>
+			{END DHRDOT_fieldheadercolumn}
+			{BEGIN TNDOTT_fieldheadercolumn}
+			<th class="{$TNDOTT_class}" {$TNDOTT_style}  data-field="TNDOTT">
+				{$label payslipmain TNDOTT}
+			</th>
+			{END TNDOTT_fieldheadercolumn}
+			{BEGIN TNDOT_fieldheadercolumn}
+			<th class="{$TNDOT_class}" {$TNDOT_style}  data-field="TNDOT">
+				{$label payslipmain TNDOT}
+			</th>
+			{END TNDOT_fieldheadercolumn}
+			{BEGIN RegHolT_fieldheadercolumn}
+			<th class="{$RegHolT_class}" {$RegHolT_style}  data-field="RegHolT">
+				{$label payslipmain RegHolT}
+			</th>
+			{END RegHolT_fieldheadercolumn}
+			{BEGIN RegHol_fieldheadercolumn}
+			<th class="{$RegHol_class}" {$RegHol_style}  data-field="RegHol">
+				{$label payslipmain RegHol}
+			</th>
+			{END RegHol_fieldheadercolumn}
+			{BEGIN SpHolT_fieldheadercolumn}
+			<th class="{$SpHolT_class}" {$SpHolT_style}  data-field="SpHolT">
+				{$label payslipmain SpHolT}
+			</th>
+			{END SpHolT_fieldheadercolumn}
+			{BEGIN SpHol_fieldheadercolumn}
+			<th class="{$SpHol_class}" {$SpHol_style}  data-field="SpHol">
+				{$label payslipmain SpHol}
+			</th>
+			{END SpHol_fieldheadercolumn}
+			{BEGIN DbHolT_fieldheadercolumn}
+			<th class="{$DbHolT_class}" {$DbHolT_style}  data-field="DbHolT">
+				{$label payslipmain DbHolT}
+			</th>
+			{END DbHolT_fieldheadercolumn}
+			{BEGIN DbHol_fieldheadercolumn}
+			<th class="{$DbHol_class}" {$DbHol_style}  data-field="DbHol">
+				{$label payslipmain DbHol}
+			</th>
+			{END DbHol_fieldheadercolumn}
+			{BEGIN RestDayT_fieldheadercolumn}
+			<th class="{$RestDayT_class}" {$RestDayT_style}  data-field="RestDayT">
+				{$label payslipmain RestDayT}
+			</th>
+			{END RestDayT_fieldheadercolumn}
+			{BEGIN RestDay_fieldheadercolumn}
+			<th class="{$RestDay_class}" {$RestDay_style}  data-field="RestDay">
+				{$label payslipmain RestDay}
+			</th>
+			{END RestDay_fieldheadercolumn}
+			{BEGIN RHRDT_fieldheadercolumn}
+			<th class="{$RHRDT_class}" {$RHRDT_style}  data-field="RHRDT">
+				{$label payslipmain RHRDT}
+			</th>
+			{END RHRDT_fieldheadercolumn}
+			{BEGIN RHRD_fieldheadercolumn}
+			<th class="{$RHRD_class}" {$RHRD_style}  data-field="RHRD">
+				{$label payslipmain RHRD}
+			</th>
+			{END RHRD_fieldheadercolumn}
+			{BEGIN SHRDT_fieldheadercolumn}
+			<th class="{$SHRDT_class}" {$SHRDT_style}  data-field="SHRDT">
+				{$label payslipmain SHRDT}
+			</th>
+			{END SHRDT_fieldheadercolumn}
+			{BEGIN SHRD_fieldheadercolumn}
+			<th class="{$SHRD_class}" {$SHRD_style}  data-field="SHRD">
+				{$label payslipmain SHRD}
+			</th>
+			{END SHRD_fieldheadercolumn}
+			{BEGIN DHRDT_fieldheadercolumn}
+			<th class="{$DHRDT_class}" {$DHRDT_style}  data-field="DHRDT">
+				{$label payslipmain DHRDT}
+			</th>
+			{END DHRDT_fieldheadercolumn}
+			{BEGIN DHRD_fieldheadercolumn}
+			<th class="{$DHRD_class}" {$DHRD_style}  data-field="DHRD">
+				{$label payslipmain DHRD}
+			</th>
+			{END DHRD_fieldheadercolumn}
+			{BEGIN NDiffT_fieldheadercolumn}
+			<th class="{$NDiffT_class}" {$NDiffT_style}  data-field="NDiffT">
+				{$label payslipmain NDiffT}
+			</th>
+			{END NDiffT_fieldheadercolumn}
+			{BEGIN NDiff_fieldheadercolumn}
+			<th class="{$NDiff_class}" {$NDiff_style}  data-field="NDiff">
+				{$label payslipmain NDiff}
+			</th>
+			{END NDiff_fieldheadercolumn}
+			{BEGIN VacLeaveT_fieldheadercolumn}
+			<th class="{$VacLeaveT_class}" {$VacLeaveT_style}  data-field="VacLeaveT">
+				{$label payslipmain VacLeaveT}
+			</th>
+			{END VacLeaveT_fieldheadercolumn}
+			{BEGIN VacLeave_fieldheadercolumn}
+			<th class="{$VacLeave_class}" {$VacLeave_style}  data-field="VacLeave">
+				{$label payslipmain VacLeave}
+			</th>
+			{END VacLeave_fieldheadercolumn}
+			{BEGIN SicLeaveT_fieldheadercolumn}
+			<th class="{$SicLeaveT_class}" {$SicLeaveT_style}  data-field="SicLeaveT">
+				{$label payslipmain SicLeaveT}
+			</th>
+			{END SicLeaveT_fieldheadercolumn}
+			{BEGIN SicLeave_fieldheadercolumn}
+			<th class="{$SicLeave_class}" {$SicLeave_style}  data-field="SicLeave">
+				{$label payslipmain SicLeave}
+			</th>
+			{END SicLeave_fieldheadercolumn}
+			{BEGIN EmeLeaveT_fieldheadercolumn}
+			<th class="{$EmeLeaveT_class}" {$EmeLeaveT_style}  data-field="EmeLeaveT">
+				{$label payslipmain EmeLeaveT}
+			</th>
+			{END EmeLeaveT_fieldheadercolumn}
+			{BEGIN EmeLeave_fieldheadercolumn}
+			<th class="{$EmeLeave_class}" {$EmeLeave_style}  data-field="EmeLeave">
+				{$label payslipmain EmeLeave}
+			</th>
+			{END EmeLeave_fieldheadercolumn}
+			{BEGIN GrossPay_fieldheadercolumn}
+			<th class="{$GrossPay_class}" {$GrossPay_style}  data-field="GrossPay">
+				{$label payslipmain GrossPay}
+			</th>
+			{END GrossPay_fieldheadercolumn}
+			{BEGIN Taxable_fieldheadercolumn}
+			<th class="{$Taxable_class}" {$Taxable_style}  data-field="Taxable">
+				{$label payslipmain Taxable}
+			</th>
+			{END Taxable_fieldheadercolumn}
+			{BEGIN TaxableToDate_fieldheadercolumn}
+			<th class="{$TaxableToDate_class}" {$TaxableToDate_style}  data-field="TaxableToDate">
+				{$label payslipmain TaxableToDate}
+			</th>
+			{END TaxableToDate_fieldheadercolumn}
+			{BEGIN TaxToDate_fieldheadercolumn}
+			<th class="{$TaxToDate_class}" {$TaxToDate_style}  data-field="TaxToDate">
+				{$label payslipmain TaxToDate}
+			</th>
+			{END TaxToDate_fieldheadercolumn}
+			{BEGIN ThirToDate_fieldheadercolumn}
+			<th class="{$ThirToDate_class}" {$ThirToDate_style}  data-field="ThirToDate">
+				{$label payslipmain ThirToDate}
+			</th>
+			{END ThirToDate_fieldheadercolumn}
+			{BEGIN TDeductions_fieldheadercolumn}
+			<th class="{$TDeductions_class}" {$TDeductions_style}  data-field="TDeductions">
+				{$label payslipmain TDeductions}
+			</th>
+			{END TDeductions_fieldheadercolumn}
+			{BEGIN NetPay_fieldheadercolumn}
+			<th class="{$NetPay_class}" {$NetPay_style}  data-field="NetPay">
+				{$label payslipmain NetPay}
+			</th>
+			{END NetPay_fieldheadercolumn}
+			{BEGIN Employer_fieldheadercolumn}
+			<th class="{$Employer_class}" {$Employer_style}  data-field="Employer">
+				{$label payslipmain Employer}
+			</th>
+			{END Employer_fieldheadercolumn}
+			{BEGIN EmployerID_fieldheadercolumn}
+			<th class="{$EmployerID_class}" {$EmployerID_style}  data-field="EmployerID">
+				{$label payslipmain EmployerID}
+			</th>
+			{END EmployerID_fieldheadercolumn}
+			{BEGIN WageTypeID_fieldheadercolumn}
+			<th class="{$WageTypeID_class}" {$WageTypeID_style}  data-field="WageTypeID">
+				{$label payslipmain WageTypeID}
+			</th>
+			{END WageTypeID_fieldheadercolumn}
+			{BEGIN DivisionID_fieldheadercolumn}
+			<th class="{$DivisionID_class}" {$DivisionID_style}  data-field="DivisionID">
+				{$label payslipmain DivisionID}
+			</th>
+			{END DivisionID_fieldheadercolumn}
+			{BEGIN PtabID_fieldheadercolumn}
+			<th class="{$PtabID_class}" {$PtabID_style}  data-field="PtabID">
+				{$label payslipmain PtabID}
+			</th>
+			{END PtabID_fieldheadercolumn}
+			{BEGIN endrecordheader_block}
+			<th class="rnr-cs">&nbsp;</th>
+			{END endrecordheader_block}
+		{END record_header}
+		</tr>
+	{END grid_header}
+	</thead>
+	
+	<tbody>	
+	{BEGIN grid_row}
+		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+			{BEGIN PFID_fieldcolumn}
+			<td  class="{$PFID_class}" {$PFID_style} {$recordattrs}>
+				{$PFID_value}
+			</td>
+			{END PFID_fieldcolumn}
+			{BEGIN FromDate_fieldcolumn}
+			<td  class="{$FromDate_class}" {$FromDate_style} {$recordattrs}>
+				{$FromDate_value}
+			</td>
+			{END FromDate_fieldcolumn}
+			{BEGIN ToDate_fieldcolumn}
+			<td  class="{$ToDate_class}" {$ToDate_style} {$recordattrs}>
+				{$ToDate_value}
+			</td>
+			{END ToDate_fieldcolumn}
+			{BEGIN PayDate_fieldcolumn}
+			<td  class="{$PayDate_class}" {$PayDate_style} {$recordattrs}>
+				{$PayDate_value}
+			</td>
+			{END PayDate_fieldcolumn}
+			{BEGIN EmployeeID_fieldcolumn}
+			<td  class="{$EmployeeID_class}" {$EmployeeID_style} {$recordattrs}>
+				{$EmployeeID_value}
+			</td>
+			{END EmployeeID_fieldcolumn}
+			{BEGIN FullName_fieldcolumn}
+			<td  class="{$FullName_class}" {$FullName_style} {$recordattrs}>
+				{$FullName_value}
+			</td>
+			{END FullName_fieldcolumn}
+			{BEGIN WageType_fieldcolumn}
+			<td  class="{$WageType_class}" {$WageType_style} {$recordattrs}>
+				{$WageType_value}
+			</td>
+			{END WageType_fieldcolumn}
+			{BEGIN Status_fieldcolumn}
+			<td  class="{$Status_class}" {$Status_style} {$recordattrs}>
+				{$Status_value}
+			</td>
+			{END Status_fieldcolumn}
+			{BEGIN MonthlyRate_fieldcolumn}
+			<td  class="{$MonthlyRate_class}" {$MonthlyRate_style} {$recordattrs}>
+				{$MonthlyRate_value}
+			</td>
+			{END MonthlyRate_fieldcolumn}
+			{BEGIN BasicDailyRate_fieldcolumn}
+			<td  class="{$BasicDailyRate_class}" {$BasicDailyRate_style} {$recordattrs}>
+				{$BasicDailyRate_value}
+			</td>
+			{END BasicDailyRate_fieldcolumn}
+			{BEGIN Division_fieldcolumn}
+			<td  class="{$Division_class}" {$Division_style} {$recordattrs}>
+				{$Division_value}
+			</td>
+			{END Division_fieldcolumn}
+			{BEGIN VL_fieldcolumn}
+			<td  class="{$VL_class}" {$VL_style} {$recordattrs}>
+				{$VL_value}
+			</td>
+			{END VL_fieldcolumn}
+			{BEGIN SL_fieldcolumn}
+			<td  class="{$SL_class}" {$SL_style} {$recordattrs}>
+				{$SL_value}
+			</td>
+			{END SL_fieldcolumn}
+			{BEGIN EL_fieldcolumn}
+			<td  class="{$EL_class}" {$EL_style} {$recordattrs}>
+				{$EL_value}
+			</td>
+			{END EL_fieldcolumn}
+			{BEGIN PL_fieldcolumn}
+			<td  class="{$PL_class}" {$PL_style} {$recordattrs}>
+				{$PL_value}
+			</td>
+			{END PL_fieldcolumn}
+			{BEGIN RegularPayT_fieldcolumn}
+			<td  class="{$RegularPayT_class}" {$RegularPayT_style} {$recordattrs}>
+				{$RegularPayT_value}
+			</td>
+			{END RegularPayT_fieldcolumn}
+			{BEGIN RegularPay_fieldcolumn}
+			<td  class="{$RegularPay_class}" {$RegularPay_style} {$recordattrs}>
+				{$RegularPay_value}
+			</td>
+			{END RegularPay_fieldcolumn}
+			{BEGIN LateT_fieldcolumn}
+			<td  class="{$LateT_class}" {$LateT_style} {$recordattrs}>
+				{$LateT_value}
+			</td>
+			{END LateT_fieldcolumn}
+			{BEGIN Late_fieldcolumn}
+			<td  class="{$Late_class}" {$Late_style} {$recordattrs}>
+				{$Late_value}
+			</td>
+			{END Late_fieldcolumn}
+			{BEGIN UndertimeT_fieldcolumn}
+			<td  class="{$UndertimeT_class}" {$UndertimeT_style} {$recordattrs}>
+				{$UndertimeT_value}
+			</td>
+			{END UndertimeT_fieldcolumn}
+			{BEGIN Undertime_fieldcolumn}
+			<td  class="{$Undertime_class}" {$Undertime_style} {$recordattrs}>
+				{$Undertime_value}
+			</td>
+			{END Undertime_fieldcolumn}
+			{BEGIN LWOPT_fieldcolumn}
+			<td  class="{$LWOPT_class}" {$LWOPT_style} {$recordattrs}>
+				{$LWOPT_value}
+			</td>
+			{END LWOPT_fieldcolumn}
+			{BEGIN LWOP_fieldcolumn}
+			<td  class="{$LWOP_class}" {$LWOP_style} {$recordattrs}>
+				{$LWOP_value}
+			</td>
+			{END LWOP_fieldcolumn}
+			{BEGIN RegOTT_fieldcolumn}
+			<td  class="{$RegOTT_class}" {$RegOTT_style} {$recordattrs}>
+				{$RegOTT_value}
+			</td>
+			{END RegOTT_fieldcolumn}
+			{BEGIN RegOT_fieldcolumn}
+			<td  class="{$RegOT_class}" {$RegOT_style} {$recordattrs}>
+				{$RegOT_value}
+			</td>
+			{END RegOT_fieldcolumn}
+			{BEGIN RHOTT_fieldcolumn}
+			<td  class="{$RHOTT_class}" {$RHOTT_style} {$recordattrs}>
+				{$RHOTT_value}
+			</td>
+			{END RHOTT_fieldcolumn}
+			{BEGIN RHOT_fieldcolumn}
+			<td  class="{$RHOT_class}" {$RHOT_style} {$recordattrs}>
+				{$RHOT_value}
+			</td>
+			{END RHOT_fieldcolumn}
+			{BEGIN SHOTT_fieldcolumn}
+			<td  class="{$SHOTT_class}" {$SHOTT_style} {$recordattrs}>
+				{$SHOTT_value}
+			</td>
+			{END SHOTT_fieldcolumn}
+			{BEGIN SHOT_fieldcolumn}
+			<td  class="{$SHOT_class}" {$SHOT_style} {$recordattrs}>
+				{$SHOT_value}
+			</td>
+			{END SHOT_fieldcolumn}
+			{BEGIN DHOTT_fieldcolumn}
+			<td  class="{$DHOTT_class}" {$DHOTT_style} {$recordattrs}>
+				{$DHOTT_value}
+			</td>
+			{END DHOTT_fieldcolumn}
+			{BEGIN DHOT_fieldcolumn}
+			<td  class="{$DHOT_class}" {$DHOT_style} {$recordattrs}>
+				{$DHOT_value}
+			</td>
+			{END DHOT_fieldcolumn}
+			{BEGIN RDOTT_fieldcolumn}
+			<td  class="{$RDOTT_class}" {$RDOTT_style} {$recordattrs}>
+				{$RDOTT_value}
+			</td>
+			{END RDOTT_fieldcolumn}
+			{BEGIN RDOT_fieldcolumn}
+			<td  class="{$RDOT_class}" {$RDOT_style} {$recordattrs}>
+				{$RDOT_value}
+			</td>
+			{END RDOT_fieldcolumn}
+			{BEGIN RHRDOTT_fieldcolumn}
+			<td  class="{$RHRDOTT_class}" {$RHRDOTT_style} {$recordattrs}>
+				{$RHRDOTT_value}
+			</td>
+			{END RHRDOTT_fieldcolumn}
+			{BEGIN RHRDOT_fieldcolumn}
+			<td  class="{$RHRDOT_class}" {$RHRDOT_style} {$recordattrs}>
+				{$RHRDOT_value}
+			</td>
+			{END RHRDOT_fieldcolumn}
+			{BEGIN SHRDOTT_fieldcolumn}
+			<td  class="{$SHRDOTT_class}" {$SHRDOTT_style} {$recordattrs}>
+				{$SHRDOTT_value}
+			</td>
+			{END SHRDOTT_fieldcolumn}
+			{BEGIN SHRDOT_fieldcolumn}
+			<td  class="{$SHRDOT_class}" {$SHRDOT_style} {$recordattrs}>
+				{$SHRDOT_value}
+			</td>
+			{END SHRDOT_fieldcolumn}
+			{BEGIN DHRDOTT_fieldcolumn}
+			<td  class="{$DHRDOTT_class}" {$DHRDOTT_style} {$recordattrs}>
+				{$DHRDOTT_value}
+			</td>
+			{END DHRDOTT_fieldcolumn}
+			{BEGIN DHRDOT_fieldcolumn}
+			<td  class="{$DHRDOT_class}" {$DHRDOT_style} {$recordattrs}>
+				{$DHRDOT_value}
+			</td>
+			{END DHRDOT_fieldcolumn}
+			{BEGIN TNDOTT_fieldcolumn}
+			<td  class="{$TNDOTT_class}" {$TNDOTT_style} {$recordattrs}>
+				{$TNDOTT_value}
+			</td>
+			{END TNDOTT_fieldcolumn}
+			{BEGIN TNDOT_fieldcolumn}
+			<td  class="{$TNDOT_class}" {$TNDOT_style} {$recordattrs}>
+				{$TNDOT_value}
+			</td>
+			{END TNDOT_fieldcolumn}
+			{BEGIN RegHolT_fieldcolumn}
+			<td  class="{$RegHolT_class}" {$RegHolT_style} {$recordattrs}>
+				{$RegHolT_value}
+			</td>
+			{END RegHolT_fieldcolumn}
+			{BEGIN RegHol_fieldcolumn}
+			<td  class="{$RegHol_class}" {$RegHol_style} {$recordattrs}>
+				{$RegHol_value}
+			</td>
+			{END RegHol_fieldcolumn}
+			{BEGIN SpHolT_fieldcolumn}
+			<td  class="{$SpHolT_class}" {$SpHolT_style} {$recordattrs}>
+				{$SpHolT_value}
+			</td>
+			{END SpHolT_fieldcolumn}
+			{BEGIN SpHol_fieldcolumn}
+			<td  class="{$SpHol_class}" {$SpHol_style} {$recordattrs}>
+				{$SpHol_value}
+			</td>
+			{END SpHol_fieldcolumn}
+			{BEGIN DbHolT_fieldcolumn}
+			<td  class="{$DbHolT_class}" {$DbHolT_style} {$recordattrs}>
+				{$DbHolT_value}
+			</td>
+			{END DbHolT_fieldcolumn}
+			{BEGIN DbHol_fieldcolumn}
+			<td  class="{$DbHol_class}" {$DbHol_style} {$recordattrs}>
+				{$DbHol_value}
+			</td>
+			{END DbHol_fieldcolumn}
+			{BEGIN RestDayT_fieldcolumn}
+			<td  class="{$RestDayT_class}" {$RestDayT_style} {$recordattrs}>
+				{$RestDayT_value}
+			</td>
+			{END RestDayT_fieldcolumn}
+			{BEGIN RestDay_fieldcolumn}
+			<td  class="{$RestDay_class}" {$RestDay_style} {$recordattrs}>
+				{$RestDay_value}
+			</td>
+			{END RestDay_fieldcolumn}
+			{BEGIN RHRDT_fieldcolumn}
+			<td  class="{$RHRDT_class}" {$RHRDT_style} {$recordattrs}>
+				{$RHRDT_value}
+			</td>
+			{END RHRDT_fieldcolumn}
+			{BEGIN RHRD_fieldcolumn}
+			<td  class="{$RHRD_class}" {$RHRD_style} {$recordattrs}>
+				{$RHRD_value}
+			</td>
+			{END RHRD_fieldcolumn}
+			{BEGIN SHRDT_fieldcolumn}
+			<td  class="{$SHRDT_class}" {$SHRDT_style} {$recordattrs}>
+				{$SHRDT_value}
+			</td>
+			{END SHRDT_fieldcolumn}
+			{BEGIN SHRD_fieldcolumn}
+			<td  class="{$SHRD_class}" {$SHRD_style} {$recordattrs}>
+				{$SHRD_value}
+			</td>
+			{END SHRD_fieldcolumn}
+			{BEGIN DHRDT_fieldcolumn}
+			<td  class="{$DHRDT_class}" {$DHRDT_style} {$recordattrs}>
+				{$DHRDT_value}
+			</td>
+			{END DHRDT_fieldcolumn}
+			{BEGIN DHRD_fieldcolumn}
+			<td  class="{$DHRD_class}" {$DHRD_style} {$recordattrs}>
+				{$DHRD_value}
+			</td>
+			{END DHRD_fieldcolumn}
+			{BEGIN NDiffT_fieldcolumn}
+			<td  class="{$NDiffT_class}" {$NDiffT_style} {$recordattrs}>
+				{$NDiffT_value}
+			</td>
+			{END NDiffT_fieldcolumn}
+			{BEGIN NDiff_fieldcolumn}
+			<td  class="{$NDiff_class}" {$NDiff_style} {$recordattrs}>
+				{$NDiff_value}
+			</td>
+			{END NDiff_fieldcolumn}
+			{BEGIN VacLeaveT_fieldcolumn}
+			<td  class="{$VacLeaveT_class}" {$VacLeaveT_style} {$recordattrs}>
+				{$VacLeaveT_value}
+			</td>
+			{END VacLeaveT_fieldcolumn}
+			{BEGIN VacLeave_fieldcolumn}
+			<td  class="{$VacLeave_class}" {$VacLeave_style} {$recordattrs}>
+				{$VacLeave_value}
+			</td>
+			{END VacLeave_fieldcolumn}
+			{BEGIN SicLeaveT_fieldcolumn}
+			<td  class="{$SicLeaveT_class}" {$SicLeaveT_style} {$recordattrs}>
+				{$SicLeaveT_value}
+			</td>
+			{END SicLeaveT_fieldcolumn}
+			{BEGIN SicLeave_fieldcolumn}
+			<td  class="{$SicLeave_class}" {$SicLeave_style} {$recordattrs}>
+				{$SicLeave_value}
+			</td>
+			{END SicLeave_fieldcolumn}
+			{BEGIN EmeLeaveT_fieldcolumn}
+			<td  class="{$EmeLeaveT_class}" {$EmeLeaveT_style} {$recordattrs}>
+				{$EmeLeaveT_value}
+			</td>
+			{END EmeLeaveT_fieldcolumn}
+			{BEGIN EmeLeave_fieldcolumn}
+			<td  class="{$EmeLeave_class}" {$EmeLeave_style} {$recordattrs}>
+				{$EmeLeave_value}
+			</td>
+			{END EmeLeave_fieldcolumn}
+			{BEGIN GrossPay_fieldcolumn}
+			<td  class="{$GrossPay_class}" {$GrossPay_style} {$recordattrs}>
+				{$GrossPay_value}
+			</td>
+			{END GrossPay_fieldcolumn}
+			{BEGIN Taxable_fieldcolumn}
+			<td  class="{$Taxable_class}" {$Taxable_style} {$recordattrs}>
+				{$Taxable_value}
+			</td>
+			{END Taxable_fieldcolumn}
+			{BEGIN TaxableToDate_fieldcolumn}
+			<td  class="{$TaxableToDate_class}" {$TaxableToDate_style} {$recordattrs}>
+				{$TaxableToDate_value}
+			</td>
+			{END TaxableToDate_fieldcolumn}
+			{BEGIN TaxToDate_fieldcolumn}
+			<td  class="{$TaxToDate_class}" {$TaxToDate_style} {$recordattrs}>
+				{$TaxToDate_value}
+			</td>
+			{END TaxToDate_fieldcolumn}
+			{BEGIN ThirToDate_fieldcolumn}
+			<td  class="{$ThirToDate_class}" {$ThirToDate_style} {$recordattrs}>
+				{$ThirToDate_value}
+			</td>
+			{END ThirToDate_fieldcolumn}
+			{BEGIN TDeductions_fieldcolumn}
+			<td  class="{$TDeductions_class}" {$TDeductions_style} {$recordattrs}>
+				{$TDeductions_value}
+			</td>
+			{END TDeductions_fieldcolumn}
+			{BEGIN NetPay_fieldcolumn}
+			<td  class="{$NetPay_class}" {$NetPay_style} {$recordattrs}>
+				{$NetPay_value}
+			</td>
+			{END NetPay_fieldcolumn}
+			{BEGIN Employer_fieldcolumn}
+			<td  class="{$Employer_class}" {$Employer_style} {$recordattrs}>
+				{$Employer_value}
+			</td>
+			{END Employer_fieldcolumn}
+			{BEGIN EmployerID_fieldcolumn}
+			<td  class="{$EmployerID_class}" {$EmployerID_style} {$recordattrs}>
+				{$EmployerID_value}
+			</td>
+			{END EmployerID_fieldcolumn}
+			{BEGIN WageTypeID_fieldcolumn}
+			<td  class="{$WageTypeID_class}" {$WageTypeID_style} {$recordattrs}>
+				{$WageTypeID_value}
+			</td>
+			{END WageTypeID_fieldcolumn}
+			{BEGIN DivisionID_fieldcolumn}
+			<td  class="{$DivisionID_class}" {$DivisionID_style} {$recordattrs}>
+				{$DivisionID_value}
+			</td>
+			{END DivisionID_fieldcolumn}
+			{BEGIN PtabID_fieldcolumn}
+			<td  class="{$PtabID_class}" {$PtabID_style} {$recordattrs}>
+				{$PtabID_value}
+			</td>
+			{END PtabID_fieldcolumn}
+			{BEGIN endrecord_block}
+			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+			{END endrecord_block}
+		{END grid_record}
+		</tr>
+{END grid_row}
+	</tbody>
+
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

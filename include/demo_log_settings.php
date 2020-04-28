@@ -104,7 +104,7 @@ $tdatademo_log[".listAjax"] = false;
 	$tdatademo_log[".locking"] = false;
 
 $tdatademo_log[".edit"] = true;
-$tdatademo_log[".afterEditAction"] = 0;
+$tdatademo_log[".afterEditAction"] = 1;
 $tdatademo_log[".closePopupAfterEdit"] = 1;
 $tdatademo_log[".afterEditActionDetTable"] = "";
 
@@ -158,7 +158,7 @@ $tdatademo_log[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																							
+																																																																																																																																																																																																																																																																																																																														
 
 $tdatademo_log[".ajaxCodeSnippetAdded"] = false;
 
@@ -1270,7 +1270,7 @@ $tdatademo_log[".printFields"][] = "TransID2";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Short Date");
+	$vdata = array("ViewFormat" => "Datetime");
 
 	
 	

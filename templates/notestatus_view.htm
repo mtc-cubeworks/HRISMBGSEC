@@ -61,16 +61,6 @@
 <div {$viewfields_hiddenattr} data-pageid="{$pageid}" data-brick="viewfields" >
 
 	<div class="container">
-					{BEGIN Closed_fieldblock}
-	<div class="{$fielddispclass_Closed} col-md-6 bs-viewcontrolgroup" data-fieldname="Closed">
-		<label class="control-label" for="{$labelfor_Closed}">
-			{$label notestatus Closed}
-		</label>
-		<div class="" >
-			{$Closed_value}&nbsp;
-		</div>
-	</div>
-{END Closed_fieldblock}
 					{BEGIN NSID_fieldblock}
 	<div class="{$fielddispclass_NSID} col-md-6 bs-viewcontrolgroup" data-fieldname="NSID">
 		<label class="control-label" for="{$labelfor_NSID}">
@@ -131,6 +121,16 @@
 		</div>
 	</div>
 {END UploadFile_fieldblock}
+					{BEGIN Closed_fieldblock}
+	<div class="{$fielddispclass_Closed} col-md-6 bs-viewcontrolgroup" data-fieldname="Closed">
+		<label class="control-label" for="{$labelfor_Closed}">
+			{$label notestatus Closed}
+		</label>
+		<div class="" >
+			{$Closed_value}&nbsp;
+		</div>
+	</div>
+{END Closed_fieldblock}
 					{BEGIN Encodedby_fieldblock}
 	<div class="{$fielddispclass_Encodedby} col-md-6 bs-viewcontrolgroup" data-fieldname="Encodedby">
 		<label class="control-label" for="{$labelfor_Encodedby}">

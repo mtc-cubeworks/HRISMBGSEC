@@ -579,6 +579,7 @@ function AfterEdit(&$values, $where, &$oldvalues, &$keys, $inline, &$pageObject)
 		$eid=$values["EmployeeID"];
 $exd=$values["ExitDate"];
 $et=$values["EmployeeType"];
+$est=$values["Status"];
 
 if ($exd!=NULL) {
 
@@ -595,6 +596,8 @@ else {
 $sqr = "Update demo_user set Inactive=0 where EmployeeID='$eid'";
  CustomQuery($sqr);
 }
+
+
 
 
 

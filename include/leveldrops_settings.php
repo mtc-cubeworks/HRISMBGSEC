@@ -84,7 +84,7 @@ $tdataleveldrops[".listAjax"] = false;
 
 
 $tdataleveldrops[".add"] = true;
-$tdataleveldrops[".afterAddAction"] = 0;
+$tdataleveldrops[".afterAddAction"] = 1;
 $tdataleveldrops[".closePopupAfterAdd"] = 1;
 $tdataleveldrops[".afterAddActionDetTable"] = "";
 
@@ -123,7 +123,7 @@ $tdataleveldrops[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																							
+																																																																																																																																																																																																																																																																																																																														
 
 $tdataleveldrops[".ajaxCodeSnippetAdded"] = false;
 

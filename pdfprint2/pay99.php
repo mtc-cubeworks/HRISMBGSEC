@@ -3,10 +3,10 @@ require('fpdf17/fpdf.php');
 
 //db connection
 $con = mysqli_connect('localhost','badz','Madzilla101');
-mysqli_select_db($con,'payrollflexo');
+mysqli_select_db($con,'mgbsec');
 
 //get invoices data
-$query = mysqli_query($con,"select * from payroll3399
+$query = mysqli_query($con,"select * from payslipmainq
 	
 	
 	where PtabID = '".$_GET['ps1']."' AND Password = '".$_GET['pw2']."'");
@@ -22,7 +22,7 @@ $pdf->AliasNbPages();
 //Cell(width , height , text , border , end line , [align] )
 $pdf->SetXY(0, 6);
 $pdf->SetFont('Arial','B',10);
-$pdf->Cell(0, 5,$invoice['EmployerName'],0,1, 'C');
+$pdf->Cell(0, 5,$invoice['Employer'],0,1, 'C');
 $pdf->SetXY(0, 11);
 $pdf->SetFont('Arial','B',8);
 $pdf->Cell(0, 5,'P A Y S L I P',0,1, 'C');
@@ -33,31 +33,31 @@ $pdf->SetFont('Arial','',8);
 $pdf->SetXY(10, 20);
 $pdf->Cell(10	,4,'Name:',0,0);
 $pdf->SetFont('Arial','B',8);
-$pdf->Cell(190	,4,$invoice['UserName'],0,1);
+$pdf->Cell(190	,4,$invoice['FullName'],0,1);
 $pdf->SetXY(150, 20);
 $pdf->SetFont('Arial','',7);
 $pdf->Cell(20	,4,'PayrollID:',0,0);
-$pdf->Cell(15	,4,$invoice['PayrollID'],0,1);
+$pdf->Cell(15	,4,$invoice['PtabID'],0,1);
 $pdf->SetXY(150, 24);
 $pdf->Cell(20	,3,'Division:',0,0);
-$pdf->Cell(15	,3,$invoice['FDivision'],0,1);
+$pdf->Cell(15	,3,$invoice['Division'],0,1);
 $pdf->SetXY(10, 24);
 $pdf->SetFont('Arial','',7);
 $pdf->Cell(24	,4,'BioID:',0,0);
 $pdf->Cell(130	,4,$invoice['EmployeeID'],0,1);
 $pdf->SetXY(10, 28);
 $pdf->Cell(24	,4,'Monthly Rate:',0,0);
-$pdf->Cell(130	,4,number_format($invoice['BasicMonthly'],2),0,1);
+$pdf->Cell(130	,4,number_format($invoice['MonthlyRate'],2),0,1);
 $pdf->SetXY(10, 32);
 $pdf->Cell(24	,4,'Basic Daily Rate:',0,0);
-$pdf->Cell(130	,4,number_format($invoice['BasicDaily'],2),0,1);
+$pdf->Cell(130	,4,number_format($invoice['BasicDailyRate'],2),0,1);
 
 $pdf->SetXY(80, 20);
 $pdf->Cell(15	,4,'Wage Type:',0,0);
-$pdf->Cell(50	,4,$invoice['EmployeeType'],0,1);
+$pdf->Cell(50	,4,$invoice['WageType'],0,1);
 $pdf->SetXY(80, 24);
 $pdf->Cell(15	,4,'Status:',0,0);
-$pdf->Cell(50	,4,$invoice['EmployeeStatus'],0,1);
+$pdf->Cell(50	,4,$invoice['Status'],0,1);
 
 //leave balances
 $pdf->SetFont('Arial','B',8);
@@ -67,15 +67,15 @@ $pdf->SetFont('Arial','',7);
 $pdf->SetLeftMargin(80);
 $pdf->SetXY(80, 33);
 $pdf->Cell(7	,3,'VL:',0,0);
-$pdf->Cell(10	,3,number_format($invoice ['VLBalance'],2),0,1);//end of line
+$pdf->Cell(10	,3,number_format($invoice ['VL'],2),0,1);//end of line
 $pdf->Cell(7	,3,'SL:',0,0);
-$pdf->Cell(10	,3,number_format($invoice ['SLBalance'],2),0,1);//end of line
+$pdf->Cell(10	,3,number_format($invoice ['SL'],2),0,1);//end of line
 $pdf->SetXY(100, 33);
 $pdf->Cell(7	,3,'EL:',0,0);
-$pdf->Cell(10	,3,number_format($invoice ['ELBalance'],2),0,1);//end of line
+$pdf->Cell(10	,3,number_format($invoice ['EL'],2),0,1);//end of line
 $pdf->SetXY(100, 36);
 $pdf->Cell(7	,3,'PL:',0,0);
-$pdf->Cell(10	,3,number_format($invoice ['PLBalance'],2),0,1);//end of line
+$pdf->Cell(10	,3,number_format($invoice ['PL'],2),0,1);//end of line
 
 $pdf->SetXY(150, 27);
 $pdf->Cell(20	,4,'Date Printed:',0,0);
@@ -100,78 +100,78 @@ $pdf->SetXY(10, 40);
 $pdf->Cell(100	,7,'EARNINGS',0,1);//end of line
 $pdf->SetFont('Arial','',7);
 $pdf->Cell(37	,3,'Regular Pay:',0,0);
-$pdf->Cell(10	,3,number_format($invoice['DWork'],2),0,0);
-$pdf->Cell(15	,3,number_format($invoice['RegPay'],2),0,1,'R');
+$pdf->Cell(10	,3,number_format($invoice['RegularPayT'],2),0,0);
+$pdf->Cell(15	,3,number_format($invoice['RegularPay'],2),0,1,'R');
 $pdf->Cell(37	,3,'Late (mins.):',0,0);
-$pdf->Cell(10	,3,number_format($invoice['LateMins'],2),0,0);
+$pdf->Cell(10	,3,number_format($invoice['LateT'],2),0,0);
 $pdf->Cell(15	,3,number_format($invoice['Late'],2),0,1,'R');
 $pdf->Cell(37	,3,'UnderTime (mins.):',0,0);
-$pdf->Cell(10	,3,number_format($invoice['UndertimeMins'],2),0,0);
-$pdf->Cell(15	,3,number_format($invoice['UnderTime'],2),0,1,'R');
-$pdf->Cell(35.6	,3,'LWOP (days):',0,0);
-$pdf->Cell(10.4	,3,number_format($invoice['LWOPdays'],2),0,0);
-$pdf->Cell(16	,3,number_format(-1*($invoice['LWOP']),2),0,1,'R');
+$pdf->Cell(10	,3,number_format($invoice['UndertimeT'],2),0,0);
+$pdf->Cell(15	,3,number_format($invoice['Undertime'],2),0,1,'R');
+$pdf->Cell(37	,3,'LWOP (days):',0,0);
+$pdf->Cell(10	,3,number_format($invoice['LWOPT'],2),0,0);
+$pdf->Cell(15	,3,number_format(-1*($invoice['LWOP']),2),0,1,'R');
 $pdf->Cell(37	,3,'Reg. OT (hrs):',0,0);
-$pdf->Cell(10	,3,number_format($invoice['RegOTHrs'],2),0,0);
+$pdf->Cell(10	,3,number_format($invoice['RegOTT'],2),0,0);
 $pdf->Cell(15	,3,number_format($invoice['RegOT'],2),0,1,'R');
 $pdf->Cell(37	,3,'RH-OT (hrs):',0,0);
-$pdf->Cell(10	,3,number_format($invoice['RHOTHrs'],2),0,0);
+$pdf->Cell(10	,3,number_format($invoice['RHOTT'],2),0,0);
 $pdf->Cell(15	,3,number_format($invoice['RHOT'],2),0,1,'R');
 $pdf->Cell(37	,3,'SH-OT (hrs):',0,0);
-$pdf->Cell(10	,3,number_format($invoice['SHOTHrs'],2),0,0);
+$pdf->Cell(10	,3,number_format($invoice['SHOTT'],2),0,0);
 $pdf->Cell(15	,3,number_format($invoice['SHOT'],2),0,1,'R');
 $pdf->Cell(37	,3,'DH-OT (hrs):',0,0);
-$pdf->Cell(10	,3,number_format($invoice['DHOT'],2),0,0);
-$pdf->Cell(15	,3,number_format($invoice['DHOTpay'],2),0,1,'R');
+$pdf->Cell(10	,3,number_format($invoice['DHOTT'],2),0,0);
+$pdf->Cell(15	,3,number_format($invoice['DHOT'],2),0,1,'R');
 $pdf->Cell(37	,3,'RD-OT (hrs):',0,0);
-$pdf->Cell(10	,3,number_format($invoice['RDOTHrs'],2),0,0);
+$pdf->Cell(10	,3,number_format($invoice['RDOTT'],2),0,0);
 $pdf->Cell(15	,3,number_format($invoice['RDOT'],2),0,1,'R');
 $pdf->Cell(37	,3,'RH-RD-OT (hrs):',0,0);
-$pdf->Cell(10	,3,number_format($invoice['RHRDOT'],2),0,0);
-$pdf->Cell(15	,3,number_format($invoice['RHRDOTpay'],2),0,1,'R');
+$pdf->Cell(10	,3,number_format($invoice['RHRDOTT'],2),0,0);
+$pdf->Cell(15	,3,number_format($invoice['RHRDOT'],2),0,1,'R');
 $pdf->Cell(37	,3,'SH-RD-OT (hrs):',0,0);
-$pdf->Cell(10	,3,number_format($invoice['SHRDOT'],2),0,0);
-$pdf->Cell(15	,3,number_format($invoice['SHRDOTpay'],2),0,1,'R');
+$pdf->Cell(10	,3,number_format($invoice['SHRDOTT'],2),0,0);
+$pdf->Cell(15	,3,number_format($invoice['SHRDOT'],2),0,1,'R');
 $pdf->Cell(37	,3,'DH-RD-OT (hrs):',0,0);
-$pdf->Cell(10	,3,number_format($invoice['DHRDOT'],2),0,0);
-$pdf->Cell(15	,3,number_format($invoice['DHRDOTpay'],2),0,1,'R');
+$pdf->Cell(10	,3,number_format($invoice['DHRDOTT'],2),0,0);
+$pdf->Cell(15	,3,number_format($invoice['DHRDOT'],2),0,1,'R');
 $pdf->Cell(37	,3,'TND-OT (hrs):',0,0);
-$pdf->Cell(10	,3,number_format($invoice['TNDOTHr'],2),0,0);
+$pdf->Cell(10	,3,number_format($invoice['TNDOTT'],2),0,0);
 $pdf->Cell(15	,3,number_format($invoice['TNDOT'],2),0,1,'R');
 
 $pdf->Cell(37	,3,'Reg.Holiday (hrs):',0,0);
-$pdf->Cell(10	,3,number_format($invoice['RHolidayHrs'],2),0,0);
-$pdf->Cell(15	,3,number_format($invoice['RHoliday'],2),0,1,'R');
+$pdf->Cell(10	,3,number_format($invoice['RegHolT'],2),0,0);
+$pdf->Cell(15	,3,number_format($invoice['RegHol'],2),0,1,'R');
 $pdf->Cell(37	,3,'Sp. Holiday (hrs):',0,0);
-$pdf->Cell(10	,3,number_format($invoice['SHolidayHrs'],2),0,0);
-$pdf->Cell(15	,3,number_format($invoice['SHoliday'],2),0,1,'R');
+$pdf->Cell(10	,3,number_format($invoice['SpHolT'],2),0,0);
+$pdf->Cell(15	,3,number_format($invoice['SpHol'],2),0,1,'R');
 $pdf->Cell(37	,3,'Db. Holiday (hrs):',0,0);
-$pdf->Cell(10	,3,number_format($invoice['DH'],2),0,0);
-$pdf->Cell(15	,3,number_format($invoice['DHpay'],2),0,1,'R');
+$pdf->Cell(10	,3,number_format($invoice['DbHolT'],2),0,0);
+$pdf->Cell(15	,3,number_format($invoice['DbHol'],2),0,1,'R');
 $pdf->Cell(37	,3,'Rest Day (hrs):',0,0);
-$pdf->Cell(10	,3,number_format($invoice['RDHrs'],2),0,0);
-$pdf->Cell(15	,3,number_format($invoice['RD'],2),0,1,'R');
+$pdf->Cell(10	,3,number_format($invoice['RestDayT'],2),0,0);
+$pdf->Cell(15	,3,number_format($invoice['RestDay'],2),0,1,'R');
 $pdf->Cell(37	,3,'RH-RD (hrs):',0,0);
-$pdf->Cell(10	,3,number_format($invoice['RHRD'],2),0,0);
-$pdf->Cell(15	,3,number_format($invoice['RHRDpay'],2),0,1,'R');
+$pdf->Cell(10	,3,number_format($invoice['RHRDT'],2),0,0);
+$pdf->Cell(15	,3,number_format($invoice['RHRD'],2),0,1,'R');
 $pdf->Cell(37	,3,'SH-RD (hrs):',0,0);
-$pdf->Cell(10	,3,number_format($invoice['SHRD'],2),0,0);
-$pdf->Cell(15	,3,number_format($invoice['SHRDpay'],2),0,1,'R');
+$pdf->Cell(10	,3,number_format($invoice['SHRDT'],2),0,0);
+$pdf->Cell(15	,3,number_format($invoice['SHRD'],2),0,1,'R');
 $pdf->Cell(37	,3,'DH-RD (hrs):',0,0);
-$pdf->Cell(10	,3,number_format($invoice['DHRD'],2),0,0);
-$pdf->Cell(15	,3,number_format($invoice['DHRDpay'],2),0,1,'R');
+$pdf->Cell(10	,3,number_format($invoice['DHRDT'],2),0,0);
+$pdf->Cell(15	,3,number_format($invoice['DHRD'],2),0,1,'R');
 $pdf->Cell(37	,3,'Night Diff (hrs):',0,0);
-$pdf->Cell(10	,3,number_format($invoice['TNDHr'],2),0,0);
-$pdf->Cell(15	,3,number_format($invoice['TND'],2),0,1,'R');
+$pdf->Cell(10	,3,number_format($invoice['NDiffT'],2),0,0);
+$pdf->Cell(15	,3,number_format($invoice['NDiff'],2),0,1,'R');
 $pdf->Cell(37	,3,'Vacation Leave (days):',0,0);
-$pdf->Cell(10	,3,number_format($invoice['VLDays'],2),0,0);
-$pdf->Cell(15	,3,number_format($invoice['VL'],2),0,1,'R');
+$pdf->Cell(10	,3,number_format($invoice['VacLeaveT'],2),0,0);
+$pdf->Cell(15	,3,number_format($invoice['VacLeave'],2),0,1,'R');
 $pdf->Cell(37	,3,'Sick Leave (days):',0,0);
-$pdf->Cell(10	,3,number_format($invoice['SLDays'],2),0,0);
-$pdf->Cell(15	,3,number_format($invoice['SL'],2),0,1,'R');
+$pdf->Cell(10	,3,number_format($invoice['SicLeaveT'],2),0,0);
+$pdf->Cell(15	,3,number_format($invoice['SicLeave'],2),0,1,'R');
 $pdf->Cell(37	,3,'Emergency Leave (days):',0,0);
-$pdf->Cell(10	,3,number_format($invoice['ELDays'],2),0,0);
-$pdf->Cell(15	,3,number_format($invoice['EL'],2),0,1,'R');
+$pdf->Cell(10	,3,number_format($invoice['EmeLeaveT'],2),0,0);
+$pdf->Cell(15	,3,number_format($invoice['EmeLeave'],2),0,1,'R');
 
 
 $pdf->Cell(189	,3,'',0,1);//end of line
@@ -316,6 +316,9 @@ $pdf->Cell(40	,7,'COMPANY DEDUCTIONS',0,1);
 
 $pdf->SetFont('Arial','',7);
 while($item = mysqli_fetch_array($queryc)){
+	
+	
+	
 	
 $pdf->SetLeftMargin($x);
 	$pdf->Cell(33	,3,$item['LoanDescription'],0,0);

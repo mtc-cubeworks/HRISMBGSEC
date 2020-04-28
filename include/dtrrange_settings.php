@@ -35,6 +35,12 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsdtrrange["English"]["Employer"] = "Employer";
 	$fieldToolTipsdtrrange["English"]["Employer"] = "";
 	$placeHoldersdtrrange["English"]["Employer"] = "";
+	$fieldLabelsdtrrange["English"]["WageType"] = "Wage Type";
+	$fieldToolTipsdtrrange["English"]["WageType"] = "";
+	$placeHoldersdtrrange["English"]["WageType"] = "";
+	$fieldLabelsdtrrange["English"]["Division"] = "Division";
+	$fieldToolTipsdtrrange["English"]["Division"] = "";
+	$placeHoldersdtrrange["English"]["Division"] = "";
 	if (count($fieldToolTipsdtrrange["English"]))
 		$tdatadtrrange[".isUseToolTips"] = true;
 }
@@ -91,7 +97,7 @@ $tdatadtrrange[".closePopupAfterEdit"] = 1;
 $tdatadtrrange[".afterEditActionDetTable"] = "Detail tables not found!";
 
 $tdatadtrrange[".add"] = true;
-$tdatadtrrange[".afterAddAction"] = 0;
+$tdatadtrrange[".afterAddAction"] = 1;
 $tdatadtrrange[".closePopupAfterAdd"] = 1;
 $tdatadtrrange[".afterAddActionDetTable"] = "";
 
@@ -146,7 +152,7 @@ $tdatadtrrange[".rowHighlite"] = true;
 							
 							
 																																																																																					
-																																																					
+																																																																																												
 
 $tdatadtrrange[".ajaxCodeSnippetAdded"] = false;
 
@@ -170,6 +176,8 @@ $tdatadtrrange[".allSearchFields"][] = "DrID";
 	$tdatadtrrange[".allSearchFields"][] = "FromDate";
 	$tdatadtrrange[".allSearchFields"][] = "ToDate";
 	$tdatadtrrange[".allSearchFields"][] = "Employer";
+	$tdatadtrrange[".allSearchFields"][] = "Division";
+	$tdatadtrrange[".allSearchFields"][] = "WageType";
 	
 
 $tdatadtrrange[".googleLikeFields"] = array();
@@ -177,6 +185,8 @@ $tdatadtrrange[".googleLikeFields"][] = "DrID";
 $tdatadtrrange[".googleLikeFields"][] = "FromDate";
 $tdatadtrrange[".googleLikeFields"][] = "ToDate";
 $tdatadtrrange[".googleLikeFields"][] = "Employer";
+$tdatadtrrange[".googleLikeFields"][] = "WageType";
+$tdatadtrrange[".googleLikeFields"][] = "Division";
 
 
 $tdatadtrrange[".advSearchFields"] = array();
@@ -184,6 +194,8 @@ $tdatadtrrange[".advSearchFields"][] = "DrID";
 $tdatadtrrange[".advSearchFields"][] = "FromDate";
 $tdatadtrrange[".advSearchFields"][] = "ToDate";
 $tdatadtrrange[".advSearchFields"][] = "Employer";
+$tdatadtrrange[".advSearchFields"][] = "Division";
+$tdatadtrrange[".advSearchFields"][] = "WageType";
 
 $tdatadtrrange[".tableType"] = "list";
 
@@ -226,7 +238,7 @@ $tdatadtrrange[".strOrderBy"] = $tstrOrderBy;
 
 $tdatadtrrange[".orderindexes"] = array();
 
-$tdatadtrrange[".sqlHead"] = "SELECT DrID,  FromDate,  ToDate,  Employer";
+$tdatadtrrange[".sqlHead"] = "SELECT DrID,  FromDate,  ToDate,  Employer,  WageType,  Division";
 $tdatadtrrange[".sqlFrom"] = "FROM dtrrange";
 $tdatadtrrange[".sqlWhereExpr"] = "";
 $tdatadtrrange[".sqlTail"] = "";
@@ -275,6 +287,8 @@ $tdatadtrrange[".listFields"][] = "DrID";
 $tdatadtrrange[".listFields"][] = "FromDate";
 $tdatadtrrange[".listFields"][] = "ToDate";
 $tdatadtrrange[".listFields"][] = "Employer";
+$tdatadtrrange[".listFields"][] = "Division";
+$tdatadtrrange[".listFields"][] = "WageType";
 
 $tdatadtrrange[".hideMobileList"] = array();
 
@@ -284,37 +298,51 @@ $tdatadtrrange[".viewFields"][] = "DrID";
 $tdatadtrrange[".viewFields"][] = "FromDate";
 $tdatadtrrange[".viewFields"][] = "ToDate";
 $tdatadtrrange[".viewFields"][] = "Employer";
+$tdatadtrrange[".viewFields"][] = "Division";
+$tdatadtrrange[".viewFields"][] = "WageType";
 
 $tdatadtrrange[".addFields"] = array();
 $tdatadtrrange[".addFields"][] = "FromDate";
 $tdatadtrrange[".addFields"][] = "ToDate";
 $tdatadtrrange[".addFields"][] = "Employer";
+$tdatadtrrange[".addFields"][] = "Division";
+$tdatadtrrange[".addFields"][] = "WageType";
 
 $tdatadtrrange[".masterListFields"] = array();
 $tdatadtrrange[".masterListFields"][] = "DrID";
 $tdatadtrrange[".masterListFields"][] = "FromDate";
 $tdatadtrrange[".masterListFields"][] = "ToDate";
 $tdatadtrrange[".masterListFields"][] = "Employer";
+$tdatadtrrange[".masterListFields"][] = "Division";
+$tdatadtrrange[".masterListFields"][] = "WageType";
 
 $tdatadtrrange[".inlineAddFields"] = array();
 $tdatadtrrange[".inlineAddFields"][] = "FromDate";
 $tdatadtrrange[".inlineAddFields"][] = "ToDate";
 $tdatadtrrange[".inlineAddFields"][] = "Employer";
+$tdatadtrrange[".inlineAddFields"][] = "Division";
+$tdatadtrrange[".inlineAddFields"][] = "WageType";
 
 $tdatadtrrange[".editFields"] = array();
 $tdatadtrrange[".editFields"][] = "FromDate";
 $tdatadtrrange[".editFields"][] = "ToDate";
 $tdatadtrrange[".editFields"][] = "Employer";
+$tdatadtrrange[".editFields"][] = "Division";
+$tdatadtrrange[".editFields"][] = "WageType";
 
 $tdatadtrrange[".inlineEditFields"] = array();
 $tdatadtrrange[".inlineEditFields"][] = "FromDate";
 $tdatadtrrange[".inlineEditFields"][] = "ToDate";
 $tdatadtrrange[".inlineEditFields"][] = "Employer";
+$tdatadtrrange[".inlineEditFields"][] = "Division";
+$tdatadtrrange[".inlineEditFields"][] = "WageType";
 
 $tdatadtrrange[".updateSelectedFields"] = array();
 $tdatadtrrange[".updateSelectedFields"][] = "FromDate";
 $tdatadtrrange[".updateSelectedFields"][] = "ToDate";
 $tdatadtrrange[".updateSelectedFields"][] = "Employer";
+$tdatadtrrange[".updateSelectedFields"][] = "Division";
+$tdatadtrrange[".updateSelectedFields"][] = "WageType";
 
 
 $tdatadtrrange[".exportFields"] = array();
@@ -322,18 +350,24 @@ $tdatadtrrange[".exportFields"][] = "DrID";
 $tdatadtrrange[".exportFields"][] = "FromDate";
 $tdatadtrrange[".exportFields"][] = "ToDate";
 $tdatadtrrange[".exportFields"][] = "Employer";
+$tdatadtrrange[".exportFields"][] = "Division";
+$tdatadtrrange[".exportFields"][] = "WageType";
 
 $tdatadtrrange[".importFields"] = array();
 $tdatadtrrange[".importFields"][] = "DrID";
 $tdatadtrrange[".importFields"][] = "FromDate";
 $tdatadtrrange[".importFields"][] = "ToDate";
 $tdatadtrrange[".importFields"][] = "Employer";
+$tdatadtrrange[".importFields"][] = "WageType";
+$tdatadtrrange[".importFields"][] = "Division";
 
 $tdatadtrrange[".printFields"] = array();
 $tdatadtrrange[".printFields"][] = "DrID";
 $tdatadtrrange[".printFields"][] = "FromDate";
 $tdatadtrrange[".printFields"][] = "ToDate";
 $tdatadtrrange[".printFields"][] = "Employer";
+$tdatadtrrange[".printFields"][] = "Division";
+$tdatadtrrange[".printFields"][] = "WageType";
 
 
 //	DrID
@@ -558,7 +592,7 @@ $tdatadtrrange[".printFields"][] = "Employer";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 0;
+	$edata["InitialYearFactor"] = 2;
 	$edata["LastYearFactor"] = 21;
 
 	
@@ -692,7 +726,7 @@ $tdatadtrrange[".printFields"][] = "Employer";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 0;
+	$edata["InitialYearFactor"] = 2;
 	$edata["LastYearFactor"] = 21;
 
 	
@@ -893,6 +927,324 @@ $tdatadtrrange[".printFields"][] = "Employer";
 
 
 	$tdatadtrrange["Employer"] = $fdata;
+//	WageType
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 5;
+	$fdata["strName"] = "WageType";
+	$fdata["GoodName"] = "WageType";
+	$fdata["ownerTable"] = "dtrrange";
+	$fdata["Label"] = GetFieldLabel("dtrrange","WageType");
+	$fdata["FieldType"] = 16;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+		$fdata["bUpdateSelected"] = true;
+
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "WageType";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "WageType";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Lookup wizard");
+
+	
+	
+		
+	
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "emptype";
+		$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "ECatID";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "EmployeeType";
+	
+	
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdatadtrrange["WageType"] = $fdata;
+//	Division
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 6;
+	$fdata["strName"] = "Division";
+	$fdata["GoodName"] = "Division";
+	$fdata["ownerTable"] = "dtrrange";
+	$fdata["Label"] = GetFieldLabel("dtrrange","Division");
+	$fdata["FieldType"] = 3;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+		$fdata["bUpdateSelected"] = true;
+
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "Division";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "Division";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Lookup wizard");
+
+	
+	
+		
+	
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "divisions";
+		$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "DvID";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "Division";
+	
+	
+
+	
+	$edata["LookupOrderBy"] = "Division";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdatadtrrange["Division"] = $fdata;
 
 
 $tables_data["dtrrange"]=&$tdatadtrrange;
@@ -926,7 +1278,7 @@ function createSqlQuery_dtrrange()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "DrID,  FromDate,  ToDate,  Employer";
+$proto0["m_strFieldList"] = "DrID,  FromDate,  ToDate,  Employer,  WageType,  Division";
 $proto0["m_strFrom"] = "FROM dtrrange";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -1022,43 +1374,71 @@ $proto12["m_alias"] = "";
 $obj = new SQLFieldListItem($proto12);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto14=array();
-$proto14["m_link"] = "SQLL_MAIN";
-			$proto15=array();
-$proto15["m_strName"] = "dtrrange";
-$proto15["m_srcTableName"] = "dtrrange";
-$proto15["m_columns"] = array();
-$proto15["m_columns"][] = "DrID";
-$proto15["m_columns"][] = "FromDate";
-$proto15["m_columns"][] = "ToDate";
-$proto15["m_columns"][] = "Employer";
-$proto15["m_columns"][] = "WageType";
-$proto15["m_columns"][] = "Division";
-$proto15["m_columns"][] = "Employee";
-$obj = new SQLTable($proto15);
+						$proto14=array();
+			$obj = new SQLField(array(
+	"m_strName" => "WageType",
+	"m_strTable" => "dtrrange",
+	"m_srcTableName" => "dtrrange"
+));
 
-$proto14["m_table"] = $obj;
-$proto14["m_sql"] = "dtrrange";
-$proto14["m_alias"] = "";
+$proto14["m_sql"] = "WageType";
 $proto14["m_srcTableName"] = "dtrrange";
-$proto16=array();
-$proto16["m_sql"] = "";
-$proto16["m_uniontype"] = "SQLL_UNKNOWN";
+$proto14["m_expr"]=$obj;
+$proto14["m_alias"] = "";
+$obj = new SQLFieldListItem($proto14);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto16=array();
+			$obj = new SQLField(array(
+	"m_strName" => "Division",
+	"m_strTable" => "dtrrange",
+	"m_srcTableName" => "dtrrange"
+));
+
+$proto16["m_sql"] = "Division";
+$proto16["m_srcTableName"] = "dtrrange";
+$proto16["m_expr"]=$obj;
+$proto16["m_alias"] = "";
+$obj = new SQLFieldListItem($proto16);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto18=array();
+$proto18["m_link"] = "SQLL_MAIN";
+			$proto19=array();
+$proto19["m_strName"] = "dtrrange";
+$proto19["m_srcTableName"] = "dtrrange";
+$proto19["m_columns"] = array();
+$proto19["m_columns"][] = "DrID";
+$proto19["m_columns"][] = "FromDate";
+$proto19["m_columns"][] = "ToDate";
+$proto19["m_columns"][] = "Employer";
+$proto19["m_columns"][] = "WageType";
+$proto19["m_columns"][] = "Division";
+$proto19["m_columns"][] = "Employee";
+$obj = new SQLTable($proto19);
+
+$proto18["m_table"] = $obj;
+$proto18["m_sql"] = "dtrrange";
+$proto18["m_alias"] = "";
+$proto18["m_srcTableName"] = "dtrrange";
+$proto20=array();
+$proto20["m_sql"] = "";
+$proto20["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto16["m_column"]=$obj;
-$proto16["m_contained"] = array();
-$proto16["m_strCase"] = "";
-$proto16["m_havingmode"] = false;
-$proto16["m_inBrackets"] = false;
-$proto16["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto16);
+$proto20["m_column"]=$obj;
+$proto20["m_contained"] = array();
+$proto20["m_strCase"] = "";
+$proto20["m_havingmode"] = false;
+$proto20["m_inBrackets"] = false;
+$proto20["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto20);
 
-$proto14["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto14);
+$proto18["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto18);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -1074,7 +1454,7 @@ $queryData_dtrrange = createSqlQuery_dtrrange();
 	
 		;
 
-				
+						
 
 $tdatadtrrange[".sqlquery"] = $queryData_dtrrange;
 

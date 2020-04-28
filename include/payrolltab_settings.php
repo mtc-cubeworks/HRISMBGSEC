@@ -362,12 +362,12 @@ $tdatapayrolltab[".listAjax"] = false;
 	$tdatapayrolltab[".locking"] = false;
 
 $tdatapayrolltab[".edit"] = true;
-$tdatapayrolltab[".afterEditAction"] = 0;
+$tdatapayrolltab[".afterEditAction"] = 1;
 $tdatapayrolltab[".closePopupAfterEdit"] = 1;
 $tdatapayrolltab[".afterEditActionDetTable"] = "";
 
 $tdatapayrolltab[".add"] = true;
-$tdatapayrolltab[".afterAddAction"] = 0;
+$tdatapayrolltab[".afterAddAction"] = 1;
 $tdatapayrolltab[".closePopupAfterAdd"] = 1;
 $tdatapayrolltab[".afterAddActionDetTable"] = "";
 
@@ -417,8 +417,9 @@ $tdatapayrolltab[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																											
-																																																																																																																				
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
+							
+		
 
 $tdatapayrolltab[".ajaxCodeSnippetAdded"] = false;
 
@@ -1192,7 +1193,15 @@ $tdatapayrolltab[".inlineEditFields"][] = "PayrollID";
 
 $tdatapayrolltab[".updateSelectedFields"] = array();
 $tdatapayrolltab[".updateSelectedFields"][] = "Locked";
+$tdatapayrolltab[".updateSelectedFields"][] = "BasicMonthly";
+$tdatapayrolltab[".updateSelectedFields"][] = "BasicDaily";
+$tdatapayrolltab[".updateSelectedFields"][] = "DWork";
+$tdatapayrolltab[".updateSelectedFields"][] = "Absent";
+$tdatapayrolltab[".updateSelectedFields"][] = "LateMins";
+$tdatapayrolltab[".updateSelectedFields"][] = "UndertimeMins";
 $tdatapayrolltab[".updateSelectedFields"][] = "RegOTHrs";
+$tdatapayrolltab[".updateSelectedFields"][] = "Thirteenth";
+$tdatapayrolltab[".updateSelectedFields"][] = "Taxable";
 
 
 $tdatapayrolltab[".exportFields"] = array();
@@ -1999,7 +2008,8 @@ $tdatapayrolltab[".printFields"][] = "PayrollID";
 
 		$fdata["bInlineEdit"] = true;
 
-	
+		$fdata["bUpdateSelected"] = true;
+
 
 		$fdata["bViewPage"] = true;
 
@@ -2131,7 +2141,8 @@ $tdatapayrolltab[".printFields"][] = "PayrollID";
 
 		$fdata["bInlineEdit"] = true;
 
-	
+		$fdata["bUpdateSelected"] = true;
+
 
 		$fdata["bViewPage"] = true;
 
@@ -2263,7 +2274,8 @@ $tdatapayrolltab[".printFields"][] = "PayrollID";
 
 		$fdata["bInlineEdit"] = true;
 
-	
+		$fdata["bUpdateSelected"] = true;
+
 
 		$fdata["bViewPage"] = true;
 
@@ -2395,7 +2407,8 @@ $tdatapayrolltab[".printFields"][] = "PayrollID";
 
 		$fdata["bInlineEdit"] = true;
 
-	
+		$fdata["bUpdateSelected"] = true;
+
 
 		$fdata["bViewPage"] = true;
 
@@ -2527,7 +2540,8 @@ $tdatapayrolltab[".printFields"][] = "PayrollID";
 
 		$fdata["bInlineEdit"] = true;
 
-	
+		$fdata["bUpdateSelected"] = true;
+
 
 		$fdata["bViewPage"] = true;
 
@@ -2659,7 +2673,8 @@ $tdatapayrolltab[".printFields"][] = "PayrollID";
 
 		$fdata["bInlineEdit"] = true;
 
-	
+		$fdata["bUpdateSelected"] = true;
+
 
 		$fdata["bViewPage"] = true;
 
@@ -6747,7 +6762,8 @@ $tdatapayrolltab[".printFields"][] = "PayrollID";
 
 		$fdata["bInlineEdit"] = true;
 
-	
+		$fdata["bUpdateSelected"] = true;
+
 
 		$fdata["bViewPage"] = true;
 
@@ -6879,7 +6895,8 @@ $tdatapayrolltab[".printFields"][] = "PayrollID";
 
 		$fdata["bInlineEdit"] = true;
 
-	
+		$fdata["bUpdateSelected"] = true;
+
 
 		$fdata["bViewPage"] = true;
 
@@ -10641,6 +10658,10 @@ $detailsTablesData["payrolltab"] = array();
 
 	$detailsTablesData["payrolltab"][$dIndex]["masterKeys"][]="Employer";
 
+	$detailsTablesData["payrolltab"][$dIndex]["masterKeys"][]="Division";
+
+	$detailsTablesData["payrolltab"][$dIndex]["masterKeys"][]="WageType";
+
 				$detailsTablesData["payrolltab"][$dIndex]["detailKeys"] = array();
 
 	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="EmployeeID";
@@ -10653,6 +10674,12 @@ $detailsTablesData["payrolltab"] = array();
 
 		
 	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="Employer";
+
+		
+	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="Division";
+
+		
+	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="WageType";
 //	payrollearnadj
 	
 	
@@ -10689,6 +10716,10 @@ $detailsTablesData["payrolltab"] = array();
 
 	$detailsTablesData["payrolltab"][$dIndex]["masterKeys"][]="Employer";
 
+	$detailsTablesData["payrolltab"][$dIndex]["masterKeys"][]="Division";
+
+	$detailsTablesData["payrolltab"][$dIndex]["masterKeys"][]="WageType";
+
 				$detailsTablesData["payrolltab"][$dIndex]["detailKeys"] = array();
 
 	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="EmployeeID";
@@ -10701,6 +10732,12 @@ $detailsTablesData["payrolltab"] = array();
 
 		
 	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="Employer";
+
+		
+	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="Division";
+
+		
+	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="WageType";
 //	payrollstatutories
 	
 	
@@ -10737,6 +10774,10 @@ $detailsTablesData["payrolltab"] = array();
 
 	$detailsTablesData["payrolltab"][$dIndex]["masterKeys"][]="Employer";
 
+	$detailsTablesData["payrolltab"][$dIndex]["masterKeys"][]="Division";
+
+	$detailsTablesData["payrolltab"][$dIndex]["masterKeys"][]="WageType";
+
 				$detailsTablesData["payrolltab"][$dIndex]["detailKeys"] = array();
 
 	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="EmployeeID";
@@ -10749,6 +10790,12 @@ $detailsTablesData["payrolltab"] = array();
 
 		
 	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="Employer";
+
+		
+	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="Division";
+
+		
+	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="WageType";
 //	payrolltax
 	
 	
@@ -10785,6 +10832,10 @@ $detailsTablesData["payrolltab"] = array();
 
 	$detailsTablesData["payrolltab"][$dIndex]["masterKeys"][]="Employer";
 
+	$detailsTablesData["payrolltab"][$dIndex]["masterKeys"][]="Division";
+
+	$detailsTablesData["payrolltab"][$dIndex]["masterKeys"][]="WageType";
+
 				$detailsTablesData["payrolltab"][$dIndex]["detailKeys"] = array();
 
 	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="EmployeeID";
@@ -10797,6 +10848,12 @@ $detailsTablesData["payrolltab"] = array();
 
 		
 	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="Employer";
+
+		
+	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="Division";
+
+		
+	$detailsTablesData["payrolltab"][$dIndex]["detailKeys"][]="WageType";
 
 // tables which are master tables for current table (detail)
 $masterTablesData["payrolltab"] = array();
@@ -10828,9 +10885,13 @@ $masterTablesData["payrolltab"] = array();
 				$masterTablesData["payrolltab"][0]["masterKeys"] = array();
 	$masterTablesData["payrolltab"][0]["masterKeys"][]="PayToDate";
 				$masterTablesData["payrolltab"][0]["masterKeys"][]="Employer";
+				$masterTablesData["payrolltab"][0]["masterKeys"][]="Division";
+				$masterTablesData["payrolltab"][0]["masterKeys"][]="WageType";
 				$masterTablesData["payrolltab"][0]["detailKeys"] = array();
 	$masterTablesData["payrolltab"][0]["detailKeys"][]="ToDate";
 				$masterTablesData["payrolltab"][0]["detailKeys"][]="Employer";
+				$masterTablesData["payrolltab"][0]["detailKeys"][]="Division";
+				$masterTablesData["payrolltab"][0]["detailKeys"][]="WageType";
 		
 // -----------------end  prepare master-details data arrays ------------------------------//
 

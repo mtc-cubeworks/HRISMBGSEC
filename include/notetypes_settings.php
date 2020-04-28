@@ -86,12 +86,12 @@ $tdatanotetypes[".listAjax"] = false;
 	$tdatanotetypes[".locking"] = false;
 
 $tdatanotetypes[".edit"] = true;
-$tdatanotetypes[".afterEditAction"] = 0;
+$tdatanotetypes[".afterEditAction"] = 1;
 $tdatanotetypes[".closePopupAfterEdit"] = 1;
 $tdatanotetypes[".afterEditActionDetTable"] = "";
 
 $tdatanotetypes[".add"] = true;
-$tdatanotetypes[".afterAddAction"] = 0;
+$tdatanotetypes[".afterAddAction"] = 1;
 $tdatanotetypes[".closePopupAfterAdd"] = 1;
 $tdatanotetypes[".afterAddActionDetTable"] = "";
 
@@ -139,7 +139,7 @@ $tdatanotetypes[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																							
+																																																																																																																																																																																																																																																																																																																														
 
 $tdatanotetypes[".ajaxCodeSnippetAdded"] = false;
 
@@ -511,8 +511,7 @@ $tdatanotetypes[".printFields"][] = "NoteTypes";
 	
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 			$edata["acceptFileTypes"] = ".+$";
@@ -534,18 +533,14 @@ $tdatanotetypes[".printFields"][] = "NoteTypes";
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-			$edata["validateAs"]["basicValidate"][] = "DenyDuplicated";
-	$edata["validateAs"]["customMessages"]["DenyDuplicated"] = array("message" => "Value %value% already exists", "messageType" => "Text");
-
+	
 	
 	//	End validation
 
 	
 			
 	
-		$edata["denyDuplicates"] = true;
-
+	
 	
 	$fdata["EditFormats"]["edit"] = $edata;
 //	End Edit Formats

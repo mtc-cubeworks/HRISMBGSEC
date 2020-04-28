@@ -716,7 +716,7 @@ $mask .= "I";
 $mask .= "M";
 
 $pageMask[$table] = $mask;
-$tables[$table] = array("leavesapp", " " . "Leaves Approval (Supervisor)");
+$tables[$table] = array("leavesapp", " " . "Leaves Approval (S)");
 $table = "leavebalance1";
 $mask="";
 		$mask .= "E";
@@ -791,7 +791,6 @@ $mask="";
 	$mask .= "S";
 $mask .= "P";
 $mask .= "I";
-$mask .= "M";
 
 $pageMask[$table] = $mask;
 $tables[$table] = array("indschedrange", " " . "Create Schedule");
@@ -1032,7 +1031,7 @@ $mask .= "I";
 $mask .= "M";
 
 $pageMask[$table] = $mask;
-$tables[$table] = array("leavesapp2", " " . "Leaves Approval (Manager)");
+$tables[$table] = array("leavesapp2", " " . "Leaves Approval (M)");
 $table = "thirtax";
 $mask="";
 				$mask .= "S";
@@ -1069,7 +1068,7 @@ $mask .= "I";
 $mask .= "M";
 
 $pageMask[$table] = $mask;
-$tables[$table] = array("filelog1", " " . "Filelog Approval (Supervisor)");
+$tables[$table] = array("filelog1", " " . "Filelog Approval (S)");
 $table = "filelog2";
 $mask="";
 		$mask .= "E";
@@ -1080,7 +1079,7 @@ $mask .= "I";
 $mask .= "M";
 
 $pageMask[$table] = $mask;
-$tables[$table] = array("filelog2", " " . "Filelog Approval (Manager)");
+$tables[$table] = array("filelog2", " " . "Filelog Approval (M)");
 $table = "filelog3";
 $mask="";
 		$mask .= "E";
@@ -1090,7 +1089,7 @@ $mask .= "P";
 $mask .= "I";
 
 $pageMask[$table] = $mask;
-$tables[$table] = array("filelog3", " " . "Filelog HR Approval");
+$tables[$table] = array("filelog3", " " . "Filelog Approval (HR)");
 $table = "leaveremarks";
 $mask="";
 	$mask .= "A";
@@ -1127,7 +1126,7 @@ $mask .= "P";
 $mask .= "M";
 
 $pageMask[$table] = $mask;
-$tables[$table] = array("overtimefileapp", " " . "Overtime Approval (Supervisor)");
+$tables[$table] = array("overtimefileapp", " " . "Overtime Approval (S)");
 $table = "overtimefileapp2";
 $mask="";
 		$mask .= "E";
@@ -1137,7 +1136,7 @@ $mask .= "P";
 $mask .= "M";
 
 $pageMask[$table] = $mask;
-$tables[$table] = array("overtimefileapp2", " " . "Overtime Approval (Manager)");
+$tables[$table] = array("overtimefileapp2", " " . "Overtime Approval (M)");
 $table = "demo_useremp";
 $mask="";
 				$mask .= "S";
@@ -1315,6 +1314,28 @@ $mask .= "I";
 
 $pageMask[$table] = $mask;
 $tables[$table] = array("indscheduleemp", " " . "Uploaded Schedule");
+$table = "payslipposted";
+$mask="";
+	$mask .= "A";
+	$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("payslipposted", " " . "Payslip Posted");
+$table = "earningsposted";
+$mask="";
+	$mask .= "A";
+	$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("earningsposted", " " . "Earnings Posted");
 $table = "notes";
 $mask="";
 	$mask .= "A";
@@ -1327,17 +1348,6 @@ $mask .= "M";
 
 $pageMask[$table] = $mask;
 $tables[$table] = array("notes", " " . "Notes");
-$table = "notetypes";
-$mask="";
-	$mask .= "A";
-	$mask .= "E";
-	$mask .= "D";
-	$mask .= "S";
-$mask .= "P";
-$mask .= "I";
-
-$pageMask[$table] = $mask;
-$tables[$table] = array("notetypes", " " . "Note Types");
 $table = "notestatus";
 $mask="";
 	$mask .= "A";
@@ -1361,6 +1371,225 @@ $mask .= "I";
 
 $pageMask[$table] = $mask;
 $tables[$table] = array("notestatuses", " " . "Note Statuses");
+$table = "notetypes";
+$mask="";
+	$mask .= "A";
+	$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("notetypes", " " . "Note Types");
+$table = "filelogglobal";
+$mask="";
+	$mask .= "A";
+	$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("filelogglobal", " " . "File Log Approval");
+$table = "mispunched";
+$mask="";
+				$mask .= "S";
+$mask .= "P";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("mispunched", " " . "Mispunched");
+$table = "Dashboard";
+$mask="";
+				$mask .= "S";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("Dashboard", " " . "Dashboard");
+$table = "dashrange";
+$mask="";
+	$mask .= "A";
+	$mask .= "E";
+		$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("dashrange", " " . "Dashrange");
+$table = "zleavetypes Chart";
+$mask="";
+	$mask .= "S";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("zleavetypes_Chart", " " . "Leave Type Chart");
+$table = "zotdept Chart";
+$mask="";
+	$mask .= "S";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("zotdept_Chart", " " . "Department OT Chart");
+$table = "zotdiv Chart";
+$mask="";
+	$mask .= "S";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("zotdiv_Chart", " " . "Division OT Chart");
+$table = "zots";
+$mask="";
+				$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("zots", " " . "Zots");
+$table = "zots Chart";
+$mask="";
+	$mask .= "S";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("zots_Chart", " " . "Employer OT Chart");
+$table = "zresigns Chart";
+$mask="";
+	$mask .= "S";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("zresigns_Chart", " " . "Resignation Chart");
+$table = "attrition Chart";
+$mask="";
+	$mask .= "S";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("attrition_Chart", " " . "Attrition Chart");
+$table = "leavestoday";
+$mask="";
+				$mask .= "S";
+$mask .= "P";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("leavestoday", " " . "Leaves Today");
+$table = "latesonrange";
+$mask="";
+				$mask .= "S";
+$mask .= "P";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("latesonrange", " " . "Lates by Date-Range");
+$table = "leavesonrange";
+$mask="";
+				$mask .= "S";
+$mask .= "P";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("leavesonrange", " " . "Leaves by Date-Range");
+$table = "absentonrange";
+$mask="";
+				$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("absentonrange", " " . "Absent by Date-Range");
+$table = "selectemployee";
+$mask="";
+				$mask .= "S";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("selectemployee", " " . "Select Employee");
+$table = "demo_user11";
+$mask="";
+		$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("demo_user11", " " . "Employees Alert");
+$table = "demo_useractive";
+$mask="";
+	$mask .= "A";
+	$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("demo_useractive", " " . "Active Employees");
+$table = "notes1";
+$mask="";
+	$mask .= "A";
+	$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("notes1", " " . "Notes Alert");
+$table = "filelogglobal1";
+$mask="";
+	$mask .= "A";
+	$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("filelogglobal1", " " . "Update File Logs");
+$table = "memo";
+$mask="";
+	$mask .= "A";
+	$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("memo", " " . "Memo");
+$table = "dtrcard";
+$mask="";
+				$mask .= "S";
+$mask .= "P";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("dtrcard", " " . "DTR Detail");
+$table = "dtrcardhead";
+$mask="";
+				$mask .= "S";
+$mask .= "P";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("dtrcardhead", " " . "DTR Print");
+$table = "dtrcardhead1";
+$mask="";
+				$mask .= "S";
+$mask .= "P";
+$mask .= "M";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("dtrcardhead1", " " . "My Current DTR Print");
+$table = "dtrcard1";
+$mask="";
+				$mask .= "S";
+$mask .= "P";
+$mask .= "M";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("dtrcard1", " " . "My DTR Detail");
+$table = "payslipmain";
+$mask="";
+	$mask .= "A";
+	$mask .= "E";
+	$mask .= "D";
+	$mask .= "S";
+$mask .= "P";
+$mask .= "I";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("payslipmain", " " . "Payslipmain");
 
 
 

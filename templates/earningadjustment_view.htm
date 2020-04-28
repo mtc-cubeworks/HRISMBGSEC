@@ -97,26 +97,6 @@
 		</div>
 	</div>
 {END EmployeeID_fieldblock}
-					{BEGIN AdjustmentDescription_fieldblock}
-	<div class="{$fielddispclass_AdjustmentDescription} col-md-6 bs-viewcontrolgroup" data-fieldname="AdjustmentDescription">
-		<label class="control-label" for="{$labelfor_AdjustmentDescription}">
-			{$label earningadjustment AdjustmentDescription}
-		</label>
-		<div class="" >
-			{$AdjustmentDescription_value}&nbsp;
-		</div>
-	</div>
-{END AdjustmentDescription_fieldblock}
-					{BEGIN PaymentPeriod_fieldblock}
-	<div class="{$fielddispclass_PaymentPeriod} col-md-6 bs-viewcontrolgroup" data-fieldname="PaymentPeriod">
-		<label class="control-label" for="{$labelfor_PaymentPeriod}">
-			{$label earningadjustment PaymentPeriod}
-		</label>
-		<div class="" >
-			{$PaymentPeriod_value}&nbsp;
-		</div>
-	</div>
-{END PaymentPeriod_fieldblock}
 					{BEGIN StartDate_fieldblock}
 	<div class="{$fielddispclass_StartDate} col-md-6 bs-viewcontrolgroup" data-fieldname="StartDate">
 		<label class="control-label" for="{$labelfor_StartDate}">
@@ -137,16 +117,26 @@
 		</div>
 	</div>
 {END EndDate_fieldblock}
-					{BEGIN PerDay_fieldblock}
-	<div class="{$fielddispclass_PerDay} col-md-6 bs-viewcontrolgroup" data-fieldname="PerDay">
-		<label class="control-label" for="{$labelfor_PerDay}">
-			{$label earningadjustment PerDay}
+					{BEGIN AdjustmentDescription_fieldblock}
+	<div class="{$fielddispclass_AdjustmentDescription} col-md-6 bs-viewcontrolgroup" data-fieldname="AdjustmentDescription">
+		<label class="control-label" for="{$labelfor_AdjustmentDescription}">
+			{$label earningadjustment AdjustmentDescription}
 		</label>
 		<div class="" >
-			{$PerDay_value}&nbsp;
+			{$AdjustmentDescription_value}&nbsp;
 		</div>
 	</div>
-{END PerDay_fieldblock}
+{END AdjustmentDescription_fieldblock}
+					{BEGIN PaymentPeriod_fieldblock}
+	<div class="{$fielddispclass_PaymentPeriod} col-md-6 bs-viewcontrolgroup" data-fieldname="PaymentPeriod">
+		<label class="control-label" for="{$labelfor_PaymentPeriod}">
+			{$label earningadjustment PaymentPeriod}
+		</label>
+		<div class="" >
+			{$PaymentPeriod_value}&nbsp;
+		</div>
+	</div>
+{END PaymentPeriod_fieldblock}
 					{BEGIN PerPayrollAmount_fieldblock}
 	<div class="{$fielddispclass_PerPayrollAmount} col-md-6 bs-viewcontrolgroup" data-fieldname="PerPayrollAmount">
 		<label class="control-label" for="{$labelfor_PerPayrollAmount}">

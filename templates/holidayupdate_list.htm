@@ -57,7 +57,9 @@ navigation</SPAN>	<SPAN class="icon-bar"></SPAN></BUTTON>	{END collapse_block}</
 {BEGIN container_more}<DIV class="navbar-right navbar-form" data-container="more" data-pageid="{$pageid}" {$more_chiddenattr}>
 {BEGIN more_list}<DIV class="btn-group bs-navsection" data-brick="morebutton" data-pageid="{$pageid}" {$morebutton_hiddenattr}><BUTTON class="btn btn-default dropdown-toggle" aria-expanded="false" aria-haspopup="true" type="button" data-toggle="dropdown"><SPAN class="glyphicon glyphicon-cog"></SPAN> <SPAN class="caret"></SPAN> </BUTTON> 
 <UL class="dropdown-menu">
-  {BEGIN exportselected_link}<LI class="massButton{$id} disabled"><A href="#" {$exportselectedlink_attrs} {$exportselectedlink_span}>Export 
+  {BEGIN editselected_link}<LI class="massButton{$id} disabled"><A href="#" {$editselectedlink_attrs} {$editselectedlink_span}>Edit 
+  selected</A></LI>
+  {END editselected_link}{BEGIN exportselected_link}<LI class="massButton{$id} disabled"><A href="#" {$exportselectedlink_attrs} {$exportselectedlink_span}>Export 
   selected</A></LI>
   {END exportselected_link}{BEGIN deleteselected_link}<LI class="massButton{$id} disabled"><A href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>Delete 
   selected</A></LI>
@@ -68,7 +70,7 @@ navigation</SPAN>	<SPAN class="icon-bar"></SPAN></BUTTON>	{END collapse_block}</
   {BEGIN export_link}<LI><A href="holidayupdate_export.php" target="_blank" {$exportlink_attrs}>Export 
   results</A></LI>
   {END export_link}{BEGIN import_link}<LI><A href="holidayupdate_import.php?{$crosstable_attrs}" {$importlink_attrs}>Import</A></LI>{END import_link}</UL></DIV> 
-{END more_list}{BEGIN security_block}<SPAN class="bs-navsection" id="login_block{$id}" data-brick="loggedas" data-pageid="{$pageid}" {$loggedas_hiddenattr}>{BEGIN guestloginbutton}<BUTTON class="btn btn-info" type="button" {$guestloginlink_attrs}>Login</BUTTON> {END guestloginbutton}{BEGIN loggedas_message}<SPAN class="dropdown"><BUTTON class="btn btn-info dropdown-toggle" aria-expanded="false" aria-haspopup="true" type="button" data-toggle="dropdown"><SPAN class="glyphicon glyphicon-user"></SPAN>	
+{END more_list}{BEGIN security_block}<SPAN class="bs-navsection" id="login_block{$id}" data-brick="loggedas" data-pageid="{$pageid}" {$loggedas_hiddenattr}>{BEGIN guestloginbutton}<BUTTON class="btn btn-info" type="button" {$guestloginlink_attrs}>Login</BUTTON>  {END guestloginbutton}{BEGIN loggedas_message}<SPAN class="dropdown"><BUTTON class="btn btn-info dropdown-toggle" aria-expanded="false" aria-haspopup="true" type="button" data-toggle="dropdown"><SPAN class="glyphicon glyphicon-user"></SPAN>	
 {$username}</BUTTON> 
 <UL class="dropdown-menu">
   {BEGIN logoutbutton}<LI><A href="#" {$logoutlink_attrs}>Log out</A></LI>
@@ -82,8 +84,7 @@ Area</A></LI>{END adminarea_link}</UL></SPAN> {END loggedas_message}</SPAN> {END
 {$header} 
 <DIV class="bs-sidebar-screenbound">
 {BEGIN container_gridcontrols}<DIV class="bs-navcontrolled bs-hidden-xs" data-container="gridcontrols" data-pageid="{$pageid}" {$gridcontrols_chiddenattr}>
-{BEGIN container_add_delete}<DIV class="bottom-margin col-md-6" data-container="add_delete" data-pageid="{$pageid}" {$add_delete_chiddenattr}>{BEGIN newrecord_controls_block}{BEGIN add_link}<A class="btn btn-primary" type="button" data-brick="add" data-pageid="{$pageid}" {$add_hiddenattr} {$addlink_attrs}>Add new</A> 
-{END add_link}{END newrecord_controls_block}{BEGIN record_controls_block}<SPAN data-brick="recordcontrol" data-pageid="{$pageid}" {$recordcontrol_hiddenattr}>{BEGIN deleteselected_link}<BUTTON disabled class="btn btn-default" type="button" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>Delete</BUTTON> {END deleteselected_link}</SPAN> {END record_controls_block}</DIV>
+{BEGIN container_add_delete}<DIV class="bottom-margin col-md-6" data-container="add_delete" data-pageid="{$pageid}" {$add_delete_chiddenattr}>{BEGIN newrecord_controls_block}{BEGIN add_link}<A class="btn btn-primary" type="button" data-brick="add" data-pageid="{$pageid}" {$add_hiddenattr} {$addlink_attrs}>Add new</A> {END add_link}{BEGIN inlineadd_link}<BUTTON class="btn btn-primary" type="button" data-brick="add" data-pageid="{$pageid}" {$add_hiddenattr} {$inlineaddlink_attrs}>Inline Add</BUTTON> {END inlineadd_link}{END newrecord_controls_block}{BEGIN record_controls_block}<SPAN data-brick="recordcontrol" data-pageid="{$pageid}" {$recordcontrol_hiddenattr}>{BEGIN deleteselected_link}<BUTTON disabled class="btn btn-default" type="button" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>Delete</BUTTON> {END deleteselected_link}{BEGIN saveall_link}<BUTTON class="btn btn-primary" type="button" {$savealllink_attrs} {$savealllink_span}>Save all</BUTTON> {END saveall_link}{BEGIN cancelall_link}<BUTTON class="btn btn-default" type="button" {$cancelalllink_attrs} {$cancelalllink_span}>Cancel</BUTTON> {END cancelall_link}</SPAN> {END record_controls_block}</DIV>
 {END container_add_delete}{BEGIN container_gridinfo}<DIV class="bottom-margin text-right col-md-6" data-container="gridinfo" data-pageid="{$pageid}" {$gridinfo_chiddenattr}>{BEGIN details_found}<SPAN class="form-inline form-inline-always" data-brick="details_found" data-pageid="{$pageid}" {$details_found_hiddenattr}>
 {$records_indicator} <SPAN>{BEGIN recordspp_block}
 {$recsPerPage}{END recordspp_block} </SPAN> </SPAN> {END details_found}{BEGIN print_friendly}<SPAN class="bs-printpanel" id="printpanelblock{$id}" data-brick="printpanel" data-pageid="{$pageid}" {$printpanel_hiddenattr}><BUTTON title="Print-friendly page" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><SPAN class="glyphicon glyphicon-print"></SPAN> <SPAN class="caret"></SPAN> </BUTTON> 
@@ -153,67 +154,68 @@ Area</A></LI>{END adminarea_link}</UL></SPAN> {END loggedas_message}</SPAN> {END
 	}
 </STYLE>
  
-<TABLE class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" data-brick="grid" data-pageid="{$pageid}" {$grid_hiddenattr}>
+<TABLE class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" style="width: 1145px;" cellpadding="0" data-brick="grid" data-pageid="{$pageid}" {$grid_hiddenattr}>
   <THEAD>{BEGIN grid_header}
   <TR class="rnr-toprow {$gridHeader_class}">{BEGIN record_header}
-    {BEGIN listIcons_column}<TH rowspan="1" colspan="1" ieditcont="all">&nbsp;</TH>{END listIcons_column}	 
-    {BEGIN checkbox_column}<TH rowspan="1" colspan="1"><INPUT type="checkbox" {$checkboxheader_attrs}> </TH>
-    {END checkbox_column}{BEGIN HuID_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$HuID_class}" rowspan="1" colspan="1" data-field="HuID">{BEGIN HuID_fieldheader}<SPAN {$HuID_orderlinkattrs}>
+    {BEGIN listIcons_column}<TH style="width: 67px;" rowspan="1" colspan="1" ieditcont="all">&nbsp;</TH>
+    {END listIcons_column}{BEGIN checkbox_column}<TH style="width: 30px;" rowspan="1" colspan="1"><INPUT type="checkbox" {$checkboxheader_attrs}> </TH>
+    {END checkbox_column}{BEGIN HuID_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$HuID_class}" style="width: 79px;" rowspan="1" colspan="1" data-field="HuID">{BEGIN HuID_fieldheader}<SPAN {$HuID_orderlinkattrs}>
       {$label holidayupdate HuID} </SPAN> {END HuID_fieldheader}</TH>
-    {END HuID_fieldheadercolumn}{BEGIN HolidayType_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$HolidayType_class}" rowspan="1" colspan="1" data-field="HolidayType">{BEGIN HolidayType_fieldheader}<SPAN {$HolidayType_orderlinkattrs}>
+    {END HuID_fieldheadercolumn}{BEGIN HolidayType_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$HolidayType_class}" style="width: 125px;" rowspan="1" colspan="1" data-field="HolidayType">{BEGIN HolidayType_fieldheader}<SPAN {$HolidayType_orderlinkattrs}>
       {$label holidayupdate HolidayType} </SPAN> {END HolidayType_fieldheader}</TH>
-    {END HolidayType_fieldheadercolumn}{BEGIN 1stHalf_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$1stHalf_class}" rowspan="1" colspan="1" data-field="1stHalf">{BEGIN 1stHalf_fieldheader}<SPAN {$1stHalf_orderlinkattrs}>
+    {END HolidayType_fieldheadercolumn}{BEGIN 1stHalf_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$1stHalf_class}" style="width: 90px;" rowspan="1" colspan="1" data-field="1stHalf">{BEGIN 1stHalf_fieldheader}<SPAN {$1stHalf_orderlinkattrs}>
       {$label holidayupdate 1stHalf} </SPAN> {END 1stHalf_fieldheader}</TH>
-    {END 1stHalf_fieldheadercolumn}{BEGIN 2ndHalf_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$2ndHalf_class}" rowspan="1" colspan="1" data-field="2ndHalf">{BEGIN 2ndHalf_fieldheader}<SPAN {$2ndHalf_orderlinkattrs}>
+    {END 1stHalf_fieldheadercolumn}{BEGIN 2ndHalf_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$2ndHalf_class}" style="width: 95px;" rowspan="1" colspan="1" data-field="2ndHalf">{BEGIN 2ndHalf_fieldheader}<SPAN {$2ndHalf_orderlinkattrs}>
       {$label holidayupdate 2ndHalf} </SPAN> {END 2ndHalf_fieldheader}</TH>
-    {END 2ndHalf_fieldheadercolumn}{BEGIN HDate_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$HDate_class}" rowspan="1" colspan="1" data-field="HDate">{BEGIN HDate_fieldheader}<SPAN {$HDate_orderlinkattrs}>
+    {END 2ndHalf_fieldheadercolumn}{BEGIN HDate_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$HDate_class}" style="width: 87px;" rowspan="1" colspan="1" data-field="HDate">{BEGIN HDate_fieldheader}<SPAN {$HDate_orderlinkattrs}>
       {$label holidayupdate HDate} 
       </SPAN> {END HDate_fieldheader}</TH>
-    {END HDate_fieldheadercolumn}{BEGIN Employer_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Employer_class}" rowspan="1" colspan="1" data-field="Employer">{BEGIN Employer_fieldheader}<SPAN {$Employer_orderlinkattrs}>
+    {END HDate_fieldheadercolumn}{BEGIN Employer_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Employer_class}" style="width: 106px;" rowspan="1" colspan="1" data-field="Employer">{BEGIN Employer_fieldheader}<SPAN {$Employer_orderlinkattrs}>
       {$label holidayupdate Employer} 
       </SPAN> {END Employer_fieldheader}</TH>
-    {END Employer_fieldheadercolumn}{BEGIN Division_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Division_class}" rowspan="1" colspan="1" data-field="Division">{BEGIN Division_fieldheader}<SPAN {$Division_orderlinkattrs}>
+    {END Employer_fieldheadercolumn}{BEGIN Division_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Division_class}" style="width: 96px;" rowspan="1" colspan="1" data-field="Division">{BEGIN Division_fieldheader}<SPAN {$Division_orderlinkattrs}>
       {$label holidayupdate Division} 
       </SPAN> {END Division_fieldheader}</TH>
-    {END Division_fieldheadercolumn}{BEGIN Department_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Department_class}" rowspan="1" colspan="1" data-field="Department">{BEGIN Department_fieldheader}<SPAN {$Department_orderlinkattrs}>
+    {END Division_fieldheadercolumn}{BEGIN Department_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Department_class}" style="width: 120px;" rowspan="1" colspan="1" data-field="Department">{BEGIN Department_fieldheader}<SPAN {$Department_orderlinkattrs}>
       {$label holidayupdate Department} </SPAN> {END Department_fieldheader}</TH>
-    {END Department_fieldheadercolumn}{BEGIN Employee_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Employee_class}" rowspan="1" colspan="1" data-field="Employee">{BEGIN Employee_fieldheader}<SPAN {$Employee_orderlinkattrs}>
+    {END Department_fieldheadercolumn}{BEGIN Employee_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Employee_class}" style="width: 109px;" rowspan="1" colspan="1" data-field="Employee">{BEGIN Employee_fieldheader}<SPAN {$Employee_orderlinkattrs}>
       {$label holidayupdate Employee} 
       </SPAN> {END Employee_fieldheader}</TH>
-    {END Employee_fieldheadercolumn}{BEGIN Remarks_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Remarks_class}" rowspan="1" colspan="1" data-field="Remarks">{BEGIN Remarks_fieldheader}<SPAN {$Remarks_orderlinkattrs}>
+    {END Employee_fieldheadercolumn}{BEGIN Remarks_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Remarks_class}" style="width: 103px;" rowspan="1" colspan="1" data-field="Remarks">{BEGIN Remarks_fieldheader}<SPAN {$Remarks_orderlinkattrs}>
       {$label holidayupdate Remarks} 
       </SPAN> {END Remarks_fieldheader}</TH>
-    {END Remarks_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Remarks_class} runner-cc"></TH>
-    {BEGIN endrecordheader_block}<TH class="rnr-cs" rowspan="1" colspan="1">&nbsp;</TH>{END endrecordheader_block}{END record_header}</TR>{END grid_header}</THEAD>
+    {END Remarks_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Remarks_class} runner-cc" style="width: 17px;"></TH>
+    {BEGIN endrecordheader_block}<TH class="rnr-cs" style="width: 21px;" rowspan="1" colspan="1">&nbsp;</TH>{END endrecordheader_block}{END record_header}</TR>{END grid_header}</THEAD>
   <TBODY>
   {BEGIN grid_row}<TR class="{$rowclass} bs-gridrow" {$rowattrs} {$rowstyle}>{BEGIN grid_record}
-    {BEGIN listIcons_column}<TD class="bs-gridicons" rowspan="1" colspan="1" ieditcont="all" {$rowstyle} {$recordattrs}>{BEGIN edit_column}{BEGIN edit_link}<A title="Edit" class="glyphicon glyphicon-pencil" {$editlink_attrs}></A> 
-      {END edit_link}{END edit_column}<SPAN data-hidden {$ieditbuttonsholder_attrs}></SPAN> {BEGIN view_column}{BEGIN view_link}<A title="View" class="glyphicon glyphicon-search" {$viewlink_attrs}></A> 
+    {BEGIN listIcons_column}<TD class="bs-gridicons" style="width: 67px;" rowspan="1" colspan="1" ieditcont="all" {$rowstyle} {$recordattrs}>{BEGIN edit_column}{BEGIN edit_link}<A title="Edit" class="glyphicon glyphicon-pencil" {$editlink_attrs}></A> 
+      {END edit_link}{END edit_column}{BEGIN inlineedit_column}{BEGIN inlineedit_link}<A title="Inline Edit" class="glyphicon glyphicon-edit" {$inlineeditlink_attrs}></A> {END inlineedit_link}{END inlineedit_column}<SPAN data-hidden {$ieditbuttonsholder_attrs}></SPAN> {BEGIN view_column}{BEGIN view_link}<A title="View" class="glyphicon glyphicon-search" {$viewlink_attrs}></A> 
     {END view_link}{END view_column}</TD>
-    {END listIcons_column}{BEGIN checkbox_column}<TD class="bs-gridcheckbox" rowspan="1" colspan="1" ieditcont="checkBox" {$rowstyle} {$recordattrs}>{BEGIN checkbox}<INPUT type="checkbox" {$checkbox_attrs}>{END checkbox} </TD>
-    {END checkbox_column}{BEGIN HuID_fieldcolumn}<TD class="bs-gridcell {$HuID_class}" rowspan="1" colspan="1" data-field="HuID" {$rowstyle} {$recordattrs}>
+    {END listIcons_column}{BEGIN checkbox_column}<TD class="bs-gridcheckbox" style="width: 30px;" rowspan="1" colspan="1" ieditcont="checkBox" {$rowstyle} {$recordattrs}>{BEGIN checkbox}<INPUT type="checkbox" {$checkbox_attrs}>{END checkbox} 
+    </TD>
+    {END checkbox_column}{BEGIN HuID_fieldcolumn}<TD class="bs-gridcell {$HuID_class}" style="width: 79px;" rowspan="1" colspan="1" data-field="HuID" {$rowstyle} {$recordattrs}>
       {$HuID_value} </TD>
-    {END HuID_fieldcolumn}{BEGIN HolidayType_fieldcolumn}<TD class="bs-gridcell {$HolidayType_class}" rowspan="1" colspan="1" data-field="HolidayType" {$rowstyle} {$recordattrs}>
+    {END HuID_fieldcolumn}{BEGIN HolidayType_fieldcolumn}<TD class="bs-gridcell {$HolidayType_class}" style="width: 125px;" rowspan="1" colspan="1" data-field="HolidayType" {$rowstyle} {$recordattrs}>
       {$HolidayType_value} </TD>
-    {END HolidayType_fieldcolumn}{BEGIN 1stHalf_fieldcolumn}<TD class="bs-gridcell {$1stHalf_class}" rowspan="1" colspan="1" data-field="1stHalf" {$rowstyle} {$recordattrs}>
+    {END HolidayType_fieldcolumn}{BEGIN 1stHalf_fieldcolumn}<TD class="bs-gridcell {$1stHalf_class}" style="width: 90px;" rowspan="1" colspan="1" data-field="1stHalf" {$rowstyle} {$recordattrs}>
       {$1stHalf_value} </TD>
-    {END 1stHalf_fieldcolumn}{BEGIN 2ndHalf_fieldcolumn}<TD class="bs-gridcell {$2ndHalf_class}" rowspan="1" colspan="1" data-field="2ndHalf" {$rowstyle} {$recordattrs}>
+    {END 1stHalf_fieldcolumn}{BEGIN 2ndHalf_fieldcolumn}<TD class="bs-gridcell {$2ndHalf_class}" style="width: 95px;" rowspan="1" colspan="1" data-field="2ndHalf" {$rowstyle} {$recordattrs}>
       {$2ndHalf_value} </TD>
-    {END 2ndHalf_fieldcolumn}{BEGIN HDate_fieldcolumn}<TD class="bs-gridcell {$HDate_class}" rowspan="1" colspan="1" data-field="HDate" {$rowstyle} {$recordattrs}>
+    {END 2ndHalf_fieldcolumn}{BEGIN HDate_fieldcolumn}<TD class="bs-gridcell {$HDate_class}" style="width: 87px;" rowspan="1" colspan="1" data-field="HDate" {$rowstyle} {$recordattrs}>
       {$HDate_value} </TD>
-    {END HDate_fieldcolumn}{BEGIN Employer_fieldcolumn}<TD class="bs-gridcell {$Employer_class}" rowspan="1" colspan="1" data-field="Employer" {$rowstyle} {$recordattrs}>
+    {END HDate_fieldcolumn}{BEGIN Employer_fieldcolumn}<TD class="bs-gridcell {$Employer_class}" style="width: 106px;" rowspan="1" colspan="1" data-field="Employer" {$rowstyle} {$recordattrs}>
       {$Employer_value} </TD>
-    {END Employer_fieldcolumn}{BEGIN Division_fieldcolumn}<TD class="bs-gridcell {$Division_class}" rowspan="1" colspan="1" data-field="Division" {$rowstyle} {$recordattrs}>
+    {END Employer_fieldcolumn}{BEGIN Division_fieldcolumn}<TD class="bs-gridcell {$Division_class}" style="width: 96px;" rowspan="1" colspan="1" data-field="Division" {$rowstyle} {$recordattrs}>
       {$Division_value} </TD>
-    {END Division_fieldcolumn}{BEGIN Department_fieldcolumn}<TD class="bs-gridcell {$Department_class}" rowspan="1" colspan="1" data-field="Department" {$rowstyle} {$recordattrs}>
+    {END Division_fieldcolumn}{BEGIN Department_fieldcolumn}<TD class="bs-gridcell {$Department_class}" style="width: 120px;" rowspan="1" colspan="1" data-field="Department" {$rowstyle} {$recordattrs}>
       {$Department_value} </TD>
-    {END Department_fieldcolumn}{BEGIN Employee_fieldcolumn}<TD class="bs-gridcell {$Employee_class}" rowspan="1" colspan="1" data-field="Employee" {$rowstyle} {$recordattrs}>
+    {END Department_fieldcolumn}{BEGIN Employee_fieldcolumn}<TD class="bs-gridcell {$Employee_class}" style="width: 109px;" rowspan="1" colspan="1" data-field="Employee" {$rowstyle} {$recordattrs}>
       {$Employee_value} </TD>
-    {END Employee_fieldcolumn}{BEGIN Remarks_fieldcolumn}<TD class="bs-gridcell {$Remarks_class}" rowspan="1" colspan="1" data-field="Remarks" {$rowstyle} {$recordattrs}>
+    {END Employee_fieldcolumn}{BEGIN Remarks_fieldcolumn}<TD class="bs-gridcell {$Remarks_class}" style="width: 103px;" rowspan="1" colspan="1" data-field="Remarks" {$rowstyle} {$recordattrs}>
       {$Remarks_value} </TD>
-    {END Remarks_fieldcolumn}<TD class="bs-gridcell {$Remarks_class} runner-cc" rowspan="1" colspan="1"><A class="rnr-button btn btn-default" id="Update_Holiday1" href="#" typeid="ib">Update 
+    {END Remarks_fieldcolumn}<TD class="bs-gridcell {$Remarks_class} runner-cc" style="width: 17px;" rowspan="1" colspan="1"><A class="rnr-button btn btn-default" id="Update_Holiday" href="#" typeid="ib">Update 
       Holiday</A></TD>
-    {BEGIN endrecord_block}<TD class="rnr-cs" rowspan="1" colspan="1" {$endrecordblock_attrs}>&nbsp;</TD>{END endrecord_block}{END grid_record}</TR>{END grid_row}</TBODY>
+    {BEGIN endrecord_block}<TD class="rnr-cs" style="width: 21px;" rowspan="1" colspan="1" {$endrecordblock_attrs}>&nbsp;</TD>{END endrecord_block}{END grid_record}</TR>{END grid_row}</TBODY>
   <TFOOT></TFOOT></TABLE>{END grid_block}</DIV>{END container_grid}</DIV>
 {END container_center}{BEGIN container_pagination}<DIV class="text-center col-md-12" data-container="pagination" data-pageid="{$pageid}" {$pagination_chiddenattr}>
 {BEGIN pagination_block}<DIV data-brick="pagination" data-pageid="{$pageid}" {$pagination_hiddenattr}>

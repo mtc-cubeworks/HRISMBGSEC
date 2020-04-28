@@ -223,7 +223,7 @@ $tdatafilelog[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																							
+																																																																																																																																																																																																																																																																																																																														
 
 $tdatafilelog[".ajaxCodeSnippetAdded"] = false;
 
@@ -1315,7 +1315,7 @@ $tdatafilelog[".printFields"][] = "HRApprovedDate";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Short Date");
+	$vdata = array("ViewFormat" => "Datetime");
 
 	
 	

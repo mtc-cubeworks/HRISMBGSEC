@@ -1,6 +1,0 @@
-Import into logins
-9/17/2019 4:26:11 PM
-
-78 out of 78 records processed successfully.
-78 records added.
-0 records updated.

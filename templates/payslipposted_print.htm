@@ -1,0 +1,317 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_pdf}
+<div {$pdf_chiddenattr} data-pageid="{$pageid}" data-container="pdf" class="   col-md-12 "> 
+
+{BEGIN printbuttons}
+
+{END printbuttons}
+
+
+
+</div>
+{END container_pdf}
+
+
+
+
+
+{BEGIN container_pageheader}
+<div {$pageheader_chiddenattr} data-pageid="{$pageid}" data-container="pageheader" class="    "> 
+
+{BEGIN printheader}
+	<h2 {$printheader_hiddenattr} data-pageid="{$pageid}" data-brick="printheader" >{$pagetitlelabel payslipposted print}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END printheader}
+
+
+{BEGIN page_number}
+<span>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></span>
+{END page_number}
+
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="table table-bordered rp-maintable" {$printgrid_hiddenattr} data-pageid="{$pageid}" data-brick="printgrid" >
+	<thead>
+	{BEGIN grid_header}
+		<tr class="{$gridHeader_class}" >
+		{BEGIN record_header}
+			{BEGIN PPID_fieldheadercolumn}
+			<th class="{$PPID_class}" {$PPID_style}  data-field="PPID">
+				{$label payslipposted PPID}
+			</th>
+			{END PPID_fieldheadercolumn}
+			{BEGIN BioID_fieldheadercolumn}
+			<th class="{$BioID_class}" {$BioID_style}  data-field="BioID">
+				{$label payslipposted BioID}
+			</th>
+			{END BioID_fieldheadercolumn}
+			{BEGIN FullName_fieldheadercolumn}
+			<th class="{$FullName_class}" {$FullName_style}  data-field="FullName">
+				{$label payslipposted FullName}
+			</th>
+			{END FullName_fieldheadercolumn}
+			{BEGIN WageType_fieldheadercolumn}
+			<th class="{$WageType_class}" {$WageType_style}  data-field="WageType">
+				{$label payslipposted WageType}
+			</th>
+			{END WageType_fieldheadercolumn}
+			{BEGIN Status_fieldheadercolumn}
+			<th class="{$Status_class}" {$Status_style}  data-field="Status">
+				{$label payslipposted Status}
+			</th>
+			{END Status_fieldheadercolumn}
+			{BEGIN Division_fieldheadercolumn}
+			<th class="{$Division_class}" {$Division_style}  data-field="Division">
+				{$label payslipposted Division}
+			</th>
+			{END Division_fieldheadercolumn}
+			{BEGIN FromDate_fieldheadercolumn}
+			<th class="{$FromDate_class}" {$FromDate_style}  data-field="FromDate">
+				{$label payslipposted FromDate}
+			</th>
+			{END FromDate_fieldheadercolumn}
+			{BEGIN ToDate_fieldheadercolumn}
+			<th class="{$ToDate_class}" {$ToDate_style}  data-field="ToDate">
+				{$label payslipposted ToDate}
+			</th>
+			{END ToDate_fieldheadercolumn}
+			{BEGIN DatePrinted_fieldheadercolumn}
+			<th class="{$DatePrinted_class}" {$DatePrinted_style}  data-field="DatePrinted">
+				{$label payslipposted DatePrinted}
+			</th>
+			{END DatePrinted_fieldheadercolumn}
+			{BEGIN VL_fieldheadercolumn}
+			<th class="{$VL_class}" {$VL_style}  data-field="VL">
+				{$label payslipposted VL}
+			</th>
+			{END VL_fieldheadercolumn}
+			{BEGIN SL_fieldheadercolumn}
+			<th class="{$SL_class}" {$SL_style}  data-field="SL">
+				{$label payslipposted SL}
+			</th>
+			{END SL_fieldheadercolumn}
+			{BEGIN EL_fieldheadercolumn}
+			<th class="{$EL_class}" {$EL_style}  data-field="EL">
+				{$label payslipposted EL}
+			</th>
+			{END EL_fieldheadercolumn}
+			{BEGIN PL_fieldheadercolumn}
+			<th class="{$PL_class}" {$PL_style}  data-field="PL">
+				{$label payslipposted PL}
+			</th>
+			{END PL_fieldheadercolumn}
+			{BEGIN BasicMonthly_fieldheadercolumn}
+			<th class="{$BasicMonthly_class}" {$BasicMonthly_style}  data-field="BasicMonthly">
+				{$label payslipposted BasicMonthly}
+			</th>
+			{END BasicMonthly_fieldheadercolumn}
+			{BEGIN BasicDaily_fieldheadercolumn}
+			<th class="{$BasicDaily_class}" {$BasicDaily_style}  data-field="BasicDaily">
+				{$label payslipposted BasicDaily}
+			</th>
+			{END BasicDaily_fieldheadercolumn}
+			{BEGIN GrossPay_fieldheadercolumn}
+			<th class="{$GrossPay_class}" {$GrossPay_style}  data-field="GrossPay">
+				{$label payslipposted GrossPay}
+			</th>
+			{END GrossPay_fieldheadercolumn}
+			{BEGIN Deductions_fieldheadercolumn}
+			<th class="{$Deductions_class}" {$Deductions_style}  data-field="Deductions">
+				{$label payslipposted Deductions}
+			</th>
+			{END Deductions_fieldheadercolumn}
+			{BEGIN NetPay_fieldheadercolumn}
+			<th class="{$NetPay_class}" {$NetPay_style}  data-field="NetPay">
+				{$label payslipposted NetPay}
+			</th>
+			{END NetPay_fieldheadercolumn}
+			{BEGIN endrecordheader_block}
+			<th class="rnr-cs">&nbsp;</th>
+			{END endrecordheader_block}
+		{END record_header}
+		</tr>
+	{END grid_header}
+	</thead>
+	
+	<tbody>	
+	{BEGIN grid_row}
+		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+			{BEGIN PPID_fieldcolumn}
+			<td  class="{$PPID_class}" {$PPID_style} {$recordattrs}>
+				{$PPID_value}
+			</td>
+			{END PPID_fieldcolumn}
+			{BEGIN BioID_fieldcolumn}
+			<td  class="{$BioID_class}" {$BioID_style} {$recordattrs}>
+				{$BioID_value}
+			</td>
+			{END BioID_fieldcolumn}
+			{BEGIN FullName_fieldcolumn}
+			<td  class="{$FullName_class}" {$FullName_style} {$recordattrs}>
+				{$FullName_value}
+			</td>
+			{END FullName_fieldcolumn}
+			{BEGIN WageType_fieldcolumn}
+			<td  class="{$WageType_class}" {$WageType_style} {$recordattrs}>
+				{$WageType_value}
+			</td>
+			{END WageType_fieldcolumn}
+			{BEGIN Status_fieldcolumn}
+			<td  class="{$Status_class}" {$Status_style} {$recordattrs}>
+				{$Status_value}
+			</td>
+			{END Status_fieldcolumn}
+			{BEGIN Division_fieldcolumn}
+			<td  class="{$Division_class}" {$Division_style} {$recordattrs}>
+				{$Division_value}
+			</td>
+			{END Division_fieldcolumn}
+			{BEGIN FromDate_fieldcolumn}
+			<td  class="{$FromDate_class}" {$FromDate_style} {$recordattrs}>
+				{$FromDate_value}
+			</td>
+			{END FromDate_fieldcolumn}
+			{BEGIN ToDate_fieldcolumn}
+			<td  class="{$ToDate_class}" {$ToDate_style} {$recordattrs}>
+				{$ToDate_value}
+			</td>
+			{END ToDate_fieldcolumn}
+			{BEGIN DatePrinted_fieldcolumn}
+			<td  class="{$DatePrinted_class}" {$DatePrinted_style} {$recordattrs}>
+				{$DatePrinted_value}
+			</td>
+			{END DatePrinted_fieldcolumn}
+			{BEGIN VL_fieldcolumn}
+			<td  class="{$VL_class}" {$VL_style} {$recordattrs}>
+				{$VL_value}
+			</td>
+			{END VL_fieldcolumn}
+			{BEGIN SL_fieldcolumn}
+			<td  class="{$SL_class}" {$SL_style} {$recordattrs}>
+				{$SL_value}
+			</td>
+			{END SL_fieldcolumn}
+			{BEGIN EL_fieldcolumn}
+			<td  class="{$EL_class}" {$EL_style} {$recordattrs}>
+				{$EL_value}
+			</td>
+			{END EL_fieldcolumn}
+			{BEGIN PL_fieldcolumn}
+			<td  class="{$PL_class}" {$PL_style} {$recordattrs}>
+				{$PL_value}
+			</td>
+			{END PL_fieldcolumn}
+			{BEGIN BasicMonthly_fieldcolumn}
+			<td  class="{$BasicMonthly_class}" {$BasicMonthly_style} {$recordattrs}>
+				{$BasicMonthly_value}
+			</td>
+			{END BasicMonthly_fieldcolumn}
+			{BEGIN BasicDaily_fieldcolumn}
+			<td  class="{$BasicDaily_class}" {$BasicDaily_style} {$recordattrs}>
+				{$BasicDaily_value}
+			</td>
+			{END BasicDaily_fieldcolumn}
+			{BEGIN GrossPay_fieldcolumn}
+			<td  class="{$GrossPay_class}" {$GrossPay_style} {$recordattrs}>
+				{$GrossPay_value}
+			</td>
+			{END GrossPay_fieldcolumn}
+			{BEGIN Deductions_fieldcolumn}
+			<td  class="{$Deductions_class}" {$Deductions_style} {$recordattrs}>
+				{$Deductions_value}
+			</td>
+			{END Deductions_fieldcolumn}
+			{BEGIN NetPay_fieldcolumn}
+			<td  class="{$NetPay_class}" {$NetPay_style} {$recordattrs}>
+				{$NetPay_value}
+			</td>
+			{END NetPay_fieldcolumn}
+			{BEGIN endrecord_block}
+			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+			{END endrecord_block}
+		{END grid_record}
+		</tr>
+	{BEGIN details_row}
+		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
+			{BEGIN details_record}
+				<td colspan="19">
+					{BEGIN details_table}
+						{$details}
+					{END details_table}
+				</td>
+				{BEGIN endrecord_block}
+				<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+				{END endrecord_block}
+			{END details_record}
+		</tr>
+	{END details_row}
+{END grid_row}
+	</tbody>
+
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

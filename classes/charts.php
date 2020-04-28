@@ -742,13 +742,69 @@ class Chart
 			return true;
 		if("indschedule" == $this->chrt_array['tables'][0])
 			return true;
-		if("notes" == $this->chrt_array['tables'][0])
+		if("payslipposted" == $this->chrt_array['tables'][0])
 			return true;
-		if("notetypes" == $this->chrt_array['tables'][0])
+		if("earningsposted" == $this->chrt_array['tables'][0])
+			return true;
+		if("notes" == $this->chrt_array['tables'][0])
 			return true;
 		if("notestatus" == $this->chrt_array['tables'][0])
 			return true;
 		if("notestatuses" == $this->chrt_array['tables'][0])
+			return true;
+		if("notetypes" == $this->chrt_array['tables'][0])
+			return true;
+		if("filelogglobal" == $this->chrt_array['tables'][0])
+			return true;
+		if("mispunched" == $this->chrt_array['tables'][0])
+			return true;
+		if("" == $this->chrt_array['tables'][0])
+			return true;
+		if("dashrange" == $this->chrt_array['tables'][0])
+			return true;
+		if("zleavetypes" == $this->chrt_array['tables'][0])
+			return true;
+		if("zotdept" == $this->chrt_array['tables'][0])
+			return true;
+		if("zotdiv" == $this->chrt_array['tables'][0])
+			return true;
+		if("zots" == $this->chrt_array['tables'][0])
+			return true;
+		if("zots" == $this->chrt_array['tables'][0])
+			return true;
+		if("zresigns" == $this->chrt_array['tables'][0])
+			return true;
+		if("attrition" == $this->chrt_array['tables'][0])
+			return true;
+		if("leavestoday" == $this->chrt_array['tables'][0])
+			return true;
+		if("latesonrange" == $this->chrt_array['tables'][0])
+			return true;
+		if("leavesonrange" == $this->chrt_array['tables'][0])
+			return true;
+		if("absentonrange" == $this->chrt_array['tables'][0])
+			return true;
+		if("selectemployee" == $this->chrt_array['tables'][0])
+			return true;
+		if("demo_user" == $this->chrt_array['tables'][0])
+			return true;
+		if("demo_user" == $this->chrt_array['tables'][0])
+			return true;
+		if("notes" == $this->chrt_array['tables'][0])
+			return true;
+		if("filelogglobal" == $this->chrt_array['tables'][0])
+			return true;
+		if("memo" == $this->chrt_array['tables'][0])
+			return true;
+		if("dtrcard" == $this->chrt_array['tables'][0])
+			return true;
+		if("dtrcardhead" == $this->chrt_array['tables'][0])
+			return true;
+		if("dtrcardhead" == $this->chrt_array['tables'][0])
+			return true;
+		if("dtrcard" == $this->chrt_array['tables'][0])
+			return true;
+		if("payslipmain" == $this->chrt_array['tables'][0])
 			return true;
 		return false;
 	}

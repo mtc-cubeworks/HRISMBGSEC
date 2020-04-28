@@ -284,7 +284,7 @@ $tdatademo_user1[".listAjax"] = false;
 	$tdatademo_user1[".locking"] = false;
 
 $tdatademo_user1[".edit"] = true;
-$tdatademo_user1[".afterEditAction"] = 0;
+$tdatademo_user1[".afterEditAction"] = 1;
 $tdatademo_user1[".closePopupAfterEdit"] = 1;
 $tdatademo_user1[".afterEditActionDetTable"] = "";
 
@@ -338,8 +338,7 @@ $tdatademo_user1[".rowHighlite"] = true;
 																																																																																																																																																																
 							
 							
-																																																																						
-		
+																																																																																																											
 
 $tdatademo_user1[".ajaxCodeSnippetAdded"] = false;
 
@@ -7514,7 +7513,8 @@ $tdatademo_user1[".printFields"][] = "DateCreated";
 	
 
 
-	
+		$edata["IsRequired"] = true;
+
 	
 	
 			$edata["acceptFileTypes"] = ".+$";
@@ -7536,14 +7536,18 @@ $tdatademo_user1[".printFields"][] = "DateCreated";
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-	
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+			$edata["validateAs"]["basicValidate"][] = "DenyDuplicated";
+	$edata["validateAs"]["customMessages"]["DenyDuplicated"] = array("message" => "Value %value% already exists", "messageType" => "Text");
+
 	
 	//	End validation
 
 	
 			
 	
-	
+		$edata["denyDuplicates"] = true;
+
 	
 	$fdata["EditFormats"]["edit"] = $edata;
 //	End Edit Formats

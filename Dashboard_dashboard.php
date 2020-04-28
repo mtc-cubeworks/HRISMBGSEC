@@ -95,6 +95,16 @@ $layout->containers["more"][] = array("name"=>"loggedas",
 $layout->skins["more"] = "";
 
 
+$layout->containers["menu_1"][] = array("name"=>"wrapper",
+	"block"=>"", "substyle"=>1 , "container"=>"more_1" );
+$layout->containers["more_1"] = array();
+$layout->container_properties["more_1"] = array(  );
+$layout->containers["more_1"][] = array("name"=>"search_dashboard",
+	"block"=>"", "substyle"=>1  );
+
+$layout->skins["more_1"] = "";
+
+
 $layout->skins["menu_1"] = "";
 
 

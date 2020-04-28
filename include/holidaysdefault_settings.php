@@ -116,12 +116,12 @@ $tdataholidaysdefault[".listAjax"] = false;
 	$tdataholidaysdefault[".locking"] = false;
 
 $tdataholidaysdefault[".edit"] = true;
-$tdataholidaysdefault[".afterEditAction"] = 0;
+$tdataholidaysdefault[".afterEditAction"] = 1;
 $tdataholidaysdefault[".closePopupAfterEdit"] = 1;
 $tdataholidaysdefault[".afterEditActionDetTable"] = "";
 
 $tdataholidaysdefault[".add"] = true;
-$tdataholidaysdefault[".afterAddAction"] = 0;
+$tdataholidaysdefault[".afterAddAction"] = 1;
 $tdataholidaysdefault[".closePopupAfterAdd"] = 1;
 $tdataholidaysdefault[".afterAddActionDetTable"] = "";
 
@@ -168,7 +168,7 @@ $tdataholidaysdefault[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																							
+																																																																																																																																																																																																																																																																																																																														
 
 $tdataholidaysdefault[".ajaxCodeSnippetAdded"] = false;
 

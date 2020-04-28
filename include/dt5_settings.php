@@ -113,7 +113,7 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsdt5["English"]["PL"] = "PL";
 	$fieldToolTipsdt5["English"]["PL"] = "";
 	$placeHoldersdt5["English"]["PL"] = "";
-	$fieldLabelsdt5["English"]["TrO"] = "Tr O";
+	$fieldLabelsdt5["English"]["TrO"] = "OB";
 	$fieldToolTipsdt5["English"]["TrO"] = "";
 	$placeHoldersdt5["English"]["TrO"] = "";
 	$fieldLabelsdt5["English"]["SHND"] = "SH-ND(m)";
@@ -395,7 +395,7 @@ $tdatadt5[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																							
+																																																																																																																																																																																																																																																																																																																														
 
 $tdatadt5[".ajaxCodeSnippetAdded"] = false;
 
@@ -417,29 +417,33 @@ $tdatadt5[".requiredSearchFields"] = array();
 
 $tdatadt5[".allSearchFields"][] = "EmployeeID";
 	$tdatadt5[".allSearchFields"][] = "UserName";
+	$tdatadt5[".allSearchFields"][] = "Employer";
 	$tdatadt5[".allSearchFields"][] = "Division";
+	$tdatadt5[".allSearchFields"][] = "Department";
 	$tdatadt5[".allSearchFields"][] = "WageType";
 	$tdatadt5[".allSearchFields"][] = "SDate";
+	$tdatadt5[".allSearchFields"][] = "RestDay";
 	$tdatadt5[".allSearchFields"][] = "MisPunched";
+	$tdatadt5[".allSearchFields"][] = "Absent";
+	$tdatadt5[".allSearchFields"][] = "LateMins";
+	$tdatadt5[".allSearchFields"][] = "UnderstimeMins";
+	$tdatadt5[".allSearchFields"][] = "HolidayType";
 	$tdatadt5[".allSearchFields"][] = "RH";
 	$tdatadt5[".allSearchFields"][] = "SH";
-	$tdatadt5[".allSearchFields"][] = "RegRD";
 	$tdatadt5[".allSearchFields"][] = "PostMins";
-	$tdatadt5[".allSearchFields"][] = "NDOTMins";
+	$tdatadt5[".allSearchFields"][] = "TempOT";
+	$tdatadt5[".allSearchFields"][] = "ApprovedOT";
+	$tdatadt5[".allSearchFields"][] = "AOTMins";
+	$tdatadt5[".allSearchFields"][] = "NDMins";
+	$tdatadt5[".allSearchFields"][] = "ApprovedNightDiff";
+	$tdatadt5[".allSearchFields"][] = "ANDiff";
+	$tdatadt5[".allSearchFields"][] = "ApprovedRD";
+	$tdatadt5[".allSearchFields"][] = "RDMins";
 	$tdatadt5[".allSearchFields"][] = "RegOT";
 	$tdatadt5[".allSearchFields"][] = "RHOT";
 	$tdatadt5[".allSearchFields"][] = "SHOT";
 	$tdatadt5[".allSearchFields"][] = "SHOTD";
-	$tdatadt5[".allSearchFields"][] = "RDOT";
-	$tdatadt5[".allSearchFields"][] = "NDOT";
 	$tdatadt5[".allSearchFields"][] = "RegND";
-	$tdatadt5[".allSearchFields"][] = "RHND";
-	$tdatadt5[".allSearchFields"][] = "RDND";
-	$tdatadt5[".allSearchFields"][] = "RHRD";
-	$tdatadt5[".allSearchFields"][] = "SHRD";
-	$tdatadt5[".allSearchFields"][] = "RHRDOT";
-	$tdatadt5[".allSearchFields"][] = "SHRDOT";
-	$tdatadt5[".allSearchFields"][] = "SHRDOTD";
 	
 
 $tdatadt5[".googleLikeFields"] = array();
@@ -450,23 +454,12 @@ $tdatadt5[".googleLikeFields"][] = "SDate";
 $tdatadt5[".googleLikeFields"][] = "MisPunched";
 $tdatadt5[".googleLikeFields"][] = "Division";
 $tdatadt5[".googleLikeFields"][] = "SHOTD";
-$tdatadt5[".googleLikeFields"][] = "NDOT";
-$tdatadt5[".googleLikeFields"][] = "RHRDOT";
-$tdatadt5[".googleLikeFields"][] = "SHRDOT";
-$tdatadt5[".googleLikeFields"][] = "SHRDOTD";
 $tdatadt5[".googleLikeFields"][] = "RH";
 $tdatadt5[".googleLikeFields"][] = "SH";
-$tdatadt5[".googleLikeFields"][] = "RHRD";
-$tdatadt5[".googleLikeFields"][] = "SHRD";
 $tdatadt5[".googleLikeFields"][] = "RegOT";
 $tdatadt5[".googleLikeFields"][] = "RHOT";
 $tdatadt5[".googleLikeFields"][] = "SHOT";
-$tdatadt5[".googleLikeFields"][] = "RHND";
-$tdatadt5[".googleLikeFields"][] = "RDOT";
 $tdatadt5[".googleLikeFields"][] = "RegND";
-$tdatadt5[".googleLikeFields"][] = "RegRD";
-$tdatadt5[".googleLikeFields"][] = "RDND";
-$tdatadt5[".googleLikeFields"][] = "NDOTMins";
 $tdatadt5[".googleLikeFields"][] = "PostMins";
 
 $tdatadt5[".panelSearchFields"] = array();
@@ -475,34 +468,44 @@ $tdatadt5[".panelSearchFields"][] = "UserName";
 	$tdatadt5[".panelSearchFields"][] = "Division";
 	$tdatadt5[".panelSearchFields"][] = "WageType";
 	$tdatadt5[".panelSearchFields"][] = "SDate";
+	$tdatadt5[".panelSearchFields"][] = "RestDay";
 	$tdatadt5[".panelSearchFields"][] = "MisPunched";
+	$tdatadt5[".panelSearchFields"][] = "Absent";
+	$tdatadt5[".panelSearchFields"][] = "LateMins";
+	$tdatadt5[".panelSearchFields"][] = "UnderstimeMins";
+	$tdatadt5[".panelSearchFields"][] = "ApprovedOT";
+	$tdatadt5[".panelSearchFields"][] = "AOTMins";
 	
 $tdatadt5[".advSearchFields"] = array();
 $tdatadt5[".advSearchFields"][] = "EmployeeID";
 $tdatadt5[".advSearchFields"][] = "UserName";
+$tdatadt5[".advSearchFields"][] = "Employer";
 $tdatadt5[".advSearchFields"][] = "Division";
+$tdatadt5[".advSearchFields"][] = "Department";
 $tdatadt5[".advSearchFields"][] = "WageType";
 $tdatadt5[".advSearchFields"][] = "SDate";
+$tdatadt5[".advSearchFields"][] = "RestDay";
 $tdatadt5[".advSearchFields"][] = "MisPunched";
+$tdatadt5[".advSearchFields"][] = "Absent";
+$tdatadt5[".advSearchFields"][] = "LateMins";
+$tdatadt5[".advSearchFields"][] = "UnderstimeMins";
+$tdatadt5[".advSearchFields"][] = "HolidayType";
 $tdatadt5[".advSearchFields"][] = "RH";
 $tdatadt5[".advSearchFields"][] = "SH";
-$tdatadt5[".advSearchFields"][] = "RegRD";
 $tdatadt5[".advSearchFields"][] = "PostMins";
-$tdatadt5[".advSearchFields"][] = "NDOTMins";
+$tdatadt5[".advSearchFields"][] = "TempOT";
+$tdatadt5[".advSearchFields"][] = "ApprovedOT";
+$tdatadt5[".advSearchFields"][] = "AOTMins";
+$tdatadt5[".advSearchFields"][] = "NDMins";
+$tdatadt5[".advSearchFields"][] = "ApprovedNightDiff";
+$tdatadt5[".advSearchFields"][] = "ANDiff";
+$tdatadt5[".advSearchFields"][] = "ApprovedRD";
+$tdatadt5[".advSearchFields"][] = "RDMins";
 $tdatadt5[".advSearchFields"][] = "RegOT";
 $tdatadt5[".advSearchFields"][] = "RHOT";
 $tdatadt5[".advSearchFields"][] = "SHOT";
 $tdatadt5[".advSearchFields"][] = "SHOTD";
-$tdatadt5[".advSearchFields"][] = "RDOT";
-$tdatadt5[".advSearchFields"][] = "NDOT";
 $tdatadt5[".advSearchFields"][] = "RegND";
-$tdatadt5[".advSearchFields"][] = "RHND";
-$tdatadt5[".advSearchFields"][] = "RDND";
-$tdatadt5[".advSearchFields"][] = "RHRD";
-$tdatadt5[".advSearchFields"][] = "SHRD";
-$tdatadt5[".advSearchFields"][] = "RHRDOT";
-$tdatadt5[".advSearchFields"][] = "SHRDOT";
-$tdatadt5[".advSearchFields"][] = "SHRDOTD";
 
 $tdatadt5[".tableType"] = "list";
 
@@ -619,11 +622,6 @@ $tdatadt5[".totalsFields"][] = array(
 	"viewFormat" => 'Number');
 $tdatadt5[".totalsFields"][] = array(
 	"fName" => "NDMins",
-	"numRows" => 0,
-	"totalsType" => "TOTAL",
-	"viewFormat" => 'Number');
-$tdatadt5[".totalsFields"][] = array(
-	"fName" => "NDOTMins",
 	"numRows" => 0,
 	"totalsType" => "TOTAL",
 	"viewFormat" => 'Number');
@@ -789,13 +787,15 @@ $tdatadt5[".warnLeavingPages"] = true;
 
 
 
-$tstrOrderBy = "ORDER BY dt5.UserName";
+$tstrOrderBy = "ORDER BY dt5.UserName, dt5.SDate";
 if(strlen($tstrOrderBy) && strtolower(substr($tstrOrderBy,0,8))!="order by")
 	$tstrOrderBy = "order by ".$tstrOrderBy;
 $tdatadt5[".strOrderBy"] = $tstrOrderBy;
 
 $tdatadt5[".orderindexes"] = array();
 	$tdatadt5[".orderindexes"][] = array(3, (1 ? "ASC" : "DESC"), "dt5.UserName");
+
+	$tdatadt5[".orderindexes"][] = array(5, (1 ? "ASC" : "DESC"), "dt5.SDate");
 
 
 $tdatadt5[".sqlHead"] = "SELECT dt5.ScID,  dt5.EmployeeID,  dt5.UserName,  dt5.WageType,  dt5.SDate,  dt5.DayIs,  dt5.RestDay,  dt5.STimeIn,  dt5.STimeOut,  dt5.TimeIn,  dt5.TimeOut,  dt5.MisPunched,  dt5.RegWD,  dt5.DWork,  dt5.Absent,  dt5.LateMins,  dt5.UnderstimeMins,  dt5.HolidayType,  dt5.TempOT,  dt5.ApprovedOT,  dt5.AOTMins,  dt5.NDMins,  dt5.ApprovedNightDiff,  dt5.ANDiff,  dt5.ApprovedRD,  dt5.RDMins,  dt5.VL,  dt5.SL,  dt5.EL,  dt5.PL,  dt5.TrO,  dt5.Rlink,  demo_user.Division,  demo_user.Department,  demo_user.Employer,  dt5.AfterBreakLogOut,  dt5.AfterBreakLog,  dt5.BreakLateMins,  dt5.EarlyMins,  dt5.SHOTD,  dt5.DHOT,  dt5.NDOT,  dt5.SHND,  dt5.DHND,  dt5.DHRDND,  dt5.RHRDND,  dt5.SHRDND,  dt5.RHNDOT,  dt5.SHNDOT,  dt5.DHNDOT,  dt5.RDNDOT,  dt5.RHRDOT,  dt5.SHRDOT,  dt5.SHRDOTD,  dt5.DHRDOT,  dt5.RHRDNDOT,  dt5.SHRDNDOT,  dt5.DHRDNDOT,  dt5.RH,  dt5.SH,  dt5.DH,  dt5.RHRD,  dt5.SHRD,  dt5.DHRD,  dt5.RegOT,  dt5.RHOT,  dt5.SHOT,  dt5.RHND,  dt5.RDOT,  dt5.RegND,  dt5.RegRD,  dt5.RDND,  dt5.NDOTMins,  dt5.PostMins";
@@ -882,7 +882,6 @@ $tdatadt5[".listFields"][] = "TempOT";
 $tdatadt5[".listFields"][] = "ApprovedOT";
 $tdatadt5[".listFields"][] = "AOTMins";
 $tdatadt5[".listFields"][] = "NDMins";
-$tdatadt5[".listFields"][] = "NDOTMins";
 $tdatadt5[".listFields"][] = "ApprovedNightDiff";
 $tdatadt5[".listFields"][] = "ANDiff";
 $tdatadt5[".listFields"][] = "ApprovedRD";
@@ -961,7 +960,6 @@ $tdatadt5[".viewFields"][] = "TempOT";
 $tdatadt5[".viewFields"][] = "ApprovedOT";
 $tdatadt5[".viewFields"][] = "AOTMins";
 $tdatadt5[".viewFields"][] = "NDMins";
-$tdatadt5[".viewFields"][] = "NDOTMins";
 $tdatadt5[".viewFields"][] = "ApprovedNightDiff";
 $tdatadt5[".viewFields"][] = "ANDiff";
 $tdatadt5[".viewFields"][] = "ApprovedRD";
@@ -1039,7 +1037,6 @@ $tdatadt5[".masterListFields"][] = "TempOT";
 $tdatadt5[".masterListFields"][] = "ApprovedOT";
 $tdatadt5[".masterListFields"][] = "AOTMins";
 $tdatadt5[".masterListFields"][] = "NDMins";
-$tdatadt5[".masterListFields"][] = "NDOTMins";
 $tdatadt5[".masterListFields"][] = "ApprovedNightDiff";
 $tdatadt5[".masterListFields"][] = "ANDiff";
 $tdatadt5[".masterListFields"][] = "ApprovedRD";
@@ -1124,7 +1121,6 @@ $tdatadt5[".exportFields"][] = "TempOT";
 $tdatadt5[".exportFields"][] = "ApprovedOT";
 $tdatadt5[".exportFields"][] = "AOTMins";
 $tdatadt5[".exportFields"][] = "NDMins";
-$tdatadt5[".exportFields"][] = "NDOTMins";
 $tdatadt5[".exportFields"][] = "ApprovedNightDiff";
 $tdatadt5[".exportFields"][] = "ANDiff";
 $tdatadt5[".exportFields"][] = "ApprovedRD";
@@ -1202,7 +1198,6 @@ $tdatadt5[".printFields"][] = "TempOT";
 $tdatadt5[".printFields"][] = "ApprovedOT";
 $tdatadt5[".printFields"][] = "AOTMins";
 $tdatadt5[".printFields"][] = "NDMins";
-$tdatadt5[".printFields"][] = "NDOTMins";
 $tdatadt5[".printFields"][] = "ApprovedNightDiff";
 $tdatadt5[".printFields"][] = "ANDiff";
 $tdatadt5[".printFields"][] = "ApprovedRD";
@@ -2064,7 +2059,8 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-	
+		$fdata["bAdvancedSearch"] = true;
+
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -2151,6 +2147,12 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
 
 
 
@@ -3033,7 +3035,8 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-	
+		$fdata["bAdvancedSearch"] = true;
+
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3125,6 +3128,12 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
 
 
 
@@ -3154,7 +3163,8 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-	
+		$fdata["bAdvancedSearch"] = true;
+
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3246,6 +3256,12 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
 
 
 
@@ -3275,7 +3291,8 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-	
+		$fdata["bAdvancedSearch"] = true;
+
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3367,6 +3384,12 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
 
 
 
@@ -3396,7 +3419,8 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-	
+		$fdata["bAdvancedSearch"] = true;
+
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3512,6 +3536,12 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
 
 
 
@@ -3541,7 +3571,8 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-	
+		$fdata["bAdvancedSearch"] = true;
+
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3633,6 +3664,12 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
 
 
 
@@ -3662,7 +3699,8 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-	
+		$fdata["bAdvancedSearch"] = true;
+
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3749,6 +3787,12 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
 
 
 
@@ -3778,7 +3822,8 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-	
+		$fdata["bAdvancedSearch"] = true;
+
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3870,6 +3915,12 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
 
 
 
@@ -3899,7 +3950,8 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-	
+		$fdata["bAdvancedSearch"] = true;
+
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3991,6 +4043,12 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
 
 
 
@@ -4020,7 +4078,8 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-	
+		$fdata["bAdvancedSearch"] = true;
+
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4107,6 +4166,12 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
 
 
 
@@ -4136,7 +4201,8 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-	
+		$fdata["bAdvancedSearch"] = true;
+
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4228,6 +4294,12 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
 
 
 
@@ -4257,7 +4329,8 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-	
+		$fdata["bAdvancedSearch"] = true;
+
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4344,6 +4417,12 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
 
 
 
@@ -4373,7 +4452,8 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-	
+		$fdata["bAdvancedSearch"] = true;
+
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4465,6 +4545,12 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
 
 
 
@@ -5383,7 +5469,8 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-	
+		$fdata["bAdvancedSearch"] = true;
+
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -5499,6 +5586,12 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
 
 
 
@@ -5528,7 +5621,8 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-	
+		$fdata["bAdvancedSearch"] = true;
+
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -5644,6 +5738,12 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
 
 
 
@@ -6406,8 +6506,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -6499,12 +6598,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -7623,8 +7716,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -7716,12 +7808,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -7751,8 +7837,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -7844,12 +7929,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -7879,8 +7958,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -7972,12 +8050,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -8868,8 +8940,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -8961,12 +9032,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -8996,8 +9061,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -9089,12 +9153,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -9629,8 +9687,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -9722,12 +9779,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -9757,8 +9808,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -9850,12 +9900,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -10013,8 +10057,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -10105,12 +10148,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -10140,8 +10177,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -10233,12 +10269,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -10258,22 +10288,17 @@ $tdatadt5[".printFields"][] = "Rlink";
 	
 	
 			
-		$fdata["bListPage"] = true;
-
 	
 	
 	
 	
 	
+	
 
-		$fdata["bViewPage"] = true;
-
-		$fdata["bAdvancedSearch"] = true;
-
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
+	
+	
+	
+	
 		$fdata["strField"] = "NDOTMins";
 
 		$fdata["isSQLExpression"] = true;
@@ -10281,8 +10306,7 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 	
 	
-				$fdata["FieldPermissions"] = true;
-
+			
 				$fdata["UploadFolder"] = "files";
 
 //  Begin View Formats
@@ -10361,12 +10385,6 @@ $tdatadt5[".printFields"][] = "Rlink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -10673,7 +10691,7 @@ $proto0["m_strHead"] = "SELECT";
 $proto0["m_strFieldList"] = "dt5.ScID,  dt5.EmployeeID,  dt5.UserName,  dt5.WageType,  dt5.SDate,  dt5.DayIs,  dt5.RestDay,  dt5.STimeIn,  dt5.STimeOut,  dt5.TimeIn,  dt5.TimeOut,  dt5.MisPunched,  dt5.RegWD,  dt5.DWork,  dt5.Absent,  dt5.LateMins,  dt5.UnderstimeMins,  dt5.HolidayType,  dt5.TempOT,  dt5.ApprovedOT,  dt5.AOTMins,  dt5.NDMins,  dt5.ApprovedNightDiff,  dt5.ANDiff,  dt5.ApprovedRD,  dt5.RDMins,  dt5.VL,  dt5.SL,  dt5.EL,  dt5.PL,  dt5.TrO,  dt5.Rlink,  demo_user.Division,  demo_user.Department,  demo_user.Employer,  dt5.AfterBreakLogOut,  dt5.AfterBreakLog,  dt5.BreakLateMins,  dt5.EarlyMins,  dt5.SHOTD,  dt5.DHOT,  dt5.NDOT,  dt5.SHND,  dt5.DHND,  dt5.DHRDND,  dt5.RHRDND,  dt5.SHRDND,  dt5.RHNDOT,  dt5.SHNDOT,  dt5.DHNDOT,  dt5.RDNDOT,  dt5.RHRDOT,  dt5.SHRDOT,  dt5.SHRDOTD,  dt5.DHRDOT,  dt5.RHRDNDOT,  dt5.SHRDNDOT,  dt5.DHRDNDOT,  dt5.RH,  dt5.SH,  dt5.DH,  dt5.RHRD,  dt5.SHRD,  dt5.DHRD,  dt5.RegOT,  dt5.RHOT,  dt5.SHOT,  dt5.RHND,  dt5.RDOT,  dt5.RegND,  dt5.RegRD,  dt5.RDND,  dt5.NDOTMins,  dt5.PostMins";
 $proto0["m_strFrom"] = "FROM dt5  INNER JOIN demo_user ON dt5.EmployeeID = demo_user.EmployeeID";
 $proto0["m_strWhere"] = "";
-$proto0["m_strOrderBy"] = "ORDER BY dt5.UserName";
+$proto0["m_strOrderBy"] = "ORDER BY dt5.UserName, dt5.SDate";
 	
 		;
 			$proto0["cipherer"] = null;
@@ -11975,6 +11993,19 @@ $proto162["m_column"]=$obj;
 $proto162["m_bAsc"] = 1;
 $proto162["m_nColumn"] = 0;
 $obj = new SQLOrderByItem($proto162);
+
+$proto0["m_orderby"][]=$obj;					
+												$proto164=array();
+						$obj = new SQLField(array(
+	"m_strName" => "SDate",
+	"m_strTable" => "dt5",
+	"m_srcTableName" => "dt5"
+));
+
+$proto164["m_column"]=$obj;
+$proto164["m_bAsc"] = 1;
+$proto164["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto164);
 
 $proto0["m_orderby"][]=$obj;					
 $proto0["m_srcTableName"]="dt5";		

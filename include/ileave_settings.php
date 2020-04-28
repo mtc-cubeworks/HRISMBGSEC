@@ -95,12 +95,12 @@ $tdataileave[".listAjax"] = false;
 	$tdataileave[".locking"] = false;
 
 $tdataileave[".edit"] = true;
-$tdataileave[".afterEditAction"] = 0;
+$tdataileave[".afterEditAction"] = 1;
 $tdataileave[".closePopupAfterEdit"] = 1;
 $tdataileave[".afterEditActionDetTable"] = "";
 
 $tdataileave[".add"] = true;
-$tdataileave[".afterAddAction"] = 0;
+$tdataileave[".afterAddAction"] = 1;
 $tdataileave[".closePopupAfterAdd"] = 1;
 $tdataileave[".afterAddActionDetTable"] = "";
 
@@ -149,7 +149,7 @@ $tdataileave[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
 
 $tdataileave[".ajaxCodeSnippetAdded"] = false;
 

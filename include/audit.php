@@ -815,11 +815,15 @@ class AuditTrailTable
 		{
 			return false;
 		}
-		if($table=="notes")
+		if($table=="payslipposted")
 		{
 			return false;
 		}
-		if($table=="notetypes")
+		if($table=="earningsposted")
+		{
+			return false;
+		}
+		if($table=="notes")
 		{
 			return false;
 		}
@@ -828,6 +832,114 @@ class AuditTrailTable
 			return false;
 		}
 		if($table=="notestatuses")
+		{
+			return false;
+		}
+		if($table=="notetypes")
+		{
+			return false;
+		}
+		if($table=="filelogglobal")
+		{
+			return false;
+		}
+		if($table=="mispunched")
+		{
+			return false;
+		}
+		if($table=="Dashboard")
+		{
+			return false;
+		}
+		if($table=="dashrange")
+		{
+			return false;
+		}
+		if($table=="zleavetypes Chart")
+		{
+			return false;
+		}
+		if($table=="zotdept Chart")
+		{
+			return false;
+		}
+		if($table=="zotdiv Chart")
+		{
+			return false;
+		}
+		if($table=="zots")
+		{
+			return false;
+		}
+		if($table=="zots Chart")
+		{
+			return false;
+		}
+		if($table=="zresigns Chart")
+		{
+			return false;
+		}
+		if($table=="attrition Chart")
+		{
+			return false;
+		}
+		if($table=="leavestoday")
+		{
+			return false;
+		}
+		if($table=="latesonrange")
+		{
+			return false;
+		}
+		if($table=="leavesonrange")
+		{
+			return false;
+		}
+		if($table=="absentonrange")
+		{
+			return false;
+		}
+		if($table=="selectemployee")
+		{
+			return false;
+		}
+		if($table=="demo_user11")
+		{
+			return false;
+		}
+		if($table=="demo_useractive")
+		{
+			return false;
+		}
+		if($table=="notes1")
+		{
+			return false;
+		}
+		if($table=="filelogglobal1")
+		{
+			return false;
+		}
+		if($table=="memo")
+		{
+			return false;
+		}
+		if($table=="dtrcard")
+		{
+			return false;
+		}
+		if($table=="dtrcardhead")
+		{
+			return false;
+		}
+		if($table=="dtrcardhead1")
+		{
+			return false;
+		}
+		if($table=="dtrcard1")
+		{
+			return false;
+		}
+		if($table=="payslipmain")
 		{
 			return false;
 		}
@@ -1642,11 +1754,15 @@ class AuditTrailFile
 		{
 			return false;
 		}
-		if($table=="notes")
+		if($table=="payslipposted")
 		{
 			return false;
 		}
-		if($table=="notetypes")
+		if($table=="earningsposted")
+		{
+			return false;
+		}
+		if($table=="notes")
 		{
 			return false;
 		}
@@ -1655,6 +1771,114 @@ class AuditTrailFile
 			return false;
 		}
 		if($table=="notestatuses")
+		{
+			return false;
+		}
+		if($table=="notetypes")
+		{
+			return false;
+		}
+		if($table=="filelogglobal")
+		{
+			return false;
+		}
+		if($table=="mispunched")
+		{
+			return false;
+		}
+		if($table=="Dashboard")
+		{
+			return false;
+		}
+		if($table=="dashrange")
+		{
+			return false;
+		}
+		if($table=="zleavetypes Chart")
+		{
+			return false;
+		}
+		if($table=="zotdept Chart")
+		{
+			return false;
+		}
+		if($table=="zotdiv Chart")
+		{
+			return false;
+		}
+		if($table=="zots")
+		{
+			return false;
+		}
+		if($table=="zots Chart")
+		{
+			return false;
+		}
+		if($table=="zresigns Chart")
+		{
+			return false;
+		}
+		if($table=="attrition Chart")
+		{
+			return false;
+		}
+		if($table=="leavestoday")
+		{
+			return false;
+		}
+		if($table=="latesonrange")
+		{
+			return false;
+		}
+		if($table=="leavesonrange")
+		{
+			return false;
+		}
+		if($table=="absentonrange")
+		{
+			return false;
+		}
+		if($table=="selectemployee")
+		{
+			return false;
+		}
+		if($table=="demo_user11")
+		{
+			return false;
+		}
+		if($table=="demo_useractive")
+		{
+			return false;
+		}
+		if($table=="notes1")
+		{
+			return false;
+		}
+		if($table=="filelogglobal1")
+		{
+			return false;
+		}
+		if($table=="memo")
+		{
+			return false;
+		}
+		if($table=="dtrcard")
+		{
+			return false;
+		}
+		if($table=="dtrcardhead")
+		{
+			return false;
+		}
+		if($table=="dtrcardhead1")
+		{
+			return false;
+		}
+		if($table=="dtrcard1")
+		{
+			return false;
+		}
+		if($table=="payslipmain")
 		{
 			return false;
 		}

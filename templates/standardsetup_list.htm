@@ -628,6 +628,18 @@
 	.bs-gridcell[data-field=SHRDOTDFactor]:before {
 		content: "{$label standardsetup SHRDOTDFactor}";
 	}
+	.bs-gridcell[data-field=RegularVL]:before {
+		content: "{$label standardsetup RegularVL}";
+	}
+	.bs-gridcell[data-field=RegularSL]:before {
+		content: "{$label standardsetup RegularSL}";
+	}
+	.bs-gridcell[data-field=RegularEL]:before {
+		content: "{$label standardsetup RegularEL}";
+	}
+	.bs-gridcell[data-field=RegularPL]:before {
+		content: "{$label standardsetup RegularPL}";
+	}
 </style>
 <table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
 	<thead>
@@ -706,6 +718,58 @@
 									{END AllowableLeaveTo_fieldheader}
 									</th>
 									{END AllowableLeaveTo_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RegularSL_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RegularSL_class}" data-field=RegularSL>
+									{BEGIN RegularSL_fieldheader}
+																				<span {$RegularSL_orderlinkattrs}>
+											{$label standardsetup RegularSL}
+										</span>
+									{END RegularSL_fieldheader}
+									</th>
+									{END RegularSL_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RegularVL_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RegularVL_class}" data-field=RegularVL>
+									{BEGIN RegularVL_fieldheader}
+																				<span {$RegularVL_orderlinkattrs}>
+											{$label standardsetup RegularVL}
+										</span>
+									{END RegularVL_fieldheader}
+									</th>
+									{END RegularVL_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RegularPL_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RegularPL_class}" data-field=RegularPL>
+									{BEGIN RegularPL_fieldheader}
+																				<span {$RegularPL_orderlinkattrs}>
+											{$label standardsetup RegularPL}
+										</span>
+									{END RegularPL_fieldheader}
+									</th>
+									{END RegularPL_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RegularEL_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RegularEL_class}" data-field=RegularEL>
+									{BEGIN RegularEL_fieldheader}
+																				<span {$RegularEL_orderlinkattrs}>
+											{$label standardsetup RegularEL}
+										</span>
+									{END RegularEL_fieldheader}
+									</th>
+									{END RegularEL_fieldheadercolumn}
 									
 									
 									
@@ -1300,6 +1364,34 @@
 		{$AllowableLeaveTo_value}
 	</td>
 {END AllowableLeaveTo_fieldcolumn}
+
+
+	{BEGIN RegularSL_fieldcolumn}
+	<td class="bs-gridcell {$RegularSL_class}"  data-field=RegularSL {$rowstyle} {$recordattrs}>
+		{$RegularSL_value}
+	</td>
+{END RegularSL_fieldcolumn}
+
+
+	{BEGIN RegularVL_fieldcolumn}
+	<td class="bs-gridcell {$RegularVL_class}"  data-field=RegularVL {$rowstyle} {$recordattrs}>
+		{$RegularVL_value}
+	</td>
+{END RegularVL_fieldcolumn}
+
+
+	{BEGIN RegularPL_fieldcolumn}
+	<td class="bs-gridcell {$RegularPL_class}"  data-field=RegularPL {$rowstyle} {$recordattrs}>
+		{$RegularPL_value}
+	</td>
+{END RegularPL_fieldcolumn}
+
+
+	{BEGIN RegularEL_fieldcolumn}
+	<td class="bs-gridcell {$RegularEL_class}"  data-field=RegularEL {$rowstyle} {$recordattrs}>
+		{$RegularEL_value}
+	</td>
+{END RegularEL_fieldcolumn}
 
 
 	{BEGIN RHFactor_fieldcolumn}

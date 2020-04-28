@@ -13,7 +13,12 @@ $dalTablepayroll["MoAdjustment"] = array("type"=>16,"varname"=>"MoAdjustment", "
 $dalTablepayroll["PresetTax"] = array("type"=>16,"varname"=>"PresetTax", "name" => "PresetTax");
 $dalTablepayroll["13thMonth"] = array("type"=>16,"varname"=>"fld13thMonth", "name" => "13thMonth");
 $dalTablepayroll["Locked"] = array("type"=>16,"varname"=>"Locked", "name" => "Locked");
+$dalTablepayroll["Division"] = array("type"=>3,"varname"=>"Division", "name" => "Division");
 $dalTablepayroll["Employer"] = array("type"=>3,"varname"=>"Employer", "name" => "Employer");
+$dalTablepayroll["WageType"] = array("type"=>3,"varname"=>"WageType", "name" => "WageType");
+$dalTablepayroll["SSS"] = array("type"=>16,"varname"=>"SSS", "name" => "SSS");
+$dalTablepayroll["PagIbig"] = array("type"=>16,"varname"=>"PagIbig", "name" => "PagIbig");
+$dalTablepayroll["PhilHealth"] = array("type"=>16,"varname"=>"PhilHealth", "name" => "PhilHealth");
 	$dalTablepayroll["PSID"]["key"]=true;
 
 $dal_info["payrollflex_at_localhost__payroll"] = &$dalTablepayroll;

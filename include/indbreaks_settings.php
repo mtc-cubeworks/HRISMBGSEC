@@ -95,12 +95,12 @@ $tdataindbreaks[".listAjax"] = false;
 	$tdataindbreaks[".locking"] = false;
 
 $tdataindbreaks[".edit"] = true;
-$tdataindbreaks[".afterEditAction"] = 0;
+$tdataindbreaks[".afterEditAction"] = 1;
 $tdataindbreaks[".closePopupAfterEdit"] = 1;
 $tdataindbreaks[".afterEditActionDetTable"] = "";
 
 $tdataindbreaks[".add"] = true;
-$tdataindbreaks[".afterAddAction"] = 0;
+$tdataindbreaks[".afterAddAction"] = 1;
 $tdataindbreaks[".closePopupAfterAdd"] = 1;
 $tdataindbreaks[".afterAddActionDetTable"] = "";
 
@@ -147,7 +147,7 @@ $tdataindbreaks[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
 
 $tdataindbreaks[".ajaxCodeSnippetAdded"] = false;
 

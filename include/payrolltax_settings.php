@@ -101,12 +101,12 @@ $tdatapayrolltax[".listAjax"] = false;
 	$tdatapayrolltax[".locking"] = false;
 
 $tdatapayrolltax[".edit"] = true;
-$tdatapayrolltax[".afterEditAction"] = 0;
+$tdatapayrolltax[".afterEditAction"] = 1;
 $tdatapayrolltax[".closePopupAfterEdit"] = 1;
 $tdatapayrolltax[".afterEditActionDetTable"] = "";
 
 $tdatapayrolltax[".add"] = true;
-$tdatapayrolltax[".afterAddAction"] = 0;
+$tdatapayrolltax[".afterAddAction"] = 1;
 $tdatapayrolltax[".closePopupAfterAdd"] = 1;
 $tdatapayrolltax[".afterAddActionDetTable"] = "";
 
@@ -155,7 +155,7 @@ $tdatapayrolltax[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
 
 $tdatapayrolltax[".ajaxCodeSnippetAdded"] = false;
 
@@ -1741,11 +1741,15 @@ $masterTablesData["payrolltax"] = array();
 				$masterTablesData["payrolltax"][0]["masterKeys"][]="FromDate";
 				$masterTablesData["payrolltax"][0]["masterKeys"][]="ToDate";
 				$masterTablesData["payrolltax"][0]["masterKeys"][]="Employer";
+				$masterTablesData["payrolltax"][0]["masterKeys"][]="Division";
+				$masterTablesData["payrolltax"][0]["masterKeys"][]="WageType";
 				$masterTablesData["payrolltax"][0]["detailKeys"] = array();
 	$masterTablesData["payrolltax"][0]["detailKeys"][]="EmployeeID";
 				$masterTablesData["payrolltax"][0]["detailKeys"][]="FromDate";
 				$masterTablesData["payrolltax"][0]["detailKeys"][]="ToDate";
 				$masterTablesData["payrolltax"][0]["detailKeys"][]="Employer";
+				$masterTablesData["payrolltax"][0]["detailKeys"][]="Division";
+				$masterTablesData["payrolltax"][0]["detailKeys"][]="WageType";
 		
 // -----------------end  prepare master-details data arrays ------------------------------//
 

@@ -523,9 +523,6 @@
 	.bs-gridcell[data-field=OtiD]:before {
 		content: "{$label overtimetab OtiD}";
 	}
-	.bs-gridcell[data-field=UserName]:before {
-		content: "{$label overtimetab UserName}";
-	}
 </style>
 <table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
 	<thead>
@@ -552,19 +549,6 @@
 									{END OTtabID_fieldheader}
 									</th>
 									{END OTtabID_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN UserName_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$UserName_class}" data-field=UserName>
-									{BEGIN UserName_fieldheader}
-																				<span {$UserName_orderlinkattrs}>
-											{$label overtimetab UserName}
-										</span>
-									{END UserName_fieldheader}
-									</th>
-									{END UserName_fieldheadercolumn}
 									
 									
 									
@@ -650,13 +634,6 @@
 		{$OTtabID_value}
 	</td>
 {END OTtabID_fieldcolumn}
-
-
-	{BEGIN UserName_fieldcolumn}
-	<td class="bs-gridcell {$UserName_class}"  data-field=UserName {$rowstyle} {$recordattrs}>
-		{$UserName_value}
-	</td>
-{END UserName_fieldcolumn}
 
 
 	{BEGIN EmployeeID_fieldcolumn}

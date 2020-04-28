@@ -92,7 +92,7 @@ $tdatapayroll21[".listAjax"] = false;
 	$tdatapayroll21[".locking"] = false;
 
 $tdatapayroll21[".edit"] = true;
-$tdatapayroll21[".afterEditAction"] = 0;
+$tdatapayroll21[".afterEditAction"] = 1;
 $tdatapayroll21[".closePopupAfterEdit"] = 1;
 $tdatapayroll21[".afterEditActionDetTable"] = "";
 
@@ -140,7 +140,7 @@ $tdatapayroll21[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																							
+																																																																																																																																																																																																																																																																																																																														
 
 $tdatapayroll21[".ajaxCodeSnippetAdded"] = false;
 
@@ -1308,7 +1308,12 @@ $proto19["m_columns"][] = "MoAdjustment";
 $proto19["m_columns"][] = "PresetTax";
 $proto19["m_columns"][] = "13thMonth";
 $proto19["m_columns"][] = "Locked";
+$proto19["m_columns"][] = "Division";
 $proto19["m_columns"][] = "Employer";
+$proto19["m_columns"][] = "WageType";
+$proto19["m_columns"][] = "SSS";
+$proto19["m_columns"][] = "PagIbig";
+$proto19["m_columns"][] = "PhilHealth";
 $obj = new SQLTable($proto19);
 
 $proto18["m_table"] = $obj;

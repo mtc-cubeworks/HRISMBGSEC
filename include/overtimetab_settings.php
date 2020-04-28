@@ -26,15 +26,12 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsovertimetab["English"]["OTtabID"] = "OTtab ID";
 	$fieldToolTipsovertimetab["English"]["OTtabID"] = "";
 	$placeHoldersovertimetab["English"]["OTtabID"] = "";
-	$fieldLabelsovertimetab["English"]["EmployeeID"] = "Biometric ID";
+	$fieldLabelsovertimetab["English"]["EmployeeID"] = "Employee";
 	$fieldToolTipsovertimetab["English"]["EmployeeID"] = "";
 	$placeHoldersovertimetab["English"]["EmployeeID"] = "";
 	$fieldLabelsovertimetab["English"]["OtiD"] = "Oti D";
 	$fieldToolTipsovertimetab["English"]["OtiD"] = "";
 	$placeHoldersovertimetab["English"]["OtiD"] = "";
-	$fieldLabelsovertimetab["English"]["UserName"] = "Employee";
-	$fieldToolTipsovertimetab["English"]["UserName"] = "";
-	$placeHoldersovertimetab["English"]["UserName"] = "";
 	if (count($fieldToolTipsovertimetab["English"]))
 		$tdataovertimetab[".isUseToolTips"] = true;
 }
@@ -86,12 +83,12 @@ $tdataovertimetab[".listAjax"] = false;
 	$tdataovertimetab[".locking"] = false;
 
 $tdataovertimetab[".edit"] = true;
-$tdataovertimetab[".afterEditAction"] = 0;
+$tdataovertimetab[".afterEditAction"] = 1;
 $tdataovertimetab[".closePopupAfterEdit"] = 1;
 $tdataovertimetab[".afterEditActionDetTable"] = "";
 
 $tdataovertimetab[".add"] = true;
-$tdataovertimetab[".afterAddAction"] = 0;
+$tdataovertimetab[".afterAddAction"] = 1;
 $tdataovertimetab[".closePopupAfterAdd"] = 1;
 $tdataovertimetab[".afterAddActionDetTable"] = "";
 
@@ -140,7 +137,7 @@ $tdataovertimetab[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
 
 $tdataovertimetab[".ajaxCodeSnippetAdded"] = false;
 
@@ -163,21 +160,18 @@ $tdataovertimetab[".requiredSearchFields"] = array();
 $tdataovertimetab[".allSearchFields"][] = "OTtabID";
 	$tdataovertimetab[".allSearchFields"][] = "EmployeeID";
 	$tdataovertimetab[".allSearchFields"][] = "OtiD";
-	$tdataovertimetab[".allSearchFields"][] = "UserName";
 	
 
 $tdataovertimetab[".googleLikeFields"] = array();
 $tdataovertimetab[".googleLikeFields"][] = "OTtabID";
 $tdataovertimetab[".googleLikeFields"][] = "EmployeeID";
 $tdataovertimetab[".googleLikeFields"][] = "OtiD";
-$tdataovertimetab[".googleLikeFields"][] = "UserName";
 
 
 $tdataovertimetab[".advSearchFields"] = array();
 $tdataovertimetab[".advSearchFields"][] = "OTtabID";
 $tdataovertimetab[".advSearchFields"][] = "EmployeeID";
 $tdataovertimetab[".advSearchFields"][] = "OtiD";
-$tdataovertimetab[".advSearchFields"][] = "UserName";
 
 $tdataovertimetab[".tableType"] = "list";
 
@@ -220,7 +214,7 @@ $tdataovertimetab[".strOrderBy"] = $tstrOrderBy;
 
 $tdataovertimetab[".orderindexes"] = array();
 
-$tdataovertimetab[".sqlHead"] = "SELECT OTtabID,  EmployeeID,  OtiD,  UserName";
+$tdataovertimetab[".sqlHead"] = "SELECT OTtabID,  EmployeeID,  OtiD";
 $tdataovertimetab[".sqlFrom"] = "FROM overtimetab";
 $tdataovertimetab[".sqlWhereExpr"] = "";
 $tdataovertimetab[".sqlTail"] = "";
@@ -266,7 +260,6 @@ $tdataovertimetab[".Keys"] = $tableKeysovertimetab;
 
 $tdataovertimetab[".listFields"] = array();
 $tdataovertimetab[".listFields"][] = "OTtabID";
-$tdataovertimetab[".listFields"][] = "UserName";
 $tdataovertimetab[".listFields"][] = "EmployeeID";
 $tdataovertimetab[".listFields"][] = "OtiD";
 
@@ -277,57 +270,47 @@ $tdataovertimetab[".viewFields"] = array();
 $tdataovertimetab[".viewFields"][] = "OTtabID";
 $tdataovertimetab[".viewFields"][] = "EmployeeID";
 $tdataovertimetab[".viewFields"][] = "OtiD";
-$tdataovertimetab[".viewFields"][] = "UserName";
 
 $tdataovertimetab[".addFields"] = array();
 $tdataovertimetab[".addFields"][] = "EmployeeID";
 $tdataovertimetab[".addFields"][] = "OtiD";
-$tdataovertimetab[".addFields"][] = "UserName";
 
 $tdataovertimetab[".masterListFields"] = array();
 $tdataovertimetab[".masterListFields"][] = "OTtabID";
 $tdataovertimetab[".masterListFields"][] = "EmployeeID";
 $tdataovertimetab[".masterListFields"][] = "OtiD";
-$tdataovertimetab[".masterListFields"][] = "UserName";
 
 $tdataovertimetab[".inlineAddFields"] = array();
-$tdataovertimetab[".inlineAddFields"][] = "UserName";
 $tdataovertimetab[".inlineAddFields"][] = "EmployeeID";
 $tdataovertimetab[".inlineAddFields"][] = "OtiD";
 
 $tdataovertimetab[".editFields"] = array();
 $tdataovertimetab[".editFields"][] = "EmployeeID";
 $tdataovertimetab[".editFields"][] = "OtiD";
-$tdataovertimetab[".editFields"][] = "UserName";
 
 $tdataovertimetab[".inlineEditFields"] = array();
-$tdataovertimetab[".inlineEditFields"][] = "UserName";
 $tdataovertimetab[".inlineEditFields"][] = "EmployeeID";
 $tdataovertimetab[".inlineEditFields"][] = "OtiD";
 
 $tdataovertimetab[".updateSelectedFields"] = array();
 $tdataovertimetab[".updateSelectedFields"][] = "EmployeeID";
 $tdataovertimetab[".updateSelectedFields"][] = "OtiD";
-$tdataovertimetab[".updateSelectedFields"][] = "UserName";
 
 
 $tdataovertimetab[".exportFields"] = array();
 $tdataovertimetab[".exportFields"][] = "OTtabID";
 $tdataovertimetab[".exportFields"][] = "EmployeeID";
 $tdataovertimetab[".exportFields"][] = "OtiD";
-$tdataovertimetab[".exportFields"][] = "UserName";
 
 $tdataovertimetab[".importFields"] = array();
 $tdataovertimetab[".importFields"][] = "OTtabID";
 $tdataovertimetab[".importFields"][] = "EmployeeID";
 $tdataovertimetab[".importFields"][] = "OtiD";
-$tdataovertimetab[".importFields"][] = "UserName";
 
 $tdataovertimetab[".printFields"] = array();
 $tdataovertimetab[".printFields"][] = "OTtabID";
 $tdataovertimetab[".printFields"][] = "EmployeeID";
 $tdataovertimetab[".printFields"][] = "OtiD";
-$tdataovertimetab[".printFields"][] = "UserName";
 
 
 //	OTtabID
@@ -533,15 +516,44 @@ $tdataovertimetab[".printFields"][] = "UserName";
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Readonly");
+	$edata = array("EditFormat" => "Lookup wizard");
 
 	
 	
 		
 	
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "demo_user";
+		$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 1;
+
+	
+		
+	$edata["LinkField"] = "EmployeeID";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "user_name";
+	
+				$edata["LookupWhere"] = "Division = ':master.Division' and Employer = ':master.Employer'";
 
 
 	
+	$edata["LookupOrderBy"] = "user_name";
+
+	
+	
+	
+	
+
+	
+	
+	
+// End Lookup Settings
+
+
+		$edata["IsRequired"] = true;
+
 	
 	
 			$edata["acceptFileTypes"] = ".+$";
@@ -560,7 +572,8 @@ $tdataovertimetab[".printFields"][] = "UserName";
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-							
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
 	
 	//	End validation
 
@@ -579,7 +592,7 @@ $tdataovertimetab[".printFields"][] = "UserName";
 
 
 // the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
+		$fdata["defaultSearchOption"] = "Equals";
 
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
@@ -718,165 +731,6 @@ $tdataovertimetab[".printFields"][] = "UserName";
 
 
 	$tdataovertimetab["OtiD"] = $fdata;
-//	UserName
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 4;
-	$fdata["strName"] = "UserName";
-	$fdata["GoodName"] = "UserName";
-	$fdata["ownerTable"] = "overtimetab";
-	$fdata["Label"] = GetFieldLabel("overtimetab","UserName");
-	$fdata["FieldType"] = 200;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
-
-		$fdata["bViewPage"] = true;
-
-		$fdata["bAdvancedSearch"] = true;
-
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "UserName";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "UserName";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Lookup wizard");
-
-	
-	
-		
-	
-// Begin Lookup settings
-				$edata["LookupType"] = 2;
-	$edata["LookupTable"] = "demo_user";
-		$edata["autoCompleteFieldsOnEdit"] = 1;
-	$edata["autoCompleteFields"] = array();
-		$edata["autoCompleteFields"][] = array('masterF'=>"EmployeeID", 'lookupF'=>"EmployeeID");
-	$edata["LCType"] = 1;
-
-	
-		
-	$edata["LinkField"] = "user_name";
-	$edata["LinkFieldType"] = 0;
-	$edata["DisplayField"] = "user_name";
-	
-	
-
-	
-	$edata["LookupOrderBy"] = "user_name";
-
-	
-	
-	
-	
-
-	
-	
-	
-// End Lookup Settings
-
-
-		$edata["IsRequired"] = true;
-
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-	
-	
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Equals";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-
-
-	$tdataovertimetab["UserName"] = $fdata;
 
 
 $tables_data["overtimetab"]=&$tdataovertimetab;
@@ -938,7 +792,7 @@ function createSqlQuery_overtimetab()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "OTtabID,  EmployeeID,  OtiD,  UserName";
+$proto0["m_strFieldList"] = "OTtabID,  EmployeeID,  OtiD";
 $proto0["m_strFrom"] = "FROM overtimetab";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -1020,55 +874,41 @@ $proto10["m_alias"] = "";
 $obj = new SQLFieldListItem($proto10);
 
 $proto0["m_fieldlist"][]=$obj;
-						$proto12=array();
-			$obj = new SQLField(array(
-	"m_strName" => "UserName",
-	"m_strTable" => "overtimetab",
-	"m_srcTableName" => "overtimetab"
-));
-
-$proto12["m_sql"] = "UserName";
-$proto12["m_srcTableName"] = "overtimetab";
-$proto12["m_expr"]=$obj;
-$proto12["m_alias"] = "";
-$obj = new SQLFieldListItem($proto12);
-
-$proto0["m_fieldlist"][]=$obj;
 $proto0["m_fromlist"] = array();
-												$proto14=array();
-$proto14["m_link"] = "SQLL_MAIN";
-			$proto15=array();
-$proto15["m_strName"] = "overtimetab";
-$proto15["m_srcTableName"] = "overtimetab";
-$proto15["m_columns"] = array();
-$proto15["m_columns"][] = "OTtabID";
-$proto15["m_columns"][] = "EmployeeID";
-$proto15["m_columns"][] = "OtiD";
-$proto15["m_columns"][] = "UserID";
-$proto15["m_columns"][] = "UserName";
-$obj = new SQLTable($proto15);
+												$proto12=array();
+$proto12["m_link"] = "SQLL_MAIN";
+			$proto13=array();
+$proto13["m_strName"] = "overtimetab";
+$proto13["m_srcTableName"] = "overtimetab";
+$proto13["m_columns"] = array();
+$proto13["m_columns"][] = "OTtabID";
+$proto13["m_columns"][] = "EmployeeID";
+$proto13["m_columns"][] = "OtiD";
+$proto13["m_columns"][] = "UserID";
+$proto13["m_columns"][] = "UserName";
+$obj = new SQLTable($proto13);
 
-$proto14["m_table"] = $obj;
-$proto14["m_sql"] = "overtimetab";
-$proto14["m_alias"] = "";
-$proto14["m_srcTableName"] = "overtimetab";
-$proto16=array();
-$proto16["m_sql"] = "";
-$proto16["m_uniontype"] = "SQLL_UNKNOWN";
+$proto12["m_table"] = $obj;
+$proto12["m_sql"] = "overtimetab";
+$proto12["m_alias"] = "";
+$proto12["m_srcTableName"] = "overtimetab";
+$proto14=array();
+$proto14["m_sql"] = "";
+$proto14["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto16["m_column"]=$obj;
-$proto16["m_contained"] = array();
-$proto16["m_strCase"] = "";
-$proto16["m_havingmode"] = false;
-$proto16["m_inBrackets"] = false;
-$proto16["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto16);
+$proto14["m_column"]=$obj;
+$proto14["m_contained"] = array();
+$proto14["m_strCase"] = "";
+$proto14["m_havingmode"] = false;
+$proto14["m_inBrackets"] = false;
+$proto14["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto14);
 
-$proto14["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto14);
+$proto12["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto12);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -1084,7 +924,7 @@ $queryData_overtimetab = createSqlQuery_overtimetab();
 	
 		;
 
-				
+			
 
 $tdataovertimetab[".sqlquery"] = $queryData_overtimetab;
 

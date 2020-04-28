@@ -1,5 +1,5 @@
 
-Runner.pages.PageSettings.addPageEvent('holidayupdate',Runner.pages.constants.PAGE_LIST,"afterPageReady",function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='Update_Holiday1';if(!pageObj.buttonEventBefore['Update_Holiday1']){pageObj.buttonEventBefore['Update_Holiday1']=function(params,ctrl,pageObj,proxy,pageid,rowData,row){params["txt"]="Updating...";ctrl.setMessage("Sending request to server...");}}
-if(!pageObj.buttonEventAfter['Update_Holiday1']){pageObj.buttonEventAfter['Update_Holiday1']=function(result,ctrl,pageObj,proxy,pageid,rowData,row){var message=result["txt"]+" !!!";ctrl.setMessage(message);}}
-$('a[id="Update_Holiday1"]').each(function(){if($(this).closest('.gridRowAdd').length){return;}
-this.id="Update_Holiday1"+"_"+Runner.genId();var button_Update_Holiday1=new Runner.form.Button({id:this.id,btnName:"Update_Holiday1"});button_Update_Holiday1.init({args:[pageObj,proxy,pageid]});});});
+Runner.pages.PageSettings.addPageEvent('holidayupdate',Runner.pages.constants.PAGE_LIST,"afterPageReady",function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='Update_Holiday';if(!pageObj.buttonEventBefore['Update_Holiday']){pageObj.buttonEventBefore['Update_Holiday']=function(params,ctrl,pageObj,proxy,pageid,rowData,row){params["txt"]="Updating...";ctrl.setMessage("Sending request to server...");}}
+if(!pageObj.buttonEventAfter['Update_Holiday']){pageObj.buttonEventAfter['Update_Holiday']=function(result,ctrl,pageObj,proxy,pageid,rowData,row){var message=result["txt"]+" !!!";ctrl.setMessage(message);}}
+$('a[id="Update_Holiday"]').each(function(){if($(this).closest('.gridRowAdd').length){return;}
+this.id="Update_Holiday"+"_"+Runner.genId();var button_Update_Holiday=new Runner.form.Button({id:this.id,btnName:"Update_Holiday"});button_Update_Holiday.init({args:[pageObj,proxy,pageid]});});});

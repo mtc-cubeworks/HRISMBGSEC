@@ -44,9 +44,6 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsearningadjustment["English"]["Inactive"] = "Inactive";
 	$fieldToolTipsearningadjustment["English"]["Inactive"] = "";
 	$placeHoldersearningadjustment["English"]["Inactive"] = "";
-	$fieldLabelsearningadjustment["English"]["PerDay"] = "Per Day";
-	$fieldToolTipsearningadjustment["English"]["PerDay"] = "";
-	$placeHoldersearningadjustment["English"]["PerDay"] = "";
 	$fieldLabelsearningadjustment["English"]["StartDate"] = "Start Date";
 	$fieldToolTipsearningadjustment["English"]["StartDate"] = "";
 	$placeHoldersearningadjustment["English"]["StartDate"] = "";
@@ -62,9 +59,6 @@ if(mlang_getcurrentlang()=="")
 	$fieldToolTipsearningadjustment[""] = array();
 	$placeHoldersearningadjustment[""] = array();
 	$pageTitlesearningadjustment[""] = array();
-	$fieldLabelsearningadjustment[""]["PerDay"] = "Per Day";
-	$fieldToolTipsearningadjustment[""]["PerDay"] = "";
-	$placeHoldersearningadjustment[""]["PerDay"] = "";
 	$fieldLabelsearningadjustment[""]["StartDate"] = "Start Date";
 	$fieldToolTipsearningadjustment[""]["StartDate"] = "";
 	$placeHoldersearningadjustment[""]["StartDate"] = "";
@@ -118,7 +112,7 @@ $tdataearningadjustment[".closePopupAfterEdit"] = 1;
 $tdataearningadjustment[".afterEditActionDetTable"] = "Detail tables not found!";
 
 $tdataearningadjustment[".add"] = true;
-$tdataearningadjustment[".afterAddAction"] = 0;
+$tdataearningadjustment[".afterAddAction"] = 1;
 $tdataearningadjustment[".closePopupAfterAdd"] = 1;
 $tdataearningadjustment[".afterAddActionDetTable"] = "";
 
@@ -126,6 +120,7 @@ $tdataearningadjustment[".list"] = true;
 
 $tdataearningadjustment[".inlineEdit"] = true;
 
+$tdataearningadjustment[".updateSelected"] = true;
 
 $tdataearningadjustment[".reorderRecordsByHeader"] = true;
 
@@ -167,7 +162,7 @@ $tdataearningadjustment[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
 
 $tdataearningadjustment[".ajaxCodeSnippetAdded"] = false;
 
@@ -189,11 +184,10 @@ $tdataearningadjustment[".requiredSearchFields"] = array();
 
 $tdataearningadjustment[".allSearchFields"][] = "eaID";
 	$tdataearningadjustment[".allSearchFields"][] = "EmployeeID";
-	$tdataearningadjustment[".allSearchFields"][] = "AdjustmentDescription";
-	$tdataearningadjustment[".allSearchFields"][] = "PaymentPeriod";
 	$tdataearningadjustment[".allSearchFields"][] = "StartDate";
 	$tdataearningadjustment[".allSearchFields"][] = "EndDate";
-	$tdataearningadjustment[".allSearchFields"][] = "PerDay";
+	$tdataearningadjustment[".allSearchFields"][] = "AdjustmentDescription";
+	$tdataearningadjustment[".allSearchFields"][] = "PaymentPeriod";
 	$tdataearningadjustment[".allSearchFields"][] = "PerPayrollAmount";
 	$tdataearningadjustment[".allSearchFields"][] = "LessAbsences";
 	$tdataearningadjustment[".allSearchFields"][] = "Inactive";
@@ -207,7 +201,6 @@ $tdataearningadjustment[".googleLikeFields"][] = "PerPayrollAmount";
 $tdataearningadjustment[".googleLikeFields"][] = "PaymentPeriod";
 $tdataearningadjustment[".googleLikeFields"][] = "LessAbsences";
 $tdataearningadjustment[".googleLikeFields"][] = "Inactive";
-$tdataearningadjustment[".googleLikeFields"][] = "PerDay";
 $tdataearningadjustment[".googleLikeFields"][] = "StartDate";
 $tdataearningadjustment[".googleLikeFields"][] = "EndDate";
 
@@ -215,11 +208,10 @@ $tdataearningadjustment[".googleLikeFields"][] = "EndDate";
 $tdataearningadjustment[".advSearchFields"] = array();
 $tdataearningadjustment[".advSearchFields"][] = "eaID";
 $tdataearningadjustment[".advSearchFields"][] = "EmployeeID";
-$tdataearningadjustment[".advSearchFields"][] = "AdjustmentDescription";
-$tdataearningadjustment[".advSearchFields"][] = "PaymentPeriod";
 $tdataearningadjustment[".advSearchFields"][] = "StartDate";
 $tdataearningadjustment[".advSearchFields"][] = "EndDate";
-$tdataearningadjustment[".advSearchFields"][] = "PerDay";
+$tdataearningadjustment[".advSearchFields"][] = "AdjustmentDescription";
+$tdataearningadjustment[".advSearchFields"][] = "PaymentPeriod";
 $tdataearningadjustment[".advSearchFields"][] = "PerPayrollAmount";
 $tdataearningadjustment[".advSearchFields"][] = "LessAbsences";
 $tdataearningadjustment[".advSearchFields"][] = "Inactive";
@@ -273,7 +265,7 @@ $tdataearningadjustment[".orderindexes"] = array();
 	$tdataearningadjustment[".orderindexes"][] = array(1, (0 ? "ASC" : "DESC"), "eaID");
 
 
-$tdataearningadjustment[".sqlHead"] = "SELECT eaID,  AdjustmentDescription,  EmployeeID,  PerPayrollAmount,  PaymentPeriod,  LessAbsences,  Inactive,  PerDay,  StartDate,  EndDate";
+$tdataearningadjustment[".sqlHead"] = "SELECT eaID,  AdjustmentDescription,  EmployeeID,  PerPayrollAmount,  PaymentPeriod,  LessAbsences,  Inactive,  StartDate,  EndDate";
 $tdataearningadjustment[".sqlFrom"] = "FROM earningadjustment";
 $tdataearningadjustment[".sqlWhereExpr"] = "";
 $tdataearningadjustment[".sqlTail"] = "";
@@ -320,11 +312,10 @@ $tdataearningadjustment[".Keys"] = $tableKeysearningadjustment;
 $tdataearningadjustment[".listFields"] = array();
 $tdataearningadjustment[".listFields"][] = "eaID";
 $tdataearningadjustment[".listFields"][] = "EmployeeID";
-$tdataearningadjustment[".listFields"][] = "AdjustmentDescription";
-$tdataearningadjustment[".listFields"][] = "PaymentPeriod";
 $tdataearningadjustment[".listFields"][] = "StartDate";
 $tdataearningadjustment[".listFields"][] = "EndDate";
-$tdataearningadjustment[".listFields"][] = "PerDay";
+$tdataearningadjustment[".listFields"][] = "AdjustmentDescription";
+$tdataearningadjustment[".listFields"][] = "PaymentPeriod";
 $tdataearningadjustment[".listFields"][] = "PerPayrollAmount";
 $tdataearningadjustment[".listFields"][] = "LessAbsences";
 $tdataearningadjustment[".listFields"][] = "Inactive";
@@ -335,22 +326,20 @@ $tdataearningadjustment[".hideMobileList"] = array();
 $tdataearningadjustment[".viewFields"] = array();
 $tdataearningadjustment[".viewFields"][] = "eaID";
 $tdataearningadjustment[".viewFields"][] = "EmployeeID";
-$tdataearningadjustment[".viewFields"][] = "AdjustmentDescription";
-$tdataearningadjustment[".viewFields"][] = "PaymentPeriod";
 $tdataearningadjustment[".viewFields"][] = "StartDate";
 $tdataearningadjustment[".viewFields"][] = "EndDate";
-$tdataearningadjustment[".viewFields"][] = "PerDay";
+$tdataearningadjustment[".viewFields"][] = "AdjustmentDescription";
+$tdataearningadjustment[".viewFields"][] = "PaymentPeriod";
 $tdataearningadjustment[".viewFields"][] = "PerPayrollAmount";
 $tdataearningadjustment[".viewFields"][] = "LessAbsences";
 $tdataearningadjustment[".viewFields"][] = "Inactive";
 
 $tdataearningadjustment[".addFields"] = array();
 $tdataearningadjustment[".addFields"][] = "EmployeeID";
-$tdataearningadjustment[".addFields"][] = "AdjustmentDescription";
-$tdataearningadjustment[".addFields"][] = "PaymentPeriod";
 $tdataearningadjustment[".addFields"][] = "StartDate";
 $tdataearningadjustment[".addFields"][] = "EndDate";
-$tdataearningadjustment[".addFields"][] = "PerDay";
+$tdataearningadjustment[".addFields"][] = "AdjustmentDescription";
+$tdataearningadjustment[".addFields"][] = "PaymentPeriod";
 $tdataearningadjustment[".addFields"][] = "PerPayrollAmount";
 $tdataearningadjustment[".addFields"][] = "LessAbsences";
 $tdataearningadjustment[".addFields"][] = "Inactive";
@@ -358,55 +347,50 @@ $tdataearningadjustment[".addFields"][] = "Inactive";
 $tdataearningadjustment[".masterListFields"] = array();
 $tdataearningadjustment[".masterListFields"][] = "eaID";
 $tdataearningadjustment[".masterListFields"][] = "EmployeeID";
-$tdataearningadjustment[".masterListFields"][] = "AdjustmentDescription";
-$tdataearningadjustment[".masterListFields"][] = "PaymentPeriod";
 $tdataearningadjustment[".masterListFields"][] = "StartDate";
 $tdataearningadjustment[".masterListFields"][] = "EndDate";
-$tdataearningadjustment[".masterListFields"][] = "PerDay";
+$tdataearningadjustment[".masterListFields"][] = "AdjustmentDescription";
+$tdataearningadjustment[".masterListFields"][] = "PaymentPeriod";
 $tdataearningadjustment[".masterListFields"][] = "PerPayrollAmount";
 $tdataearningadjustment[".masterListFields"][] = "LessAbsences";
 $tdataearningadjustment[".masterListFields"][] = "Inactive";
 
 $tdataearningadjustment[".inlineAddFields"] = array();
 $tdataearningadjustment[".inlineAddFields"][] = "EmployeeID";
-$tdataearningadjustment[".inlineAddFields"][] = "AdjustmentDescription";
-$tdataearningadjustment[".inlineAddFields"][] = "PaymentPeriod";
 $tdataearningadjustment[".inlineAddFields"][] = "StartDate";
 $tdataearningadjustment[".inlineAddFields"][] = "EndDate";
-$tdataearningadjustment[".inlineAddFields"][] = "PerDay";
+$tdataearningadjustment[".inlineAddFields"][] = "AdjustmentDescription";
+$tdataearningadjustment[".inlineAddFields"][] = "PaymentPeriod";
 $tdataearningadjustment[".inlineAddFields"][] = "PerPayrollAmount";
 $tdataearningadjustment[".inlineAddFields"][] = "LessAbsences";
 $tdataearningadjustment[".inlineAddFields"][] = "Inactive";
 
 $tdataearningadjustment[".editFields"] = array();
 $tdataearningadjustment[".editFields"][] = "EmployeeID";
-$tdataearningadjustment[".editFields"][] = "AdjustmentDescription";
-$tdataearningadjustment[".editFields"][] = "PaymentPeriod";
 $tdataearningadjustment[".editFields"][] = "StartDate";
 $tdataearningadjustment[".editFields"][] = "EndDate";
-$tdataearningadjustment[".editFields"][] = "PerDay";
+$tdataearningadjustment[".editFields"][] = "AdjustmentDescription";
+$tdataearningadjustment[".editFields"][] = "PaymentPeriod";
 $tdataearningadjustment[".editFields"][] = "PerPayrollAmount";
 $tdataearningadjustment[".editFields"][] = "LessAbsences";
 $tdataearningadjustment[".editFields"][] = "Inactive";
 
 $tdataearningadjustment[".inlineEditFields"] = array();
 $tdataearningadjustment[".inlineEditFields"][] = "EmployeeID";
-$tdataearningadjustment[".inlineEditFields"][] = "AdjustmentDescription";
-$tdataearningadjustment[".inlineEditFields"][] = "PaymentPeriod";
 $tdataearningadjustment[".inlineEditFields"][] = "StartDate";
 $tdataearningadjustment[".inlineEditFields"][] = "EndDate";
-$tdataearningadjustment[".inlineEditFields"][] = "PerDay";
+$tdataearningadjustment[".inlineEditFields"][] = "AdjustmentDescription";
+$tdataearningadjustment[".inlineEditFields"][] = "PaymentPeriod";
 $tdataearningadjustment[".inlineEditFields"][] = "PerPayrollAmount";
 $tdataearningadjustment[".inlineEditFields"][] = "LessAbsences";
 $tdataearningadjustment[".inlineEditFields"][] = "Inactive";
 
 $tdataearningadjustment[".updateSelectedFields"] = array();
 $tdataearningadjustment[".updateSelectedFields"][] = "EmployeeID";
-$tdataearningadjustment[".updateSelectedFields"][] = "AdjustmentDescription";
-$tdataearningadjustment[".updateSelectedFields"][] = "PaymentPeriod";
 $tdataearningadjustment[".updateSelectedFields"][] = "StartDate";
 $tdataearningadjustment[".updateSelectedFields"][] = "EndDate";
-$tdataearningadjustment[".updateSelectedFields"][] = "PerDay";
+$tdataearningadjustment[".updateSelectedFields"][] = "AdjustmentDescription";
+$tdataearningadjustment[".updateSelectedFields"][] = "PaymentPeriod";
 $tdataearningadjustment[".updateSelectedFields"][] = "PerPayrollAmount";
 $tdataearningadjustment[".updateSelectedFields"][] = "LessAbsences";
 $tdataearningadjustment[".updateSelectedFields"][] = "Inactive";
@@ -415,11 +399,10 @@ $tdataearningadjustment[".updateSelectedFields"][] = "Inactive";
 $tdataearningadjustment[".exportFields"] = array();
 $tdataearningadjustment[".exportFields"][] = "eaID";
 $tdataearningadjustment[".exportFields"][] = "EmployeeID";
-$tdataearningadjustment[".exportFields"][] = "AdjustmentDescription";
-$tdataearningadjustment[".exportFields"][] = "PaymentPeriod";
 $tdataearningadjustment[".exportFields"][] = "StartDate";
 $tdataearningadjustment[".exportFields"][] = "EndDate";
-$tdataearningadjustment[".exportFields"][] = "PerDay";
+$tdataearningadjustment[".exportFields"][] = "AdjustmentDescription";
+$tdataearningadjustment[".exportFields"][] = "PaymentPeriod";
 $tdataearningadjustment[".exportFields"][] = "PerPayrollAmount";
 $tdataearningadjustment[".exportFields"][] = "LessAbsences";
 $tdataearningadjustment[".exportFields"][] = "Inactive";
@@ -432,18 +415,16 @@ $tdataearningadjustment[".importFields"][] = "PerPayrollAmount";
 $tdataearningadjustment[".importFields"][] = "PaymentPeriod";
 $tdataearningadjustment[".importFields"][] = "LessAbsences";
 $tdataearningadjustment[".importFields"][] = "Inactive";
-$tdataearningadjustment[".importFields"][] = "PerDay";
 $tdataearningadjustment[".importFields"][] = "StartDate";
 $tdataearningadjustment[".importFields"][] = "EndDate";
 
 $tdataearningadjustment[".printFields"] = array();
 $tdataearningadjustment[".printFields"][] = "eaID";
 $tdataearningadjustment[".printFields"][] = "EmployeeID";
-$tdataearningadjustment[".printFields"][] = "AdjustmentDescription";
-$tdataearningadjustment[".printFields"][] = "PaymentPeriod";
 $tdataearningadjustment[".printFields"][] = "StartDate";
 $tdataearningadjustment[".printFields"][] = "EndDate";
-$tdataearningadjustment[".printFields"][] = "PerDay";
+$tdataearningadjustment[".printFields"][] = "AdjustmentDescription";
+$tdataearningadjustment[".printFields"][] = "PaymentPeriod";
 $tdataearningadjustment[".printFields"][] = "PerPayrollAmount";
 $tdataearningadjustment[".printFields"][] = "LessAbsences";
 $tdataearningadjustment[".printFields"][] = "Inactive";
@@ -1446,143 +1427,10 @@ $tdataearningadjustment[".printFields"][] = "Inactive";
 
 
 	$tdataearningadjustment["Inactive"] = $fdata;
-//	PerDay
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 8;
-	$fdata["strName"] = "PerDay";
-	$fdata["GoodName"] = "PerDay";
-	$fdata["ownerTable"] = "earningadjustment";
-	$fdata["Label"] = GetFieldLabel("earningadjustment","PerDay");
-	$fdata["FieldType"] = 14;
-
-	
-	
-	
-			
-		$fdata["bListPage"] = true;
-
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
-
-		$fdata["bViewPage"] = true;
-
-		$fdata["bAdvancedSearch"] = true;
-
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
-		$fdata["strField"] = "PerDay";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "PerDay";
-
-	
-	
-				$fdata["FieldPermissions"] = true;
-
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Number");
-
-	
-	
-	
-	
-	
-	
-		$vdata["DecimalDigits"] = 2;
-
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-		
-	
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-		
-	
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "number";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-
-
-	$tdataearningadjustment["PerDay"] = $fdata;
 //	StartDate
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 9;
+	$fdata["Index"] = 8;
 	$fdata["strName"] = "StartDate";
 	$fdata["GoodName"] = "StartDate";
 	$fdata["ownerTable"] = "earningadjustment";
@@ -1660,7 +1508,8 @@ $tdataearningadjustment[".printFields"][] = "Inactive";
 	
 
 
-	
+		$edata["IsRequired"] = true;
+
 	
 	
 			$edata["acceptFileTypes"] = ".+$";
@@ -1682,7 +1531,8 @@ $tdataearningadjustment[".printFields"][] = "Inactive";
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-	
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
 	
 	//	End validation
 
@@ -1714,7 +1564,7 @@ $tdataearningadjustment[".printFields"][] = "Inactive";
 //	EndDate
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 10;
+	$fdata["Index"] = 9;
 	$fdata["strName"] = "EndDate";
 	$fdata["GoodName"] = "EndDate";
 	$fdata["ownerTable"] = "earningadjustment";
@@ -1792,7 +1642,8 @@ $tdataearningadjustment[".printFields"][] = "Inactive";
 	
 
 
-	
+		$edata["IsRequired"] = true;
+
 	
 	
 			$edata["acceptFileTypes"] = ".+$";
@@ -1814,7 +1665,8 @@ $tdataearningadjustment[".printFields"][] = "Inactive";
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-	
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
 	
 	//	End validation
 
@@ -1906,7 +1758,7 @@ function createSqlQuery_earningadjustment()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "eaID,  AdjustmentDescription,  EmployeeID,  PerPayrollAmount,  PaymentPeriod,  LessAbsences,  Inactive,  PerDay,  StartDate,  EndDate";
+$proto0["m_strFieldList"] = "eaID,  AdjustmentDescription,  EmployeeID,  PerPayrollAmount,  PaymentPeriod,  LessAbsences,  Inactive,  StartDate,  EndDate";
 $proto0["m_strFrom"] = "FROM earningadjustment";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "ORDER BY eaID DESC";
@@ -2046,12 +1898,12 @@ $obj = new SQLFieldListItem($proto18);
 $proto0["m_fieldlist"][]=$obj;
 						$proto20=array();
 			$obj = new SQLField(array(
-	"m_strName" => "PerDay",
+	"m_strName" => "StartDate",
 	"m_strTable" => "earningadjustment",
 	"m_srcTableName" => "earningadjustment"
 ));
 
-$proto20["m_sql"] = "PerDay";
+$proto20["m_sql"] = "StartDate";
 $proto20["m_srcTableName"] = "earningadjustment";
 $proto20["m_expr"]=$obj;
 $proto20["m_alias"] = "";
@@ -2060,87 +1912,73 @@ $obj = new SQLFieldListItem($proto20);
 $proto0["m_fieldlist"][]=$obj;
 						$proto22=array();
 			$obj = new SQLField(array(
-	"m_strName" => "StartDate",
+	"m_strName" => "EndDate",
 	"m_strTable" => "earningadjustment",
 	"m_srcTableName" => "earningadjustment"
 ));
 
-$proto22["m_sql"] = "StartDate";
+$proto22["m_sql"] = "EndDate";
 $proto22["m_srcTableName"] = "earningadjustment";
 $proto22["m_expr"]=$obj;
 $proto22["m_alias"] = "";
 $obj = new SQLFieldListItem($proto22);
 
 $proto0["m_fieldlist"][]=$obj;
-						$proto24=array();
-			$obj = new SQLField(array(
-	"m_strName" => "EndDate",
-	"m_strTable" => "earningadjustment",
-	"m_srcTableName" => "earningadjustment"
-));
-
-$proto24["m_sql"] = "EndDate";
-$proto24["m_srcTableName"] = "earningadjustment";
-$proto24["m_expr"]=$obj;
-$proto24["m_alias"] = "";
-$obj = new SQLFieldListItem($proto24);
-
-$proto0["m_fieldlist"][]=$obj;
 $proto0["m_fromlist"] = array();
-												$proto26=array();
-$proto26["m_link"] = "SQLL_MAIN";
-			$proto27=array();
-$proto27["m_strName"] = "earningadjustment";
-$proto27["m_srcTableName"] = "earningadjustment";
-$proto27["m_columns"] = array();
-$proto27["m_columns"][] = "eaID";
-$proto27["m_columns"][] = "AdjustmentDescription";
-$proto27["m_columns"][] = "EmployeeID";
-$proto27["m_columns"][] = "PerPayrollAmount";
-$proto27["m_columns"][] = "PaymentPeriod";
-$proto27["m_columns"][] = "LessAbsences";
-$proto27["m_columns"][] = "Inactive";
-$proto27["m_columns"][] = "PerDay";
-$proto27["m_columns"][] = "StartDate";
-$proto27["m_columns"][] = "EndDate";
-$obj = new SQLTable($proto27);
+												$proto24=array();
+$proto24["m_link"] = "SQLL_MAIN";
+			$proto25=array();
+$proto25["m_strName"] = "earningadjustment";
+$proto25["m_srcTableName"] = "earningadjustment";
+$proto25["m_columns"] = array();
+$proto25["m_columns"][] = "eaID";
+$proto25["m_columns"][] = "AdjustmentDescription";
+$proto25["m_columns"][] = "EmployeeID";
+$proto25["m_columns"][] = "PerPayrollAmount";
+$proto25["m_columns"][] = "PaymentPeriod";
+$proto25["m_columns"][] = "LessAbsences";
+$proto25["m_columns"][] = "Inactive";
+$proto25["m_columns"][] = "PerDay";
+$proto25["m_columns"][] = "StartDate";
+$proto25["m_columns"][] = "EndDate";
+$obj = new SQLTable($proto25);
 
-$proto26["m_table"] = $obj;
-$proto26["m_sql"] = "earningadjustment";
-$proto26["m_alias"] = "";
-$proto26["m_srcTableName"] = "earningadjustment";
-$proto28=array();
-$proto28["m_sql"] = "";
-$proto28["m_uniontype"] = "SQLL_UNKNOWN";
+$proto24["m_table"] = $obj;
+$proto24["m_sql"] = "earningadjustment";
+$proto24["m_alias"] = "";
+$proto24["m_srcTableName"] = "earningadjustment";
+$proto26=array();
+$proto26["m_sql"] = "";
+$proto26["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto28["m_column"]=$obj;
-$proto28["m_contained"] = array();
-$proto28["m_strCase"] = "";
-$proto28["m_havingmode"] = false;
-$proto28["m_inBrackets"] = false;
-$proto28["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto28);
+$proto26["m_column"]=$obj;
+$proto26["m_contained"] = array();
+$proto26["m_strCase"] = "";
+$proto26["m_havingmode"] = false;
+$proto26["m_inBrackets"] = false;
+$proto26["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto26);
 
-$proto26["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto26);
+$proto24["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto24);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
 $proto0["m_orderby"] = array();
-												$proto30=array();
+												$proto28=array();
 						$obj = new SQLField(array(
 	"m_strName" => "eaID",
 	"m_strTable" => "earningadjustment",
 	"m_srcTableName" => "earningadjustment"
 ));
 
-$proto30["m_column"]=$obj;
-$proto30["m_bAsc"] = 0;
-$proto30["m_nColumn"] = 0;
-$obj = new SQLOrderByItem($proto30);
+$proto28["m_column"]=$obj;
+$proto28["m_bAsc"] = 0;
+$proto28["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto28);
 
 $proto0["m_orderby"][]=$obj;					
 $proto0["m_srcTableName"]="earningadjustment";		
@@ -2154,7 +1992,7 @@ $queryData_earningadjustment = createSqlQuery_earningadjustment();
 	
 		;
 
-										
+									
 
 $tdataearningadjustment[".sqlquery"] = $queryData_earningadjustment;
 

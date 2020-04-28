@@ -1,0 +1,193 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_pdf}
+<div {$pdf_chiddenattr} data-pageid="{$pageid}" data-container="pdf" class="   col-md-12 "> 
+
+{BEGIN printbuttons}
+
+{END printbuttons}
+
+
+
+</div>
+{END container_pdf}
+
+
+
+
+
+{BEGIN container_pageheader}
+<div {$pageheader_chiddenattr} data-pageid="{$pageid}" data-container="pageheader" class="    "> 
+
+{BEGIN printheader}
+	<h2 {$printheader_hiddenattr} data-pageid="{$pageid}" data-brick="printheader" >{$pagetitlelabel memo print}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END printheader}
+
+
+{BEGIN page_number}
+<span>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></span>
+{END page_number}
+
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="table table-bordered rp-maintable" {$printgrid_hiddenattr} data-pageid="{$pageid}" data-brick="printgrid" >
+	<thead>
+	{BEGIN grid_header}
+		<tr class="{$gridHeader_class}" >
+		{BEGIN record_header}
+			{BEGIN MemID_fieldheadercolumn}
+			<th class="{$MemID_class}" {$MemID_style}  data-field="MemID">
+				{$label memo MemID}
+			</th>
+			{END MemID_fieldheadercolumn}
+			{BEGIN MDate_fieldheadercolumn}
+			<th class="{$MDate_class}" {$MDate_style}  data-field="MDate">
+				{$label memo MDate}
+			</th>
+			{END MDate_fieldheadercolumn}
+			{BEGIN Subject_fieldheadercolumn}
+			<th class="{$Subject_class}" {$Subject_style}  data-field="Subject">
+				{$label memo Subject}
+			</th>
+			{END Subject_fieldheadercolumn}
+			{BEGIN To_fieldheadercolumn}
+			<th class="{$To_class}" {$To_style}  data-field="To">
+				{$label memo To}
+			</th>
+			{END To_fieldheadercolumn}
+			{BEGIN From_fieldheadercolumn}
+			<th class="{$From_class}" {$From_style}  data-field="From">
+				{$label memo From}
+			</th>
+			{END From_fieldheadercolumn}
+			{BEGIN Memo_fieldheadercolumn}
+			<th class="{$Memo_class}" {$Memo_style}  data-field="Memo">
+				{$label memo Memo}
+			</th>
+			{END Memo_fieldheadercolumn}
+			{BEGIN PreparedBy_fieldheadercolumn}
+			<th class="{$PreparedBy_class}" {$PreparedBy_style}  data-field="PreparedBy">
+				{$label memo PreparedBy}
+			</th>
+			{END PreparedBy_fieldheadercolumn}
+			{BEGIN endrecordheader_block}
+			<th class="rnr-cs">&nbsp;</th>
+			{END endrecordheader_block}
+		{END record_header}
+		</tr>
+	{END grid_header}
+	</thead>
+	
+	<tbody>	
+	{BEGIN grid_row}
+		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+			{BEGIN MemID_fieldcolumn}
+			<td  class="{$MemID_class}" {$MemID_style} {$recordattrs}>
+				{$MemID_value}
+			</td>
+			{END MemID_fieldcolumn}
+			{BEGIN MDate_fieldcolumn}
+			<td  class="{$MDate_class}" {$MDate_style} {$recordattrs}>
+				{$MDate_value}
+			</td>
+			{END MDate_fieldcolumn}
+			{BEGIN Subject_fieldcolumn}
+			<td  class="{$Subject_class}" {$Subject_style} {$recordattrs}>
+				{$Subject_value}
+			</td>
+			{END Subject_fieldcolumn}
+			{BEGIN To_fieldcolumn}
+			<td  class="{$To_class}" {$To_style} {$recordattrs}>
+				{$To_value}
+			</td>
+			{END To_fieldcolumn}
+			{BEGIN From_fieldcolumn}
+			<td  class="{$From_class}" {$From_style} {$recordattrs}>
+				{$From_value}
+			</td>
+			{END From_fieldcolumn}
+			{BEGIN Memo_fieldcolumn}
+			<td  class="{$Memo_class}" {$Memo_style} {$recordattrs}>
+				{$Memo_value}
+			</td>
+			{END Memo_fieldcolumn}
+			{BEGIN PreparedBy_fieldcolumn}
+			<td  class="{$PreparedBy_class}" {$PreparedBy_style} {$recordattrs}>
+				{$PreparedBy_value}
+			</td>
+			{END PreparedBy_fieldcolumn}
+			{BEGIN endrecord_block}
+			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+			{END endrecord_block}
+		{END grid_record}
+		</tr>
+{END grid_row}
+	</tbody>
+
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

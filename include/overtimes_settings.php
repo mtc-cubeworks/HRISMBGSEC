@@ -71,6 +71,9 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsovertimes["English"]["Remarks"] = "Remarks";
 	$fieldToolTipsovertimes["English"]["Remarks"] = "";
 	$placeHoldersovertimes["English"]["Remarks"] = "";
+	$fieldLabelsovertimes["English"]["SelectEmployees"] = "Select Employees";
+	$fieldToolTipsovertimes["English"]["SelectEmployees"] = "";
+	$placeHoldersovertimes["English"]["SelectEmployees"] = "";
 	if (count($fieldToolTipsovertimes["English"]))
 		$tdataovertimes[".isUseToolTips"] = true;
 }
@@ -98,6 +101,9 @@ if(mlang_getcurrentlang()=="")
 	$fieldLabelsovertimes[""]["Remarks"] = "Remarks";
 	$fieldToolTipsovertimes[""]["Remarks"] = "";
 	$placeHoldersovertimes[""]["Remarks"] = "";
+	$fieldLabelsovertimes[""]["SelectEmployees"] = "Select Employees";
+	$fieldToolTipsovertimes[""]["SelectEmployees"] = "";
+	$placeHoldersovertimes[""]["SelectEmployees"] = "";
 	if (count($fieldToolTipsovertimes[""]))
 		$tdataovertimes[".isUseToolTips"] = true;
 }
@@ -195,7 +201,7 @@ $tdataovertimes[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																							
+																																																																																																																																																																																																																																																																																																																														
 
 $tdataovertimes[".ajaxCodeSnippetAdded"] = false;
 
@@ -219,6 +225,7 @@ $tdataovertimes[".allSearchFields"][] = "OtiD";
 	$tdataovertimes[".allSearchFields"][] = "Employer";
 	$tdataovertimes[".allSearchFields"][] = "Division";
 	$tdataovertimes[".allSearchFields"][] = "AllEmployees";
+	$tdataovertimes[".allSearchFields"][] = "SelectEmployees";
 	$tdataovertimes[".allSearchFields"][] = "FromTime";
 	$tdataovertimes[".allSearchFields"][] = "ToTime";
 	$tdataovertimes[".allSearchFields"][] = "Reason";
@@ -249,6 +256,7 @@ $tdataovertimes[".googleLikeFields"][] = "AllEmployees";
 $tdataovertimes[".googleLikeFields"][] = "DateOT";
 $tdataovertimes[".googleLikeFields"][] = "PreparedBy";
 $tdataovertimes[".googleLikeFields"][] = "Remarks";
+$tdataovertimes[".googleLikeFields"][] = "SelectEmployees";
 
 
 $tdataovertimes[".advSearchFields"] = array();
@@ -257,6 +265,7 @@ $tdataovertimes[".advSearchFields"][] = "DateOT";
 $tdataovertimes[".advSearchFields"][] = "Employer";
 $tdataovertimes[".advSearchFields"][] = "Division";
 $tdataovertimes[".advSearchFields"][] = "AllEmployees";
+$tdataovertimes[".advSearchFields"][] = "SelectEmployees";
 $tdataovertimes[".advSearchFields"][] = "FromTime";
 $tdataovertimes[".advSearchFields"][] = "ToTime";
 $tdataovertimes[".advSearchFields"][] = "Reason";
@@ -310,7 +319,7 @@ $tdataovertimes[".strOrderBy"] = $tstrOrderBy;
 
 $tdataovertimes[".orderindexes"] = array();
 
-$tdataovertimes[".sqlHead"] = "SELECT OtiD,  	DateCreated,  	FromTime,  	ToTime,  	Approved,  	Approvedby,  	Posted,  	NoMins,  	ApprovedDate,  	Reason,  	Employer,  	Division,  	AllEmployees,  	DateOT,  	PreparedBy,  	Remarks";
+$tdataovertimes[".sqlHead"] = "SELECT OtiD,  	DateCreated,  	FromTime,  	ToTime,  	Approved,  	Approvedby,  	Posted,  	NoMins,  	ApprovedDate,  	Reason,  	Employer,  	Division,  	AllEmployees,  	DateOT,  	PreparedBy,  	Remarks,  	SelectEmployees";
 $tdataovertimes[".sqlFrom"] = "FROM overtimes";
 $tdataovertimes[".sqlWhereExpr"] = "";
 $tdataovertimes[".sqlTail"] = "";
@@ -360,6 +369,7 @@ $tdataovertimes[".listFields"][] = "DateOT";
 $tdataovertimes[".listFields"][] = "Employer";
 $tdataovertimes[".listFields"][] = "Division";
 $tdataovertimes[".listFields"][] = "AllEmployees";
+$tdataovertimes[".listFields"][] = "SelectEmployees";
 $tdataovertimes[".listFields"][] = "FromTime";
 $tdataovertimes[".listFields"][] = "ToTime";
 $tdataovertimes[".listFields"][] = "Reason";
@@ -381,6 +391,7 @@ $tdataovertimes[".viewFields"][] = "DateOT";
 $tdataovertimes[".viewFields"][] = "Employer";
 $tdataovertimes[".viewFields"][] = "Division";
 $tdataovertimes[".viewFields"][] = "AllEmployees";
+$tdataovertimes[".viewFields"][] = "SelectEmployees";
 $tdataovertimes[".viewFields"][] = "FromTime";
 $tdataovertimes[".viewFields"][] = "ToTime";
 $tdataovertimes[".viewFields"][] = "Reason";
@@ -398,6 +409,7 @@ $tdataovertimes[".addFields"][] = "DateOT";
 $tdataovertimes[".addFields"][] = "Employer";
 $tdataovertimes[".addFields"][] = "Division";
 $tdataovertimes[".addFields"][] = "AllEmployees";
+$tdataovertimes[".addFields"][] = "SelectEmployees";
 $tdataovertimes[".addFields"][] = "FromTime";
 $tdataovertimes[".addFields"][] = "ToTime";
 $tdataovertimes[".addFields"][] = "Reason";
@@ -411,6 +423,7 @@ $tdataovertimes[".masterListFields"][] = "DateOT";
 $tdataovertimes[".masterListFields"][] = "Employer";
 $tdataovertimes[".masterListFields"][] = "Division";
 $tdataovertimes[".masterListFields"][] = "AllEmployees";
+$tdataovertimes[".masterListFields"][] = "SelectEmployees";
 $tdataovertimes[".masterListFields"][] = "FromTime";
 $tdataovertimes[".masterListFields"][] = "ToTime";
 $tdataovertimes[".masterListFields"][] = "Reason";
@@ -428,6 +441,7 @@ $tdataovertimes[".inlineAddFields"][] = "DateOT";
 $tdataovertimes[".inlineAddFields"][] = "Employer";
 $tdataovertimes[".inlineAddFields"][] = "Division";
 $tdataovertimes[".inlineAddFields"][] = "AllEmployees";
+$tdataovertimes[".inlineAddFields"][] = "SelectEmployees";
 $tdataovertimes[".inlineAddFields"][] = "FromTime";
 $tdataovertimes[".inlineAddFields"][] = "ToTime";
 $tdataovertimes[".inlineAddFields"][] = "Reason";
@@ -440,6 +454,7 @@ $tdataovertimes[".editFields"][] = "DateOT";
 $tdataovertimes[".editFields"][] = "Employer";
 $tdataovertimes[".editFields"][] = "Division";
 $tdataovertimes[".editFields"][] = "AllEmployees";
+$tdataovertimes[".editFields"][] = "SelectEmployees";
 $tdataovertimes[".editFields"][] = "FromTime";
 $tdataovertimes[".editFields"][] = "ToTime";
 $tdataovertimes[".editFields"][] = "Reason";
@@ -455,6 +470,7 @@ $tdataovertimes[".inlineEditFields"][] = "DateOT";
 $tdataovertimes[".inlineEditFields"][] = "Employer";
 $tdataovertimes[".inlineEditFields"][] = "Division";
 $tdataovertimes[".inlineEditFields"][] = "AllEmployees";
+$tdataovertimes[".inlineEditFields"][] = "SelectEmployees";
 $tdataovertimes[".inlineEditFields"][] = "FromTime";
 $tdataovertimes[".inlineEditFields"][] = "ToTime";
 $tdataovertimes[".inlineEditFields"][] = "Reason";
@@ -480,6 +496,7 @@ $tdataovertimes[".exportFields"][] = "DateOT";
 $tdataovertimes[".exportFields"][] = "Employer";
 $tdataovertimes[".exportFields"][] = "Division";
 $tdataovertimes[".exportFields"][] = "AllEmployees";
+$tdataovertimes[".exportFields"][] = "SelectEmployees";
 $tdataovertimes[".exportFields"][] = "FromTime";
 $tdataovertimes[".exportFields"][] = "ToTime";
 $tdataovertimes[".exportFields"][] = "Reason";
@@ -509,6 +526,7 @@ $tdataovertimes[".importFields"][] = "AllEmployees";
 $tdataovertimes[".importFields"][] = "DateOT";
 $tdataovertimes[".importFields"][] = "PreparedBy";
 $tdataovertimes[".importFields"][] = "Remarks";
+$tdataovertimes[".importFields"][] = "SelectEmployees";
 
 $tdataovertimes[".printFields"] = array();
 $tdataovertimes[".printFields"][] = "OtiD";
@@ -516,6 +534,7 @@ $tdataovertimes[".printFields"][] = "DateOT";
 $tdataovertimes[".printFields"][] = "Employer";
 $tdataovertimes[".printFields"][] = "Division";
 $tdataovertimes[".printFields"][] = "AllEmployees";
+$tdataovertimes[".printFields"][] = "SelectEmployees";
 $tdataovertimes[".printFields"][] = "FromTime";
 $tdataovertimes[".printFields"][] = "ToTime";
 $tdataovertimes[".printFields"][] = "Reason";
@@ -1969,7 +1988,8 @@ $tdataovertimes[".printFields"][] = "PreparedBy";
 // End Lookup Settings
 
 
-	
+		$edata["IsRequired"] = true;
+
 	
 	
 			$edata["acceptFileTypes"] = ".+$";
@@ -1988,7 +2008,8 @@ $tdataovertimes[".printFields"][] = "PreparedBy";
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-							
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
 	
 	//	End validation
 
@@ -2117,6 +2138,9 @@ $tdataovertimes[".printFields"][] = "PreparedBy";
 	
 	
 	
+				//dependent dropdowns @deprecated data ?
+	$edata["DependentLookups"] = array();
+	$edata["DependentLookups"][] = "SelectEmployees";
 
 	
 	
@@ -2125,7 +2149,8 @@ $tdataovertimes[".printFields"][] = "PreparedBy";
 // End Lookup Settings
 
 
-	
+		$edata["IsRequired"] = true;
+
 	
 	
 			$edata["acceptFileTypes"] = ".+$";
@@ -2144,7 +2169,8 @@ $tdataovertimes[".printFields"][] = "PreparedBy";
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-							
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
 	
 	//	End validation
 
@@ -2348,7 +2374,7 @@ $tdataovertimes[".printFields"][] = "PreparedBy";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Short Date");
+	$vdata = array("ViewFormat" => "Datetime");
 
 	
 	
@@ -2380,7 +2406,8 @@ $tdataovertimes[".printFields"][] = "PreparedBy";
 	
 
 
-	
+		$edata["IsRequired"] = true;
+
 	
 	
 			$edata["acceptFileTypes"] = ".+$";
@@ -2402,7 +2429,8 @@ $tdataovertimes[".printFields"][] = "PreparedBy";
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-	
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
 	
 	//	End validation
 
@@ -2714,6 +2742,165 @@ $tdataovertimes[".printFields"][] = "PreparedBy";
 
 
 	$tdataovertimes["Remarks"] = $fdata;
+//	SelectEmployees
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 17;
+	$fdata["strName"] = "SelectEmployees";
+	$fdata["GoodName"] = "SelectEmployees";
+	$fdata["ownerTable"] = "overtimes";
+	$fdata["Label"] = GetFieldLabel("overtimes","SelectEmployees");
+	$fdata["FieldType"] = 200;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+		$fdata["bInlineAdd"] = true;
+
+		$fdata["bEditPage"] = true;
+
+		$fdata["bInlineEdit"] = true;
+
+	
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "SelectEmployees";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "SelectEmployees";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Lookup wizard");
+
+	
+	
+		
+	
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "selectemployee";
+		$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 2;
+
+	
+		
+	$edata["LinkField"] = "EmployeeID";
+	$edata["LinkFieldType"] = 3;
+	$edata["DisplayField"] = "Employee";
+	
+	
+
+	
+	$edata["LookupOrderBy"] = "Employee";
+
+	
+		$edata["UseCategory"] = true;
+	$edata["categoryFields"] = array();
+	$edata["categoryFields"][] = array( "main" => "Division", "lookup" => "Division" );
+
+	
+	
+
+	
+		$edata["Multiselect"] = true;
+
+	
+// End Lookup Settings
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdataovertimes["SelectEmployees"] = $fdata;
 
 
 $tables_data["overtimes"]=&$tdataovertimes;
@@ -2780,7 +2967,7 @@ function createSqlQuery_overtimes()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "OtiD,  	DateCreated,  	FromTime,  	ToTime,  	Approved,  	Approvedby,  	Posted,  	NoMins,  	ApprovedDate,  	Reason,  	Employer,  	Division,  	AllEmployees,  	DateOT,  	PreparedBy,  	Remarks";
+$proto0["m_strFieldList"] = "OtiD,  	DateCreated,  	FromTime,  	ToTime,  	Approved,  	Approvedby,  	Posted,  	NoMins,  	ApprovedDate,  	Reason,  	Employer,  	Division,  	AllEmployees,  	DateOT,  	PreparedBy,  	Remarks,  	SelectEmployees";
 $proto0["m_strFrom"] = "FROM overtimes";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -3044,52 +3231,67 @@ $proto36["m_alias"] = "";
 $obj = new SQLFieldListItem($proto36);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto38=array();
-$proto38["m_link"] = "SQLL_MAIN";
-			$proto39=array();
-$proto39["m_strName"] = "overtimes";
-$proto39["m_srcTableName"] = "overtimes";
-$proto39["m_columns"] = array();
-$proto39["m_columns"][] = "OtiD";
-$proto39["m_columns"][] = "DateCreated";
-$proto39["m_columns"][] = "FromTime";
-$proto39["m_columns"][] = "ToTime";
-$proto39["m_columns"][] = "Approved";
-$proto39["m_columns"][] = "Approvedby";
-$proto39["m_columns"][] = "Posted";
-$proto39["m_columns"][] = "NoMins";
-$proto39["m_columns"][] = "ApprovedDate";
-$proto39["m_columns"][] = "Reason";
-$proto39["m_columns"][] = "Employer";
-$proto39["m_columns"][] = "Division";
-$proto39["m_columns"][] = "AllEmployees";
-$proto39["m_columns"][] = "DateOT";
-$proto39["m_columns"][] = "PreparedBy";
-$proto39["m_columns"][] = "Remarks";
-$obj = new SQLTable($proto39);
+						$proto38=array();
+			$obj = new SQLField(array(
+	"m_strName" => "SelectEmployees",
+	"m_strTable" => "overtimes",
+	"m_srcTableName" => "overtimes"
+));
 
-$proto38["m_table"] = $obj;
-$proto38["m_sql"] = "overtimes";
-$proto38["m_alias"] = "";
+$proto38["m_sql"] = "SelectEmployees";
 $proto38["m_srcTableName"] = "overtimes";
-$proto40=array();
-$proto40["m_sql"] = "";
-$proto40["m_uniontype"] = "SQLL_UNKNOWN";
+$proto38["m_expr"]=$obj;
+$proto38["m_alias"] = "";
+$obj = new SQLFieldListItem($proto38);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto40=array();
+$proto40["m_link"] = "SQLL_MAIN";
+			$proto41=array();
+$proto41["m_strName"] = "overtimes";
+$proto41["m_srcTableName"] = "overtimes";
+$proto41["m_columns"] = array();
+$proto41["m_columns"][] = "OtiD";
+$proto41["m_columns"][] = "DateCreated";
+$proto41["m_columns"][] = "FromTime";
+$proto41["m_columns"][] = "ToTime";
+$proto41["m_columns"][] = "Approved";
+$proto41["m_columns"][] = "Approvedby";
+$proto41["m_columns"][] = "Posted";
+$proto41["m_columns"][] = "NoMins";
+$proto41["m_columns"][] = "ApprovedDate";
+$proto41["m_columns"][] = "Reason";
+$proto41["m_columns"][] = "Employer";
+$proto41["m_columns"][] = "Division";
+$proto41["m_columns"][] = "AllEmployees";
+$proto41["m_columns"][] = "DateOT";
+$proto41["m_columns"][] = "PreparedBy";
+$proto41["m_columns"][] = "Remarks";
+$proto41["m_columns"][] = "SelectEmployees";
+$obj = new SQLTable($proto41);
+
+$proto40["m_table"] = $obj;
+$proto40["m_sql"] = "overtimes";
+$proto40["m_alias"] = "";
+$proto40["m_srcTableName"] = "overtimes";
+$proto42=array();
+$proto42["m_sql"] = "";
+$proto42["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto40["m_column"]=$obj;
-$proto40["m_contained"] = array();
-$proto40["m_strCase"] = "";
-$proto40["m_havingmode"] = false;
-$proto40["m_inBrackets"] = false;
-$proto40["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto40);
+$proto42["m_column"]=$obj;
+$proto42["m_contained"] = array();
+$proto42["m_strCase"] = "";
+$proto42["m_havingmode"] = false;
+$proto42["m_inBrackets"] = false;
+$proto42["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto42);
 
-$proto38["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto38);
+$proto40["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto40);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -3105,7 +3307,7 @@ $queryData_overtimes = createSqlQuery_overtimes();
 	
 		;
 
-																
+																	
 
 $tdataovertimes[".sqlquery"] = $queryData_overtimes;
 

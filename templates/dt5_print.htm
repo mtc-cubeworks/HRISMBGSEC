@@ -265,11 +265,6 @@
 				{$label dt5 NDMins}
 			</th>
 			{END NDMins_fieldheadercolumn}
-			{BEGIN NDOTMins_fieldheadercolumn}
-			<th class="{$NDOTMins_class}" {$NDOTMins_style}  data-field="NDOTMins">
-				{$label dt5 NDOTMins}
-			</th>
-			{END NDOTMins_fieldheadercolumn}
 			{BEGIN ApprovedNightDiff_fieldheadercolumn}
 			<th class="{$ApprovedNightDiff_class}" {$ApprovedNightDiff_style}  data-field="ApprovedNightDiff">
 				{$label dt5 ApprovedNightDiff}
@@ -647,11 +642,6 @@
 				{$NDMins_value}
 			</td>
 			{END NDMins_fieldcolumn}
-			{BEGIN NDOTMins_fieldcolumn}
-			<td  class="{$NDOTMins_class}" {$NDOTMins_style} {$recordattrs}>
-				{$NDOTMins_value}
-			</td>
-			{END NDOTMins_fieldcolumn}
 			{BEGIN ApprovedNightDiff_fieldcolumn}
 			<td  class="{$ApprovedNightDiff_class}" {$ApprovedNightDiff_style} {$recordattrs}>
 				{$ApprovedNightDiff_value}
@@ -830,7 +820,7 @@
 	{BEGIN details_row}
 		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
 			{BEGIN details_record}
-				<td colspan="75">
+				<td colspan="74">
 					{BEGIN details_table}
 						{$details}
 					{END details_table}
@@ -1076,14 +1066,6 @@
 				{END NDMins_showtotal}
 			</td>
 			{END NDMins_fieldfootercolumn}
-			{BEGIN NDOTMins_fieldfootercolumn}
-			<td>
-							{BEGIN NDOTMins_showtotal}
-									Total:
-				{$NDOTMins_total}
-				{END NDOTMins_showtotal}
-			</td>
-			{END NDOTMins_fieldfootercolumn}
 			{BEGIN ApprovedNightDiff_fieldfootercolumn}
 			<td>
 						</td>

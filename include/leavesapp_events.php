@@ -521,7 +521,7 @@ if($ltype==5) { //Paternity Leave
 $pk=DBLookup("select PLBalance from leavebalance where EmployeeID='$empid'");
 }
 
-if($ltype==7) { //Paternity Leave
+if($ltype>6) { //Official Buisness
 $pk=10000;
 }
 
@@ -541,14 +541,31 @@ CustomQuery($sqldel);
 
 WHILE ($i < $inter):
 
+$datez = date_create($fd);
+$datez = date_add($datez, date_interval_create_from_date_string("'".$i." days'"));
+$fromAd = date_format($datez, "Y-m-d");
+
+$dvs=DBLookup("SELECT Division FROM demo_user WHERE EmployeeID='$empid'");
+$fhz=DBLookup("SELECT FirstHalf FROM holidays WHERE Division='$dvs' and HolidayDate='$fromAd'");
+$shz=DBLookup("SELECT SecondHalf FROM holidays WHERE Division='$dvs' and HolidayDate='$fromAd'");
+$adhz=($fhz+$shz)*0.5;
+
 if($pk<0.001) {$pkpx=1;};
 
+if($adhz==$days or $adhz>$days) {$pkpx=0;};
 
 
+$rsy=DBLookup("SELECT RestDay FROM indschedule WHERE EmployeeID='$empid' and SDate='$fromAd'");
+
+if ($rsy==0) {
 $sqlrx = "INSERT indleave VALUES (NULL, '$empid', DATE_ADD('$fd', INTERVAL '$i' DAY), '$days', '$pkpx', '$ltype', '$lvid', '$fh', '$sh', '$rea')";
 CustomQuery($sqlrx);
+};
+
+
 $i++;
-$pk=$pk-$days;
+
+if($adhz==$days or $adhz>$days){$pk=$pk;} else {$pk=$pk-$days;};
 
 ENDWHILE;
 
@@ -558,6 +575,7 @@ $sqlu = "Update leaves set Posted=1 where LvID='$lvid'";
 
 $sqlv = "Update leaves set Locked=1 where LvID='$lvid'";
  CustomQuery($sqlv);
+
 
 
 

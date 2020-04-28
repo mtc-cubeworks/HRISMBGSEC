@@ -278,7 +278,7 @@ class ConnectionManager
 		$data["connId"] = "payrollflex_at_localhost";
 		$data["connName"] = "payrollflex at localhost";
 		$data["connStringType"] = "mysql";
-		$data["connectionString"] = "mysql;localhost;badz;Madzilla101;;payrollflexo;;1"; //currently unused
+		$data["connectionString"] = "mysql;localhost;badz;Madzilla101;;mgbsec;;1"; //currently unused
 
 		$this->_connectionsIdByName["payrollflex at localhost"] = "payrollflex_at_localhost";
 		
@@ -295,10 +295,10 @@ class ConnectionManager
 		$data["connInfo"][1] = "badz";
 		$data["connInfo"][2] = "Madzilla101";
 		$data["connInfo"][3] = "";
-		$data["connInfo"][4] = "payrollflexo";
+		$data["connInfo"][4] = "mgbsec";
 		$data["connInfo"][5] = ""; //currently unused
 		$data["connInfo"][6] = "1"; //currently unused
-		$data["ODBCString"] = "DRIVER={MySQL ODBC 5.3 Unicode Driver};Server=localhost;Uid=badz;Pwd=Madzilla101;Database=payrollflexo;OPTION=3";
+		$data["ODBCString"] = "DRIVER={MySQL ODBC 5.3 Unicode Driver};Server=localhost;Uid=badz;Pwd=Madzilla101;Database=mgbsec;OPTION=3";
 		// encription set
 		$data["EncryptInfo"] = array();
 		$data["EncryptInfo"]["mode"] = 0;

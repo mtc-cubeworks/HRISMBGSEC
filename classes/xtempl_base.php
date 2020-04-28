@@ -108,6 +108,12 @@ class XTempl_Base
 		
 		if( !$hideAddedCharts ) //#9607 1. Temporary fix
 		{
+			$this->assign_function("zleavetypes_Chart_chart","xt_showchart",array("chartName"=>"zleavetypes_Chart","table"=>"zleavetypes Chart","ctype"=>"2DDoughnut"));
+			$this->assign_function("zotdept_Chart_chart","xt_showchart",array("chartName"=>"zotdept_Chart","table"=>"zotdept Chart","ctype"=>"2DDoughnut"));
+			$this->assign_function("zotdiv_Chart_chart","xt_showchart",array("chartName"=>"zotdiv_Chart","table"=>"zotdiv Chart","ctype"=>"2DDoughnut"));
+			$this->assign_function("zots_Chart_chart","xt_showchart",array("chartName"=>"zots_Chart","table"=>"zots Chart","ctype"=>"2DDoughnut"));
+			$this->assign_function("zresigns_Chart_chart","xt_showchart",array("chartName"=>"zresigns_Chart","table"=>"zresigns Chart","ctype"=>"Gauge"));
+			$this->assign_function("attrition_Chart_chart","xt_showchart",array("chartName"=>"attrition_Chart","table"=>"attrition Chart","ctype"=>"Gauge"));
 		}
 		
 		$mlang_charsets=array();

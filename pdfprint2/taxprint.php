@@ -5,7 +5,7 @@ require_once('fpdf17/fpdf.php');
 //db connection
 $con = mysqli_connect('localhost','badz','Madzilla101');
 
-mysqli_select_db($con,'payrollflexo');
+mysqli_select_db($con,'mgbsec');
 
 //Data table
 $query = mysqli_query($con,"select * from monrem

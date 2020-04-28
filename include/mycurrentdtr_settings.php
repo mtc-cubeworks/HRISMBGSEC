@@ -395,7 +395,7 @@ $tdatamycurrentdtr[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																							
+																																																																																																																																																																																																																																																																																																																														
 
 $tdatamycurrentdtr[".ajaxCodeSnippetAdded"] = false;
 

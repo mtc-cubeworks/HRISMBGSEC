@@ -106,6 +106,16 @@
 				{$label payrolldiv Employer}
 			</th>
 			{END Employer_fieldheadercolumn}
+			{BEGIN Division_fieldheadercolumn}
+			<th class="{$Division_class}" {$Division_style}  data-field="Division">
+				{$label payrolldiv Division}
+			</th>
+			{END Division_fieldheadercolumn}
+			{BEGIN WageType_fieldheadercolumn}
+			<th class="{$WageType_class}" {$WageType_style}  data-field="WageType">
+				{$label payrolldiv WageType}
+			</th>
+			{END WageType_fieldheadercolumn}
 			{BEGIN FromDate_fieldheadercolumn}
 			<th class="{$FromDate_class}" {$FromDate_style}  data-field="FromDate">
 				{$label payrolldiv FromDate}
@@ -143,6 +153,16 @@
 				{$Employer_value}
 			</td>
 			{END Employer_fieldcolumn}
+			{BEGIN Division_fieldcolumn}
+			<td  class="{$Division_class}" {$Division_style} {$recordattrs}>
+				{$Division_value}
+			</td>
+			{END Division_fieldcolumn}
+			{BEGIN WageType_fieldcolumn}
+			<td  class="{$WageType_class}" {$WageType_style} {$recordattrs}>
+				{$WageType_value}
+			</td>
+			{END WageType_fieldcolumn}
 			{BEGIN FromDate_fieldcolumn}
 			<td  class="{$FromDate_class}" {$FromDate_style} {$recordattrs}>
 				{$FromDate_value}

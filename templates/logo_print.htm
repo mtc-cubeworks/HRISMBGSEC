@@ -80,6 +80,11 @@
 				{$label logo Logo}
 			</th>
 			{END Logo_fieldheadercolumn}
+			{BEGIN CodeNo_fieldheadercolumn}
+			<th class="{$CodeNo_class}" {$CodeNo_style}  data-field="CodeNo">
+				{$label logo CodeNo}
+			</th>
+			{END CodeNo_fieldheadercolumn}
 			{BEGIN endrecordheader_block}
 			<th class="rnr-cs">&nbsp;</th>
 			{END endrecordheader_block}
@@ -102,6 +107,11 @@
 				{$Logo_value}
 			</td>
 			{END Logo_fieldcolumn}
+			{BEGIN CodeNo_fieldcolumn}
+			<td  class="{$CodeNo_class}" {$CodeNo_style} {$recordattrs}>
+				{$CodeNo_value}
+			</td>
+			{END CodeNo_fieldcolumn}
 			{BEGIN endrecord_block}
 			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
 			{END endrecord_block}

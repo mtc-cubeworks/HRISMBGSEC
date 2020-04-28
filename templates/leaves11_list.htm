@@ -521,9 +521,6 @@
 	.bs-gridcell[data-field=TotalDays]:before {
 		content: "{$label leaves11 TotalDays}";
 	}
-	.bs-gridcell[data-field=UploadFile]:before {
-		content: "{$label leaves11 UploadFile}";
-	}
 </style>
 <table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
 	<thead>
@@ -612,17 +609,6 @@
 									{END Reason_fieldheader}
 									</th>
 									{END Reason_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN UploadFile_fieldheadercolumn}<th class="rnr-gridfieldlabel {$UploadFile_class}" data-field=UploadFile>
-									{BEGIN UploadFile_fieldheader}<span {$UploadFile_orderlinkattrs}>
-											{$label leaves11 UploadFile}
-										</span>
-									{END UploadFile_fieldheader}
-									</th>
-									{END UploadFile_fieldheadercolumn}
 									
 									
 									
@@ -871,12 +857,6 @@
 		{$Reason_value}
 	</td>
 {END Reason_fieldcolumn}
-
-
-	{BEGIN UploadFile_fieldcolumn}<td class="bs-gridcell {$UploadFile_class}"  data-field=UploadFile {$rowstyle} {$recordattrs}>
-		{$UploadFile_value}
-	</td>
-{END UploadFile_fieldcolumn}
 
 
 	{BEGIN FirstHalf_fieldcolumn}<td class="bs-gridcell {$FirstHalf_class}"  data-field=FirstHalf {$rowstyle} {$recordattrs}>

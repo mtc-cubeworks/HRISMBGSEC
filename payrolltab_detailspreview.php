@@ -103,6 +103,16 @@ if($mastertable == "payroll")
 		$whereClauses[] = $pageObject->getFieldSQLDecrypt("Employer") . " is null";
 	else
 		$whereClauses[] = $pageObject->getFieldSQLDecrypt("Employer") . "=" . $formattedValue;
+	$formattedValue = make_db_value("Division",$_SESSION[$sessionPrefix."_masterkey3"]);
+	if( $formattedValue == "null" )
+		$whereClauses[] = $pageObject->getFieldSQLDecrypt("Division") . " is null";
+	else
+		$whereClauses[] = $pageObject->getFieldSQLDecrypt("Division") . "=" . $formattedValue;
+	$formattedValue = make_db_value("WageType",$_SESSION[$sessionPrefix."_masterkey4"]);
+	if( $formattedValue == "null" )
+		$whereClauses[] = $pageObject->getFieldSQLDecrypt("WageType") . " is null";
+	else
+		$whereClauses[] = $pageObject->getFieldSQLDecrypt("WageType") . "=" . $formattedValue;
 }
 
 $whereClauses[] = SecuritySQL("Search", $strTableName);

@@ -95,12 +95,12 @@ $tdataemphistory[".listAjax"] = false;
 	$tdataemphistory[".locking"] = false;
 
 $tdataemphistory[".edit"] = true;
-$tdataemphistory[".afterEditAction"] = 0;
+$tdataemphistory[".afterEditAction"] = 1;
 $tdataemphistory[".closePopupAfterEdit"] = 1;
 $tdataemphistory[".afterEditActionDetTable"] = "";
 
 $tdataemphistory[".add"] = true;
-$tdataemphistory[".afterAddAction"] = 0;
+$tdataemphistory[".afterAddAction"] = 1;
 $tdataemphistory[".closePopupAfterAdd"] = 1;
 $tdataemphistory[".afterAddActionDetTable"] = "";
 
@@ -147,7 +147,7 @@ $tdataemphistory[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
 
 $tdataemphistory[".ajaxCodeSnippetAdded"] = false;
 

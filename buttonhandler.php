@@ -167,12 +167,6 @@ if($buttId=='Update_Pag_Ibig2')
 	$cipherer = new RunnerCipherer("demo_user1");
 	buttonHandler_Update_Pag_Ibig2($params);
 }
-if($buttId=='Payslip1')
-{
-	require_once("include/payrolltab_variables.php");
-	$cipherer = new RunnerCipherer("payrolltab");
-	buttonHandler_Payslip1($params);
-}
 if($buttId=='Approved_OT_ND_RD')
 {
 	require_once("include/dtrrange_variables.php");
@@ -227,35 +221,89 @@ if($buttId=='Insert_Default_Holiday')
 	$cipherer = new RunnerCipherer("divisions");
 	buttonHandler_Insert_Default_Holiday($params);
 }
-if($buttId=='Update_Holiday1')
+if($buttId=='Update_Holiday')
 {
 	require_once("include/holidayupdate_variables.php");
 	$cipherer = new RunnerCipherer("holidayupdate");
-	buttonHandler_Update_Holiday1($params);
+	buttonHandler_Update_Holiday($params);
 }
 if($buttId=='Refresh')
 {
-	require_once("include/notes_variables.php");
-	$cipherer = new RunnerCipherer("notes");
+	require_once("include/demo_user_variables.php");
+	$cipherer = new RunnerCipherer("demo_user");
 	buttonHandler_Refresh($params);
+}
+if($buttId=='Process_Approval4')
+{
+	require_once("include/filelogglobal_variables.php");
+	$cipherer = new RunnerCipherer("filelogglobal");
+	buttonHandler_Process_Approval4($params);
+}
+if($buttId=='Update_Dashboard')
+{
+	require_once("include/dashrange_variables.php");
+	$cipherer = new RunnerCipherer("dashrange");
+	buttonHandler_Update_Dashboard($params);
+}
+if($buttId=='Update_SSS1')
+{
+	require_once("include/demo_user11_variables.php");
+	$cipherer = new RunnerCipherer("demo_user11");
+	buttonHandler_Update_SSS1($params);
+}
+if($buttId=='Update_PhilHelath1')
+{
+	require_once("include/demo_user11_variables.php");
+	$cipherer = new RunnerCipherer("demo_user11");
+	buttonHandler_Update_PhilHelath1($params);
+}
+if($buttId=='Update_Pag_Ibig21')
+{
+	require_once("include/demo_user11_variables.php");
+	$cipherer = new RunnerCipherer("demo_user11");
+	buttonHandler_Update_Pag_Ibig21($params);
 }
 if($buttId=='Refresh1')
 {
-	require_once("include/notestatus_variables.php");
-	$cipherer = new RunnerCipherer("notestatus");
+	require_once("include/demo_useractive_variables.php");
+	$cipherer = new RunnerCipherer("demo_useractive");
 	buttonHandler_Refresh1($params);
 }
-if($buttId=='Refresh2')
+if($buttId=='Process_Approval41')
 {
-	require_once("include/demo_user_variables.php");
-	$cipherer = new RunnerCipherer("demo_user");
-	buttonHandler_Refresh2($params);
+	require_once("include/filelogglobal1_variables.php");
+	$cipherer = new RunnerCipherer("filelogglobal1");
+	buttonHandler_Process_Approval41($params);
 }
-if($buttId=='Refresh3')
+if($buttId=='Upload_Payslips')
 {
-	require_once("include/demo_user1_variables.php");
-	$cipherer = new RunnerCipherer("demo_user1");
-	buttonHandler_Refresh3($params);
+	require_once("include/payrolldiv_variables.php");
+	$cipherer = new RunnerCipherer("payrolldiv");
+	buttonHandler_Upload_Payslips($params);
+}
+if($buttId=='Clear_Uploaded_Payslips')
+{
+	require_once("include/payrolldiv_variables.php");
+	$cipherer = new RunnerCipherer("payrolldiv");
+	buttonHandler_Clear_Uploaded_Payslips($params);
+}
+if($buttId=='Payslip5')
+{
+	require_once("include/payrolldiv_variables.php");
+	$cipherer = new RunnerCipherer("payrolldiv");
+	buttonHandler_Payslip5($params);
+}
+if($buttId=='Preview_Payslip')
+{
+	require_once("include/payrolltab_variables.php");
+	$cipherer = new RunnerCipherer("payrolltab");
+	buttonHandler_Preview_Payslip($params);
+}
+if($buttId=='Payslip7')
+{
+	require_once("include/payrolltab_variables.php");
+	$cipherer = new RunnerCipherer("payrolltab");
+	buttonHandler_Payslip7($params);
 }
 
 
@@ -599,12 +647,13 @@ $adb = DBLookup("SELECT WithAdditionalBreaks FROM demo_user WHERE user_name='$us
 
 $i = 0;
 WHILE ($i < $inter):
-$date=date_create($fd);
-date_add($date,date_interval_create_from_date_string('"'.$i.'days"'));
-$indate=date_format($date,"Y-m-d");
+$dtx = date_create($fd);
+//$dtx1 = date_add($dtx, date_interval_create_from_date_string("'".$i." days'"));
+$dtx1=date('Y-m-d', strtotime($fd. ' + '.$i.' days'));
+//$indate=date_format($dtx1,"Y-m-d");
 
 //$day_num = 1;
-$day_num = date('N', strtotime($indate));
+$day_num = date('N', strtotime($dtx1));
 
 $dayrest = comma_separated_to_array($rsdy);
 
@@ -620,13 +669,14 @@ else
   };
 
 $sqd = "DELETE FROM indschedule WHERE UserName='$usern' AND SDate='$indate'";
-CustomQuery($sqd);
+DB::Query($sqd);
 
-$sqlr = "INSERT indschedule VALUES (NULL, '$usern', '$indate', NULLIF('$ti',''), NULLIF('$to',''), '$stype', NULL, NULL, NULL, NULL, NULL, NULL, '$wt', NULL, NULL, '$empid', '$mpd', '$bm', '$shf', NULL, NULL, '$mid', '$lbf', '$lbt', NULL, '$fhm', '$shm', '$ndmeal', '$ndhrs', NULL, '$divi',
+$sqlr = "INSERT indschedule VALUES (NULL, '$usern', DATE_ADD('$fd', INTERVAL '$i' DAY), NULLIF('$ti',''), NULLIF('$to',''), '$stype', NULL, NULL, NULL, NULL, NULL, NULL, '$wt', NULL, NULL, '$empid', '$mpd', '$bm', '$shf', NULL, NULL, '$mid', '$lbf', '$lbt', NULL, '$fhm', '$shm', '$ndmeal', '$ndhrs', NULL, '$divi',
 NULL, NULL, '$day_num', '$rdfn', NULL, '$dept', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL,
 NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '$empr', NULL, '$latfix', NULL, NULL,'$pt','$ibl','$gp', '$adb', NULL,
 NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)";
-CustomQuery($sqlr);
+DB::Query($sqlr);
+
 
 }; //end sby as All Days work Except rest days
 
@@ -635,13 +685,13 @@ if ($sby==2) {
    if (in_array($day_num, $dayrest)) { 
 
    $sqd2 = "DELETE FROM indschedule WHERE UserName='$usern' AND SDate='$indate'";
-   CustomQuery($sqd2);
+   DB::Query($sqd2);
 
-   $sqlr = "INSERT indschedule VALUES (NULL, '$usern', '$indate', NULLIF('$ti',''), NULLIF('$to',''), '$stype', NULL, NULL, NULL, NULL, NULL, NULL, '$wt', NULL, NULL, '$empid', '$mpd', '$bm', '$shf', NULL, NULL, '$mid', '$lbf', '$lbt', NULL, '$fhm', '$shm', '$ndmeal', '$ndhrs', NULL, '$divi',
+   $sqlr = "INSERT indschedule VALUES (NULL, '$usern', DATE_ADD('$fd', INTERVAL '$i' DAY), NULLIF('$ti',''), NULLIF('$to',''), '$stype', NULL, NULL, NULL, NULL, NULL, NULL, '$wt', NULL, NULL, '$empid', '$mpd', '$bm', '$shf', NULL, NULL, '$mid', '$lbf', '$lbt', NULL, '$fhm', '$shm', '$ndmeal', '$ndhrs', NULL, '$divi',
    NULL, NULL, '$day_num', 0, NULL, '$dept', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL,
    NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '$empr', NULL, '$latfix', NULL, NULL,'$pt','$ibl','$gp', '$adb', NULL,
    NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)";
-   CustomQuery($sqlr);
+   DB::Query($sqlr);
    }
 
 }; //end sby as All Working Days Only
@@ -651,7 +701,7 @@ $i++;
 ENDWHILE;
 
 $sqlup = "Update schedrange set Posted=1 where ScRID='$mid'";
- CustomQuery($sqlup);
+DB::Query($sqlup);
 
 
 };
@@ -721,11 +771,10 @@ $sc= $data["ScRID"];
 
 
 $sqz = "DELETE FROM indschedule WHERE ScRID='$sc'";
-CustomQuery($sqz);
+DB::Query($sqz);
 
 $sqlup = "Update schedrange set Posted=0 where ScRID='$sc'";
- CustomQuery($sqlup);
-
+DB::Query($sqlup);
 
 
 $result["txt"] = $params["txt"]." Done!";
@@ -788,8 +837,8 @@ $result['record'] = $data;
 $frd= $data["FromDate"];
 $tod= $data["ToDate"];
 $empr= $data["Employer"];
-//$wtt= $data["WageType"];
-//$dvv= $data["Division"];
+$wtt= $data["WageType"];
+$dvv= $data["Division"];
 
 $tdd="'".$tod."'";
 
@@ -797,10 +846,8 @@ $tdd="'".$tod."'";
 global $dal;
 
 
-
-$rs = DB::Query("select * from indprocess2 where Employer='$empr' and (SDate between '$frd' and '$tod')");
+$rs = DB::Query("select * from indprocess2 where Employer='$empr' and WageType='$wtt' and Division='$dvv' and (SDate between '$frd' and '$tod')");
  
-
 while( $datax = $rs->fetchAssoc() )
  
 {
@@ -1051,8 +1098,8 @@ $result['record'] = $data;
 $frd= $data["FromDate"];
 $tod= $data["ToDate"];
 $empr= $data["Employer"];
-//$wtt= $data["WageType"];
-//$dvv= $data["Division"];
+$wtt= $data["WageType"];
+$dvv= $data["Division"];
 
 $tdd="'".$tod."'";
 
@@ -1060,9 +1107,10 @@ $tdd="'".$tod."'";
 global $dal;
 
 
-$rs = DB::Query("select * from dtrupload2 where Employer='$empr'");
- 
 
+
+$rs = DB::Query("select * from dtrupload2 where Employer='$empr' and WageType='$wtt' and Division='$dvv'");
+ 
 while( $datax = $rs->fetchAssoc() )
 
 {
@@ -1208,19 +1256,18 @@ $result['record'] = $data;
 $frd= $data["FromDate"];
 $tod= $data["ToDate"];
 $empr= $data["Employer"];
-//$dvv= $data["Division"];
-//$wtt= $data["WageType"];
+$dvv= $data["Division"];
+$wtt= $data["WageType"];
 
 
 $tdd="'".$tod."'";
 
 
+
+
 global $dal;
-
-
-
 $tblName1 = $dal->Table("payroll");
-$rstmp1 = $tblName1->Query("PayToDate=".$tdd." and Employer=".$empr,"");
+$rstmp1 = $tblName1->Query("PayToDate=".$tdd." and Employer=".$empr." and Division=".$dvv." and WageType=".$wtt,"");
 $datatmp1 = db_fetch_array($rstmp1);
 if($datatmp1)
 {
@@ -1229,10 +1276,10 @@ $result["txt"] = $params["txt"]. " Payroll Main Data Exist!";
 }
 else
 {
-$sqlh = "INSERT payroll VALUES (NULL, NULL, '$frd', '$tod', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '$empr')";
+$sqlh = "INSERT payroll VALUES (NULL, NULL, '$frd', '$tod', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '$dvv', '$empr', '$wtt', NULL, NULL, NULL)";
 CustomQuery($sqlh);
 
-$sqld = "INSERT payrolldiv VALUES (NULL, '$empr', NULL, '$frd', '$tod', NULL, NULL)";
+$sqld = "INSERT payrolldiv VALUES (NULL, '$empr', '$dvv', '$frd', '$tod', '$wtt', NULL)";
 CustomQuery($sqld);
 
 
@@ -1243,7 +1290,7 @@ CustomQuery($sqld);
 
 
 $tblName = $dal->Table("payrolltab");
-$rstmp = $tblName->Query("ToDate=".$tdd." and Employer=".$empr,"");
+$rstmp = $tblName->Query("ToDate=".$tdd." and Employer=".$empr." and Division=".$dvv." and WageType=".$wtt,"");
 $datatmp = db_fetch_array($rstmp);
 if($datatmp)
 {
@@ -1254,7 +1301,7 @@ else
 {
 
 
-$rs = DB::Query("select * from dtrsummary2 where Employer='$empr'");
+$rs = DB::Query("select * from dtrsummary2 where Employer='$empr' and Division='$dvv' and WageType='$wtt'");
  
 while( $datax = $rs->fetchAssoc() )
 
@@ -1421,13 +1468,13 @@ $result['record'] = $data;
 $frd= $data["FromDate"];
 $tod= $data["ToDate"];
 $empr= $data["Employer"];
-//$wtt= $data["WageType"];
-//$dvv= $data["Division"];
+$wtt= $data["WageType"];
+$dvv= $data["Division"];
 $tdd="'".$tod."'";
 
 
 
-$chlock=DBLookup("select Locked from payroll where PayToDate='". $tod. "' and Employer='$empr'");
+$chlock=DBLookup("select Locked from payroll where PayToDate='". $tod. "' and Employer='$empr' and Division='$dvv' and WageType='$wtt'");
 
 if ($chlock!=1) {
 
@@ -1441,7 +1488,7 @@ $datatmp = db_fetch_array($rstmp);
 if($datatmp)
 {
 
-$rs = DB::Query("select * from dtrsummary2 where Employer='$empr'");
+$rs = DB::Query("select * from dtrsummary2 where Employer='$empr' and WageType='$wtt' and Division='$dvv'");
  
 while( $datax = $rs->fetchAssoc() )
 {
@@ -1614,35 +1661,35 @@ function buttonHandler_Clear_Payroll1($params)
 $result['record'] = $data;
 $frd= $data["FromDate"];
 $tod= $data["ToDate"];
-//$wt1= $data["WageType"];
+$wt1= $data["WageType"];
 $em1= $data["Employer"];
-//$dvv= $data["Division"];
+$dvv= $data["Division"];
 
 $tdd="'".$tod."'";
 
-$chlock=DBLookup("select Locked from payroll where PayToDate='". $tod. "' and Employer='$em1'");
+$chlock=DBLookup("select Locked from payroll where PayToDate='". $tod. "' and Employer='$em1' and Division='$dvv' and WageType='$wt1'");
 
 if ($chlock!=1) {
 
-$sqd1 = "DELETE FROM payroll WHERE PayToDate='$tod' and Employer='$em1'";
+$sqd1 = "DELETE FROM payroll WHERE PayToDate='$tod' and Employer='$em1' and WageType='$wt1' and Division='$dvv'";
 CustomQuery($sqd1);
 
-$sqd2 = "DELETE FROM payrolltab WHERE ToDate='$tod' and Employer='$em1'";
+$sqd2 = "DELETE FROM payrolltab WHERE ToDate='$tod' and Employer='$em1' and WageType='$wt1' and Division='$dvv' ";
 CustomQuery($sqd2);
 
-$sqd3 = "DELETE FROM payrollstatutories WHERE ToDate='$tod' and Employer='$em1'";
+$sqd3 = "DELETE FROM payrollstatutories WHERE ToDate='$tod' and Employer='$em1' and WageType='$wt1' and Division='$dvv'";
 CustomQuery($sqd3);
 
-$sqd4 = "DELETE FROM payrolldeductions WHERE ToDate='$tod' and Employer='$em1'";
+$sqd4 = "DELETE FROM payrolldeductions WHERE ToDate='$tod' and Employer='$em1' and WageType='$wt1' and Division='$dvv'";
 CustomQuery($sqd4);
 
-$sqd5 = "DELETE FROM payrollearnadj WHERE ToDate='$tod' and Employer='$em1'";
+$sqd5 = "DELETE FROM payrollearnadj WHERE ToDate='$tod' and Employer='$em1' and WageType='$wt1' and Division='$dvv'";
 CustomQuery($sqd5);
 
-$sqd6 = "DELETE FROM payrolltax WHERE ToDate='$tod' and Employer='$em1'";
+$sqd6 = "DELETE FROM payrolltax WHERE ToDate='$tod' and Employer='$em1' and WageType='$wt1' and Division='$dvv'";
 CustomQuery($sqd6);
 
-$sqd2 = "DELETE FROM payrolldiv WHERE ToDate='$tod' and Employer='$em1'";
+$sqd2 = "DELETE FROM payrolldiv WHERE ToDate='$tod' and Employer='$em1' and WageType='$wt1' and Division='$dvv' ";
 CustomQuery($sqd2);
 
 
@@ -1724,14 +1771,20 @@ $frd1= $data["PayFromDate"];
 $tod1= $data["PayToDate"];
 
 $emr1= $data["Employer"];
-//$dvv1= $data["Division"];
-//$wtp1= $data["WageType"];
+$dvv1= $data["Division"];
+$wtp1= $data["WageType"];
 
 
 $tod2="'".$tod1."'";
 $psid= $data["PSID"];
 
 $sta= $data["Statutories"];
+
+$ssbx= $data["SSS"];
+$pibx= $data["PagIbig"];
+$phbx= $data["PhilHealth"];
+
+
 $slo= $data["Stat Loans"];
 $ded= $data["Deductions"];
 $adj= $data["Adjustments"];
@@ -1764,7 +1817,7 @@ global $dal;
 //the beginning
 
 $tblOrders = $dal->Table("payrolltab");
-$rs1 = $tblOrders->Query("ToDate=".$tod2. " and Employer=".$emr1,"");
+$rs1 = $tblOrders->Query("ToDate=".$tod2. " and Employer=".$emr1. " and Division=".$dvv1. " and WageType=".$wtp1,"");
 while ($datax1 = db_fetch_array($rs1))
 {
 $empid=$datax1["EmployeeID"];
@@ -1773,11 +1826,14 @@ $wt=$datax1["WageType"];
 
 $thi=DBLookup("SELECT thirteenth FROM thirthind WHERE EmployeeID='$empid' and ToDate='$tod1'");
 
+if($thr!=1) {
 $sqa = "UPDATE payrolltab SET Thirteenth='$thi' WHERE ToDate='$tod1' and EmployeeID='$empid'";
 CustomQuery($sqa);
+};
 
 //Start Statutories
-if ($sta==1) {
+
+if ($ssbx==1 or $pibx==1 or $phbx==1) {
 
 $sp = DBLookup("SELECT StatutoryPayment FROM divisions WHERE DvID='$dv'");
 $mp = DBLookup("SELECT MontlyPaymentPeriods FROM divisions WHERE DvID='$dv'");
@@ -1797,16 +1853,21 @@ $sst=$ss+$ssr+$ssc;
 $pit=$pi+$pir;
 $pht=$ph+$phr;
 
+
+if ($ssbx==1) {$ssf=$ss; $sstx=$sst; $ssrx=$ssr; $sscx=$ssc;} else {$ssf=Null; $sstx=Null; $ssrx=Null; $sscx=Null;};
+if ($pibx==1) {$pif=$pi; $pitx=$pit; $pirx=$pir;} else {$pif=Null; $pitx=Null; $pirx=Null;};
+if ($phbx==1) {$phf=$ph; $phtx=$pht; $phrx=$phr;} else {$phf=Null; $phtx=Null; $phrx=Null;};
+
+
 $exp = DBLookup("SELECT ExcludeContributionOnPayroll FROM demo_user WHERE EmployeeID='$empid'");
 
 if ($exp!=1) {
-$sqls = "INSERT payrollstatutories VALUES (NULL, '$ss', '$pi','$ph', '$frd1', '$tod1', '$empid', '$psid', '$ssr', '$ssc', '$sst', '$pir', '$pit', '$phr', '$pht', '$emr1', '$dvv1', '$wtp1'  )";
+$sqls = "INSERT payrollstatutories VALUES (NULL, '$ssf', '$pif','$phf', '$frd1', '$tod1', '$empid', '$psid', '$ssrx', '$sscx', '$sstx', '$pirx', '$pitx', '$phrx', '$phtx', '$emr1', '$dvv1', '$wtp1'  )";
 CustomQuery($sqls);
 };
 
-}; 
+}; //selective statutories
 
-//Stat Close
 
 
 //Start  Stat Loans
@@ -1890,9 +1951,15 @@ $frd3= $data["PayFromDate"];
 $tod3= $data["PayToDate"];
 
 
-$tblOrders = $dal->Table("earningadjustment");
-$rs3 = $tblOrders->Query("PaymentPeriod=1 and EmployeeID=".$empid,"");
-while ($datax3 = db_fetch_array($rs3))
+//$tblOrders = $dal->Table("earningadjustment");
+//$rs3 = $tblOrders->Query("PaymentPeriod=1 and EmployeeID=".$empid,"");
+//while ($datax3 = db_fetch_array($rs3))
+
+$rsa = DB::Query("select * from earningadjustment where PaymentPEriod=1 and EmployeeID='$empid' and StartDate>='$frd3' and EndDate<='$tod3' and Inactive<>1");
+ 
+while( $datax3 = $rsa->fetchAssoc() )
+
+
 {
 
 $empa=$datax3["EmployeeID"];
@@ -1935,9 +2002,15 @@ CustomQuery($sqlad);
 };
 
 
-$tblOrders = $dal->Table("earningadjustment");
-$rsd = $tblOrders->Query("PaymentPeriod=3 and EmployeeID=".$empid,"");
-while ($datad = db_fetch_array($rsd))
+//$tblOrders = $dal->Table("earningadjustment");
+//$rsd = $tblOrders->Query("PaymentPeriod=3 and EmployeeID=".$empid,"");
+//while ($datad = db_fetch_array($rsd))
+
+
+$rsa2 = DB::Query("select * from earningadjustment where PaymentPEriod=3 and EmployeeID='$empid' and StartDate>='$frd3' and EndDate<='$tod3' and Inactive<>1");
+ 
+while( $datad = $rsa2->fetchAssoc() )
+
 {
 
 $em=$datad["EmployeeID"];
@@ -2100,7 +2173,7 @@ $frd3= $data["PayFromDate"];
 $tod3= $data["PayToDate"];
 
 
-$rsv = DB::Query("select * from final13th");
+$rsv = DB::Query("select * from final13th where EmployeeID='$empid'");
 
 while ($datav = db_fetch_array($rsv))
 
@@ -2536,12 +2609,14 @@ $adb = DBLookup("SELECT WithAdditionalBreaks FROM demo_user WHERE EmployeeID='$e
 
 $i = 0;
 WHILE ($i < $inter):
-$date=date_create($fd);
-date_add($date,date_interval_create_from_date_string('"'.$i.'days"'));
-$indate=date_format($date,"Y-m-d");
+
+$dtx = date_create($fd);
+//$dtx1 = date_add($dtx, date_interval_create_from_date_string("'".$i." days'"));
+$dtx1=date('Y-m-d', strtotime($fd. ' + '.$i.' days'));
+//$indate=date_format($dtx1,"Y-m-d");
 
 //$day_num = 1;
-$day_num = date('N', strtotime($indate));
+$day_num = date('N', strtotime($dtx1));
 
 $dayrest = comma_separated_to_array($rsdy);
 
@@ -2557,13 +2632,20 @@ else
   };
 
 $sqd = "DELETE FROM indschedule WHERE UserName='$usern' AND SDate='$indate'";
-CustomQuery($sqd);
+DB::Query($sqd);
 
-$sqlr = "INSERT indschedule VALUES (NULL, '$usern', '$indate', NULLIF('$ti',''), NULLIF('$to',''), '$stype', NULL, NULL, NULL, NULL, NULL, NULL, '$wt', NULL, NULL, '$empid', '$mpd', '$bm', '$shf', NULL, NULL, NULL, NULLIF('$lbf',''), NULLIF('$lbt',''), NULL, '$fhm', '$shm', '$ndmeal', '$ndhrs', NULL, '$divi',
+
+
+$sqlr = "INSERT indschedule VALUES (NULL, '$usern', DATE_ADD('$fd', INTERVAL '$i' DAY), NULLIF('$ti',''), NULLIF('$to',''), '$stype', NULL, NULL, NULL, NULL, NULL, NULL, '$wt', NULL, NULL, '$empid', '$mpd', '$bm', '$shf', NULL, NULL, NULL, NULLIF('$lbf',''), NULLIF('$lbt',''), NULL, '$fhm', '$shm', '$ndmeal', '$ndhrs', NULL, '$divi',
 NULL, NULL, '$day_num', '$rdfn', NULL, '$dept', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL,
 NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '$empr', NULL, '$latfix', NULL, '$mid','$pt','$ibl','$gp','$adb',NULL, 
 NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)";
-CustomQuery($sqlr);
+DB::Query($sqlr);
+
+
+
+
+
 
 }; //end sby as All Days work Except rest days
 
@@ -2572,13 +2654,13 @@ if ($sby==2) {
    if (in_array($day_num, $dayrest)) { 
 
    $sqd2 = "DELETE FROM indschedule WHERE UserName='$usern' AND SDate='$indate'";
-   CustomQuery($sqd2);
+   DB::Query($sqd2);
 
-   $sqlr = "INSERT indschedule VALUES (NULL, '$usern', '$indate', NULLIF('$ti',''), NULLIF('$to',''), '$stype', NULL, NULL, NULL, NULL, NULL, NULL, '$wt', NULL, NULL, '$empid', '$mpd', '$bm', '$shf', NULL, NULL, '$mid', NULLIF('$lbf',''), NULLIF('$lbt',''), NULL, '$fhm', '$shm', '$ndmeal', '$ndhrs', NULL, '$divi',
+   $sqlr = "INSERT indschedule VALUES (NULL, '$usern', DATE_ADD('$fd', INTERVAL '$i' DAY), NULLIF('$ti',''), NULLIF('$to',''), '$stype', NULL, NULL, NULL, NULL, NULL, NULL, '$wt', NULL, NULL, '$empid', '$mpd', '$bm', '$shf', NULL, NULL, '$mid', NULLIF('$lbf',''), NULLIF('$lbt',''), NULL, '$fhm', '$shm', '$ndmeal', '$ndhrs', NULL, '$divi',
    NULL, NULL, '$day_num', 0, NULL, '$dept', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL,
    NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '$empr', NULL, '$latfix', NULL, NULL,'$pt','$ibl','$gp', '$adb', NULL,
    NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)";
-   CustomQuery($sqlr);
+   DB::Query($sqlr);
    }
 
 }; //end sby as All Working Days Only
@@ -2587,7 +2669,7 @@ $i++;
 ENDWHILE;
 
 $sqlup = "Update indschedrange set Posted=1 where IScRID='$mid'";
- CustomQuery($sqlup);
+DB::Query($sqlup);
 
 
 
@@ -2653,10 +2735,10 @@ $sc= $data["IScRID"];
 
 
 $sqz = "DELETE FROM indschedule WHERE IScRID='$sc'";
-CustomQuery($sqz);
+DB::Query($sqz);
 
 $sqlup = "Update indschedrange set Posted=0 where IScRID='$sc'";
- CustomQuery($sqlup);
+DB::Query($sqlup);
 
 
 
@@ -2773,9 +2855,9 @@ function buttonHandler_Payslip($params)
 
 $result['PSID'] = $data["PSID"];
 $result['PRollID'] = $data["PRollID"];
-//$result['Division'] = $data["Division"];
+$result['Division'] = $data["Division"];
 $result['Employer'] = $data["Employer"];
-//$result['WageType'] = $data["WageType"];
+$result['WageType'] = $data["WageType"];
 
 $result['ToDate'] = $data["ToDate"];
 
@@ -2841,17 +2923,17 @@ function buttonHandler_Bank_Registry($params)
 
 $result['PSID'] = $data["PSID"];
 $result['PRollID'] = $data["PRollID"];
-//$result['Division'] = $data["Division"];
+$result['Division'] = $data["Division"];
 $result['Employer'] = $data["Employer"];
-//$result['WageType'] = $data["WageType"];
+$result['WageType'] = $data["WageType"];
 
 $result['ToDate'] = $data["ToDate"];
 
 $pr=$data["PRollID"];
 $td = $data["ToDate"];
-//$dv=$data["Division"];
+$dv=$data["Division"];
 
-$sqlp = "Update payrolltab set PayrollID='". $pr. "' where ToDate='$td'";
+$sqlp = "Update payrolltab set PayrollID='". $pr. "' where ToDate='$td' AND Division='$dv'";
  CustomQuery($sqlp);
 ;
 	RunnerContext::pop();
@@ -2910,17 +2992,17 @@ function buttonHandler_Summary_A($params)
 
 $result['PSID'] = $data["PSID"];
 $result['PRollID'] = $data["PRollID"];
-//$result['Division'] = $data["Division"];
+$result['Division'] = $data["Division"];
 $result['Employer'] = $data["Employer"];
-//$result['WageType'] = $data["WageType"];
+$result['WageType'] = $data["WageType"];
 
 $result['ToDate'] = $data["ToDate"];
 
 $pr=$data["PRollID"];
 $td = $data["ToDate"];
-//$dv=$data["Division"];
+$dv=$data["Division"];
 
-$sqlp = "Update payrolltab set PayrollID='". $pr. "' where ToDate='$td'";
+$sqlp = "Update payrolltab set PayrollID='". $pr. "' where ToDate='$td' AND Division='$dv'";
  CustomQuery($sqlp);
 ;
 	RunnerContext::pop();
@@ -2979,17 +3061,17 @@ function buttonHandler_Summary_B($params)
 
 $result['PSID'] = $data["PSID"];
 $result['PRollID'] = $data["PRollID"];
-//$result['Division'] = $data["Division"];
+$result['Division'] = $data["Division"];
 $result['Employer'] = $data["Employer"];
-//$result['WageType'] = $data["WageType"];
+$result['WageType'] = $data["WageType"];
 
 $result['ToDate'] = $data["ToDate"];
 
 $pr=$data["PRollID"];
 $td = $data["ToDate"];
-//$dv=$data["Division"];
+$dv=$data["Division"];
 
-$sqlp = "Update payrolltab set PayrollID='". $pr. "' where ToDate='$td'";
+$sqlp = "Update payrolltab set PayrollID='". $pr. "' where ToDate='$td' AND Division='$dv'";
  CustomQuery($sqlp);
 ;
 	RunnerContext::pop();
@@ -3048,17 +3130,17 @@ function buttonHandler_Summary_C($params)
 
 $result['PSID'] = $data["PSID"];
 $result['PRollID'] = $data["PRollID"];
-//$result['Division'] = $data["Division"];
+$result['Division'] = $data["Division"];
 $result['Employer'] = $data["Employer"];
-//$result['WageType'] = $data["WageType"];
+$result['WageType'] = $data["WageType"];
 
 $result['ToDate'] = $data["ToDate"];
 
 $pr=$data["PRollID"];
 $td = $data["ToDate"];
-//$dv=$data["Division"];
+$dv=$data["Division"];
 
-$sqlp = "Update payrolltab set PayrollID='". $pr. "' where ToDate='$td'";
+$sqlp = "Update payrolltab set PayrollID='". $pr. "' where ToDate='$td' AND Division='$dv'";
  CustomQuery($sqlp);
 ;
 	RunnerContext::pop();
@@ -3327,61 +3409,6 @@ $result["txt"] = $params["txt"]." Done!";
 	RunnerContext::pop();
 	echo my_json_encode($result);
 }
-function buttonHandler_Payslip1($params)
-{
-	global $strTableName;
-	$result = array();
-
-	// create new button object for get record data
-	$params["keys"] = (array)my_json_decode(postvalue('keys'));
-	$params["isManyKeys"] = postvalue('isManyKeys');
-	$params["location"] = postvalue('location');
-
-	$button = new Button($params);
-	$ajax = $button; // for examle from HELP
-	$keys = $button->getKeys();
-
-	$masterData = false;
-	if ( isset($params['masterData']) && count($params['masterData']) > 0 )
-	{
-		$masterData = $params['masterData'];
-	}
-	else if ( isset($params["masterTable"]) )
-	{
-		$masterData = $button->getMasterData($params["masterTable"]);
-	}
-	
-	$contextParams = array();
-	if ( $params["location"] == PAGE_VIEW )
-	{
-		$contextParams["data"] = $button->getRecordData();
-		$contextParams["masterData"] = $masterData;
-	}
-	else if ( $params["location"] == PAGE_EDIT )
-	{
-		$contextParams["data"] = $button->getRecordData();
-		$contextParams["newData"] = $params['fieldsData'];
-		$contextParams["masterData"] = $masterData;
-	}
-	else if ( $params["location"] == "grid" )
-	{	
-		$params["location"] = "list";
-		$contextParams["data"] = $button->getRecordData();
-		$contextParams["newData"] = $params['fieldsData'];
-		$contextParams["masterData"] = $masterData;
-	}
-	else 
-	{
-		$contextParams["masterData"] = $masterData;
-	}
-
-	RunnerContext::push( new RunnerContextItem( $params["location"], $contextParams));
-	$data = $button->getCurrentRecord();
-
-$result['PtabID'] = $data["PtabID"];;
-	RunnerContext::pop();
-	echo my_json_encode($result);
-}
 function buttonHandler_Approved_OT_ND_RD($params)
 {
 	global $strTableName;
@@ -3516,7 +3543,7 @@ $dvv = DBLookup("SELECT Division FROM dtrrange WHERE DrID=1");
 global $dal;
 
 
-$rs = DB::Query("select * from otndrdapp where Employer='$empr' and (SDate between '$frd' and '$tod')");
+$rs = DB::Query("select * from otndrdapp where Employer='$empr' and WageType='$wtt' and Division='$dvv' and (SDate between '$frd' and '$tod')");
  
 while( $datax = $rs->fetchAssoc() )
  
@@ -3628,8 +3655,8 @@ $result['record'] = $data;
 $frd= $data["FromDate"];
 $tod= $data["ToDate"];
 $empr= $data["Employer"];
-//$wtt= $data["WageType"];
-//$dvv= $data["Division"];
+$wtt= $data["WageType"];
+$dvv= $data["Division"];
 $empl= $data["Employee"];
 
 
@@ -3639,7 +3666,7 @@ $tdd="'".$tod."'";
 global $dal;
 
 
-$rs = DB::Query("select * from indprocess2 where Employer='$empr' and EmployeeID='$empl' and (SDate between '$frd' and '$tod')");
+$rs = DB::Query("select * from indprocess2 where Employer='$empr' and WageType='$wtt' and Division='$dvv' and EmployeeID='$empl' and (SDate between '$frd' and '$tod')");
  
 while( $datax = $rs->fetchAssoc() )
  
@@ -3955,8 +3982,8 @@ $result['record'] = $data;
 $frd= $data["FromDate"];
 $tod= $data["ToDate"];
 $empr= $data["Employer"];
-//$wtt= $data["WageType"];
-//$dvv= $data["Division"];
+$wtt= $data["WageType"];
+$dvv= $data["Division"];
 $empl= $data["EmployeeID"];
 
 $tdd="'".$tod."'";
@@ -3967,7 +3994,7 @@ global $dal;
 
 
 
-$rs = DB::Query("select * from dtrupload2 where Employer='$empr' and EmployeeID='$empl'");
+$rs = DB::Query("select * from dtrupload2 where Employer='$empr' and WageType='$wtt' and EmployeeID='$empl' and Division='$dvv'");
  
 while( $datax = $rs->fetchAssoc() )
 
@@ -4110,15 +4137,15 @@ $result['record'] = $data;
 $frd= $data["FromDate"];
 $tod= $data["ToDate"];
 $empr= $data["Employer"];
-//$wtt= $data["WageType"];
-//$dvv= $data["Division"];
+$wtt= $data["WageType"];
+$dvv= $data["Division"];
 $empl= $data["Employee"];
 
 $tdd="'".$tod."'";
 
 
 
-$chlock=DBLookup("select Locked from payroll where PayToDate='". $tod. "' and Employer='$empr'");
+$chlock=DBLookup("select Locked from payroll where PayToDate='". $tod. "' and Employer='$empr' and Division='$dvv' and WageType='$wtt'");
 
 if ($chlock!=1) {
 
@@ -4132,7 +4159,7 @@ $datatmp = db_fetch_array($rstmp);
 if($datatmp)
 {
 
-$rs = DB::Query("select * from dtrsummary2 where Employer='$empr' and EmployeeID='$empl'");
+$rs = DB::Query("select * from dtrsummary2 where Employer='$empr' and EmployeeID='$empl' and WageType='$wtt' and Division='$dvv'");
  
 while( $datax = $rs->fetchAssoc() )
 {
@@ -4323,7 +4350,7 @@ $empl = DBLookup("SELECT Employee FROM dtrrange WHERE DrID=1");
 global $dal;
 
 
-$rs = DB::Query("select * from otndrdapp where Employer='$empr' and (SDate between '$frd' and '$tod')");
+$rs = DB::Query("select * from otndrdapp where Employer='$empr' and EmployeeID='$empl' and WageType='$wtt' and Division='$dvv' and (SDate between '$frd' and '$tod')");
  
 while( $datax = $rs->fetchAssoc() )
  
@@ -4428,7 +4455,14 @@ function buttonHandler_Payslip2($params)
 	RunnerContext::push( new RunnerContextItem( $params["location"], $contextParams));
 	$data = $button->getCurrentRecord();
 
-$result['PtabID'] = $data["PtabID"];;
+$result['PtabID'] = $data["PtabID"];
+
+$lx=$_SESSION["loginID"];
+
+$result['pw'] = DBLookup("SELECT Password FROM logins WHERE LogID='$lx'");
+
+
+;
 	RunnerContext::pop();
 	echo my_json_encode($result);
 }
@@ -4516,7 +4550,7 @@ $result["txt"] = $params["txt"]." Done!";
 	RunnerContext::pop();
 	echo my_json_encode($result);
 }
-function buttonHandler_Update_Holiday1($params)
+function buttonHandler_Update_Holiday($params)
 {
 	global $strTableName;
 	$result = array();
@@ -4663,7 +4697,446 @@ function buttonHandler_Refresh($params)
 	}
 
 	RunnerContext::push( new RunnerContextItem( $params["location"], $contextParams));
-	// Put your code here.
+	;
+	RunnerContext::pop();
+	echo my_json_encode($result);
+}
+function buttonHandler_Process_Approval4($params)
+{
+	global $strTableName;
+	$result = array();
+
+	// create new button object for get record data
+	$params["keys"] = (array)my_json_decode(postvalue('keys'));
+	$params["isManyKeys"] = postvalue('isManyKeys');
+	$params["location"] = postvalue('location');
+
+	$button = new Button($params);
+	$ajax = $button; // for examle from HELP
+	$keys = $button->getKeys();
+
+	$masterData = false;
+	if ( isset($params['masterData']) && count($params['masterData']) > 0 )
+	{
+		$masterData = $params['masterData'];
+	}
+	else if ( isset($params["masterTable"]) )
+	{
+		$masterData = $button->getMasterData($params["masterTable"]);
+	}
+	
+	$contextParams = array();
+	if ( $params["location"] == PAGE_VIEW )
+	{
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["masterData"] = $masterData;
+	}
+	else if ( $params["location"] == PAGE_EDIT )
+	{
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["newData"] = $params['fieldsData'];
+		$contextParams["masterData"] = $masterData;
+	}
+	else if ( $params["location"] == "grid" )
+	{	
+		$params["location"] = "list";
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["newData"] = $params['fieldsData'];
+		$contextParams["masterData"] = $masterData;
+	}
+	else 
+	{
+		$contextParams["masterData"] = $masterData;
+	}
+
+	RunnerContext::push( new RunnerContextItem( $params["location"], $contextParams));
+	$data = $button->getCurrentRecord();
+$result['record'] = $data;
+$hra= $data["HRApproval"];
+$sua= $data["SuperiorsApproved"];
+$mdate=$data["MLogDate"];
+
+
+$frd = DBLookup("SELECT FromDate FROM dtrrange WHERE DrID=1");
+//$tod = DBLookup("SELECT ToDate FROM dtrrange WHERE DrID=1");
+$empr = DBLookup("SELECT Employer FROM dtrrange WHERE DrID=1");
+$wtt = DBLookup("SELECT WageType FROM dtrrange WHERE DrID=1");
+$dvv = DBLookup("SELECT Division FROM dtrrange WHERE DrID=1");
+
+
+$usn=Security::getUserName();
+
+$logx=DBLookup("select EmployeeID from logins where UserName='". $usn. "'");
+
+
+if ($hra==1 and $sua==1) {
+
+
+$rs = DB::Query("select * from filelogq where MLogDate between '$frd' and '$mdate'");
+ 
+while( $datax = $rs->fetchAssoc() )
+ 
+{
+
+$trid=$datax["TransID2"];
+$sa1=$datax["Checked"];
+$ma1=$datax["Approved"];
+$ha1=$datax["HRApproved"];
+$ml=$datax["MLogID"];
+$mld=$datax["MLogDate"];
+$lg=$datax["log_time"];
+$empid=$datax["EmployeeID"];
+$ct= $datax["ClockType"];
+$apb= $datax["ApprovedBy"];
+$ckb= $datax["CheckedBy"];
+
+
+
+if ($ckb!=null and $apb!=null and $sa1==1 and $ma1==1) {
+
+$sqa = "UPDATE filelog SET HRApproval='$logx', HRApproved=1, HRApprovedDate=now(), Locked=1 WHERE TransID2='$trid'";
+DB::Query($sqa);
+
+
+$sql = "INSERT demo_log VALUES ('$lg', NULL, 'Manual Entry', '$empid', NULL, '$ml', '$mld', '$ct', '$trid')";
+DB::Query($sql);
+
+}
+
+if ($ckb!=null and $apb==null and $sa1==1) {
+
+$sqa = "UPDATE filelog SET HRApproval='$logx', HRApproved=1, HRApprovedDate=now(), Locked=1 WHERE TransID2='$trid'";
+DB::Query($sqa);
+
+$sql = "INSERT demo_log VALUES ('$lg', NULL, 'Manual Entry', '$empid', NULL, '$ml', '$mld', '$ct', '$trid')";
+DB::Query($sql);
+
+}
+
+
+}
+
+};
+
+
+
+
+$result["txt"] = $params["txt"]." Done!";
+;
+	RunnerContext::pop();
+	echo my_json_encode($result);
+}
+function buttonHandler_Update_Dashboard($params)
+{
+	global $strTableName;
+	$result = array();
+
+	// create new button object for get record data
+	$params["keys"] = (array)my_json_decode(postvalue('keys'));
+	$params["isManyKeys"] = postvalue('isManyKeys');
+	$params["location"] = postvalue('location');
+
+	$button = new Button($params);
+	$ajax = $button; // for examle from HELP
+	$keys = $button->getKeys();
+
+	$masterData = false;
+	if ( isset($params['masterData']) && count($params['masterData']) > 0 )
+	{
+		$masterData = $params['masterData'];
+	}
+	else if ( isset($params["masterTable"]) )
+	{
+		$masterData = $button->getMasterData($params["masterTable"]);
+	}
+	
+	$contextParams = array();
+	if ( $params["location"] == PAGE_VIEW )
+	{
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["masterData"] = $masterData;
+	}
+	else if ( $params["location"] == PAGE_EDIT )
+	{
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["newData"] = $params['fieldsData'];
+		$contextParams["masterData"] = $masterData;
+	}
+	else if ( $params["location"] == "grid" )
+	{	
+		$params["location"] = "list";
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["newData"] = $params['fieldsData'];
+		$contextParams["masterData"] = $masterData;
+	}
+	else 
+	{
+		$contextParams["masterData"] = $masterData;
+	}
+
+	RunnerContext::push( new RunnerContextItem( $params["location"], $contextParams));
+	;
+	RunnerContext::pop();
+	echo my_json_encode($result);
+}
+function buttonHandler_Update_SSS1($params)
+{
+	global $strTableName;
+	$result = array();
+
+	// create new button object for get record data
+	$params["keys"] = (array)my_json_decode(postvalue('keys'));
+	$params["isManyKeys"] = postvalue('isManyKeys');
+	$params["location"] = postvalue('location');
+
+	$button = new Button($params);
+	$ajax = $button; // for examle from HELP
+	$keys = $button->getKeys();
+
+	$masterData = false;
+	if ( isset($params['masterData']) && count($params['masterData']) > 0 )
+	{
+		$masterData = $params['masterData'];
+	}
+	else if ( isset($params["masterTable"]) )
+	{
+		$masterData = $button->getMasterData($params["masterTable"]);
+	}
+	
+	$contextParams = array();
+	if ( $params["location"] == PAGE_VIEW )
+	{
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["masterData"] = $masterData;
+	}
+	else if ( $params["location"] == PAGE_EDIT )
+	{
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["newData"] = $params['fieldsData'];
+		$contextParams["masterData"] = $masterData;
+	}
+	else if ( $params["location"] == "grid" )
+	{	
+		$params["location"] = "list";
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["newData"] = $params['fieldsData'];
+		$contextParams["masterData"] = $masterData;
+	}
+	else 
+	{
+		$contextParams["masterData"] = $masterData;
+	}
+
+	RunnerContext::push( new RunnerContextItem( $params["location"], $contextParams));
+	$rs = DB::Select("demo_user", "EmployeeID>0" );
+
+while( $record = $rs->fetchAssoc() )
+
+{
+
+$eid=$record["EmployeeID"];
+$bm=$record["BasicMonthlyPay"];
+$bd=$record["BasicDailyPay"];
+$wt=$record["EmployeeType"];
+$exp=$record["ExcludeContributionOnPayroll"];
+
+$ds=DBLookup("select WorkingDaysInYearDailies from standardsetup where SID=1");
+
+$bd2=($bd*$ds)/12;
+
+if ($wt==1) {
+    $m=$bm;
+} else {
+ $m=$bd2;
+};
+
+
+$er=DBLookup("select ER from ssstable where '$m' between CompFrom and CompTo");
+$ee=DBLookup("select EE from ssstable where '$m' between CompFrom and CompTo");
+$ec=DBLookup("select EC from ssstable where '$m' between CompFrom and CompTo");
+
+if ($exp!=1) {
+$sql = "Update demo_user set SSSER='$er', SSSEE='$ee', SSSEC='$ec' where EmployeeID='$eid'";
+ CustomQuery($sql);
+};
+
+}
+
+$result["txt"] = $params["txt"]." Done!";
+;
+	RunnerContext::pop();
+	echo my_json_encode($result);
+}
+function buttonHandler_Update_PhilHelath1($params)
+{
+	global $strTableName;
+	$result = array();
+
+	// create new button object for get record data
+	$params["keys"] = (array)my_json_decode(postvalue('keys'));
+	$params["isManyKeys"] = postvalue('isManyKeys');
+	$params["location"] = postvalue('location');
+
+	$button = new Button($params);
+	$ajax = $button; // for examle from HELP
+	$keys = $button->getKeys();
+
+	$masterData = false;
+	if ( isset($params['masterData']) && count($params['masterData']) > 0 )
+	{
+		$masterData = $params['masterData'];
+	}
+	else if ( isset($params["masterTable"]) )
+	{
+		$masterData = $button->getMasterData($params["masterTable"]);
+	}
+	
+	$contextParams = array();
+	if ( $params["location"] == PAGE_VIEW )
+	{
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["masterData"] = $masterData;
+	}
+	else if ( $params["location"] == PAGE_EDIT )
+	{
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["newData"] = $params['fieldsData'];
+		$contextParams["masterData"] = $masterData;
+	}
+	else if ( $params["location"] == "grid" )
+	{	
+		$params["location"] = "list";
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["newData"] = $params['fieldsData'];
+		$contextParams["masterData"] = $masterData;
+	}
+	else 
+	{
+		$contextParams["masterData"] = $masterData;
+	}
+
+	RunnerContext::push( new RunnerContextItem( $params["location"], $contextParams));
+	$rs = DB::Select("demo_user", "EmployeeID>0" );
+
+while( $record = $rs->fetchAssoc() )
+
+{
+
+$eid=$record["EmployeeID"];
+$bm=$record["BasicMonthlyPay"];
+$bd=$record["BasicDailyPay"];
+$wt=$record["EmployeeType"];
+$exp=$record["ExcludeContributionOnPayroll"];
+
+$ds=DBLookup("select WorkingDaysInYearDailies from standardsetup where SID=1");
+
+$bd2=($bd*$ds)/12;
+
+if ($wt==1) {
+    $m=$bm;
+} else {
+ $m=$bd2;
+};
+
+
+$pc=DBLookup("select PcntRate from philhealthtable where '$m' between SalaryFrom and SalaryTo");
+$er=DBLookup("select ER from philhealthtable where '$m' between SalaryFrom and SalaryTo");
+$ee=DBLookup("select EE from philhealthtable where '$m' between SalaryFrom and SalaryTo");
+
+if ($pc>0) {
+$n=($m*($pc/100))/2;
+
+if ($exp!=1) {
+$sql3 = "Update demo_user set PhilHealthEE='$n', PhilHealthER='$n' where EmployeeID='$eid'";
+ CustomQuery($sql3);
+};
+
+} else {
+
+if ($exp!=1) {
+$sql4 = "Update demo_user set PhilHealthEE='$ee', PhilHealthER='$er' where EmployeeID='$eid'";
+ CustomQuery($sql4);
+};
+
+};
+
+
+}
+
+$result["txt"] = $params["txt"]." Done!";
+;
+	RunnerContext::pop();
+	echo my_json_encode($result);
+}
+function buttonHandler_Update_Pag_Ibig21($params)
+{
+	global $strTableName;
+	$result = array();
+
+	// create new button object for get record data
+	$params["keys"] = (array)my_json_decode(postvalue('keys'));
+	$params["isManyKeys"] = postvalue('isManyKeys');
+	$params["location"] = postvalue('location');
+
+	$button = new Button($params);
+	$ajax = $button; // for examle from HELP
+	$keys = $button->getKeys();
+
+	$masterData = false;
+	if ( isset($params['masterData']) && count($params['masterData']) > 0 )
+	{
+		$masterData = $params['masterData'];
+	}
+	else if ( isset($params["masterTable"]) )
+	{
+		$masterData = $button->getMasterData($params["masterTable"]);
+	}
+	
+	$contextParams = array();
+	if ( $params["location"] == PAGE_VIEW )
+	{
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["masterData"] = $masterData;
+	}
+	else if ( $params["location"] == PAGE_EDIT )
+	{
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["newData"] = $params['fieldsData'];
+		$contextParams["masterData"] = $masterData;
+	}
+	else if ( $params["location"] == "grid" )
+	{	
+		$params["location"] = "list";
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["newData"] = $params['fieldsData'];
+		$contextParams["masterData"] = $masterData;
+	}
+	else 
+	{
+		$contextParams["masterData"] = $masterData;
+	}
+
+	RunnerContext::push( new RunnerContextItem( $params["location"], $contextParams));
+	$rs = DB::Select("demo_user", "EmployeeID>0" );
+
+while( $record = $rs->fetchAssoc() )
+
+{
+
+$eid=$record["EmployeeID"];
+$exp=$record["ExcludeContributionOnPayroll"];
+
+
+$er=DBLookup("select ER from pagibigtable where piID=1");
+$ee=DBLookup("select EE from pagibigtable where piID=1");
+
+if ($exp!=1) {
+$sql = "Update demo_user set PagIbigER='$er', PagIbigEE='$ee'  where EmployeeID='$eid'";
+ CustomQuery($sql);
+};
+
+}
+
 $result["txt"] = $params["txt"]." Done!";
 ;
 	RunnerContext::pop();
@@ -4718,116 +5191,574 @@ function buttonHandler_Refresh1($params)
 	}
 
 	RunnerContext::push( new RunnerContextItem( $params["location"], $contextParams));
-	// Put your code here.
-$result["txt"] = $params["txt"]." Done!";
-;
-	RunnerContext::pop();
-	echo my_json_encode($result);
-}
-function buttonHandler_Refresh2($params)
-{
-	global $strTableName;
-	$result = array();
-
-	// create new button object for get record data
-	$params["keys"] = (array)my_json_decode(postvalue('keys'));
-	$params["isManyKeys"] = postvalue('isManyKeys');
-	$params["location"] = postvalue('location');
-
-	$button = new Button($params);
-	$ajax = $button; // for examle from HELP
-	$keys = $button->getKeys();
-
-	$masterData = false;
-	if ( isset($params['masterData']) && count($params['masterData']) > 0 )
-	{
-		$masterData = $params['masterData'];
-	}
-	else if ( isset($params["masterTable"]) )
-	{
-		$masterData = $button->getMasterData($params["masterTable"]);
-	}
-	
-	$contextParams = array();
-	if ( $params["location"] == PAGE_VIEW )
-	{
-		$contextParams["data"] = $button->getRecordData();
-		$contextParams["masterData"] = $masterData;
-	}
-	else if ( $params["location"] == PAGE_EDIT )
-	{
-		$contextParams["data"] = $button->getRecordData();
-		$contextParams["newData"] = $params['fieldsData'];
-		$contextParams["masterData"] = $masterData;
-	}
-	else if ( $params["location"] == "grid" )
-	{	
-		$params["location"] = "list";
-		$contextParams["data"] = $button->getRecordData();
-		$contextParams["newData"] = $params['fieldsData'];
-		$contextParams["masterData"] = $masterData;
-	}
-	else 
-	{
-		$contextParams["masterData"] = $masterData;
-	}
-
-	RunnerContext::push( new RunnerContextItem( $params["location"], $contextParams));
-	
-;
-	RunnerContext::pop();
-	echo my_json_encode($result);
-}
-function buttonHandler_Refresh3($params)
-{
-	global $strTableName;
-	$result = array();
-
-	// create new button object for get record data
-	$params["keys"] = (array)my_json_decode(postvalue('keys'));
-	$params["isManyKeys"] = postvalue('isManyKeys');
-	$params["location"] = postvalue('location');
-
-	$button = new Button($params);
-	$ajax = $button; // for examle from HELP
-	$keys = $button->getKeys();
-
-	$masterData = false;
-	if ( isset($params['masterData']) && count($params['masterData']) > 0 )
-	{
-		$masterData = $params['masterData'];
-	}
-	else if ( isset($params["masterTable"]) )
-	{
-		$masterData = $button->getMasterData($params["masterTable"]);
-	}
-	
-	$contextParams = array();
-	if ( $params["location"] == PAGE_VIEW )
-	{
-		$contextParams["data"] = $button->getRecordData();
-		$contextParams["masterData"] = $masterData;
-	}
-	else if ( $params["location"] == PAGE_EDIT )
-	{
-		$contextParams["data"] = $button->getRecordData();
-		$contextParams["newData"] = $params['fieldsData'];
-		$contextParams["masterData"] = $masterData;
-	}
-	else if ( $params["location"] == "grid" )
-	{	
-		$params["location"] = "list";
-		$contextParams["data"] = $button->getRecordData();
-		$contextParams["newData"] = $params['fieldsData'];
-		$contextParams["masterData"] = $masterData;
-	}
-	else 
-	{
-		$contextParams["masterData"] = $masterData;
-	}
-
-	RunnerContext::push( new RunnerContextItem( $params["location"], $contextParams));
 	;
+	RunnerContext::pop();
+	echo my_json_encode($result);
+}
+function buttonHandler_Process_Approval41($params)
+{
+	global $strTableName;
+	$result = array();
+
+	// create new button object for get record data
+	$params["keys"] = (array)my_json_decode(postvalue('keys'));
+	$params["isManyKeys"] = postvalue('isManyKeys');
+	$params["location"] = postvalue('location');
+
+	$button = new Button($params);
+	$ajax = $button; // for examle from HELP
+	$keys = $button->getKeys();
+
+	$masterData = false;
+	if ( isset($params['masterData']) && count($params['masterData']) > 0 )
+	{
+		$masterData = $params['masterData'];
+	}
+	else if ( isset($params["masterTable"]) )
+	{
+		$masterData = $button->getMasterData($params["masterTable"]);
+	}
+	
+	$contextParams = array();
+	if ( $params["location"] == PAGE_VIEW )
+	{
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["masterData"] = $masterData;
+	}
+	else if ( $params["location"] == PAGE_EDIT )
+	{
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["newData"] = $params['fieldsData'];
+		$contextParams["masterData"] = $masterData;
+	}
+	else if ( $params["location"] == "grid" )
+	{	
+		$params["location"] = "list";
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["newData"] = $params['fieldsData'];
+		$contextParams["masterData"] = $masterData;
+	}
+	else 
+	{
+		$contextParams["masterData"] = $masterData;
+	}
+
+	RunnerContext::push( new RunnerContextItem( $params["location"], $contextParams));
+	
+$data = $button->getCurrentRecord();
+$result['record'] = $data;
+$hra= $data["HRApproval"];
+$sua= $data["SuperiorsApproved"];
+$empl= $data["Employee"];
+$mdate=$data["MLogDate"];
+
+
+$frd = DBLookup("SELECT FromDate FROM dtrrange WHERE DrID=1");
+//$tod = DBLookup("SELECT ToDate FROM dtrrange WHERE DrID=1");
+$empr = DBLookup("SELECT Employer FROM dtrrange WHERE DrID=1");
+$wtt = DBLookup("SELECT WageType FROM dtrrange WHERE DrID=1");
+$dvv = DBLookup("SELECT Division FROM dtrrange WHERE DrID=1");
+
+
+$usn=Security::getUserName();
+
+$logx=DBLookup("select EmployeeID from logins where UserName='". $usn. "'");
+
+
+if ($hra==1 and $sua==1) {
+
+
+$rs = DB::Query("select * from filelogq where EmployeeID='$empl' and MLogDate between '$frd' and '$mdate'");
+ 
+while( $datax = $rs->fetchAssoc() )
+ 
+{
+
+$trid=$datax["TransID2"];
+$sa1=$datax["Checked"];
+$ma1=$datax["Approved"];
+$ha1=$datax["HRApproved"];
+$ml=$datax["MLogID"];
+$mld=$datax["MLogDate"];
+$lg=$datax["log_time"];
+$empid=$datax["EmployeeID"];
+$ct= $datax["ClockType"];
+$apb= $datax["ApprovedBy"];
+$ckb= $datax["CheckedBy"];
+
+
+
+if ($ckb!=null and $apb!=null and $sa1==1 and $ma1==1) {
+
+$sqa = "UPDATE filelog SET HRApproval='$logx', HRApproved=1, HRApprovedDate=now(), Locked=1 WHERE TransID2='$trid'";
+DB::Query($sqa);
+
+$sql = "INSERT demo_log VALUES ('$lg', NULL, 'Manual Entry', '$empid', NULL, '$ml', '$mld', '$ct', '$trid')";
+DB::Query($sql);
+
+}
+
+if ($ckb!=null and $apb==null and $sa1==1) {
+
+$sqa = "UPDATE filelog SET HRApproval='$logx', HRApproved=1, HRApprovedDate=now(), Locked=1 WHERE TransID2='$trid'";
+DB::Query($sqa);
+
+$sql = "INSERT demo_log VALUES ('$lg', NULL, 'Manual Entry', '$empid', NULL, '$ml', '$mld', '$ct', '$trid')";
+DB::Query($sql);
+
+}
+
+
+}
+
+};
+
+
+
+
+$result["txt"] = $params["txt"]." Done!";
+
+
+
+;
+	RunnerContext::pop();
+	echo my_json_encode($result);
+}
+function buttonHandler_Upload_Payslips($params)
+{
+	global $strTableName;
+	$result = array();
+
+	// create new button object for get record data
+	$params["keys"] = (array)my_json_decode(postvalue('keys'));
+	$params["isManyKeys"] = postvalue('isManyKeys');
+	$params["location"] = postvalue('location');
+
+	$button = new Button($params);
+	$ajax = $button; // for examle from HELP
+	$keys = $button->getKeys();
+
+	$masterData = false;
+	if ( isset($params['masterData']) && count($params['masterData']) > 0 )
+	{
+		$masterData = $params['masterData'];
+	}
+	else if ( isset($params["masterTable"]) )
+	{
+		$masterData = $button->getMasterData($params["masterTable"]);
+	}
+	
+	$contextParams = array();
+	if ( $params["location"] == PAGE_VIEW )
+	{
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["masterData"] = $masterData;
+	}
+	else if ( $params["location"] == PAGE_EDIT )
+	{
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["newData"] = $params['fieldsData'];
+		$contextParams["masterData"] = $masterData;
+	}
+	else if ( $params["location"] == "grid" )
+	{	
+		$params["location"] = "list";
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["newData"] = $params['fieldsData'];
+		$contextParams["masterData"] = $masterData;
+	}
+	else 
+	{
+		$contextParams["masterData"] = $masterData;
+	}
+
+	RunnerContext::push( new RunnerContextItem( $params["location"], $contextParams));
+	$data = $button->getCurrentRecord();
+$result['record'] = $data;
+
+$frd= $data["FromDate"];
+$tod= $data["ToDate"];
+$empr= $data["Employer"];
+$wtt= $data["WageType"];
+$dvv= $data["Division"];
+
+
+
+$tdd="'".$tod."'";
+
+
+
+
+global $dal;
+$tblName1 = $dal->Table("payslipmain");
+$rstmp1 = $tblName1->Query("ToDate=".$tdd." and EmployerID=".$empr." and DivisionID=".$dvv." and WageTypeID=".$wtt,"");
+$datatmp1 = db_fetch_array($rstmp1);
+if($datatmp1)
+{
+$result["txt"] = $params["txt"]. " Payslips already uploaded!";
+
+}
+else
+{
+
+$rs = DB::Query("select * from payrollamt33 where Employer='$empr' and WageType='$wtt' and Division='$dvv' and FromDate='$frd' and ToDate='$tod'");
+ 
+while( $datax = $rs->fetchAssoc() )
+ 
+{
+
+$a1=$datax["FromDate"];
+$a2=$datax["ToDate"];
+$a3=$datax["PayDate"];
+
+$a4=$datax["EmployeeID"];
+$a5=$datax["UserName"];
+$a6=$datax["EmployeeType"];
+$a7=$datax["EmployeeStatus"];
+$a8=$datax["BasicMonthly"];
+$a9=$datax["BasicDaily"];
+$a10=$datax["FDivision"];
+
+
+$a11=$datax["VLBalance"];
+$a12=$datax["SLBalance"];
+$a13=$datax["ELBalance"];
+$a14=$datax["PLBalance"];
+
+$a15=$datax["DWork"];
+$a16=$datax["RegPay"];
+$a17=$datax["LateMins"];
+$a18=$datax["Late"];
+$a19=$datax["UndertimeMins"];
+$a20=$datax["UnderTime"];
+$a21=$datax["LWOPdays"];
+$a22=$datax["LWOP"];
+$a23=$datax["RegOTHrs"];
+$a24=$datax["RegOT"];
+$a25=$datax["RHOTHrs"];
+$a26=$datax["RHOT"];
+$a27=$datax["SHOTHrs"];
+$a28=$datax["SHOT"];
+$a29=$datax["DHOT"];
+$a30=$datax["DHOTpay"];
+$a31=$datax["RDOTHrs"];
+$a32=$datax["RDOT"];
+$a33=$datax["RHRDOT"];
+$a34=$datax["RHRDOTpay"];
+$a35=$datax["SHRDOT"];
+$a36=$datax["SHRDOTpay"];
+$a37=$datax["DHRDOT"];
+$a38=$datax["DHRDOTpay"];
+$a39=$datax["TNDOTHr"];
+$a40=$datax["TNDOT"];
+$a41=$datax["RHolidayHrs"];
+$a42=$datax["RHoliday"];
+$a43=$datax["SHolidayHrs"];
+$a44=$datax["SHoliday"];
+$a45=$datax["DH"];
+$a46=$datax["DHpay"];
+$a47=$datax["RDHrs"];
+$a48=$datax["RD"];
+$a49=$datax["RHRD"];
+$a50=$datax["RHRDpay"];
+$a51=$datax["SHRD"];
+$a52=$datax["SHRDpay"];
+$a53=$datax["DHRD"];
+$a54=$datax["DHRDpay"];
+$a55=$datax["TNDHr"];
+$a56=$datax["TND"];
+$a57=$datax["VLDays"];
+$a58=$datax["VL"];
+$a59=$datax["SLDays"];
+$a60=$datax["SL"];
+$a61=$datax["ELDays"];
+$a62=$datax["EL"];
+
+$a63=$datax["GrossPay"];
+$a64=$datax["Taxable"];
+$a65=$datax["TaxableToDate"];
+$a66=$datax["TaxToDate"];
+$a67=$datax["ThirToDate"];
+$a68=$datax["TDeductions"];
+$a69=$datax["NetPay"];
+$a70=$datax["EmployerName"];
+$a71=$datax["Employer"];
+$a72=$datax["WageType"];
+$a73=$datax["Division"];
+$a74=$datax["PtabID"];
+
+$pi = "INSERT payslipmain VALUES (NULL, '$a1', '$a2', '$a3', '$a4', '$a5', '$a6', '$a7', '$a8', '$a9', '$a10', '$a11', '$a12', '$a13', '$a14', '$a15',
+ '$a16', '$a17', '$a18', '$a19', '$a20', '$a21', '$a22', '$a23', '$a24', '$a25', '$a26', '$a27', '$a28', '$a29', '$a30', '$a31', '$a32', '$a33', '$a34', '$a35', '$a36', '$a37',
+ '$a38', '$a39', '$a40', '$a41', '$a42', '$a43', '$a44', '$a45', '$a46', '$a47', '$a48', '$a49', '$a50', '$a51', '$a52', '$a53', '$a54', '$a55', '$a56', '$a57', '$a58',
+ '$a59', '$a60', '$a61', '$a62', '$a63', '$a64', '$a65', '$a66', '$a67', '$a68', '$a69', '$a70', '$a71', '$a72', '$a73', '$a74')";
+CustomQuery($pi);
+
+};
+
+
+$result["txt"] = $params["txt"]." Done!";
+
+};
+;
+	RunnerContext::pop();
+	echo my_json_encode($result);
+}
+function buttonHandler_Clear_Uploaded_Payslips($params)
+{
+	global $strTableName;
+	$result = array();
+
+	// create new button object for get record data
+	$params["keys"] = (array)my_json_decode(postvalue('keys'));
+	$params["isManyKeys"] = postvalue('isManyKeys');
+	$params["location"] = postvalue('location');
+
+	$button = new Button($params);
+	$ajax = $button; // for examle from HELP
+	$keys = $button->getKeys();
+
+	$masterData = false;
+	if ( isset($params['masterData']) && count($params['masterData']) > 0 )
+	{
+		$masterData = $params['masterData'];
+	}
+	else if ( isset($params["masterTable"]) )
+	{
+		$masterData = $button->getMasterData($params["masterTable"]);
+	}
+	
+	$contextParams = array();
+	if ( $params["location"] == PAGE_VIEW )
+	{
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["masterData"] = $masterData;
+	}
+	else if ( $params["location"] == PAGE_EDIT )
+	{
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["newData"] = $params['fieldsData'];
+		$contextParams["masterData"] = $masterData;
+	}
+	else if ( $params["location"] == "grid" )
+	{	
+		$params["location"] = "list";
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["newData"] = $params['fieldsData'];
+		$contextParams["masterData"] = $masterData;
+	}
+	else 
+	{
+		$contextParams["masterData"] = $masterData;
+	}
+
+	RunnerContext::push( new RunnerContextItem( $params["location"], $contextParams));
+	$data = $button->getCurrentRecord();
+$result['record'] = $data;
+
+
+$tod= $data["ToDate"];
+$empr= $data["Employer"];
+$wtt= $data["WageType"];
+$dvv= $data["Division"];
+
+
+$chlock=DBLookup("select Locked from payroll where PayToDate='". $tod. "' and Employer='$empr' and Division='$dvv' and WageType='$wtt'");
+
+if ($chlock!=1) {
+
+$sqd8 = "DELETE FROM payslipmain WHERE ToDate='$tod' and EmployerID='$empr' and WageTypeID='$wtt' and DivisionID='$dvv'";
+CustomQuery($sqd8);
+
+
+$result["txt"] = $params["txt"]." Uploaded Payslips Removed!";
+
+};
+
+
+if ($chlock==1) {
+$result["txt"] = $params["txt"]." Payroll is Already Locked!";
+};
+
+
+;
+	RunnerContext::pop();
+	echo my_json_encode($result);
+}
+function buttonHandler_Payslip5($params)
+{
+	global $strTableName;
+	$result = array();
+
+	// create new button object for get record data
+	$params["keys"] = (array)my_json_decode(postvalue('keys'));
+	$params["isManyKeys"] = postvalue('isManyKeys');
+	$params["location"] = postvalue('location');
+
+	$button = new Button($params);
+	$ajax = $button; // for examle from HELP
+	$keys = $button->getKeys();
+
+	$masterData = false;
+	if ( isset($params['masterData']) && count($params['masterData']) > 0 )
+	{
+		$masterData = $params['masterData'];
+	}
+	else if ( isset($params["masterTable"]) )
+	{
+		$masterData = $button->getMasterData($params["masterTable"]);
+	}
+	
+	$contextParams = array();
+	if ( $params["location"] == PAGE_VIEW )
+	{
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["masterData"] = $masterData;
+	}
+	else if ( $params["location"] == PAGE_EDIT )
+	{
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["newData"] = $params['fieldsData'];
+		$contextParams["masterData"] = $masterData;
+	}
+	else if ( $params["location"] == "grid" )
+	{	
+		$params["location"] = "list";
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["newData"] = $params['fieldsData'];
+		$contextParams["masterData"] = $masterData;
+	}
+	else 
+	{
+		$contextParams["masterData"] = $masterData;
+	}
+
+	RunnerContext::push( new RunnerContextItem( $params["location"], $contextParams));
+	$data = $button->getCurrentRecord();
+
+$result['PSID'] = $data["PSID"];
+$result['PRollID'] = $data["PRollID"];
+$result['Division'] = $data["Division"];
+$result['Employer'] = $data["Employer"];
+$result['WageType'] = $data["WageType"];
+
+$result['ToDate'] = $data["ToDate"];
+
+$pr=$data["PRollID"];
+$td = $data["ToDate"];
+$dv=$data["Division"];
+
+$sqlp = "Update payrolltab set PayrollID='". $pr. "' where ToDate='$td' AND Division='$dv'";
+ CustomQuery($sqlp);;
+	RunnerContext::pop();
+	echo my_json_encode($result);
+}
+function buttonHandler_Preview_Payslip($params)
+{
+	global $strTableName;
+	$result = array();
+
+	// create new button object for get record data
+	$params["keys"] = (array)my_json_decode(postvalue('keys'));
+	$params["isManyKeys"] = postvalue('isManyKeys');
+	$params["location"] = postvalue('location');
+
+	$button = new Button($params);
+	$ajax = $button; // for examle from HELP
+	$keys = $button->getKeys();
+
+	$masterData = false;
+	if ( isset($params['masterData']) && count($params['masterData']) > 0 )
+	{
+		$masterData = $params['masterData'];
+	}
+	else if ( isset($params["masterTable"]) )
+	{
+		$masterData = $button->getMasterData($params["masterTable"]);
+	}
+	
+	$contextParams = array();
+	if ( $params["location"] == PAGE_VIEW )
+	{
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["masterData"] = $masterData;
+	}
+	else if ( $params["location"] == PAGE_EDIT )
+	{
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["newData"] = $params['fieldsData'];
+		$contextParams["masterData"] = $masterData;
+	}
+	else if ( $params["location"] == "grid" )
+	{	
+		$params["location"] = "list";
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["newData"] = $params['fieldsData'];
+		$contextParams["masterData"] = $masterData;
+	}
+	else 
+	{
+		$contextParams["masterData"] = $masterData;
+	}
+
+	RunnerContext::push( new RunnerContextItem( $params["location"], $contextParams));
+	$data = $button->getCurrentRecord();
+
+$result['PtabID'] = $data["PtabID"];;
+	RunnerContext::pop();
+	echo my_json_encode($result);
+}
+function buttonHandler_Payslip7($params)
+{
+	global $strTableName;
+	$result = array();
+
+	// create new button object for get record data
+	$params["keys"] = (array)my_json_decode(postvalue('keys'));
+	$params["isManyKeys"] = postvalue('isManyKeys');
+	$params["location"] = postvalue('location');
+
+	$button = new Button($params);
+	$ajax = $button; // for examle from HELP
+	$keys = $button->getKeys();
+
+	$masterData = false;
+	if ( isset($params['masterData']) && count($params['masterData']) > 0 )
+	{
+		$masterData = $params['masterData'];
+	}
+	else if ( isset($params["masterTable"]) )
+	{
+		$masterData = $button->getMasterData($params["masterTable"]);
+	}
+	
+	$contextParams = array();
+	if ( $params["location"] == PAGE_VIEW )
+	{
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["masterData"] = $masterData;
+	}
+	else if ( $params["location"] == PAGE_EDIT )
+	{
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["newData"] = $params['fieldsData'];
+		$contextParams["masterData"] = $masterData;
+	}
+	else if ( $params["location"] == "grid" )
+	{	
+		$params["location"] = "list";
+		$contextParams["data"] = $button->getRecordData();
+		$contextParams["newData"] = $params['fieldsData'];
+		$contextParams["masterData"] = $masterData;
+	}
+	else 
+	{
+		$contextParams["masterData"] = $masterData;
+	}
+
+	RunnerContext::push( new RunnerContextItem( $params["location"], $contextParams));
+	$data = $button->getCurrentRecord();
+
+$result['PtabID'] = $data["PtabID"];;
 	RunnerContext::pop();
 	echo my_json_encode($result);
 }

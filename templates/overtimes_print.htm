@@ -95,6 +95,11 @@
 				{$label overtimes AllEmployees}
 			</th>
 			{END AllEmployees_fieldheadercolumn}
+			{BEGIN SelectEmployees_fieldheadercolumn}
+			<th class="{$SelectEmployees_class}" {$SelectEmployees_style}  data-field="SelectEmployees">
+				{$label overtimes SelectEmployees}
+			</th>
+			{END SelectEmployees_fieldheadercolumn}
 			{BEGIN FromTime_fieldheadercolumn}
 			<th class="{$FromTime_class}" {$FromTime_style}  data-field="FromTime">
 				{$label overtimes FromTime}
@@ -187,6 +192,11 @@
 				{$AllEmployees_value}
 			</td>
 			{END AllEmployees_fieldcolumn}
+			{BEGIN SelectEmployees_fieldcolumn}
+			<td  class="{$SelectEmployees_class}" {$SelectEmployees_style} {$recordattrs}>
+				{$SelectEmployees_value}
+			</td>
+			{END SelectEmployees_fieldcolumn}
 			{BEGIN FromTime_fieldcolumn}
 			<td  class="{$FromTime_class}" {$FromTime_style} {$recordattrs}>
 				{$FromTime_value}
@@ -250,7 +260,7 @@
 	{BEGIN details_row}
 		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
 			{BEGIN details_record}
-				<td colspan="17">
+				<td colspan="18">
 					{BEGIN details_table}
 						{$details}
 					{END details_table}

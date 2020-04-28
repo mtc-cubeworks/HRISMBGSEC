@@ -111,6 +111,24 @@
 </div>
 {END ClockType_fieldblock}
 
+			{BEGIN CtID_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_CtID}" data-fieldname="CtID" data-signal-error-for="CtID{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_CtID}">
+		{BEGIN CtID_label}{$label clocktypes CtID}{END CtID_label}
+	</label>
+	<div class="col-md-6" >
+		{$CtID_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="CtID">
+		<div class="text-muted" >
+		{$tooltip clocktypes CtID}
+		</div>
+	</div>
+</div>
+</div>
+{END CtID_fieldblock}
+
 
 </div>
 

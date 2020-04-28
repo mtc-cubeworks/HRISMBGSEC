@@ -3,7 +3,7 @@ require('fpdf17/fpdf.php');
 
 //db connection
 $con = mysqli_connect('localhost','badz','Madzilla101');
-mysqli_select_db($con,'payrollflexo');
+mysqli_select_db($con,'mgbsec');
 
 //get invoices data
 $query = mysqli_query($con,"select * from payrollamt33
@@ -110,7 +110,7 @@ $pdf->Cell(10	,3,number_format($invoice['UndertimeMins'],2),0,0);
 $pdf->Cell(15	,3,number_format($invoice['UnderTime'],2),0,1,'R');
 $pdf->Cell(37	,3,'LWOP (days):',0,0);
 $pdf->Cell(10	,3,number_format($invoice['LWOPdays'],2),0,0);
-$pdf->Cell(16	,3,number_format(-1*($invoice['LWOP']),2),0,1,'R');
+$pdf->Cell(15	,3,number_format(-1*($invoice['LWOP']),2),0,1,'R');
 $pdf->Cell(37	,3,'Reg. OT (hrs):',0,0);
 $pdf->Cell(10	,3,number_format($invoice['RegOTHrs'],2),0,0);
 $pdf->Cell(15	,3,number_format($invoice['RegOT'],2),0,1,'R');

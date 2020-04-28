@@ -93,24 +93,6 @@
 
 
 
-			{BEGIN Closed_fieldblock}
-<div class=container>
-<div class="form-group {$fielddispclass_Closed}" data-fieldname="Closed" data-signal-error-for="Closed{$id}" >
-	<label class="col-md-3 control-label" for="{$labelfor_Closed}">
-		{BEGIN Closed_label}{$label notestatus Closed}{END Closed_label}
-	</label>
-	<div class="col-md-6" >
-		{$Closed_editcontrol}
-	</div>
-	<div class="col-md-3 help-block" data-helpfor="Closed">
-		<div class="text-muted" >
-		{$tooltip notestatus Closed}
-		</div>
-	</div>
-</div>
-</div>
-{END Closed_fieldblock}
-
 			{BEGIN CreatedDate_fieldblock}
 <div class=container>
 <div class="form-group {$fielddispclass_CreatedDate}" data-fieldname="CreatedDate" data-signal-error-for="CreatedDate{$id}" >
@@ -200,6 +182,24 @@
 </div>
 </div>
 {END UploadFile_fieldblock}
+
+			{BEGIN Closed_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Closed}" data-fieldname="Closed" data-signal-error-for="Closed{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Closed}">
+		{BEGIN Closed_label}{$label notestatus Closed}{END Closed_label}
+	</label>
+	<div class="col-md-6" >
+		{$Closed_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Closed">
+		<div class="text-muted" >
+		{$tooltip notestatus Closed}
+		</div>
+	</div>
+</div>
+</div>
+{END Closed_fieldblock}
 
 			{BEGIN Encodedby_fieldblock}
 <div class=container>

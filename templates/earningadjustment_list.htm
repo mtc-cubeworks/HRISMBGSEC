@@ -353,7 +353,10 @@
 		{BEGIN deleteselected_link}
 	<button type="button" class="btn btn-default" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled>Delete</button>
 	{END deleteselected_link}
-			{BEGIN saveall_link}
+		{BEGIN updateselected_link}
+		<button type="button" class="btn btn-default" {$updateselectedlink_attrs} disabled>Update selected</button>
+	{END updateselected_link}
+		{BEGIN saveall_link}
 		<button type="button" class="btn btn-primary" {$savealllink_attrs} {$savealllink_span}>Save all</button>
 	{END saveall_link}
 	{BEGIN cancelall_link}
@@ -535,9 +538,6 @@
 	.bs-gridcell[data-field=Inactive]:before {
 		content: "{$label earningadjustment Inactive}";
 	}
-	.bs-gridcell[data-field=PerDay]:before {
-		content: "{$label earningadjustment PerDay}";
-	}
 	.bs-gridcell[data-field=StartDate]:before {
 		content: "{$label earningadjustment StartDate}";
 	}
@@ -587,32 +587,6 @@
 									
 									
 									
-									{BEGIN AdjustmentDescription_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$AdjustmentDescription_class}" data-field=AdjustmentDescription>
-									{BEGIN AdjustmentDescription_fieldheader}
-																				<span {$AdjustmentDescription_orderlinkattrs}>
-											{$label earningadjustment AdjustmentDescription}
-										</span>
-									{END AdjustmentDescription_fieldheader}
-									</th>
-									{END AdjustmentDescription_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN PaymentPeriod_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$PaymentPeriod_class}" data-field=PaymentPeriod>
-									{BEGIN PaymentPeriod_fieldheader}
-																				<span {$PaymentPeriod_orderlinkattrs}>
-											{$label earningadjustment PaymentPeriod}
-										</span>
-									{END PaymentPeriod_fieldheader}
-									</th>
-									{END PaymentPeriod_fieldheadercolumn}
-									
-									
-									
-									
 									{BEGIN StartDate_fieldheadercolumn}
 									<th class="rnr-gridfieldlabel {$StartDate_class}" data-field=StartDate>
 									{BEGIN StartDate_fieldheader}
@@ -639,15 +613,28 @@
 									
 									
 									
-									{BEGIN PerDay_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$PerDay_class}" data-field=PerDay>
-									{BEGIN PerDay_fieldheader}
-																				<span {$PerDay_orderlinkattrs}>
-											{$label earningadjustment PerDay}
+									{BEGIN AdjustmentDescription_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$AdjustmentDescription_class}" data-field=AdjustmentDescription>
+									{BEGIN AdjustmentDescription_fieldheader}
+																				<span {$AdjustmentDescription_orderlinkattrs}>
+											{$label earningadjustment AdjustmentDescription}
 										</span>
-									{END PerDay_fieldheader}
+									{END AdjustmentDescription_fieldheader}
 									</th>
-									{END PerDay_fieldheadercolumn}
+									{END AdjustmentDescription_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN PaymentPeriod_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$PaymentPeriod_class}" data-field=PaymentPeriod>
+									{BEGIN PaymentPeriod_fieldheader}
+																				<span {$PaymentPeriod_orderlinkattrs}>
+											{$label earningadjustment PaymentPeriod}
+										</span>
+									{END PaymentPeriod_fieldheader}
+									</th>
+									{END PaymentPeriod_fieldheadercolumn}
 									
 									
 									
@@ -755,20 +742,6 @@
 {END EmployeeID_fieldcolumn}
 
 
-	{BEGIN AdjustmentDescription_fieldcolumn}
-	<td class="bs-gridcell {$AdjustmentDescription_class}"  data-field=AdjustmentDescription {$rowstyle} {$recordattrs}>
-		{$AdjustmentDescription_value}
-	</td>
-{END AdjustmentDescription_fieldcolumn}
-
-
-	{BEGIN PaymentPeriod_fieldcolumn}
-	<td class="bs-gridcell {$PaymentPeriod_class}"  data-field=PaymentPeriod {$rowstyle} {$recordattrs}>
-		{$PaymentPeriod_value}
-	</td>
-{END PaymentPeriod_fieldcolumn}
-
-
 	{BEGIN StartDate_fieldcolumn}
 	<td class="bs-gridcell {$StartDate_class}"  data-field=StartDate {$rowstyle} {$recordattrs}>
 		{$StartDate_value}
@@ -783,11 +756,18 @@
 {END EndDate_fieldcolumn}
 
 
-	{BEGIN PerDay_fieldcolumn}
-	<td class="bs-gridcell {$PerDay_class}"  data-field=PerDay {$rowstyle} {$recordattrs}>
-		{$PerDay_value}
+	{BEGIN AdjustmentDescription_fieldcolumn}
+	<td class="bs-gridcell {$AdjustmentDescription_class}"  data-field=AdjustmentDescription {$rowstyle} {$recordattrs}>
+		{$AdjustmentDescription_value}
 	</td>
-{END PerDay_fieldcolumn}
+{END AdjustmentDescription_fieldcolumn}
+
+
+	{BEGIN PaymentPeriod_fieldcolumn}
+	<td class="bs-gridcell {$PaymentPeriod_class}"  data-field=PaymentPeriod {$rowstyle} {$recordattrs}>
+		{$PaymentPeriod_value}
+	</td>
+{END PaymentPeriod_fieldcolumn}
 
 
 	{BEGIN PerPayrollAmount_fieldcolumn}
@@ -840,14 +820,6 @@
 										<td class="bs-gridcell {$EmployeeID_class}" data-field="EmployeeID">
 																				</td>
 										{END EmployeeID_fieldfootercolumn}
-										{BEGIN AdjustmentDescription_fieldfootercolumn}
-										<td class="bs-gridcell {$AdjustmentDescription_class}" data-field="AdjustmentDescription">
-																				</td>
-										{END AdjustmentDescription_fieldfootercolumn}
-										{BEGIN PaymentPeriod_fieldfootercolumn}
-										<td class="bs-gridcell {$PaymentPeriod_class}" data-field="PaymentPeriod">
-																				</td>
-										{END PaymentPeriod_fieldfootercolumn}
 										{BEGIN StartDate_fieldfootercolumn}
 										<td class="bs-gridcell {$StartDate_class}" data-field="StartDate">
 																				</td>
@@ -856,10 +828,14 @@
 										<td class="bs-gridcell {$EndDate_class}" data-field="EndDate">
 																				</td>
 										{END EndDate_fieldfootercolumn}
-										{BEGIN PerDay_fieldfootercolumn}
-										<td class="bs-gridcell {$PerDay_class}" data-field="PerDay">
+										{BEGIN AdjustmentDescription_fieldfootercolumn}
+										<td class="bs-gridcell {$AdjustmentDescription_class}" data-field="AdjustmentDescription">
 																				</td>
-										{END PerDay_fieldfootercolumn}
+										{END AdjustmentDescription_fieldfootercolumn}
+										{BEGIN PaymentPeriod_fieldfootercolumn}
+										<td class="bs-gridcell {$PaymentPeriod_class}" data-field="PaymentPeriod">
+																				</td>
+										{END PaymentPeriod_fieldfootercolumn}
 										{BEGIN PerPayrollAmount_fieldfootercolumn}
 										<td class="bs-gridcell {$PerPayrollAmount_class}" data-field="PerPayrollAmount">
 																					{BEGIN PerPayrollAmount_showtotal}

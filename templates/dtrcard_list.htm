@@ -1,0 +1,1167 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}
+<style>
+{$containerCss}
+</style>
+<div class="sidebar bs-fixed clearfix mCustomScrollbar" data-mcs-theme="minimal-dark" {$blockattr_left}>
+	<div class="sidebar-contents mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside">
+		
+
+{BEGIN container_logo}
+<div {$logo_chiddenattr} data-pageid="{$pageid}" data-container="logo" class=" bs-sidebarlogo   "> 
+
+{BEGIN logo_block}
+<a href="{$home_link}" {$logo_hiddenattr} data-pageid="{$pageid}" data-brick="logo" class="navbar-brand" >{$logo}</a>
+{END logo_block}
+
+
+
+</div>
+{END container_logo}
+
+
+
+{BEGIN container_hdr}
+<div {$hdr_chiddenattr} data-pageid="{$pageid}" data-container="hdr" class=" navbar-default clearfix   "> 
+
+{BEGIN collapse_block}
+<button {$bsnavbarcollapse_hiddenattr} data-pageid="{$pageid}" data-brick="bsnavbarcollapse" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target=".bs-navcontrolled">	
+	<span class="sr-only">Toggle navigation</span>	
+	<span class="icon-bar"></span>					
+</button>												
+
+{END collapse_block}
+
+
+
+</div>
+{END container_hdr}
+
+{BEGIN container_sidemenu}<div {$sidemenu_chiddenattr} data-pageid="{$pageid}" data-container="sidemenu" class="bs-navform navbar-collapse sidebar-menu bs-hidden-xs bs-navcontrolled" aria-expanded="false" >												   
+{BEGIN menu_block}
+{$menu main}
+
+{END menu_block}
+
+												</div>						{END container_sidemenu}
+
+{BEGIN container_left}
+<div {$left_chiddenattr} data-pageid="{$pageid}" data-container="left" class=" sidebar-container   "> 
+
+{BEGIN searchPanel}
+<div {$searchpanel_hiddenattr} data-pageid="{$pageid}" data-brick="searchpanel" class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} >
+	<!-- Search panel content -->
+	
+	<div class="panel-heading">
+		<div class="btn-group" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Search in
+			<span class="caret"></span>
+			</button>
+		</div>
+
+		
+		<div class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Show options</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>all conditions</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>any condition</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>hide</a></li>
+			</ul>
+		</div>
+	
+		
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		{END searchCtrlBlock}
+
+
+	</div>
+	
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary" id="searchButton{$id}" {$searchbutton_attrs}>Search</button>
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}>
+		Show all
+		</button>
+	</div>
+</div>
+
+
+{END searchPanel}
+
+
+
+
+</div>
+{END container_left}
+
+
+	</div>
+</div>	
+<div class="bs-wrapper">
+	<div class="bs-fixedheader" id="fixedheader{$id}">
+		{BEGIN container_menu}<nav {$menu_chiddenattr} data-pageid="{$pageid}" data-container="menu" class="navbar navbar-default bs-fullwidth-navbar">					
+
+
+
+{BEGIN container_bc}
+<div {$bc_chiddenattr} data-pageid="{$pageid}" data-container="bc" class=" navbar-form navbar-left   "> 
+
+{BEGIN breadcrumbs}
+<ol class="breadcrumb">
+<li ><a href="{$home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumbs}
+
+
+
+</div>
+{END container_bc}
+
+
+
+
+
+
+{BEGIN container_menu_1}<div {$menu_1_chiddenattr} data-pageid="{$pageid}" data-container="menu_1" class="bs-navform navbar-collapse bs-hidden-xs bs-navcontrolled" aria-expanded="false" >												   
+
+
+
+{BEGIN container_more}
+<div {$more_chiddenattr} data-pageid="{$pageid}" data-container="more" class=" navbar-right navbar-form   "> 
+
+{BEGIN more_list}
+<div {$morebutton_hiddenattr} data-pageid="{$pageid}" data-brick="morebutton" class="btn-group bs-navsection">
+	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		<span class="glyphicon glyphicon-cog"></span>
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu">
+		
+				{BEGIN exportselected_link}
+		<li class="massButton{$id} disabled"><a href="#" {$exportselectedlink_attrs} {$exportselectedlink_span} >Export selected</a></li>
+		{END exportselected_link}
+		
+				
+				<li role="separator" class="divider"></li>	
+
+				{BEGIN asearch_link}
+		<li><a href="dtrcard_search.php" {$advsearchlink_attrs}>Advanced search</a></li>
+		{END asearch_link}
+
+				{BEGIN searchPanelTopButtons}
+		<li><a href=# id="showOptPanel{$id}">Show search panel</a></li>
+		{END searchPanelTopButtons}	
+		
+				
+				<li role="separator" class="divider"></li>	
+		
+				
+				{BEGIN export_link}
+		<li><a target="_blank" href="dtrcard_export.php"  {$exportlink_attrs}>Export results</a></li>
+		{END export_link}
+
+		
+				
+	</ul>  
+</div>
+
+{END more_list}
+
+
+{BEGIN security_block}
+<span {$loggedas_hiddenattr} data-pageid="{$pageid}" data-brick="loggedas" id="login_block{$id}" class="bs-navsection">
+	{BEGIN guestloginbutton}
+		<button class="btn btn-info" type="button" {$guestloginlink_attrs}>Login</button>
+	{END guestloginbutton}
+	{BEGIN loggedas_message} 
+		<span class="dropdown">
+			<button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon-user"></span>	{$username}</button>
+			<ul class="dropdown-menu">
+		{BEGIN logoutbutton}
+				<li><a href="#" {$logoutlink_attrs}>Log out</a></li>
+		{END logoutbutton}
+		
+		{BEGIN adminarea_link}
+				<li><a href="admin_rights_list.php" {$adminarealink_attrs}>Admin Area</a></li>
+		{END adminarea_link}
+
+
+			</ul>
+		</span>
+	{END loggedas_message}
+</span>
+{END security_block}
+
+
+
+</div>
+{END container_more}
+
+
+
+
+
+
+
+
+{BEGIN container_more_1}
+<div {$more_1_chiddenattr} data-pageid="{$pageid}" data-container="more_1" class=" navbar-right navbar-form   "> 
+
+{BEGIN searchform_block}
+<span {$search_hiddenattr} data-pageid="{$pageid}" data-brick="search" class="form-group">
+
+ <div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Show all">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>
+{END searchform_block}
+
+
+
+</div>
+{END container_more_1}
+
+
+
+
+												</div>						{END container_menu_1}
+
+
+									</nav>{END container_menu}
+	</div>	
+	<div class="container-fluid bs-underheader bs-fixedsidebarmain" id="underheader{$id}">
+		{$header}
+		<div class="bs-sidebar-screenbound">
+			
+
+{BEGIN container_masterinfo}
+<div {$masterinfo_chiddenattr} data-pageid="{$pageid}" data-container="masterinfo" class="    "> 
+
+{BEGIN mastertable_block}
+<div class="panel panel-info table-panel">
+	<div class="panel-heading">
+		{$master_heading}
+	</div>
+	<div class="panel-body">
+		{$showmasterfile}
+		
+	</div>
+</div>
+
+{END mastertable_block}
+
+
+
+</div>
+{END container_masterinfo}
+
+
+
+{BEGIN container_gridcontrols}
+<div {$gridcontrols_chiddenattr} data-pageid="{$pageid}" data-container="gridcontrols" class=" bs-navcontrolled bs-hidden-xs   "> 
+
+
+
+
+{BEGIN container_add_delete}
+<div {$add_delete_chiddenattr} data-pageid="{$pageid}" data-container="add_delete" class=" bottom-margin  col-md-6 "> 
+
+{BEGIN newrecord_controls_block}
+	
+	
+{END newrecord_controls_block}
+
+
+{BEGIN record_controls_block}
+<span {$recordcontrol_hiddenattr} data-pageid="{$pageid}" data-brick="recordcontrol">
+			</span>
+
+{END record_controls_block}
+
+
+
+</div>
+{END container_add_delete}
+
+
+
+
+
+
+
+
+{BEGIN container_gridinfo}
+<div {$gridinfo_chiddenattr} data-pageid="{$pageid}" data-container="gridinfo" class=" bottom-margin text-right col-md-6 "> 
+
+{BEGIN details_found}
+<span {$details_found_hiddenattr} data-pageid="{$pageid}" data-brick="details_found" class="form-inline form-inline-always">
+	{$records_indicator}
+	<span>
+	{BEGIN recordspp_block}
+			{$recsPerPage}
+	{END recordspp_block}
+	</span>
+</span>
+{END details_found}
+
+
+{BEGIN print_friendly}
+<span {$printpanel_hiddenattr} data-pageid="{$pageid}" data-brick="printpanel" class="bs-printpanel" id="printpanelblock{$id}">
+	<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" title="Print-friendly page">
+		<span class="glyphicon glyphicon-print" ></span>
+		<span class="caret"></span>
+    </button>
+	<ul class="dropdown-menu pull-right" >
+		<li>
+			<div class="container-fluid" id="print_friendly_scope{$id}">
+				<div class="row">
+					<div class="col-md-4">Scope:</div>
+										{BEGIN print_friendly_all}
+					<div class="col-md-8">
+						<label for="printAll{$id}">
+							<input type="radio" id="printAll{$id}" data-href="dtrcard_print.php?all=1&amp;{$crosstable_attrs}" name="printScope">
+							Print all pages
+						</label>
+					</div>
+					{END print_friendly_all}
+				</div>
+				<div class="row">
+					<div class="col-md-4">&nbsp;</div>
+					<div class="col-md-8">
+						<label for="printPage{$id}">
+							<input type="radio" id="printPage{$id}" data-href="dtrcard_print.php?{$crosstable_attrs}" name="printScope" checked>
+							Print this page
+						</label>
+					</div>
+				</div>
+								<div class="row">
+					<div class="col-md-4">&nbsp;</div>
+					<div class="col-md-8">
+						<label for="printSelection{$id}" style="color: gray;">
+							<input type="radio" id="printSelection{$id}" name="printScope" disabled="disabled">
+							Print selected
+						</label>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li class="divider" role="separator"></li>
+
+		
+				<li>	
+			<div class="rnr-printdetails">
+				<label for="printPerPage{$id}">
+											Records Per Page:
+				</label>
+				<input type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">		
+			</div>
+		</li>
+		<li class="divider" role="separator"></li>
+		<li class="rnr-printbutton">				
+			<button type="button" class="btn btn-primary" id="print_friendly_button{$id}" >Print</button>			
+		</li>
+	</ul>	
+</span>
+
+{END print_friendly}
+
+
+
+
+</div>
+{END container_gridinfo}
+
+
+
+
+
+
+
+</div>
+{END container_gridcontrols}
+
+
+		</div>
+		<div></div>
+		<div class="bs-sidebar-screenbound bs-minwidth">
+			
+
+{BEGIN container_tabs}
+<div {$tabs_chiddenattr} data-pageid="{$pageid}" data-container="tabs" class="    "> 
+
+{BEGIN grid_tabs}
+<div {$bsgrid_tabs_hiddenattr} data-pageid="{$pageid}" data-brick="bsgrid_tabs">
+<ul class="nav nav-tabs">
+{$grid_tabs_content}
+</ul>
+</div>
+{END grid_tabs}
+
+
+
+</div>
+{END container_tabs}
+
+
+
+{BEGIN container_message}
+<div {$message_chiddenattr} data-pageid="{$pageid}" data-container="message" class="    "> 
+
+{BEGIN message_block}
+<div {$message_hiddenattr} data-pageid="{$pageid}" data-brick="message" class="alert {$message_class}" role="alert">{$message}</div>
+{END message_block}
+
+
+
+</div>
+{END container_message}
+
+
+
+{BEGIN container_center}
+<div {$center_chiddenattr} data-pageid="{$pageid}" data-container="center" class="    "> 
+
+
+
+
+{BEGIN container_grid}
+<div {$grid_chiddenattr} data-pageid="{$pageid}" data-container="grid" class="bs-grid    "> 
+
+{BEGIN grid_block}
+	<style>
+	.bs-gridcell[data-field=ScID]:before {
+		content: "{$label dtrcard ScID}";
+	}
+	.bs-gridcell[data-field=EmployeeID]:before {
+		content: "{$label dtrcard EmployeeID}";
+	}
+	.bs-gridcell[data-field=SDate]:before {
+		content: "{$label dtrcard SDate}";
+	}
+	.bs-gridcell[data-field=STimeIn]:before {
+		content: "{$label dtrcard STimeIn}";
+	}
+	.bs-gridcell[data-field=STimeOut]:before {
+		content: "{$label dtrcard STimeOut}";
+	}
+	.bs-gridcell[data-field=TimeIn]:before {
+		content: "{$label dtrcard TimeIn}";
+	}
+	.bs-gridcell[data-field=TimeOut]:before {
+		content: "{$label dtrcard TimeOut}";
+	}
+	.bs-gridcell[data-field=DayIs]:before {
+		content: "{$label dtrcard DayIs}";
+	}
+	.bs-gridcell[data-field=RestDay]:before {
+		content: "{$label dtrcard RestDay}";
+	}
+	.bs-gridcell[data-field=Mispunched]:before {
+		content: "{$label dtrcard Mispunched}";
+	}
+	.bs-gridcell[data-field=HolidayType]:before {
+		content: "{$label dtrcard HolidayType}";
+	}
+	.bs-gridcell[data-field=VLDay]:before {
+		content: "{$label dtrcard VLDay}";
+	}
+	.bs-gridcell[data-field=SLDay]:before {
+		content: "{$label dtrcard SLDay}";
+	}
+	.bs-gridcell[data-field=ELDay]:before {
+		content: "{$label dtrcard ELDay}";
+	}
+	.bs-gridcell[data-field=PLDay]:before {
+		content: "{$label dtrcard PLDay}";
+	}
+	.bs-gridcell[data-field=OBDay]:before {
+		content: "{$label dtrcard OBDay}";
+	}
+	.bs-gridcell[data-field=Late]:before {
+		content: "{$label dtrcard Late}";
+	}
+	.bs-gridcell[data-field=UTime]:before {
+		content: "{$label dtrcard UTime}";
+	}
+	.bs-gridcell[data-field=Absent]:before {
+		content: "{$label dtrcard Absent}";
+	}
+	.bs-gridcell[data-field=OTmins]:before {
+		content: "{$label dtrcard OTmins}";
+	}
+</style>
+<table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
+	<thead>
+										{BEGIN grid_header}
+								<tr class="rnr-toprow {$gridHeader_class}" >
+									{BEGIN record_header}
+									{BEGIN listIcons_column}
+									<th iEditCont="all">&nbsp;</th>
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}
+									<th class="">
+										<input type="checkbox" {$checkboxheader_attrs}>
+									</th>
+									{END checkbox_column}
+
+																		
+									{BEGIN SDate_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SDate_class}" data-field=SDate>
+									{BEGIN SDate_fieldheader}
+																				<span {$SDate_orderlinkattrs}>
+											{$label dtrcard SDate}
+										</span>
+									{END SDate_fieldheader}
+									</th>
+									{END SDate_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN DayIs_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$DayIs_class}" data-field=DayIs>
+									{BEGIN DayIs_fieldheader}
+																				<span {$DayIs_orderlinkattrs}>
+											{$label dtrcard DayIs}
+										</span>
+									{END DayIs_fieldheader}
+									</th>
+									{END DayIs_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN STimeIn_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$STimeIn_class}" data-field=STimeIn>
+									{BEGIN STimeIn_fieldheader}
+																				<span {$STimeIn_orderlinkattrs}>
+											{$label dtrcard STimeIn}
+										</span>
+									{END STimeIn_fieldheader}
+									</th>
+									{END STimeIn_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN STimeOut_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$STimeOut_class}" data-field=STimeOut>
+									{BEGIN STimeOut_fieldheader}
+																				<span {$STimeOut_orderlinkattrs}>
+											{$label dtrcard STimeOut}
+										</span>
+									{END STimeOut_fieldheader}
+									</th>
+									{END STimeOut_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN TimeIn_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$TimeIn_class}" data-field=TimeIn>
+									{BEGIN TimeIn_fieldheader}
+																				<span {$TimeIn_orderlinkattrs}>
+											{$label dtrcard TimeIn}
+										</span>
+									{END TimeIn_fieldheader}
+									</th>
+									{END TimeIn_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN TimeOut_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$TimeOut_class}" data-field=TimeOut>
+									{BEGIN TimeOut_fieldheader}
+																				<span {$TimeOut_orderlinkattrs}>
+											{$label dtrcard TimeOut}
+										</span>
+									{END TimeOut_fieldheader}
+									</th>
+									{END TimeOut_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Mispunched_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Mispunched_class}" data-field=Mispunched>
+									{BEGIN Mispunched_fieldheader}
+																				<span {$Mispunched_orderlinkattrs}>
+											{$label dtrcard Mispunched}
+										</span>
+									{END Mispunched_fieldheader}
+									</th>
+									{END Mispunched_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Late_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Late_class}" data-field=Late>
+									{BEGIN Late_fieldheader}
+																				<span {$Late_orderlinkattrs}>
+											{$label dtrcard Late}
+										</span>
+									{END Late_fieldheader}
+									</th>
+									{END Late_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN UTime_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$UTime_class}" data-field=UTime>
+									{BEGIN UTime_fieldheader}
+																				<span {$UTime_orderlinkattrs}>
+											{$label dtrcard UTime}
+										</span>
+									{END UTime_fieldheader}
+									</th>
+									{END UTime_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN Absent_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Absent_class}" data-field=Absent>
+									{BEGIN Absent_fieldheader}
+																				<span {$Absent_orderlinkattrs}>
+											{$label dtrcard Absent}
+										</span>
+									{END Absent_fieldheader}
+									</th>
+									{END Absent_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN OTmins_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$OTmins_class}" data-field=OTmins>
+									{BEGIN OTmins_fieldheader}
+																				<span {$OTmins_orderlinkattrs}>
+											{$label dtrcard OTmins}
+										</span>
+									{END OTmins_fieldheader}
+									</th>
+									{END OTmins_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN RestDay_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$RestDay_class}" data-field=RestDay>
+									{BEGIN RestDay_fieldheader}
+																				<span {$RestDay_orderlinkattrs}>
+											{$label dtrcard RestDay}
+										</span>
+									{END RestDay_fieldheader}
+									</th>
+									{END RestDay_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN HolidayType_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$HolidayType_class}" data-field=HolidayType>
+									{BEGIN HolidayType_fieldheader}
+																				<span {$HolidayType_orderlinkattrs}>
+											{$label dtrcard HolidayType}
+										</span>
+									{END HolidayType_fieldheader}
+									</th>
+									{END HolidayType_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN VLDay_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$VLDay_class}" data-field=VLDay>
+									{BEGIN VLDay_fieldheader}
+																				<span {$VLDay_orderlinkattrs}>
+											{$label dtrcard VLDay}
+										</span>
+									{END VLDay_fieldheader}
+									</th>
+									{END VLDay_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SLDay_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$SLDay_class}" data-field=SLDay>
+									{BEGIN SLDay_fieldheader}
+																				<span {$SLDay_orderlinkattrs}>
+											{$label dtrcard SLDay}
+										</span>
+									{END SLDay_fieldheader}
+									</th>
+									{END SLDay_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN ELDay_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$ELDay_class}" data-field=ELDay>
+									{BEGIN ELDay_fieldheader}
+																				<span {$ELDay_orderlinkattrs}>
+											{$label dtrcard ELDay}
+										</span>
+									{END ELDay_fieldheader}
+									</th>
+									{END ELDay_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN PLDay_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$PLDay_class}" data-field=PLDay>
+									{BEGIN PLDay_fieldheader}
+																				<span {$PLDay_orderlinkattrs}>
+											{$label dtrcard PLDay}
+										</span>
+									{END PLDay_fieldheader}
+									</th>
+									{END PLDay_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN OBDay_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$OBDay_class}" data-field=OBDay>
+									{BEGIN OBDay_fieldheader}
+																				<span {$OBDay_orderlinkattrs}>
+											{$label dtrcard OBDay}
+										</span>
+									{END OBDay_fieldheader}
+									</th>
+									{END OBDay_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN endrecordheader_block}
+									<th class="rnr-cs">&nbsp;</th>
+									
+									{END endrecordheader_block}
+									
+									{END record_header}
+									
+								</tr>
+								{END grid_header}
+
+	</thead>
+	<tbody>	
+		{BEGIN grid_row}
+<tr class="{$rowclass} bs-gridrow" {$rowattrs} {$rowstyle}>
+	{BEGIN grid_record}
+	{BEGIN listIcons_column}
+	<td class="bs-gridicons" iEditCont="all" {$rowstyle} {$recordattrs}>
+	
+		
+	<span data-hidden {$ieditbuttonsholder_attrs}></span>
+
+	
+		{BEGIN view_column}
+	{BEGIN view_link}
+			<a class="glyphicon glyphicon-search" {$viewlink_attrs} title="View"></a>
+	{END view_link}
+	{END view_column}
+	</td>	
+	{END listIcons_column}	
+
+		{BEGIN checkbox_column}
+	<td  iEditCont="checkBox" class="bs-gridcheckbox" {$rowstyle} {$recordattrs}>
+	{BEGIN checkbox}
+	<input type="checkbox" {$checkbox_attrs}>
+	{END checkbox}
+	</td>
+	{END checkbox_column}
+
+	
+
+	{BEGIN SDate_fieldcolumn}
+	<td class="bs-gridcell {$SDate_class}"  data-field=SDate {$rowstyle} {$recordattrs}>
+		{$SDate_value}
+	</td>
+{END SDate_fieldcolumn}
+
+
+	{BEGIN DayIs_fieldcolumn}
+	<td class="bs-gridcell {$DayIs_class}"  data-field=DayIs {$rowstyle} {$recordattrs}>
+		{$DayIs_value}
+	</td>
+{END DayIs_fieldcolumn}
+
+
+	{BEGIN STimeIn_fieldcolumn}
+	<td class="bs-gridcell {$STimeIn_class}"  data-field=STimeIn {$rowstyle} {$recordattrs}>
+		{$STimeIn_value}
+	</td>
+{END STimeIn_fieldcolumn}
+
+
+	{BEGIN STimeOut_fieldcolumn}
+	<td class="bs-gridcell {$STimeOut_class}"  data-field=STimeOut {$rowstyle} {$recordattrs}>
+		{$STimeOut_value}
+	</td>
+{END STimeOut_fieldcolumn}
+
+
+	{BEGIN TimeIn_fieldcolumn}
+	<td class="bs-gridcell {$TimeIn_class}"  data-field=TimeIn {$rowstyle} {$recordattrs}>
+		{$TimeIn_value}
+	</td>
+{END TimeIn_fieldcolumn}
+
+
+	{BEGIN TimeOut_fieldcolumn}
+	<td class="bs-gridcell {$TimeOut_class}"  data-field=TimeOut {$rowstyle} {$recordattrs}>
+		{$TimeOut_value}
+	</td>
+{END TimeOut_fieldcolumn}
+
+
+	{BEGIN Mispunched_fieldcolumn}
+	<td class="bs-gridcell {$Mispunched_class}"  data-field=Mispunched {$rowstyle} {$recordattrs}>
+		{$Mispunched_value}
+	</td>
+{END Mispunched_fieldcolumn}
+
+
+	{BEGIN Late_fieldcolumn}
+	<td class="bs-gridcell {$Late_class}"  data-field=Late {$rowstyle} {$recordattrs}>
+		{$Late_value}
+	</td>
+{END Late_fieldcolumn}
+
+
+	{BEGIN UTime_fieldcolumn}
+	<td class="bs-gridcell {$UTime_class}"  data-field=UTime {$rowstyle} {$recordattrs}>
+		{$UTime_value}
+	</td>
+{END UTime_fieldcolumn}
+
+
+	{BEGIN Absent_fieldcolumn}
+	<td class="bs-gridcell {$Absent_class}"  data-field=Absent {$rowstyle} {$recordattrs}>
+		{$Absent_value}
+	</td>
+{END Absent_fieldcolumn}
+
+
+	{BEGIN OTmins_fieldcolumn}
+	<td class="bs-gridcell {$OTmins_class}"  data-field=OTmins {$rowstyle} {$recordattrs}>
+		{$OTmins_value}
+	</td>
+{END OTmins_fieldcolumn}
+
+
+	{BEGIN RestDay_fieldcolumn}
+	<td class="bs-gridcell {$RestDay_class}"  data-field=RestDay {$rowstyle} {$recordattrs}>
+		{$RestDay_value}
+	</td>
+{END RestDay_fieldcolumn}
+
+
+	{BEGIN HolidayType_fieldcolumn}
+	<td class="bs-gridcell {$HolidayType_class}"  data-field=HolidayType {$rowstyle} {$recordattrs}>
+		{$HolidayType_value}
+	</td>
+{END HolidayType_fieldcolumn}
+
+
+	{BEGIN VLDay_fieldcolumn}
+	<td class="bs-gridcell {$VLDay_class}"  data-field=VLDay {$rowstyle} {$recordattrs}>
+		{$VLDay_value}
+	</td>
+{END VLDay_fieldcolumn}
+
+
+	{BEGIN SLDay_fieldcolumn}
+	<td class="bs-gridcell {$SLDay_class}"  data-field=SLDay {$rowstyle} {$recordattrs}>
+		{$SLDay_value}
+	</td>
+{END SLDay_fieldcolumn}
+
+
+	{BEGIN ELDay_fieldcolumn}
+	<td class="bs-gridcell {$ELDay_class}"  data-field=ELDay {$rowstyle} {$recordattrs}>
+		{$ELDay_value}
+	</td>
+{END ELDay_fieldcolumn}
+
+
+	{BEGIN PLDay_fieldcolumn}
+	<td class="bs-gridcell {$PLDay_class}"  data-field=PLDay {$rowstyle} {$recordattrs}>
+		{$PLDay_value}
+	</td>
+{END PLDay_fieldcolumn}
+
+
+	{BEGIN OBDay_fieldcolumn}
+	<td class="bs-gridcell {$OBDay_class}"  data-field=OBDay {$rowstyle} {$recordattrs}>
+		{$OBDay_value}
+	</td>
+{END OBDay_fieldcolumn}
+
+	{BEGIN endrecord_block}
+	<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+	{END endrecord_block}
+									
+	{END grid_record}
+
+</tr>
+{END grid_row}
+	</tbody>
+	<tfoot>
+																		{BEGIN totals_row}
+								<tr class="rnr-bottomrow style1 {$gridFooter_class}">
+									{BEGIN totals_record}
+									{BEGIN listIcons_column}
+									<td class="bs-gridcell"></td>
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}
+									<td class="bs-gridcell"></td>
+									{END checkbox_column}
+
+									
+										{BEGIN SDate_fieldfootercolumn}
+										<td class="bs-gridcell {$SDate_class}" data-field="SDate">
+																					{BEGIN SDate_showtotal}
+																							Count:
+											{$SDate_total}
+											{END SDate_showtotal}
+										</td>
+										{END SDate_fieldfootercolumn}
+										{BEGIN DayIs_fieldfootercolumn}
+										<td class="bs-gridcell {$DayIs_class}" data-field="DayIs">
+																				</td>
+										{END DayIs_fieldfootercolumn}
+										{BEGIN STimeIn_fieldfootercolumn}
+										<td class="bs-gridcell {$STimeIn_class}" data-field="STimeIn">
+																				</td>
+										{END STimeIn_fieldfootercolumn}
+										{BEGIN STimeOut_fieldfootercolumn}
+										<td class="bs-gridcell {$STimeOut_class}" data-field="STimeOut">
+																				</td>
+										{END STimeOut_fieldfootercolumn}
+										{BEGIN TimeIn_fieldfootercolumn}
+										<td class="bs-gridcell {$TimeIn_class}" data-field="TimeIn">
+																				</td>
+										{END TimeIn_fieldfootercolumn}
+										{BEGIN TimeOut_fieldfootercolumn}
+										<td class="bs-gridcell {$TimeOut_class}" data-field="TimeOut">
+																				</td>
+										{END TimeOut_fieldfootercolumn}
+										{BEGIN Mispunched_fieldfootercolumn}
+										<td class="bs-gridcell {$Mispunched_class}" data-field="Mispunched">
+																					{BEGIN Mispunched_showtotal}
+																							Count:
+											{$Mispunched_total}
+											{END Mispunched_showtotal}
+										</td>
+										{END Mispunched_fieldfootercolumn}
+										{BEGIN Late_fieldfootercolumn}
+										<td class="bs-gridcell {$Late_class}" data-field="Late">
+																					{BEGIN Late_showtotal}
+																							Total:
+											{$Late_total}
+											{END Late_showtotal}
+										</td>
+										{END Late_fieldfootercolumn}
+										{BEGIN UTime_fieldfootercolumn}
+										<td class="bs-gridcell {$UTime_class}" data-field="UTime">
+																					{BEGIN UTime_showtotal}
+																							Total:
+											{$UTime_total}
+											{END UTime_showtotal}
+										</td>
+										{END UTime_fieldfootercolumn}
+										{BEGIN Absent_fieldfootercolumn}
+										<td class="bs-gridcell {$Absent_class}" data-field="Absent">
+																					{BEGIN Absent_showtotal}
+																							Total:
+											{$Absent_total}
+											{END Absent_showtotal}
+										</td>
+										{END Absent_fieldfootercolumn}
+										{BEGIN OTmins_fieldfootercolumn}
+										<td class="bs-gridcell {$OTmins_class}" data-field="OTmins">
+																					{BEGIN OTmins_showtotal}
+																							Total:
+											{$OTmins_total}
+											{END OTmins_showtotal}
+										</td>
+										{END OTmins_fieldfootercolumn}
+										{BEGIN RestDay_fieldfootercolumn}
+										<td class="bs-gridcell {$RestDay_class}" data-field="RestDay">
+																					{BEGIN RestDay_showtotal}
+																							Count:
+											{$RestDay_total}
+											{END RestDay_showtotal}
+										</td>
+										{END RestDay_fieldfootercolumn}
+										{BEGIN HolidayType_fieldfootercolumn}
+										<td class="bs-gridcell {$HolidayType_class}" data-field="HolidayType">
+																					{BEGIN HolidayType_showtotal}
+																							Count:
+											{$HolidayType_total}
+											{END HolidayType_showtotal}
+										</td>
+										{END HolidayType_fieldfootercolumn}
+										{BEGIN VLDay_fieldfootercolumn}
+										<td class="bs-gridcell {$VLDay_class}" data-field="VLDay">
+																					{BEGIN VLDay_showtotal}
+																							Total:
+											{$VLDay_total}
+											{END VLDay_showtotal}
+										</td>
+										{END VLDay_fieldfootercolumn}
+										{BEGIN SLDay_fieldfootercolumn}
+										<td class="bs-gridcell {$SLDay_class}" data-field="SLDay">
+																					{BEGIN SLDay_showtotal}
+																							Total:
+											{$SLDay_total}
+											{END SLDay_showtotal}
+										</td>
+										{END SLDay_fieldfootercolumn}
+										{BEGIN ELDay_fieldfootercolumn}
+										<td class="bs-gridcell {$ELDay_class}" data-field="ELDay">
+																					{BEGIN ELDay_showtotal}
+																							Total:
+											{$ELDay_total}
+											{END ELDay_showtotal}
+										</td>
+										{END ELDay_fieldfootercolumn}
+										{BEGIN PLDay_fieldfootercolumn}
+										<td class="bs-gridcell {$PLDay_class}" data-field="PLDay">
+																					{BEGIN PLDay_showtotal}
+																							Total:
+											{$PLDay_total}
+											{END PLDay_showtotal}
+										</td>
+										{END PLDay_fieldfootercolumn}
+										{BEGIN OBDay_fieldfootercolumn}
+										<td class="bs-gridcell {$OBDay_class}" data-field="OBDay">
+																					{BEGIN OBDay_showtotal}
+																							Total:
+											{$OBDay_total}
+											{END OBDay_showtotal}
+										</td>
+										{END OBDay_fieldfootercolumn}
+									{BEGIN endrecordtotals_block}
+									<td class="rnr-cs bs-gridcell"></td>
+									{END endrecordtotals_block}
+									{END totals_record}
+								</tr>
+								{END totals_row}
+								
+	</tfoot>
+</table>
+
+
+
+{END grid_block}
+
+
+
+</div>
+{END container_grid}
+
+
+
+
+
+
+</div>
+{END container_center}
+
+
+
+{BEGIN container_pagination}
+<div {$pagination_chiddenattr} data-pageid="{$pageid}" data-container="pagination" class="  text-center col-md-12 "> 
+
+{BEGIN pagination_block}
+<div {$pagination_hiddenattr} data-pageid="{$pageid}" data-brick="pagination">
+{$pagination}
+</div>
+{END pagination_block}
+
+
+
+</div>
+{END container_pagination}
+
+
+		</div>
+	</div>
+</div>
+	
+
+		{$footer}
+	{END body}
+	</body>
+</html>

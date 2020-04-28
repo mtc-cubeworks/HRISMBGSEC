@@ -15,6 +15,7 @@ class eventclass_payroll  extends eventsBase
 		$this->events["AfterDelete"]=true;
 
 
+
 //	onscreen events
 
 	}
@@ -344,30 +345,89 @@ function AfterDelete($where, &$deleted_values, &$message, &$pageObject)
 		
 $fr=$deleted_values["PayFromDate"];
 $to=$deleted_values["PayToDate"];
-//$dv=$deleted_values["Division"];
-//$wt=$deleted_values["WageType"];
+$dv=$deleted_values["Division"];
+$wt=$deleted_values["WageType"];
 $em=$deleted_values["Employer"];
 
-$sq1 = "DELETE FROM payrolltax WHERE FromDate='$fr' and ToDate='$to' and Employer='$em'";
+$sq1 = "DELETE FROM payrolltax WHERE FromDate='$fr' and ToDate='$to' and Employer='$em' and Division='$dv' and WageType='$wt'";
 CustomQuery($sq1);
 
-$sq2 = "DELETE FROM payrollstatutories WHERE FromDate='$fr' and ToDate='$to' and Employer='$em'";
+$sq2 = "DELETE FROM payrollstatutories WHERE FromDate='$fr' and ToDate='$to' and Employer='$em' and Division='$dv' and WageType='$wt'";
 CustomQuery($sq2);
 
-$sq3 = "DELETE FROM payrollearnadj WHERE FromDate='$fr' and ToDate='$to' and Employer='$em'";
+$sq3 = "DELETE FROM payrollearnadj WHERE FromDate='$fr' and ToDate='$to' and Employer='$em' and Division='$dv' and WageType='$wt'";
 CustomQuery($sq3);
 
-$sq4 = "DELETE FROM payrolldeductions WHERE FromDate='$fr' and ToDate='$to' and Employer='$em'";
+$sq4 = "DELETE FROM payrolldeductions WHERE FromDate='$fr' and ToDate='$to' and Employer='$em' and Division='$dv' and WageType='$wt'";
 CustomQuery($sq4);
 
-$sq5 = "DELETE FROM payrolldiv WHERE FromDate='$fr' and ToDate='$to' and Employer='$em'";
+$sq5 = "DELETE FROM payrolldiv WHERE FromDate='$fr' and ToDate='$to' and Employer='$em' and Division='$dv' and WageType='$wt'";
 CustomQuery($sq5);
 
-$sq6 = "DELETE FROM payrolltab WHERE FromDate='$fr' and ToDate='$to' and Employer='$em'";
+$sq6 = "DELETE FROM payrolltab WHERE FromDate='$fr' and ToDate='$to' and Employer='$em' and Division='$dv' and WageType='$wt'";
 CustomQuery($sq6);
 ;		
 } // function AfterDelete
 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		

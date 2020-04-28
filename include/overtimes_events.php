@@ -165,6 +165,8 @@ function AfterAdd(&$values, &$keys, $inline, &$pageObject)
 $empr=$values["Employer"];
 $dvv=$values["Division"];
 $alem=$values["AllEmployees"];
+$selem=$values["SelectEmployees"];
+
 $rea=$values["Reason"];
 $rea=addcslashes($rea);
 
@@ -189,6 +191,19 @@ $sql = "INSERT INTO overtimetab (UserID, UserName, EmployeeID, OtiD) values
 
 CustomQuery($sql);
 
+}
+
+}
+
+else { //select empoyees
+
+
+$evalues = explode(',', $selem);
+foreach ($evalues as $emvalue)
+{
+    $sql2 = "INSERT INTO overtimetab (EmployeeID, OtID) VALUES ('$emvalue', '$ot');";
+  
+ CustomQuery($sql2);
 }
 
 };

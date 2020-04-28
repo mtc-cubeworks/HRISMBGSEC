@@ -124,7 +124,7 @@ $tdataloans[".closePopupAfterEdit"] = 1;
 $tdataloans[".afterEditActionDetTable"] = "Detail tables not found!";
 
 $tdataloans[".add"] = true;
-$tdataloans[".afterAddAction"] = 0;
+$tdataloans[".afterAddAction"] = 1;
 $tdataloans[".closePopupAfterAdd"] = 1;
 $tdataloans[".afterAddActionDetTable"] = "";
 
@@ -174,7 +174,7 @@ $tdataloans[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
 
 $tdataloans[".ajaxCodeSnippetAdded"] = false;
 

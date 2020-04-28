@@ -323,7 +323,10 @@
 		{BEGIN deleteselected_link}
 	<button type="button" class="btn btn-default" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled>Delete</button>
 	{END deleteselected_link}
-		</span>
+		{BEGIN updateselected_link}
+		<button type="button" class="btn btn-default" {$updateselectedlink_attrs} disabled>Update selected</button>
+	{END updateselected_link}
+	</span>
 
 {END record_controls_block}
 

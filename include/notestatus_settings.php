@@ -32,7 +32,7 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsnotestatus["English"]["NStatusDate"] = "Status Date";
 	$fieldToolTipsnotestatus["English"]["NStatusDate"] = "";
 	$placeHoldersnotestatus["English"]["NStatusDate"] = "";
-	$fieldLabelsnotestatus["English"]["NoteStatus"] = "Status";
+	$fieldLabelsnotestatus["English"]["NoteStatus"] = "Note Status";
 	$fieldToolTipsnotestatus["English"]["NoteStatus"] = "";
 	$placeHoldersnotestatus["English"]["NoteStatus"] = "";
 	$fieldLabelsnotestatus["English"]["Remarks"] = "Remarks";
@@ -44,7 +44,7 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsnotestatus["English"]["UploadFile"] = "Upload File";
 	$fieldToolTipsnotestatus["English"]["UploadFile"] = "";
 	$placeHoldersnotestatus["English"]["UploadFile"] = "";
-	$fieldLabelsnotestatus["English"]["Encodedby"] = "Encodedby";
+	$fieldLabelsnotestatus["English"]["Encodedby"] = "Encoded by";
 	$fieldToolTipsnotestatus["English"]["Encodedby"] = "";
 	$placeHoldersnotestatus["English"]["Encodedby"] = "";
 	$fieldLabelsnotestatus["English"]["Closed"] = "Closed";
@@ -183,34 +183,33 @@ $tdatanotestatus[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
-														
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
 
 $tdatanotestatus[".ajaxCodeSnippetAdded"] = false;
 
-$tdatanotestatus[".buttonsAdded"] = true;
+$tdatanotestatus[".buttonsAdded"] = false;
 
-$tdatanotestatus[".addPageEvents"] = true;
+$tdatanotestatus[".addPageEvents"] = false;
 
 // use timepicker for search panel
 $tdatanotestatus[".isUseTimeForSearch"] = false;
 
 
 
-$tdatanotestatus[".badgeColor"] = "cfae83";
+$tdatanotestatus[".badgeColor"] = "e67349";
 
 
 $tdatanotestatus[".allSearchFields"] = array();
 $tdatanotestatus[".filterFields"] = array();
 $tdatanotestatus[".requiredSearchFields"] = array();
 
-$tdatanotestatus[".allSearchFields"][] = "Closed";
-	$tdatanotestatus[".allSearchFields"][] = "NSID";
+$tdatanotestatus[".allSearchFields"][] = "NSID";
 	$tdatanotestatus[".allSearchFields"][] = "CreatedDate";
 	$tdatanotestatus[".allSearchFields"][] = "NStatusDate";
 	$tdatanotestatus[".allSearchFields"][] = "NoteStatus";
 	$tdatanotestatus[".allSearchFields"][] = "Remarks";
 	$tdatanotestatus[".allSearchFields"][] = "UploadFile";
+	$tdatanotestatus[".allSearchFields"][] = "Closed";
 	$tdatanotestatus[".allSearchFields"][] = "Encodedby";
 	$tdatanotestatus[".allSearchFields"][] = "NID";
 	
@@ -228,13 +227,13 @@ $tdatanotestatus[".googleLikeFields"][] = "Closed";
 
 
 $tdatanotestatus[".advSearchFields"] = array();
-$tdatanotestatus[".advSearchFields"][] = "Closed";
 $tdatanotestatus[".advSearchFields"][] = "NSID";
 $tdatanotestatus[".advSearchFields"][] = "CreatedDate";
 $tdatanotestatus[".advSearchFields"][] = "NStatusDate";
 $tdatanotestatus[".advSearchFields"][] = "NoteStatus";
 $tdatanotestatus[".advSearchFields"][] = "Remarks";
 $tdatanotestatus[".advSearchFields"][] = "UploadFile";
+$tdatanotestatus[".advSearchFields"][] = "Closed";
 $tdatanotestatus[".advSearchFields"][] = "Encodedby";
 $tdatanotestatus[".advSearchFields"][] = "NID";
 
@@ -338,33 +337,33 @@ $tdatanotestatus[".hideMobileList"] = array();
 
 
 $tdatanotestatus[".viewFields"] = array();
-$tdatanotestatus[".viewFields"][] = "Closed";
 $tdatanotestatus[".viewFields"][] = "NSID";
 $tdatanotestatus[".viewFields"][] = "CreatedDate";
 $tdatanotestatus[".viewFields"][] = "NStatusDate";
 $tdatanotestatus[".viewFields"][] = "NoteStatus";
 $tdatanotestatus[".viewFields"][] = "Remarks";
 $tdatanotestatus[".viewFields"][] = "UploadFile";
+$tdatanotestatus[".viewFields"][] = "Closed";
 $tdatanotestatus[".viewFields"][] = "Encodedby";
 $tdatanotestatus[".viewFields"][] = "NID";
 
 $tdatanotestatus[".addFields"] = array();
-$tdatanotestatus[".addFields"][] = "Closed";
 $tdatanotestatus[".addFields"][] = "CreatedDate";
 $tdatanotestatus[".addFields"][] = "NStatusDate";
 $tdatanotestatus[".addFields"][] = "NoteStatus";
 $tdatanotestatus[".addFields"][] = "Remarks";
 $tdatanotestatus[".addFields"][] = "UploadFile";
+$tdatanotestatus[".addFields"][] = "Closed";
 $tdatanotestatus[".addFields"][] = "NID";
 
 $tdatanotestatus[".masterListFields"] = array();
-$tdatanotestatus[".masterListFields"][] = "Closed";
 $tdatanotestatus[".masterListFields"][] = "NSID";
 $tdatanotestatus[".masterListFields"][] = "CreatedDate";
 $tdatanotestatus[".masterListFields"][] = "NStatusDate";
 $tdatanotestatus[".masterListFields"][] = "NoteStatus";
 $tdatanotestatus[".masterListFields"][] = "Remarks";
 $tdatanotestatus[".masterListFields"][] = "UploadFile";
+$tdatanotestatus[".masterListFields"][] = "Closed";
 $tdatanotestatus[".masterListFields"][] = "Encodedby";
 $tdatanotestatus[".masterListFields"][] = "NID";
 
@@ -378,12 +377,12 @@ $tdatanotestatus[".inlineAddFields"][] = "Closed";
 $tdatanotestatus[".inlineAddFields"][] = "NID";
 
 $tdatanotestatus[".editFields"] = array();
-$tdatanotestatus[".editFields"][] = "Closed";
 $tdatanotestatus[".editFields"][] = "CreatedDate";
 $tdatanotestatus[".editFields"][] = "NStatusDate";
 $tdatanotestatus[".editFields"][] = "NoteStatus";
 $tdatanotestatus[".editFields"][] = "Remarks";
 $tdatanotestatus[".editFields"][] = "UploadFile";
+$tdatanotestatus[".editFields"][] = "Closed";
 $tdatanotestatus[".editFields"][] = "Encodedby";
 $tdatanotestatus[".editFields"][] = "NID";
 
@@ -403,18 +402,19 @@ $tdatanotestatus[".updateSelectedFields"][] = "NStatusDate";
 $tdatanotestatus[".updateSelectedFields"][] = "NoteStatus";
 $tdatanotestatus[".updateSelectedFields"][] = "Remarks";
 $tdatanotestatus[".updateSelectedFields"][] = "UploadFile";
+$tdatanotestatus[".updateSelectedFields"][] = "Closed";
 $tdatanotestatus[".updateSelectedFields"][] = "Encodedby";
 $tdatanotestatus[".updateSelectedFields"][] = "NID";
 
 
 $tdatanotestatus[".exportFields"] = array();
-$tdatanotestatus[".exportFields"][] = "Closed";
 $tdatanotestatus[".exportFields"][] = "NSID";
 $tdatanotestatus[".exportFields"][] = "CreatedDate";
 $tdatanotestatus[".exportFields"][] = "NStatusDate";
 $tdatanotestatus[".exportFields"][] = "NoteStatus";
 $tdatanotestatus[".exportFields"][] = "Remarks";
 $tdatanotestatus[".exportFields"][] = "UploadFile";
+$tdatanotestatus[".exportFields"][] = "Closed";
 $tdatanotestatus[".exportFields"][] = "Encodedby";
 $tdatanotestatus[".exportFields"][] = "NID";
 
@@ -430,13 +430,13 @@ $tdatanotestatus[".importFields"][] = "Encodedby";
 $tdatanotestatus[".importFields"][] = "Closed";
 
 $tdatanotestatus[".printFields"] = array();
-$tdatanotestatus[".printFields"][] = "Closed";
 $tdatanotestatus[".printFields"][] = "NSID";
 $tdatanotestatus[".printFields"][] = "CreatedDate";
 $tdatanotestatus[".printFields"][] = "NStatusDate";
 $tdatanotestatus[".printFields"][] = "NoteStatus";
 $tdatanotestatus[".printFields"][] = "Remarks";
 $tdatanotestatus[".printFields"][] = "UploadFile";
+$tdatanotestatus[".printFields"][] = "Closed";
 $tdatanotestatus[".printFields"][] = "Encodedby";
 $tdatanotestatus[".printFields"][] = "NID";
 
@@ -791,7 +791,7 @@ $tdatanotestatus[".printFields"][] = "NID";
 	
 	
 		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 0;
+	$edata["InitialYearFactor"] = 5;
 	$edata["LastYearFactor"] = 21;
 
 	
@@ -916,7 +916,7 @@ $tdatanotestatus[".printFields"][] = "NID";
 	$edata["LookupTable"] = "notestatuses";
 		$edata["autoCompleteFieldsOnEdit"] = 0;
 	$edata["autoCompleteFields"] = array();
-		$edata["LCType"] = 0;
+		$edata["LCType"] = 2;
 
 	
 		
@@ -937,8 +937,7 @@ $tdatanotestatus[".printFields"][] = "NID";
 
 	
 	
-		$edata["SelectSize"] = 1;
-
+	
 // End Lookup Settings
 
 
@@ -1356,7 +1355,7 @@ $tdatanotestatus[".printFields"][] = "NID";
 						$edata["acceptFileTypes"] .= "|txt";
 		$edata["acceptFileTypes"] = "(".$edata["acceptFileTypes"].")$";
 
-		$edata["maxNumberOfFiles"] = 1;
+		$edata["maxNumberOfFiles"] = 5;
 
 		$edata["maxFileSize"] = 8000;
 
@@ -1582,7 +1581,8 @@ $tdatanotestatus[".printFields"][] = "NID";
 
 		$fdata["bInlineEdit"] = true;
 
-	
+		$fdata["bUpdateSelected"] = true;
+
 
 		$fdata["bViewPage"] = true;
 

@@ -548,9 +548,6 @@
 	.bs-gridcell[data-field=SecondHalfMins]:before {
 		content: "{$label shifts SecondHalfMins}";
 	}
-	.bs-gridcell[data-field=ReqLogOutInOnBreak]:before {
-		content: "{$label shifts ReqLogOutInOnBreak}";
-	}
 	.bs-gridcell[data-field=SchedType]:before {
 		content: "{$label shifts SchedType}";
 	}
@@ -677,19 +674,6 @@
 									{END LunchBreakTimeTo_fieldheader}
 									</th>
 									{END LunchBreakTimeTo_fieldheadercolumn}
-									
-									
-									
-									
-									{BEGIN ReqLogOutInOnBreak_fieldheadercolumn}
-									<th class="rnr-gridfieldlabel {$ReqLogOutInOnBreak_class}" data-field=ReqLogOutInOnBreak>
-									{BEGIN ReqLogOutInOnBreak_fieldheader}
-																				<span {$ReqLogOutInOnBreak_orderlinkattrs}>
-											{$label shifts ReqLogOutInOnBreak}
-										</span>
-									{END ReqLogOutInOnBreak_fieldheader}
-									</th>
-									{END ReqLogOutInOnBreak_fieldheadercolumn}
 									
 									
 									
@@ -872,13 +856,6 @@
 		{$LunchBreakTimeTo_value}
 	</td>
 {END LunchBreakTimeTo_fieldcolumn}
-
-
-	{BEGIN ReqLogOutInOnBreak_fieldcolumn}
-	<td class="bs-gridcell {$ReqLogOutInOnBreak_class}"  data-field=ReqLogOutInOnBreak {$rowstyle} {$recordattrs}>
-		{$ReqLogOutInOnBreak_value}
-	</td>
-{END ReqLogOutInOnBreak_fieldcolumn}
 
 
 	{BEGIN FirstHalfMins_fieldcolumn}

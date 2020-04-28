@@ -70,11 +70,6 @@
 	{BEGIN grid_header}
 		<tr class="{$gridHeader_class}" >
 		{BEGIN record_header}
-			{BEGIN UploadFile_fieldheadercolumn}
-			<th class="{$UploadFile_class}" {$UploadFile_style}  data-field="UploadFile">
-				{$label leaves UploadFile}
-			</th>
-			{END UploadFile_fieldheadercolumn}
 			{BEGIN LvID_fieldheadercolumn}
 			<th class="{$LvID_class}" {$LvID_style}  data-field="LvID">
 				{$label leaves LvID}
@@ -192,11 +187,6 @@
 	{BEGIN grid_row}
 		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
 		{BEGIN grid_record}
-			{BEGIN UploadFile_fieldcolumn}
-			<td  class="{$UploadFile_class}" {$UploadFile_style} {$recordattrs}>
-				{$UploadFile_value}
-			</td>
-			{END UploadFile_fieldcolumn}
 			{BEGIN LvID_fieldcolumn}
 			<td  class="{$LvID_class}" {$LvID_style} {$recordattrs}>
 				{$LvID_value}

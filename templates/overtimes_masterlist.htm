@@ -66,6 +66,9 @@
 	.bs-gridcell[data-field=Remarks]:before {
 		content: "{$label overtimes Remarks}";
 	}
+	.bs-gridcell[data-field=SelectEmployees]:before {
+		content: "{$label overtimes SelectEmployees}";
+	}
 </style>
 <table {$masterlistgrid_hiddenattr} data-pageid="{$pageid}" data-brick="masterlistgrid" class="table rnr-b-mastergridfields rnr-gridtable bs-flexgrid" >
 		<thead>
@@ -75,6 +78,7 @@
 			<th class="{$Employer_class}">{$label overtimes Employer}</th>
 			<th class="{$Division_class}">{$label overtimes Division}</th>
 			<th class="{$AllEmployees_class}">{$label overtimes AllEmployees}</th>
+			<th class="{$SelectEmployees_class}">{$label overtimes SelectEmployees}</th>
 			<th class="{$FromTime_class}">{$label overtimes FromTime}</th>
 			<th class="{$ToTime_class}">{$label overtimes ToTime}</th>
 			<th class="{$Reason_class}">{$label overtimes Reason}</th>
@@ -96,6 +100,7 @@
 			<td class="{$Employer_class} bs-gridcell" data-field=Employer>{$Employer_mastervalue}</td>
 			<td class="{$Division_class} bs-gridcell" data-field=Division>{$Division_mastervalue}</td>
 			<td class="{$AllEmployees_class} bs-gridcell" data-field=AllEmployees>{$AllEmployees_mastervalue}</td>
+			<td class="{$SelectEmployees_class} bs-gridcell" data-field=SelectEmployees>{$SelectEmployees_mastervalue}</td>
 			<td class="{$FromTime_class} bs-gridcell" data-field=FromTime>{$FromTime_mastervalue}</td>
 			<td class="{$ToTime_class} bs-gridcell" data-field=ToTime>{$ToTime_mastervalue}</td>
 			<td class="{$Reason_class} bs-gridcell" data-field=Reason>{$Reason_mastervalue}</td>

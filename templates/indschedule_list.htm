@@ -750,6 +750,9 @@
 	.bs-gridcell[data-field=SHRD]:before {
 		content: "{$label indschedule SHRD}";
 	}
+	.bs-gridcell[data-field=PreLogMins]:before {
+		content: "{$label indschedule PreLogMins}";
+	}
 </style>
 <table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
 	<thead>
@@ -1590,6 +1593,17 @@
 									
 									
 									
+									{BEGIN PreLogMins_fieldheadercolumn}<th class="rnr-gridfieldlabel {$PreLogMins_class}" data-field=PreLogMins>
+									{BEGIN PreLogMins_fieldheader}<span {$PreLogMins_orderlinkattrs}>
+											{$label indschedule PreLogMins}
+										</span>
+									{END PreLogMins_fieldheader}
+									</th>
+									{END PreLogMins_fieldheadercolumn}
+									
+									
+									
+									
 									{BEGIN BreakMins_fieldheadercolumn}<th class="rnr-gridfieldlabel {$BreakMins_class}" data-field=BreakMins>
 									{BEGIN BreakMins_fieldheader}<span {$BreakMins_orderlinkattrs}>
 											{$label indschedule BreakMins}
@@ -2112,6 +2126,12 @@
 {END Shift_fieldcolumn}
 
 
+	{BEGIN PreLogMins_fieldcolumn}<td class="bs-gridcell {$PreLogMins_class}"  data-field=PreLogMins {$rowstyle} {$recordattrs}>
+		{$PreLogMins_value}
+	</td>
+{END PreLogMins_fieldcolumn}
+
+
 	{BEGIN BreakMins_fieldcolumn}<td class="bs-gridcell {$BreakMins_class}"  data-field=BreakMins {$rowstyle} {$recordattrs}>
 		{$BreakMins_value}
 	</td>
@@ -2553,6 +2573,9 @@
 										{BEGIN Shift_fieldfootercolumn}<td class="bs-gridcell {$Shift_class}" data-field="Shift">
 																				</td>
 										{END Shift_fieldfootercolumn}
+										{BEGIN PreLogMins_fieldfootercolumn}<td class="bs-gridcell {$PreLogMins_class}" data-field="PreLogMins">
+																				</td>
+										{END PreLogMins_fieldfootercolumn}
 										{BEGIN BreakMins_fieldfootercolumn}<td class="bs-gridcell {$BreakMins_class}" data-field="BreakMins">
 																				</td>
 										{END BreakMins_fieldfootercolumn}

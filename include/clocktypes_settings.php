@@ -86,12 +86,12 @@ $tdataclocktypes[".listAjax"] = false;
 	$tdataclocktypes[".locking"] = false;
 
 $tdataclocktypes[".edit"] = true;
-$tdataclocktypes[".afterEditAction"] = 0;
+$tdataclocktypes[".afterEditAction"] = 1;
 $tdataclocktypes[".closePopupAfterEdit"] = 1;
 $tdataclocktypes[".afterEditActionDetTable"] = "";
 
 $tdataclocktypes[".add"] = true;
-$tdataclocktypes[".afterAddAction"] = 0;
+$tdataclocktypes[".afterAddAction"] = 1;
 $tdataclocktypes[".closePopupAfterAdd"] = 1;
 $tdataclocktypes[".afterAddActionDetTable"] = "";
 
@@ -138,7 +138,7 @@ $tdataclocktypes[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																							
+																																																																																																																																																																																																																																																																																																																														
 
 $tdataclocktypes[".ajaxCodeSnippetAdded"] = false;
 
@@ -267,6 +267,7 @@ $tdataclocktypes[".viewFields"][] = "CtID";
 $tdataclocktypes[".viewFields"][] = "ClockType";
 
 $tdataclocktypes[".addFields"] = array();
+$tdataclocktypes[".addFields"][] = "CtID";
 $tdataclocktypes[".addFields"][] = "ClockType";
 
 $tdataclocktypes[".masterListFields"] = array();
@@ -274,15 +275,15 @@ $tdataclocktypes[".masterListFields"][] = "CtID";
 $tdataclocktypes[".masterListFields"][] = "ClockType";
 
 $tdataclocktypes[".inlineAddFields"] = array();
-$tdataclocktypes[".inlineAddFields"][] = "ClockType";
 
 $tdataclocktypes[".editFields"] = array();
+$tdataclocktypes[".editFields"][] = "CtID";
 $tdataclocktypes[".editFields"][] = "ClockType";
 
 $tdataclocktypes[".inlineEditFields"] = array();
-$tdataclocktypes[".inlineEditFields"][] = "ClockType";
 
 $tdataclocktypes[".updateSelectedFields"] = array();
+$tdataclocktypes[".updateSelectedFields"][] = "CtID";
 $tdataclocktypes[".updateSelectedFields"][] = "ClockType";
 
 
@@ -315,11 +316,14 @@ $tdataclocktypes[".printFields"][] = "ClockType";
 			
 		$fdata["bListPage"] = true;
 
+		$fdata["bAddPage"] = true;
+
 	
+		$fdata["bEditPage"] = true;
+
 	
-	
-	
-	
+		$fdata["bUpdateSelected"] = true;
+
 
 		$fdata["bViewPage"] = true;
 
@@ -397,14 +401,17 @@ $tdataclocktypes[".printFields"][] = "ClockType";
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-	
+								$edata["validateAs"]["basicValidate"][] = "DenyDuplicated";
+	$edata["validateAs"]["customMessages"]["DenyDuplicated"] = array("message" => "Value %value% already exists", "messageType" => "Text");
+
 	
 	//	End validation
 
 	
 			
 	
-	
+		$edata["denyDuplicates"] = true;
+
 	
 	$fdata["EditFormats"]["edit"] = $edata;
 //	End Edit Formats
@@ -444,12 +451,10 @@ $tdataclocktypes[".printFields"][] = "ClockType";
 
 		$fdata["bAddPage"] = true;
 
-		$fdata["bInlineAdd"] = true;
-
+	
 		$fdata["bEditPage"] = true;
 
-		$fdata["bInlineEdit"] = true;
-
+	
 		$fdata["bUpdateSelected"] = true;
 
 

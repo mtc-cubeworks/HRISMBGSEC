@@ -68,6 +68,7 @@ var $creator;            // creator
 var $AliasNbPages;       // alias for total number of pages
 var $PDFVersion;         // PDF version number
 
+
 /*******************************************************************************
 *                                                                              *
 *                               Public methods                                 *
@@ -1791,6 +1792,9 @@ function _enddoc()
 	$this->_out('%%EOF');
 	$this->state = 3;
 }
+
+
+
 // End of class
 }
 
@@ -1800,5 +1804,6 @@ if(isset($_SERVER['HTTP_USER_AGENT']) && $_SERVER['HTTP_USER_AGENT']=='contype')
 	header('Content-Type: application/pdf');
 	exit;
 }
+
 
 ?>

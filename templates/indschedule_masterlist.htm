@@ -246,6 +246,9 @@
 	.bs-gridcell[data-field=SHRD]:before {
 		content: "{$label indschedule SHRD}";
 	}
+	.bs-gridcell[data-field=PreLogMins]:before {
+		content: "{$label indschedule PreLogMins}";
+	}
 </style>
 <table {$masterlistgrid_hiddenattr} data-pageid="{$pageid}" data-brick="masterlistgrid" class="table rnr-b-mastergridfields rnr-gridtable bs-flexgrid" >
 		<thead>
@@ -325,6 +328,7 @@
 			<th class="{$DHRD_class}">{$label indschedule DHRD}</th>
 			<th class="{$SchedType_class}">{$label indschedule SchedType}</th>
 			<th class="{$Shift_class}">{$label indschedule Shift}</th>
+			<th class="{$PreLogMins_class}">{$label indschedule PreLogMins}</th>
 			<th class="{$BreakMins_class}">{$label indschedule BreakMins}</th>
 		</tr>
 	</thead>
@@ -406,6 +410,7 @@
 			<td class="{$DHRD_class} bs-gridcell" data-field=DHRD>{$DHRD_mastervalue}</td>
 			<td class="{$SchedType_class} bs-gridcell" data-field=SchedType>{$SchedType_mastervalue}</td>
 			<td class="{$Shift_class} bs-gridcell" data-field=Shift>{$Shift_mastervalue}</td>
+			<td class="{$PreLogMins_class} bs-gridcell" data-field=PreLogMins>{$PreLogMins_mastervalue}</td>
 			<td class="{$BreakMins_class} bs-gridcell" data-field=BreakMins>{$BreakMins_mastervalue}</td>
 		</tr>
 	</tbody>

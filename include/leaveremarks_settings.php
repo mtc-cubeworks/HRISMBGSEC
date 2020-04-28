@@ -105,7 +105,7 @@ $tdataleaveremarks[".listAjax"] = false;
 
 
 $tdataleaveremarks[".add"] = true;
-$tdataleaveremarks[".afterAddAction"] = 0;
+$tdataleaveremarks[".afterAddAction"] = 1;
 $tdataleaveremarks[".closePopupAfterAdd"] = 1;
 $tdataleaveremarks[".afterAddActionDetTable"] = "";
 
@@ -152,7 +152,7 @@ $tdataleaveremarks[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
 
 $tdataleaveremarks[".ajaxCodeSnippetAdded"] = false;
 

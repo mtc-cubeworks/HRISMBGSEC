@@ -70,6 +70,21 @@
 	{BEGIN grid_header}
 		<tr class="{$gridHeader_class}" >
 		{BEGIN record_header}
+			{BEGIN SSS_fieldheadercolumn}
+			<th class="{$SSS_class}" {$SSS_style}  data-field="SSS">
+				{$label payroll SSS}
+			</th>
+			{END SSS_fieldheadercolumn}
+			{BEGIN PagIbig_fieldheadercolumn}
+			<th class="{$PagIbig_class}" {$PagIbig_style}  data-field="PagIbig">
+				{$label payroll PagIbig}
+			</th>
+			{END PagIbig_fieldheadercolumn}
+			{BEGIN PhilHealth_fieldheadercolumn}
+			<th class="{$PhilHealth_class}" {$PhilHealth_style}  data-field="PhilHealth">
+				{$label payroll PhilHealth}
+			</th>
+			{END PhilHealth_fieldheadercolumn}
 			{BEGIN PSID_fieldheadercolumn}
 			<th class="{$PSID_class}" {$PSID_style}  data-field="PSID">
 				{$label payroll PSID}
@@ -85,6 +100,16 @@
 				{$label payroll Employer}
 			</th>
 			{END Employer_fieldheadercolumn}
+			{BEGIN Division_fieldheadercolumn}
+			<th class="{$Division_class}" {$Division_style}  data-field="Division">
+				{$label payroll Division}
+			</th>
+			{END Division_fieldheadercolumn}
+			{BEGIN WageType_fieldheadercolumn}
+			<th class="{$WageType_class}" {$WageType_style}  data-field="WageType">
+				{$label payroll WageType}
+			</th>
+			{END WageType_fieldheadercolumn}
 			{BEGIN PayFromDate_fieldheadercolumn}
 			<th class="{$PayFromDate_class}" {$PayFromDate_style}  data-field="PayFromDate">
 				{$label payroll PayFromDate}
@@ -142,6 +167,21 @@
 	{BEGIN grid_row}
 		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
 		{BEGIN grid_record}
+			{BEGIN SSS_fieldcolumn}
+			<td  class="{$SSS_class}" {$SSS_style} {$recordattrs}>
+				{$SSS_value}
+			</td>
+			{END SSS_fieldcolumn}
+			{BEGIN PagIbig_fieldcolumn}
+			<td  class="{$PagIbig_class}" {$PagIbig_style} {$recordattrs}>
+				{$PagIbig_value}
+			</td>
+			{END PagIbig_fieldcolumn}
+			{BEGIN PhilHealth_fieldcolumn}
+			<td  class="{$PhilHealth_class}" {$PhilHealth_style} {$recordattrs}>
+				{$PhilHealth_value}
+			</td>
+			{END PhilHealth_fieldcolumn}
 			{BEGIN PSID_fieldcolumn}
 			<td  class="{$PSID_class}" {$PSID_style} {$recordattrs}>
 				{$PSID_value}
@@ -157,6 +197,16 @@
 				{$Employer_value}
 			</td>
 			{END Employer_fieldcolumn}
+			{BEGIN Division_fieldcolumn}
+			<td  class="{$Division_class}" {$Division_style} {$recordattrs}>
+				{$Division_value}
+			</td>
+			{END Division_fieldcolumn}
+			{BEGIN WageType_fieldcolumn}
+			<td  class="{$WageType_class}" {$WageType_style} {$recordattrs}>
+				{$WageType_value}
+			</td>
+			{END WageType_fieldcolumn}
 			{BEGIN PayFromDate_fieldcolumn}
 			<td  class="{$PayFromDate_class}" {$PayFromDate_style} {$recordattrs}>
 				{$PayFromDate_value}
@@ -210,7 +260,7 @@
 	{BEGIN details_row}
 		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
 			{BEGIN details_record}
-				<td colspan="13">
+				<td colspan="18">
 					{BEGIN details_table}
 						{$details}
 					{END details_table}

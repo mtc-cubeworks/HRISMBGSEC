@@ -16,6 +16,7 @@ $dalTableovertimes["AllEmployees"] = array("type"=>16,"varname"=>"AllEmployees",
 $dalTableovertimes["DateOT"] = array("type"=>7,"varname"=>"DateOT", "name" => "DateOT");
 $dalTableovertimes["PreparedBy"] = array("type"=>3,"varname"=>"PreparedBy", "name" => "PreparedBy");
 $dalTableovertimes["Remarks"] = array("type"=>200,"varname"=>"Remarks", "name" => "Remarks");
+$dalTableovertimes["SelectEmployees"] = array("type"=>200,"varname"=>"SelectEmployees", "name" => "SelectEmployees");
 	$dalTableovertimes["OtiD"]["key"]=true;
 
 $dal_info["payrollflex_at_localhost__overtimes"] = &$dalTableovertimes;

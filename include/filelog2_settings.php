@@ -218,7 +218,7 @@ $tdatafilelog2[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																							
+																																																																																																																																																																																																																																																																																																																														
 
 $tdatafilelog2[".ajaxCodeSnippetAdded"] = false;
 
@@ -335,7 +335,7 @@ $tdatafilelog2[".orderindexes"] = array();
 
 $tdatafilelog2[".sqlHead"] = "SELECT log_time,  `data`,  EmployeeID,  TransID2,  MLogID,  MLogDate,  ClockType,  CheckedBy,  ApprovedBy,  HRApproval,  Checked,  Approved,  HRApproved,  HRApprovedDate,  Reason,  Locked";
 $tdatafilelog2[".sqlFrom"] = "FROM filelog";
-$tdatafilelog2[".sqlWhereExpr"] = "";
+$tdatafilelog2[".sqlWhereExpr"] = "(ApprovedBy is not null) AND (Approved is null) AND (HRApproved is null)";
 $tdatafilelog2[".sqlTail"] = "";
 
 
@@ -1277,7 +1277,7 @@ $tdatafilelog2[".printFields"][] = "HRApprovedDate";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Short Date");
+	$vdata = array("ViewFormat" => "Datetime");
 
 	
 	
@@ -2841,20 +2841,74 @@ $proto0=array();
 $proto0["m_strHead"] = "SELECT";
 $proto0["m_strFieldList"] = "log_time,  `data`,  EmployeeID,  TransID2,  MLogID,  MLogDate,  ClockType,  CheckedBy,  ApprovedBy,  HRApproval,  Checked,  Approved,  HRApproved,  HRApprovedDate,  Reason,  Locked";
 $proto0["m_strFrom"] = "FROM filelog";
-$proto0["m_strWhere"] = "";
+$proto0["m_strWhere"] = "(ApprovedBy is not null) AND (Approved is null) AND (HRApproved is null)";
 $proto0["m_strOrderBy"] = "ORDER BY TransID2 DESC";
 	
 		;
 			$proto0["cipherer"] = null;
 $proto2=array();
-$proto2["m_sql"] = "";
-$proto2["m_uniontype"] = "SQLL_UNKNOWN";
+$proto2["m_sql"] = "(ApprovedBy is not null) AND (Approved is null) AND (HRApproved is null)";
+$proto2["m_uniontype"] = "SQLL_AND";
 	$obj = new SQLNonParsed(array(
-	"m_sql" => ""
+	"m_sql" => "(ApprovedBy is not null) AND (Approved is null) AND (HRApproved is null)"
 ));
 
 $proto2["m_column"]=$obj;
 $proto2["m_contained"] = array();
+						$proto4=array();
+$proto4["m_sql"] = "ApprovedBy is not null";
+$proto4["m_uniontype"] = "SQLL_UNKNOWN";
+						$obj = new SQLField(array(
+	"m_strName" => "ApprovedBy",
+	"m_strTable" => "filelog",
+	"m_srcTableName" => "filelog2"
+));
+
+$proto4["m_column"]=$obj;
+$proto4["m_contained"] = array();
+$proto4["m_strCase"] = "is not null";
+$proto4["m_havingmode"] = false;
+$proto4["m_inBrackets"] = true;
+$proto4["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto4);
+
+			$proto2["m_contained"][]=$obj;
+						$proto6=array();
+$proto6["m_sql"] = "Approved is null";
+$proto6["m_uniontype"] = "SQLL_UNKNOWN";
+						$obj = new SQLField(array(
+	"m_strName" => "Approved",
+	"m_strTable" => "filelog",
+	"m_srcTableName" => "filelog2"
+));
+
+$proto6["m_column"]=$obj;
+$proto6["m_contained"] = array();
+$proto6["m_strCase"] = "is null";
+$proto6["m_havingmode"] = false;
+$proto6["m_inBrackets"] = true;
+$proto6["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto6);
+
+			$proto2["m_contained"][]=$obj;
+						$proto8=array();
+$proto8["m_sql"] = "HRApproved is null";
+$proto8["m_uniontype"] = "SQLL_UNKNOWN";
+						$obj = new SQLField(array(
+	"m_strName" => "HRApproved",
+	"m_strTable" => "filelog",
+	"m_srcTableName" => "filelog2"
+));
+
+$proto8["m_column"]=$obj;
+$proto8["m_contained"] = array();
+$proto8["m_strCase"] = "is null";
+$proto8["m_havingmode"] = false;
+$proto8["m_inBrackets"] = true;
+$proto8["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto8);
+
+			$proto2["m_contained"][]=$obj;
 $proto2["m_strCase"] = "";
 $proto2["m_havingmode"] = false;
 $proto2["m_inBrackets"] = false;
@@ -2862,73 +2916,31 @@ $proto2["m_useAlias"] = false;
 $obj = new SQLLogicalExpr($proto2);
 
 $proto0["m_where"] = $obj;
-$proto4=array();
-$proto4["m_sql"] = "";
-$proto4["m_uniontype"] = "SQLL_UNKNOWN";
+$proto10=array();
+$proto10["m_sql"] = "";
+$proto10["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto4["m_column"]=$obj;
-$proto4["m_contained"] = array();
-$proto4["m_strCase"] = "";
-$proto4["m_havingmode"] = false;
-$proto4["m_inBrackets"] = false;
-$proto4["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto4);
+$proto10["m_column"]=$obj;
+$proto10["m_contained"] = array();
+$proto10["m_strCase"] = "";
+$proto10["m_havingmode"] = false;
+$proto10["m_inBrackets"] = false;
+$proto10["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto10);
 
 $proto0["m_having"] = $obj;
 $proto0["m_fieldlist"] = array();
-						$proto6=array();
+						$proto12=array();
 			$obj = new SQLField(array(
 	"m_strName" => "log_time",
 	"m_strTable" => "filelog",
 	"m_srcTableName" => "filelog2"
 ));
 
-$proto6["m_sql"] = "log_time";
-$proto6["m_srcTableName"] = "filelog2";
-$proto6["m_expr"]=$obj;
-$proto6["m_alias"] = "";
-$obj = new SQLFieldListItem($proto6);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto8=array();
-			$obj = new SQLField(array(
-	"m_strName" => "data",
-	"m_strTable" => "filelog",
-	"m_srcTableName" => "filelog2"
-));
-
-$proto8["m_sql"] = "`data`";
-$proto8["m_srcTableName"] = "filelog2";
-$proto8["m_expr"]=$obj;
-$proto8["m_alias"] = "";
-$obj = new SQLFieldListItem($proto8);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto10=array();
-			$obj = new SQLField(array(
-	"m_strName" => "EmployeeID",
-	"m_strTable" => "filelog",
-	"m_srcTableName" => "filelog2"
-));
-
-$proto10["m_sql"] = "EmployeeID";
-$proto10["m_srcTableName"] = "filelog2";
-$proto10["m_expr"]=$obj;
-$proto10["m_alias"] = "";
-$obj = new SQLFieldListItem($proto10);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto12=array();
-			$obj = new SQLField(array(
-	"m_strName" => "TransID2",
-	"m_strTable" => "filelog",
-	"m_srcTableName" => "filelog2"
-));
-
-$proto12["m_sql"] = "TransID2";
+$proto12["m_sql"] = "log_time";
 $proto12["m_srcTableName"] = "filelog2";
 $proto12["m_expr"]=$obj;
 $proto12["m_alias"] = "";
@@ -2937,12 +2949,12 @@ $obj = new SQLFieldListItem($proto12);
 $proto0["m_fieldlist"][]=$obj;
 						$proto14=array();
 			$obj = new SQLField(array(
-	"m_strName" => "MLogID",
+	"m_strName" => "data",
 	"m_strTable" => "filelog",
 	"m_srcTableName" => "filelog2"
 ));
 
-$proto14["m_sql"] = "MLogID";
+$proto14["m_sql"] = "`data`";
 $proto14["m_srcTableName"] = "filelog2";
 $proto14["m_expr"]=$obj;
 $proto14["m_alias"] = "";
@@ -2951,12 +2963,12 @@ $obj = new SQLFieldListItem($proto14);
 $proto0["m_fieldlist"][]=$obj;
 						$proto16=array();
 			$obj = new SQLField(array(
-	"m_strName" => "MLogDate",
+	"m_strName" => "EmployeeID",
 	"m_strTable" => "filelog",
 	"m_srcTableName" => "filelog2"
 ));
 
-$proto16["m_sql"] = "MLogDate";
+$proto16["m_sql"] = "EmployeeID";
 $proto16["m_srcTableName"] = "filelog2";
 $proto16["m_expr"]=$obj;
 $proto16["m_alias"] = "";
@@ -2965,12 +2977,12 @@ $obj = new SQLFieldListItem($proto16);
 $proto0["m_fieldlist"][]=$obj;
 						$proto18=array();
 			$obj = new SQLField(array(
-	"m_strName" => "ClockType",
+	"m_strName" => "TransID2",
 	"m_strTable" => "filelog",
 	"m_srcTableName" => "filelog2"
 ));
 
-$proto18["m_sql"] = "ClockType";
+$proto18["m_sql"] = "TransID2";
 $proto18["m_srcTableName"] = "filelog2";
 $proto18["m_expr"]=$obj;
 $proto18["m_alias"] = "";
@@ -2979,12 +2991,12 @@ $obj = new SQLFieldListItem($proto18);
 $proto0["m_fieldlist"][]=$obj;
 						$proto20=array();
 			$obj = new SQLField(array(
-	"m_strName" => "CheckedBy",
+	"m_strName" => "MLogID",
 	"m_strTable" => "filelog",
 	"m_srcTableName" => "filelog2"
 ));
 
-$proto20["m_sql"] = "CheckedBy";
+$proto20["m_sql"] = "MLogID";
 $proto20["m_srcTableName"] = "filelog2";
 $proto20["m_expr"]=$obj;
 $proto20["m_alias"] = "";
@@ -2993,12 +3005,12 @@ $obj = new SQLFieldListItem($proto20);
 $proto0["m_fieldlist"][]=$obj;
 						$proto22=array();
 			$obj = new SQLField(array(
-	"m_strName" => "ApprovedBy",
+	"m_strName" => "MLogDate",
 	"m_strTable" => "filelog",
 	"m_srcTableName" => "filelog2"
 ));
 
-$proto22["m_sql"] = "ApprovedBy";
+$proto22["m_sql"] = "MLogDate";
 $proto22["m_srcTableName"] = "filelog2";
 $proto22["m_expr"]=$obj;
 $proto22["m_alias"] = "";
@@ -3007,12 +3019,12 @@ $obj = new SQLFieldListItem($proto22);
 $proto0["m_fieldlist"][]=$obj;
 						$proto24=array();
 			$obj = new SQLField(array(
-	"m_strName" => "HRApproval",
+	"m_strName" => "ClockType",
 	"m_strTable" => "filelog",
 	"m_srcTableName" => "filelog2"
 ));
 
-$proto24["m_sql"] = "HRApproval";
+$proto24["m_sql"] = "ClockType";
 $proto24["m_srcTableName"] = "filelog2";
 $proto24["m_expr"]=$obj;
 $proto24["m_alias"] = "";
@@ -3021,12 +3033,12 @@ $obj = new SQLFieldListItem($proto24);
 $proto0["m_fieldlist"][]=$obj;
 						$proto26=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Checked",
+	"m_strName" => "CheckedBy",
 	"m_strTable" => "filelog",
 	"m_srcTableName" => "filelog2"
 ));
 
-$proto26["m_sql"] = "Checked";
+$proto26["m_sql"] = "CheckedBy";
 $proto26["m_srcTableName"] = "filelog2";
 $proto26["m_expr"]=$obj;
 $proto26["m_alias"] = "";
@@ -3035,12 +3047,12 @@ $obj = new SQLFieldListItem($proto26);
 $proto0["m_fieldlist"][]=$obj;
 						$proto28=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Approved",
+	"m_strName" => "ApprovedBy",
 	"m_strTable" => "filelog",
 	"m_srcTableName" => "filelog2"
 ));
 
-$proto28["m_sql"] = "Approved";
+$proto28["m_sql"] = "ApprovedBy";
 $proto28["m_srcTableName"] = "filelog2";
 $proto28["m_expr"]=$obj;
 $proto28["m_alias"] = "";
@@ -3049,12 +3061,12 @@ $obj = new SQLFieldListItem($proto28);
 $proto0["m_fieldlist"][]=$obj;
 						$proto30=array();
 			$obj = new SQLField(array(
-	"m_strName" => "HRApproved",
+	"m_strName" => "HRApproval",
 	"m_strTable" => "filelog",
 	"m_srcTableName" => "filelog2"
 ));
 
-$proto30["m_sql"] = "HRApproved";
+$proto30["m_sql"] = "HRApproval";
 $proto30["m_srcTableName"] = "filelog2";
 $proto30["m_expr"]=$obj;
 $proto30["m_alias"] = "";
@@ -3063,12 +3075,12 @@ $obj = new SQLFieldListItem($proto30);
 $proto0["m_fieldlist"][]=$obj;
 						$proto32=array();
 			$obj = new SQLField(array(
-	"m_strName" => "HRApprovedDate",
+	"m_strName" => "Checked",
 	"m_strTable" => "filelog",
 	"m_srcTableName" => "filelog2"
 ));
 
-$proto32["m_sql"] = "HRApprovedDate";
+$proto32["m_sql"] = "Checked";
 $proto32["m_srcTableName"] = "filelog2";
 $proto32["m_expr"]=$obj;
 $proto32["m_alias"] = "";
@@ -3077,12 +3089,12 @@ $obj = new SQLFieldListItem($proto32);
 $proto0["m_fieldlist"][]=$obj;
 						$proto34=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Reason",
+	"m_strName" => "Approved",
 	"m_strTable" => "filelog",
 	"m_srcTableName" => "filelog2"
 ));
 
-$proto34["m_sql"] = "Reason";
+$proto34["m_sql"] = "Approved";
 $proto34["m_srcTableName"] = "filelog2";
 $proto34["m_expr"]=$obj;
 $proto34["m_alias"] = "";
@@ -3091,79 +3103,121 @@ $obj = new SQLFieldListItem($proto34);
 $proto0["m_fieldlist"][]=$obj;
 						$proto36=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Locked",
+	"m_strName" => "HRApproved",
 	"m_strTable" => "filelog",
 	"m_srcTableName" => "filelog2"
 ));
 
-$proto36["m_sql"] = "Locked";
+$proto36["m_sql"] = "HRApproved";
 $proto36["m_srcTableName"] = "filelog2";
 $proto36["m_expr"]=$obj;
 $proto36["m_alias"] = "";
 $obj = new SQLFieldListItem($proto36);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto38=array();
-$proto38["m_link"] = "SQLL_MAIN";
-			$proto39=array();
-$proto39["m_strName"] = "filelog";
-$proto39["m_srcTableName"] = "filelog2";
-$proto39["m_columns"] = array();
-$proto39["m_columns"][] = "log_time";
-$proto39["m_columns"][] = "data";
-$proto39["m_columns"][] = "EmployeeID";
-$proto39["m_columns"][] = "TransID2";
-$proto39["m_columns"][] = "MLogID";
-$proto39["m_columns"][] = "MLogDate";
-$proto39["m_columns"][] = "ClockType";
-$proto39["m_columns"][] = "CheckedBy";
-$proto39["m_columns"][] = "ApprovedBy";
-$proto39["m_columns"][] = "HRApproval";
-$proto39["m_columns"][] = "Checked";
-$proto39["m_columns"][] = "Approved";
-$proto39["m_columns"][] = "HRApproved";
-$proto39["m_columns"][] = "HRApprovedDate";
-$proto39["m_columns"][] = "Reason";
-$proto39["m_columns"][] = "Locked";
-$obj = new SQLTable($proto39);
+						$proto38=array();
+			$obj = new SQLField(array(
+	"m_strName" => "HRApprovedDate",
+	"m_strTable" => "filelog",
+	"m_srcTableName" => "filelog2"
+));
 
-$proto38["m_table"] = $obj;
-$proto38["m_sql"] = "filelog";
-$proto38["m_alias"] = "";
+$proto38["m_sql"] = "HRApprovedDate";
 $proto38["m_srcTableName"] = "filelog2";
-$proto40=array();
-$proto40["m_sql"] = "";
-$proto40["m_uniontype"] = "SQLL_UNKNOWN";
+$proto38["m_expr"]=$obj;
+$proto38["m_alias"] = "";
+$obj = new SQLFieldListItem($proto38);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto40=array();
+			$obj = new SQLField(array(
+	"m_strName" => "Reason",
+	"m_strTable" => "filelog",
+	"m_srcTableName" => "filelog2"
+));
+
+$proto40["m_sql"] = "Reason";
+$proto40["m_srcTableName"] = "filelog2";
+$proto40["m_expr"]=$obj;
+$proto40["m_alias"] = "";
+$obj = new SQLFieldListItem($proto40);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto42=array();
+			$obj = new SQLField(array(
+	"m_strName" => "Locked",
+	"m_strTable" => "filelog",
+	"m_srcTableName" => "filelog2"
+));
+
+$proto42["m_sql"] = "Locked";
+$proto42["m_srcTableName"] = "filelog2";
+$proto42["m_expr"]=$obj;
+$proto42["m_alias"] = "";
+$obj = new SQLFieldListItem($proto42);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto44=array();
+$proto44["m_link"] = "SQLL_MAIN";
+			$proto45=array();
+$proto45["m_strName"] = "filelog";
+$proto45["m_srcTableName"] = "filelog2";
+$proto45["m_columns"] = array();
+$proto45["m_columns"][] = "log_time";
+$proto45["m_columns"][] = "data";
+$proto45["m_columns"][] = "EmployeeID";
+$proto45["m_columns"][] = "TransID2";
+$proto45["m_columns"][] = "MLogID";
+$proto45["m_columns"][] = "MLogDate";
+$proto45["m_columns"][] = "ClockType";
+$proto45["m_columns"][] = "CheckedBy";
+$proto45["m_columns"][] = "ApprovedBy";
+$proto45["m_columns"][] = "HRApproval";
+$proto45["m_columns"][] = "Checked";
+$proto45["m_columns"][] = "Approved";
+$proto45["m_columns"][] = "HRApproved";
+$proto45["m_columns"][] = "HRApprovedDate";
+$proto45["m_columns"][] = "Reason";
+$proto45["m_columns"][] = "Locked";
+$obj = new SQLTable($proto45);
+
+$proto44["m_table"] = $obj;
+$proto44["m_sql"] = "filelog";
+$proto44["m_alias"] = "";
+$proto44["m_srcTableName"] = "filelog2";
+$proto46=array();
+$proto46["m_sql"] = "";
+$proto46["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto40["m_column"]=$obj;
-$proto40["m_contained"] = array();
-$proto40["m_strCase"] = "";
-$proto40["m_havingmode"] = false;
-$proto40["m_inBrackets"] = false;
-$proto40["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto40);
+$proto46["m_column"]=$obj;
+$proto46["m_contained"] = array();
+$proto46["m_strCase"] = "";
+$proto46["m_havingmode"] = false;
+$proto46["m_inBrackets"] = false;
+$proto46["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto46);
 
-$proto38["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto38);
+$proto44["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto44);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
 $proto0["m_orderby"] = array();
-												$proto42=array();
+												$proto48=array();
 						$obj = new SQLField(array(
 	"m_strName" => "TransID2",
 	"m_strTable" => "filelog",
 	"m_srcTableName" => "filelog2"
 ));
 
-$proto42["m_column"]=$obj;
-$proto42["m_bAsc"] = 0;
-$proto42["m_nColumn"] = 0;
-$obj = new SQLOrderByItem($proto42);
+$proto48["m_column"]=$obj;
+$proto48["m_bAsc"] = 0;
+$proto48["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto48);
 
 $proto0["m_orderby"][]=$obj;					
 $proto0["m_srcTableName"]="filelog2";		

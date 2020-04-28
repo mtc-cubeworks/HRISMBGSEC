@@ -506,6 +506,9 @@
 	.bs-gridcell[data-field=Remarks]:before {
 		content: "{$label overtimes Remarks}";
 	}
+	.bs-gridcell[data-field=SelectEmployees]:before {
+		content: "{$label overtimes SelectEmployees}";
+	}
 </style>
 <table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
 	<thead>
@@ -571,6 +574,17 @@
 									{END AllEmployees_fieldheader}
 									</th>
 									{END AllEmployees_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN SelectEmployees_fieldheadercolumn}<th class="rnr-gridfieldlabel {$SelectEmployees_class}" data-field=SelectEmployees>
+									{BEGIN SelectEmployees_fieldheader}<span {$SelectEmployees_orderlinkattrs}>
+											{$label overtimes SelectEmployees}
+										</span>
+									{END SelectEmployees_fieldheader}
+									</th>
+									{END SelectEmployees_fieldheadercolumn}
 									
 									
 									
@@ -774,6 +788,12 @@
 		{$AllEmployees_value}
 	</td>
 {END AllEmployees_fieldcolumn}
+
+
+	{BEGIN SelectEmployees_fieldcolumn}<td class="bs-gridcell {$SelectEmployees_class}"  data-field=SelectEmployees {$rowstyle} {$recordattrs}>
+		{$SelectEmployees_value}
+	</td>
+{END SelectEmployees_fieldcolumn}
 
 
 	{BEGIN FromTime_fieldcolumn}<td class="bs-gridcell {$FromTime_class}"  data-field=FromTime {$rowstyle} {$recordattrs}>

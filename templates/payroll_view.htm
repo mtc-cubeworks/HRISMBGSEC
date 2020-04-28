@@ -61,6 +61,36 @@
 <div {$viewfields_hiddenattr} data-pageid="{$pageid}" data-brick="viewfields" >
 
 	<div class="container">
+					{BEGIN SSS_fieldblock}
+	<div class="{$fielddispclass_SSS} col-md-6 bs-viewcontrolgroup" data-fieldname="SSS">
+		<label class="control-label" for="{$labelfor_SSS}">
+			{$label payroll SSS}
+		</label>
+		<div class="" >
+			{$SSS_value}&nbsp;
+		</div>
+	</div>
+{END SSS_fieldblock}
+					{BEGIN PagIbig_fieldblock}
+	<div class="{$fielddispclass_PagIbig} col-md-6 bs-viewcontrolgroup" data-fieldname="PagIbig">
+		<label class="control-label" for="{$labelfor_PagIbig}">
+			{$label payroll PagIbig}
+		</label>
+		<div class="" >
+			{$PagIbig_value}&nbsp;
+		</div>
+	</div>
+{END PagIbig_fieldblock}
+					{BEGIN PhilHealth_fieldblock}
+	<div class="{$fielddispclass_PhilHealth} col-md-6 bs-viewcontrolgroup" data-fieldname="PhilHealth">
+		<label class="control-label" for="{$labelfor_PhilHealth}">
+			{$label payroll PhilHealth}
+		</label>
+		<div class="" >
+			{$PhilHealth_value}&nbsp;
+		</div>
+	</div>
+{END PhilHealth_fieldblock}
 					{BEGIN PSID_fieldblock}
 	<div class="{$fielddispclass_PSID} col-md-6 bs-viewcontrolgroup" data-fieldname="PSID">
 		<label class="control-label" for="{$labelfor_PSID}">
@@ -91,6 +121,26 @@
 		</div>
 	</div>
 {END Employer_fieldblock}
+					{BEGIN Division_fieldblock}
+	<div class="{$fielddispclass_Division} col-md-6 bs-viewcontrolgroup" data-fieldname="Division">
+		<label class="control-label" for="{$labelfor_Division}">
+			{$label payroll Division}
+		</label>
+		<div class="" >
+			{$Division_value}&nbsp;
+		</div>
+	</div>
+{END Division_fieldblock}
+					{BEGIN WageType_fieldblock}
+	<div class="{$fielddispclass_WageType} col-md-6 bs-viewcontrolgroup" data-fieldname="WageType">
+		<label class="control-label" for="{$labelfor_WageType}">
+			{$label payroll WageType}
+		</label>
+		<div class="" >
+			{$WageType_value}&nbsp;
+		</div>
+	</div>
+{END WageType_fieldblock}
 					{BEGIN PayFromDate_fieldblock}
 	<div class="{$fielddispclass_PayFromDate} col-md-6 bs-viewcontrolgroup" data-fieldname="PayFromDate">
 		<label class="control-label" for="{$labelfor_PayFromDate}">

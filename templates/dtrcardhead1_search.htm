@@ -1,0 +1,293 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_searchpage}
+<div {$searchpage_chiddenattr} data-pageid="{$pageid}" data-container="searchpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN searchheader}
+	<h2 {$bssearchheader_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchheader" >{$pagetitlelabel dtrcardhead1 search}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END searchheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_searchpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$bssearchfields_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchfields" class="form-horizontal" role="form">
+<div class="container">
+	<div class="form-group">
+		<div class="col-md-12" >
+			&nbsp;
+		</div>
+	</div>
+</div>
+	{BEGIN EmployeeID_fieldblock}		
+	<div class="container {$fielddispclass_EmployeeID}" data-fieldname="EmployeeID">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_EmployeeID}">
+				{$label dtrcardhead1 EmployeeID}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_EmployeeID}
+			</div>
+			<div class="col-md-4" >
+				{$EmployeeID_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$EmployeeID_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END EmployeeID_fieldblock}
+	{BEGIN user_name_fieldblock}		
+	<div class="container {$fielddispclass_user_name}" data-fieldname="user_name">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_user_name}">
+				{$label dtrcardhead1 user_name}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_user_name}
+			</div>
+			<div class="col-md-4" >
+				{$user_name_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$user_name_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END user_name_fieldblock}
+	{BEGIN Employer_fieldblock}		
+	<div class="container {$fielddispclass_Employer}" data-fieldname="Employer">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Employer}">
+				{$label dtrcardhead1 Employer}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Employer}
+			</div>
+			<div class="col-md-4" >
+				{$Employer_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Employer_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Employer_fieldblock}
+	{BEGIN Division_fieldblock}		
+	<div class="container {$fielddispclass_Division}" data-fieldname="Division">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Division}">
+				{$label dtrcardhead1 Division}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Division}
+			</div>
+			<div class="col-md-4" >
+				{$Division_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Division_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Division_fieldblock}
+	{BEGIN Department_fieldblock}		
+	<div class="container {$fielddispclass_Department}" data-fieldname="Department">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Department}">
+				{$label dtrcardhead1 Department}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Department}
+			</div>
+			<div class="col-md-4" >
+				{$Department_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Department_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Department_fieldblock}
+	{BEGIN ExitDate_fieldblock}		
+	<div class="container {$fielddispclass_ExitDate}" data-fieldname="ExitDate">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_ExitDate}">
+				{$label dtrcardhead1 ExitDate}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_ExitDate}
+			</div>
+			<div class="col-md-4" >
+				{$ExitDate_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$ExitDate_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END ExitDate_fieldblock}
+	{BEGIN FromDate_fieldblock}		
+	<div class="container {$fielddispclass_FromDate}" data-fieldname="FromDate">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_FromDate}">
+				{$label dtrcardhead1 FromDate}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_FromDate}
+			</div>
+			<div class="col-md-4" >
+				{$FromDate_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$FromDate_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END FromDate_fieldblock}
+	{BEGIN ToDate_fieldblock}		
+	<div class="container {$fielddispclass_ToDate}" data-fieldname="ToDate">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_ToDate}">
+				{$label dtrcardhead1 ToDate}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_ToDate}
+			</div>
+			<div class="col-md-4" >
+				{$ToDate_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$ToDate_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END ToDate_fieldblock}
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container form-horizontal   "> 
+
+
+
+
+{BEGIN container_bbuttons}
+<div {$bbuttons_chiddenattr} data-pageid="{$pageid}" data-container="bbuttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-10 col-md-offset-2"> 
+
+{BEGIN searchbuttons}
+{BEGIN search_button}
+<button class="btn btn-primary" {$searchbutton_attrs}>Search</button>
+{END search_button} 
+{BEGIN reset_button}
+<button class="btn btn-default" {$resetbutton_attrs}>Reset</button>
+{END reset_button}
+{BEGIN back_button}
+<button class="btn btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{END searchbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+</div>
+{END container_bbuttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

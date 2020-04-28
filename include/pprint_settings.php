@@ -80,12 +80,12 @@ $tdatapprint[".listAjax"] = false;
 	$tdatapprint[".locking"] = false;
 
 $tdatapprint[".edit"] = true;
-$tdatapprint[".afterEditAction"] = 0;
+$tdatapprint[".afterEditAction"] = 1;
 $tdatapprint[".closePopupAfterEdit"] = 1;
 $tdatapprint[".afterEditActionDetTable"] = "";
 
 $tdatapprint[".add"] = true;
-$tdatapprint[".afterAddAction"] = 0;
+$tdatapprint[".afterAddAction"] = 1;
 $tdatapprint[".closePopupAfterAdd"] = 1;
 $tdatapprint[".afterAddActionDetTable"] = "";
 
@@ -132,7 +132,7 @@ $tdatapprint[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																							
+																																																																																																																																																																																																																																																																																																																														
 
 $tdatapprint[".ajaxCodeSnippetAdded"] = false;
 

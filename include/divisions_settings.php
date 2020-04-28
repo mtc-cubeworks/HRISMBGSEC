@@ -97,7 +97,7 @@ $tdatadivisions[".closePopupAfterEdit"] = 1;
 $tdatadivisions[".afterEditActionDetTable"] = "holidays";
 
 $tdatadivisions[".add"] = true;
-$tdatadivisions[".afterAddAction"] = 0;
+$tdatadivisions[".afterAddAction"] = 1;
 $tdatadivisions[".closePopupAfterAdd"] = 1;
 $tdatadivisions[".afterAddActionDetTable"] = "";
 
@@ -148,7 +148,7 @@ $tdatadivisions[".rowHighlite"] = true;
 
 
 																																																																																																																																																																																																																																																																							
-																				
+																																																											
 
 $tdatadivisions[".ajaxCodeSnippetAdded"] = false;
 

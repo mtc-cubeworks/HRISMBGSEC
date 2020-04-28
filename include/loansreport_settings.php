@@ -95,12 +95,12 @@ $tdataloansreport[".listAjax"] = false;
 	$tdataloansreport[".locking"] = false;
 
 $tdataloansreport[".edit"] = true;
-$tdataloansreport[".afterEditAction"] = 0;
+$tdataloansreport[".afterEditAction"] = 1;
 $tdataloansreport[".closePopupAfterEdit"] = 1;
 $tdataloansreport[".afterEditActionDetTable"] = "";
 
 $tdataloansreport[".add"] = true;
-$tdataloansreport[".afterAddAction"] = 0;
+$tdataloansreport[".afterAddAction"] = 1;
 $tdataloansreport[".closePopupAfterAdd"] = 1;
 $tdataloansreport[".afterAddActionDetTable"] = "";
 
@@ -151,7 +151,7 @@ $tdataloansreport[".rowHighlite"] = true;
 
 
 																																																																																																																																																																																																																																																																																																																																									
-																																																																																																																																																																																																																																						
+																																																																																																																																																																																																																																																																																																																				
 
 $tdataloansreport[".ajaxCodeSnippetAdded"] = false;
 

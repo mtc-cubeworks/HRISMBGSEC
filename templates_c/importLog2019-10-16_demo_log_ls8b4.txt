@@ -1,6 +1,0 @@
-Import into demo_log
-10/16/2019 9:31:29 AM
-
-5028 out of 5028 records processed successfully.
-5028 records added.
-0 records updated.

@@ -110,11 +110,6 @@
 				{$label shifts LunchBreakTimeTo}
 			</th>
 			{END LunchBreakTimeTo_fieldheadercolumn}
-			{BEGIN ReqLogOutInOnBreak_fieldheadercolumn}
-			<th class="{$ReqLogOutInOnBreak_class}" {$ReqLogOutInOnBreak_style}  data-field="ReqLogOutInOnBreak">
-				{$label shifts ReqLogOutInOnBreak}
-			</th>
-			{END ReqLogOutInOnBreak_fieldheadercolumn}
 			{BEGIN FirstHalfMins_fieldheadercolumn}
 			<th class="{$FirstHalfMins_class}" {$FirstHalfMins_style}  data-field="FirstHalfMins">
 				{$label shifts FirstHalfMins}
@@ -187,11 +182,6 @@
 				{$LunchBreakTimeTo_value}
 			</td>
 			{END LunchBreakTimeTo_fieldcolumn}
-			{BEGIN ReqLogOutInOnBreak_fieldcolumn}
-			<td  class="{$ReqLogOutInOnBreak_class}" {$ReqLogOutInOnBreak_style} {$recordattrs}>
-				{$ReqLogOutInOnBreak_value}
-			</td>
-			{END ReqLogOutInOnBreak_fieldcolumn}
 			{BEGIN FirstHalfMins_fieldcolumn}
 			<td  class="{$FirstHalfMins_class}" {$FirstHalfMins_style} {$recordattrs}>
 				{$FirstHalfMins_value}
@@ -220,7 +210,7 @@
 	{BEGIN details_row}
 		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
 			{BEGIN details_record}
-				<td colspan="14">
+				<td colspan="13">
 					{BEGIN details_table}
 						{$details}
 					{END details_table}

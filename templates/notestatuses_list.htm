@@ -317,7 +317,10 @@
 		<a {$add_hiddenattr} data-pageid="{$pageid}" data-brick="add" type="button" class="btn btn-primary" {$addlink_attrs}>Add new</a>
 	{END add_link}
 
-	
+		{BEGIN inlineadd_link}
+		<button {$add_hiddenattr} data-pageid="{$pageid}" data-brick="add" type="button" class="btn btn-primary" {$inlineaddlink_attrs}>Inline Add</button>
+	{END inlineadd_link}
+
 {END newrecord_controls_block}
 
 
@@ -326,7 +329,13 @@
 		{BEGIN deleteselected_link}
 	<button type="button" class="btn btn-default" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled>Delete</button>
 	{END deleteselected_link}
-		</span>
+			{BEGIN saveall_link}
+		<button type="button" class="btn btn-primary" {$savealllink_attrs} {$savealllink_span}>Save all</button>
+	{END saveall_link}
+	{BEGIN cancelall_link}
+		<button type="button" class="btn btn-default" {$cancelalllink_attrs} {$cancelalllink_span}>Cancel</button>
+	{END cancelall_link}
+</span>
 
 {END record_controls_block}
 

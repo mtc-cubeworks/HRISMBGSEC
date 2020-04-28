@@ -1,0 +1,79 @@
+<div {$pageattrs}>
+
+{BEGIN container_dcount}
+<div {$dcount_chiddenattr} data-pageid="{$pageid}" data-container="dcount" class="    "> 
+
+
+<span {$bsdetailspreviewcount_hiddenattr} data-pageid="{$pageid}" data-brick="bsdetailspreviewcount">Details found: <strong>{$row_count}</strong></span>
+
+
+
+
+
+</div>
+{END container_dcount}
+
+
+
+{BEGIN container_detailspreviewgrid}
+
+
+{BEGIN details_data}
+<table class="table striped">
+{BEGIN details_row_header}
+	<thead>
+		<tr class="{$gridHeader_class}" >
+			<th class="{$SDate_class}">{$label dtrcard1 SDate}</th>
+			<th class="{$DayIs_class}">{$label dtrcard1 DayIs}</th>
+			<th class="{$STimeIn_class}">{$label dtrcard1 STimeIn}</th>
+			<th class="{$STimeOut_class}">{$label dtrcard1 STimeOut}</th>
+			<th class="{$TimeIn_class}">{$label dtrcard1 TimeIn}</th>
+			<th class="{$TimeOut_class}">{$label dtrcard1 TimeOut}</th>
+			<th class="{$Mispunched_class}">{$label dtrcard1 Mispunched}</th>
+			<th class="{$Late_class}">{$label dtrcard1 Late}</th>
+			<th class="{$UTime_class}">{$label dtrcard1 UTime}</th>
+			<th class="{$Absent_class}">{$label dtrcard1 Absent}</th>
+			<th class="{$OTmins_class}">{$label dtrcard1 OTmins}</th>
+			<th class="{$RestDay_class}">{$label dtrcard1 RestDay}</th>
+			<th class="{$HolidayType_class}">{$label dtrcard1 HolidayType}</th>
+			<th class="{$VLDay_class}">{$label dtrcard1 VLDay}</th>
+			<th class="{$SLDay_class}">{$label dtrcard1 SLDay}</th>
+			<th class="{$ELDay_class}">{$label dtrcard1 ELDay}</th>
+			<th class="{$PLDay_class}">{$label dtrcard1 PLDay}</th>
+			<th class="{$OBDay_class}">{$label dtrcard1 OBDay}</th>
+		</tr>
+	</thead>
+{END details_row_header}
+	<tbody>
+{BEGIN details_row}
+		<tr>
+			<td class="{$SDate_class}">{$SDate_value}</td>
+			<td class="{$DayIs_class}">{$DayIs_value}</td>
+			<td class="{$STimeIn_class}">{$STimeIn_value}</td>
+			<td class="{$STimeOut_class}">{$STimeOut_value}</td>
+			<td class="{$TimeIn_class}">{$TimeIn_value}</td>
+			<td class="{$TimeOut_class}">{$TimeOut_value}</td>
+			<td class="{$Mispunched_class}">{$Mispunched_value}</td>
+			<td class="{$Late_class}">{$Late_value}</td>
+			<td class="{$UTime_class}">{$UTime_value}</td>
+			<td class="{$Absent_class}">{$Absent_value}</td>
+			<td class="{$OTmins_class}">{$OTmins_value}</td>
+			<td class="{$RestDay_class}">{$RestDay_value}</td>
+			<td class="{$HolidayType_class}">{$HolidayType_value}</td>
+			<td class="{$VLDay_class}">{$VLDay_value}</td>
+			<td class="{$SLDay_class}">{$SLDay_value}</td>
+			<td class="{$ELDay_class}">{$ELDay_value}</td>
+			<td class="{$PLDay_class}">{$PLDay_value}</td>
+			<td class="{$OBDay_class}">{$OBDay_value}</td>
+		</tr>
+{END details_row}	
+	</tbody>
+</table>
+
+{END details_data}
+
+
+
+{END container_detailspreviewgrid}
+
+</div>

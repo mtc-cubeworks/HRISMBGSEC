@@ -1,6 +1,0 @@
-Import into demo_user
-10/21/2019 11:40:47 PM
-
-614 out of 614 records processed successfully.
-1 records added.
-613 records updated.

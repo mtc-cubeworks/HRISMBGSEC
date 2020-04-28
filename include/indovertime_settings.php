@@ -98,12 +98,12 @@ $tdataindovertime[".listAjax"] = false;
 	$tdataindovertime[".locking"] = false;
 
 $tdataindovertime[".edit"] = true;
-$tdataindovertime[".afterEditAction"] = 0;
+$tdataindovertime[".afterEditAction"] = 1;
 $tdataindovertime[".closePopupAfterEdit"] = 1;
 $tdataindovertime[".afterEditActionDetTable"] = "";
 
 $tdataindovertime[".add"] = true;
-$tdataindovertime[".afterAddAction"] = 0;
+$tdataindovertime[".afterAddAction"] = 1;
 $tdataindovertime[".closePopupAfterAdd"] = 1;
 $tdataindovertime[".afterAddActionDetTable"] = "";
 
@@ -153,7 +153,7 @@ $tdataindovertime[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																							
+																																																																																																																																																																																																																																																																																																																														
 
 $tdataindovertime[".ajaxCodeSnippetAdded"] = false;
 
@@ -536,7 +536,7 @@ $tdataindovertime[".printFields"][] = "NoMins";
 	$fdata["GoodName"] = "DateCreated";
 	$fdata["ownerTable"] = "indovertime";
 	$fdata["Label"] = GetFieldLabel("indovertime","DateCreated");
-	$fdata["FieldType"] = 7;
+	$fdata["FieldType"] = 135;
 
 	
 	
@@ -577,7 +577,7 @@ $tdataindovertime[".printFields"][] = "NoMins";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Short Date");
+	$vdata = array("ViewFormat" => "Datetime");
 
 	
 	

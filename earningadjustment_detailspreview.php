@@ -246,21 +246,6 @@ if($rowcount)
 			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("Inactive")))
 				$class = ' rnr-field-number';
 			$row["Inactive_class"] = $class;
-	//	PerDay - Number
-			$viewContainer->recId = $recordsCounter;
-		    $value = $viewContainer->showDBValue("PerDay", $data, $keylink);
-			$row["PerDay_value"] = $value;
-			$format = $pSet->getViewFormat("PerDay");
-			$class = "rnr-field-text";
-			if($format==FORMAT_FILE) 
-				$class = ' rnr-field-file'; 
-			if($format==FORMAT_AUDIO)
-				$class = ' rnr-field-audio';
-			if($format==FORMAT_CHECKBOX)
-				$class = ' rnr-field-checkbox';
-			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("PerDay")))
-				$class = ' rnr-field-number';
-			$row["PerDay_class"] = $class;
 	//	StartDate - Short Date
 			$viewContainer->recId = $recordsCounter;
 		    $value = $viewContainer->showDBValue("StartDate", $data, $keylink);

@@ -93,24 +93,6 @@
 
 
 <div {$addfields_hiddenattr} data-pageid="{$pageid}" data-brick="addfields" class="form-horizontal" role="form">
-			{BEGIN UploadFile_fieldblock}
-<div class=container>
-<div class="form-group {$fielddispclass_UploadFile}" data-fieldname="UploadFile" data-signal-error-for="UploadFile{$id}" >
-	<label class="col-md-3 control-label" for="{$labelfor_UploadFile}">
-		{BEGIN UploadFile_label}{$label leaves UploadFile}{END UploadFile_label}
-	</label>
-	<div class="col-md-6" >
-		{$UploadFile_editcontrol}
-	</div>
-	<div class="col-md-3 help-block" data-helpfor="UploadFile">
-		<div class="text-muted" >
-		{$tooltip leaves UploadFile}
-		</div>
-	</div>
-</div>
-</div>
-{END UploadFile_fieldblock}
-
 			{BEGIN FromDate_fieldblock}
 <div class=container>
 <div class="form-group {$fielddispclass_FromDate}" data-fieldname="FromDate" data-signal-error-for="FromDate{$id}" >

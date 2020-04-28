@@ -1,5 +1,0 @@
-
-Runner.pages.PageSettings.addPageEvent('notes',Runner.pages.constants.PAGE_LIST,"afterPageReady",function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='Refresh';if(!pageObj.buttonEventBefore['Refresh']){pageObj.buttonEventBefore['Refresh']=function(params,ctrl,pageObj,proxy,pageid,rowData,row){params["txt"]="Refreshing...";ctrl.setMessage("Sending request to server...");}}
-if(!pageObj.buttonEventAfter['Refresh']){pageObj.buttonEventAfter['Refresh']=function(result,ctrl,pageObj,proxy,pageid,rowData,row){var message=result["txt"]+" !!!";ctrl.setMessage(message);location.reload();}}
-$('a[id="Refresh"]').each(function(){if($(this).closest('.gridRowAdd').length){return;}
-this.id="Refresh"+"_"+Runner.genId();var button_Refresh=new Runner.form.Button({id:this.id,btnName:"Refresh"});button_Refresh.init({args:[pageObj,proxy,pageid]});});});

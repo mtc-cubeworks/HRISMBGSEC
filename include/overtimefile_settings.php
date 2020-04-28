@@ -191,7 +191,7 @@ $tdataovertimefile[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																							
+																																																																																																																																																																																																																																																																																																																														
 
 $tdataovertimefile[".ajaxCodeSnippetAdded"] = false;
 
@@ -757,7 +757,7 @@ $tdataovertimefile[".printFields"][] = "2ndApproval";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Short Date");
+	$vdata = array("ViewFormat" => "Datetime");
 
 	
 	

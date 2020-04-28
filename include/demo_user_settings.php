@@ -236,12 +236,12 @@ $tdatademo_user[".listAjax"] = false;
 	$tdatademo_user[".locking"] = false;
 
 $tdatademo_user[".edit"] = true;
-$tdatademo_user[".afterEditAction"] = 0;
+$tdatademo_user[".afterEditAction"] = 1;
 $tdatademo_user[".closePopupAfterEdit"] = 1;
 $tdatademo_user[".afterEditActionDetTable"] = "";
 
 $tdatademo_user[".add"] = true;
-$tdatademo_user[".afterAddAction"] = 0;
+$tdatademo_user[".afterAddAction"] = 1;
 $tdatademo_user[".closePopupAfterAdd"] = 1;
 $tdatademo_user[".afterAddActionDetTable"] = "";
 
@@ -291,8 +291,8 @@ $tdatademo_user[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																						
-					
+																																																																																																																																																																																																																																																																													
+																																																					
 
 $tdatademo_user[".ajaxCodeSnippetAdded"] = false;
 
@@ -7379,7 +7379,8 @@ $tdatademo_user[".printFields"][] = "ApprovedDate";
 	
 
 
-	
+		$edata["IsRequired"] = true;
+
 	
 	
 			$edata["acceptFileTypes"] = ".+$";
@@ -7401,14 +7402,18 @@ $tdatademo_user[".printFields"][] = "ApprovedDate";
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-	
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+			$edata["validateAs"]["basicValidate"][] = "DenyDuplicated";
+	$edata["validateAs"]["customMessages"]["DenyDuplicated"] = array("message" => "Value %value% already exists", "messageType" => "Text");
+
 	
 	//	End validation
 
 	
 			
 	
-	
+		$edata["denyDuplicates"] = true;
+
 	
 	$fdata["EditFormats"]["edit"] = $edata;
 //	End Edit Formats

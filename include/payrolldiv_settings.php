@@ -29,12 +29,18 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelspayrolldiv["English"]["Employer"] = "Employer";
 	$fieldToolTipspayrolldiv["English"]["Employer"] = "";
 	$placeHolderspayrolldiv["English"]["Employer"] = "";
+	$fieldLabelspayrolldiv["English"]["Division"] = "Division";
+	$fieldToolTipspayrolldiv["English"]["Division"] = "";
+	$placeHolderspayrolldiv["English"]["Division"] = "";
 	$fieldLabelspayrolldiv["English"]["FromDate"] = "From Date";
 	$fieldToolTipspayrolldiv["English"]["FromDate"] = "";
 	$placeHolderspayrolldiv["English"]["FromDate"] = "";
 	$fieldLabelspayrolldiv["English"]["ToDate"] = "To Date";
 	$fieldToolTipspayrolldiv["English"]["ToDate"] = "";
 	$placeHolderspayrolldiv["English"]["ToDate"] = "";
+	$fieldLabelspayrolldiv["English"]["WageType"] = "Wage Type";
+	$fieldToolTipspayrolldiv["English"]["WageType"] = "";
+	$placeHolderspayrolldiv["English"]["WageType"] = "";
 	$fieldLabelspayrolldiv["English"]["Locked"] = "Locked";
 	$fieldToolTipspayrolldiv["English"]["Locked"] = "";
 	$placeHolderspayrolldiv["English"]["Locked"] = "";
@@ -89,12 +95,12 @@ $tdatapayrolldiv[".listAjax"] = false;
 	$tdatapayrolldiv[".locking"] = false;
 
 $tdatapayrolldiv[".edit"] = true;
-$tdatapayrolldiv[".afterEditAction"] = 0;
+$tdatapayrolldiv[".afterEditAction"] = 1;
 $tdatapayrolldiv[".closePopupAfterEdit"] = 1;
 $tdatapayrolldiv[".afterEditActionDetTable"] = "";
 
 $tdatapayrolldiv[".add"] = true;
-$tdatapayrolldiv[".afterAddAction"] = 0;
+$tdatapayrolldiv[".afterAddAction"] = 1;
 $tdatapayrolldiv[".closePopupAfterAdd"] = 1;
 $tdatapayrolldiv[".afterAddActionDetTable"] = "";
 
@@ -146,7 +152,10 @@ $tdatapayrolldiv[".rowHighlite"] = true;
 							
 							
 							
-																																																																																																																																																								
+																																																																																																																																																																																																							
+							
+							
+																				
 
 $tdatapayrolldiv[".ajaxCodeSnippetAdded"] = false;
 
@@ -167,6 +176,8 @@ $tdatapayrolldiv[".filterFields"] = array();
 $tdatapayrolldiv[".requiredSearchFields"] = array();
 
 $tdatapayrolldiv[".allSearchFields"][] = "Employer";
+	$tdatapayrolldiv[".allSearchFields"][] = "Division";
+	$tdatapayrolldiv[".allSearchFields"][] = "WageType";
 	$tdatapayrolldiv[".allSearchFields"][] = "FromDate";
 	$tdatapayrolldiv[".allSearchFields"][] = "ToDate";
 	
@@ -175,11 +186,14 @@ $tdatapayrolldiv[".allSearchFields"][] = "Employer";
 $tdatapayrolldiv[".panelSearchFields"] = array();
 $tdatapayrolldiv[".searchPanelOptions"] = array();
 $tdatapayrolldiv[".panelSearchFields"][] = "Employer";
+	$tdatapayrolldiv[".panelSearchFields"][] = "Division";
 	$tdatapayrolldiv[".panelSearchFields"][] = "FromDate";
 	$tdatapayrolldiv[".panelSearchFields"][] = "ToDate";
 	
 $tdatapayrolldiv[".advSearchFields"] = array();
 $tdatapayrolldiv[".advSearchFields"][] = "Employer";
+$tdatapayrolldiv[".advSearchFields"][] = "Division";
+$tdatapayrolldiv[".advSearchFields"][] = "WageType";
 $tdatapayrolldiv[".advSearchFields"][] = "FromDate";
 $tdatapayrolldiv[".advSearchFields"][] = "ToDate";
 
@@ -225,7 +239,7 @@ $tdatapayrolldiv[".strOrderBy"] = $tstrOrderBy;
 
 $tdatapayrolldiv[".orderindexes"] = array();
 
-$tdatapayrolldiv[".sqlHead"] = "SELECT PRollID,  Employer,  FromDate,  ToDate,  Locked";
+$tdatapayrolldiv[".sqlHead"] = "SELECT PRollID,  	Employer,  	Division,  	FromDate,  	ToDate,  	WageType,  	Locked";
 $tdatapayrolldiv[".sqlFrom"] = "FROM payrolldiv";
 $tdatapayrolldiv[".sqlWhereExpr"] = "";
 $tdatapayrolldiv[".sqlTail"] = "";
@@ -273,6 +287,8 @@ $tdatapayrolldiv[".listFields"] = array();
 $tdatapayrolldiv[".listFields"][] = "PRollID";
 $tdatapayrolldiv[".listFields"][] = "Locked";
 $tdatapayrolldiv[".listFields"][] = "Employer";
+$tdatapayrolldiv[".listFields"][] = "Division";
+$tdatapayrolldiv[".listFields"][] = "WageType";
 $tdatapayrolldiv[".listFields"][] = "FromDate";
 $tdatapayrolldiv[".listFields"][] = "ToDate";
 
@@ -283,12 +299,16 @@ $tdatapayrolldiv[".viewFields"] = array();
 $tdatapayrolldiv[".viewFields"][] = "PRollID";
 $tdatapayrolldiv[".viewFields"][] = "Locked";
 $tdatapayrolldiv[".viewFields"][] = "Employer";
+$tdatapayrolldiv[".viewFields"][] = "Division";
+$tdatapayrolldiv[".viewFields"][] = "WageType";
 $tdatapayrolldiv[".viewFields"][] = "FromDate";
 $tdatapayrolldiv[".viewFields"][] = "ToDate";
 
 $tdatapayrolldiv[".addFields"] = array();
 $tdatapayrolldiv[".addFields"][] = "Locked";
 $tdatapayrolldiv[".addFields"][] = "Employer";
+$tdatapayrolldiv[".addFields"][] = "Division";
+$tdatapayrolldiv[".addFields"][] = "WageType";
 $tdatapayrolldiv[".addFields"][] = "FromDate";
 $tdatapayrolldiv[".addFields"][] = "ToDate";
 
@@ -296,6 +316,8 @@ $tdatapayrolldiv[".masterListFields"] = array();
 $tdatapayrolldiv[".masterListFields"][] = "PRollID";
 $tdatapayrolldiv[".masterListFields"][] = "Locked";
 $tdatapayrolldiv[".masterListFields"][] = "Employer";
+$tdatapayrolldiv[".masterListFields"][] = "Division";
+$tdatapayrolldiv[".masterListFields"][] = "WageType";
 $tdatapayrolldiv[".masterListFields"][] = "FromDate";
 $tdatapayrolldiv[".masterListFields"][] = "ToDate";
 
@@ -304,6 +326,8 @@ $tdatapayrolldiv[".inlineAddFields"] = array();
 $tdatapayrolldiv[".editFields"] = array();
 $tdatapayrolldiv[".editFields"][] = "Locked";
 $tdatapayrolldiv[".editFields"][] = "Employer";
+$tdatapayrolldiv[".editFields"][] = "Division";
+$tdatapayrolldiv[".editFields"][] = "WageType";
 $tdatapayrolldiv[".editFields"][] = "FromDate";
 $tdatapayrolldiv[".editFields"][] = "ToDate";
 
@@ -312,6 +336,8 @@ $tdatapayrolldiv[".inlineEditFields"] = array();
 $tdatapayrolldiv[".updateSelectedFields"] = array();
 $tdatapayrolldiv[".updateSelectedFields"][] = "Locked";
 $tdatapayrolldiv[".updateSelectedFields"][] = "Employer";
+$tdatapayrolldiv[".updateSelectedFields"][] = "Division";
+$tdatapayrolldiv[".updateSelectedFields"][] = "WageType";
 $tdatapayrolldiv[".updateSelectedFields"][] = "FromDate";
 $tdatapayrolldiv[".updateSelectedFields"][] = "ToDate";
 
@@ -320,20 +346,26 @@ $tdatapayrolldiv[".exportFields"] = array();
 $tdatapayrolldiv[".exportFields"][] = "PRollID";
 $tdatapayrolldiv[".exportFields"][] = "Locked";
 $tdatapayrolldiv[".exportFields"][] = "Employer";
+$tdatapayrolldiv[".exportFields"][] = "Division";
+$tdatapayrolldiv[".exportFields"][] = "WageType";
 $tdatapayrolldiv[".exportFields"][] = "FromDate";
 $tdatapayrolldiv[".exportFields"][] = "ToDate";
 
 $tdatapayrolldiv[".importFields"] = array();
 $tdatapayrolldiv[".importFields"][] = "PRollID";
 $tdatapayrolldiv[".importFields"][] = "Employer";
+$tdatapayrolldiv[".importFields"][] = "Division";
 $tdatapayrolldiv[".importFields"][] = "FromDate";
 $tdatapayrolldiv[".importFields"][] = "ToDate";
+$tdatapayrolldiv[".importFields"][] = "WageType";
 $tdatapayrolldiv[".importFields"][] = "Locked";
 
 $tdatapayrolldiv[".printFields"] = array();
 $tdatapayrolldiv[".printFields"][] = "PRollID";
 $tdatapayrolldiv[".printFields"][] = "Locked";
 $tdatapayrolldiv[".printFields"][] = "Employer";
+$tdatapayrolldiv[".printFields"][] = "Division";
+$tdatapayrolldiv[".printFields"][] = "WageType";
 $tdatapayrolldiv[".printFields"][] = "FromDate";
 $tdatapayrolldiv[".printFields"][] = "ToDate";
 
@@ -616,10 +648,165 @@ $tdatapayrolldiv[".printFields"][] = "ToDate";
 
 
 	$tdatapayrolldiv["Employer"] = $fdata;
-//	FromDate
+//	Division
 //	Custom field settings
 	$fdata = array();
 	$fdata["Index"] = 3;
+	$fdata["strName"] = "Division";
+	$fdata["GoodName"] = "Division";
+	$fdata["ownerTable"] = "payrolldiv";
+	$fdata["Label"] = GetFieldLabel("payrolldiv","Division");
+	$fdata["FieldType"] = 3;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+	
+		$fdata["bEditPage"] = true;
+
+	
+		$fdata["bUpdateSelected"] = true;
+
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "Division";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "Division";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Lookup wizard");
+
+	
+	
+		
+	
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "divisions";
+		$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "DvID";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "Division";
+	
+	
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdatapayrolldiv["Division"] = $fdata;
+//	FromDate
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 4;
 	$fdata["strName"] = "FromDate";
 	$fdata["GoodName"] = "FromDate";
 	$fdata["ownerTable"] = "payrolldiv";
@@ -749,7 +936,7 @@ $tdatapayrolldiv[".printFields"][] = "ToDate";
 //	ToDate
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 4;
+	$fdata["Index"] = 5;
 	$fdata["strName"] = "ToDate";
 	$fdata["GoodName"] = "ToDate";
 	$fdata["ownerTable"] = "payrolldiv";
@@ -876,10 +1063,165 @@ $tdatapayrolldiv[".printFields"][] = "ToDate";
 
 
 	$tdatapayrolldiv["ToDate"] = $fdata;
+//	WageType
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 6;
+	$fdata["strName"] = "WageType";
+	$fdata["GoodName"] = "WageType";
+	$fdata["ownerTable"] = "payrolldiv";
+	$fdata["Label"] = GetFieldLabel("payrolldiv","WageType");
+	$fdata["FieldType"] = 3;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+	
+		$fdata["bEditPage"] = true;
+
+	
+		$fdata["bUpdateSelected"] = true;
+
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "WageType";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "WageType";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Lookup wizard");
+
+	
+	
+		
+	
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "emptype";
+		$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "ECatID";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "EmployeeType";
+	
+	
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdatapayrolldiv["WageType"] = $fdata;
 //	Locked
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 5;
+	$fdata["Index"] = 7;
 	$fdata["strName"] = "Locked";
 	$fdata["GoodName"] = "Locked";
 	$fdata["ownerTable"] = "payrolldiv";
@@ -1038,10 +1380,14 @@ $masterTablesData["payrolldiv"] = array();
 	$masterTablesData["payrolldiv"][0]["masterKeys"][]="PayFromDate";
 				$masterTablesData["payrolldiv"][0]["masterKeys"][]="PayToDate";
 				$masterTablesData["payrolldiv"][0]["masterKeys"][]="Employer";
+				$masterTablesData["payrolldiv"][0]["masterKeys"][]="Division";
+				$masterTablesData["payrolldiv"][0]["masterKeys"][]="WageType";
 				$masterTablesData["payrolldiv"][0]["detailKeys"] = array();
 	$masterTablesData["payrolldiv"][0]["detailKeys"][]="FromDate";
 				$masterTablesData["payrolldiv"][0]["detailKeys"][]="ToDate";
 				$masterTablesData["payrolldiv"][0]["detailKeys"][]="Employer";
+				$masterTablesData["payrolldiv"][0]["detailKeys"][]="Division";
+				$masterTablesData["payrolldiv"][0]["detailKeys"][]="WageType";
 		
 // -----------------end  prepare master-details data arrays ------------------------------//
 
@@ -1060,7 +1406,7 @@ function createSqlQuery_payrolldiv()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "PRollID,  Employer,  FromDate,  ToDate,  Locked";
+$proto0["m_strFieldList"] = "PRollID,  	Employer,  	Division,  	FromDate,  	ToDate,  	WageType,  	Locked";
 $proto0["m_strFrom"] = "FROM payrolldiv";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -1130,12 +1476,12 @@ $obj = new SQLFieldListItem($proto8);
 $proto0["m_fieldlist"][]=$obj;
 						$proto10=array();
 			$obj = new SQLField(array(
-	"m_strName" => "FromDate",
+	"m_strName" => "Division",
 	"m_strTable" => "payrolldiv",
 	"m_srcTableName" => "payrolldiv"
 ));
 
-$proto10["m_sql"] = "FromDate";
+$proto10["m_sql"] = "Division";
 $proto10["m_srcTableName"] = "payrolldiv";
 $proto10["m_expr"]=$obj;
 $proto10["m_alias"] = "";
@@ -1144,12 +1490,12 @@ $obj = new SQLFieldListItem($proto10);
 $proto0["m_fieldlist"][]=$obj;
 						$proto12=array();
 			$obj = new SQLField(array(
-	"m_strName" => "ToDate",
+	"m_strName" => "FromDate",
 	"m_strTable" => "payrolldiv",
 	"m_srcTableName" => "payrolldiv"
 ));
 
-$proto12["m_sql"] = "ToDate";
+$proto12["m_sql"] = "FromDate";
 $proto12["m_srcTableName"] = "payrolldiv";
 $proto12["m_expr"]=$obj;
 $proto12["m_alias"] = "";
@@ -1158,55 +1504,83 @@ $obj = new SQLFieldListItem($proto12);
 $proto0["m_fieldlist"][]=$obj;
 						$proto14=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Locked",
+	"m_strName" => "ToDate",
 	"m_strTable" => "payrolldiv",
 	"m_srcTableName" => "payrolldiv"
 ));
 
-$proto14["m_sql"] = "Locked";
+$proto14["m_sql"] = "ToDate";
 $proto14["m_srcTableName"] = "payrolldiv";
 $proto14["m_expr"]=$obj;
 $proto14["m_alias"] = "";
 $obj = new SQLFieldListItem($proto14);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto16=array();
-$proto16["m_link"] = "SQLL_MAIN";
-			$proto17=array();
-$proto17["m_strName"] = "payrolldiv";
-$proto17["m_srcTableName"] = "payrolldiv";
-$proto17["m_columns"] = array();
-$proto17["m_columns"][] = "PRollID";
-$proto17["m_columns"][] = "Employer";
-$proto17["m_columns"][] = "Division";
-$proto17["m_columns"][] = "FromDate";
-$proto17["m_columns"][] = "ToDate";
-$proto17["m_columns"][] = "WageType";
-$proto17["m_columns"][] = "Locked";
-$obj = new SQLTable($proto17);
+						$proto16=array();
+			$obj = new SQLField(array(
+	"m_strName" => "WageType",
+	"m_strTable" => "payrolldiv",
+	"m_srcTableName" => "payrolldiv"
+));
 
-$proto16["m_table"] = $obj;
-$proto16["m_sql"] = "payrolldiv";
-$proto16["m_alias"] = "";
+$proto16["m_sql"] = "WageType";
 $proto16["m_srcTableName"] = "payrolldiv";
-$proto18=array();
-$proto18["m_sql"] = "";
-$proto18["m_uniontype"] = "SQLL_UNKNOWN";
+$proto16["m_expr"]=$obj;
+$proto16["m_alias"] = "";
+$obj = new SQLFieldListItem($proto16);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto18=array();
+			$obj = new SQLField(array(
+	"m_strName" => "Locked",
+	"m_strTable" => "payrolldiv",
+	"m_srcTableName" => "payrolldiv"
+));
+
+$proto18["m_sql"] = "Locked";
+$proto18["m_srcTableName"] = "payrolldiv";
+$proto18["m_expr"]=$obj;
+$proto18["m_alias"] = "";
+$obj = new SQLFieldListItem($proto18);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto20=array();
+$proto20["m_link"] = "SQLL_MAIN";
+			$proto21=array();
+$proto21["m_strName"] = "payrolldiv";
+$proto21["m_srcTableName"] = "payrolldiv";
+$proto21["m_columns"] = array();
+$proto21["m_columns"][] = "PRollID";
+$proto21["m_columns"][] = "Employer";
+$proto21["m_columns"][] = "Division";
+$proto21["m_columns"][] = "FromDate";
+$proto21["m_columns"][] = "ToDate";
+$proto21["m_columns"][] = "WageType";
+$proto21["m_columns"][] = "Locked";
+$obj = new SQLTable($proto21);
+
+$proto20["m_table"] = $obj;
+$proto20["m_sql"] = "payrolldiv";
+$proto20["m_alias"] = "";
+$proto20["m_srcTableName"] = "payrolldiv";
+$proto22=array();
+$proto22["m_sql"] = "";
+$proto22["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto18["m_column"]=$obj;
-$proto18["m_contained"] = array();
-$proto18["m_strCase"] = "";
-$proto18["m_havingmode"] = false;
-$proto18["m_inBrackets"] = false;
-$proto18["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto18);
+$proto22["m_column"]=$obj;
+$proto22["m_contained"] = array();
+$proto22["m_strCase"] = "";
+$proto22["m_havingmode"] = false;
+$proto22["m_inBrackets"] = false;
+$proto22["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto22);
 
-$proto16["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto16);
+$proto20["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto20);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -1222,7 +1596,7 @@ $queryData_payrolldiv = createSqlQuery_payrolldiv();
 	
 		;
 
-					
+							
 
 $tdatapayrolldiv[".sqlquery"] = $queryData_payrolldiv;
 

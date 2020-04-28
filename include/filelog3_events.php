@@ -247,27 +247,27 @@ $sql = "INSERT demo_log VALUES ('$lg', NULL, 'Manual Entry', '$empid', NULL, '$m
 CustomQuery($sql);
 
 
-$ckby=$values["CheckedBy"];
-$apby=$values["ApprovedBy"];
-$hrby=$values["HRApproval"];
-$empy=$values["EmployeeID"];
-$logt=$values["log_time"];
-$rea=$values["Reason"];
+//$ckby=$values["CheckedBy"];
+//$apby=$values["ApprovedBy"];
+//$hrby=$values["HRApproval"];
+//$empy=$values["EmployeeID"];
+//$logt=$values["log_time"];
+//$rea=$values["Reason"];
 
-$empr=DBLookup("SELECT Employer FROM demo_user WHERE EmployeeID='$empy'");
+//$empr=DBLookup("SELECT Employer FROM demo_user WHERE EmployeeID='$empy'");
 
-$empname=DBLookup("SELECT user_name FROM demo_user WHERE EmployeeID='$empy'");
+//$empname=DBLookup("SELECT user_name FROM demo_user WHERE EmployeeID='$empy'");
 
-$mgrname=DBLookup("SELECT user_name FROM demo_user WHERE EmployeeID='$logx'");
+//$mgrname=DBLookup("SELECT user_name FROM demo_user WHERE EmployeeID='$logx'");
 
-$email=DBLookup("SELECT Email FROM demo_user WHERE EmployeeID='$ckby'");
-$bcc=DBLookup("SELECT AdminEmail FROM employername WHERE EnID='$empr'");
+//$email=DBLookup("SELECT Email FROM demo_user WHERE EmployeeID='$ckby'");
+//$bcc=DBLookup("SELECT AdminEmail FROM employername WHERE EnID='$empr'");
 
 
-$message="Your TimeLog has been approved by ".$mgrname."\nName:".$empname."\nLogTime: ".$logt."\nReason: ".$rea."\n\nBest regards, \nPayrollFlex Admin";
-$subject="Timelog Approved! - PayrollFlex";
-runner_mail(array('to'  => $email, 'cc' => $cc,
-'bcc' => $bcc, 'subject' => $subject, 'body' => $message));
+//$message="Your TimeLog has been approved by ".$mgrname."\nName:".$empname."\nLogTime: ".$logt."\nReason: ".$rea."\n\nBest regards, \nPayrollFlex Admin";
+//$subject="Timelog Approved! - PayrollFlex";
+//runner_mail(array('to'  => $email, 'cc' => $cc,
+//'bcc' => $bcc, 'subject' => $subject, 'body' => $message));
 
 
 
@@ -282,27 +282,27 @@ $sqa1 = "UPDATE filelog SET HRApproval=NULL, HRApproved=NULL, HRApprovedDate=NUL
 CustomQuery($sqa1);
 
 if ($hap==2) {
-$ckby=$values["CheckedBy"];
-$apby=$values["ApprovedBy"];
-$hrby=$values["HRApproval"];
-$empy=$values["EmployeeID"];
-$logt=$values["log_time"];
-$rea=$values["Reason"];
+//$ckby=$values["CheckedBy"];
+//$apby=$values["ApprovedBy"];
+//$hrby=$values["HRApproval"];
+//$empy=$values["EmployeeID"];
+//$logt=$values["log_time"];
+//$rea=$values["Reason"];
 
-$empr=DBLookup("SELECT Employer FROM demo_user WHERE EmployeeID='$empy'");
+//$empr=DBLookup("SELECT Employer FROM demo_user WHERE EmployeeID='$empy'");
 
-$empname=DBLookup("SELECT user_name FROM demo_user WHERE EmployeeID='$empy'");
+//$empname=DBLookup("SELECT user_name FROM demo_user WHERE EmployeeID='$empy'");
 
-$mgrname=DBLookup("SELECT user_name FROM demo_user WHERE EmployeeID='$logx'");
+//$mgrname=DBLookup("SELECT user_name FROM demo_user WHERE EmployeeID='$logx'");
 
-$email=DBLookup("SELECT Email FROM demo_user WHERE EmployeeID='$ckby'");
-$bcc=DBLookup("SELECT AdminEmail FROM employername WHERE EnID='$empr'");
+//$email=DBLookup("SELECT Email FROM demo_user WHERE EmployeeID='$ckby'");
+//$bcc=DBLookup("SELECT AdminEmail FROM employername WHERE EnID='$empr'");
 
 
-$message="Your TimeLog has been disapproved by ".$mgrname."\nName:".$empname."\nLogTime: ".$logt."\nReason: ".$rea."\n\nBest regards, \nPayrollFlex Admin";
-$subject="Timelog Disapproved! - PayrollFlex";
-runner_mail(array('to'  => $email, 'cc' => $cc,
-'bcc' => $bcc, 'subject' => $subject, 'body' => $message));
+//$message="Your TimeLog has been disapproved by ".$mgrname."\nName:".$empname."\nLogTime: ".$logt."\nReason: ".$rea."\n\nBest regards, \nPayrollFlex Admin";
+//$subject="Timelog Disapproved! - PayrollFlex";
+//runner_mail(array('to'  => $email, 'cc' => $cc,
+//'bcc' => $bcc, 'subject' => $subject, 'body' => $message));
 
 
 };

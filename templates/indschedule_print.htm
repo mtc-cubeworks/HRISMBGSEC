@@ -445,6 +445,11 @@
 				{$label indschedule Shift}
 			</th>
 			{END Shift_fieldheadercolumn}
+			{BEGIN PreLogMins_fieldheadercolumn}
+			<th class="{$PreLogMins_class}" {$PreLogMins_style}  data-field="PreLogMins">
+				{$label indschedule PreLogMins}
+			</th>
+			{END PreLogMins_fieldheadercolumn}
 			{BEGIN BreakMins_fieldheadercolumn}
 			<th class="{$BreakMins_class}" {$BreakMins_style}  data-field="BreakMins">
 				{$label indschedule BreakMins}
@@ -837,6 +842,11 @@
 				{$Shift_value}
 			</td>
 			{END Shift_fieldcolumn}
+			{BEGIN PreLogMins_fieldcolumn}
+			<td  class="{$PreLogMins_class}" {$PreLogMins_style} {$recordattrs}>
+				{$PreLogMins_value}
+			</td>
+			{END PreLogMins_fieldcolumn}
 			{BEGIN BreakMins_fieldcolumn}
 			<td  class="{$BreakMins_class}" {$BreakMins_style} {$recordattrs}>
 				{$BreakMins_value}
@@ -850,7 +860,7 @@
 	{BEGIN details_row}
 		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
 			{BEGIN details_record}
-				<td colspan="77">
+				<td colspan="78">
 					{BEGIN details_table}
 						{$details}
 					{END details_table}
@@ -1360,6 +1370,10 @@
 			<td>
 						</td>
 			{END Shift_fieldfootercolumn}
+			{BEGIN PreLogMins_fieldfootercolumn}
+			<td>
+						</td>
+			{END PreLogMins_fieldfootercolumn}
 			{BEGIN BreakMins_fieldfootercolumn}
 			<td>
 						</td>

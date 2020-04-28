@@ -55,6 +55,10 @@ $dalTablestandardsetup["DoubleHolidayNDOT"] = array("type"=>5,"varname"=>"Double
 $dalTablestandardsetup["DoubleHolidayRDNDOT"] = array("type"=>5,"varname"=>"DoubleHolidayRDNDOT", "name" => "DoubleHolidayRDNDOT");
 $dalTablestandardsetup["SHOTDFactor"] = array("type"=>5,"varname"=>"SHOTDFactor", "name" => "SHOTDFactor");
 $dalTablestandardsetup["SHRDOTDFactor"] = array("type"=>5,"varname"=>"SHRDOTDFactor", "name" => "SHRDOTDFactor");
+$dalTablestandardsetup["RegularVL"] = array("type"=>3,"varname"=>"RegularVL", "name" => "RegularVL");
+$dalTablestandardsetup["RegularSL"] = array("type"=>3,"varname"=>"RegularSL", "name" => "RegularSL");
+$dalTablestandardsetup["RegularEL"] = array("type"=>3,"varname"=>"RegularEL", "name" => "RegularEL");
+$dalTablestandardsetup["RegularPL"] = array("type"=>3,"varname"=>"RegularPL", "name" => "RegularPL");
 	$dalTablestandardsetup["SID"]["key"]=true;
 
 $dal_info["payrollflex_at_localhost__standardsetup"] = &$dalTablestandardsetup;

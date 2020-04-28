@@ -156,7 +156,7 @@ if($rowcount)
 			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("NID")))
 				$class = ' rnr-field-number';
 			$row["NID_class"] = $class;
-	//	CreatedDate - 
+	//	CreatedDate - Short Date
 			$viewContainer->recId = $recordsCounter;
 		    $value = $viewContainer->showDBValue("CreatedDate", $data, $keylink);
 			$row["CreatedDate_value"] = $value;

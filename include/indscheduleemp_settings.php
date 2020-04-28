@@ -131,19 +131,19 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsindscheduleemp["English"]["RDNDHrs"] = "RD-ND (h)";
 	$fieldToolTipsindscheduleemp["English"]["RDNDHrs"] = "";
 	$placeHoldersindscheduleemp["English"]["RDNDHrs"] = "";
-	$fieldLabelsindscheduleemp["English"]["VLDay"] = "VLDay";
+	$fieldLabelsindscheduleemp["English"]["VLDay"] = "VL (d)";
 	$fieldToolTipsindscheduleemp["English"]["VLDay"] = "";
 	$placeHoldersindscheduleemp["English"]["VLDay"] = "";
-	$fieldLabelsindscheduleemp["English"]["SLDay"] = "SLDay";
+	$fieldLabelsindscheduleemp["English"]["SLDay"] = "SL (d)";
 	$fieldToolTipsindscheduleemp["English"]["SLDay"] = "";
 	$placeHoldersindscheduleemp["English"]["SLDay"] = "";
-	$fieldLabelsindscheduleemp["English"]["ELDay"] = "ELDay";
+	$fieldLabelsindscheduleemp["English"]["ELDay"] = "EL (d)";
 	$fieldToolTipsindscheduleemp["English"]["ELDay"] = "";
 	$placeHoldersindscheduleemp["English"]["ELDay"] = "";
-	$fieldLabelsindscheduleemp["English"]["PLDay"] = "PLDay";
+	$fieldLabelsindscheduleemp["English"]["PLDay"] = "PL (d)";
 	$fieldToolTipsindscheduleemp["English"]["PLDay"] = "";
 	$placeHoldersindscheduleemp["English"]["PLDay"] = "";
-	$fieldLabelsindscheduleemp["English"]["TrODay"] = "Tr ODay";
+	$fieldLabelsindscheduleemp["English"]["TrODay"] = "OB (d)";
 	$fieldToolTipsindscheduleemp["English"]["TrODay"] = "";
 	$placeHoldersindscheduleemp["English"]["TrODay"] = "";
 	$fieldLabelsindscheduleemp["English"]["Mispunched"] = "Mispunched";
@@ -374,12 +374,12 @@ $tdataindscheduleemp[".listAjax"] = false;
 	$tdataindscheduleemp[".locking"] = false;
 
 $tdataindscheduleemp[".edit"] = true;
-$tdataindscheduleemp[".afterEditAction"] = 0;
+$tdataindscheduleemp[".afterEditAction"] = 1;
 $tdataindscheduleemp[".closePopupAfterEdit"] = 1;
 $tdataindscheduleemp[".afterEditActionDetTable"] = "";
 
 $tdataindscheduleemp[".add"] = true;
-$tdataindscheduleemp[".afterAddAction"] = 0;
+$tdataindscheduleemp[".afterAddAction"] = 1;
 $tdataindscheduleemp[".closePopupAfterAdd"] = 1;
 $tdataindscheduleemp[".afterAddActionDetTable"] = "";
 
@@ -429,7 +429,7 @@ $tdataindscheduleemp[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
 
 $tdataindscheduleemp[".ajaxCodeSnippetAdded"] = false;
 
@@ -442,7 +442,7 @@ $tdataindscheduleemp[".isUseTimeForSearch"] = true;
 
 
 
-$tdataindscheduleemp[".badgeColor"] = "5f9ea0";
+$tdataindscheduleemp[".badgeColor"] = "cd853f";
 
 
 $tdataindscheduleemp[".allSearchFields"] = array();
@@ -779,13 +779,13 @@ $tdataindscheduleemp[".warnLeavingPages"] = true;
 
 
 
-$tstrOrderBy = "ORDER BY ScID";
+$tstrOrderBy = "ORDER BY SDate";
 if(strlen($tstrOrderBy) && strtolower(substr($tstrOrderBy,0,8))!="order by")
 	$tstrOrderBy = "order by ".$tstrOrderBy;
 $tdataindscheduleemp[".strOrderBy"] = $tstrOrderBy;
 
 $tdataindscheduleemp[".orderindexes"] = array();
-	$tdataindscheduleemp[".orderindexes"][] = array(1, (1 ? "ASC" : "DESC"), "ScID");
+	$tdataindscheduleemp[".orderindexes"][] = array(3, (1 ? "ASC" : "DESC"), "SDate");
 
 
 $tdataindscheduleemp[".sqlHead"] = "SELECT ScID,  UserName,  SDate,  STimeIn,  STimeOut,  SchedType,  ApprovedOT,  WageType,  ApprovedNightDiff,  EmployeeID,  BreakMins,  Shift,  ApprovedRD,  LunchBreakFrom,  LunchBreakTo,  Division,  TimeIn,  TimeOut,  DayIs,  RestDay,  Department,  RegWD,  DWork,  Absent,  LateMins,  UndertimeMins,  RHolidayHrs,  SHolidayHrs,  ExcessHrs,  RegOTHrs,  RHOTHrs,  SHOTHrs,  RDOTHrs,  RHNDHrs,  SHNDHrs,  RDNDHrs,  VLDay,  SLDay,  ELDay,  PLDay,  TrODay,  HolidayType,  Mispunched,  Holiday1stHalf,  Holiday2ndHalf,  TotLateMins,  LatePenaltyMins,  Employer,  LateFixPenalty,  AfterBreakLogOut,  AfterBreakLog,  BreakLateMins,  RHNDOTHrs,  SHNDOTHrs,  RDNDOTHrs,  DH,  DHRD,  DHOT,  DHRDOT,  SHRDND,  RHRDND,  SHRDNDOT,  RHRDNDOT,  DHND,  DHRDND,  DHNDOT,  DHRDNDOT,  RHRDOT,  SHRDOT,  RegND,  RegRD,  SHOTD,  SHRDOTD,  NDOT,  RHRD,  SHRD";
@@ -12032,7 +12032,7 @@ $proto0["m_strHead"] = "SELECT";
 $proto0["m_strFieldList"] = "ScID,  UserName,  SDate,  STimeIn,  STimeOut,  SchedType,  ApprovedOT,  WageType,  ApprovedNightDiff,  EmployeeID,  BreakMins,  Shift,  ApprovedRD,  LunchBreakFrom,  LunchBreakTo,  Division,  TimeIn,  TimeOut,  DayIs,  RestDay,  Department,  RegWD,  DWork,  Absent,  LateMins,  UndertimeMins,  RHolidayHrs,  SHolidayHrs,  ExcessHrs,  RegOTHrs,  RHOTHrs,  SHOTHrs,  RDOTHrs,  RHNDHrs,  SHNDHrs,  RDNDHrs,  VLDay,  SLDay,  ELDay,  PLDay,  TrODay,  HolidayType,  Mispunched,  Holiday1stHalf,  Holiday2ndHalf,  TotLateMins,  LatePenaltyMins,  Employer,  LateFixPenalty,  AfterBreakLogOut,  AfterBreakLog,  BreakLateMins,  RHNDOTHrs,  SHNDOTHrs,  RDNDOTHrs,  DH,  DHRD,  DHOT,  DHRDOT,  SHRDND,  RHRDND,  SHRDNDOT,  RHRDNDOT,  DHND,  DHRDND,  DHNDOT,  DHRDNDOT,  RHRDOT,  SHRDOT,  RegND,  RegRD,  SHOTD,  SHRDOTD,  NDOT,  RHRD,  SHRD";
 $proto0["m_strFrom"] = "FROM indschedule";
 $proto0["m_strWhere"] = "";
-$proto0["m_strOrderBy"] = "ORDER BY ScID";
+$proto0["m_strOrderBy"] = "ORDER BY SDate";
 	
 		;
 			$proto0["cipherer"] = null;
@@ -13276,7 +13276,7 @@ $proto0["m_groupby"] = array();
 $proto0["m_orderby"] = array();
 												$proto162=array();
 						$obj = new SQLField(array(
-	"m_strName" => "ScID",
+	"m_strName" => "SDate",
 	"m_strTable" => "indschedule",
 	"m_srcTableName" => "indscheduleemp"
 ));

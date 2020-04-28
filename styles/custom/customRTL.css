@@ -1,0 +1,25 @@
+    .badge-greenx {  
+    background-color: #1ab394;  
+    }  
+      
+    .badge-bluex {  
+    background-color: #23c6c8;  
+    }  
+
+   .badge-orangex {  
+    background-color: #ff9000;  
+    } 
+  .badge-redx {  
+    background-color: #e50e0e;  
+    } 
+   
+      
+    .badgex {  
+        color: #FFFFFF;  
+        font: 11px "Helvetica Neue", Helvetica, Arial, sans-serif;  
+        font-weight: 600;  
+        padding: 2px 8px;  
+        text-shadow: none;      
+        border-radius: .25em;  
+        float: right!important;  
+    }  

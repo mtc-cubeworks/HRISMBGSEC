@@ -186,21 +186,6 @@ if($rowcount)
 			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("OtiD")))
 				$class = ' rnr-field-number';
 			$row["OtiD_class"] = $class;
-	//	UserName - 
-			$viewContainer->recId = $recordsCounter;
-		    $value = $viewContainer->showDBValue("UserName", $data, $keylink);
-			$row["UserName_value"] = $value;
-			$format = $pSet->getViewFormat("UserName");
-			$class = "rnr-field-text";
-			if($format==FORMAT_FILE) 
-				$class = ' rnr-field-file'; 
-			if($format==FORMAT_AUDIO)
-				$class = ' rnr-field-audio';
-			if($format==FORMAT_CHECKBOX)
-				$class = ' rnr-field-checkbox';
-			if($format==FORMAT_NUMBER || IsNumberType($pSet->getFieldType("UserName")))
-				$class = ' rnr-field-number';
-			$row["UserName_class"] = $class;
 		$rowinfo[] = $row;
 		if ($b) {
 			$rowinfo2[] = $row;

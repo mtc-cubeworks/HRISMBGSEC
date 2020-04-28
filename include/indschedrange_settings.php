@@ -8,7 +8,7 @@ $tdataindschedrange = array();
 	$tdataindschedrange[".truncateText"] = true;
 	$tdataindschedrange[".NumberOfChars"] = 80;
 	$tdataindschedrange[".ShortName"] = "indschedrange";
-	$tdataindschedrange[".OwnerID"] = "EmployeeID";
+	$tdataindschedrange[".OwnerID"] = "";
 	$tdataindschedrange[".OriginalTable"] = "indschedrange";
 
 //	field labels
@@ -96,9 +96,9 @@ if(mlang_getcurrentlang()=="")
 
 
 $tdataindschedrange[".shortTableName"] = "indschedrange";
-$tdataindschedrange[".nSecOptions"] = 1;
+$tdataindschedrange[".nSecOptions"] = 0;
 $tdataindschedrange[".recsPerRowPrint"] = 1;
-$tdataindschedrange[".mainTableOwnerID"] = "EmployeeID";
+$tdataindschedrange[".mainTableOwnerID"] = "";
 $tdataindschedrange[".moveNext"] = 1;
 $tdataindschedrange[".entityType"] = 0;
 
@@ -128,12 +128,12 @@ $tdataindschedrange[".listAjax"] = false;
 	$tdataindschedrange[".locking"] = false;
 
 $tdataindschedrange[".edit"] = true;
-$tdataindschedrange[".afterEditAction"] = 0;
+$tdataindschedrange[".afterEditAction"] = 1;
 $tdataindschedrange[".closePopupAfterEdit"] = 1;
 $tdataindschedrange[".afterEditActionDetTable"] = "";
 
 $tdataindschedrange[".add"] = true;
-$tdataindschedrange[".afterAddAction"] = 0;
+$tdataindschedrange[".afterAddAction"] = 1;
 $tdataindschedrange[".closePopupAfterAdd"] = 1;
 $tdataindschedrange[".afterAddActionDetTable"] = "";
 
@@ -185,7 +185,7 @@ $tdataindschedrange[".rowHighlite"] = true;
 
 																																																																																																																																																																																																																																																																																																																																																																													
 							
-																																																																																																																																																																																												
+																																																																																																																																																																																																																																																																										
 
 $tdataindschedrange[".ajaxCodeSnippetAdded"] = false;
 

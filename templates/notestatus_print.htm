@@ -91,11 +91,6 @@
 	{BEGIN grid_header}
 		<tr class="{$gridHeader_class}" >
 		{BEGIN record_header}
-			{BEGIN Closed_fieldheadercolumn}
-			<th class="{$Closed_class}" {$Closed_style}  data-field="Closed">
-				{$label notestatus Closed}
-			</th>
-			{END Closed_fieldheadercolumn}
 			{BEGIN NSID_fieldheadercolumn}
 			<th class="{$NSID_class}" {$NSID_style}  data-field="NSID">
 				{$label notestatus NSID}
@@ -126,6 +121,11 @@
 				{$label notestatus UploadFile}
 			</th>
 			{END UploadFile_fieldheadercolumn}
+			{BEGIN Closed_fieldheadercolumn}
+			<th class="{$Closed_class}" {$Closed_style}  data-field="Closed">
+				{$label notestatus Closed}
+			</th>
+			{END Closed_fieldheadercolumn}
 			{BEGIN Encodedby_fieldheadercolumn}
 			<th class="{$Encodedby_class}" {$Encodedby_style}  data-field="Encodedby">
 				{$label notestatus Encodedby}
@@ -148,11 +148,6 @@
 	{BEGIN grid_row}
 		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
 		{BEGIN grid_record}
-			{BEGIN Closed_fieldcolumn}
-			<td  class="{$Closed_class}" {$Closed_style} {$recordattrs}>
-				{$Closed_value}
-			</td>
-			{END Closed_fieldcolumn}
 			{BEGIN NSID_fieldcolumn}
 			<td  class="{$NSID_class}" {$NSID_style} {$recordattrs}>
 				{$NSID_value}
@@ -183,6 +178,11 @@
 				{$UploadFile_value}
 			</td>
 			{END UploadFile_fieldcolumn}
+			{BEGIN Closed_fieldcolumn}
+			<td  class="{$Closed_class}" {$Closed_style} {$recordattrs}>
+				{$Closed_value}
+			</td>
+			{END Closed_fieldcolumn}
 			{BEGIN Encodedby_fieldcolumn}
 			<td  class="{$Encodedby_class}" {$Encodedby_style} {$recordattrs}>
 				{$Encodedby_value}

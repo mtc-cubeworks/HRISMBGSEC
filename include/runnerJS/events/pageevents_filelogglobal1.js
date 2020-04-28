@@ -1,0 +1,5 @@
+
+Runner.pages.PageSettings.addPageEvent('filelogglobal1',Runner.pages.constants.PAGE_LIST,"afterPageReady",function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='Process_Approval41';if(!pageObj.buttonEventBefore['Process_Approval41']){pageObj.buttonEventBefore['Process_Approval41']=function(params,ctrl,pageObj,proxy,pageid,rowData,row){params["txt"]="Processing...";ctrl.setMessage("Sending request to server...");}}
+if(!pageObj.buttonEventAfter['Process_Approval41']){pageObj.buttonEventAfter['Process_Approval41']=function(result,ctrl,pageObj,proxy,pageid,rowData,row){var message=result["txt"]+" !!!";ctrl.setMessage(message);}}
+$('a[id="Process_Approval41"]').each(function(){if($(this).closest('.gridRowAdd').length){return;}
+this.id="Process_Approval41"+"_"+Runner.genId();var button_Process_Approval41=new Runner.form.Button({id:this.id,btnName:"Process_Approval41"});button_Process_Approval41.init({args:[pageObj,proxy,pageid]});});});

@@ -29,6 +29,9 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelslogo["English"]["Logo"] = "Logo";
 	$fieldToolTipslogo["English"]["Logo"] = "";
 	$placeHolderslogo["English"]["Logo"] = "";
+	$fieldLabelslogo["English"]["CodeNo"] = "Code No";
+	$fieldToolTipslogo["English"]["CodeNo"] = "";
+	$placeHolderslogo["English"]["CodeNo"] = "";
 	if (count($fieldToolTipslogo["English"]))
 		$tdatalogo[".isUseToolTips"] = true;
 }
@@ -80,12 +83,12 @@ $tdatalogo[".listAjax"] = false;
 	$tdatalogo[".locking"] = false;
 
 $tdatalogo[".edit"] = true;
-$tdatalogo[".afterEditAction"] = 0;
+$tdatalogo[".afterEditAction"] = 1;
 $tdatalogo[".closePopupAfterEdit"] = 1;
 $tdatalogo[".afterEditActionDetTable"] = "";
 
 $tdatalogo[".add"] = true;
-$tdatalogo[".afterAddAction"] = 0;
+$tdatalogo[".afterAddAction"] = 1;
 $tdatalogo[".closePopupAfterAdd"] = 1;
 $tdatalogo[".afterAddActionDetTable"] = "";
 
@@ -132,7 +135,7 @@ $tdatalogo[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																							
+																																																																																																																																																																																																																																																																																																																														
 
 $tdatalogo[".ajaxCodeSnippetAdded"] = false;
 
@@ -153,16 +156,19 @@ $tdatalogo[".requiredSearchFields"] = array();
 
 $tdatalogo[".allSearchFields"][] = "LID";
 	$tdatalogo[".allSearchFields"][] = "Logo";
+	$tdatalogo[".allSearchFields"][] = "CodeNo";
 	
 
 $tdatalogo[".googleLikeFields"] = array();
 $tdatalogo[".googleLikeFields"][] = "LID";
 $tdatalogo[".googleLikeFields"][] = "Logo";
+$tdatalogo[".googleLikeFields"][] = "CodeNo";
 
 
 $tdatalogo[".advSearchFields"] = array();
 $tdatalogo[".advSearchFields"][] = "LID";
 $tdatalogo[".advSearchFields"][] = "Logo";
+$tdatalogo[".advSearchFields"][] = "CodeNo";
 
 $tdatalogo[".tableType"] = "list";
 
@@ -205,7 +211,7 @@ $tdatalogo[".strOrderBy"] = $tstrOrderBy;
 
 $tdatalogo[".orderindexes"] = array();
 
-$tdatalogo[".sqlHead"] = "SELECT LID,  	Logo";
+$tdatalogo[".sqlHead"] = "SELECT LID,  	Logo,  	CodeNo";
 $tdatalogo[".sqlFrom"] = "FROM logo";
 $tdatalogo[".sqlWhereExpr"] = "";
 $tdatalogo[".sqlTail"] = "";
@@ -252,6 +258,7 @@ $tdatalogo[".Keys"] = $tableKeyslogo;
 $tdatalogo[".listFields"] = array();
 $tdatalogo[".listFields"][] = "LID";
 $tdatalogo[".listFields"][] = "Logo";
+$tdatalogo[".listFields"][] = "CodeNo";
 
 $tdatalogo[".hideMobileList"] = array();
 
@@ -259,36 +266,44 @@ $tdatalogo[".hideMobileList"] = array();
 $tdatalogo[".viewFields"] = array();
 $tdatalogo[".viewFields"][] = "LID";
 $tdatalogo[".viewFields"][] = "Logo";
+$tdatalogo[".viewFields"][] = "CodeNo";
 
 $tdatalogo[".addFields"] = array();
 $tdatalogo[".addFields"][] = "Logo";
+$tdatalogo[".addFields"][] = "CodeNo";
 
 $tdatalogo[".masterListFields"] = array();
 $tdatalogo[".masterListFields"][] = "LID";
 $tdatalogo[".masterListFields"][] = "Logo";
+$tdatalogo[".masterListFields"][] = "CodeNo";
 
 $tdatalogo[".inlineAddFields"] = array();
 
 $tdatalogo[".editFields"] = array();
 $tdatalogo[".editFields"][] = "Logo";
+$tdatalogo[".editFields"][] = "CodeNo";
 
 $tdatalogo[".inlineEditFields"] = array();
 
 $tdatalogo[".updateSelectedFields"] = array();
 $tdatalogo[".updateSelectedFields"][] = "Logo";
+$tdatalogo[".updateSelectedFields"][] = "CodeNo";
 
 
 $tdatalogo[".exportFields"] = array();
 $tdatalogo[".exportFields"][] = "LID";
 $tdatalogo[".exportFields"][] = "Logo";
+$tdatalogo[".exportFields"][] = "CodeNo";
 
 $tdatalogo[".importFields"] = array();
 $tdatalogo[".importFields"][] = "LID";
 $tdatalogo[".importFields"][] = "Logo";
+$tdatalogo[".importFields"][] = "CodeNo";
 
 $tdatalogo[".printFields"] = array();
 $tdatalogo[".printFields"][] = "LID";
 $tdatalogo[".printFields"][] = "Logo";
+$tdatalogo[".printFields"][] = "CodeNo";
 
 
 //	LID
@@ -559,6 +574,136 @@ $tdatalogo[".printFields"][] = "Logo";
 
 
 	$tdatalogo["Logo"] = $fdata;
+//	CodeNo
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 3;
+	$fdata["strName"] = "CodeNo";
+	$fdata["GoodName"] = "CodeNo";
+	$fdata["ownerTable"] = "logo";
+	$fdata["Label"] = GetFieldLabel("logo","CodeNo");
+	$fdata["FieldType"] = 3;
+
+	
+	
+	
+			
+		$fdata["bListPage"] = true;
+
+		$fdata["bAddPage"] = true;
+
+	
+		$fdata["bEditPage"] = true;
+
+	
+		$fdata["bUpdateSelected"] = true;
+
+
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "CodeNo";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "CodeNo";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+		
+	
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+		
+	
+
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+
+
+	$tdatalogo["CodeNo"] = $fdata;
 
 
 $tables_data["logo"]=&$tdatalogo;
@@ -592,7 +737,7 @@ function createSqlQuery_logo()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "LID,  	Logo";
+$proto0["m_strFieldList"] = "LID,  	Logo,  	CodeNo";
 $proto0["m_strFrom"] = "FROM logo";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -660,38 +805,53 @@ $proto8["m_alias"] = "";
 $obj = new SQLFieldListItem($proto8);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto10=array();
-$proto10["m_link"] = "SQLL_MAIN";
-			$proto11=array();
-$proto11["m_strName"] = "logo";
-$proto11["m_srcTableName"] = "logo";
-$proto11["m_columns"] = array();
-$proto11["m_columns"][] = "LID";
-$proto11["m_columns"][] = "Logo";
-$obj = new SQLTable($proto11);
+						$proto10=array();
+			$obj = new SQLField(array(
+	"m_strName" => "CodeNo",
+	"m_strTable" => "logo",
+	"m_srcTableName" => "logo"
+));
 
-$proto10["m_table"] = $obj;
-$proto10["m_sql"] = "logo";
-$proto10["m_alias"] = "";
+$proto10["m_sql"] = "CodeNo";
 $proto10["m_srcTableName"] = "logo";
-$proto12=array();
-$proto12["m_sql"] = "";
-$proto12["m_uniontype"] = "SQLL_UNKNOWN";
+$proto10["m_expr"]=$obj;
+$proto10["m_alias"] = "";
+$obj = new SQLFieldListItem($proto10);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto12=array();
+$proto12["m_link"] = "SQLL_MAIN";
+			$proto13=array();
+$proto13["m_strName"] = "logo";
+$proto13["m_srcTableName"] = "logo";
+$proto13["m_columns"] = array();
+$proto13["m_columns"][] = "LID";
+$proto13["m_columns"][] = "Logo";
+$proto13["m_columns"][] = "CodeNo";
+$obj = new SQLTable($proto13);
+
+$proto12["m_table"] = $obj;
+$proto12["m_sql"] = "logo";
+$proto12["m_alias"] = "";
+$proto12["m_srcTableName"] = "logo";
+$proto14=array();
+$proto14["m_sql"] = "";
+$proto14["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto12["m_column"]=$obj;
-$proto12["m_contained"] = array();
-$proto12["m_strCase"] = "";
-$proto12["m_havingmode"] = false;
-$proto12["m_inBrackets"] = false;
-$proto12["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto12);
+$proto14["m_column"]=$obj;
+$proto14["m_contained"] = array();
+$proto14["m_strCase"] = "";
+$proto14["m_havingmode"] = false;
+$proto14["m_inBrackets"] = false;
+$proto14["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto14);
 
-$proto10["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto10);
+$proto12["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto12);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -707,7 +867,7 @@ $queryData_logo = createSqlQuery_logo();
 	
 		;
 
-		
+			
 
 $tdatalogo[".sqlquery"] = $queryData_logo;
 

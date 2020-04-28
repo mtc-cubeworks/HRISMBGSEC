@@ -265,6 +265,77 @@
 {END grid_row}
 	</tbody>
 
+{BEGIN totals_row}
+	<tfoot>
+		<tr class=" style1">
+		{BEGIN totals_record}
+			{BEGIN NID_fieldfootercolumn}
+			<td>
+							{BEGIN NID_showtotal}
+									Count:
+				{$NID_total}
+				{END NID_showtotal}
+			</td>
+			{END NID_fieldfootercolumn}
+			{BEGIN CreatedDate_fieldfootercolumn}
+			<td>
+						</td>
+			{END CreatedDate_fieldfootercolumn}
+			{BEGIN EmployeeID_fieldfootercolumn}
+			<td>
+						</td>
+			{END EmployeeID_fieldfootercolumn}
+			{BEGIN NoteType_fieldfootercolumn}
+			<td>
+						</td>
+			{END NoteType_fieldfootercolumn}
+			{BEGIN StartDate_fieldfootercolumn}
+			<td>
+						</td>
+			{END StartDate_fieldfootercolumn}
+			{BEGIN EndDate_fieldfootercolumn}
+			<td>
+						</td>
+			{END EndDate_fieldfootercolumn}
+			{BEGIN Remarks_fieldfootercolumn}
+			<td>
+						</td>
+			{END Remarks_fieldfootercolumn}
+			{BEGIN UploadFile_fieldfootercolumn}
+			<td>
+						</td>
+			{END UploadFile_fieldfootercolumn}
+			{BEGIN Status_fieldfootercolumn}
+			<td>
+						</td>
+			{END Status_fieldfootercolumn}
+			{BEGIN NotifyDays_fieldfootercolumn}
+			<td>
+						</td>
+			{END NotifyDays_fieldfootercolumn}
+			{BEGIN NotifyDaysLeft_fieldfootercolumn}
+			<td>
+						</td>
+			{END NotifyDaysLeft_fieldfootercolumn}
+			{BEGIN DaysLeft_fieldfootercolumn}
+			<td>
+						</td>
+			{END DaysLeft_fieldfootercolumn}
+			{BEGIN Closed_fieldfootercolumn}
+			<td>
+						</td>
+			{END Closed_fieldfootercolumn}
+			{BEGIN Encodedby_fieldfootercolumn}
+			<td>
+						</td>
+			{END Encodedby_fieldfootercolumn}
+			{BEGIN endrecordtotals_block}
+			<td class="rnr-cs"></td>
+			{END endrecordtotals_block}
+		{END totals_record}
+		</tr>
+	</tfoot>
+{END totals_row}
 </table>
 
 {END grid_block}

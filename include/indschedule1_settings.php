@@ -125,7 +125,7 @@ $tdataindschedule1[".listAjax"] = false;
 	$tdataindschedule1[".locking"] = false;
 
 $tdataindschedule1[".edit"] = true;
-$tdataindschedule1[".afterEditAction"] = 0;
+$tdataindschedule1[".afterEditAction"] = 1;
 $tdataindschedule1[".closePopupAfterEdit"] = 1;
 $tdataindschedule1[".afterEditActionDetTable"] = "";
 
@@ -173,13 +173,13 @@ $tdataindschedule1[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
 
 $tdataindschedule1[".ajaxCodeSnippetAdded"] = false;
 
 $tdataindschedule1[".buttonsAdded"] = false;
 
-$tdataindschedule1[".addPageEvents"] = true;
+$tdataindschedule1[".addPageEvents"] = false;
 
 // use timepicker for search panel
 $tdataindschedule1[".isUseTimeForSearch"] = false;

@@ -36,12 +36,12 @@ if(mlang_getcurrentlang()=="English")
 	$fieldToolTipsnotes["English"]["StartDate"] = "";
 	$placeHoldersnotes["English"]["StartDate"] = "";
 	$fieldLabelsnotes["English"]["EndDate"] = "End Date";
-	$fieldToolTipsnotes["English"]["EndDate"] = "Can be an Expiry Date";
+	$fieldToolTipsnotes["English"]["EndDate"] = "";
 	$placeHoldersnotes["English"]["EndDate"] = "";
 	$fieldLabelsnotes["English"]["Remarks"] = "Remarks";
 	$fieldToolTipsnotes["English"]["Remarks"] = "";
 	$placeHoldersnotes["English"]["Remarks"] = "";
-	$fieldLabelsnotes["English"]["Encodedby"] = "Encodedby";
+	$fieldLabelsnotes["English"]["Encodedby"] = "Encoded by";
 	$fieldToolTipsnotes["English"]["Encodedby"] = "";
 	$placeHoldersnotes["English"]["Encodedby"] = "";
 	$fieldLabelsnotes["English"]["EmployeeID"] = "Employee ID";
@@ -54,17 +54,17 @@ if(mlang_getcurrentlang()=="English")
 	$fieldToolTipsnotes["English"]["Status"] = "";
 	$placeHoldersnotes["English"]["Status"] = "";
 	$fieldLabelsnotes["English"]["NotifyDays"] = "Notify Days";
-	$fieldToolTipsnotes["English"]["NotifyDays"] = "No. of Days to notify";
+	$fieldToolTipsnotes["English"]["NotifyDays"] = "";
 	$placeHoldersnotes["English"]["NotifyDays"] = "";
+	$fieldLabelsnotes["English"]["Closed"] = "Closed";
+	$fieldToolTipsnotes["English"]["Closed"] = "";
+	$placeHoldersnotes["English"]["Closed"] = "";
 	$fieldLabelsnotes["English"]["NotifyDaysLeft"] = "Notify Days Left";
 	$fieldToolTipsnotes["English"]["NotifyDaysLeft"] = "";
 	$placeHoldersnotes["English"]["NotifyDaysLeft"] = "";
 	$fieldLabelsnotes["English"]["DaysLeft"] = "Days Left";
 	$fieldToolTipsnotes["English"]["DaysLeft"] = "";
 	$placeHoldersnotes["English"]["DaysLeft"] = "";
-	$fieldLabelsnotes["English"]["Closed"] = "Closed";
-	$fieldToolTipsnotes["English"]["Closed"] = "Check to Stop Monitoring";
-	$placeHoldersnotes["English"]["Closed"] = "";
 	if (count($fieldToolTipsnotes["English"]))
 		$tdatanotes[".isUseToolTips"] = true;
 }
@@ -107,15 +107,15 @@ if(mlang_getcurrentlang()=="")
 	$fieldLabelsnotes[""]["NotifyDays"] = "Notify Days";
 	$fieldToolTipsnotes[""]["NotifyDays"] = "";
 	$placeHoldersnotes[""]["NotifyDays"] = "";
+	$fieldLabelsnotes[""]["Closed"] = "Closed";
+	$fieldToolTipsnotes[""]["Closed"] = "";
+	$placeHoldersnotes[""]["Closed"] = "";
 	$fieldLabelsnotes[""]["NotifyDaysLeft"] = "Notify Days Left";
 	$fieldToolTipsnotes[""]["NotifyDaysLeft"] = "";
 	$placeHoldersnotes[""]["NotifyDaysLeft"] = "";
 	$fieldLabelsnotes[""]["DaysLeft"] = "Days Left";
 	$fieldToolTipsnotes[""]["DaysLeft"] = "";
 	$placeHoldersnotes[""]["DaysLeft"] = "";
-	$fieldLabelsnotes[""]["Closed"] = "Closed";
-	$fieldToolTipsnotes[""]["Closed"] = "";
-	$placeHoldersnotes[""]["Closed"] = "";
 	if (count($fieldToolTipsnotes[""]))
 		$tdatanotes[".isUseToolTips"] = true;
 }
@@ -160,12 +160,12 @@ $tdatanotes[".listAjax"] = false;
 $tdatanotes[".edit"] = true;
 $tdatanotes[".afterEditAction"] = 0;
 $tdatanotes[".closePopupAfterEdit"] = 1;
-$tdatanotes[".afterEditActionDetTable"] = "Detail tables not found!";
+$tdatanotes[".afterEditActionDetTable"] = "notestatus";
 
 $tdatanotes[".add"] = true;
 $tdatanotes[".afterAddAction"] = 0;
 $tdatanotes[".closePopupAfterAdd"] = 1;
-$tdatanotes[".afterAddActionDetTable"] = "Detail tables not found!";
+$tdatanotes[".afterAddActionDetTable"] = "notestatus";
 
 $tdatanotes[".list"] = true;
 
@@ -213,21 +213,20 @@ $tdatanotes[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
-																				
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
 
 $tdatanotes[".ajaxCodeSnippetAdded"] = false;
 
-$tdatanotes[".buttonsAdded"] = true;
+$tdatanotes[".buttonsAdded"] = false;
 
-$tdatanotes[".addPageEvents"] = true;
+$tdatanotes[".addPageEvents"] = false;
 
 // use timepicker for search panel
 $tdatanotes[".isUseTimeForSearch"] = false;
 
 
 
-$tdatanotes[".badgeColor"] = "e8926f";
+$tdatanotes[".badgeColor"] = "A9A9A9";
 
 
 $tdatanotes[".allSearchFields"] = array();
@@ -310,6 +309,12 @@ $tdatanotes[".listGridLayout"] = 3;
 
 // print page pdf
 
+$tdatanotes[".totalsFields"] = array();
+$tdatanotes[".totalsFields"][] = array(
+	"fName" => "NID",
+	"numRows" => 0,
+	"totalsType" => "COUNT",
+	"viewFormat" => '');
 
 $tdatanotes[".pageSize"] = 20;
 
@@ -317,18 +322,33 @@ $tdatanotes[".warnLeavingPages"] = true;
 
 
 
-$tstrOrderBy = "";
+$tstrOrderBy = "ORDER BY noteage2.NotifyDaysLeft DESC, noteage2.DaysLeft DESC";
 if(strlen($tstrOrderBy) && strtolower(substr($tstrOrderBy,0,8))!="order by")
 	$tstrOrderBy = "order by ".$tstrOrderBy;
 $tdatanotes[".strOrderBy"] = $tstrOrderBy;
 
 $tdatanotes[".orderindexes"] = array();
+	$tdatanotes[".orderindexes"][] = array(13, (0 ? "ASC" : "DESC"), "noteage2.NotifyDaysLeft");
+
+	$tdatanotes[".orderindexes"][] = array(14, (0 ? "ASC" : "DESC"), "noteage2.DaysLeft");
+
 
 $tdatanotes[".sqlHead"] = "SELECT notes.NID,  notes.CreatedDate,  notes.NoteType,  notes.StartDate,  notes.EndDate,  notes.Remarks,  notes.Encodedby,  notes.EmployeeID,  notes.UploadFile,  notes.Status,  notes.NotifyDays,  notes.Closed,  noteage2.NotifyDaysLeft,  noteage2.DaysLeft";
 $tdatanotes[".sqlFrom"] = "FROM notes  INNER JOIN noteage2 ON notes.NID = noteage2.NID";
 $tdatanotes[".sqlWhereExpr"] = "";
 $tdatanotes[".sqlTail"] = "";
 
+//fill array of tabs for list page
+$arrGridTabs = array();
+$arrGridTabs[] = array(
+	'tabId' => "",
+	'name' => "All data",
+	'nameType' => 'Text',
+	'where' => "",	
+	'showRowCount' => 0,
+	'hideEmpty' => 0,	
+);				  
+$tdatanotes[".arrGridTabs"] = $arrGridTabs;
 
 
 
@@ -711,7 +731,7 @@ $tdatanotes[".printFields"][] = "Encodedby";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "");
+	$vdata = array("ViewFormat" => "Short Date");
 
 	
 	
@@ -743,8 +763,7 @@ $tdatanotes[".printFields"][] = "Encodedby";
 	
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 			$edata["acceptFileTypes"] = ".+$";
@@ -763,7 +782,7 @@ $tdatanotes[".printFields"][] = "Encodedby";
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-							
+	
 	
 	//	End validation
 
@@ -1586,7 +1605,7 @@ $tdatanotes[".printFields"][] = "Encodedby";
 	$edata["LookupTable"] = "demo_user";
 		$edata["autoCompleteFieldsOnEdit"] = 0;
 	$edata["autoCompleteFields"] = array();
-		$edata["LCType"] = 0;
+		$edata["LCType"] = 2;
 
 	
 		
@@ -1606,8 +1625,7 @@ $tdatanotes[".printFields"][] = "Encodedby";
 
 	
 	
-		$edata["SelectSize"] = 1;
-
+	
 // End Lookup Settings
 
 
@@ -1761,7 +1779,7 @@ $tdatanotes[".printFields"][] = "Encodedby";
 						$edata["acceptFileTypes"] .= "|txt";
 		$edata["acceptFileTypes"] = "(".$edata["acceptFileTypes"].")$";
 
-		$edata["maxNumberOfFiles"] = 1;
+		$edata["maxNumberOfFiles"] = 5;
 
 		$edata["maxFileSize"] = 8000;
 
@@ -1892,7 +1910,7 @@ $tdatanotes[".printFields"][] = "Encodedby";
 	$edata["LookupTable"] = "notestatuses";
 		$edata["autoCompleteFieldsOnEdit"] = 0;
 	$edata["autoCompleteFields"] = array();
-		$edata["LCType"] = 0;
+		$edata["LCType"] = 2;
 
 	
 		
@@ -1913,8 +1931,7 @@ $tdatanotes[".printFields"][] = "Encodedby";
 
 	
 	
-		$edata["SelectSize"] = 1;
-
+	
 // End Lookup Settings
 
 
@@ -2583,7 +2600,7 @@ $proto0["m_strHead"] = "SELECT";
 $proto0["m_strFieldList"] = "notes.NID,  notes.CreatedDate,  notes.NoteType,  notes.StartDate,  notes.EndDate,  notes.Remarks,  notes.Encodedby,  notes.EmployeeID,  notes.UploadFile,  notes.Status,  notes.NotifyDays,  notes.Closed,  noteage2.NotifyDaysLeft,  noteage2.DaysLeft";
 $proto0["m_strFrom"] = "FROM notes  INNER JOIN noteage2 ON notes.NID = noteage2.NID";
 $proto0["m_strWhere"] = "";
-$proto0["m_strOrderBy"] = "";
+$proto0["m_strOrderBy"] = "ORDER BY noteage2.NotifyDaysLeft DESC, noteage2.DaysLeft DESC";
 	
 		;
 			$proto0["cipherer"] = null;
@@ -2899,6 +2916,32 @@ $obj = new SQLFromListItem($proto38);
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
 $proto0["m_orderby"] = array();
+												$proto42=array();
+						$obj = new SQLField(array(
+	"m_strName" => "NotifyDaysLeft",
+	"m_strTable" => "noteage2",
+	"m_srcTableName" => "notes"
+));
+
+$proto42["m_column"]=$obj;
+$proto42["m_bAsc"] = 0;
+$proto42["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto42);
+
+$proto0["m_orderby"][]=$obj;					
+												$proto44=array();
+						$obj = new SQLField(array(
+	"m_strName" => "DaysLeft",
+	"m_strTable" => "noteage2",
+	"m_srcTableName" => "notes"
+));
+
+$proto44["m_column"]=$obj;
+$proto44["m_bAsc"] = 0;
+$proto44["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto44);
+
+$proto0["m_orderby"][]=$obj;					
 $proto0["m_srcTableName"]="notes";		
 $obj = new SQLQuery($proto0);
 

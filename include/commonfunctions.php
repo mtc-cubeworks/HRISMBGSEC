@@ -525,13 +525,69 @@ function checkTableName($shortTName, $type=false)
 		return true;
 	if ("indscheduleemp" == $shortTName && ($type===false || ($type!==false && $type == 1)))
 		return true;
-	if ("notes" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+	if ("payslipposted" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
-	if ("notetypes" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+	if ("earningsposted" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("notes" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
 	if ("notestatus" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
 	if ("notestatuses" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("notetypes" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("filelogglobal" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("mispunched" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("Dashboard" == $shortTName && ($type===false || ($type!==false && $type == 4)))
+		return true;
+	if ("dashrange" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("zleavetypes_Chart" == $shortTName && ($type===false || ($type!==false && $type == 3)))
+		return true;
+	if ("zotdept_Chart" == $shortTName && ($type===false || ($type!==false && $type == 3)))
+		return true;
+	if ("zotdiv_Chart" == $shortTName && ($type===false || ($type!==false && $type == 3)))
+		return true;
+	if ("zots" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("zots_Chart" == $shortTName && ($type===false || ($type!==false && $type == 3)))
+		return true;
+	if ("zresigns_Chart" == $shortTName && ($type===false || ($type!==false && $type == 3)))
+		return true;
+	if ("attrition_Chart" == $shortTName && ($type===false || ($type!==false && $type == 3)))
+		return true;
+	if ("leavestoday" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("latesonrange" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("leavesonrange" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("absentonrange" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("selectemployee" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("demo_user11" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
+	if ("demo_useractive" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
+	if ("notes1" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
+	if ("filelogglobal1" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
+	if ("memo" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("dtrcard" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("dtrcardhead" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("dtrcardhead1" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
+	if ("dtrcard1" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
+	if ("payslipmain" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
 	return false;
 }
@@ -1222,15 +1278,20 @@ function GetTablesList($pdfMode = false)
 	{
 		$arr[]="indscheduleemp";
 	}
+	$strPerm = GetUserPermissions("payslipposted");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="payslipposted";
+	}
+	$strPerm = GetUserPermissions("earningsposted");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="earningsposted";
+	}
 	$strPerm = GetUserPermissions("notes");
 	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
 	{
 		$arr[]="notes";
-	}
-	$strPerm = GetUserPermissions("notetypes");
-	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
-	{
-		$arr[]="notetypes";
 	}
 	$strPerm = GetUserPermissions("notestatus");
 	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
@@ -1241,6 +1302,141 @@ function GetTablesList($pdfMode = false)
 	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
 	{
 		$arr[]="notestatuses";
+	}
+	$strPerm = GetUserPermissions("notetypes");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="notetypes";
+	}
+	$strPerm = GetUserPermissions("filelogglobal");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="filelogglobal";
+	}
+	$strPerm = GetUserPermissions("mispunched");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="mispunched";
+	}
+	$strPerm = GetUserPermissions("Dashboard");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="Dashboard";
+	}
+	$strPerm = GetUserPermissions("dashrange");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="dashrange";
+	}
+	$strPerm = GetUserPermissions("zleavetypes Chart");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="zleavetypes Chart";
+	}
+	$strPerm = GetUserPermissions("zotdept Chart");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="zotdept Chart";
+	}
+	$strPerm = GetUserPermissions("zotdiv Chart");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="zotdiv Chart";
+	}
+	$strPerm = GetUserPermissions("zots");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="zots";
+	}
+	$strPerm = GetUserPermissions("zots Chart");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="zots Chart";
+	}
+	$strPerm = GetUserPermissions("zresigns Chart");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="zresigns Chart";
+	}
+	$strPerm = GetUserPermissions("attrition Chart");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="attrition Chart";
+	}
+	$strPerm = GetUserPermissions("leavestoday");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="leavestoday";
+	}
+	$strPerm = GetUserPermissions("latesonrange");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="latesonrange";
+	}
+	$strPerm = GetUserPermissions("leavesonrange");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="leavesonrange";
+	}
+	$strPerm = GetUserPermissions("absentonrange");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="absentonrange";
+	}
+	$strPerm = GetUserPermissions("selectemployee");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="selectemployee";
+	}
+	$strPerm = GetUserPermissions("demo_user11");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="demo_user11";
+	}
+	$strPerm = GetUserPermissions("demo_useractive");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="demo_useractive";
+	}
+	$strPerm = GetUserPermissions("notes1");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="notes1";
+	}
+	$strPerm = GetUserPermissions("filelogglobal1");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="filelogglobal1";
+	}
+	$strPerm = GetUserPermissions("memo");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="memo";
+	}
+	$strPerm = GetUserPermissions("dtrcard");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="dtrcard";
+	}
+	$strPerm = GetUserPermissions("dtrcardhead");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="dtrcardhead";
+	}
+	$strPerm = GetUserPermissions("dtrcardhead1");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="dtrcardhead1";
+	}
+	$strPerm = GetUserPermissions("dtrcard1");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="dtrcard1";
+	}
+	$strPerm = GetUserPermissions("payslipmain");
+	if(strpos($strPerm, "P")!==false || ($pdfMode && strpos($strPerm, "S")!==false))
+	{
+		$arr[]="payslipmain";
 	}
 	return $arr;
 }
@@ -1379,10 +1575,38 @@ function GetTablesListWithoutSecurity()
 	$arr[]="holidaysdefault";
 	$arr[]="holidayupdate";
 	$arr[]="indscheduleemp";
+	$arr[]="payslipposted";
+	$arr[]="earningsposted";
 	$arr[]="notes";
-	$arr[]="notetypes";
 	$arr[]="notestatus";
 	$arr[]="notestatuses";
+	$arr[]="notetypes";
+	$arr[]="filelogglobal";
+	$arr[]="mispunched";
+	$arr[]="Dashboard";
+	$arr[]="dashrange";
+	$arr[]="zleavetypes Chart";
+	$arr[]="zotdept Chart";
+	$arr[]="zotdiv Chart";
+	$arr[]="zots";
+	$arr[]="zots Chart";
+	$arr[]="zresigns Chart";
+	$arr[]="attrition Chart";
+	$arr[]="leavestoday";
+	$arr[]="latesonrange";
+	$arr[]="leavesonrange";
+	$arr[]="absentonrange";
+	$arr[]="selectemployee";
+	$arr[]="demo_user11";
+	$arr[]="demo_useractive";
+	$arr[]="notes1";
+	$arr[]="filelogglobal1";
+	$arr[]="memo";
+	$arr[]="dtrcard";
+	$arr[]="dtrcardhead";
+	$arr[]="dtrcardhead1";
+	$arr[]="dtrcard1";
+	$arr[]="payslipmain";
 	return $arr;
 }
 
@@ -1426,6 +1650,18 @@ function GetFullFieldName($field, $table = "", $addAs = true, $connection = null
  */
 function GetChartType($shorttable)
 {
+	if($shorttable=="zleavetypes_Chart")
+		return "2DDoughnut";
+	if($shorttable=="zotdept_Chart")
+		return "2DDoughnut";
+	if($shorttable=="zotdiv_Chart")
+		return "2DDoughnut";
+	if($shorttable=="zots_Chart")
+		return "2DDoughnut";
+	if($shorttable=="zresigns_Chart")
+		return "Gauge";
+	if($shorttable=="attrition_Chart")
+		return "Gauge";
 	return "";
 }
 
@@ -2255,7 +2491,6 @@ function SetAuthSessionData($pUsername, &$data, $fromFacebook, $password, &$page
 		$_SESSION["_filelog_OwnerID"] = $data["EmployeeID"];
 		$_SESSION["_filelog1_OwnerID"] = $data["EmployeeID"];
 		$_SESSION["_filelog2_OwnerID"] = $data["EmployeeID"];
-		$_SESSION["_filelog3_OwnerID"] = $data["EmployeeID"];
 		$_SESSION["_leaveremarks_OwnerID"] = $data["LogID"];
 		$_SESSION["_overtimefileapp_OwnerID"] = $data["EmployeeID"];
 		$_SESSION["_overtimefileapp2_OwnerID"] = $data["EmployeeID"];
@@ -2265,6 +2500,9 @@ function SetAuthSessionData($pUsername, &$data, $fromFacebook, $password, &$page
 		$_SESSION["_loanbalnew51_OwnerID"] = $data["EmployeeID"];
 		$_SESSION["_notes_OwnerID"] = $data["LogID"];
 		$_SESSION["_notestatus_OwnerID"] = $data["LogID"];
+		$_SESSION["_notes1_OwnerID"] = $data["LogID"];
+		$_SESSION["_dtrcardhead1_OwnerID"] = $data["EmployeeID"];
+		$_SESSION["_dtrcard1_OwnerID"] = $data["EmployeeID"];
 
 	$_SESSION["UserData"] = $data;
 	
@@ -2357,12 +2595,6 @@ function CheckSecurity($strValue, $strAction, $table = "")
 		{
 
 				if(( $strAction=="Edit" || $strAction=="Delete") && !($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
-				return false;
-		}
-		if($table=="indschedrange")
-		{
-
-				if(!($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
 				return false;
 		}
 		if($table=="empdtr")
@@ -2477,6 +2709,18 @@ function CheckSecurity($strValue, $strAction, $table = "")
 		{
 
 				if(( $strAction=="Edit" || $strAction=="Delete") && !($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
+				return false;
+		}
+		if($table=="dtrcardhead1")
+		{
+
+				if(!($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
+				return false;
+		}
+		if($table=="dtrcard1")
+		{
+
+				if(!($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
 				return false;
 		}
 	}
@@ -2575,10 +2819,6 @@ function SecuritySQL($strAction, $table="", $strPerm="")
 				if($strAction == "Edit" || $strAction == "Delete")
 				$ret=GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
 		}
-		if($table=="indschedrange")
-		{
-				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
-		}
 		if($table=="empdtr")
 		{
 				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
@@ -2656,6 +2896,14 @@ function SecuritySQL($strAction, $table="", $strPerm="")
 		{
 				if($strAction == "Edit" || $strAction == "Delete")
 				$ret=GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
+		}
+		if($table=="dtrcardhead1")
+		{
+				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
+		}
+		if($table=="dtrcard1")
+		{
+				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
 		}
 	}
 

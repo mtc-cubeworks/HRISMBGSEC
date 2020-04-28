@@ -1784,6 +1784,10 @@ function GetDefaultValue($field, $ptype, $table="")
 	{
 		return now();
 	}
+				if($table=="filelog" && $field=="log_time")
+	{
+		return now();
+	}
 				if($table=="filelog" && $field=="data")
 	{
 		return "Manual Entry";
@@ -1935,6 +1939,50 @@ function GetDefaultValue($field, $ptype, $table="")
 				if($table=="notestatus" && $field=="CreatedDate")
 	{
 		return now();
+	}
+				if($table=="demo_user11" && $field=="BasicMonthlyPay")
+	{
+		return 0;
+	}
+				if($table=="demo_user11" && $field=="BasicDailyPay")
+	{
+		return 0;
+	}
+				if($table=="demo_user11" && $field=="DateCreated")
+	{
+		return now();
+	}
+				if($table=="demo_user11" && $field=="DeMinimis")
+	{
+		return 0;
+	}
+				if($table=="demo_useractive" && $field=="AllowableSickLeave")
+	{
+		return 0;
+	}
+				if($table=="demo_useractive" && $field=="AllowableVacationLeave")
+	{
+		return 0;
+	}
+				if($table=="demo_useractive" && $field=="AllowableEmergencyLeave")
+	{
+		return 0;
+	}
+				if($table=="demo_useractive" && $field=="AllowablePaternityLeave")
+	{
+		return 0;
+	}
+				if($table=="demo_useractive" && $field=="DateCreated")
+	{
+		return now();
+	}
+				if($table=="notes1" && $field=="CreatedDate")
+	{
+		return now();
+	}
+				if($table=="memo" && $field=="PreparedBy")
+	{
+		return $_SESSION["loginID"];
 	}
 	return "";
 }

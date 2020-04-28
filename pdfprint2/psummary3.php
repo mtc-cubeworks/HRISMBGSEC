@@ -3,7 +3,7 @@ require('fpdf17/fpdf.php');
 
 //db connection
 $con = mysqli_connect('localhost','badz','Madzilla101');
-mysqli_select_db($con,'payrollflexo');
+mysqli_select_db($con,'mgbsec');
 
 //get invoices data
 
@@ -18,11 +18,11 @@ $pdf->AliasNbPages();
 
 
 $qtotal = mysqli_query($con,"select * from bankregsum
-	where ToDate = '".$_GET['ps1']."' AND Employer = '".$_GET['em1']."'");
+	where ToDate = '".$_GET['ps1']."' AND Division = '".$_GET['dv1']."'  AND WageType = '".$_GET['wt1']."' AND Employer = '".$_GET['em1']."'");
 	
 	
 $qgrp = mysqli_query($con,"select * from bankregsumgrp
-	where ToDate = '".$_GET['ps1']."' AND Employer = '".$_GET['em1']."'");
+	where ToDate = '".$_GET['ps1']."' AND Division = '".$_GET['dv1']."'  AND WageType = '".$_GET['wt1']."' AND Employer = '".$_GET['em1']."'");
 
 while($qt= mysqli_fetch_array($qtotal)){
 $pdf->SetFont('Arial','B',10);
@@ -94,7 +94,7 @@ $cnt=1;
 $query = mysqli_query($con,"select * from bankreg
 	
 	
-	where ToDate = '".$_GET['ps1']."' AND Employer = '".$_GET['em1']."' AND Bank='".$qsub['Bank']."'");
+	where ToDate = '".$_GET['ps1']."' AND Division = '".$_GET['dv1']."'  AND WageType = '".$_GET['wt1']."' AND Employer = '".$_GET['em1']."' AND Bank='".$qsub['Bank']."'");
 
 while($invoice = mysqli_fetch_array($query )){
 

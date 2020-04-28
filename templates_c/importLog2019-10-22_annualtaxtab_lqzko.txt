@@ -1,6 +1,0 @@
-Import into annualtaxtab
-10/22/2019 8:54:45 AM
-
-6 out of 6 records processed successfully.
-6 records added.
-0 records updated.

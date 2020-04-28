@@ -104,7 +104,7 @@ $tdatalatepenalty[".listAjax"] = false;
 	$tdatalatepenalty[".locking"] = false;
 
 $tdatalatepenalty[".edit"] = true;
-$tdatalatepenalty[".afterEditAction"] = 0;
+$tdatalatepenalty[".afterEditAction"] = 1;
 $tdatalatepenalty[".closePopupAfterEdit"] = 1;
 $tdatalatepenalty[".afterEditActionDetTable"] = "";
 
@@ -154,7 +154,7 @@ $tdatalatepenalty[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																							
+																																																																																																																																																																																																																																																																																																																														
 
 $tdatalatepenalty[".ajaxCodeSnippetAdded"] = false;
 

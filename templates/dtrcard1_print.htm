@@ -1,0 +1,459 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_pdf}
+<div {$pdf_chiddenattr} data-pageid="{$pageid}" data-container="pdf" class="   col-md-12 "> 
+
+{BEGIN printbuttons}
+
+{END printbuttons}
+
+
+
+</div>
+{END container_pdf}
+
+
+
+{BEGIN container_master}
+<div {$master_chiddenattr} data-pageid="{$pageid}" data-container="master" class="    "> 
+
+{BEGIN mastertable_block}
+<div class="panel panel-info table-panel">
+	<div class="panel-heading">
+		{$master_heading}
+	</div>
+	<div class="panel-body">
+		{$showmasterfile}
+		
+	</div>
+</div>
+
+{END mastertable_block}
+
+
+
+</div>
+{END container_master}
+
+
+
+{BEGIN container_pageheader}
+<div {$pageheader_chiddenattr} data-pageid="{$pageid}" data-container="pageheader" class="    "> 
+
+{BEGIN printheader}
+	<h2 {$printheader_hiddenattr} data-pageid="{$pageid}" data-brick="printheader" >{$pagetitlelabel dtrcard1 print}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END printheader}
+
+
+{BEGIN page_number}
+<span>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></span>
+{END page_number}
+
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="table table-bordered rp-maintable" {$printgrid_hiddenattr} data-pageid="{$pageid}" data-brick="printgrid" >
+	<thead>
+	{BEGIN grid_header}
+		<tr class="{$gridHeader_class}" >
+		{BEGIN record_header}
+			{BEGIN SDate_fieldheadercolumn}
+			<th class="{$SDate_class}" {$SDate_style}  data-field="SDate">
+				{$label dtrcard1 SDate}
+			</th>
+			{END SDate_fieldheadercolumn}
+			{BEGIN DayIs_fieldheadercolumn}
+			<th class="{$DayIs_class}" {$DayIs_style}  data-field="DayIs">
+				{$label dtrcard1 DayIs}
+			</th>
+			{END DayIs_fieldheadercolumn}
+			{BEGIN STimeIn_fieldheadercolumn}
+			<th class="{$STimeIn_class}" {$STimeIn_style}  data-field="STimeIn">
+				{$label dtrcard1 STimeIn}
+			</th>
+			{END STimeIn_fieldheadercolumn}
+			{BEGIN STimeOut_fieldheadercolumn}
+			<th class="{$STimeOut_class}" {$STimeOut_style}  data-field="STimeOut">
+				{$label dtrcard1 STimeOut}
+			</th>
+			{END STimeOut_fieldheadercolumn}
+			{BEGIN TimeIn_fieldheadercolumn}
+			<th class="{$TimeIn_class}" {$TimeIn_style}  data-field="TimeIn">
+				{$label dtrcard1 TimeIn}
+			</th>
+			{END TimeIn_fieldheadercolumn}
+			{BEGIN TimeOut_fieldheadercolumn}
+			<th class="{$TimeOut_class}" {$TimeOut_style}  data-field="TimeOut">
+				{$label dtrcard1 TimeOut}
+			</th>
+			{END TimeOut_fieldheadercolumn}
+			{BEGIN Mispunched_fieldheadercolumn}
+			<th class="{$Mispunched_class}" {$Mispunched_style}  data-field="Mispunched">
+				{$label dtrcard1 Mispunched}
+			</th>
+			{END Mispunched_fieldheadercolumn}
+			{BEGIN Late_fieldheadercolumn}
+			<th class="{$Late_class}" {$Late_style}  data-field="Late">
+				{$label dtrcard1 Late}
+			</th>
+			{END Late_fieldheadercolumn}
+			{BEGIN UTime_fieldheadercolumn}
+			<th class="{$UTime_class}" {$UTime_style}  data-field="UTime">
+				{$label dtrcard1 UTime}
+			</th>
+			{END UTime_fieldheadercolumn}
+			{BEGIN Absent_fieldheadercolumn}
+			<th class="{$Absent_class}" {$Absent_style}  data-field="Absent">
+				{$label dtrcard1 Absent}
+			</th>
+			{END Absent_fieldheadercolumn}
+			{BEGIN OTmins_fieldheadercolumn}
+			<th class="{$OTmins_class}" {$OTmins_style}  data-field="OTmins">
+				{$label dtrcard1 OTmins}
+			</th>
+			{END OTmins_fieldheadercolumn}
+			{BEGIN RestDay_fieldheadercolumn}
+			<th class="{$RestDay_class}" {$RestDay_style}  data-field="RestDay">
+				{$label dtrcard1 RestDay}
+			</th>
+			{END RestDay_fieldheadercolumn}
+			{BEGIN HolidayType_fieldheadercolumn}
+			<th class="{$HolidayType_class}" {$HolidayType_style}  data-field="HolidayType">
+				{$label dtrcard1 HolidayType}
+			</th>
+			{END HolidayType_fieldheadercolumn}
+			{BEGIN VLDay_fieldheadercolumn}
+			<th class="{$VLDay_class}" {$VLDay_style}  data-field="VLDay">
+				{$label dtrcard1 VLDay}
+			</th>
+			{END VLDay_fieldheadercolumn}
+			{BEGIN SLDay_fieldheadercolumn}
+			<th class="{$SLDay_class}" {$SLDay_style}  data-field="SLDay">
+				{$label dtrcard1 SLDay}
+			</th>
+			{END SLDay_fieldheadercolumn}
+			{BEGIN ELDay_fieldheadercolumn}
+			<th class="{$ELDay_class}" {$ELDay_style}  data-field="ELDay">
+				{$label dtrcard1 ELDay}
+			</th>
+			{END ELDay_fieldheadercolumn}
+			{BEGIN PLDay_fieldheadercolumn}
+			<th class="{$PLDay_class}" {$PLDay_style}  data-field="PLDay">
+				{$label dtrcard1 PLDay}
+			</th>
+			{END PLDay_fieldheadercolumn}
+			{BEGIN OBDay_fieldheadercolumn}
+			<th class="{$OBDay_class}" {$OBDay_style}  data-field="OBDay">
+				{$label dtrcard1 OBDay}
+			</th>
+			{END OBDay_fieldheadercolumn}
+			{BEGIN endrecordheader_block}
+			<th class="rnr-cs">&nbsp;</th>
+			{END endrecordheader_block}
+		{END record_header}
+		</tr>
+	{END grid_header}
+	</thead>
+	
+	<tbody>	
+	{BEGIN grid_row}
+		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+			{BEGIN SDate_fieldcolumn}
+			<td  class="{$SDate_class}" {$SDate_style} {$recordattrs}>
+				{$SDate_value}
+			</td>
+			{END SDate_fieldcolumn}
+			{BEGIN DayIs_fieldcolumn}
+			<td  class="{$DayIs_class}" {$DayIs_style} {$recordattrs}>
+				{$DayIs_value}
+			</td>
+			{END DayIs_fieldcolumn}
+			{BEGIN STimeIn_fieldcolumn}
+			<td  class="{$STimeIn_class}" {$STimeIn_style} {$recordattrs}>
+				{$STimeIn_value}
+			</td>
+			{END STimeIn_fieldcolumn}
+			{BEGIN STimeOut_fieldcolumn}
+			<td  class="{$STimeOut_class}" {$STimeOut_style} {$recordattrs}>
+				{$STimeOut_value}
+			</td>
+			{END STimeOut_fieldcolumn}
+			{BEGIN TimeIn_fieldcolumn}
+			<td  class="{$TimeIn_class}" {$TimeIn_style} {$recordattrs}>
+				{$TimeIn_value}
+			</td>
+			{END TimeIn_fieldcolumn}
+			{BEGIN TimeOut_fieldcolumn}
+			<td  class="{$TimeOut_class}" {$TimeOut_style} {$recordattrs}>
+				{$TimeOut_value}
+			</td>
+			{END TimeOut_fieldcolumn}
+			{BEGIN Mispunched_fieldcolumn}
+			<td  class="{$Mispunched_class}" {$Mispunched_style} {$recordattrs}>
+				{$Mispunched_value}
+			</td>
+			{END Mispunched_fieldcolumn}
+			{BEGIN Late_fieldcolumn}
+			<td  class="{$Late_class}" {$Late_style} {$recordattrs}>
+				{$Late_value}
+			</td>
+			{END Late_fieldcolumn}
+			{BEGIN UTime_fieldcolumn}
+			<td  class="{$UTime_class}" {$UTime_style} {$recordattrs}>
+				{$UTime_value}
+			</td>
+			{END UTime_fieldcolumn}
+			{BEGIN Absent_fieldcolumn}
+			<td  class="{$Absent_class}" {$Absent_style} {$recordattrs}>
+				{$Absent_value}
+			</td>
+			{END Absent_fieldcolumn}
+			{BEGIN OTmins_fieldcolumn}
+			<td  class="{$OTmins_class}" {$OTmins_style} {$recordattrs}>
+				{$OTmins_value}
+			</td>
+			{END OTmins_fieldcolumn}
+			{BEGIN RestDay_fieldcolumn}
+			<td  class="{$RestDay_class}" {$RestDay_style} {$recordattrs}>
+				{$RestDay_value}
+			</td>
+			{END RestDay_fieldcolumn}
+			{BEGIN HolidayType_fieldcolumn}
+			<td  class="{$HolidayType_class}" {$HolidayType_style} {$recordattrs}>
+				{$HolidayType_value}
+			</td>
+			{END HolidayType_fieldcolumn}
+			{BEGIN VLDay_fieldcolumn}
+			<td  class="{$VLDay_class}" {$VLDay_style} {$recordattrs}>
+				{$VLDay_value}
+			</td>
+			{END VLDay_fieldcolumn}
+			{BEGIN SLDay_fieldcolumn}
+			<td  class="{$SLDay_class}" {$SLDay_style} {$recordattrs}>
+				{$SLDay_value}
+			</td>
+			{END SLDay_fieldcolumn}
+			{BEGIN ELDay_fieldcolumn}
+			<td  class="{$ELDay_class}" {$ELDay_style} {$recordattrs}>
+				{$ELDay_value}
+			</td>
+			{END ELDay_fieldcolumn}
+			{BEGIN PLDay_fieldcolumn}
+			<td  class="{$PLDay_class}" {$PLDay_style} {$recordattrs}>
+				{$PLDay_value}
+			</td>
+			{END PLDay_fieldcolumn}
+			{BEGIN OBDay_fieldcolumn}
+			<td  class="{$OBDay_class}" {$OBDay_style} {$recordattrs}>
+				{$OBDay_value}
+			</td>
+			{END OBDay_fieldcolumn}
+			{BEGIN endrecord_block}
+			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+			{END endrecord_block}
+		{END grid_record}
+		</tr>
+{END grid_row}
+	</tbody>
+
+{BEGIN totals_row}
+	<tfoot>
+		<tr class=" style1">
+		{BEGIN totals_record}
+			{BEGIN SDate_fieldfootercolumn}
+			<td>
+							{BEGIN SDate_showtotal}
+									Count:
+				{$SDate_total}
+				{END SDate_showtotal}
+			</td>
+			{END SDate_fieldfootercolumn}
+			{BEGIN DayIs_fieldfootercolumn}
+			<td>
+						</td>
+			{END DayIs_fieldfootercolumn}
+			{BEGIN STimeIn_fieldfootercolumn}
+			<td>
+						</td>
+			{END STimeIn_fieldfootercolumn}
+			{BEGIN STimeOut_fieldfootercolumn}
+			<td>
+						</td>
+			{END STimeOut_fieldfootercolumn}
+			{BEGIN TimeIn_fieldfootercolumn}
+			<td>
+						</td>
+			{END TimeIn_fieldfootercolumn}
+			{BEGIN TimeOut_fieldfootercolumn}
+			<td>
+						</td>
+			{END TimeOut_fieldfootercolumn}
+			{BEGIN Mispunched_fieldfootercolumn}
+			<td>
+							{BEGIN Mispunched_showtotal}
+									Count:
+				{$Mispunched_total}
+				{END Mispunched_showtotal}
+			</td>
+			{END Mispunched_fieldfootercolumn}
+			{BEGIN Late_fieldfootercolumn}
+			<td>
+							{BEGIN Late_showtotal}
+									Total:
+				{$Late_total}
+				{END Late_showtotal}
+			</td>
+			{END Late_fieldfootercolumn}
+			{BEGIN UTime_fieldfootercolumn}
+			<td>
+							{BEGIN UTime_showtotal}
+									Total:
+				{$UTime_total}
+				{END UTime_showtotal}
+			</td>
+			{END UTime_fieldfootercolumn}
+			{BEGIN Absent_fieldfootercolumn}
+			<td>
+							{BEGIN Absent_showtotal}
+									Total:
+				{$Absent_total}
+				{END Absent_showtotal}
+			</td>
+			{END Absent_fieldfootercolumn}
+			{BEGIN OTmins_fieldfootercolumn}
+			<td>
+							{BEGIN OTmins_showtotal}
+									Total:
+				{$OTmins_total}
+				{END OTmins_showtotal}
+			</td>
+			{END OTmins_fieldfootercolumn}
+			{BEGIN RestDay_fieldfootercolumn}
+			<td>
+							{BEGIN RestDay_showtotal}
+									Count:
+				{$RestDay_total}
+				{END RestDay_showtotal}
+			</td>
+			{END RestDay_fieldfootercolumn}
+			{BEGIN HolidayType_fieldfootercolumn}
+			<td>
+							{BEGIN HolidayType_showtotal}
+									Count:
+				{$HolidayType_total}
+				{END HolidayType_showtotal}
+			</td>
+			{END HolidayType_fieldfootercolumn}
+			{BEGIN VLDay_fieldfootercolumn}
+			<td>
+							{BEGIN VLDay_showtotal}
+									Total:
+				{$VLDay_total}
+				{END VLDay_showtotal}
+			</td>
+			{END VLDay_fieldfootercolumn}
+			{BEGIN SLDay_fieldfootercolumn}
+			<td>
+							{BEGIN SLDay_showtotal}
+									Total:
+				{$SLDay_total}
+				{END SLDay_showtotal}
+			</td>
+			{END SLDay_fieldfootercolumn}
+			{BEGIN ELDay_fieldfootercolumn}
+			<td>
+							{BEGIN ELDay_showtotal}
+									Total:
+				{$ELDay_total}
+				{END ELDay_showtotal}
+			</td>
+			{END ELDay_fieldfootercolumn}
+			{BEGIN PLDay_fieldfootercolumn}
+			<td>
+							{BEGIN PLDay_showtotal}
+									Total:
+				{$PLDay_total}
+				{END PLDay_showtotal}
+			</td>
+			{END PLDay_fieldfootercolumn}
+			{BEGIN OBDay_fieldfootercolumn}
+			<td>
+							{BEGIN OBDay_showtotal}
+									Total:
+				{$OBDay_total}
+				{END OBDay_showtotal}
+			</td>
+			{END OBDay_fieldfootercolumn}
+			{BEGIN endrecordtotals_block}
+			<td class="rnr-cs"></td>
+			{END endrecordtotals_block}
+		{END totals_record}
+		</tr>
+	</tfoot>
+{END totals_row}
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

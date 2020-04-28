@@ -25,6 +25,8 @@ class class_GlobalEvents extends eventsBase
 		$this->events["AfterSuccessfulLogin"]=true;
 
 
+		$this->events["ModifyMenuItem"]=true;
+
 
 //	onscreen events
 
@@ -57,6 +59,7 @@ class class_GlobalEvents extends eventsBase
 		$this->events["IsRecordEditable"]["demo_useremp"] = true;
 		$this->events["IsRecordEditable"]["payrolltab1"] = true;
 		$this->events["IsRecordEditable"]["indscheduleemp"] = true;
+		$this->events["IsRecordEditable"]["demo_useractive"] = true;
 
 		}
 
@@ -74,6 +77,8 @@ function AfterSuccessfulLogin($username, $password, &$data, &$pageObject)
 
 		  $_SESSION["loginID"] = $data["LogID"];
   $_SESSION["sect"] = $data["Section"];
+  $_SESSION["EmpoyeeI"] = $data["EmployeeID"];
+
 ;		
 } // function AfterSuccessfulLogin
 
@@ -116,6 +121,131 @@ function AfterSuccessfulLogin($username, $password, &$data, &$pageObject)
 		
 		
 		
+		
+
+		
+		
+		
+		
+		
+		
+		
+				
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+				// Menu item: Modify
+function ModifyMenuItem(&$menuItem)
+{
+
+		
+
+$title = $menuItem->getTitle();  
+  
+
+$empx=$_SESSION["EmpoyeeI"];
+$userData = Security::isAdmin();
+
+$usergr = Security::getUserGroup();
+
+
+
+if ($title=="Active Employees") {  
+    
+    $count = DBLookup("select count(EmployeeID) from demo_user where Inactive<>1");  
+    $title.="&nbsp"."<span class='badge badge-bluex'>".$count."</span>";  
+  $menuItem->setTitle($title);  
+}  
+
+
+if ($title=="Employees Alert") {  
+    
+    $count = DBLookup("select count(EmployeeID) from demo_user where BasicMonthlyPay is null and BasicDailyPay is null");  
+    $title.="&nbsp"."<span class='badge badge-bluex'>".$count."</span>";  
+  $menuItem->setTitle($title);  
+}  
+
+if ($title=="Mispunched") {  
+    
+    $count = DBLookup("select count(ScID) from mispunched where EmployeeID>0");  
+    $title.="&nbsp"."<span class='badge badge-redx'>".$count."</span>";  
+  $menuItem->setTitle($title);  
+} 
+
+
+if ($title=="Notes Alert") {  
+    
+    $count = DBLookup("select count(NID) from noteage2 where NotifyDaysLeft>(-1)");  
+    $title.="&nbsp"."<span class='badge badge-redx'>".$count."</span>";  
+  $menuItem->setTitle($title);  
+} 
+
+if ($title=="Filelog Approval (S)") {  
+    if ($userData==True or $usergr=='HR Personnel' or $usergr=='HR Manager' or $usergr=='HR Officer') {$count = DBLookup("select count(TransID2) from filelog where CheckedBy is not null and Checked is null and Approved is null and HRApproved is null"); } else {
+    $count = DBLookup("select count(TransID2) from filelog where CheckedBy is not null and Checked is null and Approved is null and HRApproved is null and CheckedBy='$empx'"); };
+    $title.="&nbsp"."<span class='badge badge-orangex'>".$count."</span>";  
+    $menuItem->setTitle($title);  
+}  
+
+if ($title=="Filelog Approval (M)") {  
+    if ($userData==True or $usergr=='HR Personnel' or $usergr=='HR Manager' or $usergr=='HR Officer') {$count = DBLookup("select count(TransID2) from filelog where ApprovedBy is not null and Approved is null and HRApproved is null"); } else {
+    $count = DBLookup("select count(TransID2) from filelog where ApprovedBy is not null and Approved is null and HRApproved is null and ApprovedBy='$empx'"); };
+    $title.="&nbsp"."<span class='badge badge-orangex'>".$count."</span>";  
+  $menuItem->setTitle($title);  
+}  
+
+if ($title=="Filelog Approval (HR)") {  
+     
+    $count = DBLookup("select count(TransID2) from filelog where HRApproved is null");  
+    $title.="&nbsp"."<span class='badge badge-orangex'>".$count."</span>";  
+  $menuItem->setTitle($title);  
+}  
+
+
+
+if ($title=="Leaves Approval (S)") {  
+   if ($userData==True or $usergr=='HR Personnel' or $usergr=='HR Manager' or $usergr=='HR Officer') {$count = DBLookup("select count(LvID) from leaves where Superior is not null and 1stApproval is null and 2ndApproval is null"); } else {
+    $count = DBLookup("select count(LvID) from leaves where Superior is not null and 1stApproval is null and 2ndApproval is null and Superior='$empx'"); };
+    $title.="&nbsp"."<span class='badge badge-orangex'>".$count."</span>";  
+  $menuItem->setTitle($title);  
+}  
+
+if ($title=="Leaves Approval (M)") {  
+    if ($userData==True or $usergr=='HR Personnel' or $usergr=='HR Manager' or $usergr=='HR Officer') {$count = DBLookup("select count(LvID) from leaves where Superior2 is not null and 2ndApproval is null"); } else {
+    $count = DBLookup("select count(LvID) from leaves where Superior2 is not null and 2ndApproval is null and Superior2='$empx'"); }; 
+    $title.="&nbsp"."<span class='badge badge-orangex'>".$count."</span>";  
+  $menuItem->setTitle($title);  
+}  
+
+
+if ($title=="Overtime Approval (S)") {  
+    if ($userData==True or $usergr=='HR Personnel' or $usergr=='HR Manager' or $usergr=='HR Officer') {$count = DBLookup("select count(ItiD) from overtimefile where Superior is not null and 1stApproval is null and 2ndApproval is null"); } else {
+    $count = DBLookup("select count(ItiD) from overtimefile where Superior is not null and 1stApproval is null and 2ndApproval is null and Superior='$empx'"); };
+    $title.="&nbsp"."<span class='badge badge-orangex'>".$count."</span>";  
+  $menuItem->setTitle($title);  
+}  
+
+if ($title=="Overtime Approval (M)") {  
+    if ($userData==True or $usergr=='HR Personnel' or $usergr=='HR Manager' or $usergr=='HR Officer') {$count = DBLookup("select count(ItiD) from overtimefile where Superior2 is not null and 2ndApproval is null"); } else {
+    $count = DBLookup("select count(ItiD) from overtimefile where Superior2 is not null and 2ndApproval is null and Superior2='$empx'"); };
+    $title.="&nbsp"."<span class='badge badge-orangex'>".$count."</span>";  
+  $menuItem->setTitle($title);  
+}  
+
+return true;
+;		
+} // function ModifyMenuItem
+
 		
 
 //	onscreen events
@@ -536,6 +666,27 @@ else
 // return false;
 //else
  return true;;
+		}
+		if($table == "demo_useractive")
+		{
+			
+
+$lk=$values["Inactive"]; 
+
+//$lk=DBLookup("SELECT Inactive FROM inventorydate WHERE IDate='$sd'");
+
+if ($lk==1)
+ return false;
+else
+ return true;
+
+
+
+
+// Place event code here.
+// Use "Add Action" button to add code snippets.
+
+//return $isEditable;;
 		}
 		return $isEditable;
 	}

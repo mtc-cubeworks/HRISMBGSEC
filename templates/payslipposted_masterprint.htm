@@ -1,0 +1,73 @@
+<div {$pageattrs}>
+
+{BEGIN container_column}
+<div class="rnr-c rnr-ch rnr-c-column">
+
+{BEGIN masterlist_title}
+<div  class="style1 rnr-bl rnr-b-masterprintheader {$brickclass_masterprintheader}"><span>{$pagetitlelabel payslipposted masterprint}</span></div>
+{END masterlist_title}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_column}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+<table {$bsmasterprintgrid_hiddenattr} data-pageid="{$pageid}" data-brick="bsmasterprintgrid" class="table rnr-b-mastergridfields rnr-gridtable" >
+		<thead>
+		<tr>
+			<th class="{$PPID_class}">{$label payslipposted PPID}</th>
+			<th class="{$BioID_class}">{$label payslipposted BioID}</th>
+			<th class="{$FullName_class}">{$label payslipposted FullName}</th>
+			<th class="{$WageType_class}">{$label payslipposted WageType}</th>
+			<th class="{$Status_class}">{$label payslipposted Status}</th>
+			<th class="{$Division_class}">{$label payslipposted Division}</th>
+			<th class="{$FromDate_class}">{$label payslipposted FromDate}</th>
+			<th class="{$ToDate_class}">{$label payslipposted ToDate}</th>
+			<th class="{$DatePrinted_class}">{$label payslipposted DatePrinted}</th>
+			<th class="{$VL_class}">{$label payslipposted VL}</th>
+			<th class="{$SL_class}">{$label payslipposted SL}</th>
+			<th class="{$EL_class}">{$label payslipposted EL}</th>
+			<th class="{$PL_class}">{$label payslipposted PL}</th>
+			<th class="{$BasicMonthly_class}">{$label payslipposted BasicMonthly}</th>
+			<th class="{$BasicDaily_class}">{$label payslipposted BasicDaily}</th>
+			<th class="{$GrossPay_class}">{$label payslipposted GrossPay}</th>
+			<th class="{$Deductions_class}">{$label payslipposted Deductions}</th>
+			<th class="{$NetPay_class}">{$label payslipposted NetPay}</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="{$PPID_class}">{$PPID_mastervalue}</td>
+			<td class="{$BioID_class}">{$BioID_mastervalue}</td>
+			<td class="{$FullName_class}">{$FullName_mastervalue}</td>
+			<td class="{$WageType_class}">{$WageType_mastervalue}</td>
+			<td class="{$Status_class}">{$Status_mastervalue}</td>
+			<td class="{$Division_class}">{$Division_mastervalue}</td>
+			<td class="{$FromDate_class}">{$FromDate_mastervalue}</td>
+			<td class="{$ToDate_class}">{$ToDate_mastervalue}</td>
+			<td class="{$DatePrinted_class}">{$DatePrinted_mastervalue}</td>
+			<td class="{$VL_class}">{$VL_mastervalue}</td>
+			<td class="{$SL_class}">{$SL_mastervalue}</td>
+			<td class="{$EL_class}">{$EL_mastervalue}</td>
+			<td class="{$PL_class}">{$PL_mastervalue}</td>
+			<td class="{$BasicMonthly_class}">{$BasicMonthly_mastervalue}</td>
+			<td class="{$BasicDaily_class}">{$BasicDaily_mastervalue}</td>
+			<td class="{$GrossPay_class}">{$GrossPay_mastervalue}</td>
+			<td class="{$Deductions_class}">{$Deductions_mastervalue}</td>
+			<td class="{$NetPay_class}">{$NetPay_mastervalue}</td>
+		</tr>
+	</tbody>
+
+</table> 
+
+
+
+
+{END container_mastergrid}
+
+</div>

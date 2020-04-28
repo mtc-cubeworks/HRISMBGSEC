@@ -86,14 +86,14 @@ $tdatanotestatuses[".listAjax"] = false;
 	$tdatanotestatuses[".locking"] = false;
 
 $tdatanotestatuses[".edit"] = true;
-$tdatanotestatuses[".afterEditAction"] = 0;
+$tdatanotestatuses[".afterEditAction"] = 1;
 $tdatanotestatuses[".closePopupAfterEdit"] = 1;
-$tdatanotestatuses[".afterEditActionDetTable"] = "Detail tables not found!";
+$tdatanotestatuses[".afterEditActionDetTable"] = "";
 
 $tdatanotestatuses[".add"] = true;
-$tdatanotestatuses[".afterAddAction"] = 0;
+$tdatanotestatuses[".afterAddAction"] = 1;
 $tdatanotestatuses[".closePopupAfterAdd"] = 1;
-$tdatanotestatuses[".afterAddActionDetTable"] = "Detail tables not found!";
+$tdatanotestatuses[".afterAddActionDetTable"] = "";
 
 $tdatanotestatuses[".list"] = true;
 
@@ -105,6 +105,7 @@ $tdatanotestatuses[".reorderRecordsByHeader"] = true;
 $tdatanotestatuses[".exportFormatting"] = 2;
 $tdatanotestatuses[".exportDelimiter"] = ",";
 		
+$tdatanotestatuses[".inlineAdd"] = true;
 $tdatanotestatuses[".view"] = true;
 
 $tdatanotestatuses[".import"] = true;
@@ -138,7 +139,7 @@ $tdatanotestatuses[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																							
+																																																																																																																																																																																																																																																																																																																														
 
 $tdatanotestatuses[".ajaxCodeSnippetAdded"] = false;
 

@@ -185,7 +185,7 @@ $tdataovertimefileapp2[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																							
+																																																																																																																																																																																																																																																																																																																														
 
 $tdataovertimefileapp2[".ajaxCodeSnippetAdded"] = false;
 
@@ -310,7 +310,7 @@ $tdataovertimefileapp2[".orderindexes"] = array();
 
 $tdataovertimefileapp2[".sqlHead"] = "SELECT ItiD,  DateCreated,  FromTime,  ToTime,  Approved,  Approvedby,  ApprovedTime,  Posted,  NoMins,  ApprovedDate,  EmployeeID,  Reason,  Superior,  Locked,  Superior2,  `1stApproval`,  `2ndApproval`,  DateOT";
 $tdataovertimefileapp2[".sqlFrom"] = "FROM overtimefile";
-$tdataovertimefileapp2[".sqlWhereExpr"] = "";
+$tdataovertimefileapp2[".sqlWhereExpr"] = "(Superior2 is not null) AND (`2ndApproval` is null)";
 $tdataovertimefileapp2[".sqlTail"] = "";
 
 
@@ -2943,7 +2943,7 @@ $tdataovertimefileapp2[".printFields"][] = "2ndApproval";
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Short Date");
+	$vdata = array("ViewFormat" => "Datetime");
 
 	
 	
@@ -3061,20 +3061,56 @@ $proto0=array();
 $proto0["m_strHead"] = "SELECT";
 $proto0["m_strFieldList"] = "ItiD,  DateCreated,  FromTime,  ToTime,  Approved,  Approvedby,  ApprovedTime,  Posted,  NoMins,  ApprovedDate,  EmployeeID,  Reason,  Superior,  Locked,  Superior2,  `1stApproval`,  `2ndApproval`,  DateOT";
 $proto0["m_strFrom"] = "FROM overtimefile";
-$proto0["m_strWhere"] = "";
+$proto0["m_strWhere"] = "(Superior2 is not null) AND (`2ndApproval` is null)";
 $proto0["m_strOrderBy"] = "ORDER BY ItiD DESC";
 	
 		;
 			$proto0["cipherer"] = null;
 $proto2=array();
-$proto2["m_sql"] = "";
-$proto2["m_uniontype"] = "SQLL_UNKNOWN";
+$proto2["m_sql"] = "(Superior2 is not null) AND (`2ndApproval` is null)";
+$proto2["m_uniontype"] = "SQLL_AND";
 	$obj = new SQLNonParsed(array(
-	"m_sql" => ""
+	"m_sql" => "(Superior2 is not null) AND (`2ndApproval` is null)"
 ));
 
 $proto2["m_column"]=$obj;
 $proto2["m_contained"] = array();
+						$proto4=array();
+$proto4["m_sql"] = "Superior2 is not null";
+$proto4["m_uniontype"] = "SQLL_UNKNOWN";
+						$obj = new SQLField(array(
+	"m_strName" => "Superior2",
+	"m_strTable" => "overtimefile",
+	"m_srcTableName" => "overtimefileapp2"
+));
+
+$proto4["m_column"]=$obj;
+$proto4["m_contained"] = array();
+$proto4["m_strCase"] = "is not null";
+$proto4["m_havingmode"] = false;
+$proto4["m_inBrackets"] = true;
+$proto4["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto4);
+
+			$proto2["m_contained"][]=$obj;
+						$proto6=array();
+$proto6["m_sql"] = "`2ndApproval` is null";
+$proto6["m_uniontype"] = "SQLL_UNKNOWN";
+						$obj = new SQLField(array(
+	"m_strName" => "2ndApproval",
+	"m_strTable" => "overtimefile",
+	"m_srcTableName" => "overtimefileapp2"
+));
+
+$proto6["m_column"]=$obj;
+$proto6["m_contained"] = array();
+$proto6["m_strCase"] = "is null";
+$proto6["m_havingmode"] = false;
+$proto6["m_inBrackets"] = true;
+$proto6["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto6);
+
+			$proto2["m_contained"][]=$obj;
 $proto2["m_strCase"] = "";
 $proto2["m_havingmode"] = false;
 $proto2["m_inBrackets"] = false;
@@ -3082,59 +3118,31 @@ $proto2["m_useAlias"] = false;
 $obj = new SQLLogicalExpr($proto2);
 
 $proto0["m_where"] = $obj;
-$proto4=array();
-$proto4["m_sql"] = "";
-$proto4["m_uniontype"] = "SQLL_UNKNOWN";
+$proto8=array();
+$proto8["m_sql"] = "";
+$proto8["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto4["m_column"]=$obj;
-$proto4["m_contained"] = array();
-$proto4["m_strCase"] = "";
-$proto4["m_havingmode"] = false;
-$proto4["m_inBrackets"] = false;
-$proto4["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto4);
+$proto8["m_column"]=$obj;
+$proto8["m_contained"] = array();
+$proto8["m_strCase"] = "";
+$proto8["m_havingmode"] = false;
+$proto8["m_inBrackets"] = false;
+$proto8["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto8);
 
 $proto0["m_having"] = $obj;
 $proto0["m_fieldlist"] = array();
-						$proto6=array();
+						$proto10=array();
 			$obj = new SQLField(array(
 	"m_strName" => "ItiD",
 	"m_strTable" => "overtimefile",
 	"m_srcTableName" => "overtimefileapp2"
 ));
 
-$proto6["m_sql"] = "ItiD";
-$proto6["m_srcTableName"] = "overtimefileapp2";
-$proto6["m_expr"]=$obj;
-$proto6["m_alias"] = "";
-$obj = new SQLFieldListItem($proto6);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto8=array();
-			$obj = new SQLField(array(
-	"m_strName" => "DateCreated",
-	"m_strTable" => "overtimefile",
-	"m_srcTableName" => "overtimefileapp2"
-));
-
-$proto8["m_sql"] = "DateCreated";
-$proto8["m_srcTableName"] = "overtimefileapp2";
-$proto8["m_expr"]=$obj;
-$proto8["m_alias"] = "";
-$obj = new SQLFieldListItem($proto8);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto10=array();
-			$obj = new SQLField(array(
-	"m_strName" => "FromTime",
-	"m_strTable" => "overtimefile",
-	"m_srcTableName" => "overtimefileapp2"
-));
-
-$proto10["m_sql"] = "FromTime";
+$proto10["m_sql"] = "ItiD";
 $proto10["m_srcTableName"] = "overtimefileapp2";
 $proto10["m_expr"]=$obj;
 $proto10["m_alias"] = "";
@@ -3143,12 +3151,12 @@ $obj = new SQLFieldListItem($proto10);
 $proto0["m_fieldlist"][]=$obj;
 						$proto12=array();
 			$obj = new SQLField(array(
-	"m_strName" => "ToTime",
+	"m_strName" => "DateCreated",
 	"m_strTable" => "overtimefile",
 	"m_srcTableName" => "overtimefileapp2"
 ));
 
-$proto12["m_sql"] = "ToTime";
+$proto12["m_sql"] = "DateCreated";
 $proto12["m_srcTableName"] = "overtimefileapp2";
 $proto12["m_expr"]=$obj;
 $proto12["m_alias"] = "";
@@ -3157,12 +3165,12 @@ $obj = new SQLFieldListItem($proto12);
 $proto0["m_fieldlist"][]=$obj;
 						$proto14=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Approved",
+	"m_strName" => "FromTime",
 	"m_strTable" => "overtimefile",
 	"m_srcTableName" => "overtimefileapp2"
 ));
 
-$proto14["m_sql"] = "Approved";
+$proto14["m_sql"] = "FromTime";
 $proto14["m_srcTableName"] = "overtimefileapp2";
 $proto14["m_expr"]=$obj;
 $proto14["m_alias"] = "";
@@ -3171,12 +3179,12 @@ $obj = new SQLFieldListItem($proto14);
 $proto0["m_fieldlist"][]=$obj;
 						$proto16=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Approvedby",
+	"m_strName" => "ToTime",
 	"m_strTable" => "overtimefile",
 	"m_srcTableName" => "overtimefileapp2"
 ));
 
-$proto16["m_sql"] = "Approvedby";
+$proto16["m_sql"] = "ToTime";
 $proto16["m_srcTableName"] = "overtimefileapp2";
 $proto16["m_expr"]=$obj;
 $proto16["m_alias"] = "";
@@ -3185,12 +3193,12 @@ $obj = new SQLFieldListItem($proto16);
 $proto0["m_fieldlist"][]=$obj;
 						$proto18=array();
 			$obj = new SQLField(array(
-	"m_strName" => "ApprovedTime",
+	"m_strName" => "Approved",
 	"m_strTable" => "overtimefile",
 	"m_srcTableName" => "overtimefileapp2"
 ));
 
-$proto18["m_sql"] = "ApprovedTime";
+$proto18["m_sql"] = "Approved";
 $proto18["m_srcTableName"] = "overtimefileapp2";
 $proto18["m_expr"]=$obj;
 $proto18["m_alias"] = "";
@@ -3199,12 +3207,12 @@ $obj = new SQLFieldListItem($proto18);
 $proto0["m_fieldlist"][]=$obj;
 						$proto20=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Posted",
+	"m_strName" => "Approvedby",
 	"m_strTable" => "overtimefile",
 	"m_srcTableName" => "overtimefileapp2"
 ));
 
-$proto20["m_sql"] = "Posted";
+$proto20["m_sql"] = "Approvedby";
 $proto20["m_srcTableName"] = "overtimefileapp2";
 $proto20["m_expr"]=$obj;
 $proto20["m_alias"] = "";
@@ -3213,12 +3221,12 @@ $obj = new SQLFieldListItem($proto20);
 $proto0["m_fieldlist"][]=$obj;
 						$proto22=array();
 			$obj = new SQLField(array(
-	"m_strName" => "NoMins",
+	"m_strName" => "ApprovedTime",
 	"m_strTable" => "overtimefile",
 	"m_srcTableName" => "overtimefileapp2"
 ));
 
-$proto22["m_sql"] = "NoMins";
+$proto22["m_sql"] = "ApprovedTime";
 $proto22["m_srcTableName"] = "overtimefileapp2";
 $proto22["m_expr"]=$obj;
 $proto22["m_alias"] = "";
@@ -3227,12 +3235,12 @@ $obj = new SQLFieldListItem($proto22);
 $proto0["m_fieldlist"][]=$obj;
 						$proto24=array();
 			$obj = new SQLField(array(
-	"m_strName" => "ApprovedDate",
+	"m_strName" => "Posted",
 	"m_strTable" => "overtimefile",
 	"m_srcTableName" => "overtimefileapp2"
 ));
 
-$proto24["m_sql"] = "ApprovedDate";
+$proto24["m_sql"] = "Posted";
 $proto24["m_srcTableName"] = "overtimefileapp2";
 $proto24["m_expr"]=$obj;
 $proto24["m_alias"] = "";
@@ -3241,12 +3249,12 @@ $obj = new SQLFieldListItem($proto24);
 $proto0["m_fieldlist"][]=$obj;
 						$proto26=array();
 			$obj = new SQLField(array(
-	"m_strName" => "EmployeeID",
+	"m_strName" => "NoMins",
 	"m_strTable" => "overtimefile",
 	"m_srcTableName" => "overtimefileapp2"
 ));
 
-$proto26["m_sql"] = "EmployeeID";
+$proto26["m_sql"] = "NoMins";
 $proto26["m_srcTableName"] = "overtimefileapp2";
 $proto26["m_expr"]=$obj;
 $proto26["m_alias"] = "";
@@ -3255,12 +3263,12 @@ $obj = new SQLFieldListItem($proto26);
 $proto0["m_fieldlist"][]=$obj;
 						$proto28=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Reason",
+	"m_strName" => "ApprovedDate",
 	"m_strTable" => "overtimefile",
 	"m_srcTableName" => "overtimefileapp2"
 ));
 
-$proto28["m_sql"] = "Reason";
+$proto28["m_sql"] = "ApprovedDate";
 $proto28["m_srcTableName"] = "overtimefileapp2";
 $proto28["m_expr"]=$obj;
 $proto28["m_alias"] = "";
@@ -3269,12 +3277,12 @@ $obj = new SQLFieldListItem($proto28);
 $proto0["m_fieldlist"][]=$obj;
 						$proto30=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Superior",
+	"m_strName" => "EmployeeID",
 	"m_strTable" => "overtimefile",
 	"m_srcTableName" => "overtimefileapp2"
 ));
 
-$proto30["m_sql"] = "Superior";
+$proto30["m_sql"] = "EmployeeID";
 $proto30["m_srcTableName"] = "overtimefileapp2";
 $proto30["m_expr"]=$obj;
 $proto30["m_alias"] = "";
@@ -3283,12 +3291,12 @@ $obj = new SQLFieldListItem($proto30);
 $proto0["m_fieldlist"][]=$obj;
 						$proto32=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Locked",
+	"m_strName" => "Reason",
 	"m_strTable" => "overtimefile",
 	"m_srcTableName" => "overtimefileapp2"
 ));
 
-$proto32["m_sql"] = "Locked";
+$proto32["m_sql"] = "Reason";
 $proto32["m_srcTableName"] = "overtimefileapp2";
 $proto32["m_expr"]=$obj;
 $proto32["m_alias"] = "";
@@ -3297,12 +3305,12 @@ $obj = new SQLFieldListItem($proto32);
 $proto0["m_fieldlist"][]=$obj;
 						$proto34=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Superior2",
+	"m_strName" => "Superior",
 	"m_strTable" => "overtimefile",
 	"m_srcTableName" => "overtimefileapp2"
 ));
 
-$proto34["m_sql"] = "Superior2";
+$proto34["m_sql"] = "Superior";
 $proto34["m_srcTableName"] = "overtimefileapp2";
 $proto34["m_expr"]=$obj;
 $proto34["m_alias"] = "";
@@ -3311,12 +3319,12 @@ $obj = new SQLFieldListItem($proto34);
 $proto0["m_fieldlist"][]=$obj;
 						$proto36=array();
 			$obj = new SQLField(array(
-	"m_strName" => "1stApproval",
+	"m_strName" => "Locked",
 	"m_strTable" => "overtimefile",
 	"m_srcTableName" => "overtimefileapp2"
 ));
 
-$proto36["m_sql"] = "`1stApproval`";
+$proto36["m_sql"] = "Locked";
 $proto36["m_srcTableName"] = "overtimefileapp2";
 $proto36["m_expr"]=$obj;
 $proto36["m_alias"] = "";
@@ -3325,12 +3333,12 @@ $obj = new SQLFieldListItem($proto36);
 $proto0["m_fieldlist"][]=$obj;
 						$proto38=array();
 			$obj = new SQLField(array(
-	"m_strName" => "2ndApproval",
+	"m_strName" => "Superior2",
 	"m_strTable" => "overtimefile",
 	"m_srcTableName" => "overtimefileapp2"
 ));
 
-$proto38["m_sql"] = "`2ndApproval`";
+$proto38["m_sql"] = "Superior2";
 $proto38["m_srcTableName"] = "overtimefileapp2";
 $proto38["m_expr"]=$obj;
 $proto38["m_alias"] = "";
@@ -3339,83 +3347,111 @@ $obj = new SQLFieldListItem($proto38);
 $proto0["m_fieldlist"][]=$obj;
 						$proto40=array();
 			$obj = new SQLField(array(
-	"m_strName" => "DateOT",
+	"m_strName" => "1stApproval",
 	"m_strTable" => "overtimefile",
 	"m_srcTableName" => "overtimefileapp2"
 ));
 
-$proto40["m_sql"] = "DateOT";
+$proto40["m_sql"] = "`1stApproval`";
 $proto40["m_srcTableName"] = "overtimefileapp2";
 $proto40["m_expr"]=$obj;
 $proto40["m_alias"] = "";
 $obj = new SQLFieldListItem($proto40);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto42=array();
-$proto42["m_link"] = "SQLL_MAIN";
-			$proto43=array();
-$proto43["m_strName"] = "overtimefile";
-$proto43["m_srcTableName"] = "overtimefileapp2";
-$proto43["m_columns"] = array();
-$proto43["m_columns"][] = "ItiD";
-$proto43["m_columns"][] = "DateCreated";
-$proto43["m_columns"][] = "FromTime";
-$proto43["m_columns"][] = "ToTime";
-$proto43["m_columns"][] = "Approved";
-$proto43["m_columns"][] = "Approvedby";
-$proto43["m_columns"][] = "ApprovedTime";
-$proto43["m_columns"][] = "Posted";
-$proto43["m_columns"][] = "NoMins";
-$proto43["m_columns"][] = "ApprovedDate";
-$proto43["m_columns"][] = "EmployeeID";
-$proto43["m_columns"][] = "Reason";
-$proto43["m_columns"][] = "Superior";
-$proto43["m_columns"][] = "Locked";
-$proto43["m_columns"][] = "Superior2";
-$proto43["m_columns"][] = "1stApproval";
-$proto43["m_columns"][] = "2ndApproval";
-$proto43["m_columns"][] = "1stDisapproval";
-$proto43["m_columns"][] = "2ndDisapproval";
-$proto43["m_columns"][] = "DateOT";
-$obj = new SQLTable($proto43);
+						$proto42=array();
+			$obj = new SQLField(array(
+	"m_strName" => "2ndApproval",
+	"m_strTable" => "overtimefile",
+	"m_srcTableName" => "overtimefileapp2"
+));
 
-$proto42["m_table"] = $obj;
-$proto42["m_sql"] = "overtimefile";
-$proto42["m_alias"] = "";
+$proto42["m_sql"] = "`2ndApproval`";
 $proto42["m_srcTableName"] = "overtimefileapp2";
-$proto44=array();
-$proto44["m_sql"] = "";
-$proto44["m_uniontype"] = "SQLL_UNKNOWN";
+$proto42["m_expr"]=$obj;
+$proto42["m_alias"] = "";
+$obj = new SQLFieldListItem($proto42);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto44=array();
+			$obj = new SQLField(array(
+	"m_strName" => "DateOT",
+	"m_strTable" => "overtimefile",
+	"m_srcTableName" => "overtimefileapp2"
+));
+
+$proto44["m_sql"] = "DateOT";
+$proto44["m_srcTableName"] = "overtimefileapp2";
+$proto44["m_expr"]=$obj;
+$proto44["m_alias"] = "";
+$obj = new SQLFieldListItem($proto44);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto46=array();
+$proto46["m_link"] = "SQLL_MAIN";
+			$proto47=array();
+$proto47["m_strName"] = "overtimefile";
+$proto47["m_srcTableName"] = "overtimefileapp2";
+$proto47["m_columns"] = array();
+$proto47["m_columns"][] = "ItiD";
+$proto47["m_columns"][] = "DateCreated";
+$proto47["m_columns"][] = "FromTime";
+$proto47["m_columns"][] = "ToTime";
+$proto47["m_columns"][] = "Approved";
+$proto47["m_columns"][] = "Approvedby";
+$proto47["m_columns"][] = "ApprovedTime";
+$proto47["m_columns"][] = "Posted";
+$proto47["m_columns"][] = "NoMins";
+$proto47["m_columns"][] = "ApprovedDate";
+$proto47["m_columns"][] = "EmployeeID";
+$proto47["m_columns"][] = "Reason";
+$proto47["m_columns"][] = "Superior";
+$proto47["m_columns"][] = "Locked";
+$proto47["m_columns"][] = "Superior2";
+$proto47["m_columns"][] = "1stApproval";
+$proto47["m_columns"][] = "2ndApproval";
+$proto47["m_columns"][] = "1stDisapproval";
+$proto47["m_columns"][] = "2ndDisapproval";
+$proto47["m_columns"][] = "DateOT";
+$obj = new SQLTable($proto47);
+
+$proto46["m_table"] = $obj;
+$proto46["m_sql"] = "overtimefile";
+$proto46["m_alias"] = "";
+$proto46["m_srcTableName"] = "overtimefileapp2";
+$proto48=array();
+$proto48["m_sql"] = "";
+$proto48["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto44["m_column"]=$obj;
-$proto44["m_contained"] = array();
-$proto44["m_strCase"] = "";
-$proto44["m_havingmode"] = false;
-$proto44["m_inBrackets"] = false;
-$proto44["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto44);
+$proto48["m_column"]=$obj;
+$proto48["m_contained"] = array();
+$proto48["m_strCase"] = "";
+$proto48["m_havingmode"] = false;
+$proto48["m_inBrackets"] = false;
+$proto48["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto48);
 
-$proto42["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto42);
+$proto46["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto46);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
 $proto0["m_orderby"] = array();
-												$proto46=array();
+												$proto50=array();
 						$obj = new SQLField(array(
 	"m_strName" => "ItiD",
 	"m_strTable" => "overtimefile",
 	"m_srcTableName" => "overtimefileapp2"
 ));
 
-$proto46["m_column"]=$obj;
-$proto46["m_bAsc"] = 0;
-$proto46["m_nColumn"] = 0;
-$obj = new SQLOrderByItem($proto46);
+$proto50["m_column"]=$obj;
+$proto50["m_bAsc"] = 0;
+$proto50["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto50);
 
 $proto0["m_orderby"][]=$obj;					
 $proto0["m_srcTableName"]="overtimefileapp2";		

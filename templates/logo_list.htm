@@ -487,6 +487,9 @@
 	.bs-gridcell[data-field=Logo]:before {
 		content: "{$label logo Logo}";
 	}
+	.bs-gridcell[data-field=CodeNo]:before {
+		content: "{$label logo CodeNo}";
+	}
 </style>
 <table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
 	<thead>
@@ -526,6 +529,19 @@
 									{END Logo_fieldheader}
 									</th>
 									{END Logo_fieldheadercolumn}
+									
+									
+									
+									
+									{BEGIN CodeNo_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$CodeNo_class}" data-field=CodeNo>
+									{BEGIN CodeNo_fieldheader}
+																				<span {$CodeNo_orderlinkattrs}>
+											{$label logo CodeNo}
+										</span>
+									{END CodeNo_fieldheader}
+									</th>
+									{END CodeNo_fieldheadercolumn}
 									
 									
 									
@@ -587,6 +603,13 @@
 		{$Logo_value}
 	</td>
 {END Logo_fieldcolumn}
+
+
+	{BEGIN CodeNo_fieldcolumn}
+	<td class="bs-gridcell {$CodeNo_class}"  data-field=CodeNo {$rowstyle} {$recordattrs}>
+		{$CodeNo_value}
+	</td>
+{END CodeNo_fieldcolumn}
 
 	{BEGIN endrecord_block}
 	<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>

@@ -530,6 +530,7 @@ $ups=$values["DoNotUpdateContributions"];
 $exp=$values["ExcludeContributionOnPayroll"];
 $exd=$values["ExitDate"];
 $ddiv=$values["Division"];
+$est=$values["Status"];
 
 
 if ($exd!=NULL) {
@@ -619,6 +620,10 @@ $ani=$ai*12;
 
 $sq = "Update demo_user set PreCalMoTaxable='$ai', PresetMoNonTax='$tnx', CalMonthly='$bmo', TaxPeriods='$tpx', TaxPerPeriod='$txpp' where EmployeeID='$eid'";
 CustomQuery($sq);
+
+
+
+
 
 
 //$sqe = "DELETE FROM indschedule WHERE EmployeeID='$eid' and SDate>='$exd'";

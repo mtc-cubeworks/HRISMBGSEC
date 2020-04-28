@@ -422,7 +422,7 @@ $tdatadtrsummary2[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																							
+																																																																																																																																																																																																																																																																																																																														
 
 $tdatadtrsummary2[".ajaxCodeSnippetAdded"] = false;
 
@@ -441,14 +441,21 @@ $tdatadtrsummary2[".allSearchFields"] = array();
 $tdatadtrsummary2[".filterFields"] = array();
 $tdatadtrsummary2[".requiredSearchFields"] = array();
 
-$tdatadtrsummary2[".allSearchFields"][] = "RDOTh";
-	$tdatadtrsummary2[".allSearchFields"][] = "RegNDh";
-	$tdatadtrsummary2[".allSearchFields"][] = "RegRDh";
-	$tdatadtrsummary2[".allSearchFields"][] = "RDNDh";
-	$tdatadtrsummary2[".allSearchFields"][] = "UserName";
+$tdatadtrsummary2[".allSearchFields"][] = "UserName";
 	$tdatadtrsummary2[".allSearchFields"][] = "Division";
 	$tdatadtrsummary2[".allSearchFields"][] = "WageType";
 	$tdatadtrsummary2[".allSearchFields"][] = "Employer";
+	$tdatadtrsummary2[".allSearchFields"][] = "RegWD";
+	$tdatadtrsummary2[".allSearchFields"][] = "DWork";
+	$tdatadtrsummary2[".allSearchFields"][] = "Absent";
+	$tdatadtrsummary2[".allSearchFields"][] = "TLates";
+	$tdatadtrsummary2[".allSearchFields"][] = "LateMins";
+	$tdatadtrsummary2[".allSearchFields"][] = "UndertimeMins";
+	$tdatadtrsummary2[".allSearchFields"][] = "VLDays";
+	$tdatadtrsummary2[".allSearchFields"][] = "SLDays";
+	$tdatadtrsummary2[".allSearchFields"][] = "ELDays";
+	$tdatadtrsummary2[".allSearchFields"][] = "PLDays";
+	$tdatadtrsummary2[".allSearchFields"][] = "TrODays";
 	$tdatadtrsummary2[".allSearchFields"][] = "RHh";
 	$tdatadtrsummary2[".allSearchFields"][] = "SHh";
 	$tdatadtrsummary2[".allSearchFields"][] = "DHh";
@@ -457,28 +464,6 @@ $tdatadtrsummary2[".allSearchFields"][] = "RDOTh";
 	$tdatadtrsummary2[".allSearchFields"][] = "RHOTh";
 	$tdatadtrsummary2[".allSearchFields"][] = "SHOTh";
 	$tdatadtrsummary2[".allSearchFields"][] = "SHOTDh";
-	$tdatadtrsummary2[".allSearchFields"][] = "DHOTh";
-	$tdatadtrsummary2[".allSearchFields"][] = "NDOTh";
-	$tdatadtrsummary2[".allSearchFields"][] = "RHNDh";
-	$tdatadtrsummary2[".allSearchFields"][] = "SHNDh";
-	$tdatadtrsummary2[".allSearchFields"][] = "DHNDh";
-	$tdatadtrsummary2[".allSearchFields"][] = "RHNDOTh";
-	$tdatadtrsummary2[".allSearchFields"][] = "SHNDOTh";
-	$tdatadtrsummary2[".allSearchFields"][] = "DHNDOTh";
-	$tdatadtrsummary2[".allSearchFields"][] = "RDNDOTh";
-	$tdatadtrsummary2[".allSearchFields"][] = "RHRDh";
-	$tdatadtrsummary2[".allSearchFields"][] = "SHRDh";
-	$tdatadtrsummary2[".allSearchFields"][] = "DHRDh";
-	$tdatadtrsummary2[".allSearchFields"][] = "RHRDOTh";
-	$tdatadtrsummary2[".allSearchFields"][] = "SHRDOTh";
-	$tdatadtrsummary2[".allSearchFields"][] = "SHRDOTDh";
-	$tdatadtrsummary2[".allSearchFields"][] = "DHRDOTh";
-	$tdatadtrsummary2[".allSearchFields"][] = "RHRDNDh";
-	$tdatadtrsummary2[".allSearchFields"][] = "SHRDNDh";
-	$tdatadtrsummary2[".allSearchFields"][] = "DHRDNDh";
-	$tdatadtrsummary2[".allSearchFields"][] = "RHRDNDOTh";
-	$tdatadtrsummary2[".allSearchFields"][] = "SHRDNDOTh";
-	$tdatadtrsummary2[".allSearchFields"][] = "DHRDNDOTh";
 	
 
 $tdatadtrsummary2[".googleLikeFields"] = array();
@@ -529,14 +514,21 @@ $tdatadtrsummary2[".panelSearchFields"][] = "UserName";
 	$tdatadtrsummary2[".panelSearchFields"][] = "Employer";
 	
 $tdatadtrsummary2[".advSearchFields"] = array();
-$tdatadtrsummary2[".advSearchFields"][] = "RDOTh";
-$tdatadtrsummary2[".advSearchFields"][] = "RegNDh";
-$tdatadtrsummary2[".advSearchFields"][] = "RegRDh";
-$tdatadtrsummary2[".advSearchFields"][] = "RDNDh";
 $tdatadtrsummary2[".advSearchFields"][] = "UserName";
 $tdatadtrsummary2[".advSearchFields"][] = "Division";
 $tdatadtrsummary2[".advSearchFields"][] = "WageType";
 $tdatadtrsummary2[".advSearchFields"][] = "Employer";
+$tdatadtrsummary2[".advSearchFields"][] = "RegWD";
+$tdatadtrsummary2[".advSearchFields"][] = "DWork";
+$tdatadtrsummary2[".advSearchFields"][] = "Absent";
+$tdatadtrsummary2[".advSearchFields"][] = "TLates";
+$tdatadtrsummary2[".advSearchFields"][] = "LateMins";
+$tdatadtrsummary2[".advSearchFields"][] = "UndertimeMins";
+$tdatadtrsummary2[".advSearchFields"][] = "VLDays";
+$tdatadtrsummary2[".advSearchFields"][] = "SLDays";
+$tdatadtrsummary2[".advSearchFields"][] = "ELDays";
+$tdatadtrsummary2[".advSearchFields"][] = "PLDays";
+$tdatadtrsummary2[".advSearchFields"][] = "TrODays";
 $tdatadtrsummary2[".advSearchFields"][] = "RHh";
 $tdatadtrsummary2[".advSearchFields"][] = "SHh";
 $tdatadtrsummary2[".advSearchFields"][] = "DHh";
@@ -545,28 +537,6 @@ $tdatadtrsummary2[".advSearchFields"][] = "RegOTh";
 $tdatadtrsummary2[".advSearchFields"][] = "RHOTh";
 $tdatadtrsummary2[".advSearchFields"][] = "SHOTh";
 $tdatadtrsummary2[".advSearchFields"][] = "SHOTDh";
-$tdatadtrsummary2[".advSearchFields"][] = "DHOTh";
-$tdatadtrsummary2[".advSearchFields"][] = "NDOTh";
-$tdatadtrsummary2[".advSearchFields"][] = "RHNDh";
-$tdatadtrsummary2[".advSearchFields"][] = "SHNDh";
-$tdatadtrsummary2[".advSearchFields"][] = "DHNDh";
-$tdatadtrsummary2[".advSearchFields"][] = "RHNDOTh";
-$tdatadtrsummary2[".advSearchFields"][] = "SHNDOTh";
-$tdatadtrsummary2[".advSearchFields"][] = "DHNDOTh";
-$tdatadtrsummary2[".advSearchFields"][] = "RDNDOTh";
-$tdatadtrsummary2[".advSearchFields"][] = "RHRDh";
-$tdatadtrsummary2[".advSearchFields"][] = "SHRDh";
-$tdatadtrsummary2[".advSearchFields"][] = "DHRDh";
-$tdatadtrsummary2[".advSearchFields"][] = "RHRDOTh";
-$tdatadtrsummary2[".advSearchFields"][] = "SHRDOTh";
-$tdatadtrsummary2[".advSearchFields"][] = "SHRDOTDh";
-$tdatadtrsummary2[".advSearchFields"][] = "DHRDOTh";
-$tdatadtrsummary2[".advSearchFields"][] = "RHRDNDh";
-$tdatadtrsummary2[".advSearchFields"][] = "SHRDNDh";
-$tdatadtrsummary2[".advSearchFields"][] = "DHRDNDh";
-$tdatadtrsummary2[".advSearchFields"][] = "RHRDNDOTh";
-$tdatadtrsummary2[".advSearchFields"][] = "SHRDNDOTh";
-$tdatadtrsummary2[".advSearchFields"][] = "DHRDNDOTh";
 
 $tdatadtrsummary2[".tableType"] = "list";
 
@@ -765,40 +735,6 @@ $tdatadtrsummary2[".viewFields"][] = "DHRDNDOTh";
 $tdatadtrsummary2[".viewFields"][] = "RLink";
 
 $tdatadtrsummary2[".addFields"] = array();
-$tdatadtrsummary2[".addFields"][] = "RDOTh";
-$tdatadtrsummary2[".addFields"][] = "RegNDh";
-$tdatadtrsummary2[".addFields"][] = "RegRDh";
-$tdatadtrsummary2[".addFields"][] = "RDNDh";
-$tdatadtrsummary2[".addFields"][] = "RHh";
-$tdatadtrsummary2[".addFields"][] = "SHh";
-$tdatadtrsummary2[".addFields"][] = "DHh";
-$tdatadtrsummary2[".addFields"][] = "ExcessHrs";
-$tdatadtrsummary2[".addFields"][] = "RegOTh";
-$tdatadtrsummary2[".addFields"][] = "RHOTh";
-$tdatadtrsummary2[".addFields"][] = "SHOTh";
-$tdatadtrsummary2[".addFields"][] = "SHOTDh";
-$tdatadtrsummary2[".addFields"][] = "DHOTh";
-$tdatadtrsummary2[".addFields"][] = "NDOTh";
-$tdatadtrsummary2[".addFields"][] = "RHNDh";
-$tdatadtrsummary2[".addFields"][] = "SHNDh";
-$tdatadtrsummary2[".addFields"][] = "DHNDh";
-$tdatadtrsummary2[".addFields"][] = "RHNDOTh";
-$tdatadtrsummary2[".addFields"][] = "SHNDOTh";
-$tdatadtrsummary2[".addFields"][] = "DHNDOTh";
-$tdatadtrsummary2[".addFields"][] = "RDNDOTh";
-$tdatadtrsummary2[".addFields"][] = "RHRDh";
-$tdatadtrsummary2[".addFields"][] = "SHRDh";
-$tdatadtrsummary2[".addFields"][] = "DHRDh";
-$tdatadtrsummary2[".addFields"][] = "RHRDOTh";
-$tdatadtrsummary2[".addFields"][] = "SHRDOTh";
-$tdatadtrsummary2[".addFields"][] = "SHRDOTDh";
-$tdatadtrsummary2[".addFields"][] = "DHRDOTh";
-$tdatadtrsummary2[".addFields"][] = "RHRDNDh";
-$tdatadtrsummary2[".addFields"][] = "SHRDNDh";
-$tdatadtrsummary2[".addFields"][] = "DHRDNDh";
-$tdatadtrsummary2[".addFields"][] = "RHRDNDOTh";
-$tdatadtrsummary2[".addFields"][] = "SHRDNDOTh";
-$tdatadtrsummary2[".addFields"][] = "DHRDNDOTh";
 
 $tdatadtrsummary2[".masterListFields"] = array();
 $tdatadtrsummary2[".masterListFields"][] = "RDOTh";
@@ -854,148 +790,12 @@ $tdatadtrsummary2[".masterListFields"][] = "DHRDNDOTh";
 $tdatadtrsummary2[".masterListFields"][] = "RLink";
 
 $tdatadtrsummary2[".inlineAddFields"] = array();
-$tdatadtrsummary2[".inlineAddFields"][] = "RHh";
-$tdatadtrsummary2[".inlineAddFields"][] = "SHh";
-$tdatadtrsummary2[".inlineAddFields"][] = "DHh";
-$tdatadtrsummary2[".inlineAddFields"][] = "RegRDh";
-$tdatadtrsummary2[".inlineAddFields"][] = "ExcessHrs";
-$tdatadtrsummary2[".inlineAddFields"][] = "RegOTh";
-$tdatadtrsummary2[".inlineAddFields"][] = "RHOTh";
-$tdatadtrsummary2[".inlineAddFields"][] = "SHOTh";
-$tdatadtrsummary2[".inlineAddFields"][] = "SHOTDh";
-$tdatadtrsummary2[".inlineAddFields"][] = "RDOTh";
-$tdatadtrsummary2[".inlineAddFields"][] = "DHOTh";
-$tdatadtrsummary2[".inlineAddFields"][] = "NDOTh";
-$tdatadtrsummary2[".inlineAddFields"][] = "RegNDh";
-$tdatadtrsummary2[".inlineAddFields"][] = "RHNDh";
-$tdatadtrsummary2[".inlineAddFields"][] = "SHNDh";
-$tdatadtrsummary2[".inlineAddFields"][] = "DHNDh";
-$tdatadtrsummary2[".inlineAddFields"][] = "RDNDh";
-$tdatadtrsummary2[".inlineAddFields"][] = "RHNDOTh";
-$tdatadtrsummary2[".inlineAddFields"][] = "SHNDOTh";
-$tdatadtrsummary2[".inlineAddFields"][] = "DHNDOTh";
-$tdatadtrsummary2[".inlineAddFields"][] = "RDNDOTh";
-$tdatadtrsummary2[".inlineAddFields"][] = "RHRDh";
-$tdatadtrsummary2[".inlineAddFields"][] = "SHRDh";
-$tdatadtrsummary2[".inlineAddFields"][] = "DHRDh";
-$tdatadtrsummary2[".inlineAddFields"][] = "RHRDOTh";
-$tdatadtrsummary2[".inlineAddFields"][] = "SHRDOTh";
-$tdatadtrsummary2[".inlineAddFields"][] = "SHRDOTDh";
-$tdatadtrsummary2[".inlineAddFields"][] = "DHRDOTh";
-$tdatadtrsummary2[".inlineAddFields"][] = "RHRDNDh";
-$tdatadtrsummary2[".inlineAddFields"][] = "SHRDNDh";
-$tdatadtrsummary2[".inlineAddFields"][] = "DHRDNDh";
-$tdatadtrsummary2[".inlineAddFields"][] = "RHRDNDOTh";
-$tdatadtrsummary2[".inlineAddFields"][] = "SHRDNDOTh";
-$tdatadtrsummary2[".inlineAddFields"][] = "DHRDNDOTh";
 
 $tdatadtrsummary2[".editFields"] = array();
-$tdatadtrsummary2[".editFields"][] = "RDOTh";
-$tdatadtrsummary2[".editFields"][] = "RegNDh";
-$tdatadtrsummary2[".editFields"][] = "RegRDh";
-$tdatadtrsummary2[".editFields"][] = "RDNDh";
-$tdatadtrsummary2[".editFields"][] = "RHh";
-$tdatadtrsummary2[".editFields"][] = "SHh";
-$tdatadtrsummary2[".editFields"][] = "DHh";
-$tdatadtrsummary2[".editFields"][] = "ExcessHrs";
-$tdatadtrsummary2[".editFields"][] = "RegOTh";
-$tdatadtrsummary2[".editFields"][] = "RHOTh";
-$tdatadtrsummary2[".editFields"][] = "SHOTh";
-$tdatadtrsummary2[".editFields"][] = "SHOTDh";
-$tdatadtrsummary2[".editFields"][] = "DHOTh";
-$tdatadtrsummary2[".editFields"][] = "NDOTh";
-$tdatadtrsummary2[".editFields"][] = "RHNDh";
-$tdatadtrsummary2[".editFields"][] = "SHNDh";
-$tdatadtrsummary2[".editFields"][] = "DHNDh";
-$tdatadtrsummary2[".editFields"][] = "RHNDOTh";
-$tdatadtrsummary2[".editFields"][] = "SHNDOTh";
-$tdatadtrsummary2[".editFields"][] = "DHNDOTh";
-$tdatadtrsummary2[".editFields"][] = "RDNDOTh";
-$tdatadtrsummary2[".editFields"][] = "RHRDh";
-$tdatadtrsummary2[".editFields"][] = "SHRDh";
-$tdatadtrsummary2[".editFields"][] = "DHRDh";
-$tdatadtrsummary2[".editFields"][] = "RHRDOTh";
-$tdatadtrsummary2[".editFields"][] = "SHRDOTh";
-$tdatadtrsummary2[".editFields"][] = "SHRDOTDh";
-$tdatadtrsummary2[".editFields"][] = "DHRDOTh";
-$tdatadtrsummary2[".editFields"][] = "RHRDNDh";
-$tdatadtrsummary2[".editFields"][] = "SHRDNDh";
-$tdatadtrsummary2[".editFields"][] = "DHRDNDh";
-$tdatadtrsummary2[".editFields"][] = "RHRDNDOTh";
-$tdatadtrsummary2[".editFields"][] = "SHRDNDOTh";
-$tdatadtrsummary2[".editFields"][] = "DHRDNDOTh";
 
 $tdatadtrsummary2[".inlineEditFields"] = array();
-$tdatadtrsummary2[".inlineEditFields"][] = "RHh";
-$tdatadtrsummary2[".inlineEditFields"][] = "SHh";
-$tdatadtrsummary2[".inlineEditFields"][] = "DHh";
-$tdatadtrsummary2[".inlineEditFields"][] = "RegRDh";
-$tdatadtrsummary2[".inlineEditFields"][] = "ExcessHrs";
-$tdatadtrsummary2[".inlineEditFields"][] = "RegOTh";
-$tdatadtrsummary2[".inlineEditFields"][] = "RHOTh";
-$tdatadtrsummary2[".inlineEditFields"][] = "SHOTh";
-$tdatadtrsummary2[".inlineEditFields"][] = "SHOTDh";
-$tdatadtrsummary2[".inlineEditFields"][] = "RDOTh";
-$tdatadtrsummary2[".inlineEditFields"][] = "DHOTh";
-$tdatadtrsummary2[".inlineEditFields"][] = "NDOTh";
-$tdatadtrsummary2[".inlineEditFields"][] = "RegNDh";
-$tdatadtrsummary2[".inlineEditFields"][] = "RHNDh";
-$tdatadtrsummary2[".inlineEditFields"][] = "SHNDh";
-$tdatadtrsummary2[".inlineEditFields"][] = "DHNDh";
-$tdatadtrsummary2[".inlineEditFields"][] = "RDNDh";
-$tdatadtrsummary2[".inlineEditFields"][] = "RHNDOTh";
-$tdatadtrsummary2[".inlineEditFields"][] = "SHNDOTh";
-$tdatadtrsummary2[".inlineEditFields"][] = "DHNDOTh";
-$tdatadtrsummary2[".inlineEditFields"][] = "RDNDOTh";
-$tdatadtrsummary2[".inlineEditFields"][] = "RHRDh";
-$tdatadtrsummary2[".inlineEditFields"][] = "SHRDh";
-$tdatadtrsummary2[".inlineEditFields"][] = "DHRDh";
-$tdatadtrsummary2[".inlineEditFields"][] = "RHRDOTh";
-$tdatadtrsummary2[".inlineEditFields"][] = "SHRDOTh";
-$tdatadtrsummary2[".inlineEditFields"][] = "SHRDOTDh";
-$tdatadtrsummary2[".inlineEditFields"][] = "DHRDOTh";
-$tdatadtrsummary2[".inlineEditFields"][] = "RHRDNDh";
-$tdatadtrsummary2[".inlineEditFields"][] = "SHRDNDh";
-$tdatadtrsummary2[".inlineEditFields"][] = "DHRDNDh";
-$tdatadtrsummary2[".inlineEditFields"][] = "RHRDNDOTh";
-$tdatadtrsummary2[".inlineEditFields"][] = "SHRDNDOTh";
-$tdatadtrsummary2[".inlineEditFields"][] = "DHRDNDOTh";
 
 $tdatadtrsummary2[".updateSelectedFields"] = array();
-$tdatadtrsummary2[".updateSelectedFields"][] = "RDOTh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "RegNDh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "RegRDh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "RDNDh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "RHh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "SHh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "DHh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "ExcessHrs";
-$tdatadtrsummary2[".updateSelectedFields"][] = "RegOTh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "RHOTh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "SHOTh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "SHOTDh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "DHOTh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "NDOTh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "RHNDh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "SHNDh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "DHNDh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "RHNDOTh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "SHNDOTh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "DHNDOTh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "RDNDOTh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "RHRDh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "SHRDh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "DHRDh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "RHRDOTh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "SHRDOTh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "SHRDOTDh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "DHRDOTh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "RHRDNDh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "SHRDNDh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "DHRDNDh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "RHRDNDOTh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "SHRDNDOTh";
-$tdatadtrsummary2[".updateSelectedFields"][] = "DHRDNDOTh";
 
 
 $tdatadtrsummary2[".exportFields"] = array();
@@ -1052,40 +852,6 @@ $tdatadtrsummary2[".exportFields"][] = "DHRDNDOTh";
 $tdatadtrsummary2[".exportFields"][] = "RLink";
 
 $tdatadtrsummary2[".importFields"] = array();
-$tdatadtrsummary2[".importFields"][] = "ExcessHrs";
-$tdatadtrsummary2[".importFields"][] = "RegOTh";
-$tdatadtrsummary2[".importFields"][] = "RHOTh";
-$tdatadtrsummary2[".importFields"][] = "SHOTh";
-$tdatadtrsummary2[".importFields"][] = "SHOTDh";
-$tdatadtrsummary2[".importFields"][] = "DHOTh";
-$tdatadtrsummary2[".importFields"][] = "NDOTh";
-$tdatadtrsummary2[".importFields"][] = "RHNDh";
-$tdatadtrsummary2[".importFields"][] = "SHNDh";
-$tdatadtrsummary2[".importFields"][] = "DHNDh";
-$tdatadtrsummary2[".importFields"][] = "DHRDNDh";
-$tdatadtrsummary2[".importFields"][] = "RHRDNDh";
-$tdatadtrsummary2[".importFields"][] = "SHRDNDh";
-$tdatadtrsummary2[".importFields"][] = "RHNDOTh";
-$tdatadtrsummary2[".importFields"][] = "SHNDOTh";
-$tdatadtrsummary2[".importFields"][] = "DHNDOTh";
-$tdatadtrsummary2[".importFields"][] = "RDNDOTh";
-$tdatadtrsummary2[".importFields"][] = "RHRDOTh";
-$tdatadtrsummary2[".importFields"][] = "SHRDOTh";
-$tdatadtrsummary2[".importFields"][] = "SHRDOTDh";
-$tdatadtrsummary2[".importFields"][] = "DHRDOTh";
-$tdatadtrsummary2[".importFields"][] = "RHRDNDOTh";
-$tdatadtrsummary2[".importFields"][] = "SHRDNDOTh";
-$tdatadtrsummary2[".importFields"][] = "DHRDNDOTh";
-$tdatadtrsummary2[".importFields"][] = "RHh";
-$tdatadtrsummary2[".importFields"][] = "SHh";
-$tdatadtrsummary2[".importFields"][] = "DHh";
-$tdatadtrsummary2[".importFields"][] = "RHRDh";
-$tdatadtrsummary2[".importFields"][] = "SHRDh";
-$tdatadtrsummary2[".importFields"][] = "DHRDh";
-$tdatadtrsummary2[".importFields"][] = "RDOTh";
-$tdatadtrsummary2[".importFields"][] = "RegNDh";
-$tdatadtrsummary2[".importFields"][] = "RegRDh";
-$tdatadtrsummary2[".importFields"][] = "RDNDh";
 
 $tdatadtrsummary2[".printFields"] = array();
 $tdatadtrsummary2[".printFields"][] = "RDOTh";
@@ -1718,7 +1484,8 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 		$fdata["bViewPage"] = true;
 
-	
+		$fdata["bAdvancedSearch"] = true;
+
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -1810,6 +1577,12 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
 
 
 
@@ -1839,7 +1612,8 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 		$fdata["bViewPage"] = true;
 
-	
+		$fdata["bAdvancedSearch"] = true;
+
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -1931,6 +1705,12 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
 
 
 
@@ -1960,7 +1740,8 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 		$fdata["bViewPage"] = true;
 
-	
+		$fdata["bAdvancedSearch"] = true;
+
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -2052,6 +1833,12 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
 
 
 
@@ -2081,7 +1868,8 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 		$fdata["bViewPage"] = true;
 
-	
+		$fdata["bAdvancedSearch"] = true;
+
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -2173,6 +1961,12 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
 
 
 
@@ -2202,7 +1996,8 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 		$fdata["bViewPage"] = true;
 
-	
+		$fdata["bAdvancedSearch"] = true;
+
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -2294,6 +2089,12 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
 
 
 
@@ -2323,7 +2124,8 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 		$fdata["bViewPage"] = true;
 
-	
+		$fdata["bAdvancedSearch"] = true;
+
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -2415,6 +2217,12 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
 
 
 
@@ -2444,7 +2252,8 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 		$fdata["bViewPage"] = true;
 
-	
+		$fdata["bAdvancedSearch"] = true;
+
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -2536,6 +2345,12 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
 
 
 
@@ -2565,7 +2380,8 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 		$fdata["bViewPage"] = true;
 
-	
+		$fdata["bAdvancedSearch"] = true;
+
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -2657,6 +2473,12 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
 
 
 
@@ -2686,7 +2508,8 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 		$fdata["bViewPage"] = true;
 
-	
+		$fdata["bAdvancedSearch"] = true;
+
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -2778,6 +2601,12 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
 
 
 
@@ -2807,7 +2636,8 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 		$fdata["bViewPage"] = true;
 
-	
+		$fdata["bAdvancedSearch"] = true;
+
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -2899,6 +2729,12 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
 
 
 
@@ -2928,7 +2764,8 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 		$fdata["bViewPage"] = true;
 
-	
+		$fdata["bAdvancedSearch"] = true;
+
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -3020,6 +2857,12 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
 
 
 
@@ -3313,16 +3156,11 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -3446,16 +3284,11 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -3579,16 +3412,11 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -3712,16 +3540,11 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -3845,16 +3668,11 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -3978,21 +3796,15 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4084,12 +3896,6 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -4111,21 +3917,15 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4217,12 +4017,6 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -4244,21 +4038,15 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4350,12 +4138,6 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -4377,21 +4159,15 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4483,12 +4259,6 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -4510,21 +4280,15 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4616,12 +4380,6 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -4643,21 +4401,15 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4749,12 +4501,6 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -4776,21 +4522,15 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -4882,12 +4622,6 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -4909,21 +4643,15 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -5015,12 +4743,6 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -5042,21 +4764,15 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -5148,12 +4864,6 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -5175,21 +4885,15 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -5281,12 +4985,6 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -5308,21 +5006,15 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -5414,12 +5106,6 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -5441,21 +5127,15 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -5547,12 +5227,6 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -5574,21 +5248,15 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -5680,12 +5348,6 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -5707,21 +5369,15 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -5813,12 +5469,6 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -5840,21 +5490,15 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -5946,12 +5590,6 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -5973,21 +5611,15 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -6079,12 +5711,6 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -6106,21 +5732,15 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -6212,12 +5832,6 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -6239,21 +5853,15 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -6345,12 +5953,6 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -6372,21 +5974,15 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -6478,12 +6074,6 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -6505,16 +6095,11 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -6638,16 +6223,11 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -6771,16 +6351,11 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
@@ -6904,21 +6479,15 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -7010,12 +6579,6 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -7037,21 +6600,15 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -7143,12 +6700,6 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -7170,21 +6721,15 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -7276,12 +6821,6 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -7303,21 +6842,15 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -7409,12 +6942,6 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -7436,21 +6963,15 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -7542,12 +7063,6 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -7569,21 +7084,15 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -7675,12 +7184,6 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 
@@ -7702,21 +7205,15 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 			
 		$fdata["bListPage"] = true;
 
-		$fdata["bAddPage"] = true;
-
-		$fdata["bInlineAdd"] = true;
-
-		$fdata["bEditPage"] = true;
-
-		$fdata["bInlineEdit"] = true;
-
-		$fdata["bUpdateSelected"] = true;
-
+	
+	
+	
+	
+	
 
 		$fdata["bViewPage"] = true;
 
-		$fdata["bAdvancedSearch"] = true;
-
+	
 		$fdata["bPrinterPage"] = true;
 
 		$fdata["bExportPage"] = true;
@@ -7808,12 +7305,6 @@ $tdatadtrsummary2[".printFields"][] = "RLink";
 
 
 
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
 
 
 

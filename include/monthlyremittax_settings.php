@@ -140,12 +140,12 @@ $tdatamonthlyremittax[".listAjax"] = false;
 	$tdatamonthlyremittax[".locking"] = false;
 
 $tdatamonthlyremittax[".edit"] = true;
-$tdatamonthlyremittax[".afterEditAction"] = 0;
+$tdatamonthlyremittax[".afterEditAction"] = 1;
 $tdatamonthlyremittax[".closePopupAfterEdit"] = 1;
 $tdatamonthlyremittax[".afterEditActionDetTable"] = "";
 
 $tdatamonthlyremittax[".add"] = true;
-$tdatamonthlyremittax[".afterAddAction"] = 0;
+$tdatamonthlyremittax[".afterAddAction"] = 1;
 $tdatamonthlyremittax[".closePopupAfterAdd"] = 1;
 $tdatamonthlyremittax[".afterAddActionDetTable"] = "";
 
@@ -197,7 +197,7 @@ $tdatamonthlyremittax[".rowHighlite"] = true;
 
 
 																																																																																																																																																																																															
-																																																																																												
+																																																																																																																																			
 
 $tdatamonthlyremittax[".ajaxCodeSnippetAdded"] = false;
 

@@ -102,6 +102,24 @@
 		</div>
 	</div>
 {END UserName_fieldblock}
+	{BEGIN Employer_fieldblock}		
+	<div class="container {$fielddispclass_Employer}" data-fieldname="Employer">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Employer}">
+				{$label dt5 Employer}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Employer}
+			</div>
+			<div class="col-md-4" >
+				{$Employer_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Employer_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Employer_fieldblock}
 	{BEGIN Division_fieldblock}		
 	<div class="container {$fielddispclass_Division}" data-fieldname="Division">
 		<div class="form-group">
@@ -120,6 +138,24 @@
 		</div>
 	</div>
 {END Division_fieldblock}
+	{BEGIN Department_fieldblock}		
+	<div class="container {$fielddispclass_Department}" data-fieldname="Department">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Department}">
+				{$label dt5 Department}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Department}
+			</div>
+			<div class="col-md-4" >
+				{$Department_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Department_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Department_fieldblock}
 	{BEGIN WageType_fieldblock}		
 	<div class="container {$fielddispclass_WageType}" data-fieldname="WageType">
 		<div class="form-group">
@@ -156,6 +192,24 @@
 		</div>
 	</div>
 {END SDate_fieldblock}
+	{BEGIN RestDay_fieldblock}		
+	<div class="container {$fielddispclass_RestDay}" data-fieldname="RestDay">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RestDay}">
+				{$label dt5 RestDay}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RestDay}
+			</div>
+			<div class="col-md-4" >
+				{$RestDay_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RestDay_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RestDay_fieldblock}
 	{BEGIN MisPunched_fieldblock}		
 	<div class="container {$fielddispclass_MisPunched}" data-fieldname="MisPunched">
 		<div class="form-group">
@@ -174,6 +228,78 @@
 		</div>
 	</div>
 {END MisPunched_fieldblock}
+	{BEGIN Absent_fieldblock}		
+	<div class="container {$fielddispclass_Absent}" data-fieldname="Absent">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_Absent}">
+				{$label dt5 Absent}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_Absent}
+			</div>
+			<div class="col-md-4" >
+				{$Absent_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Absent_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Absent_fieldblock}
+	{BEGIN LateMins_fieldblock}		
+	<div class="container {$fielddispclass_LateMins}" data-fieldname="LateMins">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_LateMins}">
+				{$label dt5 LateMins}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_LateMins}
+			</div>
+			<div class="col-md-4" >
+				{$LateMins_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$LateMins_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END LateMins_fieldblock}
+	{BEGIN UnderstimeMins_fieldblock}		
+	<div class="container {$fielddispclass_UnderstimeMins}" data-fieldname="UnderstimeMins">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_UnderstimeMins}">
+				{$label dt5 UnderstimeMins}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_UnderstimeMins}
+			</div>
+			<div class="col-md-4" >
+				{$UnderstimeMins_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$UnderstimeMins_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END UnderstimeMins_fieldblock}
+	{BEGIN HolidayType_fieldblock}		
+	<div class="container {$fielddispclass_HolidayType}" data-fieldname="HolidayType">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_HolidayType}">
+				{$label dt5 HolidayType}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_HolidayType}
+			</div>
+			<div class="col-md-4" >
+				{$HolidayType_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$HolidayType_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END HolidayType_fieldblock}
 	{BEGIN RH_fieldblock}		
 	<div class="container {$fielddispclass_RH}" data-fieldname="RH">
 		<div class="form-group">
@@ -210,24 +336,6 @@
 		</div>
 	</div>
 {END SH_fieldblock}
-	{BEGIN RegRD_fieldblock}		
-	<div class="container {$fielddispclass_RegRD}" data-fieldname="RegRD">
-		<div class="form-group">
-			<label class="col-md-2 control-label" for="{$labelfor_RegRD}">
-				{$label dt5 RegRD}
-			</label>
-			<div class="col-md-2 bs-srchoption" >
-				{$searchtype_RegRD}
-			</div>
-			<div class="col-md-4" >
-				{$RegRD_editcontrol}
-			</div>
-			<div class="col-md-4" >
-				{$RegRD_editcontrol1}
-			</div>
-		</div>
-	</div>
-{END RegRD_fieldblock}
 	{BEGIN PostMins_fieldblock}		
 	<div class="container {$fielddispclass_PostMins}" data-fieldname="PostMins">
 		<div class="form-group">
@@ -246,24 +354,150 @@
 		</div>
 	</div>
 {END PostMins_fieldblock}
-	{BEGIN NDOTMins_fieldblock}		
-	<div class="container {$fielddispclass_NDOTMins}" data-fieldname="NDOTMins">
+	{BEGIN TempOT_fieldblock}		
+	<div class="container {$fielddispclass_TempOT}" data-fieldname="TempOT">
 		<div class="form-group">
-			<label class="col-md-2 control-label" for="{$labelfor_NDOTMins}">
-				{$label dt5 NDOTMins}
+			<label class="col-md-2 control-label" for="{$labelfor_TempOT}">
+				{$label dt5 TempOT}
 			</label>
 			<div class="col-md-2 bs-srchoption" >
-				{$searchtype_NDOTMins}
+				{$searchtype_TempOT}
 			</div>
 			<div class="col-md-4" >
-				{$NDOTMins_editcontrol}
+				{$TempOT_editcontrol}
 			</div>
 			<div class="col-md-4" >
-				{$NDOTMins_editcontrol1}
+				{$TempOT_editcontrol1}
 			</div>
 		</div>
 	</div>
-{END NDOTMins_fieldblock}
+{END TempOT_fieldblock}
+	{BEGIN ApprovedOT_fieldblock}		
+	<div class="container {$fielddispclass_ApprovedOT}" data-fieldname="ApprovedOT">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_ApprovedOT}">
+				{$label dt5 ApprovedOT}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_ApprovedOT}
+			</div>
+			<div class="col-md-4" >
+				{$ApprovedOT_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$ApprovedOT_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END ApprovedOT_fieldblock}
+	{BEGIN AOTMins_fieldblock}		
+	<div class="container {$fielddispclass_AOTMins}" data-fieldname="AOTMins">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_AOTMins}">
+				{$label dt5 AOTMins}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_AOTMins}
+			</div>
+			<div class="col-md-4" >
+				{$AOTMins_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$AOTMins_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END AOTMins_fieldblock}
+	{BEGIN NDMins_fieldblock}		
+	<div class="container {$fielddispclass_NDMins}" data-fieldname="NDMins">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_NDMins}">
+				{$label dt5 NDMins}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_NDMins}
+			</div>
+			<div class="col-md-4" >
+				{$NDMins_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$NDMins_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END NDMins_fieldblock}
+	{BEGIN ApprovedNightDiff_fieldblock}		
+	<div class="container {$fielddispclass_ApprovedNightDiff}" data-fieldname="ApprovedNightDiff">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_ApprovedNightDiff}">
+				{$label dt5 ApprovedNightDiff}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_ApprovedNightDiff}
+			</div>
+			<div class="col-md-4" >
+				{$ApprovedNightDiff_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$ApprovedNightDiff_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END ApprovedNightDiff_fieldblock}
+	{BEGIN ANDiff_fieldblock}		
+	<div class="container {$fielddispclass_ANDiff}" data-fieldname="ANDiff">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_ANDiff}">
+				{$label dt5 ANDiff}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_ANDiff}
+			</div>
+			<div class="col-md-4" >
+				{$ANDiff_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$ANDiff_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END ANDiff_fieldblock}
+	{BEGIN ApprovedRD_fieldblock}		
+	<div class="container {$fielddispclass_ApprovedRD}" data-fieldname="ApprovedRD">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_ApprovedRD}">
+				{$label dt5 ApprovedRD}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_ApprovedRD}
+			</div>
+			<div class="col-md-4" >
+				{$ApprovedRD_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$ApprovedRD_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END ApprovedRD_fieldblock}
+	{BEGIN RDMins_fieldblock}		
+	<div class="container {$fielddispclass_RDMins}" data-fieldname="RDMins">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_RDMins}">
+				{$label dt5 RDMins}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_RDMins}
+			</div>
+			<div class="col-md-4" >
+				{$RDMins_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RDMins_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RDMins_fieldblock}
 	{BEGIN RegOT_fieldblock}		
 	<div class="container {$fielddispclass_RegOT}" data-fieldname="RegOT">
 		<div class="form-group">
@@ -336,42 +570,6 @@
 		</div>
 	</div>
 {END SHOTD_fieldblock}
-	{BEGIN RDOT_fieldblock}		
-	<div class="container {$fielddispclass_RDOT}" data-fieldname="RDOT">
-		<div class="form-group">
-			<label class="col-md-2 control-label" for="{$labelfor_RDOT}">
-				{$label dt5 RDOT}
-			</label>
-			<div class="col-md-2 bs-srchoption" >
-				{$searchtype_RDOT}
-			</div>
-			<div class="col-md-4" >
-				{$RDOT_editcontrol}
-			</div>
-			<div class="col-md-4" >
-				{$RDOT_editcontrol1}
-			</div>
-		</div>
-	</div>
-{END RDOT_fieldblock}
-	{BEGIN NDOT_fieldblock}		
-	<div class="container {$fielddispclass_NDOT}" data-fieldname="NDOT">
-		<div class="form-group">
-			<label class="col-md-2 control-label" for="{$labelfor_NDOT}">
-				{$label dt5 NDOT}
-			</label>
-			<div class="col-md-2 bs-srchoption" >
-				{$searchtype_NDOT}
-			</div>
-			<div class="col-md-4" >
-				{$NDOT_editcontrol}
-			</div>
-			<div class="col-md-4" >
-				{$NDOT_editcontrol1}
-			</div>
-		</div>
-	</div>
-{END NDOT_fieldblock}
 	{BEGIN RegND_fieldblock}		
 	<div class="container {$fielddispclass_RegND}" data-fieldname="RegND">
 		<div class="form-group">
@@ -390,132 +588,6 @@
 		</div>
 	</div>
 {END RegND_fieldblock}
-	{BEGIN RHND_fieldblock}		
-	<div class="container {$fielddispclass_RHND}" data-fieldname="RHND">
-		<div class="form-group">
-			<label class="col-md-2 control-label" for="{$labelfor_RHND}">
-				{$label dt5 RHND}
-			</label>
-			<div class="col-md-2 bs-srchoption" >
-				{$searchtype_RHND}
-			</div>
-			<div class="col-md-4" >
-				{$RHND_editcontrol}
-			</div>
-			<div class="col-md-4" >
-				{$RHND_editcontrol1}
-			</div>
-		</div>
-	</div>
-{END RHND_fieldblock}
-	{BEGIN RDND_fieldblock}		
-	<div class="container {$fielddispclass_RDND}" data-fieldname="RDND">
-		<div class="form-group">
-			<label class="col-md-2 control-label" for="{$labelfor_RDND}">
-				{$label dt5 RDND}
-			</label>
-			<div class="col-md-2 bs-srchoption" >
-				{$searchtype_RDND}
-			</div>
-			<div class="col-md-4" >
-				{$RDND_editcontrol}
-			</div>
-			<div class="col-md-4" >
-				{$RDND_editcontrol1}
-			</div>
-		</div>
-	</div>
-{END RDND_fieldblock}
-	{BEGIN RHRD_fieldblock}		
-	<div class="container {$fielddispclass_RHRD}" data-fieldname="RHRD">
-		<div class="form-group">
-			<label class="col-md-2 control-label" for="{$labelfor_RHRD}">
-				{$label dt5 RHRD}
-			</label>
-			<div class="col-md-2 bs-srchoption" >
-				{$searchtype_RHRD}
-			</div>
-			<div class="col-md-4" >
-				{$RHRD_editcontrol}
-			</div>
-			<div class="col-md-4" >
-				{$RHRD_editcontrol1}
-			</div>
-		</div>
-	</div>
-{END RHRD_fieldblock}
-	{BEGIN SHRD_fieldblock}		
-	<div class="container {$fielddispclass_SHRD}" data-fieldname="SHRD">
-		<div class="form-group">
-			<label class="col-md-2 control-label" for="{$labelfor_SHRD}">
-				{$label dt5 SHRD}
-			</label>
-			<div class="col-md-2 bs-srchoption" >
-				{$searchtype_SHRD}
-			</div>
-			<div class="col-md-4" >
-				{$SHRD_editcontrol}
-			</div>
-			<div class="col-md-4" >
-				{$SHRD_editcontrol1}
-			</div>
-		</div>
-	</div>
-{END SHRD_fieldblock}
-	{BEGIN RHRDOT_fieldblock}		
-	<div class="container {$fielddispclass_RHRDOT}" data-fieldname="RHRDOT">
-		<div class="form-group">
-			<label class="col-md-2 control-label" for="{$labelfor_RHRDOT}">
-				{$label dt5 RHRDOT}
-			</label>
-			<div class="col-md-2 bs-srchoption" >
-				{$searchtype_RHRDOT}
-			</div>
-			<div class="col-md-4" >
-				{$RHRDOT_editcontrol}
-			</div>
-			<div class="col-md-4" >
-				{$RHRDOT_editcontrol1}
-			</div>
-		</div>
-	</div>
-{END RHRDOT_fieldblock}
-	{BEGIN SHRDOT_fieldblock}		
-	<div class="container {$fielddispclass_SHRDOT}" data-fieldname="SHRDOT">
-		<div class="form-group">
-			<label class="col-md-2 control-label" for="{$labelfor_SHRDOT}">
-				{$label dt5 SHRDOT}
-			</label>
-			<div class="col-md-2 bs-srchoption" >
-				{$searchtype_SHRDOT}
-			</div>
-			<div class="col-md-4" >
-				{$SHRDOT_editcontrol}
-			</div>
-			<div class="col-md-4" >
-				{$SHRDOT_editcontrol1}
-			</div>
-		</div>
-	</div>
-{END SHRDOT_fieldblock}
-	{BEGIN SHRDOTD_fieldblock}		
-	<div class="container {$fielddispclass_SHRDOTD}" data-fieldname="SHRDOTD">
-		<div class="form-group">
-			<label class="col-md-2 control-label" for="{$labelfor_SHRDOTD}">
-				{$label dt5 SHRDOTD}
-			</label>
-			<div class="col-md-2 bs-srchoption" >
-				{$searchtype_SHRDOTD}
-			</div>
-			<div class="col-md-4" >
-				{$SHRDOTD_editcontrol}
-			</div>
-			<div class="col-md-4" >
-				{$SHRDOTD_editcontrol1}
-			</div>
-		</div>
-	</div>
-{END SHRDOTD_fieldblock}
 </div>
 
 

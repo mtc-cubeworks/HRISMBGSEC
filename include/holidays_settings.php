@@ -106,7 +106,7 @@ $tdataholidays[".closePopupAfterEdit"] = 1;
 $tdataholidays[".afterEditActionDetTable"] = "Detail tables not found!";
 
 $tdataholidays[".add"] = true;
-$tdataholidays[".afterAddAction"] = 0;
+$tdataholidays[".afterAddAction"] = 1;
 $tdataholidays[".closePopupAfterAdd"] = 1;
 $tdataholidays[".afterAddActionDetTable"] = "";
 
@@ -156,7 +156,7 @@ $tdataholidays[".rowHighlite"] = true;
 
 
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
 
 $tdataholidays[".ajaxCodeSnippetAdded"] = false;
 
