@@ -668,7 +668,7 @@ else
   $rdfn=0;;
   };
 
-$sqd = "DELETE FROM indschedule WHERE UserName='$usern' AND SDate='$indate'";
+$sqd = "DELETE FROM indschedule WHERE UserName='$usern' AND SDate='$dtx1'";
 DB::Query($sqd);
 
 $sqlr = "INSERT indschedule VALUES (NULL, '$usern', DATE_ADD('$fd', INTERVAL '$i' DAY), NULLIF('$ti',''), NULLIF('$to',''), '$stype', NULL, NULL, NULL, NULL, NULL, NULL, '$wt', NULL, NULL, '$empid', '$mpd', '$bm', '$shf', NULL, NULL, '$mid', '$lbf', '$lbt', NULL, '$fhm', '$shm', '$ndmeal', '$ndhrs', NULL, '$divi',
@@ -684,7 +684,7 @@ if ($sby==2) {
 
    if (in_array($day_num, $dayrest)) { 
 
-   $sqd2 = "DELETE FROM indschedule WHERE UserName='$usern' AND SDate='$indate'";
+   $sqd2 = "DELETE FROM indschedule WHERE UserName='$usern' AND SDate='$dtx1'";
    DB::Query($sqd2);
 
    $sqlr = "INSERT indschedule VALUES (NULL, '$usern', DATE_ADD('$fd', INTERVAL '$i' DAY), NULLIF('$ti',''), NULLIF('$to',''), '$stype', NULL, NULL, NULL, NULL, NULL, NULL, '$wt', NULL, NULL, '$empid', '$mpd', '$bm', '$shf', NULL, NULL, '$mid', '$lbf', '$lbt', NULL, '$fhm', '$shm', '$ndmeal', '$ndhrs', NULL, '$divi',
@@ -2631,7 +2631,7 @@ else
   $rdfn=0;;
   };
 
-$sqd = "DELETE FROM indschedule WHERE UserName='$usern' AND SDate='$indate'";
+$sqd = "DELETE FROM indschedule WHERE UserName='$usern' AND SDate='$dtx1'";
 DB::Query($sqd);
 
 
@@ -2653,7 +2653,7 @@ if ($sby==2) {
 
    if (in_array($day_num, $dayrest)) { 
 
-   $sqd2 = "DELETE FROM indschedule WHERE UserName='$usern' AND SDate='$indate'";
+   $sqd2 = "DELETE FROM indschedule WHERE UserName='$usern' AND SDate='$dtx1'";
    DB::Query($sqd2);
 
    $sqlr = "INSERT indschedule VALUES (NULL, '$usern', DATE_ADD('$fd', INTERVAL '$i' DAY), NULLIF('$ti',''), NULLIF('$to',''), '$stype', NULL, NULL, NULL, NULL, NULL, NULL, '$wt', NULL, NULL, '$empid', '$mpd', '$bm', '$shf', NULL, NULL, '$mid', NULLIF('$lbf',''), NULLIF('$lbt',''), NULL, '$fhm', '$shm', '$ndmeal', '$ndhrs', NULL, '$divi',
