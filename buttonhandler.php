@@ -1955,7 +1955,7 @@ $tod3= $data["PayToDate"];
 //$rs3 = $tblOrders->Query("PaymentPeriod=1 and EmployeeID=".$empid,"");
 //while ($datax3 = db_fetch_array($rs3))
 
-$rsa = DB::Query("select * from earningadjustment where PaymentPEriod=1 and EmployeeID='$empid' and StartDate>='$frd3' and EndDate<='$tod3' and Inactive<>1");
+$rsa = DB::Query("select * from earningadjustment where PaymentPEriod=1 and EmployeeID='$empid' and StartDate<='$tod3' and EndDate>='$frd3' and Inactive<>1");
  
 while( $datax3 = $rsa->fetchAssoc() )
 
@@ -2007,7 +2007,7 @@ CustomQuery($sqlad);
 //while ($datad = db_fetch_array($rsd))
 
 
-$rsa2 = DB::Query("select * from earningadjustment where PaymentPEriod=3 and EmployeeID='$empid' and StartDate>='$frd3' and EndDate<='$tod3' and Inactive<>1");
+$rsa2 = DB::Query("select * from earningadjustment where PaymentPEriod=3 and EmployeeID='$empid' and StartDate<='$tod3' and EndDate>='$frd3' and Inactive<>1");
  
 while( $datad = $rsa2->fetchAssoc() )
 
